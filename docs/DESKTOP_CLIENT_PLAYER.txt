@@ -1,0 +1,13 @@
+web pvp for Windows
+
+1. Extract the complete ZIP archive into a new folder.
+2. Set serverUrl in server-config.json beside web pvp.exe. For example:
+   {"serverUrl":"https://pvp.example.org"}
+   Alternatively, set the WEB_PVP_SERVER_URL environment variable before starting.
+3. Open web pvp.exe. Wait for the update and file checks, then sign in to your server.
+
+Use the title bar or toolbar to minimize, maximize, restore or close the window. F11 toggles full screen. F5 asks for confirmation before reloading the game, which interrupts your current session. Ctrl combinations remain available for game bindings.
+
+Startup checks for game-content updates. You can also check from the toolbar. Updates share server bandwidth with active matches and may pause while a match is busy. Supported updates can transfer up to 100,000,000 bytes including their plan and compressed payload. If your version or update size requires a full package, close the old window and extract the new package into a new folder.
+
+The game reads graphics and audio locally and connects to your chosen server for accounts and matches. Use the diagnostic log command if startup fails. Browser settings and logs live in the app's per-user data directory.

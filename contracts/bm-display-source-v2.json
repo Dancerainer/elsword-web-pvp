@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "sourceKinds": {
+    "declarations": "target2016 original file data",
+    "consumers": "fixedV5 a8438f3ed18dd6f0944793de6c0d8bb9334e9633; version reference",
+    "density": "web presentation policy; source clock retained for six structural cues",
+    "blendDefault": "documented D3D9 device default; target GPU state unmeasured"
+  },
+  "methods": [
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "fileSha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+      "signature": "D3DXVECTOR3 CX2EffectSet::EffectSetInstance::GetEffectPosition(",
+      "line": 2769,
+      "lastLine": 2971,
+      "bodySha256": "cd78730b811bc7eca8afeab070f1f2bdef901f290ecfd380d151a19b8ae7002b"
+    },
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "fileSha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+      "signature": "const D3DXMATRIX* CX2EffectSet::EffectSetInstance::GetCombineMatrix(",
+      "line": 3188,
+      "lastLine": 3230,
+      "bodySha256": "055f3171ae2aad5bdad834e6d97173785ea2bb186a19edc243aba64770a9fe49"
+    },
+    {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "fileSha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "signature": "D3DXVECTOR3 CX2GameUnit::GetWeaponBonePos(",
+      "line": 5207,
+      "lastLine": 5243,
+      "bodySha256": "dde0e5655da09389623582b5797ce5781c3f504ee083b0bf7370d54872144bb7"
+    },
+    {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "fileSha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "signature": "const D3DXMATRIX* CX2GameUnit::GetCombineMatrixFromWeaponBoneName(",
+      "line": 5251,
+      "lastLine": 5268,
+      "bodySha256": "1ba19a2ff5a39352312072c17f5154db2d1b11c6b284e31295f12ebb24528f24"
+    },
+    {
+      "path": "KTDXLIB/KTDGParticleSystem.cpp",
+      "fileSha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "gitBlob": "2afaac41a9de94c6a0d0dda5d7df4849429e0c08",
+      "signature": "void CKTDGParticleSystem::CParticleEventSequence::OnFrameRender_VERTEX_PARTICLE_RHW()",
+      "line": 4136,
+      "lastLine": 4708,
+      "bodySha256": "d416234f6d9de19b924128d360704ce10b5e7d84ae41512813f65be17f819fc2"
+    }
+  ],
+  "weaponAttachments": {
+    "EffectSet_Bloody_Weapon": {
+      "NAME": "EffectSet_Bloody_Weapon",
+      "EFFECT0": {
+        "WEAPON_BONE_NAME": "TRACE_END0",
+        "NAME": "BloodBouble_Raven_Bloody_Accel02",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      }
+    },
+    "EffectSet_SA_RBM_BloodyAccel": {
+      "NAME": "EffectSet_SA_RBM_BloodyAccel",
+      "EFFECT0": {
+        "NAME": "DamageEffect_SA_RBM_BloodyAccel_WeaponFX",
+        "START_TIME": 0.01,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 1,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT1": {
+        "NAME": "DamageEffect_SA_RBM_BloodyAccel",
+        "POSITION_OFFSET_Y": 15,
+        "START_TIME": 0.16,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 1,
+        "TRACE_MORE": 1
+      },
+      "EFFECT2": {
+        "START_TIME": 0.966,
+        "NAME": "BloodyAccel_P2",
+        "BONE_NAME": "Bip01_Spine1",
+        "EFFECT_TYPE": 8
+      },
+      "EFFECT3": {
+        "START_TIME": 1,
+        "NAME": "BloodyAccel_BM2",
+        "BONE_NAME": "Bip01_Spine1",
+        "EFFECT_TYPE": 8
+      },
+      "CAMERA_SHAKE0": {
+        "TWO_DIR_TIME_GAP": 0.01,
+        "START_TIME": 0.2,
+        "TWO_DIR_TIME": 0.2,
+        "TWO_DIR_GAP": 50,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "EffectSet_SA_RBM_Extrem_Blade_Finish": {
+      "NAME": "EffectSet_SA_RBM_Extrem_Blade_Finish",
+      "EVENT_TIMER_TYPE": 1,
+      "AFFECTED_BY_UNIT_SCALE": 0,
+      "EFFECT0": {
+        "BONE_NAME": "Dummy1_Rhand",
+        "NAME": "SA_RBM_Extrem_Blade_P01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT1": {
+        "NAME": "Ring_Raven_ShockWave01",
+        "START_TIME": 0.16,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT2": {
+        "NAME": "ShockWave_Raven_ShockWave02",
+        "START_TIME": 0.23,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT3": {
+        "NAME": "Light_Raven_ShockWave03",
+        "SCALE_Y": 2,
+        "SCALE_X": 2,
+        "SCALE_Z": 2,
+        "START_TIME": 0.1,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT4": {
+        "NAME": "EffectSet_RBM_HYPER_STEP_EXPLO_P02",
+        "START_TIME": 0.2,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT5": {
+        "NAME": "SA_RBM_Extrem_Blade_P02",
+        "START_TIME": 0.25,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT6": {
+        "NAME": "SA_RBM_Extrem_Blade_P03",
+        "SCALE_Y": 0.6,
+        "SCALE_X": 0.6,
+        "SCALE_Z": 0.6,
+        "START_TIME": 0.24,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT7": {
+        "NAME": "SA_RBM_Extrem_Blade_P04",
+        "WEAPON_BONE_NAME": "TRACE_START0",
+        "START_TIME": 0.56,
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT8": {
+        "NAME": "SA_RBM_Extrem_Blade_P04",
+        "START_TIME": 0.6,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT9": {
+        "START_TIME": 0.56,
+        "NAME": "EffectSet_RBM_HYPER_STEP_EXPLO_P09",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT10": {
+        "NAME": "SA_RBM_Extrem_Blade_P05",
+        "START_TIME": 0.5,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT11": {
+        "SCALE_Y": 2,
+        "NAME": "SA_AEM_ELEMENTAL_STORM_FX_P04",
+        "SCALE_X": 2,
+        "SCALE_Z": 2,
+        "START_TIME": 0.56,
+        "EFFECT_TYPE": 8
+      },
+      "EFFECT12": {
+        "START_TIME": 0.56,
+        "NAME": "SA_AEM_ELEMENTAL_STORM_FX_P04",
+        "EFFECT_TYPE": 8
+      },
+      "EFFECT13": {
+        "START_TIME": 0.66,
+        "NAME": "SA_RBM_Extrem_Blade_M01",
+        "POSITION_OFFSET_Y": 5,
+        "EFFECT_TYPE": 4
+      },
+      "EFFECT14": {
+        "SCALE_Y": 1.5,
+        "NAME": "SA_RBM_Extrem_Blade_M02",
+        "SCALE_X": 1.5,
+        "SCALE_Z": 1.5,
+        "START_TIME": 0.66,
+        "EFFECT_TYPE": 4
+      },
+      "EFFECT15": {
+        "NAME": "EffectSet_RBM_HYPER_STEP_EXPLO_P06",
+        "START_TIME": 0.66,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT16": {
+        "NAME": "EffectSet_RBM_HYPER_STEP_EXPLO_P05",
+        "START_TIME": 0.66,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT17": {
+        "NAME": "SA_RBM_Extrem_Blade_P07",
+        "SCALE_Y": 1.6,
+        "SCALE_X": 1.6,
+        "SCALE_Z": 1.6,
+        "START_TIME": 0.686,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT18": {
+        "NAME": "SA_RBM_Extrem_Blade_P08",
+        "SCALE_Y": 1.6,
+        "SCALE_X": 1.6,
+        "SCALE_Z": 1.6,
+        "START_TIME": 0.686,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT19": {
+        "START_TIME": 0.68,
+        "NAME": "EffectSet_RBM_HYPER_STEP_EXPLO_P04",
+        "EFFECT_TYPE": 8,
+        "APPLY_UNIT_ROTATION": 0
+      },
+      "EFFECT20": {
+        "START_TIME": 0.36,
+        "NAME": "SA_RBM_Extrem_Blade_P09",
+        "LIMIT_DISTANCE": 900,
+        "EFFECT_TYPE": 8
+      },
+      "EFFECT21": {
+        "START_TIME": 0.66,
+        "NAME": "DAMAGE_EFFECT_RSI_HA_RBM_EXTREM_BLADE_FINAL_DAMAGE",
+        "EFFECT_TYPE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "TWO_DIR_TIME_GAP": 0.03,
+        "START_TIME": 0.63,
+        "TWO_DIR_TIME": 1.2,
+        "TWO_DIR_GAP": 60,
+        "SHAKE_TYPE": 3
+      }
+    }
+  },
+  "sourceClockCues": [
+    {
+      "name": "RST_ShockWave_Pro01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 138800,
+        "line": 3821
+      },
+      "declarationSha256": "7a90db5917c39fbfe50f7e85869c335e68593729ee5b4577d222041dc0f3d17b",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15.0,
+        "Lifetime": 0.3,
+        "NumParticles": 10.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          300.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "RST_ShockWave_Pro01.Y"
+      }
+    },
+    {
+      "name": "RST_ShockWave_Pro01D",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 140582,
+        "line": 3871
+      },
+      "declarationSha256": "69dd9ee11492add19599b3c674c9d485fc8c85372a30533f3740103bfacde31e",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10.0,
+        "Lifetime": 0.3,
+        "NumParticles": 10.0,
+        "Layer": 12.0,
+        "Emitradius": [
+          300.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "RST_ShockWave_Pro01.Y"
+      }
+    },
+    {
+      "name": "RST_ShockWave_Pro02",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 139678,
+        "line": 3846
+      },
+      "declarationSha256": "b70bcba8245a0e29f6e2aafdfd68b761cc1e4ba40cad4afdecec49e10db18dac",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20.0,
+        "Lifetime": 0.2,
+        "NumParticles": 10.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          300.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "RST_ShockWave_Pro02.Y"
+      }
+    },
+    {
+      "name": "SA_RBM_Extrem_Blade_Dubble_Glow_P01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 100,
+        "name": "GameMajorParticle18.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle18.txt",
+        "sha256": "8fcd53672b23df603314ea5d5d9a195d3313f30a0b3edc382e81e2aa0066fe51",
+        "bytes": 339337,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 16589,
+        "line": 477
+      },
+      "declarationSha256": "55bfe434e61d17e453cee27b9ce5db0de7446073e2f80ef79c89144db7d24894",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 8.0,
+        "Lifetime": 0.3,
+        "NumParticles": 5.0,
+        "TriggerTime": 0.5,
+        "DrawCount": 3.0,
+        "Layer": 15.0,
+        "Gravity": [
+          {
+            "random": [
+              -1000.0,
+              1000.0
+            ]
+          },
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "Mesh": "Ring_Plane.Y"
+      }
+    },
+    {
+      "name": "EffectSet_RBM_HYPER_STEP_EXPLO_P08",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 70769,
+        "line": 2007
+      },
+      "declarationSha256": "cc73699020c6d7d7ec3533873efa8f9999677e426b95f77d95426a9135d28d09",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30.0,
+        "Lifetime": 0.2,
+        "NumParticles": 100.0,
+        "TriggerTime": 0.2,
+        "Layer": 15.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      }
+    },
+    {
+      "name": "Ring_Raven_ShockWave01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 56592,
+        "line": 1689
+      },
+      "declarationSha256": "c9f8e07793410e727f8483436e3c926ea7c4264ed241cf80a66fb4789c4c77a3",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 12.0,
+        "Lifetime": 0.5,
+        "NumParticles": 50.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true
+      }
+    }
+  ],
+  "screenBackground": {
+    "name": "SA_RBM_Extrem_Blade_P09",
+    "declarationSha256": "7c153f5652ec78cd5a12322fcc6509b58df71a903a9d32d560c3c5f16125c602",
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 100,
+      "name": "GameMajorParticle18.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle18.txt",
+      "sha256": "8fcd53672b23df603314ea5d5d9a195d3313f30a0b3edc382e81e2aa0066fe51",
+      "bytes": 339337,
+      "signatureHex": "7061727469636c6573797374656d2022",
+      "byteOffset": 6770,
+      "line": 184
+    },
+    "fields": {
+      "particleType": "PT_2D_PLANE",
+      "Emitrate": 10.0,
+      "Lifetime": 1.03,
+      "NumParticles": 4.0,
+      "TriggerTime": 0.33,
+      "Layer": 13.0,
+      "BillBoardType": "BT_Y",
+      "SourceBlendMode": "D3DBLEND_DESTCOLOR",
+      "DestBlendMode": "D3DBLEND_INVBLENDFACTOR",
+      "ZEnable": false
+    },
+    "position": [
+      640,
+      480,
+      1
+    ],
+    "layer": 13,
+    "nativeRenderBranch": "KTDGParticleSystem.cpp:3406-3432 PT_2D_PLANE uses SRCBLEND/DESTBLEND",
+    "blendFactorDefault": "0xffffffff",
+    "defaultDocumentation": "https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3drenderstatetype",
+    "referenceCacheScan": {
+      "files": 60,
+      "inventorySha256": "cf630d95e58e702d378b58f41898d41174a325b62f2aead57485215a507e6e9b",
+      "blendFactorTokenFiles": [],
+      "scope": "available frozen C++/headers/shaders; not proof of target client GPU state"
+    },
+    "effectiveBlend": {
+      "source": "DESTCOLOR",
+      "destination": "ZERO"
+    },
+    "limit": "No claim that the unexecuted target client leaves its device default unchanged."
+  }
+}

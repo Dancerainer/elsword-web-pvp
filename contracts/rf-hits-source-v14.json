@@ -1,0 +1,2172 @@
+{
+  "schema": "rf-hits-source-v14",
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "recoveryCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+  "evidenceClass": "target2016-static-declarations + fixed-V5-source + separately-pinned-2026-reconstruction",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "sourceFiles": [
+    {
+      "path": ".cache/native-reference/X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "spans": [
+        {
+          "signature": "void CX2GURaven::RSI_COMBO_XXX_FrameMove(",
+          "firstLine": 8541,
+          "lastLine": 8600,
+          "bytes": 1943,
+          "sha256": "5d51e9c03f453b0c90b9f278035597228360aac8a12ac173166a4bc532b77c84"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_COMBO_XXX_EventProcess(",
+          "firstLine": 8602,
+          "lastLine": 8617,
+          "bytes": 297,
+          "sha256": "5a98b7140f9d6454dac2ac5d6376161f504d4e46ea141034334dec0ac16af461"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_COMBO_Z_FrameMoveFuture(",
+          "firstLine": 8972,
+          "lastLine": 8990,
+          "bytes": 558,
+          "sha256": "7eef470f0b901beeaebb3928ad1b8a9bd075d235adc3f7b3c3753a6be98269e6"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_COMBO_Z_EventProcess(",
+          "firstLine": 8992,
+          "lastLine": 9004,
+          "bytes": 254,
+          "sha256": "6613fc15587d2c04fd25ebaf1e0cb29d2979789b1112da51ad392dcc922edc5c"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_DOWN_EventProcess(",
+          "firstLine": 6316,
+          "lastLine": 6362,
+          "bytes": 1043,
+          "sha256": "2b552384104ded1e6b0d399ad21441a44c3ad5a893f55f4c1b19c0a673597915"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_DASH_JUMP_COMBO_Z_EventProcess(",
+          "firstLine": 8742,
+          "lastLine": 8800,
+          "bytes": 2047,
+          "sha256": "42c9f145ab3003fc75ed210e26907786d3ae0c0acf75c6ad3d49e535eb93a2a9"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "spans": [
+        {
+          "signature": "void CX2GUUser::CommonStateStart(",
+          "firstLine": 13922,
+          "lastLine": 14810,
+          "bytes": 30056,
+          "sha256": "35a296c47f9054c98102fef7237a5b04b5bb56dc457a1596a5c8b201db3339e7"
+        },
+        {
+          "signature": "void CX2GUUser::DoFrameMoveFuture(",
+          "firstLine": 6491,
+          "lastLine": 6510,
+          "bytes": 439,
+          "sha256": "a062b0f7f4aacdc3bb17f59867aa35d71f744cef31913a3a7261cf9eb40277ad"
+        },
+        {
+          "signature": "void CX2GUUser::DoFrameMove(",
+          "firstLine": 6512,
+          "lastLine": 6560,
+          "bytes": 1129,
+          "sha256": "d6ea14fb5a7a807e96d64eba74ddc7b541b703b5ed95cbf1061318bcb8083120"
+        },
+        {
+          "signature": "void CX2GUUser::DoStateEndStartFuture(",
+          "firstLine": 6401,
+          "lastLine": 6446,
+          "bytes": 1513,
+          "sha256": "9ec6688fe46df0d13562f51726db3562c54d09adf7e3fadd679c1db6db1c6ba6"
+        },
+        {
+          "signature": "void CX2GUUser::DoStateEndStart(",
+          "firstLine": 6448,
+          "lastLine": 6489,
+          "bytes": 1078,
+          "sha256": "6fa47f518932762ce82207e60f5ed8b387bca72b89753494417bd1824d85136d"
+        },
+        {
+          "signature": "bool CX2GUUser::StateChange( int state, bool bDirectChange )",
+          "firstLine": 7426,
+          "lastLine": 7586,
+          "bytes": 5520,
+          "sha256": "f4b4476cfcfed93a0846b3125f7c71b22869b175dae946ab5ce8b12789fcb26b"
+        },
+        {
+          "signature": "void CX2GUUser::PushFrameData(",
+          "firstLine": 21458,
+          "lastLine": 21474,
+          "bytes": 527,
+          "sha256": "792721ef5db34a13b320b64d55fcd3226d5e971e180880f3b05f9719e98eb7d6"
+        },
+        {
+          "signature": "void CX2GUUser::CommonFrameMove_TimedEvent(",
+          "firstLine": 18123,
+          "lastLine": 18438,
+          "bytes": 12294,
+          "sha256": "9a5896ef29474b88dc068bb39c248663d7a604e60b0941064880785f9adaeb67"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "bytes": 130812,
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "spans": [
+        {
+          "signature": "bool CX2DamageManager::DamageCheck(",
+          "firstLine": 586,
+          "lastLine": 669,
+          "bytes": 2158,
+          "sha256": "d33701c4ee42f61f4c291e4bb3ffb7b4bf86d538778eed933fda034dbf46546e"
+        },
+        {
+          "signature": "bool CX2DamageManager::CollisionDataToUnit(",
+          "firstLine": 2373,
+          "lastLine": 2593,
+          "bytes": 6773,
+          "sha256": "b8dd1c9c3ab96121e2709feddabb9ea72fd19a8ae6a141ee3e97c11c86976f1e"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.h",
+      "bytes": 57466,
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "spans": [
+        {
+          "signature": "void SimpleInit(",
+          "firstLine": 1103,
+          "lastLine": 1298,
+          "bytes": 5391,
+          "sha256": "0eef57a24a26b0a4fa672c5dc3ce65616a0df573f0d1919f2a17b3618dce3161"
+        }
+      ]
+    },
+    {
+      "path": ".cache/reference-combat-fixes-v11/X2GURaven.cpp",
+      "bytes": 819439,
+      "sha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+      "gitBlob": "eb381c89af35bcd2a74a0fee7981c9180202c023",
+      "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+      "spans": [
+        {
+          "signature": "void CX2GURaven::RSI_COMBO_XXX_FrameMove(",
+          "firstLine": 8361,
+          "lastLine": 8420,
+          "bytes": 1943,
+          "sha256": "5d51e9c03f453b0c90b9f278035597228360aac8a12ac173166a4bc532b77c84"
+        }
+      ]
+    }
+  ],
+  "targetFiles": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "bytes": 398092,
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "gitBlob": "cf2f7659da24048766df94e6f110c84669483378"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "bytes": 183136,
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "gitBlob": "1f78040d224f5f095206bb6498ff710232be0a7e"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "bytes": 4395607,
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "gitBlob": "c45738ebcd24c6d6ed182a659b925dfa6b426583"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "bytes": 5409874,
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "gitBlob": "fe2f5d096eddd8266a6a1e90d1b87f5a64c9de9e"
+    }
+  ],
+  "targetRaven": {
+    "prototypes": 1,
+    "rootCallInstructionCount": 0,
+    "xxxNameConstants": [
+      {
+        "prototype": 0,
+        "gcIndex": 1601,
+        "value": "RSI_WEAPON_TAKER_COMBO_XXX_FINISH"
+      },
+      {
+        "prototype": 0,
+        "gcIndex": 1607,
+        "value": "RSI_WEAPON_TAKER_COMBO_XXX_LOOP"
+      },
+      {
+        "prototype": 0,
+        "gcIndex": 1611,
+        "value": "RSI_WEAPON_TAKER_COMBO_XXX"
+      },
+      {
+        "prototype": 0,
+        "gcIndex": 2816,
+        "value": "RSI_COMBO_XXX"
+      }
+    ],
+    "states": [
+      {
+        "name": "RSI_COMBO_XXX",
+        "raw": {
+          "ATTACK_CANCEL_AFTER": 1,
+          "HIT_CAMERA0_RATE": 40,
+          "ANIM_NAME": "ComboX3",
+          "HIT_CAMERA1_RATE": 30,
+          "ANIM_SPEED": 1.1,
+          "DASH_CANCEL_AFTER": 0.6,
+          "SKILL_CANCEL_AFTER": 0.333,
+          "WALK_CANCEL_AFTER": 1,
+          "BWALK_CANCEL_AFTER": 0.733,
+          "HIT_CAMERA2_RATE": 30,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "UNIT_SLASH_TRACE0": {
+            "1": 0,
+            "2": 0,
+            "3": 100,
+            "4": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.02,
+            "2": "RavenVoice_Shout03.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.01,
+            "2": "Raven_ComboX2Explosion.ogg"
+          },
+          "CAMERA1": {
+            "1": {
+              "DISTANCE": 540,
+              "EYEDISTANCE": 100,
+              "HEIGHT": 50,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": 60,
+              "DISTANCE": 700,
+              "HEIGHT": 100,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "X",
+            "2": "XXX"
+          },
+          "IS_ATTACK_STATE": 1,
+          "USE_COMMON_CANCEL_AFTER": 1
+        },
+        "instructionEvidence": {
+          "prototype": 0,
+          "firstPc": 463,
+          "lastPc": 506,
+          "wordBytesSha256": "b79c3ec55f0cf2294196d81380497379912af14e717f8734cbeb649a0f7bb9d8",
+          "instructions": [
+            {
+              "pc": 463,
+              "word": "00bf003b",
+              "opcode": "TDUP",
+              "a": 0,
+              "b": 0,
+              "c": 191,
+              "d": 191,
+              "gcConstantSha256": "5c7d69d49ef7567051dec1ac8d4637b78a783c8bf129dde2f0655a7a33285e33"
+            },
+            {
+              "pc": 464,
+              "word": "0044013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 68,
+              "d": 68,
+              "gcConstant": "XSKIN_ANIM_PLAYTYPE"
+            },
+            {
+              "pc": 465,
+              "word": "0145013f",
+              "opcode": "TGETS",
+              "a": 1,
+              "b": 1,
+              "c": 69,
+              "d": 325,
+              "fieldConstant": "XAP_ONE_WAIT"
+            },
+            {
+              "pc": 466,
+              "word": "00460142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 70,
+              "d": 70,
+              "fieldConstant": "PLAY_TYPE"
+            },
+            {
+              "pc": 467,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 468,
+              "word": "00480142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 72,
+              "d": 72,
+              "fieldConstant": "TRANSITION"
+            },
+            {
+              "pc": 469,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 470,
+              "word": "00490142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 73,
+              "d": 73,
+              "fieldConstant": "LAND_CONNECT"
+            },
+            {
+              "pc": 471,
+              "word": "00c0013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 192,
+              "d": 192,
+              "gcConstantSha256": "5ef89197ec2a4274d43ef27a6f3d0d35530174b7bfdfe96edd62e5853defa165"
+            },
+            {
+              "pc": 472,
+              "word": "0093023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 147,
+              "d": 147,
+              "gcConstant": "SLASH_TRACE_TYPE"
+            },
+            {
+              "pc": 473,
+              "word": "0294023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 148,
+              "d": 660,
+              "fieldConstant": "STT_DEFAULT"
+            },
+            {
+              "pc": 474,
+              "word": "01040243",
+              "opcode": "TSETB",
+              "a": 2,
+              "b": 1,
+              "c": 4,
+              "d": 260
+            },
+            {
+              "pc": 475,
+              "word": "00950142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 149,
+              "d": 149,
+              "fieldConstant": "UNIT_SLASH_TRACE0"
+            },
+            {
+              "pc": 476,
+              "word": "00c1013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 193,
+              "d": 193,
+              "gcConstantSha256": "9f95c83e057e780099346004c156fe0b8a47a910762f3fc904c8679e2b167fcb"
+            },
+            {
+              "pc": 477,
+              "word": "004f0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 79,
+              "d": 79,
+              "fieldConstant": "SOUND_PLAY0"
+            },
+            {
+              "pc": 478,
+              "word": "00c2013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 194,
+              "d": 194,
+              "gcConstantSha256": "e3a4f1e271995444ddbb9e7a13e19f84e2fb95c28f9a986b3dfbdceec3487fed"
+            },
+            {
+              "pc": 479,
+              "word": "00800142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 128,
+              "d": 128,
+              "fieldConstant": "SOUND_PLAY1"
+            },
+            {
+              "pc": 480,
+              "word": "0003013a",
+              "opcode": "TNEW",
+              "a": 1,
+              "b": 0,
+              "c": 3,
+              "d": 3
+            },
+            {
+              "pc": 481,
+              "word": "00c5023b",
+              "opcode": "TDUP",
+              "a": 2,
+              "b": 0,
+              "c": 197,
+              "d": 197,
+              "gcConstantSha256": "5945cdb3eb1752b52a50be6c011e70e136749739efd7d52d0d683d2d6ae8ce8c"
+            },
+            {
+              "pc": 482,
+              "word": "00c3033c",
+              "opcode": "GGET",
+              "a": 3,
+              "b": 0,
+              "c": 195,
+              "d": 195,
+              "gcConstant": "CAMERA_TYPE"
+            },
+            {
+              "pc": 483,
+              "word": "03c4033f",
+              "opcode": "TGETS",
+              "a": 3,
+              "b": 3,
+              "c": 196,
+              "d": 964,
+              "fieldConstant": "CT_PARTS_LOOK_TRACKING"
+            },
+            {
+              "pc": 484,
+              "word": "02c30342",
+              "opcode": "TSETS",
+              "a": 3,
+              "b": 2,
+              "c": 195,
+              "d": 707,
+              "fieldConstant": "CAMERA_TYPE"
+            },
+            {
+              "pc": 485,
+              "word": "00c6033c",
+              "opcode": "GGET",
+              "a": 3,
+              "b": 0,
+              "c": 198,
+              "d": 198,
+              "gcConstant": "LOOK_TYPE"
+            },
+            {
+              "pc": 486,
+              "word": "03c7033f",
+              "opcode": "TGETS",
+              "a": 3,
+              "b": 3,
+              "c": 199,
+              "d": 967,
+              "fieldConstant": "LT_IMPACT_POINT"
+            },
+            {
+              "pc": 487,
+              "word": "02c60342",
+              "opcode": "TSETS",
+              "a": 3,
+              "b": 2,
+              "c": 198,
+              "d": 710,
+              "fieldConstant": "LOOK_TYPE"
+            },
+            {
+              "pc": 488,
+              "word": "01010243",
+              "opcode": "TSETB",
+              "a": 2,
+              "b": 1,
+              "c": 1,
+              "d": 257
+            },
+            {
+              "pc": 489,
+              "word": "00c80142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 200,
+              "d": 200,
+              "fieldConstant": "CAMERA1"
+            },
+            {
+              "pc": 490,
+              "word": "0003013a",
+              "opcode": "TNEW",
+              "a": 1,
+              "b": 0,
+              "c": 3,
+              "d": 3
+            },
+            {
+              "pc": 491,
+              "word": "00ca023b",
+              "opcode": "TDUP",
+              "a": 2,
+              "b": 0,
+              "c": 202,
+              "d": 202,
+              "gcConstantSha256": "86c464d163ca3babf50aa3c7a756d075e5bb951ed8e10c0a44c94aeb90988efe"
+            },
+            {
+              "pc": 492,
+              "word": "00c3033c",
+              "opcode": "GGET",
+              "a": 3,
+              "b": 0,
+              "c": 195,
+              "d": 195,
+              "gcConstant": "CAMERA_TYPE"
+            },
+            {
+              "pc": 493,
+              "word": "03c9033f",
+              "opcode": "TGETS",
+              "a": 3,
+              "b": 3,
+              "c": 201,
+              "d": 969,
+              "fieldConstant": "CT_PARTS_LOOK_DIRECT"
+            },
+            {
+              "pc": 494,
+              "word": "02c30342",
+              "opcode": "TSETS",
+              "a": 3,
+              "b": 2,
+              "c": 195,
+              "d": 707,
+              "fieldConstant": "CAMERA_TYPE"
+            },
+            {
+              "pc": 495,
+              "word": "00c6033c",
+              "opcode": "GGET",
+              "a": 3,
+              "b": 0,
+              "c": 198,
+              "d": 198,
+              "gcConstant": "LOOK_TYPE"
+            },
+            {
+              "pc": 496,
+              "word": "03c7033f",
+              "opcode": "TGETS",
+              "a": 3,
+              "b": 3,
+              "c": 199,
+              "d": 967,
+              "fieldConstant": "LT_IMPACT_POINT"
+            },
+            {
+              "pc": 497,
+              "word": "02c60342",
+              "opcode": "TSETS",
+              "a": 3,
+              "b": 2,
+              "c": 198,
+              "d": 710,
+              "fieldConstant": "LOOK_TYPE"
+            },
+            {
+              "pc": 498,
+              "word": "01010243",
+              "opcode": "TSETB",
+              "a": 2,
+              "b": 1,
+              "c": 1,
+              "d": 257
+            },
+            {
+              "pc": 499,
+              "word": "00cb0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 203,
+              "d": 203,
+              "fieldConstant": "CAMERA2"
+            },
+            {
+              "pc": 500,
+              "word": "00cc013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 204,
+              "d": 204,
+              "gcConstantSha256": "14870316c9593c9b5ada12175682f4b4809cd156716ea41636af1132c988c53f"
+            },
+            {
+              "pc": 501,
+              "word": "005a0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 90,
+              "d": 90,
+              "fieldConstant": "COMBO_GUIDE"
+            },
+            {
+              "pc": 502,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 503,
+              "word": "005b0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 91,
+              "d": 91,
+              "fieldConstant": "IS_ATTACK_STATE"
+            },
+            {
+              "pc": 504,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 505,
+              "word": "00cd0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 205,
+              "d": 205,
+              "fieldConstant": "USE_COMMON_CANCEL_AFTER"
+            },
+            {
+              "pc": 506,
+              "word": "00ce003d",
+              "opcode": "GSET",
+              "a": 0,
+              "b": 0,
+              "c": 206,
+              "d": 206,
+              "gcConstant": "RSI_COMBO_XXX"
+            }
+          ]
+        }
+      },
+      {
+        "name": "RSI_JUMP_COMBO_Z",
+        "raw": {
+          "ANIM_NAME": "JumpAttackZ",
+          "ANIM_SPEED": 1.2,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0.11,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.108,
+            "2": "Raven_Slash1.ogg"
+          },
+          "BLADE_MASTERY": 1,
+          "DISABLE_ATTACK_BOX": {
+            "1": "Lhand1"
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 5,
+            "FORCE_DOWN": 9.25,
+            "TECH_POINT": 160,
+            "CAMERA_CRASH_TIME": 0.2,
+            "HIT_ADD_MP": 5,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 3,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 1.78
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "J",
+            "2": "JZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "instructionEvidence": {
+          "prototype": 0,
+          "firstPc": 790,
+          "lastPc": 828,
+          "wordBytesSha256": "c4eb54ff1ece8617406d77d1fe46cacae2a381643519e10d03c4237103874db0",
+          "instructions": [
+            {
+              "pc": 790,
+              "word": "0114003b",
+              "opcode": "TDUP",
+              "a": 0,
+              "b": 1,
+              "c": 20,
+              "d": 276,
+              "gcConstantSha256": "9ace7b56246133de1d1ffbe74abe2385fac113b446e49bd2203827801ccb453c"
+            },
+            {
+              "pc": 791,
+              "word": "0044013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 68,
+              "d": 68,
+              "gcConstant": "XSKIN_ANIM_PLAYTYPE"
+            },
+            {
+              "pc": 792,
+              "word": "0145013f",
+              "opcode": "TGETS",
+              "a": 1,
+              "b": 1,
+              "c": 69,
+              "d": 325,
+              "fieldConstant": "XAP_ONE_WAIT"
+            },
+            {
+              "pc": 793,
+              "word": "00460142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 70,
+              "d": 70,
+              "fieldConstant": "PLAY_TYPE"
+            },
+            {
+              "pc": 794,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 795,
+              "word": "00480142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 72,
+              "d": 72,
+              "fieldConstant": "TRANSITION"
+            },
+            {
+              "pc": 796,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 797,
+              "word": "00490142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 73,
+              "d": 73,
+              "fieldConstant": "LAND_CONNECT"
+            },
+            {
+              "pc": 798,
+              "word": "0115013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 21,
+              "d": 277,
+              "gcConstantSha256": "fcedb2eb95293f2be89befdc679a49aad7e89f832c1b82a88fe9cda98dc04b66"
+            },
+            {
+              "pc": 799,
+              "word": "004b0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 75,
+              "d": 75,
+              "fieldConstant": "SLASH_TRACE"
+            },
+            {
+              "pc": 800,
+              "word": "0116013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 22,
+              "d": 278,
+              "gcConstantSha256": "32bb2069ecb1105cddf3be562e2a53d816557f31b2421253c177ecde838a4091"
+            },
+            {
+              "pc": 801,
+              "word": "00600142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 96,
+              "d": 96,
+              "fieldConstant": "ATTACK_TIME0"
+            },
+            {
+              "pc": 802,
+              "word": "0117013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 23,
+              "d": 279,
+              "gcConstantSha256": "fb43342649133d3b1f882140f4456a49cd6388d5a9490e28f3a12f6ccedadfe6"
+            },
+            {
+              "pc": 803,
+              "word": "004f0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 79,
+              "d": 79,
+              "fieldConstant": "SOUND_PLAY0"
+            },
+            {
+              "pc": 804,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 805,
+              "word": "00510142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 81,
+              "d": 81,
+              "fieldConstant": "BLADE_MASTERY"
+            },
+            {
+              "pc": 806,
+              "word": "0118013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 24,
+              "d": 280,
+              "gcConstantSha256": "bc619dcc6f52e072b79e179e05ba4d7143ba9532b3460f0df5eeabb421c4c848"
+            },
+            {
+              "pc": 807,
+              "word": "00530142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 83,
+              "d": 83,
+              "fieldConstant": "DISABLE_ATTACK_BOX"
+            },
+            {
+              "pc": 808,
+              "word": "0119013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 25,
+              "d": 281,
+              "gcConstantSha256": "9a70d48d6df0513428e68b3749613189f9f8a30e956f221fd2eb2a44ed03463c"
+            },
+            {
+              "pc": 809,
+              "word": "0063023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 99,
+              "d": 99,
+              "gcConstant": "DAMAGE_TYPE"
+            },
+            {
+              "pc": 810,
+              "word": "0264023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 100,
+              "d": 612,
+              "fieldConstant": "DT_PHYSIC"
+            },
+            {
+              "pc": 811,
+              "word": "01630242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 99,
+              "d": 355,
+              "fieldConstant": "DAMAGE_TYPE"
+            },
+            {
+              "pc": 812,
+              "word": "0066023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 102,
+              "d": 102,
+              "gcConstant": "HIT_TYPE"
+            },
+            {
+              "pc": 813,
+              "word": "02de023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 222,
+              "d": 734,
+              "fieldConstant": "HT_SWORD_HIT"
+            },
+            {
+              "pc": 814,
+              "word": "01660242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 102,
+              "d": 358,
+              "fieldConstant": "HIT_TYPE"
+            },
+            {
+              "pc": 815,
+              "word": "0068023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 104,
+              "d": 104,
+              "gcConstant": "REACT_TYPE"
+            },
+            {
+              "pc": 816,
+              "word": "0269023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 105,
+              "d": 617,
+              "fieldConstant": "RT_SMALL_DAMAGE"
+            },
+            {
+              "pc": 817,
+              "word": "01680242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 104,
+              "d": 360,
+              "fieldConstant": "REACT_TYPE"
+            },
+            {
+              "pc": 818,
+              "word": "006a023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 106,
+              "d": 106,
+              "gcConstant": "ATTACK_TYPE"
+            },
+            {
+              "pc": 819,
+              "word": "026b023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 107,
+              "d": 619,
+              "fieldConstant": "AT_COMMAND"
+            },
+            {
+              "pc": 820,
+              "word": "016a0242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 106,
+              "d": 362,
+              "fieldConstant": "ATTACK_TYPE"
+            },
+            {
+              "pc": 821,
+              "word": "011a023b",
+              "opcode": "TDUP",
+              "a": 2,
+              "b": 1,
+              "c": 26,
+              "d": 282,
+              "gcConstantSha256": "7b6f88aefb8b360322fbf0026c08cef5fbc02cb6f7510ac3f750a19722a1a07b"
+            },
+            {
+              "pc": 822,
+              "word": "016d0242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 109,
+              "d": 365,
+              "fieldConstant": "DAMAGE"
+            },
+            {
+              "pc": 823,
+              "word": "006e0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 110,
+              "d": 110,
+              "fieldConstant": "DAMAGE_DATA"
+            },
+            {
+              "pc": 824,
+              "word": "011b013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 1,
+              "c": 27,
+              "d": 283,
+              "gcConstantSha256": "19da8590904a429f0f0ce2f368b612026d35e1313268a96eb981f6ebeb05749a"
+            },
+            {
+              "pc": 825,
+              "word": "005a0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 90,
+              "d": 90,
+              "fieldConstant": "COMBO_GUIDE"
+            },
+            {
+              "pc": 826,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 827,
+              "word": "005b0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 91,
+              "d": 91,
+              "fieldConstant": "IS_ATTACK_STATE"
+            },
+            {
+              "pc": 828,
+              "word": "011c003d",
+              "opcode": "GSET",
+              "a": 0,
+              "b": 1,
+              "c": 28,
+              "d": 284,
+              "gcConstant": "RSI_JUMP_COMBO_Z"
+            }
+          ]
+        }
+      },
+      {
+        "name": "RSI_JUMP_DOWN",
+        "raw": {
+          "ANIM_NAME": "JumpDown",
+          "ANIM_SPEED": 1.15,
+          "PLAY_TYPE": 0,
+          "LAND_CONNECT": 0,
+          "COMBO_GUIDE": {
+            "1": "J",
+            "2": "J"
+          },
+          "HEAD_IK": 1
+        },
+        "instructionEvidence": {
+          "prototype": 0,
+          "firstPc": 10182,
+          "lastPc": 10194,
+          "wordBytesSha256": "b68ed064921cbcaf7e630d1e8317be9909b9a9a8be8e18f0ce9607374193d5dd",
+          "instructions": [
+            {
+              "pc": 10182,
+              "word": "08fb003b",
+              "opcode": "TDUP",
+              "a": 0,
+              "b": 8,
+              "c": 251,
+              "d": 2299,
+              "gcConstantSha256": "780ed28696dd892f3d98718226e2b50e60176ab509b16c042d6f5550b554a886"
+            },
+            {
+              "pc": 10183,
+              "word": "0044013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 68,
+              "d": 68,
+              "gcConstant": "XSKIN_ANIM_PLAYTYPE"
+            },
+            {
+              "pc": 10184,
+              "word": "01380214",
+              "opcode": "KSTR",
+              "a": 2,
+              "b": 1,
+              "c": 56,
+              "d": 312,
+              "gcConstant": "XAP_LOOP"
+            },
+            {
+              "pc": 10185,
+              "word": "0102013e",
+              "opcode": "TGETV",
+              "a": 1,
+              "b": 1,
+              "c": 2,
+              "d": 258
+            },
+            {
+              "pc": 10186,
+              "word": "00460142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 70,
+              "d": 70,
+              "fieldConstant": "PLAY_TYPE"
+            },
+            {
+              "pc": 10187,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 10188,
+              "word": "00490142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 73,
+              "d": 73,
+              "fieldConstant": "LAND_CONNECT"
+            },
+            {
+              "pc": 10189,
+              "word": "08fc013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 8,
+              "c": 252,
+              "d": 2300,
+              "gcConstantSha256": "a6c3657c4a3d3cd397524abb0dd6685e5d9a04b804217b016be965d82ffbd3a0"
+            },
+            {
+              "pc": 10190,
+              "word": "005a0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 90,
+              "d": 90,
+              "fieldConstant": "COMBO_GUIDE"
+            },
+            {
+              "pc": 10191,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 10192,
+              "word": "07d20214",
+              "opcode": "KSTR",
+              "a": 2,
+              "b": 7,
+              "c": 210,
+              "d": 2002,
+              "gcConstant": "HEAD_IK"
+            },
+            {
+              "pc": 10193,
+              "word": "00020141",
+              "opcode": "TSETV",
+              "a": 1,
+              "b": 0,
+              "c": 2,
+              "d": 2
+            },
+            {
+              "pc": 10194,
+              "word": "08fd003d",
+              "opcode": "GSET",
+              "a": 0,
+              "b": 8,
+              "c": 253,
+              "d": 2301,
+              "gcConstant": "RSI_JUMP_DOWN"
+            }
+          ]
+        }
+      },
+      {
+        "name": "RSI_DASH_JUMP_COMBO_Z",
+        "raw": {
+          "ANIM_NAME": "DashJumpComboZ1",
+          "SPEED_Y": 500,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "UNIT_SLASH_TRACE0": {
+            "1": 0,
+            "2": 0,
+            "3": 100,
+            "4": 0
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 0.16
+          },
+          "SPEED_X": 725,
+          "SOUND_PLAY0": {
+            "1": 0.088,
+            "2": "Raven_PunchAttack1.ogg"
+          },
+          "BURNING_NASOD_HAND_POSSIBLE": 1,
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 5,
+            "FORCE_DOWN": 13.88,
+            "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+            "TECH_POINT": 335,
+            "BACK_SPEED_Y": 200,
+            "CAMERA_CRASH_TIME": 0.2,
+            "HIT_ADD_MP": 5,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 3,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": 725,
+            "DAMAGE": {
+              "PHYSIC": 1.86
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "A",
+            "2": "AZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "instructionEvidence": {
+          "prototype": 0,
+          "firstPc": 659,
+          "lastPc": 706,
+          "wordBytesSha256": "01713b42f63aedd0a2b9f57217b8c15baecd46fa2f12bebe021698beb369e287",
+          "instructions": [
+            {
+              "pc": 659,
+              "word": "00f7003b",
+              "opcode": "TDUP",
+              "a": 0,
+              "b": 0,
+              "c": 247,
+              "d": 247,
+              "gcConstantSha256": "9163d291f0d89b5a05130ff6ad52c63577a3729e94aaed4469662f5a67fa8501"
+            },
+            {
+              "pc": 660,
+              "word": "0044013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 68,
+              "d": 68,
+              "gcConstant": "XSKIN_ANIM_PLAYTYPE"
+            },
+            {
+              "pc": 661,
+              "word": "0145013f",
+              "opcode": "TGETS",
+              "a": 1,
+              "b": 1,
+              "c": 69,
+              "d": 325,
+              "fieldConstant": "XAP_ONE_WAIT"
+            },
+            {
+              "pc": 662,
+              "word": "00460142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 70,
+              "d": 70,
+              "fieldConstant": "PLAY_TYPE"
+            },
+            {
+              "pc": 663,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 664,
+              "word": "00480142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 72,
+              "d": 72,
+              "fieldConstant": "TRANSITION"
+            },
+            {
+              "pc": 665,
+              "word": "0047013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 71,
+              "d": 71,
+              "gcConstant": "FALSE"
+            },
+            {
+              "pc": 666,
+              "word": "00490142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 73,
+              "d": 73,
+              "fieldConstant": "LAND_CONNECT"
+            },
+            {
+              "pc": 667,
+              "word": "00f8013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 248,
+              "d": 248,
+              "gcConstantSha256": "5ef89197ec2a4274d43ef27a6f3d0d35530174b7bfdfe96edd62e5853defa165"
+            },
+            {
+              "pc": 668,
+              "word": "0093023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 147,
+              "d": 147,
+              "gcConstant": "SLASH_TRACE_TYPE"
+            },
+            {
+              "pc": 669,
+              "word": "0294023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 148,
+              "d": 660,
+              "fieldConstant": "STT_DEFAULT"
+            },
+            {
+              "pc": 670,
+              "word": "01040243",
+              "opcode": "TSETB",
+              "a": 2,
+              "b": 1,
+              "c": 4,
+              "d": 260
+            },
+            {
+              "pc": 671,
+              "word": "00950142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 149,
+              "d": 149,
+              "fieldConstant": "UNIT_SLASH_TRACE0"
+            },
+            {
+              "pc": 672,
+              "word": "00f9013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 249,
+              "d": 249,
+              "gcConstantSha256": "f13963f5e181309cc183c760f6c000c22c36c1b59df6df8c53dcd5964cd24d5b"
+            },
+            {
+              "pc": 673,
+              "word": "00600142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 96,
+              "d": 96,
+              "fieldConstant": "ATTACK_TIME0"
+            },
+            {
+              "pc": 674,
+              "word": "0016013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 22,
+              "d": 22,
+              "gcConstant": "INIT_PHYSIC"
+            },
+            {
+              "pc": 675,
+              "word": "014c013f",
+              "opcode": "TGETS",
+              "a": 1,
+              "b": 1,
+              "c": 76,
+              "d": 332,
+              "fieldConstant": "RUN_SPEED"
+            },
+            {
+              "pc": 676,
+              "word": "004d0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 77,
+              "d": 77,
+              "fieldConstant": "SPEED_X"
+            },
+            {
+              "pc": 677,
+              "word": "00fa013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 250,
+              "d": 250,
+              "gcConstantSha256": "919584184c361f1fbddc126c49e8795b9c7835276a9ca78d0637d3e413053584"
+            },
+            {
+              "pc": 678,
+              "word": "004f0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 79,
+              "d": 79,
+              "fieldConstant": "SOUND_PLAY0"
+            },
+            {
+              "pc": 679,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 680,
+              "word": "00980142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 152,
+              "d": 152,
+              "fieldConstant": "BURNING_NASOD_HAND_POSSIBLE"
+            },
+            {
+              "pc": 681,
+              "word": "00fb013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 251,
+              "d": 251,
+              "gcConstantSha256": "b512d19eb4f7346aeec78c949deb705a61e269054ca303e53f8b378e87e3c092"
+            },
+            {
+              "pc": 682,
+              "word": "00530142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 83,
+              "d": 83,
+              "fieldConstant": "DISABLE_ATTACK_BOX"
+            },
+            {
+              "pc": 683,
+              "word": "00fc013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 252,
+              "d": 252,
+              "gcConstantSha256": "600ff7a7293647bf01e5c9001cea1a6b87179d81df9ea868c9b7e6ecdcf3ea42"
+            },
+            {
+              "pc": 684,
+              "word": "0063023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 99,
+              "d": 99,
+              "gcConstant": "DAMAGE_TYPE"
+            },
+            {
+              "pc": 685,
+              "word": "0264023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 100,
+              "d": 612,
+              "fieldConstant": "DT_PHYSIC"
+            },
+            {
+              "pc": 686,
+              "word": "01630242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 99,
+              "d": 355,
+              "fieldConstant": "DAMAGE_TYPE"
+            },
+            {
+              "pc": 687,
+              "word": "0066023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 102,
+              "d": 102,
+              "gcConstant": "HIT_TYPE"
+            },
+            {
+              "pc": 688,
+              "word": "02de023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 222,
+              "d": 734,
+              "fieldConstant": "HT_SWORD_HIT"
+            },
+            {
+              "pc": 689,
+              "word": "01660242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 102,
+              "d": 358,
+              "fieldConstant": "HIT_TYPE"
+            },
+            {
+              "pc": 690,
+              "word": "0068023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 104,
+              "d": 104,
+              "gcConstant": "REACT_TYPE"
+            },
+            {
+              "pc": 691,
+              "word": "0269023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 105,
+              "d": 617,
+              "fieldConstant": "RT_SMALL_DAMAGE"
+            },
+            {
+              "pc": 692,
+              "word": "01680242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 104,
+              "d": 360,
+              "fieldConstant": "REACT_TYPE"
+            },
+            {
+              "pc": 693,
+              "word": "006a023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 106,
+              "d": 106,
+              "gcConstant": "ATTACK_TYPE"
+            },
+            {
+              "pc": 694,
+              "word": "026b023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 107,
+              "d": 619,
+              "fieldConstant": "AT_COMMAND"
+            },
+            {
+              "pc": 695,
+              "word": "016a0242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 106,
+              "d": 362,
+              "fieldConstant": "ATTACK_TYPE"
+            },
+            {
+              "pc": 696,
+              "word": "0016023c",
+              "opcode": "GGET",
+              "a": 2,
+              "b": 0,
+              "c": 22,
+              "d": 22,
+              "gcConstant": "INIT_PHYSIC"
+            },
+            {
+              "pc": 697,
+              "word": "024c023f",
+              "opcode": "TGETS",
+              "a": 2,
+              "b": 2,
+              "c": 76,
+              "d": 588,
+              "fieldConstant": "RUN_SPEED"
+            },
+            {
+              "pc": 698,
+              "word": "019b0242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 155,
+              "d": 411,
+              "fieldConstant": "BACK_SPEED_X"
+            },
+            {
+              "pc": 699,
+              "word": "00fd023b",
+              "opcode": "TDUP",
+              "a": 2,
+              "b": 0,
+              "c": 253,
+              "d": 253,
+              "gcConstantSha256": "2538dfccb72debef19c9893eda1f0fcf46c3fb9729a13dde132a07d892d169d1"
+            },
+            {
+              "pc": 700,
+              "word": "016d0242",
+              "opcode": "TSETS",
+              "a": 2,
+              "b": 1,
+              "c": 109,
+              "d": 365,
+              "fieldConstant": "DAMAGE"
+            },
+            {
+              "pc": 701,
+              "word": "006e0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 110,
+              "d": 110,
+              "fieldConstant": "DAMAGE_DATA"
+            },
+            {
+              "pc": 702,
+              "word": "00fe013b",
+              "opcode": "TDUP",
+              "a": 1,
+              "b": 0,
+              "c": 254,
+              "d": 254,
+              "gcConstantSha256": "de4c8b0a43e4670634827be42ffdb0dbbcd6f19a83181c7a669f2ec1cdc3fe4d"
+            },
+            {
+              "pc": 703,
+              "word": "005a0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 90,
+              "d": 90,
+              "fieldConstant": "COMBO_GUIDE"
+            },
+            {
+              "pc": 704,
+              "word": "0050013c",
+              "opcode": "GGET",
+              "a": 1,
+              "b": 0,
+              "c": 80,
+              "d": 80,
+              "gcConstant": "TRUE"
+            },
+            {
+              "pc": 705,
+              "word": "005b0142",
+              "opcode": "TSETS",
+              "a": 1,
+              "b": 0,
+              "c": 91,
+              "d": 91,
+              "fieldConstant": "IS_ATTACK_STATE"
+            },
+            {
+              "pc": 706,
+              "word": "00ff003d",
+              "opcode": "GSET",
+              "a": 0,
+              "b": 0,
+              "c": 255,
+              "d": 255,
+              "gcConstant": "RSI_DASH_JUMP_COMBO_Z"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "targetXxxResources": {
+    "effectSet": {
+      "raw": {
+        "NAME": "EffectSet_A_RF_XXX",
+        "EFFECT0": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "NAME": "Raven_Hand_FireSM",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_RF_XXX",
+          "POSITION_OFFSET_Y": 100,
+          "POSITION_OFFSET_X": 150,
+          "START_TIME": 0.25,
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0.35,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 10954
+      },
+      "runtimeBinding": "resource-only; target owner callback unverified; do not dispatch"
+    },
+    "damageEffect": {
+      "raw": {
+        "DAMAGE_TIME": 18,
+        "MAIN_EFFECT_NAME": "RAVEN_RF_XXX_ATTACK_BOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 2,
+          "LOCK_ON_TYPE": 4
+        },
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.15
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 750,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": -300,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 300,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01_D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EnchantHand_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EMK_BigBurst_P03",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_Big_Burst.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385135
+      }
+    }
+  },
+  "fixedRavenLiteralCounts": {
+    "EffectSet_A_RF_XXX": 0,
+    "DamageEffect_RF_XXX": 0,
+    "RSI_COMBO_XXX": 8,
+    "UC_RAVEN_RECKLESS_FIST": 11
+  },
+  "originalExe": {
+    "path": "asset_sources/client\\data\\x2.exe",
+    "bytes": 16879648,
+    "sha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "gitBlob": "b650909bb30c5e885e6c773cba7a6b3b93f922d1",
+    "machine": 332,
+    "sections": [
+      {
+        "name": "   \u0000    ",
+        "virtualSize": 25374720,
+        "rva": 4096,
+        "rawSize": 9568256,
+        "rawOffset": 4096,
+        "rawSha256": "148dc7eb2addff0e0e08cab869a4830fba063714a9988634c2ac568cc756084a"
+      },
+      {
+        "name": ".rsrc",
+        "virtualSize": 582144,
+        "rva": 25378816,
+        "rawSize": 227840,
+        "rawOffset": 9572352,
+        "rawSha256": "82240dd4460012c6d4f8412c918f93e77f59f215e58920d8c8e65f728ff84038"
+      },
+      {
+        "name": ".idata  ",
+        "virtualSize": 4096,
+        "rva": 25964544,
+        "rawSize": 512,
+        "rawOffset": 9800192,
+        "rawSha256": "9dd904cd015da1f8b70b58a28e4bfaec850dea781f3ab65cb9f660f9a4e4097e"
+      },
+      {
+        "name": "        ",
+        "virtualSize": 7471104,
+        "rva": 25968640,
+        "rawSize": 512,
+        "rawOffset": 9800704,
+        "rawSha256": "c25deabe41c2e31bcd8b21d928e664f97b80e378c54345ba6ac5b90102026a2c"
+      },
+      {
+        "name": "hrddlirn",
+        "virtualSize": 6983680,
+        "rva": 33439744,
+        "rawSize": 6981120,
+        "rawOffset": 9801216,
+        "rawSha256": "97374fd90b09ddfb19b8be53e55c45eb7324759f3d4cb7797e8b6f6f123ef9bc"
+      },
+      {
+        "name": "vhpqhflw",
+        "virtualSize": 98304,
+        "rva": 40423424,
+        "rawSize": 92672,
+        "rawOffset": 16782336,
+        "rawSha256": "887b6ff5a51f9e7a133932f596ab51aaf4483073a3a8c6582bb0a72621c54ef2"
+      }
+    ],
+    "method": "exact whole-file raw byte search; ASCII and UTF-16LE; no execution, unpacking, or disassembly",
+    "searches": [
+      {
+        "text": "RSI_COMBO_XXX",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "RSI_COMBO_XXX",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "EffectSet_A_RF_XXX",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "EffectSet_A_RF_XXX",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "DamageEffect_RF_XXX",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "DamageEffect_RF_XXX",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "Smoke_Raven_ComboX03",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "Smoke_Raven_ComboX03",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "ComboX3",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "ComboX3",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "RAVEN_FIGHTER.lua",
+        "encoding": "ascii",
+        "count": 0,
+        "offsets": []
+      },
+      {
+        "text": "RAVEN_FIGHTER.lua",
+        "encoding": "utf-16le",
+        "count": 0,
+        "offsets": []
+      }
+    ],
+    "limit": "No literal match proves neither absence of the callback nor absence of an encoded/dynamic name. No target consumer or xref was recovered."
+  },
+  "conclusions": [
+    "Target XXX has no character DAMAGE_DATA, ATTACK_TIME or EFFECT_SET fields. The sole target Raven prototype has no owner callback or native call to resolve its resource-only set.",
+    "Fixed V5 XXX at animation .16 charges7MP, spawns three smoke/flare particles, and calls a manual sphere110 DamageCheck. CommonStateStart SimpleInit then missing DAMAGE_DATA has RT_NO_DAMAGE/zero damage. Enabling this sphere cannot recover target2016 damage.",
+    "Target resource-only XXX set schedules DamageEffect_RF_XXX at set-relative .25; 18-hit lock-on/global phase fields are known, but set-start animation/global time and owner binding are unknown. No .16+.25 mapping is assumed.",
+    "Reference StateChange stores nextState. JumpZ Future reduces speed under heldDown, then CommonFuture physics runs, then EventProcess requests landing. Common Now attack uses strict >.11, unchanged target helper geometry. Missing a prior attack window after a too-late landing is not license to replay it.",
+    "No combat constants, helper radius, or unsupported target owner binding is changed by this audit."
+  ]
+}

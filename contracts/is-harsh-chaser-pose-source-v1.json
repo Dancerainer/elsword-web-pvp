@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "evidenceClass": "target2016 original declarations and original-DLL keys plus fixed-V5 reference consumer",
+  "fixedReferenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "scope": "HarshChaserBlade and SwordFallBlade1..4 request missing Normal with XAP_LOOP; sole original clip Elsword_SisKnight_sword. Reuse serialized failed-loop controller, first copied bind pose then original index0; literal mesh movement retains its independent source clock.",
+  "template": {
+    "name": "HarshChaserBlade",
+    "declarationSha256": "a18d60c73d1d664bb66b4a592df917b285d1b40edf2c13463d701d1ab21acc43",
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 972496,
+      "line": 30545
+    },
+    "events": [
+      {
+        "property": "Size",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          1.2,
+          1.2,
+          1.2
+        ]
+      },
+      {
+        "property": "Color",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          0.9,
+          0.6,
+          0.3,
+          1.0
+        ]
+      },
+      {
+        "property": "AniName",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_LOOP"
+        }
+      },
+      {
+        "property": "Velocity",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          5500.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "property": "Rotate",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          0.0,
+          -90.0,
+          90.0
+        ]
+      }
+    ]
+  },
+  "nativeKeys": "reports/is-fx-d3dx-keyframes-v1.json",
+  "sourceRows": [
+    {
+      "file": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "lineSpans": [
+        [
+          26,
+          43
+        ],
+        [
+          759,
+          784
+        ],
+        [
+          1139,
+          1149
+        ]
+      ],
+      "behavior": "Constructor index0 and zero period; failed named ChangeAnim returns false; LOOP switch selects index0 after the current frame structures were copied."
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "lineSpans": [
+        [
+          2939,
+          2943
+        ]
+      ],
+      "behavior": "AniName executes Play even when ChangeAnim returns false."
+    }
+  ],
+  "limits": [
+    "Fixed reference consumer is not a target2016 client trace.",
+    "Only the exact frozen mismatch is enabled; arbitrary missing animation names remain unsupported."
+  ],
+  "relatedTemplates": [
+    {
+      "name": "SwordFallBlade4",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 966961,
+        "line": 30358
+      },
+      "declarationSha256": "09b674a0da174e2e51f04cf16309bc1213bb190234534edecc154713f729bcb8",
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "initialAnimation": null
+    },
+    {
+      "name": "SwordFallBlade3",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 966219,
+        "line": 30336
+      },
+      "declarationSha256": "541ff1cb9e0308bc25eaa80dcf2b4c02305431039bf229eedd428952882e072e",
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "initialAnimation": null
+    },
+    {
+      "name": "SwordFallBlade2",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 965477,
+        "line": 30314
+      },
+      "declarationSha256": "dd3c354d17fd07b4dec2bed30abe211c85e148128a7a29d3c171204b35ca73a7",
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "initialAnimation": null
+    },
+    {
+      "name": "SwordFallBlade1",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 964735,
+        "line": 30292
+      },
+      "declarationSha256": "d5907f7bbbb734fe8898eb1653c9aaad58c233ee0b05c051847bedd0cc57b194",
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "initialAnimation": null
+    }
+  ]
+}

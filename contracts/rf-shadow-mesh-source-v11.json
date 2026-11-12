@@ -1,0 +1,909 @@
+{
+  "schema": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "bounded-binary32-JS-reference-executor; not-original-WASM; not2016-measured",
+  "runtimeModule": "packages/combat-core/shadow-mesh.mjs",
+  "referenceFiles": [
+    {
+      "relativePath": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragments": [
+        {
+          "start": 1218,
+          "end": 1360,
+          "bytes": 4309,
+          "sha256": "4274ecec0951ce8621ba68a84ac4870a2d687b7601bb3047b411eac5a10da213",
+          "purpose": "constructor defaults"
+        },
+        {
+          "start": 1584,
+          "end": 1800,
+          "bytes": 6396,
+          "sha256": "2b02596c3be5e3680cf7d9911eb8e0b996cfd3589110b5bb22ecbeb514eff5af",
+          "purpose": "simulation packet, PlayProcess then RunEvent, gravity and UseLand"
+        },
+        {
+          "start": 1945,
+          "end": 1965,
+          "bytes": 579,
+          "sha256": "47044245d097b67a89ed8cd93949cab645a68bfd5fde64a59f2157c41662d572",
+          "purpose": "skin animation follows land elasticity"
+        },
+        {
+          "start": 2062,
+          "end": 2153,
+          "bytes": 2276,
+          "sha256": "3b3c3ef572e8b6ed1a0286dc228794ae62fd2ca7190770237bfc2b399b8e25be",
+          "purpose": "LT_TIME old age, crash reason and global clock"
+        },
+        {
+          "start": 2443,
+          "end": 2460,
+          "bytes": 553,
+          "sha256": "e310b6b5c61f05172461893772c1237dc668aca91e7ee87eed35c01b6bc85ee8",
+          "purpose": "RunEvent state boundary"
+        },
+        {
+          "start": 2628,
+          "end": 2638,
+          "bytes": 409,
+          "sha256": "aec9ffa21937ac26c253203bbd03cf42f7550f04dcd6031cd968d2bdc16b25c3",
+          "purpose": "RunEvent final velocity accumulator"
+        }
+      ]
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGXMeshPlayer.h",
+      "bytes": 74061,
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "fragments": [
+        {
+          "start": 863,
+          "end": 883,
+          "bytes": 783,
+          "sha256": "51fee1030119b963defc86b423445e9e1fd97ef6387ba2de04f4a94f41af6019",
+          "purpose": "land and elasticity defaults"
+        },
+        {
+          "start": 1277,
+          "end": 1320,
+          "bytes": 2832,
+          "sha256": "c87aa280739151d852ead8b7733c3b7b09c1c69198fead713168aea548e5aad7",
+          "purpose": "velocity accumulator and rounded event clock delta"
+        }
+      ]
+    },
+    {
+      "relativePath": "KTDXLIB/KTDXCommonFunc.h",
+      "bytes": 40229,
+      "sha256": "b659140c28707eae0b3c1156e73cb4cd72f4c4eb940263375bfce99da799b084",
+      "fragments": [
+        {
+          "start": 1505,
+          "end": 1510,
+          "bytes": 115,
+          "sha256": "954b86e1b3e0702119dd51384e297842b6d345d8c858ddd59096881640fc6abf",
+          "purpose": "IsSamef float epsilon"
+        }
+      ]
+    },
+    {
+      "relativePath": "KTDXLIB/KTDX.h",
+      "bytes": 44424,
+      "sha256": "0097cffed97c4446e45fd586cc873290e6770a93e03b3bc7873383fb85d297cf",
+      "fragments": [
+        {
+          "start": 325,
+          "end": 334,
+          "bytes": 483,
+          "sha256": "0268aad4bc994a43f6256fbe07eef498f45d94239ed49d440bfe892d80da625c",
+          "purpose": "simulation macro"
+        },
+        {
+          "start": 372,
+          "end": 377,
+          "bytes": 418,
+          "sha256": "e113ab3250025e904907ccc1b65295f6fbad2a957d8edc33cd39a02c4565c6fb",
+          "purpose": "accumulator bug fix macro"
+        }
+      ]
+    },
+    {
+      "relativePath": "KTDXLIB/Always.h",
+      "bytes": 192825,
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "fragments": [
+        {
+          "start": 2514,
+          "end": 2519,
+          "bytes": 211,
+          "sha256": "1858a5ffb036e3ccc52c55c28a2b84e1de2c73fd56ed931d4c9bb3e9c6fa78cf",
+          "purpose": "inherit downrate macro"
+        },
+        {
+          "start": 2650,
+          "end": 2656,
+          "bytes": 362,
+          "sha256": "6fea84afc81aa658f62e1152148d607ad9f29ffd6aec8f4b7ba8d2fbc7f0691b",
+          "purpose": "corrected mesh gravity macro"
+        },
+        {
+          "start": 2764,
+          "end": 2770,
+          "bytes": 460,
+          "sha256": "bb38a563f33b9685f1323703bfc15fceb8d098fe3ce39f9044cc89c429cbfa8d",
+          "purpose": "refresh land macro"
+        },
+        {
+          "start": 3334,
+          "end": 3340,
+          "bytes": 328,
+          "sha256": "9ceaf78c0c0dc1eea008c166e39842d897068c0c681b4567be6c573566b4db2c",
+          "purpose": "Raven crash reason macro"
+        }
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.h",
+      "bytes": 202266,
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "fragments": [
+        {
+          "start": 1828,
+          "end": 1835,
+          "bytes": 234,
+          "sha256": "5ff67b36c2efc07209b9403c050413e6a2247245e0cc6ef28890d2b0f6612d02",
+          "purpose": "GetLandPos current owner unitCondition default"
+        }
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "bytes": 191004,
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "fragments": [
+        {
+          "start": 1,
+          "end": 8,
+          "bytes": 178,
+          "sha256": "cdd63084cb028b7bc652bef5221fe15103e259e7c53b3fa84d4c81c29699124f",
+          "purpose": "LINE_RADIUS30"
+        }
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2EffectSet.cpp",
+      "bytes": 146678,
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "fragments": [
+        {
+          "start": 386,
+          "end": 401,
+          "bytes": 517,
+          "sha256": "458f6e58a509a1ba27e674dea748db42a33cc45c6172fb4c1d90f2ed4055e5e2",
+          "purpose": "initial owner land plane"
+        },
+        {
+          "start": 1260,
+          "end": 1295,
+          "bytes": 1575,
+          "sha256": "90233f155e55163f4a0cbf44e61ca943e8b3de253b81d4193ffd3c2f22807723",
+          "purpose": "effect trace boundary"
+        }
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "start": 1260,
+          "end": 1271,
+          "bytes": 315,
+          "sha256": "b3a478e7a3705d91c27df412ef0ca4b4cc316835c2839456b9abc14ace2fcd8f",
+          "purpose": "CEffect immutable birth land"
+        },
+        {
+          "start": 1420,
+          "end": 1437,
+          "bytes": 648,
+          "sha256": "1adefec2229c470f6b84831853dce954d84cdf720cbe06ca2088d58bde408a77",
+          "purpose": "main mesh initial land and saved position"
+        },
+        {
+          "start": 1549,
+          "end": 1556,
+          "bytes": 407,
+          "sha256": "353492d7e74c0e6936e5e72b866e3eae64808c130de80cf89b815d0b82cdb03b",
+          "purpose": "refresh land default"
+        },
+        {
+          "start": 1860,
+          "end": 1888,
+          "bytes": 893,
+          "sha256": "8a38d31b0f17203c89eabd58355ebfd5665094f2cfb75d72a342dae916539ef3",
+          "purpose": "die child before updating saved main position"
+        },
+        {
+          "start": 2497,
+          "end": 2530,
+          "bytes": 1241,
+          "sha256": "cee0a6c40962d9eda6bc1c20d0708bc6014bf7dd510512d0c08768d6ebbdbee1",
+          "purpose": "land refresh30/90 and GetNearest_LUA"
+        },
+        {
+          "start": 5900,
+          "end": 5959,
+          "bytes": 1372,
+          "sha256": "c647472990c00ef9588e9cbee6d7916d1bb7824dd265c1be35854f1692cd1025",
+          "purpose": "death child DEPT_POS saved main position"
+        },
+        {
+          "start": 6029,
+          "end": 6072,
+          "bytes": 1679,
+          "sha256": "61748f0944454686ee9dd20d16a758d6a15efea45ed69af5207bb89f962370b7",
+          "purpose": "min original birth land plus crash/life child gates"
+        }
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2DamageEffect.h",
+      "bytes": 58169,
+      "sha256": "eb9034b22594cb80561bceae3b2d7312637e03aacef3050d4c04caa4f2cf0f60",
+      "fragments": [
+        {
+          "start": 688,
+          "end": 694,
+          "bytes": 261,
+          "sha256": "5d1a59282c7f65d76a9d9ea263ed5fb5cd2ff2254e336523a94b5a58b50e3242",
+          "purpose": "line-map land is separate from m_fLandPos"
+        }
+      ]
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGLineMap.cpp",
+      "bytes": 92246,
+      "sha256": "3306c7370a282b18137c676db2491b0fed4b2939cc1015876965e506cb8e23b2",
+      "fragments": [
+        {
+          "start": 998,
+          "end": 1103,
+          "bytes": 2641,
+          "sha256": "c38eff595ad5a0fccec972cbf9bd0444aabf8e09182b469bfebf73c27a375104",
+          "purpose": "native GetLandPosition"
+        },
+        {
+          "start": 2405,
+          "end": 2427,
+          "bytes": 548,
+          "sha256": "070f33a48e0ba9d4aef52204ec1219bddea42cda79f6efc1493de5050f123f16",
+          "purpose": "GetNearest_LUA unavailable wrapper boundary"
+        }
+      ]
+    }
+  ],
+  "target": {
+    "client": {
+      "region": "Steam NA",
+      "build": "V6.0420.5",
+      "unitType": 4,
+      "unitClass": 107,
+      "displayName": "RF / Reckless Fist"
+    },
+    "meshDeclarations": {
+      "RVC_C_ShadowBackSlide_grenade_M01_1": {
+        "fields": {
+          "MeshName": "RVC_C_ShadowBackSlide_grenade.X",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14.0,
+          "LifeTime": 1.2,
+          "ElasticCoeff": 0.5,
+          "ElasticCoeff_X": 0.5,
+          "Gravity": [
+            0.0,
+            -2000.0,
+            0.0
+          ],
+          "ZEnable": true,
+          "UseLand": true
+        },
+        "events": [
+          {
+            "property": "Color",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "AniName",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "Velocity",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              -100.0,
+              -1000.0,
+              0.0
+            ]
+          }
+        ],
+        "repeated": {},
+        "unsupported": [],
+        "name": "RVC_C_ShadowBackSlide_grenade_M01_1",
+        "kind": "mesh",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 1149195,
+          "line": 36192
+        },
+        "declarationSha256": "ca89c6da49f7b915902617940f3aa5ab5bcab2dba1837f7b85cdf849b833f697",
+        "textures": {},
+        "glb": "fx/meshes/RVC_C_ShadowBackSlide_grenade.glb",
+        "poseData": "fx/meshes/RVC_C_ShadowBackSlide_grenade.pose.json",
+        "animationMissingTickRate": false,
+        "animationClips": [
+          {
+            "name": "Normal",
+            "durationSeconds": 5.233333110809326,
+            "nativePlaybackField": 0,
+            "ticksPerSecond": 4800,
+            "warnings": [],
+            "trackWarnings": []
+          }
+        ],
+        "animationRequiresUnconfirmedRate": false,
+        "initialSize": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initialVelocity": [
+          -100.0,
+          -1000.0,
+          0.0
+        ],
+        "initialDirSpeed": null,
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "missingExplicitTickRate": false
+      },
+      "RVC_C_ShadowBackSlide_grenade_M01_2": {
+        "fields": {
+          "MeshName": "RVC_C_ShadowBackSlide_grenade.X",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14.0,
+          "LifeTime": 1.5,
+          "ElasticCoeff": 0.5,
+          "ElasticCoeff_X": 0.5,
+          "Gravity": [
+            0.0,
+            -2000.0,
+            0.0
+          ],
+          "ZEnable": true,
+          "UseLand": true
+        },
+        "events": [
+          {
+            "property": "Color",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "AniName",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "Velocity",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              200.0,
+              -800.0,
+              0.0
+            ]
+          }
+        ],
+        "repeated": {},
+        "unsupported": [],
+        "name": "RVC_C_ShadowBackSlide_grenade_M01_2",
+        "kind": "mesh",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 1149813,
+          "line": 36213
+        },
+        "declarationSha256": "fe6a756d4bd9c217154b709d16e1a4221da10d6a4a4175b23573c73ccce747aa",
+        "textures": {},
+        "glb": "fx/meshes/RVC_C_ShadowBackSlide_grenade.glb",
+        "poseData": "fx/meshes/RVC_C_ShadowBackSlide_grenade.pose.json",
+        "animationMissingTickRate": false,
+        "animationClips": [
+          {
+            "name": "Normal",
+            "durationSeconds": 5.233333110809326,
+            "nativePlaybackField": 0,
+            "ticksPerSecond": 4800,
+            "warnings": [],
+            "trackWarnings": []
+          }
+        ],
+        "animationRequiresUnconfirmedRate": false,
+        "initialSize": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initialVelocity": [
+          200.0,
+          -800.0,
+          0.0
+        ],
+        "initialDirSpeed": null,
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "missingExplicitTickRate": false
+      },
+      "RVC_C_ShadowBackSlide_grenade_M01_3": {
+        "fields": {
+          "MeshName": "RVC_C_ShadowBackSlide_grenade.X",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14.0,
+          "LifeTime": 1.35,
+          "ElasticCoeff": 0.5,
+          "ElasticCoeff_X": 0.5,
+          "Gravity": [
+            0.0,
+            -2000.0,
+            0.0
+          ],
+          "ZEnable": true,
+          "UseLand": true
+        },
+        "events": [
+          {
+            "property": "Color",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "AniName",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "Velocity",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              500.0,
+              -600.0,
+              0.0
+            ]
+          }
+        ],
+        "repeated": {},
+        "unsupported": [],
+        "name": "RVC_C_ShadowBackSlide_grenade_M01_3",
+        "kind": "mesh",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 1150429,
+          "line": 36234
+        },
+        "declarationSha256": "328df29cc2bbeaf4025a2019f2cd88df42c6b63c427137fbeacf303769177ebe",
+        "textures": {},
+        "glb": "fx/meshes/RVC_C_ShadowBackSlide_grenade.glb",
+        "poseData": "fx/meshes/RVC_C_ShadowBackSlide_grenade.pose.json",
+        "animationMissingTickRate": false,
+        "animationClips": [
+          {
+            "name": "Normal",
+            "durationSeconds": 5.233333110809326,
+            "nativePlaybackField": 0,
+            "ticksPerSecond": 4800,
+            "warnings": [],
+            "trackWarnings": []
+          }
+        ],
+        "animationRequiresUnconfirmedRate": false,
+        "initialSize": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initialVelocity": [
+          500.0,
+          -600.0,
+          0.0
+        ],
+        "initialDirSpeed": null,
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "missingExplicitTickRate": false
+      },
+      "SHADOW_BURSTER_DIE_CHECK": {
+        "fields": {
+          "MeshName": "DummyAttackBox_50x50x50.X",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14.0,
+          "LifeTime": 0.95,
+          "DrawCount": 0.0,
+          "ElasticCoeff": 0.5,
+          "ElasticCoeff_X": 0.0,
+          "UseLand": true,
+          "CrashLand": true
+        },
+        "events": [
+          {
+            "property": "Color",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "property": "AniName",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_LOOP"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "property": "Velocity",
+            "start": 0.0,
+            "end": 0.0,
+            "fade": false,
+            "value": [
+              0.0,
+              -1000.0,
+              0.0
+            ]
+          }
+        ],
+        "repeated": {},
+        "unsupported": [],
+        "name": "SHADOW_BURSTER_DIE_CHECK",
+        "kind": "mesh",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 1153006,
+          "line": 36321
+        },
+        "declarationSha256": "248ebafc63d99ecb4029d028a8b5c00e64fb124b32576f28a7ad5f5b4df33369",
+        "textures": {},
+        "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+        "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+        "animationMissingTickRate": false,
+        "animationClips": [
+          {
+            "name": "Normal",
+            "durationSeconds": 0.06666667014360428,
+            "nativePlaybackField": 0,
+            "ticksPerSecond": 4800,
+            "warnings": [],
+            "trackWarnings": []
+          }
+        ],
+        "animationRequiresUnconfirmedRate": false,
+        "initialSize": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "initialVelocity": [
+          0.0,
+          -1000.0,
+          0.0
+        ],
+        "initialDirSpeed": null,
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_LOOP"
+        },
+        "missingExplicitTickRate": false
+      }
+    },
+    "damageDeclarations": {
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_1": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_1",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "DAMAGE_DATA": {
+            "HIT_ADD_MP": 0,
+            "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 21,
+            "REACT_TYPE": 11,
+            "RE_ATTACK": 0
+          },
+          "DIE_DAMAGE_EFFECT0": {
+            "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+            "POSITION_TYPE": 3,
+            "POS_RELATIVE_TO_UNIT": 1
+          },
+          "CAMERA0": {
+            "EVENT_TIME": 0,
+            "GAP": 5,
+            "TIME": 0.4,
+            "UNIT_SELECT": 1,
+            "CRASH_TYPE": 3
+          },
+          "SOUND0": {
+            "EVENT_TIME": 0.01,
+            "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 60818
+        }
+      },
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_2": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_2",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "DAMAGE_DATA": {
+            "HIT_ADD_MP": 0,
+            "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 21,
+            "REACT_TYPE": 11,
+            "RE_ATTACK": 0
+          },
+          "DIE_DAMAGE_EFFECT0": {
+            "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+            "POSITION_TYPE": 3,
+            "POS_RELATIVE_TO_UNIT": 1
+          },
+          "CAMERA0": {
+            "EVENT_TIME": 0,
+            "GAP": 5,
+            "TIME": 0.4,
+            "UNIT_SELECT": 1,
+            "CRASH_TYPE": 3
+          },
+          "SOUND0": {
+            "EVENT_TIME": 0.01,
+            "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 60863
+        }
+      },
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_3": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_3",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "DAMAGE_DATA": {
+            "HIT_ADD_MP": 0,
+            "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 21,
+            "REACT_TYPE": 11,
+            "RE_ATTACK": 0
+          },
+          "DIE_DAMAGE_EFFECT0": {
+            "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+            "POSITION_TYPE": 3,
+            "POS_RELATIVE_TO_UNIT": 1
+          },
+          "CAMERA0": {
+            "EVENT_TIME": 0,
+            "GAP": 5,
+            "TIME": 0.4,
+            "UNIT_SELECT": 1,
+            "CRASH_TYPE": 3
+          },
+          "SOUND0": {
+            "EVENT_TIME": 0.01,
+            "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 60908
+        }
+      },
+      "DAMAGE_EFFECT_SHADOW_BURSTER": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "SHADOW_BURSTER_DIE_CHECK",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "DIE_DAMAGE_EFFECT0": {
+            "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_Flame_Damage",
+            "POSITION_TYPE": 3,
+            "POS_RELATIVE_TO_UNIT": 1,
+            "LAND_CRASH_ONLY": 1
+          },
+          "DIE_DAMAGE_EFFECT1": {
+            "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+            "POSITION_TYPE": 3,
+            "LIFE_TIME_ONLY": 1,
+            "POS_RELATIVE_TO_UNIT": 1
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 60941
+        }
+      }
+    },
+    "canonicalMeshSha256": "ebb78c197080de232919cebd6db3270e4cab729dae7bcd9686a18e54065875c6",
+    "canonicalDamageSha256": "254fd4918fa6f492c85525268a78fa8eff14fcb09575f4e379932538b016918f"
+  },
+  "selectedReferenceMacros": [
+    "X2OPTIMIZE_PARTICLE_AND_ETC_SIMULATION",
+    "X2OPTIMIZE_PARTICLE_AND_ETC_SIMULATION_VELOCITY_ACCUM_BUG_FIX",
+    "FIX_XMESH_PLAYER_GRAVITY_ERROR_TEST",
+    "EVE_SECOND_CLASS_CHANGE",
+    "RAVEN_WEAPON_TAKER",
+    "INHERIT_FORCEDOWNRATE"
+  ],
+  "sourceBranchCondition": "SERV_RENA_NIGHT_WATCHER LAND_CRASH_ONLY/LIFE_TIME_ONLY branch is present in fixed source and fields are explicit target2016; macro definition not in bounded reference cache",
+  "unresolved": [
+    "Target2016 executable compile flags and live packet batching remain unmeasured",
+    "GetNearest_LUA fallback is unavailable at exported native boundary; report unsupported and retain prior valid source plane",
+    "Only actor-facing cardinal movement axes supported; nonzero additional Euler rotation rejected",
+    "Skin animation time uses existing target pose period/playback adapter, not full original D3DX skin animation engine",
+    "RVC_C_dashJumpX_hitGround_P05_1:bone is an independent original bone dependency gap"
+  ],
+  "verification": "Closed-form binary32 source equations, corrupted inputs, native9 production Shadow24217 A→14 empty packets→X for both facings, same core/presentation transform, native30/90 queries, exclusive death children, independent saved-position and birth-plane assertions, deterministic JSON resume; simulated evidence only"
+}

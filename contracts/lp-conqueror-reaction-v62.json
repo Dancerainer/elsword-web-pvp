@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "lp-conqueror-reaction-v62",
+  "scope": "Original declaration/producer/native reaction review only; current Native test results remain separate.",
+  "originalClientExecuted": false,
+  "references": [
+    {
+      "repository": "asset_sources/analysis-project",
+      "commit": "0f96f609c26cdf03afb80da7203f796a6747bc3d",
+      "path": "docs/HIT_REACTION_CHAIN_2016.md",
+      "bytes": 12352,
+      "sha256": "acd73ef6d225f77f563ca74334c56df745f86abae39c9c2e30fa4d54e48e3fea"
+    },
+    {
+      "repository": "asset_sources/analysis-project",
+      "commit": "0f96f609c26cdf03afb80da7203f796a6747bc3d",
+      "path": "reports/analysis/hit-reaction-2016/reaction-switches.json",
+      "bytes": 5296,
+      "sha256": "6b7d16441dd9a13b593b1e175fa4488145323de0f9e673529bdf5e0a112d02a4"
+    },
+    {
+      "repository": "asset_sources/analysis-project",
+      "commit": "0f96f609c26cdf03afb80da7203f796a6747bc3d",
+      "path": "docs/LP_CONQUEROR_SCATTER_2016.md",
+      "bytes": 8461,
+      "sha256": "628a1b9b2aafacea1ee660d4be75dea284a40bf7fe463b3b4e64f95651ae71b4"
+    }
+  ],
+  "rawDamageEffectLuaSha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+  "rawEnumLuaSha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+  "phases": [
+    {
+      "name": "DamageEffect_SA_APT_Conqueror_Hyper_Pre",
+      "coefficient": 0.38,
+      "reactType": 1,
+      "stopTimeDef": 0,
+      "backSpeedX": -700,
+      "reAttack": 1,
+      "finding": "No defender hit-stop; conditional original small-hurt reaction remains."
+    },
+    {
+      "name": "DamageEffect_SA_APT_Conqueror_Projectile",
+      "noDamage": 1,
+      "hyperCount": "c=min(positive mutation,3), zero mutation creates none",
+      "children": [
+        "HIT_DAMAGE_EFFECT0",
+        "DIE_DAMAGE_EFFECT0"
+      ],
+      "finding": "The projectile itself is not an HP damage phase."
+    },
+    {
+      "name": "DamageEffect_SA_APT_Conqueror_Projectile_Shock",
+      "coefficient": 4.25,
+      "reactType": 5,
+      "stopTimeDef": 0.05,
+      "forceFly": 1,
+      "finding": "Actual mutation extra damage inherits the normal projectile child reaction."
+    },
+    {
+      "name": "DamageEffect_SA_APT_Conqueror_Hyper",
+      "coefficient": 61.05,
+      "reactType": 5,
+      "stopTimeDef": 0.2,
+      "finding": "Main blast launches; original skill9009 modifier input is still unknown."
+    }
+  ],
+  "originalReaction": {
+    "entry": "0x31f6a420",
+    "rt1Switch": {
+      "react": 1,
+      "index": 0,
+      "target": "0x31f6a65b"
+    },
+    "ordinaryNearFloorStates": [
+      25,
+      26
+    ],
+    "airAlternativeState": 33,
+    "force": 1,
+    "evidenceId": "ev_296b8aba4fd5fca13e1698d709ee1344f2cfc18eaa3d64da136c810b159fd84d",
+    "qualification": "Selected local Add path; selected-actor, suppression/ride/special-state, height and direction gates remain. No universal per-profession guarantee."
+  },
+  "policy": "Feedback is a question; retain original RT1/RT5 instead of changing all extra hits to no-reaction by impression.",
+  "limits": [
+    "Actual original client/GPU/match not run.",
+    "Unknown9009 modifier not invented.",
+    "No broad claim all hurt consumers are restored1:1."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "elsword.rf-buff-display-resource-roots.v1",
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "parentProfileSha256": "818551cbec5b3e946ec19b80f0ca717fdd9ee3aaf5587250aee8c8cb37dc2600",
+  "effectSets": {
+    "EffectSet_DEBUFF_FIRE": {
+      "raw": {
+        "NAME": "EffectSet_DEBUFF_FIRE",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "POSITION_OFFSET_Y": 90,
+          "NAME": "SwordFireTip",
+          "EFFECT_TYPE": 9,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "SwordFireTip",
+          "POSITION_OFFSET_Y": 120,
+          "POSITION_OFFSET_X": 30,
+          "EFFECT_TYPE": 9,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131648
+      }
+    },
+    "EffectSet_DEBUFF_WOUND": {
+      "raw": {
+        "NAME": "EffectSet_DEBUFF_WOUND",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "BONE_NAME": "_HEAD_BONE",
+          "NAME": "Emoticon_State_Abnormality_Bleeding",
+          "POSITION_OFFSET_Y": 100,
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131587
+      }
+    },
+    "EffectSet_DEBUFF_STUN": {
+      "raw": {
+        "NAME": "EffectSet_DEBUFF_STUN",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "BONE_NAME": "_HEAD_BONE",
+          "NAME": "UnitStunB",
+          "POSITION_OFFSET_Y": 30,
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131995
+      }
+    }
+  },
+  "damageEffects": {}
+}

@@ -1,0 +1,542 @@
+{
+  "schema": "elsword.rf-passive-attributes-source.v20",
+  "targetClientMeasured": false,
+  "targetGoldenTraces": 0,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": 398092
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "bytes": 3548949
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+      "bytes": 678883
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "bytes": 285520
+    }
+  ],
+  "targetPassives": [
+    {
+      "id": 24400,
+      "prototype": 0,
+      "instruction": 22437,
+      "fields": {
+        "m_wstrMainDesc": "Increase both Physical and Magical attacks.",
+        "m_EffectiveDesc": {
+          "1": "Physical and Magic Attack Power Increase: +300",
+          "2": "Physical and Magic Attack Power Increase: +400",
+          "3": "Physical and Magic Attack Power Increase: +500",
+          "4": "Physical and Magic Attack Power Increase: +1000"
+        },
+        "m_Stat": {
+          "m_AtkPhysic": {
+            "1": 300,
+            "2": 400,
+            "3": 500,
+            "4": 1000
+          },
+          "m_AtkMagic": {
+            "1": 300,
+            "2": 400,
+            "3": 500,
+            "4": 1000
+          }
+        }
+      }
+    },
+    {
+      "id": 24401,
+      "prototype": 0,
+      "instruction": 22462,
+      "fields": {
+        "m_wstrMainDesc": "Converts all Nasod Arm attacks to Magical damage and gives additional attack power.",
+        "m_EffectiveDesc": {
+          "1": "Additional Attack Power: 15%",
+          "2": "Additional Attack Power: 20%",
+          "3": "Additional Attack Power: 25%",
+          "4": "Extra Attack Power: 30%"
+        },
+        "SA_DAMAGE_REL": {
+          "1": 1.15,
+          "2": 1.2,
+          "3": 1.25,
+          "4": 1.3
+        },
+        "SA_DAMAGE_TYPE_CHANGE": {
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "SA_ATK_MAGIC_REL": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      }
+    },
+    {
+      "id": 24402,
+      "prototype": 0,
+      "instruction": 22486,
+      "fields": {
+        "m_wstrMainDesc": "Chance for additional explosions when attacking with the Nasod Arm and adds\na set number of critical hits with every attack.",
+        "m_EffectiveDesc": {
+          "1": "Activation Chance: 6%\nExplosion Attack (Magical): 239%\nNext 3 Attacks will be Critical hits\nCritical Damage Increase 5%\n- Duration: 6 sec.",
+          "2": "Activation Chance: 8%\nExplosion Attack (Magical): 239%\nNext 5 Attacks will be Critical hits\nCritical Damage Increase 7.5%\n- Duration: 6 sec.",
+          "3": "Activation Chance: 10%\nExplosion Attack (Magical): 239%\nNext 7 Attacks will be Critical hits\nCritical Damage Increase 10%\n- Duration: 6 sec."
+        },
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.1
+        },
+        "BUFF_FACTOR": {
+          "1": 437
+        }
+      }
+    },
+    {
+      "id": 24403,
+      "prototype": 0,
+      "instruction": 22511,
+      "fields": {
+        "m_wstrMainDesc": "Reduce the knockdown rate of your attacks and deal more damage\nto enemies below 30% HP.",
+        "m_EffectiveDesc": {
+          "1": "Low HP target Attack Power Increase: 15%\nKnockdown Rate Decrease: 9%",
+          "2": "Low HP target Attack Power Increase: 30%\nKnockdown Rate Decrease: 18%",
+          "3": "Low HP target Attack Power Increase: 45%\nKnockdown Rate Decrease: 27%"
+        },
+        "SA_ATK_REL": {
+          "1": 1.15,
+          "2": 1.3,
+          "3": 1.45
+        },
+        "SA_ATK_PHYSIC_REL": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "SA_FORCE_DOWN_REL": {
+          "1": 0.91,
+          "2": 0.82,
+          "3": 0.73
+        }
+      }
+    },
+    {
+      "id": 24404,
+      "prototype": 0,
+      "instruction": 22535,
+      "fields": {
+        "m_wstrMainDesc": "Increases Damage Reduction.",
+        "m_EffectiveDesc": {
+          "1": "Damage Reduction: 8%\nMP Gain increased upon receiving attack: 5%\nAwakening Recharge speed increased upon receiving attack: 3%",
+          "2": "Damage Reduction: 16%\nMP Gain increased upon receiving attack: 7.5%\nAwakening Recharge speed increased upon receiving attack: 6%",
+          "3": "Damage Reduction: 24%\nMP Gain increased upon receiving attack: 10%\nAwakening Recharge speed increased upon receiving attack: 9%"
+        },
+        "SA_DAMAGED_REL": {
+          "1": 0.92,
+          "2": 0.84,
+          "3": 0.76
+        },
+        "SA_MP_GAIN_GET_HIT_REL": {
+          "1": 0.05,
+          "2": 0.075,
+          "3": 0.1
+        },
+        "SA_SOUL_ABS": {
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.09
+        }
+      }
+    },
+    {
+      "id": 24405,
+      "prototype": 0,
+      "instruction": 22560,
+      "fields": {
+        "m_wstrMainDesc": "Able to Re-Awaken yourself while in Awakening, consuming 1 Awakening bead\nupon use. Re-Awakening recovers the core to maximum charge.",
+        "m_EffectiveDesc": {
+          "1": "Magic Power Increase: 2.5%\nAwakening Recharge Speed Increase: 4%\nAwakening Duration Decrease: -30%",
+          "2": "Magic Power Increase: 5%\nAwakening Recharge Speed Increase: 8%\nAwakening Duration Decrease: -30%",
+          "3": "Magic Power Increase: 7.5%\nAwakening Recharge Speed Increase: 12%\nAwakening Duration Decrease: -30%"
+        },
+        "SA_ATK_MAGIC_REL": {
+          "1": 1.025,
+          "2": 1.05,
+          "3": 1.075
+        },
+        "SA_SOUL_GAIN_GET_HIT_REL": {
+          "1": 1.04,
+          "2": 1.08,
+          "3": 1.12
+        },
+        "SA_SOUL_GAIN_ON_HIT_REL": {
+          "1": 1.04,
+          "2": 1.08,
+          "3": 1.12
+        },
+        "SA_EFFECTIVE_TIME": {
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.7
+        }
+      }
+    }
+  ],
+  "factor437": {
+    "prototype": 0,
+    "instruction": 27464,
+    "raw": {
+      "BUFF_TEMPLET_ID": 408,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 16,
+          "2": 17
+        },
+        "BBT_CHANGE_CRITICAL_RATE": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7,
+          "SWAP_VALUE": {
+            "1": 100,
+            "2": 100,
+            "3": 100,
+            "4": 100,
+            "5": 100,
+            "6": 100,
+            "7": 100,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100,
+            "12": 100,
+            "13": 100,
+            "14": 100,
+            "15": 100,
+            "16": 100,
+            "17": 100,
+            "18": 100,
+            "19": 100,
+            "20": 100,
+            "21": 100,
+            "22": 100,
+            "23": 100,
+            "24": 100,
+            "25": 100,
+            "26": 100,
+            "27": 100,
+            "28": 100,
+            "29": 100,
+            "30": 100
+          }
+        },
+        "BBT_CHANGE_CRITICAL_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.05,
+            "2": 1.075,
+            "3": 1.1,
+            "4": 1.1,
+            "5": 1.1,
+            "6": 1.1,
+            "7": 1.1,
+            "8": 1.1,
+            "9": 1.1,
+            "10": 1.1,
+            "11": 1.1,
+            "12": 1.1,
+            "13": 1.1,
+            "14": 1.1,
+            "15": 1.1,
+            "16": 1.1,
+            "17": 1.1,
+            "18": 1.1,
+            "19": 1.1,
+            "20": 1.1,
+            "21": 1.1,
+            "22": 1.1,
+            "23": 1.1,
+            "24": 1.1,
+            "25": 1.1,
+            "26": 1.1,
+            "27": 1.1,
+            "28": 1.1,
+            "29": 1.1,
+            "30": 1.1
+          }
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1,
+          "2": 2
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 6,
+            "2": 6,
+            "3": 6,
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 6,
+            "8": 6,
+            "9": 6,
+            "10": 6,
+            "11": 6,
+            "12": 6,
+            "13": 6,
+            "14": 6,
+            "15": 6,
+            "16": 6,
+            "17": 6,
+            "18": 6,
+            "19": 6,
+            "20": 6,
+            "21": 6,
+            "22": 6,
+            "23": 6,
+            "24": 6,
+            "25": 6,
+            "26": 6,
+            "27": 6,
+            "28": 6,
+            "29": 6,
+            "30": 6
+          }
+        },
+        "BFT_HIT_COUNT": {
+          "BUFF_USE_COUNT_TYPE": 0,
+          "COUNT": {
+            "1": 3,
+            "2": 5,
+            "3": 7,
+            "4": 7,
+            "5": 7,
+            "6": 7,
+            "7": 7,
+            "8": 7,
+            "9": 7,
+            "10": 7,
+            "11": 7,
+            "12": 7,
+            "13": 7,
+            "14": 7,
+            "15": 7,
+            "16": 7,
+            "17": 7,
+            "18": 7,
+            "19": 7,
+            "20": 7,
+            "21": 7,
+            "22": 7,
+            "23": 7,
+            "24": 7,
+            "25": 7,
+            "26": 7,
+            "27": 7,
+            "28": 7,
+            "29": 7,
+            "30": 7
+          }
+        }
+      }
+    }
+  },
+  "template408": {
+    "prototype": 0,
+    "instruction": 25318,
+    "raw": {
+      "ACCUMULATION_LIMIT": 1,
+      "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_Vital_Point_Stab",
+      "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+      "BUFF_TEMPLET_ID": 408,
+      "IS_WORLD_BUFF": 0,
+      "IS_DEBUF": 0,
+      "REGIST_TYPE": 0,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 16,
+          "2": 17
+        },
+        "BBT_CHANGE_CRITICAL_RATE": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7
+        },
+        "BBT_CHANGE_CRITICAL_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1,
+          "2": 2
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1
+        },
+        "BFT_HIT_COUNT": {
+          "BUFF_USE_COUNT_TYPE": 0
+        }
+      },
+      "BUFF_NAME": {
+        "$symbol": "STR_ID_31205",
+        "$unsupported": "native/global value not resolved"
+      },
+      "BUFF_DESC": {
+        "$symbol": "STR_ID_20643",
+        "$unsupported": "native/global value not resolved"
+      }
+    }
+  },
+  "referenceConsumers": [
+    {
+      "path": "./.cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "ranges": [
+        {
+          "start": 9686,
+          "end": 9692,
+          "rawRangeSha256": "d79ddf078f52986d53143d1adc820e0bef72524e6843f842e0e2d610d7b97425"
+        },
+        {
+          "start": 9706,
+          "end": 9718,
+          "rawRangeSha256": "95f2a7034bc394f893bc4b5769477047e8d6853cc59f8f58ce846ef22fc19193"
+        },
+        {
+          "start": 9738,
+          "end": 9756,
+          "rawRangeSha256": "60126a3e82ec6d4c73c092fcbdc2fa667e48c698b6509277837acfd2eb418860"
+        },
+        {
+          "start": 9795,
+          "end": 9807,
+          "rawRangeSha256": "c901413b3ef5b21d7e7030f798d83af9a1dd82f14e04516f2321f5889aa574ba"
+        },
+        {
+          "start": 9826,
+          "end": 9839,
+          "rawRangeSha256": "2d08e0c51c75142a35ddd7df50477e5b23f4a2382972feadb6801b393f10cca8"
+        },
+        {
+          "start": 12848,
+          "end": 12850,
+          "rawRangeSha256": "f0f95d8f3bb5b5a010789798e7673bb3b7814afc133c1e5c8499dd74394cef0a"
+        },
+        {
+          "start": 15714,
+          "end": 15718,
+          "rawRangeSha256": "9738fd1479b307a09813f301d92ec44394eb6d85bdd2de98b1a6ac2531d62afd"
+        }
+      ]
+    },
+    {
+      "path": "./.cache/native-skills-source/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "ranges": [
+        {
+          "start": 1042,
+          "end": 1085,
+          "rawRangeSha256": "6ef5d100a46ebf51c45f064044750bc03ae3a8777e58a8ae03cbd39f3279c587"
+        }
+      ]
+    },
+    {
+      "path": "./.cache/native-skills-source/X2Lib/X2BuffTemplet.h",
+      "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+      "ranges": [
+        {
+          "start": 893,
+          "end": 945,
+          "rawRangeSha256": "2456914b4ed703fe65e6630300d3f40b5f049650b51453af8284fa29957aaae6"
+        }
+      ]
+    },
+    {
+      "path": "./.cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "ranges": [
+        {
+          "start": 2328,
+          "end": 2342,
+          "rawRangeSha256": "a4cca4d8cd6ce3b7b62a7bd6fb30acd83d68909a6bc67a843d3f23cea27bde04"
+        }
+      ]
+    }
+  ],
+  "implementedCandidates": {
+    "24405Magic": "target descriptor/multiplier after fixed-stat additions; matching target consumer/order missing",
+    "24404ReceivedMp": "target descriptor +10%; equal-team source PvP base3 and per-packet original-frame guard candidate",
+    "24404ReceivedSoul": "target descriptor SA_SOUL_ABS +.09; adds to24405/guild increments before equipment option",
+    "24402CriticalSelfBuff": "target BF437+408 declarations; user-confirmed proc-to-self trigger; original target activation callback/timing unavailable"
+  },
+  "equipmentPreset": {
+    "actionOptionBonus": 0.4,
+    "moveOptionBonus": 0.23,
+    "jumpOptionBonus": 0.23,
+    "damageReduction": 0.3,
+    "awakeningChargeBonus": 0.5,
+    "evidence": "explicit project rule"
+  },
+  "notChanged": [
+    "native v11 modules",
+    "original client/upstream",
+    "full original final-damage formula",
+    "unequal-team/adaptive party advantage"
+  ],
+  "checks": {
+    "actualKLFieldsReparsed": true,
+    "noSourceExpectedGeneratedFromSimulation": true,
+    "nativeRecompiled": false
+  }
+}

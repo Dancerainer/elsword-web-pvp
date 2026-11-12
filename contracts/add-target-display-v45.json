@@ -1,0 +1,858 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 display declarations + explicit finite Web retained-record upper bound",
+  "sources": {
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    }
+  },
+  "effectSets": {
+    "EffectSet_Countdown_Bomb_Trace": {
+      "raw": {
+        "NAME": "EffectSet_Countdown_Bomb_Trace",
+        "DELETE_SHAKE_COUNT": 10,
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "NAME": "DamageEffect_AMM_Countdown_Bomb_Explosion",
+          "START_TIME": 3,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "ADD_Countdown_Bomb03",
+          "START_TIME": 0.01,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT2": {
+          "NAME": "ADD_Countdown_Bomb02",
+          "START_TIME": 1,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT3": {
+          "NAME": "ADD_Countdown_Bomb01",
+          "START_TIME": 2,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT4": {
+          "NAME": "ADD_Countdown_Bomb03_D",
+          "START_TIME": 0.01,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT5": {
+          "NAME": "ADD_Countdown_Bomb02_D",
+          "START_TIME": 1,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT6": {
+          "NAME": "ADD_Countdown_Bomb01_D",
+          "START_TIME": 2,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 40456
+      }
+    },
+    "EffectSet_Countdown_Bomb_Trace_Mutation": {
+      "raw": {
+        "NAME": "EffectSet_Countdown_Bomb_Trace_Mutation",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "NAME": "DamageEffect_AMM_Countdown_Bomb_Explosion_Mutation",
+          "START_TIME": 3,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "ADD_Countdown_Bomb03",
+          "START_TIME": 0.01,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT2": {
+          "NAME": "ADD_Countdown_Bomb02",
+          "START_TIME": 1,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT3": {
+          "NAME": "ADD_Countdown_Bomb01",
+          "START_TIME": 2,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT4": {
+          "NAME": "ADD_Countdown_Bomb03_D",
+          "START_TIME": 0.01,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT5": {
+          "NAME": "ADD_Countdown_Bomb02_D",
+          "START_TIME": 1,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT6": {
+          "NAME": "ADD_Countdown_Bomb01_D",
+          "START_TIME": 2,
+          "BONE_NAME": "_HEAD_BONE",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 40513
+      }
+    }
+  },
+  "templates": {
+    "ADD_Countdown_Bomb03": {
+      "name": "ADD_Countdown_Bomb03",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 211026,
+        "line": 5778
+      },
+      "declarationSha256": "e89e8c3f2f5fd0901f67a816c5313e5ac9251654e23a9fab076ac6a98213e52d"
+    },
+    "ADD_Countdown_Bomb02": {
+      "name": "ADD_Countdown_Bomb02",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 209446,
+        "line": 5728
+      },
+      "declarationSha256": "89c34be26b8b6dfbadc138eb4e673e3d02fab2ba906b1abc7e831b8256741abd"
+    },
+    "ADD_Countdown_Bomb01": {
+      "name": "ADD_Countdown_Bomb01",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 207866,
+        "line": 5678
+      },
+      "declarationSha256": "e743213e31889b89bf8ab315f07038f402f020a889f77275e962933f098bc2d7"
+    },
+    "ADD_Countdown_Bomb03_D": {
+      "name": "ADD_Countdown_Bomb03_D",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 211814,
+        "line": 5803
+      },
+      "declarationSha256": "ae35fcd2b900048ec610897ece341f2c6a8b62fe53e6bb18005ede1ab7ce1930"
+    },
+    "ADD_Countdown_Bomb02_D": {
+      "name": "ADD_Countdown_Bomb02_D",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 210234,
+        "line": 5753
+      },
+      "declarationSha256": "b42e7aec2fecfd78be3b0fcfeda123d82486ae121a803d6693a68a0592d95749"
+    },
+    "ADD_Countdown_Bomb01_D": {
+      "name": "ADD_Countdown_Bomb01_D",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.6,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "TriggerTime": 1,
+        "DrawCount": 2,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ADD_Countdown_Bomb01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1,
+            0.5,
+            0.5,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            170,
+            170,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            160,
+            160,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            150,
+            150,
+            1
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 208654,
+        "line": 5703
+      },
+      "declarationSha256": "c695c27c3e4006eabbae7e4d7b076561b1493ac57a756605e06d59948656b2c6"
+    }
+  },
+  "consumers": {
+    "c4": "Exact MM29211 / originalTrace set EFFECT1..6 / _HEAD_BONE TRACE1: preserve traceActorId; sample actual target each tick.",
+    "c4Lifetime": "Retained combat record expires at TriggerTime + Lifetime. Renderer still uses original TriggerCount1 particle lifetime; this upper bound is not claimed as original deletion time.",
+    "drone": "Existing sourceAddDroneMarkVisual records survive no-damage cleanup; every source mark samples its actual target Bip01 and expires with its original mark duration.",
+    "death": "C4 does not retire merely because target HP reaches0 when the original TRACE_UNIT_DIE_DELETE flag is false."
+  },
+  "tests": [
+    "tests/combat/add-c4-display-v45.test.mjs",
+    "tests/combat/add-drone-mark-lifetime-v45.test.mjs"
+  ]
+}

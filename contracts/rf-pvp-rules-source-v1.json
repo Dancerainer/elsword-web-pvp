@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "contractId": "rf-pvp-rules-source-v1",
+  "targetClientMeasured": false,
+  "targetVersion": "NA-2016-V6.0420.5-resources",
+  "scope": "Resource declarations + fixed V5 source consumers + independently frozen server reference snapshot. No 1:1 runtime claim.",
+  "targetSources": [
+    {
+      "path": "asset_work\\decoded\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "evidence": "2016 static KL declaration; Lua not executed"
+    },
+    {
+      "path": "asset_work\\decoded\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+      "evidence": "2016 static KL declaration; Lua not executed"
+    },
+    {
+      "path": "asset_work\\decoded\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "evidence": "2016 static KL declaration; Lua not executed"
+    },
+    {
+      "path": "asset_work\\decoded\\data\\data040.kom\\Sander_Garpai_Rock_Pvpmap_Linemap.lua",
+      "sha256": "dc51d7927c168a57e6220796b6c73cc90104abdcb39723c9c4d24b7dd7c57d8a",
+      "evidence": "2016 static KL declaration; Lua not executed"
+    }
+  ],
+  "enumContract": {
+    "path": "contracts/rf-buff-bar-source-v1.json",
+    "enumSource": {
+      "name": "Enum.lua",
+      "rawPath": "raw/data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "resolvedRevengeIds": {
+      "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_1": 130,
+      "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_3": 132,
+      "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_2": 131
+    },
+    "note": "Revenge template IDs resolved from target Enum.lua by independently generated buff contract"
+  },
+  "v5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "remote": "reference-v5",
+    "files": [
+      {
+        "path": "X2Lib/X2PVPGameTeamDeath.cpp",
+        "sha256": "5402e65488db0165d0f81010ffc85633c9e54c04d7fdeab5f9680267ced4c40f",
+        "bytes": 14248,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2PVPGameTeamDeath.cpp",
+        "gitBlob": "2124b839da730328242ffceac09f2570c54403a1"
+      },
+      {
+        "path": "X2Lib/X2PVPGame.cpp",
+        "sha256": "f9657c7d742bc6cfc114bf7579ec1029519e224414ea97461e2ef46bc12889ec",
+        "bytes": 30895,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2PVPGame.cpp",
+        "gitBlob": "9bbc31d70db9cffe411727bc03ee2361e870efb3"
+      },
+      {
+        "path": "X2Lib/X2PVPGameTeam.cpp",
+        "sha256": "9aced11c08ce528cd0a76a41111f3373a526ab0c919fee687f8be5f6c7a75696",
+        "bytes": 3770,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2PVPGameTeam.cpp",
+        "gitBlob": "a0a4f6bba3624ba9b6be66d94dc12ca4f0cec842"
+      },
+      {
+        "path": "X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "bytes": 1323547,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+        "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd"
+      },
+      {
+        "path": "X2Lib/X2Define.h",
+        "sha256": "f757a93843e12f29adbdcee65266105e77f2532ca3a337bbf9d7c51563b36476",
+        "bytes": 107509,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Define.h",
+        "gitBlob": "13d53fbed006876e17e3ac20f7d75ff03f698d87"
+      },
+      {
+        "path": "X2Lib/X2PVPRoom.cpp",
+        "sha256": "ee206676e0af9f79f16c79d933d6214f7bff313a42df9eced53bbbf57a1c2b14",
+        "bytes": 8591,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2PVPRoom.cpp",
+        "gitBlob": "4b2e3f6d8c7badb2875e618992015a5e1391b3a9"
+      },
+      {
+        "path": "X2Lib/X2StatePVPGame.cpp",
+        "sha256": "d2d4aad69a05df7bacbce2f8ce809802346dc5d460c514a1316bfb255e5e8722",
+        "bytes": 94075,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2StatePVPGame.cpp",
+        "gitBlob": "b53054220f7d69206dae42ef6036b3954a700d62"
+      },
+      {
+        "path": "X2Lib/X2GameUnit.cpp",
+        "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+        "bytes": 521479,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+        "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d"
+      },
+      {
+        "path": "X2Lib/X2Game.cpp",
+        "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+        "bytes": 618989,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Game.cpp",
+        "gitBlob": "a513f2429514e858b02b5d41643c498b1edb117f"
+      },
+      {
+        "path": "X2Lib/X2GURaven.cpp",
+        "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "bytes": 836216,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+        "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf"
+      },
+      {
+        "path": "KncWX2Server/CenterServer/PvPRoom.cpp",
+        "sha256": "e4fd66a962f31c537696c0595d17b570d76b25ac3a4b038394f30b3e5e0f472d",
+        "bytes": 198881,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/CenterServer/PvPRoom.cpp",
+        "gitBlob": "a7f7cfa743002c626bd38c3edf0e9b3e9db9d1b0"
+      },
+      {
+        "path": "KncWX2Server/CenterServer/PvPRoom.h",
+        "sha256": "c5988fbaf0b1fbd9b58a0c145214ed1cd1c34fa573c46ed1ecb1ad88eb965d96",
+        "bytes": 10710,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/CenterServer/PvPRoom.h",
+        "gitBlob": "3bf36d583e162373cdf739eeb0f91b59d90d413f"
+      },
+      {
+        "path": "KncWX2Server/CenterServer/ResultProcess.cpp",
+        "sha256": "50596dfe8c6ab90897596618760b4154a18995743ff03bbbffaa584aa0d09c11",
+        "bytes": 126626,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/CenterServer/ResultProcess.cpp",
+        "gitBlob": "242c49277d80593352266c5620cdf612739ae75f"
+      },
+      {
+        "path": "KncWX2Server/CenterServer/RoomUserManager.cpp",
+        "sha256": "a6cc1cb14eb83102f3aae5e9cf49c52ee7d6fb09c300c0957092c5a2a93df4fd",
+        "bytes": 207478,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/CenterServer/RoomUserManager.cpp",
+        "gitBlob": "3d0159cf48773109a1cdb0c1948b0fd0a57dd1d3"
+      },
+      {
+        "path": "KncWX2Server/ServerResource/PvpMatchData.lua",
+        "sha256": "7a295a5c110f7479c9dc402f7e9c1001b46a248cf952c333559bc1f7c77a4187",
+        "bytes": 4038,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/ServerResource/PvpMatchData.lua",
+        "gitBlob": "6fbdaec340648131fdaa09bfc8e3af7fd89a4a70"
+      },
+      {
+        "path": "KncWX2Server/Common/X2Data/XSLRoom.h",
+        "sha256": "8562a2b95ca96f120839e53903ef4e79b04bea328f771fe2feef5bda209f97e5",
+        "bytes": 3335,
+        "repositoryPath": "JP_TW_EU_CN_US/Trunk/KncWX2Server/Common/X2Data/XSLRoom.h",
+        "gitBlob": "73b7295602cd2e480cc26e1610c8343ab696f7be"
+      }
+    ],
+    "caution": "Pinned source reconstruction reference; not the target2016 executable runtime."
+  },
+  "serverReference": {
+    "snapshot": "asset_sources/upstream/server",
+    "dirtySnapshot": true,
+    "files": [
+      {
+        "path": "Elsword/ServerResource/PvpMatchData.lua",
+        "sha256": "011b5aeabca2889d401ec2241880937daa23cba32b0e191b784114db4a85ac96",
+        "bytes": 4836
+      },
+      {
+        "path": "Elsword/ServerResource/PvPDropTable.lua",
+        "sha256": "ab24e679ec3174a245165c79c7998180053a6756761bf270be1659beb6cf4a0d",
+        "bytes": 2494
+      }
+    ],
+    "caution": "Local edited deployment; Git HEAD alone does not identify deployed resource contents."
+  },
+  "map": {
+    "id": "sander-garpai-rock-pvp",
+    "teamStarts": [
+      {
+        "kind": "SetTeamStartPos",
+        "index": 0,
+        "teamFlag": false,
+        "position": [
+          2022.98,
+          2840,
+          0
+        ],
+        "facingRight": false,
+        "lineId": 6
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 1,
+        "teamFlag": false,
+        "position": [
+          1858.11,
+          2840,
+          0
+        ],
+        "facingRight": false,
+        "lineId": 6
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 2,
+        "teamFlag": false,
+        "position": [
+          1707.95,
+          2840,
+          0
+        ],
+        "facingRight": false,
+        "lineId": 6
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 3,
+        "teamFlag": false,
+        "position": [
+          1557.74,
+          2840,
+          0
+        ],
+        "facingRight": false,
+        "lineId": 6
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 4,
+        "teamFlag": true,
+        "position": [
+          -2082.55,
+          2840,
+          0
+        ],
+        "facingRight": true,
+        "lineId": 0
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 5,
+        "teamFlag": true,
+        "position": [
+          -1952.1,
+          2840,
+          0
+        ],
+        "facingRight": true,
+        "lineId": 0
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 6,
+        "teamFlag": true,
+        "position": [
+          -1831.57,
+          2840,
+          0
+        ],
+        "facingRight": true,
+        "lineId": 0
+      },
+      {
+        "kind": "SetTeamStartPos",
+        "index": 7,
+        "teamFlag": true,
+        "position": [
+          -1709.58,
+          2840,
+          0
+        ],
+        "facingRight": true,
+        "lineId": 0
+      }
+    ],
+    "evidence": "Target2016 SetTeamStartPos declaration plus referenced D3DXVECTOR3 literal. Same blue/red layout independently compared in reports/pvp-scene.json."
+  },
+  "match": {
+    "kind": "TEAM_DEATH_2_ON_2",
+    "selected": {
+      "scoreLimit": 4,
+      "duration": 420,
+      "evidence": "User requires first4; fixed V5 PvpMatchData.lua TEAM_DEATH_2_ON_2 agrees"
+    },
+    "v5": {
+      "scoreLimit": 4,
+      "duration": 420
+    },
+    "serverReference": {
+      "scoreLimit": 8,
+      "duration": 420
+    },
+    "ordinaryTeam2v2": {
+      "v5ScoreLimit": 2,
+      "duration": 300
+    },
+    "unusedRoomChoices": [
+      200,
+      500,
+      800,
+      1100
+    ]
+  },
+  "poses": {
+    "start": [
+      {
+        "state": "RSI_RRF_START",
+        "weight": 80,
+        "animationName": "RRF_Start",
+        "duration": 3.533333333333333,
+        "decodedKeysSha256": "1f38ab3cc0e6428eee9bf92cf205894dfb75376d842eaa45e19bd5f6c7f23712"
+      },
+      {
+        "state": "RSI_ROT_START",
+        "weight": 15,
+        "animationName": "OT_Start",
+        "duration": 3.7,
+        "decodedKeysSha256": "8768aa3e3b7426ae85e73a85a2bc687c74bdb99af2eebbcd9aa33fff0acf0b92"
+      },
+      {
+        "state": "RSI_START",
+        "weight": 5,
+        "animationName": "Start",
+        "duration": 2.9,
+        "decodedKeysSha256": "d32f23151fce3333ebe3cde54a32a51959b6f8c3d7c42cf580ca2cbf70655d52"
+      }
+    ],
+    "win": [
+      {
+        "state": "RSI_RRF_WIN",
+        "weight": 35,
+        "animationName": "RRF_Win",
+        "duration": 2.966666666666667,
+        "decodedKeysSha256": "7a862b75c5a38c75852599ac335b1f3affec8856ca73cf5684435cb5e878edec"
+      },
+      {
+        "state": "RSI_RRF_WIN2",
+        "weight": 35,
+        "animationName": "RRF_Win2",
+        "duration": 3.2666666666666666,
+        "decodedKeysSha256": "e2b1d3d8d65b1ad8cf0a51c2f9e33591a5b0b252c093e25fe73910a15079f631"
+      },
+      {
+        "state": "RSI_ROT_WIN",
+        "weight": 10,
+        "animationName": "OT_Win",
+        "duration": 2.3,
+        "decodedKeysSha256": "504e797738afcbc16c1675ec7e2194cb6495b4caa155a954c5f85b937d4cef51"
+      },
+      {
+        "state": "RSI_ROT_WIN2",
+        "weight": 10,
+        "animationName": "OT_Win2",
+        "duration": 2.8,
+        "decodedKeysSha256": "a6dc6f6756dc16e28a9be14bffb748c13cb9350eab3db67b54dffd05612a9ecd"
+      },
+      {
+        "state": "RSI_WIN",
+        "weight": 5,
+        "animationName": "Win",
+        "duration": 2.033333333333333,
+        "decodedKeysSha256": "e142af3a6c1f4e626109a9aece6c0d99fe018171bd9285c688ba6610d39a7698"
+      },
+      {
+        "state": "RSI_WIN2",
+        "weight": 5,
+        "animationName": "Win2",
+        "duration": 2.2,
+        "decodedKeysSha256": "c4882e66e0a660d95562fc5412345bd99fa92a6bf883c64b18b3c522761cf498"
+      }
+    ],
+    "lose": [
+      {
+        "state": "RSI_RRF_LOSE",
+        "weight": 35,
+        "animationName": "RRF_Lose",
+        "duration": 2.8,
+        "decodedKeysSha256": "f9499b85615895763601754275eb8b284d212d1ab8fbe800254e4bcb26f7347b"
+      },
+      {
+        "state": "RSI_RRF_LOSE2",
+        "weight": 35,
+        "animationName": "RRF_Lose2",
+        "duration": 4.266666666666667,
+        "decodedKeysSha256": "f17b81e9f8a1aa2012995e2ed05a370e1a4beaa8b73e8d2c46ab38b18e32e360"
+      },
+      {
+        "state": "RSI_ROT_LOSE",
+        "weight": 10,
+        "animationName": "OT_Lose",
+        "duration": 3.8333333333333335,
+        "decodedKeysSha256": "8064d0bcf3232482ecaaed47362110dea7c80c0fd8e03449a26ac69e632c8607"
+      },
+      {
+        "state": "RSI_ROT_LOSE2",
+        "weight": 10,
+        "animationName": "OT_Lose2",
+        "duration": 2.6,
+        "decodedKeysSha256": "993397934e71c2c74b55b25299c6dee5e8809eedb56af11916e4a50e167456d3"
+      },
+      {
+        "state": "RSI_LOSE",
+        "weight": 5,
+        "animationName": "LobbyLose",
+        "duration": 2.2333333333333334,
+        "decodedKeysSha256": "6abd4714f15e845fee47d49af5dfba26427bd2bbb9d68bc54a5a7429ea69160c"
+      },
+      {
+        "state": "RSI_LOSE2",
+        "weight": 5,
+        "animationName": "Lose",
+        "duration": 2,
+        "decodedKeysSha256": "eef4c9d63165c06c46b0455b649973959ce65a8c88cbf89dc875b8f83f46229a"
+      }
+    ],
+    "selection": "V5 weighted state list, rand%100 consumer; web seeded xorshift32 stream",
+    "introDuration": 4.5,
+    "intro": "Fixed V5 X2GUUser StartEventProcess waits EVENT_TIME4.5 then WAIT; StartEnd plays Fight.ogg and GameFight. Web concurrent presentation holds authored clip end until4.5. Derived RF camera/network synchronization and target native runtime not measured."
+  },
+  "respawn": {
+    "formula": "clamp(15+3*(ownScore-enemyScore),0,30)",
+    "evidence": "Server reference PvPDropTable.lua CALCULATE_REBIRTH_TIME; V5 PvPRoom calls CalculateRebirthTime. Ring adjustment unsupported.",
+    "position": "User customization: random connected live teammate; fallback to own authored team start when none is alive. Fixed V5 client instead uses random AddStartPos.",
+    "lock": {
+      "state": "RSI_START_INTRUDE",
+      "animationName": "RespawnLanding",
+      "duration": 1.3666666666666667,
+      "decodedKeysSha256": "d29b94cdf8296832b552a8bd5a07808ebe60200a4df279245baab9f5be9e55e9"
+    },
+    "invincibleSeconds": 5,
+    "whiteFlashInterval": 0.05,
+    "invincibleEvidence": "V5 X2Game RebirthUserUnit SetForceInvincible/SetShowInvincible(5); GUUser CommonFrameMove_Invincible toggles .05",
+    "deathReady": "V5 server waits for DIE_COMPLETE under SERV_PVP_REBIRTH_ADD_CONDITION. Web host exposes actor.deathComplete and must complete death before revival.",
+    "mp": "V5 PVP_SEASON2 ReInit: score lead >1 clears MP, lead1 halves MP, otherwise retains MP.",
+    "resourcesContract": "contracts/rf-pvp-resources-source-v3.json"
+  },
+  "revenge": {
+    "levels": [
+      {
+        "level": 1,
+        "templateId": 130,
+        "symbol": "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_1",
+        "attackMultiplier": 1.1,
+        "receivedDamageMultiplier": 0.9,
+        "receivedMpMultiplier": 1.1,
+        "accumulationLimit": 1
+      },
+      {
+        "level": 2,
+        "templateId": 131,
+        "symbol": "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_2",
+        "attackMultiplier": 1.2,
+        "receivedDamageMultiplier": 0.8,
+        "receivedMpMultiplier": 1.2,
+        "accumulationLimit": 1
+      },
+      {
+        "level": 3,
+        "templateId": 132,
+        "symbol": "BTI_BUFF_PVP_REVENGE_MODE_LEVEL_3",
+        "attackMultiplier": 1.3,
+        "receivedDamageMultiplier": 0.7,
+        "receivedMpMultiplier": 1.3,
+        "accumulationLimit": 1
+      }
+    ],
+    "iconKey": "Buff_Icon_PVP_Revenge",
+    "iconName": "DLG_UI_Common_Texture_Buff.tga",
+    "selection": "V5 server applies losing team level clamp(score deficit,0,3), replacing prior level; target 2016 factors determine multipliers."
+  },
+  "outnumbered": {
+    "hitMpBonusPerMissingPlayer": 3,
+    "receivedMpBonusPerMissingPlayer": 2,
+    "receivedMpBase": 3,
+    "evidence": "V5 GUUser DamageReact: (3+2*connected roster deficit)*increaseMpRate then charge-MP-hitted buff. X2GameUnit UpNowMpPerHitOthers: (HIT_ADD_MP+3*deficit)*fRel.",
+    "attackDamageBonus": false,
+    "indicator": "Synthetic web HUD buff; no native template ID or icon asserted.",
+    "caution": "Base3 is a V5 consumer literal, target2016 native runtime not measured; role refers to attack-hit MP and received-hit MP, not attack damage."
+  },
+  "victory": {
+    "slowScale": 0.2,
+    "slowDuration": 1.5,
+    "finishForceInvincible": 9999,
+    "evidence": "V5 X2PVPGameTeamDeath DetermineLastKill SlowFrame(.2,1.5) and all units SetForceInvincible(9999); web triggers on resolved victory, preserving real rule elapsed separately from combat scale.",
+    "priority": [
+      "greater team score",
+      "greater summed HP percentage; dead deathmatch player counts100%",
+      "lower integer average level",
+      "first team (red) on complete tie"
+    ],
+    "tieEvidence": "V5 ResultProcess DecidePVPWinTeam, std::map team iteration; XSLRoom.h red0/blue1. Target2016 runtime and simultaneous packet ordering not measured.",
+    "simultaneous": "Host adaptation: all hp0 from one combat step form one death batch before victory; then fixed V5 result priority.",
+    "disconnect": "User requirement overrides source early-draw special case: no connected player on one team gives other team victory."
+  },
+  "kda": {
+    "kill": "Final damaging attacker of enemy death",
+    "assist": "Host adaptation: greatest accumulated damage contributor in current life, counted only when different from final attacker",
+    "evidence": "V5 death packet separates killer and maxDamageKiller; result log labels max-damage count assist. No verified TTL window, so no invented original assist timeout.",
+    "zeroDeaths": "KDA=null; display may represent undefeated ratio as infinity; persist raw kills/deaths/assists."
+  },
+  "unsupported": [
+    "Target2016 original executable PvP/network trace",
+    "Native all-camera intro sequence",
+    "Original server max-damage attribution accumulation window",
+    "Original simultaneous packet resolution timing",
+    "Revival ring item",
+    "Additional characters and their pose declarations"
+  ]
+}

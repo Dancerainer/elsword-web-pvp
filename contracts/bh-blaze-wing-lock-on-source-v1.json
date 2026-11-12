@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "bh-blaze-wing-lock-on-v1",
+  "clientMeasured": false,
+  "sourceClass": "original target2016 declarations + bounded fixed-V5 reference adapter",
+  "skillId": 28017,
+  "damageName": "DamageEffect_SBH_Blaze_Wing_Sub",
+  "damageDeclaration": {
+    "raw": {
+      "DAMAGE_TIME": 99999,
+      "MAIN_EFFECT_NAME": "Mesh_Elesis_SBH_Blaze_Wing_Sub_Projectile",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "LOCK_ON_DATA": {
+        "CURVE_SPEED": 12,
+        "TIME_UNLOCK_FROM_START": 0.2,
+        "LOCK_ON_TYPE": 6,
+        "NOT_TARGET_PRE_LOCK_ON_TARGET": 1,
+        "DUNGEON_TARGET_RANGE_MIN_MAX": {
+          "1": 0,
+          "2": 1500
+        },
+        "PVP_TARGET_RANGE_MIN_MAX": {
+          "1": 0,
+          "2": 700
+        },
+        "Y_DIR_INIT": 1,
+        "LOCK_ON_RANGE_FROM_OWNER": {
+          "AT_PVP": 9999,
+          "AT_DUNGEON": 9999,
+          "AT_FIELD": 800
+        }
+      },
+      "DAMAGE_DATA": {
+        "PVP_RATE": 0.6,
+        "STOP_TIME_ATT": 0,
+        "CAMERA_CRASH_GAP": 20,
+        "TECH_POINT": 150,
+        "CAMERA_CRASH_TIME": 0.3,
+        "HIT_ADD_MP": 1.67,
+        "HIT_GAP": 0.3,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 7,
+        "ATTACK_TYPE": 1,
+        "APPLIED_SKILL_ID": 28017,
+        "DAMAGE": {
+          "MAGIC": 2.58
+        },
+        "CAN_REVENGE": 0,
+        "RE_ATTACK": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      }
+    },
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 136437
+    }
+  },
+  "templateDeclaration": {
+    "fields": {
+      "MeshName": "DummyAttackBox_50x50x50.X",
+      "LifeType": "LT_TIME",
+      "MeshType": "X_SKIN_MESH",
+      "BillBoardType": "BT_NONE",
+      "SourceBlendMode": "D3DBLEND_SRCALPHA",
+      "DestBlendMode": "D3DBLEND_DESTALPHA",
+      "Layer": 14.0,
+      "LifeTime": 3.5,
+      "DrawCount": 0.0,
+      "ZEnable": true
+    },
+    "events": [
+      {
+        "property": "AniName",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_LOOP"
+        }
+      },
+      {
+        "property": "Size",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "property": "DirSpeed",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": 2400.0
+      }
+    ],
+    "repeated": {},
+    "unsupported": [],
+    "name": "Mesh_Elesis_SBH_Blaze_Wing_Sub_Projectile",
+    "kind": "mesh",
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 2020284,
+      "line": 62652
+    },
+    "declarationSha256": "742b3d962779ef10f425df815c6c88e93eb7a171de5f66878f585b0082ece648",
+    "textures": {},
+    "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+    "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+    "animationMissingTickRate": false,
+    "animationClips": [
+      {
+        "name": "Normal",
+        "durationSeconds": 0.06666667014360428,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      }
+    ],
+    "animationRequiresUnconfirmedRate": false,
+    "initialSize": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "initialVelocity": null,
+    "initialDirSpeed": 2400.0,
+    "initialAnimation": {
+      "name": "Normal",
+      "playback": "XAP_LOOP"
+    },
+    "missingExplicitTickRate": false
+  },
+  "fixedSources": {
+    "X2Lib/X2DamageEffect.h": {
+      "sha256": "eb9034b22594cb80561bceae3b2d7312637e03aacef3050d4c04caa4f2cf0f60",
+      "bytes": 58169,
+      "sections": [
+        {
+          "firstLine": 49,
+          "lastLine": 64,
+          "sha256": "38fc25862343a0f4b901c2902b53561cf0fbf8396d5c2a5a51e4a6fc5a9cb2a2",
+          "meaning": "LOCK_ON_TYPE enum: LOT_NEARST_UID_VECTOR_IN_RANGE is 6"
+        }
+      ]
+    },
+    "X2Lib/X2DamageEffect.cpp": {
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245,
+      "sections": [
+        {
+          "firstLine": 2780,
+          "lastLine": 2807,
+          "sha256": "39ad84632f4d9cf2e6f7d862dbabd07e97b2de6e24fee19f404c2165fccf32e9",
+          "meaning": "Delayed unlock before LOT steering"
+        },
+        {
+          "firstLine": 3092,
+          "lastLine": 3299,
+          "sha256": "42c30e47b07bb72e6c7ad8991b721cb030a8fcb4a4afec3fb47fb35f1728309c",
+          "meaning": "LOT6 collision point, hit edge retarget, death retarget and missing target acquisition"
+        },
+        {
+          "firstLine": 6531,
+          "lastLine": 6545,
+          "sha256": "c44d09212a4ad8a95c071b7f0f48163283eb7781ca48bcd25eee0b0bbebdf991",
+          "meaning": "PvP range pair overrides constructor defaults; reconstructed reference helper"
+        },
+        {
+          "firstLine": 6625,
+          "lastLine": 6652,
+          "sha256": "f8f5614667e46bfbcaa4afab2543cdfa335df180425ff60e3396f79c3d54508f",
+          "meaning": "Y_DIR_INIT/owner range loading only; no matching consumer"
+        },
+        {
+          "firstLine": 6712,
+          "lastLine": 6803,
+          "sha256": "39c52e5ebe0ec3fc043e03a0017dd989ae21483917040bfc093cf3b4439cf405",
+          "meaning": "Existing compiled VectorLockOn algorithm"
+        },
+        {
+          "firstLine": 4562,
+          "lastLine": 4565,
+          "sha256": "fc6714151b361ddc2bcbd847c5060225efaefdf24c8bdab5acf838ce169edeec",
+          "meaning": "Accepted attack increments the effect hit counter"
+        }
+      ]
+    },
+    "X2Lib/X2Game.cpp": {
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "bytes": 618989,
+      "sections": [
+        {
+          "firstLine": 11993,
+          "lastLine": 12091,
+          "sha256": "4b32263561bd270dab15620baae629b1fdd0b750d3c023f221c68c56b6841173",
+          "meaning": "Strict nearest enemy selection and game-global previous-target exclusion lifecycle"
+        }
+      ]
+    },
+    "KTDXLIB/KTDGXMeshPlayer.cpp": {
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "bytes": 167669,
+      "sections": [
+        {
+          "firstLine": 1275,
+          "lastLine": 1280,
+          "sha256": "33eed98e336a316042363459820fdc46d4141b097fa7a4b6e4be6349419ccda3",
+          "meaning": "Manual direction initialized from original mesh angle"
+        },
+        {
+          "firstLine": 1795,
+          "lastLine": 1832,
+          "sha256": "d5c8919ecab4b69682f189dae51319e123d979e733176feade3afe2e8e6fa952",
+          "meaning": "Nonmanual and manual directional movement; no implicit normalization of curved movement"
+        }
+      ]
+    }
+  },
+  "consumers": {
+    "movement": "KTDGXMeshPlayer directional packet before DamageEffect steering",
+    "curve": "Existing nativeSkills.vectorLockOn WASM; no new JS steering approximation",
+    "targetRange": "Use original PVP_TARGET_RANGE_MIN_MAX {0,700}; strict endpoints, no source default substitution",
+    "history": "X2Game-global exclusion set. Add selected UID; clear only when exclusion-enabled search finds no eligible candidate. No per-cast or per-effect reset.",
+    "network": "Per-effect historySnapshot and selectionSerial expose decisions. Receiver ownership ordering is a separately validated host policy."
+  },
+  "unsupportedOriginalFields": [
+    "LOCK_ON_DATA.Y_DIR_INIT",
+    "LOCK_ON_DATA.LOCK_ON_RANGE_FROM_OWNER"
+  ],
+  "limits": [
+    "Pinned reference contains reconstructed range-loader code; target client trajectory unmeasured.",
+    "No NPC actor model is added; original NPC trap/checker/raid filters remain outside this PvP user-unit consumer.",
+    "Global history replication uses the project owner protocol, not the original native protocol."
+  ]
+}

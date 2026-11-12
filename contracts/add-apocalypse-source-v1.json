@@ -1,0 +1,778 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "source": {
+    "path": "asset_work\\raw\\data\\data037.kom\\SI_HA_APOCALYPSE.lua",
+    "sha256": "88829766340a21abb208a2edb2c81347e49e1ca38b61f7fc57e345ccea0f6eb9"
+  },
+  "tables": {
+    "INIT_SYSTEM": {
+      "UNIT_HEIGHT": 250,
+      "UNIT_SCALE": 1.33,
+      "UNIT_WIDTH": 150,
+      "UNIT_LAYER": 11
+    },
+    "INIT_COMPONENT": {
+      "SHADOW_FILE_NAME": "shadow.dds",
+      "MP_CHANGE_RATE": 1,
+      "MAX_HP": 40000,
+      "SMALL_HP_BAR_BLUE": "Small_HP_bar_Blue.TGA",
+      "SMALL_HP_BAR_RED": "Small_HP_bar_Red.TGA",
+      "MP_CHARGE_RATE": 130,
+      "HYPER_MODE_COUNT": 0,
+      "RAGE_COUNT_MAX": 30,
+      "DIE_FLY": 0,
+      "RAGE_TIME_MAX": 3,
+      "SHADOW_SIZE": 200,
+      "SMALL_HP_BAR_YELLOW": "Small_HP_bar_Yellow.TGA",
+      "MAX_HYPER_MODE_TIME": 30,
+      "EXCLAMATION_MARK_SEQ": "ExclamationMarkNPC",
+      "QUESTION_MARK_SEQ": "QuestionMarkNPC",
+      "DRAW_SMALL_MP_BAR": 1,
+      "HITTED_TYPE": 1,
+      "FALL_DOWN": 0,
+      "DAMAGE_DOWN": 0,
+      "IMMUNITY_TIME_STOP": 1,
+      "IMMUNITY_DAMAGE_DATA_STOP_TIME": 1
+    },
+    "INIT_STATE": {
+      "WAIT_STATE": "APOCALYPSE_WAIT",
+      "SMALL_DAMAGE_LAND_FRONT": "APOCALYPSE_DAMAGE",
+      "BIG_DAMAGE_LAND_FRONT": "APOCALYPSE_DAMAGE",
+      "SMALL_DAMAGE_LAND_BACK": "APOCALYPSE_DAMAGE",
+      "DAMAGE_REVENGE": "",
+      "DYING_SKY": "APOCALYPSE_DIE_ATTACK",
+      "START_STATE": "APOCALYPSE_START",
+      "DYING_LAND_BACK": "APOCALYPSE_DIE_ATTACK",
+      "BIG_DAMAGE_LAND_BACK": "APOCALYPSE_DAMAGE",
+      "COMMON_FRAME_FUNC": "APOCALYPSE_COMMON_FRAME_FUNC",
+      "DYING_LAND_FRONT": "APOCALYPSE_DIE_ATTACK",
+      "REVENGE_ATTACK": "",
+      "1": {
+        "STATE_NAME": "APOCALYPSE_START",
+        "LUA_STATE_START_FUNC": "APOCALYPSE_START_STATE_START"
+      },
+      "2": {
+        "STATE_NAME": "APOCALYPSE_WAIT",
+        "LUA_FRAME_MOVE_FUNC": "APOCALYPSE_WAIT_FRAME_MOVE",
+        "STATE_COOL_TIME": 2
+      },
+      "3": {
+        "STATE_NAME": "APOCALYPSE_DAMAGE"
+      },
+      "4": {
+        "STATE_NAME": "APOCALYPSE_ATTACK_A",
+        "LUA_STATE_END_FUNC": "APOCALYPSE_ATTACK_STATE_END",
+        "LUA_FRAME_MOVE_FUNC": "APOCALYPSE_ATTACK_A_FRAME_MOVE",
+        "STATE_COOL_TIME": 3
+      },
+      "5": {
+        "STATE_NAME": "APOCALYPSE_ATTACK_B",
+        "LUA_STATE_END_FUNC": "APOCALYPSE_ATTACK_STATE_END",
+        "LUA_FRAME_MOVE_FUNC": "APOCALYPSE_ATTACK_B_FRAME_MOVE",
+        "STATE_COOL_TIME": 7
+      },
+      "6": {
+        "STATE_NAME": "APOCALYPSE_ATTACK_C",
+        "LUA_STATE_END_FUNC": "APOCALYPSE_ATTACK_STATE_END",
+        "LUA_FRAME_MOVE_FUNC": "APOCALYPSE_ATTACK_C_FRAME_MOVE",
+        "STATE_COOL_TIME": 12
+      },
+      "7": {
+        "STATE_NAME": "APOCALYPSE_ATTACK_A_EMERGENCY",
+        "LUA_STATE_END_FUNC": "APOCALYPSE_ATTACK_STATE_END",
+        "LUA_FRAME_MOVE_FUNC": "APOCALYPSE_ATTACK_A_FRAME_MOVE",
+        "STATE_COOL_TIME": 3
+      },
+      "8": {
+        "STATE_NAME": "APOCALYPSE_FINISH_ATTACK",
+        "LUA_STATE_START_FUNC": "APOCALYPSE_DIE_ATTACK_STATE_START"
+      },
+      "9": {
+        "STATE_NAME": "APOCALYPSE_DIE_ATTACK"
+      }
+    },
+    "INIT_AI": {
+      "ALLY": {
+        "LOST_RANGE": 1400,
+        "FAR_LOST_RANGE": 1400
+      },
+      "TARGET": {
+        "TARGET_NEAR_RANGE": 1500,
+        "TARGET_LOST_RANGE": 2000,
+        "TARGET_SUCCESS_RATE": 100,
+        "PRESERVE_LAST_TARGET_RATE": 10,
+        "TARGET_INTERVAL": 1,
+        "TARGET_RANGE": 1500,
+        "ATTACK_TARGET_RATE": 0,
+        "TARGET_PRIORITY": 6
+      },
+      "PATROL_MOVE": {
+        "ONLY_THIS_LINE_GROUP": 0
+      },
+      "CHASE_MOVE": {
+        "UP_JUMP_RATE": 0,
+        "DOWN_DOWN_RATE": 0,
+        "WALK_INTERVAL": 0.2,
+        "JUMP_INTERVAL": 0,
+        "UP_DOWN_RATE": 0,
+        "MOVE_GAP": 300,
+        "DOWN_JUMP_RATE": 0,
+        "DEST_GAP": 300,
+        "DIR_CHANGE_INTERVAL": 0.7,
+        "FAR_WALK_RATE": 0,
+        "MOVE_SPLIT_RANGE": 300,
+        "NEAR_WALK_RATE": 100
+      }
+    },
+    "APOCALYPSE_START": {
+      "G_ACCEL": 0,
+      "ANIM_NAME": "Start",
+      "DOWN_ACCEL": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "IMMADIATE_PACKET_SEND": 1,
+      "INVINCIBLE": {
+        "1": 0,
+        "2": 3
+      },
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+          "2": 0.4,
+          "3": 0
+        },
+        "2": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 0.68,
+          "3": 0
+        },
+        "3": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 0.82,
+          "3": 0
+        },
+        "4": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 0.96,
+          "3": 0
+        },
+        "5": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 1.1,
+          "3": 0
+        },
+        "6": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 1.24,
+          "3": 0
+        },
+        "7": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+          "2": 1.47,
+          "3": 0
+        }
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT",
+          "1": 1
+        }
+      }
+    },
+    "APOCALYPSE_WAIT": {
+      "DOWN_ACCEL": 0,
+      "G_ACCEL": 0,
+      "ANIM_NAME": "Wait",
+      "PASSIVE_SPEED_X": 0,
+      "EVENT_INTERVAL_TIME0": 0.5,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 0,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_ATTACK_C",
+          "3": "CT_APOCALYPSE_ATTACK_C",
+          "1": 7
+        },
+        "2": {
+          "2": "APOCALYPSE_ATTACK_B",
+          "3": "CT_APOCALYPSE_ATTACK_B",
+          "1": 7
+        },
+        "3": {
+          "2": "APOCALYPSE_ATTACK_A",
+          "3": "CT_APOCALYPSE_ATTACK_A",
+          "1": 7
+        }
+      },
+      "CT_APOCALYPSE_ATTACK_A": {
+        "RATE": 100,
+        "DISTANCE_TO_TARGET_NEAR": 1500,
+        "EVENT_INTERVAL_ID": 0
+      },
+      "CT_APOCALYPSE_ATTACK_B": {
+        "RATE": 100,
+        "DISTANCE_TO_TARGET_NEAR": 1500,
+        "EVENT_INTERVAL_ID": 0
+      },
+      "CT_APOCALYPSE_ATTACK_C": {
+        "RATE": 100,
+        "DISTANCE_TO_TARGET_NEAR": 2500,
+        "EVENT_INTERVAL_ID": 0
+      }
+    },
+    "APOCALYPSE_ATTACK_A": {
+      "ANIM_SPEED": 1.3,
+      "ANIM_NAME": "Attack_A",
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_Attack01.ogg"
+      },
+      "VIEW_TARGET": 1,
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+          "2": 0,
+          "3": 0
+        }
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT",
+          "1": 1
+        }
+      }
+    },
+    "APOCALYPSE_ATTACK_B": {
+      "ANIM_SPEED": 1.4,
+      "ANIM_NAME": "Attack_B",
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_Attack02.ogg"
+      },
+      "VIEW_TARGET": 1,
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B",
+          "2": 0.4,
+          "3": 0
+        }
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT",
+          "1": 1
+        }
+      }
+    },
+    "APOCALYPSE_ATTACK_C": {
+      "ANIM_SPEED": 1.3,
+      "ANIM_NAME": "Attack_C",
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_Attack03.ogg"
+      },
+      "VIEW_TARGET": 1,
+      "EFFECT_SET_LIST_EX": {},
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT",
+          "1": 1
+        }
+      }
+    },
+    "APOCALYPSE_ATTACK_A_EMERGENCY": {
+      "ANIM_NAME": "Attack_A",
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_Attack01.ogg"
+      },
+      "VIEW_TARGET": 1,
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+          "2": 0,
+          "3": 0
+        }
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT",
+          "1": 1
+        }
+      }
+    },
+    "APOCALYPSE_FINISH_ATTACK": {
+      "ANIM_NAME": "Attack_F",
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "INVINCIBLE": {
+        "1": 0,
+        "2": 100
+      },
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "DYING_END": 1,
+      "VIEW_TARGET": 1,
+      "IMMADIATE_PACKET_SEND": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_DisAppear01.ogg"
+      },
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+          "2": 0,
+          "3": 3
+        },
+        "2": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 0.98,
+          "3": 0
+        },
+        "3": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.1,
+          "3": 0
+        },
+        "4": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.22,
+          "3": 0
+        },
+        "5": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.34,
+          "3": 0
+        },
+        "6": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.46,
+          "3": 0
+        },
+        "7": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.58,
+          "3": 0
+        },
+        "8": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.77,
+          "3": 0
+        },
+        "9": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.88,
+          "3": 0
+        },
+        "10": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.99,
+          "3": 0
+        },
+        "11": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 2.1,
+          "3": 0
+        }
+      }
+    },
+    "APOCALYPSE_DIE_ATTACK": {
+      "ANIM_NAME": "Attack_F",
+      "DYING_SPEED": 1,
+      "G_ACCEL": 0,
+      "DOWN_ACCEL": 0,
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "INVINCIBLE": {
+        "1": 0,
+        "2": 100
+      },
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "DYING_END": 1,
+      "VIEW_TARGET": 1,
+      "IMMADIATE_PACKET_SEND": 1,
+      "SOUND_PLAY0": {
+        "1": 0.01,
+        "2": "ADD_Apo_DisAppear01.ogg"
+      },
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+          "2": 0,
+          "3": 3
+        },
+        "2": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 0.98,
+          "3": 0
+        },
+        "3": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.1,
+          "3": 0
+        },
+        "4": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.22,
+          "3": 0
+        },
+        "5": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.34,
+          "3": 0
+        },
+        "6": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.46,
+          "3": 0
+        },
+        "7": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+          "2": 1.58,
+          "3": 0
+        },
+        "8": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.77,
+          "3": 0
+        },
+        "9": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.88,
+          "3": 0
+        },
+        "10": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 1.99,
+          "3": 0
+        },
+        "11": {
+          "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+          "2": 2.1,
+          "3": 0
+        }
+      }
+    },
+    "APOCALYPSE_DAMAGE": {
+      "EVENT_INTERVAL_TIME0": 1,
+      "ANIM_NAME": "Wait",
+      "G_ACCEL": 0,
+      "SPEED_Y": 0,
+      "DOWN_ACCEL": 0,
+      "ANIM_SPEED": 3,
+      "SPEED_X": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 1,
+      "LAND_CONNECT": 0,
+      "APPLY_ANIM_MOVE": 0,
+      "SUPER_ARMOR": 1,
+      "SUPER_ARMOR_NOT_RED": 1,
+      "CAN_PUSH_UNIT": 1,
+      "CAN_PASS_UNIT": 1,
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "APOCALYPSE_WAIT_IDLE",
+          "1": 1
+        }
+      }
+    }
+  },
+  "callbacks": [
+    {
+      "name": "WAIT_FRAME_MOVE",
+      "prototype": 0,
+      "params": 3,
+      "instructions": 83,
+      "instructionSha256": "5b555d714c71317fdb349138ead8ac17211848ffce31869197337e4ae99b022c",
+      "numericConstants": [
+        -333,
+        100,
+        50,
+        0.1,
+        1
+      ],
+      "literalCalls": [
+        "SetPositionForce",
+        "z",
+        "y",
+        "x",
+        "GetIsRight",
+        "GetPos",
+        "GetDirVector",
+        "GetOwnerGameUnit"
+      ]
+    },
+    {
+      "name": "ATTACK_B_FRAME_MOVE",
+      "prototype": 1,
+      "params": 3,
+      "instructions": 42,
+      "instructionSha256": "9cede198838fb3592b9bc5d47371ea28d382722c0e9a9c5fd78d682d1b1a0157",
+      "numericConstants": [
+        0.4,
+        1
+      ],
+      "literalCalls": [
+        "PlayEffectSet_LUA",
+        "GetGameType",
+        "GetEffectSet",
+        "AnimEventTimer_LUA",
+        "ApocalypseAttackFunction",
+        "ApocalypseFindTarget",
+        "GetTargetUnit"
+      ]
+    },
+    {
+      "name": "ATTACK_A_FRAME_MOVE",
+      "prototype": 2,
+      "params": 3,
+      "instructions": 69,
+      "instructionSha256": "6078a0e7786b2f4dbbb0beb827bdf9c67bb96080dd94c8e17d2a851b46e9f02d",
+      "numericConstants": [
+        1.4,
+        1
+      ],
+      "literalCalls": [
+        "ApocalypseAttackFunction",
+        "SetLocalRotateDegree",
+        "z",
+        "y",
+        "x",
+        "GetRotateDegree",
+        "GetVector_LUA",
+        "GetEffectSetInstance",
+        "PlayEffectSet_LUA",
+        "GetGameType",
+        "GetEffectSet",
+        "AnimEventTimer_LUA",
+        "ApocalypseFindTarget",
+        "GetTargetUnit"
+      ]
+    },
+    {
+      "name": "ATTACK_C_FRAME_MOVE",
+      "prototype": 3,
+      "params": 3,
+      "instructions": 69,
+      "instructionSha256": "6078a0e7786b2f4dbbb0beb827bdf9c67bb96080dd94c8e17d2a851b46e9f02d",
+      "numericConstants": [
+        1.8,
+        1
+      ],
+      "literalCalls": [
+        "ApocalypseAttackFunction",
+        "SetLocalRotateDegree",
+        "z",
+        "y",
+        "x",
+        "GetRotateDegree",
+        "GetVector_LUA",
+        "GetEffectSetInstance",
+        "PlayEffectSet_LUA",
+        "GetGameType",
+        "GetEffectSet",
+        "AnimEventTimer_LUA",
+        "ApocalypseFindTarget",
+        "GetTargetUnit"
+      ]
+    },
+    {
+      "name": "ATTACK_STATE_END",
+      "prototype": 4,
+      "params": 3,
+      "instructions": 16,
+      "instructionSha256": "6fcb85db4b9c72e4e86c0565fc9495a51857a835fa3f3a9fd0881ce0810287e9",
+      "numericConstants": [],
+      "literalCalls": [
+        "SetAddRotateDegree_LUA",
+        "D3DXVECTOR3",
+        "SetVector_LUA"
+      ]
+    },
+    {
+      "name": "DIE_ATTACK_STATE_START",
+      "prototype": 5,
+      "params": 3,
+      "instructions": 33,
+      "instructionSha256": "cd6fb7d5bf2ab32d5c4f69150423974b87e1dce480262e820b1e1bdb8174a6c3",
+      "numericConstants": [
+        150
+      ],
+      "literalCalls": [
+        "SetIsRight",
+        "SetPositionForce",
+        "x",
+        "GetIsRight",
+        "GetDirVector",
+        "GetPos",
+        "GetOwnerGameUnit"
+      ]
+    },
+    {
+      "name": "FindTarget",
+      "prototype": 6,
+      "params": 2,
+      "instructions": 18,
+      "instructionSha256": "bb735c1b6f29f87b4bcce9febf2f16d6b4c7cb80b21a7ec554c36a2724e3830b",
+      "numericConstants": [
+        1
+      ],
+      "literalCalls": [
+        "SetTargetUnit",
+        "GetNearestUnitPosByOwnerUnit",
+        "GetGameType"
+      ]
+    },
+    {
+      "name": "AttackFunction",
+      "prototype": 7,
+      "params": 3,
+      "instructions": 80,
+      "instructionSha256": "59d49789171c25d0118be51dbe9e15b2a88db71d4bb50ada7db63ef3aa951ecd",
+      "numericConstants": [
+        360
+      ],
+      "literalCalls": [
+        "SetVector_LUA",
+        "SetAddRotateDegree_LUA",
+        "GetVector_LUA",
+        "GetRotateDegree",
+        "GetDirVecToDegree",
+        "z",
+        "y",
+        "x",
+        "D3DXVECTOR3",
+        "GetPos"
+      ]
+    },
+    {
+      "name": "COMMON_FRAME_FUNC",
+      "prototype": 8,
+      "params": 3,
+      "instructions": 51,
+      "instructionSha256": "d5a04f2fbb3a73a3286777c832d417dc208735afd1819141f7920b790eb881be",
+      "numericConstants": [
+        20
+      ],
+      "literalCalls": [
+        "APOCALYPSE_ATTACK_A_EMERGENCY",
+        "StateChange_LUA",
+        "SetPositionForce",
+        "z",
+        "y",
+        "x",
+        "GetDirVector",
+        "GetPos",
+        "GetDyingStart",
+        "ResponseEmergency",
+        "GetOwnerGameUnit"
+      ]
+    },
+    {
+      "name": "START_STATE_START",
+      "prototype": 9,
+      "params": 3,
+      "instructions": 6,
+      "instructionSha256": "bc4bbfa8d722762806223edbff123bd72c405629ce7fa4f07e54ba62953d028e",
+      "numericConstants": [],
+      "literalCalls": [
+        "BFI_APOCALYPSE_EFFECT",
+        "BUFF_FACTOR_ID",
+        "SetBuffFactorToGameUnitByBuffFactorID_LUA"
+      ]
+    }
+  ],
+  "semantics": {
+    "wait": "owner +/- original line direction * -333; Y+100 right /+50 left; goal*.1+old*.9 each callback",
+    "findTarget": "nearest enemy from owner within700 in game type1; static prototype6",
+    "aim": "wrap target-relative Z angle delta then clamp +/-3 per callback; generic degree helper is an adapter",
+    "fire": "B:.4 aim before fire; A:1.4/C:1.8 aim after fire; PvP-specific set names from original nested TDUP constants",
+    "finish": "explicit FINISH state runs source ownerX+dirX*150*facing position callback; HP0 selects declared DYING_* DIE state",
+    "emergency": "original common callback owner.ResponseEmergency moves to owner+dir*20 and enters A_EMERGENCY",
+    "stats": "2016 skill29601/29604 description shares HP/Attack/Defence/Critical; Web uses frozen base attributes without owner buffs",
+    "startVisual": "Original callback9 grants BFI_APOCALYPSE_EFFECT443 -> template414, EMPTY behavior; bind Always displayer to original NPC bones until NPC removal"
+  },
+  "qualifiedAdapters": [
+    "generic NPC interval/condition arbitration is static adaptation, native NPC consumer not acquired",
+    "spawn at animation .01 and forward300 use fixed Add.cpp containing later reconstruction",
+    "manual/expiry/owner-death FINISH selection is Web adaptation; fixed reconstructed helper says DIE and conflicts with its comment",
+    "NPC stat copy and damage formula use target description plus existing fixed PvP/critical math; NPC-only modifiers unresolved",
+    "original GetDirVecToDegree uses Web pitch calculation; target executable not measured"
+  ],
+  "sourceVersionReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "file": "X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a"
+  }
+}

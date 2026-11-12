@@ -1,0 +1,257 @@
+{
+  "schema": "elsword.rf-command-resource-roots.v9",
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "effectSets": {
+    "EffectSet_RRF_DashJumpX": {
+      "raw": {
+        "NAME": "EffectSet_RRF_DashJumpX",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "RRF_DASH_JUMP_X",
+          "EFFECT_TYPE": 1
+        },
+        "EFFECT1": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Flare_Raven_RFF_DashJumpAttackX1_Burst01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT2": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Impact_Raven_RFF_DashJumpAttackX1_Burst01",
+          "EFFECT_TYPE": 8
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 126322
+      },
+      "runtimeBinding": "native .26 candidate callback owned by root"
+    },
+    "EffectSet_A_RF_XXX": {
+      "raw": {
+        "NAME": "EffectSet_A_RF_XXX",
+        "EFFECT0": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "NAME": "Raven_Hand_FireSM",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_RF_XXX",
+          "POSITION_OFFSET_Y": 100,
+          "POSITION_OFFSET_X": 150,
+          "START_TIME": 0.25,
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0.35,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 10954
+      },
+      "runtimeBinding": "resource-only; target owner callback unverified; do not dispatch"
+    }
+  },
+  "damageEffects": {
+    "RRF_DASH_JUMP_X": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RRF_DASHJUMP_X",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": 2.78,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 24,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.12,
+          "CLEAR_SCREEN_COLOR_A": 0.3,
+          "STOP_TIME_ATT": 0,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "RATE_MODIFIER": 0.4,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 1,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 23,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "DAMAGE": {
+            "MAGIC": 0.66
+          }
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ComboZ4aFire.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 215313
+      }
+    },
+    "DamageEffect_RF_XXX": {
+      "raw": {
+        "DAMAGE_TIME": 18,
+        "MAIN_EFFECT_NAME": "RAVEN_RF_XXX_ATTACK_BOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 2,
+          "LOCK_ON_TYPE": 4
+        },
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.15
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 750,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": -300,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 300,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01_D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EnchantHand_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EMK_BigBurst_P03",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_Big_Burst.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385135
+      }
+    }
+  },
+  "declarationSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  ],
+  "limits": [
+    "Source declaration extraction only; original client combat not executed.",
+    "EffectSet_A_RF_XXX is resource-only; no state-to-callback binding is inferred.",
+    "RRF_DASH_JUMP_X damage data and RRF_DASHJUMP_X visual/attackbox names are distinct original identifiers."
+  ]
+}

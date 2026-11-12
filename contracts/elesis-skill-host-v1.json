@@ -1,0 +1,1713 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 declarations + qualified fixed-reference consumers + explicitly listed static host adapters",
+  "nativeControlflowReference": "elesis-skill-reference-v1.json",
+  "implementation": "packages/combat-core/elesis-skills.mjs",
+  "sourceRule": "Target numeric tables, including contradictions with English description, remain authoritative unless an explicitly named description adapter resolves an otherwise absent unit/consumer. Fixed V5 includes 2026 reconstruction and cannot certify target2016 behavior. No client trace is supplied.",
+  "skills": [
+    {
+      "profession": "GM",
+      "skillId": 28026,
+      "sourceName": "#Cffcc00[Enhanced]#CX Spiral Blast",
+      "sourceRawSha256": "fceb0bb20a9217af09f0db3ddfbcd13e3e95f570659d747e7c5da0c15a33cdae",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 1.85,
+            "ATTACK_CANCEL_AFTER_EX": 1.9,
+            "DASH_CANCEL_AFTER": 1.85,
+            "WALK_CANCEL_AFTER": 1.9
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28217,
+      "sourceName": "#Cffcc00[Enhanced]#CX Dodge and Slash",
+      "sourceRawSha256": "bd205eac744abdb6c671111b818dcf548d33ca718f8101e9f597da73c9e684e4",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 20,
+      "cooldown": 3,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.45,
+            "DASH_CANCEL_AFTER": 0.45,
+            "WALK_CANCEL_AFTER": 0.45
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28027,
+      "sourceName": "#Cffcc00[Enhanced]#CX Wild Shock",
+      "sourceRawSha256": "54627f2c7e1effd910a112653fe42598d7c8e929a2e09c021e853185ab752b57",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_WILD_SHOCK",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28028,
+      "sourceName": "#Cffcc00[Enhanced]#CX Mega Buster",
+      "sourceRawSha256": "5d9dfc18518c836a218db5e5c0d15a1dd810894735fcdce76a5599f8763ceebf",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 20,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_MEGA_BURSTER",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28029,
+      "sourceName": "#Cffcc00[Enhanced]#CX Sonic Assault",
+      "sourceRawSha256": "1f0501c2e00eee914f48ef4326d619653f955f8eea1306ba7eabe4ba30c64d52",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28219,
+      "sourceName": "#Cffcc00[Enhanced]#CX Rushing Sword",
+      "sourceRawSha256": "810d0bc62bc5ffb5b9b1c05f864b3023cae0865a4d48e0f5428051921c6b4307",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 25,
+      "cooldown": 5,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_RUSHING_SWORD",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.266,
+            "ATTACK_CANCEL_AFTER_EX": 0.466,
+            "DASH_CANCEL_AFTER": 0.4,
+            "WALK_CANCEL_AFTER": 0.466
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_RUSHING_SWORD_2nd",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.266,
+            "ATTACK_CANCEL_AFTER_EX": 0.466,
+            "DASH_CANCEL_AFTER": 0.4,
+            "WALK_CANCEL_AFTER": 0.466
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_RUSHING_SWORD_3rd",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.266,
+            "ATTACK_CANCEL_AFTER_EX": 0.466,
+            "DASH_CANCEL_AFTER": 0.4,
+            "WALK_CANCEL_AFTER": 0.466
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28033,
+      "sourceName": "#Cffcc00[Enhanced]#CX\nSaber - Extinction",
+      "sourceRawSha256": "d1733c09062b73b49c42bebb68cb35f2aa19af6a94c8d8cf39f607f4b510e75a",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 14,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_EXTINCTION_START",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SSK_EXTINCTION_CHARGE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SSK_EXTINCTION_DEGREE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SSK_EXTINCTION_ATTACK",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28400,
+      "sourceName": "Knight's Destiny",
+      "sourceRawSha256": "b3fb2a7d4a392b1695f957111573967fbceb2d8191e3bff2b7e476987b4292a7",
+      "passive": true,
+      "maxLevel": 4,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "GM",
+      "skillId": 28030,
+      "sourceName": "#Cffcc00[Enhanced]#CX Unlimited Blade",
+      "sourceRawSha256": "6a7abe62ec4a653f41ed48a360a662fa52785810c710363478a5523240a78799",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 250,
+      "cooldown": 16,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_UNLIMITED_BLADE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28218,
+      "sourceName": "#Cffcc00[Enhanced]#CX Iron Body - Strong",
+      "sourceRawSha256": "15ec86b7d7af2781a6acb814c424741a5b2a8d1ae092c37b5a4dfb9de84ad880",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 120,
+      "cooldown": 17,
+      "states": [
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE_MEMO",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28036,
+      "sourceName": "#Cffcc00[Enhanced]#CX\nCritical Dive",
+      "sourceRawSha256": "b5ce14149efef124fc09f5c10d30735804dba50a236c303a1b53bb96db6212e9",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "ESI_SA_SGM_CRITICAL_DIVE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_SGM_CRITICAL_DIVE_HIT",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 1,
+            "SKILL_CANCEL_AFTER": 1.1,
+            "WALK_CANCEL_AFTER": 1.2
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28203,
+      "sourceName": "Power Break",
+      "sourceRawSha256": "aa93d4da823054ee47bd43707705bd73e29e07c575495cdf956d7aa36e6e76da",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "ESI_SI_A_SSK_POWER_BREAK",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.533,
+            "DASH_CANCEL_AFTER": 0.533,
+            "ATTACK_CANCEL_AFTER_EX": 0.566,
+            "WALK_CANCEL_AFTER": 0.566
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28204,
+      "sourceName": "Leap",
+      "sourceRawSha256": "2a2297ef8e9af8973755eed527c30f6bd2d0ddf4d0d2cea3ef1f5fab1144e9ed",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_LEAP_CRASH",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_LEAP_CRASH_JUMP",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_LEAP_CRASH_JUMP_LANDING",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28007,
+      "sourceName": "Sword of Judgement",
+      "sourceRawSha256": "7742c4acee91f5318783a62bf4d6fce62edaab374fb1499849a8ad72449c4ecb",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 21,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_FINAL",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28008,
+      "sourceName": "Sword of Victory",
+      "sourceRawSha256": "69180cbc269ce50707bcbb940a760263e1587545c663ce093a4cb884fd2a8719",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 22,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_VICTORIOUS_SWORD",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 1.8,
+            "SKILL_CANCEL_AFTER": 1.8,
+            "WALK_CANCEL_AFTER": 1.8,
+            "ATTACK_CANCEL_AFTER_EX": 1.8
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28205,
+      "sourceName": "Provoke",
+      "sourceRawSha256": "02a0fe6c6f385b21ec16040ca4249526388b1a5ca3e95f9fc19fba898ab7c98e",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_A_SGM_PROVOKE",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.813,
+            "DASH_CANCEL_AFTER": 0.766,
+            "WALK_CANCEL_AFTER": 0.813
+          }
+        },
+        {
+          "state": "ESI_A_SGM_PROVOKE_REVENGE",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 0.866,
+            "SKILL_CANCEL_AFTER": 0.945,
+            "WALK_CANCEL_AFTER": 1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28401,
+      "sourceName": "Initiate",
+      "sourceRawSha256": "e87f01be58eda316ac50c50b565d32b7f75c839e3c72c2e14e5680b0e64dca59",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "GM",
+      "skillId": 28402,
+      "sourceName": "Enhanced Agility",
+      "sourceRawSha256": "fec0958858606a644db07c2708770c99989a4c32858fb1379a603ba201d8fb85",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "GM",
+      "skillId": 28009,
+      "sourceName": "War Prelude",
+      "sourceRawSha256": "21d3b78f1457577c15cc62e1ba19af2d4225b4fdace1f2c36970b148a9fed335",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 150,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "ESI_SA_SGM_WAR_PRELUDE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28010,
+      "sourceName": "Juggernaut Buster",
+      "sourceRawSha256": "6fa5527da320e5255e9338d6a830164ca28bbe89413fa5eb90ece0763111f164",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "ESI_SA_SGM_JUGGERNAUT_BUSTER_START",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_LAST",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.821,
+            "DASH_CANCEL_AFTER": 0.821,
+            "WALK_CANCEL_AFTER": 0.966
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28206,
+      "sourceName": "Drastic Charge",
+      "sourceRawSha256": "032737526004d48212242c42593f218dd28b86250913db558478fcc20d284beb",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 20,
+      "cooldown": 4,
+      "states": [
+        {
+          "state": "ESI_A_SGM_DRASTIC_CHARGE_START",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_A_SGM_DRASTIC_CHARGE_LOOP",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_A_SGM_DRASTIC_CHARGE_END",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 0.716,
+            "SKILL_CANCEL_AFTER": 0.716,
+            "WALK_CANCEL_AFTER": 0.766
+          }
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28011,
+      "sourceName": "Sonic Blade",
+      "sourceRawSha256": "bea7ebc3cc2685d9568622338166664ff5210702132f60b4b4d35b1eaaf3e704",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "ESI_SA_SGM_SONIC_BLADE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "skillId": 28403,
+      "sourceName": "Waltz of the Sword",
+      "sourceRawSha256": "22678aab8393b1da0c5dd65792a2f51bdba895ec6a2bb171ef08b868d2629f61",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "GM",
+      "skillId": 28404,
+      "sourceName": "Skilled Knight",
+      "sourceRawSha256": "8ada1efe022a48c3650d0e254891aeb5fc36d40816fd8ab28a0fbd37107168a1",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "GM",
+      "skillId": 28603,
+      "sourceName": "#Cffcc00[Enhanced]#CX Sword of Relics",
+      "sourceRawSha256": "6f357a1900fcad9c3edd7b501af6a3563627f09e510ef9db74329c0b6ed4dbe1",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 180,
+      "states": [
+        {
+          "state": "ESI_HA_SGM_SWORD_OF_RELICS",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28026,
+      "sourceName": "#Cffcc00[Enhanced]#CX Spiral Blast",
+      "sourceRawSha256": "fceb0bb20a9217af09f0db3ddfbcd13e3e95f570659d747e7c5da0c15a33cdae",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 1.85,
+            "ATTACK_CANCEL_AFTER_EX": 1.9,
+            "DASH_CANCEL_AFTER": 1.85,
+            "WALK_CANCEL_AFTER": 1.9
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28217,
+      "sourceName": "#Cffcc00[Enhanced]#CX Dodge and Slash",
+      "sourceRawSha256": "bd205eac744abdb6c671111b818dcf548d33ca718f8101e9f597da73c9e684e4",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 20,
+      "cooldown": 3,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.45,
+            "DASH_CANCEL_AFTER": 0.45,
+            "WALK_CANCEL_AFTER": 0.45
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28027,
+      "sourceName": "#Cffcc00[Enhanced]#CX Wild Shock",
+      "sourceRawSha256": "54627f2c7e1effd910a112653fe42598d7c8e929a2e09c021e853185ab752b57",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_WILD_SHOCK",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28028,
+      "sourceName": "#Cffcc00[Enhanced]#CX Mega Buster",
+      "sourceRawSha256": "5d9dfc18518c836a218db5e5c0d15a1dd810894735fcdce76a5599f8763ceebf",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 20,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_MEGA_BURSTER",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28029,
+      "sourceName": "#Cffcc00[Enhanced]#CX Sonic Assault",
+      "sourceRawSha256": "1f0501c2e00eee914f48ef4326d619653f955f8eea1306ba7eabe4ba30c64d52",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28220,
+      "sourceName": "#Cffcc00[Enhanced]#CX Explsive Fist",
+      "sourceRawSha256": "b22d81a4b28f3a35d0b12c7d02413915547a84e5b1d87fe209d27756f55441f1",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_SI_A_SPK_BIG_BURST",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 1.05,
+            "DASH_CANCEL_AFTER": 1.05,
+            "ATTACK_CANCEL_AFTER_EX": 1.1,
+            "WALK_CANCEL_AFTER": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28034,
+      "sourceName": "#Cffcc00[Enhanced]#CX Sword Fire",
+      "sourceRawSha256": "a9f72a622c2d0ae0fa59e2fd8e2aecc1776dd4f01cf65bc762d131dbe1fe6db6",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 180,
+      "cooldown": 14,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SPK_SWORDFIRE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SPK_SWORDFIRE_FLY",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SPK_SWORDFIRE_GROUND",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28405,
+      "sourceName": "Body of Fire",
+      "sourceRawSha256": "0f4923858f31927dfde24f3ffcdbf3e64e4d27b8cd0c76d29e2690de6a525d79",
+      "passive": true,
+      "maxLevel": 4,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "BH",
+      "skillId": 28030,
+      "sourceName": "#Cffcc00[Enhanced]#CX Unlimited Blade",
+      "sourceRawSha256": "6a7abe62ec4a653f41ed48a360a662fa52785810c710363478a5523240a78799",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 250,
+      "cooldown": 16,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_UNLIMITED_BLADE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28218,
+      "sourceName": "#Cffcc00[Enhanced]#CX Iron Body - Strong",
+      "sourceRawSha256": "15ec86b7d7af2781a6acb814c424741a5b2a8d1ae092c37b5a4dfb9de84ad880",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 120,
+      "cooldown": 17,
+      "states": [
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE_MEMO",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28037,
+      "sourceName": "#Cffcc00[Enhanced]#CX\nScaldic Sword",
+      "sourceRawSha256": "ad4097e6cfcb136203bd615a24d6b0a5769fe55c2a9e400c40041a6516d85fff",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 80,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SBH_SCALDIC_SWORD",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 0.966,
+            "SKILL_CANCEL_AFTER": 1.001,
+            "WALK_CANCEL_AFTER": 1.001
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28208,
+      "sourceName": "Avatar of Fire",
+      "sourceRawSha256": "f078146b44a672b9f93fc0106cae86b3ad7f1c5a080252dd7ab2fa53357ae87d",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 10,
+      "cooldown": 10,
+      "states": [
+        {
+          "state": "ESI_SI_A_SPK_AVATAR_OF_THE_FIRE",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.7,
+            "DASH_CANCEL_AFTER": 0.7,
+            "WALK_CANCEL_AFTER": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28209,
+      "sourceName": "Fireplay",
+      "sourceRawSha256": "35e23ace2ac4d3d6840269698a4ca16515ccfcdb4da0aa4b1a246f1c6f69cbcc",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_SI_A_SBH_FIREWORKS",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.715,
+            "DASH_CANCEL_AFTER": 0.715,
+            "WALK_CANCEL_AFTER": 0.766
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28014,
+      "sourceName": "Infernal Blade",
+      "sourceRawSha256": "d35c68b44f46b89d1dd20010f173c02a715ce93408497fa6178de206df2d5679",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 21,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SPK_INFERNAL_BLADE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28015,
+      "sourceName": "Eternal Fire",
+      "sourceRawSha256": "2799ce798fa0f6626569145892307125e9dfbb7c9147ccb98e99b6eb13d1aea8",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 22,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SPK_ETERNAL_FIRE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28210,
+      "sourceName": "Red Lotus Sword",
+      "sourceRawSha256": "b9fea854742800c72b81b07e8ec8b459ebac262e1aa9df616aa0ccc02203e19c",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 30,
+      "cooldown": 11,
+      "states": [
+        {
+          "state": "ESI_SI_A_SBH_FLAME_SWORD",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.522,
+            "DASH_CANCEL_AFTER": 0.785,
+            "WALK_CANCEL_AFTER": 0.785
+          }
+        },
+        {
+          "state": "ESI_SI_A_SBH_FLAME_SWORD_FINISH",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.581,
+            "DASH_CANCEL_AFTER": 0.581,
+            "WALK_CANCEL_AFTER": 0.62
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28406,
+      "sourceName": "Blooming Flame",
+      "sourceRawSha256": "eff9ecff73aaeb39c57c9b9f25590c62f7848265fc6de92471c6ee08e35088be",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": 20,
+      "states": []
+    },
+    {
+      "profession": "BH",
+      "skillId": 28407,
+      "sourceName": "Enhanced Concentration",
+      "sourceRawSha256": "6120c4aba57c85210c9855d61332b61aff8b61e808a7f19716dd44774c11f859",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "BH",
+      "skillId": 28016,
+      "sourceName": "Blazing Dance",
+      "sourceRawSha256": "a9f56ce3e3a6cf9287f21de1c9a509bf93c9dc0f5e5750b33f9268d21902e447",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SBH_BLAZING_DANCE_START",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SBH_BLAZING_DANCE_1ST",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SBH_BLAZING_DANCE_ATTACK_BACK",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SBH_BLAZING_DANCE_ATTACK_FRONT",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28017,
+      "sourceName": "Blazing Wing",
+      "sourceRawSha256": "34d2678351f22133c2aecaf132ad36b36353ff5adab309eb276d61ff22cf2bbd",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SBH_BLAZE_WING",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 1.591,
+            "SKILL_CANCEL_AFTER": 1.591,
+            "WALK_CANCEL_AFTER": 1.614
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28211,
+      "sourceName": "Flame Rose",
+      "sourceRawSha256": "eb83c543a411e773ecc607f3c7dd7bb5c795b1b57afb0bc59de690b8ae4522bb",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 30,
+      "cooldown": 9,
+      "states": [
+        {
+          "state": "ESI_SI_A_SBH_SCALET_ROSE",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.706,
+            "DASH_CANCEL_AFTER": 0.706,
+            "WALK_CANCEL_AFTER": 0.706
+          }
+        },
+        {
+          "state": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4,
+            "DASH_CANCEL_AFTER": 0.4,
+            "WALK_CANCEL_AFTER": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28018,
+      "sourceName": "Fire Wall",
+      "sourceRawSha256": "45119df84298c8e3334eba1246116fc0945c85e04d7802e021d79a860c182f7a",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 1.089,
+            "SKILL_CANCEL_AFTER": 1.089,
+            "WALK_CANCEL_AFTER": 1.158
+          }
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "skillId": 28408,
+      "sourceName": "Fire Stigma",
+      "sourceRawSha256": "fbb907ff26062bbdac4584cae153a5e1bef4c8cdebd0ca7265d93f7a23d62172",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "BH",
+      "skillId": 28409,
+      "sourceName": "Invincible Flame",
+      "sourceRawSha256": "d9c7b1d129b1120aadbe67e8194af09e9391c740d0c40f6046d132982553bffd",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "BH",
+      "skillId": 28604,
+      "sourceName": "#Cffcc00[Enhanced]#CX Ancient Fire",
+      "sourceRawSha256": "3c82b154eff7fbcbea7a1784640c4a1a336834ffc6e795447720cd1518c53a2a",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 180,
+      "states": [
+        {
+          "state": "ESI_SI_HA_SBH_ANCIENT_FIRE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28026,
+      "sourceName": "#Cffcc00[Enhanced]#CX Spiral Blast",
+      "sourceRawSha256": "fceb0bb20a9217af09f0db3ddfbcd13e3e95f570659d747e7c5da0c15a33cdae",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 1.85,
+            "ATTACK_CANCEL_AFTER_EX": 1.9,
+            "DASH_CANCEL_AFTER": 1.85,
+            "WALK_CANCEL_AFTER": 1.9
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28217,
+      "sourceName": "#Cffcc00[Enhanced]#CX Dodge and Slash",
+      "sourceRawSha256": "bd205eac744abdb6c671111b818dcf548d33ca718f8101e9f597da73c9e684e4",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 20,
+      "cooldown": 3,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4
+          }
+        },
+        {
+          "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.45,
+            "DASH_CANCEL_AFTER": 0.45,
+            "WALK_CANCEL_AFTER": 0.45
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28027,
+      "sourceName": "#Cffcc00[Enhanced]#CX Wild Shock",
+      "sourceRawSha256": "54627f2c7e1effd910a112653fe42598d7c8e929a2e09c021e853185ab752b57",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 13,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_WILD_SHOCK",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28028,
+      "sourceName": "#Cffcc00[Enhanced]#CX Mega Buster",
+      "sourceRawSha256": "5d9dfc18518c836a218db5e5c0d15a1dd810894735fcdce76a5599f8763ceebf",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 20,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_MEGA_BURSTER",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28029,
+      "sourceName": "#Cffcc00[Enhanced]#CX Sonic Assault",
+      "sourceRawSha256": "1f0501c2e00eee914f48ef4326d619653f955f8eea1306ba7eabe4ba30c64d52",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28221,
+      "sourceName": "#Cffcc00[Enhanced]#CX Dark Wave",
+      "sourceRawSha256": "c90bdf2882d547a1046437300e1e47122efa5175d54671b64d541208e38053fb",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 30,
+      "cooldown": 6,
+      "states": [
+        {
+          "state": "SI_A_SDK_DARK_WAVE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28035,
+      "sourceName": "#Cffcc00[Enhanced]#CX\nEjection Buster",
+      "sourceRawSha256": "4bab4a64d883051839b28a538bc9726bc8668fd38983450a5f100e95f271c04c",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 11,
+      "states": [
+        {
+          "state": "SI_SA_SDK_EJECTION_BUSTER_CHARGE",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_EJECTION_BUSTER_ATTACK",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28410,
+      "sourceName": "Dark Force",
+      "sourceRawSha256": "0dffd8b5bb258e23d8dc6a2b698bf72f371b9e137d63c99879a32cc3a4dee89b",
+      "passive": true,
+      "maxLevel": 4,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "CA",
+      "skillId": 28030,
+      "sourceName": "#Cffcc00[Enhanced]#CX Unlimited Blade",
+      "sourceRawSha256": "6a7abe62ec4a653f41ed48a360a662fa52785810c710363478a5523240a78799",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 250,
+      "cooldown": 16,
+      "states": [
+        {
+          "state": "ESI_SI_SA_EL_UNLIMITED_BLADE",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28218,
+      "sourceName": "#Cffcc00[Enhanced]#CX Iron Body - Strong",
+      "sourceRawSha256": "15ec86b7d7af2781a6acb814c424741a5b2a8d1ae092c37b5a4dfb9de84ad880",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 120,
+      "cooldown": 17,
+      "states": [
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE",
+          "cancels": {}
+        },
+        {
+          "state": "ESI_SA_A_EL_ENDURANCE_POWER_ACTIVE_MEMO",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28038,
+      "sourceName": "#Cffcc00[Enhanced]#CX\nBrutal Cutter",
+      "sourceRawSha256": "83de3ae260a757a63fd9deabcc1fa5b46634533e54492c582d70c387262fe545",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "SI_SA_SDK_BRUTAL_CUTTER",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28213,
+      "sourceName": "Injection Stigma",
+      "sourceRawSha256": "6c35aa7712ce6f55cd21699a12581844052e95b3c7082aa46b65f4811ab4994c",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": null,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "SI_A_SDK_INJECTION_STIGMA",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.78,
+            "DASH_CANCEL_AFTER": 0.78,
+            "WALK_CANCEL_AFTER": 0.78
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28214,
+      "sourceName": "Shade Scratch",
+      "sourceRawSha256": "ceb52842248fb6883f83c10b7b781c37e5bd863ea1b605300f985029e1def255",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 40,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "SI_A_SCA_SHADE_SCRATCH",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.6,
+            "DASH_CANCEL_AFTER": 0.6,
+            "WALK_CANCEL_AFTER": 0.65
+          }
+        },
+        {
+          "state": "SI_A_SCA_SHADE_SCRATCH_ATTACK",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 0.6,
+            "SKILL_CANCEL_AFTER": 0.6,
+            "WALK_CANCEL_AFTER": 0.65
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28021,
+      "sourceName": "Burning Phantom",
+      "sourceRawSha256": "18dc42791e087a5b15c4e42994ede43129ec8a1a67cde02d21c3dd4a7aec6bf4",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 250,
+      "cooldown": 21,
+      "states": [
+        {
+          "state": "SI_SA_SDK_BURNING_PHANTOM_READY",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_BURNING_PHANTOM_START",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_BURNING_PHANTOM_LOOP",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_BURNING_PHANTOM_END",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28022,
+      "sourceName": "Brandish Breaker",
+      "sourceRawSha256": "6047cc45c2afb67bc38f6d1ea96a1ea1158e1a3e7376d56274c0ed86f8a930fc",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 22,
+      "states": [
+        {
+          "state": "SI_SA_SDK_BRANDISH_BREAKER_START",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_BRANDISH_BREAKER_LOOP",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SDK_BRANDISH_BREAKER_FINISH",
+          "cancels": {
+            "DASH_CANCEL_AFTER": 0.532,
+            "SKILL_CANCEL_AFTER": 0.532,
+            "WALK_CANCEL_AFTER": 0.532
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28215,
+      "sourceName": "Shadow Edge",
+      "sourceRawSha256": "0d968e2a967a98c1ba772c8ae3cbdc117bb86e6232745ba3d9022b6e09cd573f",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 50,
+      "cooldown": 7,
+      "states": [
+        {
+          "state": "SI_A_SCA_SHADOW_EDGE",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.4,
+            "DASH_CANCEL_AFTER": 0.4,
+            "WALK_CANCEL_AFTER": 0.433
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28411,
+      "sourceName": "Judgement",
+      "sourceRawSha256": "2ccdc9575f1036f213ce85e102bff64e32493837e6edcbf1734d15d477c80d2c",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "CA",
+      "skillId": 28412,
+      "sourceName": "Revenge of Blood",
+      "sourceRawSha256": "5d4b33d39dd5524819b6bff8fc77c44117ec86abb4e64835b76bf1cdc0ddce38",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "CA",
+      "skillId": 28023,
+      "sourceName": "Blood Cutter",
+      "sourceRawSha256": "582977850502d9027ff68b3f8fc2bfa2f932dae3e649b6b7f487f5636c1cc194",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "SI_SA_SCA_BLOOD_CUTTER",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28024,
+      "sourceName": "Shade Illusion",
+      "sourceRawSha256": "95807dc1ce258c887e16a51ca608e36f7a52053899381f6e15505020cf85d3eb",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 200,
+      "cooldown": 15,
+      "states": [
+        {
+          "state": "SI_SA_SCA_SHADE_THE_ILLUSION",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28216,
+      "sourceName": "Assault Strike",
+      "sourceRawSha256": "0305a68b47b428428433a439f5e5d3a3c106ce8d1cf70ec43f8bcaca35a6b9e8",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 30,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "SI_A_SCA_ASSAULT_STRIKE",
+          "cancels": {
+            "SKILL_CANCEL_AFTER": 0.6,
+            "DASH_CANCEL_AFTER": 0.6,
+            "WALK_CANCEL_AFTER": 0.65
+          }
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28025,
+      "sourceName": "Dread Weapon",
+      "sourceRawSha256": "23118d59e818d55a903497de3219a3765c5ef4e747a0ed4a1c84e6f014e8a198",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 100,
+      "cooldown": 8,
+      "states": [
+        {
+          "state": "SI_SA_SCA_DREAD_WEAPON_START",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SCA_DREAD_WEAPON_LOOP",
+          "cancels": {}
+        },
+        {
+          "state": "SI_SA_SCA_DREAD_WEAPON_END",
+          "cancels": {}
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "skillId": 28413,
+      "sourceName": "Condemnation",
+      "sourceRawSha256": "3c0d1b1203655bf4d21cfe73b14a111eb8918db2e1b50ccb0864758b6f350bc9",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "CA",
+      "skillId": 28414,
+      "sourceName": "Overflowing Blood",
+      "sourceRawSha256": "f128509d52093e64604d20760e456cf93ba4ea076c884808534a21a33805ac7a",
+      "passive": true,
+      "maxLevel": 3,
+      "mp": null,
+      "cooldown": null,
+      "states": []
+    },
+    {
+      "profession": "CA",
+      "skillId": 28605,
+      "sourceName": "#Cffcc00[Enhanced]#CX Fate Smash",
+      "sourceRawSha256": "094fec719a3c2b069d66812b6994e02bf6414fe10a85cc690fe75ede49e78dec",
+      "passive": false,
+      "maxLevel": 1,
+      "mp": 300,
+      "cooldown": 180,
+      "states": [
+        {
+          "state": "SI_HA_SCA_FATE_SMASHER",
+          "cancels": {}
+        }
+      ]
+    }
+  ],
+  "reviewedAdapters": [
+    {
+      "id": "brutal-upgraded-factor",
+      "skillId": 28038,
+      "missingField": "raw.BUFF_FACTOR[1] remains {$symbol:..., $unsupported:target enum member absent}; no enum ID is assigned",
+      "sourceUpgradeLink": "28038.raw.m_DeleteSkillIDByUpgrade = 28020",
+      "predecessorField": "28020.raw.BUFF_FACTOR[1] = 466",
+      "sourceFactor": "466.BUFF_TEMPLET_ID = 429",
+      "unchangedFields": "Clone all original predecessor factor466 fields; do not invent upgraded chance or any other behavior",
+      "chance": "466.BEHAVIOR.BBT_DOUBLE_ATTACK_BUFF.PERCENT[1] = 0.2",
+      "durationSource": "466.FINALIZER.BFT_TIME.NORMAL_TIME[1] = 10 seconds",
+      "durationUpgrade": "28038.raw.SA_EFFECTIVE_TIME[1] = 1.5 and main description explicitly says buff duration +50%",
+      "durationFormula": "10 * 1.5 = 15 seconds; only NORMAL_TIME fields multiplied",
+      "runtimeFactorId": null,
+      "consumer": "20% ordinary/command damage packet doubles its numeric attack; special active and hyper excluded. This host does not replay independent secondary collision callbacks. Expiry restores neutral."
+    },
+    {
+      "id": "wild-shock-roots",
+      "source": "Original EffectSet_SA_EL_WILD_SHOCK_DAMAGE plus _Sub (or both _MEMO during Annihilation), original state visual emission .93 seconds",
+      "qualification": "Old EventProcess only calls Common; explicit static target root binding, no invented collision geometry."
+    },
+    {
+      "id": "juggernaut-roots",
+      "source": "Original EffectSet_SGM_JuggernautBuster_BLACKHOLE at original loop visual1.3; original Finish at END impact.3; WithVictoriousSword roots only with original buff326",
+      "qualification": "Static binding of target damage roots omitted by old callback; all damage/lifetimes/hit gaps remain original."
+    },
+    {
+      "id": "assault-strike-root",
+      "source": "Original EffectSet_SI_A_SCA_ASSAULT_STRIKE_Attack; original impact sound time .19",
+      "qualification": "Static target impact binding; 2026 callback lacks creation."
+    },
+    {
+      "id": "judgment-final-charge",
+      "source": "Original EffectSet_SA_SSK_JUDGEMENT_DRIVE_ALL second slash begins1.8; target separate FINAL state; EffectSet_SA_SSK_JUDGEMENT_DAMAGE retains original Bip01 offsets and geometry",
+      "charge": "Hold at second-slash boundary, at most2 seconds per target description; release enters FINAL; effect set at original FINAL sound .01. Numerical effect description840~1260 gives 1+0.25*charge damage multiplier.",
+      "conflict": "Main description says +50% hit count whereas effective description gives840~1260% magnitude; implement effective magnitude only, do not fabricate extra hits. Exact charge-stop controlflow absent in fixed source."
+    },
+    {
+      "id": "blood-hit",
+      "source": "CA28221/28038/28023/28024/28025 explicit target descriptions: HP>20%, pay20%maxHP and multiply damage1.4; Overflow below50% reducesHPcost34%",
+      "qualification": "Host nonlethal1HP floor explicitly diverges from unmeasured native edge. Injection self-cost uses physicalAttack*SA_ATK_PHYSIC_REL; additional BloodHit basis for Injection/Assault remains unresolved."
+    },
+    {
+      "id": "burning-phantom",
+      "source": "Original separate START/LOOP/END sets, original .15 HIT_GAP; target five base ticks and up tofive optional ticks at10MP",
+      "qualification": "Loop lifecycle .75..1.5seconds reflects explicit target five/ten tick description; original drain HP cap2.5*physicalAttack, perhit.5*physicalAttack. No missing2026 DUMMY is invented."
+    },
+    {
+      "id": "gm-initiate",
+      "source": "28401 SA_DAMAGE_REL,SA_MP_REGENERATION_ABS,SA_DAMAGE_TIME apply first command hit and hitstop; advanced28404 rawvalues win over contrary English percentages"
+    },
+    {
+      "id": "ca-blood-revenge",
+      "source": "28412 target describes own received-damage recovery15% at30%proc with original factor464/template428 stack. FIX1.03/1.06/1.09 interpreted as explicit3/6/9 additional-attack points.",
+      "qualification": "No2026 attacker HP drain imported."
+    },
+    {
+      "id": "ca-judgment",
+      "source": "28411 originalfactor465 applies Bleeding with learned-levelRATE; target50% chance to recover20%damage against bleeding target.",
+      "qualification": "No2026 extra victim HP drain."
+    },
+    {
+      "id": "ca-shade",
+      "source": "template430 FIX20 damage-reduction unit confirmed by target skill description; double damage limitedBrutalCutter/DreadWeapon"
+    },
+    {
+      "id": "gm-agility",
+      "source": "template566 FIX2 animation speed mapped to explicit28402 +2%per-stack description; original raw factor untouched"
+    },
+    {
+      "id": "war-prelude",
+      "source": "originalfactor298/template297 +50maxMP and attackTypes[0,2]*1.2 for30s; factor657/template567 -50maxMP and attackType1*.8 for10s; exact collision carrierATTACK_OUR_TEAM1/REACT7/NO_DAMAGE1 handles party and self"
+    },
+    {
+      "id": "bh-blossom",
+      "source": "28406 originalfactor295/template294 seed identity five seconds, cooldown20; target says originaldebuff remains",
+      "qualification": "New2026 cleanup contradicts target; original NPC pickup/party cleanse remains unavailable."
+    },
+    {
+      "id": "dark-force",
+      "source": "Original28410 learned level4 values: gauge multiplier1.5, Annihilation matching WAY_OF_SWORD_TYPE4/5/6 damage1.2, Gale matching1/2/3 heals20%accepted damage. Mode captured before gauge consumption.",
+      "qualification": "Main description mode gates retained; unused SA_DECREASE_REL.75 has no verified consumer and is not reinterpreted as damage reduction."
+    },
+    {
+      "id": "dark-force-percent-relation",
+      "source": "Original template434 BBT_CHANGE_ENCHANT_ATTACK_RATE BCT_PERCENT and factors471(NPC2)/472(PVP1.5) omit BUFF_RELATION_TYPE on both sides. Fixed ChangeStat percent math does not read a relation. Narrow template/class consumer preserves missing raw fields.",
+      "verification": "Factor472 raises actual enchantAttackRate to1.5; synchronized Annihilation exit removes434 and restores the original stat."
+    },
+    {
+      "id": "dance-endless",
+      "source": "Original28016 memo61: MI_TRANSCENDENCE_1(19), replacement28032. Original state EFFECT_SET_LIST_EX_TRANS_1 names map exact4.97 dash/12.9 initial carriers; ordinary branch3.01/15.05. No AvatarFire gate.",
+      "replacementRaw": {
+        "m_wstrIconTextureName": "DLG_SKILL_ELESIS_Active_03.tga",
+        "m_wstrImageTexturePieceName": "SI_SA_SBH_BLAZING_DANCE",
+        "m_wstrName": "Blazing Dance - Endless",
+        "m_eActiveSkillUseCondtion": 1,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "DLG_Elesis_SKILL_ScreenShot_03.tga",
+        "m_eType": 15,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 1,
+        "m_wstrMainDesc": "Charge and blink to targets with flame attacks. Initial hit does additional damage.\nIf the skill is canceled abruptly, recover MP by 'Remaining number of hits' x 20. If there is a still target to hit, it will consume 20 MP and continue until your MP runs out.\n\n#CFF4444Annihilation Skill#CX\n- Consumes #CFF4444Annihilation Gauge#CX and acquire #C4488FFGale Gauge#CX\n- 100% Critical, Ignores Defensive Skills (Guard/Knockdown) when Annihilation activated",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_SA_SBH_BLAZING_DANCE",
+        "m_eID": 28032,
+        "m_EffectiveDesc": {
+          "1": "Flame Dash (Magical): 497% ×∞\n(Consume 20 MP with every hit after 8th hit)\nInitial Attack Additional Damage (Magical): 1290%"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 0,
+        "m_ePowerRate": 2,
+        "m_RequireCharacterLevel": {
+          "1": 45
+        },
+        "m_SkillCoolTime": {
+          "1": 15
+        },
+        "m_MPConsumption": {
+          "1": 200
+        },
+        "SA_SCOPE_ABS_Z": {
+          "1": 375
+        }
+      },
+      "consumer": "Keep7 regular free dashes and reserve FINISH as eighth; each additional regular dash costs20MP. Continue only with target/MP. Target history deduplicated. Original fields APPLIED_SKILL_ID28016 remain untouched.",
+      "qualification": "Static target trait/description adapter; fixed older source does not have MI_TRANSCENDENCE_1 consumer."
+    },
+    {
+      "id": "punish-buff",
+      "source": "Original enums BFI_BUFF_PUNISH479/BFI_BUFF_PUNISH_PVP480 map441; original factors physical+magic percentage479(1.15 atlevel1),480(1.05 atlevel1), duration5s. FixedEL8588-8636 marked2026 shows positivePunish passive gate, Endurance active level and PvP selection.",
+      "consumer": "Ordinary Endurance counter ACTIVE/MEMO starts buff, excludes separateChivalry burst. Uses stored Endurance level1, notPunish passivelevel3. target2016description independently requires damage buff."
+    },
+    {
+      "id": "brandish-free-extension",
+      "source": "Target28022 explicitly allows additional attacks withoutHP payment below20%HP. Original LOOP state spawns EffectSet_SA_SDK_BRANDISH_BREAKER_LOOP, source217% carrierHIT_GAP.13 and DELETE_EFFECT_SET_ON_STATE_END. FixedEL7913-7932 bounds six.15sec intervals.",
+      "consumer": "Hold START atHP<20% enters originalLOOP, release/.9sec/HP>=20% exits and retiresstate-owned carrier. No9999-time placeholder damage is spawned."
+    },
+    {
+      "id": "blossom-reward",
+      "source": "Original296/template295 physical/magic1.1 +fixedMP1 interval1sec for20s. Original297/template296 BCT_FIXED -2, RELATIVE_ALL_SKILL1, immediate finalizer. FixedBuffBehavior1602..1676 invokesResetLeftSkillCoolTimeBySkillType once atstart.",
+      "consumer": "Reward factors independently tested. Immediate297 applies cooldown delta once on owner, with0floor, rather than changing future cooldown formulas. Pickup producer remainsunsupported."
+    },
+    {
+      "id": "bh-fire-resistance",
+      "source": "Original28405 SA_FIRE_DEFENCE_ABS250; fixedGUUser5789-5805 adds to passive m_fDefBlaze; 3635-3640 returns it forBLAZE; 3519-3534 truncates positive value tointeger and AddDefenceEnchantData3481-3498 caps EAR_MAX_VALUE. FixedGameUnit4706-4738 sums defense resistance, 11158-11165 divides by EAR_MAX_VALUE; fixedX2EnchantItem.h81 defines EAR_MAX_VALUE500.",
+      "consumer": "Add250/500 to explicit frozen burn resistance, cap1, without mutating preset resistance. Existing original buff math consumes normalized resistance for magnitude/duration; real factor301 duration15→7.5 and one-tick damage halves. REGIST_TYPE0 unaffected.",
+      "qualification": "Target numeric value and qualified fixed-source point conversion; not target-client trace."
+    },
+    {
+      "id": "shadow-edge-binding",
+      "source": "Target28215 main/effective description: maximum3targets,700PvP/1200NPC range,8seconds,20percent move-speed reduction. Original factor469→template432 and original projectile EXPLOSION788percent carrier. Qualified2026EL7841-7842 endpointY+25; fixedDamageEffect SetLinkMainEffectByPos7621-7662 computes caster→target rotation and absolute meshScale(distance/LINK_EFFECT_RATE530,1,1).",
+      "consumer": "Actual accepted original explosion contacts bind at most3 living enemies. Original469 applies, link follows both endpoints;8seconds, death,disconnect,range exceedance and recast remove link and source-owned debuff. No target sweep or additional damage carrier invented.",
+      "qualification": "Target-description contact binding adapter; fixed2026 callback instead enumerates800range/front-half(unresolved-angle inference), spawns extra explosion per enumerated target and lacks original2016 max3/range rules. Those incompatible choices are not inherited.",
+      "network": {
+        "effectField": {
+          "sourceElesisShadowLink": {
+            "targetId": "existing enemy string1..128",
+            "remaining": "finite0..8seconds",
+            "scale": "finite1/530..1200/530"
+          }
+        },
+        "restriction": "CA/unit125,skill28215,exact original link name; at most3 unique targetIDs perreport; recursive critical samples receive the same validation.",
+        "application": "Export preserves source control, receiver rebuilds original definition on initial and subsequent packets. Link identity alone does not grant469; receiver must accept an original explosion contact and then uses remaining source time. Complete owner omission retires its source slow. tickEffects(0) historical collision cannot advance or retire current link lifecycle."
+      },
+      "presentation": "Main source control samples current caster+25 anchor, orientation and absolute original distance/530 size everyframe. Original DrawCount2 and invisibleSDK_LINK_P00M plus both visible TraceParticle children remain. Main and passive emission stop on binding end, authored particle tails expire."
+    }
+  ],
+  "knownUnsupported": [
+    {
+      "id": "native-client-fidelity",
+      "detail": "No original-client executable input trajectory; callbacks and adapters are candidates, not1:1."
+    },
+    {
+      "id": "brandish-held-extension",
+      "detail": "HP<20% free held extension now executes original217% loop carrier, stops on release or fixed-reference6*.15s limit. Higher-HP payment basis and lower-HP damage curve remain missing: target LOOP_DUMMY exists with PHYSIC43.38 but ATTACK_TIME_START=ATTACK_TIME_END=9999; fixed2026 callback only CreateInstance, never requests HP payment. Its damage field is not assumed to be an HP cost."
+    },
+    {
+      "id": "leap-vertical-motion",
+      "detail": "Target START defaults APPLY_ANIM_MOVE; native root sampler preserves Bip01 Y in rendered skeleton while only X/Z enter actor position. Original SPEED_TIME0 type2(300,0,.033) sets horizontal300/vertical0; JUMP adds(0,0) at.466, APPLY_ANIM_MOVE0. Fixed EL6943-6980 only transitions by animation-end and IsOnSomethingFuture; no vertical launch/charge consumer. Need target launch or feet/land-position consumer, not a guessed vy or global XYZ motion change."
+    },
+    {
+      "id": "flame-blossom-npc",
+      "detail": "Seed294 (5s) and original reward factors296(+10% attacks/1MP persecond20s),297(all cooldowns-2s) execute. Missing producer: fixedGameUnit13441 custom-buff switch has no294 case. Target display carrier ATTACK_TIME_START100 lacksDAMAGE_DATA and only visual mesh changes at5s. No NPC ID, pickup shape/radius/lifetime/team-rule source recovered; no guessed collectible or automatic owner reward."
+    },
+    {
+      "id": "MI_USEFUL-extra-hits",
+      "detail": "Target declares p0(.5/.525/.55) and p1 per-hit damage; p1 executes. Fixed X2SkillTree/X2UserSkillTree/GUEL/GUUser contain oldSMI memo consumers, no MI_USEFUL enum/consumer. No target state key gives useful alternative hit schedule. p0 could alter hitgap, scheduler count or individual hitboxes; source does not identify which. Unrelated VC user-authorized .5-gap exception is not inherited."
+    },
+    {
+      "id": "blaze-wing-homing",
+      "detail": "Root/assets added fixed LOT6 consumer archived revision. Detailed unresolved fields limited to Y_DIR_INIT and LOCK_ON_RANGE_FROM_OWNER: fixed source loads them but the consumer is absent. Final integrated audit will replace earlier unsupported snapshot."
+    },
+    {
+      "id": "shadow-edge-recovery",
+      "detail": "Original SA_ATK_PHYSIC_REL=.5 and description say recover50percent physicalAttack HP, but no interval/trigger is supplied. Fixed2026 ProcShadowLinkEffects instead deals rate*min(ownerHP,received/self-cost damage) to target; target2016 SA_DAMAGE_REL=0 disables that different behavior. TickShadowLinkEffects only expires/repositions links. No guessed recovery frequency or substitute old damage sharing."
+    }
+  ],
+  "verification": {
+    "test": "tests/combat/elesis-skills-v1.test.mjs",
+    "fixture": "tests/helpers/elesis-skill-fixture.mjs",
+    "audit": "tools/combat/audit_elesis_skills.mjs",
+    "testMeaning": "Actual native original geometry/samplers, MP/CD, enemyHP/buff benefit, source numeric boundary tests, expiry cleanup. Simulation observation is separate from original-data expectations.",
+    "referenceExtraction": "audit_elesis_source.py: physical LF lines and raw-byte SHA preserve original source offsets; authored brace/comment/string sample and truncated-input rejection pass."
+  },
+  "supplementarySourceReview": {
+    "fixedCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": [
+      {
+        "path": "X2Lib/X2GameUnit.cpp",
+        "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+        "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923"
+      },
+      {
+        "path": "X2Lib/X2BuffBehaviorTemplet.cpp",
+        "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+        "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d"
+      },
+      {
+        "path": "X2Lib/X2BuffTemplet.cpp",
+        "gitBlob": "81a8cc4ba5adc167078789a123feb74e0bb39816",
+        "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a"
+      },
+      {
+        "path": "X2Lib/X2SkillTree.cpp",
+        "gitBlob": "ccf3187b63f6c338d3c0e7e93c8ff65329c6049b",
+        "sha256": "d424be44bc394c9681545f572d20179b58caa3f8981db8e8250dda6832802b9f"
+      },
+      {
+        "path": "X2Lib/X2EnchantItem.h",
+        "gitBlob": "137358d22e620ecb6113926ab30340f78e45d129",
+        "sha256": "6f4a1dba7e04182c0cba08987aeb7976ff1be7984423c03e4cf0fa2ff3ff669a"
+      },
+      {
+        "path": "X2Lib/X2DamageEffect.cpp",
+        "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+        "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8"
+      }
+    ]
+  }
+}

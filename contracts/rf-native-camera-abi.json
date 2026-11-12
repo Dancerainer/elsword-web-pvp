@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "reference-V5-not2016",
+  "targetClientMeasured": false,
+  "artifact": "camera-source.wasm",
+  "stateScope": "one CKTDGCamera per WebAssembly instance",
+  "valueType": "IEEE-754 binary32",
+  "exports": {
+    "camera_init": ["eyeX", "eyeY", "eyeZ", "targetX", "targetY", "targetZ", "upX", "upY", "upZ"],
+    "camera_point": ["eyeX", "eyeY", "eyeZ", "targetX", "targetY", "targetZ", "upX", "upY", "upZ"],
+    "camera_set_tracking": ["eyeX", "eyeY", "eyeZ", "targetX", "targetY", "targetZ", "eyeSeconds", "targetSeconds"],
+    "camera_advance": ["elapsedSeconds"],
+    "camera_output_ptr": [],
+    "camera_output_count": [],
+    "camera_test_upside_down": ["seconds"]
+  },
+  "output": [
+    "eyeX", "eyeY", "eyeZ", "targetX", "targetY", "targetZ", "upX", "upY", "upZ",
+    "eyeVelocityX", "eyeVelocityY", "eyeVelocityZ", "targetVelocityX", "targetVelocityY", "targetVelocityZ",
+    "eyeSeconds", "targetSeconds", "upsideDownSeconds", "matrixBoundaryCalls", "viewBoundaryCalls",
+    "disabledShakeBoundaryCalls", "disabledImpactBoundaryCalls"
+  ],
+  "imports": [],
+  "memory": "exported; output pointer indexes a 22-float array; bridge copies values",
+  "platformAdapters": [
+    "D3DXVECTOR3 three float components",
+    "fabs compiler builtin",
+    "D3DXMatrixLookAtLH disabled sink; rendered matrix is outside this proof",
+    "g_pKTDXApp->SetViewTransform disabled sink",
+    "UpdateCameraShake and UpdateCameraImpact disabled sinks"
+  ],
+  "sourceBodies": "Point, MoveRel(float), LookAtRel(float), SetTracking, UpdateCamera, IsSamef and two nested structs retained byte-for-byte",
+  "caveats": [
+    "SetTracking with zero Time changes tracking fields and timers; it does not immediately move/point the camera",
+    "Original UpdateCamera consumes the complete elapsed time, including overshoot beyond tracking duration",
+    "Both tracking velocities divide by eye Time, even when target timer differs",
+    "Source UpdateCameraShake/Impact, original constructor and D3D matrix submission do not execute in this adapter",
+    "Full native client and target 2016 behavior have not been validated"
+  ]
+}

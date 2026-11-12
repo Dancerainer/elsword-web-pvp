@@ -1,0 +1,1561 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasured": false,
+  "classification": "target2016 original declarations; user-confirmed input adapter; bounded fixed-V5 mesh/reaction consumers",
+  "targetSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    }
+  },
+  "states": {
+    "RSI_SOUL_TAKER_DASH_JUMP_COMBO_ZZZ": {
+      "raw": {
+        "ANIM_NAME": "RST_Dash_Jump_Combo_ZZZ",
+        "ANIM_SPEED": 1.25,
+        "DISABLE_GRAVITY_TIME_END": 0.3,
+        "DISABLE_GRAVITY_TIME_START": 0,
+        "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1,
+        "CAN_PASS_UNIT": 1,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "Raven_ST_DashJumpZZ01.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Swing_Big06.ogg"
+        },
+        "SPEED_TIME0": {
+          "1": 3500,
+          "2": -10000,
+          "3": 0.3,
+          "4": 1
+        },
+        "AFTER_IMAGE": {
+          "1": 0.3,
+          "2": 100
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "ATTACK_TIME0": {
+          "1": 0.295,
+          "2": 100
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 11.63,
+          "HIT_ADD_MP": 6.89,
+          "TECH_POINT": 470,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0.1,
+          "BACK_SPEED_X": 300,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "RE_ATTACK": 0,
+          "DAMAGE": {
+            "PHYSIC": 2.61
+          }
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EFFECTSET_Dash_Jump_ZZZ",
+          "2": 0
+        }
+      },
+      "sourceState": "RSI_SOUL_TAKER_DASH_JUMP_COMBO_ZZZ",
+      "animationName": "RST_Dash_Jump_Combo_ZZZ",
+      "clip": {
+        "durationSeconds": 0.5,
+        "durationTicks": 2400.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "RST_Dash_Jump_Combo_ZZZ",
+        "decodedKeysSha256": "8de2cf5fd494afab1b65df966d3626aca3498bf62960b6205871e4b165483f6c"
+      },
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.5
+        ],
+        "positionsGltf": [
+          [
+            0.0,
+            85.14802551269531,
+            -0.0
+          ],
+          [
+            0.0,
+            95.36532592773438,
+            -0.0
+          ],
+          [
+            0.0,
+            98.22217559814453,
+            -0.0
+          ],
+          [
+            0.0,
+            101.99124908447266,
+            -0.0
+          ],
+          [
+            0.0,
+            105.7407455444336,
+            -0.0
+          ],
+          [
+            0.0,
+            108.54544830322266,
+            -0.0
+          ],
+          [
+            0.0,
+            109.48759460449219,
+            -0.0
+          ],
+          [
+            0.0,
+            107.65971374511719,
+            -0.0
+          ],
+          [
+            0.0,
+            102.17198181152344,
+            -0.0
+          ],
+          [
+            0.0,
+            34.397743225097656,
+            -0.0
+          ],
+          [
+            0.0,
+            34.397743225097656,
+            -0.0
+          ],
+          [
+            0.0,
+            34.39556884765625,
+            -0.0
+          ],
+          [
+            0.0,
+            34.39299774169922,
+            -0.0
+          ],
+          [
+            0.0,
+            34.39299774169922,
+            -0.0
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          -50.755027770996094,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.0,
+            34.39299774169922,
+            -0.0
+          ],
+          "max": [
+            0.0,
+            109.48759460449219,
+            -0.0
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4000
+      },
+      "defaultAnimationEvidence": "target2016"
+    },
+    "RSI_SOUL_TAKER_DASH_JUMP_COMBO_ZZZ_Landing": {
+      "raw": {
+        "SKILL_CANCEL_AFTER": 0.01,
+        "PASSIVE_SPEED_X": 0,
+        "ANIM_NAME": "RST_Dash_Jump_Combo_ZZZ_Landing",
+        "DASH_CANCEL_AFTER": 0.2,
+        "PASSIVE_SPEED_Y": 0,
+        "ANIM_SPEED": 1,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 1,
+        "LAND_CONNECT": 0,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.01
+        }
+      },
+      "sourceState": "RSI_SOUL_TAKER_DASH_JUMP_COMBO_ZZZ_Landing",
+      "animationName": "RST_Dash_Jump_Combo_ZZZ_Landing",
+      "clip": {
+        "durationSeconds": 1.0,
+        "durationTicks": 4800.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "RST_Dash_Jump_Combo_ZZZ_Landing",
+        "decodedKeysSha256": "b26fcc18ff4833d849b504ef81fec0bb82c5690c06955e37f744d130daaea767"
+      },
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          1.0
+        ],
+        "positionsGltf": [
+          [
+            0.0,
+            48.96800231933594,
+            -0.0
+          ],
+          [
+            0.0,
+            92.01968383789062,
+            -0.0
+          ],
+          [
+            0.0,
+            61.069664001464844,
+            -0.0
+          ],
+          [
+            0.0,
+            62.738372802734375,
+            -0.0
+          ],
+          [
+            0.0,
+            63.527313232421875,
+            -0.0
+          ],
+          [
+            0.0,
+            64.27137756347656,
+            -0.0
+          ],
+          [
+            0.0,
+            64.9824447631836,
+            -0.0
+          ],
+          [
+            0.0,
+            65.6723861694336,
+            -0.0
+          ],
+          [
+            0.0,
+            66.35308837890625,
+            -0.0
+          ],
+          [
+            0.0,
+            67.03646850585938,
+            -0.0
+          ],
+          [
+            0.0,
+            67.73443603515625,
+            -0.0
+          ],
+          [
+            0.0,
+            68.4588851928711,
+            -0.0
+          ],
+          [
+            0.0,
+            69.2216567993164,
+            -0.0
+          ],
+          [
+            0.0,
+            70.03863525390625,
+            -0.0
+          ],
+          [
+            0.0,
+            70.90980529785156,
+            -0.0
+          ],
+          [
+            0.0,
+            71.82361602783203,
+            -0.0
+          ],
+          [
+            0.0,
+            72.76917266845703,
+            -0.0
+          ],
+          [
+            0.0,
+            73.73583221435547,
+            -0.0
+          ],
+          [
+            0.0,
+            74.68903350830078,
+            -0.0
+          ],
+          [
+            0.0,
+            75.65918731689453,
+            -0.0
+          ],
+          [
+            0.0,
+            76.73224639892578,
+            -0.0
+          ],
+          [
+            0.0,
+            77.99342346191406,
+            -0.0
+          ],
+          [
+            0.0,
+            79.4683837890625,
+            -0.0
+          ],
+          [
+            0.0,
+            81.08589935302734,
+            -0.0
+          ],
+          [
+            0.0,
+            82.78540802001953,
+            -0.0
+          ],
+          [
+            0.0,
+            84.5066909790039,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          37.22174072265625,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.0,
+            48.96800231933594,
+            -0.0
+          ],
+          "max": [
+            0.0,
+            92.01968383789062,
+            -0.0
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4013
+      },
+      "defaultAnimationEvidence": "target2016"
+    },
+    "RBM_DASH_JUMP_COMBO_X": {
+      "raw": {
+        "ANIM_NAME": "DashJumpAttackX",
+        "DISABLE_GRAVITY_TIME_END": 0.2,
+        "SPEED_Y": 150,
+        "DISABLE_GRAVITY_TIME_START": 0,
+        "SPEED_X": -100,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "IS_ATTACK_STATE": 1,
+        "LAND_CONNECT": 0,
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.3
+        },
+        "EFFECT_SET_LIST": {},
+        "SOUND_PLAY0": {
+          "1": 0.05,
+          "2": "RavenVoice_Shout02.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.1,
+          "2": "Raven_RBM_Blackhole_Explosion.ogg"
+        },
+        "COMBO_GUIDE": {
+          "1": "A",
+          "2": "AX"
+        }
+      },
+      "sourceState": "RBM_DASH_JUMP_COMBO_X",
+      "animationName": "DashJumpAttackX",
+      "clip": {
+        "durationSeconds": 0.6666666666666666,
+        "durationTicks": 3200.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "DashJumpAttackX",
+        "decodedKeysSha256": "9cf2ff976514c98933e320167d58da2377b6fbfe695312e496fe7ed015c37567"
+      },
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6666666666666666
+        ],
+        "positionsGltf": [
+          [
+            8.344650268554688e-07,
+            85.10053253173828,
+            -0.0
+          ],
+          [
+            -3.5762786865234375e-07,
+            85.13176727294922,
+            1.1175870895385742e-08
+          ],
+          [
+            -1.1026859283447266e-06,
+            85.15015411376953,
+            -0.0
+          ],
+          [
+            0.09480562806129456,
+            85.14014434814453,
+            -5.960464477539063e-08
+          ],
+          [
+            0.2528170943260193,
+            85.11114501953125,
+            -1.341104507446289e-07
+          ],
+          [
+            0.28441983461380005,
+            85.07051849365234,
+            -2.086162567138672e-07
+          ],
+          [
+            4.76837158203125e-07,
+            85.032958984375,
+            -2.682209014892578e-07
+          ],
+          [
+            -2.5281753540039062,
+            85.032958984375,
+            -2.682209014892578e-07
+          ],
+          [
+            4.76837158203125e-07,
+            85.032958984375,
+            -2.682209014892578e-07
+          ],
+          [
+            -2.5281753540039062,
+            85.032958984375,
+            -2.682209014892578e-07
+          ],
+          [
+            4.76837158203125e-07,
+            85.032958984375,
+            -2.682209014892578e-07
+          ],
+          [
+            0.21060539782047272,
+            81.150390625,
+            0.014066249132156372
+          ],
+          [
+            0.2779897451400757,
+            75.97688293457031,
+            0.029002010822296143
+          ],
+          [
+            0.24121370911598206,
+            72.55241394042969,
+            0.04456999897956848
+          ],
+          [
+            0.1393369734287262,
+            73.91644287109375,
+            0.060533225536346436
+          ],
+          [
+            0.011420398950576782,
+            84.27873229980469,
+            0.07665437459945679
+          ],
+          [
+            -0.10347606241703033,
+            101.34761047363281,
+            0.09269648790359497
+          ],
+          [
+            -0.16629230976104736,
+            118.4136734008789,
+            0.10842254757881165
+          ],
+          [
+            -0.16629230976104736,
+            118.4136734008789,
+            0.10842254757881165
+          ]
+        ],
+        "deltaGltf": [
+          -0.16629314422607422,
+          33.313140869140625,
+          0.10842254757881165
+        ],
+        "boundsGltf": {
+          "min": [
+            -2.5281753540039062,
+            72.55241394042969,
+            -2.682209014892578e-07
+          ],
+          "max": [
+            0.28441983461380005,
+            118.4136734008789,
+            0.10842254757881165
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4765
+      },
+      "defaultAnimationEvidence": "target2016"
+    },
+    "RBM_DASH_JUMP_COMBO_XZ": {
+      "raw": {
+        "SPEED_X": 0,
+        "ANIM_NAME": "RST_Dash_Combo_Attack_XZ",
+        "SPEED_Y": 0,
+        "DISABLE_GRAVITY_TIME_START": 0,
+        "ANIM_SPEED": 1.5,
+        "DISABLE_GRAVITY_TIME_END": 0.833,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "IS_ATTACK_STATE": 1,
+        "LAND_CONNECT": 0,
+        "ATTACK_TIME0": {
+          "1": 0.327,
+          "2": 0.378
+        },
+        "DAMAGE_DATA": {
+          "STOP_TIME_DEF": 0,
+          "FORCE_DOWN": -20,
+          "STOP_TIME_ATT": 0,
+          "CAMERA_CRASH_GAP": 10,
+          "BACK_SPEED_Y": -200,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "TECH_POINT": 200,
+          "BACK_SPEED_X": 500,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          }
+        },
+        "EFFECT_SET_LIST_EX": {},
+        "DISABLE_ATTACK_BOX": {
+          "1": "Lhand1"
+        },
+        "SOUND_PLAY0": {
+          "1": 0.315,
+          "2": "Raven_BM_DashJumpXZ01.ogg"
+        }
+      },
+      "sourceState": "RBM_DASH_JUMP_COMBO_XZ",
+      "animationName": "RST_Dash_Combo_Attack_XZ",
+      "clip": {
+        "durationSeconds": 1.0666666666666667,
+        "durationTicks": 5120.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "RST_Dash_Combo_Attack_XZ",
+        "decodedKeysSha256": "e09af04bca7767d38d20cf288784d7cef81bdaffddde54051c76d358b0f4893c"
+      },
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          0.9,
+          0.9333333333333333,
+          0.9666666666666667,
+          1.0666666666666667
+        ],
+        "positionsGltf": [
+          [
+            4.470348358154297e-07,
+            89.1496810913086,
+            -2.384185791015625e-07
+          ],
+          [
+            -1.9461045265197754,
+            100.2375717163086,
+            -0.3042878806591034
+          ],
+          [
+            -4.322807312011719,
+            113.1759262084961,
+            -0.6025515794754028
+          ],
+          [
+            -0.16629233956336975,
+            122.5303955078125,
+            0.10842257738113403
+          ],
+          [
+            24.047597885131836,
+            121.64889526367188,
+            4.595694065093994
+          ],
+          [
+            48.72199249267578,
+            117.92362976074219,
+            7.749990463256836
+          ],
+          [
+            55.96866226196289,
+            118.73554992675781,
+            5.281333923339844
+          ],
+          [
+            58.63971710205078,
+            120.43820190429688,
+            1.0880844593048096
+          ],
+          [
+            60.127952575683594,
+            122.12158203125,
+            -3.3585312366485596
+          ],
+          [
+            63.82615661621094,
+            122.87798309326172,
+            -6.587287902832031
+          ],
+          [
+            78.3926010131836,
+            117.91226959228516,
+            -2.897101879119873
+          ],
+          [
+            123.18518829345703,
+            114.36871337890625,
+            0.18462175130844116
+          ],
+          [
+            159.4535675048828,
+            112.59814453125,
+            2.09647274017334
+          ],
+          [
+            172.82872009277344,
+            113.00102233886719,
+            2.5041122436523438
+          ],
+          [
+            183.56802368164062,
+            113.82291412353516,
+            2.662637710571289
+          ],
+          [
+            192.07479858398438,
+            114.92220306396484,
+            2.639991044998169
+          ],
+          [
+            198.75209045410156,
+            116.15706634521484,
+            2.5041120052337646
+          ],
+          [
+            204.00314331054688,
+            117.38605499267578,
+            2.3229386806488037
+          ],
+          [
+            208.23104858398438,
+            118.46821594238281,
+            2.1644132137298584
+          ],
+          [
+            211.83905029296875,
+            119.26285552978516,
+            2.096472978591919
+          ],
+          [
+            214.00254821777344,
+            119.67548370361328,
+            2.1248435974121094
+          ],
+          [
+            214.01315307617188,
+            119.80390930175781,
+            2.1872589588165283
+          ],
+          [
+            212.44827270507812,
+            119.79597473144531,
+            2.2496743202209473
+          ],
+          [
+            209.8852996826172,
+            119.79999542236328,
+            2.2780449390411377
+          ],
+          [
+            206.9016571044922,
+            119.96466064453125,
+            2.238326072692871
+          ],
+          [
+            204.07470703125,
+            120.43878173828125,
+            2.09647274017334
+          ],
+          [
+            200.6903533935547,
+            121.43468475341797,
+            1.7581530809402466
+          ],
+          [
+            196.12281799316406,
+            122.88428497314453,
+            1.2283315658569336
+          ],
+          [
+            191.08200073242188,
+            124.51573181152344,
+            0.621909499168396
+          ],
+          [
+            186.27783203125,
+            126.05663299560547,
+            0.0537877082824707
+          ],
+          [
+            186.27783203125,
+            126.05663299560547,
+            0.0537877082824707
+          ]
+        ],
+        "deltaGltf": [
+          186.27783158421516,
+          36.906951904296875,
+          0.053787946701049805
+        ],
+        "boundsGltf": {
+          "min": [
+            -4.322807312011719,
+            89.1496810913086,
+            -6.587287902832031
+          ],
+          "max": [
+            214.01315307617188,
+            126.05663299560547,
+            7.749990463256836
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4801
+      },
+      "defaultAnimationEvidence": "target2016"
+    }
+  },
+  "effectSets": {
+    "EffectSet_RST_DashJump_X": {
+      "raw": {
+        "NAME": "EffectSet_RST_DashJump_X",
+        "EFFECT0": {
+          "START_TIME": 0.2,
+          "POSITION_OFFSET_Y": -50,
+          "POSITION_OFFSET_X": 100,
+          "SCALE_Y": 0.75,
+          "NAME": "DamageEffect_RBM_DashJump_X",
+          "SCALE_X": 0.75,
+          "SCALE_Z": 0.75,
+          "BONE_NAME": "Bip01_L_Hand",
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12002
+      }
+    },
+    "EffectSet_RST_DashJump_XZ": {
+      "raw": {
+        "NAME": "EffectSet_RST_DashJump_XZ",
+        "EFFECT0": {
+          "NAME": "DamageEffect_RST_DashJump_XZ",
+          "ROTATE_Z": -37.5,
+          "START_TIME": 0.15,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 11992
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_RBM_DashJump_X": {
+      "raw": {
+        "ATTACK_TIME_START": 0.01,
+        "MAIN_EFFECT_NAME": "RBM_DashJump_X_AttackBox",
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 6.94,
+          "HIT_ADD_MP": 2.5,
+          "TECH_POINT": 148,
+          "BACK_SPEED_Y": 750,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0,
+          "HIT_GAP": 0.5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "RE_ATTACK": 1,
+          "DAMAGE": {
+            "MAGIC": 1.64
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "ROTATE_Z": -30,
+          "PARTICLE_NAME": "RST_DashJumpX_AP01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "RuneGuardIce_S05",
+          "POSITION_TYPE": 0
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385556
+      }
+    },
+    "DamageEffect_RST_DashJump_XZ": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RST_DashJump_XZ_ProDummy",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "NOT_CULL": 1,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 200,
+          "FORCE_DOWN": 4.25,
+          "HIT_GAP": 0.075,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 52,
+          "CAMERA_CRASH_TIME": 0.5,
+          "HIT_ADD_MP": 2.92,
+          "BACK_SPEED_X": 750,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.86
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ShockWave.ogg"
+        },
+        "START_PARTICLE0": {
+          "BONE_NAME": "Bip01",
+          "ROTATE_Z": -37.5,
+          "SCALE_X": 0.6,
+          "SCALE_Z": 0.6,
+          "SCALE_Y": 0.6,
+          "PARTICLE_NAME": "RST_ShockWave_Pro04",
+          "POSITION_TYPE": 1
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.5,
+          "SCALE_Z": 0.4,
+          "SCALE_Y": 0.35,
+          "PARTICLE_NAME": "RST_ShockWave_Pro01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.5,
+          "SCALE_Z": 0.4,
+          "SCALE_Y": 0.35,
+          "PARTICLE_NAME": "RST_ShockWave_Pro02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.5,
+          "SCALE_Z": 0.4,
+          "SCALE_Y": 0.35,
+          "PARTICLE_NAME": "RST_ShockWave_Pro01D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.5,
+          "SCALE_Z": 0.4,
+          "SCALE_Y": 0.35,
+          "PARTICLE_NAME": "RST_ShockWave_Pro03",
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385495
+      }
+    }
+  },
+  "templates": {
+    "RBM_DashJump_X_AttackBox": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 3065739,
+        "line": 96064
+      },
+      "declarationSha256": "a5c34bca81c57c0c21ff2357f4bd7f4b7e3bd37d33e1ffaafb64f078873d9111",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.5,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            2.5,
+            2.5,
+            2.5
+          ]
+        }
+      ],
+      "repeated": {}
+    },
+    "RST_DashJump_XZ_ProDummy": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 3065157,
+        "line": 96045
+      },
+      "declarationSha256": "a932f656031d78a9db799575785002189d07b92d29a3a334c566eaf5ab9a9749",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14.0,
+        "PlayCount": -1.0,
+        "LifeTime": 0.3,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            3000.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.4,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            3.5,
+            3.5,
+            3.5
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {}
+    },
+    "RST_DashJumpX_AP01": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 213396,
+        "line": 5939
+      },
+      "declarationSha256": "c8c6689695126e40190b86f4d6b1461a95c4684d7a478256219923c81d7c4802",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.2,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "TraceParticleList": "RST_DashJumpX_AP01_1"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "MagicSquareLight01_Poision.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.5,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                0.7
+              ]
+            },
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            450.0,
+            450.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.02,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            150.0,
+            150.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1000.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.05,
+          "end": 0.05,
+          "fade": false,
+          "value": [
+            -1000.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "RST_DashJumpX_AP01_1",
+          "RST_DashJumpX_AP01_2",
+          "DemensionLinkGuardianFP01_1",
+          "RST_DashJumpX_AP01_3"
+        ]
+      }
+    },
+    "RuneGuardIce_S05": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 179549,
+        "line": 5082
+      },
+      "declarationSha256": "1a391e0975c85fe0bea47ded849a24a26ac7decc03fcebd0afeb7de1582ff0e0",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30.0,
+        "Lifetime": 0.3,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "WhitePoint.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            1.0,
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1700.0,
+            1700.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1000.0,
+            1000.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {}
+    }
+  },
+  "inputAdapter": {
+    "requested": "668XX",
+    "retained": "668XZ",
+    "secondSourceState": "RBM_DASH_JUMP_COMBO_XZ",
+    "diveRule": "Held direction cannot cancel an unfinished dive. Fourth Z waits for actual landing; explicit air66, X, awakening and skill cancels remain.",
+    "evidence": "User feedback; not a recovered target2016 native callback"
+  },
+  "meshMovementReference": "contracts/rf-shadow-mesh-source-v11.json",
+  "reactionReference": "contracts/rf-reaction-source.json",
+  "shockwave": {
+    "firstReactType": 5,
+    "followingReactType": 2,
+    "changeTimes": [
+      0.2,
+      0.4
+    ],
+    "airReaction": "RSI_DAMAGE_AIR_SMALL",
+    "groundSuccessor": "RSI_JUMP_LANDING",
+    "forceFlyMeaning": "Reset fly-count attenuation; not an override of REACT_TYPE.",
+    "interpretation": "Airborne big-hit posture keeps floating; retaining AIR_FLY through physical landing would choose a down state."
+  },
+  "limits": [
+    "No target2016 client trajectory or current GPU pixel measurement.",
+    "First-X 5 MP gate retains the existing shared callback adapter; the original new BM native callback is unavailable."
+  ]
+}

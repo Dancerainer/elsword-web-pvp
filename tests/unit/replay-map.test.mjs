@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import * as fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {loadReplayMap} from '../../tools/replay-map.mjs';
+const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+test('actual alternate map is chosen from frozen trace identity and its manifest/collision/geometry seals are checked',async()=>{
+  const root=fileURLToPath(new URL('../../',import.meta.url)),sceneId='elder-wally-castle-roof-stage4',folder=path.join(root,'artifacts/scene',sceneId);
+  const manifestBytes=await fs.readFile(path.join(folder,'manifest.json')),manifest=JSON.parse(manifestBytes);
+  const versions={sceneId,mapManifestSha256:sha(manifestBytes),mapCollisionSha256:manifest.collision.sha256,mapGeometrySha256:manifest.geometry.sha256};
+  const trace={versions,initial:{versions,sceneId},final:{sceneId}};
+  assert.equal(loadReplayMap({root,trace}).sceneId,sceneId);
+  assert.equal(loadReplayMap({root,trace:{initial:{versions,sceneId},final:{sceneId}}}).sceneId,sceneId);
+  for(const key of ['mapManifestSha256','mapCollisionSha256','mapGeometrySha256'])assert.throws(()=>loadReplayMap({root,trace:{...trace,versions:{...versions,[key]:'0'.repeat(64)}}}),/bytes changed/);
+  assert.throws(()=>loadReplayMap({root,trace:{...trace,versions:{sceneId}}}),/resource seals required/);
+  assert.throws(()=>loadReplayMap({root,trace:{...trace,versions:{...versions,sceneId:'../outside'}}}),/identity mismatch/);
+  assert.throws(()=>loadReplayMap({root,trace:{...trace,final:{sceneId:'another-map'}}}),/identity mismatch/);
+});
+test('legacy default-map trace without explicit map seals remains accepted and a replaced collision cannot be replayed',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'rf-replay-map-'));
+  t.after(async()=>{assert.ok(path.resolve(root).startsWith(path.resolve(os.tmpdir())+path.sep));await fs.rm(root,{recursive:true,force:true});});
+  const sceneId='sander-garpai-rock-pvp',folder=path.join(root,'artifacts','scene',sceneId);await fs.mkdir(folder,{recursive:true});
+  const collision=Buffer.from(JSON.stringify({sceneId,lines:[],spawns:[]}));
+  await fs.writeFile(path.join(folder,'collision.json'),collision);
+  await fs.writeFile(path.join(folder,'manifest.json'),JSON.stringify({sceneId,collision:{url:'collision.json',sha256:sha(collision)},geometry:{url:'scene.glb',sha256:'f'.repeat(64)}}));
+  assert.equal(loadReplayMap({root,trace:{versions:{},initial:{sceneId},final:{sceneId}}}).sceneId,sceneId);
+  await fs.writeFile(path.join(folder,'collision.json'),Buffer.concat([collision,Buffer.from(' ')]));
+  assert.throws(()=>loadReplayMap({root,trace:{versions:{}}}),/collision bytes changed/);
+});

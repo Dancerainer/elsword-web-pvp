@@ -1,0 +1,226 @@
+{
+  "schema": "rf-target2016-clock-pe-v16",
+  "evidenceClass": "target2016-raw-PE-static; pinned-V5-consumer-correspondence-unresolved",
+  "target": {
+    "path": "asset_sources/client\\data\\x2.exe",
+    "bytes": 16879648,
+    "sha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "matchesV14OriginalExe": true,
+    "machine": 332,
+    "imageBase": 833224704,
+    "imageSize": 40521728,
+    "entryRva": 40423424,
+    "entrySectionIndex": 5,
+    "sections": [
+      {
+        "index": 0,
+        "nameHex": "2020200020202020",
+        "rva": 4096,
+        "virtualSize": 25374720,
+        "rawOffset": 4096,
+        "rawSize": 9568256,
+        "characteristics": 3758096448,
+        "executable": true,
+        "rawEntropyBitsPerByte": 7.97005,
+        "rawSha256": "148dc7eb2addff0e0e08cab869a4830fba063714a9988634c2ac568cc756084a"
+      },
+      {
+        "index": 1,
+        "nameHex": "2e72737263000000",
+        "rva": 25378816,
+        "virtualSize": 582144,
+        "rawOffset": 9572352,
+        "rawSize": 227840,
+        "characteristics": 3221225536,
+        "executable": false,
+        "rawEntropyBitsPerByte": 7.99012,
+        "rawSha256": "82240dd4460012c6d4f8412c918f93e77f59f215e58920d8c8e65f728ff84038"
+      },
+      {
+        "index": 2,
+        "nameHex": "2e69646174612020",
+        "rva": 25964544,
+        "virtualSize": 4096,
+        "rawOffset": 9800192,
+        "rawSize": 512,
+        "characteristics": 3221225536,
+        "executable": false,
+        "rawEntropyBitsPerByte": 1.42283,
+        "rawSha256": "9dd904cd015da1f8b70b58a28e4bfaec850dea781f3ab65cb9f660f9a4e4097e"
+      },
+      {
+        "index": 3,
+        "nameHex": "2020202020202020",
+        "rva": 25968640,
+        "virtualSize": 7471104,
+        "rawOffset": 9800704,
+        "rawSize": 512,
+        "characteristics": 3758096448,
+        "executable": true,
+        "rawEntropyBitsPerByte": 0.27571,
+        "rawSha256": "c25deabe41c2e31bcd8b21d928e664f97b80e378c54345ba6ac5b90102026a2c"
+      },
+      {
+        "index": 4,
+        "nameHex": "687264646c69726e",
+        "rva": 33439744,
+        "virtualSize": 6983680,
+        "rawOffset": 9801216,
+        "rawSize": 6981120,
+        "characteristics": 3758096448,
+        "executable": true,
+        "rawEntropyBitsPerByte": 7.86581,
+        "rawSha256": "97374fd90b09ddfb19b8be53e55c45eb7324759f3d4cb7797e8b6f6f123ef9bc"
+      },
+      {
+        "index": 5,
+        "nameHex": "7668707168666c77",
+        "rva": 40423424,
+        "virtualSize": 98304,
+        "rawOffset": 16782336,
+        "rawSize": 92672,
+        "characteristics": 3758096448,
+        "executable": true,
+        "rawEntropyBitsPerByte": 7.99425,
+        "rawSha256": "887b6ff5a51f9e7a133932f596ab51aaf4483073a3a8c6582bb0a72621c54ef2"
+      }
+    ]
+  },
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceClockContract": {
+    "path": "contracts/rf-down-hit-rate-source-v16.json",
+    "canonicalJsonSha256": "086914245fa5809eb07b48006b534bd88e5767f2978ea103119afb73d2322024"
+  },
+  "patterns": [
+    {
+      "label": "75",
+      "encoding": "<f",
+      "patternHex": "00009642",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "85",
+      "encoding": "<f",
+      "patternHex": "0000aa42",
+      "wholeFileByteOccurrencesCount": 1,
+      "rowsTruncated": false,
+      "rows": [
+        {
+          "fileOffset": 11742685,
+          "contextFirstOffset": 11742673,
+          "contextHex": "81a6fb85b0e36af8127548c80000aa426832a97d4f1fe2d1057d5eaf",
+          "alignedToEncodingSize": false,
+          "sectionIndex": 4,
+          "rva": 35381213,
+          "preferredImageVa": 868605917,
+          "absoluteAddressByteOccurrencesCount": 0,
+          "absoluteAddressByteOccurrences": [],
+          "absoluteAddressRowsTruncated": false
+        }
+      ]
+    },
+    {
+      "label": "1/75",
+      "encoding": "<f",
+      "patternHex": "0e745a3c",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "1/85",
+      "encoding": "<f",
+      "patternHex": "c1c0403c",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "75",
+      "encoding": "<d",
+      "patternHex": "0000000000c05240",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "85",
+      "encoding": "<d",
+      "patternHex": "0000000000405540",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "1/75",
+      "encoding": "<d",
+      "patternHex": "4f1be8b4814e8b3f",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "1/85",
+      "encoding": "<d",
+      "patternHex": "181818181818883f",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "75",
+      "encoding": "<I",
+      "patternHex": "4b000000",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    },
+    {
+      "label": "85",
+      "encoding": "<I",
+      "patternHex": "55000000",
+      "wholeFileByteOccurrencesCount": 0,
+      "rowsTruncated": false,
+      "rows": []
+    }
+  ],
+  "method": {
+    "readOnly": true,
+    "originalClientExecuted": false,
+    "unpackingPerformed": false,
+    "disassemblyPerformed": false,
+    "dependencyInstallationPerformed": false,
+    "patternEncodings": [
+      "IEEE754 float32 little-endian",
+      "IEEE754 float64 little-endian",
+      "unsigned int32 little-endian"
+    ],
+    "addressSearch": "exact preferred-VA uint32 byte occurrences; not decoded instruction cross-references"
+  },
+  "localPythonDecoderInventory": {
+    "capstone": false,
+    "pefile": false,
+    "lief": false,
+    "iced_x86": false,
+    "distorm3": false,
+    "unicorn": false,
+    "keystone": false,
+    "angr": false
+  },
+  "sourceCorrespondenceConfirmed": {
+    "appConstantDeltaFieldWrite": false,
+    "stateChangeClockCaller": false,
+    "pvpBranchReachability": false,
+    "targetLogicalCadence": false
+  },
+  "limits": [
+    "An exact numeric byte pattern is not a decoded instruction or runtime value.",
+    "No preferred-VA byte occurrence is not proof that no relative/encoded/relocated reference exists.",
+    "High-entropy sections, noncanonical names and virtual/raw size gaps are consistent with an encoded/protected layout, not a verified protector identification.",
+    "No existing decoder executable or Python decoder library was found in the bounded local inventory; no installation or broad decompilation was attempted.",
+    "Static raw input did not establish an App delta-field write, StateChange caller or reachable PvP consumer.",
+    "Target2016 logical frequency and independent hit expectations remain unknown; current tickrate is unchanged."
+  ]
+}

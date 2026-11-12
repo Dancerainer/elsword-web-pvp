@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "targetClientMeasured": false,
+  "scope": "original missing feedback buff identities; consumers and attack effects are separate",
+  "buffTemplates": {
+    "433": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 1,
+        "BUFF_ICON_TEXTURE_KEY": "BUFF_ICON_ELS_1",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 433,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 0,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 45
+          },
+          "BBT_EFFECT_SET_WITH_DAMAGE": {
+            "1": "EffectSet_SI_A_SDK_INJECTION_STIGMA_BUFF"
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_31812",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_31813",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 26611
+      },
+      "source": {
+        "name": "BattleFieldBuffTemplet.lua",
+        "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+      }
+    },
+    "438": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 1,
+        "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_MOONLIGHT_RHAPSODY",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 438,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 0,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 55
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "DISPLAYER": {
+          "COMBINATION": {
+            "1": 3
+          },
+          "BDT_EFFECT_SET": {
+            "1": "EffectSet_Moonlight_Rhapsody_Buff_Display"
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_32031",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_32032",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 26915
+      },
+      "source": {
+        "name": "BattleFieldBuffTemplet.lua",
+        "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+      }
+    }
+  },
+  "buffFactors": {
+    "470": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 433,
+        "RATE": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "18": 1,
+          "19": 1,
+          "20": 1,
+          "21": 1,
+          "22": 1,
+          "23": 1,
+          "24": 1,
+          "25": 1,
+          "26": 1,
+          "27": 1,
+          "28": 1,
+          "29": 1,
+          "30": 1
+        },
+        "IGNORE_REGIST_FOR_RATE": 1,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 45
+          },
+          "BBT_EFFECT_SET_WITH_DAMAGE": {}
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 11,
+              "2": 11,
+              "3": 11,
+              "4": 11,
+              "5": 11,
+              "6": 11,
+              "7": 11,
+              "8": 11,
+              "9": 11,
+              "10": 11,
+              "11": 11,
+              "12": 11,
+              "13": 11,
+              "14": 11,
+              "15": 11,
+              "16": 11,
+              "17": 11,
+              "18": 11,
+              "19": 11,
+              "20": 11,
+              "21": 11,
+              "22": 11,
+              "23": 11,
+              "24": 11,
+              "25": 11,
+              "26": 11,
+              "27": 11,
+              "28": 11,
+              "29": 11,
+              "30": 11
+            }
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 29137
+      },
+      "source": {
+        "name": "BattleFieldBuffFactor.lua",
+        "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+      }
+    },
+    "476": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 438,
+        "RATE": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "18": 1,
+          "19": 1,
+          "20": 1,
+          "21": 1,
+          "22": 1,
+          "23": 1,
+          "24": 1,
+          "25": 1,
+          "26": 1,
+          "27": 1,
+          "28": 1,
+          "29": 1,
+          "30": 1
+        },
+        "IGNORE_REGIST_FOR_RATE": 1,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 55
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 24,
+              "2": 24,
+              "3": 24,
+              "4": 24,
+              "5": 24,
+              "6": 24,
+              "7": 24,
+              "8": 24,
+              "9": 24,
+              "10": 24,
+              "11": 24,
+              "12": 24,
+              "13": 24,
+              "14": 24,
+              "15": 24,
+              "16": 24,
+              "17": 24,
+              "18": 24,
+              "19": 24,
+              "20": 24,
+              "21": 24,
+              "22": 24,
+              "23": 24,
+              "24": 24,
+              "25": 24,
+              "26": 24,
+              "27": 24,
+              "28": 24,
+              "29": 24,
+              "30": 24
+            }
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 29461
+      },
+      "source": {
+        "name": "BattleFieldBuffFactor.lua",
+        "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_Moonlight_Rhapsody_Buff_Display": {
+      "raw": {
+        "NAME": "EffectSet_Moonlight_Rhapsody_Buff_Display",
+        "APPLIED_SKILL_ID": 29024,
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "NAME": "ADE_Moonlight_Buff01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1,
+          "APPLY_UNIT_ROTATION": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 42070
+      },
+      "source": {
+        "name": "EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    }
+  },
+  "effectTemplates": {}
+}

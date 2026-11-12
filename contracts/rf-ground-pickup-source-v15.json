@@ -1,0 +1,331 @@
+{
+  "schema": "rf-ground-pickup-source-v15",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetVersion": "SteamNA2016 V6.0420.5",
+  "evidenceClass": "fixed-V5 consumer + target2016 static declarations + user reported pickup; explicit web adapter",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "referenceSources": [
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "spans": [
+        {
+          "firstLine": 11504,
+          "lastLine": 11555,
+          "role": "Small selects standing state at victim<150 OR AT_UNIT owner<90",
+          "bytes": 2133,
+          "sha256": "ca66088f2a9371e03d5526db0a4563a05ac0f4e8ae462565d50af5698b72a817"
+        },
+        {
+          "firstLine": 11622,
+          "lastLine": 11684,
+          "role": "RT_DOWN uses Future support and clears force-down independently",
+          "bytes": 2055,
+          "sha256": "7f27c0f139116e3305498579b3691843a9c0ff3aa47e81ecf5044eb4b54aa7a7"
+        },
+        {
+          "firstLine": 25842,
+          "lastLine": 25855,
+          "role": "AirSmall StateStartFuture adds 700 vertical speed",
+          "bytes": 433,
+          "sha256": "bf0fb8e4ee9131b64b0ae4075224046122dcfd4a1cd68e378974e2633c21429e"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "spans": [
+        {
+          "firstLine": 6926,
+          "lastLine": 6944,
+          "role": "Small Front changes to AirSmall only above saved ground by >200",
+          "bytes": 544,
+          "sha256": "af7a006b9b3dbb3c19dac5ee065369e86a942a58abdf85b0e46e71eb3cbe1568"
+        },
+        {
+          "firstLine": 6959,
+          "lastLine": 6977,
+          "role": "Small Back uses the same strict >200 condition",
+          "bytes": 543,
+          "sha256": "dfe4e3ae4dd4f78d840a62a7eeb71b1b1636478575050f3217e58c157219af81"
+        },
+        {
+          "firstLine": 9021,
+          "lastLine": 9031,
+          "role": "JumpX Future uses GetWalkSpeed only under held same-facing direction",
+          "bytes": 330,
+          "sha256": "97cc0b2d915b887f97304bf84841bcc2a98528668cc4126754a9dac3f4dc19ed"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+      "spans": [
+        {
+          "firstLine": 1266,
+          "lastLine": 1282,
+          "role": "CEffect stores AT_EFFECT with owner game unit",
+          "bytes": 656,
+          "sha256": "11eca588e538a0b776fc8b96118a9110af1bf08d69332e63d28f8a63bf228786"
+        }
+      ]
+    }
+  ],
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "bytes": 398092,
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "gitBlob": "cf2f7659da24048766df94e6f110c84669483378"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "bytes": 183136,
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "gitBlob": "1f78040d224f5f095206bb6498ff710232be0a7e"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "bytes": 4395607,
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "gitBlob": "c45738ebcd24c6d6ed182a659b925dfa6b426583"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "bytes": 5409874,
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "gitBlob": "fe2f5d096eddd8266a6a1e90d1b87f5a64c9de9e"
+    }
+  ],
+  "targetEnums": {
+    "RT_SMALL_DAMAGE": 1,
+    "RT_DOWN": 3
+  },
+  "targetDeclarations": [
+    {
+      "name": "RSI_COMBO_Z",
+      "file": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 100,
+        "ANIM_NAME": "ComboZ1",
+        "DASH_CANCEL_AFTER": 100,
+        "ANIM_SPEED": 1.05,
+        "SKILL_CANCEL_AFTER": 0.01,
+        "WALK_CANCEL_AFTER": 0.6,
+        "BWALK_CANCEL_AFTER": 100,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "SPEED_X": 725,
+        "SOUND_PLAY0": {
+          "1": 0.15,
+          "2": "Raven_Slash1.ogg"
+        },
+        "BLADE_MASTERY": 1,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Lhand1",
+          "2": "Sword"
+        },
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_RF_COMBO_Z",
+            "2": 0,
+            "3": 2,
+            "4": 1
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "Z",
+          "2": "Z"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 125
+      }
+    },
+    {
+      "name": "RSI_JUMP_COMBO_X",
+      "file": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "raw": {
+        "ANIM_NAME": "JumpAttackX",
+        "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "UNIT_SLASH_TRACE0": {
+          "1": 0,
+          "2": 0,
+          "3": 100,
+          "4": 0
+        },
+        "ATTACK_TIME0": {
+          "1": 0.17,
+          "2": 0.23
+        },
+        "SOUND_PLAY0": {
+          "1": 0.176,
+          "2": "Raven_PunchAttack1.ogg"
+        },
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": -37,
+          "TECH_POINT": 1361,
+          "HIT_ADD_MP": 5,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 3,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 725,
+          "DAMAGE": {
+            "PHYSIC": 3.78
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "J",
+          "2": "JX"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 873
+      }
+    },
+    {
+      "name": "RSI_DAMAGE_AIR_DOWN",
+      "file": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "raw": {
+        "ANIM_NAME": "DamageAirDown",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10538
+      }
+    },
+    {
+      "name": "RSI_DAMAGE_SMALL_FRONT",
+      "file": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "raw": {
+        "ANIM_NAME": "DamageSmallFront",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 1,
+        "LAND_CONNECT": 0,
+        "APPLY_ANIM_MOVE": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10353
+      }
+    },
+    {
+      "name": "EffectSet_RF_COMBO_Z",
+      "file": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "raw": {
+        "NAME": "EffectSet_RF_COMBO_Z",
+        "EFFECT0": {
+          "START_TIME": 0,
+          "BONE_NAME": "Bip01",
+          "POSITION_OFFSET_Y": 30,
+          "POSITION_OFFSET_X": 140,
+          "SCALE_Y": 2.6,
+          "NAME": "DamageEffect_RF_COMBO_Z",
+          "SCALE_X": 2.6,
+          "SCALE_Z": 2.6,
+          "EFFECT_TYPE": 1,
+          "TRACE_MORE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 261852
+      }
+    },
+    {
+      "name": "DamageEffect_RF_COMBO_Z",
+      "file": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "raw": {
+        "ATTACK_TIME_START": 0.092,
+        "ATTACK_TIME_END": 0.2,
+        "MAIN_EFFECT_NAME": "Raven_WeaponDummy01",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "NOT_CULL": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": 9.25,
+          "TECH_POINT": 116,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 5,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1.54
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 424397
+      }
+    }
+  ],
+  "adapter": {
+    "id": "rf-z-trace-near-ground-owner-v15",
+    "route": {
+      "ownerState": "RSI_COMBO_Z",
+      "effectSet": "EffectSet_RF_COMBO_Z",
+      "effect": "DamageEffect_RF_COMBO_Z",
+      "mainEffect": "Raven_WeaponDummy01",
+      "TRACE_MORE": 1,
+      "REACT_TYPE": 1,
+      "activeSkill": false
+    },
+    "bounds": {
+      "ownerHeight": "0 <= h < LINE_RADIUS*3",
+      "victimHeight": "h >= LINE_RADIUS*5; no extra victim upper bound"
+    },
+    "behavior": "Use near-ground owner height only as the Small-reaction selector input. Preserve position, floor support, downward speed, KD/Mana Break precedence. Original CommonFuture physics precedes Small Event, whose >200 check may exit to AirSmall; never promote that later threshold into a pre-hit policy bound.",
+    "notSupported": [
+      "Matching target2016 native AT_EFFECT pickup consumer is unavailable.",
+      "This adapter is not a measured original-client equivalence result."
+    ]
+  },
+  "rootCause": "Effect-origin Z at victim height >=150 did not satisfy V5 AT_UNIT owner-height condition, chose AirSmall, and applied +700 despite the ground body Z pickup."
+}

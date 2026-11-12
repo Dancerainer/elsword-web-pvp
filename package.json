@@ -1,0 +1,17 @@
+{
+  "name": "elsword-2016-webpvp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-web.mjs",
+    "start": "node apps/server/dev-server.mjs",
+    "test:source": "node tools/check-public-source.mjs && node --test --test-concurrency=2 tests/combat/core.test.mjs tests/unit/skill-display-v32.test.mjs tests/unit/desktop-launcher.test.mjs tests/server/local-client.test.mjs tests/server/client-update.test.mjs tests/server/online-multimode.test.mjs",
+    "test": "node --test tests/server/*.test.mjs tests/integration/*.test.mjs tests/combat/*.test.mjs"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^9.29.0",
+    "@babylonjs/loaders": "^9.29.0",
+    "esbuild": "^0.28.2"
+  }
+}

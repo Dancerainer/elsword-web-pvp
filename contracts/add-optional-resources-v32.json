@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "originalClientExecuted": false,
+  "originalDllReceiptReuse": true,
+  "measuredInputs": [
+    {
+      "receipt": "reports/rf-full-skill-d3dx-keyframes.json",
+      "source": "./artifacts\\native-d3dx\\full-skill-keyframes.json",
+      "taskInput": ".cache\\client-skills-ui-v32\\native-input\\artifacts\\native-d3dx\\full-skill-keyframes.json",
+      "path": "artifacts/native-d3dx/full-skill-keyframes.json",
+      "sha256": "7019b7bc9d63722352c60c1e135726c6af73170ee6a9802fce0805c64ca33917",
+      "bytes": 12573809
+    },
+    {
+      "receipt": "reports/bm-fx-d3dx-keyframes-v1.json",
+      "source": "./artifacts\\native-d3dx\\bm-fx-v1-keyframes.json",
+      "taskInput": ".cache\\client-skills-ui-v32\\native-input\\artifacts\\native-d3dx\\bm-fx-v1-keyframes.json",
+      "path": "artifacts/native-d3dx/bm-fx-v1-keyframes.json",
+      "sha256": "e790a4dfd21b9763eb0d66acdec7083a751a6360f0103fc764a265b17e878a45",
+      "bytes": 3416391
+    }
+  ],
+  "converted": {
+    "ADD_Star_Fall_Explode_002": {
+      "source": {
+        "archive": "data/data116.kom",
+        "ordinal": 197,
+        "name": "aisha_active_energySpurt_circle.X",
+        "rawPath": "raw/data/data116.kom/aisha_active_energySpurt_circle.X",
+        "sha256": "d3cd43ed9ed0afcae6df2ea454434cbaf06885d03d0906c454f71e206036ebff",
+        "bytes": 3997,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "sourceSha256": "d3cd43ed9ed0afcae6df2ea454434cbaf06885d03d0906c454f71e206036ebff",
+      "animations": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.8666666746139526,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "files": [
+        {
+          "path": "artifacts\\mm\\v32\\fx\\meshes\\aisha_active_energySpurt_circle.glb",
+          "sha256": "ce8f06cbbe342cf3920388d3f5901c6e358de649025410824b9dc1824307bd14"
+        },
+        {
+          "path": "artifacts\\mm\\v32\\fx\\meshes\\aisha_active_energySpurt_circle.pose.json",
+          "sha256": "64e35c1a37118a973f4a030e10a69aaf625acd30522def93c1af9a13a107d230"
+        }
+      ]
+    },
+    "ADD_Star_Fall_Explode_001": {
+      "source": {
+        "archive": "data/data121.kom",
+        "ordinal": 73,
+        "name": "Lire_SI_SA_Gungnir_Mesh05.X",
+        "rawPath": "raw/data/data121.kom/Lire_SI_SA_Gungnir_Mesh05.X",
+        "sha256": "ac9c6bd85e85a6adca1f00182f46cffc6a1aa69fbb25f1a776f4f608b5b0b905",
+        "bytes": 4016,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "sourceSha256": "ac9c6bd85e85a6adca1f00182f46cffc6a1aa69fbb25f1a776f4f608b5b0b905",
+      "animations": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.6000000238418579,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "files": [
+        {
+          "path": "artifacts\\mm\\v32\\fx\\meshes\\Lire_SI_SA_Gungnir_Mesh05.glb",
+          "sha256": "b25d6fb0d0f053b9e06958405783eab24ce2769be4920ce6513db4a0e4a4d361"
+        },
+        {
+          "path": "artifacts\\mm\\v32\\fx\\meshes\\Lire_SI_SA_Gungnir_Mesh05.pose.json",
+          "sha256": "969b1cc41a002eee90f3dae82c1dcc0f0e78699466c905bd8546325576fa7bbc"
+        }
+      ]
+    }
+  },
+  "patchReceipts": [
+    {
+      "path": "artifacts\\mm\\v32\\fx\\index.json",
+      "beforeSha256": "9ee257289b049767bf42cb6ac68eee47895055b5601b010ac3f4ed5d787d5cef",
+      "changedTemplates": [
+        "ADD_Star_Fall_Explode_002",
+        "ADD_Star_Fall_Explode_001"
+      ],
+      "afterSha256": "95681c4a8fa9f51f66d862a0308a6d875e171d912ae8854070c71287cac40d1f"
+    },
+    {
+      "path": "packages\\combat-core\\mm-profile.json",
+      "beforeSha256": "fabc11e75c6689e6e38c6515e0b7fb2b4b3103969e86533895ad83ab58074344",
+      "changedTemplates": [
+        "ADD_Star_Fall_Explode_002",
+        "ADD_Star_Fall_Explode_001"
+      ],
+      "afterSha256": "cae090f7f28f98ffab9b893dd0f58248d1193701d815c20548b76aa8a6a12393"
+    },
+    {
+      "path": "artifacts\\mm\\fx\\index.json",
+      "beforeSha256": "2ab57f0b08688159db95d6f9fb7c8885edea9fedb1b2be24e104051ebb51d3fb",
+      "changedTemplates": [
+        "ADD_Star_Fall_Explode_002",
+        "ADD_Star_Fall_Explode_001"
+      ],
+      "afterSha256": "ea5cb441cb57a7749fa75f6c1f24fed5a683a6f71c7c5226f60166878443e4e5"
+    },
+    {
+      "path": "packages\\combat-core\\de-profile.json",
+      "beforeSha256": "13d05b02203fab1b1da68c10b0dd11d77fad1493f6670336580aba0335b87799",
+      "changedTemplates": [
+        "ADD_Star_Fall_Explode_002",
+        "ADD_Star_Fall_Explode_001"
+      ],
+      "afterSha256": "1adc472402bd1e5464949618f8230d5e4acb73212bd6d4151f6726049b68c554"
+    },
+    {
+      "path": "artifacts\\de\\fx\\index.json",
+      "beforeSha256": "372298f672da8997d3ca36c883484aecb9c91aced693a20caa9ce18fb15e3181",
+      "changedTemplates": [
+        "ADD_Star_Fall_Explode_002",
+        "ADD_Star_Fall_Explode_001"
+      ],
+      "afterSha256": "6de43ec1fe38aeb1553bfb69dacfc77f3f13b62730f7761c6cb48e9c4eff8434"
+    }
+  ],
+  "preservedFields": "all fields except the six conversion-status fields of the exact two original templates; role fxIndex.profileSha256 and failure lists refreshed",
+  "optionalMeshFailuresRemaining": []
+}

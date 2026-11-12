@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "targetExecuted": false,
+  "evidenceClass": "fresh2016 static declaration decode + original-derived native byte verification; no client execution",
+  "sources": {
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "add": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Add_NasodRuler.lua",
+      "sha256": "47476953d8ab9fd70f518938cf1306ef719ccf58c51313d3342747c3074a243d"
+    },
+    "native": {
+      "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+      "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+      "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729"
+    }
+  },
+  "state": {
+    "name": "ANSI_ATT_DASH_JUMP_COMBO_ZX",
+    "raw": {
+      "SKILL_CANCEL_AFTER": 0.25,
+      "ANIM_NAME": "ATT_DashJumpCombo_ZZX",
+      "ATTACK_CANCEL_AFTER": 0.25,
+      "DASH_CANCEL_AFTER": 0.25,
+      "WALK_CANCEL_AFTER": 0.3,
+      "DISABLE_GRAVITY_TIME_START": 0,
+      "ANIM_SPEED": 1,
+      "DISABLE_GRAVITY_TIME_END": 0.716,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "SPEED_TIME0": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 2
+      },
+      "IS_ATTACK_STATE": 1,
+      "SOUND_PLAY0": {
+        "1": 0.1,
+        "2": "Add_PsychicStorm_Ready.ogg"
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "assignmentInstruction": 9814
+    }
+  },
+  "native": {
+    "event": {
+      "address": "0x32739530",
+      "fileOffset": 13207856,
+      "bytes": 631,
+      "sha256": "0df56a28234091be4a0fc2167b6c83a31012cfdb612f1f42bdd0e7660e36fdab"
+    },
+    "walk": {
+      "address": "0x3273961a",
+      "fileOffset": 13208090,
+      "bytes": 101,
+      "sha256": "7c23a4eaeaac96bfc633e96d8a2a4a98968cf88a4e5af0aca00717d23b6bab7b",
+      "hex": "d89688690000dfe0f6c4417a5880bed86a00000074088b86cc6a0000eb068b8618650000d980e0000000d98688690000ded9dfe0f6c4057a2c389eec5d00007524389e466400007408389e4264000075148b16ddd88b425c6a006a0d8bceffd0e91a010000"
+    },
+    "dash": {
+      "address": "0x3273967f",
+      "fileOffset": 13208191,
+      "bytes": 100,
+      "sha256": "c35074f11293a621c27f9171f0e90c9ba5992e34d0972c9237d0da9209ccd4ec",
+      "hex": "d8968c690000dfe0f6c4417a5780bed86a00000074088b86cc6a0000eb068b8618650000d980e0000000d9868c690000ded9dfe0f6c4057a2b389eec5d00007523389e486400007408389e4464000075138b16ddd88b82f00400008bceffd0e9b6000000"
+    },
+    "attack": {
+      "address": "0x327396e3",
+      "fileOffset": 13208291,
+      "bytes": 182,
+      "sha256": "09122aa6b5774cb8cbcfce83324d891b84e3dc0c2f0766e2073687f2e70247a7",
+      "hex": "d8967c69000057dfe0f6c4417a4880bed86a00000074088b86cc6a0000eb068b8618650000d980e0000000d9867c690000ded9dfe0f6c4057a1c389eec5d00007514389e52640000750c8b3eddd88b97e0030000eb51d89e7c690000dfe0f6c4417a5280bed86a00000074088b86cc6a0000eb068b8618650000d980e0000000d9867c690000ded9dfe0f6c4057a26389eec5d0000751e389e5664000075168b3e8b97e40300006a008bceffd2508b475c8bceffd05f"
+    },
+    "cancelGetter": {
+      "address": "0x31fcb840",
+      "fileOffset": 5418048,
+      "bytes": 6,
+      "sha256": "0bec1e26f3d1a85d355f632d926209944d24832c42fe21c886c4a817fd6f8389",
+      "hex": "b80d000000c3",
+      "instructions": [
+        {
+          "address": "0x31fcb840",
+          "bytes": "b80d000000",
+          "mnemonic": "mov",
+          "operands": "eax, 0xd"
+        },
+        {
+          "address": "0x31fcb845",
+          "bytes": "c3",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ]
+    }
+  },
+  "confirmed": {
+    "walk": "strict animationTime>WALK_CANCEL_AFTER, grounded and either source direction level => WAIT13",
+    "dash": "strict animationTime>DASH_CANCEL_AFTER, grounded and source double direction => virtual+4f0 dash request",
+    "order": "animation end, other skill branches, walk, dash, attack; retains original cancellation ordering",
+    "attack": "strict animationTime>ATTACK_CANCEL_AFTER and grounded pureZ/X => virtual+3e0/+3e4 both WAIT13"
+  },
+  "boundedNegativeSearch": {
+    "input": "all freshly decoded Add_NasodRuler.lua global names",
+    "pattern": "^ANSI_(?:ATT|ADE)_DASH_JUMP_COMBO_ZXX",
+    "matches": [],
+    "relatedNames": [
+      "ANSI_ATT_DASH_JUMP_COMBO_ZX"
+    ]
+  },
+  "limits": [
+    "Original full-client trajectories remain unmeasured.",
+    "Native327433a0 eight-step FullPhysicProcess landing preview remains unsupported; no guessed teleport/displacement added.",
+    "The raw input field in327395b6..32739618 extra landing branch remains unqualified and is not guessed.",
+    "No dedicatedZXX attack state is inferred from player notation."
+  ]
+}

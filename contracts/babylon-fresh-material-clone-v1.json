@@ -1,0 +1,60 @@
+{
+  "schema": "babylon-fresh-material-clone/v1",
+  "scope": "Web presentation optimization; not a native Elsword behavior claim",
+  "dependency": "@babylonjs/core@9.29.0",
+  "entryPoint": "apps/web/actor-presentation.mjs:createActorView",
+  "implementation": "apps/web/clone-material-updates.mjs",
+  "sources": [
+    {
+      "path": "node_modules/@babylonjs/core/Materials/material.pure.js",
+      "sha256": "c62aca5e39455f05bf09f8b07107eb2250ed30f4a4c24cfefdc9e35070841217",
+      "evidence": "Constructor registers at addMaterial; _markAllSubMeshesAsDirty scans every scene mesh but modifies only matching materials with prepared draw-wrapper defines. blockDirtyMechanism=false instead calls markDirty, another full scan. Cached-material and prepass invalidation are separate."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Meshes/subMesh.pure.js",
+      "sha256": "452df1840b31eaebd9374d626706f25f9fa36ad8653fd510378832d3f5ac07a4",
+      "evidence": "clone constructs a fresh SubMesh; its draw wrappers do not inherit the source's compiled defines. A fresh wrapper may exist, so safety is not based on an empty wrapper array."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Meshes/abstractMesh.pure.js",
+      "sha256": "b092740a1bb15d6d5f457a68854569eb596c95b5c85047eae5e805acdcf8029d",
+      "evidence": "Changing material resets that mesh's draw caches. Material context uniqueness is not assumed: WebGL may use undefined contexts."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Materials/PBR/pbrBaseMaterial.pure.js",
+      "sha256": "fc3a71a18055e31c9e222a81294ad352d5d8a2088d97a65b04b208402302fbf5",
+      "evidence": "isReadyForSubMesh creates defines before readiness can return false. The instance gate is removed before either readiness entry point is called."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Materials/PBR/pbrMaterial.pure.js",
+      "sha256": "90873f4d77045aec85c42a193c26780184a3f718b611361686bb7e9d8d31afa9",
+      "evidence": "clone still runs SerializationHelper.Clone and _clonePlugins with all original material values and texture rules."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/assetContainer.js",
+      "sha256": "f28bc3bc4fbb7f6f209b5087a1952de20a303b6e52ceed47c34da3df7e57f464",
+      "evidence": "instantiateModelsToScene remains unchanged, including the existing MultiMaterial source-subMaterials replacement behavior."
+    },
+    {
+      "path": "node_modules/@babylonjs/core/scene.pure.js",
+      "sha256": "7306a197afd211ba2e6269dddd68c6dac4974429fce500948cbbb4498a69e69a",
+      "evidence": "addMaterial/addMultiMaterial register synchronously; onNewMaterialAddedObservable is deferred. Releasing scene.blockMaterialDirtyMechanism dirties all materials and is not used."
+    }
+  ],
+  "bounds": [
+    "Only the synchronous production instantiateModelsToScene call is wrapped.",
+    "Only newly registered instances with Babylon's original dirty method are gated; container source materials, their children, existing scene materials and custom dirty overrides retain their original path.",
+    "Unknown engine versions and nonconfigurable instance methods retain the unoptimized path.",
+    "Readiness calls restore the original methods before a plugin can prepare defines. If a plugin replaces either readiness entry, the next dirty request restores and executes the original scan while preserving the replacement; finally restores remaining descriptors on success, failure and nested calls.",
+    "No dependency/prototype patch, scene-wide blocking flag, geometry reduction, visual budget, material-value change or texture sharing change is applied.",
+    "Arbitrary plugins that manually inject draw-wrapper defines while bypassing material readiness are outside this production GLTF clone contract."
+  ],
+  "validation": {
+    "test": "tests/integration/clone-material-updates-v1.test.mjs",
+    "actualAsset": "artifacts/ca/fx/meshes/SCA_FATE_SMASHER_P01.glb",
+    "actualAssetMeshAndMaterialCount": 78,
+    "headlessBoundary": "NullEngine uses original geometry/material properties, omitting texture file I/O; separate synthetic tests cover ordinary texture cloning and shared render targets. Browser/GPU boot remains a separate acceptance check.",
+    "result": "8 tests pass; baseline and optimized material serialization and first-frame defines match, including previously rendered source meshes, independent views, MultiMaterial sharing, morphs, prepass/plugin/cache side effects, existing dirty state, readiness-false invalidation, readiness-entry replacement, nested exceptions and exact descriptor restoration.",
+    "meshIterationExperiment": { "backgroundMeshes": 250, "baselineVisits": 135954, "optimizedVisits": 0, "meaning": "Visits through scene.meshes iterator during this one clone; not a claimed GPU frame time or full startup speedup." }
+  }
+}

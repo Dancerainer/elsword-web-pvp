@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "abi": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "reference-V5-not2016",
+  "referenceFiles": [
+    {
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "bytes": 202266
+    },
+    {
+      "relativePath": "X2Lib/X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "bytes": 146678
+    },
+    {
+      "relativePath": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "bytes": 192825
+    },
+    {
+      "relativePath": "KTDXLIB/KTDX.h",
+      "sha256": "0097cffed97c4446e45fd586cc873290e6770a93e03b3bc7873383fb85d297cf",
+      "bytes": 44424
+    }
+  ],
+  "extractions": [
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "bool CX2GURaven::CanParryingState()",
+      "lines": [
+        14113,
+        14141
+      ],
+      "bytes": 604,
+      "sha256": "66e8cc7634fe8f37aedcce5357f02f3bf86fd0539e8d7b608b57700db4a2d564"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "void CX2GURaven::DoParrying()",
+      "lines": [
+        14143,
+        14193
+      ],
+      "bytes": 1786,
+      "sha256": "37824d2a2ad38504418ae3799c3c2b276db807b6539b868dc0e75a449a7585a3"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "void CX2GURaven::RSI_PARRYING_Start()",
+      "lines": [
+        17058,
+        17080
+      ],
+      "bytes": 442,
+      "sha256": "b0b376dbc0e7e49326ce70b805b755ae53c3957c0a4255ec34d9d9f40e246e89"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "void CX2GURaven::RSI_PARRYING_StateEnd()",
+      "lines": [
+        17109,
+        17117
+      ],
+      "bytes": 156,
+      "sha256": "e96477ef73524d5e1155399fba51c307828c20bbf4ba19b0d61465169f2ab932"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        8487,
+        8535
+      ],
+      "sha256": "012d00dbfd6d2c1551786e4aec794b8c79b1b9564241dac47cce2d883c305489",
+      "bytes": 1739,
+      "hostWrapper": "bounded member function"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        14500,
+        14511
+      ],
+      "sha256": "44dc1b5cc4213e55a08d8761baca44cabd6a61e73a26276022ae76f7494803ae",
+      "bytes": 410,
+      "hostWrapper": "bounded member function"
+    }
+  ],
+  "adapterSha256": "02c7a021c31d4ef785dbfa2fa1a96d289dc0a5fa6f53c5f6d3693f51085a8da4",
+  "module": {
+    "file": "nasod.wasm",
+    "sha256": "addc78c0ae552ef1095cf20e3cf77ba84459be2189a5d8df8603fa720fba531b",
+    "bytes": 15260
+  },
+  "hostBoundary": [
+    "Symbolic host state IDs preserve the verified common damage-state interval; no original numeric-ID claim.",
+    "GetDirVector is the host authored line +X basis; arbitrary line rotations and unit scale remain unsupported.",
+    "CommonStateStart/End, mesh storage, animation/sound dispatch and RestoreNasodBall recreation are captured host boundaries.",
+    "GetRandomInt(0) comes from the supplied actor random value; original RNG scheduling remains unverified.",
+    "Now foot uses the saved host land cache and strict abs(y-landY)<LINE_RADIUS; full original Now/Future frame buffers remain unported.",
+    "RIDING_SYSTEM/UPGRADE_RAVEN are declared by fixed Always.h; X2OPTIMIZE_PARTICLE_AND_ETC_HANDLE by KTDX.h.",
+    "SERV_CHUNG_TACTICAL_TROOPER is an explicit compile branch, not proven by these fixed headers; target2016 macro set remains unverified."
+  ]
+}

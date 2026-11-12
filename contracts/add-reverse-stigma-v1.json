@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "targetSource": {
+    "contract": "add-systems-source-v1.json",
+    "skill": {"path": "asset_work/raw/data/data036.kom/NewSkillTempletVer2.lua", "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266", "skillId": 29025},
+    "declaredValues": {"SA_EFFECTIVE_TIME": 6, "SA_SCOPE_ABS_PVP": 700, "normalRecastMp": 20, "formedRecastDisplayedDp": 20, "returnMagicMultiplier": 1.67, "buffFactorId": 478, "buffTemplateId": 440},
+    "descriptionContract": "Store the target position; another press transfers the marked target to that recorded position. Invincible targets cannot be transferred. The second use consumes20MP, or DP in awakening.",
+    "states": ["ANSI_SA_ADE_REVERSE_STIGMA", "ANSI_SA_ADE_REVERSE_STIGMA_RETURN"],
+    "resources": ["DamageEffect_ADE_REVERSE_STIGMA_Attack", "DamageEffect_ADE_REVERSE_STIGMA_Return", "EffectSetI_SA_ADE_REVERSE_STIGMA_Debuff", "EffectSet_REVERSE_STIGMA"]
+  },
+  "qualifiedReference": {
+    "contract": "add-systems-source-v1.json",
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "lines": {"mark": 15092, "clear": 15132, "initialEvent": 15200, "returnEvent": 15247},
+    "classification": "fixed source contains explicitly dated2026 reconstruction of older consumer; not original target2016 runtime",
+    "retainedConsumers": ["initial and return .1 animation events", "target Bip01 damage placement", "mark expiry and removal", "shared target buff survives another active DE mark"],
+    "rejectedConsumer": "The reconstructed return explicitly simplifies native force-movement into SetPositionOnLine. That User method is gated by ENABLE_SET_UNIT_POSITION_TEST and projects onto the current line's vertical plane; it is not used as target2016 behavior."
+  },
+  "webGeometryAdapter": {
+    "authorizedBasis": "target2016 saved-position description",
+    "position": "save original target XYZ and authored line identity; submit exact XYZ on return",
+    "support": "clear grounded/lineId and let the existing authored-map solver resolve following movement; preserve velocity and required landPosition wire vector until the solver recomputes it",
+    "noAssumptions": ["no nearest-floor snap", "no old test-macro projection", "no arbitrary velocity reset"],
+    "reject": ["target invincible", "target dead or disconnected", "recipient life epoch changed", "saved authored line missing or disabled"]
+  },
+  "ownershipAdapter": {
+    "actorState": "sourceAddStigma: null or {skillId29025,targetId,targetEpoch,position[3],lineId,remaining0..6,group}",
+    "notice": "sourceAddStigmaNotice: {serial>=1,action mark|return|clear,...same state fields}; remaining0 for return/clear",
+    "receipt": "localOwnerAddStigmaReceipts; recipient must have previously accepted the matching sender epoch, group, target epoch, saved point and saved line",
+    "clock": "receipt remaining advances on caster effective elapsed time through tickAddRecasts, including world-stop suspension; initial delivery subtracts presentation age",
+    "replay": "only current owner snapshots deliver notices, never critical-action historical replay; duplicates and failed return attempts are consumed",
+    "orderingLimit": "return that overtakes an entirely unobserved mark is rejected; original network transaction and acknowledgment protocol are unmeasured",
+    "damageLimit": "caster-owned return damage uses the observed target original Bip01 evaluated at saved XYZ; a recipient can independently reject transfer if its current invincibility/life differs. No historical recipient rollback is claimed.",
+    "trustBoundary": "first mark point is the caster-observed target coordinate; the receiver checks the frozen identity, valid map line and matching later return, but there is no recipient historical-position certificate. This is not authoritative anti-cheat."
+  },
+  "requiredRootIntegration": [
+    "include sourceAddStigma/sourceAddStigmaNotice in owned actor/critical/lifecycle field lists",
+    "shape and reference validation through validateAddStigmaState/validateAddStigmaNotice",
+    "call receiveAddStigmaNotice only for endMissing owner reports with presentationAge",
+    "flushAddStigmaNotices after deferred roster install; discard pending on failure",
+    "add stigma-return to commitAddSkillResources recast early return, so only the quoted recast cost is charged",
+    "add Return damage and Debuff set to dynamic skill resource roots and replace stale unsupported-return profile text"
+  ],
+  "remainingLimitations": ["movement submission is a Web adapter, not a recovered target2016 native force-movement implementation", "exact target-selection geometry remains the previously qualified frontal scan", "cross-profession buff display closure needs integrated verification", "original client dynamic measurement remains absent"],
+  "validation": {"command": "node --test tests/combat/add-stigma.test.mjs tests/combat/add-target-notices.test.mjs tests/combat/add-profiles.test.mjs", "passed": 203, "evidenceClass": "current Web module regression; real profiles, source-derived values, deterministic test adapters"}
+}

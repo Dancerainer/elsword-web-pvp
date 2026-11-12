@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "evidence": "reference-v5; target triggers unmeasured",
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "files": [
+    {"name": "Raven_NasodCore_Trans_Attack.ogg", "source": "X2Lib/X2GURaven.cpp:14372", "trigger": "shared Raven core prepares attack after an accepted triggering hit"},
+    {"name": "Raven_NasodCore_Attack.ogg", "source": "X2Lib/X2GURaven.cpp:14490", "trigger": "shared Raven core launches after its preparation delay"}
+  ],
+  "sourceHashes": "contracts/rf-hit-audio-source-v17.json",
+  "unitClasses": [107, 115],
+  "limits": "Existing shared-core callbacks are fixed-V5 candidates. Target2016 audio bytes are original; native client timing, spatial gain and audible-output parity are unmeasured."
+}

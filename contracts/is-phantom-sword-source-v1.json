@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "source": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.cpp",
+    "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "gitBlob": "81a8cc4ba5adc167078789a123feb74e0bb39816",
+    "evidenceClass": "fixedV5 version reference, independently matched raw Git blob; target2016 executable unmeasured"
+  },
+  "methods": [
+    {
+      "method": "constructor",
+      "line": 817,
+      "lastLine": 838,
+      "sha256": "8c327dc0f727d6d48f6634257a91d6dd552e0a689aa201c53e75deebfab01681"
+    },
+    {
+      "method": "destructor",
+      "line": 845,
+      "lastLine": 861,
+      "sha256": "99aaf1dfc68508a4f8ef8828eaa43961ea726050dbe9796779f883640ea786fc"
+    },
+    {
+      "method": "FunctionInCommonStateStart",
+      "line": 867,
+      "lastLine": 901,
+      "sha256": "75963a3a0f66d002e6bdad898e78f5a94111b5b034233e0719a78bf1d04ef544"
+    },
+    {
+      "method": "FunctionInCommonFrameMove",
+      "line": 907,
+      "lastLine": 977,
+      "sha256": "e81e55e7c770dd90f8c74c010a78ae24010108e4c0334cdf27e21707fdb67ac8"
+    },
+    {
+      "method": "FunctionInCommonStateEnd",
+      "line": 983,
+      "lastLine": 1011,
+      "sha256": "5f644293a18a7a366c85c0dc34d642cd7aeaa8df5024ff86c72e7ee10a5f9d5e"
+    },
+    {
+      "method": "InitializeDamageEffectThridBlade",
+      "line": 1017,
+      "lastLine": 1054,
+      "sha256": "3340fd6ec8eeb2e56902b0938fbb118fda2f04483afbe6376444e3f6263d378a"
+    },
+    {
+      "method": "InitializeMeshThirdBaldeCenter",
+      "line": 1060,
+      "lastLine": 1088,
+      "sha256": "de35111b215409310124c02c442d259c269920072597a3a7295f78c13ac41ef9"
+    },
+    {
+      "method": "CreateAndInsertThirdBladeData",
+      "line": 1094,
+      "lastLine": 1148,
+      "sha256": "56f0d7ba2fe1a4d40addf935c23673fc5d6b5f6145d08f0fb6f962388f49a754"
+    },
+    {
+      "method": "MoveDataDataToDamageEffect",
+      "line": 1154,
+      "lastLine": 1176,
+      "sha256": "652eac07658c234c23a5ce4d203d6cad21d4afc0f9480ed318bdc6705215deed"
+    }
+  ],
+  "damageLoaderDefault": {
+    "path": "X2Lib/X2DamageManager.h",
+    "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+    "line": 1448,
+    "lastLine": 1450,
+    "fPowerRate": 1,
+    "caller": "CreateAndInsertThirdBladeData omits fPowerRate; copied command replaces summon cast power"
+  },
+  "consumer": {
+    "buffTemplate": 29,
+    "damageEffect": "THIRD_BLADE",
+    "centerMesh": "ThirdBladeCenter",
+    "bone": "Dummy1_Rhand",
+    "delaySeconds": 0.2,
+    "damageMultiplier": 1.2,
+    "defenderStopAdditionSeconds": 0.033,
+    "maxQueueCatchUpPerFrame": 2,
+    "damageWindow": "selected ATTACK_TIME / play speed + current mesh time + delay",
+    "stateEnd": "clamp final queued attack end to current mesh time + delay",
+    "damageOverrides": {
+      "FORCE_DOWN": 0,
+      "HIT_ADD_MP": 0,
+      "ARRANGED_FLY": true,
+      "ATTACK_TYPE": "AT_SPECIAL"
+    },
+    "hitHistory": "fresh DamageData assignment resets hitUnitList for every queued attack",
+    "destruction": "remove both handles and clear both queues"
+  },
+  "targetDeclarations": ".cache/is-target/damage-declarations.json and packages/combat-core/is-profile.json#sources",
+  "limits": [
+    "Old memo26 is not a target2016 trait and is deliberately excluded.",
+    "No original-client combat, scheduling or GPU trace; source port only."
+  ]
+}

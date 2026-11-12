@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "id": "add-barrier-v2",
+  "targetClientMeasured": false,
+  "targetSource": {
+    "path": "asset_work\\raw\\data\\data036.kom\\Add_NasodRuler.lua",
+    "sha256": "47476953d8ab9fd70f518938cf1306ef719ccf58c51313d3342747c3074a243d"
+  },
+  "rawCharge": 1000,
+  "originalState": {
+    "ANIM_NAME": "Barrier_Active",
+    "SKILL_CANCEL_AFTER": 0,
+    "WALK_CANCEL_AFTER": 0.566,
+    "PLAY_TYPE": 2,
+    "TRANSITION": 0,
+    "LAND_CONNECT": 0,
+    "SOUND_PLAY0": {
+      "1": 0.1,
+      "2": "Slash.ogg"
+    },
+    "SUPER_ARMOR": 1,
+    "APPLY_ANIM_MOVE": 0,
+    "SPEED_TIME0": {
+      "1": 600,
+      "2": 0,
+      "3": 0.1,
+      "4": 2
+    },
+    "EVENT_PROCESS_TIME0": {
+      "1": 0,
+      "2": 100,
+      "3": 0.5
+    },
+    "EFFECT_SET_LIST": {
+      "1": "EffectSet_AN_Barrier_Active",
+      "2": 0
+    },
+    "IS_ATTACK_STATE": 1
+  },
+  "originalStatePc": {
+    "prototype": 0,
+    "assignmentInstruction": 5990
+  },
+  "stateRows": [
+    {
+      "name": "ANSI_COMBO_ZZZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER_BY_UNIT_CLASS": {
+          "1": 122
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4983
+      }
+    },
+    {
+      "name": "ANSI_COMBO_ZZZX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER_BY_UNIT_CLASS": {
+          "1": 122
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5033
+      }
+    },
+    {
+      "name": "ANSI_DASH_COMBO_ZZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER_BY_UNIT_CLASS": {
+          "1": 122
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5574
+      }
+    },
+    {
+      "name": "ANSI_DASH_COMBO_XXX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER_BY_UNIT_CLASS": {
+          "1": 122
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5704
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_READY",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6021
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_ATTACK",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6064
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_LANDING",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6116
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_Z",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6185
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_ZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6278
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_ZZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6327
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_ZZX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6363
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_ZZXX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6406
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_X",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6445
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_XX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6481
+      }
+    },
+    {
+      "name": "ANSI_COMBO_NASOD_ARMOR_XXX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6543
+      }
+    },
+    {
+      "name": "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZ_START",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6600
+      }
+    },
+    {
+      "name": "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZ_LOOP",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6712
+      }
+    },
+    {
+      "name": "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6746
+      }
+    },
+    {
+      "name": "ANSI_ALP_COMBO_NASOD_ARMOR_XDirectionX_LOOP",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6814
+      }
+    },
+    {
+      "name": "ANSI_ALP_COMBO_NASOD_ARMOR_XDirectionXZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6849
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_X",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10416
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_XX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10453
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_XXX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10493
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_Z",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10532
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_ZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10571
+      }
+    },
+    {
+      "name": "ANSI_AAT_COMBO_NASOD_ARMOR_ZZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10605
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_LANDING",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11810
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_Z",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11846
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_ZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11890
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZ",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11949
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_START",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11991
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_LOOP",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12018
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_END",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12055
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_X",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12089
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_XX",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12130
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_START",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12164
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_LOOP",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12192
+      }
+    },
+    {
+      "name": "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_END",
+      "fields": {
+        "POSSIBLE_NASOD_BARRIER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12233
+      }
+    }
+  ],
+  "profiles": {
+    "lp": {
+      "unitClass": 122,
+      "profileSha256": "975e2dd66dd121689be9c884a7c5b5eb0a69f83c81f6edea0491fcbe6e6ea001",
+      "declarationStates": [
+        "ANSI_COMBO_ZZZZ",
+        "ANSI_COMBO_ZZZX",
+        "ANSI_DASH_COMBO_ZZZ",
+        "ANSI_DASH_COMBO_XXX",
+        "ANSI_COMBO_NASOD_ARMOR_READY",
+        "ANSI_COMBO_NASOD_ARMOR_ATTACK",
+        "ANSI_COMBO_NASOD_ARMOR_LANDING",
+        "ANSI_COMBO_NASOD_ARMOR_Z",
+        "ANSI_COMBO_NASOD_ARMOR_ZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZX",
+        "ANSI_COMBO_NASOD_ARMOR_ZZXX",
+        "ANSI_COMBO_NASOD_ARMOR_X",
+        "ANSI_COMBO_NASOD_ARMOR_XX",
+        "ANSI_COMBO_NASOD_ARMOR_XXX",
+        "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZ_START",
+        "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZ_LOOP",
+        "ANSI_ALP_COMBO_NASOD_ARMOR_ZZFrontZX",
+        "ANSI_ALP_COMBO_NASOD_ARMOR_XDirectionX_LOOP",
+        "ANSI_ALP_COMBO_NASOD_ARMOR_XDirectionXZ"
+      ]
+    },
+    "mm": {
+      "unitClass": 123,
+      "profileSha256": "2c7361f82d73f22384c5bee7d57a5131560e042cf0417b7221073a8ab8f59165",
+      "declarationStates": [
+        "ANSI_COMBO_ZZZZ",
+        "ANSI_COMBO_ZZZX",
+        "ANSI_DASH_COMBO_ZZZ",
+        "ANSI_DASH_COMBO_XXX",
+        "ANSI_COMBO_NASOD_ARMOR_READY",
+        "ANSI_COMBO_NASOD_ARMOR_ATTACK",
+        "ANSI_COMBO_NASOD_ARMOR_LANDING",
+        "ANSI_COMBO_NASOD_ARMOR_Z",
+        "ANSI_COMBO_NASOD_ARMOR_ZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZX",
+        "ANSI_COMBO_NASOD_ARMOR_ZZXX",
+        "ANSI_COMBO_NASOD_ARMOR_X",
+        "ANSI_COMBO_NASOD_ARMOR_XX",
+        "ANSI_COMBO_NASOD_ARMOR_XXX",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_X",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_XX",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_XXX",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_Z",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_ZZ",
+        "ANSI_AAT_COMBO_NASOD_ARMOR_ZZZ"
+      ]
+    },
+    "de": {
+      "unitClass": 126,
+      "profileSha256": "4ff273db2795b7d69240a2d7f8c92aeb149cb4e184660b311c4fa6f4a2263c02",
+      "declarationStates": [
+        "ANSI_COMBO_ZZZZ",
+        "ANSI_COMBO_ZZZX",
+        "ANSI_DASH_COMBO_ZZZ",
+        "ANSI_DASH_COMBO_XXX",
+        "ANSI_COMBO_NASOD_ARMOR_READY",
+        "ANSI_COMBO_NASOD_ARMOR_ATTACK",
+        "ANSI_COMBO_NASOD_ARMOR_LANDING",
+        "ANSI_COMBO_NASOD_ARMOR_Z",
+        "ANSI_COMBO_NASOD_ARMOR_ZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZZ",
+        "ANSI_COMBO_NASOD_ARMOR_ZZX",
+        "ANSI_COMBO_NASOD_ARMOR_ZZXX",
+        "ANSI_COMBO_NASOD_ARMOR_X",
+        "ANSI_COMBO_NASOD_ARMOR_XX",
+        "ANSI_COMBO_NASOD_ARMOR_XXX",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_LANDING",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_Z",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_ZZ",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZ",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_START",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_LOOP",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_ZZZZ_END",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_X",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_XX",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_START",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_LOOP",
+        "ANSI_ATT_COMBO_NASOD_ARMOR_XXX_END"
+      ]
+    }
+  },
+  "referenceSource": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "gitBlob": "39888c9b632990e855057e61499363247e438a15",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5 reference containing later reconstruction; not matching 2016"
+  },
+  "referenceConsumers": [
+    {
+      "method": "CommonStateStartFuture",
+      "line": 2185,
+      "lastLine": 2217,
+      "sha256": "931a34d31022e0916ccc539b9dfc2fdb448abbecf56a0b386fc1239b806f426f",
+      "laterReconstruction": true
+    },
+    {
+      "method": "IsPossibleChangeNasodBarrier",
+      "line": 11893,
+      "lastLine": 11911,
+      "sha256": "d060448e734ac4ef0c1e897de3b7ec10862692c597aac02df0e8fb9f4291455e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodBarrierActiveStateStartFuture",
+      "line": 7579,
+      "lastLine": 7585,
+      "sha256": "323033138a856247cca10b76cdee7b7310dcdd2c7906b6c031aa43c6bb629ddf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodBarrierActiveEventProcess",
+      "line": 7587,
+      "lastLine": 7604,
+      "sha256": "0374b4629210e5b44f1b4d2d4762988ab48e9145bdbf4c190aa25ebc86ae9edf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageReact",
+      "line": 4573,
+      "lastLine": 4609,
+      "sha256": "9cc2924ee2fec135ea455e84bfd4b8d2752250b00a777736bfb52449028c673e",
+      "laterReconstruction": true
+    }
+  ],
+  "boundaries": [
+    "2016 supplies eligibility fields, class122 restriction, raw DP charge1000 and original barrier action/effect set.",
+    "The reaction order and temporary100-percent reduction are qualified fixed-reference consumers; no target executable trajectory is available.",
+    "Shared source defence-bypass and additional-attack stages retain their own order. The barrier is not represented as unconditional zero final damage.",
+    "The original state is not itself eligible for another barrier. StateStart owns option-aware DP conversion; peer restoration does not repeat StateStart."
+  ]
+}

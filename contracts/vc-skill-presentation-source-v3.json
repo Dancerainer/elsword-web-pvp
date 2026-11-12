@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "evidenceClass": "target2016 static + fixedV5 reference; not original client runtime",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceRavenIndex": "vc-reference-consumers-v1.json",
+  "methods": [
+    {
+      "method": "RSI_SA_RWT_HELLFIRE_GATLING_LOOP_FrameMove",
+      "purpose": "One muzzle set at .001, extra bullets .09 or .06/.12 without extra sets",
+      "sha256": "457e553c6621abd37b9f15b58c08ea05b6f5f92527e9c70ec34a4dad71078aec"
+    },
+    {
+      "method": "RVC_SI_SA_DEADLY_RAID_FrameMove",
+      "purpose": "Custom world position at left hand plus direction100 for both set and damage",
+      "sha256": "c443aaf5e207add9bcb104004c674372b626970681b6fdaf1dc1cb00e83269f1"
+    },
+    {
+      "method": "RVC_SI_SA_DEADLY_RAID_FINISH_FrameMove",
+      "purpose": "Same fixed custom origin for final larger explosion",
+      "sha256": "c5c4bb7b22a028836ecbea51f5a71ea5550f36cf0b8654001bb1835331bef021"
+    },
+    {
+      "method": "RSI_SA_RWT_GIGA_PROMINENCE_FINISH_FrameMove",
+      "purpose": "Both creates use owner rotation; negate first instance DirSpeed only",
+      "sha256": "a413fdb4c89a9f5eb37b099654dc0687fbccde2013f1b93046b3d5d502504116"
+    },
+    {
+      "method": "RSI_SA_RWT_GIGA_PROMINENCE_OVER_FINISH_FrameMove",
+      "purpose": "Same signed-DirSpeed rule for overheat wave",
+      "sha256": "e7d72a5ec1cf0bcdcfe8d1e9a675c9ef95dff5135e516c6fed5691ef086980fa"
+    },
+    {
+      "method": "SI_A_RRF_GROUND_IMPACT_FrameMove",
+      "purpose": "SA_PROJECTILE_SIZE supplied as EffectSet instance scale",
+      "sha256": "50b97f4750c18aea5d0aecbed49157336859109278c5dd1505a3421482c68f4f"
+    },
+    {
+      "method": "_ShowOverheatIcon",
+      "purpose": "Head+140 facing line dir+Y60; overlap additional direction50+Y20",
+      "sha256": "f7c7499ff11f6cef9ef4bb17a5da8314b698d574f200db190862dcb6e7a49ace"
+    },
+    {
+      "method": "PossibleDeadlyRaidLoop",
+      "purpose": "Three notices accepted at 3/5/7 presses, eligible loop <=1/2/3",
+      "sha256": "dccde2b883bc46009358733589337ff7ccb9efd31214c9879fd81b1cee357367"
+    },
+    {
+      "method": "RSI_SA_RWT_REVOLVER_CANNON_LOOP_EventProcess",
+      "purpose": "Overheat threshold notice accepted in loop after input",
+      "sha256": "be808da47f97c47fb6d2a972eb012d02fa74861d4ce19cd13011adeb96750d90"
+    },
+    {
+      "method": "RSI_SA_RWT_HELLFIRE_GATLING_LOOP_EventProcess",
+      "purpose": "Overheat threshold notice accepted in loop after input",
+      "sha256": "0234beb16112677bb91e3d1e4c887d7835fc9710a2317113d0055f681b0bc4b9"
+    },
+    {
+      "method": "RSI_SA_RWT_HARPOON_SPEAR_EventProcess",
+      "purpose": "Four-press notice before overheat release",
+      "sha256": "7a9d484a0549856c6341a79c8d895dcad0203a43b2425382d777a3c5380f5b54"
+    },
+    {
+      "method": "RSI_SA_RWT_GIGA_PROMINENCE_OVER_FINISH_StateStart",
+      "purpose": "Notice when entering accepted overheat finish",
+      "sha256": "3a6d0ad63198cd5f7e0bf624f704263b920b883270291e1c1f317d53ece41e81"
+    },
+    {
+      "method": "RVC_SI_SA_IGNITION_CROW_EventProcess",
+      "purpose": "Notice and branch latch before time2.01",
+      "sha256": "132c719a9de2c842c006141848ba4a4a06d9e8b2dfd8781ee895c64d8f541a72"
+    },
+    {
+      "method": "RVC_SI_SA_IGNITION_CROW_INCINERATION_EventProcess",
+      "purpose": "Same accepted input latch for Incineration",
+      "sha256": "0d043b46cb3c52f78c68e4b6b2d00ab320588426a2978156a399c80e5f1f87af"
+    },
+    {
+      "method": "CreateOverHeatObject",
+      "purpose": "GetCloneFrameDXMatrix left forearm + SetUseDXMatrix",
+      "sha256": "a2cac20e9a2ea568a86df21cd34e6bf3368d668212a71c27bcf0c28ca7cc2d7e"
+    },
+    {
+      "method": "DeleteOverHeatObject",
+      "purpose": "Close object retains forearm matrix",
+      "sha256": "15fdc357bc2200ae2027564ca0bf843ae1cf1b49fea87990579f48c859566dfa"
+    }
+  ],
+  "effectSetConsumer": {
+    "path": "X2Lib/X2EffectSet.cpp",
+    "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+    "fragments": [
+      {
+        "start": 2769,
+        "end": 2801,
+        "purpose": "Custom position precedes bones; declared offsets still applied",
+        "sha256": "c280667583f1c504a4a6a8f80ad7468db08563f7c3dd4a5657487350ae2d5e80"
+      },
+      {
+        "start": 2974,
+        "end": 3006,
+        "purpose": "Instance scale excludes DAMAGE_EFFECT unless explicitly forced",
+        "sha256": "5508a1048c03853176f031355fe017eafbb08cb9a5c9841b6bec98e25d6ff747"
+      },
+      {
+        "start": 3536,
+        "end": 3630,
+        "purpose": "Offset X follows horizontal unit direction, Y world-up, Z unit Z vector",
+        "sha256": "9d9b6504dcdaf071483bb7f32610b022bc1b892b1a38492a4f87fa174cdd5aaf"
+      }
+    ]
+  },
+  "target": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "groundImpact": {
+      "skillId": 24216,
+      "SA_PROJECTILE_SIZE": 1.5
+    },
+    "gigaTail": {
+      "effectSet": "EffectSet_Raven_Giga_Prominence_Flame",
+      "effect": "RWT_GIGA_PROMINENCE_FireTail",
+      "POSITION_OFFSET_Y": -200
+    }
+  },
+  "unsupported": [
+    "Full target client main-loop, original D3DX transitions and GPU compositing remain unmeasured"
+  ],
+  "regression": "tests/combat/vc-skill-presentation-v3.test.mjs"
+}

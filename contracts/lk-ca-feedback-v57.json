@@ -1,0 +1,1021 @@
+{
+  "schemaVersion": 1,
+  "originalClientExecuted": false,
+  "rawConfigurationChanged": false,
+  "reference": {
+    "scope": "fixed-V5-qualified-registration-and-consumer-reference; not target2016 dynamic execution",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUElsword_SwordMan.cpp",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "bytes": 714851,
+    "sections": [
+      {
+        "purpose": "LK native144/145 class-dependent Lua table binding",
+        "first": 1153,
+        "last": 1197,
+        "sha256": "6b60b3a6cd8ee4050e0b8587f83c70a132059f3a79c331ec7a1039c4530b11f8"
+      },
+      {
+        "purpose": "Shared X1 requests numeric144; table identity comes from the class registration",
+        "first": 8942,
+        "last": 9007,
+        "sha256": "4be556d74ec515d7338d10cf66f009b7505984258aa211f6a5cfe168a92f0611"
+      },
+      {
+        "purpose": "Knight X2 freshX/freshZ exclusive latches and landing successor",
+        "first": 9127,
+        "last": 9163,
+        "sha256": "62d65a4f00f3e0dc4518aaef8ed6e05596c9f39579d5b8305d4bcb22f739b2af"
+      },
+      {
+        "purpose": "Knight X3 end and strict.68 skip",
+        "first": 9241,
+        "last": 9264,
+        "sha256": "b720fe416557e4ddb3fba95529f197caeb83d9e0e5cec1e4b0cf7f1c96071476"
+      },
+      {
+        "purpose": "Common air X has one normal frame call and stays until landing",
+        "first": 8705,
+        "last": 8750,
+        "sha256": "fb4863f7e2345055cdf3bae6a4eeb69064b5589e669f6c5942649c5ca81daeb9"
+      }
+    ]
+  },
+  "lk": {
+    "numeric143Successor": 144,
+    "registeredClass": 100,
+    "baseTable": "ESSI_DASH_JUMP_COMBO_X2",
+    "classTable": "ESSI_KNIGHT_DASH_JUMP_COMBO_X2",
+    "classLandingFreshXSuccessor": "ESSI_KNIGHT_DASH_JUMP_COMBO_X3",
+    "classLandingFreshZSuccessor": "ESSI_COMBO_Z1",
+    "airXClock": {
+      "sourcePlayType": 2,
+      "sourcePlayName": "XAP_ONE_WAIT",
+      "nativeD3dxPlaybackField": 0,
+      "nativeD3dxPlaybackName": "D3DXPLAY_LOOP",
+      "period": 0.4666666666666667,
+      "poseInputSha256": "98e3b7e6f6309c38b7f75d9dcd6f1b891f9a3c017725c8f49985f4ea8ad9b313",
+      "skinReferences": [
+        {
+          "file": "KTDGXSkinAnim.cpp",
+          "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+          "first": 770,
+          "last": 816,
+          "sectionSha256": "8d72a1f7ed447c8c9e868040907ab652ea6d2076912f4663013cce08ea191bb0"
+        },
+        {
+          "file": "KTDGXSkinAnim.h",
+          "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+          "first": 14,
+          "last": 28,
+          "sectionSha256": "e52a43aca2e5530d713fe871f9ea30c1b8c9a025ae2947141306c6c4e1700348"
+        }
+      ],
+      "correction": "The historical pending-post host must retain the existing ordinary command end-stop tail. XAP_ONE_WAIT sets XAS_WAIT after period minus transition and then advances by zero; it does not request a second attack."
+    },
+    "declarations": [
+      {
+        "name": "ESSI_DASH_JUMP_COMBO_X2",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5924
+        },
+        "rawSha256": "0d34c5a49b0c620915709c455a30e3daae4c9b0b56fe76f9be1721260ff59ac7",
+        "raw": {
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "ANIM_NAME": "DashJumpComboX2",
+          "HIT_CAMERA1_RATE": 30,
+          "HIT_CAMERA2_RATE": 30,
+          "PHANTOM_BLADE_BACK_SPEED_X": 740,
+          "PHANTOM_BLADE_BACK_SPEED_Y": 500,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "SPEED_Y": 500,
+          "HIT_CAMERA0_RATE": 40,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0,
+            "2": 100
+          },
+          "CREATE_EFFECT_SET": {
+            "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+            "2": 0.2,
+            "3": 0
+          },
+          "SPEED_X": 740,
+          "SOUND_PLAY0": {
+            "1": 0.23,
+            "2": "PowerSlash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.23,
+            "2": "ElswordVoice_Shout01.ogg"
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": -34,
+            "HIT_ADD_MP": 7.15,
+            "TECH_POINT": 1469,
+            "BACK_SPEED_Y": 500,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 1,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 3,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": 740,
+            "DAMAGE": {
+              "PHYSIC": 4.08
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": -60,
+              "DISTANCE": 700,
+              "HEIGHT": 0,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -60,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 400,
+              "LOOK_OFFSET_Y": -200,
+              "DISTANCE": 800,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "A",
+            "2": "AXX"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "DashJumpComboX2",
+          "durationSeconds": 0.43333333333333335,
+          "decodedKeysSha256": "fd6b226a34be3f6ee6a54b362de7d8e2004b07b1e487dde2068b6d4d625001e8"
+        }
+      },
+      {
+        "name": "ESSI_KNIGHT_DASH_JUMP_COMBO_X2",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7204
+        },
+        "rawSha256": "8a72261c1fe7419a2bb2292ea713cd92f5206e63e44cb5234cb4adbab50e0655",
+        "raw": {
+          "ANIM_NAME": "DashJumpComboX2",
+          "SPEED_Y": 500,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0,
+            "2": 100
+          },
+          "CREATE_EFFECT_SET": {
+            "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+            "2": 0.2,
+            "3": 0
+          },
+          "SPEED_X": 740,
+          "SOUND_PLAY0": {
+            "1": 0.23,
+            "2": "PowerSlash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.23,
+            "2": "ElswordVoice_Shout01.ogg"
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 12.75,
+            "HIT_ADD_MP": 6.18,
+            "TECH_POINT": 603,
+            "BACK_SPEED_Y": 500,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 1,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": 740,
+            "DAMAGE": {
+              "PHYSIC": 3.35
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "DashJumpComboX2",
+          "durationSeconds": 0.43333333333333335,
+          "decodedKeysSha256": "fd6b226a34be3f6ee6a54b362de7d8e2004b07b1e487dde2068b6d4d625001e8"
+        }
+      },
+      {
+        "name": "ESSI_KNIGHT_DASH_JUMP_COMBO_X3",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7269
+        },
+        "rawSha256": "a8beaa552c83c2111607665fd5e77adf799c5f76e53147842e384d16d05e2fc4",
+        "raw": {
+          "ANIM_NAME": "Knight_DashJumpComboX3",
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0.34,
+            "2": 0.42
+          },
+          "CREATE_EFFECT_SET": {
+            "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+            "2": 0.34,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.34,
+            "2": "Slash.ogg"
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": -15.5,
+            "HIT_ADD_MP": 7.61,
+            "TECH_POINT": 967,
+            "CAMERA_CRASH_TIME": 0.2,
+            "CLEAR_SCREEN": 1,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": 500,
+            "BACK_SPEED_Y": 2100,
+            "DAMAGE": {
+              "PHYSIC": 4.03
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "Knight_DashJumpComboX3",
+          "durationSeconds": 1.4,
+          "decodedKeysSha256": "311f01e757bfd0d0b759c336029d329d05d30c15d25b12a3b0f9d93d86eeb3ea"
+        }
+      },
+      {
+        "name": "ESSI_JUMP_ATTACK_X",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5519
+        },
+        "rawSha256": "1a695a266a0776dcc4e7a992d91d3610ecba689e60126c6d94e33a91b607d911",
+        "raw": {
+          "ANIM_NAME": "JumpAttackX",
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 0.2666
+          },
+          "SOUND_PLAY0": {
+            "1": 0.1,
+            "2": "Slash.ogg"
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": -37,
+            "CAMERA_CRASH_GAP": 10,
+            "HIT_ADD_MP": 5,
+            "BACK_SPEED_Y": 100,
+            "CAMERA_CRASH_TIME": 0.2,
+            "TECH_POINT": 1152,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 3,
+            "REACT_TYPE": 3,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "BACK_SPEED_X": 690,
+            "DAMAGE": {
+              "PHYSIC": 3.49
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "J",
+            "2": "JX"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "JumpAttackX",
+          "durationSeconds": 0.4666666666666667,
+          "decodedKeysSha256": "3c989542135d8a8ebbc86c73c985e42919267682b8d0eabfbdc719941d7e02d9"
+        }
+      }
+    ],
+    "correction": "The common143→144 request is retained; LK144 selects its registered Knight table instead of the base swordman table. RS and IS are unchanged."
+  },
+  "ca": {
+    "declarations": [
+      {
+        "name": "ESI_DASH_JUMP_COMBO_SDK_XX",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13708
+        },
+        "rawSha256": "08cd45bb9d92da08121c46dd59152da403c5f4c3b3dc2f7c7f0234b23db16f57",
+        "raw": {
+          "ANIM_SPEED": 2.7,
+          "ANIM_NAME": "DashJumpCombo_XX",
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "APPLY_ANIM_MOVE": 0,
+          "CAN_PASS_UNIT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.15,
+            "2": "PowerSlash.ogg"
+          },
+          "SPEED_TIME0": {
+            "1": 500,
+            "2": 200,
+            "3": 0,
+            "4": 1
+          },
+          "SPEED_TIME1": {
+            "1": 0,
+            "2": -400,
+            "3": 0.333,
+            "4": 1
+          },
+          "ATTACK_TIME0": {
+            "1": 0.333,
+            "2": 100
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 100,
+            "3": 0.5
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 600,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 504,
+            "BACK_SPEED_Y": 400,
+            "CAMERA_CRASH_TIME": 0.2,
+            "CLEAR_SCREEN": 1,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "MELEE_ATTACK": 1,
+            "DAMAGE": {
+              "PHYSIC": 2.52
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "DashJumpCombo_XX",
+          "durationSeconds": 0.6,
+          "decodedKeysSha256": "a1c186fef8a9a3ddf74b112eeb87f4f9a2da613e6eabf84ae2de1edee7c9ac2d"
+        }
+      },
+      {
+        "name": "ESI_DASH_JUMP_COMBO_SDK_XXX",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13803
+        },
+        "rawSha256": "c6261bf31e0b189d5c1dd4eb2dbdda0501fb8af50e2b9d5cf8cd0ebcde96721c",
+        "raw": {
+          "SKILL_CANCEL_AFTER": 0.75,
+          "ANIM_NAME": "DashJumpCombo_SDK_XXX",
+          "HIT_CAMERA1_RATE": 30,
+          "HIT_CAMERA2_RATE": 30,
+          "DASH_CANCEL_AFTER": 0.75,
+          "ATTACK_CANCEL_AFTER_EX": 0.766,
+          "WALK_CANCEL_AFTER": 0.75,
+          "HIT_CAMERA0_RATE": 40,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "CAN_PASS_UNIT": 0,
+          "APPLY_ANIM_MOVE": 0,
+          "SPEED_TIME0": {
+            "1": 1480,
+            "2": 0,
+            "3": 0.166,
+            "4": 1
+          },
+          "SPEED_TIME1": {
+            "1": 500,
+            "2": 0,
+            "3": 0.433,
+            "4": 2
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 0.7,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.287,
+            "2": "Elesis_SlashDarkImpact1.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.2,
+            "2": "ElesisVoice_Shout15.ogg"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.2,
+            "2": 0.62
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 500,
+            "STOP_TIME_ATT": 0.033,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 157.5,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 1,
+            "FORCE_DOWN": 7.5,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "MELEE_ATTACK": 1,
+            "DAMAGE": {
+              "PHYSIC": 1.26
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "DISTANCE": 600,
+              "HEIGHT": -50,
+              "TRACKINGTIME": 0.15,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "DISTANCE": 1200,
+              "HEIGHT": 100,
+              "TRACKINGTIME": 0.15,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "DashJumpCombo_SDK_XXX",
+          "durationSeconds": 0.8666666666666667,
+          "decodedKeysSha256": "c24f685a87de1315dffa3173ca97fe2357144bf5ddd6027d532a2f82a5a6ef26"
+        }
+      },
+      {
+        "name": "ESI_DASH_COMBO_SCA_ZZZ_START",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14471
+        },
+        "rawSha256": "dc2f8c7d5eadcc22841f96431bdae9608a28cc75e996d60ac9c0d1348b6521b7",
+        "raw": {
+          "ANIM_NAME": "SDK_Dash_Combo_ZZZ_START",
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0.3,
+            "2": 0.6,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.4,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.195,
+            "2": "Elesis_SlashDarkImpact1.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.493,
+            "2": "Elesis_SlashDarkImpact2.ogg"
+          },
+          "APPLY_ANIM_MOVE": 0,
+          "SPEED_X": 800,
+          "ATTACK_TIME0": {
+            "1": 0.415,
+            "2": 0.482
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.66,
+            "3": 0.66
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 300,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 25,
+            "CAMERA_CRASH_TIME": 0.2,
+            "HIT_GAP": 0.1,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.5
+            },
+            "MELEE_ATTACK": 1,
+            "RE_ATTACK": 1
+          },
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "EFFECT_SET_LIST_EX": {
+            "1": {
+              "1": "EffectSet_C_SCA_Dash_ZZZ",
+              "2": 0.05,
+              "3": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "SDK_Dash_Combo_ZZZ_START",
+          "durationSeconds": 0.8666666666666667,
+          "decodedKeysSha256": "c236a113f0ec863b1111621a93011821c7e6b33256e34e273ab03d5b070afeb8"
+        }
+      },
+      {
+        "name": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_1",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14591
+        },
+        "rawSha256": "bb4568f82e21c646fdb1f25ffe64929873a6e05003a1c455490a778912c60eef",
+        "raw": {
+          "ANIM_SPEED": 0.9,
+          "ANIM_NAME": "SDK_Dash_Combo_ZZZ_LOOP1",
+          "SKILL_CANCEL_AFTER": 0.2,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 0.37,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.001,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.25,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.111,
+            "2": "Elesis_SlashDarkImpact1.ogg"
+          },
+          "SOUND_PLAY3": {
+            "1": 0.29,
+            "2": "Elesis_SlashDarkImpact2.ogg"
+          },
+          "APPLY_ANIM_MOVE": 0,
+          "SPEED_X": 800,
+          "ATTACK_TIME0": {
+            "1": 0.085,
+            "2": 0.137
+          },
+          "ATTACK_TIME1": {
+            "1": 0.257,
+            "2": 0.304
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.38,
+            "3": 0.38
+          },
+          "DAMAGE_DATA_CHANGE_TIME": {
+            "1": 0.2
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 600,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 54,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.5,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "MELEE_ATTACK": 1
+          },
+          "DAMAGE_DATA_NEXT": {
+            "BACK_SPEED_X": 600,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 54,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.5,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "MELEE_ATTACK": 1
+          },
+          "EFFECT_SET_LIST_EX": {
+            "1": {
+              "1": "EffectSet_C_SCA_Dash_ZZZ",
+              "2": 0.05,
+              "3": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "SDK_Dash_Combo_ZZZ_LOOP1",
+          "durationSeconds": 0.43333333333333335,
+          "decodedKeysSha256": "bfd7cac15228ae823787446b77ac4b255a155694e6f12a19b01e60722929dbba"
+        }
+      },
+      {
+        "name": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_2",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14711
+        },
+        "rawSha256": "7acee3af76cd7abbb7883be9c83da04f6eefd9a079d2dea933034ca684e47a85",
+        "raw": {
+          "ANIM_SPEED": 0.9,
+          "ANIM_NAME": "SDK_Dash_Combo_ZZZ_LOOP2",
+          "SKILL_CANCEL_AFTER": 0.15,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0.075,
+            "2": 0.39,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.075,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.29,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.098,
+            "2": "Elesis_SlashDarkImpact1.ogg"
+          },
+          "SOUND_PLAY3": {
+            "1": 0.28,
+            "2": "Elesis_SlashDarkImpact2.ogg"
+          },
+          "APPLY_ANIM_MOVE": 0,
+          "SPEED_X": 800,
+          "ATTACK_TIME0": {
+            "1": 0.085,
+            "2": 0.116
+          },
+          "ATTACK_TIME1": {
+            "1": 0.312,
+            "2": 0.363
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.38,
+            "3": 0.38
+          },
+          "DAMAGE_DATA_CHANGE_TIME": {
+            "1": 0.2
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 600,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 54,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.5,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "MELEE_ATTACK": 1
+          },
+          "DAMAGE_DATA_NEXT": {
+            "BACK_SPEED_X": 600,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 54,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.5,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "MELEE_ATTACK": 1
+          },
+          "EFFECT_SET_LIST_EX": {
+            "1": {
+              "1": "EffectSet_C_SCA_Dash_ZZZ_Uppercut",
+              "2": 0.05,
+              "3": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "SDK_Dash_Combo_ZZZ_LOOP2",
+          "durationSeconds": 0.43333333333333335,
+          "decodedKeysSha256": "dcaacf3132613c0add7fcf24452ec456232177b2e2ce8adb372a72637f78ab69"
+        }
+      },
+      {
+        "name": "ESI_DASH_COMBO_SCA_ZZZ_END",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14778
+        },
+        "rawSha256": "ca2b597587d0d841ad3fc9bb58c07527f7388a1e2c6ff62e2e34287f2ceb8d49",
+        "raw": {
+          "ANIM_NAME": "SDK_Dash_Combo_ZZZ_END",
+          "SKILL_CANCEL_AFTER": 0.8,
+          "DASH_CANCEL_AFTER": 0.8,
+          "WALK_CANCEL_AFTER": 0.866,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SLASH_TRACE": {
+            "1": 0.26,
+            "2": 0.6,
+            "3": 0
+          },
+          "SOUND_PLAY0": {
+            "1": 0.26,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.41,
+            "2": "Elesis_SlashDarkImpact1.ogg"
+          },
+          "APPLY_ANIM_MOVE": 0,
+          "SPEED_X": 800,
+          "ATTACK_TIME0": {
+            "1": 0.378,
+            "2": 0.428
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 500,
+            "STOP_TIME_ATT": 0.05,
+            "STOP_TIME_DEF": 0.033,
+            "TECH_POINT": 78.75,
+            "CAMERA_CRASH_TIME": 0.2,
+            "FORCE_DOWN": 0,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 5,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 1.05
+            },
+            "MELEE_ATTACK": 1
+          },
+          "EFFECT_SET_LIST_EX": {},
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "name": "SDK_Dash_Combo_ZZZ_END",
+          "durationSeconds": 1.4666666666666666,
+          "decodedKeysSha256": "e81a6ae12d1297ea7241db37ddae8dce68cbca81d62c2b0d92a1e09dc6e6053a"
+        }
+      }
+    ],
+    "projectiles": [
+      {
+        "name": "DamageEffect_SCA_Combo_ZZZ_Projectile01",
+        "raw": {
+          "DAMAGE_TIME": 3,
+          "MAIN_EFFECT_NAME": "SCA_Combo_ZZZ_Projectile_AttackBoX",
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 500,
+            "FORCE_DOWN": 3.5,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 52,
+            "CAMERA_CRASH_TIME": 0.3,
+            "RATE_MODIFIER": 0.5,
+            "PVP_RATE": 0.6,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 19,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 1,
+            "RE_ATTACK": 0
+          },
+          "TIME_PARTICLE0": {
+            "SCALE_Z": 1,
+            "SCALE_Y": 2,
+            "EVENT_TIME": 0.01,
+            "SCALE_X": 1,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_ADP01",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "APPLY_ROTATED_OFFSET": 1,
+            "TRACE": 1
+          },
+          "TIME_PARTICLE1": {
+            "SCALE_Z": 1,
+            "SCALE_Y": 3,
+            "EVENT_TIME": 0.01,
+            "SCALE_X": 1,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_ADP01_D",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "TRACE": 1
+          },
+          "TIME_PARTICLE2": {
+            "EVENT_TIME": 0.01,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_ADP03_3",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "TRACE": 1
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 140564
+        },
+        "rawSha256": "70b53f7cc58b4534a2511a90ba22596709448eea8492650ff82661345eb23065"
+      },
+      {
+        "name": "DamageEffect_SCA_Combo_ZZZ_Projectile01_Uppercut",
+        "raw": {
+          "DAMAGE_TIME": 3,
+          "MAIN_EFFECT_NAME": "SCA_Combo_ZZZ_Projectile_AttackBoX",
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "FOLLOW_LINE": 1,
+          "FOLLOW_LINE_NEW": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 500,
+            "FORCE_DOWN": 3.5,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 52,
+            "CAMERA_CRASH_TIME": 0.3,
+            "RATE_MODIFIER": 0.5,
+            "PVP_RATE": 0.6,
+            "HIT_ADD_MP": 3.24,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 19,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.87
+            },
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 1,
+            "RE_ATTACK": 0
+          },
+          "TIME_PARTICLE0": {
+            "OFFSET_Y": -80,
+            "SCALE_Z": 0.8,
+            "SCALE_Y": 1.15,
+            "EVENT_TIME": 0.01,
+            "SCALE_X": 0.8,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_S_E_Projectile01",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "APPLY_ROTATED_OFFSET": 1,
+            "TRACE": 1
+          },
+          "TIME_PARTICLE1": {
+            "OFFSET_Y": -80,
+            "SCALE_Z": 1,
+            "SCALE_Y": 1.3,
+            "EVENT_TIME": 0.01,
+            "SCALE_X": 1,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_S_E_Projectile02",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "TRACE": 1
+          },
+          "TIME_PARTICLE2": {
+            "OFFSET_Y": -50,
+            "SCALE_Z": 0.8,
+            "SCALE_Y": 0.8,
+            "EVENT_TIME": 0.01,
+            "SCALE_X": 0.8,
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "SCA_ADP03_3",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATE": 1,
+            "TRACE": 1
+          }
+        },
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 140639
+        },
+        "rawSha256": "923585a3590f0a0723afad8f0a276602b5c6cd4f009125dc7ab36bbf73effa93"
+      }
+    ],
+    "decision": "Original declarations explicitly include character and projectile damage. No declared final-projectile REACT5 row exists in the retained closure; the character END REACT5 is not proof of a projectile override. Preserve raw values pending a proven producer."
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasured": false,
+  "sources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "skill-note": {
+      "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+      "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+    },
+    "skill-data": {
+      "path": "asset_work\\raw\\data\\data036.kom\\SkillData.lua",
+      "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4"
+    },
+    "way-of-sword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+      "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+    }
+  },
+  "references": [
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "startLine": 12519,
+      "endLine": 12583,
+      "fragmentSha256": "104c7502f766b19c1557439348acb7cf89b5e44f9b7374cdc167124a170da499",
+      "purpose": "Armageddon callback and end",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "startLine": 14930,
+      "endLine": 14952,
+      "fragmentSha256": "ff1fee55c19a07c62ef12cdaa2bd66bf6f529f40ff47034b1ef67525f30680c7",
+      "purpose": "Sonic normal skip",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "startLine": 14978,
+      "endLine": 15000,
+      "fragmentSha256": "d6ad2dafa10d95866b6c8b1376517a426d639bf355a3e9f3745908cb3a1fa80d",
+      "purpose": "Sonic hyper skip",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "startLine": 197,
+      "endLine": 201,
+      "fragmentSha256": "9f251e1279a832a4dcb84440a39fd549d22740fa8a27955aad4277e0583bce3b",
+      "purpose": "pure direction/Z/X/eight-skill-key macro",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "KTDGXSkinAnim.cpp",
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "startLine": 1233,
+      "endLine": 1233,
+      "fragmentSha256": "4261540950df43f8983ccc6995c03b3fdfa93159947e3209059526a094568e29",
+      "purpose": "animation period",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "KTDGXSkinAnim.cpp",
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "startLine": 1256,
+      "endLine": 1283,
+      "fragmentSha256": "02116d455ebe864a2f42b6376ccc20d82918d8a69220f21e7d6699035aa55cb0",
+      "purpose": "transition default and XET override",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "startLine": 139,
+      "endLine": 184,
+      "fragmentSha256": "b2a75ef854372548f19aeac75d50168f8245e01bbb842aae33b52b40bcbbeec9",
+      "purpose": "animation versus custom start clocks",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    }
+  ],
+  "targetStates": {
+    "ESSI_SI3_ES_ARMAGEDDON_BLADE": {
+      "raw": {
+        "NORMAL_CAMERA1_RATE": 30,
+        "ANIM_NAME": "SP3a_ArmageddonBlade",
+        "ANIM_SPEED": 1.3,
+        "SHOW_SKILL_CUT_IN_TIME": 0.06,
+        "NORMAL_CAMERA0_RATE": 40,
+        "SLASH_TRACE_TIP_WIDE": 100,
+        "NORMAL_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "CHANGE_WORLD_COLOR": 1,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 2.1
+        },
+        "AFTER_IMAGE": {
+          "1": 0.1,
+          "2": 100
+        },
+        "SLASH_TRACE": {
+          "1": 0.1,
+          "2": 100
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.06,
+          "2": 1.7
+        },
+        "ATTACK_TIME0": {
+          "1": 1.68,
+          "2": 1.85
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -60,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 600,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 50,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 0,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "SOUND_PLAY0": {
+          "1": 0.004,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "ElswordVoice_Armageddon_blade.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 1.68,
+          "2": "Slash.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.31,
+          "2": "Elsword_Armageddon_Blade1.ogg"
+        },
+        "SOUND_PLAY4": {
+          "1": 0.975,
+          "2": "Elsword_Armageddon_Blade2.ogg"
+        },
+        "SOUND_PLAY5": {
+          "1": 1.779,
+          "2": "Elsword_Armageddon_Blade3.ogg"
+        },
+        "SOUND_PLAY6": {
+          "1": 1.779,
+          "2": "Elsword_Armageddon_Blade3.ogg"
+        },
+        "SOUND_PLAY7": {
+          "1": 1.8,
+          "2": "Elsword_BladeOut.ogg"
+        },
+        "SOUND_PLAY8": {
+          "1": 1.8,
+          "2": "Elsword_BladeOut.ogg"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.7,
+          "PVP_RATE": 0.42,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 40,
+          "STOP_TIME_ATT": 0.5,
+          "TECH_POINT": 2250,
+          "STOP_TIME_DEF": 0.7,
+          "HIT_ADD_MP": 30,
+          "WAY_OF_SWORD_TYPE": 3,
+          "DAMAGE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "BACK_SPEED_X": 740,
+          "CAN_REVENGE": 0,
+          "FORCE_FLY": 1,
+          "APPLIED_SKILL_ID": 21008,
+          "DAMAGE": {
+            "PHYSIC": 27.09
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "clip": {
+        "durationSeconds": 2.8,
+        "durationTicks": 13440,
+        "ticksPerSecond": 4800,
+        "sourceName": "SP3a_ArmageddonBlade",
+        "decodedKeysSha256": "24912361246d9e783d4461f0cecfa52398f842683789e736ec927c1baee55a02"
+      },
+      "location": {
+        "prototype": 0,
+        "assignmentInstruction": 11446
+      }
+    },
+    "ESSI_SA_ELK_SONIC_BLADE": {
+      "raw": {
+        "ANIM_NAME": "SI_SA_ELK_SONIC_BLADE",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA2_RATE": 30,
+        "ANIM_SPEED": 0.85,
+        "SHOW_SKILL_CUT_IN_TIME": 0.01,
+        "NORMAL_CAMERA0_RATE": 40,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "CHANGE_WORLD_COLOR": 1,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "AFTER_IMAGE": {
+          "1": 0.25,
+          "2": 0.65
+        },
+        "SLASH_TRACE": {
+          "1": 0.3,
+          "2": 0.6
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.1,
+          "2": 0.9
+        },
+        "SOUND_PLAY0": {
+          "1": 0.093,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.095,
+          "2": "ElswordVoice_SonicBlade.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.1,
+          "2": "Elsword_SI_SA_Sonic_Blade1.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.5,
+          "2": "Elsword_SI_SA_Sonic_Blade2.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -30,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 0,
+            "DISTANCE": 500,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 40,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": -100,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_Elsword_SonicBlade",
+          "2": 0.001
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "clip": {
+        "durationSeconds": 1.5333333333333334,
+        "durationTicks": 7360,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_SA_ELK_SONIC_BLADE",
+        "decodedKeysSha256": "e702f06bfecb014c15e812c6e04f12866c4aa43645295ad5abbccff1390e51c4"
+      },
+      "location": {
+        "prototype": 0,
+        "assignmentInstruction": 11829
+      }
+    }
+  },
+  "targetEffectSet": {
+    "NAME": "EffectSet_SA_ELK_ArmagedonBlade",
+    "EVENT_TIMER_TYPE": 1,
+    "EFFECT0": {
+      "START_TIME": 1.1,
+      "NAME": "ELK_ArmagedonBladeM",
+      "BONE_NAME": "Dummy1_Rhand",
+      "EFFECT_TYPE": 4,
+      "TRACE": 1,
+      "TRACE_MATRIX": 1,
+      "USE_SUB_ATTACK_LIST_SET": 1,
+      "BONE_TRACE_TARGET_MESH": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT1": {
+      "NAME": "Elsword_Ready2_PM",
+      "START_TIME": 0.6,
+      "BONE_NAME": "Dummy1_Rhand",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT2": {
+      "NAME": "ELK_ArmagedonBladeAPM",
+      "START_TIME": 0.3,
+      "BONE_NAME": "Dummy1_Rhand",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT3": {
+      "NAME": "ELK_ArmagedonBladeB01",
+      "START_TIME": 1.1,
+      "BONE_NAME": "Dummy1_Rhand",
+      "EFFECT_TYPE": 8,
+      "TRACE_MATRIX": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT4": {
+      "NAME": "ELK_ArmagedonBladeP01",
+      "START_TIME": 1.2,
+      "BONE_NAME": "Dummy03",
+      "EFFECT_TYPE": 8,
+      "TRACE": 1
+    },
+    "EFFECT5": {
+      "NAME": "ELK_ArmagedonBladeP02",
+      "START_TIME": 1.2,
+      "BONE_NAME": "Dummy02",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1
+    },
+    "CAMERA_SHAKE0": {
+      "TWO_DIR_TIME_GAP": 0.03,
+      "START_TIME": 1.4,
+      "TWO_DIR_TIME": 0.2,
+      "TWO_DIR_GAP": 50,
+      "SHAKE_TYPE": 3
+    }
+  },
+  "implementationBoundary": [
+    "Armageddon cast display catches up its declared timer at the 1.68 animation buff event so the first damage packet uses the original giant sword helpers; explicit target-timeline adapter, matching V6 callback unavailable.",
+    "Armageddon has no acquired early-key exit. Preserve source period-transition end and original STOP_TIME_ATT 0.5. No guessed shortened recovery.",
+    "Sonic uses strict animation >1.0 and the V5 pure-key domain. Matching V6 callback and original executable trajectory remain unverified.",
+    "Unknown XET transition overrides are not supplied. Current original-animation period and default end are a source-qualified simulation."
+  ]
+}

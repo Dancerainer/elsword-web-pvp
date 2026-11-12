@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "templates": {
+    "SI_SA_RRF_WILD_CHARGE_Max_Light": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10.0,
+        "Lifetime": 2.6,
+        "NumParticles": 20.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Light_Ring01.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            0.7,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            0.7,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.5,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            0.7,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            600.0,
+            600.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            750.0,
+            750.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.5,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            800.0,
+            800.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_RRF_WILD_CHARGE_Max_Light",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 124,
+        "name": "GameMajorParticle4.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+        "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+        "bytes": 342260,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 264260,
+        "line": 7754
+      },
+      "declarationSha256": "9231b20aba2f2edce847ff3438143597cb2b9e38ae54dd594981cc2d68d90eee",
+      "textures": {
+        "Explosion_Light_Ring01.tga": {
+          "file": "fx/textures/Explosion_Light_Ring01-37e6ce22bd.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 153,
+            "name": "Explosion_Light_Ring01.tga",
+            "rawPath": "raw/data/data048.kom/Explosion_Light_Ring01.tga",
+            "sha256": "37e6ce22bd94ee24d37beb39a0ae77b05315f216c4613f536cf12f6180641e70",
+            "bytes": 196652,
+            "signatureHex": "00000200000000000000000000010001"
+          }
+        }
+      }
+    },
+    "SI_SA_RRF_WILD_CHARGE_Max_Under": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.35,
+        "NumParticles": 10.0,
+        "TriggerCount": 4.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "GroundShockWave02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.35,
+          "fade": true,
+          "value": [
+            1.0,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            300.0,
+            300.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.35,
+          "fade": true,
+          "value": [
+            900.0,
+            900.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_RRF_WILD_CHARGE_Max_Under",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 124,
+        "name": "GameMajorParticle4.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+        "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+        "bytes": 342260,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 265028,
+        "line": 7777
+      },
+      "declarationSha256": "1c6211888b607564a611b741630e22c618c5208c6d7ce353f5564a11a4d7cd51",
+      "textures": {
+        "GroundShockWave02.dds": {
+          "file": "fx/textures/GroundShockWave02-72d6518d6b.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data119.kom",
+            "ordinal": 218,
+            "name": "GroundShockWave02.dds",
+            "rawPath": "raw/data/data119.kom/GroundShockWave02.dds",
+            "sha256": "72d6518d6b4d13032d5042735c888f4147f3e434dfaaf375433e7a3ff2ab96c4",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "SI_SA_RRF_WILD_CHARGE_Max_Up01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20.0,
+        "Lifetime": 0.6,
+        "NumParticles": 20.0,
+        "TriggerCount": 3.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Up_Impact01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.05,
+            0.8
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.3,
+            0.8,
+            1.3
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.5,
+            1.2,
+            1.9
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            {
+              "random": [
+                0.0,
+                90.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_RRF_WILD_CHARGE_Max_Up01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 124,
+        "name": "GameMajorParticle4.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+        "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+        "bytes": 342260,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 265724,
+        "line": 7798
+      },
+      "declarationSha256": "7c3213336e508a097a19b604fe9da4b0164b779ca2a0ce486e02cc94eed6c53e",
+      "textures": {},
+      "glb": "fx/meshes/Up_Impact01.glb",
+      "poseData": "fx/meshes/Up_Impact01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "SI_SA_RRF_WILD_CHARGE_Max_Up02": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20.0,
+        "Lifetime": 0.5,
+        "NumParticles": 20.0,
+        "TriggerCount": 3.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Up_Impact01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.55,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            0.55,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            1.0,
+            0.55,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.05,
+            0.8
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.7,
+            0.5,
+            1.7
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            1.9,
+            0.6,
+            2.3
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            {
+              "random": [
+                0.0,
+                -90.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            400.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_RRF_WILD_CHARGE_Max_Up02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 124,
+        "name": "GameMajorParticle4.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+        "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+        "bytes": 342260,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 266609,
+        "line": 7823
+      },
+      "declarationSha256": "e8f5486aefb65fe25ec07777640dfde5a2d514ea544759dd7bad33c645af8958",
+      "textures": {},
+      "glb": "fx/meshes/Up_Impact01.glb",
+      "poseData": "fx/meshes/Up_Impact01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false
+    }
+  },
+  "effectSets": {
+    "EffectSet_WILD_CHARGE_MAX": {
+      "raw": {
+        "NAME": "EffectSet_WILD_CHARGE_MAX",
+        "EFFECT0": {
+          "START_TIME": 0.08,
+          "NAME": "SI_SA_RRF_WILD_CHARGE_Max_Light",
+          "POSITION_OFFSET_Y": 80,
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT1": {
+          "NAME": "SI_SA_RRF_WILD_CHARGE_Max_Under",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT2": {
+          "START_TIME": 0.05,
+          "NAME": "SI_SA_RRF_WILD_CHARGE_Max_Up01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT3": {
+          "START_TIME": 0.02,
+          "NAME": "SI_SA_RRF_WILD_CHARGE_Max_Up02",
+          "EFFECT_TYPE": 8
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 100557
+      }
+    }
+  },
+  "sourceFiles": [],
+  "clientMeasured": false
+}

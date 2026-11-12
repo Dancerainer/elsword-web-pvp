@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "scope": "V48 project feedback; current Web fixes, static declarations and qualified fixed V5 consumers remain separate",
+  "sources": [
+    {
+      "kind": "fixedV5-reference",
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "lines": [
+        1671,
+        1705
+      ],
+      "claim": "gravity transforms through the inverse of current movement axes on each mesh update"
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "lines": [
+        6394,
+        6432
+      ],
+      "claim": "FollowLine sets visual and movement rotation to authored line direction, clearing X/Z rotation"
+    },
+    {
+      "kind": "fixedV5-reference-with-later-reconstruction",
+      "file": "X2Lib/X2GUAdd.cpp",
+      "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+      "lines": [
+        15025,
+        15046
+      ],
+      "claim": "ThirdPath_RecoverMPorDP blue resource text at model position plus50; resource arithmetic and reference qualification are unchanged"
+    }
+  ],
+  "original2016Declarations": [
+    "elesis-player-feedback-native-v45.json",
+    "elesis-attack-closure-v45.json",
+    "packages/combat-core/ca-profile.json: EVENT_PROCESS_TIME0 .38 and .43333333333333335-second authored loop clip",
+    "add-force-finger-recipient-v1.json"
+  ],
+  "webFixes": {
+    "1": "Preserve world-down gravity when FollowLine changes a BH fireball's movement axes. No authored velocity, gravity, life, damage or scale changed.",
+    "6": "Compare TIME_PARTICLE animation thresholds with the pre-mesh clock. The old post-mesh clock compared with itself suppressed visible CA waves in66Z,668XXX and66XZ. Preserve a prior buffered Z request when one fixed packet crosses the .38 loop dispatch and .39 end gate; keep the four-loop cap and existing skill gates.",
+    "10": "Pending BH668XZ EffectSet members lost their source local-55 roll on ownership reconstruction: source member+10 became-45 locally but stayed+10 remotely. Recompose the exact existing callback from the frozen raw member on receive; no target-based aiming policy or reaction number changes.",
+    "11": "Original Avatar registered Frame callback327e73d0 runs an independent .01 radius1000 scan, including self and allies, and counts Buff293 accumulation. Replaces the earlier incorrect Damage2-contact-only adapter; see elesis-avatar-native-v49.json. Legacy extra-damage fire storage remains unsupported.",
+    "12": "Independent Firewall NPC contact helpers and final wall now use authored map X/Z yaw, instead of global0/180. The source1s main hard-stagger plus0.33s RT_NO_DAMAGE subcarrier remain unchanged. Lower-target floor snapping is unresolved.",
+    "15": "Actual recipient MP loss uses existing red MP-minus glyphs; actual caster MP restoration uses existing blue MP-plus glyphs at model position+50. The old HUD MP popup is removed for this event. Formed DP HUD display remains because the current original glyph closure has no D glyph. Each resource owner's local display is implemented here; confirmed peer presentation transport is a separate owner-protocol integration."
+  },
+  "firewallNativeReview": {
+    "sourceContract": "elesis-firewall-npc-v45.json",
+    "sourceDerivedSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "analysisRegionSha256": "3dbe072d67bbf29dd0fa5a0e5a9a5e131c0ce18bb73c38d63b3456e2259690fb",
+    "provider": "Ghidra12.1.4",
+    "requestBuilderEvidenceId": "ev_2d76cab9c03f7a3c9c331d1196c90e4e03a85a52be46ecd1a36eec245a3517b6",
+    "requestBuilderEntry": "0x320b35c0",
+    "requestBuilderBodySha256": "317246d680c53d57b29548a6f33359be881851ee757ac48dbce05751e6451766",
+    "observed": "Re-read native327dead0 caller: request uses caster GetNowPos(0), no victim coordinate. Builder encodes the NPC request. Re-read existing fullNPC physics32530e00 decompilation: authored line direction and general collision branches; no Firewall-specific lower-victim floor selector recovered.",
+    "limitation": "Absence of such selection in these bounded functions is not proof about the whole original runtime. Do not infer targetY snapping from the player report.",
+    "followupContract": "elesis-firewall-ground-review-v49.json",
+    "followupContractSha256": "8d04ae52532d27471552046c0fc2efe96e32a1a383c93a82371cd4e72dc0094b"
+  },
+  "verification": {
+    "targetTrajectories": 0,
+    "firstBatchSpecificTests": 54,
+    "newV49Cases": 14,
+    "newOwnershipCases": "BH both directions and CA three wave routes serialize and validate full plus critical packets every frame; pending XZ exact activation; Avatar stack receipts; authored Besma bend wall",
+    "assetBytesChanged": 0,
+    "frozenRelatedCombat": {
+      "tests": 443,
+      "pass": 443,
+      "fail": 0,
+      "skipped": 0,
+      "summary": "reports/profession-player-feedback-v49-validation.json"
+    }
+  },
+  "limits": [
+    "This does not certify original-client dynamic fidelity or GPU pixel identity.",
+    "Red resource text uses the existing original MP-minus glyph/particle adapter; source numbers are actual deltas requested by the user, not unclipped declared amounts."
+  ]
+}

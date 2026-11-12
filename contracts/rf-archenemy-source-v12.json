@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "targetClientCombatMeasured": false,
+  "fixedReferenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceRows": [
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "lineSpans": [
+        [
+          475,
+          552
+        ],
+        [
+          5351,
+          5428
+        ],
+        [
+          5478,
+          5481
+        ],
+        [
+          6030,
+          6037
+        ],
+        [
+          6074,
+          6081
+        ],
+        [
+          13146,
+          13307
+        ],
+        [
+          13907,
+          13916
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "sourceFileSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "lineSpans": [
+        [
+          2866,
+          2916
+        ],
+        [
+          6712,
+          6789
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sourceFileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "lineSpans": [
+        [
+          20719,
+          20740
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sourceFileSha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "lineSpans": [
+        [
+          1466,
+          1515
+        ],
+        [
+          1796,
+          1832
+        ],
+        [
+          1956,
+          2030
+        ],
+        [
+          2918,
+          2943
+        ],
+        [
+          1568,
+          1637
+        ],
+        [
+          2065,
+          2068
+        ],
+        [
+          2443,
+          2548
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "sourceFileSha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "lineSpans": [
+        [
+          6,
+          42
+        ],
+        [
+          758,
+          786
+        ],
+        [
+          1068,
+          1081
+        ],
+        [
+          1094,
+          1113
+        ],
+        [
+          1116,
+          1288
+        ],
+        [
+          1308,
+          1347
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDXDeviceXSkinMesh.h",
+      "sourceFileSha256": "48f07d896c3d5a718104a28826af559edbfbdf38a0fda59dc499a65a067552b0",
+      "lineSpans": [
+        [
+          282,
+          303
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDGXSkinAnim.h",
+      "sourceFileSha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "lineSpans": [
+        [
+          369,
+          435
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.h",
+      "sourceFileSha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "lineSpans": [
+        [
+          1329,
+          1330
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    },
+    {
+      "file": "KTDXLIB/Always.h",
+      "sourceFileSha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "lineSpans": [
+        [
+          2420,
+          2420
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016"
+    }
+  ],
+  "original2016": {
+    "mesh": {
+      "fields": {
+        "MeshName": "Raven_OT_SP2_FlyingImpact_Effect.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 30,
+        "ZEnable": true,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": false
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Waiting",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_Overtaker_Flying_Impact",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 206890,
+        "line": 6538
+      },
+      "declarationSha256": "4455991e1c688c30e7340f37260f5d7d60d6bf34f423b239d1f4b5fd95d09275",
+      "textures": {},
+      "glb": "fx/meshes/Raven_OT_SP2_FlyingImpact_Effect.glb",
+      "poseData": "fx/meshes/Raven_OT_SP2_FlyingImpact_Effect.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.3333333730697632,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "initialSize": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "initialVelocity": null,
+      "initialDirSpeed": null,
+      "initialAnimation": {
+        "name": "Waiting",
+        "playback": "XAP_LOOP"
+      },
+      "missingExplicitTickRate": false
+    },
+    "normalDamage": {
+      "raw": {
+        "ATTACK_TIME_START": 0,
+        "ATTACK_TIME_END": 0,
+        "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+        "DAMAGE_TIME": 1,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 1,
+          "LOCK_ON_TYPE": 4
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "FORCE_DOWN": -15,
+          "BACK_SPEED_Y": -1000,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 1,
+          "CAMERA_CRASH_GAP": 20,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 188,
+          "CAMERA_CRASH_TIME": 0.5,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 3.75,
+          "BACK_SPEED_X": 500,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.48
+          },
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 201594
+      }
+    },
+    "memoDamage": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "ATTACK_TIME_END": 0,
+        "ATTACK_TIME_START": 0,
+        "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 1,
+          "LOCK_ON_TYPE": 4
+        },
+        "DAMAGE_DATA": {
+          "HIT_ADD_MP": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DUMMY_DAMAGE_MEMO",
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 0,
+          "APPLIED_SKILL_ID": 24008
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 40,
+          "PARTICLE_NAME": "Wally8thMissileExplosion",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE4": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE5": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE6": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE7": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 218942
+      }
+    },
+    "targetDescription": {
+      "1": "Nasod Spear (Magic): 761%\nKnockdown Rate Decrease: 15 Each hit\nDuration: 30 Seconds"
+    }
+  },
+  "controllerProbe": "reports/rf-archenemy-initial-controller-v12.json",
+  "controllerFailurePolicy": "Only matching original Waiting/XAP_LOOP uses the complete failed-loop chain: first copied pose remains bind; ctor index0 + maxTime0 + transition.1 selects original set0 Normal on that first update, later updates sample Normal with source two-track ramps/loop selection. No Waiting string alias, no arbitrary missing-name fallback. Initial DLL NULL tracks only prove initialization.",
+  "currentDamageConflict": {
+    "normalRawMagic": 4.48,
+    "targetDescriptionMagic": 7.61,
+    "memoChildMagic": 7.61,
+    "target2016MemoBindingConfirmed": false,
+    "decision": "Preserve compiled fixed-reference memo=false candidate and expose remaining divergence; do not invent override."
+  },
+  "runtimeBoundaries": [
+    "Original skill/frame/follow/hit callbacks and VectorLockOn remain compiled unchanged.",
+    "Arc line transform, global-mesh phase/lifetime/manual-vector movement and owner-death cleanup are explicit source-based JS host consumers.",
+    "Exact GPU transform interpolation, layer/stencil/blend quantization and 2016 whole-client callback schedule remain unmeasured.",
+    "Dead-target retarget random selection to additional opponents is not implemented in M3.",
+    "Only a bounded nonvertical GetDirVecToDegree host projection is executed; pure vertical/zero-vector rotation remains unsupported.",
+    "LOOP selection, ramp integration and copied-pose retention use fixed-reference JS host consumers; no complete target2016 SkinAnim frame execution or combat measurement."
+  ],
+  "resourceCopyRequired": [],
+  "tests": {
+    "sourceAndProduction": "tests/combat/archenemy-v12.test.mjs",
+    "productionCases": [
+      "keyboard cast then Z: left and right on actual Garpai helpers",
+      "original4.48 spear hit and finite disappearance",
+      "JSON restore then120 continuation steps",
+      "original30s expiry",
+      "owner-death clears owned spears",
+      "originalDLL initial tracks and failed Waiting bind helpers",
+      "nearest-owner sphere including last tied sphere",
+      "VectorLockOn with vertical and depth component + reflected render basis",
+      "source failed LOOP first bind then set0 Normal actual keys",
+      "source zero-speed current-global backup excludes unit-follow",
+      "keyboard release preserves global SlashTrace across life reset and JSON120 replay"
+    ]
+  },
+  "correctedV12Inference": [
+    "Initial NULL controller tracks never proved permanent bind.",
+    "Mesh global/event clock is independent of NowLifeTime and survives source release reset.",
+    "Zero-speed manual direction compares current global begin/end positions, excluding intervening unit follow movement."
+  ]
+}

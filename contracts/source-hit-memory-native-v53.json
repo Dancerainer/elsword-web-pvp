@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "classification": "original2016 static hit-container clock and erase consumers",
+  "analysisViewSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "upstreamInputs": [
+    {
+      "path": "asset_sources/analysis-project/docs/USEFUL_HIT_TIMING_2016.md",
+      "sha256": "f9e45198cf3fd556521b28763dacafe5118e2ce86da0c1148f2a93fb0952b66f"
+    },
+    {
+      "path": "asset_sources/analysis-project/docs/HIT_MEMORY_LIFECYCLE_2016.md",
+      "sha256": "4d0cd0e885b9c49d146de513679ce51bc4e4bfc8af428399bfd2222596554e88"
+    },
+    {
+      "path": "asset_sources/analysis-project/reports/analysis/useful-hit-timing-2016/behavior-contract.json",
+      "sha256": "c7f909d9a24974de2395ec8de8e239bf52269f543a673249512917d6091377fa"
+    }
+  ],
+  "own": {
+    "producer": "0x31f07df0",
+    "eraser": "0x31f07d10",
+    "clock": "effect frame float argument or actual actor received-frame160; only if RE_ATTACK==1",
+    "algorithm": "f32 remaining-=delta; ordered remaining<=0 swaps last into erased slot then rechecks same slot; unordered retained",
+    "identity": "Dedup compares currently resolved object identity, not cached-valid byte and not live TTL",
+    "zeroGap": "Still blocks in same scan until an actual repeat sweep removes row"
+  },
+  "shared": {
+    "lookup": "0x324db0f0",
+    "append": "0x324f4530",
+    "sweep": "0x321fb190",
+    "evidenceIds": [
+      "ev_84f7827d0a5bf5c5290efc710e963ce0e2a149dd8b8ad58815b776441dc71160",
+      "ev_63a1d19db3dcedda35d15552b28a27d959421eddb3138952ca78c189a63d8b9e",
+      "ev_f9a197f5377cebf9c2d88908dafd4a5977f002bec64a219b34d3d6b1a1f76361"
+    ],
+    "clock": "Actual target received-frame delta; independent of each source effect delta",
+    "algorithm": "Cache original end; subtract delta; ordered<=0 move-left/clear-tail/reduce live end; iterator advances unconditionally so moved-in row does not tick this call",
+    "identity": "owner64bit identity + owner114 kind + exact effect name; positive remaining required to block",
+    "phase": "Append after geometry/own-list gate and before target60/Miss outcome; gap0 appends but is nonblocking",
+    "hostIsolation": "Attacker/target epochs are explicit Web life boundaries and not claimed original fields"
+  },
+  "sourceContractExcerpt": {
+    "V5Used": false,
+    "WebModified": false,
+    "children": "CREATE event40+unsigned98*8c uses native crossing, success-only cursor increment and original count/end/mesh gates. USEFUL does not rewrite emitter times/counts. HIT31efe120 and DIE31efe980 pass resolved parent1cc owner and parent1c8 scalar into each child factory; child own APPLIED identity is parsed before later field inheritance.",
+    "communicationStudied": false,
+    "effectClock": "Effect DD+1f0: repeat5c8==1 sweeps5d0..5d4 12B targets with frame float delta before collision. Ordered TTL<=0 erase by swap with last and reprocess same iterator. Window744<=selectedclock<748; mesh2a0 if74c1 else animationE0.",
+    "effectCount": "DAMAGE_TIME→effect750; 31f01ae0 common event tail increments754 and e5=0 when counter>=cap. Counter is shared by whole effect across targets, not seconds or target-local tick count; miss/zero-result can skip this event tail.",
+    "next": "31ef8070 copies current initial DD to each candidate then parses explicit NEXT (missing skill/type/repeat/gap get original zero fallbacks); posthook runs on parsed candidate. 31ef7ea0 copies live hit vector into chosen template then assigns it back, preserving each remaining TTL. Optional814 clear occurs after current collision/switch. Never multiply existing TTL on switch.",
+    "ownMemory": "31f07df0 stores DD3dc float bits per target; contact scan compares target identity without checking TTL. GAP0 does not erase a record inside the current scan.",
+    "packageScriptExecuted": false,
+    "sharedClock": "321ff390:321fffd2→321fb190(target160). Cached original end; expired finite<=0 record move-left/source zero, destroy last/live end−4, then iterator advances4 unconditionally. Moved next record is skipped this invocation. Different from own-memory swap/recheck.",
+    "sharedGroup": "effect9ed GROUP_DAMAGE1; after geometry/own-list and before target+60, target5718 pointer vector gates same owner v54 64bit value+owner114+exact effectname while record2c>0. 324f4530 appends0x30 record with2c=DD3dc before target result/Miss.",
+    "staticResult": "Cadence algorithm is complete for selected normal producers. Actual integer contacts require real target geometry/identity, deltas and ordered callback inputs; these are algorithm parameters, not unexpanded consumers or claimed missing input pages.",
+    "status": "parsed-conditional-native-consumer-and-positive-selected-producers",
+    "targetExecuted": false,
+    "type5": "Original note class+normalizedskill+equipped exact pair. DD534 skill; nonzero DD538 must equal selected type5; resolved owner114==0. DD3dc=f32(HIT_GAP*p0); DD38/3c/550*=p1. No direct object/event-count rewrite.",
+    "wholeSkillClosed": false
+  },
+  "interfaces": {
+    "own": [
+      "appendSourceHitMemory2016(rows,targetId,gap)",
+      "sourceHitMemoryContains2016(rows,targetId,{resolveTarget})",
+      "tickSourceHitMemory2016(rows,delta,{repeat})"
+    ],
+    "shared": [
+      "initializeSourceGroupMemory2016(state)",
+      "claimSourceEffectGroupHit2016(state,{ownerIdentity,ownerKind,targetId,name,gap,attackerEpoch,targetEpoch})",
+      "tickEffectGroupHits2016(state,targetId,targetDelta)"
+    ],
+    "compatibility": "Old wall-clock wrappers remain for legacy mode. Source mode blocks global retire and query-side ticking. Existing player claim wrapper maps known host actor IDs/kind0; NPC callers must use explicit source interface.",
+    "snapshot": "Source mode flag sourceEffectGroupClockVersion2016 and remaining rows must persist together; legacy records are never silently converted"
+  },
+  "integrationBoundary": "Root task must invoke each sweep only at its original reached phase with actual delta, rather than guessing an elapsed wall clock. No index/owned-state edits in this commit."
+}

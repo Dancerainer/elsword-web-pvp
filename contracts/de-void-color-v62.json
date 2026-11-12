@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "de-void-current-particle-color-original2016-v62",
+  "source": {
+    "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "classification": "selected historical non-atomic derived PE; static bytes"
+  },
+  "targetExecuted": false,
+  "targetGpuMeasured": false,
+  "enclosingContract": "contracts/add-analysis-v53/DE_VOID_FIELD_TERMINAL_2016.md",
+  "wrapper": {
+    "address": "0x31cdd770",
+    "fileOffset": 2345840,
+    "bytes": 13,
+    "sha256": "c7a94d8c6b28f383fc1312b73db653c6cb8e9c4947adf3608faedd2de16dca4b",
+    "hex": "8d44240450e856c30000c20400"
+  },
+  "currentParticleSetter": {
+    "address": "0x31ce9ad0",
+    "fileOffset": 2395856,
+    "bytes": 158,
+    "sha256": "fbd2b4654ed7da01214918e357586926bf52b2f4f4b56f0d52c597fad4105f93",
+    "hex": "83ec20538b99fc020000578b797c81c798000000897c2408895c240c85db78768b47142b4710c1f8033bd87d698b0f8b4cd904558bc7563bc775043bcb74558b30894c241c03c903c98bd08b401003c98b04088b740e0485c074338b68288b481c8b78208b5824896c242c8b6c2434d9450089481c897820d95c242c8b4c242c8b7c24108958248b5c24148948288bc28bceeba35e5d5f5b83c420c20400",
+    "classification": "bounded direct CFG through ret4 at 0x31ce9b6b; not linker-established function size",
+    "writes": {
+      "address": "0x31ce9b5b",
+      "meaning": "current particle color alpha at +0x28"
+    },
+    "preserves": "RGB fields +0x1c/+0x20/+0x24 are copied back unchanged"
+  },
+  "conclusion": "This setter iterates current particles and writes alpha; these bytes do not establish a persistent value for future emissions.",
+  "webPolicy": "V62 retains the last monotonic Void collapse multiplier on actual finite emitter tails, including local owned-handle replacement. This is the requested no-reappearance Web lifecycle rule, not an original-client pixel or future-color claim.",
+  "unchanged": [
+    "original raw 7.75 lifetime",
+    "original .98 main-scale callback",
+    "original -.03 display callback",
+    "particle declarations/counts/materials/quality"
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static+qualified-fixedV5-reference",
+  "originalClientMeasurements": 0,
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "fragments": [
+      {
+        "name": "ESSI_ERS_XZ_FrameMove",
+        "startLine": 14485,
+        "endLine": 14537,
+        "sha256": "aa51b7d9c60d1ba59ef1f9f27db28ccd04e26d69382f74955aad4120b252f3a9"
+      },
+      {
+        "name": "ESSI_ERS_XZZ_FrameMove",
+        "startLine": 14567,
+        "endLine": 14623,
+        "sha256": "37178b23fccceefcbb7e2d01953455f82e58d66b3b8803344ed892024e0e66a1"
+      },
+      {
+        "name": "ESSI_ERS_DASH_JUMP_XZ_FrameMove",
+        "startLine": 14684,
+        "endLine": 14773,
+        "sha256": "a35e9e5fb15e028bfbdc0e3ea8132eb9edf70e18bee31f8a43d6f45632cf964b"
+      },
+      {
+        "name": "ESSI_ERS_DASH_JUMP_XZZ_FrameMove",
+        "startLine": 14811,
+        "endLine": 14886,
+        "sha256": "fe9153e09d872df1c4fff7fde84de57889aa97db87116aaa72281c6653a41faf"
+      },
+      {
+        "name": "ESSI_MAGIC_KNIGHT_DASH_COMBO_Z3a_FrameMove",
+        "startLine": 8479,
+        "endLine": 8526,
+        "sha256": "59c22ebb74a31e1686987d65246bbb5e5013b38c1ef160672b2a53da26ad1c14"
+      },
+      {
+        "name": "ESSI_MAGIC_KNIGHT_DASH_JUMP_COMBO_X2a_FrameMove",
+        "startLine": 9186,
+        "endLine": 9218,
+        "sha256": "7f3e4bc76950934a5ca112d9410e10bb026e7814bfcbd573242138ae22186c26"
+      },
+      {
+        "name": "ESSI_SI_A_ERS_CRITICAL_SWORD_FrameMove",
+        "startLine": 19214,
+        "endLine": 19230,
+        "sha256": "a55b93a3d1c3f3bc0b269387adeae82241be7a005d92df3ae51867d8005d91df"
+      },
+      {
+        "name": "ESSI_SI_A_ERS_RUNE_OF_FIRE_FrameMove",
+        "startLine": 19276,
+        "endLine": 19294,
+        "sha256": "8aceb2ffa5e8cce8e34afa0056b092e6639bb7ec90ffa812a9e747a90363aac5"
+      },
+      {
+        "name": "ESSI_A_ESK_PHOENIX_TALON_FrameMove",
+        "startLine": 15344,
+        "endLine": 15361,
+        "sha256": "180830eafde8bc49a9979fc324d1ebfb639380dd054ad591bcfecfe03cdcdf62"
+      },
+      {
+        "name": "ESSI_SA_EMK_BIG_BURST_FrameMove",
+        "startLine": 14305,
+        "endLine": 14330,
+        "sha256": "d4af8c6a95977af83c715232d917cf8a98425c568eb35e2eef513bbf99c03d62"
+      },
+      {
+        "name": "ESSI_SA_ERS_SPLASH_EXPLOSION_StateStart",
+        "startLine": 15023,
+        "endLine": 15036,
+        "sha256": "0b8f93b4c14defcda06ce31df5b71f84ebb92f3e2d3b3f0cf7244cff6ebc09db"
+      }
+    ]
+  },
+  "qualifiedSupportingSource": {
+    "X2Lib/X2DamageEffect.h": {
+      "sha256": "eb9034b22594cb80561bceae3b2d7312637e03aacef3050d4c04caa4f2cf0f60",
+      "fragments": [
+        {
+          "startLine": 49,
+          "endLine": 58,
+          "sha256": "50416f343b34dc20d6d7d96a546ec25cec46869dba59d78eea644a28ae3d7a4c"
+        },
+        {
+          "startLine": 522,
+          "endLine": 531,
+          "sha256": "326dbf267b50ed837126a2dc18c405ab734c052968f236a44dca5d81597c3115"
+        }
+      ]
+    },
+    "X2Lib/X2DamageEffect.cpp": {
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "startLine": 2866,
+          "endLine": 2931,
+          "sha256": "ae7ab56c5f95541faf497a3e042fba960a1c6d5c185e08c778d584b2ec66c3c9"
+        },
+        {
+          "startLine": 6548,
+          "endLine": 6555,
+          "sha256": "2a331008a0a1b9e0ff9720c977fc1a4ce442db481b391d476c8bb661cb284446"
+        }
+      ]
+    },
+    "X2Lib/X2DamageManager.cpp": {
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "fragments": [
+        {
+          "startLine": 3439,
+          "endLine": 3476,
+          "sha256": "8f0ffd70ddfb65d0466ffb7d88b7c735061c67e0bc171b1e4a3ed15d5681b4bd"
+        }
+      ]
+    },
+    "X2Lib/X2GameUnit.cpp": {
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "fragments": [
+        {
+          "startLine": 11196,
+          "endLine": 11222,
+          "sha256": "f4c6172926e58b66731041e01f3e50ce0d6c7a5cd21b5d1beccde8e85e327126"
+        }
+      ]
+    },
+    "KTDXLIB/KTDGXMeshPlayer.cpp": {
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragments": [
+        {
+          "startLine": 1796,
+          "endLine": 1822,
+          "sha256": "35ccefba98a5012bc7898f5c0d420b2dc30ae4f7e9e0b2e951284a05b3d52f60"
+        },
+        {
+          "startLine": 2997,
+          "endLine": 3005,
+          "sha256": "3199ab13379b7ecc256e7ae7df268a9fffc0620f2c0644eb8c2e663438662632"
+        },
+        {
+          "startLine": 3672,
+          "endLine": 3701,
+          "sha256": "b862167702dd2a7fc4b4f59a6cb8b064c03f97d9a03abb09ba661ab8cdbf457e"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "commands": {
+    "ESSI_ERS_COMBO_ZZZ": {
+      "raw": {
+        "WALK_CANCEL_AFTER": 0.62,
+        "ANIM_NAME": "ComboZ3",
+        "DASH_CANCEL_AFTER": 0,
+        "SKILL_CANCEL_AFTER": 0.1,
+        "SPEED_Y": 0,
+        "BWALK_CANCEL_AFTER": 0.288,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SPEED_X": 750.0,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.2,
+          "2": 0.25
+        },
+        "CREATE_EFFECT_SET": {
+          "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+          "2": 0.2,
+          "3": 0
+        },
+        "SOUND_PLAY0": {
+          "1": 0.18,
+          "2": "Slash.ogg"
+        },
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.2,
+          "2": 0.45,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.2,
+          "2": 0.45,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.2,
+          "2": 0.45,
+          "3": 0.33
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 600,
+          "FORCE_DOWN": 3.88,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 38,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "HIT_ADD_MP": 2.3,
+          "STOP_TIME_DEF": 0.05,
+          "CAMERA_CRASH_GAP": 15,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.76
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "Z",
+          "2": "ZZZ"
+        },
+        "IS_ATTACK_STATE": 1,
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_ERS_ZZZ",
+            "2": 0,
+            "3": 0
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7695
+      }
+    },
+    "ESSI_ERS_COMBO_ZZZZ": {
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 1.1,
+        "HIT_CAMERA2_RATE": 30,
+        "HIT_CAMERA1_RATE": 30,
+        "ANIM_NAME": "RS_ComboX4",
+        "WALK_CANCEL_AFTER": 1.1,
+        "DASH_CANCEL_AFTER": 0.9,
+        "SKILL_CANCEL_AFTER": 1.1,
+        "HIT_CAMERA0_RATE": 40,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "ATTACK_TIME0": {
+          "1": 0.582,
+          "2": 0.64,
+          "3": "STR_KuaAng"
+        },
+        "CREATE_EFFECT_SET": {
+          "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+          "2": 0.4,
+          "3": 0
+        },
+        "SOUND_PLAY0": {
+          "1": 0.35,
+          "2": "PowerSlash.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.32,
+          "2": "ElswordVoice_Shout05.ogg"
+        },
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_EMK_ComboZZZZ",
+            "2": 0,
+            "3": 0
+          }
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 1108,
+          "FORCE_DOWN": 3.88,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 38,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "HIT_ADD_MP": 2.3,
+          "STOP_TIME_DEF": 0.066,
+          "CAMERA_CRASH_GAP": 10,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "FORCE_FLY": 1,
+          "DAMAGE": {
+            "PHYSIC": 0.76
+          }
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": 70,
+            "DISTANCE": 400,
+            "HEIGHT": 100,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 1
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": -30,
+            "DISTANCE": 400,
+            "HEIGHT": 100,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 1
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "Z",
+          "2": "ZZZX"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7783
+      }
+    },
+    "ESSI_ERS_XZ": {
+      "raw": {
+        "ANIM_NAME": "RS_ComboX2a",
+        "DASH_CANCEL_AFTER": 0.75,
+        "WALK_CANCEL_AFTER": 0.75,
+        "ANIM_SPEED": 1.3,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.75,
+          "3": 0.45
+        },
+        "SOUND_PLAY0": {
+          "1": 0.285,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7800
+      }
+    },
+    "ESSI_ERS_XZ_CHARGE": {
+      "raw": {
+        "ANIM_NAME": "EMK_Combo_XZ_Charge",
+        "ANIM_SPEED": 1,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "CAN_MANA_BREAK": 0,
+        "EVENT_PROCESS_TIME0": {
+          "1": 1,
+          "2": 1,
+          "3": 0.25
+        },
+        "SUPER_ARMOR_TIME0": {
+          "1": 0.25,
+          "2": 100
+        },
+        "SUPER_ARMOR_NOT_RED": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7824
+      }
+    },
+    "ESSI_ERS_XZZ": {
+      "raw": {
+        "ANIM_SPEED": 1.1,
+        "ANIM_NAME": "EMK_Combo_XZ_Charge_Z",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.39,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7838
+      }
+    },
+    "ESSI_ERS_FULL_CHARGE_XZZ": {
+      "raw": {
+        "ANIM_SPEED": 1.1,
+        "ANIM_NAME": "EMK_Combo_XZ_Charge_Z",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SOUND_PLAY0": {
+          "1": 0.39,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7852
+      }
+    },
+    "ESSI_ERS_DASH_COMBO_XZ": {
+      "raw": {
+        "ANIM_SPEED": 1.3,
+        "ANIM_NAME": "RS_Combo_XZ",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.5,
+          "3": 0.5
+        },
+        "SOUND_PLAY0": {
+          "1": 0.418,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7869
+      }
+    },
+    "ESSI_ERS_DASH_JUMP_XZ": {
+      "raw": {
+        "ANIM_NAME": "RS_DashJumpComboXa1",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.335,
+          "2": "Elsword_RS_DashJumpComboXa.ogg"
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7883
+      }
+    },
+    "ESSI_ERS_DASH_JUMP_XZZ": {
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 0.25,
+        "ANIM_NAME": "RS_DashJumpComboXa2",
+        "SPEED_X": -800,
+        "SPEED_Y": 800,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7895
+      }
+    },
+    "ESSI_EMK_DASH_JUMP_ZX": {
+      "raw": {
+        "HIT_CAMERA1_RATE": 100,
+        "ANIM_NAME": "JumpAttackX",
+        "ANIM_SPEED": 1,
+        "SPEED_Y": 600,
+        "HIT_CAMERA0_RATE": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SPEED_X": 740,
+        "SOUND_PLAY0": {
+          "1": 0.26,
+          "2": "Slash.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.24,
+          "2": "ElswordVoice_Shout05.ogg"
+        },
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.3
+        },
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_EMK_DashJumpComboZX",
+            "2": 0,
+            "3": 1
+          }
+        },
+        "ATTACK_TIME0": {
+          "1": 0.01,
+          "2": 0.352
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 250,
+          "FORCE_DOWN": 3.19,
+          "STOP_TIME_ATT": 0.1,
+          "BACK_SPEED_Y": 1000,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "HIT_ADD_MP": 1.76,
+          "STOP_TIME_DEF": 0.15,
+          "TECH_POINT": 22,
+          "CAMERA_CRASH_GAP": 10,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.49
+          }
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": 40,
+            "DISTANCE": 600,
+            "HEIGHT": 500,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 1
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "A",
+          "2": "AZZZ"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7525
+      }
+    },
+    "ESSI_EMK_DASH_JUMP_ZXX": {
+      "raw": {
+        "ANIM_NAME": "DashJumpComboZ3",
+        "HIT_CAMERA1_RATE": 100,
+        "SPEED_Y": 600,
+        "HIT_CAMERA0_RATE": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SPEED_X": 740,
+        "SOUND_PLAY0": {
+          "1": 0.26,
+          "2": "Slash.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.24,
+          "2": "ElswordVoice_Shout05.ogg"
+        },
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_EMK_DashJumpComboZXX",
+            "2": 0.05,
+            "3": 1
+          }
+        },
+        "ATTACK_TIME0": {
+          "1": 0.262,
+          "2": 0.352
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 250,
+          "FORCE_DOWN": 2.91,
+          "STOP_TIME_ATT": 0.1,
+          "BACK_SPEED_Y": 1000,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "HIT_ADD_MP": 1.96,
+          "STOP_TIME_DEF": 0.15,
+          "TECH_POINT": 26,
+          "CAMERA_CRASH_GAP": 10,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.57
+          }
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": 40,
+            "DISTANCE": 600,
+            "HEIGHT": 500,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 1
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "A",
+          "2": "AZZZ"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7604
+      }
+    }
+  },
+  "damage": {
+    "ELSWORD_RUNE_SLAYER_COMBO_XZ": {
+      "mainEffectName": "Elsword_RS_ComboXZ",
+      "raw": {
+        "STOP_TIME_DEF": 0,
+        "FORCE_DOWN": 12.75,
+        "BACK_SPEED_X": 100,
+        "BACK_SPEED_Y": 0,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 326,
+        "CAMERA_CRASH_TIME": 0.3,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 6.18,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 2.17
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212687
+      }
+    },
+    "ELSWORD_RUNE_SLAYER_COMBO_XZZ": {
+      "mainEffectName": "Elsword_RS_ComboXZZ",
+      "raw": {
+        "BACK_SPEED_X": 740,
+        "FORCE_DOWN": -15.5,
+        "BACK_SPEED_Y": 1700,
+        "PVP_RATE": 0.6,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 564,
+        "CAMERA_CRASH_TIME": 0.3,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 8.68,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 5,
+        "ATTACK_TYPE": 2,
+        "ARRANGED_FLY": 1,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 2.82
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212774
+      }
+    },
+    "ELSWORD_RUNE_SLAYER_COMBO_FULL_CHARGE_XZZ": {
+      "mainEffectName": "Elsword_RS_ComboXZZ",
+      "raw": {
+        "STOP_TIME_DEF": 0,
+        "FORCE_DOWN": -3.88,
+        "BACK_SPEED_X": 740,
+        "HIT_GAP": 0.05,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 36,
+        "CAMERA_CRASH_TIME": 0.3,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 2.17,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "ARRANGED_FLY": 1,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 0.71
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212860
+      }
+    },
+    "ELSWORD_RUNE_SLAYER_DASH_JUMP_XZ": {
+      "mainEffectName": "Elsword_RS_DashJumpComboXZ",
+      "raw": {
+        "STOP_TIME_DEF": 0.15,
+        "FORCE_DOWN": 12.75,
+        "BACK_SPEED_X": 100,
+        "BACK_SPEED_Y": 800,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 439,
+        "CAMERA_CRASH_TIME": 0.3,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 6.18,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 2.44
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212069
+      }
+    },
+    "ELSWORD_RUNE_SLAYER_DASH_JUMP_XZZ": {
+      "mainEffectName": "Elsword_RS_DashJumpComboXa_Mesh01",
+      "raw": {
+        "STOP_TIME_DEF": 0,
+        "FORCE_DOWN": 11.63,
+        "BACK_SPEED_X": 300,
+        "BACK_SPEED_Y": -300,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 562,
+        "CAMERA_CRASH_TIME": 0.3,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 10.74,
+        "WAY_OF_SWORD_TYPE": 1,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 1,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 3.12
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212246
+      }
+    },
+    "ELSWORD_RUNE_SLAYER_DASH_ZZX": {
+      "mainEffectName": "Elsword_RS_DashZZX",
+      "raw": {
+        "STOP_TIME_DEF": 0,
+        "FORCE_DOWN": 11.63,
+        "BACK_SPEED_X": 550,
+        "BACK_SPEED_Y": 0,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 524,
+        "CAMERA_CRASH_TIME": 0.3,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 10.74,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 1,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 3.04
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 212144
+      }
+    },
+    "FIREBALL_SMALL_DOWN_ELSWORD": {
+      "mainEffectName": "FireBallSmall",
+      "raw": {
+        "FORCE_DOWN": 12.75,
+        "PVP_RATE": 0.6,
+        "BACK_SPEED_X": 500,
+        "BACK_SPEED_Y": 0,
+        "CLEAR_SCREEN": 1,
+        "HIT_GAP": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 481,
+        "CAMERA_CRASH_TIME": 0.3,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 9.63,
+        "WAY_OF_SWORD_TYPE": 4,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 1,
+        "CAN_REVENGE": 0,
+        "DAMAGE": {
+          "MAGIC": 2.67
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 186271
+      }
+    }
+  },
+  "independentRuneExpectations": {
+    "xzMagic": 2.17,
+    "xzzMagic": 2.82,
+    "fullChargeMagic": 0.71,
+    "fullChargeHitGap": 0.05,
+    "airXzMagic": 2.44,
+    "airXzzMagic": 3.12,
+    "groundBirthTime": 0.3,
+    "airBirthTime": 0.26,
+    "releaseTime": 0.01,
+    "xzMpReference": 4,
+    "dashFireballMpReference": 6,
+    "xzSpineOffset": 170,
+    "airBip01Offset": [
+      160,
+      -90,
+      0
+    ]
+  },
+  "independentSkillExpectations": {
+    "explosiveBirth": 0.65,
+    "explosiveEnhancedHitGap": 0.05,
+    "explosiveBaseHitGap": 0.07,
+    "explosiveMeshLife": 0.5,
+    "explosiveDefaultLockOnUnitUID": -1,
+    "lunaBurnMaxMpFraction": 0.3,
+    "hyperBurnMp": 10,
+    "hyperBurnCount": 6,
+    "lunaDirSpeedFade": {
+      "start": 0.01,
+      "end": 0.05,
+      "value": -2000
+    },
+    "lunaDirSpeedLaunch": {
+      "start": 0.2,
+      "value": 5500
+    },
+    "brutalText": {
+      "source": "target2016 General.ess",
+      "sourceSha256": "0941ef963dc8e9d2a97531a5351bd2cdfb724b4637c36de9a11e82ba0032c724",
+      "stringId": 35585,
+      "text": "Targets cannot use mana break."
+    }
+  },
+  "limitations": [
+    "Reference MP/time callbacks are pinned V5 consumers, not target2016 runtime traces.",
+    "Target-only charge route consumes its own max-time/state/effect declarations; matching V6 consumer is unmeasured.",
+    "ELSWORD_RUNE_SLAYER_DASH_JUMP_XZZ_DIE references a missing original mesh definition; no replacement collision is fabricated."
+  ]
+}

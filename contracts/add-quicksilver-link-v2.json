@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "evidenceLevel": "target2016 original declaration and assets plus qualified fixed-V5 callback adapter",
+  "targetClientMeasured": false,
+  "sourceReference": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "gitBlob": "39888c9b632990e855057e61499363247e438a15",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5 reference containing later reconstruction; not matching 2016"
+  },
+  "methods": [
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_FrameMove",
+      "line": 218,
+      "lastLine": 219,
+      "sha256": "da670113a5dc5e630ee26dfaf2540b3e8706e792a0378cb840dcc035dce84b76",
+      "laterReconstruction": true,
+      "originalFileLine": 9419,
+      "legacyLineBasis": "line/lastLine copied from normalized method inventory; originalFileLine addresses the fixed raw source file"
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_StateEnd",
+      "line": 220,
+      "lastLine": 220,
+      "sha256": "e0072082b106d3106db9c568d2d107e9ff508a7bc839d0266060987f113cb6e4",
+      "laterReconstruction": false,
+      "originalFileLine": 9510,
+      "legacyLineBasis": "line/lastLine copied from normalized method inventory; originalFileLine addresses the fixed raw source file"
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_BACK_FrameMove",
+      "line": 220,
+      "lastLine": 221,
+      "sha256": "78777022e4b87834ee9801727fd69bff8e0f077bbcc5d45db988850f48db83ca",
+      "laterReconstruction": false,
+      "originalFileLine": 9522,
+      "legacyLineBasis": "line/lastLine copied from normalized method inventory; originalFileLine addresses the fixed raw source file"
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_BACK_StateEnd",
+      "line": 221,
+      "lastLine": 221,
+      "sha256": "eeaca9b21f4e053a1c0152f3d03fcb5456552f8d9d279c84ab18ce44b0e66751",
+      "laterReconstruction": false,
+      "originalFileLine": 9609,
+      "legacyLineBasis": "line/lastLine copied from normalized method inventory; originalFileLine addresses the fixed raw source file"
+    }
+  ],
+  "mainOnlyLinkConsumer": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+    "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+    "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+    "bytes": 263245,
+    "method": "SetLinkMainEffectByPos",
+    "line": 7625,
+    "position": "vMyPos",
+    "scale": "(distance>0?distance:1)/LINK_EFFECT_RATE,1,1",
+    "scope": "main mesh instance only"
+  },
+  "originalDamage": {
+    "name": "DamageEffect_APT_Pylon_Additional_Shock",
+    "main": "ADD_PYLON_DYNAMO_SPARK01_MAIN",
+    "linkEffectRate": 800,
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 148257
+    },
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 49,
+      "name": "DamageEffect.lua",
+      "bytes": 5409874,
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "assetCodec": "none",
+      "searchedBytes": 5409874
+    }
+  },
+  "originalTemplate": {
+    "name": "ADD_PYLON_DYNAMO_SPARK01_MAIN",
+    "declarationSha256": "49c84c985fd6ebfd5cca4915d63db8a460989482c32017f7db8cfe22784cae13",
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 2182797,
+      "line": 67969
+    },
+    "lifeTime": 30.0,
+    "drawCount": 2.0,
+    "pose": "fx/meshes/ADD_PYLON_DYNAMO_SPARK01.pose.json",
+    "glb": "fx/meshes/ADD_PYLON_DYNAMO_SPARK01.glb"
+  },
+  "windows": {
+    "forward": {
+      "create": 0.001,
+      "retire": 0.85,
+      "impact": 0.8,
+      "frameMoveInterval": [
+        0.001,
+        0.85
+      ]
+    },
+    "back": {
+      "create": 0.01,
+      "retire": 0.57,
+      "impact": 0.596,
+      "frameMoveInterval": [
+        0,
+        0.57
+      ]
+    }
+  },
+  "bones": {
+    "start": "Bip01_L_Finger2",
+    "end": "Bip01",
+    "endOffset": "[150*sin(yawRadians+1.57),45,150*cos(yawRadians+1.57)]"
+  },
+  "limits": [
+    "Forward FrameMove is explicitly tagged laterReconstruction in the pinned reference contract. No target executable callback measurement is claimed.",
+    "Native trigonometric float rounding and zero-direction GetDirVecToDegree behavior remain unmeasured; shared qualified direction convention is used.",
+    "The dedicated marker controls main mesh presentation only. Collision/impact consumers keep their source DamageEffect payload and ordinary anchor.",
+    "Coarse animation intervals preserve the original else-if ordering: impact, creation, retirement. StateEnd always clears remaining handles."
+  ],
+  "verification": {
+    "consumerTests": 9,
+    "actualQuicksilverAssetTests": 4,
+    "existingNpcFuryRegressionTests": 3,
+    "command": "node --test tests/combat/add-quicksilver-link-v2.test.mjs tests/integration/add-quicksilver-assets-v2.test.mjs tests/integration/add-effect-presentation-v1.test.mjs"
+  }
+}

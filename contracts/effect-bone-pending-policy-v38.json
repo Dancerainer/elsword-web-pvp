@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "original2016 declarations + current Web producer/owner regression + explicit pending-anchor adapter",
+  "targetClientMeasured": false,
+  "targetDeferredRenderConsumerVerified": false,
+  "failure": {
+    "log": "runtime/player-v38-combined-clock.log",
+    "diagnostic": "runtime/player-v38-blood-birth-invalid.json",
+    "meaning": "The actual caster FX created three active target-bone siblings with null birth/current anchors while their designated mesh was still pending. Strict owner validation correctly rejected that production state. The independently delayed NPC Projectile set already had valid anchors."
+  },
+  "source": {
+    "effectFile": "data/data036.kom/EffectSet.lua",
+    "effectSha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+    "bindingContract": "contracts/elesis-effect-targets-v30.json",
+    "set": "EffectSet_SI_SA_SCA_BLOOD_CUTTER_FX",
+    "target": "DamageEffect_SI_SA_SCA_BLOOD_CUTTER_FX",
+    "targetStartTime": 0.2,
+    "earlyChildren": [
+      "SDK_BURNING_PHANTOM_P01",
+      "SCA_CRIMSON_BREAK_PS02",
+      "SCA_PE05"
+    ],
+    "earlyChildStartTime": "Omitted, original default zero; do not rewrite it to the target's start.",
+    "laterChildStartTime": 0.3,
+    "referenceSource": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2EffectSet.cpp",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "qualification": "Fixed-V5 GetEffectPositionByTargetMesh returns false for an invalid target; its caller can continue through custom/owner positioning. This does not establish a matching 2016 pending-target fallback, nor prove that an unknown owner Dummy01 is legal. The Web validity guard is not described as a direct reproduction of that fallback."
+    }
+  },
+  "webPolicy": {
+    "birth": "A declared target-bone sibling does not become active or emit effectStarted until its exact same-owner/set/group target supplies a real bone anchor. Never fabricate a caster anchor or loosen owner validation.",
+    "timing": "Keep original START_TIME, setStartAnimation and setElapsed. A due pure particle with EFFECT_TYPE 8, no damage and no main mesh continues its existing elapsed/animationTime by game-frame dt while binding waits. The clocks are not reset when the target becomes available.",
+    "unsupported": "A pending mesh/damage producer has no guessed pre-birth event execution and records an explicit unsupported note. An active target that cannot supply its required original bone records unsupported and ends that child. Target retirement keeps the existing owned-child cleanup.",
+    "wire": "Use existing inactive effect and clock fields while pending. Active effects still require valid birth/current anchors; no validator or binary protocol relaxation."
+  },
+  "regression": {
+    "newTest": "tests/combat/effect-bone-pending-owned-v38.test.mjs",
+    "coverage": "Both facings, real skill input/original Native assets, 80 successive full and critical reports per facing, pose-delta decode/apply, original starts, source particle age through pending/birth, exact original target-bone position and negative active-with-null-anchor rejection.",
+    "combinedTest": "tests/integration/combined-feedback-network-v30.test.mjs",
+    "relatedTests": [
+      "tests/combat/elesis-blood-delay-v37.test.mjs",
+      "tests/combat/elesis-blood-delay-native-v37.test.mjs",
+      "tests/combat/elesis-effect-binding-v37.test.mjs",
+      "tests/unit/owned-state-validation.test.mjs"
+    ],
+    "log": "runtime/player-v38-pending-owner.log",
+    "observedResult": {
+      "tests": 32,
+      "pass": 32,
+      "fail": 0
+    },
+    "limits": "Current Web Native/owner behavior only; no original-client dynamic golden, WAN timing or GPU rendering claim."
+  }
+}

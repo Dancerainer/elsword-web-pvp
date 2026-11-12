@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "raven_powrUp_UI_01": {
+      "fields": {
+        "particleType": "PT_2D_PLANE",
+        "Emitrate": 20.0,
+        "Lifetime": 0.2,
+        "NumParticles": 20.0,
+        "TriggerTime": 9999999.0,
+        "DrawCount": 3.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -3.0,
+              3.0
+            ]
+          },
+          {
+            "random": [
+              16.0,
+              22.0
+            ]
+          },
+          {
+            "random": [
+              -3.0,
+              3.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "secretVelder_perpit_fire_flame.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            0.5,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.8,
+            0.3,
+            0.1,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            30.0,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -5.0,
+                5.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                -50.0
+              ]
+            },
+            {
+              "random": [
+                -5.0,
+                5.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "raven_powrUp_UI_01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 141,
+        "name": "GameMajorParticle7.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle7.txt",
+        "sha256": "a875c52daa5c9812fd8cc5d655b7cef61d941c48414649a66400a3aec9503ac2",
+        "bytes": 327981,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 178602,
+        "line": 4393
+      },
+      "declarationSha256": "e4e7125827d492094979b934d93a407bd5f7ed954b050bacd18f3ae2d96bdfe6",
+      "textures": {
+        "secretVelder_perpit_fire_flame.dds": {
+          "file": "secretVelder_perpit_fire_flame-f70a64220a.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data002.kom",
+            "ordinal": 2189,
+            "name": "secretVelder_perpit_fire_flame.dds",
+            "rawPath": "raw/data/data002.kom/secretVelder_perpit_fire_flame.dds",
+            "sha256": "f70a64220a5b9a1448b291bbd23447479432c3b69f52988474e6bf248550c0aa",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          },
+          "outputSha256": "14c40f0093c6644a7a6afd2f70a1e093d20455d77ed0419a8cea6ed8c7e9aa37"
+        }
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 141,
+      "name": "GameMajorParticle7.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle7.txt",
+      "sha256": "a875c52daa5c9812fd8cc5d655b7cef61d941c48414649a66400a3aec9503ac2",
+      "bytes": 327981,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2189,
+      "name": "secretVelder_perpit_fire_flame.dds",
+      "rawPath": "raw/data/data002.kom/secretVelder_perpit_fire_flame.dds",
+      "sha256": "f70a64220a5b9a1448b291bbd23447479432c3b69f52988474e6bf248550c0aa",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data034.kom",
+      "ordinal": 441,
+      "name": "DLG_PVP_Game_My_State_NEW.lua",
+      "rawPath": "raw/data/data034.kom/DLG_PVP_Game_My_State_NEW.lua",
+      "sha256": "84fc0f0d865738c2b6306ab148e3d9389f11189ec4856eae0ab8cb18af00158c",
+      "bytes": 7419,
+      "signatureHex": "1b4b4c8202f339020008009f0102c809"
+    },
+    {
+      "archive": "data/data057.kom",
+      "ordinal": 88,
+      "name": "DLG_UI_Common_Texture25_NEW.TET",
+      "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture25_NEW.TET",
+      "sha256": "dfe1032b4a70266505f94ac4eb6be6793a86048a88f94aa161afcce8008f0978",
+      "bytes": 2696,
+      "signatureHex": "5445542000010000240000003c060000"
+    }
+  ],
+  "consumer": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "path": "X2Lib/X2GageUI.cpp",
+    "fileSha256": "2e3a631f62ba5b2f4a6854989d2432ec96e00973f88852a5fdc1b224ae6805a8",
+    "functionSha256": "b103c80f88491f963506abf54c2e389b1cbfb14c086b973d025cea91d834233f",
+    "range": [
+      2565,
+      2611
+    ],
+    "active": "available bead count == 3",
+    "exit": "destroy sequence and particles immediately",
+    "oldReferenceScreenPosition": [
+      100,
+      120,
+      0
+    ]
+  },
+  "targetLayout": {
+    "path": "asset_work\\raw\\data\\data034.kom\\DLG_PVP_Game_My_State_NEW.lua",
+    "sha256": "84fc0f0d865738c2b6306ab148e3d9389f11189ec4856eae0ab8cb18af00158c",
+    "instruction": 904,
+    "tetSha256": "dfe1032b4a70266505f94ac4eb6be6793a86048a88f94aa161afcce8008f0978",
+    "size": [
+      42.0,
+      34.0
+    ],
+    "leftTop": [
+      57,
+      59
+    ],
+    "rightBottom": [
+      99.0,
+      93.0
+    ],
+    "center": [
+      78.0,
+      76.0,
+      0
+    ]
+  },
+  "presentation": {
+    "anchor": "displayed target2016 third bead center",
+    "hudLocalPosition": [
+      78.0,
+      76.0,
+      0
+    ],
+    "classification": "NEW HUD layout adaptation; fixed V5 absolute old-layout point is not applied to NEW UI"
+  },
+  "limits": [
+    "Original2016 GPU/frame/RNG comparison unavailable",
+    "WebGL HUD offscreen alpha compositing differs from native drawing directly on the game framebuffer"
+  ]
+}

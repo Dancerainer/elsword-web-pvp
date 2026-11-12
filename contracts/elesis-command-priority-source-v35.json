@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016-fields+qualified-fixedV5-callback-order; includes-2026-reconstruction",
+  "fixedReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "X2GUEL.cpp": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+    "X2GUUser.h": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc"
+  },
+  "reviewedMacroMethodUnion": {
+    "professions": ["GM", "BH", "CA"],
+    "distinctMethodsWithNamedMacros": 84,
+    "sequences": [
+      {"methods": 67, "order": ["SKILL_CANCEL_AFTER", "WALK_CANCEL_AFTER", "BWALK_CANCEL_AFTER", "DASH_CANCEL_AFTER", "ZX_CANCEL_AFTER_EX"]},
+      {"methods": 17, "order": ["SKILL_CANCEL_AFTER", "WALK_CANCEL_AFTER", "BWALK_CANCEL_AFTER", "DASH_CANCEL_AFTER"]}
+    ],
+    "countPolicy": "Union of named methods in the three profession audit inventories; shared callbacks count once, absent callbacks are not fabricated."
+  },
+  "sourcePriority": {
+    "example": {"method": "ComboZZZEventProcess", "line": 6401, "beforeSkillMacro": ["off-support", "animation-end", "mature-buffered-branch", "fresh-window-latch"]},
+    "bufferMacro": {"file": "X2GUUser.h", "line": 250, "name": "ELSE_IF_STATE_CHANGE_ON_EX_STRUCT", "semantics": "Existing flag dispatches strictly after stateChange; otherwise a legal fresh input latches within [start,end). Either consumed arm prevents the following else-if skill macro."},
+    "anytime": {"file": "X2GUUser.cpp", "line": 19442, "semantics": "CommonEventProcess has an independent ASUT_ANYTIME entrance after the callback branches. Existing reviewed Endurance IDs28201/28218 retain this entrance."}
+  },
+  "independentGMExamples": {
+    "ZZZSkillCancel": 0.266,
+    "ZZZZBufferedWindow": {"start": 0.133, "inputEnd": 0.528, "stateChange": 0.528},
+    "waitingFlagAt0_3": "Ordinary skill is allowed when no fresh command input consumes an arm.",
+    "matureFlagAfter0_528": "Buffered command wins over ordinary skill or awakening.",
+    "freshZAt0_3": "Fresh branch latches first, so an ordinary slot or awakening cannot override the same packet."
+  },
+  "probePolicy": "Probe a separate actor/memo with the same actual EventProcess ordering; do not commit flags, count a real loop twice, advance clocks, or make flags!=0 a blanket veto.",
+  "boundaries": [
+    "No original2016 field or duration is changed; absent, negative and authored999 gates remain closed.",
+    "CA SDK helper callbacks8243/8274 have no ordinary SKILL macro in this fixed reference. Existing positive target2016 skill gates remain an explicit declaration adapter, not a recovered target-client consumer.",
+    "No original client has been executed; ordinary and Native tests are current adapter evidence."
+  ]
+}

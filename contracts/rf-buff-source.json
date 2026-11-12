@@ -1,0 +1,1065 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "sourceFiles": {
+    "enum": {
+      "file": "Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "evidenceClass": "static-target-2016"
+    },
+    "raven": {
+      "file": "RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill": {
+      "file": "NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "evidenceClass": "static-target-2016"
+    },
+    "damage": {
+      "file": "DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "evidenceClass": "static-target-2016"
+    },
+    "effect": {
+      "file": "EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill-data": {
+      "file": "SkillData.lua",
+      "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill-note": {
+      "file": "SkillNoteTemplet.lua",
+      "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816",
+      "evidenceClass": "static-target-2016"
+    },
+    "buff-factor": {
+      "file": "BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+      "evidenceClass": "static-target-2016"
+    },
+    "buff-factor-int": {
+      "file": "BattleFieldBuffFactor_INT.lua",
+      "sha256": "000f23e9c7d0fe95b56dca1377ca6b43751293b234ab90ed7ab4526bfa97d606",
+      "evidenceClass": "static-target-2016"
+    },
+    "battle-buff": {
+      "file": "BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "evidenceClass": "static-target-2016"
+    }
+  },
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+      "relativePath": "X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "bytes": 521479
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFactor.cpp",
+      "relativePath": "X2Lib/X2BuffFactor.cpp",
+      "sha256": "dd458eaa4febae9c16bcf48f1809dc1ab632a9dc40906dc5569ea3e2ebddced1",
+      "gitBlob": "5bd952cab887e1706274cda1cb0b9be38c225127",
+      "bytes": 106634
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+      "bytes": 138729
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.h",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.h",
+      "sha256": "f3f12c506c776da714e08a1975e55fd523df7b87ed179f66d7ae3e921bba41ba",
+      "gitBlob": "e2b6938161f279d9d3c8ac45c8b4d1dfac4cf78b",
+      "bytes": 43985
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFinalizerTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffFinalizerTemplet.cpp",
+      "sha256": "c41cc3b322eb602b74b8d6581393c1079121fcabdd1e742b6d02f0bb30e2f173",
+      "gitBlob": "7187a406c041913d1ef1fe9f2cb6259c5a058390",
+      "bytes": 67185
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFinalizerTemplet.h",
+      "relativePath": "X2Lib/X2BuffFinalizerTemplet.h",
+      "sha256": "3b8d7385aa232eb99ef511ba7c1f33a392071e62a391b40a716b273baf318c8c",
+      "gitBlob": "75726c78b1affcab568bba3a2f8f8b7a30ad6218",
+      "bytes": 25477
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffTemplet.cpp",
+      "bytes": 55955,
+      "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a",
+      "gitBlob": "81a8cc4ba5adc167078789a123feb74e0bb39816"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.h",
+      "relativePath": "X2Lib/X2BuffTemplet.h",
+      "bytes": 44971,
+      "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+      "gitBlob": "cce459ca0f237407dc40538edbb162fbac6e1574"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.h",
+      "relativePath": "KTDXLIB/KTDXTimer.h",
+      "bytes": 2102,
+      "sha256": "fca9e4ee3e9636ec2dd160ac87725084687dc98ef3769305ceb6f51cce83e5ec",
+      "gitBlob": "b69dd00b90850d435c4768ed5e3647905dd2f9c8"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.cpp",
+      "relativePath": "KTDXLIB/KTDXTimer.cpp",
+      "bytes": 390,
+      "sha256": "8b276e7fb3c3ea45ee4fcf14257f2632f9e1067357f8d2317501d2ce5677c8a3",
+      "gitBlob": "62bfc47a1e7f3e0271eadf3e587c0f51bbdd6e46"
+    }
+  ],
+  "profile": {
+    "enums": {
+      "BUFF_BEHAVIOR_TYPE": {
+        "BBT_TYPE_ADDITIONAL_ATTACK_MULTIPLIER": 78,
+        "BBT_CHANGE_ANIM_SPEED": 11,
+        "BBT_DOWN_IMPOSSIBLE": 58,
+        "BBT_CHANGE_ENCHANT_ATTACK_RATE": 54,
+        "BBT_NEVER_MOVE": 51,
+        "BBT_EFFECT_SET_WITH_DAMAGE": 45,
+        "BBT_SUPER_ARMOR": 28,
+        "BBT_CHANGE_ATTRIBUTE_DARK_DEFENCE": 41,
+        "BBT_CHANGE_ATTRIBUTE_LIGHT_DEFENCE": 40,
+        "BBT_CAN_PASS_UNIT": 49,
+        "BBT_DASH_IMPOSSIBLE": 4,
+        "BBT_INVINCIBLE": 77,
+        "BBT_CHANGE_ATTRIBUTE_NATURE_DEFENCE": 38,
+        "BBT_CHANGE_FORCE_DOWN_MULTIPLIER_MELEE_ATTACK": 32,
+        "BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_RANGE_ATTACK": 30,
+        "BBT_CUSTOM_FUNCTION": 43,
+        "BBT_CHANGE_AVOIDANCE": 15,
+        "BBT_CHANGE_ACCURACY": 14,
+        "BBT_ATTACK_IMPOSSIBLE": 5,
+        "BBT_CHANGE_PHYSIC_ATTACK": 7,
+        "BBT_CHARGE_MP_HIT_MELEE_ATTACK": 24,
+        "BBT_CHANGE_ATTRIBUTE_WATER_DEFENCE": 37,
+        "BBT_CHANGE_FINAL_DEFENCE_MULTIPLIER": 31,
+        "BBT_CHANGE_ATTRIBUTE_BLAZE_ATTACK_RATE": 66,
+        "BBT_CHANGE_ATTRIBUTE_WATER_ATTACK_RATE": 67,
+        "BBT_CHANGE_ATTRIBUTE_NATURE_ATTACK_RATE": 68,
+        "BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_MELEE_ATTACK": 29,
+        "BBT_CHANGE_ATTRIBUTE_WIND_ATTACK_RATE": 69,
+        "BBT_CHANGE_CRITICAL_DEFENCE": 19,
+        "BBT_CHANGE_ATTRIBUTE_LIGHT_ATTACK_RATE": 70,
+        "BBT_CHANGE_MELEE_COMMAND_DAMAGE_RATE": 87,
+        "BBT_CHANGE_NOW_MP_PER_SECOND": 2,
+        "BBT_IGNORE_STATE_GUARD": 73,
+        "BBT_DOUBLE_ATTACK_BUFF": 75,
+        "BBT_FINISH_OTHER_BUFF_DEBUFF": 47,
+        "BBT_CHARGE_MP_HIT_BY_SKILL_ID": 91,
+        "BBT_CHANGE_ATTRIBUTE_BLAZE_DEFENCE": 36,
+        "BBT_CHANGE_UNIT_SCALE": 35,
+        "BBT_CHANGE_MAGIC_DEFENCE": 10,
+        "BBT_CHANGE_FORCE_DOWN_MULTIPLIER_RANGE_ATTACK": 33,
+        "BBT_CHANGE_EVERY_ATTRIBUTE_DEFENCE": 42,
+        "BBT_CHANGE_PHYSIC_ATTACK_BY_CONDITION": 80,
+        "BBT_CHANGE_MAX_MP": 52,
+        "BBT_CHANGE_MAGIC_ATTACK_BY_CONDITION": 81,
+        "BBT_CHANGE_MAGIC_DEFENCE_BY_CONDITION": 83,
+        "BBT_CHANGE_MAX_HP_BY_CONDITION": 84,
+        "BBT_CHANGE_MAGIC_ATTACK": 8,
+        "BBT_FROZEN": 48,
+        "BBT_REVERSE_LEFT_RIGHT": 3,
+        "BBT_CHANGE_MELEE_COMMAND_MP_GAIN_RATE": 86,
+        "BBT_RESET_SKILL_COOL_TIME": 34,
+        "BBT_ATTACK_ALL_TEAM": 50,
+        "BBT_CHANGE_ATTACK_BY_TYPE": 53,
+        "BBT_CHANGE_ATTRIBUTE_DARK_ATTACK_RATE": 71,
+        "BBT_SKILL_ATTACK_IMPOSSIBLE": 60,
+        "BBT_CHANGE_HYPER_CHARGE_SPEED": 72,
+        "BBT_CHANGE_SKILL_DAMAGE": 89,
+        "BBT_CHANGE_NOW_HP_PER_SECOND": 1,
+        "BBT_CHANGE_SKILL_DAMAGE_BY_SKILL_ID": 90,
+        "BBT_NONE": 0,
+        "BBT_DRAIN_HP_NORMAL_ATTACK": 44,
+        "BBT_X_ATTACK_IMPOSSIBLE": 65,
+        "BBT_CHANGE_HYPER_DURATION": 76,
+        "BBT_Z_ATTACK_IMPOSSIBLE": 64,
+        "BBT_CHANGE_ADDITIONAL_ATTACK": 20,
+        "BBT_CHANGE_EVERY_ATTRIBUTE_DEFENCE_HAVE_BUFF_OWNER": 93,
+        "BBT_CHANGE_CRITICAL_ATTACK": 17,
+        "BBT_CREATE_BUFF_FACTOR": 22,
+        "BBT_CHANGE_HYPER_MODE": 27,
+        "BBT_CHARGE_MP_HIT_RANGE_ATTACK": 25,
+        "BBT_ZX_ATTACK_IMPOSSIBLE": 61,
+        "BBT_CHANGE_RANGE_COMMAND_MP_GAIN_RATE": 85,
+        "BBT_CHARGE_MP_HITTED": 26,
+        "BBT_CHANGE_NOW_FORCE_DOWN_PER_SECOND": 79,
+        "BBT_CHANGE_MAXIMIZE": 92,
+        "BBT_CHANGE_PHYSIC_DEFENCE": 9,
+        "BBT_CHANGE_CONSUME_MP_RATE": 63,
+        "BBT_ADD_SKILL_LEVEL": 59,
+        "BBT_IGNORE_DEFENCE": 88,
+        "BBT_CHANGE_MAX_HP": 6,
+        "BBT_CHANGE_ANTI_CRITICAL_RATE": 18,
+        "BBT_DETONATION_IMPOSSIBLE": 74,
+        "BBT_REFLECT_MAGIC": 62,
+        "BBT_CHANGE_ADDITIONAL_DEFENCE": 21,
+        "BBT_STUN": 46,
+        "BBT_CHANGE_JUMP_POWER": 13,
+        "BBT_CHANGE_CRITICAL_RATE": 16,
+        "BBT_DOUBLE_ATTACK": 56,
+        "BBT_ABSORB_EFFECT_ATTACK": 23,
+        "BBT_CHANGE_ATTRIBUTE_WIND_DEFENCE": 39,
+        "BBT_CHANGE_WALK_RUN_SPEED": 12,
+        "BBT_CHANGE_PHYSIC_DEFENCE_BY_CONDITION": 82,
+        "BBT_CHANGE_ATTACK_SPHERE_SCALE": 57,
+        "BBT_EMPTY": 55
+      },
+      "BUFF_FINALIZER_TYPE": {
+        "BFT_TIME": 1,
+        "BFT_HITTED_COUNT": 3,
+        "BFT_DUNGEON_STAGE_CHANGE": 9,
+        "BFT_PASS_HP": 6,
+        "BFT_PASS_MP": 7,
+        "BFT_IMMEDIATE": 8,
+        "BFT_LIVE_CREATOR": 10,
+        "BFT_RIDING_ON_OR_NOT": 12,
+        "BFT_STATE_CHANGE": 4,
+        "BFT_HIT_COUNT": 2,
+        "BFT_DAMAGE_VALUE": 5,
+        "BFT_FINISH_HYPER": 11,
+        "BFT_AURA": 14,
+        "BFT_X2STATE_CHANGE": 13,
+        "BFT_NONE": 0
+      }
+    },
+    "buffTemplates": {
+      "31": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Wound",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_TEMPLET_ID": 31,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 1,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 1,
+              "2": 4
+            },
+            "BBT_CHANGE_NOW_HP_PER_SECOND": {
+              "TIME_INTERVAL": 1,
+              "BUFF_CHANGE_TYPE": 2,
+              "DRAW_TEXT": 0
+            },
+            "BBT_DASH_IMPOSSIBLE": {
+              "BUFF_RELATION_TYPE": 7
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            }
+          },
+          "DISPLAYER": {
+            "COMBINATION": {
+              "1": 3
+            },
+            "BDT_EFFECT_SET": {
+              "1": "EffectSet_DEBUFF_WOUND"
+            }
+          },
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_20770",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_20771",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 2406
+        }
+      },
+      "37": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Fire",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_TEMPLET_ID": 37,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 1,
+          "REGIST_TYPE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BBT_CHANGE_NOW_HP_PER_SECOND": {
+              "TIME_INTERVAL": 1,
+              "BUFF_CHANGE_TYPE": 2,
+              "DRAW_TEXT": 0
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            }
+          },
+          "DISPLAYER": {
+            "COMBINATION": {
+              "1": 1,
+              "2": 3
+            },
+            "BDT_RENDER_PARAM": {
+              "RENDER_TYPE": 1,
+              "COLOR": {
+                "$symbol": "call@51.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            },
+            "BDT_EFFECT_SET": {
+              "1": "EffectSet_DEBUFF_FIRE"
+            }
+          },
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_20740",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_20741",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 2992
+        }
+      },
+      "52": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Stun",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_TEMPLET_ID": 52,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 1,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 46
+            },
+            "BBT_STUN": {}
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1,
+              "2": 3
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            },
+            "BFT_HITTED_COUNT": {
+              "BUFF_USE_COUNT_TYPE": 0
+            }
+          },
+          "DISPLAYER": {
+            "COMBINATION": {
+              "1": 3
+            },
+            "BDT_EFFECT_SET": {
+              "1": "EffectSet_DEBUFF_STUN"
+            }
+          },
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_20776",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_20777",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 3911
+        }
+      },
+      "408": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_Vital_Point_Stab",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_TEMPLET_ID": 408,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 0,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 16,
+              "2": 17
+            },
+            "BBT_CHANGE_CRITICAL_RATE": {
+              "BUFF_CHANGE_TYPE": 0,
+              "BUFF_RELATION_TYPE": 7
+            },
+            "BBT_CHANGE_CRITICAL_ATTACK": {
+              "BUFF_CHANGE_TYPE": 3,
+              "BUFF_RELATION_TYPE": 7
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1,
+              "2": 2
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            },
+            "BFT_HIT_COUNT": {
+              "BUFF_USE_COUNT_TYPE": 0
+            }
+          },
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_31205",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_20643",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 25318
+        }
+      },
+      "543": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_Dead_Hands",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_TEMPLET_ID": 543,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 0,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 55
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            }
+          },
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_35941",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_35940",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 33627
+        }
+      },
+      "544": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BUFF_TEMPLET_ID": 544,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 1,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 74
+            },
+            "BBT_DETONATION_IMPOSSIBLE": {}
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 8
+            },
+            "BFT_IMMEDIATE": {}
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 33665
+        }
+      }
+    },
+    "buffFactors": {
+      "437": {
+        "raw": {
+          "BUFF_TEMPLET_ID": 408,
+          "RATE": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 16,
+              "2": 17
+            },
+            "BBT_CHANGE_CRITICAL_RATE": {
+              "BUFF_CHANGE_TYPE": 0,
+              "BUFF_RELATION_TYPE": 7,
+              "SWAP_VALUE": {
+                "1": 100,
+                "2": 100,
+                "3": 100,
+                "4": 100,
+                "5": 100,
+                "6": 100,
+                "7": 100,
+                "8": 100,
+                "9": 100,
+                "10": 100,
+                "11": 100,
+                "12": 100,
+                "13": 100,
+                "14": 100,
+                "15": 100,
+                "16": 100,
+                "17": 100,
+                "18": 100,
+                "19": 100,
+                "20": 100,
+                "21": 100,
+                "22": 100,
+                "23": 100,
+                "24": 100,
+                "25": 100,
+                "26": 100,
+                "27": 100,
+                "28": 100,
+                "29": 100,
+                "30": 100
+              }
+            },
+            "BBT_CHANGE_CRITICAL_ATTACK": {
+              "BUFF_CHANGE_TYPE": 3,
+              "BUFF_RELATION_TYPE": 7,
+              "PERCENT": {
+                "1": 1.05,
+                "2": 1.075,
+                "3": 1.1,
+                "4": 1.1,
+                "5": 1.1,
+                "6": 1.1,
+                "7": 1.1,
+                "8": 1.1,
+                "9": 1.1,
+                "10": 1.1,
+                "11": 1.1,
+                "12": 1.1,
+                "13": 1.1,
+                "14": 1.1,
+                "15": 1.1,
+                "16": 1.1,
+                "17": 1.1,
+                "18": 1.1,
+                "19": 1.1,
+                "20": 1.1,
+                "21": 1.1,
+                "22": 1.1,
+                "23": 1.1,
+                "24": 1.1,
+                "25": 1.1,
+                "26": 1.1,
+                "27": 1.1,
+                "28": 1.1,
+                "29": 1.1,
+                "30": 1.1
+              }
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1,
+              "2": 2
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 6,
+                "5": 6,
+                "6": 6,
+                "7": 6,
+                "8": 6,
+                "9": 6,
+                "10": 6,
+                "11": 6,
+                "12": 6,
+                "13": 6,
+                "14": 6,
+                "15": 6,
+                "16": 6,
+                "17": 6,
+                "18": 6,
+                "19": 6,
+                "20": 6,
+                "21": 6,
+                "22": 6,
+                "23": 6,
+                "24": 6,
+                "25": 6,
+                "26": 6,
+                "27": 6,
+                "28": 6,
+                "29": 6,
+                "30": 6
+              }
+            },
+            "BFT_HIT_COUNT": {
+              "BUFF_USE_COUNT_TYPE": 0,
+              "COUNT": {
+                "1": 3,
+                "2": 5,
+                "3": 7,
+                "4": 7,
+                "5": 7,
+                "6": 7,
+                "7": 7,
+                "8": 7,
+                "9": 7,
+                "10": 7,
+                "11": 7,
+                "12": 7,
+                "13": 7,
+                "14": 7,
+                "15": 7,
+                "16": 7,
+                "17": 7,
+                "18": 7,
+                "19": 7,
+                "20": 7,
+                "21": 7,
+                "22": 7,
+                "23": 7,
+                "24": 7,
+                "25": 7,
+                "26": 7,
+                "27": 7,
+                "28": 7,
+                "29": 7,
+                "30": 7
+              }
+            }
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 27464
+        }
+      },
+      "632": {
+        "raw": {
+          "BUFF_TEMPLET_ID": 543,
+          "RATE": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 55
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 2,
+                "2": 2,
+                "3": 2,
+                "4": 2,
+                "5": 2,
+                "6": 2,
+                "7": 2,
+                "8": 2,
+                "9": 2,
+                "10": 2,
+                "11": 2,
+                "12": 2,
+                "13": 2,
+                "14": 2,
+                "15": 2,
+                "16": 2,
+                "17": 2,
+                "18": 2,
+                "19": 2,
+                "20": 2,
+                "21": 2,
+                "22": 2,
+                "23": 2,
+                "24": 2,
+                "25": 2,
+                "26": 2,
+                "27": 2,
+                "28": 2,
+                "29": 2,
+                "30": 2
+              }
+            }
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 38859
+        }
+      },
+      "633": {
+        "raw": {
+          "BUFF_TEMPLET_ID": 544,
+          "RATE": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 74
+            },
+            "BBT_DETONATION_IMPOSSIBLE": {}
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 8
+            },
+            "BFT_IMMEDIATE": {}
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 38900
+        }
+      }
+    }
+  },
+  "inlineFactors": {
+    "fire": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 37,
+        "RATE": {
+          "1": 1
+        },
+        "IGNORE_REGIST_FOR_RATE": 1,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BBT_CHANGE_NOW_HP_PER_SECOND": {
+            "BUFF_CHANGE_TYPE": 2,
+            "BUFF_RELATION_TYPE": 3,
+            "MULTIPLIER": {
+              "1": -0.3
+            }
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 3
+            }
+          }
+        }
+      },
+      "sourceName": "DamageEffect_SA_Raven_MaximumCannon",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 328579
+      }
+    },
+    "wound": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 31,
+        "RATE": {
+          "1": 0.05
+        },
+        "IGNORE_REGIST_FOR_RATE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 1,
+            "2": 4
+          },
+          "BBT_CHANGE_NOW_HP_PER_SECOND": {
+            "BUFF_CHANGE_TYPE": 2,
+            "BUFF_RELATION_TYPE": 3,
+            "MULTIPLIER": {
+              "1": -0.3
+            }
+          },
+          "BBT_DASH_IMPOSSIBLE": {
+            "BUFF_RELATION_TYPE": 7
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 4
+            }
+          }
+        }
+      },
+      "sourceName": "RAVEN_OVER_TAKER_CHARGED_BOLT",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 201537
+      }
+    },
+    "stun": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 52,
+        "RATE": {
+          "1": 0.5
+        },
+        "IGNORE_REGIST_FOR_RATE": 1,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 46
+          },
+          "BBT_STUN": {}
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1,
+            "2": 3
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 1.5
+            }
+          },
+          "BFT_HITTED_COUNT": {
+            "BUFF_USE_COUNT_TYPE": 0,
+            "COUNT": {
+              "1": 2
+            }
+          }
+        }
+      },
+      "sourceName": "RSI_A_RRF_LIMIT_CRUSHER_REVENGE_ATTACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2976
+      }
+    }
+  },
+  "consumers": [
+    {
+      "file": "X2BuffBehaviorTemplet.cpp",
+      "lines": [
+        216,
+        321
+      ],
+      "rule": "HP interval template, stronger-absolute replacement, actual resistance even IGNORE_REGIST_FOR_RATE"
+    },
+    {
+      "file": "X2BuffBehaviorTemplet.cpp",
+      "lines": [
+        388,
+        457
+      ],
+      "rule": "Interval before HP mutation; FIX_RECOVERY_HP guard; three original HP math functions"
+    },
+    {
+      "file": "X2BuffBehaviorTemplet.cpp",
+      "lines": [
+        1046,
+        1097
+      ],
+      "rule": "Stat GetValue SWAP/PERCENT supported; context-dependent FIX/REL omitted"
+    },
+    {
+      "file": "X2BuffFinalizerTemplet.cpp",
+      "lines": [
+        153,
+        277
+      ],
+      "rule": "Normal time: max(previousRemaining,incomingTime*(1-resistance))*targetDurationMultiplier; decremented by actor dt"
+    },
+    {
+      "file": "X2BuffFinalizerTemplet.cpp",
+      "lines": [
+        347,
+        420
+      ],
+      "rule": "Hit counter max-remaining replacement and finish threshold"
+    },
+    {
+      "file": "X2BuffFinalizerTemplet.cpp",
+      "lines": [
+        509,
+        582
+      ],
+      "rule": "Received hit counter max-remaining replacement and finish threshold"
+    },
+    {
+      "file": "X2BuffTemplet.h",
+      "lines": [
+        74,
+        86
+      ],
+      "rule": "Behavior then finalizers then displayer"
+    },
+    {
+      "file": "X2BuffTemplet.cpp",
+      "lines": [
+        290,
+        309
+      ],
+      "rule": "Finalizer finish conditions OR"
+    },
+    {
+      "file": "X2GameUnit.cpp",
+      "lines": [
+        11154,
+        11258
+      ],
+      "rule": "GetRate(1); probability resistance; same-template limit1 replacement"
+    },
+    {
+      "file": "KTDXTimer.h",
+      "lines": [
+        27,
+        75
+      ],
+      "rule": "One interval firing >= threshold; reset sum to zero, discard remainder"
+    }
+  ],
+  "unsupported": [
+    "Non-limit1 accumulation",
+    "Context-dependent duration/usecount/stat relation",
+    "Immediate/dead/other finalizer types",
+    "2016 stun state binding",
+    "Automatic factor437 activation",
+    "Unresolved original render COLOR",
+    "UpNowHp actor sink/invulnerability modifiers executed externally"
+  ]
+}

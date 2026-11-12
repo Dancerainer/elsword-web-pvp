@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 static declarations + qualified fixedV5 consumer reference",
+  "originalClientMeasured": false,
+  "sources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    }
+  ],
+  "references": [
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "fileSha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "fragmentSha256": "3b24f25f6913734ff4cb3ea1788baf8d4184f2663bfd84d3a92f3e90e51a6581",
+      "startLine": 828,
+      "endLine": 872,
+      "method": "damage target mesh binding",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "fileSha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "fragmentSha256": "45c347fda7b25b2837b403ea52b08c61434da6867b09f87c803af4e48f69c0f0",
+      "startLine": 904,
+      "endLine": 940,
+      "method": "visual target mesh binding",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "fileSha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "fragmentSha256": "c5e1e189a8cb52832812aab78090bbf9c9ec57e980bf380af4598474925e6402",
+      "startLine": 3825,
+      "endLine": 3869,
+      "method": "GetEffectPositionByTargetMesh",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragmentSha256": "6e9bd889fcca116e95d8f5f949f1c6ba48ebd57e9e822e9c32c2f4e948dd19ef",
+      "startLine": 8589,
+      "endLine": 8670,
+      "method": "DashAttackXEventProcess",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragmentSha256": "70cb98df128a7154801d32a7c83b5a93ff32efc06536b80d763387b19f9052e8",
+      "startLine": 10193,
+      "endLine": 10272,
+      "method": "Unlimited Blade six normal swings",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragmentSha256": "fb58e2b51fa2fde95c234bd0f097170e683fd63f0d9cc55352b6e5edb48a75b3",
+      "startLine": 10534,
+      "endLine": 10618,
+      "method": "Unlimited Blade six awakened swings",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragmentSha256": "2e52f31b13dedaafa4bd1369c44d2383f21639c4916e9a71964c4229dbe53812",
+      "startLine": 12519,
+      "endLine": 12586,
+      "method": "Armageddon Blade cast particles",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragmentSha256": "487d084aa7e20ce5a6e46b4903dcbca6ff39aaf58483b5268438264787ee00f8",
+      "startLine": 15153,
+      "endLine": 15194,
+      "method": "Rolling Smash flight and landing",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "fixedV5-version-reference"
+    }
+  ],
+  "effectSets": {
+    "EffectSet_SA_ELK_ArmagedonBlade": {
+      "NAME": "EffectSet_SA_ELK_ArmagedonBlade",
+      "EVENT_TIMER_TYPE": 1,
+      "EFFECT0": {
+        "START_TIME": 1.1,
+        "NAME": "ELK_ArmagedonBladeM",
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 4,
+        "TRACE": 1,
+        "TRACE_MATRIX": 1,
+        "USE_SUB_ATTACK_LIST_SET": 1,
+        "BONE_TRACE_TARGET_MESH": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT1": {
+        "NAME": "Elsword_Ready2_PM",
+        "START_TIME": 0.6,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MORE": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT2": {
+        "NAME": "ELK_ArmagedonBladeAPM",
+        "START_TIME": 0.3,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MORE": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT3": {
+        "NAME": "ELK_ArmagedonBladeB01",
+        "START_TIME": 1.1,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT4": {
+        "NAME": "ELK_ArmagedonBladeP01",
+        "START_TIME": 1.2,
+        "BONE_NAME": "Dummy03",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT5": {
+        "NAME": "ELK_ArmagedonBladeP02",
+        "START_TIME": 1.2,
+        "BONE_NAME": "Dummy02",
+        "EFFECT_TYPE": 8,
+        "TRACE_MORE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "TWO_DIR_TIME_GAP": 0.03,
+        "START_TIME": 1.4,
+        "TWO_DIR_TIME": 0.2,
+        "TWO_DIR_GAP": 50,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "EffectSet_SA_Elsword_SandStorm": {
+      "NAME": "EffectSet_SA_Elsword_SandStorm",
+      "EFFECT0": {
+        "NAME": "Elsword_Ready_PM",
+        "START_TIME": 0.1,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT1": {
+        "NAME": "SandStorm_M",
+        "START_TIME": 0.3,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE_MORE": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT2": {
+        "NAME": "SwordStorm_M03",
+        "POSITION_OFFSET_X": 60,
+        "START_TIME": 0.4,
+        "BONE_NAME": "Bip01_Footsteps",
+        "EFFECT_TYPE": 8,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT3": {
+        "NAME": "SandStorm_M1",
+        "START_TIME": 0.75,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8,
+        "TRACE_MORE": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "EFFECT4": {
+        "START_TIME": 0.9,
+        "NAME": "DamageEffect_ELK_Sand_Storm_Main",
+        "EFFECT_TYPE": 1,
+        "BONE_TRACE_TARGET_MESH": 1
+      },
+      "EFFECT5": {
+        "START_TIME": 0.9,
+        "NAME": "DamageEffect_ELK_Sand_Storm_Sub",
+        "EFFECT_TYPE": 1
+      },
+      "EFFECT6": {
+        "NAME": "DamageEffect_SA_Elsword_StormFX1",
+        "POSITION_OFFSET_Y": 80,
+        "START_TIME": 0.9,
+        "BONE_NAME": "Dummy01",
+        "EFFECT_TYPE": 1,
+        "TRACE": 1
+      },
+      "EFFECT7": {
+        "NAME": "DamageEffect_SA_Elsword_StormFX2",
+        "POSITION_OFFSET_Y": 60,
+        "START_TIME": 0.9,
+        "BONE_NAME": "ATTACK_SPHERE1",
+        "EFFECT_TYPE": 1,
+        "TRACE": 1
+      },
+      "EFFECT8": {
+        "NAME": "DamageEffect_SA_Elsword_StormFX3",
+        "POSITION_OFFSET_Y": 30,
+        "ROTATE_Y": 180,
+        "START_TIME": 0.9,
+        "BONE_NAME": "ATTACK_SPHERE2",
+        "EFFECT_TYPE": 1,
+        "TRACE": 1
+      },
+      "EFFECT9": {
+        "NAME": "SandStorm_SwordWY01",
+        "START_TIME": 0.01,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "START_TIME": 0.4,
+        "TWO_DIR_GAP": 40,
+        "TWO_DIR_TIME": 0.2,
+        "SHAKE_TYPE": 3
+      },
+      "CAMERA_SHAKE1": {
+        "START_TIME": 0.8,
+        "TWO_DIR_GAP": 30,
+        "TWO_DIR_TIME": 1.7,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "EffectSet_ESK_DASH_JUMP_ZZZ": {
+      "NAME": "EffectSet_ESK_DASH_JUMP_ZZZ",
+      "EFFECT0": {
+        "BONE_NAME": "Bip01",
+        "NAME": "Elsword_RollingSmash_M01",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT1": {
+        "BONE_NAME": "Bip01",
+        "NAME": "Elsword_RollingSmash_M01D",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT2": {
+        "NAME": "RollingSmash_SwordWY01",
+        "SCALE_Y": 0.55,
+        "SCALE_X": 0.6,
+        "SCALE_Z": 0.55,
+        "START_TIME": 0.01,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      }
+    },
+    "EffectSet_A_Elsword_RollingSmash": {
+      "NAME": "EffectSet_A_Elsword_RollingSmash",
+      "EFFECT0": {
+        "BONE_NAME": "Bip01",
+        "NAME": "Elsword_RollingSmash_M01",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT1": {
+        "BONE_NAME": "Bip01",
+        "NAME": "Elsword_RollingSmash_M01D",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT2": {
+        "BONE_NAME": "Bip01",
+        "NAME": "Elsword_RollingSmash_M02",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      },
+      "EFFECT3": {
+        "NAME": "RollingSmash_SwordWY01",
+        "SCALE_Y": 0.6,
+        "SCALE_X": 0.7,
+        "SCALE_Z": 0.6,
+        "START_TIME": 0.01,
+        "BONE_NAME": "Dummy1_Rhand",
+        "EFFECT_TYPE": 8,
+        "TRACE_MATRIX": 1
+      }
+    }
+  },
+  "dashX": {
+    "targetSourceState": "ESSI_DASH_ATTACK_X",
+    "targetEventWindow0": {
+      "1": 0.2,
+      "2": 0.7333,
+      "3": 0.666
+    },
+    "targetEventWindow1": {
+      "1": 0,
+      "2": 0.7333,
+      "3": 0.666
+    },
+    "binding": "held-key skip after target window1[3], strict float comparison; preserve X-chain precedence",
+    "versionConflict": "fixedV5 hardcodes .6; target2016 declaration is .666; target-client runtime not measured"
+  },
+  "unlimitedBlade": {
+    "targetAttackWindows": [
+      [
+        0.166,
+        0.233
+      ],
+      [
+        0.433,
+        0.5
+      ],
+      [
+        0.666,
+        0.733
+      ],
+      [
+        0.966,
+        1.033
+      ],
+      [
+        1.3,
+        1.366
+      ],
+      [
+        1.5,
+        1.566
+      ]
+    ],
+    "normalAndAwakened": true,
+    "hitUnitListResetPerSwing": true,
+    "reactTypeChange": {
+      "fromSwing": 4,
+      "type": 2
+    },
+    "versionConflict": "fixedV5 normal sixth reset 1.566 is outside target 1.5..1.566 window; target window start is used"
+  },
+  "armageddonCast": {
+    "lights": {
+      "animationTime": 0.9,
+      "bone": "Dummy1_Rhand",
+      "trace": false,
+      "names": [
+        "Light_Knight_ArmageddonBlade01",
+        "Light_Knight_ArmageddonBlade02"
+      ]
+    },
+    "flare": {
+      "animationTime": 1.7,
+      "bone": "Dummy1_Rhand",
+      "forwardOffset": 305,
+      "worldYOffset": 70,
+      "name": "Flare_MagicKnight_WindBlade01"
+    },
+    "buffAnimationTime": 1.68
+  },
+  "limits": [
+    "No original-client input trajectory or GPU comparison",
+    "Skill medium particle divisor is an authorized web display budget, not a claimed original medium density",
+    "Preserve source emission clocks for short sword mesh/trail layers; retain ambient particle density budget",
+    "Owner IDs are remapped per cast; historical/live attack receipts include the six distinct target swings"
+  ]
+}

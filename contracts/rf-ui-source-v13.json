@@ -1,0 +1,48 @@
+{
+  "schema": "elsword.rf-ui-v13.source.v1",
+  "targetClientMeasured": false,
+  "targetDeclaration": {
+    "path": "asset_work\\raw\\data\\data034.kom\\DLG_PVP_Game_My_State_NEW.lua",
+    "sha256": "84fc0f0d865738c2b6306ab148e3d9389f11189ec4856eae0ab8cb18af00158c",
+    "fontSymbol": "XUF_DODUM_13_SEMIBOLD",
+    "alignment": "DRAW_TEXT.DT_CENTER",
+    "style": "FONT_STYLE.FS_SHELL",
+    "position": [
+      77,
+      46
+    ],
+    "outlineColor": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "instruction": 996
+  },
+  "font": {
+    "path": "asset_sources/client\\data\\tahoma.ttf",
+    "sha256": "08f45bf539954d3252df97a2ae563362ed2ad5ebe05f2d1f2bc54b931e4d0550",
+    "bytes": 383804,
+    "output": "artifacts/ui/fonts/tahoma.ttf",
+    "outputSha256": "08f45bf539954d3252df97a2ae563362ed2ad5ebe05f2d1f2bc54b931e4d0550"
+  },
+  "countdown": {
+    "evidence": "fixed-V5-reference",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "path": "X2Lib/X2GageUI.cpp",
+    "sha256": "2e3a631f62ba5b2f4a6854989d2432ec96e00973f88852a5fdc1b224ae6805a8",
+    "functionBodySha256": "76eb05f19d8e69d0410d99dd41de971b6b02b4f35311e55a31e35976e8ff6fbc",
+    "rule": "positive remaining => trunc(remaining)+1; zero/nonpositive => empty",
+    "redBelowSeconds": 8
+  },
+  "adaptation": {
+    "unit": "seconds",
+    "fontWeight": 600,
+    "fontSizePx": 13,
+    "mapping": "Original NA Tahoma font candidate; XUF_DODUM_13_SEMIBOLD regional mapping unverified"
+  },
+  "pending": [
+    "Native 2016 font registration mapping and glyph rasterization",
+    "Original 2016 countdown runtime comparison"
+  ]
+}

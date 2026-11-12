@@ -1,0 +1,878 @@
+{
+  "schema": "rf-source-command-closure-v53",
+  "input": {
+    "graph": "asset_sources/analysis-project\\reports\\analysis\\rf-command-producers-2016\\selected-resource-graph.json.gz",
+    "sha256": "570489e00069695ae5d124d8c7dfe7fa86e138b20c75683ca0c5947ebc0dc634",
+    "qualification": "target2016 declarations and previously converted original2016 pose/model; native runtime observations absent"
+  },
+  "states": {
+    "RRF_COMBO_ZZZX": {
+      "raw": {
+        "ANIM_NAME": "SI_SA_ROT_STIGMA_OF_PAIN",
+        "ANIM_SPEED": 1.35,
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "COMBO_GUIDE": {
+          "1": "Z",
+          "2": "ZZZX"
+        },
+        "DASH_CANCEL_AFTER": 1.95,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_RRF_Combo_ZZZX_01",
+          "2": 0.3,
+          "3": "EffectSet_RRF_Combo_ZZZX_02",
+          "4": 0.65,
+          "5": "EffectSet_RRF_Combo_ZZZX_03",
+          "6": 0.94,
+          "7": "EffectSet_RRF_COMBO_ZZZX",
+          "8": 1.72
+        },
+        "IS_ATTACK_STATE": 1,
+        "LAND_CONNECT": 0,
+        "PLAY_TYPE": 2,
+        "SKILL_CANCEL_AFTER": 0.5,
+        "SOUND_PLAY0": {
+          "1": 0.1,
+          "2": "Raven_SP_StigmaOfPain_01.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.3,
+          "2": "Raven_RRF_X_Crash1.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.4,
+          "2": "Raven_RRF_X_Crash2.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.94,
+          "2": "Raven_RRF_X_Crash2.ogg"
+        },
+        "SOUND_PLAY4": {
+          "1": 1.72,
+          "2": "Raven_RRF_X_Crash1.ogg"
+        },
+        "SOUND_PLAY5": {
+          "1": 1.72,
+          "2": "RavenVoice_Shout03.ogg"
+        },
+        "SPEED_TIME0": {
+          "1": 1250,
+          "2": 0,
+          "3": 0,
+          "4": 2
+        },
+        "SPEED_TIME1": {
+          "1": 0,
+          "2": 0,
+          "3": 0.391,
+          "4": 2
+        },
+        "TRANSITION": 0,
+        "UPDOWN_CANCEL_AFTER": 1.95
+      },
+      "animationName": "SI_SA_ROT_STIGMA_OF_PAIN",
+      "sourcePc": 2522,
+      "clip": {
+        "durationSeconds": 2.7333333333333334,
+        "durationTicks": 13120,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_SA_ROT_STIGMA_OF_PAIN",
+        "decodedKeysSha256": "642798f33159b1e7d5ab103bafa94e87a3444a71ad4968e49fd354af7b0ff55e"
+      },
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          0.9,
+          0.9333333333333333,
+          0.9666666666666667,
+          1,
+          1.0333333333333334,
+          1.0666666666666667,
+          1.1,
+          1.1333333333333333,
+          1.1666666666666667,
+          1.2,
+          1.2333333333333334,
+          1.2666666666666666,
+          1.3,
+          1.3333333333333333,
+          1.3666666666666667,
+          1.4,
+          1.4333333333333333,
+          1.4666666666666666,
+          1.5,
+          1.5333333333333334,
+          1.5666666666666667,
+          1.6,
+          1.6333333333333333,
+          1.6666666666666667,
+          1.7,
+          1.7333333333333334,
+          1.7666666666666666,
+          1.8,
+          1.8333333333333333,
+          1.8666666666666667,
+          1.9,
+          1.9333333333333333,
+          1.9666666666666666,
+          2,
+          2.033333333333333,
+          2.066666666666667,
+          2.1,
+          2.1333333333333333,
+          2.1666666666666665,
+          2.2,
+          2.2333333333333334,
+          2.2666666666666666,
+          2.3,
+          2.3333333333333335,
+          2.3666666666666667,
+          2.4,
+          2.433333333333333,
+          2.7333333333333334
+        ],
+        "positionsGltf": [
+          [
+            0,
+            81.3643569946289,
+            0
+          ],
+          [
+            0,
+            81.32743072509766,
+            0
+          ],
+          [
+            0,
+            89.59320831298828,
+            0
+          ],
+          [
+            0,
+            97.17029571533203,
+            0
+          ],
+          [
+            0,
+            92.90625762939453,
+            0
+          ],
+          [
+            0,
+            90.93099212646484,
+            0
+          ],
+          [
+            0,
+            89.06952667236328,
+            0
+          ],
+          [
+            0,
+            87.30879211425781,
+            0
+          ],
+          [
+            0,
+            85.63595581054688,
+            0
+          ],
+          [
+            0,
+            84.03837585449219,
+            0
+          ],
+          [
+            0,
+            82.50347900390625,
+            0
+          ],
+          [
+            0,
+            81.01856231689453,
+            0
+          ],
+          [
+            0,
+            81.12347412109375,
+            0
+          ],
+          [
+            0,
+            75.45447540283203,
+            0
+          ],
+          [
+            0,
+            78.12214660644531,
+            0
+          ],
+          [
+            0,
+            78.26021575927734,
+            0
+          ],
+          [
+            0,
+            77.90951538085938,
+            0
+          ],
+          [
+            0,
+            77.76569366455078,
+            0
+          ],
+          [
+            0,
+            78.50817108154297,
+            0
+          ],
+          [
+            0,
+            82.72601318359375,
+            0
+          ],
+          [
+            0,
+            86.5708236694336,
+            0
+          ],
+          [
+            0,
+            80.30888366699219,
+            0
+          ],
+          [
+            0,
+            76.32889556884766,
+            0
+          ],
+          [
+            0,
+            74.3478775024414,
+            0
+          ],
+          [
+            0,
+            76.14517211914062,
+            0
+          ],
+          [
+            0,
+            77.91899108886719,
+            0
+          ],
+          [
+            0,
+            81.40386962890625,
+            0
+          ],
+          [
+            0,
+            85.86236572265625,
+            0
+          ],
+          [
+            0,
+            83.5344009399414,
+            0
+          ],
+          [
+            0,
+            86.7500991821289,
+            0
+          ],
+          [
+            0,
+            89.86630249023438,
+            0
+          ],
+          [
+            0,
+            90.1534194946289,
+            0
+          ],
+          [
+            0,
+            89.52611541748047,
+            0
+          ],
+          [
+            0,
+            89.07404327392578,
+            0
+          ],
+          [
+            0,
+            89.05885314941406,
+            0
+          ],
+          [
+            0,
+            89.07404327392578,
+            0
+          ],
+          [
+            0,
+            85.23326873779297,
+            0
+          ],
+          [
+            0,
+            77.25508117675781,
+            0
+          ],
+          [
+            0,
+            70.64081573486328,
+            0
+          ],
+          [
+            0,
+            70.93538665771484,
+            0
+          ],
+          [
+            0,
+            96.70889282226562,
+            0
+          ],
+          [
+            0,
+            122.96630859375,
+            0
+          ],
+          [
+            0,
+            128.2891082763672,
+            0
+          ],
+          [
+            0,
+            131.4274444580078,
+            0
+          ],
+          [
+            0,
+            132.82666015625,
+            0
+          ],
+          [
+            0,
+            132.93243408203125,
+            0
+          ],
+          [
+            0,
+            132.19110107421875,
+            0
+          ],
+          [
+            0,
+            131.04974365234375,
+            0
+          ],
+          [
+            0,
+            129.9562530517578,
+            0
+          ],
+          [
+            0,
+            115.67630767822266,
+            0
+          ],
+          [
+            0,
+            95.6131820678711,
+            0
+          ],
+          [
+            0,
+            80.95759582519531,
+            0
+          ],
+          [
+            0,
+            69.1798095703125,
+            0
+          ],
+          [
+            0,
+            70.94249725341797,
+            0
+          ],
+          [
+            0,
+            75.7422103881836,
+            0
+          ],
+          [
+            0,
+            79.92166900634766,
+            0
+          ],
+          [
+            0,
+            81.9233169555664,
+            0
+          ],
+          [
+            0,
+            83.33187866210938,
+            0
+          ],
+          [
+            0,
+            84.31082153320312,
+            0
+          ],
+          [
+            0,
+            85.02568054199219,
+            0
+          ],
+          [
+            0,
+            85.54098510742188,
+            0
+          ],
+          [
+            0,
+            85.85089874267578,
+            0
+          ],
+          [
+            0,
+            86.015625,
+            0
+          ],
+          [
+            0,
+            86.09538269042969,
+            0
+          ],
+          [
+            0,
+            86.15033721923828,
+            0
+          ],
+          [
+            0,
+            86.24067687988281,
+            0
+          ],
+          [
+            0,
+            86.35545349121094,
+            0
+          ],
+          [
+            0,
+            86.4471206665039,
+            0
+          ],
+          [
+            0,
+            86.5209732055664,
+            0
+          ],
+          [
+            0,
+            86.58228302001953,
+            0
+          ],
+          [
+            0,
+            86.63630676269531,
+            0
+          ],
+          [
+            0,
+            86.68830871582031,
+            0
+          ],
+          [
+            0,
+            86.74356842041016,
+            0
+          ],
+          [
+            0,
+            86.80732727050781,
+            0
+          ],
+          [
+            0,
+            86.80732727050781,
+            0
+          ]
+        ],
+        "deltaGltf": [
+          0,
+          5.442970275878906,
+          0
+        ],
+        "semantics": "original converted bone-local translation; current simulation source motion adapter"
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_RRF_COMBO_ZZZX": {
+      "raw": {
+        "CAMERA_SHAKE0": {
+          "SHAKE_TYPE": 3,
+          "START_TIME": 0.01,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.1
+        },
+        "EFFECT0": {
+          "EFFECT_TYPE": 1,
+          "NAME": "DamageEffect_RRF_COMBO_ZZZX",
+          "POSITION_OFFSET_X": 90
+        },
+        "EVENT_TIMER_TYPE": 1,
+        "NAME": "EffectSet_RRF_COMBO_ZZZX"
+      }
+    },
+    "EffectSet_RRF_Combo_ZZZX_01": {
+      "raw": {
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "NAME": "DamageEffect_RRF_Combo_ZZZX_01",
+          "POSITION_OFFSET_X": 80,
+          "ROTATE_Z": 90,
+          "START_TIME": 0.001
+        },
+        "NAME": "EffectSet_RRF_Combo_ZZZX_01"
+      }
+    },
+    "EffectSet_RRF_Combo_ZZZX_02": {
+      "raw": {
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "NAME": "DamageEffect_RRF_Combo_ZZZX_01",
+          "POSITION_OFFSET_X": 100,
+          "POSITION_OFFSET_Y": 50,
+          "ROTATE_Z": -45,
+          "START_TIME": 0.001
+        },
+        "NAME": "EffectSet_RRF_Combo_ZZZX_02"
+      }
+    },
+    "EffectSet_RRF_Combo_ZZZX_03": {
+      "raw": {
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "NAME": "DamageEffect_RRF_Combo_ZZZX_01",
+          "POSITION_OFFSET_X": 60,
+          "POSITION_OFFSET_Y": 25,
+          "ROTATE_Z": 30,
+          "START_TIME": 0.001
+        },
+        "NAME": "EffectSet_RRF_Combo_ZZZX_03"
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_RRF_COMBO_ZZZX": {
+      "raw": {
+        "ATTACKED_BY_EFFECT": 0,
+        "ATTACKED_BY_UNIT": 0,
+        "CREATE_DAMAGE_EFFECT0": {
+          "APPLY_ROTATE_ORIGIN": 1,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RRF_Up_Spine_ZZZX",
+          "EVENT_TIME": 0.01,
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "APPLY_ROTATE_ORIGIN": 1,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RRF_Up_Spine_ZZZX",
+          "EVENT_TIME": 0.11,
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "APPLY_ROTATE_ORIGIN": 1,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RRF_Up_Spine_ZZZX",
+          "EVENT_TIME": 0.21,
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "APPLY_ROTATE_ORIGIN": 1,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RRF_Up_Spine_ZZZX",
+          "EVENT_TIME": 0.31,
+          "POSITION_TYPE": 3
+        },
+        "DAMAGE_DATA": {
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 0
+          },
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": -1,
+          "NO_DAMAGE": 1,
+          "REACT_TYPE": 0
+        },
+        "DAMAGE_TIME": 0,
+        "EFFECT_TYPE": 1,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "FOLLOW_ON_LINE": 1,
+        "MAIN_EFFECT_NAME": "Mesh_Raven_OverTaker_XX_Down_X_Dummy",
+        "REFLECT": 0
+      },
+      "sourcePc": 385284
+    },
+    "DamageEffect_RRF_Combo_ZZZX_01": {
+      "raw": {
+        "ATTACKED_BY_EFFECT": 0,
+        "ATTACKED_BY_UNIT": 0,
+        "DAMAGE_DATA": {
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 600,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_GAP": 20,
+          "CAMERA_CRASH_TIME": 0.1,
+          "CAN_REVENGE": 0,
+          "CLEAR_SCREEN": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "DAMAGE": {
+            "MAGIC": 1.53
+          },
+          "DAMAGE_TYPE": 1,
+          "FORCE_DOWN": 3.5,
+          "FORCE_FLY": 1,
+          "HIT_ADD_MP": 2.53,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 0,
+          "STOP_TIME_ATT": 0,
+          "STOP_TIME_DEF": 0.2,
+          "TECH_POINT": 77
+        },
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "HIT_PARTICLE0": {
+          "PARTICLE_NAME": "FireDamageImpactRed",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 10
+        },
+        "HIT_PARTICLE1": {
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "HIT_PARTICLE2": {
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "HIT_PARTICLE3": {
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "MAIN_EFFECT_NAME": "Raven_RRF_SI_SA_X_Crash_Mesh02",
+        "REFLECT": 0
+      },
+      "sourcePc": 387211
+    },
+    "DamageEffect_RRF_Up_Spine_ZZZX": {
+      "raw": {
+        "ATTACKED_BY_EFFECT": 0,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACK_TIME_END": 0.1,
+        "DAMAGE_DATA": {
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 650,
+          "CAMERA_CRASH_GAP": 10,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CAN_REVENGE": 0,
+          "DAMAGE": {
+            "MAGIC": 1.15
+          },
+          "DAMAGE_TYPE": 1,
+          "FORCE_DOWN": 2.63,
+          "HIT_ADD_MP": 1.9,
+          "HIT_GAP": 1,
+          "HIT_TYPE": 1,
+          "PVP_RATE": 0.6,
+          "REACT_TYPE": 1,
+          "RE_ATTACK": 1,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 43
+        },
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "HIT_PARTICLE0": {
+          "PARTICLE_NAME": "FireDamageImpact",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 10
+        },
+        "HIT_PARTICLE1": {
+          "PARTICLE_NAME": "FireDamageImpactCore",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 10
+        },
+        "HIT_PARTICLE2": {
+          "PARTICLE_NAME": "FireDamageImpactSlash",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 2
+        },
+        "MAIN_EFFECT_NAME": "Raven_OverTaker_Iron_Attack01",
+        "REFLECT": 0,
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_OT_ComboX3Front.ogg"
+        },
+        "USE_GLOBAL_TIME": 1
+      },
+      "sourcePc": 387267
+    }
+  },
+  "effectTemplates": {
+    "Raven_RRF_SI_SA_X_Crash_Mesh02": {
+      "name": "Raven_RRF_SI_SA_X_Crash_Mesh02",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "Raven_RRF_SI_SA_X_Crash_Mesh02.x",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "PlayCount": 1
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.067,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.067,
+          "end": 0.566,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 464706,
+        "templateLine": 14624
+      },
+      "declarationSha256": "716ed5162cb8cc2567291b85d8eccaac8bff11305e9e6a65c23afd5762ecb1e4",
+      "textures": {},
+      "glb": "effects/Raven_RRF_SI_SA_X_Crash_Mesh02.glb",
+      "poseData": "effects/Raven_RRF_SI_SA_X_Crash_Mesh02.pose.json",
+      "initialSize": [
+        1,
+        1,
+        1
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialDirSpeed": null,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.7333333333333333,
+          "ticksPerSecond": 4800,
+          "nativePlaybackField": null
+        }
+      ],
+      "missingExplicitTickRate": false
+    }
+  }
+}

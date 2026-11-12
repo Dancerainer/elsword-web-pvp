@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "maximum-strike-source-continuation-v56",
+  "sourceClass": "target2016-static-consumer; current-Web-regression",
+  "originalClientMeasured": false,
+  "originalSource": "contracts/add-maximum-strike-native-v53.json",
+  "sourceFunctions": ["0x31effdd0", "0x31f0073f", "0x31f038ef"],
+  "sourceDeclaration": {
+    "effect": "DamageEffect_ATT_Maximum_Strike_Bullet_Attack",
+    "LOCK_ON_TYPE": 8,
+    "RETARGET_COOLTIME_AFTER_ATTACK": 99999,
+    "meshLifeTime": 0.94,
+    "HIT_DAMAGE_EFFECT": "DamageEffect_ATT_Maximum_Strike_Bullet_Explosion"
+  },
+  "rules": [
+    "Invincible rejected contact does not consume accepted hit memory, explode, or clear held steering",
+    "Accepted contact clears the held target and retains the current movement direction until the original mesh lifetime expires",
+    "The same travelling shot can hit later targets, once per original target receipt, with original impact explosion and sound",
+    "The receiver-private accepted direction persists across owner replacements and NEXT tables; no remote HP authority or delayed hit replay is added"
+  ],
+  "supersededProductRule": {
+    "version": "V53",
+    "rule": "immediate projectile termination on first accepted contact",
+    "reason": "User corrected desired behavior in the V56 player feedback request"
+  }
+}

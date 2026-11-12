@@ -1,0 +1,2281 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "evidenceLevel": "original-file-data",
+  "coordinateConvention": "native DirectX left-handed Y up, original units; column matrices",
+  "templates": {
+    "Raven_MaximumCanon_Fly_Damage": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 188651,
+        "templateLine": 5931
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(4.500, 4.500, 4.500)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Special_Attack_Missile_Rain_Wave_Left": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 189737,
+        "templateLine": 5968
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        -600.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(-600, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.250",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Special_Attack_Missile_Rain_Wave_Right": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 190252,
+        "templateLine": 5985
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        600.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(600, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.250",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_SevenBurst1": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 190767,
+        "templateLine": 6002
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        4000.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(4000, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.150",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_SevenBurst1_Memo": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 191258,
+        "templateLine": 6019
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.250",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_SevenBurst_Explosion_Memo": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 191733,
+        "templateLine": 6035
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        11.0,
+        11.0,
+        11.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(11, 11, 11)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.900",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_SevenBurst2": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 192191,
+        "templateLine": 6051
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        5.5,
+        5.5,
+        5.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(5.500, 5.500, 5.500)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.820",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_CannonBlade": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 193736,
+        "templateLine": 6103
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        800.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(800, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_ST_Sp1_SonicStab": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 214011,
+        "templateLine": 6756
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_SI_A_RF_Thrust_Effect01": {
+      "meshName": "Raven_SI_A_RF_Thrust_Mesh01.X",
+      "poseData": "effects/Raven_SI_A_RF_Thrust_Mesh01.pose.json",
+      "glb": "effects/Raven_SI_A_RF_Thrust_Mesh01.glb",
+      "helperNames": [],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 313908,
+        "templateLine": 9867
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 162,
+        "name": "Raven_SI_A_RF_Thrust_Mesh01.X",
+        "rawPath": "raw/data/data120.kom/Raven_SI_A_RF_Thrust_Mesh01.X",
+        "sha256": "a1c2383fcd2bbbbad8f61d2b01bb118ea9fe1fe4708944b1272f7af79c693563",
+        "bytes": 1137,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": null,
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_OT_VKJ_Spear_Mesh02": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 343394,
+        "templateLine": 10785
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.800",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RRF_Combo_ZZXFX_Mesh01": {
+      "meshName": "Raven_RRF_Combo_ZZXFX_Mesh01.X",
+      "poseData": "effects/Raven_RRF_Combo_ZZXFX_Mesh01.pose.json",
+      "glb": "effects/Raven_RRF_Combo_ZZXFX_Mesh01.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 459589,
+        "templateLine": 14453
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 151,
+        "name": "Raven_RRF_Combo_ZZXFX_Mesh01.X",
+        "rawPath": "raw/data/data120.kom/Raven_RRF_Combo_ZZXFX_Mesh01.X",
+        "sha256": "3cfe8c9505c69ca04b35cf7d5e9499f725e4800613a517354f2bf291404a733e",
+        "bytes": 3044,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1.500, 1.500, 1.500)",
+        "AniName": "\"Normal\", XAP_ONE",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": null,
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RRF_SI_SA_X_Crash_Mesh01": {
+      "meshName": "Raven_RRF_SI_SA_X_Crash_Mesh01.x",
+      "poseData": "effects/Raven_RRF_SI_SA_X_Crash_Mesh01.pose.json",
+      "glb": "effects/Raven_RRF_SI_SA_X_Crash_Mesh01.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 464141,
+        "templateLine": 14607
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 153,
+        "name": "Raven_RRF_SI_SA_X_Crash_Mesh01.X",
+        "rawPath": "raw/data/data120.kom/Raven_RRF_SI_SA_X_Crash_Mesh01.X",
+        "sha256": "a5ef8e0f1c30c0e8991598eb2aadddd4797cc3da7a94ca7d7684fc12e14fe410",
+        "bytes": 2084,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": null,
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RRF_SI_SA_X_Crash_Mesh02": {
+      "meshName": "Raven_RRF_SI_SA_X_Crash_Mesh02.x",
+      "poseData": "effects/Raven_RRF_SI_SA_X_Crash_Mesh02.pose.json",
+      "glb": "effects/Raven_RRF_SI_SA_X_Crash_Mesh02.glb",
+      "helperNames": [
+        "ATTACK_SPHERE2"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 464706,
+        "templateLine": 14624
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 154,
+        "name": "Raven_RRF_SI_SA_X_Crash_Mesh02.X",
+        "rawPath": "raw/data/data120.kom/Raven_RRF_SI_SA_X_Crash_Mesh02.X",
+        "sha256": "eb696eec55059703eaa31ceafc3d8fce2a71761de092d2825e9a57778c604637",
+        "bytes": 1561,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": null,
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RRF_SI_SA_X_Crash_Mesh03": {
+      "meshName": "Raven_RRF_SI_SA_X_Crash_Mesh03.x",
+      "poseData": "effects/Raven_RRF_SI_SA_X_Crash_Mesh03.pose.json",
+      "glb": null,
+      "helperNames": [],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 465271,
+        "templateLine": 14641
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 155,
+        "name": "Raven_RRF_SI_SA_X_Crash_Mesh03.X",
+        "rawPath": "raw/data/data120.kom/Raven_RRF_SI_SA_X_Crash_Mesh03.X",
+        "sha256": "d560606513dc37ff02595ca40fd10e82b7be77ecbb120198593c4a6e2935eeb1",
+        "bytes": 1069,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 1)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": null,
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RRF_X_Crash3": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 465712,
+        "templateLine": 14656
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        7.0,
+        7.0,
+        7.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(7, 7, 7)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.360",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RBM_ONE_FLASH_SUB": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 466203,
+        "templateLine": 14673
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.5,
+        3.5,
+        3.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3.500, 3.500, 3.500)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_RBM_ONE_FLASH_MAIN": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 466705,
+        "templateLine": 14690
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_CannonBlade_Memo": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 522856,
+        "templateLine": 16443
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        560.0,
+        1.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(560, 1, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "MESH_MAJOR_PVP_BOT_RAVEN_COMBO_XXX_DUMMY_ATTACK_BOX": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 777163,
+        "templateLine": 24606
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.300",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_NasodBall": {
+      "meshName": "Motion_Raven_RageMode_Nasod.x",
+      "poseData": "effects/Motion_Raven_RageMode_Nasod.pose.json",
+      "glb": "effects/Motion_Raven_RageMode_Nasod.glb",
+      "helperNames": [
+        "ATTACK_SPHERE4_2",
+        "ATTACK_SPHERE4_1",
+        "ATTACK_SPHERE1",
+        "ATTACK_SPHERE3",
+        "ATTACK_SPHERE2",
+        "ATTACK_SPHERE5_2",
+        "ATTACK_SPHERE5_1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 937132,
+        "templateLine": 29499
+      },
+      "meshSource": {
+        "archive": "data/data120.kom",
+        "ordinal": 55,
+        "name": "Motion_Raven_RageMode_Nasod.x",
+        "rawPath": "raw/data/data120.kom/Motion_Raven_RageMode_Nasod.x",
+        "sha256": "5ceb8dfbfcd2a5d66659717e4ca10e8deb0fa26139aa6aada18d69c46a608a60",
+        "bytes": 37132,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": null,
+      "initialAnimation": {
+        "name": "Wait",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": null,
+        "AniName": "\"Wait\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 1)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "99999",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Aura": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 937647,
+        "templateLine": 29518
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(6, 6, 6)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "99999",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Breaking_Fist_AttackBox": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1017367,
+        "templateLine": 31974
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1.500, 1.500, 1.500)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Barrage_Attack": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1017881,
+        "templateLine": 31991
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_Barrage_Attack_Memo": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1018374,
+        "templateLine": 32008
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "3.750",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_WT_X_SHELL_IMPACT": {
+      "meshName": "DummyAttackBox_50x50x50.x",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1036026,
+        "templateLine": 32573
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2.500, 2.500, 2.500)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_RVT_Napalm_Grenade_Explosion": {
+      "meshName": "DummyAttackBox_50x50x50.x",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1036532,
+        "templateLine": 32590
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.66,
+        3.66,
+        3.66
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(3.660, 3.660, 3.660)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_Power_Assault": {
+      "meshName": "ST_DarkFireBall_Dummy.X",
+      "poseData": "effects/ST_DarkFireBall_Dummy.pose.json",
+      "glb": null,
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1293636,
+        "templateLine": 40623
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 1844,
+        "name": "ST_DarkFireBall_Dummy.X",
+        "rawPath": "raw/data/data002.kom/ST_DarkFireBall_Dummy.X",
+        "sha256": "a7e4c4022cbf9a1116fa90392ead4de506106ebb218c75acf0767a7ac676011a",
+        "bytes": 854,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.75,
+        1.75,
+        1.75
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1.750, 1.750, 1.750)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_Raven_Giga_Drive_Front": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1487668,
+        "templateLine": 46176
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(0.600, 0.600, 0.600)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(1, 1, 1, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "5",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_WT_REVOLVER_CANNON_HE_IMPACT": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1494374,
+        "templateLine": 46403
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(6, 6, 6)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_WT_HELL_DIVE_IMPACT": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1494875,
+        "templateLine": 46420
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(4, 4, 4)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.700",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_Hamel_Shadow_Raven_Elit_Power_Assault": {
+      "meshName": "ST_DarkFireBall_Dummy.X",
+      "poseData": "effects/ST_DarkFireBall_Dummy.pose.json",
+      "glb": null,
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1948789,
+        "templateLine": 60429
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 1844,
+        "name": "ST_DarkFireBall_Dummy.X",
+        "rawPath": "raw/data/data002.kom/ST_DarkFireBall_Dummy.X",
+        "sha256": "a7e4c4022cbf9a1116fa90392ead4de506106ebb218c75acf0767a7ac676011a",
+        "bytes": 854,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "MESH_HAMEL_SHADOW_RAVEN_COMBO_XXX_DUMMY_ATTACK_BOX": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1951754,
+        "templateLine": 60528
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.300",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "MESH_HAMEL_SHADOW_RAVEN_Vibration_Shooting_Impact": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 1952277,
+        "templateLine": 60545
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(4, 4, 4)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.150",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "AttackBox_SA_Raven_MaximumCannon": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2373969,
+        "templateLine": 74104
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(3, 3, 3)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "AttackBox_SA_Raven_MaximumCannon_Finish": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2374421,
+        "templateLine": 74120
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(4.500, 4.500, 4.500)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.100",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_Raven_ZZZX_Dummy": {
+      "meshName": "DummyAttackBox_50x50x50.x",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2419966,
+        "templateLine": 75629
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        3.0,
+        2.0,
+        3.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(3, 2, 3)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_Raven_OverTaker_XX_Down_X_Dummy": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2420411,
+        "templateLine": 75645
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": null,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": null,
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_ROT_Raven_Armor_Break": {
+      "meshName": "DummyAttackBox_50x50x50.x",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2424824,
+        "templateLine": 75788
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(2, 2, 2)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.666",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Mesh_ROT_Raven_Weapon_Break": {
+      "meshName": "DummyAttackBox_50x50x50.x",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 2425274,
+        "templateLine": 75804
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.25,
+        2.25,
+        2.25
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(2.250, 2.250, 2.250)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.666",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_RF_ZZZX_ATTACK_BOX": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 3063635,
+        "templateLine": 95994
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2.500, 2.500, 2.500)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.400",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_RF_XXX_ATTACK_BOX": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 3064144,
+        "templateLine": 96011
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(2.500, 2.500, 2.500)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": null,
+      "lifeTimeLiteral": "0.400",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_ROT_DASH_ZX_ATTACK_BOX": {
+      "meshName": "ST_DarkFireBall_Dummy.X",
+      "poseData": "effects/ST_DarkFireBall_Dummy.pose.json",
+      "glb": null,
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 3064652,
+        "templateLine": 96028
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 1844,
+        "name": "ST_DarkFireBall_Dummy.X",
+        "rawPath": "raw/data/data002.kom/ST_DarkFireBall_Dummy.X",
+        "sha256": "a7e4c4022cbf9a1116fa90392ead4de506106ebb218c75acf0767a7ac676011a",
+        "bytes": 854,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1.250, 1.250, 1.250)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "RAVEN_RST_DASH_JUMP_ZZZ_ATTACK_BOX": {
+      "meshName": "ST_DarkFireBall_Dummy.X",
+      "poseData": "effects/ST_DarkFireBall_Dummy.pose.json",
+      "glb": null,
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 3071914,
+        "templateLine": 96260
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 1844,
+        "name": "ST_DarkFireBall_Dummy.X",
+        "rawPath": "raw/data/data002.kom/ST_DarkFireBall_Dummy.X",
+        "sha256": "a7e4c4022cbf9a1116fa90392ead4de506106ebb218c75acf0767a7ac676011a",
+        "bytes": 854,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.25,
+        1.25,
+        1.25
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "initialVelocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialLiterals": {
+        "Size": "XYZ(1.250, 1.250, 1.250)",
+        "AniName": "\"Normal\", XAP_ONE_WAIT",
+        "Velocity": "XYZ(0, 0, 0)",
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "1",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    },
+    "Raven_WeaponDummy01": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "effects/DummyAttackBox_50x50x50.pose.json",
+      "glb": "effects/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "templateByteOffset": 3444618,
+        "templateLine": 107771
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": "XYZ(1, 1, 1)",
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "10",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false
+    }
+  },
+  "limits": [
+    "Missing initializers are null; no engine defaults are guessed.",
+    "Template Size is distinct from effect-set Scale; compose both according to native transform evidence.",
+    "Helper geometry and sphere candidates are not a verified native collision algorithm.",
+    "Raven_WeaponDummy02 is not declared in the 2016 GameMajorXMeshPlayer.txt source."
+  ]
+}

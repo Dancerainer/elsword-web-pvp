@@ -1,0 +1,229 @@
+{
+  "schema": "rf-awakening-source-contract-v17",
+  "targetClientMeasured": false,
+  "matching2016ConsumerVerified": false,
+  "classification": "static-target2016 + compiled-fixed-V5-reference + explicit-user-adaptation",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceProof": "../reports/rf-awakening-independent-source-v17.json",
+  "probeTool": "../tools/native/check_rf_awakening_source_v17.py",
+  "target": {
+    "skillId": 24405,
+    "level": 3,
+    "path": "asset_work/raw/data/data036.kom/NewSkillTempletVer2.lua",
+    "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+    "prototype": 0,
+    "instruction": 22560,
+    "effectiveTime": 0.7,
+    "effectiveTimeUnit": "duration multiplier; explicit target description -30%",
+    "reawakeningConsumedBeads": 1,
+    "coreMainDescription": "Re-Awakening recovers the core to maximum charge.",
+    "canonicalDeclarationPreserved": true
+  },
+  "incompatibleOldDeclaration": {
+    "skillId": 4409,
+    "path": "asset_sources/upstream/.cache/public-references/v5-selected/JP_TW_EU_CN_US/Trunk/KncWX2Server/ClientScript/Major/NewSkillTempletVer2.lua",
+    "sha256": "c589908bd72a6be412d64545e5f21ff6b1b6e1889c0c2fb2b99060c01e0de77f",
+    "firstThreeEffectiveTimeValues": [
+      4,
+      7,
+      10
+    ],
+    "unit": "seconds, independently explicit in Additional Awakening Time description",
+    "reasonNotPortable": "Old Raven GetHyperModeTime returns this field as literal seconds; target24405 .7 cannot be substituted into that path as a verified value."
+  },
+  "userConfirmedAdaptations": {
+    "source": "Explicit user feedback relayed by root in this task",
+    "reawakeningAddedCoreLevels": 2,
+    "time": "Same duration as first awakening using bead count available at input, before consuming one",
+    "durationComposition": "MAX_HYPER_MODE_TIME30 * availableBeads1/2/3 * binary32(target SA_EFFECTIVE_TIME .7)",
+    "approximatelyAddedSeconds": [
+      21,
+      42,
+      63
+    ],
+    "coreComposition": "min(previousGauge + gaugePerLevel20 * 2, gaugeMax100)",
+    "targetCoreDescriptionConflict": "User-confirmed +2 differs from target maximum-charge descriptor; no claim of matching target2016 C++ verification",
+    "electricField": "Three available beads upgrade; an existing full mode is retained for later one/two-bead reawakening",
+    "returnDisplay": "HP/MP amounts requested by user; original Raven expiry has no DrawText call"
+  },
+  "consumerChain": [
+    {
+      "file": "X2GUUser.cpp",
+      "symbol": "HyperModeStart",
+      "line": 26157,
+      "operation": "Save available count before subtracting one during reawakening; first awakening consumes all"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "symbol": "GetHyperModeTime",
+      "line": 23640,
+      "operation": "Normal base30 * saved count; socket duration0 in probe"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "GetHyperModeTime",
+      "line": 14740,
+      "operation": "Already-awakened old4409 returns effective-time seconds; forced/expired path delegates User"
+    },
+    {
+      "file": "X2BuffFactor.cpp",
+      "symbol": "SetGameUnitChangeHyperModeBehavior",
+      "line": 1740,
+      "operation": "Forward time and saved count to buff factor"
+    },
+    {
+      "file": "X2BuffBehaviorTemplet.cpp",
+      "symbol": "SetFactor",
+      "line": 1521,
+      "operation": "Remaining time += supplied time; old count/full upgrade logic is not blindly reused"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "HyperModeFrameMove/CommonHyperModeFrameMove",
+      "line": 6866,
+      "operation": "ApplyHyperModeBuff at animation .83; .05 effect trigger retained"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "HyperModeBuffEffectStart",
+      "line": 21807,
+      "operation": "min(gauge+40,100), not assignment100"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "DoFrameMoveNasodBall",
+      "line": 14496,
+      "levelOperationLine": 14558,
+      "operation": "Outside parrying, level=int(gauge/20), cap5; CreateNasodBall changes existing mesh and attack power without clearing active request"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "RSI_HYPER_MODE callback registration",
+      "line": 1265,
+      "operation": "Action StateEnd binds CX2GUUser::HyperModeEnd, distinct from awakening buff expiry"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "symbol": "HyperModeEnd",
+      "line": 26214,
+      "operation": "CommonStateEnd and saved-count clear; no HP/MP recovery"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "HyperModeBuffEffectEnd",
+      "line": 21836,
+      "operation": "Stop valid electric EffectSet and Disappear sound; return raw gauge to own living actor, ClearNasodBall, zero gauge/parry timer"
+    },
+    {
+      "file": "X2GURaven.cpp",
+      "symbol": "ClearNasodBall",
+      "line": 13948,
+      "operation": "Clear target lock, level, attack/delayed flags and clocks, destroy mesh"
+    },
+    {
+      "file": "X2GageData.cpp",
+      "symbol": "Gage::Increase",
+      "line": 4,
+      "operation": "float32 addition then cap to max and zero"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "symbol": "DieFrameMove",
+      "line": 25509,
+      "operation": "At death animation end, SetRemainHyperModeTime(0); host runs end cleanup there, never restores HP/MP to dead actor"
+    }
+  ],
+  "expiryReturn": {
+    "evidence": "Unchanged fixed-V5 Raven End plus Gage::Increase independently compiled; target2016 binding unverified",
+    "precondition": "IsMyUnit && HP>0 && rawGauge>0; each authoritative simulation actor represents the owner calculation",
+    "requestedHp": "float32(maxHp * float32(rawGauge * float32(.0005)))",
+    "requestedMp": "float32(rawGauge)",
+    "stagesGauge": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "stageHpMaxPercent": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "stageMp": [
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "fractionalGauge": "37 returns requested1.85% maxHP and37MP; never quantize down to level1",
+    "actualRestore": "Clamp resulting float32 HP/MP to their maxima; restored fields are after minus before",
+    "pendingExpiry": "A natural buff expiry clears old core/aura and returns once, while an in-flight living reawakening request remains until .83"
+  },
+  "hostEndContract": {
+    "event": "awakeningEnded",
+    "fields": [
+      "reason",
+      "position",
+      "recalledGauge",
+      "recalledLevel",
+      "coreLevelBefore",
+      "hpBefore",
+      "mpBefore",
+      "hp",
+      "mp",
+      "requestedHp",
+      "requestedMp",
+      "restoredHp",
+      "restoredMp",
+      "returnEvidence"
+    ],
+    "position": "Frozen actor [x,y,z] at consumer execution",
+    "viewNumbers": "Use actual restoredHp/restoredMp only when positive; display formatting belongs to root UI adaptation",
+    "auraIdentity": "sourceAwakeningAuraEffectGroup survives combat-record retirement and JSON restoration; original-stop-effect-set effectEnded emitted once per identity",
+    "sound": "Raven_ElectricAura_Disappear.ogg once when full mode has a valid captured aura group",
+    "clearedStorage": [
+      "phase",
+      "gauge",
+      "level",
+      "targetId",
+      "attackElapsed",
+      "delayElapsed",
+      "phaseTime",
+      "dirSpeed",
+      "useManualDir",
+      "unlockRemaining",
+      "manualDirDegree",
+      "attackLevel",
+      "hit",
+      "hits",
+      "hitGaps",
+      "helper.attackTime",
+      "parrying",
+      "canParry",
+      "guardRemaining",
+      "helperLive"
+    ],
+    "originalRavenDrawText": false,
+    "referenceOtherRecoveryNumbers": "User::ProcessAttackResult12191/ShowSnatchCureEffect23172 use HP+/MP+ and PicCharGreen/Blue; these are separate call sites, not Raven expiry"
+  },
+  "verification": {
+    "unchangedCppMethodCount": 8,
+    "compiledOriginalCases": 43,
+    "compiledOriginalExpiryCases": 28,
+    "test": "../tests/combat/reawakening-v17.test.mjs",
+    "simulationTool": "../tools/combat/rf_awakening_v17.mjs",
+    "simulationResult": "../reports/rf-awakening-simulation-v17.json",
+    "publishedNativeModulesModified": false
+  },
+  "unknown": [
+    "Matching target2016 GetHyperModeTime, passive-duration composition and Raven buff-start/end consumers are unavailable",
+    "Old4409 effective-time seconds are not target24405 ratio semantics",
+    "Canonical target maximum-charge descriptor conflicts with explicitly user-confirmed +2 core levels",
+    "Target2016 raw-gauge return formula and macro branch selection are not established by the fixed-V5 source",
+    "Original-client measured input/expiry traces remain zero; all device traces here are present simulation evidence"
+  ]
+}

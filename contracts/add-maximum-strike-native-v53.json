@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "classification": "target2016 static consumers plus explicitly labelled Web product override",
+  "targetClientMeasured": false,
+  "source": {
+    "originalX2Sha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "captureSessionSha256": "7952195ce133e1a76c97654214b8a2565d6770083c172feab4573ab63551a59b",
+    "analysisViewSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "captureLimit": "Nonatomic historical live-read snapshot; no original combat was executed in this task",
+    "upstreamRoot": "asset_sources/analysis-project/",
+    "inputs": [
+      {
+        "path": "docs/MAXIMUM_STRIKE_2016_NATIVE.md",
+        "sha256": "0699e317a7c8ba11e36d35cb7db5e3bc8f85f442df391e1090f4c77fa6342c62"
+      },
+      {
+        "path": "docs/MAXIMUM_STRIKE_CLOCK_CONTACT_CHAIN.md",
+        "sha256": "d0874c939a2e320eef6e760456beab84899c815e6c8cfee86165aa1a49d2b724"
+      },
+      {
+        "path": "docs/MAXIMUM_STRIKE_CLOCK_AND_HIT_OVERRIDE.md",
+        "sha256": "b111bbdf4889216b8d66aff6c837d8bc8b7a08160a9e1023d31158a761ac1157"
+      },
+      {
+        "path": "docs/MAXIMUM_STRIKE_FULL_INPUT_AND_COOLDOWN.md",
+        "sha256": "87bfb8fe55f8d21b9fd6324dda665509624a4aa71b828a76b0c514cbf83bccb9"
+      },
+      {
+        "path": "docs/MAXIMUM_STRIKE_TARGET_GETTERS.md",
+        "sha256": "f0dde724b1cadbe9df660d4af8d9c6e9f534e8fe3a651581feedb3e5db458e68"
+      },
+      {
+        "path": "reports/analysis/late-capture-trial/native-audit.json",
+        "sha256": "6a7b644be9e6d096b918918c76a966daed74f1f42a466bdfa0e9c4462f8647a7"
+      },
+      {
+        "path": "reports/analysis/maximum-closure/contact-field-bindings.json",
+        "sha256": "51d74db6eaefabd62278c2e19266d4b30b2a9d311b0e09080574d5b786875ce9"
+      },
+      {
+        "path": "reports/analysis/full-maximum/template-bindings.json",
+        "sha256": "c408bc33d709b562547b2c304f654c7442b22b23525812848bd5cac16619650a"
+      },
+      {
+        "path": "reports/analysis/full-maximum/mutation-damage-consumer.json",
+        "sha256": "a633854c9fe930a99a77726c139aa4c2cebdbda1af133bee4310bbca0c5ba58a"
+      }
+    ]
+  },
+  "consumers": [
+    {
+      "topic": "LOT8 held target and curve",
+      "addresses": [
+        "0x31effdd0",
+        "0x31f0073f",
+        "0x31eebdf0"
+      ],
+      "facts": [
+        "Held target is separate from reselection; invincibility does not itself clear the held target",
+        "Normalize old degree vector and q-p; old+(target-old)*CURVE_SPEED*delta; no final normalization/clamp",
+        "No source fixed-circle radius, angular velocity or invincible-contact circle state"
+      ],
+      "implementation": "packages/combat-core/add-maximum-strike-native-v53.mjs"
+    },
+    {
+      "topic": "Accepted contact versus invincibility",
+      "addresses": [
+        "0x324f7870",
+        "0x31fac053",
+        "0x324f7ac6",
+        "0x31f038ef"
+      ],
+      "facts": [
+        "Ordinary invincible Maximum RT2 clears per-contact reaction code and skips effect event/count/impact child",
+        "Accepted effect event creates original Bullet_Explosion at POSITION_TYPE 2 impact point",
+        "Original shot DAMAGE_TIME is 9999; original LOT8 event-count change clears its target, sets 99999 retarget delay and can retain forward travel until mesh expiry"
+      ]
+    },
+    {
+      "topic": "Damage template switch",
+      "addresses": [
+        "0x31c74350",
+        "0x31f04350"
+      ],
+      "facts": [
+        "Current attack runs before NEXT template switch",
+        "previous<=threshold && threshold<current OR threshold>=0 && delta>threshold && previous-delta<=threshold",
+        "At most one NEXT template per call; .313/.626 use the mesh global clock, with STOP handled by that clock"
+      ]
+    },
+    {
+      "topic": "Input and cooldown",
+      "addresses": [
+        "0x32764b20",
+        "0x32760770",
+        "0x32753cf0",
+        "0x32745750"
+      ],
+      "facts": [
+        "Same skill-slot recast consumes one held record and does not charge another cast",
+        "Before removing a record, >=2 records yields .5 timer",
+        "Last record C>=E ? C-E : C, E=initialHoldingTime-remainingHoldingTime",
+        "C uses original m_SkillCoolTime=27, selected Heavy cooldown multiplier and cast-mode conditional Overlimit multiplier; mode at final release must not retroactively replace original record eligibility",
+        "The temporary remembered target is cleared after transfer"
+      ]
+    },
+    {
+      "topic": "Mutation",
+      "addresses": [
+        "0x32761097",
+        "0x327610b5",
+        "0x31ef9282",
+        "0x321fc112"
+      ],
+      "facts": [
+        "Consume at most 3 mutation points in formation",
+        "Stored power=base*(1+n*0.10000000149011612); inherited by shot and impact child",
+        "Holding time=max(SA_EFFECTIVE_TIME,60); Mutation does not extend it despite contradictory original UI prose"
+      ]
+    }
+  ],
+  "productOverride": {
+    "authorization": "User confirmed effective hit must end the projectile and play impact/audio; use recovered logic where available",
+    "rule": "After first accepted hit creates original HIT_DAMAGE_EFFECT child, terminate travelling shot in the same simulation step",
+    "endReason": "maximum-strike-accepted-hit",
+    "originalDifference": "Original LOT8 may keep residual forward travel after clearing target; immediate visual termination is not claimed as original2016"
+  },
+  "audio": {
+    "schemaVersion": 1,
+    "classification": "original-file-data; no audible/native-client playback measurement",
+    "sourceInputs": [
+      {
+        "archive": "data/data036.kom",
+        "ordinal": 74,
+        "name": "Enum.lua",
+        "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+        "raw_path": "raw/data/data036.kom/Enum.lua",
+        "bytes": 398092
+      },
+      {
+        "archive": "data/data036.kom",
+        "ordinal": 50,
+        "name": "DamageSound.lua",
+        "sha256": "a59596bb1a6152c0be6be4207bb1acc2ca36dfc8c6eedd7da0c7334778948194",
+        "raw_path": "raw/data/data036.kom/DamageSound.lua",
+        "bytes": 14030
+      },
+      {
+        "archive": "data/data070.kom",
+        "ordinal": 189,
+        "name": "HitPlasma1.wav",
+        "sha256": "2774ac66930e47855d4946d29123be614f1d60cd547112a8fc914855cf2a0f04",
+        "raw_path": "raw/data/data070.kom/HitPlasma1.wav",
+        "bytes": 136226
+      }
+    ],
+    "baseAudioManifestSha256": "60a7fbc823968a970d7e984fb4ceda1ceb0190734ddb91596adff626c3064b12",
+    "hitType": 43,
+    "hittedType": 1,
+    "file": "HitPlasma1.wav",
+    "wave": {
+      "codec": "PCM",
+      "channels": 1,
+      "sampleRate": 44100,
+      "sampleWidthBytes": 2,
+      "frames": 68073,
+      "durationSeconds": 1.5436054421768708
+    },
+    "outputs": {
+      "de/audio/manifest.json": {
+        "sha256": "1d83d5412066a442e70bc1eff2ad77cc751c6c8aaf04e980952e0314cbcbb8eb",
+        "bytes": 246441
+      },
+      "de/audio/HitPlasma1.wav": {
+        "sha256": "2774ac66930e47855d4946d29123be614f1d60cd547112a8fc914855cf2a0f04",
+        "bytes": 136226
+      }
+    },
+    "implementation": "tools/assets/build-maximum-strike-audio-v53.py",
+    "failure": "V52 emitted HitPlasma1.wav but no loaded audio manifest owned the WAV; restore original bytes and DE audio manifest ownership, no duplicate event"
+  },
+  "boundaries": [
+    "Native +330 named-bone/position output is recovered, exact caller bone binding is not fully closed; current body-helper target-point adapter retained",
+    "Renderer orientation normalizes its basis; original manual-vector interpolation is ported but full exact magnitude-to-mesh displacement remains a host boundary",
+    "Original invincibility has additional protected records and Add force-state replay exceptions; this patch retains existing game guards rather than claiming full native coverage",
+    "No exact original PvP trajectory, audible client mixer measurement or WAN acceptance is claimed"
+  ]
+}

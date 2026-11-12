@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "elesis-firewall-ground-review-v49",
+  "targetClientMeasured": false,
+  "targetExecuted": false,
+  "evidenceClass": "bounded offline Capstone exact-byte review of existing source-bound original2016 derived snapshot; no new decompilation or target runtime",
+  "source": {
+    "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "bytes": 40515072,
+    "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "qualification": "Existing late snapshot3 may be non-atomic. Derived PE and original client identities remain distinct."
+  },
+  "functions": [
+    {
+      "role": "summon NPC consumer calling common initialization and owner parameter transfer",
+      "body": {
+        "start": "0x320bd280",
+        "endExclusive": "0x320bda9c",
+        "fileOffset": 6407808,
+        "bytes": 2076,
+        "sha256": "ac2d555ccebad973c878c3f3bda5c36eb0cd5dfbd60e2bf958251c496804479b"
+      }
+    },
+    {
+      "role": "summoned NPC attribute inheritance with original type1635 branch",
+      "body": {
+        "start": "0x320b8980",
+        "endExclusive": "0x320bb3b6",
+        "fileOffset": 6389120,
+        "bytes": 10806,
+        "sha256": "76817a0e8d8320c473bcd3c195ec34206a81492057fdc1944b8aebcffef948ed"
+      }
+    },
+    {
+      "role": "NPC common initial position and map line setup",
+      "body": {
+        "start": "0x325154c0",
+        "endExclusive": "0x3251598d",
+        "fileOffset": 10963136,
+        "bytes": 1229,
+        "sha256": "7295fe9ef856d21488de96d7d2ebf9edd9464182338e05d910600ac27e69d3d8"
+      }
+    },
+    {
+      "role": "map ground-position query called by common NPC initialization; identified from exact vertical-ray arithmetic and result flow",
+      "body": {
+        "start": "0x31c6eda0",
+        "endExclusive": "0x31c7023a",
+        "fileOffset": 1892768,
+        "bytes": 5274,
+        "sha256": "10e02b5e2e49e2c93d42e457eb99707d5038940946b6c91839d8b6ad4974c2be"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "start": "0x320bd5ef",
+      "endExclusive": "0x320bd60b",
+      "fileOffset": 6408687,
+      "bytes": 28,
+      "sha256": "4cb367b023e62fa268fd6a3f99bad4cb7286c644819922038ce759715595d1d6",
+      "id": "summon-calls-position-init",
+      "purpose": "Common NPC init325154c0 receives requested position pointer plus an existing summon argument.",
+      "hex": "8b8c24600100008b54242051528bcee8bd7e450084c07504885c241b"
+    },
+    {
+      "start": "0x320bd794",
+      "endExclusive": "0x320bd7b1",
+      "fileOffset": 6409108,
+      "bytes": 29,
+      "sha256": "81ff5d02bb966295a50b4e2c67bfeb0a2eaa82c786391a2cfcae6cbb6c6c78df",
+      "id": "summon-calls-owner-attribute-inheritance",
+      "purpose": "Calls320b8980 with owner identity, NPC, summoned-type identifier and existing mode.",
+      "hex": "8b5c242c8b4424388b4c24348b5424405355565051528bcfe8cfb1ffff"
+    },
+    {
+      "start": "0x320ba0b5",
+      "endExclusive": "0x320ba0c6",
+      "fileOffset": 6395061,
+      "bytes": 17,
+      "sha256": "f5f571d0d4e691b31df1d6dca0ecc0451e93e97bb4af7b28cb854cf7060ad7c5",
+      "id": "npc1635-case-dispatch",
+      "purpose": "cmp eax,0x663; exact branch to320bab32.",
+      "hex": "3d630600000f8f7e0b00000f846c0a0000"
+    },
+    {
+      "start": "0x320bab32",
+      "endExclusive": "0x320bac3e",
+      "fileOffset": 6397746,
+      "bytes": 268,
+      "sha256": "47f2b40a4e9a643298556d7c14bb76a1d1e9cfb85bf64c76bc337b886bc143fb",
+      "id": "npc1635-attribute-case",
+      "purpose": "This direct case computes inherited attack data via3252d660 and skill28018 parameters. It does not read a victim coordinate.",
+      "hex": "ddd86a01d944242883ec14d95c24308bcbd9442444d9442430d9c0decad9c9d95c242cd944242cd95c2410d9442438d8c9d95c242cd944242cd95c240cd9c0d84c2468d95c242cd944242cd95c2408d84c2464d95c242cd944242cd95c2404d905c0e00033d91c24e8c12a4700d9e86a0168726d0000d95c241c8bcde8dd66e7ff8bf885ff74508b85ec63000085c00f84c50700006a016a008db0240400006a0068726d00008bcee87183570083f8017d07b801000000eb126a016a006a0068726d00008bcee853835700508bcfe8ab00f0ffd95c241468726d00008bcde8fbe2eeffdc059855fe3268726d0000d84c24188bcdd95c2418e841cde8ffd84c2414d99bcc6a0000e937070000"
+    },
+    {
+      "start": "0x3251552b",
+      "endExclusive": "0x32515583",
+      "fileOffset": 10963243,
+      "bytes": 88,
+      "sha256": "5709d72789db5772fee32906107462eb56b9875fa470b25d94e19c2197d423fd",
+      "id": "common-init-ground-query",
+      "purpose": "Requests map projection from input XYZ, literal monster=true and original radius constant30; output vector and line index are separate locals.",
+      "hex": "d9059c1bff328b4e088b58348b46048b2e8d542414528b560451d91c246a01894c242c83ec0c894424348bc48bcd89088b4e088950048d9424a8000000894808528bcb895c2458896c2434c7442430ffffffffe81d9875ff"
+    },
+    {
+      "start": "0x325158d7",
+      "endExclusive": "0x32515965",
+      "fileOffset": 10964183,
+      "bytes": 142,
+      "sha256": "41a6a9b1b1ebf14c22754a219232ec7ae8b4da0322cb2dcd4cdc8ccfa406105d",
+      "id": "common-init-position-and-land-storage",
+      "purpose": "Writes input or bounded nearest-line-adjusted current XYZ at635c/6360/6364; stores distinct map-result XYZ at6338/633c/6340. A map query alone does not imply currentY becomes lower-victimY.",
+      "hex": "8b4c2418898f5c6300008b4c241c898f606300008b4c2420898f64630000c68769630000018b4860898f1c6300008b4864898f206300008b4868898f246300008b4854898f286300008b4858898f2c6300008b405c8b4c2468898f386300008b4c24708987306300008b44246c8897686300008b9424a800000089873c630000898f40630000528bcfe81b958eff"
+    },
+    {
+      "start": "0x32577cb0",
+      "endExclusive": "0x32577cb9",
+      "fileOffset": 11366576,
+      "bytes": 9,
+      "sha256": "ed7c13c34112baf8acaa04832d27aa4a89c2b0b18bf22c11efacaa8392ef4fe6",
+      "id": "npc-land-position-vtable-getter",
+      "purpose": "Original NPC vtable3304734c+120 returns actor+6338.",
+      "hex": "8d8138630000c20400"
+    },
+    {
+      "start": "0x32577e50",
+      "endExclusive": "0x32577e59",
+      "fileOffset": 11366992,
+      "bytes": 9,
+      "sha256": "52543fd236583ff5c5c5dafa36e1bee528ecf237af6a09af59c7a7b44d83cf37",
+      "id": "npc-current-position-vtable-getter",
+      "purpose": "Original NPC vtable3304734c+124 returns actor+635c.",
+      "hex": "8d815c630000c20400"
+    }
+  ],
+  "constant": {
+    "address": "0x32ff1b9c",
+    "type": "float32",
+    "value": 30.0,
+    "hex": "0000f041",
+    "sha256": "409303c5035263c102682239f8d654e7e194daae6235aff347c036576a261d96"
+  },
+  "observations": [
+    "Original registered skill callback327dead0 supplies caster GetNowPos(0), not victim XYZ (prior v45 exact-byte contract).",
+    "The dedicated1635 attribute case does not add a victim-floor selector.",
+    "Common creation does query a map floor from requested XYZ at radius30. Current body position and ground reference occupy different vectors; this is not evidence that the NPC teleports to any lower target.",
+    "The existing full NPC physics reads its current position and authored map lines; separate ground queries have general collision/state branches."
+  ],
+  "limits": [
+    "A bounded absence of a victim coordinate is not a whole-program proof of absence.",
+    "Original Lua method GetPos in WAIT prototype0 is known by name, but its exact LuaTinker registration is not recovered here; do not equate the current-position and ground-position getters solely from that string.",
+    "The original derived snapshot may be non-atomic. No target client trajectory or arbitrary platform dynamic test was run.",
+    "No new behavior or targetY snap is authorized by these partial dataflows; platform-to-lower-target wall placement remains unresolved."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schema": "original2016-pulse-cannon-v1",
+  "skillIds": [
+    29006,
+    29034
+  ],
+  "status": "parsed-selected-pulse-producer-lot6-hold",
+  "scope": "Original selected Pulse Cannon registration, native projectile producer, LOT6 acquisition/update/stop and hold/resource arguments. No replacement of target2016 code by Maximum/C4/V5 behavior.",
+  "originalSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "sourceSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "registration": {
+    "case": "327724e5",
+    "selector": 6,
+    "ready": {
+      "state": "ANSI_SA_APT_PULSE_CANNON_READY",
+      "stateId": "dynamic skill slot49..64, mirrored state slot",
+      "preload": "32773e50->3272c450",
+      "localEnter": "32774560->3273ac00",
+      "receivedEnter": "32778d70->32765b30",
+      "post": "32774570->3273aca0"
+    },
+    "loop": {
+      "nativeState": 168,
+      "receivedFrame": "32774d60->32740060",
+      "post": "32778d80->32765e00"
+    },
+    "finish": {
+      "nativeState": 169,
+      "post": "327755d0->32749a50"
+    },
+    "requestBoundary": "Requests use actual Add+5c with force0 and common application ordering. A request is not immediate state application or guaranteed acceptance."
+  },
+  "producer": {
+    "constructor": "Full3276cb30 writes zero vector7174/7178/717c then @3276e388..3ac appends integer1..6 via32e36810.",
+    "receivedEnter": "32765b30 copies7174, clears original vector, repeatedly chooses n==1?1:rand()%(n-1)+1, appends selected[index-1], removes it and decrements n. Last remaining candidate cannot be selected before final n1. Original signed CRT division; not a uniform Fisher-Yates algorithm. Resets protected6fc0 to0 before default614.",
+    "loopClock": "32740060 requires received651c previous118 strictly below double0.10000000149011612 and original31d0cd70 crossing float0.1. Only then one factory call; native loop completion is not proof the clock produced a projectile or hit.",
+    "bone": "Index=counter when counter<6 else counter-6; if vector length<index+1 use index0; format Weapon0%d. Normal constructor provides1..6. No invented fallback for externally empty/corrupt vector.",
+    "factory": "327401e3->31f0a1e0(owner, DamageEffect_SA_APT_Pulse_Cannon_Projectile, actual bone output, original orientation/scale/scalar arguments). Return value ignored; no skill-local post-factory target setter.",
+    "template": {
+      "LOT": 6,
+      "curveSpeed": 2,
+      "onlyFront": true,
+      "ownerRangePvp": 1200,
+      "ownerRangeDungeon": 9999,
+      "ownerRangeField": 9999,
+      "DDMagic": 4.99,
+      "pvpRate": 0.31,
+      "appliedSkillId": 29006
+    },
+    "mesh": "Original Mesh_Pulse_Cannon LifeType LT_TIME/LifeTime2; DirSpeed initially0, at.001=200, fade.300..500 to3500; normal looping skin animation. These are original mesh-clock inputs, not an assertion of fixed wall-clock expiry under STOP."
+  },
+  "lotInitialization": {
+    "path": "31efd1e0/31ef8ec0 normal constructor->31f07a90 initializes type0 and targets830/834/838=-1; actual31ee7b60 parses presentLOCK_ON_DATA to type6.",
+    "fields": {
+      "CURVE_SPEED": "83c=2",
+      "IN_DISTANCE_TO_DIE_EFFECT": "844 default-1",
+      "TIME_UNLOCK_FROM_START": "848 default0",
+      "TIME_UNLOCK_AFTER_START": "84c default9999",
+      "TARGET_RANGE": "850 default-1",
+      "NOT_TARGET_PRE_LOCK_ON_TARGET": "854 default0",
+      "DUNGEON_TARGET_RANGE_MIN_MAX": "868/86c default150/750",
+      "PVP_TARGET_RANGE_MIN_MAX": "870/874 default150/300",
+      "UNLOCK_START_AFTER_ATTACK": "878 default0",
+      "RETARGET_COOLTIME_AFTER_ATTACK": "880 default-1",
+      "ONLY_FRONT": "884=1; snapshots original owner v15c to885, v118 to888, v124 position to88c/890/894",
+      "ONLY_TARGET_ATTACK": "898 defaultfalse",
+      "NOT_FIND_TARGET_MOVE_STOP": "89c default0",
+      "Y_DIR_INIT": "8c0 defaultfalse",
+      "LOCK_ON_OFFSET_Y_POS": "8c4 default100",
+      "LOCK_ON_RANGE_FROM_OWNER": "8c8 selects actual mode9 AT_PVP1200; selected mode23 special fixed override; other original table modes retained in complete parser",
+      "ownerHardDelete": "8cc initialized0; parser sets1 only game mode23, not ordinary PvPmode9"
+    },
+    "boundary": "ONLY_FRONT is not854. It gates steering; it does not turn the actual nearest-selector into a front-cone search. The1200 owner range is not the PvP150..300 search interval."
+  },
+  "acquisition": {
+    "actualFrame": "31f04350@31f05dc6->31effdd0; type6 jump31f0101c from original31f01abc table.",
+    "initialOrMissing": "Resolve existing830/834 pair through gamevA0 or838 throughvA8. If absent, require mesh and original31e067f0 owner-local gate; require750>=754>=758. Search from mesh2b0 position. Selected854=0 passes null optional LOT history structure.",
+    "selector": "320a6130, complete703B provider and source CFG710B envelope. Iterates game2d0..2d4 candidate pointers in native vector order. Excludes own decoded128 UID, candidatev164==1, candidate currentHP strictly>0 false (missing97c yields1; existing97c but missing1c yields0), and the native NPC/mode filters below.",
+    "npcFilters": "For candidate114==1 exclude v314==1 (actual32577d40 tests6cf0==1), states64e4+4==0x66 or0x6a, and6d9a==1. Otherwise gamevFC==4 excludes candidate114==0. This is the exact typed boundary; special unrelated derived virtual implementations are not invented.",
+    "typedInvincibility": "User/Addv16431f359e0:57a8..57ac nonempty=>true else protected5f00. NPCv16432511860: same extra list else protected6274. Exact full bounded leaves saved, not only slot names.",
+    "distance": "Original31c18000 Euclidean3D distance to candidate v124(0). Accept only d<currentBest and d>min; currentBest starts max. Selected ordinary PvP defaults150<d<300, other defaults150<d<750. Equal distances retain first candidate. TARGET_RANGE multiplier applies only if850>0; selected850=-1 leaves range.",
+    "output": "Chosen114==0 sets output flag1 and returns v54 pair into830/834; otherwise flag0 and low UID to838. No candidate returns EDX:EAX=-1:-1. Since854=0, optional previous-target sets and their recursive clearing branches are not enabled for this template."
+  },
+  "updateAndRetarget": {
+    "commonTimers": "848 positive subtracts frame delta and skips this dispatch until release;84c positive subtracts delta and dispatches while remainingpositive;878 positive waits for attack counter754, then sets-1;87c positive subtracts delta and skips. Selected defaults848=0,84c=9999,878=0,880=-1.",
+    "aimPoint": "Existing target: traverse targetCC nested mesh/node entries, reconstruct each node position, choose nearest to owner body position; if no candidate use targetv124(0)+(0,100,0). This is not always the target body center.",
+    "steer": "31eebdf0 first skips if selected target position distance from owner exceeds8c8. Positive844 and distance<844 invalidates mesh handle; selected844=-1 disables that branch. ONLY_FRONT uses normalized(targetPosition-snapshot88c) dot normalized(path node54/58/5c); steer only when (dot>0)==snapshot885, if original888 path-index is valid. Missing path entry skips this additional test, not all homing.",
+    "math": "Let desired=originalD3DXVec3Normalize(targetPos-meshPos), old=Normalize(mesh358/35c/360 * original radians-per-degree); write (old+(desired-old)*curveSpeed*effectE0)*original degrees-per-radian to mesh358/35c/360; set mesh354=1. Exact x87 operations/FSTP and original DLL normalizer dispatch retained. Selected curveSpeed2. This is neither an instantaneous snap nor an invented constant angular velocity.",
+    "onAttack": "After steering, if754>758 and owner-local gate true,758=754 and87c=880, then reselect through320a6130 using current aim point and original selected mode interval. Selected854=0 does not exclude prior target.",
+    "deadTarget": "After target path,31e059b0 positiveHP returns without reset. HP<=0 under owner-local gate clears830/834/838=-1 then searches from mesh position. Missing target uses the above acquisition gates.",
+    "noTarget": "Selected89c=0 skips optional move-stop47c=0; selected854=0 skips extra2/3/4 fallback movement. Losing or not finding a target alone does not enable these optional stop modes.",
+    "hardDelete": "31eebd00 additionally requires8cc==1 and owner/main mesh; compares squared mesh-owner distance>8c8 squared, then31efff32 calls original die/cleanup and mesh deletion/e5=0. Selected ordinary PvP initializes8cc0; this is not a PvP1200 hard-delete rule. Normal mesh/effect lifespan and death consumers still apply."
+  },
+  "holdAndCosts": {
+    "base": "Original29006/29034 skill vector MP120/cooldown9. Generic cast selection/resource contract applies; no prose100 substitution.",
+    "clock": "LOOPpost32765e00 first corrects tracked skill via31f35390; on main6518end168==1 increments protected6fc0, then reads current slot key release31f2f8f0(6848,&6442).",
+    "order": "counter<4 requests168 regardless release; otherwise counter>=8 or release!=0 requests169. Only counter4..7 while held calls32741130, requesting168 only if AL==1, else169; always default624 after request.",
+    "memo": "31f31330 exact5B32c0c20400 returns false for609009. Selected target cannot enter the old max12/MP20/DP400 branch. Raw unreachable branch retained, not enabled legacy Memo behavior.",
+    "paymentAbi": "32765e00 stable ESP baseline after pushEBP/ESI: MP25 FSTP[ESP+18]; default500 FSTP[ESP+14]. But payment FLD[ESP+10]@32765f0d is pushed as second argument, while MP25 from[ESP+18] is first.31f2f8f0/31f31330 RET4;31c2b5b0 RET8;320d07e0 RET10, all matching explicit pushes. This is not a decompiler argument guess.",
+    "scratchBoundary": "The second argument is the actual local[ESP+10] contents, not the nearby500 store. Protected-counter TLS slow path passes &local10 to31c2b5b0 and can populate it; fast path has no local10 definition. Thus do not replace this original scratch input with500 or claim a deterministic literalDP cost. Contract specifies the exact original machine input; it is not evidence of missing consumer code.",
+    "payer": "Complete125B32741130: actualAdd+538 mode104==1 requires currentDP>suppliedSecondFloat and then applies negative second argument through+248; otherwise calls actual+e0(firstFloat,0), so selected normal MP input25 is established. Caller decides continuation from returnedAL.",
+    "finish": "32749a50 complete622B: natural main6518 end168==1 requests13 then624; otherwise actual skill/awakening/walk/dash/armor156 priority retained. Original FINISH positive cancel declarations .9 and EVENT0[0,.33,.33] are inputs to that original chain. No Web override.",
+    "normalPayer": "Typed Add+e0=31fcb690 forwards firstFloat and actualv17c flag to actor97c actualAddGage+2c=32779680. Complete74B source CFG: missingcomponent8 fails; currentMP>=firstFloat passes, equality accepted; invokes ownvC with(-firstFloat,flag,0) and returns1, else0. Selected firstFloat25; no new skill-note multiplier is inserted by this selected hold payer."
+  },
+  "upgrade": "Both same-case IDs share producers. Original29034 upgrade parameters power1.1/animation1.3 remain under original common trait/skill consumers. READY local and received paths query key103 for29034 when current template168 nonzero, multiply respective65f8/65f4 and call31f482e0; do not multiply both into a fabricated single animation scalar.",
+  "boundaries": [
+    "Conditional original behavior, not a battle trace or captured target population/TLS scratch.",
+    "No claim of whole-program immunity to unrelated external handle mutations or every derived unit class.",
+    "Original selected seek/retarget/stop/hold consumers parsed; unspecified live candidate lists, UID/object identity, timing and per-thread scratch are runtime inputs rather than unread consumer entry points.",
+    "Static-only original2016; no V5 behavior, target execution, Web modification or network scope."
+  ],
+  "currentNewTraits": [
+    {
+      "noteId": 32,
+      "type": 4,
+      "parameters": [
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "noteId": 41,
+      "type": 7,
+      "parameters": [
+        0.8,
+        1.5
+      ]
+    }
+  ],
+  "traitBoundary": "Original SkillNoteTemplet entries mapped by stable29006. Existing original19-family common consumers apply to their registered slots; they are not old Memo609009 and do not change the literal arguments at this hold call without an actual matching consumer."
+}

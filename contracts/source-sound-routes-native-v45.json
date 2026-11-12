@@ -1,0 +1,1428 @@
+{
+  "id": "source-sound-routes-native-v45",
+  "clientMeasured": false,
+  "originalExecuted": false,
+  "originalPe": {
+    "path": "asset_sources/analysis/analysis/derived/x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba"
+  },
+  "generalPlaySound": {
+    "consumer": "321e7440..321e75b8",
+    "contract": "contracts/source-distance-native-v45.json",
+    "frozen": {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "lines": [
+        5055,
+        5080
+      ]
+    },
+    "defaultArgs": {
+      "path": "X2Lib/X2GameUnit.h",
+      "line": 2489,
+      "b3DSound": true,
+      "bLoop": false
+    }
+  },
+  "frozenSources": [
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923"
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GameUnit.h",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5"
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38"
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237"
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8"
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d"
+    }
+  ],
+  "routes": [
+    {
+      "id": "wild-full",
+      "indexLines": [
+        734
+      ],
+      "names": [
+        "Raven_WildCharge_ChargeFull.ogg"
+      ],
+      "sourcePosition": "actor a GetPos()",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          16963,
+          16968
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328a738c",
+          "endExclusive": "0x328a73ae",
+          "bytes": 34,
+          "sha256": "3f1c80e1ba07e33a86e9202176b66f42efefaa4d101648b079470c346b40b711",
+          "hex": "536a0133d268283708338bcec744246007000000895c245c668954244ce8920094ff",
+          "instructions": [
+            {
+              "address": "0x328a738c",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x328a738d",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328a738f",
+              "mnemonic": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "address": "0x328a7391",
+              "mnemonic": "push",
+              "operands": "0x33083728"
+            },
+            {
+              "address": "0x328a7396",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328a7398",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esp + 0x60], 7"
+            },
+            {
+              "address": "0x328a73a0",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esp + 0x5c], ebx"
+            },
+            {
+              "address": "0x328a73a4",
+              "mnemonic": "mov",
+              "operands": "word ptr [esp + 0x4c], dx"
+            },
+            {
+              "address": "0x328a73a9",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guild-hero",
+      "indexLines": [
+        1189
+      ],
+      "names": [
+        "GS_Sacrifice_of_Hero.ogg"
+      ],
+      "sourcePosition": "dying actor a GetPos(), not healed recipients",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GUUser.cpp",
+        "lines": [
+          30569,
+          30574
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x31f580c8",
+          "endExclusive": "0x31f580d7",
+          "bytes": 15,
+          "sha256": "af0ebe69eff24560cc30e16cc1a0ee918887389eda1c17a9fdaccf0fcf94dd39",
+          "hex": "556a0168583a01338bcbe869f32800",
+          "instructions": [
+            {
+              "address": "0x31f580c8",
+              "mnemonic": "push",
+              "operands": "ebp"
+            },
+            {
+              "address": "0x31f580c9",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31f580cb",
+              "mnemonic": "push",
+              "operands": "0x33013a58"
+            },
+            {
+              "address": "0x31f580d0",
+              "mnemonic": "mov",
+              "operands": "ecx, ebx"
+            },
+            {
+              "address": "0x31f580d2",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "high-jump",
+      "indexLines": [
+        1790,
+        1893
+      ],
+      "names": [
+        "HighJump.ogg"
+      ],
+      "sourcePosition": "actor stepping on jump line a GetPos(), not the line origin",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GUUser.cpp",
+        "lines": [
+          20851,
+          20860,
+          20881,
+          20884
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x31f4663c",
+          "endExclusive": "0x31f46655",
+          "bytes": 25,
+          "sha256": "d93eed8000e71447b122024f69a53b22b48da4c365b434ccf1dce6dba306f12b",
+          "hex": "6a006a0168781b01338bce8bf8c686e465000001e8eb0d2a00",
+          "instructions": [
+            {
+              "address": "0x31f4663c",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31f4663e",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31f46640",
+              "mnemonic": "push",
+              "operands": "0x33011b78"
+            },
+            {
+              "address": "0x31f46645",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31f46647",
+              "mnemonic": "mov",
+              "operands": "edi, eax"
+            },
+            {
+              "address": "0x31f46649",
+              "mnemonic": "mov",
+              "operands": "byte ptr [esi + 0x65e4], 1"
+            },
+            {
+              "address": "0x31f46650",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        },
+        {
+          "start": "0x31f466e5",
+          "endExclusive": "0x31f466fc",
+          "bytes": 23,
+          "sha256": "0fe7e1dfc9e569a7a6090197356aec6e47a913f73fa98fb64ecdd704f95a04c4",
+          "hex": "6a006a0168781b01338bcec686e465000001e8440d2a00",
+          "instructions": [
+            {
+              "address": "0x31f466e5",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31f466e7",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31f466e9",
+              "mnemonic": "push",
+              "operands": "0x33011b78"
+            },
+            {
+              "address": "0x31f466ee",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31f466f0",
+              "mnemonic": "mov",
+              "operands": "byte ptr [esi + 0x65e4], 1"
+            },
+            {
+              "address": "0x31f466f7",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        },
+        {
+          "start": "0x31f4692a",
+          "endExclusive": "0x31f46941",
+          "bytes": 23,
+          "sha256": "cdfb90f8faec24aadde2b8d025faa45b6cd34e991a916b786f5a0bb0feaeb600",
+          "hex": "6a006a0168781b01338bcec686e465000001e8ff0a2a00",
+          "instructions": [
+            {
+              "address": "0x31f4692a",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31f4692c",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31f4692e",
+              "mnemonic": "push",
+              "operands": "0x33011b78"
+            },
+            {
+              "address": "0x31f46933",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31f46935",
+              "mnemonic": "mov",
+              "operands": "byte ptr [esi + 0x65e4], 1"
+            },
+            {
+              "address": "0x31f4693c",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        },
+        {
+          "start": "0x31f46a25",
+          "endExclusive": "0x31f46a3c",
+          "bytes": 23,
+          "sha256": "0810eae6e8b5425a256c6f700a07ab74b3eb13b50eb23d26f5f55834218a4603",
+          "hex": "6a006a0168781b01338bcec686e465000001e8040a2a00",
+          "instructions": [
+            {
+              "address": "0x31f46a25",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31f46a27",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31f46a29",
+              "mnemonic": "push",
+              "operands": "0x33011b78"
+            },
+            {
+              "address": "0x31f46a2e",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31f46a30",
+              "mnemonic": "mov",
+              "operands": "byte ptr [esi + 0x65e4], 1"
+            },
+            {
+              "address": "0x31f46a37",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arc-release",
+      "indexLines": [
+        2111
+      ],
+      "names": [
+        "Raven_OT_SP2_FlyingImpact3.ogg"
+      ],
+      "sourcePosition": "caster Raven a GetPos(), not released Arc main mesh",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          503,
+          531
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328a8c80",
+          "endExclusive": "0x328a8c95",
+          "bytes": 21,
+          "sha256": "a1f987d8d73ba21acf62a24421a863429d965530049bc61d0380f3b00e350c5d",
+          "hex": "83ec18d9ee5355568bf1d89e607000005789742410",
+          "instructions": [
+            {
+              "address": "0x328a8c80",
+              "mnemonic": "sub",
+              "operands": "esp, 0x18"
+            },
+            {
+              "address": "0x328a8c83",
+              "mnemonic": "fldz",
+              "operands": ""
+            },
+            {
+              "address": "0x328a8c85",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x328a8c86",
+              "mnemonic": "push",
+              "operands": "ebp"
+            },
+            {
+              "address": "0x328a8c87",
+              "mnemonic": "push",
+              "operands": "esi"
+            },
+            {
+              "address": "0x328a8c88",
+              "mnemonic": "mov",
+              "operands": "esi, ecx"
+            },
+            {
+              "address": "0x328a8c8a",
+              "mnemonic": "fcomp",
+              "operands": "dword ptr [esi + 0x7060]"
+            },
+            {
+              "address": "0x328a8c90",
+              "mnemonic": "push",
+              "operands": "edi"
+            },
+            {
+              "address": "0x328a8c91",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esp + 0x10], esi"
+            }
+          ]
+        },
+        {
+          "start": "0x328a8d96",
+          "endExclusive": "0x328a8da7",
+          "bytes": 17,
+          "sha256": "3a0c8086952a91311eea2c90353543cf2fcf4fb54b8467524b69b6d2a074adaf",
+          "hex": "8b6c24108b55008b82580100008bcdffd0",
+          "instructions": [
+            {
+              "address": "0x328a8d96",
+              "mnemonic": "mov",
+              "operands": "ebp, dword ptr [esp + 0x10]"
+            },
+            {
+              "address": "0x328a8d9a",
+              "mnemonic": "mov",
+              "operands": "edx, dword ptr [ebp]"
+            },
+            {
+              "address": "0x328a8d9d",
+              "mnemonic": "mov",
+              "operands": "eax, dword ptr [edx + 0x158]"
+            },
+            {
+              "address": "0x328a8da3",
+              "mnemonic": "mov",
+              "operands": "ecx, ebp"
+            },
+            {
+              "address": "0x328a8da5",
+              "mnemonic": "call",
+              "operands": "eax"
+            }
+          ]
+        },
+        {
+          "start": "0x328a8df4",
+          "endExclusive": "0x328a8ed4",
+          "bytes": 224,
+          "sha256": "233c0e2361447481728e9d120373911345e1e4342dcf07c03bc1071b3a94c185",
+          "hex": "6a00dd05281401336a01dcc968ec390833d9c9d95c2428d9442420d8c9d95c242cd84c2424d95c2430d986b0020000d8442428d95c241cd986b4020000d844242cd95c2420d986b8020000d8442430d95c2424d944241cd9eedcc1d9c9d95c24288b4c2428d9442420898eb0020000d8c1d95c242c8b54242c8996b4020000d8442424d95c24308b442430d9ee8986b8020000d954241cd9058ce000338b4c241cd95c2420898f440700008b542420d9051492ff32899748070000d99e7c0400008bcdd99608030000d90544d70333d99e0c030000d99f20010000e86ce593ff",
+          "instructions": [
+            {
+              "address": "0x328a8df4",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x328a8df6",
+              "mnemonic": "fld",
+              "operands": "qword ptr [0x33011428]"
+            },
+            {
+              "address": "0x328a8dfc",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328a8dfe",
+              "mnemonic": "fmul",
+              "operands": "st(1), st(0)"
+            },
+            {
+              "address": "0x328a8e00",
+              "mnemonic": "push",
+              "operands": "0x330839ec"
+            },
+            {
+              "address": "0x328a8e05",
+              "mnemonic": "fxch",
+              "operands": "st(1)"
+            },
+            {
+              "address": "0x328a8e07",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x28]"
+            },
+            {
+              "address": "0x328a8e0b",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esp + 0x20]"
+            },
+            {
+              "address": "0x328a8e0f",
+              "mnemonic": "fmul",
+              "operands": "st(1)"
+            },
+            {
+              "address": "0x328a8e11",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x2c]"
+            },
+            {
+              "address": "0x328a8e15",
+              "mnemonic": "fmul",
+              "operands": "dword ptr [esp + 0x24]"
+            },
+            {
+              "address": "0x328a8e19",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x30]"
+            },
+            {
+              "address": "0x328a8e1d",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esi + 0x2b0]"
+            },
+            {
+              "address": "0x328a8e23",
+              "mnemonic": "fadd",
+              "operands": "dword ptr [esp + 0x28]"
+            },
+            {
+              "address": "0x328a8e27",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x1c]"
+            },
+            {
+              "address": "0x328a8e2b",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esi + 0x2b4]"
+            },
+            {
+              "address": "0x328a8e31",
+              "mnemonic": "fadd",
+              "operands": "dword ptr [esp + 0x2c]"
+            },
+            {
+              "address": "0x328a8e35",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x20]"
+            },
+            {
+              "address": "0x328a8e39",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esi + 0x2b8]"
+            },
+            {
+              "address": "0x328a8e3f",
+              "mnemonic": "fadd",
+              "operands": "dword ptr [esp + 0x30]"
+            },
+            {
+              "address": "0x328a8e43",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x24]"
+            },
+            {
+              "address": "0x328a8e47",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esp + 0x1c]"
+            },
+            {
+              "address": "0x328a8e4b",
+              "mnemonic": "fldz",
+              "operands": ""
+            },
+            {
+              "address": "0x328a8e4d",
+              "mnemonic": "fadd",
+              "operands": "st(1), st(0)"
+            },
+            {
+              "address": "0x328a8e4f",
+              "mnemonic": "fxch",
+              "operands": "st(1)"
+            },
+            {
+              "address": "0x328a8e51",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x28]"
+            },
+            {
+              "address": "0x328a8e55",
+              "mnemonic": "mov",
+              "operands": "ecx, dword ptr [esp + 0x28]"
+            },
+            {
+              "address": "0x328a8e59",
+              "mnemonic": "fld",
+              "operands": "dword ptr [esp + 0x20]"
+            },
+            {
+              "address": "0x328a8e5d",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esi + 0x2b0], ecx"
+            },
+            {
+              "address": "0x328a8e63",
+              "mnemonic": "fadd",
+              "operands": "st(1)"
+            },
+            {
+              "address": "0x328a8e65",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x2c]"
+            },
+            {
+              "address": "0x328a8e69",
+              "mnemonic": "mov",
+              "operands": "edx, dword ptr [esp + 0x2c]"
+            },
+            {
+              "address": "0x328a8e6d",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esi + 0x2b4], edx"
+            },
+            {
+              "address": "0x328a8e73",
+              "mnemonic": "fadd",
+              "operands": "dword ptr [esp + 0x24]"
+            },
+            {
+              "address": "0x328a8e77",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x30]"
+            },
+            {
+              "address": "0x328a8e7b",
+              "mnemonic": "mov",
+              "operands": "eax, dword ptr [esp + 0x30]"
+            },
+            {
+              "address": "0x328a8e7f",
+              "mnemonic": "fldz",
+              "operands": ""
+            },
+            {
+              "address": "0x328a8e81",
+              "mnemonic": "mov",
+              "operands": "dword ptr [esi + 0x2b8], eax"
+            },
+            {
+              "address": "0x328a8e87",
+              "mnemonic": "fst",
+              "operands": "dword ptr [esp + 0x1c]"
+            },
+            {
+              "address": "0x328a8e8b",
+              "mnemonic": "fld",
+              "operands": "dword ptr [0x3300e08c]"
+            },
+            {
+              "address": "0x328a8e91",
+              "mnemonic": "mov",
+              "operands": "ecx, dword ptr [esp + 0x1c]"
+            },
+            {
+              "address": "0x328a8e95",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esp + 0x20]"
+            },
+            {
+              "address": "0x328a8e99",
+              "mnemonic": "mov",
+              "operands": "dword ptr [edi + 0x744], ecx"
+            },
+            {
+              "address": "0x328a8e9f",
+              "mnemonic": "mov",
+              "operands": "edx, dword ptr [esp + 0x20]"
+            },
+            {
+              "address": "0x328a8ea3",
+              "mnemonic": "fld",
+              "operands": "dword ptr [0x32ff9214]"
+            },
+            {
+              "address": "0x328a8ea9",
+              "mnemonic": "mov",
+              "operands": "dword ptr [edi + 0x748], edx"
+            },
+            {
+              "address": "0x328a8eaf",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esi + 0x47c]"
+            },
+            {
+              "address": "0x328a8eb5",
+              "mnemonic": "mov",
+              "operands": "ecx, ebp"
+            },
+            {
+              "address": "0x328a8eb7",
+              "mnemonic": "fst",
+              "operands": "dword ptr [esi + 0x308]"
+            },
+            {
+              "address": "0x328a8ebd",
+              "mnemonic": "fld",
+              "operands": "dword ptr [0x3303d744]"
+            },
+            {
+              "address": "0x328a8ec3",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [esi + 0x30c]"
+            },
+            {
+              "address": "0x328a8ec9",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [edi + 0x120]"
+            },
+            {
+              "address": "0x328a8ecf",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "damage-hit",
+      "indexLines": [
+        2888
+      ],
+      "names": [
+        "resolved GetDamageSound name"
+      ],
+      "sourcePosition": "defender b GetPos(), not impact/head point",
+      "native3D": true,
+      "classification": "frozen-source-reference; exact original dynamic-name hit consumer unresolved",
+      "frozen": {
+        "path": "X2Lib/X2GUUser.cpp",
+        "lines": [
+          8325,
+          8345
+        ]
+      },
+      "originalSpans": []
+    },
+    {
+      "id": "critical",
+      "indexLines": [
+        2905
+      ],
+      "names": [
+        "Critical_Hit.wav"
+      ],
+      "sourcePosition": "defender b GetPos(), not damage-number/head point",
+      "native3D": true,
+      "classification": "frozen-source-reference for immediate critical route; original literal is in queue consumer 321f3630, not proven same producer",
+      "frozen": {
+        "path": "X2Lib/X2GUUser.cpp",
+        "lines": [
+          9212,
+          9226
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x321f3630",
+          "endExclusive": "0x321f3639",
+          "bytes": 9,
+          "sha256": "bd25fc1a457b7b3a172e724516bb298b7a7331542bde0a348f0f93f8a471aea1",
+          "hex": "83ec58535556578bf9",
+          "instructions": [
+            {
+              "address": "0x321f3630",
+              "mnemonic": "sub",
+              "operands": "esp, 0x58"
+            },
+            {
+              "address": "0x321f3633",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x321f3634",
+              "mnemonic": "push",
+              "operands": "ebp"
+            },
+            {
+              "address": "0x321f3635",
+              "mnemonic": "push",
+              "operands": "esi"
+            },
+            {
+              "address": "0x321f3636",
+              "mnemonic": "push",
+              "operands": "edi"
+            },
+            {
+              "address": "0x321f3637",
+              "mnemonic": "mov",
+              "operands": "edi, ecx"
+            }
+          ]
+        },
+        {
+          "start": "0x321f3bd9",
+          "endExclusive": "0x321f3be9",
+          "bytes": 16,
+          "sha256": "f3a63e6eca973b17b6c8abf44d39b2124af527f963a3dd7e4699b4e479e1c76b",
+          "hex": "6a006a0168a45202338bcfe85738ffff",
+          "instructions": [
+            {
+              "address": "0x321f3bd9",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x321f3bdb",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x321f3bdd",
+              "mnemonic": "push",
+              "operands": "0x330252a4"
+            },
+            {
+              "address": "0x321f3be2",
+              "mnemonic": "mov",
+              "operands": "ecx, edi"
+            },
+            {
+              "address": "0x321f3be4",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nasod-trans-parry",
+      "indexLines": [
+        2961
+      ],
+      "names": [
+        "Raven_NasodCore_Trans_Parry.ogg"
+      ],
+      "sourcePosition": "defender Raven b GetPos(), not core mesh",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          14176,
+          14183
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328b29c7",
+          "endExclusive": "0x328b29dd",
+          "bytes": 22,
+          "sha256": "a9f9730a506b4ab1add515df66c7c9adc9edc3cf2cdc3d8093ff3d7a3ee1070e",
+          "hex": "6a006a01d99b2001000068184908338bcee8634a93ff",
+          "instructions": [
+            {
+              "address": "0x328b29c7",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x328b29c9",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328b29cb",
+              "mnemonic": "fstp",
+              "operands": "dword ptr [ebx + 0x120]"
+            },
+            {
+              "address": "0x328b29d1",
+              "mnemonic": "push",
+              "operands": "0x33084918"
+            },
+            {
+              "address": "0x328b29d6",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328b29d8",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nasod-guard",
+      "indexLines": [
+        2966
+      ],
+      "names": [
+        "Raven_NasodCore_Guard.ogg"
+      ],
+      "sourcePosition": "defender Raven b GetPos(), not core mesh or parry effect custom offset",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GUUser.cpp",
+        "lines": [
+          9003,
+          9009
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x31fadec0",
+          "endExclusive": "0x31faded0",
+          "bytes": 16,
+          "sha256": "3f9a14ac6e2a1e0cf9ebda5352e2ac0f33b97a267fed13773c7b7e7ba8dc6909",
+          "hex": "6a006a0168c06401338bcde870952300",
+          "instructions": [
+            {
+              "address": "0x31fadec0",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31fadec2",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31fadec4",
+              "mnemonic": "push",
+              "operands": "0x330164c0"
+            },
+            {
+              "address": "0x31fadec9",
+              "mnemonic": "mov",
+              "operands": "ecx, ebp"
+            },
+            {
+              "address": "0x31fadecb",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electric-aura-end",
+      "indexLines": [
+        3361
+      ],
+      "names": [
+        "Raven_ElectricAura_Disappear.ogg"
+      ],
+      "sourcePosition": "Raven a GetPos(), not stopped aura effect position",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          21841,
+          21846
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328b723f",
+          "endExclusive": "0x328b724f",
+          "bytes": 16,
+          "sha256": "ebce544e2fce192dda02267ccf95835357b6788e00fda5cdd69b0f3ce6c600f8",
+          "hex": "6a006a0168884b08338bcee8f10193ff",
+          "instructions": [
+            {
+              "address": "0x328b723f",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x328b7241",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328b7243",
+              "mnemonic": "push",
+              "operands": "0x33084b88"
+            },
+            {
+              "address": "0x328b7248",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328b724a",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nasod-level",
+      "indexLines": [
+        3384
+      ],
+      "names": [
+        "Raven_NasodCore_Appear.ogg",
+        "Raven_NasodCore_Shrink.ogg",
+        "Raven_NasodCore_Grow.ogg"
+      ],
+      "sourcePosition": "Raven a GetPos(), not core mesh",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          14556,
+          14591
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328b3147",
+          "endExclusive": "0x328b316c",
+          "bytes": 37,
+          "sha256": "9b347778a645299f968d6c78235f0dcc882e81394f17e7d321ff37747b5d62b7",
+          "hex": "536a013bc3750768704a0833eb103bc77e0768384a0833eb0568044a08338bcee8d44293ff",
+          "instructions": [
+            {
+              "address": "0x328b3147",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x328b3148",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328b314a",
+              "mnemonic": "cmp",
+              "operands": "eax, ebx"
+            },
+            {
+              "address": "0x328b314c",
+              "mnemonic": "jne",
+              "operands": "0x328b3155"
+            },
+            {
+              "address": "0x328b314e",
+              "mnemonic": "push",
+              "operands": "0x33084a70"
+            },
+            {
+              "address": "0x328b3153",
+              "mnemonic": "jmp",
+              "operands": "0x328b3165"
+            },
+            {
+              "address": "0x328b3155",
+              "mnemonic": "cmp",
+              "operands": "eax, edi"
+            },
+            {
+              "address": "0x328b3157",
+              "mnemonic": "jle",
+              "operands": "0x328b3160"
+            },
+            {
+              "address": "0x328b3159",
+              "mnemonic": "push",
+              "operands": "0x33084a38"
+            },
+            {
+              "address": "0x328b315e",
+              "mnemonic": "jmp",
+              "operands": "0x328b3165"
+            },
+            {
+              "address": "0x328b3160",
+              "mnemonic": "push",
+              "operands": "0x33084a04"
+            },
+            {
+              "address": "0x328b3165",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328b3167",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nasod-trans-attack",
+      "indexLines": [
+        3399
+      ],
+      "names": [
+        "Raven_NasodCore_Trans_Attack.ogg"
+      ],
+      "sourcePosition": "Raven a GetPos(), not core mesh",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          14367,
+          14372
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328b2fc2",
+          "endExclusive": "0x328b2fd2",
+          "bytes": 16,
+          "sha256": "39b8170d571139bfacebe185715a27928c11ad2eaaf048f098b87031b60df741",
+          "hex": "6a006a0168704908338bcee86e4493ff",
+          "instructions": [
+            {
+              "address": "0x328b2fc2",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x328b2fc4",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328b2fc6",
+              "mnemonic": "push",
+              "operands": "0x33084970"
+            },
+            {
+              "address": "0x328b2fcb",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328b2fcd",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nasod-attack",
+      "indexLines": [
+        3445
+      ],
+      "names": [
+        "Raven_NasodCore_Attack.ogg"
+      ],
+      "sourcePosition": "Raven a GetPos(), not moving core mesh",
+      "native3D": true,
+      "classification": "original-static-call-and-frozen-names",
+      "frozen": {
+        "path": "X2Lib/X2GURaven.cpp",
+        "lines": [
+          14418,
+          14490
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x328adc28",
+          "endExclusive": "0x328adc40",
+          "bytes": 24,
+          "sha256": "0ddf06ed4dc98331d501082da394a979552d4a6969436be5dcef2aab51a26602",
+          "hex": "536a0168a48a05338bce66c786d87100000100e8009893ff",
+          "instructions": [
+            {
+              "address": "0x328adc28",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x328adc29",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x328adc2b",
+              "mnemonic": "push",
+              "operands": "0x33058aa4"
+            },
+            {
+              "address": "0x328adc30",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x328adc32",
+              "mnemonic": "mov",
+              "operands": "word ptr [esi + 0x71d8], 1"
+            },
+            {
+              "address": "0x328adc3b",
+              "mnemonic": "call",
+              "operands": "0x321e7440"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "damage-raw-SOUND",
+      "indexLines": [
+        2356
+      ],
+      "names": [
+        "raw SOUND<number>.FILE_NAME"
+      ],
+      "sourcePosition": "live main mesh pMeshInst->GetPos()",
+      "native3D": true,
+      "classification": "frozen-source-reference; exact 2016 DamageEffect SOUND consumer unresolved",
+      "frozen": {
+        "path": "X2Lib/X2DamageEffect.cpp",
+        "lines": [
+          2534,
+          2579
+        ]
+      },
+      "originalSpans": [],
+      "webMapping": {
+        "shadowMesh": "e.sourceShadowMesh.position is the live mesh position; currentAnchor is synchronized after FollowLine at index2279/2287",
+        "ordinaryMesh": "e.currentAnchor.position is live main SetPos, distinct from sourcePosedAnchor cached posed matrix and sourceDamageAnchor pre-FollowLine transform",
+        "missingPosition": "explicit unsupported; do not silently substitute caster or damage-number/impact coordinates",
+        "scope": "existing Web transform adapters; does not certify all native frame-phase timing or original SOUND consumer"
+      }
+    },
+    {
+      "id": "embedded-mesh-Sound",
+      "indexLines": [],
+      "names": [
+        "template mesh Sound event"
+      ],
+      "sourcePosition": "that template mesh instance m_vPos, not actor, origin or arbitrary effect child",
+      "native3D": true,
+      "classification": "original-static-mesh-position-call with frozen class naming; separate from raw DamageEffect SOUND",
+      "frozen": {
+        "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+        "lines": [
+          3927,
+          3942
+        ]
+      },
+      "originalSpans": [
+        {
+          "start": "0x31c7b8c2",
+          "endExclusive": "0x31c7b8de",
+          "bytes": 28,
+          "sha256": "f43c1b77e3914243b0b8fe28508a1220ecfc418ab83d964862abc7b7dcf29a0f",
+          "hex": "8b702881c3b0020000538bcee83d6d0a006a016a008bcee862710a00",
+          "instructions": [
+            {
+              "address": "0x31c7b8c2",
+              "mnemonic": "mov",
+              "operands": "esi, dword ptr [eax + 0x28]"
+            },
+            {
+              "address": "0x31c7b8c5",
+              "mnemonic": "add",
+              "operands": "ebx, 0x2b0"
+            },
+            {
+              "address": "0x31c7b8cb",
+              "mnemonic": "push",
+              "operands": "ebx"
+            },
+            {
+              "address": "0x31c7b8cc",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31c7b8ce",
+              "mnemonic": "call",
+              "operands": "0x31d22610"
+            },
+            {
+              "address": "0x31c7b8d3",
+              "mnemonic": "push",
+              "operands": "1"
+            },
+            {
+              "address": "0x31c7b8d5",
+              "mnemonic": "push",
+              "operands": "0"
+            },
+            {
+              "address": "0x31c7b8d7",
+              "mnemonic": "mov",
+              "operands": "ecx, esi"
+            },
+            {
+              "address": "0x31c7b8d9",
+              "mnemonic": "call",
+              "operands": "0x31d22a40"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "damageEffectProfileInventory": [
+    {
+      "path": "packages/combat-core/bh-profile.json",
+      "sha256": "e713ab2952b1b7c81da0e35e6047532587e397db65cb54a356846a0385d11eac",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 31
+    },
+    {
+      "path": "packages/combat-core/bm-profile.json",
+      "sha256": "0e337ad4dc7010ec3e24fde3a34916f11675b5112bcf8a4eef7a03d865b4cd21",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 26
+    },
+    {
+      "path": "packages/combat-core/ca-profile.json",
+      "sha256": "0a551be9e3b4904315c9e6c8f385a53b06229c60f82c9db4fbae46d6a0f42174",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 9
+    },
+    {
+      "path": "packages/combat-core/de-profile.json",
+      "sha256": "35deac35b26dd2c19a18dd48d45507c628afdd1ce7736ee01bee694ff7dd119e",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 38
+    },
+    {
+      "path": "packages/combat-core/gm-profile.json",
+      "sha256": "5e79fc845cec83b759f01ca7578179d7fdd5a737fb64a4622491777160205ff6",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 11
+    },
+    {
+      "path": "packages/combat-core/is-profile.json",
+      "sha256": "2dabdfac8e760039ebb2ff2d11d1e97ee38184bb9d0c005806ac469403939f6f",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 4
+    },
+    {
+      "path": "packages/combat-core/lk-profile.json",
+      "sha256": "6de28d03c8b7ce1c4a10d2a9e091b9c4b4151f105279b670072827f77121e098",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 1
+    },
+    {
+      "path": "packages/combat-core/lp-profile.json",
+      "sha256": "975e2dd66dd121689be9c884a7c5b5eb0a69f83c81f6edea0491fcbe6e6ea001",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 14
+    },
+    {
+      "path": "packages/combat-core/mm-profile.json",
+      "sha256": "1998f4a615856cfb3e5d28056e7e15193568dd1377b2311ced71d1b68cafcf39",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 26
+    },
+    {
+      "path": "packages/combat-core/rf-profile.json",
+      "sha256": "9620f313fd7989f63aab3fc75480f7ab039a5e1a9bcd3f5c34e9b71ee7f9c612",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 34
+    },
+    {
+      "path": "packages/combat-core/rs-profile.json",
+      "sha256": "4b171ddc3b17ba067b8ad90a4b07424785f59bff678988f13b76b6463fd1a635",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 9
+    },
+    {
+      "path": "packages/combat-core/vc-profile.json",
+      "sha256": "3b69c7e1ba819621812f6f1305d73a9c910f1d14c770e8e6ee18adba4a40e9d2",
+      "damageEffectSoundPlay": [],
+      "damageEffectSoundCount": 37
+    }
+  ],
+  "rawSoundPlayCaveat": "Current index2349 calls actor soundEvent on raw damage SOUND_PLAY. Frozen DamageEffect parser handles SOUND only; no corresponding original effect SOUND_PLAY consumer proven. Preserve unknown rather than reclassify by string similarity.",
+  "limits": [
+    "Immediate critical mapping and dynamic hit sound mapping are frozen-source-reference, not native producer closure.",
+    "Original raw DamageEffect SOUND consumer remains unresolved.",
+    "Native 321d7b70 is a distinct pooled sound-data consumer with parent/owner fallback; its connection to raw damage SOUND has not been proven.",
+    "No original client/audio measurement."
+  ]
+}

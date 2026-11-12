@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "scope": "MM29018 original textured constant-width continuous trail; original particle emitters unchanged",
+  "clientMeasured": false,
+  "target": {
+    "template": "ADD_Shooting_Chaser_Projectile_01",
+    "declarationSha256": "191ad192dac39e17f3c5a9ae79be8fbddbb74285e12c45c1c79ff52f681b2a4a",
+    "fields": {
+      "MeshName": "ADD_Shooting_Chaser_Projectile_01.X",
+      "ChangeTexXet": "ADD_Shooting_Chaser.XET",
+      "SLASH_TRACE_TEXTURE": "ADD_EXTINCTION_Trace02.dds",
+      "LifeType": "LT_TIME",
+      "MeshType": "X_SKIN_MESH",
+      "Slash_Trace_Curve_Type": 1,
+      "BillBoardType": "BT_NONE",
+      "SourceBlendMode": "D3DBLEND_SRCALPHA",
+      "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+      "Layer": 14,
+      "LifeTime": 1,
+      "SLASH_TRACE_TYPE": 1,
+      "ZWriteEnable": true,
+      "UseSlashTrace": true
+    },
+    "events": [
+      {
+        "property": "AniName",
+        "start": 0,
+        "end": 0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_ONE_WAIT"
+        }
+      },
+      {
+        "property": "SlashTrace",
+        "start": 0,
+        "end": 0,
+        "fade": false,
+        "value": true
+      },
+      {
+        "property": "Color",
+        "start": 0,
+        "end": 0,
+        "fade": false,
+        "value": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "property": "Size",
+        "start": 0,
+        "end": 0,
+        "fade": false,
+        "value": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "property": "DirSpeed",
+        "start": 0,
+        "end": 0,
+        "fade": false,
+        "value": 0
+      },
+      {
+        "property": "DirSpeed",
+        "start": 0.1,
+        "end": 0.1,
+        "fade": false,
+        "value": 4000
+      }
+    ]
+  },
+  "texture": {
+    "source": "data/data147.kom/ADD_EXTINCTION_Trace02.dds",
+    "sha256": "a2457224b10917f7d536cc6bde640943af41995493f15a1cffde4a5092ee72f1",
+    "bytes": 2176,
+    "file": "fx/v61-chaser/ADD_EXTINCTION_Trace02-a2457224b1.png",
+    "pngSha256": "2f72b72f965649bdc60e0e73c8569f5894c79a64cfbb0ee7de7624b1e70fd0ca",
+    "width": 64,
+    "height": 64
+  },
+  "referenceFiles": [
+    {
+      "file": "KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "bytes": 167669,
+      "fragments": [
+        {
+          "lines": [
+            1466,
+            1515
+          ],
+          "sha256": "359e4aac0f7300c435fe37d99cdf9dedb9747539374d7223f24015f2ec865879"
+        },
+        {
+          "lines": [
+            1956,
+            2028
+          ],
+          "sha256": "b6f9a033cbce6ea29bb3e69b38645c84d9896c5f1b0f86eea1c2ad167f9fab06"
+        }
+      ]
+    },
+    {
+      "file": "KTDGSlashTrace.cpp",
+      "sha256": "a77b40ed64abe405b8e85273d075cc76d95f0785ade7af0dde677c62dbcdda2c",
+      "bytes": 29060,
+      "fragments": [
+        {
+          "lines": [
+            20,
+            83
+          ],
+          "sha256": "e413d3b3989aa977d6e1c4c754b90815d5aa7461b94d200e2c05f2a4b0f578f4"
+        },
+        {
+          "lines": [
+            257,
+            353
+          ],
+          "sha256": "fbcd2d20b5e869356c0fc603ced79ddcc35012e4a7d507b8b5beaed2fbce2694"
+        },
+        {
+          "lines": [
+            576,
+            642
+          ],
+          "sha256": "2f46542d2e0305b598cbf0b3cbe69fa12895812bf9754fe832c97c601f4c81c9"
+        },
+        {
+          "lines": [
+            868,
+            904
+          ],
+          "sha256": "f258ee6c392eea99e2865bd6457cc29ca7d633d3179fc991d0f78a3dd6169117"
+        },
+        {
+          "lines": [
+            940,
+            972
+          ],
+          "sha256": "8a8edc3df55065ce98d902a47bfbb4027db4d3e92e367b3a709430ad09fb604a"
+        }
+      ]
+    },
+    {
+      "file": "KTDGManager.cpp",
+      "sha256": "8dddabe7e06600510ce40fd4e189b6a4aea6803dcc1bb6b7e330699d82287783",
+      "bytes": 60949,
+      "fragments": [
+        {
+          "lines": [
+            57,
+            80
+          ],
+          "sha256": "486bcc72fed889612396ef801d5846ed1d128eac74c5e29c5ec4bd0e290eed37"
+        }
+      ]
+    }
+  ],
+  "referenceClass": "qualified fixed source snapshot; MeshPlayer/SlashTrace hashes match existing V5 contracts; DGManager snapshot separately hashed, not target2016 binary proof",
+  "consumer": {
+    "vertexCount": 100,
+    "disableSeconds": 0.4,
+    "drawCount": 1,
+    "curveType": 1,
+    "traceType": 1,
+    "sourceBlend": 770,
+    "destBlend": 772,
+    "colorRgb": "texture stage SELECTARG1 TEXTURE",
+    "colorAlpha": "texture stage SELECTARG1 DIFFUSE",
+    "color": 3428144639,
+    "texturedInvisibleAlphaThreshold": 0.1,
+    "uv": "source live prefix i*0.5/(visibleVertexCount*0.5), y0/1"
+  },
+  "limits": [
+    "Original2016 textured trail macro/runtime not measured",
+    "D3DCOLOR per-packet GPU quantization and first-pair UV before next native update are not a pixel-equivalence claim",
+    "Web renderer applies defined live-prefix UV formula to its complete current strip"
+  ]
+}

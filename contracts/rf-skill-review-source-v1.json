@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "sources": [
+    {
+      "file": "target2016 SkillNoteTemplet.lua",
+      "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816",
+      "evidenceClass": "target2016 declaration",
+      "claims": [
+        "24026/memo-19 MI_ABSORB parameter1.4",
+        "24029/memo-29 MI_MAXIMIZE parameters1/.8",
+        "24029/memo-38 MI_USEFUL parameters.5/.7"
+      ],
+      "independentExpectationFixture": "tests/fixtures/rf-traits-review-v1.json"
+    },
+    {
+      "file": "X2Lib/X2EffectSet.cpp",
+      "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "evidenceClass": "fixedV5 consumer reference",
+      "lines": [
+        [
+          234,
+          271
+        ],
+        [
+          1800,
+          1805
+        ],
+        [
+          1866,
+          1867
+        ]
+      ],
+      "claim": "PlayEffectSet defaults power to -1; negative power resolves the owning unit's GetPowerRate before the separate EffectSet scale. The web sink's default1 is not this source behavior."
+    },
+    {
+      "file": "reference-combat-fixes-v11/X2GURaven.cpp",
+      "referenceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+      "sha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+      "evidenceClass": "2026 reconstructed V5 reference, not target2016 code",
+      "lines": [
+        [
+          14582,
+          14587
+        ]
+      ],
+      "claim": "Non-legacy-memo Valkyrie call provides name and owner only. The active sealed module uses this reconstructed target-name binding; no original callback or module bytes changed in this review."
+    },
+    {
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "evidenceClass": "fixedV5 consumer reference",
+      "lines": [
+        [
+          3976,
+          3986
+        ]
+      ],
+      "claim": "An accepted effect hit may request an independent additional damage effect through the owner's proc chance, named damage data and GetHitCreateDamageEffectPowerRate. The new effect is not a child of a later unrelated active skill. Target2016 new trait enum is independently adapted."
+    }
+  ],
+  "remainingLimits": [
+    "MI_ABSORB uses the same target-description HIT_ADD_MP adapter as LK; matching target2016 native trait consumer remains unmeasured",
+    "Three RF MI_USEFUL branches retain source hit schedules; declared .7 per-hit multiplier is implemented but extra-hit consumer is unknown",
+    "Three RF MI_CRITICAL branches set cost and IGNORE_DEFENCE; defensive effect/core-guard bypass is not implemented",
+    "24009 fixedV5 charge10s/HP loss and max2x conflict with target descriptor1s/1.5x/+50% critical; SA_EFFECTIVE_TIME=.75 meaning is unconfirmed"
+  ]
+}

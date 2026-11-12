@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "id": "source-distance-native-v45",
+  "clientMeasured": false,
+  "originalPe": {
+    "path": "asset_sources/analysis/analysis/derived/x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729"
+  },
+  "originalFmodDll": {
+    "path": "asset_sources/client/data/fmodex.dll",
+    "sha256": "2d81269d422cc54384c39d868ce4780029c324c3f96182a25afa8a00255f5a98",
+    "preferredImageBase": "0x10000000",
+    "snapshotRuntimeBase": "0x5f580000",
+    "exports": {
+      "FMOD_Channel_Set3DAttributes": "0x966d0",
+      "FMOD_Sound_Set3DMinMaxDistance": "0x95910",
+      "FMOD_Channel_Set3DMinMaxDistance": "0x96730",
+      "FMOD_Sound_SetMode": "0x95e10",
+      "FMOD_System_Set3DSettings": "0x94370",
+      "FMOD_System_Set3DListenerAttributes": "0x944c0"
+    }
+  },
+  "fixedReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "label": "2026 reconstruction, not original 2016 source",
+    "files": [
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2GameUnit.cpp",
+        "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "PlaySound:5055"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2GameUnit.h",
+        "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "SoundPlayData:1346",
+          "PlaySound defaults:2489"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "STOP_ALL entry:13762",
+          "sound parser:14551",
+          "timed stops and sound:18123",
+          "ActiveSkillShow:23255",
+          "stop setters:26980",
+          "cut-in preferences:32929",
+          "world-color distance:32952"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2Game.cpp",
+        "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "listener:2684",
+          "StopOtherUnit:4124",
+          "StopAllUnit:4167",
+          "Stop2OtherUnit:4227",
+          "Stop2AllUnit:4267"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2Game.h",
+        "sha256": "3ebc9cc8fc6f4e177bdd0632995aba47e54dabc62ed0f1c718410ede391b165d",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "GAME_TYPE enum:61"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/X2Lib/X2Define.h",
+        "sha256": "f757a93843e12f29adbdcee65266105e77f2532ca3a337bbf9d7c51563b36476",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "LIMIT_DISTANCE:31"
+        ]
+      },
+      {
+        "path": ".cache/native-source-runtime/KTDXLIB/KTDXDeviceSound.h",
+        "sha256": "ba34827f4cb3eb909da7b0c03e63c1be769e271bd4a6d1761f29baf7025f06cb",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "Play/Set3DPosition/SetMax3DDistance:17"
+        ]
+      },
+      {
+        "path": ".cache/elesis-v45/X2GUEL-exact.cpp",
+        "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+        "evidence": "frozen fixed-V5 2026 source reference, not 2016 source",
+        "methods": [
+          "ShowActiveSkillCutInAndLight:3776"
+        ]
+      }
+    ]
+  },
+  "gmStartDeclaration": {
+    "source": {
+      "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+      "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d"
+    },
+    "extraction": ".cache/elesis-v45/declarations/elsword-declarations.json",
+    "extractionSha256": "962f8dfd1b0894be64fa8b50f8434228eba6ea72da64a8ae20c870fca6a6a280",
+    "states": {
+      "ESI_SGM_START": {
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 1173
+        },
+        "sounds": {
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "ElesisVoice_Start4.ogg",
+            "3": 100,
+            "4": 1
+          },
+          "SOUND_PLAY1": {
+            "1": 0.389,
+            "2": "Slash2.ogg",
+            "3": 100,
+            "4": 1
+          },
+          "SOUND_PLAY2": {
+            "1": 1.927,
+            "2": "NPCRaven_Slash1.ogg",
+            "3": 100,
+            "4": 1
+          }
+        }
+      },
+      "ESI_START": {
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 304
+        },
+        "sounds": {
+          "SOUND_PLAY0": {
+            "1": 0.9,
+            "2": "ElesisVoice_Start1.ogg",
+            "3": 100,
+            "4": 1
+          },
+          "SOUND_PLAY1": {
+            "1": 0.423,
+            "2": "Raven_Slash2.ogg",
+            "3": 100,
+            "4": 1
+          }
+        }
+      }
+    }
+  },
+  "sound": {
+    "onlyIfMyUnit": {
+      "scriptField": "SOUND_PLAY[n][4]",
+      "default": false,
+      "ifTrue": "discard for non-local actor; local actor plays 2D without spatial attenuation",
+      "nativeGuard": "0x31f54551..0x31f54594"
+    },
+    "ordinarySound": {
+      "default3D": true,
+      "source": "actor GetPos() world XYZ",
+      "listener": "current camera eye world XYZ; orientation is normalized camera look/up",
+      "positionScalingAtSubmission": 1,
+      "distanceMetric": "Euclidean XYZ world units",
+      "defaultDistanceFactor": 800,
+      "fmodDopplerScale": 1,
+      "fmodRolloffScale": 1,
+      "defaultMinDistance": 80,
+      "defaultMaxDistance": 4800,
+      "defaultMaxProducer": "6 * sound-manager distance factor",
+      "minProducer": "float32(0.10000000149011612 * sound-manager distance factor)",
+      "mode": "0x200000",
+      "gain": "1 for d<=min; (max-d)/(max-min) for min<d<max; 0 for d>=max",
+      "curveEvidence": "actual original fmodex.dll arithmetic; not assumed from SDK enum names",
+      "disabled3DFallback": "2D when device/manager 3D capability, enable, sound-use or Play 3D flag is false",
+      "customMax": "original SetMax3DDistance supported; do not apply a guessed override to every SOUND_PLAY row",
+      "scope": "local audio device consumer for locally represented actors, not a packet broadcast in these functions"
+    }
+  },
+  "worldColorAndCutIn": {
+    "pvpGameType1": "gate returns true regardless of distance",
+    "dungeonGameType2": "gate returns true regardless of distance",
+    "distanceBranches": {
+      "nativeGameTypeIds": [
+        3,
+        4
+      ],
+      "comparison": "actor-to-local-player squared XYZ distance < 640000",
+      "radius": 800,
+      "selfAlwaysPasses": true,
+      "type3FrozenName": "GT_BATTLE_FIELD",
+      "type4Name": "unknown; not in frozen reference enum"
+    },
+    "worldColor": "local world render color, controlled by source CHANGE_WORLD_COLOR/state callback; no continuous distance fade in PvP",
+    "cutInPreference": "additional original local preference gate; numeric 1=self, 2=other party members, 3=self or party; other values false, plus special exclusions",
+    "fixedV5Difference": "2026 header uses a different three-value cut-in enum; do not transplant its numeric values to the original",
+    "flashLimit": "gate proven; exact screen-clear framebuffer flash pass and every class-specific light producer not fully audited"
+  },
+  "unitStop": {
+    "metric": "caster position to each recipient actor world XYZ Euclidean distance; never camera distance",
+    "pvpGameType1": {
+      "fullRadius": 1300,
+      "halfRadius": 2000,
+      "fullDurationWhen": "d < 1300",
+      "halfDurationWhen": "1300 <= d < 2000",
+      "noneWhen": "d >= 2000"
+    },
+    "nativeOtherModes2To4": {
+      "fullRadius": 700,
+      "halfRadius": 800,
+      "fullDurationWhen": "d < 700",
+      "halfDurationWhen": "700 <= d < 800",
+      "noneWhen": "d >= 800"
+    },
+    "curve": "two hard steps, implemented as half-duration outer call then full-duration inner call; no continuous falloff",
+    "all": "iterates local unit list; positive source own-duration override bypasses distance for source actor",
+    "other": "excludes source; same-team exclusion when explicitly requested or in native modes 2/3/4; PvP ordinary call includes other players of both teams",
+    "noPositionOrNonpositiveRadius": "unbounded receiver iteration",
+    "stopAndStop2": "both have corresponding spatial receiver iterators",
+    "rawTuples": {
+      "STOP_ALL_UNIT/STOP2_ALL_UNIT": [
+        "triggerTime",
+        "duration",
+        "casterOwnDuration"
+      ],
+      "STOP_OTHER_UNIT/STOP2_OTHER_UNIT": [
+        "triggerTime",
+        "duration"
+      ],
+      "otherTeam": "API-only final bool; original script consumers pass false, not raw tuple[3]"
+    },
+    "stop2Runtime": {
+      "stopTimeField": "actor+0x5dc4",
+      "stop2TimeField": "actor+0x5dc8",
+      "frameStopFlag": "actor+0x5e27",
+      "gate": "either positive timer freezes future state/frame, animation and physics",
+      "independence": "separate source-record queues, setters and clear operations; do not alias their lifetime into one timer",
+      "effectClockLimit": "this does not prove that every independent DamageEffect/particle world clock is frozen"
+    },
+    "nativeSetterCaveat": "source UID/time records and invincibility-related guard exist; fixed V5 direct scalar assignment is not exact 2016",
+    "originalRecordConsumer": "0x31f90dd1..0x31f90ee5 decrements each record, can delete by source state, then selects last record remaining for +5dc4; not a proven generic maximum aggregator",
+    "networkCaveat": "proven functions are local actor consumers; the full input/state transport route is outside this narrow audit"
+  },
+  "implementationPolicy": [
+    "First preserve SOUND_PLAY[4] actor ownership through start-pose/event/network playback; enemy GM start audio is suppressed regardless of map length.",
+    "For ordinary 3D world sounds, apply original camera-to-source XYZ linear gain separately from user volume and measured peak mixing; retain explicit 2D system/local-only sounds.",
+    "Keep PvP source world-color behavior global; do not impose the audio cutoff or unit-stop radius on it.",
+    "Qualify any cut-in/light UI policy independently using distance gate plus local preference evidence; do not invent a common threshold.",
+    "For source STOP/STOP2 requests apply strict recipient radii and two duration bands, while preserving existing source-specific setters and owner authority."
+  ],
+  "unknown": [
+    "Exact FMOD stereo pan/doppler and audio hardware behavior are not reconstructed.",
+    "No original-client audio capture, timing trace or battle measurement was made.",
+    "Exact framebuffer screen-clear flash producer and all per-class flash paths remain unverified.",
+    "Native game type 4 name and current runtime sound distance-factor overrides remain unresolved."
+  ],
+  "nativeSpans": [
+    {
+      "name": "GM common state SOUND_PLAY local-only vs spatial branch",
+      "start": "0x31f54551",
+      "endExclusive": "0x31f545ad",
+      "bytes": 92,
+      "sha256": "cc4c10b8bcdc0310cedf63692c6c6e06617d06d8d0784a9afd08c59012dfa24f",
+      "hex": "807d2001753d8b168b827c0100008bceffd03c010f8546010000837d140872058b4500eb028bc56a006a00508bcee8bc2e29008bd88b86706300008d4c24203bc8eb27837d140872058b4500eb028bc56a006a01508bcee8932e2900"
+    },
+    {
+      "name": "common frame timed sound and stop consumer",
+      "start": "0x31f535d0",
+      "endExclusive": "0x31f546df",
+      "bytes": 4367,
+      "sha256": "d6dfb379fa367c6792a073a0f24f1ff9e98cfd06453a76f52e1703da26923a1e",
+      "first24Bytes": "6aff68a5ebe83264a1000000005083ec5853555657a120d2"
+    },
+    {
+      "name": "unit PlaySound",
+      "start": "0x321e7440",
+      "endExclusive": "0x321e75b8",
+      "bytes": 376,
+      "sha256": "ba9afec103a630c310605ebfdd73a08e5c6c95e3dc5d4719efe36aed6fc099a7",
+      "first24Bytes": "6aff68d264eb3264a1000000005083ec28a120d2263333c4"
+    },
+    {
+      "name": "sound Set3DPosition",
+      "start": "0x31d22610",
+      "endExclusive": "0x31d22628",
+      "bytes": 24,
+      "sha256": "6fdf14932eed2a446ef7088516507fedfb662d9fe5a6c4456cb0f0c0bba33b1c",
+      "hex": "8b442404d900d9594cd94004d95950d94008d95954c20400"
+    },
+    {
+      "name": "3D sound mode creation and min/max setup",
+      "start": "0x31d228b1",
+      "endExclusive": "0x31d2294d",
+      "bytes": 156,
+      "sha256": "79375647d4bd3c847b3972740db230200c334f77f400c64c8984ca52d4a8a332",
+      "hex": "a1185b29338b8000020000807841010f85f7000000807840010f85ed000000807e64010f85e3000000d94044d95c2410d9eed85e68dfe0d9442410f6c441750add0568a4fe32d8c9eb03d94668d95c241083ec08d9442418d95c2404dc0de895fe32d95c2418d9442418d91c2451e8547a0100d905e880fe32d95e6885c0740f6873010000b9b84b2933e840ebeaff8b0b680000200051e8257a0100"
+    },
+    {
+      "name": "runtime custom max setter",
+      "start": "0x31d22c80",
+      "endExclusive": "0x31d22d25",
+      "bytes": 165,
+      "sha256": "ae76455b994a5802066457c5bc784236cfa77b0c899e90e90d63606bfa693a7d",
+      "first24Bytes": "51568bf1837e4402740cd944240cd95e685e59c20400a118"
+    },
+    {
+      "name": "3D sound capability/use fallback",
+      "start": "0x31d22ad3",
+      "endExclusive": "0x31d22b58",
+      "bytes": 133,
+      "sha256": "b3adf977fc655e825fd09416bbe4a44cc9d16f3e644cfd33d4a74773a39e641e",
+      "hex": "8b0d185b29338b810002000038584175463858407541385f64753c385c24187536f644240c10751d8b166a1052e88b78010085c0740f6878010000b9b84b2933e868e9eaff8bcfe811fbffff3ac375358b066a0050eb29f644240c08751d8b0e6a0851e85578010085c0740f6879010000b9b84b2933e832e9eaff8b166a0052e808780100"
+    },
+    {
+      "name": "sound manager distance factor default",
+      "start": "0x31d01a8f",
+      "endExclusive": "0x31d01a98",
+      "bytes": 9,
+      "sha256": "b0400ce0d4dfd8c99e890176a020dc3515a39a86eddb3579b2806d77190866fa",
+      "hex": "d905b08dff32d95e44"
+    },
+    {
+      "name": "FMOD system distance units settings",
+      "start": "0x31d01c8a",
+      "endExclusive": "0x31d01ca5",
+      "bytes": 27,
+      "sha256": "c5d0d9b5db39fe073f3b7020a3a88dd2b6ebfb5ed95e212911a07a3fb7fd763a",
+      "hex": "d9e88b1783ec0cd9542408d94644d95c2404d91c2452e8fd800300"
+    },
+    {
+      "name": "listener forwards camera coordinates",
+      "start": "0x320ccdbd",
+      "endExclusive": "0x320ccddb",
+      "bytes": 30,
+      "sha256": "ab7e2789ebe9ec2fb928b54a56ca3ae631c0497f3313d47cedbb51cd3e5d70c9",
+      "hex": "8b7a448d424483ec0c8bd4893a8b78048b4008897a04894208e8d54ac3ff"
+    },
+    {
+      "name": "listener FMOD attributes forwarder",
+      "start": "0x31d018b0",
+      "endExclusive": "0x31d0195e",
+      "bytes": 174,
+      "sha256": "9e1a2f2232d1de00865eee1564f54d8db2667836b0f81baff0821715f39360f9",
+      "first24Bytes": "83ec28a120d2263333c4894424248bc1807830000f848300"
+    },
+    {
+      "name": "world-color and cut-in distance gate",
+      "start": "0x31f2f650",
+      "endExclusive": "0x31f2f6ef",
+      "bytes": 159,
+      "sha256": "5a8e8fc2b043a65ded00019acdb3fb89284a8292ce17a4c63cee15347973bf2e",
+      "hex": "568bf18b0df4352a338b018b90fc000000ffd24883f8037772ff2485e0f6f2318b068b907c0100008bceffd284c075578b0df4352a338b018b9098000000ffd285c074478b0df4352a338b018b9098000000ffd28b108bc88b82240100006a00ffd08b16508b82240100006a008bceffd050e8b9f1d3ffd81d0806013383c408dfe0f6c4057a04b0015ec332c05ec390d7f6f231d7f6f23170f6f23170f6f2"
+    },
+    {
+      "name": "cut-in preference gate with original numeric options",
+      "start": "0x31f3d120",
+      "endExclusive": "0x31f3d200",
+      "bytes": 224,
+      "sha256": "5ceb237efb757376db14c8b5985231adce67fd368614b2dc20617d7a411a6e77",
+      "first24Bytes": "a1e8352a338b80680200005332db48568bf1744648743348"
+    },
+    {
+      "name": "world-color writer",
+      "start": "0x31f3d200",
+      "endExclusive": "0x31f3d2e7",
+      "bytes": 231,
+      "sha256": "6b094e4a1f725352e082419ed466136feda276fded0890ea62e21a003276c61e",
+      "first24Bytes": "83ec14568bf1e84524ffff84c00f84cf0000008b867c0900"
+    },
+    {
+      "name": "CHANGE_WORLD_COLOR per-frame guard",
+      "start": "0x31fa8840",
+      "endExclusive": "0x31fa8850",
+      "bytes": 16,
+      "sha256": "947341866705a15e5fe057edc9da9946c6398222d227f915847f4849a88177fa",
+      "hex": "80bb146e00000175078bcbe8b049f9ff"
+    },
+    {
+      "name": "class cut-in distance and preference guards",
+      "start": "0x327ee5de",
+      "endExclusive": "0x327ee5fc",
+      "bytes": 30,
+      "sha256": "b099fe29b136496bf1be2ccba0280e012ec719763b3fd999a831cec1ec51fb1d",
+      "hex": "8bcee86b1074ff84c00f84550100008bcee82ceb74ff84c00f8446010000"
+    },
+    {
+      "name": "STOP_ALL immediate original PvP vs other radii",
+      "start": "0x31f9585a",
+      "endExclusive": "0x31f95955",
+      "bytes": 251,
+      "sha256": "13a2efe7381c3f377c70f7fa7b96a982ad2415e1d5541af6d728ecdadb8e53f8",
+      "first24Bytes": "8b0df4352a338b118b82fc000000ffd083f801746e83c0fe"
+    },
+    {
+      "name": "STOP_ALL timed original same bands and caster override",
+      "start": "0x31f53b71",
+      "endExclusive": "0x31f53c4b",
+      "bytes": 218,
+      "sha256": "593ccd2e741cf56550ab2610178e227f758f1df512a0b0b537d85d047f0f585c",
+      "first24Bytes": "8b0df4352a338b118b82fc000000ffd083f801745f83c0fe"
+    },
+    {
+      "name": "STOP_OTHER timed original PvP vs other radii",
+      "start": "0x31f53f31",
+      "endExclusive": "0x31f53feb",
+      "bytes": 186,
+      "sha256": "413e66c151a3be71bd64ad5dcd365f78c92b6ebd75ae8fb06feb2f96fb85f03a",
+      "first24Bytes": "8b0df4352a338b118b82fc000000ffd083f801744b83c0fe"
+    },
+    {
+      "name": "game StopOtherUnit receiver iterator",
+      "start": "0x3209efa0",
+      "endExclusive": "0x3209f09a",
+      "bytes": 250,
+      "sha256": "bd1b29f9c89d1deeea22bfeb6504047e9e98935b48c7a1debba7e8ee38fb15ff",
+      "first24Bytes": "53558be98b85d00200008b8dd40200002bc8c1f90233db85"
+    },
+    {
+      "name": "game StopAllUnit receiver iterator",
+      "start": "0x3209f0a0",
+      "endExclusive": "0x3209f1bb",
+      "bytes": 283,
+      "sha256": "14f871d7ebe9ab01dda1a76caed3512b68caa53428946b483d7706bb1bc821f2",
+      "first24Bytes": "538bd98b83d00200008b8bd40200002bc855c1f90233ed85"
+    },
+    {
+      "name": "game Stop2OtherUnit receiver iterator",
+      "start": "0x3209f1c0",
+      "endExclusive": "0x3209f2ba",
+      "bytes": 250,
+      "sha256": "120050b9f54d4ce690c8580b3e7f7e19dbf75115cbc1dc533dfc702e24ae884c",
+      "first24Bytes": "53578bf98b87d00200008b8fd40200002bc8c1f90233db85"
+    },
+    {
+      "name": "game Stop2AllUnit receiver iterator",
+      "start": "0x3209f2c0",
+      "endExclusive": "0x3209f3dc",
+      "bytes": 284,
+      "sha256": "f2a62ef8537c04ff9f8bec0d84ea4d0a94236d7c32a700e2c8db4c1385ad8ef5",
+      "first24Bytes": "53578bf98b87d00200008b8fd40200002bc8c1f90233db85"
+    },
+    {
+      "name": "actor StopTime source-record setter, differs from fixed V5",
+      "start": "0x31f57c30",
+      "endExclusive": "0x31f57dd3",
+      "bytes": 419,
+      "sha256": "bc49a84a3e2164061f3b0cd827ea19c17f6b3ba3055f9e5a04f35545a7716a8a",
+      "first24Bytes": "83ec10568bf18b068b907c010000ffd23c0175228b8eac5d"
+    },
+    {
+      "name": "actor Stop2Time source-record setter, differs from fixed V5",
+      "start": "0x31f57de0",
+      "endExclusive": "0x31f57eeb",
+      "bytes": 267,
+      "sha256": "ff0d0738a006b886eedc69449b4d900b1340c9b8a2cb021a2f3cf23d5d7efab8",
+      "first24Bytes": "83ec10568bf18b068b907c010000ffd23c01751b8b8eac5d"
+    },
+    {
+      "name": "actor StopTime source-record decay and last-record selection",
+      "start": "0x31f90dd1",
+      "endExclusive": "0x31f90ee5",
+      "bytes": 276,
+      "sha256": "3ab5ffb90670bc4dfed77405c02a6d32de37b1e5b659a9fc3182cb6b3fd802d6",
+      "first24Bytes": "8bbe2c630000d9ee3bbe306300000f84bb000000d907d865"
+    },
+    {
+      "name": "actor Stop2Time independent source records and +5dc8 selection",
+      "start": "0x31f90f23",
+      "endExclusive": "0x31f91035",
+      "bytes": 274,
+      "sha256": "c104289a190da25a1abc7713cad5e7a096b135c03a1c81850d837330f9b2ef93",
+      "first24Bytes": "8bbe3c6300003bbe406300000f84bb000000d907d86510d9"
+    },
+    {
+      "name": "StopTime OR Stop2Time gates future state and frame processing",
+      "start": "0x31f91035",
+      "endExclusive": "0x31f9106f",
+      "bytes": 58,
+      "sha256": "faf837a3bd25912491ad3c9ef252fb39adc3f2149605a580c7a835347d55aa29",
+      "hex": "d896c45d0000dfe0f6c4017524d89ec85d0000dfe0f6c40175198bcec686275e000000e8333afdff8bcee88c38ffffeb09ddd8c686275e000001"
+    },
+    {
+      "name": "frame-stop gates future animation advancement",
+      "start": "0x31fa09c8",
+      "endExclusive": "0x31fa0a0f",
+      "bytes": 71,
+      "sha256": "d180b7c188dabc9ab5ac99b78eed1b18a196a980079ead4c5e1a5ab4e9566362",
+      "hex": "80be275e000000c644245200c6442453000f854f01000080be8c650000000f850f0100008b8e18650000d986600100008b118b420483ec0cd95c2408d9865c010000dd1c24ffd0"
+    },
+    {
+      "name": "frame-stop gates future physics",
+      "start": "0x31fa0f03",
+      "endExclusive": "0x31fa0f1c",
+      "bytes": 25,
+      "sha256": "1eb99bddf8491a6c9f6123cae6ad569928f2c380057ed03d72db704441d0af7b",
+      "hex": "80be275e0000000f85cb0000008b168b82400600008bceffd0"
+    },
+    {
+      "name": "3D Euclidean distance helper",
+      "start": "0x31c18000",
+      "endExclusive": "0x31c1805a",
+      "bytes": 90,
+      "sha256": "bd7c9517915d0b485e6080b39cdad6034eb9be88af618fbf30e509e4512f0032",
+      "hex": "83ec0c8b4424148b4c2410d900d821d91c24d94004d86104d95c2404d94008d86108d95c2408d90424d9442404d9442408d9c1decad9c2decbd9c9dec2dcc8dec1d95c2414d9442414e862dbfc00d95c2414d944241483c40cc3"
+    },
+    {
+      "name": "3D squared distance helper",
+      "start": "0x31c6e880",
+      "endExclusive": "0x31c6e8cd",
+      "bytes": 77,
+      "sha256": "2aa07fbb4baf70c71f69fe6fa06ec9db1a86eaf43d47c0fd7fc2e795a2cb7353",
+      "hex": "83ec0c8b4424148b4c2410d900d821d91c24d94004d86104d95c2404d94008d86108d95c2408d90424d9442404d9442408d9c1decad9c2decbd9c9dec2dcc8dec1d95c2414d944241483c40cc3"
+    }
+  ],
+  "fmodSpans": [
+    {
+      "name": "exact mode 0x200000 linear distance gain",
+      "start": "0x100a1c20",
+      "endExclusive": "0x100a1cd0",
+      "bytes": 176,
+      "sha256": "95a80e1cee3a8de69ee63a60369cd38d549e8b36296d3b09cf490e084a8aaacc",
+      "hex": "558bec568bf1d98684010000d94508d8d1dfe0ddd9f6c4417a09ddd85ed9e85dc20800d89688010000dfe0f6c4417508ddd8d986880100008b4d0c81f900002000743181f900004000742981f90000000474c7d9eed8d9dfe0f6c4057abc518bced91c24e837ffffffd8be840100005e5dc20800d98688010000d89e84010000dfe0f6c4417516d8ae88010000d98688010000d8a684010000def9eb04ddd8d9e881f9000020007402dcc85e5dc20800"
+    },
+    {
+      "name": "actual Euclidean distance and gain consumer",
+      "start": "0x100a1db8",
+      "endExclusive": "0x100a1e16",
+      "bytes": 94,
+      "sha256": "3e4ba2fd918a89a0bde32aa32f00586da27c88a15158b604aa8f97e93d90b046",
+      "hex": "d98668010000d823d95dc0d9866c010000d86304d95dc4d98670010000d86308d955c88b4e44f6411c027405d9e0d955c8d945c4dcc8d945c0dcc8dec1d9c1d8cadec1d9fad945e0d8d9dfe0f6c4410f8561020000d955e0d99680010000"
+    },
+    {
+      "name": "actual gain dispatch",
+      "start": "0x100a1f37",
+      "endExclusive": "0x100a1f4d",
+      "bytes": 22,
+      "sha256": "099bc8458f6048473e05688b86d0817adcfba81145b80731d3395f6911d48df0",
+      "hex": "2500007004ddd950518bced91c24e8d6fcffffd95dfc"
+    },
+    {
+      "name": "channel min/max setter export",
+      "start": "0x10096730",
+      "endExclusive": "0x1009675d",
+      "bytes": 45,
+      "sha256": "22f82c9912e710c0e2c285907771b1920d3c93cd8128b80601e989f39e8c9367",
+      "hex": "558bec8b450885c07509b8250000005dc20c00d9451083ec08d95c2404d9450cd91c2450e847b1fdff5dc20c00"
+    },
+    {
+      "name": "channel min/max setter wrapper",
+      "start": "0x100718a0",
+      "endExclusive": "0x100718d0",
+      "bytes": 48,
+      "sha256": "3f431d074896b146b385df21fd63dff586931442646d486c90617702e97844e2",
+      "hex": "558bec8b4d088d45085051e8a000030085c07518d945108b4d0883ec08d95c2404d9450cd91c24e8e43d03005dc20c00"
+    },
+    {
+      "name": "channel min/max fields",
+      "start": "0x100a56b0",
+      "endExclusive": "0x100a574d",
+      "bytes": 157,
+      "sha256": "c937665619f8d3e464472de45db34d0378412491f70c84765b0cca5dcba40e37",
+      "first24Bytes": "558bec5153568bf18b464c578d7e4c33db895dfc3bc3750c"
+    }
+  ],
+  "currentRawProfileStopInventory": {
+    "scope": "raw state declarations in current twelve profession profile files, not every possible runtime callback",
+    "profiles": [
+      {
+        "profileId": "bh-target2016-v1",
+        "path": "packages/combat-core/bh-profile.json",
+        "sha256": "e713ab2952b1b7c81da0e35e6047532587e397db65cb54a356846a0385d11eac",
+        "counts": {
+          "STOP_OTHER_UNIT": 20,
+          "STOP_MY_UNIT": 3
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "bm-target2016-v1",
+        "path": "packages/combat-core/bm-profile.json",
+        "sha256": "0e337ad4dc7010ec3e24fde3a34916f11675b5112bcf8a4eef7a03d865b4cd21",
+        "counts": {
+          "STOP_OTHER_UNIT": 15,
+          "STOP_MY_UNIT": 1
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "ca-target2016-v1",
+        "path": "packages/combat-core/ca-profile.json",
+        "sha256": "0a551be9e3b4904315c9e6c8f385a53b06229c60f82c9db4fbae46d6a0f42174",
+        "counts": {
+          "STOP_OTHER_UNIT": 17,
+          "STOP_MY_UNIT": 3
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "de-target2016-v1",
+        "path": "packages/combat-core/de-profile.json",
+        "sha256": "35deac35b26dd2c19a18dd48d45507c628afdd1ce7736ee01bee694ff7dd119e",
+        "counts": {
+          "STOP_MY_UNIT": 2,
+          "STOP_OTHER_UNIT": 13
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "gm-target2016-v1",
+        "path": "packages/combat-core/gm-profile.json",
+        "sha256": "5e79fc845cec83b759f01ca7578179d7fdd5a737fb64a4622491777160205ff6",
+        "counts": {
+          "STOP_OTHER_UNIT": 18,
+          "STOP_MY_UNIT": 3
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "is-target2016-v1",
+        "path": "packages/combat-core/is-profile.json",
+        "sha256": "2dabdfac8e760039ebb2ff2d11d1e97ee38184bb9d0c005806ac469403939f6f",
+        "counts": {
+          "STOP_MY_UNIT": 4,
+          "STOP_OTHER_UNIT": 19
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "lk-target2016-v1",
+        "path": "packages/combat-core/lk-profile.json",
+        "sha256": "6de28d03c8b7ce1c4a10d2a9e091b9c4b4151f105279b670072827f77121e098",
+        "counts": {
+          "STOP_MY_UNIT": 4,
+          "STOP_OTHER_UNIT": 20
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "lp-target2016-v1",
+        "path": "packages/combat-core/lp-profile.json",
+        "sha256": "975e2dd66dd121689be9c884a7c5b5eb0a69f83c81f6edea0491fcbe6e6ea001",
+        "counts": {
+          "STOP_MY_UNIT": 2,
+          "STOP_OTHER_UNIT": 16
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "mm-target2016-v1",
+        "path": "packages/combat-core/mm-profile.json",
+        "sha256": "1998f4a615856cfb3e5d28056e7e15193568dd1377b2311ced71d1b68cafcf39",
+        "counts": {
+          "STOP_MY_UNIT": 2,
+          "STOP_OTHER_UNIT": 13
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "rf-2016-m3-research-v5",
+        "path": "packages/combat-core/rf-profile.json",
+        "sha256": "9620f313fd7989f63aab3fc75480f7ab039a5e1a9bcd3f5c34e9b71ee7f9c612",
+        "counts": {
+          "STOP_OTHER_UNIT": 13,
+          "STOP_MY_UNIT": 1
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "rs-target2016-v1",
+        "path": "packages/combat-core/rs-profile.json",
+        "sha256": "4b171ddc3b17ba067b8ad90a4b07424785f59bff678988f13b76b6463fd1a635",
+        "counts": {
+          "STOP_MY_UNIT": 3,
+          "STOP_OTHER_UNIT": 20
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      },
+      {
+        "profileId": "vc-target2016-v1",
+        "path": "packages/combat-core/vc-profile.json",
+        "sha256": "3b69c7e1ba819621812f6f1305d73a9c910f1d14c770e8e6ee18adba4a40e9d2",
+        "counts": {
+          "STOP_OTHER_UNIT": 13,
+          "STOP_MY_UNIT": 1
+        },
+        "otherTuplesWithFieldsBeyond2": []
+      }
+    ],
+    "conclusion": "197 STOP_OTHER_UNIT and 29 STOP_MY_UNIT declarations; zero STOP_ALL or STOP2 declarations; no OTHER tuple third field",
+    "narrowPolicy": "fix active STOP_OTHER spatial reception; leave unsupported STOP2 explicit rather than aliasing independent timer semantics"
+  }
+}

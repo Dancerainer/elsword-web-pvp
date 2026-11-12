@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 static declarations; registered native producer sealed separately",
+  "sources": {
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "effectSets": {
+    "EffectSet_AAT_DashJumpCombo_ZZX": {
+      "raw": {
+        "NAME": "EffectSet_AAT_DashJumpCombo_ZZX",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "NAME": "ATT_Effect_Rupture15_R",
+          "POSITION_OFFSET_Y": 10,
+          "POSITION_OFFSET_X": -45,
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_ANSI_ATT_DASH_JUMP_COMBO_ZX_Projectile",
+          "POSITION_OFFSET_X": 0,
+          "START_TIME": 0.25,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.03,
+          "START_TIME": 0.4,
+          "TWO_DIR_TIME": 0.3,
+          "TWO_DIR_GAP": 20,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 40848
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_ANSI_ATT_DASH_JUMP_COMBO_ZX_Projectile": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "Mesh_ADE_Dash_Jump_Combo_XXX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 1,
+        "NOT_CULL": 1,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "STOP_TIME_ATT": 0,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 0,
+          "HIT_GAP": 0.1,
+          "STOP_TIME_DEF": 0,
+          "CAMERA_CRASH_GAP": 10,
+          "DYNAMO_PARTICLE_RATE_TYPE": 2,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 1,
+          "DAMAGE": {
+            "MAGIC": 0
+          },
+          "NO_DAMAGE": 1,
+          "CAN_REVENGE": 1,
+          "RE_ATTACK": 0,
+          "CAN_REFLEX": 1,
+          "ATTACK_TYPE": 2
+        },
+        "START_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADE_RE_ST_PA03S_70",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "ADE_PS00_SS",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADE_PS01_SS",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "ADE_PS02_SS",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "ADE_PS01_S_SS",
+          "POSITION_TYPE": 0
+        },
+        "HIT_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ANSI_ATT_DASH_JUMP_COMBO_ZX_Explosion",
+          "POSITION_TYPE": 3
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ANSI_ATT_DASH_JUMP_COMBO_ZX_Explosion",
+          "POSITION_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.001,
+          "FILE_NAME": "Add_Effect16.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 394094
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      }
+    },
+    "DamageEffect_ANSI_ATT_DASH_JUMP_COMBO_ZX_Explosion": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "Mesh_ADE_Combo_XXXX_Explosion",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "NOT_CULL": 1,
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 1300,
+          "PVP_RATE": 0.6,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0.15,
+          "CAMERA_CRASH_GAP": 15,
+          "TECH_POINT": 94,
+          "CAMERA_CRASH_TIME": 0.3,
+          "STOP_TIME_DEF": 0.34,
+          "HIT_ADD_MP": 2.54,
+          "BACK_SPEED_X": 1250,
+          "DYNAMO_PARTICLE_RATE_TYPE": 2,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 44,
+          "REACT_TYPE": 5,
+          "ARRANGED_FLY": 1,
+          "RE_ATTACK": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 1,
+          "CAN_ACTIVATE_NASOD_ARMOR_COMBO": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.17
+          }
+        },
+        "START_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADE_REVERSE_STIGMA_PAM3_2",
+          "POSITION_TYPE": 0
+        },
+        "HIT_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADE_REVERSE_STIGMA_PAM3",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.001,
+          "FILE_NAME": "Add_Effect12.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 394156
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      }
+    }
+  }
+}

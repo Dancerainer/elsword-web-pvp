@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "evidenceClass": "original target2016 GameMinor definitions + frozen shared RF conversion; no full-client runtime measurement",
+  "templates": [
+    "DropDown",
+    "GroundShockWave",
+    "AirDownTick",
+    "DownSmoke"
+  ],
+  "sourceContract": "contracts/rf-landing-fx-index-v1.json",
+  "consumer": "apps/web/landing-effects.mjs; fixed-V5 GUUser DamageAirDownLandingStart/FrameMove",
+  "nonLandingProfileCanonicalSha256": "fba240f98fd616415c772d27076a70b7002420798405112a15f848c29957cb44",
+  "resourceCopies": 0,
+  "resourceConversions": 0,
+  "sharedFiles": [
+    {
+      "file": "../rf/landing-fx/meshes/Effect_ElSword_dropdown.glb",
+      "bytes": 129532,
+      "sha256": "2591713f578729867915021be4f0cffc4309b8d62a477402c027c97fe488645b"
+    },
+    {
+      "file": "../rf/landing-fx/meshes/Effect_ElSword_dropdown.pose.json",
+      "bytes": 182698,
+      "sha256": "1a1a0f379966158993bcc45dfba9647f2c376472b7d3147507034c04ab30fbcd"
+    },
+    {
+      "file": "../rf/landing-fx/textures/GroundShockWave-2c3c493997.png",
+      "bytes": 76328,
+      "sha256": "ba598ccad4780e65a6663eb00f95aa2f58ad6040e330b86407818cb65acc10fd"
+    },
+    {
+      "file": "../rf/landing-fx/textures/stone-5043309909.png",
+      "bytes": 1479,
+      "sha256": "fb526d2ce58479ef9321c578a289089fabd01528fa3cd3fc7e5cef4d53e7ba16"
+    },
+    {
+      "file": "../rf/landing-fx/textures/smoke-cd0af4fdbd.png",
+      "bytes": 3003,
+      "sha256": "68dd2eb8a46116721ddc7d6206584fdf3aea87394d40a84a3f6f9456d289ecf5"
+    }
+  ]
+}

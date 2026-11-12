@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "evidence": "reference-v5; target triggers unmeasured",
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "files": [
+    {"name": "HighJump.ogg", "source": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp:20855", "trigger": "line-map jump relation"},
+    {"name": "Raven_NasodCore_Appear.ogg", "source": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp:14569", "trigger": "core changes from level zero"},
+    {"name": "Raven_NasodCore_Shrink.ogg", "source": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp:14571", "trigger": "core level decreases"},
+    {"name": "Raven_NasodCore_Grow.ogg", "source": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp:14573", "trigger": "core level increases"}
+  ],
+  "sourceHashes": "reports/rf-combat-evidence.json",
+  "limits": "Only target audio presence and copied bytes are verified. The reference trigger sites do not certify 2016 runtime timing or gain."
+}

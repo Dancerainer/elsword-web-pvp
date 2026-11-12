@@ -1,0 +1,14 @@
+.lobby-shell .lobby-shell-viewport{position:relative;overflow:hidden;background:#172e42;isolation:isolate}
+.lobby-static-map{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;z-index:-1}
+.lobby-shell .lobby-shell-viewport::after{content:'';position:absolute;inset:0;background:#14253728;z-index:-1;pointer-events:none}
+.lobby-shell .lobby-shell-status{margin-left:auto;color:#30475e;font-size:12px}
+.lobby-config-panel .skill-bar{position:relative;inset:auto;transform:none;scale:1;display:grid;grid-template-columns:repeat(4,47px);grid-template-rows:repeat(2,47px);justify-content:center;gap:8px;padding:8px;margin:0;flex:none}
+.lobby-config-panel .skill-bar .skill-slot{transform:none;width:47px;height:47px}
+.lobby-config-panel .picker-message{min-height:18px;margin:4px 0;color:#2b4d65;text-align:center}
+.lobby-config-panel>header button{margin-left:auto;width:27px;height:25px;border:1px solid #627383;border-radius:3px;background:#9aabbc;color:white;font-size:21px;line-height:20px;padding:0}
+.lobby-config-panel .picker-instructions{flex:none;text-align:center}
+.lobby-entry-error{position:fixed;z-index:120;inset:20% max(20px,20%);height:max-content;padding:28px;border:1px solid #9db4c5;background:#ecf2f7;color:#283e50;box-shadow:0 10px 40px #0008}
+.lobby-entry-error button{padding:9px 20px;border:1px solid #8f7850;background:#f5d695;color:#263c51;cursor:pointer}
+.lobby-shell .match-loading-screen{inset:48px 0 49px}
+@media(max-width:600px){.lobby-config-panel .skill-bar{gap:6px}.lobby-entry-error{inset:15% 16px}}
+.workbench.entry-loading>.tools{visibility:hidden;pointer-events:none}

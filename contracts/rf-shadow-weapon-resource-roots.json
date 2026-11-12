@@ -1,0 +1,472 @@
+{
+  "schema": "elsword.rf-shadow-weapon-resource-roots.v1",
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "effectSets": {
+    "EffectSet_Raven_Shadow_Buster": {
+      "raw": {
+        "NAME": "EffectSet_Raven_Shadow_Buster",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "START_TIME": 0.01,
+          "NAME": "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_1",
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "EFFECT1": {
+          "START_TIME": 0.01,
+          "NAME": "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_2",
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "EFFECT2": {
+          "START_TIME": 0.01,
+          "NAME": "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_3",
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 129430
+      }
+    },
+    "EffectSet_DEBUFF_WEAPON_BREAK": {
+      "raw": {
+        "NAME": "EffectSet_DEBUFF_WEAPON_BREAK",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "BONE_NAME": "_HEAD_BONE",
+          "NAME": "StateError_Weapon_Break01",
+          "POSITION_OFFSET_Y": 100,
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131961
+      }
+    }
+  },
+  "damageEffects": {
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_1": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_1",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "HIT_ADD_MP": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0,
+          "GAP": 5,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+        }
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_2": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_2",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "HIT_ADD_MP": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0,
+          "GAP": 5,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+        }
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_3": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "RVC_C_ShadowBackSlide_grenade_M01_3",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "HIT_ADD_MP": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0,
+          "GAP": 5,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+        }
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BURSTER": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "SHADOW_BURSTER_DIE_CHECK",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_Flame_Damage",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "LAND_CRASH_ONLY": 1
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "DAMAGE_EFFECT_NAME": "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION",
+          "POSITION_TYPE": 3,
+          "LIFE_TIME_ONLY": 1,
+          "POS_RELATIVE_TO_UNIT": 1
+        }
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RAVEN_WT_X_SHELL_IMPACT",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 25,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 0,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 75,
+          "CAMERA_CRASH_TIME": 0.4,
+          "STOP_TIME_DEF": 0.1,
+          "HIT_ADD_MP": 0.75,
+          "BACK_SPEED_X": 300,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "BUFF_FACTOR": {
+            "BUFF_TEMPLET_ID": 37,
+            "RATE": {
+              "1": 1
+            },
+            "IGNORE_REGIST_FOR_RATE": 1,
+            "BEHAVIOR": {
+              "COMBINATION": {
+                "1": 1
+              },
+              "BBT_CHANGE_NOW_HP_PER_SECOND": {
+                "BUFF_CHANGE_TYPE": 2,
+                "BUFF_RELATION_TYPE": 3,
+                "MULTIPLIER": {
+                  "1": -0.3
+                }
+              }
+            },
+            "FINALIZER": {
+              "COMBINATION": {
+                "1": 1
+              },
+              "BFT_TIME": {
+                "BUFF_DURATION_TIME_TYPE": 1,
+                "NORMAL_TIME": {
+                  "1": 5
+                }
+              }
+            }
+          },
+          "RE_ATTACK": 0,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "DAMAGE": {
+            "MAGIC": 3.94
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hit_P01",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hit_P02",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hit_P03",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hit_P04",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hit_P05",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P01",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0,
+          "GAP": 5,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "RWT_COMBO_X_IMPACT.ogg"
+        }
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BURSTER_Flame_Damage": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RVC_NAPALM_BOMB_EXPLOSION_ATTACKBOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": 0,
+          "TECH_POINT": 16.6,
+          "RATE_MODIFIER": 0,
+          "HIT_GAP": 0.25,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0.2,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 7,
+          "DAMAGE": {
+            "MAGIC": 0.62
+          },
+          "BUFF_FACTOR": {
+            "BUFF_TEMPLET_ID": 37,
+            "RATE": {
+              "1": 1
+            },
+            "IGNORE_REGIST_FOR_RATE": 1,
+            "BEHAVIOR": {
+              "COMBINATION": {
+                "1": 1
+              },
+              "BBT_CHANGE_NOW_HP_PER_SECOND": {
+                "BUFF_CHANGE_TYPE": 2,
+                "BUFF_RELATION_TYPE": 3,
+                "MULTIPLIER": {
+                  "1": -0.3
+                }
+              }
+            },
+            "FINALIZER": {
+              "COMBINATION": {
+                "1": 1
+              },
+              "BFT_TIME": {
+                "BUFF_DURATION_TIME_TYPE": 1,
+                "NORMAL_TIME": {
+                  "1": 5
+                }
+              }
+            }
+          },
+          "RE_ATTACK": 1
+        },
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_Y": 5,
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P01",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P02",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P03",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P04",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "OFFSET_Y": 10,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P05_1",
+          "POSITION_TYPE": 0,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P06",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P07",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "PASSIVE_PARTICLE7": {
+          "PARTICLE_NAME": "RVC_C_dashJumpX_hitGround_P08",
+          "POSITION_TYPE": 3,
+          "POS_RELATIVE_TO_UNIT": 1,
+          "TRACE": 0
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0,
+          "GAP": 5,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_DashJumpXXXFireBoom.ogg"
+        }
+      }
+    }
+  },
+  "declarationSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    }
+  ],
+  "buffTemplates": {
+    "48": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 1,
+        "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Weapon_Break",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 48,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 1,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 7,
+            "2": 8
+          },
+          "BBT_CHANGE_PHYSIC_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          },
+          "BBT_CHANGE_MAGIC_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "DISPLAYER": {
+          "COMBINATION": {
+            "1": 3,
+            "2": 9
+          },
+          "BDT_EFFECT_SET": {
+            "1": "EffectSet_DEBUFF_WEAPON_BREAK"
+          },
+          "BDT_SOUND": {
+            "1": "Raven_Weapon_Break_SwordCrack.ogg"
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_20774",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_20775",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 3623
+      },
+      "sourceKey": "battle-buff",
+      "evidenceClass": "static-target-2016; registration-execution-separate"
+    }
+  }
+}

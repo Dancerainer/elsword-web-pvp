@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "contract": "rf-state-protection-source-v1",
+  "targetBuild": "Steam-NA-V6.0420.5",
+  "targetClientMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceEvidence": "fixed-V5-consumers-not-matching2016-client-source",
+  "sourceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.h",
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "bytes": 57466
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "relativePath": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825
+    }
+  ],
+  "sourceSections": [
+    {
+      "name": "stateLoadArmor",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 14061,
+      "lineEnd": 14089,
+      "sha256": "68e61743905668db1057e5b989779ba359eef5d65c3750b8d36e42f1eb701d14",
+      "markers": [
+        "SUPER_ARMOR",
+        "SUPER_ARMOR_NOT_RED",
+        "SUPER_ARMOR_TIME"
+      ]
+    },
+    {
+      "name": "stateLoadInvincible",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 14252,
+      "lineEnd": 14276,
+      "sha256": "4401cb631b9790c6650466a53e22ec38c9ec20d4242987c0d6455559d5116886",
+      "markers": [
+        "INVINCIBLE",
+        "invincibleTime",
+        "m_fForceInvincibleTime"
+      ]
+    },
+    {
+      "name": "frameFutureArmor",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 15591,
+      "lineEnd": 15638,
+      "sha256": "c7861ed975cda44e95278c0f4ee37f32941a57d7188968cf5915402185436c46",
+      "markers": [
+        "DUNGEON_ITEM",
+        "SUPER_ARMOR_TIME",
+        "GetNowAnimationTime"
+      ]
+    },
+    {
+      "name": "frameInvincible",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 18078,
+      "lineEnd": 18121,
+      "sha256": "4f7c27097d0ba7003cd84f6b20608b2048edd3437c85f4ad915222d85aa4eb3a",
+      "markers": [
+        "CommonFrameMove_Invincible",
+        "invincibleTime",
+        "m_fForceInvincibleTime"
+      ]
+    },
+    {
+      "name": "damageReactCleanup",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 10033,
+      "lineEnd": 10040,
+      "sha256": "01c7033c22a02b78647671d2a07d2e49fd48de448a5be9558343141cd5d6708c",
+      "markers": [
+        "IsSuperArmor",
+        "RT_DUMMY_DAMAGE",
+        "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE",
+        "DeleteEffectSetOnDamageReact"
+      ]
+    },
+    {
+      "name": "buffIdentityArmor",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 33308,
+      "lineEnd": 33314,
+      "sha256": "2249f42f18117f2b28e56ea86298def89489fea1612a1e65359df8622bd31277",
+      "markers": [
+        "IsSuperArmor",
+        "m_vecSuperArmorPtr"
+      ]
+    },
+    {
+      "name": "reactEnum",
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "lineStart": 203,
+      "lineEnd": 240,
+      "sha256": "662d08fe5bb7da4c35ad80fb6accf4654e3bae03922cb53392043f37e90ce76e",
+      "markers": [
+        "RT_NO_DAMAGE = 0",
+        "RT_DUMMY_DAMAGE",
+        "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE"
+      ]
+    },
+    {
+      "name": "damageStopGate",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 8925,
+      "lineEnd": 8937,
+      "sha256": "e284d2855b68719ee493e8f51c961f2d714ee137bf9e6cf319a5e5597df4d8c6",
+      "markers": [
+        "RT_DUMMY_DAMAGE",
+        "DAMAGE_REACT_STOPTIME_CONDITION_FIX",
+        "RT_NO_DAMAGE",
+        "SetStopTime"
+      ]
+    },
+    {
+      "name": "damageCreateStopGate",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 7931,
+      "lineEnd": 7943,
+      "sha256": "7a0c1ab70771a234aa25b0d789eabc6ac378ec7da2e83fd9eaac895a47878990",
+      "markers": [
+        "RT_CREATE_DAMAGE_EFFECT",
+        "RT_CREATE_EFFECT_SET",
+        "fStopTimeDef > 0.f"
+      ]
+    },
+    {
+      "name": "actorStopSetter",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 26983,
+      "lineEnd": 26995,
+      "sha256": "1f01a8bdd61f68dde6d974f61eb3c657e88a6b2cbb56fab845f0b317ba8bb7fb",
+      "markers": [
+        "SetStopTime",
+        "m_FrameDataFuture.unitCondition.fStopTime = fStopTime",
+        "GetLineMap()->SetStopTime( max"
+      ]
+    },
+    {
+      "name": "macroArmorTime",
+      "relativePath": "KTDXLIB/Always.h",
+      "lineStart": 2480,
+      "lineEnd": 2480,
+      "sha256": "054f26c6ae68040f02eacba52794596893d999d6a3bd2b6a142a8b56b76df660",
+      "markers": [
+        "#define SUPER_ARMOR_TIME"
+      ]
+    },
+    {
+      "name": "macroDamageStopFix",
+      "relativePath": "KTDXLIB/Always.h",
+      "lineStart": 2684,
+      "lineEnd": 2684,
+      "sha256": "a8733a6949595fa71bee2f53f70230ec9447ae50b17059949ca364d0d87f6c9d",
+      "markers": [
+        "#define DAMAGE_REACT_STOPTIME_CONDITION_FIX"
+      ]
+    },
+    {
+      "name": "macroDungeonItem",
+      "relativePath": "KTDXLIB/Always.h",
+      "lineStart": 2799,
+      "lineEnd": 2799,
+      "sha256": "53160b580584d7057c91945e0fc390df1238bcf74168edd7a6ce09208de87fba",
+      "markers": [
+        "#define DUNGEON_ITEM"
+      ]
+    }
+  ],
+  "targetSource": {
+    "file": "RAVEN_FIGHTER.lua",
+    "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+  },
+  "targetEnumSource": {
+    "file": "Enum.lua",
+    "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+  },
+  "targetExamples": [
+    {
+      "state": "RSI_WAIT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10149
+      },
+      "fields": {},
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1503
+      },
+      "fields": {
+        "SUPER_ARMOR_TIME0": {
+          "1": 0.1,
+          "2": 100
+        },
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1555
+      },
+      "fields": {
+        "SUPER_ARMOR": 1,
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX2",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1609
+      },
+      "fields": {
+        "SUPER_ARMOR": 1,
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX3",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1672
+      },
+      "fields": {
+        "SUPER_ARMOR": 1,
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX4",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1725
+      },
+      "fields": {
+        "SUPER_ARMOR": 1,
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_A_RRF_HELL_DIVE_UPGRADE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2133
+      },
+      "fields": {
+        "SUPER_ARMOR_TIME0": {
+          "1": 0,
+          "2": 0.57
+        },
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_SI2_POWER_ASSAULT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1259
+      },
+      "fields": {
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 1.77
+        }
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_SI2_OVER_TAKER_ARC_ENEMY",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3180
+      },
+      "fields": {
+        "INVINCIBLE": {
+          "1": 0.01,
+          "2": 1.72
+        }
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_A_ROT_NUCLEAR",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3132
+      },
+      "fields": {
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 4.66
+        }
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_A_ROT_WEAPON_BREAK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2417
+      },
+      "fields": {},
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_A_RF_MEGADRILL_BREAK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2389
+      },
+      "fields": {},
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_SI_A_RF_SHADOW_STEP",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 954
+      },
+      "fields": {
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        }
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "RSI_A_RRF_LIMIT_CRUSHER_CHARGE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2835
+      },
+      "fields": {
+        "SUPER_ARMOR": 1,
+        "SUPER_ARMOR_NOT_RED": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    },
+    {
+      "state": "SI_SA_RRF_X_CRASH",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3399
+      },
+      "fields": {
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SUPER_ARMOR": 0
+      },
+      "evidence": "static-target2016-declarations-not-simulation-golden"
+    }
+  ],
+  "semantics": {
+    "clock": "m_pXSkinAnim.GetNowAnimationTime(), never state elapsed time or wall clock",
+    "stateArmor": {
+      "field": "SUPER_ARMOR",
+      "default": false,
+      "initial": "bSuperArmor and m_bStateSuperArmor assigned at state entry"
+    },
+    "stateArmorNotRed": {
+      "field": "SUPER_ARMOR_NOT_RED",
+      "default": true,
+      "meaning": "Armor color behavior is separate from protection eligibility"
+    },
+    "timeArmor": {
+      "fieldPrefix": "SUPER_ARMOR_TIME",
+      "firstIndex": 0,
+      "loader": "Contiguous BeginTable(prefix,index++); stop at first missing table",
+      "missingEndpointDefault": 0,
+      "entry": "Load ranges, do not execute CommonFrameMoveFuture window loop",
+      "frameWindow": "start <= animationTime <= end, inclusive end",
+      "disjoint": "Any loaded window can grant armor; empty gaps do not match"
+    },
+    "invincible": {
+      "field": "INVINCIBLE",
+      "numbered": false,
+      "missingEndpointDefault": -1,
+      "missingTable": "start=-1,end=-1,bInvincible=false",
+      "entry": "start <= 0 && end > 0; entry does not test the -1 sentinel",
+      "frameWindow": "start != -1 && end != -1 && start <= animationTime < end",
+      "forceOverride": "positive m_fForceInvincibleTime grants protection after timer update; timing/decrement belongs to host"
+    },
+    "damageReactCleanup": {
+      "gate": "!IsSuperArmor() && !bInvincible && React != RT_DUMMY_DAMAGE && React != RT_FLIP_DIFF_DIR_DUMMY_DAMAGE",
+      "excludedTargetValues": {
+        "RT_DUMMY_DAMAGE": 7,
+        "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE": 22
+      },
+      "RT_NO_DAMAGE": {
+        "value": 0,
+        "excludedByThisGate": false
+      },
+      "scope": "Deletion eligibility for damage-react effect sets; not a damage suppression or hit acceptance rule"
+    },
+    "defenderHitStop": {
+      "distinctFromDamageReactCleanup": true,
+      "gate": "!IsSuperArmor() && React != RT_DUMMY_DAMAGE; additionally React != RT_NO_DAMAGE under DAMAGE_REACT_STOPTIME_CONDITION_FIX",
+      "fixedV5ExcludedTargetValues": [
+        0,
+        7
+      ],
+      "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE": {
+        "value": 22,
+        "excludedByThisGate": false
+      },
+      "normalSetter": "SetStopTime(fStopTimeDef), then SetStop2Time(0)",
+      "actorTimerUpdate": "future.fStopTime = requested duration; assignment is not max(previous,duration)",
+      "lineMapTimerUpdate": "Separate global line map timer takes max(previous, requested duration)",
+      "createEffectSpecialCase": "CREATE_DAMAGE_EFFECT/CREATE_EFFECT_SET return early; RAVEN_SECOND_CLASS_CHANGE branch excludes dummy7 and requires fStopTimeDef > 0",
+      "nativeInvoker": "Only this pure protection module is tested here; hit acceptance and timer application stay in parent core integration"
+    }
+  },
+  "implementationHostGuards": {
+    "clockValidation": "Nonfinite animation clock/force timer rejected; target raw literals do not supply these errors",
+    "rangeValidation": "Host nonfinite or nonnumeric endpoints fall back to original field defaults; not a claim about native malformed Lua coercion",
+    "numberPrecision": "JS host clocks and parsed numeric literals; source CPP stores floats, bit-exact consumer precision remains separate"
+  },
+  "explicitLimits": [
+    "Fixed V5 Always.h defines DUNGEON_ITEM, SUPER_ARMOR_TIME and DAMAGE_REACT_STOPTIME_CONDITION_FIX. Target2016 compiler macro set is unconfirmed. DUNGEON_ITEM resets armor before window evaluation when no active item/socket armor and no state base armor.",
+    "Without that reset path, source armor can retain previous stateParam true; current pure evaluator represents explicit no-item interval recomputation, not all native macro-dependent lifetime behavior.",
+    "IsSuperArmor also returns true for m_vecSuperArmorPtr identity buffs, which are outside this state-only evaluator.",
+    "Item/socket armor, identity buffs, native force timer decrement/freeze, canceled state order and target full native dispatch are separate consumers.",
+    "SUPER_ARMOR prevents selected reactions but does not imply invincibility or suppress HP loss.",
+    "The target original client has not been executed; unit checks verify source-backed adapter boundaries, not target-native battle acceptance."
+  ],
+  "fixedReferenceMacroEvidence": {
+    "path": "KTDXLIB/Always.h",
+    "definedMacros": {
+      "SUPER_ARMOR_TIME": 2480,
+      "DAMAGE_REACT_STOPTIME_CONDITION_FIX": 2684,
+      "DUNGEON_ITEM": 2799
+    },
+    "target2016MacroSetConfirmed": false
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schema": "elsword.rf-nasod-display-performance.v7",
+  "targetClientMeasured": false,
+  "gpuMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "nameMapping": {
+    "displaySource": "packages/localization/skill-text.json",
+    "passive": {
+      "skillId": 24402,
+      "displayName": "Exploding Nasod Hand",
+      "targetName": "Exploding Nasod Hand"
+    },
+    "active": {
+      "skillId": 24206,
+      "displayName": "Enchant Hand",
+      "targetName": "Enchant Hand"
+    },
+    "core": "RAVEN_NASOD_BALL is an awakening system, not passive24402"
+  },
+  "fixedSourceHashes": {
+    "X2GURaven.cpp": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+    "X2GUUser.cpp": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+    "X2DamageEffect.cpp": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8"
+  },
+  "passive24402": {
+    "damageName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+    "main": {
+      "name": "Vibration_Shooting_Impact",
+      "lifeType": "LT_TIME",
+      "lifeTime": 0.15,
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "startParticles": [
+      {
+        "key": "START_PARTICLE0",
+        "name": "SA_RVC_DeadlyRaid_P02",
+        "numParticles": 1,
+        "triggerCount": 1,
+        "lifeTime": 1,
+        "drawCount": 1
+      },
+      {
+        "key": "START_PARTICLE1",
+        "name": "SA_RVC_DeadlyRaid_P04",
+        "numParticles": 2,
+        "triggerCount": 1,
+        "lifeTime": 0.4,
+        "drawCount": 1
+      },
+      {
+        "key": "START_PARTICLE2",
+        "name": "RWT_BARRAGE_ATTACK_Flame_Smoke02",
+        "numParticles": 10,
+        "triggerCount": 1,
+        "lifeTime": 1,
+        "drawCount": 1
+      },
+      {
+        "key": "START_PARTICLE3",
+        "name": "RWT_BARRAGE_ATTACK_Flame_Smoke01",
+        "numParticles": 10,
+        "triggerCount": 1,
+        "lifeTime": 1.2,
+        "drawCount": 2
+      },
+      {
+        "key": "START_PARTICLE4",
+        "name": "RWT_BARRAGE_ATTACK_Spark",
+        "numParticles": 10,
+        "triggerCount": 1,
+        "lifeTime": 0.3,
+        "drawCount": 1
+      }
+    ],
+    "numLoops": "No NumLoops declaration in these templates; positive trigger counts and original lifetimes bound all five START sequences",
+    "buff": {
+      "factorId": 437,
+      "templateId": 408,
+      "hasDisplayer": false,
+      "classification": "target declarations + previously user-confirmed proc-to-self registration; exact target-native callback unavailable"
+    },
+    "criticalHitFx": {
+      "name": "CriticalHit01",
+      "triggerCount": 1,
+      "drawCount": 4,
+      "lifeTime": 0.5
+    },
+    "gameplayChanged": false
+  },
+  "prewarm": {
+    "dynamicXCrashResources": [
+      "RRF_X_CRASH_NODAMAGE",
+      "RRF_X_CRASH_NODAMAGE_HYPER"
+    ],
+    "dynamicResourceEvidence": "contracts/rf-xcrash-source-v14.json / Raven16380..16414 / native skills command f[12]",
+    "burstScope": "One reachable original EffectSet/damage/template burst per actor, with damage and original repeated Trace/Final descendants conservatively summed; unconfirmed infinite or recursive child burst upper bounds are reported. Finite one-emitter preparation remains with burstUpperBound:false and budgetScope:single-emitter-lower-bound; it does not guarantee a complete burst. Not unbounded recasts",
+    "wildChargeBasicPool": {
+      "skillId": 24009,
+      "parentTemplate": "Raven_ReadyS_PML1",
+      "meshChildTemplate": "Raven_ReadyS_PML01",
+      "highBasicViews": 40,
+      "medium8BasicViews": 6,
+      "burstUpperBound": false,
+      "budgetScope": "single-emitter-lower-bound",
+      "unsupportedReason": "Original parent has no confirmed finite cumulative particle birth count/window",
+      "actualNativeFirstTraceBirthClones": 0,
+      "wholeHeldChargeConcurrencyGuaranteed": false
+    },
+    "hitBound": "RE_ATTACK0: one emitter per opposing target. RE_ATTACK1: (ceil(mainLifetime/max(fixedTick,HIT_GAP))+1)*opposingTargetCount",
+    "maximumCannonTrace": {
+      "skillId": 24025,
+      "parentTemplate": "MaximumCannon_PM",
+      "meshChildTemplate": "MaximumCannon_P05",
+      "mainLifetimeSeconds": 1,
+      "boundaryPackets": 2,
+      "emissionCarry": 1,
+      "parentBirthBound": "ceil(12 * (1 + 2/60)) + 1 = 14 at high; 3 at medium8",
+      "highMeshViews": 280,
+      "medium8MeshViews": 9,
+      "observedHighMeshPeak": 50,
+      "observedPeakWasNotUsedToSetBudget": true,
+      "actualNativeCastTicks": 720,
+      "actualNativeCasts": 2,
+      "battleTickClones": 0,
+      "tailLifecycle": "Trace stops emission after the original parent-particle lifetime but retains already-born tails. Final children are detached and require their own finite declarations for nested child birth counts.",
+      "initializationTradeoff": "Conservatively summing all births retains more prepared model views than the observed simultaneous peak; not a minimal pool budget. High prepares280 P05 views; default medium8 prepares9 instead of the previous3, and singleton P02 prepares16 instead of2 per actor. Roster budgets sum independent bursts. Pools retain a previously requested high quality/larger roster until page resource teardown; no browser/GPU-memory or high-initialization timing claim.",
+      "test": "tests/combat/effect-trace-prewarm-v7.test.mjs"
+    },
+    "xCrashRFHitP04": {
+      "firstPunchSources": 2,
+      "fireLifetime": 0.36,
+      "fireHitGap": 0.07,
+      "fireContactUpperBound": 7,
+      "emitterUpperBoundPerTarget": 9,
+      "medium8ViewsPerTarget": 36,
+      "highViewsPerTarget": 180,
+      "medium8ThreeTargetViews": 108,
+      "observedPeakWasNotUsedToSetBudget": true
+    }
+  },
+  "measurements": {
+    "tool": "tools/proof-exploding-hand-performance-v7.mjs",
+    "actualInput": "seed30, real keyboard X, actual2016 map/pose resources and fixed native callbacks,180 ticks",
+    "actualProcFrame": 12,
+    "actualStartFrame": 13,
+    "actualTrackedEmitterPeak": 6,
+    "actualTrackedParticlePeak": 6,
+    "lastTrackedLiveFrame": 85,
+    "actualLateModelClones": 0,
+    "injectedSameStartEightTimes": {
+      "beforeTrackedEmitterPeak": 41,
+      "afterTrackedEmitterPeak": 6,
+      "realNetworkOccurrenceMeasured": false
+    },
+    "duplicateConsumptionPolicy": {
+      "start": "One consumption per live parent and original entry key",
+      "time": "Keep last eventId/time dispatch per live parent and original entry key; suppress the same or older dispatch, permit a later source animation-cycle dispatch"
+    },
+    "firstQuadDynamicSlots": {
+      "before": 4,
+      "after": 0,
+      "finalInitiallyPreparedSlots": 118,
+      "actualAndReplayTicks": 180
+    },
+    "finalDisplaySourceSha256": "e03554b192a4ae0101abd181e633a984830643d87a8258971b8e056db9165dd2",
+    "finalRuntimeSourceSha256": "2d8aedf44ed2e5b620b507b7888e1215f630fed97fc1ade497516681410330f2",
+    "committableObservationSummary": "reports/rf-nasod-display-observations-v7.json",
+    "cpuScope": "Babylon NullEngine; GLB source geometry/skin/material topology retained; GLB images omitted; quad image textures replaced with1x1 placeholders; shader readiness omitted; actual draw submissions0; not GPU or FPS",
+    "samplingScope": "V8 self samples only over180 simulation/presentation ticks; includes diagnostic row audit. Wall-time event/update/render/scene phases are disjoint and omit the row audit.",
+    "rawDirectory": "runtime/nasod-cpu-v7/",
+    "originalClientMeasuredTrajectories": 0,
+    "finalPrewarmSourceSha256": "d9a1ce833bbd7da0ab573698e3c7e244ec67f7e61884799e5adb030c4e6b2084"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 declarations + fixedV5 consumer + production NullEngine geometry",
+  "target2016ClientMeasured": false,
+  "consumer": {
+    "file": "KTDXLIB/KTDGParticleSystem.cpp",
+    "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+    "cloneTypeDispatch": [5557,5575],
+    "renderTypeDispatch": [3360,3434]
+  },
+  "templates": ["ADD_MM_ROCKON_01", "ADD_MM_ROCKON_01_D"],
+  "rule": "PT_3D_PLANE uses textured plane geometry even when its declaration retains a Mesh key. Only PT_MESH, PT_SKINMESH and standalone mesh templates request GLBs or mesh pools.",
+  "validation": {
+    "before": {"receipt": "runtime/v58-plane-before-a.resources.json", "passed": 0, "failed": 2, "failure": "Both actual plane declarations incorrectly created mesh samples"},
+    "after": {"receipt": "runtime/v58-plane-after-a.resources.json", "passed": 2, "failed": 0},
+    "checks": ["real original emissions", "zero model loads and mesh instances", "original DrawCount passes", "150–300 native units become 1.5–3 scene units"]
+  },
+  "limitations": ["NullEngine does not rasterize or measure GPU timing", "Practice mark-idle browser acceptance is tracked separately; geometry checks alone do not prove the entire reported flicker is resolved"]
+}

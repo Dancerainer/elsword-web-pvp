@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 declarations + hash-checked fixed-V5 constructors/consumers + actual Babylon NullEngine render-state regression",
+  "target2016Measured": false,
+  "gpuMeasured": false,
+  "fixedV5Commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceFiles": [
+    {
+      "path": "fx-realcolor-v3/KTDGXMeshPlayer.h",
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "bytes": 74061
+    },
+    {
+      "path": "native-reference/KTDXLIB/KTDGParticleSystem.cpp",
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "bytes": 222204
+    },
+    {
+      "path": "native-reference/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "bytes": 167669
+    },
+    {
+      "path": "native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245
+    }
+  ],
+  "declarationIndex": {
+    "path": "contracts/rf-fx-index.json",
+    "sha256": "521ad6bdcc4b582c8a8678a184c60caf6f3f3c15bbb32544eceb14c94e85809b"
+  },
+  "templates": [
+    {
+      "name": "Raven_RRF_X_Crash3",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.36,
+        "ZEnable": true
+      },
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 465712,
+        "line": 14656
+      },
+      "declarationSha256": "dbbb0f3ee67da460924d43c99729ecdfe82b261d94ed679bc9703114c64f5c7f",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb"
+    },
+    {
+      "name": "AttackBox_SA_RRF_XCrash_Fire",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.36,
+        "ZEnable": true
+      },
+      "color": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 462256,
+        "line": 14541
+      },
+      "declarationSha256": "07318ef07e2f26dcb663396204395c4895b51fe263b789aac9999e8551472243",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb"
+    }
+  ],
+  "consumers": {
+    "meshPlayerConstructor": {
+      "file": "fx-realcolor-v3/KTDGXMeshPlayer.h",
+      "lines": [
+        850,
+        859
+      ],
+      "depthTest": false,
+      "depthWrite": false,
+      "destBlend": "D3DBLEND_INVSRCALPHA"
+    },
+    "particleConstructor": {
+      "file": "native-reference/KTDXLIB/KTDGParticleSystem.cpp",
+      "lines": [
+        2700,
+        2701,
+        2757,
+        2758
+      ],
+      "depthTest": true,
+      "depthWrite": true,
+      "destBlend": "D3DBLEND_DESTALPHA"
+    },
+    "planeDrawOverride": {
+      "file": "native-reference/KTDXLIB/KTDGParticleSystem.cpp",
+      "lines": [
+        3383,
+        3390
+      ],
+      "depthWrite": false
+    },
+    "meshPlayerRender": {
+      "file": "native-reference/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "lines": [
+        2285,
+        2291
+      ]
+    },
+    "timedParticleReactivation": {
+      "file": "native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "lines": [
+        1900,
+        1944
+      ],
+      "rule": "An inactive/non-tracing old handle can return to INVALID. A later native EventTimer cycle may therefore birth the same entry again. Replay guard must retain new dispatch identities."
+    }
+  },
+  "mismatch": "The web shared blend() used particle depth defaults for main mesh players. Zero-colour 350x350x350 source-unit XCrash boxes consequently wrote depth although their XMeshTemplet default is false.",
+  "safeNoOutputRule": "Only a main mesh with a literal time-zero zero RGBA for every Color event, no fade/random/unsupported event, REAL_COLOR, SRCALPHA/INVSRCALPHA and no source depth writes can skip presentation clones/draws. Runtime particles, source poses, children and gameplay bindings are retained.",
+  "limits": [
+    "Fixed V5 is a version reference; no original2016 client execution or GPU observation was performed.",
+    "No-op proof establishes unchanged colour/depth contribution; it is not an independent full game-frame pixel comparison."
+  ]
+}

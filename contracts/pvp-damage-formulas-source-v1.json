@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "contractId": "pvp-damage-formulas-source-v1",
+  "evidenceClass": "fixed-V5 consumer candidate + target2016 Buff declarations + user-defined resolved equipment inputs",
+  "targetClientMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "files": [
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp", "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923", "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d", "verifiedInput": "./.cache/native-v5-unified/X2Lib/X2GameUnit.cpp"},
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp", "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38", "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd", "verifiedInput": "./.cache/native-v5-unified/X2Lib/X2GUUser.cpp"},
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.cpp", "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a", "verifiedInput": "./.cache/native-skills-source/X2Lib/X2BuffTemplet.cpp"},
+    {"path": "data/data036.kom/BattleFieldBuffFactor.lua", "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804", "verifiedInput": "asset_work/raw/data/data036.kom/BattleFieldBuffFactor.lua", "evidenceClass": "target2016 static KL declarations", "declarationsInput": "./.cache/pvp-source/target2016/BattleFieldBuffFactor.json"}
+  ],
+  "defence": {
+    "source": "X2GameUnit.cpp:2351-2434,2445-2518,2626-2662",
+    "equation": "max(0, 1 - effectiveDefence / (348 + (62 * attackerLevel) * 0.1) * freezeDefenceMultiplier * defencePierceMultiplier)",
+    "effectiveDefence": "physical forDT0/3, magic forDT1/4, average physical/magic forDT2/5; PENETRATE orIGNORE_DEFENCE sets0",
+    "attackerLevelDefault": null,
+    "missingLevel": "nonzero defense requires explicit level; no guessed level1,85,99 or implicit PvE formula",
+    "missingDefence": "undefined remains unsupported; an explicit composed known contribution can be consumed without claiming it is complete naked+equipment defense",
+    "stateBypassIsSeparate": "IGNORE_STATE_DEFENCE does not bypass this formula",
+    "reconstructionCaution": "Reference contains2026-08-26 edit markers around defense/pierce code. Candidate only; not the matching2016 consumer."
+  },
+  "attack": {
+    "source": "X2GameUnit.cpp:2055-2058,2381-2434,2636-2662",
+    "physical": "physicalAttack * physicalMotionMultiplier",
+    "magic": "magicAttack * magicMotionMultiplier",
+    "mixed": "(physicalAttack * physicalMotionMultiplier + magicAttack * magicMotionMultiplier) *0.5",
+    "weaponTypes": "DT3/4/5 require separately identified weapon-only attack; total attack is not substituted",
+    "unknownTypes": "DT6 and others stay unsupported in this ordinary-damage calculator",
+    "ordinaryMinimum": 0,
+    "minimumSource": "X2GameUnit.cpp:2921-2922; minimum1 at2619 belongs to separate level-damage branch and is not transplanted"
+  },
+  "finalStage": {
+    "source": "X2GameUnit.cpp:2698-2707",
+    "equation": "D + D*(defenceFinalMultiplier-1) + D*(attackFinalMultiplier-1)",
+    "channelCompositionSource": "X2BuffTemplet.cpp:539-550,560-578; Buff BCT_PERCENT values multiply within each channel",
+    "stageOrder": ["attack and motion", "base defense", "PvP skill rate", "sword mode", "shared-base final attack/defense stage", "state reduction/guard and supported late skill modifiers", "clamp ordinary GetFinalDamage at0", "core parry", "critical", "equipment additional defense", "separate additional attack"],
+    "excluded2026Addition": "X2GameUnit.cpp:2708-2710 GetESPProcDamageTakenScale is explicitly2026-09-07 and not imported"
+  },
+  "targetChannels": {
+    "awakening": {"factor": "BFI_HYPER_MODE", "sourcePc": {"prototype": 0, "instruction": 72}, "attackStat": false, "behaviors": ["BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_MELEE_ATTACK", "BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_RANGE_ATTACK"], "changeType": "BCT_PERCENT", "multiplier": 1.2},
+    "revenge": {"factors": ["BFI_BUFF_PVP_REVENGE_MODE_LEVEL_1", "BFI_BUFF_PVP_REVENGE_MODE_LEVEL_2", "BFI_BUFF_PVP_REVENGE_MODE_LEVEL_3"], "sourcePc": {"prototype": 0, "instructions": [7053,7144,7235]}, "attackStat": true, "attackBehaviors": ["BBT_CHANGE_PHYSIC_ATTACK", "BBT_CHANGE_MAGIC_ATTACK"], "attackMultipliers": [1.1,1.2,1.3], "defenceBehavior": "BBT_CHANGE_FINAL_DEFENCE_MULTIPLIER", "defenceMultipliers": [0.9,0.8,0.7], "changeType": "BCT_PERCENT"},
+    "physique": {"source": "X2GUUser.cpp:5643-5665", "channel": "m_AdditionalFinalDefenceMultiplier.SetPassiveMultiple"}
+  },
+  "equipment": {
+    "interpretation": "Existing user values are resolved PvP equipment contributions/options. Preserve values; no implicit naked-character additions or unverified upstream normalization.",
+    "blanketAttackOrDefenceNormalization": null,
+    "normalizationBoundary": "GetFinalDamage reads already-composed GetPhysicAttackValue/GetPhysicDefenceValue. Upstream inventory/server KStat conversion has not been acquired; denominator0.1 is not evidence for dividing user attack or defense by10.",
+    "reductionSource": "X2GUUser.cpp:9374-9385",
+    "reductionEquation": "D - min(D * equipmentDamageReduction, D)",
+    "reductionPosition": "After critical/core parry, before additional attack; independent of state/base-defense bypass flags"
+  },
+  "limits": ["No matching target2016 executable trajectory", "No invented character naked stats or level", "No reconstruction-only ESP modifier", "Level-based fixed damage, attribute proc damage, weapon-specific attack derivation and complete additional-attack pipeline remain separate unsupported paths"],
+  "validation": {"kind": "hand-calculated source-expression unit cases; current JS execution only", "command": "node --test tests/combat/pvp-damage-formulas.test.mjs"}
+}

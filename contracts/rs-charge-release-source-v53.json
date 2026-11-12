@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "original2016-static-local-start-and-frame-producer",
+  "targetClientExecuted": false,
+  "source": {
+
+    "sha256": "a2a9513bf3404d60ff5506890dc46c99a92b2293a2c1f287c04e5446cbc52291",
+    "historicalAudit": "asset_sources/analysis-project/docs/HISTORICAL_CANCEL_TERMINAL_2016.md"
+  },
+  "spans": [
+    {
+      "entry": "0x32949430",
+      "bytes": 22,
+      "sha256": "f76cc4d07bafc3d7faf0f0a73795dbd29b454feda6219f5bf28a7e173977f512",
+      "bytesHex": "568bf18b068b9014060000ffd2c68626700000015ec3",
+      "retainedCfgSha256": "c9c4c4a0bbfbb05b3445db3c640f2956c931b6d9f07593a3a0c932d6b128bf25"
+    },
+    {
+      "entry": "0x329633c0",
+      "bytes": 690,
+      "sha256": "8f150c48522dc0f4835b7aea8c9c2b9fe499ffb5bc7f1afae6cc51fb6a5a57ea",
+      "bytesHex": "6aff685dedf13264a1000000005083ec5ca120d2263333c48944245856a120d2263333c4508d44246464a300000000d905f077fe328bf18b8e1c650000d89118010000dfe0f6c4410f85ee01000051d91c24e859993aff84c00f84df0100008b8e1c650000687c430033e8b17c3bffd9ee85c07420d980c0000000d95c2408d980c4000000d95c240cd980c8000000d95c2410eb0cd9542408d954240cd954241080be26700000010f85da0100008b16d95424148b4c2414d95424188b9260050000d954241c83ec0c8bc489088b4c24248948048b4c24288948088b4c241483ec10d954240c8bc489088b4c24288948048b4c242c894808518bced91c24ffd23c010f8582010000d986f47000006840480933d95c242c8d4c2448d986f4700000d95c2428d986f4700000d95c2424d944242cd95c2418d9442428d95c241cd9442424d95c2420e804e213ffd9eed954240851d95424108d44240cd95424148d4c2430d95424308d54243cd9542434c744247000000000d9542438d954243cd9542440d95c2444d9e8d91c24d905e880fe3250518b4c2420528b5424286a0083ec0c8bc489088b4c243c83ec08895004894808d95424048b0df4352a33d91c246a006a00568d542478528d44245850e8eca973ff8bc8e825be86ff837c245808c744246cffffffff720d8b4c244451e88c25280083c4048b542420518bc489108b0df4352a3389642428e8b1a973ff8bc8e8aa5186ff85c07419d986b46f0000d9585cd986f0700000c6407401d84860d95860c6862670000000eb4eddd88b8e1c650000d90558a70133d89118010000dfe0f6c441753151d91c24e850973aff84c0742683becc6f0000ff8d86cc6f000074178b0df4352a3350e841a973ff8bc8e86ac886ffeb02ddd88b068b901c0600008bceffd28b4c246464890d00000000595e8b4c245833cce83426280083c468c3",
+      "retainedCfgSha256": "8418b192b11f377dd642192960592e3dbd4ca4d58201c5cbe0acb97b1c143e5e"
+    }
+  ],
+  "bindings": {
+    "charge": {
+      "state": 214,
+      "start": "0x32949430",
+      "post": "0x3295d5f0",
+      "readyStore": "0x3294943d",
+      "readyOffset": "0x7026",
+      "value": 1
+    },
+    "fullRelease": {
+      "state": 215,
+      "frame": "0x329633c0",
+      "post": "0x3295d9c0",
+      "readyCompare": "0x32963461",
+      "readyClear": "0x329635f3",
+      "timer": {
+        "address": "0x32fe77f0",
+        "bytesHex": "0ad7233c",
+        "value": 0.009999999776482582
+      },
+      "set": {
+        "address": "0x33094840",
+        "value": "EffectSet_ERS_COMBO_FULL_CHARGE_XZZ"
+      },
+      "bone": {
+        "address": "0x3300437c",
+        "value": "Dummy2_Lhand"
+      }
+    }
+  },
+  "scope": "Connect the original ready byte to the existing Web release producer after actual66X enters214; preserve original post thresholds. No borrowed old XZ4MP payment or synthetic pre-charge mesh. Other producer virtual gates remain the current qualified host projection."
+}

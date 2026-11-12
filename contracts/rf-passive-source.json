@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetTemplateSha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+  "targetPassives": [
+    {
+      "skillId": 24400,
+      "name": "Focus Strength",
+      "maxLevel": 4,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "m_Stat": {
+          "m_AtkPhysic": {
+            "1": 300,
+            "2": 400,
+            "3": 500,
+            "4": 1000
+          },
+          "m_AtkMagic": {
+            "1": 300,
+            "2": 400,
+            "3": 500,
+            "4": 1000
+          }
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22437
+      }
+    },
+    {
+      "skillId": 24401,
+      "name": "Burning Nasod Hand",
+      "maxLevel": 4,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "SA_DAMAGE_REL": {
+          "1": 1.15,
+          "2": 1.2,
+          "3": 1.25,
+          "4": 1.3
+        },
+        "SA_DAMAGE_TYPE_CHANGE": {
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2
+        },
+        "SA_ATK_MAGIC_REL": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22462
+      }
+    },
+    {
+      "skillId": 24402,
+      "name": "Exploding Nasod Hand",
+      "maxLevel": 3,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.06,
+          "2": 0.08,
+          "3": 0.1
+        },
+        "BUFF_FACTOR": {
+          "1": 437
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22486
+      }
+    },
+    {
+      "skillId": 24403,
+      "name": "Victor's Confidence",
+      "maxLevel": 3,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "SA_ATK_REL": {
+          "1": 1.15,
+          "2": 1.3,
+          "3": 1.45
+        },
+        "SA_FORCE_DOWN_REL": {
+          "1": 0.91,
+          "2": 0.82,
+          "3": 0.73
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22511
+      }
+    },
+    {
+      "skillId": 24404,
+      "name": "Refined Physique",
+      "maxLevel": 3,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "SA_DAMAGED_REL": {
+          "1": 0.92,
+          "2": 0.84,
+          "3": 0.76
+        },
+        "SA_MP_GAIN_GET_HIT_REL": {
+          "1": 0.05,
+          "2": 0.075,
+          "3": 0.1
+        },
+        "SA_SOUL_ABS": {
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.09
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22535
+      }
+    },
+    {
+      "skillId": 24405,
+      "name": "Subliminal Rage",
+      "maxLevel": 3,
+      "passive": true,
+      "topTier": true,
+      "defaultGranted": true,
+      "slotEligible": false,
+      "raw": {
+        "SA_ATK_MAGIC_REL": {
+          "1": 1.025,
+          "2": 1.05,
+          "3": 1.075
+        },
+        "SA_SOUL_GAIN_GET_HIT_REL": {
+          "1": 1.04,
+          "2": 1.08,
+          "3": 1.12
+        },
+        "SA_SOUL_GAIN_ON_HIT_REL": {
+          "1": 1.04,
+          "2": 1.08,
+          "3": 1.12
+        },
+        "SA_EFFECTIVE_TIME": {
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.7
+        }
+      },
+      "targetSourcePc": {
+        "prototype": 0,
+        "instruction": 22560
+      }
+    }
+  ],
+  "consumers": [
+    {
+      "file": "X2Lib/X2UserSkillTree.cpp",
+      "lines": [
+        1471,
+        1506
+      ],
+      "component": "FocusStrength",
+      "semantics": "GetSkillStat/AddStat passive typed values",
+      "sourceSha256": "455a09793f50c428f70b61d2f4beec824d83e7b9abbb5aa70bb5e1901284dca7",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2SkillTree.h",
+      "lines": [
+        2367,
+        2386
+      ],
+      "component": "originalValueGetter",
+      "semantics": "GetSkillAbilityValue; UPGRADE_SKILL_SYSTEM_2013",
+      "sourceSha256": "32d6a263a09347c3390a237f1aafab0b2551400fd85f477059cbe9affc802cc0",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        2328,
+        2393
+      ],
+      "component": "NasodHand",
+      "semantics": "proc chance + change-damage type/rate",
+      "sourceSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        5207,
+        5240
+      ],
+      "component": "NasodStateEligibility",
+      "semantics": "BURNING_NASOD_HAND_POSSIBLE latches eligibility",
+      "sourceSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        34109,
+        34156
+      ],
+      "component": "NasodDamageConversion",
+      "semantics": "MODIFY_SET_DAMAGE_DATA/RAVEN_SECOND_CLASS_CHANGE/FIX_EXPLOSIVE_NASOD_HAND",
+      "sourceSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        12812,
+        12822
+      ],
+      "component": "explosionHit",
+      "semantics": "SERV_ARME_DIMENSION_WITCH random <= owner proc chance",
+      "sourceSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "lines": [
+        3976,
+        3986
+      ],
+      "component": "explosionEffectHit",
+      "semantics": "SERV_ARME_DIMENSION_WITCH random <= owner proc chance",
+      "sourceSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        5643,
+        5653
+      ],
+      "component": "receivedDamage",
+      "semantics": "UPGRADE_SKILL_SYSTEM_2013 HARDEN_BODY final defence rate",
+      "sourceSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        9741,
+        9755
+      ],
+      "component": "receivedSoul",
+      "semantics": "NEW_SKILL_2010_11/UPGRADE_SKILL_SYSTEM_2013 increasing-rate addition",
+      "sourceSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "lines": [
+        12376,
+        12390
+      ],
+      "component": "onHitSoul",
+      "semantics": "NEW_SKILL_2010_11/UPGRADE_SKILL_SYSTEM_2013 increasing-rate addition",
+      "sourceSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "KTDXLIB/KTDXCommonFunc.h",
+      "lines": [
+        1452,
+        1458
+      ],
+      "component": "originalIncreasingRate",
+      "semantics": "fRate - 1 + .00005f",
+      "sourceSha256": "b659140c28707eae0b3c1156e73cb4cd72f4c4eb940263375bfce99da799b084",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        2455,
+        2460
+      ],
+      "component": "reawakenPermission",
+      "semantics": "learned SpiritualizedFury enables reawakening",
+      "sourceSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        14741,
+        14770
+      ],
+      "component": "incompatibleDuration",
+      "semantics": "GetHyperModeTime returns target .7 as absolute seconds if transplanted; disabled",
+      "sourceSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "evidenceClass": "reference-V5-not2016"
+    },
+    {
+      "file": "X2Lib/X2GameUnit.cpp",
+      "lines": [
+        2077,
+        2093
+      ],
+      "component": "victoryCandidate",
+      "semantics": "2026-08-26 modified target lowHP condition; not target2016 provenance",
+      "sourceSha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "evidenceClass": "reference-V5-not2016"
+    }
+  ],
+  "unsupported": [
+    {
+      "id": "explosive-critical-buff-activation",
+      "reason": "Target factor437 and 6s/7hits/crit100%/critDamage1.1 exist; old proc callbacks create named damage effect without applying target skill factor. Timing/native trigger missing."
+    },
+    {
+      "id": "victory-exact-hp-boundary",
+      "reason": "below30% target descriptor candidate uses <; reference <=.3 was explicitly edited in2026, and native target condition is absent."
+    },
+    {
+      "id": "refined-mp-soul-composition",
+      "reason": "target.1 MP gain and.09 SA_SOUL_ABS restored; missing RF consumers prevent multiplying received MP by.1 or assuming soul-absolute vs speed composition."
+    },
+    {
+      "id": "subliminal-magic-stat-and-duration",
+      "reason": "Target1.075 magic power and.7 duration field restored; fixed reference has no magic-stat consumer, and old duration accessor returns absolute seconds rather than multiplier."
+    }
+  ]
+}

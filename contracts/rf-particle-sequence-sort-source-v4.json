@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-static-source; target2016-client-not-executed",
+  "targetClientMeasured": false,
+  "sources": [
+    {"path": ".cache/native-source-runtime/KTDXLIB/KTDGManager.h", "sha256": "0b3a7e20bc4417dce5371595d93a24e9fc5cbd26d65c1df48245ed9b151d9e98", "bytes": 13256, "consumers": {"layerGroupMapping": [76, 95]}},
+    {"path": ".cache/native-source-runtime/KTDXLIB/KTDGManager.cpp", "sha256": "8dddabe7e06600510ce40fd4e189b6a4aea6803dcc1bb6b7e330699d82287783", "bytes": 60949, "consumers": {"meshRenderGroupRetainsObjectOrder": [522, 581], "nonAlphaGroups": [756, 759], "alphaGroups": [801, 804], "alphaObjectComparator": [1124, 1132], "objectDistanceFromTransformCenter": [1986, 1987]}},
+    {"path": ".cache/native-source-runtime/X2Lib/X2Game.cpp", "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4", "bytes": 618989, "consumers": {"gamePlayRenderOrder": [3601, 3622]}},
+    {"path": ".cache/native-reference/KTDXLIB/KTDGParticleSystem.cpp", "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050", "bytes": 222204, "consumers": {"sequenceIsAlphaObject": [2683, 2689], "registerWholeSequence": [2923, 2928], "sequenceRenderPreparation": [3268, 3338], "planeTextureGroupsAndParticleList": [3769, 3817], "planeDrawWholeTextureGroup": [4102, 4104], "meshParticleListRender": [4710, 4740], "sequenceMatrixFollowsEmitter": [5344, 5381]}},
+    {"path": ".cache/matrix-source-v18/KTDGObject.cpp", "sha256": "c6328349dbb9b61ca8743eb39c67f0ffa817e8e4e2875cc725bcb689c630f4fa", "bytes": 3582, "consumers": {"defaultSphereCenterAndLayer": [29, 32]}},
+    {"path": ".cache/matrix-source-v18/KTDGObject.h", "sha256": "0f09960ddfe452628a070c23c5d8585cf0d8898843dd758e240110e53de16c1d", "bytes": 15788, "consumers": {"transformedObjectCenter": [213, 220], "virtualFrustumUpdatesObjectDistance": [467, 478]}}
+  ],
+  "confirmedRules": {
+    "gamePlayQueueOrder": "Sort all objects; draw all non-alpha layer groups; then draw all alpha layer groups. Ordinary GS_PLAY does not alternate non-alpha and alpha per layer.",
+    "layerGroup": "Layers <=26 map directly; <=100 maps to27, <=200 to28, <=300 to29, <=400 to30, all higher to31.",
+    "particleSortUnit": "One CParticleEventSequence registered as an alpha object; not a particle, GLB child, or all instances sharing one template.",
+    "particleSortKeys": "Sequence Layer ascending, then sequence transformed object center distance to camera descending.",
+    "particleSequenceCenter": "Default object sphere center is zero. SetPosition moves the sequence matrix to m_Position, giving the emitter position as the normal sequence center.",
+    "meshInternalOrder": "Each sequence renders its particle list in list order. XRenderer repeats DrawCount inside that particle draw; mesh subset/child bounds do not reorder the sequence.",
+    "quadInternalOrder": "Each sequence groups by texture id in m_TextureMap order, then retains particle-list order within that texture group. The native dynamic vertex buffer draws that whole group with DrawCount."
+  },
+  "confirmedWebMismatchBeforeV4": "Babylon computed distance from every individual mesh SubMesh bound, and from a single quad template batch combining multiple emitter sequences. Correct finite bounds and template Layer alone do not restore native sequence draw-unit sorting.",
+  "limits": [
+    "The fixed reference tree contains later patches and is not target2016 matching source.",
+    "Equal-distance std::sort tie order is not specified; a stable deterministic web tie is an adaptation.",
+    "The optional real D3DXLoadMeshFromXInMemory .Y probe was not executed in this audit; no loader-runtime equivalence result is claimed.",
+    "No production code, browser access, GPU probe, build or deployment was performed by this source audit."
+  ]
+}

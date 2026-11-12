@@ -1,0 +1,155 @@
+{
+  "schema": "rf-cancel-audit-v4",
+  "scope": "read-only cancellation audit after user feedback",
+  "result": "no-new-source-confirmed-defect-found; preserve cancellation behavior",
+  "productionCodeChanged": false,
+  "targetClientMeasured": false,
+  "target2016MeasuredTraces": 0,
+  "m3FidelityAccepted": false,
+  "target2016": {
+    "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+    "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+    "declarationCache": ".cache/declarations-v11/raven-declarations.json",
+    "declarationCacheSha256": "7862ab6f91fbfabf06d27fb6984383d122d139213448cc2ce219eb366d90fc24",
+    "matrix": "reports/rf-all-cancel-matrix-v16.json",
+    "matrixSha256": "cae861a0b4100af887749cb07953e573f9f0d4e1d8f94f8195b10167c7a533e0",
+    "statesWhoseAuditedFieldsMatchRawAndProfile": 32
+  },
+  "fixedV5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "sourceFiles": {
+      ".cache/native-source-runtime/X2Lib/X2GUUser.cpp": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      ".cache/native-source-runtime/X2Lib/X2GUUser.h": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      ".cache/native-source-runtime/X2Lib/X2GURaven.cpp": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      ".cache/native-source-runtime/KTDXLIB/KTDIDeviceWinKey.cpp": "0d00dd7699ba6803dec3df17615b2b7fc561c1db9e2eb4532d46616a0f07cceb",
+      ".cache/native-source-runtime/KTDXLIB/KTDIDevice.cpp": "8b54ccb1b622653ead48c09c996be250e9c1adc8e327aaa9bf1a7018864fc83a",
+      ".cache/native-source-runtime/X2Lib/X2Game.h": "3ebc9cc8fc6f4e177bdd0632995aba47e54dabc62ed0f1c718410ede391b165d",
+      ".cache/native-source-runtime/KTDXLIB/Always.h": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      ".cache/native-source-runtime/KTDXLIB/KTDX.h": "0097cffed97c4446e45fd586cc873290e6770a93e03b3bc7873383fb85d297cf",
+      ".cache/input-manager-source-v19/KTDIManager.cpp": "df4e04a9195146450421a56d89ef0099efe99ba2e54cb9949818518008799820",
+      ".cache/input-manager-source-v19/KTDIManager.h": "67624f15256381c81fe8493a29718acbe4432e79aacaee4a3b63cdaf66f645c9"
+    },
+    "independentProbes": [
+      {
+        "path": "reports/rf-direction-consumer-source-v16.json",
+        "sha256": "f91594c621064b1f47b8171792112633ef93b9c4651b594d4ec77e6da012c513",
+        "methods": 8,
+        "cases": 24,
+        "unchangedSourceBodies": true,
+        "recompiledThisAudit": false,
+        "targetClientMeasured": false
+      },
+      {
+        "path": "reports/rf-double-cancel-consumers-v18.json",
+        "sha256": "f8bd52a8582a479132b57d375b4ddc01b265341f858b8ebc0155ab305f2d819a",
+        "methods": 3,
+        "cases": 10,
+        "unchangedSourceBodies": true,
+        "recompiledThisAudit": false,
+        "targetClientMeasured": false
+      },
+      {
+        "path": "reports/rf-jump-consumer-source-v18.json",
+        "sha256": "9fd222e73bf44d7140114fbd8658f10709f3b474208ca8dce9f16501aef95bdf",
+        "methods": 7,
+        "cases": 20,
+        "unchangedSourceBodies": true,
+        "recompiledThisAudit": false,
+        "targetClientMeasured": false
+      },
+      {
+        "path": "reports/rf-keyboard-independent-source-v19.json",
+        "sha256": "7dfa21c2180e2f96c0f1871c747ab3b81bc2ab9d5c1573b587c726712cac6fcd",
+        "methods": 17,
+        "cases": 24,
+        "unchangedSourceBodies": true,
+        "recompiledThisAudit": false,
+        "targetClientMeasured": false
+      },
+      {
+        "path": "reports/rf-state-schedule-independent-source-v19.json",
+        "sha256": "b59e438cdc96b8db7cdb7dbff0eeea4eb2a560e26127233bbbfba836a5d8c6d7",
+        "methods": 3,
+        "cases": 5,
+        "unchangedSourceBodies": true,
+        "recompiledThisAudit": false,
+        "targetClientMeasured": false
+      }
+    ]
+  },
+  "implementation": {
+    "hashEncoding": "raw-file-bytes",
+    "sha256": {
+      "apps/web/game.mjs": "59c0ace4185cf52b60868861c9cad27b34060c2a7b3026f7f249bea973645f0a",
+      "apps/web/sampled-keyboard.mjs": "3f9364a5da693b88794d6442af99f1c16641b0e7f8d0c2531a80798ae926919a",
+      "apps/web/input-buffer.mjs": "fad293d03ff3c9f855d6464631c97aaaea0af1e44e0d7a74231da2600e292cbd",
+      "apps/web/input-step-clock.mjs": "28dd0fb2f678aeb5900edb2c60d211c197ad635c18d92ba6ce0f3f4f5c102db9",
+      "packages/combat-core/index.mjs": "f1bfa29ccbe5ed8fb6f897b47471c53158e8e8861f97b3df0ffbfd7d2ebdd178",
+      "packages/combat-core/direction-buffer.mjs": "64d14128faf10acbcea0667f06291258bd679ee5de22ee295bbf7b37d5d01049",
+      "packages/combat-core/direction-cancel-candidates.mjs": "84814eb9f64d0a7f4cad21196255868e0804fb39be9d3d4d8617e65322bec090",
+      "packages/combat-core/air-direction.mjs": "9b0005e71eacbd4f53913d2307fb4e836c9407aceb29f5da59484f9e04f4b7ad",
+      "packages/native-source/commands.mjs": "f54e8575fb69dcc229267796596a9479d576a676d0b4b48c3770b3158d0390af",
+      "packages/combat-core/rf-profile.json": "528f8ae8dcc5a7c634f7a7edc54e34b8c3c5a3e7197df5dc1e170dca01fe90b4",
+      "config/rf-preset.json": "1f6355662cecc0b6005542828233f6d59d84764c8533b64c3ff70f9cc6bfa2ff"
+    },
+    "nativeManifestSha256": "ca4beb089d12ee34fa85a7498cc1b1ffdb9850458e2f98e5a42df08780536750",
+    "poseSha256": "7b7d0b83823329b166519d3c00c18446a4cbcc6f3b6a6da3bf7dcc39e68e2484",
+    "mapCollisionSha256": "73a495f74c7dd45700172b62e8ae0fc1eb8295ad632d105b7c48c41e59ef2c5b",
+    "keyboardHandlerSha256": "6fd4268fc8cf263851248a66bbd7ccb4e33b43e921e363e27cedecaeb30c5f48"
+  },
+  "sourceExpectedRules": [
+    "Read samples final key levels; unobserved release/repress does not unlock one. Game reads pureDouble, oneDouble, pure, one in order.",
+    "SetInputData removes attack/jump inputs while their pre-Future lock is positive, then CommonFuture decreases those timers.",
+    "DashEnd fresh same-facing one requests Dash before any held horizontal direction requests Walk; Z/X are earlier branches.",
+    "DashEnd uses animationTime > period/8 for ordinary Z; earlier Z uses DashCombo_Z.",
+    "Walk and normal Jump Future choose pureRight before pureLeft; DashJump Event requests turn without immediately changing facing.",
+    "Backward-cancel macro requires nonnegative threshold and strict binary32 >, opposite pure key, then requests Wait.",
+    "DashJump Event chooses same-packet Z before reverse direction, while oneDown also applies its terminal fall modifier."
+  ],
+  "currentSimulationObservations": {
+    "doubleCancel": {
+      "path": "artifacts/proof-cancel-audit-v4/double-cancel-observations.json",
+      "sha256": "5212208e6af39edc6785362db0b590d0b555ac8a29d6032f06423753e19d2c45",
+      "completeTraces": 96,
+      "liveSampledTraces": 48,
+      "liveSampledRegularZZ": 40,
+      "legacyRegularZZ": 16,
+      "fullReplayAll": true,
+      "jsonRestorePacketsEach": 120
+    },
+    "jumpCancel": {
+      "path": "artifacts/proof-cancel-audit-v4/jump-cancel-observations.json",
+      "sha256": "37ec040b5aeba95c70b863e63c09c2a127f07950d8c5f3d00b937d795a12ea2c",
+      "runner": "artifacts/proof-cancel-audit-v4/observe-jump.mjs",
+      "runnerSha256": "7118beb2da7e0b28a8b0090658a704eb9e413afa2db203b5e1fe7e6892211f3d",
+      "completeProductionDomTraces": 32,
+      "jumpZReached": 12,
+      "jumpZHitCases": 8,
+      "fullReplayPacketsEach": 80,
+      "jsonRestorePacketsEach": 120,
+      "observationExpectation": "Counts are current simulation observations, not target-client goldens."
+    }
+  },
+  "checks": {
+    "node": {
+      "pass": 95,
+      "fail": 0,
+      "skipped": 0
+    },
+    "pythonFixedSource": {
+      "pass": 10,
+      "fail": 0
+    },
+    "webBuilt": false,
+    "published": false,
+    "committed": false,
+    "note": "Shell python alias failed without executing tests; bundled Python then executed all 10. Initial ignored jump-runner replay annotation used a stale actor pointer after restore; corrected the harness lookup, production replay state was identical, final 32 cases passed."
+  },
+  "unresolved": [
+    "Target2016 matching Event/UPDOWN/USE_COMMON_CANCEL_AFTER consumers, build macro selection, input/read timing and original-client traces remain unavailable.",
+    "Target2016 ZZX DASH_CANCEL_AFTER=.35 differs from acquired fixedV5 unconditional pureDouble branch; no guessed threshold override was applied.",
+    "Target2016 ZZXX .6 fields and ordered82 adapter coexist with old fixedV5 >.7 pure-key skip; walk/back/dash field presence alone does not prove callback binding.",
+    "Production JS enters states immediately; acquired V5 ordinary StateChange queues until next DoStateEndStartFuture. Full scheduling is a known unported boundary.",
+    "60Hz web preview and clipped-frame input windows are host timing adapters, not a verified target2016 production clock."
+  ]
+}

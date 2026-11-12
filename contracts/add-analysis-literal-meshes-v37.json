@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 original mesh declarations plus scoped existing Web literal motion executor",
+  "nativeControllerSource": "contracts/add-analysis-consumers-v37.json",
+  "rows": [
+    {
+      "name": "ADD_Star_Fall_Attack_Mesh_Start",
+      "fields": {
+        "MeshName": "ADD_Star_Fall_Attack_Mesh.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 999,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Start",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "AniName",
+          "start": 1.1,
+          "end": 1.1,
+          "fade": false,
+          "value": {
+            "animation": "Wait",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 998,
+          "end": 999,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 1
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            30,
+            0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2282350,
+        "line": 71205
+      },
+      "initialAnimation": {
+        "name": "Start",
+        "playback": "XAP_LOOP"
+      },
+      "animationClips": [
+        {
+          "name": "Wait",
+          "durationSeconds": 1.6666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Attack",
+          "durationSeconds": 0.5,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Start",
+          "durationSeconds": 1.1666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "qualification": "Original2016 immutable mesh declaration; scoped Web literal-motion consumer, no target-client measurements"
+    },
+    {
+      "name": "ADD_Star_Fall_Attack_Mesh_Attack",
+      "fields": {
+        "MeshName": "ADD_Star_Fall_Attack_Mesh.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 1.7,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Attack",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 1
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            30,
+            0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2284159,
+        "line": 71257
+      },
+      "initialAnimation": {
+        "name": "Attack",
+        "playback": "XAP_LOOP"
+      },
+      "animationClips": [
+        {
+          "name": "Wait",
+          "durationSeconds": 1.6666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Attack",
+          "durationSeconds": 0.5,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Start",
+          "durationSeconds": 1.1666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "qualification": "Original2016 immutable mesh declaration; scoped Web literal-motion consumer, no target-client measurements"
+    }
+  ]
+}

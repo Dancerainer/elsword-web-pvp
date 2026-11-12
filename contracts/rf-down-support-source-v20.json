@@ -1,0 +1,55 @@
+{
+  "schema": "rf-down-support-source-v20",
+  "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-reference-not2016-runtime",
+  "files": {
+    "X2Lib/X2GURaven.cpp": {
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216
+    },
+    "X2Lib/X2GUUser.h": {
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "bytes": 202266
+    }
+  },
+  "fragments": [
+    {
+      "method": "RSI_DAMAGE_DOWN_FRONT_EventProcess",
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "void CX2GURaven::RSI_DAMAGE_DOWN_FRONT_EventProcess()",
+      "firstLine": 7069,
+      "lastLine": 7153,
+      "sha256": "3530dcb1a8e55fc965004e5ac534f00ce72b1b2db7af84fd1f5f01cbb81e5345"
+    },
+    {
+      "method": "RSI_DAMAGE_DOWN_BACK_EventProcess",
+      "file": "X2Lib/X2GURaven.cpp",
+      "signature": "void CX2GURaven::RSI_DAMAGE_DOWN_BACK_EventProcess()",
+      "firstLine": 7165,
+      "lastLine": 7249,
+      "sha256": "5362d801419a094889861e0d550e32574f87fa5ced3ae72ab089534c7668375a"
+    },
+    {
+      "method": "IsOnSomethingFuture",
+      "file": "X2Lib/X2GUUser.h",
+      "signature": "bool IsOnSomethingFuture()",
+      "firstLine": 1927,
+      "lastLine": 1935,
+      "sha256": "0191bac3c658df0417ed69c725e7bbe0d153f6f7bad7efe07b7250e42d25f147"
+    }
+  ],
+  "supportRule": {
+    "reference": "X2Lib/X2GUUser.cpp:20742-20747",
+    "heightStrictLessThan": 1,
+    "speedYLessOrEqual": 0
+  },
+  "decision": {
+    "when": "Front/Back ground down and final Future footOnLine false",
+    "state": "RSI_DAMAGE_AIR_FALL",
+    "positionAdjustment": "after StateChange, Future.y -= LINE_RADIUS*1.5",
+    "lineRadius": 30,
+    "heightThreshold": null,
+    "knockdownReset": false,
+    "manaBreakModified": false
+  }
+}

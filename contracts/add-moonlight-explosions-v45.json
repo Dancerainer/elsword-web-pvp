@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 static declarations; native trigger consumer separately sealed by root",
+  "sources": {
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "effectSets": {
+    "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_1": {
+      "raw": {
+        "NAME": "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_1",
+        "APPLIED_SKILL_ID": 29024,
+        "EFFECT0": {
+          "NAME": "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_1",
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 42110
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    },
+    "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_2": {
+      "raw": {
+        "NAME": "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_2",
+        "APPLIED_SKILL_ID": 29024,
+        "EFFECT0": {
+          "NAME": "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_2",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 42125
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    },
+    "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_3": {
+      "raw": {
+        "NAME": "EffectSet_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_3",
+        "APPLIED_SKILL_ID": 29024,
+        "EFFECT0": {
+          "NAME": "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_3",
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "SCALE_Y": 2,
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 42140
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    }
+  },
+  "damageEffects": {
+    "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_1": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "ADD_Moonlight_Rhapsody_Debuff_Explosion_DummyAttackBox_Accumulation_1",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 15,
+          "TECH_POINT": 225,
+          "PVP_RATE": 0.42,
+          "HIT_ADD_MP": 0,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "ATTACK_TRIGGER_TYPE": 7,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 43,
+          "REACT_TYPE": 2,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "FORCE_FLY": 1,
+          "APPLIED_SKILL_ID": 29024,
+          "DAMAGE": {
+            "MAGIC": 4.65
+          }
+        },
+        "START_PARTICLE0": {
+          "PARTICLE_NAME": "ADE_REVERSE_STIGMA_PAM3_S",
+          "POSITION_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.001,
+          "FILE_NAME": "Add_MOONLIGHT_RHAPSODY_Debuff01.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350257
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      }
+    },
+    "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_2": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "ADD_Moonlight_Rhapsody_Debuff_Explosion_DummyAttackBox_Accumulation_2",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 15,
+          "TECH_POINT": 450,
+          "PVP_RATE": 0.42,
+          "HIT_ADD_MP": 0,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "ATTACK_TRIGGER_TYPE": 7,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 43,
+          "REACT_TYPE": 2,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "FORCE_FLY": 1,
+          "APPLIED_SKILL_ID": 29024,
+          "DAMAGE": {
+            "MAGIC": 9.3
+          }
+        },
+        "START_PARTICLE0": {
+          "PARTICLE_NAME": "ADE_REVERSE_STIGMA_PAM3",
+          "POSITION_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.001,
+          "FILE_NAME": "Add_MOONLIGHT_RHAPSODY_Debuff02.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350318
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      }
+    },
+    "DAMAGE_EFFECT_MOONLIGHT_RHAPSODY_Debuff_Explosion_Accumulation_3": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "ADD_Moonlight_Rhapsody_Debuff_Explosion_DummyAttackBox_Accumulation_3",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.3,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 15,
+          "TECH_POINT": 675,
+          "PVP_RATE": 0.42,
+          "HIT_ADD_MP": 0,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "ATTACK_TRIGGER_TYPE": 7,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 43,
+          "REACT_TYPE": 2,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "FORCE_FLY": 1,
+          "APPLIED_SKILL_ID": 29024,
+          "DAMAGE": {
+            "MAGIC": 13.95
+          }
+        },
+        "START_PARTICLE0": {
+          "PARTICLE_NAME": "ADE_REVERSE_STIGMA_PAM3_L",
+          "POSITION_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.001,
+          "FILE_NAME": "Add_MOONLIGHT_RHAPSODY_Debuff03.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350379
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      }
+    }
+  }
+}

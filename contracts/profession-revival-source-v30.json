@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "rf-multimode-reference-v6-profession-revival",
+  "evidenceClass": "qualified fixed-V5 ReInit reference plus explicit user-corrected Add policy",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "original2016RevivalConsumerVerified": false,
+  "referenceFiles": [
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "bytes": 714851,
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "lines": [
+        365,
+        415
+      ]
+    },
+    {
+      "file": "X2GUEL.cpp",
+      "bytes": 475663,
+      "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+      "lines": [
+        4042,
+        4080
+      ]
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "bytes": 731392,
+      "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+      "lines": [
+        4406,
+        4452
+      ]
+    }
+  ],
+  "elswordElesis": {
+    "leading": {
+      "point": 0,
+      "state": 0
+    },
+    "notLeading": {
+      "points": "retain previous signed value",
+      "activeState": "end active mode; switch to charging sign",
+      "fullGaugeChargingIsValid": true
+    },
+    "scoreAt": "actual revival, same for red and blue"
+  },
+  "add": {
+    "displayScale": 20,
+    "leadingDisplayedDp": 100,
+    "leadingRawDp": 2000,
+    "leadingPolicy": "set exactly100, including old DP below100 and above100; not a cap",
+    "notLeading": "retain old DP",
+    "mutation": "retain all points for every score difference",
+    "ruleAuthority": "user correction in this task, superseding earlier cap wording",
+    "referenceFinding": "Add ReInit commented out old DP/mutation clear block; no matching leading fixed100 setter found",
+    "leadingNativeConsumerVerified": false
+  },
+  "genericMp": {
+    "lead1Retention": 0.5,
+    "leadAtLeast2Retention": 0,
+    "nonLeadingRetention": 1,
+    "changed": false
+  },
+  "limitations": [
+    "No original2016 client PvP revival trace acquired.",
+    "Qualified fixedV5 references include reconstructed code; no 1:1 claim.",
+    "The native2016 origin of leading fixed100 Add DP remains unverified."
+  ]
+}

@@ -1,0 +1,4547 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "source": {
+    "path": "X2Lib/X2GUEL.cpp",
+    "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+    "gitBlob": "087da6d5c5c35f2ba3ee82d436e4a464118eee0f",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5-with-2026-reconstruction-not-target2016"
+  },
+  "methodLocationPolicy": "Physical LF line numbers and unmodified-byte body SHA; contains2026 only reports a literal marker within body, not historical provenance. All methods remain qualified fixed-reference candidates.",
+  "methods": [
+    {
+      "method": "CreateGUEL",
+      "line": 92,
+      "lastLine": 95,
+      "sha256": "15a04e680f2e94670ff5adf90c87b6c580776899468048eeb4310b2dd25c64ae",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "AppendDeviceToDeviceList",
+      "line": 204,
+      "lastLine": 206,
+      "sha256": "2d0b9cd251d52454e13e8fd2d1cc851490d6fb2eafb62f94dbb03e3aa97f3e19",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "AppendComponentToDeviceList",
+      "line": 208,
+      "lastLine": 210,
+      "sha256": "b604bd3e722d03a8f0be2020d75f493c0d52a5be10e1b851abe622d8ee748b33",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "AppendEffectToDeviceList",
+      "line": 212,
+      "lastLine": 217,
+      "sha256": "b46e8a78d1d7011c1111f967ad31a2450babbb038042fcef3d45c50bcd6dc385",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CanRidingState",
+      "line": 219,
+      "lastLine": 231,
+      "sha256": "c00602d86cdbf7c8bb18835a616c6148e04ce80410e2ea368ab93d67f881f1e6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "Init",
+      "line": 233,
+      "lastLine": 239,
+      "sha256": "1e2a7c7935d81c21eeced57917ca64fb3b6c4e9e9157a0c488190ea3572a8163",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ParseCommonRandomState",
+      "line": 240,
+      "lastLine": 292,
+      "sha256": "2c4741b7927cf95b81412b8204e8f8619c1ef719451326cf9da3a760e0a5e604",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "InitState",
+      "line": 293,
+      "lastLine": 372,
+      "sha256": "0d929e280d903394d2bfbb3927fe06039c17b422779803ce1a2878b9abae9b38",
+      "literalResources": [
+        "Unit Class Is fault!"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "InitComponent",
+      "line": 373,
+      "lastLine": 411,
+      "sha256": "64102e106ed7ec939615c5918cef7902b44d382560d1f881a0b45f9dd87f1ad0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitPassiveSkillState",
+      "line": 412,
+      "lastLine": 771,
+      "sha256": "b7b4251baf46005001c378eab007b476645fadc580f49ee9e052dcb92b5669b4",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "SetEquippedSkillFuncBySkillSlotIndex",
+      "line": 772,
+      "lastLine": 1931,
+      "sha256": "989bd1b4d5e155b3661683deff7c83ed4f5257f952333121e92ab2e8e0482533",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "SetEquippedSkillLevel",
+      "line": 1934,
+      "lastLine": 2129,
+      "sha256": "f25b12859d2c00b1135008f44a983cca88aa9a661aaf08c9a749dd107be0efaf",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "CommonStateStartFuture",
+      "line": 2131,
+      "lastLine": 2135,
+      "sha256": "960e3ecabe5e4f84cb3dd26bad802d9c21860c0f35b90b902b8d83aa4f94787d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonStateStart",
+      "line": 2136,
+      "lastLine": 2182,
+      "sha256": "af3be7f6be43ce59f0fad99da324d84f55f94309b2bd77de83d2ace6e66f8d29",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "GetPowerRate",
+      "line": 2185,
+      "lastLine": 2191,
+      "sha256": "63a7dd30282b81d9c10b4395b86b17f79623447e9882cac1e1f5538a310efc41",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "OnCAAttackHitPassives",
+      "line": 2195,
+      "lastLine": 2262,
+      "sha256": "9b3ddc696a27876480923d78f784f4a6587e71e271ad53ab4c2110ba0cec1206",
+      "literalResources": [
+        "EffectSet_B_EL_Blood_Sucking",
+        "EffectSet_B_EL_SDC_Bleeding"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "SetMPChangeRateValue",
+      "line": 2266,
+      "lastLine": 2282,
+      "sha256": "a71ca6d8bb8a01a0dd653ebd113462f6940c4d88cfb7675953516876b63b2003",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonFrameMoveFuture",
+      "line": 2285,
+      "lastLine": 2292,
+      "sha256": "731228daf215d44cee5e50c1d2e37576d2633bcebcad68bf8ca1416aa80c6fd7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonFrameMove",
+      "line": 2294,
+      "lastLine": 2391,
+      "sha256": "1a6d90b9faf43bbb7c30f62139e402c0640d57c3cabace21201852d23fa3a63e",
+      "literalResources": [
+        "EffectSet_B_EL_Blood_Sucking"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "CommonStateEndFuture",
+      "line": 2393,
+      "lastLine": 2397,
+      "sha256": "7c8247c5e093b00592271b2fbfb15719a39a209f35900b06e199645b1db2e873",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonStateEnd",
+      "line": 2399,
+      "lastLine": 2403,
+      "sha256": "44ad1a59378d535e31da193bd97872af7c9d5af1ab313dfdc8beaa9a3b05158a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DetonationStateChange",
+      "line": 2405,
+      "lastLine": 2418,
+      "sha256": "fb2c239ad8f7822228c179aea9993817efb7d1c50e2e0c8d9a942904700a43a4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonRender_Prepare",
+      "line": 2420,
+      "lastLine": 2440,
+      "sha256": "e6654c0283aae1a96f5e2680ec45512a98f6f9b31ea410c40fe2348967da20b4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SpecialAttackEventProcess",
+      "line": 2442,
+      "lastLine": 2464,
+      "sha256": "cfff2abf0e1b0b9b4dd17f2f8939741aeeb349e32711be43635a03fa7d36d75b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "NoStateChangeActionFrameMove",
+      "line": 2468,
+      "lastLine": 2479,
+      "sha256": "83d9dcbfdcb7906a57a3e46670588a46c41afeb2c4eeb82a7fbe6c2c6be51379",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetActualMPConsume",
+      "line": 2481,
+      "lastLine": 2579,
+      "sha256": "101d2659c78be36625627e864c7f336d228ed493f055f5730d28b47d41a88590",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "GetActualCoolTime",
+      "line": 2580,
+      "lastLine": 2620,
+      "sha256": "4bac8ba8b942e235f92dddca9daf191e193ee3cdfda7bc98cae51138daa097ec",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CreateGageData",
+      "line": 2621,
+      "lastLine": 2635,
+      "sha256": "0b8e9af02414f2555c8443334423211a8103e5d5fb71f0d35cddc39e02223239",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ShouldResetNotBusyTimer",
+      "line": 2637,
+      "lastLine": 2645,
+      "sha256": "1b2baaa1dc4eb245c4ee545e8ba92d899b944243a9e81389bf19b65bb2897094",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitStateID",
+      "line": 2647,
+      "lastLine": 2650,
+      "sha256": "b944cbbcd43bc4e6f1e46b980b26960223a1798bf50b8ccfa6ccb7897c475462",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitStateCommon",
+      "line": 2655,
+      "lastLine": 3431,
+      "sha256": "4ed8cfcb2c51da0d8fd2f0fea93bb740f7e5da4dd011fe67f4443eca4bb7e066",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "InitStateByUnitClass",
+      "line": 3433,
+      "lastLine": 3752,
+      "sha256": "b83851f51707f5b53b87c73f1d99af847619702b2aa2ef0bcc03f51401fbad20",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "SetEquippedSkillLevelStateData",
+      "line": 3755,
+      "lastLine": 3759,
+      "sha256": "aae688175ee37915a87ce0e506c90e13b312ee4705066303613705b66da15061",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SetSkillLevelStateData",
+      "line": 3761,
+      "lastLine": 3775,
+      "sha256": "c40693bd1222c6e4bbd347f3cd4b508b0f01ed62c0637a48bf4296f4600a5cfb",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ShowActiveSkillCutInAndLight",
+      "line": 3776,
+      "lastLine": 3791,
+      "sha256": "44bb69dea00d77bd7ab83f704501e6eb33b96d0ee5fa83466d2204fb421677aa",
+      "literalResources": [
+        "Dummy2_Lhand"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ShowActiveSkillCutInAndLightByScript",
+      "line": 3792,
+      "lastLine": 3795,
+      "sha256": "b0c0e514f578819b350606ca2ac9300d67a25c11f8cd0e4818330be8465ac06c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CanUseSpecialAttack",
+      "line": 3796,
+      "lastLine": 3926,
+      "sha256": "2f6323f8221019dcf49c3962f15573ed2a6fa73a4e806868a44066f9742ed7c5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StateChangeSpecialAttack",
+      "line": 3928,
+      "lastLine": 4015,
+      "sha256": "b4f2f35613a39895a0b038a9f24ccc94cbcbc3ffa573f7528588f707bcf4b818",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "IsValideSkillRidingOn",
+      "line": 4021,
+      "lastLine": 4040,
+      "sha256": "d495cb8e4935e9cb3672526674028b1959306cc39961e3c7ffc97a5393c3fd5a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ReInit",
+      "line": 4042,
+      "lastLine": 4101,
+      "sha256": "5f2f43ea422552953c03c966f778c4308dbb62fa269e6f1beb57c0187506e45e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageReact",
+      "line": 4102,
+      "lastLine": 4189,
+      "sha256": "8c23a0adc476562538a79410a136144b0f8566eec20bc5191f77aa034bfa99c2",
+      "literalResources": [
+        "EffectSet_B_EL_Blood_Sucking",
+        "EffectSet_B_EL_SDC_Bleeding"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "Win",
+      "line": 4190,
+      "lastLine": 4194,
+      "sha256": "a1f2d287af633aa9f87f07b1ca3da9247822c435501cc370146b40b02edd9451",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "Lose",
+      "line": 4195,
+      "lastLine": 4203,
+      "sha256": "8d554715629cd1de4b987556bc9eda4b9f2e75ecf532252e8c394cd85b2fb423",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "Draw",
+      "line": 4204,
+      "lastLine": 4208,
+      "sha256": "bbde4faf7199fe3a1ddf29e0b132535f5c52cce29193395214cf683a6d78b876",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitEffect",
+      "line": 4209,
+      "lastLine": 4215,
+      "sha256": "1980d47793a4eaae690e2ad71df24d2d0894bb7f0ff743100f453bf33d2a5bef",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitEnchantWeaponEffectUnitSpecific",
+      "line": 4216,
+      "lastLine": 4223,
+      "sha256": "1141d5c4faed332ad0ce10cd40354cb8df2f12a9f5622a59c9905e7ae51822a2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CreateMajorParticleArray",
+      "line": 4224,
+      "lastLine": 4258,
+      "sha256": "dc33224b480018cf574ca051f3aed928b2d83094f78ce5a7e2a006aa485fa274",
+      "literalResources": [
+        "DamageImpact",
+        "DamageImpactCore",
+        "DamageImpactCoreRed",
+        "DamageImpactRed",
+        "DamageImpactRingRed",
+        "DamageImpactSlash",
+        "DamageImpactSlashRed"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "CreateMinorParticleArray",
+      "line": 4259,
+      "lastLine": 4262,
+      "sha256": "a5660849bb3312e05f6e046980fe2d9d91f1051e8412e3892b25eaff19ace921",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "AppendMajorParticleToDeviceList",
+      "line": 4263,
+      "lastLine": 4275,
+      "sha256": "3298b333a4ddfe6aff2086c337a930eed5a1813569e4230c533daf985be04709",
+      "literalResources": [
+        "DamageImpact",
+        "DamageImpactCore",
+        "DamageImpactCoreRed",
+        "DamageImpactRed",
+        "DamageImpactRingRed",
+        "DamageImpactSlash",
+        "DamageImpactSlashRed"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "AppendMinorParticleToDeviceList",
+      "line": 4276,
+      "lastLine": 4279,
+      "sha256": "38e5847fe3bc4c58dbb25f278dc0cc824858223990ebaa7ce6cd0f283c54f6c8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SpecialAttackNoStageChange",
+      "line": 4280,
+      "lastLine": 4296,
+      "sha256": "59c3dedad724f6ccfe24ca8254000d4d7337e9d85ade3363219cd3879fdc7ebe",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "COMMON_BUFF_FrameMove",
+      "line": 4297,
+      "lastLine": 4334,
+      "sha256": "241fcbd1b4a014b6213cbe96dd2475af8872fa9da840988f2f1b66d0a4a105f3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "HyperModeFrameMove",
+      "line": 4335,
+      "lastLine": 4367,
+      "sha256": "8eb35ee9acfcb3088b858ce09145e279e4d15dd91f1c0f7348f76f710e78ca56",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "HyperModeBuffEffectStart",
+      "line": 4368,
+      "lastLine": 4383,
+      "sha256": "6fc725380d82a4346fa042a8ddcb0a9651bb1dcbe0a73ad5629297143c31513f",
+      "literalResources": [
+        "HyperBoostLeft",
+        "HyperBoostRight"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "SetSpecificValueByBuffTempletID",
+      "line": 4388,
+      "lastLine": 4454,
+      "sha256": "7ac78724faf841228b5061bb3c885d20e230959f2694067df2ffe776f32e8de9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "RecordCrestSnapshot",
+      "line": 4457,
+      "lastLine": 4466,
+      "sha256": "cd07585251f44a022a1fbceb6faa7aaf5e9c1d0127e19726e0650efa4e1e1e3c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "RestoreCrestSnapshot",
+      "line": 4468,
+      "lastLine": 4475,
+      "sha256": "8d93e8842774983c5032aa82550be2673fb5b60eabdca1a9cc62348d5b1d1d87",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "UnSetSpecificValueByBuffTempletID",
+      "line": 4482,
+      "lastLine": 4521,
+      "sha256": "ba877e2053b5ea70e43b2f4e2c95ade6e0de08efc2dda35f21a4a633a181c7b9",
+      "literalResources": [
+        "EffectSet_P_SBH_FIRE_BLOSSOMS_Fire"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "GetWayOfSwordState",
+      "line": 4526,
+      "lastLine": 4532,
+      "sha256": "068a125616ab6750f1f30cdd9049d4084ad8ab89589e4515abee2aba306c70b5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SetWayOfSwordState",
+      "line": 4533,
+      "lastLine": 4537,
+      "sha256": "e982eefd72612a4573bea6c3e604f1341e0ec3a51625ccd208637646cd8ddc6c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetWayOfSwordPoint",
+      "line": 4538,
+      "lastLine": 4544,
+      "sha256": "2953d621023b7592ed99721d9b3a0be68553b120a3260d60524c12b4c8e9c654",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetDarkForceWoSPointMultiplier",
+      "line": 4547,
+      "lastLine": 4547,
+      "sha256": "353503914042921de29a19fe05b3becd6e85fda7a0713639ae018bc20f3cf9c0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetDarkForceHPIntakeRate",
+      "line": 4548,
+      "lastLine": 4548,
+      "sha256": "559d564e4337af5661a6faa78a5358f4e67c7f482f32d114ecd003a4846a1b5c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SetWayOfSwordPoint",
+      "line": 4551,
+      "lastLine": 4561,
+      "sha256": "170cd887346eae8ef8cf0fb54e27ce0ec0db3babc1daa8bab2afd25f134d4879",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "Start_SwordmanVigor",
+      "line": 4563,
+      "lastLine": 4579,
+      "sha256": "d41be874dd6fb08f51c287179398ed540e3c8d462be94e8e878e6327a0f36855",
+      "literalResources": [
+        "elsword_vitality_use_VOX.ogg"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "End_SwordmanVigor",
+      "line": 4581,
+      "lastLine": 4597,
+      "sha256": "eabb501a71951650d8ee30fc64b9abc5e483d3c97b1ba00f54d12a6cdac7067e",
+      "literalResources": [
+        "EffectSet_P_SDK_DARK_FORCE_J_End",
+        "EffectSet_VigorEnd",
+        "elsword_vitality_end.ogg"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "Start_SwordmanDestruction",
+      "line": 4599,
+      "lastLine": 4616,
+      "sha256": "bde304bfe4fe6192aa4834ea31baadb788ad51ba940a2c4a4ff84738312a807d",
+      "literalResources": [
+        "elsword_demolition_use_VOX.ogg"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "End_SwordmanDestruction",
+      "line": 4618,
+      "lastLine": 4635,
+      "sha256": "1fe08e58cfd44f68e8e30f1c8ba374cbae74d5fbed9df904cf8b35fefee603aa",
+      "literalResources": [
+        "EffectSet_DestructionEnd",
+        "EffectSet_P_SDK_DARK_FORCE_S_End",
+        "elsword_demolition_end.ogg"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_BERSERK_MODE_EventProcess",
+      "line": 4638,
+      "lastLine": 4649,
+      "sha256": "605ccc6014ae53a48dc03316a790c7b099f7480d4d6ccf97ed1f38ba78ed81af",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DESTRUCTION_RAGE_EventProcess",
+      "line": 4651,
+      "lastLine": 4662,
+      "sha256": "c8557662bf7f3cdfbfe8d5be9e41a677c82506926abeee1ea248381afaafbfa7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "WayOfSwordStateChange",
+      "line": 4665,
+      "lastLine": 4747,
+      "sha256": "aef09d7fad0626167ab004babd0549aadac524cfcab7088bf31ca2c11981fb00",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "GaleBuffFrameMove",
+      "line": 4751,
+      "lastLine": 4769,
+      "sha256": "233608b53fce350b9d2076c352640947253842fc281c15d403b0a0f92dd31d1d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SwordWaitStartFuture",
+      "line": 4770,
+      "lastLine": 4774,
+      "sha256": "bcbdd1964f0221b6b18eb0dabea0285203ffa8ae63026db65c80fbe4b4b1d1d7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SwordWaitStart",
+      "line": 4776,
+      "lastLine": 4780,
+      "sha256": "0c3c22c78668e372b7c3fb85bfcef0ed363c3e921af5b452a7a88bc0ce1fdf2f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SwordWaitEventProcess",
+      "line": 4782,
+      "lastLine": 4840,
+      "sha256": "16375506647e007f8b64176b61d8c25644d77b508a168f0f103ee19880073011",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "PlayAnimationSwordWaitStart",
+      "line": 4842,
+      "lastLine": 4904,
+      "sha256": "06f6de8b465928ef2862fff3cc90a8da8dc92339c532e26877625e16183b5bd8",
+      "literalResources": [
+        "Fatal",
+        "Wait",
+        "Wait_W0",
+        "Wait_W1"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "CanSpecialReactProcess",
+      "line": 4905,
+      "lastLine": 4924,
+      "sha256": "d35b4838bd0d44af2564a3a57a5350110a06a004d692670e334b835d0827623c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetFinalDamage_WayOfSword",
+      "line": 4929,
+      "lastLine": 4956,
+      "sha256": "49cb1e448d7410d9a59abd6eceacd14f92d7a987ada7d37044d46443fe716c7f",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "SetCriticalPercent_WayOfSword",
+      "line": 4960,
+      "lastLine": 4977,
+      "sha256": "1cdf9f6747f6cd582aba161c8ebce5ac46b070b1d2ccee1f661185ffffbd3cff",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieFrontStartFuture",
+      "line": 4985,
+      "lastLine": 4998,
+      "sha256": "c8ab12bd17bddbb1153bda8c045c2fb163c8c2e2730ae6a3c4d5621a34b0de6d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieFrontStart",
+      "line": 4999,
+      "lastLine": 5004,
+      "sha256": "6570ae3260aa8fb48fbb2e4ae94cc14965c79792251c63665fc370845420d1b4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieFrontFrameMove",
+      "line": 5005,
+      "lastLine": 5011,
+      "sha256": "e2166332550eb0ac726b985c7f822d2faedc1fad4210f18544a5e95052694160",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieFrontEventProcess",
+      "line": 5012,
+      "lastLine": 5018,
+      "sha256": "06523cd1d65eae553e33137b20c9a571e8009dbe93d7dc32efd8043a42e1f152",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieBackStartFuture",
+      "line": 5021,
+      "lastLine": 5034,
+      "sha256": "31a1a302e7f34398cd3a78f7b310c61df1002d0da0f8b6efdc4b34155b3c28f0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieBackStart",
+      "line": 5035,
+      "lastLine": 5040,
+      "sha256": "f10682435fd07a5b2a212bf7579fb827064bcf9173939cb2a43759c1b95ea6dc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieBackFrameMove",
+      "line": 5041,
+      "lastLine": 5047,
+      "sha256": "fbb66631dfb789f449d7ba902b950f0e3c20e1db80f34f786213674f20c55030",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DieBackEventProcess",
+      "line": 5048,
+      "lastLine": 5054,
+      "sha256": "9b6331c606b82d5a9ed863484497e6eabcc67161798a1cc60b8c55e9257cef92",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "WaitStartFuture",
+      "line": 5057,
+      "lastLine": 5061,
+      "sha256": "a6624804dd93a7cccec434acec1e7d97684bda9614fb79231eca2e62528eea96",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "WaitStart",
+      "line": 5062,
+      "lastLine": 5066,
+      "sha256": "cafbaf01ee75b0a03230ad8d0c423eabd8be050bf7336ca7207c757a2e73b617",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "WaitEventProcess",
+      "line": 5067,
+      "lastLine": 5127,
+      "sha256": "580db617d800e4a8d64a5a9b12b9adf3c00fec910ed9fa8064d6e8367cd658bf",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "WalkEventProcess",
+      "line": 5130,
+      "lastLine": 5180,
+      "sha256": "9b36ffc22b7434f2a7abba2772e1b601c9b86acd815c4158cb319cd736df2d64",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpReadyEventProcess",
+      "line": 5183,
+      "lastLine": 5201,
+      "sha256": "ac256b34db2d0efe091aac41add4d62d640240faaca29b901fb0f9afaa656dfe",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpUpEventProcess",
+      "line": 5204,
+      "lastLine": 5234,
+      "sha256": "978c0edc0bdc6ba5b0602894b3f249653a7b59ecb7b5eea6046fe3c9dc36b63a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpDownEventProcess",
+      "line": 5237,
+      "lastLine": 5277,
+      "sha256": "0382e9a071de2ea1dc1ccbfbc7e4bf134c560565f58bc70c102afdd02635a881",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpLandingStartFuture",
+      "line": 5280,
+      "lastLine": 5284,
+      "sha256": "e678aca752f63299adfa037073b8d7be29257a457576bc6c9c91510aa182ba58",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpLandingEventProcess",
+      "line": 5285,
+      "lastLine": 5341,
+      "sha256": "28b4f2a30d31d0def53b89d8c23fc4dc8d1279ce0dda9ae684e46ee14b85872f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashEventProcess",
+      "line": 5344,
+      "lastLine": 5413,
+      "sha256": "b24bcb362971d6a830d7e44e0d336656c1c096a91347c9f099f59a9e411e4071",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashEndStartFuture",
+      "line": 5416,
+      "lastLine": 5420,
+      "sha256": "2a80676ab4a1d2b176f2bc8c5d912a8cf65b28cfca8277b08e95ba9b306ae31b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashEndFrameMove",
+      "line": 5421,
+      "lastLine": 5427,
+      "sha256": "97089eb063fb434376a72ae71a19f922e42c4517eb03723cc3f6b1da7b63871a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashEndEventProcess",
+      "line": 5428,
+      "lastLine": 5514,
+      "sha256": "e6b35808a3a45b2619ea21f006d4fdc5c4fa0707e01e3c8da3f4f93ba9198e21",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpStartFuture",
+      "line": 5517,
+      "lastLine": 5526,
+      "sha256": "d2fe13261f73e36ae98be5705f0953c59949d16c300e533ee4c2fee3a67356bf",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpStart",
+      "line": 5527,
+      "lastLine": 5533,
+      "sha256": "f981bbe214bdfc0516e4ea687c398883965ab4387ffc1d4fc8536a59fe062fe4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpFrameMoveFuture",
+      "line": 5534,
+      "lastLine": 5548,
+      "sha256": "dc73e4df115d79e1d7c4f6c5f2ba715c7b5956927a735dcd9aad4edd99ad9830",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpEventProcess",
+      "line": 5549,
+      "lastLine": 5641,
+      "sha256": "826178463ba89a106964674b23df830660b7a416e6f35c432d4c8d0232e906a6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpEndFuture",
+      "line": 5642,
+      "lastLine": 5646,
+      "sha256": "7009759d469243520d4c770fef30a608c85f8c14a6c2d327b2a24e0dd98eba8e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpLandingEventProcess",
+      "line": 5649,
+      "lastLine": 5706,
+      "sha256": "5c3590385d2625317b5b07201123fbcd239552ced5b05b31c171f2c24f67f33a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpLandingStartFuture",
+      "line": 5707,
+      "lastLine": 5711,
+      "sha256": "fa3fa8bf67f5895cb2d8da8e9f7a6f34bf10ac6d0b1c4d662cbf2ba9cdc62485",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageSmallEventProcess",
+      "line": 5714,
+      "lastLine": 5732,
+      "sha256": "7b72c21e15903eb81359a76e1b335feee2e06235ea8ae625113d600b2376976d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageBigStart",
+      "line": 5735,
+      "lastLine": 5739,
+      "sha256": "9b8a4a5640bc4d42ba643141708b19772500d9b499399e265a1e72295019f17a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageBigEventProcess",
+      "line": 5740,
+      "lastLine": 5770,
+      "sha256": "13ed944030e053d0bcf7161ac4284d09661d92719e360f2d72a0147182ced022",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageDownFrontFrameMove",
+      "line": 5773,
+      "lastLine": 5783,
+      "sha256": "602d6afdc27acb32cc4c59bf08df23d1f92c05db9f8f1551ebca1cd9187f01b1",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageDownFrontEventProcess",
+      "line": 5784,
+      "lastLine": 5906,
+      "sha256": "977c2516a0205ab7349a5473ae629f6b12bd89322530b1d5e19bbbb74cf1e16a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageDownBackFrameMove",
+      "line": 5909,
+      "lastLine": 5915,
+      "sha256": "03614467d870f0fc1ab8f20e6f0cdb72a7f7812febf67a53e804af7e2cdcded4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageDownBackEventProcess",
+      "line": 5916,
+      "lastLine": 6042,
+      "sha256": "bfcf79e7d8384373841069be1b16c55c5d6a1d5017d0d3a66360a58a35ec9f74",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DamageAirDownLandingEventProcess",
+      "line": 6045,
+      "lastLine": 6048,
+      "sha256": "073bd8e95d1c43eadde7e840b904526cdd5e334fd7a2b8d0f791ba7e6bb1ccbf",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingFrontFrontEventProcess",
+      "line": 6051,
+      "lastLine": 6075,
+      "sha256": "28533fa64f4c677f77d4541971fcd90ac0f4ede05fe820061a592a5eb43adc6e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingFrontFrontEnd",
+      "line": 6076,
+      "lastLine": 6082,
+      "sha256": "2fd89aacb3af56394fe55e5533894fe476bb7d9b01de8792eb419ebccbf445a3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingFrontBackEventProcess",
+      "line": 6085,
+      "lastLine": 6109,
+      "sha256": "0771f2e40be896e79c8d72b754a15d0b2ea0d7f9c73441ace1bc94c040d0f36e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingFrontBackEnd",
+      "line": 6110,
+      "lastLine": 6115,
+      "sha256": "7814041a73c712b79698cdc4cf11c61479f0fc4ee14f87ac36a15353422bfd23",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingBackFrontEventProcess",
+      "line": 6118,
+      "lastLine": 6141,
+      "sha256": "1333489eb62d5c0083a7e2d3a59084e0758184caf3d19dd7a3ec94bb950a6c87",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingBackFrontEnd",
+      "line": 6142,
+      "lastLine": 6147,
+      "sha256": "4276dd4a07180cc768b396abbdd9cc0db7c957a718720bc1fd265c9b43f3d2df",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingBackBackEventProcess",
+      "line": 6150,
+      "lastLine": 6173,
+      "sha256": "b1cc5906cb05b157f21df1b9f556e98de7488e50031f827689bcb398187b3fef",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpRollingBackBackEnd",
+      "line": 6174,
+      "lastLine": 6179,
+      "sha256": "e878766e3467fbfb198e96a4f5792595c27e616d0ef1c4288265c2cc03fee4b3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackFrontEventProcess",
+      "line": 6182,
+      "lastLine": 6201,
+      "sha256": "54f353f717557d458468510e485ea8f2fcc4124c2fd8e9604f62d8733544d635",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackFrontEnd",
+      "line": 6202,
+      "lastLine": 6207,
+      "sha256": "0f1d5e487166241f2695af30ffcfc47584ec5c77a66d42dce7cab903911aa45b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackBackEventProcess",
+      "line": 6210,
+      "lastLine": 6229,
+      "sha256": "06a1331e6bb57589d5ecbb6b8de4514ef422fb36a3fe102d275cf9108ab2b907",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackBackEnd",
+      "line": 6230,
+      "lastLine": 6235,
+      "sha256": "f72a0cd88e092853244b51b16d1adf36751e1497799010dae62ef3d93c22eae2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackBackStateEndFuture",
+      "line": 6236,
+      "lastLine": 6240,
+      "sha256": "d754a1305025432708f878927c798bbaf182b8df3fc622cc4a0d778a0b83b894",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackFrontNoDownEventProcess",
+      "line": 6242,
+      "lastLine": 6261,
+      "sha256": "1833bcd77856be90dda43563c92e5d59e8ed444471bcaf8c1459b1f829781dcd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackFrontNoDownEnd",
+      "line": 6262,
+      "lastLine": 6267,
+      "sha256": "d514576c49160912efce383e1adf7cbc3aaf7ba26e3c2d7dea384c34a78d96c6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackBackNoDownEventProcess",
+      "line": 6270,
+      "lastLine": 6289,
+      "sha256": "d6ffc1e483af793cf7d1c78007f4ddcd4bdf5cce9cf058e0c7f72c0baa4ea882",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StandUpAttackBackNoDownEnd",
+      "line": 6290,
+      "lastLine": 6295,
+      "sha256": "4c8e31e527910333ec7195f81e8cc14ecc1187283020cc45b7a619d789106d7b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpPowerLandingStartFuture",
+      "line": 6298,
+      "lastLine": 6302,
+      "sha256": "43c9a473777ed46a0104bd5ff41a3c2298da9b4eb2f881054802a71729197965",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpPowerLandingStart",
+      "line": 6303,
+      "lastLine": 6307,
+      "sha256": "79856336c8ccf5f8638a2e9456015978bd801fa0cfa57d0469e72b6c8c4d9052",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpPowerLandingEventProcess",
+      "line": 6308,
+      "lastLine": 6362,
+      "sha256": "992ee7833ff7594b2c530fd17984aeaa7118fdc718259bafadb2f2c12ebab8f0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboZEventProcess",
+      "line": 6363,
+      "lastLine": 6381,
+      "sha256": "2a4357356bdd7ed0bd605105088f6c134f2acb362432d07f7b810ddd3645053c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboZZEventProcess",
+      "line": 6382,
+      "lastLine": 6400,
+      "sha256": "5503d069d94a7bb65ecec402657160667d330c50a07790bbe9a24343650e260e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboZZZEventProcess",
+      "line": 6401,
+      "lastLine": 6423,
+      "sha256": "161f64c243bb9b241a1fd8b7778a9dcdb732b002dd714143632c81b63ca928b7",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ComboZZZZEventProcess",
+      "line": 6424,
+      "lastLine": 6446,
+      "sha256": "146dec7d19c1ad45910d2a35610f7966f5e68fce41e46431688eedb2c8e32a37",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboZZZXEventProcess",
+      "line": 6447,
+      "lastLine": 6464,
+      "sha256": "07fbbf04a2214069379494e44206887bfb2db01ceadee98e086f90ff2101d6a8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboXEventProcess",
+      "line": 6465,
+      "lastLine": 6490,
+      "sha256": "23b5f176a2996d77b276d872c72a0f1ea9af9d2289bbd5aea6c724af56924bf7",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ComboXXEventProcess",
+      "line": 6491,
+      "lastLine": 6514,
+      "sha256": "aa47a9957dfe4afddbe9ccbc618cc87e61828416ac2b03d96f5f47ac8acceca0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboXXXEventProcess",
+      "line": 6515,
+      "lastLine": 6532,
+      "sha256": "6c5101c6669041441edc010197e7085852cf8b396e3503b4b378d090cab71263",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ComboXXZEventProcess",
+      "line": 6533,
+      "lastLine": 6550,
+      "sha256": "a9686b4a1224539a1f939b76fad33a5c5b4dadd835c19a8d25159a923a488c54",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpAttackZEventProcess",
+      "line": 6551,
+      "lastLine": 6569,
+      "sha256": "499ad3f0a484e1acf7fb5ac3becee32d4d31b43d3b4a33599696eeaced559382",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpAttackZFrameMoveFuture",
+      "line": 6570,
+      "lastLine": 6578,
+      "sha256": "ce41baa86a69a686633a7bfb4d0ce5a9f94c015dff60ae1b0dfd316177516e43",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpAttackXEventProcess",
+      "line": 6579,
+      "lastLine": 6597,
+      "sha256": "eab2f44ee4ae85f1a15b24e932fddbf53892c50ad59fb7061d1c29f94a3506ec",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "JumpAttackXFrameMoveFuture",
+      "line": 6598,
+      "lastLine": 6606,
+      "sha256": "69c4db1698e8ceed44b84902dbd2e74f26e081d3664a4aeec95a79b2b7e008bc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashComboZEventProcess",
+      "line": 6607,
+      "lastLine": 6644,
+      "sha256": "68431fa4f5f345ce3a2af2a21b12acd4e912beeccaca1c64725c4baedc171e54",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "DashComboZZEventProcess",
+      "line": 6645,
+      "lastLine": 6657,
+      "sha256": "2462dd92ef3dddee3a67502265fb6f97946efd3b1adfada39666178369f25f7f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashComboXEventProcess",
+      "line": 6658,
+      "lastLine": 6670,
+      "sha256": "ea6b52e7b017fb20cda812faee0a4b08bcc18288fc8c187dfa100f851d9ac5e9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpComboZEventProcess",
+      "line": 6671,
+      "lastLine": 6681,
+      "sha256": "4dacbae7497e05ef324f7ad01820a12d6269d0f62dfc7b5cd3946e860c0e71d5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpComboZZEventProcess",
+      "line": 6682,
+      "lastLine": 6692,
+      "sha256": "f02f124596877cf269e9f5fd228f0a4b8e01769957714e6f558254c2c0a926c5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpComboZZZEventProcess",
+      "line": 6693,
+      "lastLine": 6704,
+      "sha256": "282f68f5bfc1fac4742d601768dfc64d5c394053179f9bb7a5e8863423859779",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpComboXEventProcess",
+      "line": 6705,
+      "lastLine": 6734,
+      "sha256": "f4429ac38cc7a07da9b50b7dcbd384e0b5a1e464eac1698e672b0b963815f05f",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "DashJumpComboXXEventProcess",
+      "line": 6735,
+      "lastLine": 6743,
+      "sha256": "49239a10f3db27d47d8ed3bfb1bbe96d67a90e50f3c74728cfbea907461f556b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DashJumpComboXXLandingEventProcess",
+      "line": 6744,
+      "lastLine": 6757,
+      "sha256": "453fc531a063218efc78cc11241f55db4c494cc8295c6c998773c3c7ec32eb69",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_CAN_NOT_ATTACK_JUMP_DOWN_EventProcess",
+      "line": 6759,
+      "lastLine": 6788,
+      "sha256": "a3b50551debce72fc939d66babb3b13feeecf04f1765195d6951334e0f1998a5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_Init",
+      "line": 6794,
+      "lastLine": 6801,
+      "sha256": "b81dda3c63763385e98bba40c0adb2e9ba1d1bf363188bdfc8b468de87e099df",
+      "literalResources": [
+        "Colorballgray.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "RingAlpha.dds",
+        "Smoke.dds",
+        "waldo_trock_specialAttackB_particle.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_FrameMove",
+      "line": 6802,
+      "lastLine": 6818,
+      "sha256": "8e8692a6048d5a250540fc5630dd9cc14f98ef6e6982a620747521f9072b43b6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_StartFuture",
+      "line": 6819,
+      "lastLine": 6827,
+      "sha256": "100fe9dd653a4e5871bd2c07477eb0196d964872ef3448df08560a3f35bd3915",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_EventProcess",
+      "line": 6828,
+      "lastLine": 6865,
+      "sha256": "91f4f0260d86387518754f77f15003fb07ff923aaec760f1dfbd3a902a81304f",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK_StartFuture",
+      "line": 6867,
+      "lastLine": 6872,
+      "sha256": "de1d855c6c9b544ec6bd4145d52c3709ac3739ff9460ebee2c39081ffa598dfd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK_EventProcess",
+      "line": 6874,
+      "lastLine": 6898,
+      "sha256": "4bf2e511ce5c0b0647fe2361f8ec9a05db00e4ec87e7226c5be47863b4505098",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_SECOND_StartFuture",
+      "line": 6901,
+      "lastLine": 6907,
+      "sha256": "26a0960491931ba93c5a8e192667a78d60ec825a7c04011ff03e4589e8ea3231",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z_EventProcess",
+      "line": 6911,
+      "lastLine": 6934,
+      "sha256": "3e3c14f705dfaa9a1f27d16722132eb26edc58dcee5be9ace0a8995de39346b4",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_LEAP_CRASH_Init",
+      "line": 6936,
+      "lastLine": 6942,
+      "sha256": "1499608a7f1e83b885799d6312825c036effb8547c3198695b6723e1a5483915",
+      "literalResources": [
+        "Colorballgray.dds",
+        "GroundShockWave02.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Smoke.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_LEAP_CRASH_EventProcess",
+      "line": 6943,
+      "lastLine": 6961,
+      "sha256": "bd7160bb1166d5d180fe91172705b9ed135b4ce401360d4d754b0abb8563bc02",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_LEAP_CRASH_JUMP_EventProcess",
+      "line": 6962,
+      "lastLine": 6980,
+      "sha256": "8f5e8f580b9d3859eeb006788f78cd6383206cdba8c79777261ae620929ba1ab",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_LEAP_CRASH_JUMP_LANDING_EventProcess",
+      "line": 6981,
+      "lastLine": 6994,
+      "sha256": "50282823628f34cf473c62b42dcff093136d2681d476d2c928359f6c5d4a1153",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_StartFuture",
+      "line": 7001,
+      "lastLine": 7005,
+      "sha256": "26a4d844d67f6ef245943daca59837cbeaa27742ec451d5b6cfc79895b87bf48",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_Init",
+      "line": 7006,
+      "lastLine": 7016,
+      "sha256": "5f9ce06625af260dad1e0c1c4cdd113b7ed99dd84c4195963d6111554ab354f1",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "Colorballgray.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "RingAlpha.dds",
+        "Smoke.dds",
+        "Whitecircle03.dds",
+        "title_StarLight_Smash_spark.dds",
+        "waldo_trock_specialAttackB_particle.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_EventProcess",
+      "line": 7017,
+      "lastLine": 7061,
+      "sha256": "ad558c71885321abfdc544afab447f6320902328d2d28512dc1678659193881a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_StateStart",
+      "line": 7064,
+      "lastLine": 7068,
+      "sha256": "7aa59c5a7b355e778f842147dc370a2440214d83c70176c3622aea987314b7fd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_2nd_StartFuture",
+      "line": 7072,
+      "lastLine": 7076,
+      "sha256": "17bf68f6240c5ba69516999219262a8c13e058234a543eeb09511960534b115a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_2nd_EventProcess",
+      "line": 7081,
+      "lastLine": 7139,
+      "sha256": "b8d19a0f4237f93c5f6b274f32f8dda2164fabca4f2ee98e2e6b637247d8d5d2",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_RUSHING_SWORD_3rd_EventProcess",
+      "line": 7140,
+      "lastLine": 7153,
+      "sha256": "49997bcf3baa16209b3572d9376e42e03925a19941077ee687d4d0cd522ecaa4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_KICK_Start",
+      "line": 7155,
+      "lastLine": 7171,
+      "sha256": "bae3104b45a43904192f14de33f51b1716d23d0dbecc9697819650226c9517dc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_KICK_Init",
+      "line": 7172,
+      "lastLine": 7176,
+      "sha256": "28d962f6bd14e2aaebc508a6d1eae5038ce90ec42f21f4f37beaf95dda365170",
+      "literalResources": [
+        "ColorBallGray.dds",
+        "Condense_Pulse01.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_KICK_EventProcess",
+      "line": 7177,
+      "lastLine": 7190,
+      "sha256": "7573e360b056ae5f504e232f51e88d8019bbdfc7d007a6b14d3465a09b254567",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_MEGA_SLASH_Init",
+      "line": 7192,
+      "lastLine": 7208,
+      "sha256": "a195585f83a797c5f1742b84520a9cc72b7e77cba85c8f65ff8bc680f44dcd9b",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_04.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Fire_Dummy.x",
+        "Mega_Slash_Trace_Dummy.x",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "Stat_Reverse.tga",
+        "Stat_Reverse2.tga",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_MEGA_SLASH_EventProcess",
+      "line": 7209,
+      "lastLine": 7222,
+      "sha256": "4dedb3854a76e5cda81a619c62463e893bc83c11ff25d662f431338671cbf937",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_Init",
+      "line": 7224,
+      "lastLine": 7240,
+      "sha256": "26b81cb04d2d8984976beb529946a63f856a1736f3e51872a0d1a470d50fefce",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Particle_Blur.dds",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_EventProcess",
+      "line": 7241,
+      "lastLine": 7254,
+      "sha256": "21c9f968871178bc38a5f1541c55015011727c15b0c62228c66481f275cc4f0d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_READY_StartFuture",
+      "line": 7258,
+      "lastLine": 7264,
+      "sha256": "4f88505bf3b6e037f04e7afa98cec583837f4314acc6fd82a11333f3171ce302",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_READY_EventProcess",
+      "line": 7267,
+      "lastLine": 7273,
+      "sha256": "164714761468add77effebb3a8d09c8e047c8d23638602e2b89926b1710a5422",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_CHARGE_FrameMove",
+      "line": 7276,
+      "lastLine": 7280,
+      "sha256": "97b812eab165474e5c8610c498d02349b43489ef2ff5c6ab45ca92aedebde028",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_CHARGE_EventProcess",
+      "line": 7283,
+      "lastLine": 7298,
+      "sha256": "25b61605d31c64b5932daa772b1bb9c66bdaa709d08ecfbe79b45a60afd4f2a5",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_FIRE_EventProcess",
+      "line": 7300,
+      "lastLine": 7315,
+      "sha256": "639a57536877a72cae39afe5ccb7d2744400f9e67a220deac7e7fea286052825",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STAB_MEMO_FIRE_CHARGED_EventProcess",
+      "line": 7317,
+      "lastLine": 7332,
+      "sha256": "b26f0431573c511b6cd9e32e4d930b9318195c1c60bd95746fbb3b460a56d1df",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY_StartFuture",
+      "line": 7335,
+      "lastLine": 7341,
+      "sha256": "91b66036c22af982563c0c89c31a1d03e63b02f67dd73753b0f9c3a426e9d986",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY_EventProcess",
+      "line": 7344,
+      "lastLine": 7352,
+      "sha256": "c0e328e405d11ee7d4d4fff51f172fe7c95579d6ec0c1cbf2d4bbb1e22e52f25",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE_FrameMove",
+      "line": 7354,
+      "lastLine": 7369,
+      "sha256": "54a97a72c6ce861e0c915a10ef997a2c4946a2f1d4eed46cdd172f08eaed01a3",
+      "literalResources": [
+        "EffectSet_SA_EL_SONIC_ASSAULT_CHARGE"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE_EventProcess",
+      "line": 7371,
+      "lastLine": 7381,
+      "sha256": "fa56414ef8c55a0bfb4c5e04c68810d08d05e4f4547c72fdca87d3c5f84bdc6e",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_StateStart",
+      "line": 7383,
+      "lastLine": 7388,
+      "sha256": "9674e8519b85eb58652b1a3ac20fb4ae560ea72df40d962a15ded0d48b79b4a1",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_FrameMove",
+      "line": 7391,
+      "lastLine": 7408,
+      "sha256": "2477cf4811e6bf71ad4cbd4a1f60e704534869c7ec0a7a34725fb21520ff53e0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_EventProcess",
+      "line": 7411,
+      "lastLine": 7426,
+      "sha256": "a77be1bd857b32e4e66f375cfb9a3940bcdbc086111b507e84f6434a4988cd01",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "IsElesisMemoSkillKeyHeld",
+      "line": 7428,
+      "lastLine": 7443,
+      "sha256": "56a17601626c52a447ecfb442c74208684dcb29f22ae1d9a8c8413d14401e6d1",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_ThirdPath_CreateState",
+      "line": 7447,
+      "lastLine": 7453,
+      "sha256": "a8a3279b0c721d8f54f8f46d39219b7e0dc7dd9b075bb766fb8268373420710e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_ThirdPath_CreateChainedState",
+      "line": 7455,
+      "lastLine": 7460,
+      "sha256": "a62997041e50b9c8d63626eafe72a602e07aa65d49da0a3295478c9631dd4afd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_ThirdPath_OneShot_EventProcess",
+      "line": 7462,
+      "lastLine": 7483,
+      "sha256": "122b7f42e9cd4dcf99581a7dcf62ce109b679e906c51204f1b8e0d1896619b68",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_ThirdPath_Chain_EventProcess",
+      "line": 7485,
+      "lastLine": 7511,
+      "sha256": "efdc872deb2beb0da58538a7e0a8cf88bf60b1eda26201942576170c32580728",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "IsELSkillKeyHeld",
+      "line": 7514,
+      "lastLine": 7529,
+      "sha256": "349e5dbbad87a763186c160c04c49f8bbab50856ea0666c9ecc10836e5bf8918",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "IsAnyELSkillKeyHeld",
+      "line": 7532,
+      "lastLine": 7536,
+      "sha256": "9a19493185388a0f4db00ede08ff8a31bb1dcee3cef84cacc3be281901c42aaa",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ClearShadowLinkEffects",
+      "line": 7540,
+      "lastLine": 7558,
+      "sha256": "fe52b2d7f2244a6f22a7a804ffcc208ac8d75f9fd07f01e4a760310f83b2d0e9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "TickShadowLinkEffects",
+      "line": 7560,
+      "lastLine": 7607,
+      "sha256": "6eadc553c988ebd839d00928e64deb55489be998503e9dd8486a494749739d25",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ProcShadowLinkEffects",
+      "line": 7609,
+      "lastLine": 7636,
+      "sha256": "cbfe872e07e31d9f7891d28e8a8ea603e616ffeaa5a58ecb51fe6ea2d5ee74b5",
+      "literalResources": [
+        "EffectSet_B_EL_SDC_Bleeding"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_CHARGE_StartFuture",
+      "line": 7639,
+      "lastLine": 7644,
+      "sha256": "6f602380b879195636212426cd7bc4fa67db8a9fbbad88bb546c17eb1d74277f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_CHARGE_Start",
+      "line": 7646,
+      "lastLine": 7651,
+      "sha256": "30985079799629e0997b7f1935589a6457f7198ef5fd042759a3d9f808d43538",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_EventProcess",
+      "line": 7653,
+      "lastLine": 7659,
+      "sha256": "8edbaf58a6a038a3f67344352fd7c3d188e724fa0c63719c51af7cad9369e6d5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_FrameMove",
+      "line": 7662,
+      "lastLine": 7687,
+      "sha256": "5a3ff9194accd72d683c2b75fbb9623754a73ea8269c64093187110fe38e394d",
+      "literalResources": [
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Charge_1",
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Charge_2",
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Charge_3"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ConsumeWayOfSwordPoint",
+      "line": 7689,
+      "lastLine": 7701,
+      "sha256": "b91341f4fb7dac222791e16115067f14066d8baf7392cc6666ba5ecbbd1a4f53",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_ATTACK_FrameMove",
+      "line": 7704,
+      "lastLine": 7729,
+      "sha256": "1f2b1300ed3ba899be5c33bcf9291b68bf64ead95bc5bac31ff42fd921b07642",
+      "literalResources": [
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Attack_1000",
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Attack_1250",
+        "EffectSet_SI_SA_SDK_EJECTION_BUSTER_Attack_1500"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_SDK_DARK_WAVE_FrameMove",
+      "line": 7731,
+      "lastLine": 7748,
+      "sha256": "c16fa16a2564b688dbfe48ccd67fecff6659571f90a3c4d36bd5de51ea9191c9",
+      "literalResources": [
+        "DamageEffect_A_SDK_DARK_WAVE_DUMMY",
+        "EffectSet_A_SDK_DARK_WAVE_HIT_Impact",
+        "EffectSet_A_SDK_DARK_WAVE_HIT_Pushing"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SA_SCA_CRIMSON_BREAK_DamageFrameMove",
+      "line": 7759,
+      "lastLine": 7770,
+      "sha256": "3e77c99b9d5d27c64dbfa001e9a44c241624aeff7c0bf18594baed30c8d30721",
+      "literalResources": [
+        "DamageEffect_SA_SCA_Crimson_Break_DUMMY",
+        "EffectSet_SA_SCA_CRIMSON_BREAK_Attack"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SA_SDK_BRUTAL_CUTTER_BuffFrameMove",
+      "line": 7772,
+      "lastLine": 7781,
+      "sha256": "1d0822849ffa92b53e5e272a945f573d18abc76909feac4e2749048b78288393",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_SHADE_THE_ILLUSION_DamageFrameMove",
+      "line": 7782,
+      "lastLine": 7798,
+      "sha256": "386f86e54c9bd5071858639a0952aaf01381ec2af33a71876b9e6e3df8ead3b5",
+      "literalResources": [
+        "DamageEffect_SI_SA_SCA_SHADE_THE_ILLUSION_DUMMY",
+        "EffectSet_SI_SA_SCA_SHADE_THE_ILLUSION_Attack"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_A_SCA_SHADOW_EDGE_DamageFrameMove",
+      "line": 7800,
+      "lastLine": 7866,
+      "sha256": "0c06c833e15e37aec1c5ede875b395b06cb0ceb7f329b12313fde7e5734c2053",
+      "literalResources": [
+        "DAMAGE_EFFECT_SCA_SHADOW_EDGE_Link",
+        "DamageEffect_SCA_SHADOW_EDGE_Projectile_EXPLOSION",
+        "EffectSet_A_SCA_SHADOW_EDGE_Projectile"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SDK_INJECTION_STIGMA_DamageFrameMove",
+      "line": 7868,
+      "lastLine": 7884,
+      "sha256": "fba79304c84faae405b1a07643110971c6d65dd76c3a845249b018acecc06bd0",
+      "literalResources": [
+        "DamageEffect_SI_A_SDK_INJECTION_STIGMA_DUMMY",
+        "EffectSet_SI_A_SDK_INJECTION_STIGMA"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SA_SDK_BRANDISH_BREAKER_START_StateStart",
+      "line": 7889,
+      "lastLine": 7894,
+      "sha256": "506e16cbc82f6b882297c1b82e181654a839a5ea673e6dfb8def898807a724dc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BRANDISH_BREAKER_START_EventProcess",
+      "line": 7896,
+      "lastLine": 7911,
+      "sha256": "d98da28cce977b27aa11d14eb763236a69bf8096685ad4b389d9dcf2718bc131",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BRANDISH_BREAKER_LOOP_FrameMove",
+      "line": 7913,
+      "lastLine": 7925,
+      "sha256": "64d386dfadd65983fedd6d21f9fedb545d855cd131d285e156b6534da23fb480",
+      "literalResources": [
+        "DamageEffect_SA_SDK_BRANDISH_BREAKER_LOOP_DUMMY"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BRANDISH_BREAKER_LOOP_EventProcess",
+      "line": 7927,
+      "lastLine": 7932,
+      "sha256": "51263b45ad7d038e1fb25cd189e67a0854d7b88c8f125caad2b39e6266bbb97d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BURNING_PHANTOM_READY_StateStart",
+      "line": 7936,
+      "lastLine": 7941,
+      "sha256": "84126078d4c6f9cca28629ad237abebc6608e88e0687ce3240b3bf3eaa0dbfe6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BURNING_PHANTOM_LOOP_FrameMove",
+      "line": 7943,
+      "lastLine": 7955,
+      "sha256": "9fcb15354cae77dabdc9ce3a2189cca51114be077bff5134dbb7e0cb28ddbaa4",
+      "literalResources": [
+        "DamageEffect_SA_SDK_BURNING_PHANTOM_LOOP_DUMMY"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BURNING_PHANTOM_LOOP_EventProcess",
+      "line": 7957,
+      "lastLine": 7962,
+      "sha256": "f6cfd6be5262b8a149792f6af2bcc88b9034bc1dc8ef5c503c01682cb2eea053",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_START_StateStartFuture",
+      "line": 7966,
+      "lastLine": 7970,
+      "sha256": "fbc6bae60508cb3813b583867058c6a5b011253eedbc75ef3a3770b0fb0f2518",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_START_FrameMove",
+      "line": 7972,
+      "lastLine": 7992,
+      "sha256": "3df1148988490ffe33a9b57cd3e9970fb821f24c06c9cbca7852093a546afe79",
+      "literalResources": [
+        "DamageEffect_SI_SA_SCA_DREAD_WEAPON_Loop_DUMMY",
+        "EffectSet_SI_SA_SCA_DREAD_WEAPON_Loop"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_LOOP_StateStartFuture",
+      "line": 7994,
+      "lastLine": 7998,
+      "sha256": "a085a613afc8a9c811ec653e33a32a3d57235b63b52102ed07df045145c312f6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_LOOP_EventProcess",
+      "line": 8000,
+      "lastLine": 8015,
+      "sha256": "0d6049ac5b1d996fc1c214960b69607ef178cb2a96804c2c05ac4556433d8cea",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_END_StateStart",
+      "line": 8017,
+      "lastLine": 8023,
+      "sha256": "99aa907ed135690bbed52c40a0be8cc31e3338fe664c8758b721d0e2a9c471f9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_BLOOD_CUTTER_DamageFrameMove",
+      "line": 8027,
+      "lastLine": 8036,
+      "sha256": "acca6dd31c93c2bbb58dbd149250cd045c1220626c2784e70f0b1a8a774502a8",
+      "literalResources": [
+        "DamageEffect_SI_SA_SCA_BLOOD_CUTTER_DUMMY"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SCA_SHADE_SCRATCH_EventProcess",
+      "line": 8040,
+      "lastLine": 8064,
+      "sha256": "e1dcfc8c7aaac3a5b4cd1e4722b19c27b96f08cd3b6150c8aa68ba81df77869e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_ATTACK_EventProcess",
+      "line": 8068,
+      "lastLine": 8086,
+      "sha256": "5f4c5e257da185050095b0aa733984e881b3e2cf0fbdeaa70b544c47290b7761",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BRUTAL_CUTTER_StateInit",
+      "line": 8090,
+      "lastLine": 8099,
+      "sha256": "133f5d8e39190d21e40a32837289e2686b030581232fcdb997fa5ce6d48ae74b",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "Brutal_Cutter_Weapon_T.X",
+        "Brutal_Cutter_Weapon_W.X",
+        "ELK_WIND_SLICER_M02.Y",
+        "EL_Base_Blood_M01.dds",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_EJECTION_BUSTER_StateInit",
+      "line": 8100,
+      "lastLine": 8113,
+      "sha256": "b0eec603f61be42fc5ff327a0b0c3b29d4d2fede9d71b4ec43a108c70bb05bc4",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "Ejection_Buster_Oura.Y",
+        "Ejection_Buster_Oura4.Y",
+        "Ejection_Buster_Oura5.Y",
+        "Ejection_Buster_Oura6.Y",
+        "Ejection_Buster_Weapon.X",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SCA_CRIMSON_BREAK_PE02.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_EJECTION_BUSTER_Attack01.X",
+        "SDK_Ejection_Buster_Blade01.Y"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BRANDISH_BREAKER_StateInit",
+      "line": 8114,
+      "lastLine": 8121,
+      "sha256": "cb77414c73b480830e1c34aa6af8f1dffdb2d069334e06a0f4292f11194bdbe6",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BRANDISH_BREAKER_DUMMY01.X",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SDK_BURNING_PHANTOM_StateInit",
+      "line": 8122,
+      "lastLine": 8130,
+      "sha256": "711e997999ab08ee17af9f726148218925b2851006dbfda4128b8155a707796b",
+      "literalResources": [
+        "DummyAttackBox_50x50x50.X",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BURNING_PHANTOM_P001.Y",
+        "SDK_BURNING_PHANTOM_StartDummy.X",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_CRIMSON_BREAK_StateInit",
+      "line": 8131,
+      "lastLine": 8139,
+      "sha256": "7952eca2fad29307dad65167af68ee259c41add64e4a1c820839927568ef5c80",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.x",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_DREAD_WEAPON_StateInit",
+      "line": 8140,
+      "lastLine": 8152,
+      "sha256": "bf9325d29c8febc719c3ef4db7ad421d0222ed0c77e7739ae4bea5e5d4ed7bc4",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "Brutal_Cutter_Weapon_T.X",
+        "Brutal_Cutter_Weapon_W.X",
+        "DREAD_WEAPON_TRACE01.X",
+        "DREAD_WEAPON_TRACE02.X",
+        "DREAD_WEAPON_sawtooth.X",
+        "EL_Base_Blood_M01.dds",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SCA_CRIMSON_BREAK_PE02.Y",
+        "SDK_AIRWAVE_T01.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_SHADE_THE_ILLUSION_StateInit",
+      "line": 8153,
+      "lastLine": 8166,
+      "sha256": "1fbeef764d5ce35c33ca06890df4aa3d7c0ef660abbe2fddd81b758213e61b9f",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.X",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SCA_CRIMSON_BREAK_PE02.Y",
+        "SCA_SHADE_THE_ILLUSION_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BURNING_PHANTOM_P001.Y",
+        "SDK_BURNING_PHANTOM_PT01.X",
+        "SDK_BURNING_PHANTOM_Storm001.Y",
+        "SHADE_THE_ILLUSION_Shadow.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SCA_BLOOD_CUTTER_StateInit",
+      "line": 8167,
+      "lastLine": 8176,
+      "sha256": "11a1d45f843283795acaf6d49d795f0b86bbe1f24ae09345878475e4a5ebfe82",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "BLOOD_CUTTER_Weapon.X",
+        "BLOOD_CUTTER_Weapon_T01.X",
+        "BLOOD_CUTTER_Weapon_TRACE.X",
+        "SCA_BLOOD_CUTTER_TRACE01.dds",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SDK_INJECTION_STIGMA_StateInit",
+      "line": 8177,
+      "lastLine": 8186,
+      "sha256": "4015a7dde3b5112f0cffa7ea4c1c6184bd266b8916af5c124c3bf34b1926b004",
+      "literalResources": [
+        "ASL_HIT_P001.dds",
+        "DummyAttackBox_50x50x50.X",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BURNING_PHANTOM_PT01.X",
+        "SDK_BURNING_PHANTOM_Storm001.Y",
+        "SDK_INJECTION_STIGMA_Blade01.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SDK_DARK_WAVE_StateInit",
+      "line": 8187,
+      "lastLine": 8194,
+      "sha256": "e0362cc50887c60fce107cb3b23046c239d397d1d5cde2f4b814b2c822b16580",
+      "literalResources": [
+        "DummyAttackBox_50x50x50.X",
+        "ELK_WIND_SLICER_M02.Y",
+        "EL_Base_Blood_M01.dds",
+        "Ejection_Buster_Oura5.Y",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SCA_SHADE_SCRATCH_StateInit",
+      "line": 8195,
+      "lastLine": 8207,
+      "sha256": "cb010335809f7b1a3677feae411bea83b55e24a5796a63225c3e40437b4abd88",
+      "literalResources": [
+        "ALS_SHAKE_CHAOS_02.Y",
+        "DummyAttackBox_50x50x50.X",
+        "ELK_WIND_SLICER_M02.Y",
+        "EL_Base_Blood_M01.dds",
+        "Raven_Seven_Burst_MEMO_F01.Y",
+        "SCA_CRIMSON_BREAK_P01.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BURNING_PHANTOM_P001.Y",
+        "SDK_BURNING_PHANTOM_Storm001.Y",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SCA_SHADOW_EDGE_StateInit",
+      "line": 8208,
+      "lastLine": 8213,
+      "sha256": "8ee14aec50cc094523b5a6e27105e2566ad92bae38e3db3ca3b86af294e515fe",
+      "literalResources": [
+        "BREAKING_FIST_Attack_Box.x",
+        "SDK_BURNING_PHANTOM_Storm001.Y",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SCA_ASSAULT_STRIKE_StateInit",
+      "line": 8214,
+      "lastLine": 8220,
+      "sha256": "38d7a556b565d4dd3d084ce443a2e2a154a79a9c844b42701426f81ee782ca55",
+      "literalResources": [
+        "DEBUFF_MANA_BREAK.tga",
+        "DummyAttackBox_50x50x50.X",
+        "EL_Base_Blood_M01.dds",
+        "WhiteImage.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_HA_SCA_FATE_SMASHER_StateInit",
+      "line": 8221,
+      "lastLine": 8237,
+      "sha256": "ed6b8f85ef7d7435b8443538b3d0c9683494ab4d2dbf76c336e651b6034dec19",
+      "literalResources": [
+        "EL_Base_Blood_M01.dds",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "SCA_CRIMSON_BREAK_PT01.Y",
+        "SCA_FATE_SMASHER_BLADE01.X",
+        "SCA_FATE_SMASHER_DUMMY01.X",
+        "SCA_FATE_SMASHER_P001.Y",
+        "SDK_AIRWAVE_T01.dds",
+        "SDK_BRANDISH_BREAKER_DUMMY01.x",
+        "SDK_BURNING_PHANTOM_P001.Y",
+        "SDK_Ejection_Buster_Blade01.Y",
+        "WhiteImage.dds",
+        "cube_light_P02.dds",
+        "elsword_SA_rageCutter_attackSphere.X",
+        "smoke02.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SDKComboChain_EventProcess",
+      "line": 8243,
+      "lastLine": 8270,
+      "sha256": "ac1bbf2e19dd2f5b912ed01d612750a000710a4df1329e66e2690fdd4157a6a8",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SDKComboChain_Z_EventProcess",
+      "line": 8274,
+      "lastLine": 8301,
+      "sha256": "5f3887e0b63d39f1f216dc04a8c41e5941878720198ef6dddfa62c35bb447caa",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SCA_ZZ_EventProcess",
+      "line": 8306,
+      "lastLine": 8332,
+      "sha256": "ed5e7413c14f0045bd24f42336af464a5863b971e8af7a2761baddc4e51d9304",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SCA_ZX_START_EventProcess",
+      "line": 8335,
+      "lastLine": 8352,
+      "sha256": "4ae5b05e14f816ca104251c4e9231a624498758fde67e708ca8c797913fe9660",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SCA_ZZZ_Chain_EventProcess",
+      "line": 8355,
+      "lastLine": 8376,
+      "sha256": "f8749f7e2607847a9d1c813018d12f579c8fa386a3591299e9429324e6e27d8d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SCA_ZX_LOOP_EventProcess",
+      "line": 8378,
+      "lastLine": 8388,
+      "sha256": "4fd27158ddd5d755f6e659d55790803e33b0faa6c14852638dc8ddd0202bbc70",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_Init",
+      "line": 8391,
+      "lastLine": 8407,
+      "sha256": "e2aed8c65f5087e633a3f65a3d011660556fe3fbe7a0bd5c39eb533c7b9940ec",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Particle_Blur.dds",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_SONIC_ASSAULT_STING_EventProcess",
+      "line": 8408,
+      "lastLine": 8421,
+      "sha256": "d78cbd22644bb2914064fcce7cafdc02121166793d0ab5824c473d72eb0782c8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_WILD_SHOCK_Init",
+      "line": 8423,
+      "lastLine": 8437,
+      "sha256": "f935a03e0fbeaa21a84e5943a2ebb7e5a02b84bb9f414f5b9e0b2d1f6dd95a13",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "SA_EL_Wild_Shock_WAVE.tga",
+        "SI_SA_EL_WILD_SHOCK_ATTACKBOX.X",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_WILD_SHOCK_EventProcess",
+      "line": 8438,
+      "lastLine": 8451,
+      "sha256": "3163f3bc829e9b6583178eeef0c415e0d1cbd950e5671ab0fabe46188b0ebfcf",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_POWER_BURSTER_Init",
+      "line": 8453,
+      "lastLine": 8470,
+      "sha256": "fc64154036e91218842b9728301bb2015264ad8877be67f969663e988d892918",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_07.dds",
+        "EL_FIRE_10.dds",
+        "Effect_ElSword_FlameGagerLand.X",
+        "Elsword_SI_SA_Phoenix_Talon_Mesh02.X",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Particle_Blur.DDS",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "SA_EL_POWER_BURSTER_FIRE01.X",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_POWER_BURSTER_EventProcess",
+      "line": 8471,
+      "lastLine": 8484,
+      "sha256": "585a6b39f2ff2a7e861f82b6a55f59c37097e28fcf6aa2d9cbb3abd851197f7d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_MEGA_BURSTER_Init",
+      "line": 8486,
+      "lastLine": 8509,
+      "sha256": "89d10f19bfcabed5fb1cce3d3170e36cd25accd9c10faa9043257fa35ce6e022",
+      "literalResources": [
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "EL_FIRE_10.dds",
+        "Elsword_SI_SA_Phoenix_Talon_Mesh02.X",
+        "Explosion_Light02.dds",
+        "Flame_REVOLVER.dds",
+        "GroundShockWave02.dds",
+        "Light_Sigong_Box_Open01.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "NUI_CUTTYSARK_Dying_Landing_Effect_Hole.X",
+        "NUI_CUTTYSARK_Dying_Landing_Effect_Rock.X",
+        "Particle_Blur.DDS",
+        "Particle_Blur.dds",
+        "SA_EL_MEGA_BURSTER_FIRE_CIRCLE.X",
+        "SA_EL_MEGA_BURSTER_FIRE_Earth.X",
+        "SA_EL_MEGA_SLASH_FIRE02.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_MEGA_BURSTER_EventProcess",
+      "line": 8510,
+      "lastLine": 8523,
+      "sha256": "a12fea8a5946861a888b1580987b87b0db63138f1798ad6991bb589d1d5ea702",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_UNLIMITED_BLADE_Init",
+      "line": 8525,
+      "lastLine": 8542,
+      "sha256": "134fc3f25442210ed712f27b27ae5602432ce36e4d5fca042493abe57331e781",
+      "literalResources": [
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "COMET_CRASHER_Explosion_02.tga",
+        "ColorBallFire.dds",
+        "Effect_ElSword_FlameGagerLand.X",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Explosion_Light02.dds",
+        "GroundShockWave02.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Raven_Event_AC_Upbody21_Effect.tga",
+        "Particle_Blur.dds",
+        "Smoke.dds",
+        "Whitecircle03.dds",
+        "elsword_SA_SwordBlasting_circle.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_EL_UNLIMITED_BLADE_EventProcess",
+      "line": 8543,
+      "lastLine": 8556,
+      "sha256": "4818f3c52c6f56a22eb31943557fa58fc22a175875f3fec5276be838cae36c47",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_ENDURANCE_POWER_ACTIVE_Init",
+      "line": 8558,
+      "lastLine": 8563,
+      "sha256": "9d6dc96034e973eca25875976d26c79b5ff871303e537174f40c0f346c126db5",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "ColorBallGray.dds",
+        "HummingWind_AttackBox.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_ENDURANCE_POWER_ACTIVE_EventProcess",
+      "line": 8564,
+      "lastLine": 8587,
+      "sha256": "e7042a72394f7bc8168c334cba73a49a315e91fc49101438a1a63bca986a8071",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_EL_ENDURANCE_POWER_ACTIVE_StateStart",
+      "line": 8588,
+      "lastLine": 8637,
+      "sha256": "e02cbe4b0033128ff2c36630559902964fca32b6e7e1b952e5c7b99962d2f3a7",
+      "literalResources": [
+        "EffectSet_EL_ENDURANCE_POWER",
+        "EffectSet_EL_ENDURANCE_POWER_PUNISH"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_A_EL_ENDURANCE_POWER_ACTIVE_RAGE_StateStart",
+      "line": 8640,
+      "lastLine": 8649,
+      "sha256": "507f6b03893a301056da27fd80b0b9a36b57040c68220b10f453dbad54652386",
+      "literalResources": [
+        "EffectSet_EL_ENDURANCE_POWER"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "DoStateEndurancePowerRage",
+      "line": 8655,
+      "lastLine": 8673,
+      "sha256": "b9decf46873a48e72a11ab3ba2dcc6e6177bf0998c18cc09edc09a2fa46a34f8",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ProcessEndurancePowerSkill",
+      "line": 8674,
+      "lastLine": 8688,
+      "sha256": "b1c5ccb4da1a9b3bd13a0e9be7f17879bad896ddff7ce23e7589446d61bae3cc",
+      "literalResources": [
+        "EffectSet_ELSWORD_ENDURANCE",
+        "Elsword_Endurance.ogg"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_DASH_COMBO_SSK_ZZ_EventProcess",
+      "line": 8692,
+      "lastLine": 8707,
+      "sha256": "5fca428f8b1ba88ab52f3c9aa5e6a051afc71b72c8f5dafaf3a5665caea3c0ff",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SSK_ZZZ_EventProcess",
+      "line": 8708,
+      "lastLine": 8721,
+      "sha256": "6072a45133191c3cefee88d4fe7f2367fded6a2ff2c9981de2eac5480208c069",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SSK_ZZX_EventProcess",
+      "line": 8722,
+      "lastLine": 8735,
+      "sha256": "82f32e3c33aba1ffa374d05008068abba65c2ca91a69ef4f3ba92bef6a438a6e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SSK_XX_EventProcess",
+      "line": 8740,
+      "lastLine": 8765,
+      "sha256": "42b7e836a690bc2b27c1a41af3737ac427b09b11daa4d1e61c11df2e9fd4d58c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SSK_XXX_EventProcess",
+      "line": 8766,
+      "lastLine": 8782,
+      "sha256": "7d655528b01c925a2e86d59e2db546c1238a222a654e3b4415571ab512e5a00b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_CROSS_SLASH_Init",
+      "line": 8784,
+      "lastLine": 8796,
+      "sha256": "cded81e5800f3bb7b4eec46d050711acbfa8e6e7ac9a0458c95d1dfe1596c090",
+      "literalResources": [
+        "AirSlash02.X",
+        "Arme_Ring2.dds",
+        "Lire_SI_A_Low_Kick_Mesh02.X",
+        "Mesh_Raven_Event_AC_Upbody21_Effect.tga",
+        "Particle_Blur.DDS",
+        "Particle_Blur.dds",
+        "SA_SSK_EXTINCTION_END_FX_Blade.X",
+        "WhitePoint.dds",
+        "Whitecircle02.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_CROSS_SLASH_EventProcess",
+      "line": 8797,
+      "lastLine": 8810,
+      "sha256": "fe4c824166843e9bbcf9d2bd28be638ff495a43a804a87cc78030af8bda5d9fd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_POWER_BREAK_Init",
+      "line": 8813,
+      "lastLine": 8817,
+      "sha256": "06978bfd38e99259b07f7d1ac2cee7fcae9ac7573beabfa7678ad3567637e686",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_POWER_BREAK_EventProcess",
+      "line": 8818,
+      "lastLine": 8831,
+      "sha256": "6f5ef82ff96648f94b02b2426db4ab0086d19c1c2fb6a906b8b6f92defc35666",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_HEAVY_STUNNER_Init",
+      "line": 8833,
+      "lastLine": 8837,
+      "sha256": "40c28e73075bdb6d86c3544d28290d9b0e4f5deb4b513e8da00788a965f3b42e",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "ColorBallBlue.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SSK_HEAVY_STUNNER_EventProcess",
+      "line": 8838,
+      "lastLine": 8851,
+      "sha256": "c42a57251bd7a8da3393ab17c88722323ca06962bfd10219f951d65e76975263",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_SPIRAL_BLAST_Init",
+      "line": 8853,
+      "lastLine": 8869,
+      "sha256": "9bf2419207456f5a92f0f1e83008a33c3d95b6de5260b0e52fe844810cd3a324",
+      "literalResources": [
+        "ColorBallFire.dds",
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_06.dds",
+        "Flame_REVOLVER.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "Particle_Blur.dds",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "SA_EL_SA_SSK_SPIRAL_BLAST_01.X",
+        "SA_EL_SA_SSK_SPIRAL_BLAST_03.X",
+        "SpiralBlast01.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_SPIRAL_BLAST_EventProcess",
+      "line": 8870,
+      "lastLine": 8883,
+      "sha256": "c7a812c42f8c6126c02bfec7e7d4de783b55942194072969cae47e6b9d12f796",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "InitExtinction",
+      "line": 8886,
+      "lastLine": 8893,
+      "sha256": "077369940c8ee93f05d3241d521976306609dff4ea16cc09fb91d815b7ec5247",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CreateExctionUIEffect",
+      "line": 8894,
+      "lastLine": 8946,
+      "sha256": "e77c4db798f42a5c5305b39c56703009e9f16d48d1f492154d846ed5aa2fec03",
+      "literalResources": [
+        "Bip01",
+        "L",
+        "R",
+        "SA_SSK_EXTINCTION_CHARGE_P14_",
+        "SA_SSK_EXTINCTION_CHARGE_P15",
+        "_MEMO"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "DestoryExctionUIEffect",
+      "line": 8947,
+      "lastLine": 8958,
+      "sha256": "b1a9d240a3fae83b036f3fe5df13e5a6920b483fee968c0fc74a4c334b5077a7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "Extinction_FrameMoveFuture",
+      "line": 8959,
+      "lastLine": 8986,
+      "sha256": "e37880eb1543a30b3da378fed8a50bdcda7ba8bae3343955aac047d2534e72a9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_START_Init",
+      "line": 8988,
+      "lastLine": 9002,
+      "sha256": "4e333d4500ae2c62159a30d89f9fd2af6ebb3a5c210bf4879c6a2401c8808dd4",
+      "literalResources": [
+        "ColorBallFire.dds",
+        "Condense_Light01.dds",
+        "EXTINCTION_ATTACK_DUMMY.X",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "Lire_Kick_Impact01.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Raven_Event_AC_Upbody21_Effect.tga",
+        "Particle_Blur.dds",
+        "SA_SSK_EXTINCTION_END_FX_Blade.X",
+        "WhitePoint.dds",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_START_Start",
+      "line": 9003,
+      "lastLine": 9007,
+      "sha256": "917cbd7f94b596df5346008d43b9a342bbf27be912605fad53359324ec281298",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_START_StartFuture",
+      "line": 9008,
+      "lastLine": 9018,
+      "sha256": "dccd4dc5b04881a41f35dea1ab091ea34710f4b65fca2bdfb4adca8916150b6f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_START_EventProcess",
+      "line": 9019,
+      "lastLine": 9031,
+      "sha256": "d4972e6480005f0ed5d1181813bc8a0f415904b3850dd1e7a1f5ac353d9195cf",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_CHARGE_FrameMove",
+      "line": 9032,
+      "lastLine": 9037,
+      "sha256": "05657aa791d9af17daec7029151735b5b75dd111596e97f6f3d7178c120dc933",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_CHARGE_FrameMoveFuture",
+      "line": 9038,
+      "lastLine": 9044,
+      "sha256": "e0c20e63afa5531837c088450f81ce5ef566593e5e6dace9413fbe020ee02597",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_CHARGE_EventProcess",
+      "line": 9045,
+      "lastLine": 9067,
+      "sha256": "4d7a44fad7783a2c51cdebb3435173e63e9acf907da7f18f7b90c4056b4bf5af",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_ATTACK_FrameMove",
+      "line": 9069,
+      "lastLine": 9105,
+      "sha256": "768da59e988adffb9787fac619b8642e6aaf09c8b0b88270e292d8887e2d80d7",
+      "literalResources": [
+        "EffectSet_SA_SSK_EXTINCTION_DAMAGE"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_ATTACK_EventProcess",
+      "line": 9106,
+      "lastLine": 9129,
+      "sha256": "467c680ce82c84cec3b8e7b978b652dcca29e3741ce2d6ad1359d28cf3b3b01b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_ATTACK_StartFuture",
+      "line": 9130,
+      "lastLine": 9134,
+      "sha256": "7ef42c4c4b5d1b526643b63eb5aacd205dd541ff11bb72be1a1c252cdcf7ec35",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_UP_FrameMove",
+      "line": 9135,
+      "lastLine": 9157,
+      "sha256": "b63915754f809ac2b7e82f68f1f0c6cc23e76c5e8a4c47eea2365abf430a1158",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_UP_EventProcess",
+      "line": 9158,
+      "lastLine": 9183,
+      "sha256": "ee151cef4cc1128b6b4368788a57e339c75706ed9aef519fb6ecf53f991170a8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_UP_FrameMoveFuture",
+      "line": 9184,
+      "lastLine": 9190,
+      "sha256": "30d1f40c75bf0febe4beea1a5466edfb5a1cf39374037c7fc15d8e405aaa82f9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_DOWN_FrameMove",
+      "line": 9191,
+      "lastLine": 9213,
+      "sha256": "a4bcf9131df7d61e4324a7293b2b1333f63b19752dc77800d2a248a579a00463",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_DOWN_FrameMoveFuture",
+      "line": 9214,
+      "lastLine": 9220,
+      "sha256": "135acf84cc0c22ea1e7a57eccbbb0061b600e463152e0522ee659ee9fb8cfad5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_DOWN_EventProcess",
+      "line": 9221,
+      "lastLine": 9246,
+      "sha256": "9cabbbdb122a92aebacba4cbfbd4a9d9e5b9c7f1b81f8f938411771f45cd4480",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_VICTORIOUS_SWORD_Init",
+      "line": 9249,
+      "lastLine": 9266,
+      "sha256": "1bfeadeab895b79a2dce410d49f046d6d0074527b21b0649056ab0a1bf61cc30",
+      "literalResources": [
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "Explosion_Light02.dds",
+        "GroundShockWave02.dds",
+        "HummingWind_AttackBox.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Raven_Event_AC_Upbody21_Effect.tga",
+        "Particle_Blur.dds",
+        "SA_SPK_INFERNAL_BLADE_Weapon_Dummy.x",
+        "Whitecircle02.dds",
+        "Whitecircle03.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_VICTORIOUS_SWORD_EventProcess",
+      "line": 9267,
+      "lastLine": 9280,
+      "sha256": "be6811480e6502bd953699386900e7c08efd02d944ba313b24d3df0f6cf3a695",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_VICTORIOUS_SWORD_FrameMove",
+      "line": 9281,
+      "lastLine": 9314,
+      "sha256": "28c7d3ad5a0c2f2c26bee9c70d2658cd7e9e79183f0f72a0757a21c0d6d55213",
+      "literalResources": [
+        "EffectSet_SA_SGM_VICTORIOUS_SWORD_NEW",
+        "EffectSet_SA_SSK_VICTORIOUS_SWORD_FX_NEW"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_Init",
+      "line": 9316,
+      "lastLine": 9331,
+      "sha256": "31d5051203505b7027dfb9c28de4f112cc63251affbe6149c881ebe98b5f5569",
+      "literalResources": [
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "CenterLight_Gray01.dds",
+        "ColorBallFire.dds",
+        "Condense_Pulse02.dds",
+        "Elsword_Double_Slash_Mesh01.X",
+        "Elsword_Double_Slash_Mesh02.X",
+        "Explosion_Light02.dds",
+        "GroundShockWave02.dds",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "Particle_Blur.dds",
+        "aisha_active_energySpurt_circle.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_StateStartFuture",
+      "line": 9333,
+      "lastLine": 9342,
+      "sha256": "f10fc99979967d8c5dcebef6015d693065d3d5be46b03209585346f5e362930d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_StateStart",
+      "line": 9343,
+      "lastLine": 9353,
+      "sha256": "9e97c0c875e3ece22d610f28af4dff7b1e83c224202fb6979f3196faac61e928",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_EventProcess",
+      "line": 9355,
+      "lastLine": 9368,
+      "sha256": "6c1f42a40655204cf11f9f2b70af9a715b9bd7ddcb634c71b7dfadeb3514719e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SPK_ZX_EventProcess",
+      "line": 9372,
+      "lastLine": 9385,
+      "sha256": "08a0d3ae319a168ce247efe94c94ab239d1163015174a9489825d2391542217e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SPK_ZX_FrameMove",
+      "line": 9386,
+      "lastLine": 9400,
+      "sha256": "5e82eceee8e857498a9de8c9cb4981585494f6b9ce8f1390fb1e009dedccd28c",
+      "literalResources": [
+        "EffectSet_A_EL_Dash_Combo_ZX",
+        "EffectSet_A_EL_Dash_Combo_ZX_FAIL"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SPK_ZZ_EventProcess",
+      "line": 9401,
+      "lastLine": 9415,
+      "sha256": "bb0e440f53bb5135e506c7eebd8fa74d7d72bb680fe57ae7365421eea93fa4d7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SPK_ZZZ_EventProcess",
+      "line": 9416,
+      "lastLine": 9429,
+      "sha256": "ed13fa24c4273a039f4bfaa02e24fb32d06b10b12a12dabba276ef18932bdb05",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SPK_ZZZ_FrameMove",
+      "line": 9430,
+      "lastLine": 9444,
+      "sha256": "150db380a98b1a41b424b96692b9594e12da1ca34885f4ba5ad3b7d02dddb5f3",
+      "literalResources": [
+        "EffectSet_A_EL_Dash_Combo_ZZZ",
+        "EffectSet_A_EL_Dash_Combo_ZZZ_FAIL"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_EventProcess",
+      "line": 9445,
+      "lastLine": 9463,
+      "sha256": "de89a46c68005a430b7bb6fd859a59992577b094f70fdb0be27eb43f2070a3c4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_FrameMove",
+      "line": 9464,
+      "lastLine": 9490,
+      "sha256": "c4a6d5f52d8b3e72c49699f7b45e30eefc026fd2158432468b2180865c4293ad",
+      "literalResources": [
+        "EffectSet_A_EL_DashJump_Combo_XZ",
+        "EffectSet_A_EL_DashJump_Combo_XZ_FAIL",
+        "EffectSet_A_SBH_DashJump_Combo_XZ"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_StartFurture",
+      "line": 9494,
+      "lastLine": 9499,
+      "sha256": "d7bf29496ab32284059b0acc4324f4fb46eaa4b52a2929883874c83fa476dd4a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_REATTACK_StartFurture",
+      "line": 9503,
+      "lastLine": 9507,
+      "sha256": "4d03201634a44158127eb60e401dece028dd96a9c14f504304c42397f242471f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SPK_SWORD_ERUPTION_Init",
+      "line": 9509,
+      "lastLine": 9525,
+      "sha256": "ab457a02f435dc9c2415082e39ed72898028f8a1dfadcfb8eaa8dfe74123a863",
+      "literalResources": [
+        "A_SPK_SWORD_ERUPTION_BLADE.x",
+        "A_SPK_SWORD_ERUPTION_Square.x",
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "COMET_CRASHER_Explosion_02.tga",
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "Explosion_Light02.dds",
+        "Flame_REVOLVER.dds",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "Particle_Blur.DDS"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SPK_SWORD_ERUPTION_EventProcess",
+      "line": 9526,
+      "lastLine": 9539,
+      "sha256": "406869f8b4611d4d7ad3cbbc835b49fdefdb4566e39a57a8c55744d2ee69a360",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SPK_BIG_BURST_Init",
+      "line": 9541,
+      "lastLine": 9549,
+      "sha256": "d6be5b1c8bd76bd6b5d768c2b6051eb0c67e2d06517b516742b4459aff4f0502",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.X",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EL_FIRE_09.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SPK_BIG_BURST_EventProcess",
+      "line": 9550,
+      "lastLine": 9563,
+      "sha256": "53ef1e6d722a2bbc32680bb21a1b1ea482578fe0ad074a6a36823186fc0a3ddc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_BURST_RISING_Init",
+      "line": 9565,
+      "lastLine": 9577,
+      "sha256": "9a3a77013c992cd2459b560c68201d0c21fe3b934f91c72f3e064607cebb7118",
+      "literalResources": [
+        "A_SPK_SWORD_ERUPTION_BLADE.x",
+        "A_SPK_SWORD_ERUPTION_Square.x",
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EL_FIRE_09.dds",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "SA_EL_MEGA_BURSTER_FIRE_CIRCLE.X",
+        "SA_EL_MEGA_BURSTER_FIRE_Earth.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_BURST_RISING_EventProcess",
+      "line": 9578,
+      "lastLine": 9591,
+      "sha256": "7bdc634ea01e61e63715c42ef84c6b4fae1a546f9a7eb43c786da522d8f9a6db",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_BURST_WAVE_Init",
+      "line": 9593,
+      "lastLine": 9613,
+      "sha256": "fd5ce88c8d4bd67f2b9d8a0c04665299609015cddf36f6b37c47e411a8df28ed",
+      "literalResources": [
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "Condense_Pulse02.dds",
+        "DummyAttackBox_200x200x200.X",
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "EL_FIRE_07.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light02.dds",
+        "Flame_REVOLVER.dds",
+        "GroundShockWave02.dds",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "Particle_Blur.DDS",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "elsword_SA_rageCutter_smogPoint.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_BURST_WAVE_EventProcess",
+      "line": 9614,
+      "lastLine": 9627,
+      "sha256": "d5281983b3de764956aa9a74ace07698d7ad7f60cfbfb92bd78d1f81b28f0ec2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_SWORDFIRE_Init",
+      "line": 9629,
+      "lastLine": 9632,
+      "sha256": "a0538be7b41a4f818567357271c44b862d2375ff053d0cdb3d2c597001e7f164",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_SWORDFIRE_EventProcess",
+      "line": 9633,
+      "lastLine": 9658,
+      "sha256": "d5967fe6ddcfc7c6a87bea6d3bca3a507d00e45b2e860904d8984400313b8bf5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_INFERNAL_BLADE_Init",
+      "line": 9660,
+      "lastLine": 9671,
+      "sha256": "836d75f53b3ae3ac317f59639c3a28774e9076dbddabe608e3340cc2dd135347",
+      "literalResources": [
+        "EL_FIRE_01.dds",
+        "EL_FIRE_02.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "Explosion_Fire01.dds",
+        "Explosion_Light01.dds",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "SA_SPK_INFERNAL_BLADE_Weapon_Dummy.x",
+        "Whitecircle03.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_INFERNAL_BLADE_EventProcess",
+      "line": 9672,
+      "lastLine": 9684,
+      "sha256": "3104b66c9d5f3adab90dd4994e9aa59e2749387c43d8ff6f37f05f241c38690d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_ETERNAL_FIRE_Init",
+      "line": 9686,
+      "lastLine": 9702,
+      "sha256": "8a3d86721d02ab45c3bd15d548a06e0ea47c8a2a2cd12318dd5e335965b660b1",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_10.dds",
+        "Elsword_SI_SA_Phoenix_Talon_Mesh02.X",
+        "Explosion_Fire01.dds",
+        "GroundShockWave02.dds",
+        "Particle_Blur.DDS",
+        "Particle_Blur.dds",
+        "SA_EL_MEGA_SLASH_FIRE02.dds",
+        "SA_SPK_ETERNAL_FIRE_Fire_Circle01.x",
+        "SA_SPK_ETERNAL_FIRE_Fire_Circle02.x",
+        "SA_SPK_ETERNAL_FIRE_Fire_Circle03.x",
+        "state_potion_flare.DDS",
+        "stone_AirShip.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SPK_ETERNAL_FIRE_EventProcess",
+      "line": 9703,
+      "lastLine": 9716,
+      "sha256": "439027e651b70352a4e65a00ff55731da4dbd836ef5349f66d3fcf2f2a5a7718",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SGM_XZ_Init",
+      "line": 9721,
+      "lastLine": 9727,
+      "sha256": "acaa01dfee5858507dc5636d7fdabccc1c9849c02bee501d86331cf8d61420d0",
+      "literalResources": [
+        "Ara_Dash_Combo_X_M01.X",
+        "DummyAttackBox_50x50x50.X",
+        "GroundShockWave02.dds",
+        "SGM_DASH_JUMP_COMBO_XZ_M01.X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SGM_XZ_EventProcess",
+      "line": 9729,
+      "lastLine": 9736,
+      "sha256": "9a56e7436c0d638d94f00c71f2d90cf903d345bb4bdb1d027ca13c0629f21316",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SGM_XZ_LOOP_EventProcess",
+      "line": 9739,
+      "lastLine": 9748,
+      "sha256": "e27ba01f660214167a5382965526526ddd68633fa6fd58e5d49094a3d5bb69dd",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN_EventProcess",
+      "line": 9751,
+      "lastLine": 9766,
+      "sha256": "78aa218663092d0728398babc2a7a8a47d605231a692baa5289ec74676bc12ad",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_START_Init",
+      "line": 9770,
+      "lastLine": 9777,
+      "sha256": "3d9faeb60b22b52097c980fdaa6f520abaa5800b4df705c1b7fde313feee879d",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "Elsword_SI_A_ES_WINDMILL_Mesh01.X",
+        "Elsword_SI_A_ES_WINDMILL_Mesh02.X",
+        "SA_SSK_EXTINCTION_END_FX_Blade.X",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_START_FrameMove",
+      "line": 9779,
+      "lastLine": 9798,
+      "sha256": "66d90cd639c63f6df294945e52606ee442e8a5c630be0305cddab9ce66eba053",
+      "literalResources": [
+        "EffectSet_SGM_XXX_Start"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_START_StateStart",
+      "line": 9802,
+      "lastLine": 9808,
+      "sha256": "38d5a96dbf6905112d7aa2cec5e6de94819eafcfd47e73e0817604d25def2f01",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_START_EventProcess",
+      "line": 9810,
+      "lastLine": 9828,
+      "sha256": "3d6b543d73e0842e176a97e28bd3ef9310df09a569d14d70800d6f7722412f6c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_LOOP_EventProcess",
+      "line": 9831,
+      "lastLine": 9843,
+      "sha256": "2bfedcc4afcda412c69e6535512e303b95527be9d69eb970969bebfdc407a656",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SGM_XX_DOWN_X_END_EventProcess",
+      "line": 9847,
+      "lastLine": 9860,
+      "sha256": "9c5cc8755d716206764ad44db4faaf0b132acff9e9f66ea91804c4274b639145",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_QUICK_STANDUP_ATTACK_FRONT_ADVANCED_EventProcess",
+      "line": 9863,
+      "lastLine": 9876,
+      "sha256": "66ebed9dbd0e19690c414fe240cc4109c14fa05ca1c99c7bf6e7e7e2eb7b2cb5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_QUICK_STANDUP_ATTACK_BACK_ADVANCED_EventProcess",
+      "line": 9879,
+      "lastLine": 9886,
+      "sha256": "0cff0bdcd917eaee0344b1d5e2b08a6fda700db2711b854b8a7ab72eed807916",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_PROVOKE_Init",
+      "line": 9890,
+      "lastLine": 9900,
+      "sha256": "2f76ddf7a7faa4ce460952746c0b8b336c9903b5d1d19f137c33bc1decfb0a10",
+      "literalResources": [
+        "A_SGM_DRASTIC_CHARGE_Power_P03.dds",
+        "Arme_Ring2.dds",
+        "DummyAttackBox_50x50x50.X",
+        "Iron_Will_P01.DDS",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_PROVOKE_StateStart",
+      "line": 9902,
+      "lastLine": 9906,
+      "sha256": "a25eef2346b6c878decc4a0fc7212c05b8638cdc897d64ed11b5f435a107e3be",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_PROVOKE_EventProcess",
+      "line": 9908,
+      "lastLine": 9921,
+      "sha256": "cb250f8eef6c72cb48a8f1f09343db9bbd3dfbb1959118fd269a3c2aef7f4921",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_PROVOKE_StateEnd",
+      "line": 9924,
+      "lastLine": 9928,
+      "sha256": "d81e831bed60eb3f8ffeb687a70334522bdc65c198645ddc123cfbebc9b10be5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_PROVOKE_REVENGE_EventProcess",
+      "line": 9932,
+      "lastLine": 9945,
+      "sha256": "31a95ba33bcf8663f36885a5b44673f08edb72af22c7bb059d59439f30402066",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_START_Init",
+      "line": 9949,
+      "lastLine": 9963,
+      "sha256": "d72a36f9e3e76fba18863b80dde67d0c051bdfdd2d73ca4fdcd14eaffb48a697",
+      "literalResources": [
+        "A_SGM_DRASTIC_CHARGE_Power.dds",
+        "A_SGM_DRASTIC_CHARGE_Power_P03.dds",
+        "Arme_Ring2.dds",
+        "Colorballgray.dds",
+        "DummyAttackBox_50x50x50.X",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_04.dds",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "SA_EL_SA_SSK_SPIRAL_BLAST_01.X",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_START_StateStart",
+      "line": 9965,
+      "lastLine": 9969,
+      "sha256": "aa603ffa6054db840fe7bfe69f061f13b0244138f86ad2511f73041f2beceffa",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_START_FrameMove",
+      "line": 9971,
+      "lastLine": 9994,
+      "sha256": "5d0cfe3709f2569cf36755421a9f08cb461101f3962547a646707632bc2bdf88",
+      "literalResources": [
+        "EffectSet_A_SGM_DRASTIC_CHARGE_GroundFire",
+        "EffectSet_A_SGM_DRASTIC_CHARGE_LOOP"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_START_EventProcess",
+      "line": 9998,
+      "lastLine": 10006,
+      "sha256": "f6c81acec604d41ee3f0639a563dd010b38a7a66e91dfe16a949eee49c382700",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_START_StartFurture",
+      "line": 10008,
+      "lastLine": 10012,
+      "sha256": "00a53ba6c3eea78ca5d6d980b52b8fe24f7b61e5820f9b57367cf9264d251916",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_LOOP_EventProcess",
+      "line": 10016,
+      "lastLine": 10040,
+      "sha256": "d4366e4b372a284bf61fde7a987e8eda7318025cceb57d4ec67996db5662fee2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_LOOP_FrameMove",
+      "line": 10041,
+      "lastLine": 10058,
+      "sha256": "e7f3a2230d2459f6e8179fe61d3371a181d30cba2fb3a0439293180badf018c8",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_END_StateStart",
+      "line": 10061,
+      "lastLine": 10064,
+      "sha256": "5cd00c338979a3e5c11f6b36cae43df54884a7b1eeebae7089c58c494378dfd6",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_DRASTIC_CHARGE_END_EventProcess",
+      "line": 10066,
+      "lastLine": 10079,
+      "sha256": "378c5274be7762632031c6de135fb1724d302a9daa51769c885afddfffa7e65a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_START_Init",
+      "line": 10084,
+      "lastLine": 10096,
+      "sha256": "5bf186916f8f8d0cc726d779f3562aed5343e130e7231935fac62d75333decf9",
+      "literalResources": [
+        "A_SGM_DRASTIC_CHARGE_Power_P01.dds",
+        "Ara_Dash_Combo_X_M01.X",
+        "Arme_Ring2.dds",
+        "BREAKING_FIST_Attack_Box.X",
+        "DummyAttackBox_100x50x50_front.X",
+        "GroundShockWave02.dds",
+        "JUGGERNAUT_BUSTER_ATTACK_BOX.X",
+        "SGM_DASH_JUMP_COMBO_XZ_M01.X",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_START_EventProcess",
+      "line": 10098,
+      "lastLine": 10109,
+      "sha256": "f56c06a036401db43a3d2c3e1f6f23811ec5803befe425bf13e9b78f581d128e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_START_StateEnd",
+      "line": 10111,
+      "lastLine": 10122,
+      "sha256": "ce1d66e598840f09825a84f3e73930c76556efa088790e36d346c9c90d4cbb6c",
+      "literalResources": [
+        "EffectSet_A_SGM_SNAP_CRESHER_LOOP_ATTACK"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_LOOP_StateStart",
+      "line": 10126,
+      "lastLine": 10136,
+      "sha256": "fd27b8c3b44f8aee47a6f1d1ac477b1e7fb472e01d9e3658425d9cee965cc360",
+      "literalResources": [
+        "EffectSet_A_SGM_SNAP_CRESHER_LOOP"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_LOOP_EventProcess",
+      "line": 10138,
+      "lastLine": 10149,
+      "sha256": "131e4aeac20d1671d9b6ba6dc334853054dcab6ea07f611104adca68018ff434",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_END_StateStart",
+      "line": 10153,
+      "lastLine": 10171,
+      "sha256": "30862d811ed3afcdc618980c9d390444014b8c666698c4480c1537b19e72a70c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_A_SGM_SNAP_CRASHER_END_EventProcess",
+      "line": 10173,
+      "lastLine": 10186,
+      "sha256": "3f57ce6656f95dea800ea027dc006b8271a9fb40d1ec5ea3dca45bcc19113945",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_SONIC_BLADE_Init",
+      "line": 10191,
+      "lastLine": 10201,
+      "sha256": "602baf329412f86942cd9771b9aa5b9b941680b7b4b728c383d79f36afdc3665",
+      "literalResources": [
+        "A_SGM_DRASTIC_CHARGE_Power_P01.dds",
+        "A_SGM_DRASTIC_CHARGE_Power_P02.dds",
+        "A_SGM_SONIC_BLADE_Map02.dds",
+        "Arme_Ring2.dds",
+        "DummyAttackBox_50x50x50.X",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "elsword_active_crecentCut_crecent.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_SONIC_BLADE_EventProcess",
+      "line": 10203,
+      "lastLine": 10230,
+      "sha256": "bef2cbff09dc6b21adc48821735c3ce94662a30bb28fcf9dea31db1f787e1cb7",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_CRITICAL_DIVE_Init",
+      "line": 10235,
+      "lastLine": 10244,
+      "sha256": "6a7ea6f83146837579006180ddaebe1704ff963c5a6527e5dd72f723535dcda8",
+      "literalResources": [
+        "A_SGM_CRITICAL_DIVE_Attack_Line.X",
+        "Arme_Ring2.dds",
+        "ColorBallGray.dds",
+        "RingAlpha.dds",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "title_StarLight_Smash_spark.dds",
+        "waldo_trock_specialAttackB_particle.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_CRITICAL_DIVE_EventProcess",
+      "line": 10246,
+      "lastLine": 10282,
+      "sha256": "a2342bff047b159d19c18bc8fd01f962b39a573eb6802fffad59d2dc5ee7beb3",
+      "literalResources": [
+        "MP+ %d"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_CRITICAL_DIVE_HIT_EventProcess",
+      "line": 10286,
+      "lastLine": 10299,
+      "sha256": "6fc370e1d9d0d8e450b828ef44be081df6dc43bb1006d711de7c24a2a3513cae",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_START_Init",
+      "line": 10304,
+      "lastLine": 10314,
+      "sha256": "3d01d7cbe656bd5554a24195ee75b690c9140fd11da0d69242a7b56691256fa0",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "JUGGERNAUT_BUSTER_ATTACK_BOX.X",
+        "JUGGERNAUT_BUSTER_END_TRACE.X",
+        "JUGGERNAUT_BUSTER_LOOP_TRACE2.X",
+        "JUGGERNAUT_BUSTER_READY_TRACE2.X",
+        "RingAlpha.dds",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_START_StateStart",
+      "line": 10315,
+      "lastLine": 10320,
+      "sha256": "77b7fa486967ff8309fc2aae1eeca51dc5dd9d34181fcca11d8e6e3dc034281e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_START_EventProcess",
+      "line": 10321,
+      "lastLine": 10351,
+      "sha256": "0a5cfb8bf202510bbc36f24635a62fcfae40f34807df72a4430fa68e8edf1ea1",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_EventProcess",
+      "line": 10355,
+      "lastLine": 10389,
+      "sha256": "64c2ffb319aaae9d68cc007dfc2dcc1316ed01c5675e8383691a0fd70e1072ca",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_FrameMove",
+      "line": 10391,
+      "lastLine": 10397,
+      "sha256": "5c65d49a59b02383a23ed606b35c10ef7350417c2833a9c1b7a1b7926d6728a8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_LAST_EventProcess",
+      "line": 10401,
+      "lastLine": 10409,
+      "sha256": "d7acdad462c670f668c295e9768dea5291c959cd05f2beb00a0affb79c34546a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_LAST_StartEnd",
+      "line": 10411,
+      "lastLine": 10415,
+      "sha256": "d09b83d5ae0c7622589b84a1c078ef37a9994ddc9c9ee24bcde380aabf759dd4",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END_EventProcess",
+      "line": 10419,
+      "lastLine": 10432,
+      "sha256": "77e4f4fdf94d23734a43bec6f914a4aff104980c908831af2795d94097d45f91",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_WAR_PRELUDE_Init",
+      "line": 10437,
+      "lastLine": 10448,
+      "sha256": "364edffb1d7f94aa63b64e3e0e40ec8860a72d7d46c039120b90da6acc3d341b",
+      "literalResources": [
+        "Arme_Ring2.dds",
+        "ColorBallGray.dds",
+        "Condense_Pulse01.dds",
+        "DummyAttackBox_50x50x50.X",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "Pulsewave01.dds",
+        "SA_SGM_WAR_PRELUDE_AURA.X",
+        "SA_SGM_WAR_PRELUDE_Map01.dds",
+        "SGM_D_J_C_XZ_Landing2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SA_SGM_WAR_PRELUDE_EventProcess",
+      "line": 10450,
+      "lastLine": 10463,
+      "sha256": "3d23ea4e4f6be327cd39c248505b3a5d163845463975f764ed261e5c52563351",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_HA_SGM_SWORD_OF_RELICS_Init",
+      "line": 10468,
+      "lastLine": 10500,
+      "sha256": "faedea5516c3f869de0afd4f9234b22c1f6141c5accd649f176e05f173249815",
+      "literalResources": [
+        "ARA_SA_FallingDragon_down.DDS",
+        "AeroTornado04.dds",
+        "Arme_Ring2.dds",
+        "BlackImage.dds",
+        "ColorBallGray.dds",
+        "Condense_Pulse01.dds",
+        "DummyAttackBox_100x50x50_tall2.x",
+        "Explosion_Fire01.dds",
+        "Explosion_Light02.dds",
+        "GroundShockWave.dds",
+        "HELLPUTT_COMET_CRASHER_Explosion_02.tga",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "Mesh_Elsword_Event_AC_Upbody21A_Effect.tga",
+        "Mesh_Raven_Event_AC_Upbody21_Effect.tga",
+        "PROTECT_GUARD_PHYSIC_Attack_B_Slash.tga",
+        "Particle_Blur.dds",
+        "Pulsewave01.dds",
+        "SA_SGM_SWORD_OF_RELICS_Hand_M01.X",
+        "SA_SGM_SWORD_OF_RELICS_MAGIC01.tga",
+        "SA_SGM_SWORD_OF_RELICS_MAGIC02.tga",
+        "SA_SGM_SWORD_OF_RELICS_SWORD_EX3.X",
+        "SA_SGM_SWORD_OF_RELICS_SWORD_EX4.X",
+        "SA_SGM_WAR_PRELUDE_Map01.dds",
+        "SGM_D_J_C_XZ_Landing2.dds",
+        "WhiteImage.dds",
+        "WhitePoint.dds",
+        "WhitePointSmall.dds",
+        "stone_AirShip.dds",
+        "title_StarLight_Smash_spark.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_HA_SGM_SWORD_OF_RELICS_EventProcess",
+      "line": 10502,
+      "lastLine": 10515,
+      "sha256": "2034d06a37cba6bd5b554887659fed6a3ebaad735fb232a95d5648d8f8477550",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZ_Init",
+      "line": 10522,
+      "lastLine": 10525,
+      "sha256": "b34aa87929f875e3e3224fb7d77f63d88df6a6a8285cbdb3cbdf92f4bbb338ad",
+      "literalResources": [
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZ_EventProcess",
+      "line": 10526,
+      "lastLine": 10540,
+      "sha256": "87c136d6f67e7674febdade15d1f8b0868539393ab3835913c005435a5ceb063",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZ_FrameMove",
+      "line": 10541,
+      "lastLine": 10557,
+      "sha256": "f69e8b826829172d7b1dc60efe18c82f0e09e140b203e7962e73ef0131bfb985",
+      "literalResources": [
+        "EffectSet_SBH_Combo_XZZ_Fire_NEW"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZ_Init",
+      "line": 10559,
+      "lastLine": 10567,
+      "sha256": "be9c4df3f78b1bda5f81910ea0dd68f5d83bd6c4465ab93a2926b45329abcc9b",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "DummyAttackBox_50x50x50.X",
+        "SI_SA_SBH_WALL_OF_PROMINENCE_02.X",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZ_EventProcess",
+      "line": 10568,
+      "lastLine": 10582,
+      "sha256": "6b49a1204badf495f0a2ce50fa30729a06bc233e0bd1e47bfad1f0fc62e929b2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZ_FrameMove",
+      "line": 10583,
+      "lastLine": 10599,
+      "sha256": "d2d80e17844224168dbb4a143acd84d27d15277b5681d8beefbcf0ab72ecad98",
+      "literalResources": [
+        "EffectSet_Elesis_SBH_Combo_XZZ",
+        "EffectSet_SBH_Combo_XZZZ_Fire_NEW"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZZ_Init",
+      "line": 10601,
+      "lastLine": 10604,
+      "sha256": "5cef06ecb307bf04edf886aac199ce28ba65dc077a5e2df92c1f6dd9743975d0",
+      "literalResources": [
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZZ_EventProcess",
+      "line": 10605,
+      "lastLine": 10617,
+      "sha256": "9d3878bc7e5a1cf36230c08506542cfe498206f3d3d75cafdf45c80eda0450f3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_COMBO_SBH_XZZZ_FrameMove",
+      "line": 10618,
+      "lastLine": 10630,
+      "sha256": "34cf218cc5a3a09463e7ea5062c16c811048203e695668841bc26f5164c2f5d5",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_X_Init",
+      "line": 10632,
+      "lastLine": 10649,
+      "sha256": "8fe75d275b75411431ef76b8e3dbe48c5d88f5f9ce9ac1130e734f1c73de2e34",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Arme_smoke.dds",
+        "Blur_Light_Mesh01.y",
+        "C_SPK_Fire_Ball_FX.X",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.x",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EffectSet_SBH_FireBall01.X",
+        "EffectSet_SBH_FireBall02.X",
+        "EffectSet_SBH_FireBall03.X",
+        "secretVelder_perpit_fire_flame.dds",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_X_EventProcess",
+      "line": 10650,
+      "lastLine": 10674,
+      "sha256": "4b48853cdefdc98e5c8d356ab7dcd361046bf1a3133269628adeae6e7c5edb8e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_X_FrameMove",
+      "line": 10675,
+      "lastLine": 10690,
+      "sha256": "63ed1312433e5ea9a8f8ae5dc2d46821311aede976fb3cf443263d5cd9cc7aac",
+      "literalResources": [
+        "EffectSet_Elesis_SBH_Combo_XZZ_FAIL",
+        "EffectSet_Elesis_SBH_Dash_Combo_X"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_X_FrameMoveFuture",
+      "line": 10691,
+      "lastLine": 10696,
+      "sha256": "fea092d5164566b469d02efde388dadb325c6431f0e01d7e4e8b40ba8c0199de",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XX_Init",
+      "line": 10699,
+      "lastLine": 10716,
+      "sha256": "3cb44bfdbd276fd5938a89e9631fc50aaa0d43c5e09f9a3836af48ebbec1c277",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Arme_smoke.dds",
+        "Blur_Light_Mesh01.y",
+        "C_SPK_Fire_Ball_FX.X",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.x",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EffectSet_SBH_FireBall01.X",
+        "EffectSet_SBH_FireBall02.X",
+        "EffectSet_SBH_FireBall03.X",
+        "secretVelder_perpit_fire_flame.dds",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XX_EventProcess",
+      "line": 10717,
+      "lastLine": 10741,
+      "sha256": "bb16fd293fb4f3730beda0aa68b74383ca8b28b1defe713a9d4aed088e81d8a3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XX_FrameMove",
+      "line": 10742,
+      "lastLine": 10757,
+      "sha256": "d4af53674f24d3959d7f81b7535047aad5ed4d30f3f6b41b6d8aeb2c3302b52d",
+      "literalResources": [
+        "EffectSet_Elesis_SBH_Combo_XZZ_FAIL",
+        "EffectSet_Elesis_SBH_Dash_Combo_XX"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XX_FrameMoveFuture",
+      "line": 10758,
+      "lastLine": 10763,
+      "sha256": "af2a278affb8527c43bb2d4d99de627e0fe2dabfd93c0046ec0ee9947b2c581f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXX_Init",
+      "line": 10766,
+      "lastLine": 10783,
+      "sha256": "72a07207988d6bf96c1464347d0c79e3f6ee908cd9761d317da9052e4f23b38d",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Arme_smoke.dds",
+        "Blur_Light_Mesh01.y",
+        "C_SPK_Fire_Ball_FX.X",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.x",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EffectSet_SBH_FireBall01.X",
+        "EffectSet_SBH_FireBall02.X",
+        "EffectSet_SBH_FireBall03.X",
+        "secretVelder_perpit_fire_flame.dds",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXX_EventProcess",
+      "line": 10784,
+      "lastLine": 10807,
+      "sha256": "a59594bad601d68b367b15738d96e8902eadf9389ecdcd167aaaf94e3185828b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXX_FrameMove",
+      "line": 10808,
+      "lastLine": 10823,
+      "sha256": "b36473c2441961f7331f05f968789f481f6895101d7dbfddcb3c90a48e846b05",
+      "literalResources": [
+        "EffectSet_Elesis_SBH_Combo_XZZ_FAIL",
+        "EffectSet_Elesis_SBH_Dash_Combo_XXX"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXX_FrameMoveFuture",
+      "line": 10824,
+      "lastLine": 10830,
+      "sha256": "e0d12c01b3cfca715d535c4ad759272d1f24187b34bf3a30cf92d160defef989",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXXZ_Init",
+      "line": 10833,
+      "lastLine": 10845,
+      "sha256": "7026464ca3b81aa80540ac44e110cf3cff4d94f94a7bf225146d1ceedce5df6d",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds",
+        "DummyAttackBox_50x50x50.X",
+        "EL_FIRE_03.dds",
+        "EL_FIRE_06.dds",
+        "EL_FIRE_09.dds",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXXZ_EventProcess",
+      "line": 10846,
+      "lastLine": 10873,
+      "sha256": "c142f926fc9f1fd498a744777db6938928055b41b98b75d922a2556478b697f8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXXZ_FrameMove",
+      "line": 10874,
+      "lastLine": 10886,
+      "sha256": "ef55bc51a52e6c4436f675263fb2b45f2a7c562b831a7ca99e344328d2cb0bc5",
+      "literalResources": [
+        "EffectSet_Elesis_SBH_Combo_XXXZ"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_DASH_COMBO_SBH_XXXZ_FrameMoveFuture",
+      "line": 10887,
+      "lastLine": 10892,
+      "sha256": "a0dac2fb52b6d1422753f330f5f0f9f3fae80b4d63acaae7370189ee786e76ff",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_FLAME_SWORD_Init",
+      "line": 10895,
+      "lastLine": 10902,
+      "sha256": "9eb9c75e241b75d7970d43a2a9a37913dd81f304955c55e4ef2bf7047071580f",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "DummyAttackBox_50x50x50.X",
+        "Rose_explosion_01.Tga",
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_FLAME_SWORD_EventProcess",
+      "line": 10903,
+      "lastLine": 10920,
+      "sha256": "d2e796dcfc0a92d060d95513808494a0c2fa51bc4709682018a2c55ea0a4873d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_FLAME_SWORD_FINISH_EventProcess",
+      "line": 10921,
+      "lastLine": 10934,
+      "sha256": "c63e1e6442ef65133ea543954dbbc62da72faa92af38014d6ecb5bbd36156a65",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_FIREWORKS_Init",
+      "line": 10937,
+      "lastLine": 10950,
+      "sha256": "396e47f0f2b6246a96b249ffb2f586cb63982649d65477cb38782fc3b6ad0135",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "DarkSmoke01.dds",
+        "DummyAttackBox_50x50x50.x",
+        "EL_FIRE_07.dds",
+        "EffectSet_SA_SBH_BLAZING_DANCE_02.X",
+        "Flame_REVOLVER.dds",
+        "RVC_SA_ignitionCrow_circle.X",
+        "Rose_explosion.Tga",
+        "Rose_explosion_01.Tga",
+        "raven_beed_hit_circle.DDS",
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_FIREWORKS_EventProcess",
+      "line": 10951,
+      "lastLine": 10964,
+      "sha256": "8dec0f94c5eb021b887cc1a98ab3355cddd2ecb0613cc441274ea4947390d1c9",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_SCALET_ROSE_Init",
+      "line": 10967,
+      "lastLine": 10980,
+      "sha256": "49ee8865602df95bd206cd9dc5f7615a6dc417d8d84671eccd16875790f75321",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "DarkSmoke01.dds",
+        "RVC_SA_ignitionCrow_circle.X",
+        "Rose_explosion.Tga",
+        "Rose_explosion_01.Tga",
+        "Rose_explosion_02.Tga",
+        "SI_A_SBH_SCALET_ROSE_attackSphere.X",
+        "WhitePointSmall.dds",
+        "WindBlade_MagicSquare03.X",
+        "raven_beed_hit_circle.DDS",
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_SCALET_ROSE_EventProcess",
+      "line": 10981,
+      "lastLine": 11008,
+      "sha256": "860373900a2ca8889e1323299e15a0d4d5e4bef9d6fe3a23470381d4e87b13fc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_SCALET_ROSE_FrameMove",
+      "line": 11009,
+      "lastLine": 11052,
+      "sha256": "6998b9bbfbfaf3ed86a772e84656c0df984e7b1ff0b9e2099d82f2108e025f7d",
+      "literalResources": [
+        "DamageEffect_Elesis_A_SBH_SCALET_ROSE_Start"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_SCALET_ROSE_StateEnd",
+      "line": 11053,
+      "lastLine": 11066,
+      "sha256": "16d401b63ff636d662e3ce74630adacfbc0584b404b9ff37442a3d7db9af5de8",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS_EventProcess",
+      "line": 11067,
+      "lastLine": 11080,
+      "sha256": "1f4c6c6d312d189546ed6c249bb3b4b89c3a72c2ae356b6d464805cc140fbc4f",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_SCALDIC_SWORD_Init",
+      "line": 11083,
+      "lastLine": 11095,
+      "sha256": "cee5857a55cf3e42498730cabaa9268d6f79070c95d9a4356578f46e0e4d4507",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Ring2.dds",
+        "DummyAttackBox_50x50x50.x",
+        "Mega_Slash_Trace_Dummy.x",
+        "P_EBS_BoostDash_circle.X",
+        "RVC_SA_DeadlyRaid_circleLine.X",
+        "Rose_explosion_01.Tga",
+        "SCALDIC_SWORD_01.Y",
+        "SCALDIC_SWORD_03.Y",
+        "secretVelder_perpit_fire_flame.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_SCALDIC_SWORD_EventProcess",
+      "line": 11096,
+      "lastLine": 11109,
+      "sha256": "806987dc2000020e02e36f0187704471ccbaf01fc519cdc9168b9613d5e7bb25",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE_Init",
+      "line": 11112,
+      "lastLine": 11122,
+      "sha256": "c60f55b6bccfb45eb8ff5ebfd12300b9bcc4f7928c1b499124dfeb3697294188",
+      "literalResources": [
+        "BREAKING_FIST_Attack_Box.X",
+        "DummyAttackBox_100x50x50_tall2.x",
+        "GroundShockWave02.dds",
+        "Rose_explosion_01.Tga",
+        "SI_SA_SBH_WALL_OF_PROMINENCE_01.X",
+        "WhitePointSmall.dds",
+        "secretVelder_perpit_fire_flame.dds",
+        "smoke02.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE_EventProcess",
+      "line": 11123,
+      "lastLine": 11136,
+      "sha256": "22bd6f2cba70b4ab658de56aa68124e794905ca59273fb7dc731abd6ea3d1840",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE_FrameMove",
+      "line": 11137,
+      "lastLine": 11169,
+      "sha256": "ec3c486d4ef63d273cefa535098a92dee05889ca47c5b64eca36ea6f5e5ff820",
+      "literalResources": [
+        "Bip01",
+        "DamageEffect_Wall_of_Prominence_Projectile"
+      ],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZE_WING_Init",
+      "line": 11172,
+      "lastLine": 11185,
+      "sha256": "2c719a3a6b941c6bba0740dc1bb6232350027ef93e3e94db41dd1533ba31c7d5",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Black_Light.dds",
+        "Condense_Light01.dds",
+        "DummyAttackBox_50x50x50.X",
+        "Rose_explosion_01.Tga",
+        "SI_SA_SBH_BLAZE_WING_02.X",
+        "secretVelder_perpit_fire_flame.dds",
+        "smoke02.dds",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZE_WING_EventProcess",
+      "line": 11186,
+      "lastLine": 11199,
+      "sha256": "4d6aa539a2a6571dd6d93778a3bbad275a70bfa1199168a1f4f5d41ec94ada91",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_START_Init",
+      "line": 11202,
+      "lastLine": 11216,
+      "sha256": "93db238945ce659e10692cfab8f0066875c7309e00737ad559fcbbd9c4bcad44",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Damage_Ring.dds",
+        "Arme_Ring2.dds",
+        "Condense_Light01.dds",
+        "DarkSmoke01.dds",
+        "DummyAttackBox_50x50x50.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "PET_SILVERFOX_MIHOEffect02.tga",
+        "Rose_explosion_01.Tga",
+        "raven_beed_hit_circle.DDS",
+        "star2.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_START_StateStart",
+      "line": 11217,
+      "lastLine": 11222,
+      "sha256": "1cbc7ec224ccc112369247ca1749a5cbd414ce3dd2c8965e5faea01c8080b99d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_START_EventProcess",
+      "line": 11223,
+      "lastLine": 11231,
+      "sha256": "d4da7d778b4292c3ac2a97cf38aa5a60fe19b7251ac12be390b0cdb8c0962f9a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_1ST_StartFuture",
+      "line": 11232,
+      "lastLine": 11237,
+      "sha256": "0bbaba89693d5ca5538c1a2054fe8485c11c86c0486380fa98b90688ae305812",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_1ST_EventProcess",
+      "line": 11238,
+      "lastLine": 11250,
+      "sha256": "9b28ea0bd5f365cc90196d9e8dff2587fd68aae3490ccae4cae17a3c189da192",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_2ND_StartFuture",
+      "line": 11251,
+      "lastLine": 11256,
+      "sha256": "a1a227f20dad6c4bffc647a38094271e66218ff2219baabc488d55dcc8046795",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_2ND_EventProcess",
+      "line": 11257,
+      "lastLine": 11269,
+      "sha256": "9d40c50c3be1c48a938d80c879a991c299dde2db30efe086aab6c4da7fa8b4a3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_3RD_StartFuture",
+      "line": 11270,
+      "lastLine": 11275,
+      "sha256": "907ad30d83605fa4d1295d58a6f372850bcda5a96789bda460b1b5a0d36ef664",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_3RD_EventProcess",
+      "line": 11276,
+      "lastLine": 11288,
+      "sha256": "a69120db6b8fcbf745369f9ab844637fffa0a6f7d3bc35b415cd01178a180b6c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_4TH_StartFuture",
+      "line": 11289,
+      "lastLine": 11294,
+      "sha256": "7eb21599fe7462c114dcd8ab6b85e3ef8ca8c66aac39f4db1c62aeac33ceff90",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_4TH_EventProcess",
+      "line": 11295,
+      "lastLine": 11309,
+      "sha256": "b915034c45d99cc4e6e0578d158637f0df96332716f64dae76bb07ace5cfd588",
+      "literalResources": [],
+      "contains2026": true
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_5TH_StartFuture",
+      "line": 11311,
+      "lastLine": 11316,
+      "sha256": "6e95b631e29a0d6e83ca4120b2cf87808d619843efc939b8c24b533e9b989d0c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_5TH_EventProcess",
+      "line": 11317,
+      "lastLine": 11329,
+      "sha256": "eecb399fe9118c343d90c90cda4b5e206184be0265d23317c670bece957926c3",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_6TH_StartFuture",
+      "line": 11330,
+      "lastLine": 11335,
+      "sha256": "86d6ca47407d7be115b22800a2d9bce1cc4c4b3ae91f0aabef73a2342b87b0d0",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_6TH_EventProcess",
+      "line": 11336,
+      "lastLine": 11344,
+      "sha256": "2369cb2fb8e772da48a5654a165c530f53b544f1e63957c66d1a695021e55578",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH_StartFuture",
+      "line": 11346,
+      "lastLine": 11352,
+      "sha256": "0f45fcc01bc36e92038341437cbd4e5d261ec1c408a69f8c821c1aad51a754ec",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH_EventProcess",
+      "line": 11353,
+      "lastLine": 11372,
+      "sha256": "caafd4bb35f3464e2d70db66c36f3f019cf5b848def88d6ddf6cab79b5cb7082",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH_StateEnd",
+      "line": 11373,
+      "lastLine": 11377,
+      "sha256": "f4e1190eb0d4d392e5e49dd7b8af54a3ed3897bd054903faf2f7cd168ff9c970",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH_FrameMoveFuture",
+      "line": 11378,
+      "lastLine": 11399,
+      "sha256": "b685db31dbda28de3f83bbf238d3190ad444b7ad2a39f4319f9169a0c43f8f0a",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_HA_SBH_ANCIENT_FIRE_Init",
+      "line": 11402,
+      "lastLine": 11421,
+      "sha256": "f5f4620d94a4ef4b06ad72c5e7dea78e2351e032f9acd3869254e09629541148",
+      "literalResources": [
+        "Arme_Critical.dds",
+        "Arme_Damage_Center.dds",
+        "Arme_Ring2.dds",
+        "ColorBallFire.dds",
+        "Condense_Light01.dds",
+        "Condense_Pulse01.dds",
+        "DummyAttackBox_100x50x50_tall2.x",
+        "EffectSet_SA_SBH_ANCIENT_FIRE01.X",
+        "EffectSet_SA_SBH_ANCIENT_FIRE02.X",
+        "EffectSet_SA_SBH_ANCIENT_FIRE_03.tga",
+        "Lire_SI_SA_Gungnir_Mesh05.X",
+        "Mega_Slash_Trace_Dummy.x",
+        "PET_SILVERFOX_MIHOEffect02.tga",
+        "RVC_SA_DeadlyRaid_circleLine.X",
+        "SA_SGM_WAR_PRELUDE_Map01.dds",
+        "smoke02.dds",
+        "star1.dds"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_HA_SBH_ANCIENT_FIRE_EventProcess",
+      "line": 11422,
+      "lastLine": 11435,
+      "sha256": "5d195aab4ff60b0480588fdd1083436b80a57f6cdb10759ccbfb9ac364f57d70",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ESI_SI_HA_SBH_ANCIENT_FIRE_FrameMove",
+      "line": 11436,
+      "lastLine": 11465,
+      "sha256": "2d70c328d6b4ad7f56d69bd92bf714ef663d7246322a030ac3e567a9d049b4aa",
+      "literalResources": [
+        "Bip01",
+        "DAMAGE_EFFECT_SA_SBH_ANCIENT_FIRE_Attack01_Dungeon",
+        "DAMAGE_EFFECT_SA_SBH_ANCIENT_FIRE_Attack01_Pvp"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ChivalryProc_FrameMove",
+      "line": 11485,
+      "lastLine": 11524,
+      "sha256": "59aacae001858b0a6321cef5f9962e963f51db2b85323a7b7700da4d1680d3b1",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "StigmaOfFireProc_FrameMove",
+      "line": 11527,
+      "lastLine": 11542,
+      "sha256": "3d4b6a64949352f55f99f31fe5b2548e9b77711e3c98be1c2bf98030af7b5617",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ApplyDebuffStigmaOfFire",
+      "line": 11544,
+      "lastLine": 11576,
+      "sha256": "1ce3475bf93c2b8bd44e32a50fd4b6e3d3f842b2a00bc09c85cefbca0995ca68",
+      "literalResources": [
+        "DamageEffect_SBH_Judgement_Fire"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "ApplyDebuffFlameSword",
+      "line": 11578,
+      "lastLine": 11593,
+      "sha256": "1915d6ec71a15cfe8aefe3d5f88aefbfd103ebb93a36b141c06140d3e5a05ed2",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "FireBlossomsProc_FrameMove",
+      "line": 11595,
+      "lastLine": 11667,
+      "sha256": "b490a3c78704bcc4865a5827a447bbe196d5c8395ade6f605a8c42d86e2d5ba2",
+      "literalResources": [
+        "RESIST"
+      ],
+      "contains2026": false
+    },
+    {
+      "method": "BlazingDanceFindTargetAndMove",
+      "line": 11669,
+      "lastLine": 11759,
+      "sha256": "5fe83044d2685be6e21f33ef1d9266281dd94b3df4a9cd2e509e2d7838b4da7b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "BlazindDanceCheckTargetPosition",
+      "line": 11760,
+      "lastLine": 11821,
+      "sha256": "b160fda2095bbd64a039bdeab48f58ea041865f518cd4a1d4cb182e15e4d0aaa",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "GetUnitClassLine",
+      "line": 11823,
+      "lastLine": 11853,
+      "sha256": "fea11f7d45b04d2f8004aeba8f4bf24360d2cb4974fca0368aa01c1934e7933e",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "ChangeDamageData",
+      "line": 11856,
+      "lastLine": 11870,
+      "sha256": "231651ae1ca2d0d8c14f36dfaf3efbf2552bbd19ab174ed36d55cdf2d9d2737b",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "DrasticChargeProc_FrameMove",
+      "line": 11872,
+      "lastLine": 11895,
+      "sha256": "3115d06c8b5d196a52fc049405a95e21105794b626dba686264d7e2a5ce3d2cc",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "XX_DOWN_XProc_FrameMove",
+      "line": 11897,
+      "lastLine": 11918,
+      "sha256": "225d81a73ff59310f1894ceaf13687c2216a8b05d3a82a09fde79bb8763a443c",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SnapCrasherProc_FrameMove",
+      "line": 11920,
+      "lastLine": 11945,
+      "sha256": "a13b5eae949cb3d0ded61d15c0161e8f061d07820c97ea6f84df8bfa671e648d",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "SetDamageExceptionProcess",
+      "line": 11950,
+      "lastLine": 11990,
+      "sha256": "28b6a3e5aa8921b976b0e92dbfceaf8d12e6a5eb9e881f19e9a5e464d38acb51",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "RidingHyperModeFrameMove",
+      "line": 11994,
+      "lastLine": 11997,
+      "sha256": "9d7a95b69fcc0f9893e18b95d7f07154dfaad3e434fc4e0f2b8f54ff26402982",
+      "literalResources": [],
+      "contains2026": false
+    },
+    {
+      "method": "CommonHyperModeFrameMove",
+      "line": 11998,
+      "lastLine": 12033,
+      "sha256": "42ebd4c8be8cb342c5695d63ee17c7ddd1a9925afe126bf2dbf87485662e4574",
+      "literalResources": [
+        "Break.ogg",
+        "Change.ogg",
+        "Energy.ogg"
+      ],
+      "contains2026": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-src 'none'">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>web pvp client</title><link rel="stylesheet" href="launcher.css"></head>
+<body>
+<header><strong>web pvp <span>client</span></strong><nav aria-label="Window controls">
+<button id="update" title="Close the game and check for updates">Check for updates</button><button id="refresh" title="Reload the game (F5)" disabled>Refresh F5</button><button id="fullscreen" title="Toggle fullscreen (F11)">Fullscreen F11</button><button id="minimize" title="Minimize">Minimize</button><button id="maximize" title="Maximize or restore">Maximize</button><button id="quit" title="Close the game and release its files">Quit</button>
+</nav></header>
+<main id="panel"><img id="program-icon" class="mark" alt="web pvp icon" hidden><p class="eyebrow">web pvp desktop client</p><h1 id="title">Starting</h1><p id="message" role="status">Checking the client version.</p>
+<progress id="progress" aria-label="Update progress"></progress><p id="detail"></p>
+<div class="actions"><button id="retry" hidden>Retry</button><button id="folder" hidden>Open client folder</button><button id="logs">Open diagnostic logs</button></div>
+<p class="hint">Close this window to exit the game.</p></main>
+<script src="launcher.js"></script></body></html>

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "version": "feedback-v25",
+  "originalClientMeasured": false,
+  "references": {
+    "X2GURaven.cpp": {
+      "path": ".cache\\native-source-runtime\\X2Lib\\X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "evidenceClass": "fixed-V5-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    "X2GUUser.cpp": {
+      "path": ".cache\\native-source-runtime\\X2Lib\\X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "evidenceClass": "fixed-V5-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    "X2GUElsword_SwordMan.cpp": {
+      "path": ".cache\\native-source-runtime\\X2Lib\\X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "evidenceClass": "fixed-V5-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    }
+  },
+  "profiles": {
+    "rf": {
+      "path": "packages\\combat-core\\rf-profile.json",
+      "sha256LF": "9620f313fd7989f63aab3fc75480f7ab039a5e1a9bcd3f5c34e9b71ee7f9c612",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    },
+    "lk": {
+      "path": "packages\\combat-core\\lk-profile.json",
+      "sha256LF": "6de28d03c8b7ce1c4a10d2a9e091b9c4b4151f105279b670072827f77121e098",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    },
+    "vc": {
+      "path": "packages\\combat-core\\vc-profile.json",
+      "sha256LF": "3b69c7e1ba819621812f6f1305d73a9c910f1d14c770e8e6ee18adba4a40e9d2",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    },
+    "rs": {
+      "path": "packages\\combat-core\\rs-profile.json",
+      "sha256LF": "4b171ddc3b17ba067b8ad90a4b07424785f59bff678988f13b76b6463fd1a635",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    },
+    "bm": {
+      "path": "packages\\combat-core\\bm-profile.json",
+      "sha256LF": "0e337ad4dc7010ec3e24fde3a34916f11675b5112bcf8a4eef7a03d865b4cd21",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    },
+    "is": {
+      "path": "packages\\combat-core\\is-profile.json",
+      "sha256LF": "2dabdfac8e760039ebb2ff2d11d1e97ee38184bb9d0c005806ac469403939f6f",
+      "evidenceClass": "existing-target2016-static-and-qualified-reference-profile"
+    }
+  },
+  "unchangedOriginalTables": true,
+  "userOverrides": [
+    "descending jump-Z near-floor pickup",
+    "first pressed horizontal priority",
+    "BM full landing buffer and broader cancel gates",
+    "shockwave retained knockdown flight",
+    "Storm Blade first-hit launch, continuous attraction and true-foot landing while inside original effect helpers",
+    "practice target HP and resource recovery",
+    "announcement and guild scaling"
+  ],
+  "presentation": {
+    "hitLightSeconds": 0.2,
+    "hitLightIntensity": 1.8,
+    "hitLightShaderEvidence": "Web adapter; original shader unmeasured",
+    "guildScale": 0.7,
+    "announcementScale": 2,
+    "oldMaxHeight": 150,
+    "maxHeight": 300,
+    "browserMetrics": [
+      {
+        "piece": "FIGHT",
+        "width": 784,
+        "height": 300,
+        "maxHeight": "300px"
+      },
+      {
+        "piece": "WIN",
+        "width": 784,
+        "height": 300,
+        "maxHeight": "300px"
+      },
+      {
+        "piece": "LOSE",
+        "width": 784,
+        "height": 300,
+        "maxHeight": "300px"
+      }
+    ],
+    "previewScreenshot": "runtime/v25/guild-tooltip-browser.jpg"
+  }
+}

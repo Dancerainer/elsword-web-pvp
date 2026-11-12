@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "reference-V5-not2016",
+  "targetClientMeasured": false,
+  "targetFiles": {
+    "enum": {
+      "file": "Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "evidenceClass": "static-target-2016"
+    },
+    "raven": {
+      "file": "RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill": {
+      "file": "NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "evidenceClass": "static-target-2016"
+    },
+    "damage": {
+      "file": "DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "evidenceClass": "static-target-2016"
+    },
+    "effect": {
+      "file": "EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill-data": {
+      "file": "SkillData.lua",
+      "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4",
+      "evidenceClass": "static-target-2016"
+    },
+    "skill-note": {
+      "file": "SkillNoteTemplet.lua",
+      "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816",
+      "evidenceClass": "static-target-2016"
+    },
+    "buff-factor": {
+      "file": "BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+      "evidenceClass": "static-target-2016"
+    },
+    "buff-factor-int": {
+      "file": "BattleFieldBuffFactor_INT.lua",
+      "sha256": "000f23e9c7d0fe95b56dca1377ca6b43751293b234ab90ed7ab4526bfa97d606",
+      "evidenceClass": "static-target-2016"
+    },
+    "battle-buff": {
+      "file": "BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "evidenceClass": "static-target-2016"
+    }
+  },
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+      "relativePath": "X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "bytes": 521479
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+      "relativePath": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+      "bytes": 263245
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.cpp",
+      "relativePath": "X2Lib/X2SkillTree.cpp",
+      "sha256": "d424be44bc394c9681545f572d20179b58caa3f8981db8e8250dda6832802b9f",
+      "gitBlob": "ccf3187b63f6c338d3c0e7e93c8ff65329c6049b",
+      "bytes": 201593
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+      "relativePath": "X2Lib/X2SkillTree.h",
+      "sha256": "32d6a263a09347c3390a237f1aafab0b2551400fd85f477059cbe9affc802cc0",
+      "gitBlob": "dfecbb721acf6246956a95cf1649099f53b5cd20",
+      "bytes": 158129
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2UserSkillTree.cpp",
+      "relativePath": "X2Lib/X2UserSkillTree.cpp",
+      "sha256": "455a09793f50c428f70b61d2f4beec824d83e7b9abbb5aa70bb5e1901284dca7",
+      "gitBlob": "722816091d2a053f27b262c66de47f0789f018c1",
+      "bytes": 97249
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFactor.cpp",
+      "relativePath": "X2Lib/X2BuffFactor.cpp",
+      "sha256": "dd458eaa4febae9c16bcf48f1809dc1ab632a9dc40906dc5569ea3e2ebddced1",
+      "gitBlob": "5bd952cab887e1706274cda1cb0b9be38c225127",
+      "bytes": 106634
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFactor.h",
+      "relativePath": "X2Lib/X2BuffFactor.h",
+      "sha256": "fa26778dd3387b8d1ad46dd67a55bf85cd61b37b3670539d43624a33f06f0ab7",
+      "gitBlob": "2bbd572cce002706501fb5bc758db65a9f8deaeb",
+      "bytes": 50088
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+      "bytes": 138729
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.h",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.h",
+      "sha256": "f3f12c506c776da714e08a1975e55fd523df7b87ed179f66d7ae3e921bba41ba",
+      "gitBlob": "e2b6938161f279d9d3c8ac45c8b4d1dfac4cf78b",
+      "bytes": 43985
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFinalizerTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffFinalizerTemplet.cpp",
+      "sha256": "c41cc3b322eb602b74b8d6581393c1079121fcabdd1e742b6d02f0bb30e2f173",
+      "gitBlob": "7187a406c041913d1ef1fe9f2cb6259c5a058390",
+      "bytes": 67185
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffFinalizerTemplet.h",
+      "relativePath": "X2Lib/X2BuffFinalizerTemplet.h",
+      "sha256": "3b8d7385aa232eb99ef511ba7c1f33a392071e62a391b40a716b273baf318c8c",
+      "gitBlob": "75726c78b1affcab568bba3a2f8f8b7a30ad6218",
+      "bytes": 25477
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillNoteManager.cpp",
+      "relativePath": "X2Lib/X2SkillNoteManager.cpp",
+      "sha256": "3c25a1eaa7d5f5fd3b7ae2a6170715e50c90c15cf5bfbe0a39c5d63c3a8f94b5",
+      "gitBlob": "fdbbd9a5ada36256c035028b2600b3f39ac79244",
+      "bytes": 6400
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillNoteManager.h",
+      "relativePath": "X2Lib/X2SkillNoteManager.h",
+      "sha256": "f858c9279ffd1d8f52b7bee94a5be22221ddee7a710138d9051dd973b6678417",
+      "gitBlob": "c527e4d6d6e3fe773c183151e1cf33f3fd585e94",
+      "bytes": 2539
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+      "relativePath": "KTDXLIB/KTDXCommonFunc.h",
+      "sha256": "b659140c28707eae0b3c1156e73cb4cd72f4c4eb940263375bfce99da799b084",
+      "gitBlob": "7fe528e45eab9ecd058ed7266d5b8b5d967008b2",
+      "bytes": 40229
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffTemplet.cpp",
+      "bytes": 55955,
+      "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a",
+      "gitBlob": "81a8cc4ba5adc167078789a123feb74e0bb39816"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.h",
+      "relativePath": "X2Lib/X2BuffTemplet.h",
+      "bytes": 44971,
+      "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+      "gitBlob": "cce459ca0f237407dc40538edbb162fbac6e1574"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.h",
+      "relativePath": "KTDXLIB/KTDXTimer.h",
+      "bytes": 2102,
+      "sha256": "fca9e4ee3e9636ec2dd160ac87725084687dc98ef3769305ceb6f51cce83e5ec",
+      "gitBlob": "b69dd00b90850d435c4768ed5e3647905dd2f9c8"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.cpp",
+      "relativePath": "KTDXLIB/KTDXTimer.cpp",
+      "bytes": 390,
+      "sha256": "8b276e7fb3c3ea45ee4fcf14257f2632f9e1067357f8d2317501d2ce5677c8a3",
+      "gitBlob": "62bfc47a1e7f3e0271eadf3e587c0f51bbdd6e46"
+    }
+  ]
+}

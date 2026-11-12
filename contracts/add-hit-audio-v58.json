@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "classification": "original target declarations and unchanged audio bytes; playback verified separately",
+  "victimTypes": [
+    1
+  ],
+  "professions": {
+    "LP": {
+      "baseManifestSha256": "03553ca517becd9e8d39d0f6296a7f2c3d5f38c60f594aef7cc3299677d68f4b",
+      "required": [
+        "HitBomb.wav",
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitFire.wav",
+        "HitMetalPunch.wav",
+        "HitPlasma1.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "HitSlash.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "missingBefore": [
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitPlasma1.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "unsupportedHitTypes": [],
+      "missingAfter": [],
+      "hurtVoices": {
+        "AddVoice_DamageScream02.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream02.ogg"
+        },
+        "AddVoice_DamageScream03.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream03.ogg"
+        },
+        "AddVoice_DamageScream04.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream04.ogg"
+        },
+        "AddVoice_DamageScream05.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream05.ogg"
+        },
+        "AddVoice_DamageScream06.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream06.ogg"
+        },
+        "AddVoice_DamageScream07.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream07.ogg"
+        }
+      }
+    },
+    "MM": {
+      "baseManifestSha256": "489ca2209f9d78e81d8cbd250775e06394546ad85bd626539a188da03673a509",
+      "required": [
+        "HitBomb.wav",
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitFire.wav",
+        "HitMetalIron1.wav",
+        "HitMetalPunch.wav",
+        "HitPlasma1.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "HitSlash.wav",
+        "KickHit.ogg"
+      ],
+      "missingBefore": [
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitMetalIron1.wav",
+        "HitPlasma1.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "KickHit.ogg"
+      ],
+      "unsupportedHitTypes": [
+        {
+          "path": ".damageEffects.DamageEffect_AAT_Phantom_Seeker_Projectile_Sub.raw.DAMAGE_DATA",
+          "hitType": {
+            "$symbol": "HIT_TYPE.HT_SLASH",
+            "$unsupported": "target enum member absent"
+          }
+        }
+      ],
+      "missingAfter": [],
+      "hurtVoices": {
+        "AddVoice_DamageScream02.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream02.ogg"
+        },
+        "AddVoice_DamageScream03.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream03.ogg"
+        },
+        "AddVoice_DamageScream04.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream04.ogg"
+        },
+        "AddVoice_DamageScream05.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream05.ogg"
+        },
+        "AddVoice_DamageScream06.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream06.ogg"
+        },
+        "AddVoice_DamageScream07.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream07.ogg"
+        }
+      }
+    },
+    "DE": {
+      "baseManifestSha256": "1d83d5412066a442e70bc1eff2ad77cc751c6c8aaf04e980952e0314cbcbb8eb",
+      "required": [
+        "Hit.wav",
+        "HitBomb.wav",
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitFire.wav",
+        "HitMetalPunch.wav",
+        "HitPlasma1.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "HitSlash.wav",
+        "KickHit.ogg"
+      ],
+      "missingBefore": [
+        "HitElectric1.wav",
+        "HitElectric2.wav",
+        "HitPlasma2.wav",
+        "HitPressure1.wav",
+        "HitPressure2.wav",
+        "KickHit.ogg"
+      ],
+      "unsupportedHitTypes": [],
+      "missingAfter": [],
+      "hurtVoices": {
+        "AddVoice_DamageScream02.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream02.ogg"
+        },
+        "AddVoice_DamageScream03.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream03.ogg"
+        },
+        "AddVoice_DamageScream04.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream04.ogg"
+        },
+        "AddVoice_DamageScream05.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream05.ogg"
+        },
+        "AddVoice_DamageScream06.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream06.ogg"
+        },
+        "AddVoice_DamageScream07.ogg": {
+          "alreadyPresent": true,
+          "file": "../lp/audio/AddVoice_DamageScream07.ogg"
+        }
+      }
+    }
+  },
+  "sources": {
+    "Enum.lua": {
+      "archive": "data/data036.kom",
+      "ordinal": 74,
+      "name": "Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "raw_path": "raw/data/data036.kom/Enum.lua",
+      "bytes": 398092
+    },
+    "DamageSound.lua": {
+      "archive": "data/data036.kom",
+      "ordinal": 50,
+      "name": "DamageSound.lua",
+      "sha256": "a59596bb1a6152c0be6be4207bb1acc2ca36dfc8c6eedd7da0c7334778948194",
+      "raw_path": "raw/data/data036.kom/DamageSound.lua",
+      "bytes": 14030
+    },
+    "HitElectric1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 174,
+      "name": "HitElectric1.wav",
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "raw_path": "raw/data/data070.kom/HitElectric1.wav",
+      "bytes": 141826
+    },
+    "HitElectric2.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 175,
+      "name": "HitElectric2.wav",
+      "sha256": "1a17ee5a858736f05ca574211c5887e4313abbcd4762a14db440f17b982a2bfc",
+      "raw_path": "raw/data/data070.kom/HitElectric2.wav",
+      "bytes": 146070
+    },
+    "HitPlasma1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 189,
+      "name": "HitPlasma1.wav",
+      "sha256": "2774ac66930e47855d4946d29123be614f1d60cd547112a8fc914855cf2a0f04",
+      "raw_path": "raw/data/data070.kom/HitPlasma1.wav",
+      "bytes": 136226
+    },
+    "HitPlasma2.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 190,
+      "name": "HitPlasma2.wav",
+      "sha256": "ddcc8c01a1c21fd1676faa2b32550f3a6b4a2ee2b00771fd7c4d877e9cc45af8",
+      "raw_path": "raw/data/data070.kom/HitPlasma2.wav",
+      "bytes": 126164
+    },
+    "HitPressure1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 192,
+      "name": "HitPressure1.wav",
+      "sha256": "17fc4ad52cc221f93a4b0a6525d5e29d1aabe41637734c5989b12e2cba7f9c30",
+      "raw_path": "raw/data/data070.kom/HitPressure1.wav",
+      "bytes": 142070
+    },
+    "HitPressure2.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 193,
+      "name": "HitPressure2.wav",
+      "sha256": "7178bf8590f188fc0d2650c6b184959c03d1a3cc4747e5e463e0e745550582dd",
+      "raw_path": "raw/data/data070.kom/HitPressure2.wav",
+      "bytes": 135738
+    },
+    "HitWind1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 204,
+      "name": "HitWind1.wav",
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "raw_path": "raw/data/data070.kom/HitWind1.wav",
+      "bytes": 261052
+    },
+    "KickHit.ogg": {
+      "archive": "data/data070.kom",
+      "ordinal": 250,
+      "name": "KickHit.ogg",
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "raw_path": "raw/data/data070.kom/KickHit.ogg",
+      "bytes": 6496
+    },
+    "HitMetalIron1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 187,
+      "name": "HitMetalIron1.wav",
+      "sha256": "fb8d3b286b2c44a2724b874fa8cc1781661fa91dd3759c50a1690fd13e7e4d94",
+      "raw_path": "raw/data/data070.kom/HitMetalIron1.wav",
+      "bytes": 94402
+    }
+  },
+  "profileSha256": {
+    "RF": "c72b478d7b9868760f151f26834a290b5ac8478b2f623194399fd5616b429889",
+    "LK": "b378662f668954029aa42ecfde92591c3138a3887d9339f909dcb45d4d7c7e2a",
+    "VC": "94cbb6dfeebd2a3ec4d8169957874cd9a2d2eb40ed10ed8022fdffe2b2c295c3",
+    "RS": "3ab5182a67d402b9f3519d302b882429d20ddf0d9897b9460744c83462eb2b3e",
+    "BM": "9712d8651698a2abe1a75f7dade0fad853f62caed24156c76a12a095be835c69",
+    "IS": "46d487ea11f3f389b38a6f85e234a97758a6313a043fb4753c67b8bcb74daa5a",
+    "GM": "a9dad52042b4d9aa337b13f4994af8e997fdff35a28beb8cd0dead3b2b8ba271",
+    "BH": "938139e4b93d46b81bd36aa075445e15e820e6020057bcc6d9c3e06a7bd7ad89",
+    "CA": "edcd253420b34edcecc0bf216c360a8cf049d42a3408172a3e3ee532e720cdc6",
+    "LP": "0773bc4779e9ee152659f03f0eaaf54311e66a71e32c0dae3d880a7c4199cf01",
+    "MM": "c98f5f0a3f42d5e2e2b38a7699720f21a6f0b7344d44dfde4cd2ea0486fbfdb6",
+    "DE": "95e721d690f8238e3df44ae024bc2c02b8b1725e7d179b20a3bf9988b6682328"
+  },
+  "commonManifestSha256": "acacf19b1a26c1e09e75bf6fd3769505b036c22c891c2ee937f34acd39e2cca2",
+  "outputs": {
+    "lp/audio/HitElectric1.wav": {
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "bytes": 141826,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitElectric2.wav": {
+      "sha256": "1a17ee5a858736f05ca574211c5887e4313abbcd4762a14db440f17b982a2bfc",
+      "bytes": 146070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitPlasma1.wav": {
+      "sha256": "2774ac66930e47855d4946d29123be614f1d60cd547112a8fc914855cf2a0f04",
+      "bytes": 136226,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitPlasma2.wav": {
+      "sha256": "ddcc8c01a1c21fd1676faa2b32550f3a6b4a2ee2b00771fd7c4d877e9cc45af8",
+      "bytes": 126164,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitPressure1.wav": {
+      "sha256": "17fc4ad52cc221f93a4b0a6525d5e29d1aabe41637734c5989b12e2cba7f9c30",
+      "bytes": 142070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitPressure2.wav": {
+      "sha256": "7178bf8590f188fc0d2650c6b184959c03d1a3cc4747e5e463e0e745550582dd",
+      "bytes": 135738,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/HitWind1.wav": {
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "bytes": 261052,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/KickHit.ogg": {
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "bytes": 6496,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lp/audio/manifest.json": {
+      "sha256": "18e214ac66b7a23c1381c71ef978a17448e64bf5d374b35f557703a5d0bc0b32",
+      "bytes": 235270,
+      "baselineSha256": "03553ca517becd9e8d39d0f6296a7f2c3d5f38c60f594aef7cc3299677d68f4b",
+      "baselineBytes": 229704
+    },
+    "mm/audio/HitElectric1.wav": {
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "bytes": 141826,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitElectric2.wav": {
+      "sha256": "1a17ee5a858736f05ca574211c5887e4313abbcd4762a14db440f17b982a2bfc",
+      "bytes": 146070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitMetalIron1.wav": {
+      "sha256": "fb8d3b286b2c44a2724b874fa8cc1781661fa91dd3759c50a1690fd13e7e4d94",
+      "bytes": 94402,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitPlasma1.wav": {
+      "sha256": "2774ac66930e47855d4946d29123be614f1d60cd547112a8fc914855cf2a0f04",
+      "bytes": 136226,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitPlasma2.wav": {
+      "sha256": "ddcc8c01a1c21fd1676faa2b32550f3a6b4a2ee2b00771fd7c4d877e9cc45af8",
+      "bytes": 126164,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitPressure1.wav": {
+      "sha256": "17fc4ad52cc221f93a4b0a6525d5e29d1aabe41637734c5989b12e2cba7f9c30",
+      "bytes": 142070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/HitPressure2.wav": {
+      "sha256": "7178bf8590f188fc0d2650c6b184959c03d1a3cc4747e5e463e0e745550582dd",
+      "bytes": 135738,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/KickHit.ogg": {
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "bytes": 6496,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/manifest.json": {
+      "sha256": "29c52294f41cf00e0f4812dfb0a5d6f33dca6474e83009fb7d2220b641407982",
+      "bytes": 231860,
+      "baselineSha256": "489ca2209f9d78e81d8cbd250775e06394546ad85bd626539a188da03673a509",
+      "baselineBytes": 226276
+    },
+    "de/audio/HitElectric1.wav": {
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "bytes": 141826,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/HitElectric2.wav": {
+      "sha256": "1a17ee5a858736f05ca574211c5887e4313abbcd4762a14db440f17b982a2bfc",
+      "bytes": 146070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/HitPlasma2.wav": {
+      "sha256": "ddcc8c01a1c21fd1676faa2b32550f3a6b4a2ee2b00771fd7c4d877e9cc45af8",
+      "bytes": 126164,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/HitPressure1.wav": {
+      "sha256": "17fc4ad52cc221f93a4b0a6525d5e29d1aabe41637734c5989b12e2cba7f9c30",
+      "bytes": 142070,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/HitPressure2.wav": {
+      "sha256": "7178bf8590f188fc0d2650c6b184959c03d1a3cc4747e5e463e0e745550582dd",
+      "bytes": 135738,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/KickHit.ogg": {
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "bytes": 6496,
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/manifest.json": {
+      "sha256": "d25310c0b51b2cdd1f33cf2626fb4ae0c5c63f2aa3ca35576a0762fd28677d51",
+      "bytes": 250689,
+      "baselineSha256": "1d83d5412066a442e70bc1eff2ad77cc751c6c8aaf04e980952e0314cbcbb8eb",
+      "baselineBytes": 246441
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "rf-camera-line-source-v2",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-source-consumers-not-target2016",
+  "targetClientMeasured": false,
+  "files": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "sha256": "3306c7370a282b18137c676db2491b0fed4b2939cc1015876965e506cb8e23b2",
+      "gitBlob": "10e46b5b150094051b0ae60315a9d43ae44552a9",
+      "bytes": 92246
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "bytes": 202266
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "sha256": "1d16ff35b70a54e2ee2eca84ca9a57826d21fc94a4d6c61f72381cd5c1e105bc",
+      "gitBlob": "2a90db62ffc362e66db5895e03c327a4b3368271",
+      "bytes": 91051
+    }
+  ],
+  "consumerSpans": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "signature": "/*static*/ void CKTDGLineMap::MakeLine( LineData*",
+      "sha256": "e7c8637743045e76855dc3dff8717baff518093865faa6939400e5376b339eba",
+      "bytes": 1942,
+      "lines": [
+        712,
+        763
+      ],
+      "purpose": "normalize END_POS-START_POS; derive line yaw with atan2 after inverse LookAtLH"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::PhysicProcess()",
+      "sha256": "6f2b57e41eb71095fc472331fda482cfebf62760b2cc209ab89e2f31dd69c602",
+      "bytes": 34883,
+      "lines": [
+        19752,
+        20764
+      ],
+      "purpose": "remember last touched authored line; use its direction and yaw, plus180 when facing left"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "HRESULT CX2GUUser::OnCameraMove()",
+      "sha256": "bea598824e8399c6b34449097f3fc640c2b3d1863183d92a022191cf86db1ad7",
+      "bytes": 4853,
+      "lines": [
+        6879,
+        7018
+      ],
+      "purpose": "disabled dynamic camera still requests normal tracking"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "signature": "void CX2Camera::NomalTrackingCamera( CX2GameUnit*",
+      "sha256": "1e54d51a9f64b15676918f3b89309848ecb5f8e4802ea9b74cd4a1758fa55bea",
+      "bytes": 4454,
+      "lines": [
+        391,
+        549
+      ],
+      "purpose": "normal eye/look points consume focus unit yaw and direction"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::CommonFrameMove()",
+      "sha256": "0e17509fb4da4fa40a27db1061ad8746e47ab50d3d8013b395e588d25745cd83",
+      "bytes": 88875,
+      "lines": [
+        15396,
+        18074
+      ],
+      "purpose": "character SkinAnim world matrix and unit matrix both consume Now position/dirDegree"
+    }
+  ],
+  "adapter": {
+    "lineSelection": "actor.lineId ?? actor.lastTouchLineId; remembered line in air; missing/vertical/zero basis rejected",
+    "direction": "normalize authored END_POS-START_POS in native XYZ",
+    "yawDegrees": "atan2(-direction.z,direction.x)*180/pi + (left ?180:0)",
+    "rendererYawRadians": "negative native yaw, consistent with native [x,y,z] -> renderer [x,y,-z]",
+    "characterWorld": "shared authored yaw quaternion for displayed character, actor helper spheres/lines and named bone world positions; actor cache includes quaternion",
+    "mapSource": "browser map getter follows selected practice/match map; server createRuntime freezes selected scene map; omitted map only retains standalone straight-lane fixture compatibility",
+    "normalCamera": "line yaw/direction into existing normalTrackingPoints; unchanged native camera.wasm tracking",
+    "distance": 1500,
+    "trackingSeconds": 0.3,
+    "targetTrackingSeconds": 0,
+    "unchanged": [
+      "camera WASM bytes",
+      "map geometry/collision assets",
+      "scripted state/line camera remains disabled",
+      "auto zoom/shake/cut-in remain disabled"
+    ]
+  },
+  "pending": [
+    "matching target2016 camera/unit consumer",
+    "original-client corner movement/camera trace",
+    "D3D and browser rasterization equivalence",
+    "complete along-lane combat/movement/attachment adaptation"
+  ]
+}

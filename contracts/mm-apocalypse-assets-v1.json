@@ -1,0 +1,2780 @@
+{
+  "schemaVersion": 1,
+  "id": "apocalypse",
+  "npcId": 1604,
+  "professionId": "mm",
+  "clientMeasured": false,
+  "evidenceClass": "original-2016-declarations-and-shipped-D3DX-execution",
+  "runtimeGlb": "Motion_AMM_APOCALYPSE.glb",
+  "poseData": "Motion_AMM_APOCALYPSE.pose.json",
+  "clips": [
+    {
+      "name": "Start",
+      "durationSeconds": 2.433333396911621,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    },
+    {
+      "name": "Attack_F",
+      "durationSeconds": 2.5,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    },
+    {
+      "name": "Attack_C",
+      "durationSeconds": 3.8333332538604736,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    },
+    {
+      "name": "Attack_B",
+      "durationSeconds": 3.299999952316284,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    },
+    {
+      "name": "Attack_A",
+      "durationSeconds": 2.8333332538604736,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    },
+    {
+      "name": "Wait",
+      "durationSeconds": 3,
+      "nativePlaybackField": 0,
+      "ticksPerSecond": 4800,
+      "warnings": [],
+      "trackWarnings": []
+    }
+  ],
+  "unitScale": 1.33,
+  "rawSystem": {
+    "UNIT_HEIGHT": 250,
+    "UNIT_SCALE": 1.33,
+    "UNIT_WIDTH": 150,
+    "UNIT_LAYER": 11
+  },
+  "rawComponents": {
+    "SHADOW_FILE_NAME": "shadow.dds",
+    "MP_CHANGE_RATE": 1,
+    "MAX_HP": 40000,
+    "SMALL_HP_BAR_BLUE": "Small_HP_bar_Blue.TGA",
+    "SMALL_HP_BAR_RED": "Small_HP_bar_Red.TGA",
+    "MP_CHARGE_RATE": 130,
+    "HYPER_MODE_COUNT": 0,
+    "RAGE_COUNT_MAX": 30,
+    "DIE_FLY": 0,
+    "RAGE_TIME_MAX": 3,
+    "SHADOW_SIZE": 200,
+    "SMALL_HP_BAR_YELLOW": "Small_HP_bar_Yellow.TGA",
+    "MAX_HYPER_MODE_TIME": 30,
+    "EXCLAMATION_MARK_SEQ": "ExclamationMarkNPC",
+    "QUESTION_MARK_SEQ": "QuestionMarkNPC",
+    "DRAW_SMALL_MP_BAR": 1,
+    "HITTED_TYPE": 1,
+    "FALL_DOWN": 0,
+    "DAMAGE_DOWN": 0,
+    "IMMUNITY_TIME_STOP": 1,
+    "IMMUNITY_DAMAGE_DATA_STOP_TIME": 1
+  },
+  "scaleContract": "Pose matrices and geometry remain unscaled source units. Apply UNIT_SCALE once at NPC world sampling/render root, never by borrowing the caster skeleton.",
+  "stateBindings": {
+    "APOCALYPSE_START": {
+      "animationName": "Start",
+      "durationSeconds": 2.433333396911621,
+      "rawAnimationSpeed": null,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+            "2": 0.4,
+            "3": 0
+          },
+          "2": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 0.68,
+            "3": 0
+          },
+          "3": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 0.82,
+            "3": 0
+          },
+          "4": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 0.96,
+            "3": 0
+          },
+          "5": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 1.1,
+            "3": 0
+          },
+          "6": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 1.24,
+            "3": 0
+          },
+          "7": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+            "2": 1.47,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_WAIT": {
+      "animationName": "Wait",
+      "durationSeconds": 3,
+      "rawAnimationSpeed": null,
+      "rawPlayType": 0,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {}
+    },
+    "APOCALYPSE_ATTACK_A": {
+      "animationName": "Attack_A",
+      "durationSeconds": 2.8333332538604736,
+      "rawAnimationSpeed": 1.3,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+            "2": 0,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_ATTACK_B": {
+      "animationName": "Attack_B",
+      "durationSeconds": 3.299999952316284,
+      "rawAnimationSpeed": 1.4,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B",
+            "2": 0.4,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_ATTACK_C": {
+      "animationName": "Attack_C",
+      "durationSeconds": 3.8333332538604736,
+      "rawAnimationSpeed": 1.3,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {}
+      }
+    },
+    "APOCALYPSE_ATTACK_A_EMERGENCY": {
+      "animationName": "Attack_A",
+      "durationSeconds": 2.8333332538604736,
+      "rawAnimationSpeed": null,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+            "2": 0,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_FINISH_ATTACK": {
+      "animationName": "Attack_F",
+      "durationSeconds": 2.5,
+      "rawAnimationSpeed": null,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+            "2": 0,
+            "3": 3
+          },
+          "2": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 0.98,
+            "3": 0
+          },
+          "3": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.1,
+            "3": 0
+          },
+          "4": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.22,
+            "3": 0
+          },
+          "5": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.34,
+            "3": 0
+          },
+          "6": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.46,
+            "3": 0
+          },
+          "7": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.58,
+            "3": 0
+          },
+          "8": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.77,
+            "3": 0
+          },
+          "9": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.88,
+            "3": 0
+          },
+          "10": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.99,
+            "3": 0
+          },
+          "11": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 2.1,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_DIE_ATTACK": {
+      "animationName": "Attack_F",
+      "durationSeconds": 2.5,
+      "rawAnimationSpeed": null,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {
+        "EFFECT_SET_LIST_EX": {
+          "1": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+            "2": 0,
+            "3": 3
+          },
+          "2": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 0.98,
+            "3": 0
+          },
+          "3": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.1,
+            "3": 0
+          },
+          "4": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.22,
+            "3": 0
+          },
+          "5": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.34,
+            "3": 0
+          },
+          "6": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.46,
+            "3": 0
+          },
+          "7": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+            "2": 1.58,
+            "3": 0
+          },
+          "8": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.77,
+            "3": 0
+          },
+          "9": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.88,
+            "3": 0
+          },
+          "10": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 1.99,
+            "3": 0
+          },
+          "11": {
+            "1": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+            "2": 2.1,
+            "3": 0
+          }
+        }
+      }
+    },
+    "APOCALYPSE_DAMAGE": {
+      "animationName": "Wait",
+      "durationSeconds": 3,
+      "rawAnimationSpeed": 3,
+      "rawPlayType": 2,
+      "rawApplyAnimationMove": 0,
+      "rawEffectBindings": {}
+    }
+  },
+  "body": {
+    "source": "raw/data/data147.kom/Motion_AMM_APOCALYPSE.x",
+    "glb": "Motion_AMM_APOCALYPSE.glb",
+    "asset": {
+      "name": "Motion_AMM_APOCALYPSE",
+      "sources": [
+        "raw/data/data147.kom/Motion_AMM_APOCALYPSE.x"
+      ],
+      "meshes": 37,
+      "skins": 0,
+      "joint_references": 0,
+      "triangles": 868,
+      "glb_bytes": 2702480,
+      "animations": [
+        "Start",
+        "Attack_F",
+        "Attack_C",
+        "Attack_B",
+        "Attack_A",
+        "Wait"
+      ],
+      "missing_textures": [],
+      "file": "Motion_AMM_APOCALYPSE.glb",
+      "sha256": "9d7be13c8aae82515fbff374e43cdab2ebf4288ff9cf98161a6357750bd6ee77",
+      "nodes": [
+        "Scene_Root",
+        "Dummy01",
+        "Core",
+        "Midle",
+        "Cube_15",
+        "X_UnnamedFrame",
+        "Dummy_B23",
+        "Cube_12",
+        "X_UnnamedFrame__duplicate_2",
+        "Dummy_B06",
+        "Cube_13",
+        "X_UnnamedFrame__duplicate_3",
+        "Dummy_B21",
+        "Cube_10",
+        "X_UnnamedFrame__duplicate_4",
+        "Dummy_B04",
+        "Cube_14",
+        "X_UnnamedFrame__duplicate_5",
+        "Dummy_B22",
+        "Cube_Center",
+        "Dummy_B15",
+        "Cube_11",
+        "X_UnnamedFrame__duplicate_6",
+        "Dummy_B05",
+        "Cube_R_01",
+        "Dummy_T02",
+        "Cube_L_01",
+        "X_UnnamedFrame__duplicate_7",
+        "Dummy_T01",
+        "Top",
+        "Cube_16",
+        "X_UnnamedFrame__duplicate_8",
+        "Cube_27",
+        "X_UnnamedFrame__duplicate_9",
+        "Dummy_S03",
+        "Dummy_B07",
+        "Cube_17",
+        "X_UnnamedFrame__duplicate_10",
+        "Dummy_B08",
+        "Cube_18",
+        "X_UnnamedFrame__duplicate_11",
+        "Cube_28",
+        "X_UnnamedFrame__duplicate_12",
+        "Dummy_S04",
+        "Dummy_B09",
+        "Cube_19",
+        "X_UnnamedFrame__duplicate_13",
+        "Dummy_B17",
+        "Cube_20",
+        "X_UnnamedFrame__duplicate_14",
+        "Cube_34",
+        "X_UnnamedFrame__duplicate_15",
+        "Dummy_S09",
+        "Dummy_B18",
+        "Cube_21",
+        "X_UnnamedFrame__duplicate_16",
+        "Dummy_B10",
+        "Cube_22",
+        "X_UnnamedFrame__duplicate_17",
+        "Cube_30",
+        "X_UnnamedFrame__duplicate_18",
+        "Dummy_S02",
+        "Dummy_B19",
+        "Cube_23",
+        "X_UnnamedFrame__duplicate_19",
+        "Dummy_B25",
+        "Cube_24",
+        "X_UnnamedFrame__duplicate_20",
+        "Cube_29",
+        "X_UnnamedFrame__duplicate_21",
+        "Dummy_S01",
+        "Dummy_B24",
+        "Low",
+        "Cube_06",
+        "X_UnnamedFrame__duplicate_22",
+        "Dummy_B12",
+        "Cube_09",
+        "X_UnnamedFrame__duplicate_23",
+        "Cube_31",
+        "X_UnnamedFrame__duplicate_24",
+        "Dummy_S06",
+        "Dummy_B11",
+        "Cube_03",
+        "X_UnnamedFrame__duplicate_25",
+        "Cube_25",
+        "X_UnnamedFrame__duplicate_26",
+        "Dummy_S07",
+        "Dummy_B01",
+        "Cube_05",
+        "X_UnnamedFrame__duplicate_27",
+        "Cube_33",
+        "X_UnnamedFrame__duplicate_28",
+        "Dummy_S10",
+        "Dummy_B13",
+        "Cube_08",
+        "X_UnnamedFrame__duplicate_29",
+        "Dummy_B20",
+        "Cube_02",
+        "X_UnnamedFrame__duplicate_30",
+        "Dummy_B02",
+        "Cube_04",
+        "X_UnnamedFrame__duplicate_31",
+        "Dummy_B14",
+        "Cube_07",
+        "X_UnnamedFrame__duplicate_32",
+        "Cube_32",
+        "X_UnnamedFrame__duplicate_33",
+        "Dummy_S05",
+        "Dummy_B16",
+        "Cube_01",
+        "X_UnnamedFrame__duplicate_34",
+        "Cube_26",
+        "X_UnnamedFrame__duplicate_35",
+        "Dummy_S08",
+        "Dummy_B03",
+        "COLLISION_SPHERE1",
+        "X_UnnamedFrame__duplicate_36"
+      ],
+      "bindBounds": {
+        "min": [
+          -44.89940691304077,
+          52.582574328403396,
+          -44.899187311698036
+        ],
+        "max": [
+          44.89940287488105,
+          142.38099032671016,
+          44.89923739862741
+        ]
+      },
+      "materials": [
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        },
+        {
+          "name": "Mesh_Add_ACC.png",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0
+            }
+          },
+          "doubleSided": false,
+          "extensions": {
+            "KHR_materials_unlit": {}
+          },
+          "extras": {
+            "costumeRenderProfile": {
+              "cull": "back",
+              "realColor": true,
+              "blend": false,
+              "depthWrite": true,
+              "alphaTest": true,
+              "evidence": "current character material adapter; original GPU blend/lighting unmeasured"
+            }
+          }
+        }
+      ]
+    },
+    "animations": [
+      {
+        "name": "Start",
+        "durationSeconds": 2.433333396911621,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      },
+      {
+        "name": "Attack_F",
+        "durationSeconds": 2.5,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      },
+      {
+        "name": "Attack_C",
+        "durationSeconds": 3.8333332538604736,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      },
+      {
+        "name": "Attack_B",
+        "durationSeconds": 3.299999952316284,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      },
+      {
+        "name": "Attack_A",
+        "durationSeconds": 2.8333332538604736,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      },
+      {
+        "name": "Wait",
+        "durationSeconds": 3,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      }
+    ],
+    "nativeAnimation": "Motion_AMM_APOCALYPSE.animation.json",
+    "poseData": "Motion_AMM_APOCALYPSE.pose.json",
+    "unsupportedPoseTracks": [],
+    "missingExplicitTickRate": false,
+    "observedClock": {
+      "ticksPerSecond": 4800,
+      "evidenceClass": "target-2016-shipped-DLL-executed",
+      "sourceSha256": "b6aa14c0918c8498951f45f1c68fa858f872a93e97600236b3cb610f5ad6a8bd",
+      "dllSha256": "0b28546be22c71834501f7d7185ede5d79742457331c7ee09efc14490dd64f5f",
+      "trace": "original-X-loader-Motion_AMM_APOCALYPSE.x",
+      "report": "reports/mm-apocalypse-d3dx-execution-v1.json"
+    },
+    "renamedDuplicateFrames": [
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_2",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_3",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_4",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_5",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_6",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_7",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_8",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_9",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_10",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_11",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_12",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_13",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_14",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_15",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_16",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_17",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_18",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_19",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_20",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_21",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_22",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_23",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_24",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_25",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_26",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_27",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_28",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_29",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_30",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_31",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_32",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_33",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_34",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_35",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      },
+      {
+        "sourceName": "",
+        "exportedName": "X_UnnamedFrame__duplicate_36",
+        "animationBinding": "first original-name node receives named animation; duplicate native binding unverified"
+      }
+    ],
+    "helpers": [
+      {
+        "name": "COLLISION_SPHERE1",
+        "parent": "Core",
+        "source": "raw/data/data147.kom/Motion_AMM_APOCALYPSE.x",
+        "nativeRowMatrix": [
+          1.6463979482650757,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.6463979482650757,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.6463979482650757,
+          0.0,
+          0.0,
+          -9.000000318337698e-06,
+          -0.0,
+          1.0
+        ],
+        "gltfColumnMatrix": [
+          1.6463979482650757,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.6463979482650757,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.6463979482650757,
+          0.0,
+          0.0,
+          -9.000000318337698e-06,
+          0.0,
+          1.0
+        ],
+        "nativeVertices": [
+          [
+            -33.98661102164658,
+            -34.314207984375,
+            34.641146728785316
+          ],
+          [
+            -33.98660363540125,
+            34.314377831054685,
+            34.64102795125518
+          ],
+          [
+            -34.63885551984913,
+            -34.3143300546875,
+            -33.98435933882695
+          ],
+          [
+            -34.63884658643883,
+            34.31425957543945,
+            -33.98447590677756
+          ],
+          [
+            34.63888377573221,
+            -34.3142194284668,
+            33.98890024333912
+          ],
+          [
+            34.638893040349785,
+            34.31436638696289,
+            33.98878179701626
+          ],
+          [
+            33.98664303427415,
+            -34.3143414987793,
+            -34.6366051618586
+          ],
+          [
+            33.98665229889173,
+            34.314248131347654,
+            -34.636723608181455
+          ],
+          [
+            34.638893040349785,
+            34.31436638696289,
+            33.98878179701626
+          ],
+          [
+            34.63888377573221,
+            -34.3142194284668,
+            33.98890024333912
+          ],
+          [
+            -33.98661102164658,
+            -34.314207984375,
+            34.641146728785316
+          ],
+          [
+            -33.98660363540125,
+            34.314377831054685,
+            34.64102795125518
+          ],
+          [
+            33.98665229889173,
+            34.314248131347654,
+            -34.636723608181455
+          ],
+          [
+            34.638893040349785,
+            34.31436638696289,
+            33.98878179701626
+          ],
+          [
+            -33.98660363540125,
+            34.314377831054685,
+            34.64102795125518
+          ],
+          [
+            -34.63884658643883,
+            34.31425957543945,
+            -33.98447590677756
+          ],
+          [
+            33.98664303427415,
+            -34.3143414987793,
+            -34.6366051618586
+          ],
+          [
+            33.98665229889173,
+            34.314248131347654,
+            -34.636723608181455
+          ],
+          [
+            -34.63884658643883,
+            34.31425957543945,
+            -33.98447590677756
+          ],
+          [
+            -34.63885551984913,
+            -34.3143300546875,
+            -33.98435933882695
+          ],
+          [
+            34.63888377573221,
+            -34.3142194284668,
+            33.98890024333912
+          ],
+          [
+            33.98664303427415,
+            -34.3143414987793,
+            -34.6366051618586
+          ],
+          [
+            -34.63885551984913,
+            -34.3143300546875,
+            -33.98435933882695
+          ],
+          [
+            -33.98661102164658,
+            -34.314207984375,
+            34.641146728785316
+          ]
+        ],
+        "nativeTriangles": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            7,
+            4,
+            6
+          ],
+          [
+            4,
+            7,
+            5
+          ],
+          [
+            8,
+            10,
+            9
+          ],
+          [
+            10,
+            8,
+            11
+          ],
+          [
+            12,
+            14,
+            13
+          ],
+          [
+            14,
+            12,
+            15
+          ],
+          [
+            16,
+            18,
+            17
+          ],
+          [
+            18,
+            16,
+            19
+          ],
+          [
+            20,
+            22,
+            21
+          ],
+          [
+            22,
+            20,
+            23
+          ]
+        ],
+        "nativeLocalBounds": {
+          "min": [
+            -34.63885551984913,
+            -34.3143414987793,
+            -34.636723608181455
+          ],
+          "max": [
+            34.638893040349785,
+            34.314377831054685,
+            34.641146728785316
+          ]
+        },
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            1.8760250327432004e-05,
+            1.8166137692787743e-05,
+            0.002211560301930149
+          ],
+          "radius": 59.43411085116337,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        }
+      }
+    ],
+    "status": "converted source geometry; gameplay transform/time and native blending require evidence"
+  },
+  "frameCount": 117,
+  "nativeFrameNames": [
+    "Scene_Root",
+    "Dummy01",
+    "Core",
+    "Midle",
+    "Cube_15",
+    "X_UnnamedFrame",
+    "Dummy_B23",
+    "Cube_12",
+    "X_UnnamedFrame__duplicate_2",
+    "Dummy_B06",
+    "Cube_13",
+    "X_UnnamedFrame__duplicate_3",
+    "Dummy_B21",
+    "Cube_10",
+    "X_UnnamedFrame__duplicate_4",
+    "Dummy_B04",
+    "Cube_14",
+    "X_UnnamedFrame__duplicate_5",
+    "Dummy_B22",
+    "Cube_Center",
+    "Dummy_B15",
+    "Cube_11",
+    "X_UnnamedFrame__duplicate_6",
+    "Dummy_B05",
+    "Cube_R_01",
+    "Dummy_T02",
+    "Cube_L_01",
+    "X_UnnamedFrame__duplicate_7",
+    "Dummy_T01",
+    "Top",
+    "Cube_16",
+    "X_UnnamedFrame__duplicate_8",
+    "Cube_27",
+    "X_UnnamedFrame__duplicate_9",
+    "Dummy_S03",
+    "Dummy_B07",
+    "Cube_17",
+    "X_UnnamedFrame__duplicate_10",
+    "Dummy_B08",
+    "Cube_18",
+    "X_UnnamedFrame__duplicate_11",
+    "Cube_28",
+    "X_UnnamedFrame__duplicate_12",
+    "Dummy_S04",
+    "Dummy_B09",
+    "Cube_19",
+    "X_UnnamedFrame__duplicate_13",
+    "Dummy_B17",
+    "Cube_20",
+    "X_UnnamedFrame__duplicate_14",
+    "Cube_34",
+    "X_UnnamedFrame__duplicate_15",
+    "Dummy_S09",
+    "Dummy_B18",
+    "Cube_21",
+    "X_UnnamedFrame__duplicate_16",
+    "Dummy_B10",
+    "Cube_22",
+    "X_UnnamedFrame__duplicate_17",
+    "Cube_30",
+    "X_UnnamedFrame__duplicate_18",
+    "Dummy_S02",
+    "Dummy_B19",
+    "Cube_23",
+    "X_UnnamedFrame__duplicate_19",
+    "Dummy_B25",
+    "Cube_24",
+    "X_UnnamedFrame__duplicate_20",
+    "Cube_29",
+    "X_UnnamedFrame__duplicate_21",
+    "Dummy_S01",
+    "Dummy_B24",
+    "Low",
+    "Cube_06",
+    "X_UnnamedFrame__duplicate_22",
+    "Dummy_B12",
+    "Cube_09",
+    "X_UnnamedFrame__duplicate_23",
+    "Cube_31",
+    "X_UnnamedFrame__duplicate_24",
+    "Dummy_S06",
+    "Dummy_B11",
+    "Cube_03",
+    "X_UnnamedFrame__duplicate_25",
+    "Cube_25",
+    "X_UnnamedFrame__duplicate_26",
+    "Dummy_S07",
+    "Dummy_B01",
+    "Cube_05",
+    "X_UnnamedFrame__duplicate_27",
+    "Cube_33",
+    "X_UnnamedFrame__duplicate_28",
+    "Dummy_S10",
+    "Dummy_B13",
+    "Cube_08",
+    "X_UnnamedFrame__duplicate_29",
+    "Dummy_B20",
+    "Cube_02",
+    "X_UnnamedFrame__duplicate_30",
+    "Dummy_B02",
+    "Cube_04",
+    "X_UnnamedFrame__duplicate_31",
+    "Dummy_B14",
+    "Cube_07",
+    "X_UnnamedFrame__duplicate_32",
+    "Cube_32",
+    "X_UnnamedFrame__duplicate_33",
+    "Dummy_S05",
+    "Dummy_B16",
+    "Cube_01",
+    "X_UnnamedFrame__duplicate_34",
+    "Cube_26",
+    "X_UnnamedFrame__duplicate_35",
+    "Dummy_S08",
+    "Dummy_B03",
+    "COLLISION_SPHERE1",
+    "X_UnnamedFrame__duplicate_36"
+  ],
+  "effectOwnerBoneAudit": {
+    "sourceEffectSets": [
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_B",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile_PVP",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+      "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+      "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+      "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+      "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+      "EffectSet_SI_HA_AMM_Apocalypse_Start",
+      "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit"
+    ],
+    "bindings": [
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT3",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT4",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C_PVP",
+        "effect": "EFFECT5",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT3",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT4",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_C",
+        "effect": "EFFECT5",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile",
+        "effect": "EFFECT0",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile",
+        "effect": "EFFECT1",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+        "effect": "EFFECT0",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+        "effect": "EFFECT1",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+        "effect": "EFFECT2",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Start",
+        "effect": "EFFECT3",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Start_Hit",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile_PVP",
+        "effect": "EFFECT0",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile_PVP",
+        "effect": "EFFECT1",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_B_Projectile_PVP",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+        "effect": "EFFECT3",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile_PVP",
+        "effect": "EFFECT4",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+        "effect": "EFFECT3",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A_Projectile",
+        "effect": "EFFECT4",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Attack_A",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT1",
+        "bone": "Dummy_B03",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT2",
+        "bone": "Dummy_B05",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT3",
+        "bone": "Dummy_B07",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT4",
+        "bone": "Dummy_B09",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT5",
+        "bone": "Dummy_B11",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT6",
+        "bone": "Dummy_B13",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT7",
+        "bone": "Dummy_B15",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT8",
+        "bone": "Dummy_B17",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT9",
+        "bone": "Dummy_B19",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT10",
+        "bone": "Dummy_B21",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT11",
+        "bone": "Dummy_B23",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT12",
+        "bone": "Dummy_B25",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT13",
+        "bone": "Dummy_B02",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT14",
+        "bone": "Dummy_B04",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT15",
+        "bone": "Dummy_B06",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT16",
+        "bone": "Dummy_B08",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT17",
+        "bone": "Dummy_B10",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT18",
+        "bone": "Dummy_B12",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT19",
+        "bone": "Dummy_B14",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT20",
+        "bone": "Dummy_B16",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT21",
+        "bone": "Dummy_B18",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT22",
+        "bone": "Dummy_B20",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT23",
+        "bone": "Dummy_B22",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT24",
+        "bone": "Dummy_B24",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT25",
+        "bone": "Dummy_S01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT26",
+        "bone": "Dummy_S02",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT27",
+        "bone": "Dummy_S03",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT28",
+        "bone": "Dummy_S04",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT29",
+        "bone": "Dummy_S05",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT30",
+        "bone": "Dummy_S06",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT31",
+        "bone": "Dummy_S07",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT32",
+        "bone": "Dummy_S08",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT33",
+        "bone": "Dummy_S09",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT34",
+        "bone": "Dummy_S10",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT35",
+        "bone": "Dummy_T02",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT36",
+        "bone": "Dummy_T01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT37",
+        "bone": "Core",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT38",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT39",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT40",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT41",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT42",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT43",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_FinishAttack",
+        "effect": "EFFECT44",
+        "bone": "Dummy01",
+        "present": true
+      },
+      {
+        "effectSet": "EffectSet_SI_HA_AMM_Apocalypse_Finish_Hit2",
+        "effect": "EFFECT0",
+        "bone": "Dummy_B15",
+        "present": true
+      }
+    ],
+    "missing": []
+  },
+  "source": {
+    "path": "asset_work\\raw\\data\\data037.kom\\SI_HA_APOCALYPSE.lua",
+    "sha256": "88829766340a21abb208a2edb2c81347e49e1ca38b61f7fc57e345ccea0f6eb9"
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 351,
+      "name": "Motion_AMM_APOCALYPSE.x",
+      "rawPath": "raw/data/data147.kom/Motion_AMM_APOCALYPSE.x",
+      "sha256": "b6aa14c0918c8498951f45f1c68fa858f872a93e97600236b3cb610f5ad6a8bd",
+      "bytes": 701401,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 350,
+      "name": "Mesh_Add_ACC.tga",
+      "rawPath": "raw/data/data147.kom/Mesh_Add_ACC.tga",
+      "sha256": "4e15eb4b5a3b9241cb6215baf309434c641fd3218b4ba8cef186856a07f32fbb",
+      "bytes": 49702,
+      "signatureHex": "00000200000000000000000080008000"
+    }
+  ],
+  "fx": "fx/index.json",
+  "audio": "audio/manifest.json",
+  "samplerContract": {
+    "library": "createPoseLibrary(poseData)",
+    "sampling": "samplePose(library, original animationName, source time)",
+    "owner": "independent NPC 1604; never caster"
+  },
+  "limits": [
+    "Whole-client playback, lighting and pixel fidelity are unmeasured.",
+    "Original state PLAY_TYPE and ANIM_SPEED belong to the NPC controller; DLL clip playback field does not replace state declarations."
+  ]
+}

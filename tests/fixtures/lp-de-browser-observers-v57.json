@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "kind": "minimal-current-Web-browser-observer-fixture",
+  "originalClientExecuted": false,
+  "sourceArtifacts": [
+    {
+      "name": "result.json",
+      "bytes": 199720,
+      "sha256": "57c543c7f97af4835260701a86824a8b3d4d5cd93e367d2b761d3e5c492d0f0d"
+    },
+    {
+      "name": "stasis-grow-failure.json",
+      "bytes": 557619,
+      "sha256": "3903e52ebe6fd953007f9ea6be8e14b610648de9da262e6676c7df66c52b063c"
+    },
+    {
+      "name": "stasis-timeout-timeout.json",
+      "bytes": 779950,
+      "sha256": "9275060fa5c07c3627ac4dab2eec4b1efd73958463ddd920f4a9838eb96d3887"
+    },
+    {
+      "name": "stasis-timeout-failure.json",
+      "bytes": 784659,
+      "sha256": "1cb99e5313ba392a079ba4ca4a0b4b301aca21bdcf7f68b304d1d04307a7c6c1"
+    },
+    {
+      "name": "stasis-grow-failure.png",
+      "bytes": 857802,
+      "sha256": "01b7afb22ac05d0a2158ad96a757d1ef8a9e57bea6318ccc775ae2bf2a7825f1"
+    },
+    {
+      "name": "stasis-timeout-failure.png",
+      "bytes": 856679,
+      "sha256": "90b450af5baf20e22a83413adb1e98904a316bf77c13285ffecac750b65676cb"
+    }
+  ],
+  "charge": {
+    "params": {
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "afterEventId": 48,
+      "afterStateSerial": 5
+    },
+    "events": [
+      {
+        "eventId": 48,
+        "time": 3.016666666666661,
+        "type": "stateChanged",
+        "actorId": "player-1",
+        "state": "RSI_COMBO_Z"
+      },
+      {
+        "eventId": 61,
+        "time": 3.1166666666666605,
+        "type": "effectStarted",
+        "actorId": "player-1",
+        "name": "DamageEffect_AN_Combo_Z",
+        "setName": "EffectSet_AN_Combo_Z_Attack",
+        "effectId": 31,
+        "ownerStateSerial": 6
+      },
+      {
+        "eventId": 65,
+        "time": 3.1166666666666605,
+        "type": "hit",
+        "actorId": "player-1",
+        "targetId": "player-2",
+        "amount": 1159.0736083984375,
+        "origin": {
+          "kind": "effect",
+          "id": 31
+        }
+      }
+    ],
+    "samples": [
+      {
+        "time": 3.049999999999994,
+        "actors": [
+          {
+            "id": "player-1",
+            "state": "RSI_COMBO_Z",
+            "stateSerial": 6
+          },
+          {
+            "id": "player-2",
+            "state": "RSI_DAMAGE_BIG_FRONT",
+            "stateSerial": 2
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "effectId": 31,
+      "commandStateSerial": 6,
+      "amount": 1159.0736083984375,
+      "accumulatorBefore": 4691.771484375,
+      "accumulatorAfter": 5850.84521484375
+    }
+  },
+  "timeout": {
+    "checkpointTime": 15.883333333333702,
+    "checkpointLastRafSampleTime": 15.866666666667035,
+    "checkpointStorage": null,
+    "retainedBeforeCheckpoint": [
+      {
+        "eventId": 27,
+        "time": 1.016666666666668,
+        "type": "effectStarted",
+        "effectId": 18,
+        "setName": "EffectSet_SA_APT_STASIS_FIELD_Loop"
+      },
+      {
+        "eventId": 50,
+        "time": 10.883333333333454,
+        "type": "effectStarted",
+        "effectId": 20,
+        "setName": "EffectSet_SA_APT_STASIS_FIELD_Count_Down"
+      }
+    ],
+    "laterRetainedTerminalRecords": [
+      {
+        "eventId": 51,
+        "time": 15.883333333333702,
+        "type": "effectEnded",
+        "effectId": 18,
+        "reason": "add-stasis-storage-ended"
+      },
+      {
+        "eventId": 52,
+        "time": 15.883333333333702,
+        "type": "effectEnded",
+        "effectId": 20,
+        "reason": "add-stasis-storage-ended"
+      }
+    ],
+    "expectedHandles": [
+      18,
+      20
+    ],
+    "qualification": "The early checkpoint did not save its live event ring. These exact terminal records are independently retained by the later failure snapshot at the same terminal simulation time."
+  },
+  "void": {
+    "sourceRun": "de-final-a",
+    "sourceArtifacts": [
+      {
+        "name": "result.json",
+        "bytes": 51225,
+        "sha256": "2621ffe99b5308564fd1bfcbb51da39a8b5b0758d7448c0cfbb020bcffad4ce3"
+      },
+      {
+        "name": "void-bind-held.json",
+        "bytes": 423959,
+        "sha256": "c4019a3516a3978c166bcb4f3a6e70aafe9e6aba872a8c25dd40213ce444dcac"
+      },
+      {
+        "name": "void-bind-collapse.json",
+        "bytes": 578185,
+        "sha256": "ddcf74632982da0731c37d7c58361280d1cc02c0177bdf5a7e8803e1233e7652"
+      },
+      {
+        "name": "void-bind-retired.json",
+        "bytes": 659332,
+        "sha256": "dd1cc9c68fb1ec959e3fcf3d9a2df2a02547d9b6580d896ef6b0a388958b927b"
+      },
+      {
+        "name": "void-bind-failure.json",
+        "bytes": 603426,
+        "sha256": "cbc879da63cefaf47b5fa41b979cc2b2e135a75346e84222acde7b1af0fec684"
+      },
+      {
+        "name": "void-bind-retired.png",
+        "bytes": 858394,
+        "sha256": "b126bb0961feb98de5876840e3b68fad4882585b2523d4c1456f1adcf3508337"
+      },
+      {
+        "name": "void-bind-failure.png",
+        "bytes": 856674,
+        "sha256": "3acee9c5d5b478cdf3aa2737c087696bfab0ff63af335e0af9d0d50d304c6926"
+      }
+    ],
+    "carrierClock": {
+      "observedAt": 1.5333333333333328,
+      "id": 1,
+      "ownerId": "player-1",
+      "name": "DamageEffect_ATT_Void_Field",
+      "mainEffectName": "ATT_Void_Field_M01",
+      "meshLifetimeElapsed": 0.6166667342185974,
+      "lifeTimeSeconds": 7.75,
+      "templateFields": {
+        "MeshName": "ATT_Void_Field_Attack_Line.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 7.75,
+        "ZEnable": true
+      }
+    },
+    "sourceTemplate": {
+      "name": "ATT_Void_Field_M01",
+      "fields": {
+        "MeshName": "ATT_Void_Field_Attack_Line.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 7.75,
+        "ZEnable": true
+      },
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2608947,
+        "line": 81500
+      },
+      "declarationSha256": "6c7a043054bc72ef2ad30a3ef4f8d563083817bbe51c049ef98d96128edffbcb"
+    },
+    "events": [
+      {
+        "eventId": 96,
+        "time": 8.683333333333344,
+        "type": "effectEnded",
+        "actorId": "player-1",
+        "effectId": 1,
+        "name": "DamageEffect_ATT_Void_Field",
+        "setName": null,
+        "reason": "template-life-time"
+      }
+    ],
+    "remainingEffects": [],
+    "checkpointTime": 8.700000000000012,
+    "checkpointLastRafSampleTime": 8.683333333333344,
+    "lastCollapseSamples": [
+      {
+        "time": 8.466666666666667,
+        "scale": 0.0015572096453979611,
+        "alpha": 0
+      },
+      {
+        "time": 8.51666666666667,
+        "scale": 0.001465633395127952,
+        "alpha": 0
+      },
+      {
+        "time": 8.566666666666672,
+        "scale": 0.0013794424012303352,
+        "alpha": 0
+      },
+      {
+        "time": 8.633333333333342,
+        "scale": 0.0012723538093268871,
+        "alpha": 0
+      }
+    ],
+    "observedAlphaZero": true,
+    "expected": {
+      "eventId": 96,
+      "effectId": 1,
+      "reason": "template-life-time",
+      "route": "original-template-lifetime",
+      "sourceLifetime": 7.75
+    },
+    "display": {
+      "sourceTemplates": [
+        "ATT_Void_Field_M01",
+        "ATT_Void_Field_P01",
+        "ATT_Void_Field_P02",
+        "ATT_Void_Field_P15",
+        "ATT_Void_Field_P17",
+        "ATT_Void_Field_P04",
+        "ATT_Void_Field_P05",
+        "ATT_Void_Field_P06",
+        "ATT_Void_Field_P10",
+        "ATT_Void_Field_P11",
+        "ATT_Void_Field_P06A",
+        "ATT_Void_Field_P07",
+        "ATT_Void_Field_P08",
+        "ATT_Void_Field_P17A"
+      ],
+      "atRetirement": [
+        {
+          "name": "ATT_Void_Field_P01",
+          "count": 1
+        },
+        {
+          "name": "ATT_Void_Field_P02",
+          "count": 1
+        },
+        {
+          "name": "ATT_Void_Field_P04",
+          "count": 1
+        },
+        {
+          "name": "ATT_Void_Field_P05",
+          "count": 1
+        },
+        {
+          "name": "ATT_Void_Field_P06",
+          "count": 1
+        },
+        {
+          "name": "ATT_Void_Field_P15",
+          "count": 2
+        },
+        {
+          "name": "ATT_Void_Field_P17",
+          "count": 3
+        }
+      ],
+      "laterAt": 9.150000000000034,
+      "later": [],
+      "qualification": "Passive particle anchors in this proof omit effectParentId; actual counts by the captured original carrier template names are also required, not only parent-ID absence."
+    },
+    "qualification": "The exact terminal event is already retained by the early checkpoint; this failure is a competing original lifetime route, not an event-harvest race."
+  }
+}

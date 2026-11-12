@@ -1,0 +1,206 @@
+{
+  "schema": "six-profession-fast-standup-sources-v2",
+  "targetClientMeasured": false,
+  "originals": [
+    {
+      "path": "asset_work/raw/data/data036.kom/Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031",
+      "evidenceClass": "target2016-declaration+original-D3DX-converted-keys; client-unmeasured"
+    }
+  ],
+  "originalElswordNonDown": {
+    "ESSI_STANDUP_ATTACK_FRONT_NO_DOWN": {
+      "raw": {
+        "ANIM_NAME": "SI_A_EL_GET_CHANCE_FRONT",
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SOUND_PLAY0": {
+          "1": 0.33,
+          "2": "Slash.ogg"
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.23,
+          "2": 0.4
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": 13.88,
+          "HIT_ADD_MP": 5,
+          "TECH_POINT": 413,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 740,
+          "DAMAGE": {
+            "PHYSIC": 2.75
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6135
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_A_EL_GET_CHANCE_FRONT",
+        "decodedKeysSha256": "26e527809201eb883d7cd4fdd9ba24a6cd7478dc625f7935dfa6459ecbe8fe86"
+      }
+    },
+    "ESSI_STANDUP_ATTACK_BACK_NO_DOWN": {
+      "raw": {
+        "ANIM_NAME": "SI_A_EL_GET_CHANCE_BACK",
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "FLIP_DIR_END": 1,
+        "SOUND_PLAY0": {
+          "1": 0.43,
+          "2": "Slash.ogg"
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.23,
+          "2": 0.4
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": 13.88,
+          "HIT_ADD_MP": 5,
+          "TECH_POINT": 413,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "WAY_OF_SWORD_TYPE": 1,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 740,
+          "DAMAGE": {
+            "PHYSIC": 2.75
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6196
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_A_EL_GET_CHANCE_BACK",
+        "decodedKeysSha256": "e5250c3860f9709f70f177b63f153e37634bead86d639fe523749b28ab7d4af4"
+      }
+    }
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "localInput": ".cache/is-source/X2GUElsword_SwordMan.cpp",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "methods": [
+      {
+        "name": "DamageDownFrontEventProcess",
+        "lineStart": 6679,
+        "lineEnd": 6763,
+        "sha256": "fdafd5cfe5ebad95463be9897d8c306db8ede99313f9dcaaacc27c7affb80090"
+      },
+      {
+        "name": "DamageDownBackEventProcess",
+        "lineStart": 6785,
+        "lineEnd": 6869,
+        "sha256": "33978dd372c9adefcdc457242d15ebb07cf361902e9f35f9730c1a05d6a551e2"
+      },
+      {
+        "name": "DamageAirDownLandingEventProcess",
+        "lineStart": 6871,
+        "lineEnd": 6956,
+        "sha256": "9460b26f4421084951148902a9caa2ab5a306bdf2a62718cba3fde513f02fdf2"
+      },
+      {
+        "name": "StandUpAttackFrontNoDownEventProcess",
+        "lineStart": 13547,
+        "lineEnd": 13566,
+        "sha256": "632ed6ff8a5d3ab9cb89f67ef4db7b3abb0b4e038078b4e0449ada9f062c353c"
+      },
+      {
+        "name": "StandUpAttackBackNoDownEventProcess",
+        "lineStart": 13578,
+        "lineEnd": 13597,
+        "sha256": "8060956411fac8cc5d0d25c97069adfce712734a6dfea324af351d5a40279054"
+      },
+      {
+        "name": "StandUpAttackFrontNoDownEnd",
+        "lineStart": 13568,
+        "lineEnd": 13573,
+        "sha256": "64cc4bb11c0a072b84f427022fe0744a7aa6b21b929e147bd776914c1c7b2bf9"
+      },
+      {
+        "name": "StandUpAttackBackNoDownEnd",
+        "lineStart": 13599,
+        "lineEnd": 13604,
+        "sha256": "de19314f62e58e7b87590d66f8ae03096d5823a7be69d7c9bba5c79d0a3a546a"
+      }
+    ]
+  },
+  "priorRavenSource": "contracts/common-charge-standup-source-v8.json",
+  "sourceRules": {
+    "motion": "Both Elsword and Raven GetChance original clip periods are 0.7 seconds; item attack speed still applies",
+    "transition": "Existing fixedV5 SkinAnim period-transitionTime threshold is retained; no original XET override is claimed",
+    "input": "Original animation time >0.66 queues X; execute after the down clip ends",
+    "hit": "Original non-down attack window 0.23–0.4 seconds; back pose FLIP_DIR_END=1",
+    "protection": "Original INVINCIBLE window during motion; fixedV5 End adds 0.3 seconds force/show protection"
+  },
+  "userRules": {
+    "professionScope": [
+      "RF",
+      "LK",
+      "VC",
+      "RS",
+      "BM",
+      "IS"
+    ],
+    "x": "Deterministic non-down GetChance path; full knockdown gauge must not turn this hit into knockdown",
+    "heldX": "Held X through the permitted boundary is the existing web keyboard accommodation; an early released tap is ignored"
+  },
+  "resourceReuse": {
+    "newMeshBytes": 0,
+    "newOriginalClipConversions": 0,
+    "rsCompactPoseExpandsExistingKeys": true,
+    "elswordSharedModelClips": [
+      "SI_A_EL_GET_CHANCE_FRONT",
+      "SI_A_EL_GET_CHANCE_BACK"
+    ]
+  },
+  "limits": [
+    "No original2016 runtime trace or original GPU comparison",
+    "Deterministic X outcome is a user rule; source passive probability is not claimed"
+  ]
+}

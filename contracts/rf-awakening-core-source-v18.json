@@ -1,0 +1,71 @@
+{
+  "schema": "rf-awakening-core-source-contract-v18",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "matching2016ConsumerVerified": false,
+  "previousContract": "rf-awakening-source-v17.json",
+  "sourceProof": "../reports/rf-initial-core-independent-source-v18.json",
+  "probeTool": "../tools/native/check_rf_initial_core_source_v18.py",
+  "userCorrection": {
+    "reawakeningConsumedBeads": 1,
+    "reawakeningDurationBeads": 1,
+    "durationComposition": "MAX_HYPER_MODE_TIME30 * oneBead * binary32(target24405 SA_EFFECTIVE_TIME .7)",
+    "approximatelyAddedSeconds": 21,
+    "initialDurationComposition": "MAX_HYPER_MODE_TIME30 * consumedBeads1/2/3 * binary32(target24405 SA_EFFECTIVE_TIME .7)",
+    "availableBeadsStillUsedForElectricUpgrade": true,
+    "applicationAnimationTime": 0.83,
+    "coreLevelsAddedOnReawakening": 2,
+    "classification": "Explicit latest user correction plus target ratio and reference additive consumer; target2016 duration consumer unverified"
+  },
+  "initialCore": {
+    "acquiredReferenceOperation": "min(previousGauge+40,100), independent of consumed count/full mode",
+    "levelOperation": "Nonparry local owner int(rawGauge/20), capped5",
+    "emptyCoreInitialLevelsByBeadCount": [
+      2,
+      2,
+      2
+    ],
+    "emptyCoreInitialFullModeByBeadCount": [
+      false,
+      false,
+      true
+    ],
+    "userMemory": "1 bead2 stages,3 beads5 stages",
+    "decision": "Keep source+40/level conversion; do not infer2-bead stage or3-bead maximum from memory",
+    "scope": "Acquired fixed V5 reference, not matched target2016 source",
+    "fullModeAudit": [
+      "Buff SetFactor sets FullHyperMode flag, adds duration and calls BuffStart; it does not change gauge",
+      "Raven ApplyHyperModeBuff calls base and full-mode sound",
+      "Raven BuffStart creates electric aura when full then unconditionally adds40",
+      "User BuffStart changes equipment mode and does not reference gauge/Nasod",
+      "DoHyper(bool bFullHyper) body is empty in acquired reference",
+      "DoFrameMoveNasodBall level block reads gauge and CannonBallCount, not beads/full mode",
+      "CreateNasodBall updates mesh according to already selected level and does not write gauge",
+      "FrameMove GetHyperModeCount==3 branch controls third-bead UI flame only",
+      "All Raven gauge assignment/compound-assignment sites are listed in source proof"
+    ]
+  },
+  "preserved": [
+    "Initial1/2/3-bead21/42/63-second durations",
+    "Existing full-mode preservation and first3-bead electric-field creation",
+    "Reawakening+2 levels capped5 without clearing active core request/flight",
+    "Raw-gauge HP/MP settlement and aura cleanup from v17",
+    "Canonical target descriptors and all raw declarations",
+    "Published ten native module bytes/seal"
+  ],
+  "verification": {
+    "compiledOriginalCases": 21,
+    "unchangedCompiledMethods": 8,
+    "unchangedCompiledLevelBlocks": 1,
+    "test": "../tests/combat/awakening-core-v18.test.mjs",
+    "simulationTool": "../tools/combat/rf_awakening_v18.mjs",
+    "simulationResult": "../reports/rf-awakening-simulation-v18.json",
+    "publishedNativeModulesModified": false
+  },
+  "unknown": [
+    "Target2016 bead-to-initial-core-stage consumer is unavailable",
+    "The acquired older source cannot prove target2016 starts3-bead core at2 or5 stages",
+    "Target24405 maximum-charge description conflicts with user-confirmed reawakening+2 adaptation",
+    "Target2016 reawakening duration/core return consumers and original measured traces remain unavailable"
+  ]
+}

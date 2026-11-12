@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "fixedV5 source-version reference, target2016 extracted declarations, user behavioral reference; no original client measurement",
+  "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceRepository": "asset_sources/upstream/server/v5-source (read-only)",
+  "files": [
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38"
+    },
+    {
+      "path": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069"
+    },
+    {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923"
+    },
+    {
+      "path": "X2Lib/X2GageData.cpp",
+      "sha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8"
+    }
+  ],
+  "bindings": {
+    "overheat": {
+      "methodLine": 17483,
+      "usesGetFinalDamage": true,
+      "equipmentReductionBlockCommentedOut": true,
+      "equipmentReductionDamageReactLine": 9382,
+      "defaultPenalty": 0.2,
+      "deadlyTierPenalty": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "balanceMacroDefined": true,
+      "maxHpPercentage": false,
+      "healthWrite": "Gage::Increase adds fIncrement directly; no additional percentage scaling",
+      "acceptance": "OPEN: current preset reproduces only 0.223109375% loss at max Deadly Raid; the equipment-reduction fix does not resolve the reported magnitude."
+    },
+    "airFlame": {
+      "endFutureLine": 22705,
+      "endEventLine": 22726,
+      "holdEndPoseUntilLanding": true
+    },
+    "airHaze": {
+      "eventLine": 18236,
+      "targetCancelFieldAbsent": true,
+      "endCommandCancel": "user-confirmed adaptation; no invented early timestamp"
+    },
+    "ZX": {
+      "skillCancel": 0.42,
+      "secondXOrGravityRelease": 0.635,
+      "targetClipDuration": 0.9666666666666667,
+      "commandCancel": "user adaptation after full target clip recovery, using unfrozen stateTime * animationTargetSpeed; differs from prior v4 sharing skill .420"
+    },
+    "residualAudio": {
+      "hitType": 19,
+      "reactType": 7,
+      "referenceExcludes": [
+        0,
+        10
+      ],
+      "sound": "HitFire.wav",
+      "userIntent": "clarification pending: add missing playback or remove residual sound"
+    }
+  },
+  "userOverheatReference": {
+    "skillId": 24024,
+    "tier": 3,
+    "hpLossFractionApprox": [
+      0.2,
+      0.3
+    ],
+    "mode": "PvP / free training (user confirmed)",
+    "attributes": "unconfirmed",
+    "interpretation": "Approximate magnitude, not an exact 20–30% requirement; user explicitly rejects approximately 0.2% as acceptable."
+  }
+}

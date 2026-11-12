@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "module": "packages/combat-core/index.mjs",
+  "entry": "createSimulation(options)",
+  "units": {"time": "seconds", "position": "native LineMap units", "axes": "native left-handed XYZ; Y up", "meshConversion": "glTF Z must be negated on ingestion"},
+  "options": {
+    "required": ["profile", "map.lines"],
+    "preset": {"version": "frozen identifier", "attributes": "configured final stats; prototype defaults explicitly documented", "passives": "explicit RF passive IDs; currently supported combat branches 24401/24405", "loadout": "exactly eight nullable entries", "doubleTapWindowSeconds": "experimental only; omitted disables guessed double-tap window", "bannedSkillIds": "optional IDs; replacement/base both rejected"},
+    "actors": "id/team/position-or-x-y-z/facing/hp/mp/awakening.orbs/loadout/attributes",
+    "samplers": {
+      "collisionSampler(actor, context)": "original active ATTACK helpers -> shapes; context.profile/raw/stateTime/animationTime",
+      "defenderSampler(actor, context)": "original COLLISION helpers -> spheres; context.role='defender'",
+      "effectSampler(effect, owner, context)": "original effect-template pose and sphere shapes; caller must use birthActorPose/birthAnchor when TRACE and TRACE_MORE are false",
+      "effectAnchorSampler(effect, owner, context)": "optional {position:[nativeX,Y,Z], ...source-backed transform metadata}; captured at birth into snapshot"
+    }
+  },
+  "shape": {"kind": "sphere", "center": ["nativeX", "nativeY", "nativeZ"], "radius": "original stored KSM radius or explicitly labelled reference geometric candidate"},
+  "methods": {
+    "step(dtSeconds,input)": "finite >0 <=0.25, caller owns fixed timestep; no inherited 120Hz",
+    "configureLoadout(slots,actorId)": "eight null/{skillId,branchId:'none'} entries; RF ownership, bans, uniqueness, executor support checked; resolves final enhanced replacement and master level",
+    "snapshot()": "JSON-serializable state including time/actors/effects/birth anchors/RNG/events/counters/frozen versions",
+    "restore(snapshot)": "rejects program/preset/baseline/profile/map mismatch",
+    "drainEvents()": "returns ordered events and clears queue",
+    "injectHit(fixture)": "internal fixture only, never a public match input"
+  },
+  "input": {"single": "{actorId?, held:[], pressed:[], released:[]}", "multi": "{actorId: input, ...}", "held": ["LEFT", "RIGHT", "UP", "DOWN"], "pressed": ["Z", "X", "A", "S", "D", "F", "Q", "W", "E", "R", "AWAKEN", "DASH"], "aliases": "ArrowLeft/Right/Up/Down, Ctrl/Control are normalized; uppercase invariant"},
+  "actorPresentationFields": ["x","y","z","facing","hp","hpMax","mp","mpMax","state","stateTime","animationName","animationTime","animationLoop","applyMotionOffset","rootMotionEnabled","core.phase","core.level","core.gauge","core.x","core.y","core.z","core.animationName","core.animationTime","awakening.orbs","awakening.gauge","awakening.remaining"],
+  "effectPresentationFields": ["effectName","mainEffectName","elapsed","animationTime","initialAnimationName","initialAnimationPlayback","initialSize","initialVelocity","velocityEvidence","birthActorPose","birthAnchor","definition","clock","deleteConditions"],
+  "presentationPolicy": {"cameraDynamic":false,"skillCutIn":false,"skillBarMode":"eight","numericHpMp":true},
+  "validation": {"targetClientMeasured":false,"M3FidelityGate":"pending-target-client-baseline","simulationTestsAreOriginalEvidence":false}
+}

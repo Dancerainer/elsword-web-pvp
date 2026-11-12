@@ -1,0 +1,1492 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static+qualified-fixedV5-consumer+explicit-user-corrections",
+  "originalClientMeasurements": 0,
+  "staticSources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "buff-factor": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+    },
+    "battle-buff": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    }
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "swordMan": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUElsword_SwordMan.cpp",
+      "gitBlob": "40dde7e70da2cd2888b1a08bcfe10cdab444e037",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "fragments": [
+        {
+          "name": "DashAttackXEventProcess",
+          "startLine": 8589,
+          "endLine": 8645,
+          "sha256": "1fa78f390efb5685f89e500e04dd16edd4768a9cf98346700230952bdb668394",
+          "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+        },
+        {
+          "name": "ESSI_ERS_DASH_JUMP_XZZ_FrameMove",
+          "startLine": 14811,
+          "endLine": 14886,
+          "sha256": "53eb7e225b829235b1a8003dd69c88e5b77966c357a1ddf5dace0598f1e2af2d",
+          "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+        },
+        {
+          "name": "ESSI_ERS_XZ_FrameMove",
+          "startLine": 14485,
+          "endLine": 14537,
+          "sha256": "0fbdc00ccf02400ebaea3aab80b212fdfdfe7a77645e41f7c30abff8d564cc15",
+          "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+        }
+      ]
+    },
+    "guUser": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547,
+      "fragments": [
+        {
+          "name": "RT_DRAG_UP reaction",
+          "startLine": 11799,
+          "endLine": 11830,
+          "sha256": "141bd3ae8b4ea8e79ffabb69b8dbeff529c78904b52e244a81d17cded8007f90",
+          "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+        },
+        {
+          "name": "EDT_MANA_DAMAGE fixed MP loss",
+          "startLine": 10524,
+          "endLine": 10577,
+          "sha256": "27be00772b924103d799fba1c23b954b845cc1354eb3a65023f1002479037cbd",
+          "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+        }
+      ]
+    }
+  },
+  "rawDamage": {
+    "DamageEffect_SA_ERS_PhoenixTalon": {
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 6724
+      },
+      "DAMAGE_DATA": {
+        "FORCE_DOWN": 0,
+        "BACK_SPEED_X": 0,
+        "BACK_SPEED_Y": 700,
+        "HIT_GAP": 0.1,
+        "TECH_POINT": 134,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 1.79,
+        "WAY_OF_SWORD_TYPE": 3,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 16,
+        "BUFF_FACTOR": {
+          "BUFF_TEMPLET_ID": 37,
+          "RATE": {
+            "1": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BBT_CHANGE_NOW_HP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 2,
+              "BUFF_RELATION_TYPE": 3,
+              "MULTIPLIER": {
+                "1": -0.3
+              }
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 20
+              }
+            }
+          }
+        },
+        "CAN_REVENGE": 0,
+        "RE_ATTACK": 1,
+        "APPLIED_SKILL_ID": 21015,
+        "DAMAGE": {
+          "MAGIC": 3.21
+        }
+      }
+    },
+    "DamageEffect_SA_EMK_WindBlade_Attack": {
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 8112
+      },
+      "DAMAGE_DATA": {
+        "BACK_SPEED_X": 1110,
+        "PVP_RATE": 0.48,
+        "CLEAR_SCREEN": 1,
+        "CAMERA_CRASH_GAP": 20,
+        "STOP_TIME_ATT": 0.4,
+        "TECH_POINT": 750,
+        "CAMERA_CRASH_TIME": 0.5,
+        "STOP_TIME_DEF": 0.1,
+        "HIT_ADD_MP": 10,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 2,
+        "REACT_TYPE": 3,
+        "BUFF_FACTOR": {
+          "BUFF_TEMPLET_ID": 97,
+          "RATE": {
+            "1": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 2
+            },
+            "BBT_CHANGE_NOW_MP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 1,
+              "FIX_VALUE": {
+                "1": -50
+              }
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 8
+            },
+            "BFT_IMMEDIATE": {}
+          }
+        },
+        "CAN_REVENGE": 0,
+        "FORCE_FLY": 1,
+        "APPLIED_SKILL_ID": 21013,
+        "DAMAGE": {
+          "MAGIC": 16.89
+        }
+      }
+    },
+    "DAMEGA_EFFECT_ELSWORD_MNK_BIG_BURST": {
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 7754
+      },
+      "DAMAGE_DATA": {
+        "CLEAR_SCREEN_COLOR_A": 0,
+        "BACK_SPEED_X": -300,
+        "BACK_SPEED_Y": 0,
+        "CLEAR_SCREEN_COLOR_B": 1,
+        "CLEAR_SCREEN": 1,
+        "CLEAR_SCREEN_COLOR_G": 1,
+        "HIT_GAP": 0.07,
+        "TECH_POINT": 22,
+        "CAMERA_CRASH_GAP": 5,
+        "CLEAR_SCREEN_COLOR_R": 1,
+        "CAMERA_CRASH_TIME": 0.3,
+        "RATE_MODIFIER": 0.4,
+        "PVP_RATE": 0.48,
+        "HIT_ADD_MP": 0.22,
+        "WAY_OF_SWORD_TYPE": 5,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "EXTRA_DAMAGE": {
+          "DAMAGE": 2,
+          "EXTRA_DAMAGE_TYPE": 16,
+          "IGNORE_RESIST": 1
+        },
+        "RE_ATTACK": 1,
+        "FORCE_FLY": 1,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "APPLIED_SKILL_ID": 21207,
+        "DAMAGE": {
+          "MAGIC": 1.31
+        }
+      },
+      "DAMAGE_DATA_ULTIMATE": {
+        "CLEAR_SCREEN_COLOR_A": 0,
+        "BACK_SPEED_X": -300,
+        "BACK_SPEED_Y": 0,
+        "CLEAR_SCREEN_COLOR_B": 1,
+        "CLEAR_SCREEN": 1,
+        "CLEAR_SCREEN_COLOR_G": 1,
+        "HIT_GAP": 0.05,
+        "TECH_POINT": 22,
+        "CAMERA_CRASH_GAP": 5,
+        "CLEAR_SCREEN_COLOR_R": 1,
+        "CAMERA_CRASH_TIME": 0.3,
+        "RATE_MODIFIER": 0.4,
+        "PVP_RATE": 0.48,
+        "HIT_ADD_MP": 0.22,
+        "WAY_OF_SWORD_TYPE": 5,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 2,
+        "EXTRA_DAMAGE": {
+          "DAMAGE": 2,
+          "EXTRA_DAMAGE_TYPE": 16,
+          "IGNORE_RESIST": 1
+        },
+        "RE_ATTACK": 1,
+        "FORCE_FLY": 1,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "APPLIED_SKILL_ID": 21207,
+        "DAMAGE": {
+          "MAGIC": 1.31
+        }
+      }
+    },
+    "DamageEffect_SA_ERS_LunaBlade_ExposionFinal": {
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 3723
+      },
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_TIME": 0.3,
+        "CAMERA_CRASH_GAP": 15,
+        "PVP_RATE": 0.42,
+        "BACK_SPEED_Y": 1000,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 750,
+        "STOP_TIME_DEF": 0.25,
+        "HIT_ADD_MP": 10,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 60,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 1,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "FORCE_FLY": 1,
+        "APPLIED_SKILL_ID": 21017,
+        "DAMAGE": {
+          "MAGIC": 17.84
+        },
+        "BUFF_FACTOR_ID": {
+          "1": 117
+        },
+        "BUFF_FACTOR_RELATIVE_SKILL_ID": 21017
+      }
+    }
+  },
+  "rawCommandStates": {
+    "ESSI_DASH_ATTACK_X": {
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 0.733,
+        "ANIM_NAME": "DashAttackX",
+        "DASH_CANCEL_AFTER": 0.733,
+        "WALK_CANCEL_AFTER": 0.733,
+        "SKILL_CANCEL_AFTER": 0.733,
+        "PHANTOM_BLADE_BACK_SPEED_X": 888,
+        "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+        "PHANTOM_BLADE_BACK_SPEED_Y": 1560,
+        "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.26,
+          "2": 0.37,
+          "3": "STR_KuaAng"
+        },
+        "CREATE_EFFECT_SET": {
+          "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+          "2": 0.275,
+          "3": 0
+        },
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.2,
+          "2": 0.7333,
+          "3": 0.666
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.7333,
+          "3": 0.666
+        },
+        "SOUND_PLAY0": {
+          "1": 0.26,
+          "2": "Slash.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.24,
+          "2": "ElswordVoice_Shout05.ogg"
+        },
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": -18.5,
+          "CAMERA_CRASH_GAP": 10,
+          "HIT_ADD_MP": 5,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "TECH_POINT": 734,
+          "WAY_OF_SWORD_TYPE": 4,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 2,
+          "REACT_TYPE": 4,
+          "ATTACK_TYPE": 2,
+          "ENABLE_ATTACKBOX": {
+            "1": "Sword"
+          },
+          "BACK_SPEED_X": 1060,
+          "BACK_SPEED_Y": 1950,
+          "DAMAGE": {
+            "PHYSIC": 3.19
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "R",
+          "2": "RX"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5399
+      }
+    },
+    "ESSI_ERS_DASH_COMBO_XZ": {
+      "raw": {
+        "ANIM_SPEED": 1.3,
+        "ANIM_NAME": "RS_Combo_XZ",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.5,
+          "3": 0.5
+        },
+        "SOUND_PLAY0": {
+          "1": 0.418,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7869
+      }
+    },
+    "ESSI_ERS_XZ_CHARGE": {
+      "raw": {
+        "ANIM_NAME": "EMK_Combo_XZ_Charge",
+        "ANIM_SPEED": 1,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "CAN_MANA_BREAK": 0,
+        "EVENT_PROCESS_TIME0": {
+          "1": 1,
+          "2": 1,
+          "3": 0.25
+        },
+        "SUPER_ARMOR_TIME0": {
+          "1": 0.25,
+          "2": 100
+        },
+        "SUPER_ARMOR_NOT_RED": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7824
+      }
+    },
+    "ESSI_ERS_XZZ": {
+      "raw": {
+        "ANIM_SPEED": 1.1,
+        "ANIM_NAME": "EMK_Combo_XZ_Charge_Z",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.39,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7838
+      }
+    },
+    "ESSI_ERS_FULL_CHARGE_XZZ": {
+      "raw": {
+        "ANIM_SPEED": 1.1,
+        "ANIM_NAME": "EMK_Combo_XZ_Charge_Z",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SOUND_PLAY0": {
+          "1": 0.39,
+          "2": "Elsword_SI_A_ComboX3a2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7852
+      }
+    }
+  },
+  "lunaFactor": {
+    "factor117": {
+      "target": "g_pBuffTempletManager.AddBuffFactor_LUA",
+      "args": [
+        {
+          "$symbol": "g_pBuffTempletManager",
+          "$unsupported": "native/global value not resolved"
+        },
+        {
+          "BUFF_FACTOR_ID": 117,
+          "BUFF_FACTOR": {
+            "BUFF_TEMPLET_ID": 98,
+            "RATE": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "7": 1,
+              "8": 1,
+              "9": 1,
+              "10": 1,
+              "11": 1,
+              "12": 1,
+              "13": 1,
+              "14": 1,
+              "15": 1,
+              "16": 1,
+              "17": 1,
+              "18": 1,
+              "19": 1,
+              "20": 1,
+              "21": 1,
+              "22": 1,
+              "23": 1,
+              "24": 1,
+              "25": 1,
+              "26": 1,
+              "27": 1,
+              "28": 1,
+              "29": 1,
+              "30": 1
+            },
+            "IGNORE_REGIST_FOR_RATE": 1,
+            "BEHAVIOR": {
+              "COMBINATION": {
+                "1": 2
+              },
+              "BBT_CHANGE_NOW_MP_PER_SECOND": {
+                "BUFF_CHANGE_TYPE": 3,
+                "PERCENT": {
+                  "1": -0.3,
+                  "2": -0.3,
+                  "3": -0.3,
+                  "4": -0.3,
+                  "5": -0.3,
+                  "6": -0.3,
+                  "7": -0.3,
+                  "8": -0.3,
+                  "9": -0.3,
+                  "10": -0.3,
+                  "11": -0.3,
+                  "12": -0.3,
+                  "13": -0.3,
+                  "14": -0.3,
+                  "15": -0.3,
+                  "16": -0.3,
+                  "17": -0.3,
+                  "18": -0.3,
+                  "19": -0.3,
+                  "20": -0.3,
+                  "21": -0.3,
+                  "22": -0.3,
+                  "23": -0.3,
+                  "24": -0.3,
+                  "25": -0.3,
+                  "26": -0.3,
+                  "27": -0.3,
+                  "28": -0.3,
+                  "29": -0.3,
+                  "30": -0.3
+                }
+              }
+            },
+            "FINALIZER": {
+              "COMBINATION": {
+                "1": 8
+              },
+              "BFT_IMMEDIATE": {}
+            }
+          }
+        }
+      ],
+      "prototype": 0,
+      "instruction": 7442,
+      "execution": "not-executed",
+      "nativeEffects": "unsupported",
+      "argumentOperand": 3,
+      "resultOperand": 1,
+      "opcode": "CALL",
+      "scriptEffects": null
+    },
+    "template98": {
+      "target": "g_pBuffTempletManager.AddBuffTemplet_LUA",
+      "args": [
+        {
+          "$symbol": "g_pBuffTempletManager",
+          "$unsupported": "native/global value not resolved"
+        },
+        {
+          "ACCUMULATION_LIMIT": 0,
+          "BUFF_TEMPLET_ID": 98,
+          "IS_WORLD_BUFF": 0,
+          "IS_DEBUF": 1,
+          "REGIST_TYPE": 0,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 2
+            },
+            "BBT_CHANGE_NOW_MP_PER_SECOND": {
+              "TIME_INTERVAL": 0,
+              "BUFF_CHANGE_TYPE": 3,
+              "DRAW_TEXT": 1
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 8
+            },
+            "BFT_IMMEDIATE": {}
+          }
+        }
+      ],
+      "prototype": 0,
+      "instruction": 7203,
+      "execution": "not-executed",
+      "nativeEffects": "unsupported",
+      "argumentOperand": 3,
+      "resultOperand": 1,
+      "opcode": "CALL",
+      "scriptEffects": null
+    },
+    "interpretation": "BUFF_CHANGE_TYPE3: minus30% of maximum MP, immediate template98"
+  },
+  "airRune": {
+    "template": {
+      "fields": {
+        "MeshName": "Elsword_RS_DashJumpComboXa_Mesh01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.8
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1000,
+            0,
+            0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Elsword_RS_DashJumpComboXa_Mesh01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 420208,
+        "line": 13167
+      },
+      "declarationSha256": "a0ae719287881500753f7abb44b7ca7360b716a429f796aa29edc1a5ddc9c44a",
+      "textures": {},
+      "glb": "fx/meshes/Elsword_RS_DashJumpComboXa_Mesh01.glb",
+      "poseData": "fx/meshes/Elsword_RS_DashJumpComboXa_Mesh01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 2,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "consumerRotationZDegrees": -30,
+    "interpretation": "Rotate original1000,0,0 velocity by the existing D3DX basis; facing changes world X sign, Y travels downward."
+  },
+  "structuralPresentationCues": [
+    {
+      "name": "EMK_RisingSlashP01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 131964,
+        "line": 3763
+      },
+      "declarationSha256": "38dd2630b5cd6769bedfa34d88f97674a26aaa3d23a63b88c932a6e2ce8abda0",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 6,
+        "Lifetime": 0.8,
+        "NumParticles": 6,
+        "Layer": 13,
+        "Emitradius": [
+          0,
+          5,
+          0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Lire_Uplight01.Y"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EMK_RisingSlashP03",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 133923,
+        "line": 3816
+      },
+      "declarationSha256": "43fac7caf6bbce40784eb28f2109a23fbd92b7734c8574032b33b7662065a132",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20,
+        "Lifetime": 0.9,
+        "NumParticles": 2,
+        "TriggerCount": 2,
+        "Layer": 14,
+        "Emitradius": [
+          0,
+          5,
+          0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Lire_Uplight01.Y"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EMK_RisingSlashP04",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 134944,
+        "line": 3842
+      },
+      "declarationSha256": "ad1e28e187a3e4bceb456d329af6a99bc16be2eea22617dc1c52af47ffd902cf",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 80,
+        "Lifetime": 0.6,
+        "NumParticles": 13,
+        "TriggerCount": 13,
+        "Layer": 14,
+        "Emitradius": [
+          0,
+          {
+            "random": [
+              30,
+              300
+            ]
+          },
+          0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "DoubleSlash_M3.X"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EMK_RisingSlashP05",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 136111,
+        "line": 3871
+      },
+      "declarationSha256": "e32707b7363d1a38c57700bfa071fa5e7a7bfc1161273b694d5dba1a0a8b6f63",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20,
+        "Lifetime": 1,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "DrawCount": 2,
+        "Layer": 15,
+        "Emitradius": [
+          0,
+          5,
+          0
+        ],
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Roo_highLightMagical.Y"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EMK_RisingSlashP06",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 137058,
+        "line": 3898
+      },
+      "declarationSha256": "50894ec1422918cbfde3ef5d66ef5125029078bc206e48e8f6417acd593ce8c5",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200,
+        "Lifetime": 1.5,
+        "NumParticles": 10,
+        "TriggerCount": 10,
+        "DrawCount": 2,
+        "Layer": 16,
+        "Emitradius": [
+          {
+            "random": [
+              -120,
+              120
+            ]
+          },
+          {
+            "random": [
+              10,
+              300
+            ]
+          },
+          {
+            "random": [
+              -120,
+              120
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "SwordFire_P01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 212807,
+        "line": 5950
+      },
+      "declarationSha256": "a3035e031086a1931764118a3f7918532abf30cd614c474cee0409a502b60261",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 30,
+        "Lifetime": 0.4,
+        "NumParticles": 5,
+        "TriggerCount": 5,
+        "Layer": 14,
+        "Emitradius": [
+          0,
+          -160,
+          0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "DoubleSlash_FM5.Y"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "SwordFire_ReadyP01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 202213,
+        "line": 5678
+      },
+      "declarationSha256": "8ae0426c237f2615b3903068267d2927029184ebba385e4930d1eae6839afbf1",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "Lifetime": 0.55,
+        "NumParticles": 80,
+        "TriggerCount": 80,
+        "Layer": 13,
+        "Emitradius": [
+          {
+            "random": [
+              -25,
+              25
+            ]
+          },
+          {
+            "random": [
+              -25,
+              25
+            ]
+          },
+          {
+            "random": [
+              -25,
+              25
+            ]
+          }
+        ],
+        "Gravity": [
+          0,
+          {
+            "random": [
+              100,
+              200
+            ]
+          },
+          0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_ReadyP01D"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "SwordFire_FM01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 206227,
+        "line": 5779
+      },
+      "declarationSha256": "84499a64b06a042ee119871750d638a47b3e9aec33707a3eea983500733b033b",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40,
+        "Lifetime": 0.8,
+        "NumParticles": 40,
+        "Layer": 13,
+        "Emitradius": [
+          {
+            "random": [
+              -100,
+              100
+            ]
+          },
+          {
+            "random": [
+              0,
+              40
+            ]
+          },
+          {
+            "random": [
+              -100,
+              100
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_F01"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "Elsword_ReadyS_P01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 1422,
+        "line": 55
+      },
+      "declarationSha256": "a52ccaae30d4316860c520538f5a1a0fdca28ef8aae1723686d8d7cb49f07eac",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15,
+        "Lifetime": 0.18,
+        "NumParticles": 2,
+        "TriggerCount": 2,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "Elsword_ReadyS_P02",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 2150,
+        "line": 79
+      },
+      "declarationSha256": "61da1ad45077fbc64df292894658880427e94f2f918d74699f8c07bbaee77449",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 150,
+        "Lifetime": 0.2,
+        "NumParticles": 15,
+        "TriggerCount": 15,
+        "DrawCount": 2,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "SCA_CRIMSON_BREAK_P01.Y"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "UnlimitedBladeP04",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 42775,
+        "line": 1290
+      },
+      "declarationSha256": "c1978bbb555008070b2fbceb782746627b6436636b1978c989a7bba6fb956a0b",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 0.3,
+        "NumParticles": 2,
+        "TriggerCount": 2,
+        "Layer": 15,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "DoubleSlash_P02",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 70825,
+        "line": 2081
+      },
+      "declarationSha256": "c7b1c50630df1a88dbca83a9b3389822e6f59f398b03340f494bc86e8bbdd50d",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200,
+        "Lifetime": 1.5,
+        "NumParticles": 10,
+        "TriggerCount": 10,
+        "Layer": 16,
+        "Emitradius": [
+          {
+            "random": [
+              -60,
+              60
+            ]
+          },
+          {
+            "random": [
+              -60,
+              60
+            ]
+          },
+          {
+            "random": [
+              -60,
+              60
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "SwordFire_ComboXZZ",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 104,
+        "name": "GameMajorParticle21.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+        "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+        "bytes": 298427,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 208194,
+        "line": 5829
+      },
+      "declarationSha256": "db8109882ef38138a12cec5e9b931c60909534b6097282091873433e164c8e24",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200,
+        "Lifetime": 0.8,
+        "NumParticles": 30,
+        "TriggerCount": 30,
+        "DrawCount": 0,
+        "Layer": 13,
+        "Emitradius": [
+          {
+            "random": [
+              -90,
+              90
+            ]
+          },
+          {
+            "random": [
+              -110,
+              90
+            ]
+          },
+          {
+            "random": [
+              -90,
+              90
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_F01"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "ERS_Luna_Buster00_P01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 99,
+        "name": "GameMajorParticle17.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+        "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+        "bytes": 306699,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 37,
+        "line": 3
+      },
+      "declarationSha256": "a6babcce923a17531663b7c537e00a7681776dcdf60661b35666637837077e9e",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.7,
+        "NumParticles": 10,
+        "TriggerTime": 0.1,
+        "DrawCount": 3,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P02",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 798,
+        "line": 25
+      },
+      "declarationSha256": "a7a8f3f7b3acdba53e607f0312dc3b6a0ca563a418a90f9080ace42ca6231a4e",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.7,
+        "NumParticles": 10,
+        "TriggerTime": 0.1,
+        "DrawCount": 3,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P03",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 1600,
+        "line": 48
+      },
+      "declarationSha256": "de709fc507c3d37703353a6cb56ad0ad90a44f3e440dd0d9c81958397b39a8bc",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 5,
+        "Lifetime": 0.4,
+        "NumParticles": 8,
+        "TriggerTime": 3,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P04",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 2394,
+        "line": 70
+      },
+      "declarationSha256": "6e54a9feee7e4e9f3e4e92e9ad69365a72dbae95eae897f28af26e8de2643eac",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "Lifetime": 0.2,
+        "NumParticles": 30,
+        "TriggerTime": 3,
+        "DrawCount": 2,
+        "Layer": 14,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P12",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 8844,
+        "line": 260
+      },
+      "declarationSha256": "849b1d9c829c3abead2ef2ac8bde8f4900e1d0d936559c423500084899776ff3",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.35,
+        "NumParticles": 5,
+        "TriggerTime": 1,
+        "Layer": 15,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P12A",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 99,
+        "name": "GameMajorParticle17.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+        "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+        "bytes": 306699,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 29821,
+        "line": 912
+      },
+      "declarationSha256": "8e595adc9e22c23c075bb11f489d365414f9d38da4650c18881b90b62a810e53",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.35,
+        "NumParticles": 5,
+        "TriggerTime": 1,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "triggerTime": []
+    },
+    {
+      "name": "EffectSet_ERS_Luna_Buster_P13",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 9611,
+        "line": 283
+      },
+      "declarationSha256": "59ab90a0c77bcafa26b364f4bfcb0fc997bdce69a2c756a05ae57b75bcd96eb9",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_2D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.03,
+        "NumParticles": 3,
+        "TriggerTime": 1,
+        "Layer": 21,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "triggerTime": []
+    }
+  ],
+  "userCorrections": [
+    {
+      "feedback": 1,
+      "scope": "RS PhoenixTalon RT_DRAG_UP phase",
+      "override": {
+        "FORCE_FLY": 1
+      },
+      "reason": "Launch without juggle accumulation; generic nextFlyCount is unchanged."
+    },
+    {
+      "feedback": 8,
+      "scope": "RS WindBlade opening damage effect",
+      "override": {
+        "REACT_TYPE": 2
+      },
+      "reason": "User requires opening stagger instead of raw DOWN3."
+    },
+    {
+      "feedback": 10,
+      "scope": "RS LunaBlade cast identity",
+      "behavior": "Move original factor117 from final-only to first accepted blade/explosion contact once per cast.",
+      "network": "Defender owns receipt keyed by attacker with latest life epoch and cast serial; original serial survives die-child chain."
+    }
+  ],
+  "qualifications": {
+    "dash66XZZ": "Target2016 dash XZ event0 plus declared charge/release states. Fixed V5 only has older standing XZ; this is a declaration adapter, not recovered target executable.",
+    "particleClock": "Web medium-density policy preserves original clocks for structural cues. Dense smoke/sparks remain budgeted; no claim of native medium particle counts.",
+    "gpu": "Current simulator/rendering observations; no target client dynamic comparison.",
+    "missingOriginalDefinitions": "contracts/rs-missing-fx-search-v1.json retains two pre-existing rune death-mesh gaps."
+  },
+  "unchangedProfile": {
+    "path": "packages/combat-core/rs-profile.json",
+    "sha256": "4b171ddc3b17ba067b8ad90a4b07424785f59bff678988f13b76b6463fd1a635",
+    "normalization": "UTF-8 LF"
+  }
+}

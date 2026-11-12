@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "pvp-resource-reference-v1",
+  "evidenceClass": "target2016 raw declarations + fixedV5 consumer candidate + web frame adapter",
+  "targetClientMeasured": false,
+  "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceRootReadOnly": "./.cache/native-v5-unified/X2Lib",
+  "sourceBoundary": "The fixed reference contains later 2026 reconstruction edits. The recovered resource branches are reference consumer evidence, not a fully matched official 2016 implementation or target-client observation.",
+  "sources": [
+    {"path":"X2GUUser.cpp","sha256":"ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38","ranges":["2867-2879: InitStat uses server m_GameStat when present, otherwise m_Stat","6490-6501: Future callbacks fall back to CommonFrameMoveFuture","8940: IsDamagedReaction && !NO_DAMAGE","9686-9837: shared received MP/soul gate, PvP bases and roster compensation","12245-12618: attack callback gate, healing exclusions and soul","15047-15080: gauge update only while Future frame is not stopped, no alive-only MP guard","15716: CommonFrameMove clears shared gate","27403-27405: ResetMaxHP reads final stat without a new PvP scale","27427-27474: ResetMaxMP starts ONE_CHARGE*3, calls Unit ResetMaxMp, then equipment percent/flat additions and AdditionalStat","27479-27491: PCC_PLAY-only character regeneration scale7","33171-33176: equipment flat MP rate"]},
+    {"path":"X2GURaven.cpp","sha256":"e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237","ranges":["1139-1145: death animation has no custom Future callback; uses CommonFrameMoveFuture","6019-6060: death presentation and transition to GUSI_DIE"]},
+    {"path":"X2GameUnit.cpp","sha256":"764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923","ranges":["7214-7237: damaged-reaction exclusions do not exclude dummy damage","10946-10970: PvP hit MP full rate, dungeon/field0.8","12017-12046: SetGameStat copies HP/attack/defence into AdditionalStat without universal0.1 normalization","12503: AdditionalMaxMp base is ONE_CHARGE*3","12560-12563: equipment MP multiplier enters AdditionalStat passive sum","14250-14281: HIT_ADD_MP modified before attack callback adds roster bonus"]},
+    {"path":"X2DamageEffect.cpp","sha256":"8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8","ranges":["3663-3682: attack callback early reaction gate","4005-4342: local owner and same shared MP/soul gate"]},
+    {"path":"X2GageData.cpp","sha256":"d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8","ranges":["43-69: natural MP equals (character rate + timed-item rate) * elapsed; gauge caps separately"]},
+    {"path":"X2DamageManager.h","sha256":"a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae","ranges":["61-73: damage type enum","201-218: reaction enum"]},
+    {"path":"X2GageUI.h","localPath":"./.cache/mana-source/X2Lib/X2GageUI.h","sha256":"226734011c12ea7b2101ed967612437c27ff1d29f1906940bc7d54ffd039f212","ranges":["4-6: ONE_CHARGE100, TWO_CHARGE200, THREE_CHARGE300"]}
+  ],
+  "targetDeclarations": [
+    {"profile":"packages/combat-core/rf-profile.json","pointer":"/components/MP_CHANGE_RATE","value":1,"sourcePath":"asset_work/raw/data/data036.kom/RAVEN_FIGHTER.lua","sourceSha256":"a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3","provenance":"target2016 extracted declaration; raw source bytes rehashed read-only during this task"},
+    {"profile":"packages/combat-core/lk-profile.json","pointer":"/components/MP_CHANGE_RATE","value":1,"sourcePath":"asset_work/raw/data/data036.kom/Elsword_SwordMan.lua","sourceSha256":"743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031","provenance":"target2016 extracted declaration; raw source bytes rehashed read-only during this task"}
+  ],
+  "equations": {
+    "mpCapacityForCurrentRFAndLK": "knownCharacterMPBase300 + equipment.mpMax300 = computedMPMax600; equipment input remains300",
+    "hitMp": "(HIT_ADD_MP*(1+equipmentMpGainBonus)+3*outnumbered)*gainMultiplier",
+    "receivedMp": "(3+2*outnumbered)*gainMultiplier*(1+equipmentMpGainBonus)",
+    "hitSoul": "(1*(1+equipmentAwakeningChargeBonus)+2*outnumbered)*(1+sumPassiveAndGuildIncreases)",
+    "receivedSoul": "(2*(1+equipmentAwakeningChargeBonus)+2*outnumbered)*(1+sumPassiveAndGuildIncreases)",
+    "naturalMp": "(sourceMPChangeRate*explicitChannelScale+itemRate)*unfrozenElapsed; equipment flat rate uses its own CommonFrameMove elapsed",
+    "channelScale": "normal1; only explicit PCC_PLAY7; webpage practice is not automatically a PCC_PLAY channel"
+  },
+  "equipmentSemantics": {
+    "authorization": "Project rule specifies all existing user-defined attributes be equipment attributes; formula outcomes may change while input values remain unchanged",
+    "mpMax": "The legacy input name mpMax now means flat equipment MP capacity, corresponding to the flat-addition role of m_iAddMPValue. It is not a source field-name mapping and is not a final-capacity override.",
+    "knownCharacterMPBase": 300,
+    "knownCharacterMPBaseEvidence": "ResetMaxMP: ONE_CHARGE*3, with ONE_CHARGE100 in the separately hashed X2GageUI.h",
+    "targetDefaultPassives": "RF24400-24405 and LK21400-21404 raw target declarations contain no SA_MAX_MP capacity addition. LK21400 concerns MP gain; LK21403 raises HP, not MP.",
+    "otherCharacterBases": "HP/physicalAttack/magicAttack/physicalDefence/magicDefence remain uncalibrated; no old-version values are synthesized.",
+    "pvpNormalization": "No universal equipmentHP/equipmentMP multiplication by0.1 is supported by the inspected consumers. Final HP/attack/defence can come from server m_GameStat; its complete construction and item normalization are not acquired. The user-supplied combat-unit equipment contributions are retained.",
+    "flatMPRecoveryPerSecond": {
+      "productionConfiguration": "undefined in both RF and LK presets; absence is not asserted to be a measured zero stat",
+      "sourceClock": "SetMPChangeRateValue runs in CommonFrameMove with m_fElapsedTime, separately from natural character/item gauge recovery in Future !bFrameStop",
+      "formulaHelper": "supports separate equipmentElapsed input",
+      "executorSupport": "unsupported: a nonzero optional equipment mpRecoveryPerSecond records equipment-mp-clock-unsupported and has no guessed effect; complete independent equipment recovery clock is not integrated",
+      "scope": "No new value is added to the presets in this task"
+    }
+  },
+  "frameSemantics": {
+    "gate": "one actor.lastCombatResourceStep shared by attack, received, effect callbacks; MP and awakening consume together",
+    "webAdapter": "simulation step replaces source CommonFrameMove reset; complete native Now/Future order is not reproduced",
+    "zeroGain": "eligible callback still consumes gate when MP is capped, HIT_ADD_MP is0 or soul already has3orbs",
+    "localOwnership": "retain actor-local gate for networkOwner; disposable remote clones may mutate their own copy; peer snapshots must never import this gate into the owned actor",
+    "sourceExclusions": "attacker character: RT_NO_DAMAGE/RT_SENSOR and DT_BUFF; attacker effect: RT_NO_DAMAGE and DT_BUFF; received: IsDamagedReaction && !NO_DAMAGE, which includes RT_DUMMY_DAMAGE",
+    "receivedBuffBoundary": "received source block has no standalone DT_BUFF test; ordinary periodic buff consumers bypass combat hit routing. Do not infer new periodic-buff resource rewards from the helper.",
+    "soulExclusions": "attack: positive HP_PERCENT_UP, MP_PERCENT_UP or INCREASE_MP; received: positive HP_PERCENT_UP; both capped at3orbs"
+  },
+  "unresolved": [
+    "Target2016 executable frame ordering and same-frame network arrival grouping have not been measured.",
+    "MP continues during death animation through CommonFrameMoveFuture; after hidden/deathComplete, native scheduling and the complete respawn wait remain unmeasured. The web executor retains its existing deathComplete early return.",
+    "Raw option-rating conversion is not inferred: named equipment bonuses are normalized option percentages.",
+    "Full MP recovery AdditionalStat Buff replacement/association/fixed-value layers remain beyond this standalone scalar helper.",
+    "RF24404 soul/received-MP field binding retains the existing target-description adaptation qualification.",
+    "CX2Unit::ResetMaxMp implementation and full server equipment stat construction are not acquired here; no additional undocumented RF/LK capacity modification or PvP equipment scalar is invented."
+  ],
+  "validation": {
+    "tests":["tests/combat/pvp-resource-formulas.test.mjs","tests/combat/pvp-resource-integration-v1.test.mjs"],
+    "expectedValues":"small manually calculated source-equation cases, not values generated by the implementation under test",
+    "targetClientTraces":0
+  }
+}

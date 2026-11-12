@@ -1,0 +1,773 @@
+{
+  "schema": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "repository": "reference-v5",
+  "targetVersion": "Steam NA V6.0420.5",
+  "targetClientMeasured": false,
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameOption.cpp",
+      "sha256": "a3cea2185123ff28aa5c5e6b4ab4a5ed8e105df717bdc6f1aa1f45f6699d3199",
+      "gitBlob": "6326535c3fb819ec4af447d734ca94d9f4f8a15b",
+      "bytes": 65459,
+      "lines": [
+        [
+          1781,
+          1858
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameOption.h",
+      "sha256": "74d5fecc7f35d627a83f301d9be113d9c4efff6c7e9e925239ea3151dbd3e6a2",
+      "gitBlob": "394785e3b42560af772e4a47a176ed79956ee243",
+      "bytes": 21843,
+      "lines": [
+        [
+          432,
+          491
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "sha256": "1d16ff35b70a54e2ee2eca84ca9a57826d21fc94a4d6c61f72381cd5c1e105bc",
+      "gitBlob": "2a90db62ffc362e66db5895e03c327a4b3368271",
+      "bytes": 91051,
+      "lines": [
+        [
+          207,
+          237
+        ],
+        [
+          391,
+          548
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.h",
+      "sha256": "4500a41fc495ac9d1e9deaf3de0ade8765e5cb71c74ac510d367d4856dc5acb6",
+      "gitBlob": "7ace3bfe9535833a210e51402fc4aa5d597c4571",
+      "bytes": 16380,
+      "lines": [
+        [
+          257,
+          258
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2World.cpp",
+      "sha256": "854058a6ffc894f11bbce442d08790274616ff7f840b927d4074baa471a5ba2c",
+      "gitBlob": "40ede32e2e7aeda75dde4b9cbfb4322a341b46e2",
+      "bytes": 49316,
+      "lines": [
+        [
+          94,
+          99
+        ],
+        [
+          1855,
+          1867
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2World.h",
+      "sha256": "c3ae8fc353f44786a7187de4bccd505894f0796fcb4b86cee4d667d069e519f4",
+      "gitBlob": "e5f4ce9d9ec20fbf40f3d9078d8bf9e4fd9cd0df",
+      "bytes": 51181,
+      "lines": [
+        [
+          1129,
+          1139
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "sha256": "1f04646a86764002cb5ff0edd80575b11d24ac75c3154d543001a0a2c0fc7b12",
+      "gitBlob": "17104e19919299e771b6e68e9d844bcf5ad89c54",
+      "bytes": 20972,
+      "lines": [
+        [
+          183,
+          220
+        ],
+        [
+          268,
+          294
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+      "sha256": "640376b3a795e92ec94171181a02ede8d2e32a9e9d87a0915e903c8f2dff7852",
+      "gitBlob": "7e33b685b621d29b3d41b2adbed6c02ff812d622",
+      "bytes": 8520,
+      "lines": [
+        [
+          140,
+          154
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGManager.cpp",
+      "sha256": "8dddabe7e06600510ce40fd4e189b6a4aea6803dcc1bb6b7e330699d82287783",
+      "gitBlob": "47a67dda446d55ea7d7964a1001498b067f00557",
+      "bytes": 60949,
+      "lines": [
+        [
+          44,
+          79
+        ],
+        [
+          1038,
+          1056
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGManager.h",
+      "sha256": "0b3a7e20bc4417dce5371595d93a24e9fc5cbd26d65c1df48245ed9b151d9e98",
+      "gitBlob": "32cd32091c569e6224163746b7a6f4cf0085476c",
+      "bytes": 13256,
+      "lines": [
+        [
+          114,
+          116
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGSlashTrace.cpp",
+      "sha256": "a77b40ed64abe405b8e85273d075cc76d95f0785ade7af0dde677c62dbcdda2c",
+      "gitBlob": "25f2350cf665672e265107ddece3ecae03841bf1",
+      "bytes": 29060,
+      "lines": [
+        [
+          20,
+          83
+        ],
+        [
+          225,
+          353
+        ],
+        [
+          436,
+          534
+        ],
+        [
+          575,
+          937
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGSlashTrace.h",
+      "sha256": "64c7fef07de82d2ef0b9054508ab70554be8de73ada322d4bb5c0e74ab583fb7",
+      "gitBlob": "2afe3b3d3058ef1bc54b7b0acf12ede4e37a659d",
+      "bytes": 5641,
+      "lines": [
+        [
+          3,
+          35
+        ],
+        [
+          77,
+          86
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2UnitSlashTraceManager.cpp",
+      "sha256": "5c606eaaf2eb94393d9d5636790fac1bb09fa5f5ffc1ad93d3fdecc5da1a37db",
+      "gitBlob": "22e3e0517a7bfcbb875ef3b4a56feab31b724a3d",
+      "bytes": 7872,
+      "lines": [
+        [
+          7,
+          85
+        ],
+        [
+          88,
+          143
+        ],
+        [
+          146,
+          215
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2UnitSlashTraceManager.h",
+      "sha256": "fa9c4ab9763950200124a3ebe83a2f23304c0a4de563b27c484e3770d33ba1aa",
+      "gitBlob": "9724178ee4f9ae37aaa2d3addff83ce9692fbb24",
+      "bytes": 4902,
+      "lines": [
+        [
+          9,
+          38
+        ],
+        [
+          95,
+          138
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825,
+      "lines": [
+        [
+          2059,
+          2061
+        ],
+        [
+          2425,
+          2425
+        ],
+        [
+          2847,
+          2865
+        ],
+        [
+          3254,
+          3254
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/AlwaysButConditionally.h",
+      "sha256": "d42ec5c233ae75b1f1a7883090bd35c32ba30c0ff7a0fdb8311d3563aafa0b80",
+      "gitBlob": "c91bfdcb44f03dc680781f1246fdbbbbce6d0d63",
+      "bytes": 2967,
+      "lines": []
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/OnlyGlobal/Always_US.h",
+      "sha256": "771fb0dce47c55d53617f122a846aa66c622d6525c2c32629428614398673743",
+      "gitBlob": "3800d4f6cb090bbb1f62b3dc073236718eb38671",
+      "bytes": 19546,
+      "lines": []
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "bytes": 521479,
+      "lines": [
+        [
+          8614,
+          8629
+        ],
+        [
+          8766,
+          8790
+        ],
+        [
+          9453,
+          9522
+        ],
+        [
+          9707,
+          9760
+        ],
+        [
+          13059,
+          13096
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547,
+      "lines": [
+        [
+          13926,
+          13931
+        ],
+        [
+          14280,
+          14338
+        ]
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216,
+      "lines": [
+        [
+          21944,
+          21969
+        ]
+      ]
+    }
+  ],
+  "targetFiles": [
+    {
+      "name": "DLG_UI_Option_Cam.lua",
+      "rawPath": "raw/data/data034.kom/DLG_UI_Option_Cam.lua",
+      "sha256": "b3a0a4192f5a2668997da08a52a417b45f624fbd761dd58183aebd63229aa56f",
+      "bytes": 4733
+    },
+    {
+      "name": "DLG_UI_Option_Cam_Ex.lua",
+      "rawPath": "raw/data/data034.kom/DLG_UI_Option_Cam_Ex.lua",
+      "sha256": "deabe0cad726f9b19fe6679c9c75566586e5f61afe9746f23bcd0475d0c0ae97",
+      "bytes": 14691
+    },
+    {
+      "name": "DefaultGameOptions.lua",
+      "rawPath": "raw/data/data036.kom/DefaultGameOptions.lua",
+      "sha256": "0e59844cb43ad14557b0431a78ad84e61f53d6219eb4152d1ec62e938e5c0297",
+      "bytes": 1038
+    },
+    {
+      "name": "Enum.lua",
+      "rawPath": "raw/data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": 398092
+    },
+    {
+      "name": "Mesh_Raven_RRF_Cash_Weapon_Sorted.X",
+      "rawPath": "raw/data/data020.kom/Mesh_Raven_RRF_Cash_Weapon_Sorted.X",
+      "sha256": "e3097edd3b8b0f18797b140a6be8ef24bbefadecdade97f60afd8f2ee6f26c6d",
+      "bytes": 8572
+    },
+    {
+      "name": "Motion_Raven.x",
+      "rawPath": "raw/data/data033.kom/Motion_Raven.x",
+      "sha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "bytes": 5795304
+    },
+    {
+      "name": "RAVEN_FIGHTER.lua",
+      "rawPath": "raw/data/data036.kom/RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "bytes": 183136
+    },
+    {
+      "name": "Sander_Garpai_Rock_Pvpmap.lua",
+      "rawPath": "raw/data/data040.kom/Sander_Garpai_Rock_Pvpmap.lua",
+      "sha256": "dd1a187a96759b9dcf73910e32ca357dc68ef082be75089707b9bd8451f27ca0",
+      "bytes": 2843
+    }
+  ],
+  "targetEnums": {
+    "CAMERA_TYPE": {
+      "CT_PARTS_LOOK_TRACKING": 1,
+      "CT_NORMAL_DIRECT": 2,
+      "CT_NORMAL_TRACKING": 0,
+      "CT_BONE_ATTACHED": 4,
+      "CT_PARTS_LOOK_DIRECT": 3
+    },
+    "LINE_CAMERA_TYPE": {
+      "LCT_ABSOULTE_POSITION": 1,
+      "LCT_INVALID": 0,
+      "LCT_RELATIE_POSITION": 2
+    },
+    "SLASH_TRACE_CURVE_TYPE": {
+      "CT_TOUGH_CURVE": 1,
+      "CT_SMOOTH_CURVE": 0,
+      "CT_STRAIGHT_LINE": 2
+    },
+    "SLASH_TRACE_TYPE": {
+      "STT_CONSTANT_WIDTH": 1,
+      "STT_CIRCULAR": 2,
+      "STT_DOUBLE_TIP": 3,
+      "STT_DEFAULT": 0,
+      "STT_NONE": 4
+    },
+    "SLASH_TRACE_CONDITION": {
+      "STC_RENA_NATURE_FORCE": 1,
+      "STC_NONE": 0
+    }
+  },
+  "targetTraceFields": {
+    "RSI_COMBO_Z": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_COMBO_ZZ": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_COMBO_ZZZ": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_COMBO_ZZZZ": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_COMBO_X": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_COMBO_XX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_COMBO_XXX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_JUMP_COMBO_Z": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_JUMP_COMBO_X": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_DASH_COMBO_Z": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_DASH_COMBO_ZZ": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_DASH_COMBO_X": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_DASH_JUMP_COMBO_Z": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_STANDUP_ATTACK_FRONT": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_COMBO_ZZX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_COMBO_ZZXX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RRF_COMBO_ZZXFRONTX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RRF_COMBO_ZZXFRONTXX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXX2": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXX3": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXX4": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXXdownX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZXX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_DASH_JUMP_COMBO_ZZ": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_DASH_JUMP_COMBO_ZZ_Landing": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RRF_DASH_JUMP_COMBO_XX": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    },
+    "RSI_STANDUP_ATTACK_BACK": {
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      }
+    },
+    "RSI_A_RF_MEGADRILL_BREAK": {
+      "SLASH_TRACE": {
+        "1": 0.1,
+        "2": 100
+      }
+    },
+    "RSI_A_RRF_HELL_DIVE_UPGRADE": {
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      }
+    }
+  },
+  "targetHelpers": {
+    "ATTACK_SPHERE1_Lhand1": {
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "parent": "Bip01_L_Hand",
+      "translation": [
+        43.58882522583008,
+        0.5412924289703369,
+        3.9606235027313232
+      ]
+    },
+    "TRACE_START0": {
+      "source": "raw/data/data020.kom/Mesh_Raven_RRF_Cash_Weapon_Sorted.X",
+      "sourceSha256": "e3097edd3b8b0f18797b140a6be8ef24bbefadecdade97f60afd8f2ee6f26c6d",
+      "parent": "rrf",
+      "translation": [
+        17.069847106933594,
+        -0.03178081288933754,
+        -89.75216674804688
+      ]
+    },
+    "TRACE_END0": {
+      "source": "raw/data/data020.kom/Mesh_Raven_RRF_Cash_Weapon_Sorted.X",
+      "sourceSha256": "e3097edd3b8b0f18797b140a6be8ef24bbefadecdade97f60afd8f2ee6f26c6d",
+      "parent": "rrf",
+      "translation": [
+        6.337811470031738,
+        -0.03177172690629959,
+        34.95254135131836
+      ]
+    }
+  },
+  "camera": {
+    "manualFarthest": {
+      "zoomLevel": -1,
+      "distance": 1500,
+      "scaleLabel": "requested project 1x; native UI label mapping unverified"
+    },
+    "manualDistancesModifyFrustum": {
+      "-1": 1500,
+      "0": 1100,
+      "1": 600,
+      "2": 200
+    },
+    "legacyDistances": {
+      "-2": 1800,
+      "-1": 1500,
+      "0": 1200,
+      "1": 900
+    },
+    "formula": "worldBase + manualDistance + worldSteps[clamp(zoomLevel,-1,1)+1]",
+    "targetProjection": {
+      "arguments": [
+        15,
+        500000,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sourcePc": 61,
+      "near": 15,
+      "far": 500000,
+      "fovRadians": "pi/4",
+      "worldBase": 0,
+      "worldSteps": [
+        0,
+        0,
+        0
+      ]
+    },
+    "sceneSlot0": {
+      "eye": [
+        135.9,
+        3342,
+        -2422.48
+      ],
+      "look": [
+        135.9,
+        264.76,
+        43815.1
+      ],
+      "usage": "line8 camera; not proven map default; disabled by user dynamic-camera choice"
+    },
+    "normalDefaults": {
+      "height": 200,
+      "lookOffsetY": 100,
+      "trackingSeconds": 0.3,
+      "targetTrackingSeconds": 0,
+      "landCompensation": 400
+    },
+    "tracking": "SetTracking velocity=(desired-current)/Time; UpdateCamera adds velocity*dt without clamping dt; persistent true eye/look targets",
+    "macros": {
+      "MODIFY_FRUSTUM": "defined in fixed reference Always.h3254",
+      "CAMERA_ZOOM_IN_RANGE_EXPAND": "defined 2061",
+      "PVP_ZOOM_CAMERA": "not defined in three audited headers; native automatic camera excluded by user",
+      "PVP_ZOOM_CAMERA_1": "not defined in three audited headers; PvP height compensation400 remains"
+    }
+  },
+  "trails": {
+    "endpointSpace": "sampled displayed/blended native world helper positions, mesh rendered with identity world transform",
+    "bodyFadeSeconds": 0.4,
+    "tipFadeSeconds": 0.5,
+    "tipWidth": 4,
+    "bodyDrawCount": 1,
+    "tipDrawCount": 3,
+    "verticesLocal": 400,
+    "verticesRemote": 150,
+    "defaultCurve": 0,
+    "curveGapThreshold": 20,
+    "maxSplitUnderSlashTraceBugFix": 50,
+    "colorsArgb": {
+      "normal": "cc5555ff",
+      "normalTip": "ff5555ff",
+      "awakened": "ccff3333",
+      "awakenedTip": "ffff3333"
+    },
+    "alpha": "upper alpha, lower alpha/10, frame alpha=max(0,alpha-dt/DisableTime)",
+    "geometry": "native TRIANGLESTRIP of adjacent world endpoint pairs; no generated width or particle spread",
+    "unitInactive": "fade without adding endpoints; OnStateStart clears timing map, not strip history",
+    "weaponInactive": "fade then add STT_NONE transparent endpoints",
+    "animationTimeInterval": "start<=GetNowAnimationTime()<end",
+    "textures": "RF unit claw AddSlashTraceData explicitly false/empty; sword default empty untextured reference fallback; equipment/enchant trace overrides not recovered",
+    "enumDifference": "2016 NONE4; V5 unconditional CUSTOM_TEXTURE4 shifts NONE5; web uses target NONE4",
+    "macros": {
+      "UNIT_SLASH_TRACE_MANAGER_TEST": "defined referenceAlways2865",
+      "TEXTURED_SLASH_TRACE_TEST": "defined 2847 but RF claw false",
+      "SLASH_TRACE_BUG_FIX": "defined2425; maxSplit50 in header4",
+      "sourceBuildMacroConfirmation": "none for target2016"
+    }
+  },
+  "unsupported": [
+    "native target 1x UI label/selected zoom default",
+    "target binary macro selection and measured camera pose",
+    "original camera tracking numeric epsilon and float32 precision",
+    "target pose/frame cadence and hitstop for trail updates",
+    "D3DCOLOR byte rounding during per-frame fades",
+    "equipment-specific sword color/texture overrides",
+    "textured trail UV and alpha threshold execution",
+    "constant-width/circular/double-tip trace kinds",
+    "D3D texture-stage ADDSIGNED and destination-alpha browser framebuffer semantics"
+  ],
+  "expectationEvidence": "Tests use fixed C++ formulas/constants, original Enum.lua and source helper coordinates; never generated by combat simulation."
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "browserGpuMeasured": false,
+  "evidenceClass": "target2016 raw UI/TET/atlas/KL plus fixed-V5 source; display interpolation is host adapter",
+  "targetLayout": {
+    "path": "asset_work\\raw\\data\\data034.kom\\DLG_PVP_Game_My_State_NEW.lua",
+    "sha256": "84fc0f0d865738c2b6306ab148e3d9389f11189ec4856eae0ab8cb18af00158c",
+    "markers": [
+      {
+        "localPoint": [
+          176,
+          53
+        ],
+        "instruction": 470,
+        "piece": "MP_100_BAR"
+      },
+      {
+        "localPoint": [
+          250,
+          53
+        ],
+        "instruction": 516,
+        "piece": "MP_100_BAR"
+      }
+    ]
+  },
+  "targetMarker": {
+    "file": "mp_100_bar.png",
+    "width": 2,
+    "height": 12,
+    "atlas": "DLG_UI_Common_Texture63_NEW",
+    "sha256": "5fd72f89b37aced97290cab89c867d579f4eb902b1a50bb92c5883d703585204",
+    "rgbaSha256": "054525ca3d7723a9f00d94be47b428c5c1f81bca343f2c103aa5bd31ff928610"
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "source": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageUI.cpp",
+      "relativePath": "X2Lib/X2GageUI.cpp",
+      "sha256": "2e3a631f62ba5b2f4a6854989d2432ec96e00973f88852a5fdc1b224ae6805a8",
+      "gitBlob": "4673ec342d91b47cabb56d6c1391d5d0da1b9bd2",
+      "bytes": 160768,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageUI.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GageUI.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2GageUI.cpp"
+      ]
+    },
+    "fragments": [
+      {
+        "name": "void CX2MyGageUI::UpdateMpGuidePoint()",
+        "lineStart": 1380,
+        "lineEnd": 1403,
+        "sha256": "f2f2d3479bd555f845652a17c97fcc58411b2b05913a92709cda742e5d69923e",
+        "bytes": 1002
+      },
+      {
+        "name": "void CX2MyGageUI::UpdateDetonationGage(",
+        "lineStart": 1416,
+        "lineEnd": 1430,
+        "sha256": "d3033eef2457b95047c609414d824ccbbbc650dd0a764e93d2b0e61ffccee6ab",
+        "bytes": 704
+      }
+    ]
+  },
+  "charge": {
+    "rateMpPerSecond": 130,
+    "minimum": 100,
+    "maximum": 300,
+    "sourceContract": "rf-mana-break-source-v12.json",
+    "sourceOrder": "Gauge consumes last CommonEvent latch, adds rate*float elapsed, existing Increase/currentMP clamp; stop-at-packet-start skips charge"
+  },
+  "display": {
+    "width": 224,
+    "previousHudIntervalMs": 80,
+    "redraw": "every render packet",
+    "policy": "interpolate only increasing completed charge samples; decreasing/reset/paused/manual state is exact; aria reports authoritative charge",
+    "combatChanged": false,
+    "unverified": "original2016 frame clock, GPU appearance and charge trajectory remain unmeasured"
+  }
+}

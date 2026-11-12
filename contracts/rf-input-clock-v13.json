@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasurements": 0,
+  "evidenceClass": "bounded browser scheduling fix, not complete original keyboard or target2016 Main runtime",
+  "sourceConsumers": [
+    {
+      "path": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "bytes": 17886,
+      "sha256": "0d00dd7699ba6803dec3df17615b2b7fc561c1db9e2eb4532d46616a0f07cceb",
+      "sections": [
+        {
+          "startLine": 70,
+          "endLine": 117,
+          "sha256": "e2d3951887802b9f2b0a2977ed6580be59c7b917d2fb41f9f73728309dbb250b"
+        },
+        {
+          "startLine": 137,
+          "endLine": 165,
+          "sha256": "b5e4e27aa3227f82278996f5eb91b8d891163e7add1e75a660e98a4c3d803ea2"
+        },
+        {
+          "startLine": 397,
+          "endLine": 532,
+          "sha256": "8fc0f210bed78b578446ae5ef5940accff58711ee80c2a85afd28e2ec4980350"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2Game.cpp",
+      "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "bytes": 618989,
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "sections": [
+        {
+          "startLine": 2721,
+          "endLine": 2725,
+          "sha256": "48320cce96c8f1b3d2432e31a3bf6623af744cc8e76090ec4207071e076952db"
+        },
+        {
+          "startLine": 5216,
+          "endLine": 5231,
+          "sha256": "411a0ea24be4d6a00014a343effc782f9b209cb3dbf3b16d192c98227c11dde9"
+        },
+        {
+          "startLine": 5599,
+          "endLine": 5604,
+          "sha256": "97ca709e0de52196595365f313d175face9e2f06fb315328a39621a1b6b67ca0"
+        },
+        {
+          "startLine": 3020,
+          "endLine": 3033,
+          "sha256": "0e940a417e701ce52f6fe53188902d5f3f61e8ab89b0a86ccf8a3499a3069ca6"
+        }
+      ]
+    }
+  ],
+  "sourceMacroBoundary": {
+    "CHANGE_KEY_DEVICE": "WinKey source is conditional; target2016 enabled branch not verified",
+    "fullDIReadMainSchedule": "not acquired"
+  },
+  "browserRules": {
+    "timeUnit": "seconds in performance.now monotonic domain",
+    "previewStepSeconds": 0.016666666666666666,
+    "previewMaxDeltaSeconds": 0.1,
+    "previewMaxSteps": 6,
+    "eligible": "queued edge timestamp <= packet cutoff",
+    "multiTap": "existing web adapter: duplicate down delays only its own key, not other eligible keys",
+    "manual": "consume() defaults Infinity; manual game tick remains unbounded",
+    "clip": "discard old wall-time debt and rebase to last .1s; retain eligible queued input, not new buffering duration",
+    "pauseReset": "resetDisplayClock explicitly rebases packet origin; suspended render rebases and produces no live packets"
+  },
+  "integrationPatch": {
+    "file": "reports/rf-input-clock-game-v13.patch",
+    "sourceGameSha256": "1afbf69145445f8f03545db84144d46b141184073a4e535643faf157e3e46182",
+    "patchedGameLfSha256": "96bf08e4610bdc1e2c029be38cfb701f88234cc357d31cfeca2205f6fc176d23"
+  },
+  "retainedCandidates": [
+    "one-frame direction held from pressed tap remains the existing web adapter",
+    "ZZXX cancel-input capture/release remains the existing candidate",
+    "pure/one/double device lock consumers are not transplanted",
+    "DOM callbacks still stamp handler performance.now, not verified OS post time",
+    "browser60Hz is the existing preview rate, not an acquired target-client tick frequency"
+  ],
+  "regression": "analytic timestamp trace maps each edge to its first fixed packet;30/60/144Hz,50msRAF,multiTap,no-argmanual,pause,clippedframe,reset,malformedclock"
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "evidenceClass": "target2016 resource declaration and pinned fixed-V5 consumer; not target client trace",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "source": {
+    "file": "X2Lib/X2GUElsword_SwordMan.cpp",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d"
+  },
+  "sourceSlices": [
+    {
+      "startLine": 5013,
+      "endLine": 5027,
+      "sha256": "cc72697d0274105dae8079e00086675abae887d2e9cc9a04af6dc2bef259cfe1"
+    },
+    {
+      "startLine": 15797,
+      "endLine": 15830,
+      "sha256": "d217fef87430599e1c0af0ba26d0ef1efdff6afbcd48bfa73f380d69c5793d79"
+    },
+    {
+      "startLine": 16001,
+      "endLine": 16025,
+      "sha256": "e5e38c7acc98dc84206d620da78ff4d54fd75e58d25aa7fd717b6d5d745e36fc"
+    },
+    {
+      "startLine": 16227,
+      "endLine": 16252,
+      "sha256": "3c268b3393d80a0b3a429caa8d93239abd6348c1af0620f71345db6bc68c97a6"
+    },
+    {
+      "startLine": 16735,
+      "endLine": 16760,
+      "sha256": "dec72a48fbf813fa70a82b837cb891a9943e6e0bfdd2d2cc62edbd076fb913db"
+    }
+  ],
+  "states": [
+    "ESSI_ETK_COMBO_ZZZ",
+    "ESSI_ETK_COMBO_XX",
+    "ESSI_ETK_DASH_COMBO_ZZ",
+    "ESSI_SI_A_ETK_COMPACT_COUNTER_GUARD_ATTACK"
+  ],
+  "behavior": {
+    "birthAnimationTime": 0.01,
+    "bone": "Dummy2_Lhand",
+    "matrix": "complete combineMatrix without added scaling",
+    "release": "DASH_CANCEL_AFTER clears actor handle; does not destroy mesh",
+    "lifeType": "LT_TIME",
+    "lifeTime": 3.0,
+    "startReset": "ESSI_ETK_COMBO_ZZZ invalidates previous actor handle"
+  },
+  "template": {
+    "name": "ElswordSheath02",
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 944637,
+      "line": 29727
+    },
+    "declarationSha256": "2ac5efd13bc99c28102655bc9d4dc5a4e7b4113ee84ce16bb1a6338ab0aa5462",
+    "fields": {
+      "MeshName": "Elsword_SisKnight_sheath.X",
+      "LifeType": "LT_TIME",
+      "MeshType": "X_SKIN_MESH",
+      "BillBoardType": "BT_NONE",
+      "SourceBlendMode": "D3DBLEND_SRCALPHA",
+      "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+      "Layer": 14.0,
+      "LifeTime": 3.0,
+      "ZEnable": true,
+      "ZWriteEnable": true
+    },
+    "events": [
+      {
+        "property": "Color",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "property": "Color",
+        "start": 0.2,
+        "end": 1.1,
+        "fade": true,
+        "value": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "property": "AniName",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_LOOP"
+        }
+      },
+      {
+        "property": "Size",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "failedAnimationName": {
+    "requested": "Normal",
+    "soleOriginalClip": "Elsword_SisKnight_sheath",
+    "controllerEvidence": "contracts/is-harsh-chaser-pose-source-v1.json",
+    "behavior": "failed ChangeAnim retains initial bind, next LOOP chooses original index0; use existing serialized source controller"
+  }
+}

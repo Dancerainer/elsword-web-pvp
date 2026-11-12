@@ -1,0 +1,1129 @@
+{
+  "schemaVersion": 1,
+  "version": "authored-pvp-map-mechanics-v1",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "original2016-map-and-fx-data-with-pinned-V5-consumers",
+  "targetClientMeasured": false,
+  "fullClientExecuted": false,
+  "files": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "bytes": 92246,
+      "sha256": "3306c7370a282b18137c676db2491b0fed4b2939cc1015876965e506cb8e23b2",
+      "gitBlob": "10e46b5b150094051b0ae60315a9d43ae44552a9"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.h",
+      "bytes": 63814,
+      "sha256": "03e819b20d42a502a2d6cafb72fb1cefa28e10d98bfe91b95655c7b0a9dbdf32",
+      "gitBlob": "1ccd794d2ae46ee66e5315237629c7ef528d5075"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGParticleSystem.cpp",
+      "bytes": 222204,
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "gitBlob": "2afaac41a9de94c6a0d0dda5d7df4849429e0c08"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "bytes": 91051,
+      "sha256": "1d16ff35b70a54e2ee2eca84ca9a57826d21fc94a4d6c61f72381cd5c1e105bc",
+      "gitBlob": "2a90db62ffc362e66db5895e03c327a4b3368271"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.h",
+      "bytes": 16380,
+      "sha256": "4500a41fc495ac9d1e9deaf3de0ade8765e5cb71c74ac510d367d4856dc5acb6",
+      "gitBlob": "7ace3bfe9535833a210e51402fc4aa5d597c4571"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectMesh.cpp",
+      "bytes": 22364,
+      "sha256": "351cda2bcd62d020856e8ee3495202e401e2d7f11af5b7e0d4d9ddd36c4071fe",
+      "gitBlob": "2a24cba883579e2710b73d8305d0b0525d6edbff"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectMesh.h",
+      "bytes": 6912,
+      "sha256": "8b169a0a16f9d667ba5e62926cf9cd43a977846049791fa04e54a31a823f6898",
+      "gitBlob": "8f43577cdfc7f9be176c70b74eb27814a3a21e31"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectParticle.cpp",
+      "bytes": 4407,
+      "sha256": "3b4791eb2fbf336c77467f5b9bff4ba0490f4fc1b0754ee669deb68e2dbbd25e",
+      "gitBlob": "c7f37b7b0b08009dd4cb6fb59d2f1de30240e11f"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectParticle.h",
+      "bytes": 7033,
+      "sha256": "595e86064aa31be18ab6e12204568510212aab95505ba6362cccd52de5d8686f",
+      "gitBlob": "85d88d4c4b6987a2b4677b60c1f28ffd47f211ef"
+    }
+  ],
+  "consumerSpans": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "signature": "bool CKTDGLineMap::AddCameraData_LUA(",
+      "lines": [
+        154,
+        198
+      ],
+      "bytes": 1702,
+      "sha256": "d9359a10dcdc9246ef38af85e8ced6fb6ed0b4d15edb33da071e2b6ce26ae76d",
+      "purpose": "camera defaults and relative/absolute mode"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "signature": "bool CKTDGLineMap::AddLine_LUA(",
+      "lines": [
+        203,
+        447
+      ],
+      "bytes": 9049,
+      "sha256": "2b330e4a0b034b582b485f837e3ac48347dcf0d1b5d491e32457a6b69090a24b",
+      "purpose": "line type, conveyor speed and trigger links"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+      "signature": "/*static*/ void CKTDGLineMap::MakeLine( LineData*",
+      "lines": [
+        712,
+        763
+      ],
+      "bytes": 1942,
+      "sha256": "e7c8637743045e76855dc3dff8717baff518093865faa6939400e5376b339eba",
+      "purpose": "normalize full authored direction"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::PhysicProcess()",
+      "lines": [
+        19752,
+        20764
+      ],
+      "bytes": 34883,
+      "sha256": "6f2b57e41eb71095fc472331fda482cfebf62760b2cc209ab89e2f31dd69c602",
+      "purpose": "ground/air speed, conveyor and local animation offsets"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::PhysicProcess_Jumping(",
+      "lines": [
+        20810,
+        20901
+      ],
+      "bytes": 3105,
+      "sha256": "ebf1ebf8a035b62ec57886eee69dfd1a104b7c5bd7a1efcfc5ccfa67975ab9de",
+      "purpose": "launch direction, relative/absolute speed and key lock"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::PhysicProcess_Bungee(",
+      "lines": [
+        20902,
+        20967
+      ],
+      "bytes": 1947,
+      "sha256": "19bbc5e0878d95735692cbe497a66a9506476a8fa892ef0d818adf086cca619c",
+      "purpose": "2-second wait, AIR_DOWN, nonfatal penalty and destination"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::PhysicProcess_Portal(",
+      "lines": [
+        20972,
+        21045
+      ],
+      "bytes": 2231,
+      "sha256": "35d755b3f58e50d3d4a52b4c1128c698a8385138e660693868120b1d292a9c06",
+      "purpose": ".7-second dwell, .3-second lock and re-entry gate"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::InitPosByLineData(",
+      "lines": [
+        2675,
+        2723
+      ],
+      "bytes": 2180,
+      "sha256": "a4c3f3dd734e4e2df1c9adf0f435cf2742ce2eb8fa00abf7dd5ffd520d5e1b37",
+      "purpose": "destination midpoint and V5 overwritten above-floor placement"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "void CX2GUUser::CreateTeleportEffect(",
+      "lines": [
+        26833,
+        26849
+      ],
+      "bytes": 1409,
+      "sha256": "a22036f3df73018d20bdca7cf945d02d10718efd0c4c8d1f3da9aefd4f1b0c2b",
+      "purpose": "original entry/exit audio, eight particle sequences and two meshes"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "HRESULT CX2GUUser::OnCameraMove()",
+      "lines": [
+        6879,
+        7018
+      ],
+      "bytes": 4853,
+      "sha256": "bea598824e8399c6b34449097f3fc640c2b3d1863183d92a022191cf86db1ad7",
+      "purpose": "remembered line CAMERA_INDEX consumed with dynamic camera off"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "signature": "void CX2Camera::NomalTrackingCamera( CX2GameUnit*",
+      "lines": [
+        391,
+        549
+      ],
+      "bytes": 4454,
+      "sha256": "1e54d51a9f64b15676918f3b89309848ecb5f8e4802ea9b74cd4a1758fa55bea",
+      "purpose": "line-relative eye before land-height clamp"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "signature": "void CX2Camera::GameLineCamera(",
+      "lines": [
+        1005,
+        1045
+      ],
+      "bytes": 786,
+      "sha256": "b422ea2c1bc665e7e0e3a85d2ab1bcaad3ba075f72ea43f63b87dc1acdf323c7",
+      "purpose": "absolute eye, optional unit focus, .4-second tracking request"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.h",
+      "signature": "struct LineScriptedCameraData",
+      "lines": [
+        61,
+        159
+      ],
+      "bytes": 2319,
+      "sha256": "67595c779fb2dc4f68dff001d9a1ed14925e3afd011a4f29b46ddd4e52ee37c4",
+      "purpose": "component-wise relative eye approach by speed * seconds"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectParticle.cpp",
+      "signature": "CX2WorldObjectParticle::CX2WorldObjectParticle( CKTDGParticleSystem*",
+      "lines": [
+        14,
+        88
+      ],
+      "bytes": 1874,
+      "sha256": "878d70faf10ab445df9c2970f5853665b784d9b01a5171e1718489b2c202afc4",
+      "purpose": "native world sequence constructor overrides draw count to1"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectParticle.h",
+      "signature": "void SetParticleType(",
+      "lines": [
+        213,
+        234
+      ],
+      "bytes": 464,
+      "sha256": "7f1d6de2964cbb84098e362b33f6b9b48d969ca28cb7483be9a378e5fdb1f0da",
+      "purpose": "object particle-type override forwarded to sequence"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2WorldObjectMesh.cpp",
+      "signature": "HRESULT CX2WorldObjectMesh::OnFrameMove(",
+      "lines": [
+        72,
+        129
+      ],
+      "bytes": 1822,
+      "sha256": "57a76fb7fd6d6b745b6635ff8f35e3b6ffa441067d38a3d1f55818e635ca4809",
+      "purpose": "UV offsets increment by authored speed * elapsed seconds"
+    }
+  ],
+  "maps": [
+    {
+      "sceneId": "ruben-el-tree-stage-pvp",
+      "declarationsSha256": "c4e0a0d8cc0413342bcf5e6ab49185e9cdc0fde2a4e2bdfb2385a30d470c7a0b",
+      "collisionSha256": "2f416ab7893d5aa9c3e17eaabeb847c9e57a97f6a4c2ea94df4daa02199aa47d",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-421",
+          "speed": [
+            0,
+            -1
+          ]
+        },
+        {
+          "objectId": "object-438",
+          "speed": [
+            0,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "eltreedown",
+      "declarationsSha256": "d2f17f6428afa15d2f1eb7b2b7de70f5a392488cca36f8558761c3cee219fd42",
+      "collisionSha256": "4fe7760e5060a3192df51417c319a49a74c4bce1ad300b9b88aafa65777a1c8a",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-11",
+          "speed": [
+            0,
+            0
+          ]
+        },
+        {
+          "objectId": "object-22",
+          "speed": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "elder-benders-cave-stage3",
+      "declarationsSha256": "f0aa618588ee3e5dcae106182d5ddc4a800c3c94077a12dc24cf2fd1b2465ee1",
+      "collisionSha256": "1a84f469368466dcf51e0ae1cd8f64d0052fed20fa3dc0f88b9a57f6ce557953",
+      "specialLines": [],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "elder-wally-castle-center-stage4",
+      "declarationsSha256": "b1fb68f581f15564f52b1d763cf4c0ccf6607074450101bc61c3abc21a9e08da",
+      "collisionSha256": "89fe16a332a5794a1f0d224fec659aef6e8f4920cf92173d4696dd6bb619ae1b",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-443",
+          "speed": [
+            0,
+            -1.5
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "elder-wally-castle-roof-stage4",
+      "declarationsSha256": "41000e48c4fac51c3b222acadf503cbd764838fe5524dac45ffb988c9a0e4658",
+      "collisionSha256": "23ddfe64175c3e10d3129fbc35b17f1088cee62017343a4b117104b4e7741055",
+      "specialLines": [],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "besma-besma-lake-pvpmap",
+      "declarationsSha256": "7bb6392afba5ad98bf730487cf3ee9a3b1a087ede1dc761331601f31679a4a81",
+      "collisionSha256": "f5f1b0cca6462f6411325c61a31a2fb139fd927aea04b89ae1dc4c2e02f4d1f8",
+      "specialLines": [],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "besma-air-ship-pvpmap",
+      "declarationsSha256": "343b6a20976e368b38435f63cf3a5fa2c5b0bac251416ca0fe62dbb52af3d1bb",
+      "collisionSha256": "833963577cf143cbb8004496cd423a4c9cdcfc0af3c8e25ee3e91f0b4140c398",
+      "specialLines": [
+        {
+          "lineId": 2,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": -220,
+            "LINE_NUM": 2,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "START_POS": [
+              4187,
+              240,
+              0
+            ],
+            "END_POS": [
+              4937,
+              240,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 5,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 220,
+            "LINE_NUM": 5,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "START_POS": [
+              4187,
+              720,
+              0
+            ],
+            "END_POS": [
+              4937,
+              720,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 6,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 220,
+            "LINE_NUM": 6,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "START_POS": [
+              750,
+              237,
+              0
+            ],
+            "END_POS": [
+              1500,
+              237,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 9,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": -220,
+            "LINE_NUM": 9,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "START_POS": [
+              750,
+              717,
+              0
+            ],
+            "END_POS": [
+              1500,
+              717,
+              0
+            ]
+          }
+        }
+      ],
+      "uvObjects": [
+        {
+          "objectId": "object-8",
+          "speed": [
+            -0.6,
+            0
+          ]
+        },
+        {
+          "objectId": "object-20",
+          "speed": [
+            0.25,
+            0
+          ]
+        },
+        {
+          "objectId": "object-32",
+          "speed": [
+            0.1,
+            0
+          ]
+        },
+        {
+          "objectId": "object-44",
+          "speed": [
+            0.2,
+            0
+          ]
+        },
+        {
+          "objectId": "object-119",
+          "speed": [
+            0.15,
+            0
+          ]
+        },
+        {
+          "objectId": "object-130",
+          "speed": [
+            0.15,
+            0
+          ]
+        },
+        {
+          "objectId": "object-141",
+          "speed": [
+            0.15,
+            0
+          ]
+        },
+        {
+          "objectId": "object-152",
+          "speed": [
+            0.15,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "summer-2008-pvp",
+      "declarationsSha256": "56fd91fc9ddd14b6011a308ca64659507ee419255957ebb39f6e5eefb62aeb08",
+      "collisionSha256": "6042837934e93e867f04217f7a2c588b6e195907c24e9f97a271056dcf08f3b7",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-245",
+          "speed": [
+            0.18,
+            0
+          ]
+        },
+        {
+          "objectId": "object-531",
+          "speed": [
+            -0.1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "peita-offerings-stage-pvp",
+      "declarationsSha256": "cd94a0702d67e8a360edf656de6ba70f7402c7b98654fcbd18505774fbeb4bfd",
+      "collisionSha256": "a9bd782954699b689024224092d977f1642b6f35b636a517163e5c2374cce33c",
+      "specialLines": [],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "peita-spiral-corridor-pvp",
+      "declarationsSha256": "5260c7474f69e403e56297936d8fc701a56af2044b868c7e6c7c2183aa05d7c8",
+      "collisionSha256": "dcda5dccad01880b8a9c853f53f464ae4e64f981bf024f8bc3c40ff4c0d7bc0d",
+      "specialLines": [
+        {
+          "lineId": 16,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 33,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 16,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -2259,
+              2038,
+              350
+            ],
+            "END_POS": [
+              -1757,
+              2038,
+              350
+            ]
+          }
+        },
+        {
+          "lineId": 18,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 4,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 18,
+            "BEFORE_LINE": -2,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -3826,
+              1837,
+              3668
+            ],
+            "END_POS": [
+              -3627,
+              1837,
+              3322
+            ]
+          }
+        },
+        {
+          "lineId": 33,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 16,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 33,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -2216,
+              2077,
+              2842
+            ],
+            "END_POS": [
+              -1702,
+              2077,
+              2842
+            ]
+          }
+        },
+        {
+          "lineId": 34,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 3,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -2,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 34,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -283,
+              1837,
+              3320
+            ],
+            "END_POS": [
+              -89,
+              1837,
+              3656
+            ]
+          }
+        },
+        {
+          "lineId": 35,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 15,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 35,
+            "BEFORE_LINE": -2,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -3360,
+              2038,
+              350
+            ],
+            "END_POS": [
+              -2903,
+              2038,
+              350
+            ]
+          }
+        },
+        {
+          "lineId": 36,
+          "type": "LINE_TYPE.LT_POTAL",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 19,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -2,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 36,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_POTAL",
+              "resolved": false
+            },
+            "START_POS": [
+              -1112,
+              2038,
+              350
+            ],
+            "END_POS": [
+              -648,
+              2038,
+              350
+            ]
+          }
+        }
+      ],
+      "uvObjects": [
+        {
+          "objectId": "object-169",
+          "speed": [
+            0,
+            -0.2
+          ]
+        },
+        {
+          "objectId": "object-182",
+          "speed": [
+            0,
+            -0.25
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "velder-bridge-hope-stage-pvp",
+      "declarationsSha256": "85e8c8bb4791589a38cd1ce24777deb8a0c243260bf0fb9ce5f879a4ff6bad73",
+      "collisionSha256": "570d313504c592014f6262c6f77a1d470be4293ef49520a8d687d14e4fbff912",
+      "specialLines": [
+        {
+          "lineId": 15,
+          "type": "LINE_TYPE.LT_BUNGEE",
+          "nativeFields": {
+            "STOP_FACTOR": 1,
+            "TELEPORT_LINE": 11,
+            "FOOT_DUST_NAME": "",
+            "NEXT_LINE": -1,
+            "LINE_SET": 0,
+            "SPEED": 0,
+            "LINE_NUM": 15,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "ENABLE": {
+              "symbol": "TRUE",
+              "resolved": false
+            },
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_BUNGEE",
+              "resolved": false
+            },
+            "START_POS": [
+              1726,
+              2,
+              -6127
+            ],
+            "END_POS": [
+              3230,
+              2,
+              -6131
+            ]
+          }
+        }
+      ],
+      "uvObjects": [
+        {
+          "objectId": "object-259",
+          "speed": [
+            -0.2,
+            0
+          ]
+        },
+        {
+          "objectId": "object-299",
+          "speed": [
+            0,
+            -0.1
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "pvp-winter-velder",
+      "declarationsSha256": "6b74b45c2bcf10d58b5b2b48ad412dcf178c0461410a05edfe191595e193abf4",
+      "collisionSha256": "316365a3072a783380c21ecdb11b8c9a24c8c9ee88d9441156926301b34c6ae0",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-349",
+          "speed": [
+            0,
+            -0.09
+          ]
+        },
+        {
+          "objectId": "object-456",
+          "speed": [
+            0.08,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "sander-garpai-rock-pvp",
+      "declarationsSha256": "a6652ed5f778a30553221a4c451c6e2a5e304d7f0e4abefe3db48b60180cbdb5",
+      "collisionSha256": "73a495f74c7dd45700172b62e8ae0fc1eb8295ad632d105b7c48c41e59ef2c5b",
+      "specialLines": [
+        {
+          "lineId": 8,
+          "type": "LINE_TYPE.LT_JUMP_UP_REL",
+          "nativeFields": {
+            "LINE_SET": -1,
+            "JUMP_SPEED_Y": 3800,
+            "NEXT_LINE": -1,
+            "CAMERA_INDEX": 0,
+            "JUMP_REL_UP_KEYSTOP_TIME": 0.1,
+            "LINE_NUM": 8,
+            "BEFORE_LINE": -1,
+            "JUMP_SPEED_X": 1500,
+            "POTAL_GROUP": 0,
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_JUMP_UP_REL",
+              "resolved": false
+            },
+            "LINEMAP_DIRECTION_OPTION": {
+              "symbol": "LINEMAP_DIRECTION_OPTION.LDO_NONE",
+              "resolved": false
+            },
+            "CAN_DOWN": {
+              "symbol": "FALSE",
+              "resolved": false
+            },
+            "START_POS": [
+              -1400,
+              2000,
+              0
+            ],
+            "END_POS": [
+              1400,
+              2000,
+              0
+            ]
+          }
+        }
+      ],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "sander-villiage-pvpmap",
+      "declarationsSha256": "a6f3a2d214ee3684a74a83d00c11b25ba77ffeb3a12fe4921865fc6e253a65fd",
+      "collisionSha256": "4fdcf58d27db0eb6a085c3a9b094e54f525fc8b6f3c6b541e359a360d31abefd",
+      "specialLines": [
+        {
+          "lineId": 11,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "LINE_SET": 0,
+            "CAMERA_INDEX": 2,
+            "NEXT_LINE": -1,
+            "JUMP_REL_UP_KEYSTOP_TIME": 0,
+            "LINE_NUM": 11,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "LINEMAP_DIRECTION_OPTION": {
+              "symbol": "LINEMAP_DIRECTION_OPTION.LDO_NONE",
+              "resolved": false
+            },
+            "START_POS": [
+              -1810,
+              1160,
+              0
+            ],
+            "END_POS": [
+              -1500,
+              1160,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 12,
+          "type": "LINE_TYPE.LT_NORMAL",
+          "nativeFields": {
+            "LINE_SET": 0,
+            "CAMERA_INDEX": 3,
+            "NEXT_LINE": -1,
+            "JUMP_REL_UP_KEYSTOP_TIME": 0,
+            "LINE_NUM": 12,
+            "BEFORE_LINE": -1,
+            "POTAL_GROUP": 0,
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_NORMAL",
+              "resolved": false
+            },
+            "LINEMAP_DIRECTION_OPTION": {
+              "symbol": "LINEMAP_DIRECTION_OPTION.LDO_NONE",
+              "resolved": false
+            },
+            "START_POS": [
+              1500,
+              1160,
+              0
+            ],
+            "END_POS": [
+              1810,
+              1160,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 17,
+          "type": "LINE_TYPE.LT_JUMP_UP_REL",
+          "nativeFields": {
+            "LINE_SET": 0,
+            "JUMP_SPEED_Y": 2000,
+            "NEXT_LINE": -1,
+            "CAMERA_INDEX": 2,
+            "JUMP_REL_UP_KEYSTOP_TIME": 0.5,
+            "LINE_NUM": 17,
+            "BEFORE_LINE": -1,
+            "JUMP_SPEED_X": 4000,
+            "POTAL_GROUP": 0,
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_JUMP_UP_REL",
+              "resolved": false
+            },
+            "LINEMAP_DIRECTION_OPTION": {
+              "symbol": "LINEMAP_DIRECTION_OPTION.LDO_RIGHT",
+              "resolved": false
+            },
+            "CAN_DOWN": {
+              "symbol": "FALSE",
+              "resolved": false
+            },
+            "START_POS": [
+              -1500,
+              1400,
+              0
+            ],
+            "END_POS": [
+              -1110,
+              1400,
+              0
+            ]
+          }
+        },
+        {
+          "lineId": 18,
+          "type": "LINE_TYPE.LT_JUMP_UP_REL",
+          "nativeFields": {
+            "LINE_SET": 0,
+            "JUMP_SPEED_Y": 2000,
+            "NEXT_LINE": -1,
+            "CAMERA_INDEX": 3,
+            "JUMP_REL_UP_KEYSTOP_TIME": 0.5,
+            "LINE_NUM": 18,
+            "BEFORE_LINE": -1,
+            "JUMP_SPEED_X": 4000,
+            "POTAL_GROUP": 0,
+            "LINE_TYPE": {
+              "symbol": "LINE_TYPE.LT_JUMP_UP_REL",
+              "resolved": false
+            },
+            "LINEMAP_DIRECTION_OPTION": {
+              "symbol": "LINEMAP_DIRECTION_OPTION.LDO_LEFT",
+              "resolved": false
+            },
+            "CAN_DOWN": {
+              "symbol": "FALSE",
+              "resolved": false
+            },
+            "START_POS": [
+              1110,
+              1400,
+              0
+            ],
+            "END_POS": [
+              1469,
+              1400,
+              0
+            ]
+          }
+        }
+      ],
+      "uvObjects": [
+        {
+          "objectId": "object-133",
+          "speed": [
+            0,
+            0.2
+          ]
+        },
+        {
+          "objectId": "object-148",
+          "speed": [
+            0,
+            -0.4
+          ]
+        },
+        {
+          "objectId": "object-163",
+          "speed": [
+            0,
+            -0.5
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "elder-druid-forest-stage-pvp",
+      "declarationsSha256": "bdb6b0903b466530cb75b46f6eba669b168cc397db71d7a0a85aeea5074ef6ca",
+      "collisionSha256": "5286269cecea88f563e80023e4090283ca4bcaa5a3ff507c85b779af13bb1d54",
+      "specialLines": [],
+      "uvObjects": []
+    },
+    {
+      "sceneId": "summer-2008-pvp-test",
+      "declarationsSha256": "f4df97540e72f6ef75d8de16587764a201e7de392b092cf1c368c2445a5be166",
+      "collisionSha256": "de82a6073cb68378f517779a8c99beaa53b4e06cc9b2e0b1b9518d6df2abe8fa",
+      "specialLines": [],
+      "uvObjects": [
+        {
+          "objectId": "object-286",
+          "speed": [
+            0.18,
+            0
+          ]
+        },
+        {
+          "objectId": "object-572",
+          "speed": [
+            -0.1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior": {
+    "direction": "native normalized XYZ; airborne removes Y without horizontal renormalization",
+    "motionOffset": "line direction * local X plus GetZVector * local Z; facing applied once; Y ignored",
+    "shadowStepRange": "actual XZ path displacement rather than world X",
+    "portal": {
+      "waitSeconds": 0.7,
+      "strictlyGreater": true,
+      "keyLockSeconds": 0.3,
+      "reentry": "another supported non-portal line"
+    },
+    "jump": "original REL/ABS line speed and LINEMAP_DIRECTION_OPTION with JUMP_REL_UP_KEYSTOP_TIME",
+    "camera": "remembered line CAMERA_INDEX; original relative component speed and absolute focus defaults",
+    "conveyor": "signed SPEED carries supported actors; per-object SetTex0UVSpeed runs on elapsed world seconds",
+    "bungee": {
+      "waitSeconds": 2,
+      "state": "RSI_DAMAGE_AIR_DOWN",
+      "hpMaxFraction": 0.1,
+      "hpMinimum": 1,
+      "returnHeight": 200,
+      "invincibility": "preserve room/respawn protection while applying environment penalty",
+      "pickup": "existing grounded hit reaction can stand a vulnerable return; respawn protection rejects that hit"
+    }
+  },
+  "productOverrides": [
+    "User requires10% max HP, while pinned V5 PhysicProcess_Bungee uses15%.",
+    "User requires200 units above bridge centre; V5 InitPosByLineData assigns+200 then overwrites with floor Y.",
+    "Existing user-selected teammate-position respawn is retained; it can occur while the teammate is falling."
+  ],
+  "resourceEvidence": [
+    "contracts/pvp-map-fx-index-v1.json",
+    "reports/pvp-map-d3dx-sources-v1.json",
+    "reports/pvp-map-d3dx-keyframes-v1.json"
+  ],
+  "limitations": [
+    "Pinned C++ is V5 reference, not a matched NA2016 client build.",
+    "No original full-client execution or original-client movement/portal/bridge trace is claimed.",
+    "Sander Wind_P02 contains a malformed fadeso velocity token; literal unconsumed field is retained in the asset index."
+  ]
+}

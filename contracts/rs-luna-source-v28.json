@@ -1,0 +1,422 @@
+{
+  "schema": "elsword.rs-luna.v28",
+  "originalClientMeasurements": 0,
+  "evidenceClass": "target2016-static + pinnedV5-consumer + Web-adapter",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetSources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "buff-factor": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+    },
+    "battle-buff": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    }
+  },
+  "targetSkillSource": {
+    "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+    "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+  },
+  "buffConsumer": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+    "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+    "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+    "lines": [
+      670,
+      714
+    ]
+  },
+  "swordConsumer": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUElsword_SwordMan.cpp",
+    "gitBlob": "40dde7e70da2cd2888b1a08bcfe10cdab444e037",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "fragments": [
+      {
+        "name": "DashAttackXEventProcess",
+        "startLine": 8589,
+        "endLine": 8645,
+        "sha256": "1fa78f390efb5685f89e500e04dd16edd4768a9cf98346700230952bdb668394",
+        "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+      },
+      {
+        "name": "ESSI_ERS_DASH_JUMP_XZZ_FrameMove",
+        "startLine": 14811,
+        "endLine": 14886,
+        "sha256": "53eb7e225b829235b1a8003dd69c88e5b77966c357a1ddf5dace0598f1e2af2d",
+        "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+      },
+      {
+        "name": "ESSI_ERS_XZ_FrameMove",
+        "startLine": 14485,
+        "endLine": 14537,
+        "sha256": "0fbdc00ccf02400ebaea3aab80b212fdfdfe7a77645e41f7c30abff8d564cc15",
+        "hashNormalization": "Latin1 decoded lines, LF, no final LF"
+      }
+    ]
+  },
+  "damageStages": {
+    "DamageEffect_SA_ERS_LunaBlade": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "ERS_LunaBladeM",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 810,
+          "PVP_RATE": 0.42,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 750,
+          "STOP_TIME_DEF": 1,
+          "HIT_ADD_MP": 10,
+          "WAY_OF_SWORD_TYPE": 6,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 59,
+          "REACT_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "FORCE_FLY": 0,
+          "APPLIED_SKILL_ID": 21017,
+          "DAMAGE": {
+            "MAGIC": 17.84
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "ATTACK_SPHERE04",
+          "PARTICLE_NAME": "LunaBladeA01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "LunaBladeA02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE04",
+          "PARTICLE_NAME": "LunaBladeA03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "ATTACK_SPHERE04",
+          "PARTICLE_NAME": "LunaBladeA04",
+          "POSITION_TYPE": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_ERS_LunaBlade_EX1",
+          "POSITION_TYPE": 3
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.2,
+          "GAP": 50,
+          "TIME": 0.3,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_LunaBlade_Shot.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 3634
+      }
+    },
+    "DamageEffect_SA_ERS_LunaBlade_ExposionFinal": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "ATTACK_TIME_START": 0.185,
+        "MAIN_EFFECT_NAME": "SA_ERS_LunaBlade_ExposionFinal_AttackBox_02",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.3,
+          "CAMERA_CRASH_GAP": 15,
+          "PVP_RATE": 0.42,
+          "BACK_SPEED_Y": 1000,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 750,
+          "STOP_TIME_DEF": 0.25,
+          "HIT_ADD_MP": 10,
+          "WAY_OF_SWORD_TYPE": 6,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 60,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 1,
+          "RE_ATTACK": 0,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "FORCE_FLY": 1,
+          "APPLIED_SKILL_ID": 21017,
+          "DAMAGE": {
+            "MAGIC": 17.84
+          },
+          "BUFF_FACTOR_ID": {
+            "1": 117
+          },
+          "BUFF_FACTOR_RELATIVE_SKILL_ID": 21017
+        },
+        "START_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "LunaBlade_FE01",
+          "POSITION_TYPE": 0
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "LunaBlade_FE02",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 0
+        },
+        "START_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "LunaBlade_FE03",
+          "POSITION_TYPE": 0
+        },
+        "START_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "LunaBlade_FE04",
+          "POSITION_TYPE": 0
+        },
+        "START_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "RuneGuardIce_S04",
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 3723
+      }
+    }
+  },
+  "factor117": {
+    "raw": {
+      "BUFF_TEMPLET_ID": 98,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 2
+        },
+        "BBT_CHANGE_NOW_MP_PER_SECOND": {
+          "BUFF_CHANGE_TYPE": 3,
+          "PERCENT": {
+            "1": -0.3,
+            "2": -0.3,
+            "3": -0.3,
+            "4": -0.3,
+            "5": -0.3,
+            "6": -0.3,
+            "7": -0.3,
+            "8": -0.3,
+            "9": -0.3,
+            "10": -0.3,
+            "11": -0.3,
+            "12": -0.3,
+            "13": -0.3,
+            "14": -0.3,
+            "15": -0.3,
+            "16": -0.3,
+            "17": -0.3,
+            "18": -0.3,
+            "19": -0.3,
+            "20": -0.3,
+            "21": -0.3,
+            "22": -0.3,
+            "23": -0.3,
+            "24": -0.3,
+            "25": -0.3,
+            "26": -0.3,
+            "27": -0.3,
+            "28": -0.3,
+            "29": -0.3,
+            "30": -0.3
+          }
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 8
+        },
+        "BFT_IMMEDIATE": {}
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 7442
+    },
+    "sourceKey": "buff-factor",
+    "evidenceClass": "static-target-2016; behavior-execution-separate"
+  },
+  "template98": {
+    "raw": {
+      "ACCUMULATION_LIMIT": 0,
+      "BUFF_TEMPLET_ID": 98,
+      "IS_WORLD_BUFF": 0,
+      "IS_DEBUF": 1,
+      "REGIST_TYPE": 0,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 2
+        },
+        "BBT_CHANGE_NOW_MP_PER_SECOND": {
+          "TIME_INTERVAL": 0,
+          "BUFF_CHANGE_TYPE": 3,
+          "DRAW_TEXT": 1
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 8
+        },
+        "BFT_IMMEDIATE": {}
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 7203
+    },
+    "sourceKey": "battle-buff",
+    "evidenceClass": "static-target-2016; registration-execution-separate"
+  },
+  "minusGlyph": {
+    "file": "PC_-.png",
+    "textureId": 45,
+    "width": 32,
+    "height": 32,
+    "format": "RGBA",
+    "rgbaSha256": "53907dd6417ea6ab51a956c8f47cbd8bd153791dbe3f391af5f738318bcd58f3",
+    "source": {
+      "archive": "data/data049.kom",
+      "ordinal": 64,
+      "name": "PC_-.dds",
+      "rawPath": "raw/data/data049.kom/PC_-.dds",
+      "sha256": "01ad0a9f40b650834ea2d2bafbef98e2e76286590b31d72a840f036a53c928ca",
+      "bytes": 1152,
+      "signatureHex": "444453207c0000000710080020000000"
+    },
+    "sha256": "76a755c4e54a48e710c576a5c731da616b1093af9477a88b8703c0f3251b1ff0",
+    "bytes": 305
+  },
+  "percentGlyph": {
+    "file": "PC_percent.png",
+    "textureId": 37,
+    "width": 32,
+    "height": 32,
+    "format": "RGBA",
+    "rgbaSha256": "4181f9582876e8b8b88908b1fbdfa0f39bc02557550c8277e98a28f90d1d7b97",
+    "source": {
+      "archive": "data/data049.kom",
+      "ordinal": 59,
+      "name": "PC_%.dds",
+      "rawPath": "raw/data/data049.kom/PC_%.dds",
+      "sha256": "3dc1efda0de2e0214e90234739c5ce947d9875bc95511c4c974ddcb5fa95eda8",
+      "bytes": 1152,
+      "signatureHex": "444453207c0000000710080020000000"
+    },
+    "sha256": "f0eeea73358881fdf30c62e80fbb688c2610ab0f29793b75396accf270312ad1",
+    "bytes": 1465
+  },
+  "healthConsumer": {
+    "reference": "fixedV5",
+    "damageEffectSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+    "damageManagerSha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+    "lines": {
+      "createDie": [
+        6025,
+        6100
+      ],
+      "perInstanceHitMemory": [
+        2330,
+        2347
+      ],
+      "rejection": [
+        970,
+        982
+      ]
+    },
+    "findings": [
+      "Die children CreateInstance independently; inherited BuffFactor only when requested; no inherited hitUnitList in this path",
+      "No NO_DAMAGE or shared DAMAGE_EFFECT_GROUP_DAMAGE declaration in the two target rows",
+      "Model trajectory may miss the upper platform and explode on a lower plane; this is original map collision, not a fixed cast-centered radius"
+    ]
+  },
+  "policy": {
+    "healthDamage": "Keep both declared17.84 multipliers; no NO_DAMAGE field or inherited hitUnitList found",
+    "mpBurn": "Each accepted blade/explosion stage burns30% max MP; stage receipt rejects repeated/older reports",
+    "referenceRedText": "PinnedV5 uses MP signed integer delta, red PicChar26-unit advance, target HeadY-50; target2016 consumer unavailable",
+    "userRedText": "Project rule requires red MP -30% for Luna98; original glyph37, same red particle and anchor; actual MP arithmetic unchanged",
+    "explosionGeometry": "Original DummyAttackBox_50x50x50, Size12/12/12; helper sphere adapter is not original bounding-sphere proof",
+    "targetConsumerUnavailable": true
+  }
+}

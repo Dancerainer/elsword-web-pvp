@@ -1,0 +1,154 @@
+{
+  "schema": "rf-trace-mesh-phase-source-v13",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-source-consumer + target2016 declarations",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "sourceFiles": [
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2Data.cpp",
+      "bytes": 159782,
+      "sha256": "cc8543f0d18ef5962a83e5459d19d25643e8ebd93a8f31f3d4b7f5cdec541f05",
+      "spans": [
+        {
+          "startLine": 1533,
+          "endLine": 1542,
+          "meaning": "GameMajor mesh frame advances before EffectSet frame",
+          "bytes": 322,
+          "sha256": "03b04630f9e29ff71865a6f4a848bac50f7748f24f94f967f31c1c17e371dc15"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2Game.cpp",
+      "bytes": 618989,
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "spans": [
+        {
+          "startLine": 3020,
+          "endLine": 3033,
+          "meaning": "unit OnFrameMove",
+          "bytes": 476,
+          "sha256": "0e940a417e701ce52f6fe53188902d5f3f61e8ab89b0a86ccf8a3499a3069ca6"
+        },
+        {
+          "startLine": 3159,
+          "endLine": 3168,
+          "meaning": "DamageEffect after unit frames; mesh calls commented out",
+          "bytes": 367,
+          "sha256": "c29e5136fa522d3802e90224781f0b58d49379b306a49236f3961376f87ddf6c"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2EffectSet.cpp",
+      "bytes": 146678,
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "spans": [
+        {
+          "startLine": 65,
+          "endLine": 74,
+          "meaning": "create/delete/update order",
+          "bytes": 238,
+          "sha256": "98ffa25c43e79648a2c67f6fae2ac17de6dc3abc506708084c27e0a5a738b703"
+        },
+        {
+          "startLine": 1287,
+          "endLine": 1335,
+          "meaning": "TRACE damage effect SetPos",
+          "bytes": 1910,
+          "sha256": "50e03af11fd22d6505abd9d2f6e093616c456b818e099cdcf1afff9b965685c0"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "spans": [
+        {
+          "startLine": 1864,
+          "endLine": 1888,
+          "meaning": "reads previously updated live mesh matrix",
+          "bytes": 790,
+          "sha256": "f3c5d945d7112bb298eb5b92e54db1bc50951d0764b78a43f314b9c00db638cf"
+        },
+        {
+          "startLine": 6841,
+          "endLine": 6850,
+          "meaning": "SetPos delegates position only to mesh",
+          "bytes": 154,
+          "sha256": "712449b2f926a1872c55a852d6e5ef0a97f9fbbdc7675a6ac354630c52309d8a"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "bytes": 130812,
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "spans": [
+        {
+          "startLine": 1774,
+          "endLine": 1777,
+          "meaning": "collision reads XSkinAnim attack helper list",
+          "bytes": 230,
+          "sha256": "614368e20426fe79dcc8ce258b1bf7b631263a36890a00bc69b9fc4f4437343b"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "spans": [
+        {
+          "startLine": 366,
+          "endLine": 374,
+          "meaning": "newborn initialization uses .0001",
+          "bytes": 390,
+          "sha256": "4f5f9ea10c78b87790fe7289551f941684294146d36596eb12409b2761321e84"
+        },
+        {
+          "startLine": 1920,
+          "endLine": 1952,
+          "meaning": "XSkinAnim matrix position committed during mesh OnFrameMove",
+          "bytes": 1455,
+          "sha256": "c9bd71cd467ad05dea7b3d495db53cf93b1ecf6881813acd4325b7837d067ba7"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDGXMeshPlayer.h",
+      "bytes": 74061,
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "spans": [
+        {
+          "startLine": 1190,
+          "endLine": 1196,
+          "meaning": "SetPos writes m_vPos only",
+          "bytes": 376,
+          "sha256": "ed073f6d755b214ba4ddd0bc643af6646ce7f0dce8c8e81b75d582fadc4fc0f0"
+        }
+      ]
+    }
+  ],
+  "unchangedTargetContract": "contracts/rf-dash-zx-source-v12.json",
+  "implemented": {
+    "posedMatrix": "sourcePosedAnchor",
+    "pendingMeshPosition": "currentAnchor",
+    "tracePositionOnly": true,
+    "excluded": [
+      "TRACE_MATRIX",
+      "compiled Archenemy mesh",
+      "compiled Shadow mesh"
+    ]
+  },
+  "unsupported": [
+    "target2016 66Z -> 66ZX callback binding",
+    "full target Main and Now/Future update order",
+    "full mesh simulation/final-render subframe scheduling",
+    "newborn global .0001 and exact create/update phase",
+    "target-client near-body helper radius measurement"
+  ],
+  "rule": "Snapshot positions are cached by mesh update; SetPos must never re-pose collision from the newly moved actor in the same damage check."
+}

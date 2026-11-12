@@ -1,0 +1,982 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "fixed-V5-callback-plus-target2016-static-animation-not-full-client",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+  "functions": [
+    {
+      "name": "SI_SA_RRF_X_CRASH_EventProcess",
+      "file": "X2Lib/X2GURaven.cpp",
+      "startLine": 16415,
+      "endLine": 16432,
+      "sha256": "01add15ab1e4e662488a11dfa87fce31a1d1c9a9ad789d9dc417136b9d090d63",
+      "bodySha256": "2b661e585b9bfaf0587c0e56bcb2fc16e6bab126645205a33053a48b8fdef7b4",
+      "bytes": 349
+    },
+    {
+      "name": "SI_SA_RRF_X_CRASH_FrameMove",
+      "file": "X2Lib/X2GURaven.cpp",
+      "startLine": 16380,
+      "endLine": 16414,
+      "sha256": "c194602818f61d7741daa094d405231c7b696569904bfe102eff5a3658fa1b4f",
+      "bodySha256": "d7e85f20667903eefda7324ef15cff66f7b822cfdba94a68fa845a3008fd1f0b",
+      "bytes": 1416
+    }
+  ],
+  "additionalReferenceSpans": [
+    {
+      "path": "X2Lib/X2GUUser.h",
+      "lines": [
+        1712,
+        1712
+      ],
+      "sourceSha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "fragmentSha256": "cf91963d0df2cd581e42ec6b876e6bc861bc05be2c48ec319d307335cbe7add1",
+      "bytes": 64
+    },
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "lines": [
+        3276,
+        3289
+      ],
+      "sourceSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragmentSha256": "ebddff52b3faa9a7f2c00adb8956d1d4697fa0baa34626bcbf4a923f75b3e0b7",
+      "bytes": 852
+    },
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "lines": [
+        366,
+        374
+      ],
+      "sourceSha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragmentSha256": "4f5f9ea10c78b87790fe7289551f941684294146d36596eb12409b2761321e84",
+      "bytes": 390
+    }
+  ],
+  "target2016Particles": {
+    "TIME_PARTICLE0": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy01_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE1": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy02_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE2": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy03_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE3": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy04_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE4": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy01_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Smoke01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE5": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy02_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Smoke01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE6": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy03_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Smoke01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE7": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy04_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Smoke01_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE8": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy01_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire02_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE9": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy02_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire02_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE10": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy03_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire02_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    },
+    "TIME_PARTICLE11": {
+      "EVENT_TIME": 0.03,
+      "BONE_NAME": "Dummy04_EX",
+      "PARTICLE_NAME": "RFF_X_Crash_Fire02_NEW",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATE": 0,
+      "TRACE": 1
+    }
+  },
+  "target2016Templates": {
+    "Raven_RRF_SI_SA_X_Crash_Mesh03": {
+      "fields": {
+        "MeshName": "Raven_RRF_SI_SA_X_Crash_Mesh03.x",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "PlayCount": 1.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_RRF_SI_SA_X_Crash_Mesh03",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 465271,
+        "line": 14641
+      },
+      "declarationSha256": "310c3f4c38834a43a6552d6f9089fab274359b1dec89196ef2cd13c02e30cb22",
+      "textures": {},
+      "glb": null,
+      "poseData": "fx/meshes/Raven_RRF_SI_SA_X_Crash_Mesh03.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.4000000059604645,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "RFF_X_Crash_Fire01_NEW": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 130.0,
+        "Lifetime": 1.3,
+        "NumParticles": 30.0,
+        "TriggerTime": 0.65,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          -150.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EL_FIRE_03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.7,
+            0.7,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.7,
+            0.6,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.7,
+          "end": 1.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                100.0,
+                130.0
+              ]
+            },
+            {
+              "random": [
+                100.0,
+                130.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.01,
+          "end": 0.3,
+          "fade": true,
+          "value": {
+            "random": [
+              0.05,
+              0.15
+            ]
+          }
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RFF_X_Crash_Fire01_NEW",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 273677,
+        "line": 7549
+      },
+      "declarationSha256": "908669fe841e6bb907b5257f287a6b979bc0a7691bd74fac74567a2a58d1115d",
+      "textures": {
+        "EL_FIRE_03.dds": {
+          "file": "fx/textures/EL_FIRE_03-ddc8afcf5e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data142.kom",
+            "ordinal": 76,
+            "name": "EL_FIRE_03.dds",
+            "rawPath": "raw/data/data142.kom/EL_FIRE_03.dds",
+            "sha256": "ddc8afcf5e31140235281a62e933e4e39f18e08f44e2fde5fc1fee7d547dd8e8",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          }
+        }
+      }
+    },
+    "RFF_X_Crash_Smoke01_NEW": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 1.0,
+        "NumParticles": 40.0,
+        "TriggerTime": 0.65,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -55.0,
+              55.0
+            ]
+          },
+          {
+            "random": [
+              -55.0,
+              55.0
+            ]
+          },
+          {
+            "random": [
+              -55.0,
+              55.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "BURSTING_BLADE_flame.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.1,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.6
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                70.0,
+                90.0
+              ]
+            },
+            {
+              "random": [
+                70.0,
+                90.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                100.0,
+                130.0
+              ]
+            },
+            {
+              "random": [
+                100.0,
+                130.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -45.0,
+                45.0
+              ]
+            },
+            {
+              "random": [
+                -45.0,
+                45.0
+              ]
+            },
+            {
+              "random": [
+                -45.0,
+                45.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RFF_X_Crash_Smoke01_NEW",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 274845,
+        "line": 7575
+      },
+      "declarationSha256": "93a4d2ce732044c6475ba8dc6ea461eb674b07bb953ecaaad3d6e5b871dc6740",
+      "textures": {
+        "BURSTING_BLADE_flame.dds": {
+          "file": "fx/textures/BURSTING_BLADE_flame-87e43a749a.png",
+          "width": 32,
+          "height": 32,
+          "source": {
+            "archive": "data/data120.kom",
+            "ordinal": 8,
+            "name": "BURSTING_BLADE_flame.dds",
+            "rawPath": "raw/data/data120.kom/BURSTING_BLADE_flame.dds",
+            "sha256": "87e43a749a79a369cf4e74f2f007f2fbc8f9f74285447c9a6bc8646723f31198",
+            "bytes": 1520,
+            "signatureHex": "444453207c00000007100a0020000000"
+          }
+        }
+      }
+    },
+    "RFF_X_Crash_Fire02_NEW": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 130.0,
+        "Lifetime": 1.0,
+        "NumParticles": 40.0,
+        "TriggerTime": 0.65,
+        "Layer": 15.0,
+        "Emitradius": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EL_FIRE_03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.7,
+            1.0,
+            0.2,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.1,
+            0.02,
+            0.02,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                50.0,
+                60.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                60.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                90.0,
+                110.0
+              ]
+            },
+            {
+              "random": [
+                90.0,
+                110.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.3,
+          "end": 2.0,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -80.0,
+                80.0
+              ]
+            },
+            {
+              "random": [
+                -80.0,
+                80.0
+              ]
+            },
+            {
+              "random": [
+                -80.0,
+                80.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RFF_X_Crash_Fire02_NEW",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 275721,
+        "line": 7597
+      },
+      "declarationSha256": "7b5dcc5aebb93bda723b24304440e647ddf6e9e4c785a96c20a5b44390eb18dd",
+      "textures": {
+        "EL_FIRE_03.dds": {
+          "file": "fx/textures/EL_FIRE_03-ddc8afcf5e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data142.kom",
+            "ordinal": 76,
+            "name": "EL_FIRE_03.dds",
+            "rawPath": "raw/data/data142.kom/EL_FIRE_03.dds",
+            "sha256": "ddc8afcf5e31140235281a62e933e4e39f18e08f44e2fde5fc1fee7d547dd8e8",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          }
+        }
+      }
+    }
+  },
+  "runtimeModule": {
+    "file": "skills.wasm",
+    "sha256": "38dc6c5d84bb100782c26d0027d4a459d01fe6730efc5800150fdcb298c52ba3",
+    "bytes": 142598,
+    "evidenceClass": "mixed-fixed-V5-and-2026-reconstructed-reference-not2016"
+  },
+  "requiredMeshBones": [
+    "Dummy01_EX",
+    "Dummy02_EX",
+    "Dummy03_EX",
+    "Dummy04_EX",
+    "Dummy01_EX_C"
+  ],
+  "nativeSnapshot": {
+    "words": 6,
+    "group": 69,
+    "inputs": [
+      "current original Bip01 position",
+      "saved m_vXCrashPos"
+    ],
+    "eventClock": "OnFrameMove/Now animation"
+  },
+  "unsupported": [
+    "Matching target2016 executable callback binding",
+    "Original GPU particle/blend and frame-time comparison",
+    "Full native Now/Future host scheduling"
+  ],
+  "hostAdapter": [
+    "Current character pose supplies real Bip01; absent bone does not use guessed actor origin",
+    "Captured position serializes and restores with full simulation",
+    "Hyper state is selected at cast and remains unchanged through awakening expiry",
+    "MeshPlayer initializes at float32 .0001; new Now mesh waits until next Data phase for dt",
+    "Target hidden Mesh03 follows original play-count end window through host effect lifecycle",
+    "Presentation reads core mesh clocks and retains last live bone snapshot for finite particle tails"
+  ],
+  "tests": [
+    "tests/native/xcrash-source-v14.test.mjs",
+    "tests/combat/xcrash-source-v14.test.mjs",
+    "tests/integration/xcrash-source-v14.test.mjs",
+    "tests/native/skills-build.test.py"
+  ]
+}

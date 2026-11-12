@@ -1,0 +1,35 @@
+{
+  "schema": "rf-passive-kd-source-v12",
+  "targetClientMeasured": false,
+  "targetTemplateSha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceStatus": "fixed reference includes later modifications; not target2016 source or runtime measurement",
+  "sources": [
+    {"file":"X2Lib/X2GURaven.cpp","sha256":"e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237","sections":[{"lines":[2328,2342],"meaning":"sets hit-create chance; no acquired BF437 activation"},{"lines":[2703,2772],"meaning":"equipped-skill common initialization and type registration"},{"lines":[4130,4158],"meaning":"MegaDrill callbacks; common state start retained"},{"lines":[5207,5240],"meaning":"Burning Nasod eligibility is latched at state entry"},{"lines":[22089,22244],"meaning":"five acquired MegaDrill consumers contain no armor grant"}]},
+    {"file":"X2Lib/X2GUUser.cpp","sha256":"ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38","sections":[{"lines":[5643,5653],"meaning":"HardenBody final defence multiplier"},{"lines":[9741,9755],"meaning":"received soul increasing-rate contribution"},{"lines":[9917,9950],"meaning":"memo and penetration subtraction precede force-down reservation"},{"lines":[12376,12390],"meaning":"on-hit soul contribution"},{"lines":[12812,12822],"meaning":"short-circuit owner-chance OR raw-rate, independent conditional draws"},{"lines":[14061,14068],"meaning":"common state armor defaults"},{"lines":[14451,14459],"meaning":"obsolete duplicate melee KD scaling is excluded by DELETE_OVERlAP_DECREASE_FORCE_DOWN_MELEE"},{"lines":[15619,15638],"meaning":"future frame consumes authored armor intervals"},{"lines":[31488,31494],"meaning":"non-special nonzero raw melee force-down scaling at damage load"},{"lines":[33308,33314],"meaning":"IsSuperArmor reads buff identity and state flag"},{"lines":[34109,34156],"meaning":"damage exception conversion from owner state"}]},
+    {"file":"X2Lib/X2DamageManager.cpp","sha256":"22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231","sections":[{"lines":[427,427],"meaning":"damage load invokes owner damage exception processing"}]},
+    {"file":"X2Lib/X2DamageEffect.cpp","sha256":"8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8","sections":[{"lines":[1456,1465],"meaning":"non-special raw ranged force-down scaling"},{"lines":[1894,1945],"meaning":"frame updates PASSIVE and TIME particle lists, not START"},{"lines":[2423,2432],"meaning":"first live frame starts START/PASSIVE/TIME particles once"},{"lines":[3976,3986],"meaning":"ranged additional effect short-circuit OR"},{"lines":[4793,4814],"meaning":"SetStartParticle iterates original start entries"},{"lines":[5463,5487],"meaning":"start particle sequence creation and trigger values"},{"lines":[5650,5720],"meaning":"particle main-mesh position and rotation"},{"lines":[7260,7284],"meaning":"FORCE_DIE versus AutoDie retirement"}]},
+    {"file":"X2Lib/X2GameUnit.cpp","sha256":"764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923","sections":[{"lines":[173,174],"meaning":"initial hit-create chance zero, power one"}]},
+    {"file":"KTDXLIB/Always.h","sha256":"a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069","sections":[{"lines":[2070,2070],"meaning":"DELETE_OVERlAP_DECREASE_FORCE_DOWN_MELEE macro enabled"}]}
+  ],
+  "targetExplosion": {
+    "name":"DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+    "chanceAtMaxLevel":0.1,
+    "rawMagicCoefficient":2.39,
+    "pvpMultiplier":0.6,
+    "hitAddedMp":0,
+    "attackType":1,
+    "mainEffect":"Vibration_Shooting_Impact",
+    "startParticles":["SA_RVC_DeadlyRaid_P02","SA_RVC_DeadlyRaid_P04","RWT_BARRAGE_ATTACK_Flame_Smoke02","RWT_BARRAGE_ATTACK_Flame_Smoke01","RWT_BARRAGE_ATTACK_Spark"],
+    "eachTriggerCount":1,
+    "eachPositionType":3
+  },
+  "unsupported": [
+    "24402 BF437 activation callback and critical-buff lifecycle",
+    "24403 target2016 native alias and exact low-HP/KD boundary; existing .73 mapping remains candidate",
+    "24404 received MP .1 and SA_SOUL_ABS .09 consumers",
+    "24405 magic attack1.075 composition, duration .7 and remaining-time consumer",
+    "MegaDrill target2016 client armor behavior; no grant found in acquired source",
+    "Actual GPU particle blend, source render-target/layer order and original client measurements"
+  ]
+}

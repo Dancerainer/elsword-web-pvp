@@ -1,0 +1,3719 @@
+{
+  "schemaVersion": 1,
+  "id": "elesis-firewall-npc-v45",
+  "npcId": 1635,
+  "targetClientMeasured": false,
+  "evidenceClass": "static original2016 NPC declaration and registered script bytecode + source attack helpers; Web map/NPC host adapter",
+  "source": {
+    "path": "asset_work\\raw\\data\\data037.kom\\Elesis_FireWall.lua",
+    "sha256": "7d0a43dbb2572651663d160d43a2fa717186fc9d44f52be15015ffbcbb5ddede"
+  },
+  "meshSource": {
+    "path": "asset_work\\raw\\data\\data116.kom\\EM_Stone_Wall_Effect.x",
+    "sha256": "0daacdcccb015bf7eca85f633509f64b40a73d71b6e90d9c3b27d8e21cfe5811",
+    "bytes": 50861
+  },
+  "raw": {
+    "INIT_SYSTEM": {
+      "UNIT_HEIGHT": 0,
+      "UNIT_SCALE": 0.5,
+      "UNIT_WIDTH": 0,
+      "UNIT_LAYER": {
+        "$symbol": "X2_LAYER.XL_UNIT_0",
+        "$unsupported": "native/global value not resolved"
+      },
+      "ALPHA_BLEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "INIT_DEVICE": {
+      "READY_TEXTURE": {
+        "1": "GroundShockWave02.dds",
+        "2": "Rose_explosion_01.Tga",
+        "3": "WhitePointSmall.dds",
+        "4": "smoke02.dds",
+        "5": "secretVelder_perpit_fire_flame.dds"
+      },
+      "READY_XSKIN_MESH": {
+        "1": "DummyAttackBox_100x50x50_tall2.x",
+        "2": "SI_SA_SBH_WALL_OF_PROMINENCE_01.X",
+        "3": "BREAKING_FIST_Attack_Box.X"
+      }
+    },
+    "INIT_MOTION": {
+      "MOTION_FILE_NAME": "EM_Stone_Wall_Effect.X"
+    },
+    "INIT_PHYSIC": {
+      "RUN_SPEED": 0,
+      "RELOAD_ACCEL": 2000,
+      "DASH_JUMP_SPEED": 0,
+      "WALK_SPEED": 0,
+      "G_ACCEL": 4000,
+      "MAX_G_SPEED": -2000,
+      "JUMP_SPEED": 0
+    },
+    "INIT_COMPONENT": {
+      "SHADOW_FILE_NAME": "shadow.dds",
+      "MP_CHANGE_RATE": 0,
+      "ABSORB_MAGIC_EFFECTSET": "EffectSet_ABSORB_MAGIC_FireWall",
+      "QUESTION_MARK_SEQ": "",
+      "HEAD_BONE_NAME": "Object01",
+      "EXCLAMATION_MARK_SEQ": "",
+      "MP_CHARGE_RATE": 0,
+      "DIE_FLY": 0,
+      "SHADOW_SIZE": 0,
+      "USE_SLASH_TRACE": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "ABSORB_MAGIC_MONSTER": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "ABSORB_MAGIC_SPECIAL": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "HITTED_TYPE": {
+        "$symbol": "HITTED_TYPE.HTD_STONE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "NOT_EXTRA_DAMAGE": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMUNITY_TIME_STOP": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMUNITY_DAMAGE_DATA_STOP_TIME": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "INIT_STATE": {
+      "WAIT_STATE": "ELESIS_FIRE_WALL_WAIT",
+      "DYING_SKY": "ELESIS_FIRE_WALL_DYING",
+      "DYING_LAND_BACK": "ELESIS_FIRE_WALL_DYING",
+      "COMMON_FRAME_FUNC": "ELESIS_FIRE_WALL_COMMON_FRAME_FUNC",
+      "DYING_LAND_FRONT": "ELESIS_FIRE_WALL_DYING",
+      "REVENGE_ATTACK": "",
+      "START_STATE": "ELESIS_FIRE_WALL_WALK",
+      "1": {
+        "STATE_NAME": "ELESIS_FIRE_WALL_WAIT",
+        "LUA_STATE_START_FUNC": "ELESIS_FIRE_WALL_WAIT_STATE_START"
+      },
+      "2": {
+        "STATE_NAME": "ELESIS_FIRE_WALL_WALK",
+        "LUA_STATE_START_FUNC": "ELESIS_FIRE_WALL_WALK_STATE_START"
+      },
+      "3": {
+        "STATE_NAME": "ELESIS_FIRE_WALL_ATTACK_SUCCESS",
+        "LUA_STATE_START_FUNC": "ELESIS_FIRE_WALL_ATTACK_SUCCESS_STATE_START"
+      },
+      "4": {
+        "STATE_NAME": "ELESIS_FIRE_WALL_DAMAGE"
+      },
+      "5": {
+        "STATE_NAME": "ELESIS_FIRE_WALL_DYING"
+      }
+    },
+    "INIT_AI": {
+      "NO_BRAIN": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "ELESIS_FIRE_WALL_WAIT": {
+      "PASSIVE_SPEED_X": 0,
+      "ANIM_NAME": "EM_Stone_Wall_Wait",
+      "PASSIVE_SPEED_Y": 150,
+      "PLAY_TYPE": {
+        "$symbol": "XSKIN_ANIM_PLAYTYPE.XAP_LOOP",
+        "$unsupported": "native/global value not resolved"
+      },
+      "TRANSITION": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "LAND_CONNECT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "SHOW": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PUSH_UNIT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PASS_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "NEVER_MOVE": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMADIATE_PACKET_SEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "ELESIS_FIRE_WALL_DYING",
+          "3": "CT_ELESIS_FIRE_WALL_DYING",
+          "1": {
+            "$symbol": "STATE_CHANGE_TYPE.SCT_CONDITION_TABLE",
+            "$unsupported": "native/global value not resolved"
+          }
+        }
+      },
+      "CT_ELESIS_FIRE_WALL_DYING": {
+        "STATE_TIME_OVER": 5
+      },
+      "DELETE_EFFECT_SET_ON_DIE": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "ELESIS_FIRE_WALL_WAIT_STATE_START": {
+      "$prototype": 0,
+      "$unsupported": "function body not executed"
+    },
+    "ELESIS_FIRE_WALL_WALK": {
+      "PASSIVE_SPEED_X": 0,
+      "ANIM_NAME": "EM_Stone_Wall_Wait",
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": {
+        "$symbol": "XSKIN_ANIM_PLAYTYPE.XAP_LOOP",
+        "$unsupported": "native/global value not resolved"
+      },
+      "TRANSITION": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "LAND_CONNECT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "SHOW": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PUSH_UNIT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PASS_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMADIATE_PACKET_SEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "ATTACK_TIME0": {
+        "1": 0.066,
+        "2": 100
+      },
+      "DAMAGE_DATA": {
+        "PVP_RATE": 0,
+        "HIT_ADD_MP": 0,
+        "DUNGEON_RATE": 0,
+        "ATTACK_TYPE": {
+          "$symbol": "ATTACK_TYPE.AT_SPECIAL",
+          "$unsupported": "native/global value not resolved"
+        },
+        "DAMAGE_TYPE": {
+          "$symbol": "DAMAGE_TYPE.DT_PHYSIC",
+          "$unsupported": "native/global value not resolved"
+        },
+        "HIT_TYPE": {
+          "$symbol": "HIT_TYPE.HT_NO_SOUND",
+          "$unsupported": "native/global value not resolved"
+        },
+        "REACT_TYPE": {
+          "$symbol": "REACT_TYPE.RT_DUMMY_DAMAGE",
+          "$unsupported": "native/global value not resolved"
+        },
+        "DAMAGE": {
+          "PHYSIC": 0
+        },
+        "NO_DAMAGE": {
+          "$symbol": "TRUE",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "ELESIS_FIRE_WALL_WAIT",
+          "3": "CT_ELESIS_FIRE_WALL_WAIT",
+          "1": {
+            "$symbol": "STATE_CHANGE_TYPE.SCT_CONDITION_TABLE",
+            "$unsupported": "native/global value not resolved"
+          }
+        },
+        "2": {
+          "2": "ELESIS_FIRE_WALL_ATTACK_SUCCESS",
+          "3": "CT_ELESIS_FIRE_WALL_ATTACK",
+          "1": {
+            "$symbol": "STATE_CHANGE_TYPE.SCT_CONDITION_TABLE",
+            "$unsupported": "native/global value not resolved"
+          }
+        }
+      },
+      "CT_ELESIS_FIRE_WALL_WAIT": {
+        "STATE_TIME_OVER": 0.29
+      },
+      "CT_ELESIS_FIRE_WALL_ATTACK": {
+        "ATTACK_SUCCESS": {
+          "$symbol": "TRUE",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_SA_SBH_WALL_OF_PROMINENCE_ROAD",
+          "2": 0,
+          "3": {
+            "$symbol": "DELETE_CONDITION_EFFECT_SET.DCES_STATE_END",
+            "$unsupported": "native/global value not resolved"
+          }
+        }
+      }
+    },
+    "ELESIS_FIRE_WALL_WALK_STATE_START": {
+      "$prototype": 1,
+      "$unsupported": "function body not executed"
+    },
+    "ELESIS_FIRE_WALL_ATTACK_SUCCESS": {
+      "PASSIVE_SPEED_X": 0,
+      "ANIM_NAME": "EM_Stone_Wall_Wait",
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": {
+        "$symbol": "XSKIN_ANIM_PLAYTYPE.XAP_LOOP",
+        "$unsupported": "native/global value not resolved"
+      },
+      "TRANSITION": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "LAND_CONNECT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "SHOW": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PUSH_UNIT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PASS_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMADIATE_PACKET_SEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "ELESIS_FIRE_WALL_WAIT",
+          "3": "CT_ELESIS_FIRE_WALL_WAIT",
+          "1": {
+            "$symbol": "STATE_CHANGE_TYPE.SCT_CONDITION_TABLE",
+            "$unsupported": "native/global value not resolved"
+          }
+        }
+      },
+      "CT_ELESIS_FIRE_WALL_WAIT": {
+        "STATE_TIME_OVER": 0.01
+      }
+    },
+    "ELESIS_FIRE_WALL_ATTACK_SUCCESS_STATE_START": {
+      "$prototype": 2,
+      "$unsupported": "function body not executed"
+    },
+    "ELESIS_FIRE_WALL_DAMAGE": {
+      "PASSIVE_SPEED_X": 0,
+      "ANIM_NAME": "EM_Stone_Wall_Damage",
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": {
+        "$symbol": "XSKIN_ANIM_PLAYTYPE.XAP_ONE_WAIT",
+        "$unsupported": "native/global value not resolved"
+      },
+      "TRANSITION": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "LAND_CONNECT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "SHOW": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMADIATE_PACKET_SEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PUSH_UNIT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PASS_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "NEVER_MOVE": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "EVENT_PROCESS": {
+        "1": {
+          "2": "ELESIS_FIRE_WALL_WAIT",
+          "1": {
+            "$symbol": "STATE_CHANGE_TYPE.SCT_MOTION_END",
+            "$unsupported": "native/global value not resolved"
+          }
+        }
+      }
+    },
+    "ELESIS_FIRE_WALL_DYING": {
+      "PASSIVE_SPEED_X": 0,
+      "ANIM_NAME": "EM_Stone_Wall_Broken",
+      "DYING_SPEED": 3,
+      "PASSIVE_SPEED_Y": 150,
+      "PLAY_TYPE": {
+        "$symbol": "XSKIN_ANIM_PLAYTYPE.XAP_ONE_WAIT",
+        "$unsupported": "native/global value not resolved"
+      },
+      "TRANSITION": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "LAND_CONNECT": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "SHOW": {
+        "$symbol": "FALSE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "INVINCIBLE": {
+        "1": 0,
+        "2": 100
+      },
+      "NEVER_MOVE": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PUSH_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "CAN_PASS_UNIT": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "DYING_END": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      },
+      "IMMADIATE_PACKET_SEND": {
+        "$symbol": "TRUE",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "ELESIS_FIRE_WALL_START_START_FUNC": {
+      "$prototype": 3,
+      "$unsupported": "function body not executed"
+    },
+    "ELESIS_FIRE_WALL_COMMON_FRAME_FUNC": {
+      "$prototype": 4,
+      "$unsupported": "function body not executed"
+    }
+  },
+  "prototypes": [
+    {
+      "id": 0,
+      "flags": 0,
+      "params": 3,
+      "frame_size": 13,
+      "upvalues": "",
+      "instructions": [
+        66572,
+        16778047,
+        33686316,
+        132364,
+        33621055,
+        33686572,
+        778,
+        2148664660,
+        132620,
+        33686847,
+        1815,
+        67607,
+        17040684,
+        132620,
+        33752383,
+        33686828,
+        132876,
+        33818175,
+        33687084,
+        198668,
+        50661183,
+        395540,
+        264716,
+        330508,
+        396300,
+        17172268,
+        65607
+      ],
+      "gc": [
+        "EffectSet_Wall_of_Prominence_Attack",
+        "PlayEffectSetWithCustomPos_LUA",
+        "GetRotateDegree",
+        "GetPos",
+        "TransformScale_LUA",
+        "GetOwnerGameUnit",
+        "GetEffectSet"
+      ],
+      "numbers": [
+        1.55,
+        99999
+      ],
+      "firstline": 0,
+      "line_span": 0
+    },
+    {
+      "id": 1,
+      "flags": 0,
+      "params": 3,
+      "frame_size": 7,
+      "upvalues": "",
+      "instructions": [
+        132108,
+        33555263,
+        196609302,
+        1558,
+        17040172,
+        65607
+      ],
+      "gc": [
+        "SetPassiveSpeed"
+      ],
+      "numbers": [],
+      "firstline": 0,
+      "line_span": 0
+    },
+    {
+      "id": 2,
+      "flags": 0,
+      "params": 3,
+      "frame_size": 7,
+      "upvalues": "",
+      "instructions": [
+        132108,
+        33555263,
+        196609302,
+        1558,
+        17040172,
+        65607
+      ],
+      "gc": [
+        "SetPassiveSpeed"
+      ],
+      "numbers": [],
+      "firstline": 0,
+      "line_span": 0
+    },
+    {
+      "id": 3,
+      "flags": 0,
+      "params": 3,
+      "frame_size": 6,
+      "upvalues": "",
+      "instructions": [
+        132108,
+        33555263,
+        1302,
+        16974636,
+        65607
+      ],
+      "gc": [
+        "SetTimerRestart"
+      ],
+      "numbers": [],
+      "firstline": 0,
+      "line_span": 0
+    },
+    {
+      "id": 4,
+      "flags": 0,
+      "params": 3,
+      "frame_size": 6,
+      "upvalues": "",
+      "instructions": [
+        132108,
+        33555263,
+        1302,
+        33751852,
+        328726,
+        197635,
+        2147746644,
+        132108,
+        33620799,
+        1302,
+        16974636,
+        65607
+      ],
+      "gc": [
+        "SetNowHP_LUA",
+        "GetTimerElapsedTime"
+      ],
+      "numbers": [],
+      "firstline": 0,
+      "line_span": 0
+    }
+  ],
+  "pose": {
+    "schemaVersion": 1,
+    "frames": [
+      {
+        "name": "Scene_Root",
+        "parent": null,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Dummy01",
+        "parent": 0,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          10.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "ATTACK_SPHERE0",
+        "parent": 1,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          40.16183853149414,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "ATTACK_SPHERE1",
+        "parent": 1,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          125.87098693847656,
+          9.999999974752427e-07,
+          1.0
+        ]
+      },
+      {
+        "name": "ATTACK_SPHERE2",
+        "parent": 1,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          205.85128784179688,
+          1.9999999949504854e-06,
+          1.0
+        ]
+      }
+    ],
+    "helpers": [
+      {
+        "name": "ATTACK_SPHERE0",
+        "parent": "Dummy01",
+        "source": "raw/data/data116.kom/EM_Stone_Wall_Effect.x",
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          40.16183853149414,
+          0.0,
+          1.0
+        ],
+        "gltfColumnMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          40.16183853149414,
+          0.0,
+          1.0
+        ],
+        "nativeVertices": [
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            -40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            40.85021209716797
+          ],
+          [
+            -40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ]
+        ],
+        "nativeTriangles": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            7,
+            4,
+            6
+          ],
+          [
+            4,
+            7,
+            5
+          ],
+          [
+            8,
+            10,
+            9
+          ],
+          [
+            10,
+            8,
+            11
+          ],
+          [
+            12,
+            14,
+            13
+          ],
+          [
+            14,
+            12,
+            15
+          ],
+          [
+            16,
+            18,
+            17
+          ],
+          [
+            18,
+            16,
+            19
+          ],
+          [
+            20,
+            22,
+            21
+          ],
+          [
+            22,
+            20,
+            23
+          ]
+        ],
+        "nativeLocalBounds": {
+          "min": [
+            -40.85021209716797,
+            -40.85021209716797,
+            -40.85021209716797
+          ],
+          "max": [
+            40.85021209716797,
+            40.85021209716797,
+            40.85021209716797
+          ]
+        },
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 70.7546428522597,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        }
+      },
+      {
+        "name": "ATTACK_SPHERE1",
+        "parent": "Dummy01",
+        "source": "raw/data/data116.kom/EM_Stone_Wall_Effect.x",
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          125.87098693847656,
+          9.999999974752427e-07,
+          1.0
+        ],
+        "gltfColumnMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          125.87098693847656,
+          -9.999999974752427e-07,
+          1.0
+        ],
+        "nativeVertices": [
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ]
+        ],
+        "nativeTriangles": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            7,
+            4,
+            6
+          ],
+          [
+            4,
+            7,
+            5
+          ],
+          [
+            8,
+            10,
+            9
+          ],
+          [
+            10,
+            8,
+            11
+          ],
+          [
+            12,
+            14,
+            13
+          ],
+          [
+            14,
+            12,
+            15
+          ],
+          [
+            16,
+            18,
+            17
+          ],
+          [
+            18,
+            16,
+            19
+          ],
+          [
+            20,
+            22,
+            21
+          ],
+          [
+            22,
+            20,
+            23
+          ]
+        ],
+        "nativeLocalBounds": {
+          "min": [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          "max": [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ]
+        },
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 52.85620857546834,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        }
+      },
+      {
+        "name": "ATTACK_SPHERE2",
+        "parent": "Dummy01",
+        "source": "raw/data/data116.kom/EM_Stone_Wall_Effect.x",
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          205.85128784179688,
+          1.9999999949504854e-06,
+          1.0
+        ],
+        "gltfColumnMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          205.85128784179688,
+          -1.9999999949504854e-06,
+          1.0
+        ],
+        "nativeVertices": [
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            -30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            30.51654624938965
+          ],
+          [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ]
+        ],
+        "nativeTriangles": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            7,
+            4,
+            6
+          ],
+          [
+            4,
+            7,
+            5
+          ],
+          [
+            8,
+            10,
+            9
+          ],
+          [
+            10,
+            8,
+            11
+          ],
+          [
+            12,
+            14,
+            13
+          ],
+          [
+            14,
+            12,
+            15
+          ],
+          [
+            16,
+            18,
+            17
+          ],
+          [
+            18,
+            16,
+            19
+          ],
+          [
+            20,
+            22,
+            21
+          ],
+          [
+            22,
+            20,
+            23
+          ]
+        ],
+        "nativeLocalBounds": {
+          "min": [
+            -30.51654624938965,
+            -30.51654624938965,
+            -30.51654624938965
+          ],
+          "max": [
+            30.51654624938965,
+            30.51654624938965,
+            30.51654624938965
+          ]
+        },
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 52.85620857546834,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        }
+      }
+    ],
+    "clips": [
+      {
+        "name": "EM_Stone_Wall_Wait",
+        "ticks_per_second": 4800.0,
+        "durationSeconds": 1.3333333333333333,
+        "tracks": [
+          {
+            "frame_name": "Dummy01",
+            "warnings": [],
+            "rotation": {
+              "ticks": [
+                0.0,
+                160.0,
+                320.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                2880.0,
+                3040.0,
+                3200.0,
+                3360.0,
+                3520.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6080.0,
+                6240.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.03333333333333333,
+                0.06666666666666667,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.6,
+                0.6333333333333333,
+                0.6666666666666666,
+                0.7,
+                0.7333333333333333,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.2666666666666666,
+                1.3,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 0
+            },
+            "scale": {
+              "ticks": [
+                0.0,
+                160.0,
+                320.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                2880.0,
+                3040.0,
+                3200.0,
+                3360.0,
+                3520.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6080.0,
+                6240.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.03333333333333333,
+                0.06666666666666667,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.6,
+                0.6333333333333333,
+                0.6666666666666666,
+                0.7,
+                0.7333333333333333,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.2666666666666666,
+                1.3,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 1
+            },
+            "translation": {
+              "ticks": [
+                0.0,
+                160.0,
+                320.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                2880.0,
+                3040.0,
+                3200.0,
+                3360.0,
+                3520.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6080.0,
+                6240.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.03333333333333333,
+                0.06666666666666667,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.6,
+                0.6333333333333333,
+                0.6666666666666666,
+                0.7,
+                0.7333333333333333,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.2666666666666666,
+                1.3,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  0.0,
+                  10.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  10.039900779724121,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.154097557067871,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.334338188171387,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.572364807128906,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.859923362731934,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.18875789642334,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.550614356994629,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.937234878540039,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  12.340367317199707,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  12.751753807067871,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.163142204284668,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.566274642944336,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.952896118164062,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.314751625061035,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.643586158752441,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.931143760681152,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.169171333312988,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.349411010742188,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.463607788085938,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.503508567810059,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.463607788085938,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.349411010742188,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  15.169171333312988,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.931143760681152,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.643586158752441,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  14.314751625061035,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.95289421081543,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.56627368927002,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  13.163142204284668,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  12.751753807067871,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  12.340367317199707,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.937234878540039,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.550614356994629,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  11.18875789642334,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.859923362731934,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.572364807128906,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.334338188171387,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.154097557067871,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.039900779724121,
+                  -0.0
+                ],
+                [
+                  0.0,
+                  10.0,
+                  0.0
+                ]
+              ],
+              "source_key_type": 2
+            }
+          },
+          {
+            "frame_name": "ATTACK_SPHERE0",
+            "warnings": [],
+            "rotation": {
+              "ticks": [
+                0.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 0
+            },
+            "scale": {
+              "ticks": [
+                0.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 1
+            },
+            "translation": {
+              "ticks": [
+                0.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.161842346191406,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.161834716796875,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.161842346191406,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ],
+                [
+                  0.0,
+                  40.16183853149414,
+                  0.0
+                ]
+              ],
+              "source_key_type": 2
+            }
+          },
+          {
+            "frame_name": "ATTACK_SPHERE1",
+            "warnings": [],
+            "rotation": {
+              "ticks": [
+                0.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 0
+            },
+            "scale": {
+              "ticks": [
+                0.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 1
+            },
+            "translation": {
+              "ticks": [
+                0.0,
+                480.0,
+                640.0,
+                800.0,
+                960.0,
+                1120.0,
+                1280.0,
+                1440.0,
+                1600.0,
+                1760.0,
+                1920.0,
+                2080.0,
+                2240.0,
+                2400.0,
+                2560.0,
+                2720.0,
+                3680.0,
+                3840.0,
+                4000.0,
+                4160.0,
+                4320.0,
+                4480.0,
+                4640.0,
+                4800.0,
+                4960.0,
+                5120.0,
+                5280.0,
+                5440.0,
+                5600.0,
+                5760.0,
+                5920.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.23333333333333334,
+                0.26666666666666666,
+                0.3,
+                0.3333333333333333,
+                0.36666666666666664,
+                0.4,
+                0.43333333333333335,
+                0.4666666666666667,
+                0.5,
+                0.5333333333333333,
+                0.5666666666666667,
+                0.7666666666666667,
+                0.8,
+                0.8333333333333334,
+                0.8666666666666667,
+                0.9,
+                0.9333333333333333,
+                0.9666666666666667,
+                1.0,
+                1.0333333333333334,
+                1.0666666666666667,
+                1.1,
+                1.1333333333333333,
+                1.1666666666666667,
+                1.2,
+                1.2333333333333334,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87097930908203,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  125.87098693847656,
+                  9.999999974752427e-07
+                ]
+              ],
+              "source_key_type": 2
+            }
+          },
+          {
+            "frame_name": "ATTACK_SPHERE2",
+            "warnings": [],
+            "rotation": {
+              "ticks": [
+                0.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 0
+            },
+            "scale": {
+              "ticks": [
+                0.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ],
+              "source_key_type": 1
+            },
+            "translation": {
+              "ticks": [
+                0.0,
+                6400.0
+              ],
+              "times": [
+                0.0,
+                1.3333333333333333
+              ],
+              "time_unit": "seconds",
+              "values": [
+                [
+                  0.0,
+                  205.85128784179688,
+                  1.9999999949504854e-06
+                ],
+                [
+                  0.0,
+                  205.85128784179688,
+                  1.9999999949504854e-06
+                ]
+              ],
+              "source_key_type": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "effectSets": {
+    "EffectSet_Wall_of_Prominence_Attack": {
+      "raw": {
+        "EFFECT0": {
+          "NAME": "DamageEffect_Wall_of_Prominence_Attack_Main",
+          "SCALE_X": 1.2,
+          "SCALE_Z": 1.2,
+          "SCALE_Y": 1.44,
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_Wall_of_Prominence_Attack_Sub",
+          "SCALE_X": 1.2,
+          "SCALE_Z": 1.2,
+          "SCALE_Y": 1.44,
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 22197
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "declarationSha256": "7667623f29c8ef86036e90fafdb2fc91fab3943b094bc6e2c36522823def1c4a"
+    },
+    "EffectSet_SA_SBH_WALL_OF_PROMINENCE_ROAD": {
+      "raw": {
+        "EFFECT0": {
+          "NAME": "DamageEffect_Wall_of_Prominence_ProjectileFX",
+          "POSITION_OFFSET_Y": -200,
+          "START_TIME": 0.1,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "TRACE_MORE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 188470
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "declarationSha256": "b35e5727c70e306d42fe5f2c136b9446a4bdbdcee80ed66e9985d15d9318a839"
+    }
+  },
+  "projectionSha256": "7bf95a923c7d79cf47926e5bb95e303f67f561e0c4332078e70c43c029c47291",
+  "limits": [
+    "Original NPC full generic physics, network replication and absorb-magic component are not imported.",
+    "X helper radius uses the existing source-vertex sphere candidate, not a newly measured native constructor.",
+    "WALK road particles remain unsupported until their original effect asset closure is available."
+  ],
+  "nativeConsumer": {
+    "source": {
+      "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+      "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+      "bytes": 40515072,
+      "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+      "qualification": "Existing late snapshot3 may be non-atomic. Derived PE and original client identities remain distinct."
+    },
+    "analysisInput": {
+      "source": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+      "sourceSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+      "output": "runtime\\elesis-v45\\npc-consumer-region.exe",
+      "outputSha256": "3dbe072d67bbf29dd0fa5a0e5a9a5e131c0ce18bb73c38d63b3456e2259690fb",
+      "base": "0x31aa0000",
+      "analysisEntry": "0x320b35c0",
+      "selectedRanges": [
+        {
+          "start": 838598656,
+          "end": 838664192,
+          "executable": true,
+          "sha256": "5187afcbf1168433c797135a683e9cba632fdf760b5f153e827f49c206b35378",
+          "rawOffset": 1024
+        },
+        {
+          "start": 839581696,
+          "end": 839618560,
+          "executable": true,
+          "sha256": "ce368f471e5695ac730c9d267b3b1bd8cbed1cf37e33bcbfbc6c822a2437ce59",
+          "rawOffset": 66560
+        },
+        {
+          "start": 840957952,
+          "end": 841089024,
+          "executable": true,
+          "sha256": "23a5eaf0c21cec5a3bf314f19f49b30f4b99246460dd29b854dcb22d65f110a2",
+          "rawOffset": 103424
+        },
+        {
+          "start": 844161024,
+          "end": 844627968,
+          "executable": true,
+          "sha256": "379a4ff7e2c27ed1e66f8518e71eb64def29a03e2c6950d60b8fb65ebd3d8e24",
+          "rawOffset": 234496
+        },
+        {
+          "start": 849739776,
+          "end": 849870848,
+          "executable": true,
+          "sha256": "05d4d37d9980f64929d9b4b0c64593c56a7afe0aac4fb0c9b71527513ea8e4d0",
+          "rawOffset": 701440
+        },
+        {
+          "start": 855498752,
+          "end": 856358912,
+          "executable": false,
+          "sha256": "708006ced107618d6d0da293d3e0953cf76e92caf5b12782807c65c9749d1b4f",
+          "rawOffset": 832512
+        },
+        {
+          "start": 858181632,
+          "end": 858456064,
+          "executable": false,
+          "sha256": "1e293deb7cbdd3c127fe0639770709378ce4539e978559f806508b5761d439e6",
+          "rawOffset": 1692672
+        }
+      ],
+      "executed": false,
+      "completeImage": false,
+      "header": "New analysis-only PE metadata, no imports/relocations reconstruction",
+      "limits": [
+        "Only selected ranges mapped; absent memory is unknown, not a zero-valued original page.",
+        "Selected data is marked writable to retain variable runtime-state reads.",
+        "Addresses/types/calls outside selected memory are unresolved.",
+        "Entry is an explicit analysis seed, not proof of the original function boundary."
+      ]
+    },
+    "provider": {
+      "id": "ghidra",
+      "version": "12.1.4",
+      "analyzerPreset": "ghidra-default",
+      "analysisProfileDigest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "functions": [
+      {
+        "entry": "0x320b35c0",
+        "role": "NPC request packet builder",
+        "evidenceId": "ev_1df2dc34a18426c2c423d051718af2f9ea1e4e81b8fded858ac385aaeb9878e3",
+        "body": [
+          {
+            "start": "0x320b35c0",
+            "end": "0x320b3891",
+            "bytes": 722,
+            "sha256": "317246d680c53d57b29548a6f33359be881851ee757ac48dbce05751e6451766"
+          }
+        ]
+      },
+      {
+        "entry": "0x3252da30",
+        "role": "NPC animation/Now dispatcher",
+        "evidenceId": "ev_4002259674d7dd228b43407e7500c58dbd794426b0bb25bc619b13eb333c6e2f",
+        "body": [
+          {
+            "start": "0x3252da30",
+            "end": "0x3252e658",
+            "bytes": 3113,
+            "sha256": "2e539fb4a42b7a23097ad76cc55b04626da9666fd59c981adfdff460e993ed91"
+          }
+        ]
+      },
+      {
+        "entry": "0x32530e00",
+        "role": "NPC physics vtable+364",
+        "evidenceId": "ev_62680912e6bdae684a29016927baf90d704cdc688863ded4ad5d67faf9b1cc68",
+        "body": [
+          {
+            "start": "0x32530e00",
+            "end": "0x32531cd9",
+            "bytes": 3802,
+            "sha256": "6ff352965ee4676315c3832a03579f4d834b90c658c1e2fb53bee4bf455b23e4"
+          },
+          {
+            "start": "0x32531ce0",
+            "end": "0x32532c85",
+            "bytes": 4006,
+            "sha256": "d1f92cc00f33e800df2f8bcd7ab286a891e5b9f905cdd2b685264436939aecb5"
+          },
+          {
+            "start": "0x32532c90",
+            "end": "0x32534394",
+            "bytes": 5893,
+            "sha256": "b16829be42b13f9aaac52a6ea9d1f590f42d19d7f97abd274e4ec59ca1cdc8fe"
+          }
+        ]
+      },
+      {
+        "entry": "0x325352b0",
+        "role": "NPC Now vtable+374, physics then passive speed copying",
+        "evidenceId": "ev_794ca157bed3d64b3239cc3d5605c994ca084f56f742a9e3d84776b78cf367cb",
+        "body": [
+          {
+            "start": "0x325352b0",
+            "end": "0x3253ae2c",
+            "bytes": 23421,
+            "sha256": "6e7ad96f32521ffb57179ccfe95c9405cc6c75181a4106c628e89e8400ad41b0"
+          },
+          {
+            "start": "0x3253ae30",
+            "end": "0x3253c347",
+            "bytes": 5400,
+            "sha256": "08068b6f7b1148bd5bf05eb80fef8f9ce14ce77e9133786c28f18ad7930938e3"
+          }
+        ]
+      }
+    ],
+    "boundedInstructionBlocks": [
+      "native-v45-firewall-npc-callback",
+      "native-v45-firewall-passive-setter",
+      "native-v45-firewall-now-physics-call",
+      "native-v45-firewall-now-passive-copy",
+      "native-v45-firewall-current-x-integration"
+    ],
+    "fieldProjection": {
+      "currentX": "0x1ac",
+      "currentY": "0x1b0",
+      "passiveX": "0x1b4",
+      "passiveY": "0x1b8",
+      "reloadAcceleration": "0x1c0",
+      "perFrameElapsed": "0x6dc8"
+    },
+    "projection": [
+      "The original request uses caster GetNowPos(0); no victim position is passed at the native callback.",
+      "Original WALK and ATTACK_SUCCESS Start prototypes both write passive speed3000/0; SUCCESS does not stop movement.",
+      "NPC Now invokes physics at3253ab17, then copies passive X/Y at3253ad57..7e unless sentinel-1.",
+      "The positive current X branch subtracts reloadAcceleration*frameElapsed before multiplying displacement by frameElapsed.",
+      "The bounded Web host starts current X/Y at zero and applies that ordering; general native collision/buff speed multipliers are not imported."
+    ],
+    "limits": [
+      "Full Ghidra dossiers are retained in task-local ignored runtime/elesis-v45/npc-consumer-analysis-bundle.json; only bounded exact instructions and function-body hashes are committed.",
+      "The analysis input maps selected original bytes only. Omitted memory/calls remain unknown; no original target was executed.",
+      "The LuaTinker method registration for the direct passive setter is not independently resolved.",
+      "No Firewall-specific arbitrary-platform victim lookup was found in these exact callbacks/scripts/consumers; this is a bounded negative observation, not proof of absence in all native code."
+    ]
+  }
+}

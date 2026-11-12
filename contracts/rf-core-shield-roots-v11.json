@@ -1,0 +1,43 @@
+{
+  "effectSets": {
+    "EffectSet_RAVEN_PARRING": {
+      "raw": {
+        "NAME": "EffectSet_RAVEN_PARRING",
+        "EFFECT0": {
+          "NAME": "raven_bead_shield_01",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "raven_bead_shield_02",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourceCall": {
+        "prototype": 3,
+        "instruction": 122962,
+        "target": "g_pEffectSet.AddEffectSetTemplet_LUA"
+      }
+    }
+  },
+  "damageEffects": {},
+  "declarationSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  ],
+  "sounds": [
+    "Raven_NasodCore_Guard.ogg",
+    "Raven_NasodCore_Trans_Parry.ogg"
+  ]
+}

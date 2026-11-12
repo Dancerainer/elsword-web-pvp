@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasured": false,
+  "targetSource": {
+    "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+    "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+  },
+  "targetStatesByProfession": {
+    "LK": {
+      "ESSI_SI_A_ES_ROLLING": {
+        "raw": {
+          "ANIM_SPEED": 1.3,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Jump",
+          "HIT_CAMERA1_RATE": 35,
+          "HIT_CAMERA2_RATE": 25,
+          "HIT_CAMERA0_RATE": 40,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "AFTER_IMAGE": {
+            "1": 0.01,
+            "2": 100
+          },
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SUPER_ARMOR": 1,
+          "SUPER_ARMOR_NOT_RED": 0,
+          "ENABLE_ATTACK_BOX": {
+            "1": "Lfoot"
+          },
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 100
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 0,
+            "BACK_SPEED_X": -300,
+            "PVP_RATE": 0.6,
+            "CAMERA_CRASH_GAP": 50,
+            "STOP_TIME_ATT": 0.1,
+            "TECH_POINT": 75,
+            "CAMERA_CRASH_TIME": 0.3,
+            "STOP_TIME_DEF": 0.233,
+            "HIT_ADD_MP": 0.75,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 14,
+            "REACT_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAMERA_SHAKE_TYPE": 7,
+            "CUSTOM_HIT_PARTICLE0": {
+              "PARTICLE_NAME": "Light_Impact_SI_A_ES_KICK01"
+            },
+            "CUSTOM_HIT_PARTICLE1": {
+              "PARTICLE_NAME": "Flare_SI_A_ES_KICK01"
+            },
+            "APPLIED_SKILL_ID": 21200,
+            "DAMAGE": {
+              "PHYSIC": 2.19
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": 200,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 1100,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 800,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "Elsword_Kick.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.163,
+            "2": "ElswordVoice_Shout07.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6,
+          "durationTicks": 2880,
+          "ticksPerSecond": 4800,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Jump",
+          "decodedKeysSha256": "ef2c2a30d2dee26c880410b28bedd5e35449861631507e0bdbd7198ce3531f2d"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9512
+        }
+      },
+      "ESSI_SI_A_ES_ROLLING_END": {
+        "raw": {
+          "ANIM_SPEED": 1,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Landing",
+          "WALK_CANCEL_AFTER": 0.266,
+          "SPEED_X": 0,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SOUND_PLAY0": {
+            "1": 0.033,
+            "2": "Elsword_BodyRoll01.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.1,
+            "2": "Elsword_SI_A_Rolling_Smash3.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6666666666666666,
+          "durationTicks": 3200,
+          "ticksPerSecond": 4800,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Landing",
+          "decodedKeysSha256": "4255e10c7f9bcd98929bb2b1f4a89c237cb550a5fd38248a011ae8bbf2dc62d8"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9536
+        }
+      }
+    },
+    "IS": {
+      "ESSI_SI_A_ES_ROLLING": {
+        "raw": {
+          "ANIM_SPEED": 1.3,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Jump",
+          "HIT_CAMERA1_RATE": 35,
+          "HIT_CAMERA2_RATE": 25,
+          "HIT_CAMERA0_RATE": 40,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "AFTER_IMAGE": {
+            "1": 0.01,
+            "2": 100
+          },
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SUPER_ARMOR": 1,
+          "SUPER_ARMOR_NOT_RED": 0,
+          "ENABLE_ATTACK_BOX": {
+            "1": "Lfoot"
+          },
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 100
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 0,
+            "BACK_SPEED_X": -300,
+            "PVP_RATE": 0.6,
+            "CAMERA_CRASH_GAP": 50,
+            "STOP_TIME_ATT": 0.1,
+            "TECH_POINT": 75,
+            "CAMERA_CRASH_TIME": 0.3,
+            "STOP_TIME_DEF": 0.233,
+            "HIT_ADD_MP": 0.75,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 14,
+            "REACT_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAMERA_SHAKE_TYPE": 7,
+            "CUSTOM_HIT_PARTICLE0": {
+              "PARTICLE_NAME": "Light_Impact_SI_A_ES_KICK01"
+            },
+            "CUSTOM_HIT_PARTICLE1": {
+              "PARTICLE_NAME": "Flare_SI_A_ES_KICK01"
+            },
+            "APPLIED_SKILL_ID": 21200,
+            "DAMAGE": {
+              "PHYSIC": 2.19
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": 200,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 1100,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 800,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "Elsword_Kick.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.163,
+            "2": "ElswordVoice_Shout07.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6,
+          "durationTicks": 2880.0,
+          "ticksPerSecond": 4800.0,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Jump",
+          "decodedKeysSha256": "ef2c2a30d2dee26c880410b28bedd5e35449861631507e0bdbd7198ce3531f2d"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9512
+        }
+      },
+      "ESSI_SI_A_ES_ROLLING_END": {
+        "raw": {
+          "ANIM_SPEED": 1,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Landing",
+          "WALK_CANCEL_AFTER": 0.266,
+          "SPEED_X": 0,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SOUND_PLAY0": {
+            "1": 0.033,
+            "2": "Elsword_BodyRoll01.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.1,
+            "2": "Elsword_SI_A_Rolling_Smash3.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6666666666666666,
+          "durationTicks": 3200.0,
+          "ticksPerSecond": 4800.0,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Landing",
+          "decodedKeysSha256": "4255e10c7f9bcd98929bb2b1f4a89c237cb550a5fd38248a011ae8bbf2dc62d8"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9536
+        }
+      }
+    },
+    "RS": {
+      "ESSI_SI_A_ES_ROLLING": {
+        "raw": {
+          "ANIM_SPEED": 1.3,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Jump",
+          "HIT_CAMERA1_RATE": 35,
+          "HIT_CAMERA2_RATE": 25,
+          "HIT_CAMERA0_RATE": 40,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "AFTER_IMAGE": {
+            "1": 0.01,
+            "2": 100
+          },
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SUPER_ARMOR": 1,
+          "SUPER_ARMOR_NOT_RED": 0,
+          "ENABLE_ATTACK_BOX": {
+            "1": "Lfoot"
+          },
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 100
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 0,
+            "BACK_SPEED_X": -300,
+            "PVP_RATE": 0.6,
+            "CAMERA_CRASH_GAP": 50,
+            "STOP_TIME_ATT": 0.1,
+            "TECH_POINT": 75,
+            "CAMERA_CRASH_TIME": 0.3,
+            "STOP_TIME_DEF": 0.233,
+            "HIT_ADD_MP": 0.75,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 14,
+            "REACT_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAMERA_SHAKE_TYPE": 7,
+            "CUSTOM_HIT_PARTICLE0": {
+              "PARTICLE_NAME": "Light_Impact_SI_A_ES_KICK01"
+            },
+            "CUSTOM_HIT_PARTICLE1": {
+              "PARTICLE_NAME": "Flare_SI_A_ES_KICK01"
+            },
+            "APPLIED_SKILL_ID": 21200,
+            "DAMAGE": {
+              "PHYSIC": 2.19
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": 200,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 1100,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": -30,
+              "DISTANCE": 800,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "Elsword_Kick.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.163,
+            "2": "ElswordVoice_Shout07.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6,
+          "durationTicks": 2880.0,
+          "ticksPerSecond": 4800.0,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Jump",
+          "decodedKeysSha256": "ef2c2a30d2dee26c880410b28bedd5e35449861631507e0bdbd7198ce3531f2d"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9512
+        }
+      },
+      "ESSI_SI_A_ES_ROLLING_END": {
+        "raw": {
+          "ANIM_SPEED": 1,
+          "ANIM_NAME": "ESSI_SI_A_ES_ROLLING_Landing",
+          "WALK_CANCEL_AFTER": 0.266,
+          "SPEED_X": 0,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "CAN_PASS_UNIT": 1,
+          "SOUND_PLAY0": {
+            "1": 0.033,
+            "2": "Elsword_BodyRoll01.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.1,
+            "2": "Elsword_SI_A_Rolling_Smash3.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "clip": {
+          "durationSeconds": 0.6666666666666666,
+          "durationTicks": 3200.0,
+          "ticksPerSecond": 4800.0,
+          "sourceName": "ESSI_SI_A_ES_ROLLING_Landing",
+          "decodedKeysSha256": "4255e10c7f9bcd98929bb2b1f4a89c237cb550a5fd38248a011ae8bbf2dc62d8"
+        },
+        "location": {
+          "prototype": 0,
+          "assignmentInstruction": 9536
+        }
+      }
+    }
+  },
+  "references": [
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "firstLine": 16444,
+      "lastLine": 16453,
+      "fragmentSha256": "41fa1ad05ed6eb1001d0d84e7dfff189fe6e9354822bba64fa669e071c7e2d22",
+      "purpose": "Roll airborne animation-end to grounded landing",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "firstLine": 16478,
+      "lastLine": 16492,
+      "fragmentSha256": "36c108b85a07650580c8a87b987f0c9372c44af41960d891f810931f644cb436",
+      "purpose": "Landing animation-end priority, then walk cancel",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "firstLine": 82,
+      "lastLine": 85,
+      "fragmentSha256": "520e6ace51cab029cbbeb37e94ebbb123983a2f225a334280b24064ba3251691",
+      "purpose": "Strict animation threshold; either horizontal key; Wait successor",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "firstLine": 13895,
+      "lastLine": 13899,
+      "fragmentSha256": "d3287a921358360c987fea346210c10ef09f0aded16e4d1dd9f5b79b037d79ac",
+      "purpose": "Read authored WALK_CANCEL_AFTER from state data",
+      "evidenceClass": "fixed-V5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    }
+  ],
+  "implementationBoundary": [
+    "Target2016 declares .266 and disables item animation speed for both Roll phases.",
+    "Pinned V5 shared callback and strict horizontal macro supply qualified consumers; matching V6 runtime is unmeasured.",
+    "Generic facing-specific combo cancel must not preempt this shared landing callback.",
+    "Natural animation end retains priority; attack/skill/up/down inputs alone do not invoke the horizontal macro."
+  ]
+}

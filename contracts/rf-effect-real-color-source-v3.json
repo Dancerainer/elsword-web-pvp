@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-shader + fixed-V5-consumer + locked-Babylon-9.29.0 + independent-WebGL-pixel-probe",
+  "target2016ClientMeasured": false,
+  "target2016GPUCompared": false,
+  "targetShader": {
+    "archive": "data/data041.kom",
+    "ordinal": 4,
+    "name": "XRenderer.fx",
+    "rawPath": "raw/data/data041.kom/XRenderer.fx",
+    "sha256": "96b4bb61c56924a3427d6ab800631489471cd70538f30ad0919544ea2a244cc8",
+    "bytes": 44739,
+    "consumers": {"vs11FloatColor": [251, 273], "vs11Compilation": [883, 892], "rawTextureTimesDiffuse": [987, 1021]}
+  },
+  "fixedV5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": [
+      {"path": "KTDXLIB/KTDGParticleSystem.cpp", "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050", "consumers": {"meshRealColorDefault": 2728, "floatColorRenderParam": 4795}},
+      {"path": "KTDXLIB/KTDGXRenderer.cpp", "sha256": "b3074301549d625ed1fbee6cafddb58d0f47002ba82107a506528861fdf97ae5", "consumers": {"SetVectorNoDWORD": [156, 162], "realColorSetColor": [418, 423]}},
+      {"path": "KTDXLIB/KTDGXMeshPlayer.h", "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0", "consumers": {"meshPlayerRealColorDefault": 851}}
+    ]
+  },
+  "hardwareSemantics": {
+    "source": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx9-graphics-reference-asm-vs-registers-output",
+    "rule": "vs_1_1 diffuse oD0 is clamped to [0,1] before rasterization; no CPU DWORD quantization is applied to g_Color",
+    "distinction": "PT_3D_PLANE writes D3DXCOLOR to a DWORD vertex; PT_MESH/skin REAL_COLOR writes g_Color float to shader COLOR"
+  },
+  "textureEvidence": [
+    {"name": "LD_Blade_Liner01.dds", "sha256": "311f7b580cf752ea7aec3d25c22293097fee615e117e6dd3885096c8f9b75499", "format": "DXT5", "pixels": 4096, "PNGvsPILDecodedRGBAEqual": true, "independentDXTAlphaMaxDifference": 0, "independentDXTRGBMaxDifference": 1},
+    {"name": "LD_RingAlpha.dds", "sha256": "9140b1ef95b9668620e91a2f4eb8523f2935c02daf085bf4d22086cf4906edf9", "format": "DXT1", "pixels": 16384, "PNGvsPILDecodedRGBAEqual": true, "nativeAlphaRange": [255,255], "independentDXTAlphaMaxDifference": 0, "independentDXTRGBMaxDifference": 1},
+    {"name": "VERITABLE_PANDEMONIUM_T02.dds", "sha256": "18bd7c5148b6e3cfdf7e73b66d39c59fc871ccad7ef6f00f905d940070cf108b", "format": "DXT5", "pixels": 65536, "PNGvsPILDecodedRGBAEqual": true, "independentDXTAlphaMaxDifference": 0, "independentDXTRGBMaxDifference": 1}
+  ],
+  "confirmedMismatch": "Unlit PBR converts texture to linear but consumes authored tint as linear, then converts the product back to gamma; native REAL_COLOR modulates display-space texture and tint directly. PBR also retains source material diffuse/alpha, which native REAL_COLOR does not use.",
+  "scope": "Fragment-only adapter preserves Babylon vertex/skinning and existing native draw blend/depth scope. Explicit cartoon effects keep their own consumer.",
+  "pixelProbe": {
+    "tool": "tools/prepare-native-effect-pixel-probe.mjs creates an ignored standalone real-WebGL oracle page; run with --serve and read DOM #result. Runtime records are separate from source evidence.",
+    "flatCases": 8,
+    "sourceMeshCases": ["RF_HitP04 actual original SCA_CRIMSON_BREAK_P01 geometry and VERITABLE_PANDEMONIUM_T02 texture", "HA_RRF_Reckless_Fiste_P01 actual 11-bone original geometry, source Normal pose sampled at .04 seconds and original texture"],
+    "independentOracle": "Separate GLSL implementing the original Texture * saturated floating Diffuse, original source blend factors, and the same retained source geometry/bone skinning; compare real readPixels RGBA rather than particle counts.",
+    "requiredVisibility": "Both real meshes must have compiled actual draws and visibly non-background pixels; two blank frames cannot pass.",
+    "legacyControl": "Uses production hasAlpha=true, with original unlit PBR gamma processing retained; hardware-sRGB fallback tested separately."
+  },
+  "limits": ["No original 2016 client was run.", "Matching independent original fragment math is narrower than full game-frame equivalence.", "Emitter counts, dimensions, authored lifetimes and DrawCount are not reduced by this change."]
+}

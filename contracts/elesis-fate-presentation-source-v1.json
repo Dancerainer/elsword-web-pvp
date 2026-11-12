@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static + fixed-V5-consumer + web-adapter",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "consumer": {
+    "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGParticleSystem.cpp",
+    "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+    "gitBlob": "2afaac41a9de94c6a0d0dda5d7df4849429e0c08",
+    "lines": {
+      "renderState": [
+        3406,
+        3432
+      ],
+      "resolutionPositionAndSize": [
+        4508,
+        4526
+      ],
+      "pixelQuad": [
+        4560,
+        4644
+      ]
+    }
+  },
+  "templates": {
+    "SCA_FATE_SMASHER_L01": {
+      "fields": {
+        "particleType": "PT_2D_PLANE",
+        "Emitrate": 100,
+        "Lifetime": 5,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "Layer": 10,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ResolutionConvert": true,
+        "ApplyUnitScale": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "smoke02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.6,
+            0.3,
+            0.1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.03,
+          "fade": true,
+          "value": [
+            1,
+            0.3,
+            0.2,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            4048,
+            2048,
+            1
+          ]
+        },
+        {
+          "property": "Position",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            512,
+            256,
+            1
+          ]
+        },
+        {
+          "property": "TEX0UV",
+          "start": 0.01,
+          "end": 8.5,
+          "fade": true,
+          "value": [
+            0,
+            0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SCA_FATE_SMASHER_L01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 112,
+        "name": "GameMajorParticle29.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+        "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+        "bytes": 282466,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 135048,
+        "line": 4192
+      },
+      "declarationSha256": "58651d35924ce793bff7edeea1ea030e356c85c787248db64cd49707650dc030",
+      "textures": {
+        "smoke02.dds": {
+          "file": "fx/textures/smoke02-0497abcc20.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 555,
+            "name": "smoke02.dds",
+            "rawPath": "raw/data/data048.kom/smoke02.dds",
+            "sha256": "0497abcc20205fd67191b70c278ffe23cbcdec54a3cedae229a6678a256fa050",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "SCA_FATE_SMASHER_L02": {
+      "fields": {
+        "particleType": "PT_2D_PLANE",
+        "Emitrate": 100,
+        "Lifetime": 5,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "Layer": 11,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTCOLOR",
+        "ZEnable": false,
+        "ResolutionConvert": true,
+        "ApplyUnitScale": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "smoke02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.6,
+            0.3,
+            0.1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.03,
+          "fade": true,
+          "value": [
+            0.6,
+            0.3,
+            0.2,
+            0.1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2048,
+            2048,
+            1
+          ]
+        },
+        {
+          "property": "Position",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            512,
+            256,
+            1
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SCA_FATE_SMASHER_L02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 112,
+        "name": "GameMajorParticle29.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+        "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+        "bytes": 282466,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 135698,
+        "line": 4214
+      },
+      "declarationSha256": "49fdbad990e329cefbcbfacdceffc066d940262e0ddbbda66c7bd3d5764be933",
+      "textures": {
+        "smoke02.dds": {
+          "file": "fx/textures/smoke02-0497abcc20.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 555,
+            "name": "smoke02.dds",
+            "rawPath": "raw/data/data048.kom/smoke02.dds",
+            "sha256": "0497abcc20205fd67191b70c278ffe23cbcdec54a3cedae229a6678a256fa050",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    }
+  },
+  "effectSet": {
+    "NAME": "EffectSet_HA_SCA_FATE_SMASHER_FX1",
+    "EFFECT0": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P01",
+      "EFFECT_TYPE": 8,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT1": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P02",
+      "EFFECT_TYPE": 8,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT2": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_DUMMY01",
+      "EFFECT_TYPE": 4,
+      "TRACE_MORE": 1,
+      "BONE_TRACE_TARGET_MESH": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT3": {
+      "NAME": "SCA_FATE_SMASHER_L01",
+      "EFFECT_TYPE": 8,
+      "APPLY_UNIT_ROTATION": 0
+    },
+    "EFFECT4": {
+      "NAME": "SCA_FATE_SMASHER_L02",
+      "EFFECT_TYPE": 8,
+      "APPLY_UNIT_ROTATION": 0
+    },
+    "EFFECT5": {
+      "NAME": "SCA_FA_SM_P0M",
+      "START_TIME": 0.4,
+      "BONE_NAME": "Dummy01",
+      "EFFECT_TYPE": 8,
+      "TRACE": 1
+    },
+    "EFFECT6": {
+      "NAME": "SCA_FA_SM_P0M",
+      "START_TIME": 0.4,
+      "BONE_NAME": "Dummy02",
+      "EFFECT_TYPE": 8,
+      "TRACE": 1
+    },
+    "EFFECT7": {
+      "NAME": "SCA_FA_SM_P0M",
+      "START_TIME": 0.4,
+      "BONE_NAME": "Dummy03",
+      "EFFECT_TYPE": 8,
+      "TRACE": 1
+    },
+    "EFFECT8": {
+      "NAME": "SCA_FA_SM_P0M",
+      "START_TIME": 0.4,
+      "BONE_NAME": "Dummy04",
+      "EFFECT_TYPE": 8,
+      "TRACE": 1
+    },
+    "EFFECT9": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_St01",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT10": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P06",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT11": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P07",
+      "EFFECT_TYPE": 8,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT12": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P05",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT13": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_FATE_SMASHER_P06",
+      "SCALE_X": 1,
+      "SCALE_Z": 2.5,
+      "SCALE_Y": 0.4,
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "EFFECT14": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SCA_GC00",
+      "EFFECT_TYPE": 8,
+      "TRACE_MORE": 1,
+      "TRACE_USER_TARGET_FORCE": 1
+    },
+    "CAMERA_SHAKE0": {
+      "TWO_DIR_TIME_GAP": 0.03,
+      "START_TIME": 1.23,
+      "TWO_DIR_TIME": 0.3,
+      "TWO_DIR_GAP": 70,
+      "SHAKE_TYPE": 4
+    }
+  },
+  "limitations": [
+    "Reference rendering is not a measurement of target-client pixels or GPU blend.",
+    "Only the two authored Fate screen layers are registered. Mesh UV animation remains a separately reported unsupported renderer channel."
+  ],
+  "effectSetSource": {
+    "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+    "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+    "sourcePc": {
+      "prototype": 3,
+      "instruction": 25209
+    }
+  },
+  "meshTargetConsumer": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2EffectSet.cpp",
+    "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+    "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+    "lines": [
+      828,
+      904,
+      3825
+    ],
+    "forceOwnerOverridePreserved": true
+  },
+  "meshBindings": [
+    {
+      "name": "EffectSet_HA_SCA_FATE_SMASHER_FX1",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 25209
+      },
+      "rawSha256": "8e8a857a0ee0f9cfe1ce6d44c51052d176ddbed79ec90fc1a9dde34e8a1ec241",
+      "targetMesh": "SCA_FATE_SMASHER_DUMMY01",
+      "rootDeclaration": {
+        "BONE_NAME": "Bip01_Footsteps",
+        "NAME": "SCA_FATE_SMASHER_DUMMY01",
+        "EFFECT_TYPE": 4,
+        "TRACE_MORE": 1,
+        "BONE_TRACE_TARGET_MESH": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "children": [
+        {
+          "name": "SCA_FA_SM_P0M",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FA_SM_P0M",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FA_SM_P0M",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FA_SM_P0M",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        }
+      ]
+    },
+    {
+      "name": "EffectSet_HA_SCA_FATE_SMASHER_FX2",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 25442
+      },
+      "rawSha256": "6ae0828b663296f3fc5e1cec27947dd359c6064bb6bf6d32d37c5aaf75966da0",
+      "targetMesh": "SCA_FATE_SMASHER_DUMMY01",
+      "rootDeclaration": {
+        "BONE_NAME": "Bip01_Footsteps",
+        "NAME": "SCA_FATE_SMASHER_DUMMY01",
+        "EFFECT_TYPE": 4,
+        "TRACE_MORE": 1,
+        "BONE_TRACE_TARGET_MESH": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "children": [
+        {
+          "name": "SCA_FATE_SMASHER_P00M",
+          "boneName": "Dummy01",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P00M",
+          "boneName": "Dummy02",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P00M",
+          "boneName": "Dummy03",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P00M",
+          "boneName": "Dummy04",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P04",
+          "boneName": "Dummy01",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P04",
+          "boneName": "Dummy02",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P04",
+          "boneName": "Dummy03",
+          "trace": false,
+          "traceMore": 1
+        },
+        {
+          "name": "SCA_FATE_SMASHER_P04",
+          "boneName": "Dummy04",
+          "trace": false,
+          "traceMore": 1
+        }
+      ]
+    },
+    {
+      "name": "EffectSet_HA_SCA_FATE_SMASHER_FX3",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 25739
+      },
+      "rawSha256": "3daa5b0c5939b19b782de8a479a2f052bdbc721b161bfee762b10ece9c6b6fdb",
+      "targetMesh": "SCA_FATE_SMASHER_DUMMY01",
+      "rootDeclaration": {
+        "BONE_NAME": "Bip01_Footsteps",
+        "NAME": "SCA_FATE_SMASHER_DUMMY01",
+        "EFFECT_TYPE": 4,
+        "TRACE_MORE": 1,
+        "BONE_TRACE_TARGET_MESH": 1,
+        "TRACE_USER_TARGET_FORCE": 1
+      },
+      "children": [
+        {
+          "name": "SCA_FATE_SMASHER_PT00",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BRANDISH_BREAKER_PA00",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy02",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy01",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy03",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA01",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_BR_BR_PA02",
+          "boneName": "Dummy04",
+          "trace": 1,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FATE_SMASHER_L001",
+          "boneName": "Dummy02",
+          "trace": false,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FATE_SMASHER_L002",
+          "boneName": "Dummy02",
+          "trace": false,
+          "traceMore": false
+        },
+        {
+          "name": "SCA_FATE_SMASHER_L003",
+          "boneName": "Dummy02",
+          "trace": false,
+          "traceMore": false
+        }
+      ]
+    }
+  ]
+}

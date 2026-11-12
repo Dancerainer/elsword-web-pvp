@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "original2016 declarations and already executed original mesh/DLL pose artifacts; fixedV5 scale consumer",
+  "targetClientMeasured": false,
+  "poseBindings": [
+    {"target":"ATT_Stardust_Shower_M02","donor":"ATT_Stardust_Shower_M01","targetDeclaration":"a6737de2f14fdc361a5848a423edd5ff4065a95107e18795d987327b4d4967cd","donorDeclaration":"7a09cddbdff4010ca1b5f29623454e6fa13c9873ce87c8ddae0ab7c0cde0841e","mesh":"ATT_Maximum_Strike_Ball_AttackBox.X","meshSha256":"6f7d6c9d6069dad1c554a4bb5469a0a2d3d044c4ea4bf0191f673d2708cbcd13","poseData":"fx/meshes/ATT_Maximum_Strike_Ball_AttackBox.pose.json"},
+    {"target":"ATT_Stardust_Shower_M03","donor":"Mesh_ATT_Stardust_Shower_Attack","targetDeclaration":"1273bc76f1e76d1728802fc8483c1b6b4eb1cbdcaafc0e489f3d1acdb711945d","donorDeclaration":"70f495c47c903e9a24049a861ce2f59b4899fbb3ecbb9b1298af7a396eed06b7","mesh":"elsword_SA_rageCutter_attackSphere.X","meshSha256":"292da037a2750b9e6dd7e70d46270b56c56346219ea1435bce76e1f9e457aaa9","poseData":"fx/meshes/elsword_SA_rageCutter_attackSphere.pose.json"}
+  ],
+  "meshClockEvidence": "reports/add-fx-d3dx-execution-v1.json",
+  "scale": {"effect":"DamageEffect_ATT_Stardust_Shower_Ball_Big","set":"EffectSet_ATT_Stardust_Shower_End","setScale":3,"passiveEntryScale":1.5,"result":4.5,"scope":"PASSIVE only; TIME/START retain their declarations","consumer":{"file":"X2Lib/X2DamageEffect.cpp","sha256":"8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8","setScale":4717,"multiplyPassive":[4868,4870],"applyToSequence":6362}},
+  "limitations": ["The parent-scale repair is bounded to the audited Stardust final ball", "Original client gameplay/GPU output has not been measured"]
+}

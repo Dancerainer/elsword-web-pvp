@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "evidence": "reference-v5; target triggers unmeasured",
+  "source": {
+    "path": "X2Lib/X2GUEL.cpp",
+    "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+    "gitBlob": "087da6d5c5c35f2ba3ee82d436e4a464118eee0f",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5-with-2026-reconstruction-not-target2016"
+  },
+  "files": [
+    {
+      "name": "Break.ogg",
+      "sourceMethods": [
+        "CommonHyperModeFrameMove"
+      ]
+    },
+    {
+      "name": "Change.ogg",
+      "sourceMethods": [
+        "CommonHyperModeFrameMove"
+      ]
+    },
+    {
+      "name": "Elsword_Endurance.ogg",
+      "sourceMethods": [
+        "ProcessEndurancePowerSkill"
+      ]
+    },
+    {
+      "name": "Energy.ogg",
+      "sourceMethods": [
+        "CommonHyperModeFrameMove"
+      ]
+    },
+    {
+      "name": "elsword_demolition_end.ogg",
+      "sourceMethods": [
+        "End_SwordmanDestruction"
+      ]
+    },
+    {
+      "name": "elsword_demolition_use_VOX.ogg",
+      "sourceMethods": [
+        "Start_SwordmanDestruction"
+      ]
+    },
+    {
+      "name": "elsword_vitality_end.ogg",
+      "sourceMethods": [
+        "End_SwordmanVigor"
+      ]
+    },
+    {
+      "name": "elsword_vitality_use_VOX.ogg",
+      "sourceMethods": [
+        "Start_SwordmanVigor"
+      ]
+    }
+  ],
+  "limits": "Resource closure from fixed source including 2026 reconstruction; original 2016 callback parity is unmeasured."
+}

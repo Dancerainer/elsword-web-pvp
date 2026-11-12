@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 declarations + bounded fixed-V5 source consumers + current simulation regression",
+  "sourceFiles": [
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragments": [
+        {
+          "start": 1584,
+          "end": 1823,
+          "purpose": "mesh order, inverse gravity, land bounce, rotated DirSpeed",
+          "sha256": "8eb9d02b2e35b22ac01aa4de7c8eed93b4dbf66f59a33dbcfc1f9a511bb1025c"
+        },
+        {
+          "start": 2062,
+          "end": 2153,
+          "purpose": "old age lifetime and land crash",
+          "sha256": "3b3c3ef572e8b6ed1a0286dc228794ae62fd2ca7190770237bfc2b399b8e25be"
+        },
+        {
+          "start": 3281,
+          "end": 3377,
+          "purpose": "literal mesh Velocity fade integration",
+          "sha256": "8a746f190084a500514023b25a7af17f5caa1faa9c9ba5459a84c6945ae0e98f"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "start": 1854,
+          "end": 1886,
+          "purpose": "saved live mesh position precedes die child",
+          "sha256": "00197ef09d4f1fc863c9c158ddaa03bb5da3e7686ff6e294101e66254ac0e813"
+        },
+        {
+          "start": 3861,
+          "end": 3930,
+          "purpose": "mandatory RT_CREATE_DAMAGE_EFFECT / RT_CREATE_EFFECT_SET",
+          "sha256": "f0dea3204c82630b83bc254e54d6b11ca7075f5a0a8831a5bfcfa2685ff46f5b"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragments": [
+        {
+          "start": 7932,
+          "end": 7953,
+          "purpose": "effect contact returns before defender damage/reaction",
+          "sha256": "79fee376d0686f04603a62870a6d50460401098e23473328ff7c4c6c4e58938b"
+        },
+        {
+          "start": 12760,
+          "end": 12840,
+          "purpose": "unit AttackResult additional effect creation",
+          "sha256": "2a2707697ac1ee82751ae6135827254cb007952fdef1d560c2ed613ae7038ad9"
+        }
+      ]
+    }
+  ],
+  "ravenCommandSource": "vc-reference-consumers-v1.json",
+  "enabledReferenceMacros": [
+    "X2OPTIMIZE_PARTICLE_AND_ETC_SIMULATION",
+    "X2OPTIMIZE_PARTICLE_AND_ETC_SIMULATION_VELOCITY_ACCUM_BUG_FIX",
+    "FIX_XMESH_PLAYER_GRAVITY_ERROR_TEST"
+  ],
+  "regressions": [
+    "single 668X returns to gravity after animation end",
+    "two consecutive sampled-device 668ZXX / 668X / 668XX in both directions without resets",
+    "mandatory impact child reduces actual HP without parent damage/critical/MP duplication",
+    "rotated air projectile, parabolic grenade and midpoint mesh velocity fade",
+    "Napalm and Ignition Crow ground children use actual Garpai collision",
+    "combat and renderer sample the same mesh position and active animation"
+  ],
+  "limits": [
+    "No original 2016 client runtime trace acquired",
+    "Reference source includes later maintenance; not proof of target executable identity",
+    "Literal mesh interpreter remains explicitly bounded; unknown event types rejected",
+    "Original D3DX controller transition and main-loop packet batching are not fully reproduced",
+    "Original GetNearest_LUA fallback is still unavailable at the native geometry boundary"
+  ]
+}

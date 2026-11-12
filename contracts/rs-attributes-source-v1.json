@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": 1,
+  "version": "rs-attributes-source-v1",
+  "originalClientRuntimeMeasurements": 0,
+  "sources": {
+    "CharacterStatTable.lua": {
+      "path": "data/data036.kom/CharacterStatTable.lua",
+      "sha256": "8d88daf5756c0ab63555231479e9a56d52cfc4dc8baa5fbc4b6ad87fc1661e02"
+    },
+    "Enum.lua": {
+      "path": "data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "NewSkillTempletVer2.lua": {
+      "path": "data/data036.kom/NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "item.kim": {
+      "path": "data/data036.kom/item.kim",
+      "sha256": "9b3d3d3428a48a038245b34b9162c188719f10c171e7f4d2509c9a668e7f4c56"
+    }
+  },
+  "career": {
+    "unitType": 1,
+    "unitClass": 101,
+    "key": "UC_ELSWORD_RUNE_SLAYER",
+    "raw": {
+      "hpMax": 11750,
+      "physicalAttack": 490,
+      "magicAttack": 430,
+      "physicalDefence": 110,
+      "magicDefence": 92
+    }
+  },
+  "passives": {
+    "21405": {
+      "level": 4,
+      "treeNode": {
+        "m_iColumnIndex": 3,
+        "m_iSkillID": 21405,
+        "m_iRowIndex": 3,
+        "m_iMasterLevel": 4,
+        "m_eUnitClass": 101
+      },
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_01.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "Thinking Outside the Box",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 2,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Increases your magic attack by a certain percentage of your physical attack.",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_COMMON_MAGIC_ATTACK_BEGINNER",
+        "m_eID": 21405,
+        "m_EffectiveDesc": {
+          "1": "Convert 4% of Physical Attack to Magic Attack.",
+          "2": "Convert 8% of Physical Attack to Magic Attack.",
+          "3": "Convert 12% of Physical Attack to Magic Attack.",
+          "4": "Increase 15% of Physical Attack Power as Magical Attack Power"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 1,
+        "m_RequireCharacterLevel": {
+          "1": 15,
+          "2": 31,
+          "3": 39,
+          "4": 83
+        },
+        "SA_ATK_MAGIC_REL": {
+          "1": 1.04,
+          "2": 1.08,
+          "3": 1.12,
+          "4": 1.15
+        }
+      }
+    },
+    "21406": {
+      "level": 3,
+      "treeNode": {
+        "m_iColumnIndex": 3,
+        "m_iSkillID": 21406,
+        "m_iRowIndex": 8,
+        "m_iMasterLevel": 3,
+        "m_eUnitClass": 101
+      },
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_ElswordActive_02.tga",
+        "m_wstrImageTexturePieceName": "SI_P_ERS_SPELL_CHAIN",
+        "m_wstrName": "Magic Chain",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "DLG_Elsword_SKILL_ScreenShot_04.tga",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Reduces target's Magical Defense. (Special/Hyper Skill excluded)",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_ERS_SPELL_CHAIN",
+        "m_eID": 21406,
+        "m_EffectiveDesc": {
+          "1": "Activation Chance: 5%\nMagic Resistance Decrease: -10%\nDuration: 6 Seconds",
+          "2": "Activation Chance: 5%\nMagic Resistance Decrease: -20%\nDuration: 6 Seconds",
+          "3": "Activation Chance: 5%\nMagic Resistance Reduction: -30%\nDuration: 6 Seconds"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 2,
+        "m_RequireCharacterLevel": {
+          "1": 40,
+          "2": 46,
+          "3": 47
+        },
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.05,
+          "2": 0.05,
+          "3": 0.05
+        },
+        "BUFF_FACTOR": {
+          "1": 72
+        }
+      }
+    },
+    "21407": {
+      "level": 3,
+      "treeNode": {
+        "m_iColumnIndex": 3,
+        "m_iSkillID": 21407,
+        "m_iRowIndex": 7,
+        "m_iMasterLevel": 3,
+        "m_eUnitClass": 101
+      },
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_ElswordActive_03.tga",
+        "m_wstrImageTexturePieceName": "SI_A_ERS_SWORD_ENCHANT",
+        "m_wstrName": "Sword Enchant",
+        "m_eActiveSkillUseCondtion": 1,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "DLG_Elsword_SKILL_ScreenShot_03.tga",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 1,
+        "m_wstrMainDesc": "Add Fire, Water, or Nature element to your sword.\n\n#CFF4444Destruction Skill#CX\n- Consumes #CFF4444Destruction Gauge#CX and acquire #C4488FFVitality Gauge#CX\n- Attack Power ↑ when Destruction activated",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_A_ERS_SWORD_ENCHANT",
+        "m_eID": 21407,
+        "m_EffectiveDesc": {
+          "1": "Activation Chance: 3%\nFire Sword\n- Attack causes burn effect (Damage per second)\n- Blaze Effect Activation Chance: +10%\nIce Sword\n- Attack causes frost effect (Attack speed decrease)\n- Ice Effect Activation Chance: +10%\nPoison Sword\n- Attack causes poison effect (Damage per second)\n- Poison Effect Activation Chance: +10%\nDuration: 20 Seconds",
+          "2": "Activation Chance: 6%\nFire Sword\n- Attack causes burn effect (Damage per second)\n- Blaze Effect Activation Chance: +10%\nIce Sword\n- Attack causes frost effect (Attack speed decrease)\n- Ice Effect Activation Chance: +10%\nPoison Sword\n- Attack causes poison effect (Damage per second)\n- Poison Effect Activation Chance: +10%\nDuration: 20 Seconds",
+          "3": "Activation Chance: 9%\nFire Sword\n- Attack causes burn effect (Damage per second)\n- Blaze Effect Activation Chance: +10%\nIce Sword\n- Attack causes frost effect (Attack speed decrease)\n- Ice Effect Activation Chance: +10%\nPoison Sword\n- Attack causes poison effect (Damage per second)\n- Poison Effect Activation Chance: +10%\nDuration: 20 Seconds"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 1,
+        "m_RequireCharacterLevel": {
+          "1": 35,
+          "2": 51,
+          "3": 59
+        },
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.09
+        },
+        "SA_COOLTIME_1": {
+          "1": 20,
+          "2": 20,
+          "3": 20
+        },
+        "BUFF_FACTOR": {
+          "1": 162,
+          "2": 163,
+          "3": 164
+        }
+      }
+    },
+    "21408": {
+      "level": 3,
+      "treeNode": {
+        "m_iColumnIndex": 3,
+        "m_iSkillID": 21408,
+        "m_iRowIndex": 12,
+        "m_iMasterLevel": 3,
+        "m_eUnitClass": 101
+      },
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_04.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "Rune Mastery",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Increases Rune size and duration. (Special/Hyper Skill excluded)",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_ERS_RUNE_MASTERY",
+        "m_eID": 21408,
+        "m_EffectiveDesc": {
+          "1": "Magic Attack Increase: 2%\nRune Size Increase: 13%\nDuration(Range) Increase: 7%",
+          "2": "Magic Attack Increase: 4%\nRune Size Increase: 26%\nDuration(Range) Increase: 14%",
+          "3": "Magic Attack Increase: 6%\nRune Size Increase: 40%\nDuration(Range) Increase: 20%"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 2,
+        "m_RequireCharacterLevel": {
+          "1": 60,
+          "2": 66,
+          "3": 68
+        },
+        "SA_PROJECTILE_SIZE": {
+          "1": 1.13,
+          "2": 1.264,
+          "3": 1.4
+        },
+        "SA_PROJECTILE_RANGE_REL": {
+          "1": 1.07,
+          "2": 1.14,
+          "3": 1.2004
+        },
+        "SA_ATK_MAGIC_REL": {
+          "1": 1.02,
+          "2": 1.04,
+          "3": 1.06
+        },
+        "SA_DAMAGE_REL": {
+          "1": 1.4,
+          "2": 1.4,
+          "3": 1.4
+        }
+      }
+    },
+    "21409": {
+      "level": 3,
+      "treeNode": {
+        "m_iColumnIndex": 4,
+        "m_iSkillID": 21409,
+        "m_iRowIndex": 12,
+        "m_iMasterLevel": 3,
+        "m_eUnitClass": 101
+      },
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_ElswordActive_02.tga",
+        "m_wstrImageTexturePieceName": "SI_P_ERS_MAGIC_RESISTANCE",
+        "m_wstrName": "Magic Resistance Mastery",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "DLG_Elsword_SKILL_ScreenShot_04.tga",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Increases Magical Defense Power and adds a chance to reflect\nmagical projectiles. (Special Active Skill excluded)",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_ERS_MAGIC_RESISTANCE",
+        "m_eID": 21409,
+        "m_EffectiveDesc": {
+          "1": "Magic Resistance Increase: 4%\nMagical Projectile Reflect Chance: 3% (9% in Dungeons)",
+          "2": "Magic Resistance Increase: 8%\nMagical Projectile Reflect Chance: 6% (18% in Dungeons)",
+          "3": "Magic Resistance Increase: 12%\nMagical Projectile Reflect Chance: 9% (27% in Dungeons)"
+        },
+        "m_bBornSealed": 1,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 3,
+        "m_RequireCharacterLevel": {
+          "1": 60,
+          "2": 67,
+          "3": 69
+        },
+        "SA_DEF_MAGIC_REL": {
+          "1": 1.033,
+          "2": 1.066,
+          "3": 1.1
+        },
+        "SA_REFLECT_REL": {
+          "1": 0.03,
+          "2": 0.06,
+          "3": 0.09
+        }
+      }
+    }
+  },
+  "references": {
+    "evidenceClass": "fixed-V5-reference-not-target2016",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": [
+      {
+        "file": "GSUserFunction.cpp",
+        "sha256": "f59d0cb8ed3298b84e150aed209a20a35ae716113f11d6a396777fc4e55495c4",
+        "gitBlob": "2ce20652c7353cf3b350c385d25f9534eefac616",
+        "startLine": 12447,
+        "endLine": 12470,
+        "fragmentSha256": "d6956f4fa0665c36ce96d1a18a81c550acdb5300ea344d731c9644fd9d9d682b"
+      },
+      {
+        "file": "GSUserFunction.cpp",
+        "sha256": "f59d0cb8ed3298b84e150aed209a20a35ae716113f11d6a396777fc4e55495c4",
+        "gitBlob": "2ce20652c7353cf3b350c385d25f9534eefac616",
+        "startLine": 12533,
+        "endLine": 12545,
+        "fragmentSha256": "9fa1b79b0c0e345e20a02a65c3d7a6dc6ad989edb3fdd1498aa6390d0e2a6558"
+      },
+      {
+        "file": "XSLSkillTree.cpp",
+        "sha256": "9877490290b48176be52b47da4446d9aed36c5d47324a5e3545b7bb4b68d0e4a",
+        "gitBlob": "77feb36ed009b8b00f93c6e90def858cccb16146",
+        "startLine": 1065,
+        "endLine": 1070,
+        "fragmentSha256": "bca967427e8c716b77c98d25af9a0283afd01f0df2c74d5303dbb6bd9aece5c2"
+      },
+      {
+        "file": "StatTable.lua",
+        "sha256": "e021ecb9922057f704bf075fd4254b15c2d2de9e4f2b88c61104e9f97ed56080",
+        "gitBlob": "87b0511dafd72a30e90ef14646c164e2d35fcb63",
+        "startLine": 1,
+        "endLine": 1,
+        "fragmentSha256": "02504757ac15eb15297b6e229c5338e081efc587eac7eaf24fc440fd36b7c845"
+      },
+      {
+        "file": "X2GUElsword_SwordMan.cpp",
+        "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+        "startLine": 2694,
+        "endLine": 2739,
+        "fragmentSha256": "0763e36db92624f57100774b6e0a07f1f1613edce5f96497a0d4a5f133312bd8"
+      },
+      {
+        "file": "X2GUElsword_SwordMan.cpp",
+        "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+        "startLine": 2884,
+        "endLine": 2915,
+        "fragmentSha256": "1809845fb0950702758e4cd25544dd372e560a48705dfc3415ecae37efff5d0a"
+      }
+    ]
+  },
+  "growthCrossCheck": {
+    "career": 101,
+    "levels": [
+      1,
+      80
+    ],
+    "statValuesChecked": 400,
+    "matches": 269,
+    "differences": [
+      {
+        "level": 3,
+        "field": "magicAttack",
+        "reference": 312.0,
+        "inferred": 313
+      },
+      {
+        "level": 3,
+        "field": "physicalDefence",
+        "reference": 84.0,
+        "inferred": 85
+      },
+      {
+        "level": 4,
+        "field": "magicAttack",
+        "reference": 320.0,
+        "inferred": 321
+      },
+      {
+        "level": 4,
+        "field": "physicalDefence",
+        "reference": 86.0,
+        "inferred": 87
+      },
+      {
+        "level": 5,
+        "field": "physicalAttack",
+        "reference": 400.0,
+        "inferred": 401
+      },
+      {
+        "level": 5,
+        "field": "magicDefence",
+        "reference": 73.0,
+        "inferred": 74
+      },
+      {
+        "level": 6,
+        "field": "physicalAttack",
+        "reference": 410.0,
+        "inferred": 411
+      },
+      {
+        "level": 6,
+        "field": "magicAttack",
+        "reference": 337.0,
+        "inferred": 338
+      },
+      {
+        "level": 6,
+        "field": "magicDefence",
+        "reference": 75.0,
+        "inferred": 76
+      },
+      {
+        "level": 7,
+        "field": "physicalAttack",
+        "reference": 420.0,
+        "inferred": 421
+      },
+      {
+        "level": 7,
+        "field": "magicAttack",
+        "reference": 345.0,
+        "inferred": 346
+      },
+      {
+        "level": 7,
+        "field": "physicalDefence",
+        "reference": 93.0,
+        "inferred": 94
+      },
+      {
+        "level": 7,
+        "field": "magicDefence",
+        "reference": 77.0,
+        "inferred": 78
+      },
+      {
+        "level": 8,
+        "field": "physicalAttack",
+        "reference": 430.0,
+        "inferred": 431
+      },
+      {
+        "level": 8,
+        "field": "physicalDefence",
+        "reference": 95.0,
+        "inferred": 96
+      },
+      {
+        "level": 9,
+        "field": "magicAttack",
+        "reference": 362.0,
+        "inferred": 363
+      },
+      {
+        "level": 10,
+        "field": "magicAttack",
+        "reference": 370.0,
+        "inferred": 371
+      },
+      {
+        "level": 12,
+        "field": "magicAttack",
+        "reference": 387.0,
+        "inferred": 388
+      },
+      {
+        "level": 12,
+        "field": "physicalDefence",
+        "reference": 104.0,
+        "inferred": 105
+      },
+      {
+        "level": 13,
+        "field": "physicalAttack",
+        "reference": 481.0,
+        "inferred": 482
+      },
+      {
+        "level": 13,
+        "field": "magicAttack",
+        "reference": 395.0,
+        "inferred": 396
+      },
+      {
+        "level": 13,
+        "field": "magicDefence",
+        "reference": 88.0,
+        "inferred": 89
+      },
+      {
+        "level": 14,
+        "field": "physicalAttack",
+        "reference": 491.0,
+        "inferred": 492
+      },
+      {
+        "level": 14,
+        "field": "magicDefence",
+        "reference": 90.0,
+        "inferred": 91
+      },
+      {
+        "level": 15,
+        "field": "physicalAttack",
+        "reference": 501.0,
+        "inferred": 502
+      },
+      {
+        "level": 15,
+        "field": "magicAttack",
+        "reference": 412.0,
+        "inferred": 413
+      },
+      {
+        "level": 15,
+        "field": "physicalDefence",
+        "reference": 111.0,
+        "inferred": 112
+      },
+      {
+        "level": 15,
+        "field": "magicDefence",
+        "reference": 92.0,
+        "inferred": 93
+      },
+      {
+        "level": 16,
+        "field": "physicalAttack",
+        "reference": 511.0,
+        "inferred": 512
+      },
+      {
+        "level": 16,
+        "field": "magicAttack",
+        "reference": 420.0,
+        "inferred": 421
+      },
+      {
+        "level": 16,
+        "field": "physicalDefence",
+        "reference": 113.0,
+        "inferred": 114
+      },
+      {
+        "level": 18,
+        "field": "magicAttack",
+        "reference": 437.0,
+        "inferred": 438
+      },
+      {
+        "level": 19,
+        "field": "magicAttack",
+        "reference": 445.0,
+        "inferred": 446
+      },
+      {
+        "level": 19,
+        "field": "physicalDefence",
+        "reference": 120.0,
+        "inferred": 121
+      },
+      {
+        "level": 20,
+        "field": "physicalDefence",
+        "reference": 122.0,
+        "inferred": 123
+      },
+      {
+        "level": 21,
+        "field": "physicalAttack",
+        "reference": 562.0,
+        "inferred": 563
+      },
+      {
+        "level": 21,
+        "field": "magicAttack",
+        "reference": 462.0,
+        "inferred": 463
+      },
+      {
+        "level": 21,
+        "field": "magicDefence",
+        "reference": 103.0,
+        "inferred": 104
+      },
+      {
+        "level": 22,
+        "field": "physicalAttack",
+        "reference": 572.0,
+        "inferred": 573
+      },
+      {
+        "level": 22,
+        "field": "magicAttack",
+        "reference": 470.0,
+        "inferred": 471
+      },
+      {
+        "level": 22,
+        "field": "magicDefence",
+        "reference": 105.0,
+        "inferred": 106
+      },
+      {
+        "level": 23,
+        "field": "physicalAttack",
+        "reference": 582.0,
+        "inferred": 583
+      },
+      {
+        "level": 23,
+        "field": "physicalDefence",
+        "reference": 129.0,
+        "inferred": 130
+      },
+      {
+        "level": 24,
+        "field": "physicalAttack",
+        "reference": 592.0,
+        "inferred": 593
+      },
+      {
+        "level": 24,
+        "field": "physicalDefence",
+        "reference": 131.0,
+        "inferred": 132
+      },
+      {
+        "level": 25,
+        "field": "magicAttack",
+        "reference": 495.0,
+        "inferred": 496
+      },
+      {
+        "level": 27,
+        "field": "physicalDefence",
+        "reference": 138.0,
+        "inferred": 139
+      },
+      {
+        "level": 28,
+        "field": "magicAttack",
+        "reference": 520.0,
+        "inferred": 521
+      },
+      {
+        "level": 28,
+        "field": "physicalDefence",
+        "reference": 140.0,
+        "inferred": 141
+      },
+      {
+        "level": 29,
+        "field": "physicalAttack",
+        "reference": 643.0,
+        "inferred": 644
+      },
+      {
+        "level": 29,
+        "field": "magicDefence",
+        "reference": 118.0,
+        "inferred": 119
+      },
+      {
+        "level": 30,
+        "field": "physicalAttack",
+        "reference": 653.0,
+        "inferred": 654
+      },
+      {
+        "level": 30,
+        "field": "magicDefence",
+        "reference": 120.0,
+        "inferred": 121
+      },
+      {
+        "level": 31,
+        "field": "physicalAttack",
+        "reference": 663.0,
+        "inferred": 664
+      },
+      {
+        "level": 31,
+        "field": "magicAttack",
+        "reference": 545.0,
+        "inferred": 546
+      },
+      {
+        "level": 31,
+        "field": "physicalDefence",
+        "reference": 147.0,
+        "inferred": 148
+      },
+      {
+        "level": 32,
+        "field": "physicalAttack",
+        "reference": 673.0,
+        "inferred": 674
+      },
+      {
+        "level": 32,
+        "field": "physicalDefence",
+        "reference": 149.0,
+        "inferred": 150
+      },
+      {
+        "level": 34,
+        "field": "magicAttack",
+        "reference": 570.0,
+        "inferred": 571
+      },
+      {
+        "level": 35,
+        "field": "physicalDefence",
+        "reference": 156.0,
+        "inferred": 157
+      },
+      {
+        "level": 36,
+        "field": "physicalDefence",
+        "reference": 158.0,
+        "inferred": 159
+      },
+      {
+        "level": 37,
+        "field": "physicalAttack",
+        "reference": 724.0,
+        "inferred": 725
+      },
+      {
+        "level": 37,
+        "field": "magicAttack",
+        "reference": 595.0,
+        "inferred": 596
+      },
+      {
+        "level": 37,
+        "field": "magicDefence",
+        "reference": 133.0,
+        "inferred": 134
+      },
+      {
+        "level": 38,
+        "field": "physicalAttack",
+        "reference": 734.0,
+        "inferred": 735
+      },
+      {
+        "level": 39,
+        "field": "physicalAttack",
+        "reference": 744.0,
+        "inferred": 745
+      },
+      {
+        "level": 39,
+        "field": "physicalDefence",
+        "reference": 165.0,
+        "inferred": 166
+      },
+      {
+        "level": 40,
+        "field": "physicalAttack",
+        "reference": 754.0,
+        "inferred": 755
+      },
+      {
+        "level": 40,
+        "field": "magicAttack",
+        "reference": 620.0,
+        "inferred": 621
+      },
+      {
+        "level": 40,
+        "field": "physicalDefence",
+        "reference": 167.0,
+        "inferred": 168
+      },
+      {
+        "level": 43,
+        "field": "magicAttack",
+        "reference": 645.0,
+        "inferred": 646
+      },
+      {
+        "level": 43,
+        "field": "physicalDefence",
+        "reference": 174.0,
+        "inferred": 175
+      },
+      {
+        "level": 44,
+        "field": "magicAttack",
+        "reference": 653.0,
+        "inferred": 654
+      },
+      {
+        "level": 44,
+        "field": "physicalDefence",
+        "reference": 176.0,
+        "inferred": 177
+      },
+      {
+        "level": 45,
+        "field": "physicalAttack",
+        "reference": 805.0,
+        "inferred": 806
+      },
+      {
+        "level": 45,
+        "field": "magicDefence",
+        "reference": 148.0,
+        "inferred": 149
+      },
+      {
+        "level": 46,
+        "field": "physicalAttack",
+        "reference": 815.0,
+        "inferred": 816
+      },
+      {
+        "level": 46,
+        "field": "magicAttack",
+        "reference": 670.0,
+        "inferred": 671
+      },
+      {
+        "level": 47,
+        "field": "physicalAttack",
+        "reference": 825.0,
+        "inferred": 826
+      },
+      {
+        "level": 47,
+        "field": "magicAttack",
+        "reference": 678.0,
+        "inferred": 679
+      },
+      {
+        "level": 47,
+        "field": "physicalDefence",
+        "reference": 183.0,
+        "inferred": 184
+      },
+      {
+        "level": 48,
+        "field": "physicalAttack",
+        "reference": 835.0,
+        "inferred": 836
+      },
+      {
+        "level": 48,
+        "field": "physicalDefence",
+        "reference": 185.0,
+        "inferred": 186
+      },
+      {
+        "level": 49,
+        "field": "magicAttack",
+        "reference": 695.0,
+        "inferred": 696
+      },
+      {
+        "level": 50,
+        "field": "magicAttack",
+        "reference": 703.0,
+        "inferred": 704
+      },
+      {
+        "level": 51,
+        "field": "physicalDefence",
+        "reference": 192.0,
+        "inferred": 193
+      },
+      {
+        "level": 52,
+        "field": "magicAttack",
+        "reference": 720.0,
+        "inferred": 721
+      },
+      {
+        "level": 52,
+        "field": "physicalDefence",
+        "reference": 194.0,
+        "inferred": 195
+      },
+      {
+        "level": 53,
+        "field": "physicalAttack",
+        "reference": 886.0,
+        "inferred": 887
+      },
+      {
+        "level": 53,
+        "field": "magicAttack",
+        "reference": 728.0,
+        "inferred": 729
+      },
+      {
+        "level": 53,
+        "field": "magicDefence",
+        "reference": 163.0,
+        "inferred": 164
+      },
+      {
+        "level": 54,
+        "field": "physicalAttack",
+        "reference": 896.0,
+        "inferred": 897
+      },
+      {
+        "level": 55,
+        "field": "physicalAttack",
+        "reference": 906.0,
+        "inferred": 907
+      },
+      {
+        "level": 55,
+        "field": "magicAttack",
+        "reference": 745.0,
+        "inferred": 746
+      },
+      {
+        "level": 56,
+        "field": "physicalAttack",
+        "reference": 916.0,
+        "inferred": 917
+      },
+      {
+        "level": 56,
+        "field": "magicAttack",
+        "reference": 753.0,
+        "inferred": 754
+      },
+      {
+        "level": 56,
+        "field": "physicalDefence",
+        "reference": 203.0,
+        "inferred": 204
+      },
+      {
+        "level": 58,
+        "field": "magicAttack",
+        "reference": 770.0,
+        "inferred": 771
+      },
+      {
+        "level": 59,
+        "field": "magicAttack",
+        "reference": 778.0,
+        "inferred": 779
+      },
+      {
+        "level": 59,
+        "field": "physicalDefence",
+        "reference": 210.0,
+        "inferred": 211
+      },
+      {
+        "level": 60,
+        "field": "physicalDefence",
+        "reference": 212.0,
+        "inferred": 213
+      },
+      {
+        "level": 61,
+        "field": "physicalAttack",
+        "reference": 967.0,
+        "inferred": 968
+      },
+      {
+        "level": 61,
+        "field": "magicAttack",
+        "reference": 795.0,
+        "inferred": 796
+      },
+      {
+        "level": 62,
+        "field": "physicalAttack",
+        "reference": 977.0,
+        "inferred": 978
+      },
+      {
+        "level": 62,
+        "field": "magicAttack",
+        "reference": 803.0,
+        "inferred": 804
+      },
+      {
+        "level": 63,
+        "field": "physicalAttack",
+        "reference": 987.0,
+        "inferred": 988
+      },
+      {
+        "level": 63,
+        "field": "physicalDefence",
+        "reference": 219.0,
+        "inferred": 220
+      },
+      {
+        "level": 64,
+        "field": "physicalAttack",
+        "reference": 997.0,
+        "inferred": 998
+      },
+      {
+        "level": 64,
+        "field": "physicalDefence",
+        "reference": 221.0,
+        "inferred": 222
+      },
+      {
+        "level": 65,
+        "field": "magicAttack",
+        "reference": 828.0,
+        "inferred": 829
+      },
+      {
+        "level": 67,
+        "field": "physicalDefence",
+        "reference": 228.0,
+        "inferred": 229
+      },
+      {
+        "level": 68,
+        "field": "magicAttack",
+        "reference": 853.0,
+        "inferred": 854
+      },
+      {
+        "level": 68,
+        "field": "physicalDefence",
+        "reference": 230.0,
+        "inferred": 231
+      },
+      {
+        "level": 69,
+        "field": "physicalAttack",
+        "reference": 1048.0,
+        "inferred": 1049
+      },
+      {
+        "level": 70,
+        "field": "physicalAttack",
+        "reference": 1058.0,
+        "inferred": 1059
+      },
+      {
+        "level": 71,
+        "field": "physicalAttack",
+        "reference": 1068.0,
+        "inferred": 1069
+      },
+      {
+        "level": 71,
+        "field": "magicAttack",
+        "reference": 878.0,
+        "inferred": 879
+      },
+      {
+        "level": 71,
+        "field": "physicalDefence",
+        "reference": 237.0,
+        "inferred": 238
+      },
+      {
+        "level": 72,
+        "field": "physicalAttack",
+        "reference": 1078.0,
+        "inferred": 1079
+      },
+      {
+        "level": 72,
+        "field": "physicalDefence",
+        "reference": 239.0,
+        "inferred": 240
+      },
+      {
+        "level": 74,
+        "field": "magicAttack",
+        "reference": 903.0,
+        "inferred": 904
+      },
+      {
+        "level": 75,
+        "field": "physicalDefence",
+        "reference": 246.0,
+        "inferred": 247
+      },
+      {
+        "level": 76,
+        "field": "physicalDefence",
+        "reference": 248.0,
+        "inferred": 249
+      },
+      {
+        "level": 76,
+        "field": "magicDefence",
+        "reference": 207.0,
+        "inferred": 206
+      },
+      {
+        "level": 77,
+        "field": "physicalAttack",
+        "reference": 1129.0,
+        "inferred": 1130
+      },
+      {
+        "level": 77,
+        "field": "magicAttack",
+        "reference": 928.0,
+        "inferred": 929
+      },
+      {
+        "level": 78,
+        "field": "physicalAttack",
+        "reference": 1139.0,
+        "inferred": 1140
+      },
+      {
+        "level": 79,
+        "field": "physicalAttack",
+        "reference": 1149.0,
+        "inferred": 1150
+      },
+      {
+        "level": 80,
+        "field": "physicalAttack",
+        "reference": 1159.0,
+        "inferred": 1160
+      },
+      {
+        "level": 80,
+        "field": "magicAttack",
+        "reference": 953.0,
+        "inferred": 954
+      },
+      {
+        "level": 80,
+        "field": "physicalDefence",
+        "reference": 257.0,
+        "inferred": 258
+      }
+    ],
+    "level85Present": false
+  },
+  "qualifications": [
+    "Level85 naked stats use the same user-accepted target growth inference as LK.",
+    "21405 target description specifies physical attack15% added as magic; fixedV5 lacks that passive. Independent final-stat channels and integer truncation are an explicitly qualified adapter, not verified target order.",
+    "21409 numeric magic defence ratio1.1 conflicts with target level3 description12%; runtime uses raw1.1.",
+    "21407 useCondition1 coexists with passive type8 and automatic proc descriptor; no manual zero-cost skill is invented.",
+    "RS V5 levels2..80 contain truncation differences from the current LK rounding inference. These differences are retained, not silently substituted for the user-requested LK formula policy.",
+    "Equipment presets and option percentages match LK. This does not copy LK class coefficients or LK passives."
+  ]
+}

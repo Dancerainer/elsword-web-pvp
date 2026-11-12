@@ -1,0 +1,2284 @@
+{
+  "schemaVersion": 3,
+  "clientMeasured": false,
+  "evidenceClass": "original2016 archive bytes/static declarations plus qualified fixedV5 callback reference",
+  "originalFilesVerified": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 49,
+      "name": "DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "bytes": 5409874,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 66,
+      "name": "Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031",
+      "bytes": 194297,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 74,
+      "name": "Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": 398092,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 92,
+      "name": "GameMajorParticle10.txt",
+      "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+      "bytes": 313708,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 182,
+      "name": "NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "bytes": 3548949,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 98,
+      "name": "Elsword_SisKnight_sword.X",
+      "sha256": "9f7a8a920accf039c4620af43b5dda8b921831bd1b324312f167e676acb77981",
+      "bytes": 4707,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 99,
+      "name": "Elsword_SisKnight_sword.tga",
+      "sha256": "2c6e8531c88edcba99e0a1898cca7c6441cd47d95e71689c541413dc9969d295",
+      "bytes": 49702,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 100,
+      "name": "Elsword_SisKnight_sword_base.X",
+      "sha256": "5db50595a411cbedf9ff7d2dd846f5022b0ead9da263fa3eb68d78f4b114ba4c",
+      "bytes": 8365,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 247,
+      "name": "elsword_active_swordFall_downSpark.DDS",
+      "sha256": "f4c7a89c9e13c6be6dba51265f056eb95cf2d0e2f376016b53a389a9b162acb0",
+      "bytes": 22000,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 248,
+      "name": "elsword_active_swordFall_downSword.X",
+      "sha256": "19a0e05bb688b162554c768af55caa8dc59153bff275894176db71843ffa97a1",
+      "bytes": 4134,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 249,
+      "name": "elsword_active_swordFall_light.Y",
+      "sha256": "cf07f3a910d85bcd8b4e11023c551358f6dc521ae8bb64251a1cbe437a33dc75",
+      "bytes": 884,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 250,
+      "name": "elsword_active_swordFall_light.dds",
+      "sha256": "7c5c2a2be2ca88f1e81523d89954c8edb13715b063ddaf2092f3d412d268eb75",
+      "bytes": 5616,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 251,
+      "name": "elsword_active_swordFall_spark.X",
+      "sha256": "f00eeca7c6c2262b6f50d77c98152f91f2ee89f4084385de01b74d082961eb8b",
+      "bytes": 1265,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 252,
+      "name": "elsword_active_swordFall_spark.dds",
+      "sha256": "0d97547cbec0c22a5c57b1e449b2eac8357f080190e3d096376ccc8e6e7bcb2f",
+      "bytes": 22000,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 254,
+      "name": "elsword_active_swordFall_sword01.X",
+      "sha256": "5009dccf56a51cfbc73ba8f559e87227a06c49582f522a21586bc6bd6049b1b0",
+      "bytes": 6446,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 255,
+      "name": "elsword_active_swordFall_sword02.X",
+      "sha256": "0bd5e924022ca6ce6d4595316a4f335d603cba8075c07bc8a01ddde4fb81813b",
+      "bytes": 5273,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 256,
+      "name": "elsword_active_swordFall_sword_plan.Y",
+      "sha256": "04ca7dfeadf84d26432fadb4d727832e07d502524bdfb4773be38a2a0bb4cbe2",
+      "bytes": 715,
+      "codec": "none"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 257,
+      "name": "elsword_active_swordFall_sword_plan.tga",
+      "sha256": "9819f273a635b71d213613c36db83990199480f16b38d8a7d36c7e27811e56f4",
+      "bytes": 66086,
+      "codec": "none"
+    }
+  ],
+  "readerSha256": "904453b6b28c7f01e66ae7ba90c0cc22fd1a02cf9dbf4c3b0f466cb64a87bdd7",
+  "rawProfileLfSha256": "2dabdfac8e760039ebb2ff2d11d1e97ee38184bb9d0c005806ac469403939f6f",
+  "state": {
+    "NORMAL_CAMERA1_RATE": 30,
+    "WALK_CANCEL_AFTER": 1.566,
+    "NORMAL_CAMERA0_RATE": 40,
+    "ANIM_NAME": "ESSI_SI_SA_ETK_SWORD_FALL",
+    "ANIM_SPEED": 1.25,
+    "NORMAL_CAMERA2_RATE": 30,
+    "PLAY_TYPE": 2,
+    "TRANSITION": 0,
+    "LAND_CONNECT": 0,
+    "INVINCIBLE": {
+      "1": 0,
+      "2": 3.1
+    },
+    "STOP_OTHER_UNIT0": {
+      "1": 0.066,
+      "2": 2.5
+    },
+    "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+    "SOUND_PLAY0": {
+      "1": 0.01,
+      "2": "Energy.ogg"
+    },
+    "SOUND_PLAY1": {
+      "1": 0.001,
+      "2": "ElswordVoice_SwordFall.ogg"
+    },
+    "SOUND_PLAY2": {
+      "1": 0.155,
+      "2": "Elsword_SwordFall_Effect.ogg"
+    },
+    "CAMERA1": {
+      "SUB_CAMERA_TIMING": {
+        "1": 0.75
+      },
+      "SUB_CAMERA0": {
+        "ANGLEDEGREE": -60,
+        "LOOK_PARTS": "Bip01_Head",
+        "TRACKINGTIME": 0.333,
+        "EYEDISTANCE": 0,
+        "DISTANCE": 500,
+        "HEIGHT": 0,
+        "LOOKATDISTANCE": -30,
+        "CAMERA_TYPE": 3,
+        "LOOK_TYPE": 0
+      },
+      "SUB_CAMERA1": {
+        "ANGLEDEGREE": 30,
+        "LOOK_PARTS": "Bip01_Head",
+        "TRACKINGTIME": 0.666,
+        "EYEDISTANCE": 0,
+        "DISTANCE": 900,
+        "HEIGHT": 100,
+        "LOOKATDISTANCE": 200,
+        "CAMERA_TYPE": 1,
+        "LOOK_TYPE": 0
+      }
+    },
+    "CAMERA2": {
+      "SUB_CAMERA_TIMING": {
+        "1": 0.75
+      },
+      "SUB_CAMERA0": {
+        "ANGLEDEGREE": 40,
+        "LOOK_PARTS": "Bip01_Head",
+        "TRACKINGTIME": 0.333,
+        "EYEDISTANCE": 0,
+        "DISTANCE": 600,
+        "HEIGHT": 200,
+        "LOOKATDISTANCE": 100,
+        "CAMERA_TYPE": 3,
+        "LOOK_TYPE": 0
+      },
+      "SUB_CAMERA1": {
+        "ANGLEDEGREE": -10,
+        "LOOK_PARTS": "Bip01_Head",
+        "TRACKINGTIME": 0.666,
+        "EYEDISTANCE": 0,
+        "DISTANCE": 1200,
+        "HEIGHT": 100,
+        "LOOKATDISTANCE": 200,
+        "CAMERA_TYPE": 1,
+        "LOOK_TYPE": 0
+      }
+    },
+    "EFFECT_SET_LIST": {
+      "1": "EffectSet_ETK_SWORD_FALL",
+      "2": 0
+    },
+    "IS_ATTACK_STATE": 1
+  },
+  "templates": {
+    "elsword_A_swordFall_M01": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 945768,
+        "line": 29764
+      },
+      "declarationSha256": "abb2d10d16ba21909b76faf0647d4fda45a06e33026556fd97f499227ae42f22",
+      "fields": {
+        "MeshName": "elsword_active_swordFall_sword01.X",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "PlayCount": 1.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword01.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword01.pose.json"
+    },
+    "elsword_A_swordFall_M02": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 946373,
+        "line": 29783
+      },
+      "declarationSha256": "625341b3c737ed2a1947b1d0df1fc49d9523f75ce444803cda82f09b19076ab6",
+      "fields": {
+        "MeshName": "elsword_active_swordFall_sword02.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 10.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            -300.0,
+            -500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.6,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            4.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword02.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword02.pose.json"
+    },
+    "elsword_A_swordFall_M03": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 947240,
+        "line": 29806
+      },
+      "declarationSha256": "97bd224b87d9d230a7e71853712f4fbfb23bd8f9890c4a105fb95a39a67ca861",
+      "fields": {
+        "MeshName": "elsword_active_swordFall_sword02.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 10.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            300.0,
+            200.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.6,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            4.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword02.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword02.pose.json"
+    },
+    "elsword_A_swordFall_M04": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 948105,
+        "line": 29829
+      },
+      "declarationSha256": "7c1a8c921fa2dffdd58287cd39c833f095417502f01800bfe81a6bef551a8fe2",
+      "fields": {
+        "MeshName": "elsword_active_swordFall_sword02.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 10.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            900.0,
+            900.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.6,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            4.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword02.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword02.pose.json"
+    },
+    "elsword_A_swordFall_M05": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 948970,
+        "line": 29852
+      },
+      "declarationSha256": "71e585f3d8c9b5357426f5cb4b015bc6255ac19fab043647767afa51fc0f8850",
+      "fields": {
+        "MeshName": "elsword_active_swordFall_sword02.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 10.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            1500.0,
+            1600.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.6,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            4.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword02.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword02.pose.json"
+    },
+    "SwordFallBlade1": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 964735,
+        "line": 30292
+      },
+      "declarationSha256": "d5907f7bbbb734fe8898eb1653c9aaad58c233ee0b05c051847bedd0cc57b194",
+      "fields": {
+        "MeshName": "Elsword_SisKnight_sword.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 2.0,
+        "NOT_CHECK_LAND_TIME": 0.2,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "glb": null,
+      "poseData": "fx/meshes/Elsword_SisKnight_sword.pose.json"
+    },
+    "SwordFallBlade2": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 965477,
+        "line": 30314
+      },
+      "declarationSha256": "dd3c354d17fd07b4dec2bed30abe211c85e148128a7a29d3c171204b35ca73a7",
+      "fields": {
+        "MeshName": "Elsword_SisKnight_sword.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 2.0,
+        "NOT_CHECK_LAND_TIME": 0.237,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "glb": null,
+      "poseData": "fx/meshes/Elsword_SisKnight_sword.pose.json"
+    },
+    "SwordFallBlade3": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 966219,
+        "line": 30336
+      },
+      "declarationSha256": "541ff1cb9e0308bc25eaa80dcf2b4c02305431039bf229eedd428952882e072e",
+      "fields": {
+        "MeshName": "Elsword_SisKnight_sword.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 2.0,
+        "NOT_CHECK_LAND_TIME": 0.25,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "glb": null,
+      "poseData": "fx/meshes/Elsword_SisKnight_sword.pose.json"
+    },
+    "SwordFallBlade4": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 966961,
+        "line": 30358
+      },
+      "declarationSha256": "09b674a0da174e2e51f04cf16309bc1213bb190234534edecc154713f729bcb8",
+      "fields": {
+        "MeshName": "Elsword_SisKnight_sword.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 2.0,
+        "NOT_CHECK_LAND_TIME": 0.25,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.9,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.75,
+            1.75,
+            1.75
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            7000.0,
+            -5500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            -35.0,
+            -90.0,
+            -90.0
+          ]
+        }
+      ],
+      "glb": null,
+      "poseData": "fx/meshes/Elsword_SisKnight_sword.pose.json"
+    },
+    "elsword_A_swordFall_08": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 87989,
+        "line": 2351
+      },
+      "declarationSha256": "fb12e27acd6d47d8249206bb4056317e3eb5a7efed5357d14b81b3183a26ef4f",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100.0,
+        "Lifetime": 2.0,
+        "NumParticles": 1.0,
+        "TriggerTime": 0.1,
+        "Layer": 15.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "elsword_active_swordFall_sword_plan.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.9,
+            0.6,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            0.9,
+            0.7,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            0.7,
+            0.4,
+            0.2
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.7,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.8,
+            1.0,
+            2.2
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.9,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_sword_plan.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_sword_plan.pose.json"
+    },
+    "elsword_A_swordFall_02": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 82942,
+        "line": 2215
+      },
+      "declarationSha256": "68199cb61b571fdefe45fbba26d2b87bb3fe621b61e01f8dfb37a4862c4e1a58",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100.0,
+        "Lifetime": 1.46,
+        "NumParticles": 1.0,
+        "TriggerTime": 0.1,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "elsword_active_swordFall_light.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.8
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 1.0,
+          "end": 1.46,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.3,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.5,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            0.3,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.7,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            0.3,
+            6.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            38.0,
+            90.0,
+            141.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            -30.0,
+            -80.0,
+            0.0
+          ]
+        }
+      ],
+      "glb": "fx/meshes/elsword_active_swordFall_light.glb",
+      "poseData": "fx/meshes/elsword_active_swordFall_light.pose.json"
+    },
+    "elsword_A_swordFall_09": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 88759,
+        "line": 2374
+      },
+      "declarationSha256": "7bbbbb5152643d72bb91f62d8c2d140a53c43f8e0e226fcc3cb2ce2ccc0c8b33",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10.0,
+        "Lifetime": 0.8,
+        "NumParticles": 10.0,
+        "TriggerTime": 10000.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "Gravity": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              10.0,
+              80.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Steam_BP.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            0.6,
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            1.0,
+            0.4,
+            0.0,
+            {
+              "random": [
+                0.01,
+                0.3
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                100.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                100.0,
+                150.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                400.0,
+                500.0
+              ]
+            },
+            {
+              "random": [
+                400.0,
+                500.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.0,
+              1.2
+            ]
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -10.0,
+                10.0
+              ]
+            },
+            {
+              "random": [
+                10.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                -10.0,
+                10.0
+              ]
+            }
+          ]
+        }
+      ],
+      "glb": null,
+      "poseData": null
+    }
+  },
+  "damageEffects": {
+    "ELSWORD_SWORDFALL_BLADE1": {
+      "DAMAGE_TIME": 9999,
+      "ATTACK_TIME_START": 0.125,
+      "MAIN_EFFECT_NAME": "SwordFallBlade1",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "DAMAGE_DATA": {
+        "BACK_SPEED_Y": 550,
+        "BACK_SPEED_X": 850,
+        "PVP_RATE": 0.6,
+        "CAMERA_CRASH_GAP": 3,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 247.5,
+        "CAMERA_CRASH_TIME": 1,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.3000000000000003,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 0,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 5,
+        "FORCE_FLY": 1,
+        "ARRANGED_FLY": 1,
+        "CAN_REVENGE": 0,
+        "CAN_REFLEX": 0,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 21019,
+        "DAMAGE": {
+          "PHYSIC": 4.831200000000001
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "OFFSET_Y": 48,
+        "OFFSET_X": 54,
+        "ROTATE_X": -5,
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_08",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "FORCE_DIE": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "OFFSET_Y": 0,
+        "OFFSET_X": 0,
+        "BONE_NAME": "Particle_View_01",
+        "ROTATE_X": 5,
+        "PARTICLE_NAME": "elsword_A_swordFall_02",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE2": {
+        "BONE_NAME": "ATTACK_LINE_END0",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE3": {
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "DIE_DAMAGE_EFFECT0": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_FALLEN4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT1": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT2": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE2": {
+      "DAMAGE_TIME": 9999,
+      "ATTACK_TIME_START": 0.125,
+      "MAIN_EFFECT_NAME": "SwordFallBlade2",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "DAMAGE_DATA": {
+        "BACK_SPEED_Y": 550,
+        "BACK_SPEED_X": 850,
+        "PVP_RATE": 0.6,
+        "CAMERA_CRASH_GAP": 3,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 247.5,
+        "CAMERA_CRASH_TIME": 1,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.3000000000000003,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 0,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 5,
+        "FORCE_FLY": 1,
+        "ARRANGED_FLY": 1,
+        "CAN_REVENGE": 0,
+        "CAN_REFLEX": 0,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 21019,
+        "DAMAGE": {
+          "PHYSIC": 4.831200000000001
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "OFFSET_Y": 45,
+        "OFFSET_X": 60,
+        "ROTATE_X": -2,
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_08",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "FORCE_DIE": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "OFFSET_Y": -10,
+        "OFFSET_X": -10,
+        "BONE_NAME": "Particle_View_01",
+        "ROTATE_X": 10,
+        "PARTICLE_NAME": "elsword_A_swordFall_02",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE2": {
+        "BONE_NAME": "ATTACK_LINE_END0",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE3": {
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "DIE_DAMAGE_EFFECT0": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_FALLEN4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT1": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT2": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE3": {
+      "DAMAGE_TIME": 9999,
+      "ATTACK_TIME_START": 0.125,
+      "MAIN_EFFECT_NAME": "SwordFallBlade3",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "DAMAGE_DATA": {
+        "BACK_SPEED_Y": 550,
+        "BACK_SPEED_X": 850,
+        "PVP_RATE": 0.6,
+        "CAMERA_CRASH_GAP": 3,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 247.5,
+        "CAMERA_CRASH_TIME": 1,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.3000000000000003,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 0,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 5,
+        "FORCE_FLY": 1,
+        "ARRANGED_FLY": 1,
+        "CAN_REVENGE": 0,
+        "CAN_REFLEX": 0,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 21019,
+        "DAMAGE": {
+          "PHYSIC": 4.831200000000001
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "OFFSET_Y": 40,
+        "OFFSET_X": 60,
+        "ROTATE_X": 0,
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_08",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "FORCE_DIE": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "OFFSET_Y": -20,
+        "OFFSET_X": -20,
+        "BONE_NAME": "Particle_View_01",
+        "ROTATE_X": 15,
+        "PARTICLE_NAME": "elsword_A_swordFall_02",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE2": {
+        "BONE_NAME": "ATTACK_LINE_END0",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE3": {
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "DIE_DAMAGE_EFFECT0": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_FALLEN4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT1": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT2": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE4": {
+      "DAMAGE_TIME": 9999,
+      "ATTACK_TIME_START": 0.125,
+      "MAIN_EFFECT_NAME": "SwordFallBlade4",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "DAMAGE_DATA": {
+        "BACK_SPEED_Y": 550,
+        "BACK_SPEED_X": 850,
+        "PVP_RATE": 0.6,
+        "CAMERA_CRASH_GAP": 3,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 247.5,
+        "CAMERA_CRASH_TIME": 1,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.3000000000000003,
+        "WAY_OF_SWORD_TYPE": 6,
+        "DAMAGE_TYPE": 0,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 5,
+        "FORCE_FLY": 1,
+        "ARRANGED_FLY": 1,
+        "CAN_REVENGE": 0,
+        "CAN_REFLEX": 0,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 21019,
+        "DAMAGE": {
+          "PHYSIC": 4.831200000000001
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "OFFSET_Y": 40,
+        "OFFSET_X": 60,
+        "ROTATE_X": 2,
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_08",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "FORCE_DIE": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "OFFSET_Y": -25,
+        "OFFSET_X": -25,
+        "BONE_NAME": "Particle_View_01",
+        "ROTATE_X": 20,
+        "PARTICLE_NAME": "elsword_A_swordFall_02",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATED_OFFSET": 1,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE2": {
+        "BONE_NAME": "ATTACK_LINE_END0",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "PASSIVE_PARTICLE3": {
+        "BONE_NAME": "Particle_View_01",
+        "PARTICLE_NAME": "elsword_A_swordFall_09",
+        "POSITION_TYPE": 0,
+        "TRACE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "DIE_DAMAGE_EFFECT0": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_FALLEN4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT1": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      },
+      "DIE_DAMAGE_EFFECT2": {
+        "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4",
+        "POSITION_TYPE": 3,
+        "APPLY_ROTATE": 1
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE_FALLEN4": {
+      "ATTACK_TIME_START": 100,
+      "MAIN_EFFECT_NAME": "elsword_A_swordFall_M06_4",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "PASSIVE_PARTICLE0": {
+        "PARTICLE_NAME": "elsword_A_swordFall_01",
+        "POSITION_TYPE": 3
+      },
+      "PASSIVE_PARTICLE1": {
+        "PARTICLE_NAME": "elsword_A_swordFall_03",
+        "POSITION_TYPE": 3
+      },
+      "PASSIVE_PARTICLE2": {
+        "PARTICLE_NAME": "elsword_A_swordFall_04",
+        "POSITION_TYPE": 3
+      },
+      "PASSIVE_PARTICLE3": {
+        "PARTICLE_NAME": "elsword_A_swordFall_05",
+        "POSITION_TYPE": 3
+      },
+      "PASSIVE_PARTICLE4": {
+        "PARTICLE_NAME": "elsword_A_swordFall_06",
+        "POSITION_TYPE": 3
+      },
+      "PASSIVE_PARTICLE5": {
+        "PARTICLE_NAME": "elsword_A_swordFall_10",
+        "POSITION_TYPE": 3
+      },
+      "CAMERA0": {
+        "EVENT_TIME": 0.01,
+        "GAP": 20,
+        "TIME": 1,
+        "CRASH_TYPE": 3
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE_SPARK4": {
+      "ATTACK_TIME_START": 100,
+      "MAIN_EFFECT_NAME": "elsword_A_swordFall_M07_4",
+      "WAY_OF_SWORD_TYPE": 4,
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Airship_SwordMan_StabDown.ogg"
+      }
+    },
+    "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4": {
+      "ATTACK_TIME_START": 100,
+      "MAIN_EFFECT_NAME": "elsword_A_swordFall_M08_4",
+      "WAY_OF_SWORD_TYPE": 4,
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "USE_GLOBAL_TIME": 1,
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Airship_SwordMan_StabDown.ogg"
+      }
+    }
+  },
+  "callbackReference": {
+    "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "contract": "contracts/is-reference-consumers-v1.json",
+    "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5 reference, not original2016 executable measurement",
+    "prepareAnimationSeconds": [
+      0.03333,
+      0.06666,
+      0.1,
+      0.15
+    ],
+    "releaseAnimationSeconds": [
+      1,
+      1.16666,
+      1.33333,
+      1.5
+    ],
+    "anchor": "Bip01 + worldY60; released from live preparation Dummy01, facingX-59 and worldY+42"
+  },
+  "supersedes": "Only the historical swordFall userAdapters in is-feedback-source-v2; raw profile remains frozen",
+  "limits": [
+    "Source/helper geometry and current simulator/GPU receipts remain separate.",
+    "No full original2016 client input/collision/render trace; timing callbacks are version-qualified."
+  ]
+}

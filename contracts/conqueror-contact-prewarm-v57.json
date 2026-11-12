@@ -1,0 +1,45 @@
+{
+  "scope": "Web allocation closure for Conqueror29008 frozen-player-roster contact and death children",
+  "evidenceClass": "Original2016 declarations/registered projectile producer + fixedV5 secondary-effect consumer + separate Web actual pose regression",
+  "originalClientExecuted": false,
+  "browserMeasuredByThisSlice": false,
+  "originalProjectile": {
+    "name": "DamageEffect_SA_APT_Conqueror_Projectile",
+    "DAMAGE_TIME": 1,
+    "NO_DAMAGE": 1,
+    "normalCount": "12+mutation, mutation<=3",
+    "hyperCount": "mutation<=3, followed by one independent Hyper main",
+    "HIT_DAMAGE_EFFECT0": "DamageEffect_SA_APT_Conqueror_Projectile_Shock",
+    "DIE_DAMAGE_EFFECT0": "DamageEffect_SA_APT_Conqueror_Projectile_Shock",
+    "sourcePc": {"prototype": 20, "assignmentInstruction": 149259}
+  },
+  "originalShock": {
+    "MAIN_EFFECT_NAME": "ADD_Pulse_Bullet_DummyAttackBox_Die",
+    "mainLifetimeSeconds": 1,
+    "TIME_PARTICLE0": {"EVENT_TIME": 0.2, "name": "ADD_PHASE_SHIFT_ATTACK_03"},
+    "TIME_PARTICLE5": {"EVENT_TIME": 0.2, "name": "ADD_QUAKE_BUSTER_05", "DrawCount": 2},
+    "TIME_PARTICLE6": {"name": "ADD_PHASE_SHIFT_ATTACK_08", "DrawCountUpperBound": 3},
+    "sourcePc": {"prototype": 20, "assignmentInstruction": 149475}
+  },
+  "fixedV5": {
+    "path": "X2Lib/X2DamageEffect.cpp",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+    "contactChildLines": [4500, 4503],
+    "contactCountAndRetirementLines": [4562, 4565],
+    "hitChildFactoryLines": [5029, 5106]
+  },
+  "webPoolRule": {
+    "existingTraversal": "One DIE closure per projectile",
+    "addedTraversal": "Each explicitly declared HIT_DAMAGE_EFFECT child, bounded by confirmed original DAMAGE_TIME1 and frozen opposing-player count",
+    "normalShockBound": "15*(1+targetCount)",
+    "hyperShockBound": "3*(1+targetCount), independent Hyper main retained",
+    "whyTargetCount": "Web contact loops may accept multiple opposing actors in a final packet before parent retirement; budget the finite frozen actor roster without changing combat",
+    "unknownDamageTime": "Only affected HIT child closure stays explicit single-emitter lower-bound",
+    "NO_DAMAGE": "Does not suppress contact child creation",
+    "notGuaranteed": "Arbitrary forced recasts or unbounded independent NPC contact rosters"
+  },
+  "preserved": ["Combat", "Original declarations", "Hit and death factories", "Target collisions", "Particle count", "Damage", "Lifetimes", "Materials", "DrawCount", "Random DrawCount rendering implementation", "Resource closure"],
+  "webObservations": "../reports/conqueror-contact-prewarm-v57-evidence/manifest.json",
+  "notSourceExpectations": ["Parent candidate-a cold count231", "Observed near-contact particle peaks", "NullEngine preparation time", "Actual browser max-frame improvements"]
+}

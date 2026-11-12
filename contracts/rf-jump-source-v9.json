@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceClass": "fixed-V5-source-not2016-measurement",
+  "targetClientMeasured": false,
+  "target": {
+    "build": "Steam NA V6.0420.5",
+    "declaration": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "INIT_PHYSIC": {
+      "RUN_SPEED": 725,
+      "RELOAD_ACCEL": 2000,
+      "DASH_JUMP_SPEED": 2200,
+      "WALK_SPEED": 500,
+      "G_ACCEL": 4000,
+      "MAX_G_SPEED": -2000,
+      "JUMP_SPEED": 1500
+    },
+    "sourceLocation": {
+      "prototype": 0,
+      "assignmentInstruction": 28
+    },
+    "actualRawKl82Reparsed": true
+  },
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.h",
+      "localPath": ".cache/native-reference/X2Lib/X2BuffTemplet.h",
+      "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+      "gitBlob": "cce459ca0f237407dc40538edbb162fbac6e1574",
+      "bytes": 44971
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SocketItem.h",
+      "localPath": ".cache/native-reference/X2Lib/X2SocketItem.h",
+      "sha256": "c6a2188db7e90e8c22b9bbf2a1455aa5d5266c7dd2191dddf02c881a64c1f997",
+      "gitBlob": "5efa5f79b19215c58fb2b65724b2b80f95ee5d59",
+      "bytes": 48486
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+      "localPath": ".cache/native-reference/X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "bytes": 521479
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.h",
+      "localPath": ".cache/native-reference/X2Lib/X2GameUnit.h",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "gitBlob": "41349c64aee113dd97dbe4128d58a109a2886ab2",
+      "bytes": 191004
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "localPath": ".cache/native-reference/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "localPath": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    }
+  ],
+  "presetSemantics": "final-option-percent-v5-half-movement-jump",
+  "supportedComposition": {
+    "input": "already-converted final option percentage, represented by1+percentage; raw socket point-to-percent Lua curve outside adapter",
+    "buffPercentage": 1,
+    "passiveSum": 0,
+    "passiveMultiple": 1,
+    "swapFixRelationFactors": "absent",
+    "movementAndJumpModifier": 0.5,
+    "animationModifier": 1,
+    "formula": "float32 multiplier=((1+float32(optionPercent))-1)*0.5+1; source basic-stat multiplication also float32"
+  },
+  "sourceFunctions": {
+    "X2BuffTemplet.h:893-945": "CX2AdditionalStatByBuff::UpdateResultValueWithOptionData",
+    "X2GameUnit.cpp:12061-12067": "animation unscaled; Walk/Dash/Jump/DashJump0.5 modifier",
+    "X2GameUnit.cpp:12575-12582": "target basic physics initialize the additional stat",
+    "X2GameUnit.h:2612-2615": "GetWalk/GetDash/GetJump/GetDashJump result getters",
+    "X2GUUser.cpp:25726-25745": "ordinary Down&&!Up subtracts one extraG*elapsed before common physics",
+    "X2GUUser.cpp:20084-20093": "ordinary gravity plus separate DownAccel; both clamp MaxG",
+    "X2GURaven.cpp:6594-6733": "dash jump extra1.2G; Down edge terminal speed; descent Up edge bounce latch; Down clears latch",
+    "X2GURaven.cpp:6682-6707": "air-turn ceiling is GetJumpSpeed including attributes",
+    "X2GURaven.cpp:6481-6486": "DashEnd entry uses GetDashSpeed"
+  },
+  "freeEventSourceSpans": [
+    {
+      "method": "RSI_WAIT_EventProcess",
+      "startLine": 6129,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "e115382bf2a3530578d2ed617e1e1a344788bf5439cf6fc8f6303eb6baefe2e8",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_WALK_EventProcess",
+      "startLine": 6193,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "9e65af5ffb23e0f0affe6e0bc385da9692bb10ccfcd7ca255f6ba3899f51b1a0",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_JUMP_READY_EventProcess",
+      "startLine": 6248,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "2a44e2e66df7cfcdf6f1b0e9813abd8daf5fc06696491e64b632665cc47c578a",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_JUMP_UP_EventProcess",
+      "startLine": 6282,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "020f05d111533ffb1dafc01920b334f1a681b6ec69e8921a9ee154ab335a03e2",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_JUMP_DOWN_EventProcess",
+      "startLine": 6316,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "cbe05c02b4f8ba5810609684ce54080fe2351718a117455420c57197bfc3c5fc",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_JUMP_LANDING_EventProcess",
+      "startLine": 6364,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "b27e55bab251ff870ee93566c07965af53b3037b8a7fdb7b68ca6523f360e402",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_DASH_EventProcess",
+      "startLine": 6419,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "e18363c8031d328891cbb4ea36a1901bdcd768125e2d1f02efb727c79a70056b",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_DASH_END_EventProcess",
+      "startLine": 6514,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "414a46d7194c4efa9783e2c6d419d676d285f060363487cb2a08cd60990ac70a",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_DASH_JUMP_EventProcess",
+      "startLine": 6628,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "58ec004e3f8babc4e090eb59a0a7f0502a1ce8996931c2032fb7a9f36cfc66a5",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_DASH_JUMP_LANDING_EventProcess",
+      "startLine": 6735,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "0e30f9994f3eb0289524e7e860dca86bb1885ad0e01efe24deefc724624422b7",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    },
+    {
+      "method": "RSI_DASH_JUMP_POWER_LANDING_EventProcess",
+      "startLine": 6807,
+      "sourceSpanEndsBeforeLine": 8293,
+      "sha256": "ca8bd212d481e6f76a476ddeca9f7dad1fbc4a12a80a44cdc33e9fb657383676",
+      "scope": "event-order audit reported to integrator; raw source stays ignored"
+    }
+  ],
+  "sourceEventOrder": "frameFuture physical integration before EventProcess; integrator owns full input-order repair",
+  "nativeProbe": "reports/rf-jump-stat-source-execution-v9.json",
+  "unverified": [
+    "matching2016 C++ consumer/executable constant mapping",
+    "original-client jump/platform input trajectories",
+    "raw socket points to final percentage Lua formula",
+    "speed Buff/passive composition outside this neutral fixed-percentage fixture",
+    "complete physics float32 integration/world gravity/water/moving floors",
+    "custom2016 UPDOWN_CANCEL_AFTER native callback and boundary"
+  ]
+}

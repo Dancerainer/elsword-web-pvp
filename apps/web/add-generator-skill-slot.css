@@ -1,0 +1,9 @@
+/* Original 53x53 BG_ADD_SKILLSLOT crop; source hashes live in mm-generator-ui-v32.json. */
+.skill-slot.add-generator-selected{background-image:url('/assets/ui/add/bg_add_skillslot.png');background-size:100% 100%}
+.skill-slot>.add-generator-action{position:absolute;bottom:2px;right:2px;width:14px;height:14px;display:grid;place-items:center;border:1px solid #a1a9c3;border-radius:3px;background:#161a30e8;color:#dae4ff;pointer-events:none;z-index:2}
+.skill-slot>.add-generator-action svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.skill-slot[data-generator-mode="generator-fire"]>.add-generator-action{border-color:#b8f4ff;background:#235674;color:#e3fcff}
+.skill-slot[data-generator-mode="generator-fire"]>.add-generator-action svg{fill:currentColor;stroke-width:1}
+.skill-slot.add-generator-selected>.add-generator-action{color:#fff;background:#44317ce8}
+.skill-slot>.add-generator-action[hidden],.skill-tooltip>.add-generator-hint[hidden]{display:none}
+.skill-tooltip>.add-generator-hint{border-top:1px solid #615176;padding-top:7px;color:#dfc7ff}

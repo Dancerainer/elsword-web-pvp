@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "originalClientExecuted": false,
+  "classification": "Saved target2016 static evidence applied to current Web controller capture; fairness and snapshot reuse are explicit Web adaptations.",
+  "targetImage": {
+    "description": "snapshot3-derived analysis image, not complete original client or recovered original source",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba"
+  },
+  "originalConfiguration": {
+    "archive": "asset_sources/client/data/data036.kom",
+    "archiveSha256": "0399edcd64e5edd5bdc5c63c86ea48ab8deef5a4490c72619584635034e661e3",
+    "entry": "Enum.lua",
+    "entrySha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+    "qualification": "Referenced from the saved full-pvp config-binding evidence, not re-executed or independently re-extracted in this change. Numeric names alone do not prove native field semantics."
+  },
+  "sources": [
+    {
+      "path": "asset_sources/upstream/docs/PVP_INNER_NATIVE_2016.md",
+      "bytes": 29314,
+      "sha256": "ae870796a9622f453229230d6067d4084605fedac26ae58d935a117ebc8e3ed5"
+    },
+    {
+      "path": "asset_sources/upstream/docs/PVP_INNER_FULL_APPLICATION_2016.md",
+      "bytes": 11454,
+      "sha256": "58906ebe19af6c880a4ae5cd18518c9b1deafd4f59f1b3c1813b2791d1ab6bda"
+    },
+    {
+      "path": "asset_sources/upstream/reports/analysis/pvp-inner-followup/sync-rtti.json",
+      "bytes": 4458,
+      "sha256": "8a28c3e26e9bdc492a83dcd8321ad17677ec72d89ddb38fc0b784b243f4204d8"
+    },
+    {
+      "path": "asset_sources/upstream/reports/analysis/pvp-inner-followup/application-source-byte-audit.json",
+      "bytes": 202834,
+      "sha256": "7b4e97ccbc99c4cc56a5e69cac6209b5e4e459042833c5ab90997aff268c015e"
+    },
+    {
+      "path": "asset_sources/upstream/reports/analysis/full-pvp/full-pvp-force-keys.json",
+      "bytes": 7422,
+      "sha256": "ef2a990fc8fd9f572543c3be251b71964435d7e4421a895dc55c2d922b1dbcc9"
+    },
+    {
+      "path": "asset_sources/upstream/reports/analysis/full-pvp/source-byte-audit.json",
+      "bytes": 1393715,
+      "sha256": "09110611adc2338e4c9fecaf6b2d3ad27053e19f0210556237a9cba73e853a8f"
+    },
+    {
+      "path": "reports/network-teleports-v34.md",
+      "bytes": 5964,
+      "sha256": "db5f26a0857422056868a87985c21ee4813bfafcb0115782b4a71b337effcde4"
+    },
+    {
+
+      "bytes": 14646,
+      "sha256": "77ba640a1efd84826058b79bd653e45b8157f430b064d7553ef6b88defdb80c6"
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "state-and-transition-identity",
+      "evidenceClass": "target2016-static-native",
+      "sourceAddresses": [
+        "0x31f849c0",
+        "0x31fb49f0"
+      ],
+      "original": "Current state from actor+5e38, force at +5e08, transition tag at +5e28; request tag uses modulo 32000. State and transition identity are separate.",
+      "web": "Existing state/stateSerial/animationName controller identity remains; tuple field comparison replaces JSON allocation. Same-state reentry emits StateStart, animationTransitionSerial alone does not.",
+      "fidelity": "partial-semantic; existing mechanism preserved and capture optimized",
+      "gaps": [
+        "No raw tag modulo or 24-field player layout in this action change.",
+        "No target match trace proves all original state callbacks."
+      ]
+    },
+    {
+      "id": "force-animation-transition",
+      "evidenceClass": "target2016-static-native",
+      "sourceAddresses": [
+        "0x31f9912e",
+        "0x31f9920c",
+        "0x31d166b0",
+        "0x31d0d280"
+      ],
+      "original": "Received force=1 disables the requested animation transition on the proved branches; both branches retain configured start time.",
+      "web": "Existing direct reaction presentationTransition.enabled and animationSpeedRamp intent is retained; no gameplay rewind is inferred from force.",
+      "fidelity": "partial; prior Web reaction intent preserved",
+      "gaps": [
+        "Full original animation-controller runtime objects absent.",
+        "Local 31f849c0 protected-frame replay is a distinct path and is not copied into remote gameplay."
+      ]
+    },
+    {
+      "id": "source-frame-and-delta-time",
+      "evidenceClass": "target2016-static-native",
+      "sourceAddresses": [
+        "0x31f902d0",
+        "0x321ff390",
+        "0x321ff3e7"
+      ],
+      "original": "Actor+160 receives update float delta; UDP update counter is separate.",
+      "web": "Reliable source frame scheduling remains separate from receiver-positive-step stateTime/animationTime and v34 phase-matched calibration.",
+      "fidelity": "partial-semantic; existing policy preserved",
+      "gaps": [
+        "Web uses its established 60 Hz simulation; target PvP frequency is not measured.",
+        "Web bounded recovery parameters are not claimed as original."
+      ]
+    },
+    {
+      "id": "per-actor-receive-queues",
+      "evidenceClass": "target2016-static-native plus independently demonstrated Web starvation fix",
+      "sourceAddresses": [
+        "0x33013c3c",
+        "0x33013c84",
+        "0x31f6a200",
+        "0x31f45460"
+      ],
+      "original": "Separate unprotected remote and protected local synchronization lists; queue-head advance and count decrement are proved.",
+      "web": "Per-owner source ordering preserved; on global event-budget exhaustion next step rotates its first owner. One StateStart per owner per positive step, global work cap, life isolation and terminal records remain.",
+      "fidelity": "partial queue concept; fairness is Web adaptation",
+      "gaps": [
+        "Original queue fill/recovery timing and cross-owner scheduling are not recovered.",
+        "No claim that round-robin is the original policy."
+      ]
+    },
+    {
+      "id": "change-driven-frame-capture",
+      "evidenceClass": "target2016 compact-field principle plus Web optimization",
+      "sourceAddresses": [
+        "0x31f8b110",
+        "0x31f8b1d0",
+        "0x31fb49f0"
+      ],
+      "original": "Player delta mask accumulates 24 fields, new counter must advance before applying a complete known state.",
+      "web": "Existing logical controller/effect change detector now requests one frame-local detached report; pose and reliable action reuse it, live effect closure clones already encoded records, dead/retired records use fresh encoding.",
+      "fidelity": "principle applied; not original binary algorithm",
+      "gaps": [
+        "Dedicated 24-bit/62-byte original codec is outside this action change.",
+        "Explicit supplied report headers preserve previous fresh-effect semantics."
+      ]
+    }
+  ],
+  "verification": {
+    "unitTests": [
+      "tests/unit/network2016-action-capture.test.mjs",
+      "tests/unit/network2016-queue-fairness.test.mjs"
+    ],
+    "comparisonTool": "tools/validation/measure-network2016-actions.mjs",
+    "comparison": "reports/network2016-actions-comparison.json",
+    "limits": [
+      "Current Web synthetic controls, not target-client gameplay oracle.",
+      "Complete Native integration is delegated to root after restoring frozen v34 assets.",
+      "No original client, DLL, anti-cheat or package script execution."
+    ]
+  }
+}

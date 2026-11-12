@@ -1,0 +1,29 @@
+/* The original 351px guild dialog and 56x73px passive frames. */
+.guild-skill-overlay{position:fixed;inset:0;z-index:1300;background:#0006;display:grid;place-items:center;padding:12px}
+.guild-skill-overlay[hidden]{display:none}
+.guild-skill-panel{position:relative;box-sizing:border-box;width:351px;max-width:calc(100vw - 24px);max-height:calc(100vh - 24px);overflow:auto;padding:5px 8px 10px;color:#303030;font:11px system-ui,sans-serif;background-image:url('/assets/ui/guild-window/helper_bg1_top.png'),url('/assets/ui/guild-window/helper_bg1_bottom.png'),url('/assets/ui/guild-window/helper_bg1_middle.png');background-position:center top,center bottom,center 10px;background-repeat:no-repeat;background-size:100% 10px,100% 10px,100% calc(100% - 20px);filter:drop-shadow(0 4px 10px #0008)}
+.guild-skill-header{height:31px;display:flex;align-items:center;gap:6px;margin:0 0 4px}
+.guild-skill-header h2{margin:0;white-space:nowrap;font:bold 22px/1 system-ui,sans-serif;color:#fff;-webkit-text-stroke:1px #111;paint-order:stroke fill;text-shadow:1px 2px 1px #111,-1px -1px #111}
+.guild-skill-note{display:flex;align-items:center;gap:4px;margin:0;line-height:1.3;font-size:10px;white-space:nowrap;color:#313131}
+.guild-skill-note:before{content:'';flex:0 0 18px;height:18px;background:url('/assets/ui/guild-window/feel.png') center/18px 18px no-repeat}
+.guild-skill-header button{flex:0 0 24px;width:24px;height:24px;padding:0;margin-left:auto;overflow:hidden;border:0;background:url('/assets/ui/guild-window/exit_normal.png') center/24px 24px no-repeat;color:transparent;cursor:pointer}
+.guild-skill-header button:hover{background-image:url('/assets/ui/guild-window/exit_over.png')}
+.guild-skill-header button:focus-visible{outline:2px solid #168ad2;outline-offset:2px}
+.guild-skill-body{box-sizing:border-box;width:324px;max-width:100%;margin:auto;padding:6px 10px 9px;background-image:url('/assets/ui/guild-window/guild_bg_top.png'),url('/assets/ui/guild-window/guild_bg_bottom.png'),url('/assets/ui/guild-window/guild_bg_middle.png');background-position:center top,center bottom,center 14px;background-repeat:no-repeat;background-size:100% 14px,100% 13px,100% calc(100% - 27px)}
+.guild-skill-tabs{display:grid;grid-template-columns:repeat(3,1fr);align-items:center;gap:4px;height:27px;margin:0 1px 5px;border-bottom:1px solid #b7b7b7;text-align:center;font-size:13px;font-weight:bold}
+.guild-skill-tabs .inactive{color:#fff;text-shadow:1px 1px 3px #777,-1px -1px 3px #777}
+.guild-skill-tabs .current{color:#bcf000;text-shadow:1px 1px 2px #223000,-1px -1px 2px #223000,1px -1px 2px #223000,-1px 1px 2px #223000}
+.guild-skill-points{display:grid;grid-template-columns:1fr 1fr 107px;gap:4px;align-items:center;height:23px;margin-bottom:8px;text-align:center;white-space:nowrap;font-weight:bold;color:#595959}
+.guild-skill-points>span{height:22px;line-height:21px;border:1px solid #aaa;border-radius:3px;background:#d5d5d5;box-shadow:inset 0 1px 2px #7779,0 1px #fff;font-size:11px}
+.guild-skill-points>.guild-skill-reset{background:url('/assets/ui/guild-window/btn_bg_normal.png') center/100% 22px no-repeat;border:0;border-radius:0;box-shadow:none;color:#ffe224;text-shadow:1px 1px #775b00,-1px -1px #775b00}
+.guild-skill-grid{display:grid;grid-template-columns:repeat(4,56px);gap:18px 20px;box-sizing:border-box;width:302px;padding:10px 9px;margin:0 auto;background-image:url('/assets/ui/guild-window/black_bg_top.png'),url('/assets/ui/guild-window/black_bg_bottom.png'),url('/assets/ui/guild-window/black_bg_middle.png');background-position:center top,center bottom,center 14px;background-repeat:no-repeat;background-size:100% 14px,100% 12px,100% calc(100% - 26px)}
+.guild-skill-card{position:relative;width:56px;height:73px;padding:0;background:url('/assets/ui/guild-window/skill_bg_passive.png') center/56px 73px no-repeat;outline:none;cursor:default}
+.guild-skill-card:hover,.guild-skill-card:focus-visible{outline:1px solid #c1edff;outline-offset:1px}
+.guild-skill-icon{position:absolute;left:5px;top:5px;display:block;width:var(--skill-tree-icon-size,46px);height:var(--skill-tree-icon-size,46px);object-fit:contain}
+.guild-skill-passive{position:absolute;left:5px;right:5px;top:5px;text-align:center;color:#c7fb00;font:bold 7px/9px Tahoma,sans-serif;letter-spacing:.7px;text-shadow:1px 1px #102500,-1px -1px #102500}
+.guild-skill-level{position:absolute;left:5px;top:39px;color:#fff;font:bold 11px/13px Tahoma,sans-serif;text-shadow:1px 1px #000,-1px -1px #000,1px -1px #000,-1px 1px #000}
+.guild-skill-master{position:absolute;left:3px;top:54px;width:17px;height:15px}
+.guild-skill-rank{position:absolute;left:21px;top:54px;width:30px;height:15px;text-align:center;background:url('/assets/ui/guild-window/bg_skillsp_text_box.png') center/30px 15px no-repeat;font:bold 12px/15px Tahoma,sans-serif;color:#b8eb24;text-shadow:1px 1px #223900,-1px -1px #223900}
+.guild-skill-card h3,.guild-skill-description{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.guild-skill-overlay>.picker-tooltip{z-index:2;background:#080808ed;color:#fff;border-color:#888}
+@media(max-width:350px){.guild-skill-body{overflow-x:auto}.guild-skill-note{font-size:9px}.guild-skill-header h2{font-size:20px}}

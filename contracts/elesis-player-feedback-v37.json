@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "scope": "Elesis GM/BH/CA player-feedback execution follow-up",
+  "targetClientMeasured": false,
+  "originalSources": {
+    "elesis": {
+      "path": "asset_work/raw/data/data036.kom/ELESIS_KNIGHT.lua",
+      "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d"
+    },
+    "bloodCutterNpc": {
+      "path": "asset_work/raw/data/data037.kom/Elesis_BloodCutter.lua",
+      "sha256": "cfe229e11f92a42b66ae84529fa1090e1688fc1992917b51c971dd7ddf41c8d2"
+    },
+    "effectSets": {
+      "path": "asset_work/raw/data/data036.kom/EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work/raw/data/data036.kom/DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "meshTemplates": {
+      "path": "asset_work/raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5"
+    }
+  },
+  "qualifiedReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "file": "X2GUEL.cpp",
+    "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+    "evidenceClass": "fixed source version reference containing 2026 reconstructed methods; not a matching target2016 executable consumer",
+    "fragments": [
+      {
+        "method": "DrasticChargeProc_FrameMove",
+        "lines": [
+          11872,
+          11899
+        ],
+        "purpose": "retains set handles across skill phases and stops both loop/ground handles after leaving the skill"
+      },
+      {
+        "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_EventProcess",
+        "lines": [
+          9445,
+          9462
+        ],
+        "purpose": "landing and animation end precede any buffered reattack"
+      },
+      {
+        "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_StartFurture",
+        "lines": [
+          9494,
+          9507
+        ],
+        "purpose": "initial two-additional-attack budget, decrement only on reattack state entry"
+      }
+    ]
+  },
+  "implemented": [
+    {
+      "id": "GM-leap-forward-control",
+      "evidenceClass": "target2016 skill description and original class physics bound to an existing explicitly qualified Web movement adapter",
+      "state": "ESI_SI_A_EL_LEAP_CRASH_JUMP",
+      "rootCause": "The one-time horizontal impulse was erased by RELOAD_ACCEL before the jump ended; the retained vertical impulse made the latter part of the action appear to jump in place.",
+      "behavior": "The jump phase retains its horizontal control through existing passiveSpeed.x; CommonStateStart releases that control on landing or any transition.",
+      "unchangedRawPhysics": {
+        "WALK_SPEED": 500,
+        "RUN_SPEED": 740,
+        "JUMP_SPEED": 1500,
+        "RELOAD_ACCEL": 2000,
+        "G_ACCEL": 4000
+      },
+      "limitation": "Exact original skill launch, charge-dependent landing shockwave and original-client trajectory remain unverified. No original profile field is rewritten."
+    },
+    {
+      "id": "Elesis-explicit-effect-handle-release",
+      "evidenceClass": "qualified reference StopEffectSet lifetime plus current split combat/presentation ownership",
+      "rootCause": "The stop helper emitted no end event when a visual-only member had already retired from the combat list, leaving a renderer-owned particle alive.",
+      "behavior": "Emit effectEnded for every retained source handle, including retired handles; mark live entries endEmitted and clear handle arrays after release.",
+      "primaryReportedSkill": 28206,
+      "scope": "Existing explicit Elesis loop/skill handle groups; no template lifetime is shortened globally."
+    },
+    {
+      "id": "CA-668ZX-projectile-binding",
+      "evidenceClass": "target2016 separately declared set/damage/template bound to the matching FIRE phase; native phase-selection consumer unverified",
+      "state": "ESI_DASH_JUMP_COMBO_SDK_ZX_FIRE",
+      "rootCause": "The original fire state has no raw effect-set list; its separately named damage set and moving carrier were omitted from the executable dependency closure.",
+      "effectSet": "EffectSet_SDK_Dash_Jump_Combo_ZX",
+      "damageEffect": "DamageEffect_SDK_Dash_Jump_Combo_ZX",
+      "mainTemplate": "SDK_Combo_Projectile",
+      "originalMemberStart": 0.3,
+      "originalTemplateLifetime": 0.5,
+      "originalTemplateVelocity": [
+        2000,
+        -1000,
+        0
+      ],
+      "behavior": "Spawn the declared set at the fire-phase origin and let its .3 member release run once. The literal mesh executor consumes its original velocity and lifetime.",
+      "limitation": "The original alternate Front variant exists, but its selector and any native charge-dependent scale are unresolved and remain unsupported. No multiplier or forward-variant selector is guessed."
+    },
+    {
+      "id": "WildShock-original-emission-clock",
+      "evidenceClass": "original snapshot vtable registration, native jump tables, FrameMove predicate and float bytes",
+      "skillId": 28027,
+      "before": 0.93,
+      "after": 0.55,
+      "rootCause": "A primary visual cue .93 was incorrectly used as the native damage-set emission callback. Original registered FrameMove tests float32 .55 before creating both damage sets.",
+      "nativeContract": "contracts/elesis-native-consumers-v37.json#wildShock",
+      "unchanged": "Original primary visual .93 cue, damage member clocks and raw profile declarations remain intact."
+    },
+    {
+      "id": "CA-ZZZXX-original-input-and-foot-priority",
+      "evidenceClass": "original snapshot callback registration, fresh input crosswalk and earliest support branches",
+      "states": [
+        "ESI_COMBO_SDK_ZZZX",
+        "ESI_COMBO_SDK_ZZZXX"
+      ],
+      "rootCause": "A2026 reconstructed helper was used to override the final input with Z and retain unsupported ground actions until animation end. Original6457 predicate proves X and both original callbacks fall immediately when support is lost.",
+      "behavior": "ZZZX buffers fresh X in original [.153,.666) and dispatches after.7. These two ground actions resolve early unsupported footing to JUMP_DOWN, subtracting original30 from Y.",
+      "nativeContract": "contracts/elesis-native-consumers-v37.json#caFinalCommand",
+      "limitation": "Only these proven states replace the reconstructed helper; original guide category Z and all raw cancel clocks stay unchanged."
+    },
+    {
+      "id": "CA-BloodCutter-original-request-delay",
+      "evidenceClass": "original registered caster FrameMove, request wrapper, paired delay deque consumer, original PvP FrameMove elapsed forwarding and original NPC KL parse",
+      "nativeContract": "contracts/elesis-blood-cutter-delay-v37.json",
+      "skillId": 28023,
+      "rootCause": "The old adapter spawned the NPC effect immediately at the caster .01 DUMMY-creation gate, omitting original request delay .3 and independent NPC .01 emission. It also used effect age as NPC age.",
+      "behavior": "Create and consume the original temporary DUMMY at caster .01, freeze the request origin/direction/line/facing/skill/power/branch, count down .3 on the game frame clock independently of caster STOP and animation speed, then advance a hidden NPC to its .01 effect emission. Speed2000 starts at NPC .1 and walk ends at NPC2.",
+      "ownership": "Strict pending request and NPC-stage validation; only current network owner can consume requests. Full/critical owner packets preserve stages, clear absent queues and restore frozen effect branch. New life epoch replacement cannot inherit an absent old queue.",
+      "webPolicies": [
+        "Pending queue capacity4 is a host safety bound, not an original native limit.",
+        "Death/disconnect clears unissued requests in the Web owner-life model; original queue does not establish per-caster death cancellation.",
+        "Local NPC stage starts after the request release; original server acknowledgement latency and original-client dynamic timing remain unmeasured."
+      ]
+    }
+  ],
+  "preservedOrOpen": [
+    {
+      "id": "BH-668XZ",
+      "status": "preserve-reviewed-two-additional-attacks",
+      "reason": "The fixed reference supplies an initial attack plus two additional attacks. A low jump can land before the next original dispatch window; that branch must retain its landing priority."
+    },
+    {
+      "id": "Elesis-cancel-feel",
+      "status": "preserve-target-clocks",
+      "reason": "Target raw cancel fields remain unchanged. No shared timing multiplier or shortened cancel windows are inferred from a hand-feel report."
+    }
+  ],
+  "regressions": {
+    "file": "tests/combat/elesis-feedback-v37.test.mjs",
+    "evidenceClass": "current simulation and explicit effect-event regression; not original-client traces",
+    "coverage": [
+      "left/right walking and dashing Leap forward continuation and landing",
+      "Drastic live and already-retired handle cleanup",
+      "idempotent cleanup and retained skill-internal handles",
+      "original native Wild Shock .55 emission independent of its .93 visual cue",
+      "independent request/NPC timing, frozen payload, caster STOP, malformed wire state, full and remote owner reconstruction, new epoch lifecycle and explicit Web death policy"
+    ],
+    "bloodDelayFile": "tests/combat/elesis-blood-delay-v37.test.mjs"
+  },
+  "nativeRegression": {
+    "file": "tests/combat/elesis-feedback-native-v37.test.mjs",
+    "evidenceClass": "actual original poses, WASM and Garpai collision consumed by current Web simulation; not original-client dynamic traces",
+    "coverage": [
+      "four walking/dashing Leap Native landing trajectories",
+      "CA projectile original .3 release, 2000/-1000 movement and .5 lifetime in both directions",
+      "full-owner packet shape validation",
+      "actual sampled Z Z Z X X continuation with both original final-command damage helpers hitting real targets in both directions",
+      "full-owner reconstruction during and after the final command",
+      "both directions actual Blood cast, pending owner transfer, carrier hit and finite lifetime"
+    ],
+    "bloodDelayFile": "tests/combat/elesis-blood-delay-native-v37.test.mjs"
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "schema": "rf-xxx-candidate-v15",
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "recoveryCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+  "targetFiles": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "bytes": 398092,
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "gitBlob": "cf2f7659da24048766df94e6f110c84669483378"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "bytes": 183136,
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "gitBlob": "1f78040d224f5f095206bb6498ff710232be0a7e"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "bytes": 4395607,
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "gitBlob": "c45738ebcd24c6d6ed182a659b925dfa6b426583"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "bytes": 5409874,
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "gitBlob": "fe2f5d096eddd8266a6a1e90d1b87f5a64c9de9e"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": ".cache/native-reference/X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "spans": [
+        {
+          "signature": "void CX2GURaven::RSI_COMBO_XXX_FrameMove(",
+          "firstLine": 8541,
+          "lastLine": 8600,
+          "bytes": 1943,
+          "sha256": "5d51e9c03f453b0c90b9f278035597228360aac8a12ac173166a4bc532b77c84"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_WAIT_EventProcess(",
+          "firstLine": 6129,
+          "lastLine": 6177,
+          "bytes": 1512,
+          "sha256": "ff3cbfeb1fb7acf21cb9034424e1027b8f32071f117a25c9801f4579e4284d30"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_DOWN_EventProcess(",
+          "firstLine": 6316,
+          "lastLine": 6362,
+          "bytes": 1043,
+          "sha256": "2b552384104ded1e6b0d399ad21441a44c3ad5a893f55f4c1b19c0a673597915"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_COMBO_Z_EventProcess(",
+          "firstLine": 8992,
+          "lastLine": 9004,
+          "bytes": 254,
+          "sha256": "6613fc15587d2c04fd25ebaf1e0cb29d2979789b1112da51ad392dcc922edc5c"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "spans": [
+        {
+          "signature": "void CX2GUUser::CommonStateStart(",
+          "firstLine": 13922,
+          "lastLine": 14810,
+          "bytes": 30056,
+          "sha256": "35a296c47f9054c98102fef7237a5b04b5bb56dc457a1596a5c8b201db3339e7"
+        },
+        {
+          "signature": "bool CX2GUUser::SetDamageData(",
+          "firstLine": 31476,
+          "lastLine": 31503,
+          "bytes": 1801,
+          "sha256": "b51ca12dd3bafb7ba261ef1b4f33a687e765e2f7309d99f9035a204b88bed0d1"
+        },
+        {
+          "signature": "HRESULT CX2GUUser::OnFrameMove(",
+          "firstLine": 6566,
+          "lastLine": 6877,
+          "bytes": 10015,
+          "sha256": "7da02647750341b4bb8ce2bfaabf114d46bca7b82601be5604eb1976bc0af42b"
+        },
+        {
+          "signature": "void CX2GUUser::CommonFrameMove_TimedEvent(",
+          "firstLine": 18123,
+          "lastLine": 18438,
+          "bytes": 12294,
+          "sha256": "9a5896ef29474b88dc068bb39c248663d7a604e60b0941064880785f9adaeb67"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "bytes": 130812,
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "spans": [
+        {
+          "signature": "bool CX2DamageManager::SetDamageDataFromLUA( DamageData* pDamageData, KLuaManager& luaManager, const char* pTableName, float fPowerRate, const bool IsEqippedMemo_ )",
+          "firstLine": 68,
+          "lastLine": 584,
+          "bytes": 22592,
+          "sha256": "2fbb380c8f42c2036b0213f7a715bbd0a2db5b8286c74dd2d6453856c2a0fe3b"
+        },
+        {
+          "signature": "bool CX2DamageManager::DamageCheck(",
+          "firstLine": 586,
+          "lastLine": 669,
+          "bytes": 2158,
+          "sha256": "d33701c4ee42f61f4c291e4bb3ffb7b4bf86d538778eed933fda034dbf46546e"
+        },
+        {
+          "signature": "bool CX2DamageManager::CollisionDataToUnit(",
+          "firstLine": 2373,
+          "lastLine": 2593,
+          "bytes": 6773,
+          "sha256": "b8dd1c9c3ab96121e2709feddabb9ea72fd19a8ae6a141ee3e97c11c86976f1e"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.h",
+      "bytes": 57466,
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "spans": [
+        {
+          "signature": "void SimpleInit(",
+          "firstLine": 1103,
+          "lastLine": 1298,
+          "bytes": 5391,
+          "sha256": "0eef57a24a26b0a4fa672c5dc3ce65616a0df573f0d1919f2a17b3618dce3161"
+        }
+      ]
+    }
+  ],
+  "targetDeclarations": {
+    "effectSet": {
+      "raw": {
+        "NAME": "EffectSet_A_RF_XXX",
+        "EFFECT0": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "NAME": "Raven_Hand_FireSM",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_RF_XXX",
+          "POSITION_OFFSET_Y": 100,
+          "POSITION_OFFSET_X": 150,
+          "START_TIME": 0.25,
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0.35,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 10954
+      },
+      "runtimeBinding": "resource-only; target owner callback unverified; do not dispatch"
+    },
+    "damageEffect": {
+      "raw": {
+        "DAMAGE_TIME": 18,
+        "MAIN_EFFECT_NAME": "RAVEN_RF_XXX_ATTACK_BOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 2,
+          "LOCK_ON_TYPE": 4
+        },
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.15
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 750,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": -300,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 300,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01_D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EnchantHand_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EMK_BigBurst_P03",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_Big_Burst.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385135
+      }
+    }
+  },
+  "targetXxxState": {
+    "ATTACK_CANCEL_AFTER": 1,
+    "HIT_CAMERA0_RATE": 40,
+    "ANIM_NAME": "ComboX3",
+    "HIT_CAMERA1_RATE": 30,
+    "ANIM_SPEED": 1.1,
+    "DASH_CANCEL_AFTER": 0.6,
+    "SKILL_CANCEL_AFTER": 0.333,
+    "WALK_CANCEL_AFTER": 1,
+    "BWALK_CANCEL_AFTER": 0.733,
+    "HIT_CAMERA2_RATE": 30,
+    "PLAY_TYPE": 2,
+    "TRANSITION": 0,
+    "LAND_CONNECT": 0,
+    "UNIT_SLASH_TRACE0": {
+      "1": 0,
+      "2": 0,
+      "3": 100,
+      "4": 0
+    },
+    "SOUND_PLAY0": {
+      "1": 0.02,
+      "2": "RavenVoice_Shout03.ogg"
+    },
+    "SOUND_PLAY1": {
+      "1": 0.01,
+      "2": "Raven_ComboX2Explosion.ogg"
+    },
+    "CAMERA1": {
+      "1": {
+        "DISTANCE": 540,
+        "EYEDISTANCE": 100,
+        "HEIGHT": 50,
+        "CAMERA_TYPE": 1,
+        "LOOK_TYPE": 1
+      }
+    },
+    "CAMERA2": {
+      "1": {
+        "ANGLEDEGREE": 60,
+        "DISTANCE": 700,
+        "HEIGHT": 100,
+        "CAMERA_TYPE": 3,
+        "LOOK_TYPE": 1
+      }
+    },
+    "COMBO_GUIDE": {
+      "1": "X",
+      "2": "XXX"
+    },
+    "IS_ATTACK_STATE": 1,
+    "USE_COMMON_CANCEL_AFTER": 1
+  },
+  "targetKlReferenceScan": {
+    "fileCount": 6306,
+    "totalBytes": 134256481,
+    "orderedPathSha256Digest": "1629ec19b602a51f74df182696f78061b59c8b873f2fb415d36d6b87d71a37f9",
+    "method": "all raw *.lua exact ASCII byte searches; not decompilation/native xrefs",
+    "terms": [
+      "EffectSet_A_RF_XXX",
+      "DamageEffect_RF_XXX",
+      "RAVEN_RF_XXX_ATTACK_BOX",
+      "RSI_COMBO_XXX"
+    ],
+    "matchingFiles": [
+      {
+        "relativePath": "data/data035.kom/Dungeon_Training_Raven_2.lua",
+        "bytes": 15241,
+        "sha256": "61be1552c53b13021db3e8bcacf631c2edb8eda1db2a83f4d3d309c329f16cba",
+        "asciiByteOccurrences": {
+          "RSI_COMBO_XXX": [
+            9369,
+            11854
+          ]
+        }
+      },
+      {
+        "relativePath": "data/data036.kom/DamageEffect.lua",
+        "bytes": 5409874,
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+        "asciiByteOccurrences": {
+          "DamageEffect_RF_XXX": [
+            2074906
+          ],
+          "RAVEN_RF_XXX_ATTACK_BOX": [
+            2073656,
+            2076323
+          ]
+        }
+      },
+      {
+        "relativePath": "data/data036.kom/EffectSet.lua",
+        "bytes": 4395607,
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+        "asciiByteOccurrences": {
+          "EffectSet_A_RF_XXX": [
+            4246067
+          ],
+          "DamageEffect_RF_XXX": [
+            4245931
+          ]
+        }
+      },
+      {
+        "relativePath": "data/data036.kom/Enum.lua",
+        "bytes": 398092,
+        "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+        "asciiByteOccurrences": {
+          "RSI_COMBO_XXX": [
+            220474
+          ]
+        }
+      },
+      {
+        "relativePath": "data/data036.kom/RAVEN_FIGHTER.lua",
+        "bytes": 183136,
+        "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+        "asciiByteOccurrences": {
+          "RSI_COMBO_XXX": [
+            170171
+          ]
+        }
+      },
+      {
+        "relativePath": "data/data036.kom/Rose_Gunner.lua",
+        "bytes": 138021,
+        "sha256": "a79c65e159ceef00a103608bf34530a0fc0d5183cc28ba28fcdbbf2574db5f9e",
+        "asciiByteOccurrences": {
+          "RSI_COMBO_XXX": [
+            55854,
+            57141,
+            57404,
+            57698,
+            57972,
+            58994,
+            59282
+          ]
+        }
+      }
+    ],
+    "limit": "Encoded/constructed native names are not excluded by absence of exact KL literals."
+  },
+  "damageOwnershipConclusion": "CommonStateStart SimpleInit precedes SetDamageData. Missing target XXX DAMAGE_DATA does not inherit XX. Manual sphere cannot acquire a valid package from the target table.",
+  "candidate": {
+    "authorization": "User repeated XXX has no hit; root authorized a clearly identified finite target-resource owner adapter.",
+    "evidenceClass": "target2016-resource-owner-candidate-unverified",
+    "nativeOwnerRecovered": false,
+    "ownerState": "RSI_COMBO_XXX",
+    "setName": "EffectSet_A_RF_XXX",
+    "proposedSetEpoch": "state entry animation/state time zero",
+    "damageStart": "unchanged EFFECT1.START_TIME .25 relative to proposed set epoch; never .16+.25",
+    "payment": "Existing compiled fixed-reference .16 FlushMp(7) accepts/denies the candidate; target2016 cost/phase equivalence unavailable.",
+    "oldPresentation": "Suppress old smoke/flare command requests and ignore its manual sphere; no duplicate old explosion.",
+    "lifecycle": "On owner exit retire pending definitions and hand particle identity. A born damage mesh remains world-bound and keeps original .4s lifetime/18 accepted-hit ceiling.",
+    "damageUnchanged": {
+      "DAMAGE_TIME": 18,
+      "DAMAGE": {
+        "MAGIC": 1.2
+      },
+      "HIT_GAP": 0.15,
+      "stageGlobalTime": 0.15,
+      "mesh": "RAVEN_RF_XXX_ATTACK_BOX",
+      "size": [
+        2.5,
+        2.5,
+        2.5
+      ],
+      "lifeTime": 0.4
+    },
+    "unsupported": [
+      "Target native owner/state epoch equivalence",
+      "Target2016 MP cost phase",
+      "General LOCK_ON_DATA type4 consumer",
+      "Original client/GPU trajectories"
+    ]
+  },
+  "platformInputAdapter": {
+    "evidenceClass": "web-device-clock-adapter-target2016-callback-unavailable",
+    "cause": "Distinct Down then attack timestamps can coexist in one 60Hz packet; set-only input runs grounded attack first.",
+    "scope": "Supported free grounded platform states, distinct finite Down-before-Z/X timestamps, no Up in packet.",
+    "consumer": "Existing native CanDown and drop; retain the attack for exactly the following packet of the resulting drop state.",
+    "unchanged": [
+      "Same timestamp/unknown order keeps ordinary attack priority",
+      "Z-before-Down keeps ordinary attack priority",
+      "Rejected CanDown keeps ordinary attack",
+      "No attack radius/window/damage/physics constant changes",
+      "Dead/input-blocked/interrupted candidates are discarded"
+    ],
+    "limit": "Original full device/Main callback equivalence remains unavailable; other reported 2Z misses are not declared fixed."
+  }
+}

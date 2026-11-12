@@ -1,0 +1,22 @@
+{
+  "scope": "Explicit project rule overlay for Particle Prism instance definitions",
+  "authorization": {"kind": "User instruction", "rule": "Use scale1 for sustained Prism instead of original1.5, including its visible layers and helper instances"},
+  "sourceEvidence": {"originalRawScale": 1.5, "modified": false, "historicalContract": "add-prism-display-v57.json", "historicalSourceComparison": "../reports/add-prism-display-v57-evidence/source-comparison.json"},
+  "projectRule": {
+    "unitClasses": [122, 123, 126],
+    "professions": ["LP", "MM", "DE"],
+    "skillIds": [29003, 29029],
+    "instanceScale": {"SCALE_X": 1, "SCALE_Y": 1, "SCALE_Z": 1},
+    "sets": {
+      "EffectSet_SA_AN_PARTICLE_PRISM": {"members": ["EFFECT6", "EFFECT7", "EFFECT8", "EFFECT10", "EFFECT11", "EFFECT12"], "names": ["AN_PARTICLE_PRISM_04", "AN_PARTICLE_PRISM_02", "AN_PARTICLE_PRISM_01", "DamageEffect_Particle_Prism_Debuff"], "hyperHelper": "DamageEffect_Particle_Prism_Debuff_Use_Mutation"},
+      "EffectSet_SA_AN_PARTICLE_PRISM_DAMAGE": {"members": ["EFFECT0"], "names": ["DamageEffect_Particle_Prism"]}
+    },
+    "initialFlash": "Source EFFECT9 has default1 already, unchanged",
+    "application": "Pure named instance-definition derivation at createEffect and owned-state canonical reconstruction",
+    "wire": "No peer-supplied definition, scale or new mutable marker"
+  },
+  "preserved": ["Original profile/raw and source contracts", "Black second pass", "Source UV addition", "Original controller", "Lifetimes", "Particle quality and counts", "Damage coefficients", "Skill timing", "NPC endpoint constructor650 and other original constants"],
+  "classification": "User-selected project behavior; the new scale is not an original2016 or original-client equivalence claim",
+  "testCatalogBoundary": "Production configureLoadout auto-upgrades requested29003 to actual29029. Tests check both production request aliases and actual29029 births; separate isolated unupgraded catalogs remove only the29029 replacement entry to exercise real29003 input/birth/owned restore with unchanged original raw/state/pose values. Production profiles are never changed.",
+  "webEvidence": "../reports/add-prism-project-scale-v57-evidence/manifest.json"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "repository": "reference-v5",
+  "evidenceClass": "reference-V5-not2016",
+  "targetClientMeasured": false,
+  "abi": 1,
+  "windowsRandMax": 32767,
+  "windowsRandMaxEvidence": "Microsoft Windows CRT rand documented RAND_MAX=32767; not a measurement of the target RNG sequence",
+  "windowsRandMaxSource": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/rand?view=msvc-170",
+  "macros": {"RAND_MAX": 32767},
+  "hostBoundary": "Host supplies one already-selected Windows CRT rand value 0..32767. rand() adapter returns it and records calls. Equal min/max returns before rand(). abs/fabs are compiler mathematical primitives. Neither the Windows CRT RNG state nor the target particle emitter scheduling is ported.",
+  "referenceFiles": [
+    {"path":"JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.h","relativePath":"KTDXLIB/MinMax.h","sha256":"2e4732777e3d549dd65be1ed5dbfb298633ecff7f752e7afa7872e652fc369ca","gitBlob":"c478247e8edc0612df2404a74a74b5a3119a4b02","bytes":1885},
+    {"path":"JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.cpp","relativePath":"KTDXLIB/MinMax.cpp","sha256":"5ea28f93f3219bed99a47d0efc83de2930c9ed3a2b9735a4cde8705d37617ef2","gitBlob":"bafd4e47c1832dedf306c4cd461ba96b90a862bf","bytes":473}
+  ],
+  "extractions": [
+    {"path":"JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.cpp","signature":"int RandomNumber(int iMin, int iMax)","sha256":"6956b583e127a8c288c7395b470390c95d0975fa2e6909f38c8eba7eb2aa94a6","bytes":120,"lines":[7,11]},
+    {"path":"JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.cpp","signature":"float RandomNumber(float fMin, float fMax)","sha256":"cacc576a0cdf0c028276e2732ba1b4e6d14897cbe2ac29b07233b154998c7910","bytes":182,"lines":[13,18]}
+  ]
+}

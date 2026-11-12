@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 declarations; per-instance Web binding using existing fixed-V5 EffectSet consumer",
+  "bindings": {
+    "EffectSet_SI_SA_ALP_Psychic_Storm_Loop": "ADD_PSYCHIC_STORM_DUMMY02",
+    "EffectSet_SI_SA_ALP_Psychic_Storm_Start": "ADD_PSYCHIC_STORM_DUMMY01"
+  },
+  "evidence": [
+    {
+      "set": "EffectSet_SI_SA_ALP_Psychic_Storm_Loop",
+      "member": "EFFECT0",
+      "carrier": "ADD_PSYCHIC_STORM_DUMMY02",
+      "main": "ADD_PSYCHIC_STORM_DUMMY02",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 34814
+      },
+      "rawSha256": "dce2db55314bf259760624c700775a248f490d776cf749cdfda7f589c064d502",
+      "meshDeclarationSha256": "c41226d22f4f73c69402460468c5a629153aee8fcfb129115e6387816188b20b",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    },
+    {
+      "set": "EffectSet_SI_SA_ALP_Psychic_Storm_Start",
+      "member": "EFFECT4",
+      "carrier": "ADD_PSYCHIC_STORM_DUMMY01",
+      "main": "ADD_PSYCHIC_STORM_DUMMY01",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 34715
+      },
+      "rawSha256": "a02891d210644d7bd75355415da3a7040cfd807ebe80fa4096179a1d275fd0f1",
+      "meshDeclarationSha256": "8c9d24107b01605159d5703ccab0bf382df3402ec4860394e2db2b689dc9d45f",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    }
+  ]
+}

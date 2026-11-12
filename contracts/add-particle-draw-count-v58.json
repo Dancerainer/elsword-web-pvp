@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "classification": "target2016 declarations with fixedV5 consumer; current Web adapter",
+  "targetClientMeasured": false,
+  "source": {"path":"KTDXLIB/KTDGParticleSystem.cpp","sha256":"43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050","parseDrawCount":1368,"cloneCopiesDrawCount":5525},
+  "storm": {"template":"ADD_PSYCHIC_STORM_L02","particleType":"PT_MESH","DrawCount":{"random":[2,3]},"sourceSha256":"87c94a0776ed70461c861cd24b2be6990ba172ed5b858e2d86dcedc861349ad6","declarationSha256":"883b28780b67b37b85426657baf830b512c61512760df6e42d3278a6eae38b2f","line":7340},
+  "defect": "A random interval object compared to a number made model loading and birth draw loops skip the entire layer.",
+  "consumer": "Resolve a particle template interval once per view load, truncate the source float to integer, and reuse for all clones and frames. Explicit trigger overrides do not mutate it. Prewarm retains the authored upper bound.",
+  "limitations": ["Presentation has an independent seeded random source; native global rand order is unmeasured", "Random standalone mesh DrawCount has a different instance consumer and is not inferred from particle parsing"]
+}

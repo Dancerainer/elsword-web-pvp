@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "targetSocket": {
+    "path": "data/data036.kom/SocketOptionForm.lua",
+    "sha256": "a8a0b4956aa24e06988b84a2723d038782b09733442325a1a70695ea57fcbc9e",
+    "prototypes": {
+      "CalculateLinearAdditionalAttackValue": {
+        "id": 8,
+        "flags": 0,
+        "params": 1,
+        "frame_size": 2,
+        "upvalues": "",
+        "instructions": [
+          9,
+          2147615060,
+          655638,
+          131400,
+          283,
+          16843041,
+          16908570,
+          131400
+        ],
+        "gc": [],
+        "numbers": [
+          1,
+          1.5,
+          9.5
+        ],
+        "firstline": 0,
+        "line_span": 0
+      },
+      "CalculateIntermediateAdditionalAttackValue": {
+        "id": 41,
+        "flags": 0,
+        "params": 2,
+        "frame_size": 4,
+        "upvalues": "",
+        "instructions": [
+          572,
+          66316,
+          33686060,
+          131879,
+          131912
+        ],
+        "gc": [
+          "CalculateLinearAdditionalAttackValue"
+        ],
+        "numbers": [],
+        "firstline": 0,
+        "line_span": 0
+      },
+      "CalculateFinalAdditionalAttackValue": {
+        "id": 74,
+        "flags": 0,
+        "params": 2,
+        "frame_size": 6,
+        "upvalues": "",
+        "instructions": [
+          572,
+          780,
+          66572,
+          33751596,
+          33554972,
+          66364,
+          50463551,
+          132108,
+          66839,
+          33751852,
+          197132,
+          131863,
+          131841,
+          2147746644,
+          33751841,
+          50594586,
+          33751846,
+          50659867,
+          33948188,
+          66364,
+          50463551,
+          132108,
+          66838,
+          197422
+        ],
+        "gc": [
+          "min",
+          "math",
+          "CalculateIntermediateAdditionalAttackValue"
+        ],
+        "numbers": [
+          0.01,
+          1.65,
+          0.4,
+          -0.4,
+          1.32,
+          0.064,
+          0.375
+        ],
+        "firstline": 0,
+        "line_span": 0
+      }
+    }
+  },
+  "targetSocketReverified": true,
+  "originalExecutable": {
+    "path": "data/x2.exe",
+    "sha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "bytes": 16879648,
+    "sectionNames": [
+      "   \u0000    ",
+      ".rsrc",
+      ".idata  ",
+      "        ",
+      "hrddlirn",
+      "vhpqhflw"
+    ],
+    "consumerMacroVerified": false
+  },
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceFiles": [
+    {
+      "path": "X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "ranges": [
+        {
+          "firstLine": 12474,
+          "lastLine": 12474,
+          "sha256": "de30ae3a1006cfb600e6ae962a4c85b384b9eb728d3ad611720bedfff77b3790"
+        },
+        {
+          "firstLine": 14297,
+          "lastLine": 14380,
+          "sha256": "21371a9c2052c19f71c6a1759d064862367d1bb12b3fce6cd9f4bc921f9cd78c"
+        }
+      ]
+    },
+    {
+      "path": "X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "ranges": [
+        {
+          "firstLine": 9175,
+          "lastLine": 9209,
+          "sha256": "984567e6c27f5b729e5415338eec65699cc83e62dd58c5273c772b1d05f24a05"
+        },
+        {
+          "firstLine": 9377,
+          "lastLine": 9410,
+          "sha256": "ce9acf7dfd71192bb18661dbb6520b06b239df9655c76230edd5c887bb8eb62b"
+        }
+      ]
+    },
+    {
+      "path": "X2BuffTemplet.h",
+      "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+      "ranges": [
+        {
+          "firstLine": 892,
+          "lastLine": 954,
+          "sha256": "30d0add6609f1662369b9848d3cb494d9dce63d77ce590ff313e17a322db5955"
+        }
+      ]
+    },
+    {
+      "path": "X2GameUnit.h",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "ranges": [
+        {
+          "firstLine": 2593,
+          "lastLine": 2593,
+          "sha256": "6b0e151d7b9a8b1743fad9ec2aad9e76e48ea13b0106cf5507b7737218610fdc"
+        },
+        {
+          "firstLine": 2620,
+          "lastLine": 2623,
+          "sha256": "5162ff145df3838d4bd695a24888e6872f0a446bf55dc1c4e93f99031411c65d"
+        }
+      ]
+    }
+  ],
+  "userDecisions": {
+    "additionalConsumer": "Reuse existing IS fixed-V5 ADJUST_BUFF_CALCULATE candidate, explicitly qualified",
+    "equipmentAdditionalInput": "Final resolved ratio, not nominal socket percent",
+    "criticalBonus": "Percentage points added to basic1.5"
+  },
+  "additionalFormula": "1.5 * pow(recordedMotionPower,.65) * combinedAdditionalRatio * preBuffComposedAttack",
+  "stageOrder": [
+    "ordinary defence/final modifiers",
+    "critical",
+    "equipment reduction",
+    "independent additional attack"
+  ],
+  "combination": "Invert target final curve for resolved equipment input, add IS FIX/linear points before ONE shared curve, then zero-base1 workaround",
+  "criticalFormula": "base1.5 + equipmentCriticalDamageBonus; existing critical Buff/passive/skill/defender channels remain separate",
+  "originalClientRuntimeMeasurements": 0,
+  "limits": [
+    "Target2016 consumer macro unverified; fixed V5 has alternate non-ADJUST ordinary-PvP0.15 branch",
+    "No fabricated double-attack consumer",
+    "Target raw stat versus composed preBuff attack normalization retains existing accepted PvP candidate boundary"
+  ]
+}

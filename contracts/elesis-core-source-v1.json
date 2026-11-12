@@ -1,0 +1,5521 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016-declarations+qualified-fixedV5-source",
+  "fixedV5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": {
+      "X2GUEL.cpp": {
+        "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+        "gitBlob": "087da6d5c5c35f2ba3ee82d436e4a464118eee0f",
+        "bytes": 475663
+      },
+      "X2GUEl.h": {
+        "sha256": "4e079ed3baf0ab48efea270fcc104f1fa8c4eed6fde8bc3b1e924538b3d5c681",
+        "gitBlob": "d366243f99a24a57623b52d8d0104724d20407ec",
+        "bytes": 60918
+      },
+      "X2GageData.cpp": {
+        "sha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8",
+        "gitBlob": "abf8e30e410b0552deeea0198b592cfe670e95b7",
+        "bytes": 40241
+      },
+      "X2GageData.h": {
+        "sha256": "ad9b998352f09864fb770a534d27e6d50c3f8c492a9131486efd7bd70bf7915f",
+        "gitBlob": "ac49bd9c815cfc1f668078f17258db88c455886b",
+        "bytes": 35173
+      },
+      "X2ComboManager.cpp": {
+        "sha256": "891816605cf7d49d29b60c32211eb962c6d7735b00f171c33b3076ecb7d8a583",
+        "gitBlob": "bea1f6d9b25a20b00ba76c48d461cfa8be1f5caf",
+        "bytes": 27175
+      },
+      "X2ComboManager.h": {
+        "sha256": "aa38126fed752a69bfdf60a30525b2d2fc11a0f24bcf158dbae574fd2043a9b5",
+        "gitBlob": "1b3998a1ee72bfb752dfd5d96f84b227cd08f9d2",
+        "bytes": 3437
+      },
+      "X2EffectSet.cpp": {
+        "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+        "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+        "bytes": 146678
+      },
+      "Always.h": {
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+        "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+        "bytes": 192825
+      },
+      "X2GUUser.cpp": {
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+        "bytes": 1323547
+      }
+    }
+  },
+  "targetProfiles": {
+    "GM": {
+      "profileId": "gm-target2016-v1",
+      "target": {
+        "region": "Steam NA",
+        "build": "V6.0420.5",
+        "unitType": 8,
+        "unitClass": 120,
+        "displayName": "GM / Grand Master"
+      },
+      "sources": {
+        "skill": {
+          "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+          "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+        },
+        "damage": {
+          "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+          "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+        },
+        "effect": {
+          "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+          "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+        },
+        "enum": {
+          "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+          "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+        },
+        "skill-note": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+          "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+        },
+        "skill-data": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillData.lua",
+          "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4"
+        },
+        "way-of-sword": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "elesis": {
+          "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+          "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d"
+        }
+      },
+      "wayOfSword": {
+        "targetFields": {
+          "StateConst_DestSkill_InDestState": 1.56,
+          "SkillTypeConst_DestSpecialActive": 42,
+          "StateConst_DamageReact_InVigorState": -2,
+          "SkillTypeConst_DestCommand": 67.19999999999999,
+          "GameModeConst_NPC_Hit": 1,
+          "StateConst_DestSkill_CenterState": 3.9,
+          "StateConst_VigorSkill_InVigorState": -1.2,
+          "SkillTypeConst_VigorCommand": 67.19999999999999,
+          "StateConst_VigorSkill_CenterState": -3,
+          "StateConst_DamageReact_TowardVigorState": 1,
+          "Const_VigorStateThreshold": 4800,
+          "StateConst_DestSkill_TowardVigorState": 1.3,
+          "SkillTypeConst_VigorSpecialActive": 42,
+          "StateConst_DamageReact_CenterState": 0,
+          "StateConst_VigorSkill_InDestState": 0,
+          "SkillTypeConst_DamageReact": 36,
+          "StateConst_VigorSkill_TowardVigorState": -0.1,
+          "SkillTypeConst_DestActive": 72,
+          "StateConst_DamageReact_InDestState": 0,
+          "StateConst_DestSkill_InVigorState": 0,
+          "GameModeConst_PVP_Hit": 1.5,
+          "Const_DestRageWSPGain_Elesis": 1500,
+          "Const_DestStateThreshold": -4800,
+          "SkillTypeConst_VigorActive": 72,
+          "Const_DestRageWSPGain": 1500,
+          "StateConst_DamageReact_TowrdDestState": -1,
+          "StateConst_DestSkill_TowardDestState": 0.13,
+          "StateConst_VigorSkill_TowardDestState": -1
+        },
+        "source": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "targetBuffFactorIds": {
+          "BFI_BUFF_GALE_WAY_OF_SWORD": 237,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD": 246,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD_PVP": 247,
+          "BFI_BUFF_ANNIHILATION_SUPER_ARMOR": 248,
+          "BFI_BUFF_GALE_MP_GAIN_INCREASE": 245,
+          "BFI_BUFF_ENDURANCE_POWER_PVP": 423,
+          "BFI_BUFF_SUPER_ARMOR": 143,
+          "BFI_ELESIS_ENDURANCE_MEMO": 335,
+          "BFI_BUFF_ENDURANCE_POWER": 232
+        },
+        "status": "target2016-raw-fields; native-controlflow-binding-separate"
+      }
+    },
+    "BH": {
+      "profileId": "bh-target2016-v1",
+      "target": {
+        "region": "Steam NA",
+        "build": "V6.0420.5",
+        "unitType": 8,
+        "unitClass": 121,
+        "displayName": "BH / Blazing Heart"
+      },
+      "sources": {
+        "skill": {
+          "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+          "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+        },
+        "damage": {
+          "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+          "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+        },
+        "effect": {
+          "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+          "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+        },
+        "enum": {
+          "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+          "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+        },
+        "skill-note": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+          "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+        },
+        "skill-data": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillData.lua",
+          "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4"
+        },
+        "way-of-sword": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "elesis": {
+          "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+          "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d"
+        }
+      },
+      "wayOfSword": {
+        "targetFields": {
+          "StateConst_DestSkill_InDestState": 1.56,
+          "SkillTypeConst_DestSpecialActive": 42,
+          "StateConst_DamageReact_InVigorState": -2,
+          "SkillTypeConst_DestCommand": 67.19999999999999,
+          "GameModeConst_NPC_Hit": 1,
+          "StateConst_DestSkill_CenterState": 3.9,
+          "StateConst_VigorSkill_InVigorState": -1.2,
+          "SkillTypeConst_VigorCommand": 67.19999999999999,
+          "StateConst_VigorSkill_CenterState": -3,
+          "StateConst_DamageReact_TowardVigorState": 1,
+          "Const_VigorStateThreshold": 4800,
+          "StateConst_DestSkill_TowardVigorState": 1.3,
+          "SkillTypeConst_VigorSpecialActive": 42,
+          "StateConst_DamageReact_CenterState": 0,
+          "StateConst_VigorSkill_InDestState": 0,
+          "SkillTypeConst_DamageReact": 36,
+          "StateConst_VigorSkill_TowardVigorState": -0.1,
+          "SkillTypeConst_DestActive": 72,
+          "StateConst_DamageReact_InDestState": 0,
+          "StateConst_DestSkill_InVigorState": 0,
+          "GameModeConst_PVP_Hit": 1.5,
+          "Const_DestRageWSPGain_Elesis": 1500,
+          "Const_DestStateThreshold": -4800,
+          "SkillTypeConst_VigorActive": 72,
+          "Const_DestRageWSPGain": 1500,
+          "StateConst_DamageReact_TowrdDestState": -1,
+          "StateConst_DestSkill_TowardDestState": 0.13,
+          "StateConst_VigorSkill_TowardDestState": -1
+        },
+        "source": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "targetBuffFactorIds": {
+          "BFI_BUFF_GALE_WAY_OF_SWORD": 237,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD": 246,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD_PVP": 247,
+          "BFI_BUFF_ANNIHILATION_SUPER_ARMOR": 248,
+          "BFI_BUFF_GALE_MP_GAIN_INCREASE": 245,
+          "BFI_BUFF_ENDURANCE_POWER_PVP": 423,
+          "BFI_BUFF_SUPER_ARMOR": 143,
+          "BFI_ELESIS_ENDURANCE_MEMO": 335,
+          "BFI_BUFF_ENDURANCE_POWER": 232
+        },
+        "status": "target2016-raw-fields; native-controlflow-binding-separate"
+      }
+    },
+    "CA": {
+      "profileId": "ca-target2016-v1",
+      "target": {
+        "region": "Steam NA",
+        "build": "V6.0420.5",
+        "unitType": 8,
+        "unitClass": 125,
+        "displayName": "CA / Crimson Avenger"
+      },
+      "sources": {
+        "skill": {
+          "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+          "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+        },
+        "damage": {
+          "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+          "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+        },
+        "effect": {
+          "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+          "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+        },
+        "enum": {
+          "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+          "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+        },
+        "skill-note": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+          "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+        },
+        "skill-data": {
+          "path": "asset_work\\raw\\data\\data036.kom\\SkillData.lua",
+          "sha256": "42765ec042e805c1971b1ebc858b4edda2ad46e81700066ec88cd4efa897f7e4"
+        },
+        "way-of-sword": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "elesis": {
+          "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+          "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d"
+        }
+      },
+      "wayOfSword": {
+        "targetFields": {
+          "StateConst_DestSkill_InDestState": 1.56,
+          "SkillTypeConst_DestSpecialActive": 42,
+          "StateConst_DamageReact_InVigorState": -2,
+          "SkillTypeConst_DestCommand": 67.19999999999999,
+          "GameModeConst_NPC_Hit": 1,
+          "StateConst_DestSkill_CenterState": 3.9,
+          "StateConst_VigorSkill_InVigorState": -1.2,
+          "SkillTypeConst_VigorCommand": 67.19999999999999,
+          "StateConst_VigorSkill_CenterState": -3,
+          "StateConst_DamageReact_TowardVigorState": 1,
+          "Const_VigorStateThreshold": 4800,
+          "StateConst_DestSkill_TowardVigorState": 1.3,
+          "SkillTypeConst_VigorSpecialActive": 42,
+          "StateConst_DamageReact_CenterState": 0,
+          "StateConst_VigorSkill_InDestState": 0,
+          "SkillTypeConst_DamageReact": 36,
+          "StateConst_VigorSkill_TowardVigorState": -0.1,
+          "SkillTypeConst_DestActive": 72,
+          "StateConst_DamageReact_InDestState": 0,
+          "StateConst_DestSkill_InVigorState": 0,
+          "GameModeConst_PVP_Hit": 1.5,
+          "Const_DestRageWSPGain_Elesis": 1500,
+          "Const_DestStateThreshold": -4800,
+          "SkillTypeConst_VigorActive": 72,
+          "Const_DestRageWSPGain": 1500,
+          "StateConst_DamageReact_TowrdDestState": -1,
+          "StateConst_DestSkill_TowardDestState": 0.13,
+          "StateConst_VigorSkill_TowardDestState": -1
+        },
+        "source": {
+          "path": "asset_work\\raw\\data\\data036.kom\\WayOfSword.lua",
+          "sha256": "d4f7d917ca40d6883e7aa8905e7562b0ab8d7f1c5497021ab3c37c2c639d8625"
+        },
+        "targetBuffFactorIds": {
+          "BFI_BUFF_GALE_WAY_OF_SWORD": 237,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD": 246,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD_PVP": 247,
+          "BFI_BUFF_ANNIHILATION_SUPER_ARMOR": 248,
+          "BFI_BUFF_GALE_MP_GAIN_INCREASE": 245,
+          "BFI_BUFF_ENDURANCE_POWER_PVP": 423,
+          "BFI_BUFF_SUPER_ARMOR": 143,
+          "BFI_ELESIS_ENDURANCE_MEMO": 335,
+          "BFI_BUFF_ENDURANCE_POWER": 232,
+          "BFI_BUFF_GALE_WAY_OF_SWORD_DARK_KNIGHT": 473,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD_DARK_KNIGHT": 471,
+          "BFI_BUFF_ANNIHILATION_WAY_OF_SWORD_PVP_DARK_KNIGHT": 472
+        },
+        "status": "target2016-raw-fields; native-controlflow-binding-separate"
+      }
+    }
+  },
+  "ownerMissingFrame": {
+    "macro": {
+      "file": "Always.h",
+      "line": 2126,
+      "symbol": "MODIFY_GET_BONE_POS",
+      "enabled": true
+    },
+    "caller": {
+      "file": "X2GUUser.cpp",
+      "line": 37787,
+      "arguments": "PlayEffectSet(name,this,NULL,...)"
+    },
+    "consumer": {
+      "file": "X2EffectSet.cpp",
+      "line": 2843,
+      "policy": "owner GetBonePos false -> GetHeadBonePos; trace target and set target mesh are separate"
+    },
+    "position": "original Bip01_Head world position + worldY70 + original effect offsets",
+    "scope": [
+      "EffectSet_HA_SCA_FATE_SMASHER_Attack1..4 forced Dummy01..03",
+      "EffectSet_SA_SBH_ANCIENT_FIRE Bop01"
+    ],
+    "rawDeclarationModified": false,
+    "targetClientMeasured": false
+  },
+  "sourceBoundary": [
+    "The pinned repository includes explicit2026 reconstructions; contains2026 is not target-client execution evidence.",
+    "Original2016 ACTIVE has no separate RAGE state. Chivalry maps the original ACTIVE animation with target factor248; ordinary Endurance uses143/335.",
+    "CA/renewal commands absent from old callback registrations use explicit target declaration adapters; no guessed legacy windows.",
+    "No target2016 executable trajectory has been measured."
+  ],
+  "chivalry": {
+    "thresholds": [
+      -4800,
+      4800
+    ],
+    "annihilationCharge": {
+      "max": 2000,
+      "rate": 3000,
+      "mpCost": 0
+    },
+    "pvpBurstPointCost": 2250,
+    "galeSkillMp": 0.8,
+    "galeSkillCooldown": 0.6,
+    "annihilationNormalDamage": 1.25,
+    "annihilationSkillDamage": 1,
+    "annihilationCritical": true,
+    "galeReceivedPointConsumption": 0,
+    "galeComboInterval": 1.3
+  },
+  "inventory": [
+    {
+      "profession": "GM",
+      "state": "ESI_A_SGM_DRASTIC_CHARGE_END",
+      "sourceState": "ESI_A_SGM_DRASTIC_CHARGE_END",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.716,
+        "SKILL_CANCEL_AFTER": 0.716,
+        "WALK_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11551
+      },
+      "rawSha256": "dc0ba60f6681058670fef9e0a1b81059595cf57eb023df0ecdc5984fcaa91c6c",
+      "callbacks": [
+        {
+          "method": "ESI_A_SGM_DRASTIC_CHARGE_END_EventProcess",
+          "line": 10066,
+          "lastLine": 10079,
+          "sha256": "378c5274be7762632031c6de135fb1724d302a9daa51769c885afddfffa7e65a",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_A_SGM_PROVOKE",
+      "sourceState": "ESI_A_SGM_PROVOKE",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.813,
+        "DASH_CANCEL_AFTER": 0.766,
+        "WALK_CANCEL_AFTER": 0.813,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.35,
+          "2": 100,
+          "3": 0.35
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11288
+      },
+      "rawSha256": "2f7b546cc15603e4f1b1c10147636603f72b6554e50777496a763888dc9ca9f8",
+      "callbacks": [
+        {
+          "method": "ESI_A_SGM_PROVOKE_EventProcess",
+          "line": 9908,
+          "lastLine": 9921,
+          "sha256": "cb250f8eef6c72cb48a8f1f09343db9bbd3dfbb1959118fd269a3c2aef7f4921",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_A_SGM_PROVOKE_REVENGE",
+      "sourceState": "ESI_A_SGM_PROVOKE_REVENGE",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.866,
+        "SKILL_CANCEL_AFTER": 0.945,
+        "WALK_CANCEL_AFTER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11357
+      },
+      "rawSha256": "93931f0816a55e31650ce384ffebfa4813ef8a3e8efe24c6adf841e1b6d3e224",
+      "callbacks": [
+        {
+          "method": "ESI_A_SGM_PROVOKE_REVENGE_EventProcess",
+          "line": 9932,
+          "lastLine": 9945,
+          "sha256": "31a95ba33bcf8663f36885a5b44673f08edb72af22c7bb059d59439f30402066",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_SGM_XX_DOWN_X_END",
+      "sourceState": "ESI_COMBO_SGM_XX_DOWN_X_END",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.833,
+        "SKILL_CANCEL_AFTER": 0.707,
+        "WALK_CANCEL_AFTER": 0.933
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11040
+      },
+      "rawSha256": "6485338f68f0b5177afdbfdd16fac18e85926617f4901778e6b0880a92bd9ec5",
+      "callbacks": [
+        {
+          "method": "ESI_COMBO_SGM_XX_DOWN_X_END_EventProcess",
+          "line": 9847,
+          "lastLine": 9860,
+          "sha256": "9c5cc8755d716206764ad44db4faaf0b132acff9e9f66ea91804c4274b639145",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_SGM_ZZZX",
+      "sourceState": "ESI_COMBO_SGM_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.3
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11136
+      },
+      "rawSha256": "9f0b9f6f10df3a4214e138e94878b79d938a43fc222917aa28244b530dc8e0bf",
+      "callbacks": []
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_X",
+      "sourceState": "ESI_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5652
+      },
+      "rawSha256": "d1d8c0ee96d15b6de30d2fd42c5f197463a1ef359f5d97e2d84c48b347bb7a38",
+      "callbacks": [
+        {
+          "method": "ComboXEventProcess",
+          "line": 6465,
+          "lastLine": 6490,
+          "sha256": "23b5f176a2996d77b276d872c72a0f1ea9af9d2289bbd5aea6c724af56924bf7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_XX",
+      "sourceState": "ESI_COMBO_XX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.666,
+        "WALK_CANCEL_AFTER": 0.733,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.1,
+          "2": 0.271,
+          "3": 0.271
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5732
+      },
+      "rawSha256": "68370ea7011c058bbaec50e55d8343b71661e5e9fb90bdb71b99c05fdc1bdd35",
+      "callbacks": [
+        {
+          "method": "ComboXXEventProcess",
+          "line": 6491,
+          "lastLine": 6514,
+          "sha256": "aa47a9957dfe4afddbe9ccbc618cc87e61828416ac2b03d96f5f47ac8acceca0",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_XXX",
+      "sourceState": "ESI_COMBO_XXX",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.766,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5875
+      },
+      "rawSha256": "2c6da768e332351df2616fe767ffd55b086bf9e3edfd66f9b204885e24975679",
+      "callbacks": [
+        {
+          "method": "ComboXXXEventProcess",
+          "line": 6515,
+          "lastLine": 6532,
+          "sha256": "6c5101c6669041441edc010197e7085852cf8b396e3503b4b378d090cab71263",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_XXZ",
+      "sourceState": "ESI_COMBO_XXZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.966,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6006
+      },
+      "rawSha256": "84bdb46f8ba4861eb94861d450d0bea93fefc5690f3c24b257840aceece754ef",
+      "callbacks": [
+        {
+          "method": "ComboXXZEventProcess",
+          "line": 6533,
+          "lastLine": 6550,
+          "sha256": "a9686b4a1224539a1f939b76fad33a5c5b4dadd835c19a8d25159a923a488c54",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_Z",
+      "sourceState": "ESI_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.33,
+          "3": 0.33
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5239
+      },
+      "rawSha256": "5837cbffa5f453e4217b85094eb56f73e1ed556a0390ddd4eee44c13a4b3d9c4",
+      "callbacks": [
+        {
+          "method": "ComboZEventProcess",
+          "line": 6363,
+          "lastLine": 6381,
+          "sha256": "2a4357356bdd7ed0bd605105088f6c134f2acb362432d07f7b810ddd3645053c",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_ZZ",
+      "sourceState": "ESI_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.462,
+          "3": 0.462
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5310
+      },
+      "rawSha256": "b0ab583529403533b93d80b4fb21cf358bfd4a96b5f31f01834556c71750b54f",
+      "callbacks": [
+        {
+          "method": "ComboZZEventProcess",
+          "line": 6382,
+          "lastLine": 6400,
+          "sha256": "5503d069d94a7bb65ecec402657160667d330c50a07790bbe9a24343650e260e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_ZZZ",
+      "sourceState": "ESI_COMBO_ZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.266,
+        "SKILL_CANCEL_AFTER": 0.266,
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5395
+      },
+      "rawSha256": "d13dc5a305e029c58fce95f562e5e57f6e5439f51c37fcf73ce03baffdb75cc6",
+      "callbacks": [
+        {
+          "method": "ComboZZZEventProcess",
+          "line": 6401,
+          "lastLine": 6423,
+          "sha256": "161f64c243bb9b241a1fd8b7778a9dcdb732b002dd714143632c81b63ca928b7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_ZZZX",
+      "sourceState": "ESI_COMBO_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.8
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5578
+      },
+      "rawSha256": "7b2cac72fb19f211f38ba541ae5f4b9b9bdb26cfc12ec9c955c679b5f0841f1c",
+      "callbacks": [
+        {
+          "method": "ComboZZZXEventProcess",
+          "line": 6447,
+          "lastLine": 6464,
+          "sha256": "07fbbf04a2214069379494e44206887bfb2db01ceadee98e086f90ff2101d6a8",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_COMBO_ZZZZ",
+      "sourceState": "ESI_COMBO_ZZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.4,
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.6
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5485
+      },
+      "rawSha256": "ab4000351589396ef93da21f2fc7321c6fa6f12d23076b183aa8c6d364355427",
+      "callbacks": [
+        {
+          "method": "ComboZZZZEventProcess",
+          "line": 6424,
+          "lastLine": 6446,
+          "sha256": "146dec7d19c1ad45910d2a35610f7966f5e68fce41e46431688eedb2c8e32a37",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "sourceState": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4174
+      },
+      "rawSha256": "5e24446163b810e5e30a831c3beb3d8b47beac2d59476fb65b8b8a0be410efbd",
+      "callbacks": [
+        {
+          "method": "DamageAirDownLandingEventProcess",
+          "line": 6045,
+          "lastLine": 6048,
+          "sha256": "073bd8e95d1c43eadde7e840b904526cdd5e334fd7a2b8d0f791ba7e6bb1ccbf",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DAMAGE_DOWN_BACK",
+      "sourceState": "ESI_DAMAGE_DOWN_BACK",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4090
+      },
+      "rawSha256": "99b96eb6f81dbf0dae4f697780dd1dfa87bdc783c24c48c8d69e9635218fdbf5",
+      "callbacks": [
+        {
+          "method": "DamageDownBackEventProcess",
+          "line": 5916,
+          "lastLine": 6042,
+          "sha256": "bfcf79e7d8384373841069be1b16c55c5d6a1d5017d0d3a66360a58a35ec9f74",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DAMAGE_DOWN_FRONT",
+      "sourceState": "ESI_DAMAGE_DOWN_FRONT",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4047
+      },
+      "rawSha256": "51866eb4c36e0304418b4958cc53f007a545efe0af28cddaf6f248d798632901",
+      "callbacks": [
+        {
+          "method": "DamageDownFrontEventProcess",
+          "line": 5784,
+          "lastLine": 5906,
+          "sha256": "977c2516a0205ab7349a5473ae629f6b12bd89322530b1d5e19bbbb74cf1e16a",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_SGM_XX_ATTACK",
+      "sourceState": "ESI_DASH_COMBO_SGM_XX_ATTACK",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 999,
+        "DASH_CANCEL_AFTER": 999,
+        "WALK_CANCEL_AFTER": 999
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11182
+      },
+      "rawSha256": "da24dd70581d3ddbce01bb507dfeb8beafa1acc7e9e106657cfeaaec00446c95",
+      "callbacks": []
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_SGM_XX_END",
+      "sourceState": "ESI_DASH_COMBO_SGM_XX_END",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.3,
+        "DASH_CANCEL_AFTER": 0.3,
+        "WALK_CANCEL_AFTER": 0.3
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11198
+      },
+      "rawSha256": "453d527a1da2b37b654e37735cea8893c506a9090e92881d69214c70ae3ed865",
+      "callbacks": []
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_SSK_ZZ",
+      "sourceState": "ESI_DASH_COMBO_SSK_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.833,
+        "WALK_CANCEL_AFTER": 0.933,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8630
+      },
+      "rawSha256": "f3ba679f1246a0008b3ae4ae72cb7dc050ff8df78f45b5cd8717eab40c85294a",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SSK_ZZ_EventProcess",
+          "line": 8692,
+          "lastLine": 8707,
+          "sha256": "5fca428f8b1ba88ab52f3c9aa5e6a051afc71b72c8f5dafaf3a5665caea3c0ff",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_SSK_ZZX",
+      "sourceState": "ESI_DASH_COMBO_SSK_ZZX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.5,
+        "DASH_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.533
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8770
+      },
+      "rawSha256": "1fcbc0fd44a5eb4451c3c767867fcad1ddff88b487169a13cc85b496ef390cc6",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SSK_ZZX_EventProcess",
+          "line": 8722,
+          "lastLine": 8735,
+          "sha256": "82f32e3c33aba1ffa374d05008068abba65c2ca91a69ef4f3ba92bef6a438a6e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_SSK_ZZZ",
+      "sourceState": "ESI_DASH_COMBO_SSK_ZZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.666,
+        "WALK_CANCEL_AFTER": 0.7
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8704
+      },
+      "rawSha256": "6bd604ce9652a84bb6aacaaa3724c993bbd37d8bf6fca4975e41dd249c3ba8e9",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SSK_ZZZ_EventProcess",
+          "line": 8708,
+          "lastLine": 8721,
+          "sha256": "6072a45133191c3cefee88d4fe7f2367fded6a2ff2c9981de2eac5480208c069",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_X",
+      "sourceState": "ESI_DASH_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.466,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6384
+      },
+      "rawSha256": "d1224bf2f2ad0777c433ed7efdb8f649afdecc6f77955714108a9089a321f64d",
+      "callbacks": [
+        {
+          "method": "DashComboXEventProcess",
+          "line": 6658,
+          "lastLine": 6670,
+          "sha256": "ea6b52e7b017fb20cda812faee0a4b08bcc18288fc8c187dfa100f851d9ac5e9",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_Z",
+      "sourceState": "ESI_DASH_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.333,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME5": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6218
+      },
+      "rawSha256": "d2318f2f4507ba634ea12636ac71a0431c9793fb42940e05834a34ac175b5a21",
+      "callbacks": [
+        {
+          "method": "DashComboZEventProcess",
+          "line": 6607,
+          "lastLine": 6644,
+          "sha256": "68431fa4f5f345ce3a2af2a21b12acd4e912beeccaca1c64725c4baedc171e54",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_COMBO_ZZ",
+      "sourceState": "ESI_DASH_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.833,
+        "WALK_CANCEL_AFTER": 0.933
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6308
+      },
+      "rawSha256": "65886342dacae772c88b28f6505141ea9543b59d3d8e815115a71f6a0169ead4",
+      "callbacks": [
+        {
+          "method": "DashComboZZEventProcess",
+          "line": 6645,
+          "lastLine": 6657,
+          "sha256": "2462dd92ef3dddee3a67502265fb6f97946efd3b1adfada39666178369f25f7f",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_END",
+      "sourceState": "ESI_DASH_END",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.266
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3686
+      },
+      "rawSha256": "1b2ea53c4367ed1ba0e634f71f58255f71f075103cf00637e7061e203a8b4865",
+      "callbacks": [
+        {
+          "method": "DashEndEventProcess",
+          "line": 5428,
+          "lastLine": 5514,
+          "sha256": "e6b35808a3a45b2619ea21f006d4fdc5c4fa0707e01e3c8da3f4f93ba9198e21",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.3,
+        "DASH_CANCEL_AFTER": 0.3,
+        "WALK_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10816
+      },
+      "rawSha256": "0a0e996b33defa74744055441a253c369f8900e96c62dec7d76e9b38af8cb79d",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN_EventProcess",
+          "line": 9751,
+          "lastLine": 9766,
+          "sha256": "78aa218663092d0728398babc2a7a8a47d605231a692baa5289ec74676bc12ad",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_SSK_XX",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SSK_XX",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.5
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8910
+      },
+      "rawSha256": "877a930e914e1e8f0f0dc04b1f51a63cbe0a86034406e8704a89dca7d00ba0ce",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_JUMP_COMBO_SSK_XX_EventProcess",
+          "line": 8740,
+          "lastLine": 8765,
+          "sha256": "42b7e836a690bc2b27c1a41af3737ac427b09b11daa4d1e61c11df2e9fd4d58c",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_SSK_XXX",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SSK_XXX",
+      "kind": "command",
+      "targetFields": {
+        "ATTACK_CANCEL_AFTER_EX": 0.766,
+        "DASH_CANCEL_AFTER": 0.733,
+        "SKILL_CANCEL_AFTER": 0.766,
+        "WALK_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9009
+      },
+      "rawSha256": "429fc92c8e43fc4b77d0de92c922e60fec606f71be5a443e3db1bc1ec87a51a5",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_JUMP_COMBO_SSK_XXX_EventProcess",
+          "line": 8766,
+          "lastLine": 8782,
+          "sha256": "7d655528b01c925a2e86d59e2db546c1238a222a654e3b4415571ab512e5a00b",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_SSK_ZZX",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SSK_ZZX",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.5
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8840
+      },
+      "rawSha256": "33afbf9d921985da1b814f1db032daf75bc5aeac8437e6d6d4103d035f978614",
+      "callbacks": []
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_X",
+      "sourceState": "ESI_DASH_JUMP_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.316
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6693
+      },
+      "rawSha256": "3ebba419eca7f9c6e00c4b907450c5ba29317a0eedfce763a451a2da750ff83a",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXEventProcess",
+          "line": 6705,
+          "lastLine": 6734,
+          "sha256": "f4429ac38cc7a07da9b50b7dcbd384e0b5a1e464eac1698e672b0b963815f05f",
+          "contains2026": true,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "sourceState": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.1,
+          "3": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6787
+      },
+      "rawSha256": "8d7fbec823225dea2c1c39084f8fcbae2af4142d34000f70e5ac067c0097d8a5",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXXLandingEventProcess",
+          "line": 6744,
+          "lastLine": 6757,
+          "sha256": "453fc531a063218efc78cc11241f55db4c494cc8295c6c998773c3c7ec32eb69",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_Z",
+      "sourceState": "ESI_DASH_JUMP_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.229
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.18
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6461
+      },
+      "rawSha256": "fd7390349f243d9358db1d91bfdf53f1549aa04384607efe38d68a39767201e6",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZEventProcess",
+          "line": 6671,
+          "lastLine": 6681,
+          "sha256": "4dacbae7497e05ef324f7ad01820a12d6269d0f62dfc7b5cd3946e860c0e71d5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_DASH_JUMP_COMBO_ZZ",
+      "sourceState": "ESI_DASH_JUMP_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.166,
+          "2": 100,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6531
+      },
+      "rawSha256": "68ee245c8c893217a31e7828c61acd88f5780b577fe2d8d9ab3fe87194c0f369",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZZEventProcess",
+          "line": 6682,
+          "lastLine": 6692,
+          "sha256": "f02f124596877cf269e9f5fd228f0a4b8e01769957714e6f558254c2c0a926c5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SA_SGM_CRITICAL_DIVE_HIT",
+      "sourceState": "ESI_SA_SGM_CRITICAL_DIVE_HIT",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1,
+        "SKILL_CANCEL_AFTER": 1.1,
+        "WALK_CANCEL_AFTER": 1.2
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 11909
+      },
+      "rawSha256": "384afb3197b6605ade1aa2260d403c36cdc3f645769324ba5931bb9bfe49594e",
+      "callbacks": [
+        {
+          "method": "ESI_SA_SGM_CRITICAL_DIVE_HIT_EventProcess",
+          "line": 10286,
+          "lastLine": 10299,
+          "sha256": "6fc370e1d9d0d8e450b828ef44be081df6dc43bb1006d711de7c24a2a3513cae",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END",
+      "sourceState": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.821,
+        "DASH_CANCEL_AFTER": 0.821,
+        "WALK_CANCEL_AFTER": 0.966
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12064
+      },
+      "rawSha256": "b5d628c25c7eb44c21bca8034f47193254174426a6ef5bf58a935c7a9aae40bd",
+      "callbacks": [
+        {
+          "method": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END_EventProcess",
+          "line": 10419,
+          "lastLine": 10432,
+          "sha256": "77e4f4fdf94d23734a43bec6f914a4aff104980c908831af2795d94097d45f91",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7081
+      },
+      "rawSha256": "411a557bfa21cd60de6e6cd573510785ee8456c382fe78f824ad34dad4fce765",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_EventProcess",
+          "line": 6828,
+          "lastLine": 6865,
+          "sha256": "91f4f0260d86387518754f77f15003fb07ff923aaec760f1dfbd3a902a81304f",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.45,
+        "DASH_CANCEL_AFTER": 0.45,
+        "WALK_CANCEL_AFTER": 0.45
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7259
+      },
+      "rawSha256": "9e6e213cb84d07db4db4341df290df5990ba3894f5f343d8ab57a8dcd6e78deb",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z_EventProcess",
+          "line": 6911,
+          "lastLine": 6934,
+          "sha256": "3e3c14f705dfaa9a1f27d16722132eb26edc58dcee5be9ace0a8995de39346b4",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7142
+      },
+      "rawSha256": "f715f3963d397b414c711d9221d88f9b940399519d7f7f0f7afbf687efd2dd88",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK_EventProcess",
+          "line": 6874,
+          "lastLine": 6898,
+          "sha256": "4bf2e511ce5c0b0647fe2361f8ec9a05db00e4ec87e7226c5be47863b4505098",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_RUSHING_SWORD",
+      "sourceState": "ESI_SI_A_EL_RUSHING_SWORD",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.266,
+        "ATTACK_CANCEL_AFTER_EX": 0.466,
+        "DASH_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.466
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7562
+      },
+      "rawSha256": "bb3e83dd01ade160216dbe20e0e2981142aa276ed608661990cb0c9bf69b0a7b",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_RUSHING_SWORD_EventProcess",
+          "line": 7017,
+          "lastLine": 7061,
+          "sha256": "ad558c71885321abfdc544afab447f6320902328d2d28512dc1678659193881a",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_RUSHING_SWORD_2nd",
+      "sourceState": "ESI_SI_A_EL_RUSHING_SWORD_2nd",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.266,
+        "ATTACK_CANCEL_AFTER_EX": 0.466,
+        "DASH_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.466
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7677
+      },
+      "rawSha256": "3c168cf1d10ed898f98101e05bb7f7f1ddfde19f281c35fc0deec97ae6700cb7",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_RUSHING_SWORD_2nd_EventProcess",
+          "line": 7081,
+          "lastLine": 7139,
+          "sha256": "b8d19a0f4237f93c5f6b274f32f8dda2164fabca4f2ee98e2e6b637247d8d5d2",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_EL_RUSHING_SWORD_3rd",
+      "sourceState": "ESI_SI_A_EL_RUSHING_SWORD_3rd",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.266,
+        "ATTACK_CANCEL_AFTER_EX": 0.466,
+        "DASH_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.466
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7792
+      },
+      "rawSha256": "52a7029a69c4f0054307f898c3a11222bfc9461e9a81bf871e5ebcf75d010357",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_RUSHING_SWORD_3rd_EventProcess",
+          "line": 7140,
+          "lastLine": 7153,
+          "sha256": "49997bcf3baa16209b3572d9376e42e03925a19941077ee687d4d0cd522ecaa4",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_A_SSK_POWER_BREAK",
+      "sourceState": "ESI_SI_A_SSK_POWER_BREAK",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.533,
+        "DASH_CANCEL_AFTER": 0.533,
+        "ATTACK_CANCEL_AFTER_EX": 0.566,
+        "WALK_CANCEL_AFTER": 0.566
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9128
+      },
+      "rawSha256": "746a9ff47e71f38a09e07590ea8722479c5287489c0c3dff84402304ba8c1ac8",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SSK_POWER_BREAK_EventProcess",
+          "line": 8818,
+          "lastLine": 8831,
+          "sha256": "6f5ef82ff96648f94b02b2426db4ab0086d19c1c2fb6a906b8b6f92defc35666",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_SA_EL_POWER_BURSTER",
+      "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.166,
+        "SKILL_CANCEL_AFTER": 1.166,
+        "ATTACK_CANCEL_AFTER_EX": 1.166,
+        "WALK_CANCEL_AFTER": 1.166
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8248
+      },
+      "rawSha256": "907814eacc8d0d0bb1d9d97701e20e63bfe9092c26deba69e96866cf7de673ce",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_EL_POWER_BURSTER_EventProcess",
+          "line": 8471,
+          "lastLine": 8484,
+          "sha256": "585a6b39f2ff2a7e861f82b6a55f59c37097e28fcf6aa2d9cbb3abd851197f7d",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_SA_SSK_EXTINCTION_CHARGE",
+      "sourceState": "ESI_SI_SA_SSK_EXTINCTION_CHARGE",
+      "kind": "skill",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9482
+      },
+      "rawSha256": "ca7c51ba3f359eeaaf0097941cdfabf052d91dada3b439c29b85169dba9c0880",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_EXTINCTION_CHARGE_EventProcess",
+          "line": 9045,
+          "lastLine": 9067,
+          "sha256": "4d7a44fad7783a2c51cdebb3435173e63e9acf907da7f18f7b90c4056b4bf5af",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE",
+      "sourceState": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE",
+      "kind": "skill",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 3,
+          "3": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9840
+      },
+      "rawSha256": "4b743f417c34035bf07215f841bb1e5f6573f71d363aac8581b21ef93d47250f",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_JUDGEMENT_DRIVE_EventProcess",
+          "line": 9355,
+          "lastLine": 9368,
+          "sha256": "6c1f42a40655204cf11f9f2b70af9a715b9bd7ddcb634c71b7dfadeb3514719e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 1.85,
+        "ATTACK_CANCEL_AFTER_EX": 1.9,
+        "DASH_CANCEL_AFTER": 1.85,
+        "WALK_CANCEL_AFTER": 1.9
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9348
+      },
+      "rawSha256": "aeaa7925b9a71edf793ab7969fd955956b798c6b5ab7a02812b01affc5b861b8",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_SPIRAL_BLAST_EventProcess",
+          "line": 8870,
+          "lastLine": 8883,
+          "sha256": "c7a812c42f8c6126c02bfec7e7d4de783b55942194072969cae47e6b9d12f796",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_SI_SA_SSK_VICTORIOUS_SWORD",
+      "sourceState": "ESI_SI_SA_SSK_VICTORIOUS_SWORD",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.8,
+        "SKILL_CANCEL_AFTER": 1.8,
+        "WALK_CANCEL_AFTER": 1.8,
+        "ATTACK_CANCEL_AFTER_EX": 1.8
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9743
+      },
+      "rawSha256": "73bffbe9487a23f4462807f9e1236c6a1a7966c41e3ec35326222cb7e37d6abd",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_VICTORIOUS_SWORD_EventProcess",
+          "line": 9267,
+          "lastLine": 9280,
+          "sha256": "be6811480e6502bd953699386900e7c08efd02d944ba313b24d3df0f6cf3a695",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4364
+      },
+      "rawSha256": "3357c742101dc8d4c2a2c118fc3b09fc2316a6c38dc47d5d8632176d0d60022c",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackBackEventProcess",
+          "line": 6150,
+          "lastLine": 6173,
+          "sha256": "b1cc5906cb05b157f21df1b9f556e98de7488e50031f827689bcb398187b3fef",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4350
+      },
+      "rawSha256": "2da36008a041f359e2d9c066d8e428f26201571b9bf1896034dbc907769c0c24",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackFrontEventProcess",
+          "line": 6118,
+          "lastLine": 6141,
+          "sha256": "1333489eb62d5c0083a7e2d3a59084e0758184caf3d19dd7a3ec94bb950a6c87",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.8
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4336
+      },
+      "rawSha256": "901fd865152e55ab57540fa384d93e1908c91055d90aab456f15b5885f33967d",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontBackEventProcess",
+          "line": 6085,
+          "lastLine": 6109,
+          "sha256": "0771f2e40be896e79c8d72b754a15d0b2ea0d7f9c73441ace1bc94c040d0f36e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4322
+      },
+      "rawSha256": "67a25c02ddb50932a9249f29465b9546e17331d9e69c45e50290e1d68c619cd4",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontFrontEventProcess",
+          "line": 6051,
+          "lastLine": 6075,
+          "sha256": "28533fa64f4c677f77d4541971fcd90ac0f4ede05fe820061a592a5eb43adc6e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "GM",
+      "state": "ESI_THROW_ITEM",
+      "sourceState": "ESI_THROW_ITEM",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 350,
+        "WALK_CANCEL_AFTER": 1200
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4911
+      },
+      "rawSha256": "c195d8cf7ed3cfa60749957122639581383de1d3a398093f15d21959da2da7c8",
+      "callbacks": []
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_SBH_XZ",
+      "sourceState": "ESI_COMBO_SBH_XZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.33,
+          "3": 0.33
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12305
+      },
+      "rawSha256": "7e6a3d7165c7bf5ce463d7d5e3944471a83313abd8cd89aa35253c8e242f6d37",
+      "callbacks": [
+        {
+          "method": "ESI_COMBO_SBH_XZ_EventProcess",
+          "line": 10526,
+          "lastLine": 10540,
+          "sha256": "87c136d6f67e7674febdade15d1f8b0868539393ab3835913c005435a5ceb063",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_SBH_XZZ",
+      "sourceState": "ESI_COMBO_SBH_XZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "DASH_CANCEL_AFTER": 0.42,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.455,
+          "3": 0.455
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12329
+      },
+      "rawSha256": "d887c147153c559cf6987fa9bfc74af0c07e37add4a7f5f446711d8dd9e30f85",
+      "callbacks": [
+        {
+          "method": "ESI_COMBO_SBH_XZZ_EventProcess",
+          "line": 10568,
+          "lastLine": 10582,
+          "sha256": "6b49a1204badf495f0a2ce50fa30729a06bc233e0bd1e47bfad1f0fc62e929b2",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_SBH_XZZZ",
+      "sourceState": "ESI_COMBO_SBH_XZZZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.908,
+        "SKILL_CANCEL_AFTER": 0.533
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12430
+      },
+      "rawSha256": "1d300f8200e0f44c2e886e11616c4c8b6efb337d4892801fcec930529cc9ceb6",
+      "callbacks": [
+        {
+          "method": "ESI_COMBO_SBH_XZZZ_EventProcess",
+          "line": 10605,
+          "lastLine": 10617,
+          "sha256": "9d3878bc7e5a1cf36230c08506542cfe498206f3d3d75cafdf45c80eda0450f3",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_SBH_ZZZX",
+      "sourceState": "ESI_COMBO_SBH_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.866,
+        "WALK_CANCEL_AFTER": 0.9
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12571
+      },
+      "rawSha256": "ab55547f7050374835147b7cdebb25701a4c36d6344ab167c49501facf891884",
+      "callbacks": []
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_X",
+      "sourceState": "ESI_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5652
+      },
+      "rawSha256": "d1d8c0ee96d15b6de30d2fd42c5f197463a1ef359f5d97e2d84c48b347bb7a38",
+      "callbacks": [
+        {
+          "method": "ComboXEventProcess",
+          "line": 6465,
+          "lastLine": 6490,
+          "sha256": "23b5f176a2996d77b276d872c72a0f1ea9af9d2289bbd5aea6c724af56924bf7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_XX",
+      "sourceState": "ESI_COMBO_XX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.666,
+        "WALK_CANCEL_AFTER": 0.733,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.1,
+          "2": 0.271,
+          "3": 0.271
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5732
+      },
+      "rawSha256": "68370ea7011c058bbaec50e55d8343b71661e5e9fb90bdb71b99c05fdc1bdd35",
+      "callbacks": [
+        {
+          "method": "ComboXXEventProcess",
+          "line": 6491,
+          "lastLine": 6514,
+          "sha256": "aa47a9957dfe4afddbe9ccbc618cc87e61828416ac2b03d96f5f47ac8acceca0",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_XXX",
+      "sourceState": "ESI_COMBO_XXX",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.766,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5875
+      },
+      "rawSha256": "2c6da768e332351df2616fe767ffd55b086bf9e3edfd66f9b204885e24975679",
+      "callbacks": [
+        {
+          "method": "ComboXXXEventProcess",
+          "line": 6515,
+          "lastLine": 6532,
+          "sha256": "6c5101c6669041441edc010197e7085852cf8b396e3503b4b378d090cab71263",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_XXZ",
+      "sourceState": "ESI_COMBO_XXZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.966,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6006
+      },
+      "rawSha256": "84bdb46f8ba4861eb94861d450d0bea93fefc5690f3c24b257840aceece754ef",
+      "callbacks": [
+        {
+          "method": "ComboXXZEventProcess",
+          "line": 6533,
+          "lastLine": 6550,
+          "sha256": "a9686b4a1224539a1f939b76fad33a5c5b4dadd835c19a8d25159a923a488c54",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_Z",
+      "sourceState": "ESI_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.33,
+          "3": 0.33
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5239
+      },
+      "rawSha256": "5837cbffa5f453e4217b85094eb56f73e1ed556a0390ddd4eee44c13a4b3d9c4",
+      "callbacks": [
+        {
+          "method": "ComboZEventProcess",
+          "line": 6363,
+          "lastLine": 6381,
+          "sha256": "2a4357356bdd7ed0bd605105088f6c134f2acb362432d07f7b810ddd3645053c",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_ZZ",
+      "sourceState": "ESI_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.462,
+          "3": 0.462
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5310
+      },
+      "rawSha256": "b0ab583529403533b93d80b4fb21cf358bfd4a96b5f31f01834556c71750b54f",
+      "callbacks": [
+        {
+          "method": "ComboZZEventProcess",
+          "line": 6382,
+          "lastLine": 6400,
+          "sha256": "5503d069d94a7bb65ecec402657160667d330c50a07790bbe9a24343650e260e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_ZZZ",
+      "sourceState": "ESI_COMBO_ZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.266,
+        "SKILL_CANCEL_AFTER": 0.266,
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5395
+      },
+      "rawSha256": "d13dc5a305e029c58fce95f562e5e57f6e5439f51c37fcf73ce03baffdb75cc6",
+      "callbacks": [
+        {
+          "method": "ComboZZZEventProcess",
+          "line": 6401,
+          "lastLine": 6423,
+          "sha256": "161f64c243bb9b241a1fd8b7778a9dcdb732b002dd714143632c81b63ca928b7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_ZZZX",
+      "sourceState": "ESI_COMBO_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.8
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5578
+      },
+      "rawSha256": "7b2cac72fb19f211f38ba541ae5f4b9b9bdb26cfc12ec9c955c679b5f0841f1c",
+      "callbacks": [
+        {
+          "method": "ComboZZZXEventProcess",
+          "line": 6447,
+          "lastLine": 6464,
+          "sha256": "07fbbf04a2214069379494e44206887bfb2db01ceadee98e086f90ff2101d6a8",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_COMBO_ZZZZ",
+      "sourceState": "ESI_COMBO_ZZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.4,
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.6
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5485
+      },
+      "rawSha256": "ab4000351589396ef93da21f2fc7321c6fa6f12d23076b183aa8c6d364355427",
+      "callbacks": [
+        {
+          "method": "ComboZZZZEventProcess",
+          "line": 6424,
+          "lastLine": 6446,
+          "sha256": "146dec7d19c1ad45910d2a35610f7966f5e68fce41e46431688eedb2c8e32a37",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "sourceState": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4174
+      },
+      "rawSha256": "5e24446163b810e5e30a831c3beb3d8b47beac2d59476fb65b8b8a0be410efbd",
+      "callbacks": [
+        {
+          "method": "DamageAirDownLandingEventProcess",
+          "line": 6045,
+          "lastLine": 6048,
+          "sha256": "073bd8e95d1c43eadde7e840b904526cdd5e334fd7a2b8d0f791ba7e6bb1ccbf",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DAMAGE_DOWN_BACK",
+      "sourceState": "ESI_DAMAGE_DOWN_BACK",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4090
+      },
+      "rawSha256": "99b96eb6f81dbf0dae4f697780dd1dfa87bdc783c24c48c8d69e9635218fdbf5",
+      "callbacks": [
+        {
+          "method": "DamageDownBackEventProcess",
+          "line": 5916,
+          "lastLine": 6042,
+          "sha256": "bfcf79e7d8384373841069be1b16c55c5d6a1d5017d0d3a66360a58a35ec9f74",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DAMAGE_DOWN_FRONT",
+      "sourceState": "ESI_DAMAGE_DOWN_FRONT",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4047
+      },
+      "rawSha256": "51866eb4c36e0304418b4958cc53f007a545efe0af28cddaf6f248d798632901",
+      "callbacks": [
+        {
+          "method": "DamageDownFrontEventProcess",
+          "line": 5784,
+          "lastLine": 5906,
+          "sha256": "977c2516a0205ab7349a5473ae629f6b12bd89322530b1d5e19bbbb74cf1e16a",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SBH_X",
+      "sourceState": "ESI_DASH_COMBO_SBH_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 0.309,
+          "3": 0.209
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.309,
+          "3": 0.209
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12459
+      },
+      "rawSha256": "e08455432c0049850b7cff825da8e9351968a82f42443dd8e7dc3e0be83508d2",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SBH_X_EventProcess",
+          "line": 10650,
+          "lastLine": 10674,
+          "sha256": "4b48853cdefdc98e5c8d356ab7dcd361046bf1a3133269628adeae6e7c5edb8e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SBH_XX",
+      "sourceState": "ESI_DASH_COMBO_SBH_XX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 0.499,
+          "3": 0.399
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.499,
+          "3": 0.399
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12486
+      },
+      "rawSha256": "7f9973e5c5d871d733b991ae25f4bc9a27974e91822411b0768aa0f4d9c6736c",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SBH_XX_EventProcess",
+          "line": 10717,
+          "lastLine": 10741,
+          "sha256": "bb16fd293fb4f3730beda0aa68b74383ca8b28b1defe713a9d4aed088e81d8a3",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SBH_XXX",
+      "sourceState": "ESI_DASH_COMBO_SBH_XXX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.65,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.724,
+          "3": 0.624
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12512
+      },
+      "rawSha256": "4fe844c6665c395519d5726a6e59875af0647a56f506d3330f04c70c8dcbc522",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SBH_XXX_EventProcess",
+          "line": 10784,
+          "lastLine": 10807,
+          "sha256": "a59594bad601d68b367b15738d96e8902eadf9389ecdcd167aaaf94e3185828b",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SBH_XXXZ",
+      "sourceState": "ESI_DASH_COMBO_SBH_XXXZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12537
+      },
+      "rawSha256": "d9a2d6b815f6209b7c3ccdb05668edf8fc9ad8fd081bb6bb6444962d3edac1b8",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SBH_XXXZ_EventProcess",
+          "line": 10846,
+          "lastLine": 10873,
+          "sha256": "c142f926fc9f1fd498a744777db6938928055b41b98b75d922a2556478b697f8",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SPK_ZX",
+      "sourceState": "ESI_DASH_COMBO_SPK_ZX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.866,
+        "WALK_CANCEL_AFTER": 0.9
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9988
+      },
+      "rawSha256": "b12d6cb2ad1ca0326bc0a0106443e5ff205f745fcd4dc2eaee5c32d91f161883",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SPK_ZX_EventProcess",
+          "line": 9372,
+          "lastLine": 9385,
+          "sha256": "08a0d3ae319a168ce247efe94c94ab239d1163015174a9489825d2391542217e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SPK_ZZ",
+      "sourceState": "ESI_DASH_COMBO_SPK_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.933,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9957
+      },
+      "rawSha256": "b404371a8ffab55e022f89482f17bdbf506c9856683578ed9c39b9d90a4cfa03",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SPK_ZZ_EventProcess",
+          "line": 9401,
+          "lastLine": 9415,
+          "sha256": "bb0e440f53bb5135e506c7eebd8fa74d7d72bb680fe57ae7365421eea93fa4d7",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_SPK_ZZZ",
+      "sourceState": "ESI_DASH_COMBO_SPK_ZZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.566,
+        "WALK_CANCEL_AFTER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10011
+      },
+      "rawSha256": "adbafa2b832e6557f000967f5606ac15fdaf897d3b4073b32c38a79810ce3516",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SPK_ZZZ_EventProcess",
+          "line": 9416,
+          "lastLine": 9429,
+          "sha256": "ed13fa24c4273a039f4bfaa02e24fb32d06b10b12a12dabba276ef18932bdb05",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_X",
+      "sourceState": "ESI_DASH_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.466,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6384
+      },
+      "rawSha256": "d1224bf2f2ad0777c433ed7efdb8f649afdecc6f77955714108a9089a321f64d",
+      "callbacks": [
+        {
+          "method": "DashComboXEventProcess",
+          "line": 6658,
+          "lastLine": 6670,
+          "sha256": "ea6b52e7b017fb20cda812faee0a4b08bcc18288fc8c187dfa100f851d9ac5e9",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_Z",
+      "sourceState": "ESI_DASH_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.333,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME5": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6218
+      },
+      "rawSha256": "d2318f2f4507ba634ea12636ac71a0431c9793fb42940e05834a34ac175b5a21",
+      "callbacks": [
+        {
+          "method": "DashComboZEventProcess",
+          "line": 6607,
+          "lastLine": 6644,
+          "sha256": "68431fa4f5f345ce3a2af2a21b12acd4e912beeccaca1c64725c4baedc171e54",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_COMBO_ZZ",
+      "sourceState": "ESI_DASH_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.833,
+        "WALK_CANCEL_AFTER": 0.933
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6308
+      },
+      "rawSha256": "65886342dacae772c88b28f6505141ea9543b59d3d8e815115a71f6a0169ead4",
+      "callbacks": [
+        {
+          "method": "DashComboZZEventProcess",
+          "line": 6645,
+          "lastLine": 6657,
+          "sha256": "2462dd92ef3dddee3a67502265fb6f97946efd3b1adfada39666178369f25f7f",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_END",
+      "sourceState": "ESI_DASH_END",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.266
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3686
+      },
+      "rawSha256": "1b2ea53c4367ed1ba0e634f71f58255f71f075103cf00637e7061e203a8b4865",
+      "callbacks": [
+        {
+          "method": "DashEndEventProcess",
+          "line": 5428,
+          "lastLine": 5514,
+          "sha256": "e6b35808a3a45b2619ea21f006d4fdc5c4fa0707e01e3c8da3f4f93ba9198e21",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_SPK_XZ",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SPK_XZ",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.383
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10046
+      },
+      "rawSha256": "99de4c837ff91ff1aaa0678a5e45a8c4ed3f2b2724af9d217f61b96f5028b8af",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_JUMP_COMBO_SPK_XZ_EventProcess",
+          "line": 9445,
+          "lastLine": 9463,
+          "sha256": "de89a46c68005a430b7bb6fd859a59992577b094f70fdb0be27eb43f2070a3c4",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_SPK_ZX_LOOP",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SPK_ZX_LOOP",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 100
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10103
+      },
+      "rawSha256": "88a36086b5eef406f3fee4891a739c34e067bd6d064d01143e35ef31e38e9ec4",
+      "callbacks": []
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_X",
+      "sourceState": "ESI_DASH_JUMP_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.316
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6693
+      },
+      "rawSha256": "3ebba419eca7f9c6e00c4b907450c5ba29317a0eedfce763a451a2da750ff83a",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXEventProcess",
+          "line": 6705,
+          "lastLine": 6734,
+          "sha256": "f4429ac38cc7a07da9b50b7dcbd384e0b5a1e464eac1698e672b0b963815f05f",
+          "contains2026": true,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "sourceState": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.1,
+          "3": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6787
+      },
+      "rawSha256": "8d7fbec823225dea2c1c39084f8fcbae2af4142d34000f70e5ac067c0097d8a5",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXXLandingEventProcess",
+          "line": 6744,
+          "lastLine": 6757,
+          "sha256": "453fc531a063218efc78cc11241f55db4c494cc8295c6c998773c3c7ec32eb69",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_Z",
+      "sourceState": "ESI_DASH_JUMP_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.229
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.18
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6461
+      },
+      "rawSha256": "fd7390349f243d9358db1d91bfdf53f1549aa04384607efe38d68a39767201e6",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZEventProcess",
+          "line": 6671,
+          "lastLine": 6681,
+          "sha256": "4dacbae7497e05ef324f7ad01820a12d6269d0f62dfc7b5cd3946e860c0e71d5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_DASH_JUMP_COMBO_ZZ",
+      "sourceState": "ESI_DASH_JUMP_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.166,
+          "2": 100,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6531
+      },
+      "rawSha256": "68ee245c8c893217a31e7828c61acd88f5780b577fe2d8d9ab3fe87194c0f369",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZZEventProcess",
+          "line": 6682,
+          "lastLine": 6692,
+          "sha256": "f02f124596877cf269e9f5fd228f0a4b8e01769957714e6f558254c2c0a926c5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7081
+      },
+      "rawSha256": "411a557bfa21cd60de6e6cd573510785ee8456c382fe78f824ad34dad4fce765",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_EventProcess",
+          "line": 6828,
+          "lastLine": 6865,
+          "sha256": "91f4f0260d86387518754f77f15003fb07ff923aaec760f1dfbd3a902a81304f",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.45,
+        "DASH_CANCEL_AFTER": 0.45,
+        "WALK_CANCEL_AFTER": 0.45
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7259
+      },
+      "rawSha256": "9e6e213cb84d07db4db4341df290df5990ba3894f5f343d8ab57a8dcd6e78deb",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z_EventProcess",
+          "line": 6911,
+          "lastLine": 6934,
+          "sha256": "3e3c14f705dfaa9a1f27d16722132eb26edc58dcee5be9ace0a8995de39346b4",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7142
+      },
+      "rawSha256": "f715f3963d397b414c711d9221d88f9b940399519d7f7f0f7afbf687efd2dd88",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK_EventProcess",
+          "line": 6874,
+          "lastLine": 6898,
+          "sha256": "4bf2e511ce5c0b0647fe2361f8ec9a05db00e4ec87e7226c5be47863b4505098",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SBH_FIREWORKS",
+      "sourceState": "ESI_SI_A_SBH_FIREWORKS",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.715,
+        "DASH_CANCEL_AFTER": 0.715,
+        "WALK_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12692
+      },
+      "rawSha256": "3e93b5ddb296b0b110e56ec7b00a7bb2725e68f0d30650a7bcce6cade5545c1f",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SBH_FIREWORKS_EventProcess",
+          "line": 10951,
+          "lastLine": 10964,
+          "sha256": "8dec0f94c5eb021b887cc1a98ab3355cddd2ecb0613cc441274ea4947390d1c9",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SBH_FLAME_SWORD",
+      "sourceState": "ESI_SI_A_SBH_FLAME_SWORD",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.522,
+        "DASH_CANCEL_AFTER": 0.785,
+        "WALK_CANCEL_AFTER": 0.785
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12634
+      },
+      "rawSha256": "4441bc77e9d61ae124e0546b7bc8a99da4a4862eb1fe1b35b8bca0df61226fc9",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SBH_FLAME_SWORD_EventProcess",
+          "line": 10903,
+          "lastLine": 10920,
+          "sha256": "d2e796dcfc0a92d060d95513808494a0c2fa51bc4709682018a2c55ea0a4873d",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SBH_FLAME_SWORD_FINISH",
+      "sourceState": "ESI_SI_A_SBH_FLAME_SWORD_FINISH",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.581,
+        "DASH_CANCEL_AFTER": 0.581,
+        "WALK_CANCEL_AFTER": 0.62
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12652
+      },
+      "rawSha256": "82517cb1bf456d23f0d04b68529d86f7eb5eaac049d1f5fc38aeba1545b31e54",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SBH_FLAME_SWORD_FINISH_EventProcess",
+          "line": 10921,
+          "lastLine": 10934,
+          "sha256": "c63e1e6442ef65133ea543954dbbc62da72faa92af38014d6ecb5bbd36156a65",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SBH_SCALET_ROSE",
+      "sourceState": "ESI_SI_A_SBH_SCALET_ROSE",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.706,
+        "DASH_CANCEL_AFTER": 0.706,
+        "WALK_CANCEL_AFTER": 0.706
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12730
+      },
+      "rawSha256": "5c3753cc7f20cd2e5d5fab49ff3f509c5ca725e459e14c1a95692662c29bfc6f",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SBH_SCALET_ROSE_EventProcess",
+          "line": 10981,
+          "lastLine": 11008,
+          "sha256": "860373900a2ca8889e1323299e15a0d4d5e4bef9d6fe3a23470381d4e87b13fc",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS",
+      "sourceState": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4,
+        "DASH_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12752
+      },
+      "rawSha256": "fddce8e5a7911ae87b6176ceea6d9d306ef233afeec3e681c26f1b1ea11f64eb",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS_EventProcess",
+          "line": 11067,
+          "lastLine": 11080,
+          "sha256": "1f4c6c6d312d189546ed6c249bb3b4b89c3a72c2ae356b6d464805cc140fbc4f",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SPK_AVATAR_OF_THE_FIRE",
+      "sourceState": "ESI_SI_A_SPK_AVATAR_OF_THE_FIRE",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.7,
+        "DASH_CANCEL_AFTER": 0.7,
+        "WALK_CANCEL_AFTER": 0.7
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10289
+      },
+      "rawSha256": "65022c408adab3739125d89f9ad2fecf7e8c76616468b88341861bd4d7de41dc",
+      "callbacks": []
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SPK_BIG_BURST",
+      "sourceState": "ESI_SI_A_SPK_BIG_BURST",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 1.05,
+        "DASH_CANCEL_AFTER": 1.05,
+        "ATTACK_CANCEL_AFTER_EX": 1.1,
+        "WALK_CANCEL_AFTER": 1.1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10246
+      },
+      "rawSha256": "b638d540d3d555bb4adf5548142c6573412d07dabe0f7ae8ac61c0597279c0f3",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SPK_BIG_BURST_EventProcess",
+          "line": 9550,
+          "lastLine": 9563,
+          "sha256": "53ef1e6d722a2bbc32680bb21a1b1ea482578fe0ad074a6a36823186fc0a3ddc",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_A_SPK_SWORD_ERUPTION",
+      "sourceState": "ESI_SI_A_SPK_SWORD_ERUPTION",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.8,
+        "DASH_CANCEL_AFTER": 0.8,
+        "ATTACK_CANCEL_AFTER_EX": 0.85,
+        "WALK_CANCEL_AFTER": 0.85
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10171
+      },
+      "rawSha256": "a59e3ae20dc0eee825c6fe7ef16c990781f21b4b8f010a8146da63140ae4d526",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_SPK_SWORD_ERUPTION_EventProcess",
+          "line": 9526,
+          "lastLine": 9539,
+          "sha256": "406869f8b4611d4d7ad3cbbc835b49fdefdb4566e39a57a8c55744d2ee69a360",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_SA_EL_POWER_BURSTER",
+      "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.166,
+        "SKILL_CANCEL_AFTER": 1.166,
+        "ATTACK_CANCEL_AFTER_EX": 1.166,
+        "WALK_CANCEL_AFTER": 1.166
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8248
+      },
+      "rawSha256": "907814eacc8d0d0bb1d9d97701e20e63bfe9092c26deba69e96866cf7de673ce",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_EL_POWER_BURSTER_EventProcess",
+          "line": 8471,
+          "lastLine": 8484,
+          "sha256": "585a6b39f2ff2a7e861f82b6a55f59c37097e28fcf6aa2d9cbb3abd851197f7d",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_SA_SBH_BLAZE_WING",
+      "sourceState": "ESI_SI_SA_SBH_BLAZE_WING",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.591,
+        "SKILL_CANCEL_AFTER": 1.591,
+        "WALK_CANCEL_AFTER": 1.614
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13001
+      },
+      "rawSha256": "1bb4131d52dbdd50b0588adbb846e995fdc714c95656e0d940b843d2fbd3fc11",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SBH_BLAZE_WING_EventProcess",
+          "line": 11186,
+          "lastLine": 11199,
+          "sha256": "4d6aa539a2a6571dd6d93778a3bbad275a70bfa1199168a1f4f5d41ec94ada91",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_SA_SBH_SCALDIC_SWORD",
+      "sourceState": "ESI_SI_SA_SBH_SCALDIC_SWORD",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.966,
+        "SKILL_CANCEL_AFTER": 1.001,
+        "WALK_CANCEL_AFTER": 1.001
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12827
+      },
+      "rawSha256": "ebe04460cdd8e97f5bf30735641656482416b3f948ce8446243be6bc7e1fa7d3",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SBH_SCALDIC_SWORD_EventProcess",
+          "line": 11096,
+          "lastLine": 11109,
+          "sha256": "806987dc2000020e02e36f0187704471ccbaf01fc519cdc9168b9613d5e7bb25",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE",
+      "sourceState": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.089,
+        "SKILL_CANCEL_AFTER": 1.089,
+        "WALK_CANCEL_AFTER": 1.158
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12913
+      },
+      "rawSha256": "64d072061155297d53b9b1e809b8cc6b49941c62cb5c25b55dc85bc159050a58",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE_EventProcess",
+          "line": 11123,
+          "lastLine": 11136,
+          "sha256": "22bd6f2cba70b4ab658de56aa68124e794905ca59273fb7dc731abd6ea3d1840",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 1.85,
+        "ATTACK_CANCEL_AFTER_EX": 1.9,
+        "DASH_CANCEL_AFTER": 1.85,
+        "WALK_CANCEL_AFTER": 1.9
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9348
+      },
+      "rawSha256": "aeaa7925b9a71edf793ab7969fd955956b798c6b5ab7a02812b01affc5b861b8",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_SPIRAL_BLAST_EventProcess",
+          "line": 8870,
+          "lastLine": 8883,
+          "sha256": "c7a812c42f8c6126c02bfec7e7d4de783b55942194072969cae47e6b9d12f796",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4364
+      },
+      "rawSha256": "3357c742101dc8d4c2a2c118fc3b09fc2316a6c38dc47d5d8632176d0d60022c",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackBackEventProcess",
+          "line": 6150,
+          "lastLine": 6173,
+          "sha256": "b1cc5906cb05b157f21df1b9f556e98de7488e50031f827689bcb398187b3fef",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4350
+      },
+      "rawSha256": "2da36008a041f359e2d9c066d8e428f26201571b9bf1896034dbc907769c0c24",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackFrontEventProcess",
+          "line": 6118,
+          "lastLine": 6141,
+          "sha256": "1333489eb62d5c0083a7e2d3a59084e0758184caf3d19dd7a3ec94bb950a6c87",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.8
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4336
+      },
+      "rawSha256": "901fd865152e55ab57540fa384d93e1908c91055d90aab456f15b5885f33967d",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontBackEventProcess",
+          "line": 6085,
+          "lastLine": 6109,
+          "sha256": "0771f2e40be896e79c8d72b754a15d0b2ea0d7f9c73441ace1bc94c040d0f36e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4322
+      },
+      "rawSha256": "67a25c02ddb50932a9249f29465b9546e17331d9e69c45e50290e1d68c619cd4",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontFrontEventProcess",
+          "line": 6051,
+          "lastLine": 6075,
+          "sha256": "28533fa64f4c677f77d4541971fcd90ac0f4ede05fe820061a592a5eb43adc6e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "BH",
+      "state": "ESI_THROW_ITEM",
+      "sourceState": "ESI_THROW_ITEM",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 350,
+        "WALK_CANCEL_AFTER": 1200
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4911
+      },
+      "rawSha256": "c195d8cf7ed3cfa60749957122639581383de1d3a398093f15d21959da2da7c8",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XX",
+      "sourceState": "ESI_COMBO_SDK_XX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.4,
+        "SKILL_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.4,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.05,
+          "2": 0.383,
+          "3": 0.394
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.05,
+          "2": 0.383,
+          "3": 0.394
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13880
+      },
+      "rawSha256": "dfea46daeb18a3e056b11c4eb6b9394de65eeb1b871f683d75757875769b5330",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XXX",
+      "sourceState": "ESI_COMBO_SDK_XXX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.535,
+        "SKILL_CANCEL_AFTER": 0.535,
+        "WALK_CANCEL_AFTER": 0.535,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.05,
+          "2": 0.52,
+          "3": 0.534
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13960
+      },
+      "rawSha256": "89cc8b0a84e12d93033d94df8c2b32b4ac603929a36c995a900037289ab65d28",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XXXX",
+      "sourceState": "ESI_COMBO_SDK_XXXX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.4,
+        "SKILL_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.4,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.05,
+          "2": 0.348,
+          "3": 0.348
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14037
+      },
+      "rawSha256": "3481a83cb999c55acf7ddfbcfb9210bcbf951a29069db8a327e2e109d2e8ebf1",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XXXXX",
+      "sourceState": "ESI_COMBO_SDK_XXXXX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.41,
+        "SKILL_CANCEL_AFTER": 0.41,
+        "WALK_CANCEL_AFTER": 0.41,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.05,
+          "2": 0.408,
+          "3": 0.408
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14117
+      },
+      "rawSha256": "95a62676bf9cec5bdcc098590271c1cec2324e5d79627d40a032a282413a91a8",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XXXXXX",
+      "sourceState": "ESI_COMBO_SDK_XXXXXX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.43,
+        "SKILL_CANCEL_AFTER": 0.43,
+        "WALK_CANCEL_AFTER": 0.43,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.05,
+          "2": 0.42,
+          "3": 0.421
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14197
+      },
+      "rawSha256": "e4293dea13b9cd12aae4cd5c5a59e5f2178298dcbf9646373fe43c992408051c",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_XXXXXXX",
+      "sourceState": "ESI_COMBO_SDK_XXXXXXX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.5,
+        "DASH_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.5
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14262
+      },
+      "rawSha256": "3903b4d11f1abf1afa78c1b813ff0b1250535630d344d0ba93e08da8ddfc0fd8",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_ZZZX",
+      "sourceState": "ESI_COMBO_SDK_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.9,
+        "SKILL_CANCEL_AFTER": 0.85,
+        "WALK_CANCEL_AFTER": 0.9,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.153,
+          "2": 0.666,
+          "3": 0.7
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13570
+      },
+      "rawSha256": "b0dbf0d7df0400220e9dcb8296da3733be690b608dae46281225522e7180c89a",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_SDK_ZZZXX",
+      "sourceState": "ESI_COMBO_SDK_ZZZXX",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1.2,
+        "DASH_CANCEL_AFTER": 1.2,
+        "SKILL_CANCEL_AFTER": 0.831
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13638
+      },
+      "rawSha256": "05107655150c20a4c9aa66d73827f97416a509eb265e626a1b0b892bf7bfe7cf",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_X",
+      "sourceState": "ESI_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.429,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5652
+      },
+      "rawSha256": "d1d8c0ee96d15b6de30d2fd42c5f197463a1ef359f5d97e2d84c48b347bb7a38",
+      "callbacks": [
+        {
+          "method": "ComboXEventProcess",
+          "line": 6465,
+          "lastLine": 6490,
+          "sha256": "23b5f176a2996d77b276d872c72a0f1ea9af9d2289bbd5aea6c724af56924bf7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_XX",
+      "sourceState": "ESI_COMBO_XX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.666,
+        "WALK_CANCEL_AFTER": 0.733,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.1,
+          "2": 0.363,
+          "3": 0.363
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.1,
+          "2": 0.271,
+          "3": 0.271
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5732
+      },
+      "rawSha256": "68370ea7011c058bbaec50e55d8343b71661e5e9fb90bdb71b99c05fdc1bdd35",
+      "callbacks": [
+        {
+          "method": "ComboXXEventProcess",
+          "line": 6491,
+          "lastLine": 6514,
+          "sha256": "aa47a9957dfe4afddbe9ccbc618cc87e61828416ac2b03d96f5f47ac8acceca0",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_XXX",
+      "sourceState": "ESI_COMBO_XXX",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.766,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5875
+      },
+      "rawSha256": "2c6da768e332351df2616fe767ffd55b086bf9e3edfd66f9b204885e24975679",
+      "callbacks": [
+        {
+          "method": "ComboXXXEventProcess",
+          "line": 6515,
+          "lastLine": 6532,
+          "sha256": "6c5101c6669041441edc010197e7085852cf8b396e3503b4b378d090cab71263",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_XXZ",
+      "sourceState": "ESI_COMBO_XXZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 1,
+        "DASH_CANCEL_AFTER": 0.966,
+        "SKILL_CANCEL_AFTER": 0.766
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6006
+      },
+      "rawSha256": "84bdb46f8ba4861eb94861d450d0bea93fefc5690f3c24b257840aceece754ef",
+      "callbacks": [
+        {
+          "method": "ComboXXZEventProcess",
+          "line": 6533,
+          "lastLine": 6550,
+          "sha256": "a9686b4a1224539a1f939b76fad33a5c5b4dadd835c19a8d25159a923a488c54",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_Z",
+      "sourceState": "ESI_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0,
+        "WALK_CANCEL_AFTER": 0.566,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.33,
+          "3": 0.33
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5239
+      },
+      "rawSha256": "5837cbffa5f453e4217b85094eb56f73e1ed556a0390ddd4eee44c13a4b3d9c4",
+      "callbacks": [
+        {
+          "method": "ComboZEventProcess",
+          "line": 6363,
+          "lastLine": 6381,
+          "sha256": "2a4357356bdd7ed0bd605105088f6c134f2acb362432d07f7b810ddd3645053c",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_ZZ",
+      "sourceState": "ESI_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.462,
+          "3": 0.462
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5310
+      },
+      "rawSha256": "b0ab583529403533b93d80b4fb21cf358bfd4a96b5f31f01834556c71750b54f",
+      "callbacks": [
+        {
+          "method": "ComboZZEventProcess",
+          "line": 6382,
+          "lastLine": 6400,
+          "sha256": "5503d069d94a7bb65ecec402657160667d330c50a07790bbe9a24343650e260e",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_ZZZ",
+      "sourceState": "ESI_COMBO_ZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.266,
+        "SKILL_CANCEL_AFTER": 0.266,
+        "WALK_CANCEL_AFTER": 0.8,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0.133,
+          "2": 0.528,
+          "3": 0.528
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5395
+      },
+      "rawSha256": "d13dc5a305e029c58fce95f562e5e57f6e5439f51c37fcf73ce03baffdb75cc6",
+      "callbacks": [
+        {
+          "method": "ComboZZZEventProcess",
+          "line": 6401,
+          "lastLine": 6423,
+          "sha256": "161f64c243bb9b241a1fd8b7778a9dcdb732b002dd714143632c81b63ca928b7",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_ZZZX",
+      "sourceState": "ESI_COMBO_ZZZX",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.7,
+        "SKILL_CANCEL_AFTER": 0.5,
+        "WALK_CANCEL_AFTER": 0.8
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5578
+      },
+      "rawSha256": "7b2cac72fb19f211f38ba541ae5f4b9b9bdb26cfc12ec9c955c679b5f0841f1c",
+      "callbacks": [
+        {
+          "method": "ComboZZZXEventProcess",
+          "line": 6447,
+          "lastLine": 6464,
+          "sha256": "07fbbf04a2214069379494e44206887bfb2db01ceadee98e086f90ff2101d6a8",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_COMBO_ZZZZ",
+      "sourceState": "ESI_COMBO_ZZZZ",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.4,
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.6
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 5485
+      },
+      "rawSha256": "ab4000351589396ef93da21f2fc7321c6fa6f12d23076b183aa8c6d364355427",
+      "callbacks": [
+        {
+          "method": "ComboZZZZEventProcess",
+          "line": 6424,
+          "lastLine": 6446,
+          "sha256": "146dec7d19c1ad45910d2a35610f7966f5e68fce41e46431688eedb2c8e32a37",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "sourceState": "ESI_DAMAGE_AIR_DOWN_LANDING",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4174
+      },
+      "rawSha256": "5e24446163b810e5e30a831c3beb3d8b47beac2d59476fb65b8b8a0be410efbd",
+      "callbacks": [
+        {
+          "method": "DamageAirDownLandingEventProcess",
+          "line": 6045,
+          "lastLine": 6048,
+          "sha256": "073bd8e95d1c43eadde7e840b904526cdd5e334fd7a2b8d0f791ba7e6bb1ccbf",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DAMAGE_DOWN_BACK",
+      "sourceState": "ESI_DAMAGE_DOWN_BACK",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4090
+      },
+      "rawSha256": "99b96eb6f81dbf0dae4f697780dd1dfa87bdc783c24c48c8d69e9635218fdbf5",
+      "callbacks": [
+        {
+          "method": "DamageDownBackEventProcess",
+          "line": 5916,
+          "lastLine": 6042,
+          "sha256": "bfcf79e7d8384373841069be1b16c55c5d6a1d5017d0d3a66360a58a35ec9f74",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DAMAGE_DOWN_FRONT",
+      "sourceState": "ESI_DAMAGE_DOWN_FRONT",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.099,
+          "2": 0.2,
+          "3": 0.25
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4047
+      },
+      "rawSha256": "51866eb4c36e0304418b4958cc53f007a545efe0af28cddaf6f248d798632901",
+      "callbacks": [
+        {
+          "method": "DamageDownFrontEventProcess",
+          "line": 5784,
+          "lastLine": 5906,
+          "sha256": "977c2516a0205ab7349a5473ae629f6b12bd89322530b1d5e19bbbb74cf1e16a",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_XZ_CHARGE",
+      "sourceState": "ESI_DASH_COMBO_SCA_XZ_CHARGE",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 1,
+          "3": 0.35
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15160
+      },
+      "rawSha256": "b99407ac89ef88ceb5a05b2cf66bac31f6b67a74cb7341e29f813c5dd4f0d78c",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZX_END",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZX_END",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.8,
+        "SKILL_CANCEL_AFTER": 0.8,
+        "WALK_CANCEL_AFTER": 0.8
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15119
+      },
+      "rawSha256": "32b3a7d9f7abf81ed2716b42c4c3a6ebcd84eb948512ba0a6ebc9a78ab739721",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZX_LOOP",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZX_LOOP",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.001
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15036
+      },
+      "rawSha256": "adacb7835fb12f4711ffebfab084a5ed948eacee97107b3c4c64f820bf0e1811",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SCA_ZX_LOOP_EventProcess",
+          "line": 8378,
+          "lastLine": 8388,
+          "sha256": "4fd27158ddd5d755f6e659d55790803e33b0faa6c14852638dc8ddd0202bbc70",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZX_START",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZX_START",
+      "kind": "command",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.549,
+        "SKILL_CANCEL_AFTER": 0.549,
+        "WALK_CANCEL_AFTER": 0.549,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 1,
+          "3": 0.5
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14872
+      },
+      "rawSha256": "5de02def6b2e404cde359ab489343c6e41d71e5d8f2ca98c83903b2a10a81341",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SCA_ZX_START_EventProcess",
+          "line": 8335,
+          "lastLine": 8352,
+          "sha256": "4ae5b05e14f816ca104251c4e9231a624498758fde67e708ca8c797913fe9660",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZZ",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.833,
+        "WALK_CANCEL_AFTER": 0.933,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.462,
+          "3": 0.3
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14387
+      },
+      "rawSha256": "840dbf99f04b6b2011170f1bd4a51b3f65bef81926c3f9daffc91ab746d3f534",
+      "callbacks": [
+        {
+          "method": "ESI_DASH_COMBO_SCA_ZZ_EventProcess",
+          "line": 8306,
+          "lastLine": 8332,
+          "sha256": "ed5e7413c14f0045bd24f42336af464a5863b971e8af7a2761baddc4e51d9304",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZZZ_END",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_END",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.8,
+        "DASH_CANCEL_AFTER": 0.8,
+        "WALK_CANCEL_AFTER": 0.866
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14778
+      },
+      "rawSha256": "ca2b597587d0d841ad3fc9bb58c07527f7388a1e2c6ff62e2e34287f2ceb8d49",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_1",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_1",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.2,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.38,
+          "3": 0.38
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14591
+      },
+      "rawSha256": "bb4568f82e21c646fdb1f25ffe64929873a6e05003a1c455490a778912c60eef",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_2",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_2",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.15,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.38,
+          "3": 0.38
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14711
+      },
+      "rawSha256": "7acee3af76cd7abbb7883be9c83da04f6eefd9a079d2dea933034ca684e47a85",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_SCA_ZZZ_START",
+      "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_START",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.66,
+          "3": 0.66
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14471
+      },
+      "rawSha256": "dc2f8c7d5eadcc22841f96431bdae9608a28cc75e996d60ac9c0d1348b6521b7",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_X",
+      "sourceState": "ESI_DASH_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.466,
+        "WALK_CANCEL_AFTER": 0.466,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.35,
+          "3": 0.35
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6384
+      },
+      "rawSha256": "d1224bf2f2ad0777c433ed7efdb8f649afdecc6f77955714108a9089a321f64d",
+      "callbacks": [
+        {
+          "method": "DashComboXEventProcess",
+          "line": 6658,
+          "lastLine": 6670,
+          "sha256": "ea6b52e7b017fb20cda812faee0a4b08bcc18288fc8c187dfa100f851d9ac5e9",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_Z",
+      "sourceState": "ESI_DASH_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.333,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        },
+        "EVENT_PROCESS_TIME5": {
+          "1": 0,
+          "2": 0.297,
+          "3": 0.297
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6218
+      },
+      "rawSha256": "d2318f2f4507ba634ea12636ac71a0431c9793fb42940e05834a34ac175b5a21",
+      "callbacks": [
+        {
+          "method": "DashComboZEventProcess",
+          "line": 6607,
+          "lastLine": 6644,
+          "sha256": "68431fa4f5f345ce3a2af2a21b12acd4e912beeccaca1c64725c4baedc171e54",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_COMBO_ZZ",
+      "sourceState": "ESI_DASH_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.833,
+        "WALK_CANCEL_AFTER": 0.933
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6308
+      },
+      "rawSha256": "65886342dacae772c88b28f6505141ea9543b59d3d8e815115a71f6a0169ead4",
+      "callbacks": [
+        {
+          "method": "DashComboZZEventProcess",
+          "line": 6645,
+          "lastLine": 6657,
+          "sha256": "2462dd92ef3dddee3a67502265fb6f97946efd3b1adfada39666178369f25f7f",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_END",
+      "sourceState": "ESI_DASH_END",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "WALK_CANCEL_AFTER": 0.266
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3686
+      },
+      "rawSha256": "1b2ea53c4367ed1ba0e634f71f58255f71f075103cf00637e7061e203a8b4865",
+      "callbacks": [
+        {
+          "method": "DashEndEventProcess",
+          "line": 5428,
+          "lastLine": 5514,
+          "sha256": "e6b35808a3a45b2619ea21f006d4fdc5c4fa0707e01e3c8da3f4f93ba9198e21",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_SDK_XX",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SDK_XX",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.5
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13708
+      },
+      "rawSha256": "08cd45bb9d92da08121c46dd59152da403c5f4c3b3dc2f7c7f0234b23db16f57",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_SDK_XXX",
+      "sourceState": "ESI_DASH_JUMP_COMBO_SDK_XXX",
+      "kind": "command",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.75,
+        "DASH_CANCEL_AFTER": 0.75,
+        "ATTACK_CANCEL_AFTER_EX": 0.766,
+        "WALK_CANCEL_AFTER": 0.75
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 13803
+      },
+      "rawSha256": "c6261bf31e0b189d5c1dd4eb2dbdda0501fb8af50e2b9d5cf8cd0ebcde96721c",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_X",
+      "sourceState": "ESI_DASH_JUMP_COMBO_X",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.1,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.316
+        },
+        "EVENT_PROCESS_TIME4": {
+          "1": 0,
+          "2": 100,
+          "3": 0.416
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6693
+      },
+      "rawSha256": "3ebba419eca7f9c6e00c4b907450c5ba29317a0eedfce763a451a2da750ff83a",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXEventProcess",
+          "line": 6705,
+          "lastLine": 6734,
+          "sha256": "f4429ac38cc7a07da9b50b7dcbd384e0b5a1e464eac1698e672b0b963815f05f",
+          "contains2026": true,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "sourceState": "ESI_DASH_JUMP_COMBO_XX_LANDING",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 0.1,
+          "3": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6787
+      },
+      "rawSha256": "8d7fbec823225dea2c1c39084f8fcbae2af4142d34000f70e5ac067c0097d8a5",
+      "callbacks": [
+        {
+          "method": "DashJumpComboXXLandingEventProcess",
+          "line": 6744,
+          "lastLine": 6757,
+          "sha256": "453fc531a063218efc78cc11241f55db4c494cc8295c6c998773c3c7ec32eb69",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_Z",
+      "sourceState": "ESI_DASH_JUMP_COMBO_Z",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.33
+        },
+        "EVENT_PROCESS_TIME2": {
+          "1": 0,
+          "2": 100,
+          "3": 0.229
+        },
+        "EVENT_PROCESS_TIME3": {
+          "1": 0,
+          "2": 100,
+          "3": 0.18
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6461
+      },
+      "rawSha256": "fd7390349f243d9358db1d91bfdf53f1549aa04384607efe38d68a39767201e6",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZEventProcess",
+          "line": 6671,
+          "lastLine": 6681,
+          "sha256": "4dacbae7497e05ef324f7ad01820a12d6269d0f62dfc7b5cd3946e860c0e71d5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_DASH_JUMP_COMBO_ZZ",
+      "sourceState": "ESI_DASH_JUMP_COMBO_ZZ",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.166,
+          "2": 100,
+          "3": 0.429
+        },
+        "EVENT_PROCESS_TIME1": {
+          "1": 0,
+          "2": 100,
+          "3": 0.429
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6531
+      },
+      "rawSha256": "68ee245c8c893217a31e7828c61acd88f5780b577fe2d8d9ab3fe87194c0f369",
+      "callbacks": [
+        {
+          "method": "DashJumpComboZZEventProcess",
+          "line": 6682,
+          "lastLine": 6692,
+          "sha256": "f02f124596877cf269e9f5fd228f0a4b8e01769957714e6f558254c2c0a926c5",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7081
+      },
+      "rawSha256": "411a557bfa21cd60de6e6cd573510785ee8456c382fe78f824ad34dad4fce765",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_EventProcess",
+          "line": 6828,
+          "lastLine": 6865,
+          "sha256": "91f4f0260d86387518754f77f15003fb07ff923aaec760f1dfbd3a902a81304f",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.45,
+        "DASH_CANCEL_AFTER": 0.45,
+        "WALK_CANCEL_AFTER": 0.45
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7259
+      },
+      "rawSha256": "9e6e213cb84d07db4db4341df290df5990ba3894f5f343d8ab57a8dcd6e78deb",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z_EventProcess",
+          "line": 6911,
+          "lastLine": 6934,
+          "sha256": "3e3c14f705dfaa9a1f27d16722132eb26edc58dcee5be9ace0a8995de39346b4",
+          "contains2026": true,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 7142
+      },
+      "rawSha256": "f715f3963d397b414c711d9221d88f9b940399519d7f7f0f7afbf687efd2dd88",
+      "callbacks": [
+        {
+          "method": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK_EventProcess",
+          "line": 6874,
+          "lastLine": 6898,
+          "sha256": "4bf2e511ce5c0b0647fe2361f8ec9a05db00e4ec87e7226c5be47863b4505098",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_SI_SA_EL_POWER_BURSTER",
+      "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+      "kind": "movement-or-reaction",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 1.166,
+        "SKILL_CANCEL_AFTER": 1.166,
+        "ATTACK_CANCEL_AFTER_EX": 1.166,
+        "WALK_CANCEL_AFTER": 1.166
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8248
+      },
+      "rawSha256": "907814eacc8d0d0bb1d9d97701e20e63bfe9092c26deba69e96866cf7de673ce",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_EL_POWER_BURSTER_EventProcess",
+          "line": 8471,
+          "lastLine": 8484,
+          "sha256": "585a6b39f2ff2a7e861f82b6a55f59c37097e28fcf6aa2d9cbb3abd851197f7d",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 1.85,
+        "ATTACK_CANCEL_AFTER_EX": 1.9,
+        "DASH_CANCEL_AFTER": 1.85,
+        "WALK_CANCEL_AFTER": 1.9
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9348
+      },
+      "rawSha256": "aeaa7925b9a71edf793ab7969fd955956b798c6b5ab7a02812b01affc5b861b8",
+      "callbacks": [
+        {
+          "method": "ESI_SI_SA_SSK_SPIRAL_BLAST_EventProcess",
+          "line": 8870,
+          "lastLine": 8883,
+          "sha256": "c7a812c42f8c6126c02bfec7e7d4de783b55942194072969cae47e6b9d12f796",
+          "contains2026": false,
+          "macros": [
+            "SKILL_CANCEL_AFTER( m_fSkillCancelAfter )",
+            "WALK_CANCEL_AFTER( m_fWalkCancelAfter )",
+            "BWALK_CANCEL_AFTER( m_fBWalkCancelAfter )",
+            "DASH_CANCEL_AFTER( m_fDashCancelAfter )",
+            "ZX_CANCEL_AFTER_EX( m_fAttackCancelAfterEx )"
+          ],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4364
+      },
+      "rawSha256": "3357c742101dc8d4c2a2c118fc3b09fc2316a6c38dc47d5d8632176d0d60022c",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackBackEventProcess",
+          "line": 6150,
+          "lastLine": 6173,
+          "sha256": "b1cc5906cb05b157f21df1b9f556e98de7488e50031f827689bcb398187b3fef",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_BACK_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4350
+      },
+      "rawSha256": "2da36008a041f359e2d9c066d8e428f26201571b9bf1896034dbc907769c0c24",
+      "callbacks": [
+        {
+          "method": "StandUpRollingBackFrontEventProcess",
+          "line": 6118,
+          "lastLine": 6141,
+          "sha256": "1333489eb62d5c0083a7e2d3a59084e0758184caf3d19dd7a3ec94bb950a6c87",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_BACK",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.8
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4336
+      },
+      "rawSha256": "901fd865152e55ab57540fa384d93e1908c91055d90aab456f15b5885f33967d",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontBackEventProcess",
+          "line": 6085,
+          "lastLine": 6109,
+          "sha256": "0771f2e40be896e79c8d72b754a15d0b2ea0d7f9c73441ace1bc94c040d0f36e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "sourceState": "ESI_STANDUP_ROLLING_FRONT_FRONT",
+      "kind": "command",
+      "targetFields": {
+        "EVENT_PROCESS_TIME0": {
+          "1": 0,
+          "2": 100,
+          "3": 0.9
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4322
+      },
+      "rawSha256": "67a25c02ddb50932a9249f29465b9546e17331d9e69c45e50290e1d68c619cd4",
+      "callbacks": [
+        {
+          "method": "StandUpRollingFrontFrontEventProcess",
+          "line": 6051,
+          "lastLine": 6075,
+          "sha256": "28533fa64f4c677f77d4541971fcd90ac0f4ede05fe820061a592a5eb43adc6e",
+          "contains2026": false,
+          "macros": [],
+          "literalEffectSets": []
+        }
+      ]
+    },
+    {
+      "profession": "CA",
+      "state": "ESI_THROW_ITEM",
+      "sourceState": "ESI_THROW_ITEM",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 350,
+        "WALK_CANCEL_AFTER": 1200
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4911
+      },
+      "rawSha256": "c195d8cf7ed3cfa60749957122639581383de1d3a398093f15d21959da2da7c8",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_A_SCA_ASSAULT_STRIKE",
+      "sourceState": "SI_A_SCA_ASSAULT_STRIKE",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.6,
+        "DASH_CANCEL_AFTER": 0.6,
+        "WALK_CANCEL_AFTER": 0.65
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15408
+      },
+      "rawSha256": "9ab00ee5ef64810ebd8e0bd8aa92d7c470e83b25ff2ca86d95d241e31b83ff4c",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_A_SCA_SHADE_SCRATCH",
+      "sourceState": "SI_A_SCA_SHADE_SCRATCH",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.6,
+        "DASH_CANCEL_AFTER": 0.6,
+        "WALK_CANCEL_AFTER": 0.65,
+        "EVENT_PROCESS_TIME0": {
+          "1": 0.26,
+          "2": 1,
+          "3": 0.26
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15291
+      },
+      "rawSha256": "caee8531dda76071ad4685722a535f9330ae159ffc20cf23091f6368ebfcea1b",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_A_SCA_SHADE_SCRATCH_ATTACK",
+      "sourceState": "SI_A_SCA_SHADE_SCRATCH_ATTACK",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.6,
+        "SKILL_CANCEL_AFTER": 0.6,
+        "WALK_CANCEL_AFTER": 0.65
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15340
+      },
+      "rawSha256": "c6a8c5e0f4a4f900654dc1f96ad363deb77472e4b3b1037661ef61f435a7680d",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_A_SCA_SHADOW_EDGE",
+      "sourceState": "SI_A_SCA_SHADOW_EDGE",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.4,
+        "DASH_CANCEL_AFTER": 0.4,
+        "WALK_CANCEL_AFTER": 0.433
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15374
+      },
+      "rawSha256": "c5b2e730121c7126e266f6504001209f6b5dd5961f2ad457d34e458aa5f68239",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_A_SDK_INJECTION_STIGMA",
+      "sourceState": "SI_A_SDK_INJECTION_STIGMA",
+      "kind": "skill",
+      "targetFields": {
+        "SKILL_CANCEL_AFTER": 0.78,
+        "DASH_CANCEL_AFTER": 0.78,
+        "WALK_CANCEL_AFTER": 0.78
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15189
+      },
+      "rawSha256": "cd40439e3ded92095e8fe470a4ca1f4a3dcb79dd4c0483173c529be871661e86",
+      "callbacks": []
+    },
+    {
+      "profession": "CA",
+      "state": "SI_SA_SDK_BRANDISH_BREAKER_FINISH",
+      "sourceState": "SI_SA_SDK_BRANDISH_BREAKER_FINISH",
+      "kind": "skill",
+      "targetFields": {
+        "DASH_CANCEL_AFTER": 0.532,
+        "SKILL_CANCEL_AFTER": 0.532,
+        "WALK_CANCEL_AFTER": 0.532
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 15915
+      },
+      "rawSha256": "f0dd835474fb55693c8e5a2643a8bf5d219d109db19ba5bc7c12f6d4a8d421e1",
+      "callbacks": []
+    }
+  ]
+}

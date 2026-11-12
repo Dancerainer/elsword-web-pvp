@@ -1,0 +1,651 @@
+{
+  "schema": "rf-down-hit-source-v16",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "target2016-static-declaration-and-helper + pinned-V5-source-consumer",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "sourceFiles": [
+    {
+      "path": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "methods": [
+        {
+          "signature": "HRESULT CX2GUUser::OnFrameMove(",
+          "firstLine": 6566,
+          "lastLine": 6877,
+          "bytes": 10015,
+          "sha256": "7da02647750341b4bb8ce2bfaabf114d46bca7b82601be5604eb1976bc0af42b"
+        },
+        {
+          "signature": "void CX2GUUser::DoFrameMoveFuture(",
+          "firstLine": 6491,
+          "lastLine": 6510,
+          "bytes": 439,
+          "sha256": "a062b0f7f4aacdc3bb17f59867aa35d71f744cef31913a3a7261cf9eb40277ad"
+        },
+        {
+          "signature": "void CX2GUUser::DoFrameMove(",
+          "firstLine": 6512,
+          "lastLine": 6560,
+          "bytes": 1129,
+          "sha256": "d6ea14fb5a7a807e96d64eba74ddc7b541b703b5ed95cbf1061318bcb8083120"
+        },
+        {
+          "signature": "void CX2GUUser::DoStateEndStartFuture(",
+          "firstLine": 6401,
+          "lastLine": 6446,
+          "bytes": 1513,
+          "sha256": "9ec6688fe46df0d13562f51726db3562c54d09adf7e3fadd679c1db6db1c6ba6"
+        },
+        {
+          "signature": "void CX2GUUser::DoStateEndStart(",
+          "firstLine": 6448,
+          "lastLine": 6489,
+          "bytes": 1078,
+          "sha256": "6fa47f518932762ce82207e60f5ed8b387bca72b89753494417bd1824d85136d"
+        },
+        {
+          "signature": "bool CX2GUUser::StateChange( int state, bool bDirectChange )",
+          "firstLine": 7426,
+          "lastLine": 7586,
+          "bytes": 5520,
+          "sha256": "f4b4476cfcfed93a0846b3125f7c71b22869b175dae946ab5ce8b12789fcb26b"
+        },
+        {
+          "signature": "void CX2GUUser::CommonFrameMoveFuture(",
+          "firstLine": 14813,
+          "lastLine": 15231,
+          "bytes": 12249,
+          "sha256": "8a55b8d3cb1a00ab94f603facb9c670e1c4576fb0b12d3e4b8aff66047367289"
+        },
+        {
+          "signature": "void CX2GUUser::CommonFrameMove(",
+          "firstLine": 15396,
+          "lastLine": 18074,
+          "bytes": 88875,
+          "sha256": "0e17509fb4da4fa40a27db1061ad8746e47ab50d3d8013b395e588d25745cd83"
+        },
+        {
+          "signature": "void CX2GUUser::CommonFrameMove_TimedEvent(",
+          "firstLine": 18123,
+          "lastLine": 18438,
+          "bytes": 12294,
+          "sha256": "9a5896ef29474b88dc068bb39c248663d7a604e60b0941064880785f9adaeb67"
+        },
+        {
+          "signature": "void CX2GUUser::CommonStateStart(",
+          "firstLine": 13922,
+          "lastLine": 14810,
+          "bytes": 30056,
+          "sha256": "35a296c47f9054c98102fef7237a5b04b5bb56dc457a1596a5c8b201db3339e7"
+        },
+        {
+          "signature": "void CX2GUUser::CommonStateEnd(",
+          "firstLine": 19559,
+          "lastLine": 19648,
+          "bytes": 2747,
+          "sha256": "a635cfcde3028d9e2472ee242dfb895f4f8eed3dea1bce5bccfc90969ed79512"
+        },
+        {
+          "signature": "void CX2GUUser::PhysicProcess(",
+          "firstLine": 19752,
+          "lastLine": 20764,
+          "bytes": 34883,
+          "sha256": "6f2b57e41eb71095fc472331fda482cfebf62760b2cc209ab89e2f31dd69c602"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "methods": [
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_DOWN_EventProcess(",
+          "firstLine": 6316,
+          "lastLine": 6362,
+          "bytes": 1043,
+          "sha256": "2b552384104ded1e6b0d399ad21441a44c3ad5a893f55f4c1b19c0a673597915"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_COMBO_Z_FrameMoveFuture(",
+          "firstLine": 8972,
+          "lastLine": 8990,
+          "bytes": 558,
+          "sha256": "7eef470f0b901beeaebb3928ad1b8a9bd075d235adc3f7b3c3753a6be98269e6"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_JUMP_COMBO_Z_EventProcess(",
+          "firstLine": 8992,
+          "lastLine": 9004,
+          "bytes": 254,
+          "sha256": "6613fc15587d2c04fd25ebaf1e0cb29d2979789b1112da51ad392dcc922edc5c"
+        },
+        {
+          "signature": "void CX2GURaven::RSI_DASH_JUMP_COMBO_Z_EventProcess(",
+          "firstLine": 8742,
+          "lastLine": 8800,
+          "bytes": 2047,
+          "sha256": "42c9f145ab3003fc75ed210e26907786d3ae0c0acf75c6ad3d49e535eb93a2a9"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "bytes": 130812,
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "methods": [
+        {
+          "signature": "bool CX2DamageManager::UnitToUnit(",
+          "firstLine": 1268,
+          "lastLine": 1626,
+          "bytes": 9822,
+          "sha256": "75c0a4f7b3d64c3b4a8ca2f8ee9c283b034d6d5923bb364e8e47e6f395c15d28"
+        },
+        {
+          "signature": "bool CX2DamageManager::DamageCheck(",
+          "firstLine": 586,
+          "lastLine": 669,
+          "bytes": 2158,
+          "sha256": "d33701c4ee42f61f4c291e4bb3ffb7b4bf86d538778eed933fda034dbf46546e"
+        },
+        {
+          "signature": "bool CX2DamageManager::CollisionDataCheckFromUnitToUnit(",
+          "firstLine": 3363,
+          "lastLine": 3385,
+          "bytes": 1043,
+          "sha256": "bc9601ae78123249fef2c1b8e2e4a453342fc3ffaed5c6d2b71a5b0906ffbc8d"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/KTDXLIB/KTDGXSkinAnim.cpp",
+      "bytes": 42639,
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "gitBlob": "6b3578ddb5ab5fefb941c0adc89648552ef1408a",
+      "methods": [
+        {
+          "signature": "HRESULT CKTDGXSkinAnim::OnFrameMove(",
+          "firstLine": 758,
+          "lastLine": 838,
+          "bytes": 1803,
+          "sha256": "3611fa1de2abf04d44526e9a3010d4f3ae4f28c0f825bbe9aedf193f5a4ce764"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/KTDXLIB/KTDXDeviceXSkinMesh.cpp",
+      "bytes": 93970,
+      "sha256": "8d994c2894b274d028548341e9c7839cc500cde26e05b464028bb975f7fdd87f",
+      "gitBlob": "5964e616ae0b3edea2485d2d03f18be60d1867bc",
+      "methods": [
+        {
+          "signature": "void CKTDXDeviceXSkinMesh::XSkinMeshProxy::AddCollisionData(",
+          "firstLine": 590,
+          "lastLine": 879,
+          "bytes": 8909,
+          "sha256": "e8eaace07b532d3e29043ef38e9e3c3c771444eeb15cd00f89ed4f90c764268e"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/KTDXLIB/KTDGXSkinAnim.h",
+      "bytes": 30326,
+      "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "gitBlob": "28b8cc0cf37dcc8189506f4cdf4b2691b9731a79",
+      "lineSpans": [
+        {
+          "firstLine": 381,
+          "lastLine": 494,
+          "bytes": 3696,
+          "sha256": "a8be0ed062aabc452d2cc311334e5d8247f715951f7e4ce22551cdf4c230fd64",
+          "meaning": "AdvanceTime -> track position -> combined bone matrices; root XZ consumption"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/KTDXLIB/KTDXCollision.h",
+      "bytes": 80385,
+      "sha256": "e29238e40c77e5ddca97de9cf1713677669cac863565dc7d1ef92bb77288313b",
+      "gitBlob": "e072b91c93b7f3d56b3c45867242ed56f57fcaba",
+      "lineSpans": [
+        {
+          "firstLine": 106,
+          "lastLine": 199,
+          "bytes": 2931,
+          "sha256": "106b675fa1e706f1552090c2ffdf9d1c38e112c561b16790db6ec6a070967442",
+          "meaning": "helper center and decomposed X radius"
+        },
+        {
+          "firstLine": 215,
+          "lastLine": 348,
+          "bytes": 5823,
+          "sha256": "91c3acaebf13a51b0a198654cd963a31d111403636d6240c2f37dbe767ff4143",
+          "meaning": "enabled collision list entries, posed LineToSphere"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "lineSpans": [
+        {
+          "firstLine": 5215,
+          "lastLine": 5289,
+          "bytes": 2081,
+          "sha256": "8261091eaaac90eb0c84f5dd293cbe061c8dcc8560296886b3d3f8b0e5755cbc",
+          "meaning": "equipment and character collision/attack list sets"
+        },
+        {
+          "firstLine": 14638,
+          "lastLine": 14669,
+          "bytes": 767,
+          "sha256": "87596e842463752a345265eb81a7691b411e81d00eaa0d75e957a660a98239a1",
+          "meaning": "state-start explicit helper enable/disable"
+        },
+        {
+          "firstLine": 19578,
+          "lastLine": 19605,
+          "bytes": 540,
+          "sha256": "3f7974e9cadb7a9a370dda74ccd00d03dfb697ba3247e44a57308bfc44d4f37d",
+          "meaning": "state-end inverse helper restoration"
+        }
+      ]
+    }
+  ],
+  "tracePhaseSourceFiles": [
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2Data.cpp",
+      "bytes": 159782,
+      "sha256": "cc8543f0d18ef5962a83e5459d19d25643e8ebd93a8f31f3d4b7f5cdec541f05",
+      "spans": [
+        {
+          "startLine": 1533,
+          "endLine": 1542,
+          "meaning": "GameMajor mesh frame advances before EffectSet frame",
+          "bytes": 322,
+          "sha256": "03b04630f9e29ff71865a6f4a848bac50f7748f24f94f967f31c1c17e371dc15"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/X2Lib/X2Game.cpp",
+      "bytes": 618989,
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "spans": [
+        {
+          "startLine": 3020,
+          "endLine": 3033,
+          "meaning": "unit OnFrameMove",
+          "bytes": 476,
+          "sha256": "0e940a417e701ce52f6fe53188902d5f3f61e8ab89b0a86ccf8a3499a3069ca6"
+        },
+        {
+          "startLine": 3159,
+          "endLine": 3168,
+          "meaning": "DamageEffect after unit frames; mesh calls commented out",
+          "bytes": 367,
+          "sha256": "c29e5136fa522d3802e90224781f0b58d49379b306a49236f3961376f87ddf6c"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2EffectSet.cpp",
+      "bytes": 146678,
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "spans": [
+        {
+          "startLine": 65,
+          "endLine": 74,
+          "meaning": "create/delete/update order",
+          "bytes": 238,
+          "sha256": "98ffa25c43e79648a2c67f6fae2ac17de6dc3abc506708084c27e0a5a738b703"
+        },
+        {
+          "startLine": 1287,
+          "endLine": 1335,
+          "meaning": "TRACE damage effect SetPos",
+          "bytes": 1910,
+          "sha256": "50e03af11fd22d6505abd9d2f6e093616c456b818e099cdcf1afff9b965685c0"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "spans": [
+        {
+          "startLine": 1864,
+          "endLine": 1888,
+          "meaning": "reads previously updated live mesh matrix",
+          "bytes": 790,
+          "sha256": "f3c5d945d7112bb298eb5b92e54db1bc50951d0764b78a43f314b9c00db638cf"
+        },
+        {
+          "startLine": 6841,
+          "endLine": 6850,
+          "meaning": "SetPos delegates position only to mesh",
+          "bytes": 154,
+          "sha256": "712449b2f926a1872c55a852d6e5ef0a97f9fbbdc7675a6ac354630c52309d8a"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "bytes": 130812,
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "spans": [
+        {
+          "startLine": 1774,
+          "endLine": 1777,
+          "meaning": "collision reads XSkinAnim attack helper list",
+          "bytes": 230,
+          "sha256": "614368e20426fe79dcc8ce258b1bf7b631263a36890a00bc69b9fc4f4437343b"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "spans": [
+        {
+          "startLine": 366,
+          "endLine": 374,
+          "meaning": "newborn initialization uses .0001",
+          "bytes": 390,
+          "sha256": "4f5f9ea10c78b87790fe7289551f941684294146d36596eb12409b2761321e84"
+        },
+        {
+          "startLine": 1920,
+          "endLine": 1952,
+          "meaning": "XSkinAnim matrix position committed during mesh OnFrameMove",
+          "bytes": 1455,
+          "sha256": "c9bd71cd467ad05dea7b3d495db53cf93b1ecf6881813acd4325b7837d067ba7"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDGXMeshPlayer.h",
+      "bytes": 74061,
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "spans": [
+        {
+          "startLine": 1190,
+          "endLine": 1196,
+          "meaning": "SetPos writes m_vPos only",
+          "bytes": 376,
+          "sha256": "ed073f6d755b214ba4ddd0bc643af6646ce7f0dce8c8e81b75d582fadc4fc0f0"
+        }
+      ]
+    }
+  ],
+  "targetFiles": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "bytes": 398092,
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "gitBlob": "cf2f7659da24048766df94e6f110c84669483378"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "bytes": 183136,
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "gitBlob": "1f78040d224f5f095206bb6498ff710232be0a7e"
+    }
+  ],
+  "targetStates": {
+    "RSI_JUMP_DOWN": {
+      "ANIM_NAME": "JumpDown",
+      "ANIM_SPEED": 1.15,
+      "PLAY_TYPE": 0,
+      "LAND_CONNECT": 0,
+      "COMBO_GUIDE": {
+        "1": "J",
+        "2": "J"
+      },
+      "HEAD_IK": 1
+    },
+    "RSI_JUMP_COMBO_Z": {
+      "ANIM_NAME": "JumpAttackZ",
+      "ANIM_SPEED": 1.2,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      },
+      "ATTACK_TIME0": {
+        "1": 0.11,
+        "2": 100
+      },
+      "SOUND_PLAY0": {
+        "1": 0.108,
+        "2": "Raven_Slash1.ogg"
+      },
+      "BLADE_MASTERY": 1,
+      "DISABLE_ATTACK_BOX": {
+        "1": "Lhand1"
+      },
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_GAP": 5,
+        "FORCE_DOWN": 9.25,
+        "TECH_POINT": 160,
+        "CAMERA_CRASH_TIME": 0.2,
+        "HIT_ADD_MP": 5,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 3,
+        "REACT_TYPE": 1,
+        "ATTACK_TYPE": 2,
+        "DAMAGE": {
+          "PHYSIC": 1.78
+        }
+      },
+      "COMBO_GUIDE": {
+        "1": "J",
+        "2": "JZ"
+      },
+      "IS_ATTACK_STATE": 1
+    },
+    "RSI_DASH_JUMP_COMBO_Z": {
+      "ANIM_NAME": "DashJumpComboZ1",
+      "SPEED_Y": 500,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      },
+      "ATTACK_TIME0": {
+        "1": 0.1,
+        "2": 0.16
+      },
+      "SPEED_X": 725,
+      "SOUND_PLAY0": {
+        "1": 0.088,
+        "2": "Raven_PunchAttack1.ogg"
+      },
+      "BURNING_NASOD_HAND_POSSIBLE": 1,
+      "DISABLE_ATTACK_BOX": {
+        "1": "Sword"
+      },
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_GAP": 5,
+        "FORCE_DOWN": 13.88,
+        "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+        "TECH_POINT": 335,
+        "BACK_SPEED_Y": 200,
+        "CAMERA_CRASH_TIME": 0.2,
+        "HIT_ADD_MP": 5,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 3,
+        "REACT_TYPE": 1,
+        "ATTACK_TYPE": 2,
+        "BACK_SPEED_X": 725,
+        "DAMAGE": {
+          "PHYSIC": 1.86
+        }
+      },
+      "COMBO_GUIDE": {
+        "1": "A",
+        "2": "AZ"
+      },
+      "IS_ATTACK_STATE": 1
+    }
+  },
+  "helperInput": {
+    "path": "artifacts/rf/runtime-pose.json",
+    "bytes": 47839391,
+    "sha256": "7b7d0b83823329b166519d3c00c18446a4cbcc6f3b6a6da3bf7dcc39e68e2484",
+    "gitBlob": "c6803e9117704177aff58356988526a16dc5849a",
+    "helpers": [
+      {
+        "name": "ATTACK_SPHERE4_Lfoot",
+        "nativeStoredBoundingRadius": 34.64101028442383,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 34.64101394896844,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "ATTACK_SPHERE3_Rfoot",
+        "nativeStoredBoundingRadius": 34.64100646972656,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 34.64101394896844,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "COLLISION_SPHERE1_Face",
+        "nativeStoredBoundingRadius": 43.30126953125,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            1.9073486328125e-06,
+            1.9073486328125e-06,
+            9.441375732421875e-05
+          ],
+          "radius": 43.301269853517844,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "ATTACK_SPHERE2_Lhand2",
+        "nativeStoredBoundingRadius": 25.98074722290039,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 25.98075279936143,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "ATTACK_SPHERE1_Lhand1",
+        "nativeStoredBoundingRadius": 51.96151351928711,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            -3.814697265625e-06,
+            1.9073486328125e-06,
+            3.814697265625e-06
+          ],
+          "radius": 51.96152422706632,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "COLLISION_SPHERE2_Upbody",
+        "nativeStoredBoundingRadius": 43.30126190185547,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            -6.389617919921875e-05,
+            0.0,
+            0.000385284423828125
+          ],
+          "radius": 43.30126745680017,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "COLLISION_SPHERE3_Lowbody",
+        "nativeStoredBoundingRadius": 51.96150588989258,
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 51.96151872120721,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data033.kom/Motion_Raven.x"
+      },
+      {
+        "name": "ATTACK_LINE_START0_Sword",
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 32.90896534380867,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data020.kom/Mesh_Raven_RRF_Cash_Weapon_Sorted.X"
+      },
+      {
+        "name": "ATTACK_LINE_END0",
+        "geometryBoundingSphereCandidate": {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "radius": 32.90896534380867,
+          "algorithm": "farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified"
+        },
+        "source": "raw/data/data020.kom/Mesh_Raven_RRF_Cash_Weapon_Sorted.X"
+      }
+    ]
+  },
+  "phaseInterpretation": [
+    "Local Future: state start, CommonFrameMoveFuture advances Future animation then physics, EventProcess requests a later state.",
+    "StateChange(false) changes nextState/stateChangeNum; it does not immediately erase the current Now attack.",
+    "Now: consume sync position, update animation/bone matrices, then CommonFrameMove_TimedEvent evaluates the strictly open authored attack interval.",
+    "UnitToUnit consumes enabled character/equipment helper lists and distinct defender collision lists; first-hit memory, team/death/invincibility policies remain.",
+    "TRACE mesh/EffectSet pending-position phase is a separate cache boundary; it does not authorize resampling character sword from the previous animation frame."
+  ],
+  "limits": [
+    "Target V6.0420.5 state scheduler/packet pipeline has not been obtained or measured.",
+    "Sword ATTACK_LINE_START0 still uses its recorded source-vertex bounding-sphere candidate; original native .X radius construction is not independently measured.",
+    "No simulated miss or hit count can be used as original-client golden data."
+  ]
+}

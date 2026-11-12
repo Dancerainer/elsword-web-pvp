@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:elsword-webpvp:pvp-scene:v1",
+  "title": "2016 PvP scene manifest",
+  "type": "object",
+  "required": ["schemaVersion", "sceneId", "referenceVersion", "coordinates", "geometry", "collision", "objects", "camera", "sources", "unknowns", "previewPolicy"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "sceneId": {"type": "string", "minLength": 1},
+    "originalLayoutAdapted": {"const": false},
+    "referenceVersion": {"type": "string", "minLength": 1},
+    "coordinates": {
+      "type": "object",
+      "required": ["pointNativeToGltf", "unitScale", "meterRelation"],
+      "properties": {
+        "pointNativeToGltf": {"const": "[x, y, -z]"},
+        "unitScale": {"const": 1},
+        "meterRelation": {"const": "unconfirmed"}
+      }
+    },
+    "geometry": {"$ref": "#/$defs/resource"},
+    "collision": {
+      "allOf": [{"$ref": "#/$defs/resource"}],
+      "properties": {"coordinateSystem": {"const": "nativeXYZ"}, "lineCount": {"type": "integer", "minimum": 1}}
+    },
+    "objects": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "kind", "sourcePc", "declarations", "nativePosition", "conversionStatus"]}},
+    "sources": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["name", "sha256", "rawPath"], "properties": {"sha256": {"$ref": "#/$defs/sha256"}}}},
+    "camera": {
+      "type": "object",
+      "required": ["mode", "dynamicEnabled", "skillCameraEnabled", "sourceSlots", "fixedViewerPoseEvidence"],
+      "properties": {"mode": {"const": "fixed"}, "dynamicEnabled": {"const": false}, "skillCameraEnabled": {"const": false}}
+    },
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "previewPolicy": {"type": "object"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "resource": {"type": "object", "required": ["url", "sha256"], "properties": {"url": {"type": "string", "pattern": "^[^:/\\\\]+(?:/[^:/\\\\]+)*$"}, "sha256": {"$ref": "#/$defs/sha256"}}}
+  },
+  "description": "GLB vertices retain original resource units and reflect Z. collision.json lines and starts/spawns retain nativeXYZ. Lines preserve ids, endpoints, type, before/next links and unresolved nativeFields. Source declarations and simulation semantics are separate; omitted native fields have no implicit 2016 defaults. starts and spawns are aliases of the original 21 spawn declarations; SetTeamStartPos entries carry teamFlag, facingRight and lineId. LT_JUMP_UP_REL stays a distinct authored type. Source camera slots are evidence only and dynamic/skill cameras are disabled."
+}

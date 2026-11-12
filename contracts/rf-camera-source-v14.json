@@ -1,0 +1,217 @@
+{
+  "schema": "rf-camera-source-v14",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-source-consumers-not-target2016",
+  "targetClientMeasured": false,
+  "files": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "sha256": "1f04646a86764002cb5ff0edd80575b11d24ac75c3154d543001a0a2c0fc7b12",
+      "gitBlob": "17104e19919299e771b6e68e9d844bcf5ad89c54",
+      "bytes": 20972
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+      "sha256": "640376b3a795e92ec94171181a02ede8d2e32a9e9d87a0915e903c8f2dff7852",
+      "gitBlob": "7e33b685b621d29b3d41b2adbed6c02ff812d622",
+      "bytes": 8520
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+      "sha256": "b659140c28707eae0b3c1156e73cb4cd72f4c4eb940263375bfce99da799b084",
+      "gitBlob": "7fe528e45eab9ecd058ed7266d5b8b5d967008b2",
+      "bytes": 40229
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "sha256": "1d16ff35b70a54e2ee2eca84ca9a57826d21fc94a4d6c61f72381cd5c1e105bc",
+      "gitBlob": "2a90db62ffc362e66db5895e03c327a4b3368271",
+      "bytes": 91051
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.h",
+      "sha256": "4500a41fc495ac9d1e9deaf3de0ade8765e5cb71c74ac510d367d4856dc5acb6",
+      "gitBlob": "7ace3bfe9535833a210e51402fc4aa5d597c4571",
+      "bytes": 16380
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Game.cpp",
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "gitBlob": "a513f2429514e858b02b5d41643c498b1edb117f",
+      "bytes": 618989
+    }
+  ],
+  "compiledMethodSpans": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "signature": "void CKTDGCamera::Point(",
+      "sha256": "9a5cdca3dc262952ed359a5df35ecfa96c0e051441db1073dff2311df40ed48c",
+      "bytes": 456,
+      "lines": [
+        69,
+        87
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "signature": "void CKTDGCamera::MoveRel( float",
+      "sha256": "fbf6cbd13b3f8b8c6d2238285ad8fade6ecd11438f25da2c0e2f4cfb949b1515",
+      "bytes": 148,
+      "lines": [
+        96,
+        101
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "signature": "void CKTDGCamera::LookAtRel( float",
+      "sha256": "9f841999b3cff992c6dfc4c02807073e0fd93828d9228e6700dec9e1ea207d00",
+      "bytes": 159,
+      "lines": [
+        115,
+        120
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "signature": "void CKTDGCamera::SetTracking(",
+      "sha256": "185fe628c5315da992a374a18d2305ea5ec3572620e0d6fa7a8712e9903e2315",
+      "bytes": 760,
+      "lines": [
+        268,
+        295
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+      "signature": "void CKTDGCamera::UpdateCamera(",
+      "sha256": "18ee1afc429e944226663e9c8e994e6221a722db52e86f209020a7b56e756af4",
+      "bytes": 1555,
+      "lines": [
+        183,
+        248
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+      "signature": "struct CameraData",
+      "sha256": "bd2c43d5c269712c54e7b51bafd020fb4361e5ed077dea22c2f5a3dcb15b08cf",
+      "bytes": 125,
+      "lines": [
+        28,
+        34
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+      "signature": "struct UpSideDownCameraData",
+      "sha256": "915fc505edea9289f2c9055c8f3fc5a026ae760cd08b8f462e9af3a834972531",
+      "bytes": 314,
+      "lines": [
+        37,
+        57
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+      "signature": "inline bool IsSamef(",
+      "sha256": "5f5818ea4e6ded0da41f79842c07d2640070534bd664afccd35414d14d6f01b1",
+      "bytes": 114,
+      "lines": [
+        1505,
+        1510
+      ]
+    }
+  ],
+  "consumerSpans": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "signature": "HRESULT CX2Camera::OnFrameMove(",
+      "sha256": "427ada357d90d9b30db619a5404bf31d0e9cbf6786e4aec0f4ede584af3e430b",
+      "bytes": 738,
+      "lines": [
+        132,
+        161
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Camera.cpp",
+      "signature": "void CX2Camera::NomalTrackingCamera( CX2GameUnit*",
+      "sha256": "1e54d51a9f64b15676918f3b89309848ecb5f8e4802ea9b74cd4a1758fa55bea",
+      "bytes": 4454,
+      "lines": [
+        391,
+        549
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "HRESULT CX2GUUser::OnCameraMove(",
+      "sha256": "bea598824e8399c6b34449097f3fc640c2b3d1863183d92a022191cf86db1ad7",
+      "bytes": 4853,
+      "lines": [
+        6879,
+        7018
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Game.cpp",
+      "signature": "HRESULT\tCX2Game::OnFrameMove(",
+      "sha256": "f3a27345679f74e112a9bcfdf528bf664109135945fb5b43e11801057ff54a90",
+      "bytes": 35706,
+      "lines": [
+        2456,
+        3598
+      ]
+    }
+  ],
+  "module": {
+    "file": "native/camera.wasm",
+    "sha256": "4b1649055fcbc3e07773a88dd468aa1eb3780d9011c5fb8695ebce909c142a15",
+    "bytes": 12951,
+    "changed": false
+  },
+  "normalTracking": {
+    "seconds": 0.3,
+    "targetSeconds": 0,
+    "distance": 1500,
+    "sourceCallOrder": [
+      "GUUser::OnCameraMove requests normal track",
+      "CX2Camera::OnFrameMove",
+      "CKTDGCamera::UpdateCamera"
+    ],
+    "pointUsage": "Initialization/reset only; no Point after UpdateCamera",
+    "renderInput": "Same actorRenderClock.sample result as the character; browser display adapter",
+    "disabled": [
+      "dynamic state camera",
+      "line scripted camera",
+      "auto zoom",
+      "shake",
+      "impact",
+      "cut-in"
+    ]
+  },
+  "history": {
+    "v12": "All axes use native tracking",
+    "v13": "Direct X Point override after native advance; Point clears both track timers",
+    "v14": "Restore unchanged native all-axis tracking; no new smoothing constant"
+  },
+  "pending": [
+    "Matching target2016 native consumer/compile macros",
+    "Original-client movement and camera trace",
+    "D3D matrix/rasterization equivalence",
+    "Full original variable-frame dispatch rather than browser fixed60/display interpolation"
+  ]
+}

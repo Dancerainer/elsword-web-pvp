@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "classification": "original2016 static conditional algorithm; explicit original runtime inputs",
+  "originalX2Sha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "analysisViewSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "historicalCaptureLimit": "non-atomic live-read source; this task does not execute the original client",
+  "upstreamInputs": [
+    {
+      "path": "asset_sources/analysis-project/docs/MISS_EVASION_2016.md",
+      "sha256": "4273738f6b8123803dfa03420c24713da750b0c014e915609767c873a7850f40"
+    },
+    {
+      "path": "asset_sources/analysis-project/reports/analysis/miss-evasion-2016/behavior-contract.json.gz",
+      "sha256": "2bbf8f4681637db4e432d3ee0458b24b16aecb33f178745f46f1aca8aa5a8ca1"
+    },
+    {
+      "path": "asset_sources/analysis-project/reports/analysis/miss-evasion-2016/random-table.json.gz",
+      "sha256": "48fc74b82a6f97063a21f83264cabf2d4a2847cce07c4a4ce0728b4ca331e66e"
+    },
+    {
+      "path": "asset_sources/analysis-project/reports/analysis/miss-evasion-2016/function-index.json",
+      "sha256": "8d60018b3dd51aa4da171221797da03b732293d6842f505476610b935d05dff5"
+    },
+    {
+      "path": "asset_sources/analysis-project/docs/USEFUL_HIT_TIMING_2016.md",
+      "sha256": "f9e45198cf3fd556521b28763dacafe5118e2ce86da0c1148f2a93fb0952b66f"
+    },
+    {
+      "path": "asset_sources/analysis-project/docs/HIT_MEMORY_LIFECYCLE_2016.md",
+      "sha256": "4d0cd0e885b9c49d146de513679ce51bc4e4bfc8af428399bfd2222596554e88"
+    },
+    {
+      "path": "asset_sources/analysis-project/reports/analysis/useful-hit-timing-2016/behavior-contract.json",
+      "sha256": "c7f909d9a24974de2395ec8de8e239bf52269f543a673249512917d6091377fa"
+    }
+  ],
+  "behavior": {
+    "qualification": "Target2016 static conditional algorithm. All float formulas below simplify finite ordered operands; original x87 float stores and unordered branches remain authoritative.",
+    "ordinarySelectors": {
+      "0": "0x324ee1a0",
+      "1": "0x324f4670",
+      "2": "0x324ee730",
+      "3": "0x324f18b0"
+    },
+    "threshold": {
+      "entry": "0x324dae50",
+      "orderedPriority": [
+        "null owner or null target ->1",
+        "player target requires model651c; revenge/reflex strict begin<clock<end with direction5fd1==1 ->1",
+        "nonempty target5748..574c ->1",
+        "N=target.v1c8(owner NPC templateID) only if owner114==1, otherwise0",
+        "M=owner.v1a8(); threshold=float(M*owner42c4)-float(target4378+N-1)",
+        "player owner learned24406/class106 adds param104; learned104 adds param104",
+        "player owner adds min(1,6a48) only if positive",
+        "target.v164 lowbyte==1 overrides threshold1",
+        "DD4c2 NO_MISS overrides threshold1",
+        "DD490/494/4f8 positive skips Miss comparison"
+      ],
+      "v1a8": "321dca70: protected2418>0 ? protected2490 :1; no extra RNG",
+      "v164": {
+        "User": "31f359e0: nonempty57a8..57ac ->byte1; else protected5f00",
+        "NPC": "32511860: same list, else protected6274"
+      },
+      "decision": "Miss iff threshold<target.v1a4(offset); equality is non-Miss; no probability clamp"
+    },
+    "sample": {
+      "common": "0x32e32ef0",
+      "table": "0x331599e8",
+      "count": 32000,
+      "User": "u16 actor5ffc",
+      "NPC": "u16 actor636c",
+      "formula": "float(u16table[normalizeSignedInt(seed+offset,32000)] / double32000)",
+      "ordinaryOffset": 2,
+      "specialNPCOffset": "target114==1 && target64e4.e4 !=0: source=owner if player else resolve owner6b48 wrapper; if source then source.v1a0(0)+2 else2",
+      "integerSample": "32e32f50; Q=truncate(tableValue/32000*100); 0..99",
+      "stateAdvance": "none in these getters",
+      "CRT_rand": "not called by decision sampling"
+    },
+    "properties": {
+      "accuracy": {
+        "object": "actor4224",
+        "result": "actor42c4",
+        "behavior": 14,
+        "curve": "CalculateFinalAnitEvadePercent",
+        "prototype": 70
+      },
+      "avoidance": {
+        "object": "actor42d8",
+        "result": "actor4378",
+        "behavior": 15,
+        "curve": "CalculateFinalEvadePercent",
+        "prototype": 71
+      },
+      "rawGroups": {
+        "0": {
+          "vector": "30..34",
+          "cache": "70",
+          "rule": "last entry protected10; empty0"
+        },
+        "1": {
+          "vector": "40..44",
+          "cache": "7c",
+          "rule": "sum in source order from0"
+        },
+        "2": {
+          "vector": "50..54",
+          "cache": "88",
+          "rule": "sum in source order from0"
+        },
+        "3": {
+          "vector": "60..64",
+          "cache": "94",
+          "rule": "product in source order from1"
+        }
+      },
+      "actualMerger": "0x31fc43f0",
+      "formulaOrdered": {
+        "swap": "if30!=34 result=protected70, bypass other merge",
+        "base": "b=protected0; flag=b<=0; x=flag?float(b+1):b",
+        "curveArgument": "S=float(float(protected7c+protected24)+protected88), callback(S,unit.v1d4(),roleID)",
+        "factor": "m=float((((LuaResult+1)*(protected0c+1))*protected18)*protected94), keeping x87 intermediates and the original final float store",
+        "factorGate": "ifm>0: ifprotected94>=1 ordered then m=float(float(m-1)*arg4+1); x=float(x*m)",
+        "unshift": "ifflag x=float(x-1)",
+        "lowerBound": "ordered x<=0 becomes0; no upper clamp",
+        "write": "31fc1650 writes protectedthis+a0, clear dirtyb0"
+      },
+      "selectedLuaResult": {
+        "words": [
+          "0x216",
+          "0x20248"
+        ],
+        "prototype70": 0,
+        "prototype71": 0,
+        "nativeOpcode22": "32bf211e; signedword D ->double slotA",
+        "nativeOpcode72": "32bf2f1b; return one slotA using original continuation",
+        "execution": "not executed; native handler + original bytecode operand proof"
+      }
+    },
+    "order": {
+      "3": [
+        "initializeDD28",
+        "target60",
+        "DD28!=0 gate",
+        "computeMiss",
+        "Guild509 target/owner",
+        "Miss/ordinary final branch"
+      ],
+      "0/2/effect1": [
+        "initialize DD28 fromDD24",
+        "computeMiss",
+        "ifnonMiss owner hooks,target60",
+        "DD28!=0 gate",
+        "Guild509 player target/owner",
+        "ifMiss clearDD28 andappend contact; skip ordinary feedback",
+        "else ordinary contact/feedback"
+      ]
+    },
+    "guild509": {
+      "callback": "31f66ec0",
+      "condition": "actor67c0!=0, set during31f594b0 if guild tree has509 template",
+      "callerCondition": "DD28!=0; no Miss-only gate",
+      "chain": [
+        "31f347c0 template509",
+        "321fc790(template,0)",
+        "31fc83b0 factor54 clone",
+        "31fc4e60 level clone",
+        "actor.v1d8=31fa8a30 gate",
+        "32999740 source/behavior/finalizer init",
+        "actor.v1e8=32205c90 rate and apply"
+      ],
+      "factor": 54,
+      "template": 57,
+      "rate": 0.03,
+      "rateGate": "actor.v1a4(0)<=P and <=P*(1-resistance); IGNORE_REGIST_FOR_RATE1 makes resistance0 for selected54; original branches include nonfinite distinctions",
+      "duration": 30,
+      "hitCount": "3*level for1..10, configured30 for11..30",
+      "parser": "329a232e key BUFF_TEMPLET_ID ->local14;329a2354 stores object28; missing key writes0"
+    },
+    "resolved": "Ordinary DD Miss conditional algorithm, stat aggregation/selected Lua curves and Guild509 trigger ordering",
+    "runtimeInputsNotCaptured": [
+      "per-call seeds/table state and interleaving",
+      "active skill levels/factor/behavior vectors",
+      "actual unit roleID and virtual overrides outside enumerated captured tables",
+      "current model clocks/direction/windows",
+      "existing Buff collections/identity/permission inputs",
+      "FPU environment for last-bit reproducibility"
+    ],
+    "scopeExclusions": [
+      "special DD20==23/1a routines not automatically covered by ordinary branch algorithm",
+      "all possible dynamically rebound Lua globals not attested by static name search",
+      "no original target execution, no V5 behavior, no Web edits, no communication continuation"
+    ]
+  },
+  "implementation": "packages/combat-core/source-miss-v53.mjs",
+  "randomTable": "contracts/source-random-table-2016.json",
+  "runtimeContract": {
+    "seed": "Actual source u16 seed is required when 0<=threshold<1; no Web RNG fallback or seed advance is provided",
+    "seedIndependent": "threshold>=1 is non-Miss; threshold<0 is Miss because the captured original table is a permutation of 0..31999 divided by32000",
+    "propertyInputs": "base and all temporary fields plus explicit relation arrays; last swap bypasses merge; source socket curves are exactly zero",
+    "NO_MISS": "Separate original bool, parsed fallback false is a caller decision from actual DD",
+    "recovery": "HP_PERCENT_UP, MP_PERCENT_UP, INCREASE_MP must each be explicit parsed numeric values; any >0 bypasses comparison",
+    "NPC": "Correlated special offset uses original resolved-owner seed; exposes required 324edec0 target6db8 side effect rather than silently dropping it",
+    "contactPrerequisites": "This pure probability module does not bypass geometry, relation, existing hit memory or damage-dispatch prerequisites",
+    "guild509": "Source result exposes callback phase; it does not apply a Buff or replace original3% rate with guaranteed grant",
+    "sharedAddAdapter": "Existing addOriginalRandomQ can use sourceOriginalRandomWord2016(normalizedIndex), removing its duplicate embedded table without changing its public API"
+  },
+  "currentHostDifference": {
+    "accuracy": "Existing Buff14 maps to accuracy but old final stat composition is not the complete31fc43f0 property merger",
+    "avoidance": "Existing Buff15 has no stat mapping and avoidance is absent from old synchronization keys",
+    "adapter": "sourceAccuracyBuffGroups2016 can group already decoded BBT14/15 rows; unsupported/raw undecoded rows do not become default neutral values",
+    "activation": "No index, owned-state or automatic RNG wiring changes in this commit"
+  },
+  "limits": [
+    "Only finite ordered threshold/property paths are simplified; exact x87 last-bit/control-word parity is not claimed",
+    "Dynamic Lua rebinding and runtime seed producer/interleaving were not observed",
+    "Special DD dispatch23/1a is outside ordinary0/1/2/3 contract",
+    "NPC map-specific auxiliary state value must be supplied by an engine integration"
+  ],
+  "sharedRandomLoader": "packages/combat-core/source-random-table-v53.mjs"
+}

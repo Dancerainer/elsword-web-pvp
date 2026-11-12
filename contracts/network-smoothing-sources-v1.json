@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "fixedV5Commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "readOnly": true,
+  "originalClientExecuted": false,
+  "target2016NetworkRuntimeTraces": 0,
+  "limits": [
+    "Fixed V5 includes later changes; not matching target2016 source.",
+    "Target KL declarations do not establish packet layout, consumer macros, or runtime cadence.",
+    "Web jitter buffering/position interpolation parameters are simulation adaptations."
+  ],
+  "sources": [
+    {
+      "kind": "fixedV5",
+      "path": "./.cache/pvp-source/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "spans": [
+        {
+          "first": 6745,
+          "last": 6795,
+          "meaning": "local Future",
+          "offset": 236598,
+          "length": 2048,
+          "sha256": "162c3d54bc43252685b367367bd677c0c4f4efa578f37c573b122aad6214354d"
+        },
+        {
+          "first": 6813,
+          "last": 6851,
+          "meaning": "remote Now requires source data",
+          "offset": 239219,
+          "length": 1143,
+          "sha256": "0d4d09721c2ed67506b1c245a12ca9e00b9ce896399405b352370882cd3f1a09"
+        },
+        {
+          "first": 13293,
+          "last": 13305,
+          "meaning": "player ownership",
+          "offset": 469885,
+          "length": 210,
+          "sha256": "34640c7ed6ced15e09be61f188e27061e18d1b693764df18d69cfc92548d41cb"
+        },
+        {
+          "first": 21458,
+          "last": 21472,
+          "meaning": "batch cadence",
+          "offset": 735447,
+          "length": 522,
+          "sha256": "912d3eb6c51957261c0e9ffe10078a600fd16e007ba3894d05c81db00a570909"
+        },
+        {
+          "first": 21505,
+          "last": 21525,
+          "meaning": "oldest source frame",
+          "offset": 736988,
+          "length": 552,
+          "sha256": "b30088218929b0d5f798999bda35bed8702f2143c7b03c2905d86bed107c81c4"
+        },
+        {
+          "first": 21595,
+          "last": 21678,
+          "meaning": "catch-up and empty buffer",
+          "offset": 739983,
+          "length": 2514,
+          "sha256": "0cce4e7191eae4c71c4b6ec0b680d377f546759b4fbece88e28fe4bd8b3fe3b1"
+        },
+        {
+          "first": 21720,
+          "last": 21780,
+          "meaning": "overlap and delta",
+          "offset": 743795,
+          "length": 3793,
+          "sha256": "1bee1bf2b10a43b12b36c44c60fd844640ca658a4127bc0dd63ebd3b82a031c4"
+        },
+        {
+          "first": 21956,
+          "last": 22001,
+          "meaning": "sorted deduplication",
+          "offset": 755465,
+          "length": 1647,
+          "sha256": "0086235e2edcd09db4058539e6cad650a78d070746a454f59489af29a93c6fd3"
+        },
+        {
+          "first": 36313,
+          "last": 36388,
+          "meaning": "world stop compensation",
+          "offset": 1251824,
+          "length": 2664,
+          "sha256": "214f0368649b1e2f71acacc8affefa3a993a69f3adc23e743c4ce9ff3635ffd8"
+        },
+        {
+          "first": 37135,
+          "last": 37266,
+          "meaning": "body side reconciliation",
+          "offset": 1279972,
+          "length": 5616,
+          "sha256": "bb91e3e9ca96517e9bf7c5bb864b4e44ff27903bd92bbe0a0871d08af3868b91"
+        }
+      ],
+      "fileBytes": 1323547
+    },
+    {
+      "kind": "fixedV5",
+      "path": "./.cache/pvp-source/X2Lib/X2Game.cpp",
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "spans": [
+        {
+          "first": 818,
+          "last": 886,
+          "meaning": "relay recovery and batch frame reconstruction",
+          "offset": 25831,
+          "length": 3423,
+          "sha256": "f90c8452f2026906e0dd2d7b16e13bbe039ed993e2177bedb416b37848509925"
+        }
+      ],
+      "fileBytes": 618989
+    },
+    {
+      "kind": "fixedV5",
+      "path": "./.cache/source-shield-v3/X2Lib/X2Main.cpp",
+      "sha256": "2248af092b0ab4eafd7b05b5e6263cc33051d1380aa44a27c9d835a8392371ba",
+      "spans": [
+        {
+          "first": 669,
+          "last": 669,
+          "meaning": "UDP overlap default",
+          "offset": 17726,
+          "length": 30,
+          "sha256": "e8633611fce65253ddcf4521a79248c59d8f3cad308f391924138b1684ffb186"
+        },
+        {
+          "first": 1324,
+          "last": 1328,
+          "meaning": "7/10 compile-time branches; target2016 macro unknown",
+          "offset": 38310,
+          "length": 114,
+          "sha256": "89287bb43671eb29e266b0d64ca806742e2d7918dcdaa967c779c436da94c4fc"
+        }
+      ],
+      "fileBytes": 623088
+    },
+    {
+      "kind": "fixedV5",
+      "path": "./.cache/network-ownership/KTDNUDP.cpp",
+      "sha256": "dc75e5a97c4ae2774e8891bce9a78610586043e9f4d90ba1737c3b83bb0a8d68",
+      "spans": [
+        {
+          "first": 2667,
+          "last": 2742,
+          "meaning": "per-peer direct or UDP relay",
+          "offset": 80148,
+          "length": 2701,
+          "sha256": "020d1625e40c21691769bdbe7581978816a80a608b52e3cec7db579eae9a1f4e"
+        }
+      ],
+      "fileBytes": 90641
+    },
+    {
+      "kind": "server-reference",
+      "path": "asset_sources/network-reference/Elsword/ClientScript/Major/Enum.lua",
+      "sha256": "c70d32e87613c9c294cacbf0903794c6fe9a3ae01d6d02491d1d6f82ab4609a5",
+      "spans": [
+        {
+          "first": 623,
+          "last": 623,
+          "meaning": "GAME_P2P_PORT",
+          "offset": 15462,
+          "length": 22,
+          "sha256": "cda54614b481c8daa63e5eef0aa74413c599a494686cc695e486a0e37f7f25b3"
+        }
+      ],
+      "fileBytes": 416134
+    },
+    {
+      "kind": "server-reference",
+      "path": "asset_sources/network-reference/Elsword/ClientScript/Major/GameEditCommandList.lua",
+      "sha256": "6409e3063bb0635650841ca2b0581519bc1e222c75aad8ff146391c86c83789e",
+      "spans": [
+        {
+          "first": 1297,
+          "last": 1307,
+          "meaning": "default/P2P/relay selection",
+          "offset": 35083,
+          "length": 471,
+          "sha256": "27a259ce7c6f21c6116f0c1391dfb7b1ac7a93e3bcee188faf618e81ff78e2a3"
+        }
+      ],
+      "fileBytes": 35913
+    },
+    {
+      "kind": "server-reference",
+      "path": "asset_sources/network-reference/Elsword/ServerResource/UdpRelayCheckerConfig.lua",
+      "sha256": "ccb75567599aa422302ba2a4841ebe77097afbfa7d669d49b7b6b351c28a58bc",
+      "spans": [
+        {
+          "first": 5,
+          "last": 10,
+          "meaning": "deployment checker policy",
+          "offset": 142,
+          "length": 292,
+          "sha256": "07c53d8de81c83cf9d07aa45f224d91773590dca992ca362488f5b3b5ee666c0"
+        }
+      ],
+      "fileBytes": 434
+    },
+    {
+      "kind": "server-reference",
+      "path": "asset_sources/network-reference/Elsword/ServerResource/GameSysValTable.lua",
+      "sha256": "07075b008388dfb17476c63cf5356b637b25a39cb4ba081133fc798be6003d52",
+      "spans": [
+        {
+          "first": 90,
+          "last": 91,
+          "meaning": "host check",
+          "offset": 4369,
+          "length": 302,
+          "sha256": "68ad403d15bd2aaec33ace634f08f7e65a6b6da0a3e002036a54848c2d9d8950"
+        },
+        {
+          "first": 242,
+          "last": 243,
+          "meaning": "NPC unit death request",
+          "offset": 12031,
+          "length": 149,
+          "sha256": "9c415534f4a819d28e497d0e3209e91bbdfa23aaaed21caed503969722e0f7ba"
+        },
+        {
+          "first": 281,
+          "last": 283,
+          "meaning": "host options",
+          "offset": 13520,
+          "length": 114,
+          "sha256": "0e2d6ef2ddbd67b764930646794e55628883a318428e3460025e2134d3bf4057"
+        }
+      ],
+      "fileBytes": 18532
+    },
+    {
+      "kind": "target2016-static",
+      "path": "asset_work/raw/data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": {
+        "offset": 370,
+        "length": 8,
+        "sha256": "de444eb73ec8d2f55309167425b99bd60235b5c3c5e548905eb1791b79d860b0",
+        "prototype": 0,
+        "instructionsZeroBased": [
+          88,
+          89
+        ],
+        "meaning": "KL82 KSHORT 8765; GSET GAME_P2P_PORT"
+      },
+      "fileBytes": 398092
+    },
+    {
+      "kind": "target2016-static",
+      "path": "asset_work/raw/data/data036.kom/GameEditCommandList.lua",
+      "sha256": "ba6ea769b564ec2ad1e423d86709780ecd978ec7c43b15ad6bf5bdc44927fb93",
+      "bytes": {
+        "offset": 14777,
+        "length": 212,
+        "sha256": "2b3edd9eeca6cacfc0c021d539c79c5bb14def1046479ed83e07d63a137861c0",
+        "prototype": 91,
+        "meaning": "KL82 static default/P2P/relay labels; SwitchConnect_LUA 0/1/2"
+      },
+      "fileBytes": 54446
+    }
+  ]
+}

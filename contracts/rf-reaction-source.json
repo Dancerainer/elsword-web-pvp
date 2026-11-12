@@ -1,0 +1,836 @@
+{
+  "schema": "rf-reaction-source-v1",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetVersion": "SteamNA2016 V6.0420.5",
+  "referenceStatus": "fixed V5 source candidate, not target2016 runtime measurement",
+  "targetClientMeasured": false,
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "bytes": 202266
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.cpp",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "bytes": 130812
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.h",
+      "sha256": "ad9b998352f09864fb770a534d27e6d50c3f8c492a9131486efd7bd70bf7915f",
+      "gitBlob": "ac49bd9c815cfc1f668078f17258db88c455886b",
+      "bytes": 35173
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.cpp",
+      "sha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8",
+      "gitBlob": "abf8e30e410b0552deeea0198b592cfe670e95b7",
+      "bytes": 40241
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "bytes": 57466
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "bytes": 521479
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.h",
+      "gitBlob": "41349c64aee113dd97dbe4128d58a109a2886ab2",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "bytes": 191004
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Game.cpp",
+      "gitBlob": "a513f2429514e858b02b5d41643c498b1edb117f",
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "bytes": 618989
+    }
+  ],
+  "targetFiles": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  ],
+  "targetEnums": {
+    "RT_BIG_DAMAGE": 2,
+    "RT_BOUNDING": 15,
+    "RT_REVENGE": 6,
+    "RT_UP": 4,
+    "RT_FLY": 5,
+    "RT_FLIP_DIFF_DIR": 21,
+    "RT_ABSORB_MAGIC": 19,
+    "RT_GUARD": 9,
+    "RT_AVOIDANCE": 20,
+    "RT_DRAG_UP": 16,
+    "RT_NO_DAMAGE": 0,
+    "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE": 22,
+    "RT_SMALL_DAMAGE": 1,
+    "RT_SENSOR": 10,
+    "RT_THROW": 14,
+    "RT_CREATE_DAMAGE_EFFECT": 11,
+    "RT_DUMMY_DAMAGE": 7,
+    "RT_REFLECT": 17,
+    "RT_GROGGY": 8,
+    "RT_FLIP_SAME_DIR": 18,
+    "RT_CREATE_EFFECT_SET": 12,
+    "RT_DOWN": 3,
+    "RT_GRAPPLE": 13
+  },
+  "targetStates": {
+    "RSI_DIE_FRONT": {
+      "raw": {
+        "ANIM_NAME": "DamageDownFront",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 30,
+        "NORMAL_CAMERA2_RATE": 40,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "CAN_PUSH_UNIT": 0,
+        "CAN_PASS_UNIT": 1,
+        "SOUND_PLAY0": {
+          "1": 0.19,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.19,
+          "2": "RavenVoice_DieScream1.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -30,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 300,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 50,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 300,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9672
+      }
+    },
+    "RSI_DIE_BACK": {
+      "raw": {
+        "ANIM_NAME": "DamageDownBack",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 30,
+        "NORMAL_CAMERA2_RATE": 40,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "CAN_PUSH_UNIT": 0,
+        "CAN_PASS_UNIT": 1,
+        "SOUND_PLAY0": {
+          "1": 0.19,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.19,
+          "2": "RavenVoice_DieScream1.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 30,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 9716
+      }
+    },
+    "RSI_DAMAGE_DOWN_FRONT": {
+      "raw": {
+        "ANIM_NAME": "DamageDownFront",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 40,
+        "NORMAL_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SOUND_PLAY0": {
+          "1": 0.19,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.19,
+          "2": "RavenVoice_DamageScream01.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -30,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 300,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 50,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 300,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10442
+      }
+    },
+    "RSI_DAMAGE_DOWN_BACK": {
+      "raw": {
+        "ANIM_NAME": "DamageDownBack",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 40,
+        "NORMAL_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SOUND_PLAY0": {
+          "1": 0.32,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.19,
+          "2": "RavenVoice_DamageScream01.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 30,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10485
+      }
+    },
+    "RSI_DAMAGE_STANDUP_FRONT": {
+      "raw": {
+        "ANIM_NAME": "DamageStandUpFront",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10498
+      }
+    },
+    "RSI_DAMAGE_STANDUP_BACK": {
+      "raw": {
+        "ANIM_NAME": "DamageStandUpBack",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10511
+      }
+    },
+    "RSI_DAMAGE_AIR_SMALL": {
+      "raw": {
+        "ANIM_NAME": "DamageAirSmall",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "APPLY_ANIM_MOVE": 0,
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10525
+      }
+    },
+    "RSI_DAMAGE_AIR_DOWN": {
+      "raw": {
+        "ANIM_NAME": "DamageAirDown",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10538
+      }
+    },
+    "RSI_DAMAGE_AIR_DOWN_INVINCIBLE": {
+      "raw": {
+        "ANIM_NAME": "DamageAirDown",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10552
+      }
+    },
+    "RSI_DAMAGE_AIR_DOWN_LANDING": {
+      "raw": {
+        "ANIM_NAME": "DamageAirDownLanding",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SOUND_PLAY0": {
+          "1": 0.029,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.46,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.1,
+          "2": "RavenVoice_DamageScream04.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10575
+      }
+    },
+    "RSI_DAMAGE_AIR_FALL": {
+      "raw": {
+        "ANIM_NAME": "DamageAirFall",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10586
+      }
+    },
+    "RSI_DAMAGE_AIR_UP": {
+      "raw": {
+        "ANIM_NAME": "DamageAirUp",
+        "NORMAL_CAMERA0_RATE": 100,
+        "NORMAL_CAMERA2_RATE": 0,
+        "NORMAL_CAMERA1_RATE": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "APPLY_ANIM_MOVE": 0,
+        "LAND_CONNECT": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 400,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 80,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10624
+      }
+    },
+    "RSI_DAMAGE_AIR_FLY_FRONT": {
+      "raw": {
+        "ANIM_NAME": "DamageAirFlyFront",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10637
+      }
+    },
+    "RSI_DAMAGE_AIR_FLY_BACK": {
+      "raw": {
+        "ANIM_NAME": "DamageAirFlyBack",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10650
+      }
+    },
+    "RSI_STANDUP_ATTACK_FRONT": {
+      "raw": {
+        "ANIM_NAME": "StandUpAttackFront",
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.43,
+          "2": 0.5
+        },
+        "SOUND_PLAY0": {
+          "1": 0.492,
+          "2": "Raven_Slash1.ogg"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": -40,
+          "TECH_POINT": 20,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 0,
+          "HIT_GAP": 0,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 3,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          },
+          "BACK_SPEED_X": 725,
+          "RE_ATTACK": 0
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10802
+      }
+    },
+    "RSI_STANDUP_ATTACK_BACK": {
+      "raw": {
+        "ANIM_NAME": "StandUpAttackBack",
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.46,
+          "2": 0.53
+        },
+        "ATTACK_TIME1": {
+          "1": 0.86,
+          "2": 0.93
+        },
+        "SOUND_PLAY0": {
+          "1": 0.477,
+          "2": "Raven_Slash1.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.973,
+          "2": "Raven_Slash2.ogg"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": -40,
+          "TECH_POINT": 20,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 3,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          },
+          "BACK_SPEED_X": 725
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10845
+      }
+    },
+    "RSI_COMBO_ZZXX": {
+      "raw": {
+        "ANIM_NAME": "ComboZ3a2",
+        "DASH_CANCEL_AFTER": 0.6,
+        "SKILL_CANCEL_AFTER": 0.45,
+        "WALK_CANCEL_AFTER": 0.6,
+        "BWALK_CANCEL_AFTER": 0.6,
+        "UPDOWN_CANCEL_AFTER": 0.6,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "UNIT_SLASH_TRACE0": {
+          "1": 0,
+          "2": 0,
+          "3": 100,
+          "4": 0
+        },
+        "ATTACK_TIME0": {
+          "1": 0.37,
+          "2": 0.437
+        },
+        "SOUND_PLAY0": {
+          "1": 0.384,
+          "2": "Raven_PunchAttack2.ogg"
+        },
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": -14,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "HIT_ADD_MP": 8.4,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "TECH_POINT": 864,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 4,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 942.5,
+          "BACK_SPEED_Y": 1800.0,
+          "FORCE_FLY": 1,
+          "DAMAGE": {
+            "PHYSIC": 4.32
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "Z",
+          "2": "ZZXX"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 364
+      }
+    }
+  },
+  "rules": {
+    "knockdown": {
+      "maximum": {
+        "value": 100,
+        "evidence": "reference-v5",
+        "source": "X2GUUser.cpp:3878-3879"
+      },
+      "contributionField": "FORCE_DOWN",
+      "subtractField": "DECREASE_FORCE_DOWN",
+      "fieldSource": "X2DamageManager.cpp:279,356",
+      "aggregate": "BALANCE_PATCH_20110303: reserve max contribution per processing batch; commit at end of OnFrameMove; sentinel -9999",
+      "aggregateSource": [
+        "X2GUUser.cpp:13057-13079",
+        "X2GUUser.cpp:13555-13556",
+        "X2GUUser.cpp:6861-6868"
+      ],
+      "threshold": "existing floating now >= max; hit contribution commit occurs later",
+      "thresholdSource": "X2GageData.cpp:137-159; X2GUUser.cpp:12009-12058",
+      "decayWaitSeconds": 2,
+      "decayPerSecond": 10,
+      "decayClock": "CommonFrameMoveFuture simulation elapsed, not wall-clock or animation clock; full dt on threshold crossing",
+      "decaySource": "X2GUUser.cpp:14948-14951",
+      "attackerResetSource": "X2GUUser.cpp:12639",
+      "deferredResetSource": "FIX_FORCE_DOWN_AND_DETONATION_BUG: X2GageData.cpp:152-194; X2GUUser.cpp:36514-36550",
+      "explicitDownResetSource": "FIX_FORCE_DOWN_INITIALIZE_BUG: X2GUUser.cpp:11669-11671",
+      "penetrationSource": "SERV_SKILL_NOTE + ENCHANT_BALANCE_101014: X2GUUser.cpp:9916-9927",
+      "unsupported": "2016 macro gates, skill/enchant modifiers, MP detonation, elemental/shock interactions are not runtime-confirmed",
+      "damagedReactionGate": {
+        "source": "X2GameUnit.cpp:7214-7237",
+        "excludedTargetEnums": [
+          "RT_NO_DAMAGE",
+          "RT_SENSOR",
+          "RT_REVENGE",
+          "RT_REFLECT",
+          "RT_THROW",
+          "RT_CREATE_DAMAGE_EFFECT"
+        ],
+        "reserveSource": "X2GUUser.cpp:8940-8941,9916-9950",
+        "reserveAdditionalGate": "!NO_DAMAGE; core parry still reserves contribution",
+        "thresholdSource": "X2GUUser.cpp:12009-12058",
+        "thresholdGate": "IsDamagedReaction after ordinary reaction; independent of ordinary reaction state/superArmor; Raven parry returns beforehand",
+        "launchSupportSource": "X2GUUser.cpp:11697,11744; X2GUUser.h:1954-1956",
+        "launchThreshold": "UP/FLY clear foot-on-line before threshold; use reaction.grounded=false and airborne invincible down, vy=0"
+      },
+      "frameOrderSource": "X2Game.cpp:3031,3166; X2GUUser.cpp:6840-6842,6861-6868,14798-14799; effects follow unit updates, reserve remains until that unit next commits",
+      "stateStartClocks": "StateChange(direct=true) calls DoStateEndStartFuture (User:7505,7530), clearing pending latch; Now CommonStateStart consumes activated KD only after PopFrameData (6840,14799)"
+    },
+    "fly": {
+      "forceFlyField": "FORCE_FLY",
+      "counterReset": "FORCE_FLY resets0; visible invincible/superarmor resets0",
+      "counterIncrementTypes": [
+        4,
+        5,
+        15,
+        16
+      ],
+      "counterSource": "X2GUUser.cpp:7770-7793,17693-17694",
+      "upAndFlyY": "BACK_SPEED_Y / (FlyCount-1) when FlyCount>2, otherwise BACK_SPEED_Y",
+      "velocitySource": "X2GUUser.cpp:11688-11695,11735-11741",
+      "airSmallEntry": {
+        "addedY": 700,
+        "walkSpeedFactor": 0.33,
+        "source": "X2GUUser.cpp:25842-25854"
+      },
+      "airEventsSource": "X2GUUser.cpp:25860-26034"
+    },
+    "standup": {
+      "postInvincibleSeconds": 0.3,
+      "source": "X2GUUser.cpp:25829-25836",
+      "inputWindow": "animation time >0.66, X before Z before held facing direction; queue until down animation ends",
+      "inputSource": "X2GURaven.cpp:7069-7248",
+      "pending": "GetChance passive variants and four directional rolling successors not executed by this module"
+    },
+    "death": {
+      "selection": "HP<=0 and grounded selects front/back dying state; airborne fatal actor keeps physics until landing",
+      "selectionSource": "X2GUUser.cpp:19483-19507",
+      "animationSpeed": 0.5,
+      "ravenSource": "X2GURaven.cpp:6020-6102",
+      "core": "DyingStart clears nasod ball and rage; awakening zeroed when death animation ends",
+      "fadePerSecond": 1.5,
+      "fadeSource": "X2GUUser.cpp:25511-25542",
+      "complete": "hide object and animation ended; source GUSI_DIE has no revival chosen here",
+      "scope": "death presentation candidate only; final 2v2 respawn/victory rules remain unfrozen"
+    },
+    "collision": {
+      "targetUnitWidth": 70,
+      "targetUnitHeight": 150,
+      "geometry": "vertical interval inclusive; horizontal X/Z distance strict < half summed unit width; not render-mesh bound",
+      "filterSource": "X2GUUser.cpp:20232-20356",
+      "pushSource": "X2GUUser.cpp:33671-33919",
+      "passSource": "X2GUUser.cpp:33926-34000",
+      "defaultsSource": "X2GameUnit.h:854-855,886; X2GUUser.cpp:13658-13695,14861-14884",
+      "originSource": "X2GUUser.cpp:7808-7831,8039-8046",
+      "backSpeedSource": "X2GUUser.cpp:8086-8164",
+      "latePatch": "FORCE_DIRECTION_FLY Lua read at X2DamageManager.cpp:109 is in 2026-08-11 patch; not adopted as 2016",
+      "pending": [
+        "speed-dependent margin constants not located",
+        "X2OPTIMIZE_NPC_NONHOST_SIMULATION relative position directions and rollback pass check",
+        "complete line-map/render-mesh wall collision"
+      ],
+      "bodySourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 14
+      },
+      "physicsOrderSource": "User:20134-20149 moves horizontal lane before pass, ground lane includes Y; 20209-20212 motion-root excludes Y; 20361-20381 applies ordinary Y displacement after push/pass"
+    }
+  },
+  "macroGates": {
+    "BALANCE_PATCH_20110303": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "defined in pinned KTDXLIB/Always.h:3317; target2016 binary macro remains unconfirmed",
+      "referenceDefinition": {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+        "line": 3317,
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069"
+      }
+    },
+    "FIX_FORCE_DOWN_AND_DETONATION_BUG": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "defined in pinned KTDXLIB/Always.h:1606; target2016 binary macro remains unconfirmed",
+      "referenceDefinition": {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+        "line": 1606,
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069"
+      }
+    },
+    "FIX_FORCE_DOWN_INITIALIZE_BUG": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "defined in pinned KTDXLIB/Always.h:1405; target2016 binary macro remains unconfirmed",
+      "referenceDefinition": {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+        "line": 1405,
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069"
+      }
+    },
+    "SERV_SKILL_NOTE": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "present in source; compiled target macro definition not established"
+    },
+    "ENCHANT_BALANCE_101014": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "defined in pinned KTDXLIB/Always.h:2592; target2016 binary macro remains unconfirmed",
+      "referenceDefinition": {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+        "line": 2592,
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069"
+      }
+    },
+    "X2OPTIMIZE_NPC_NONHOST_SIMULATION": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "present in source; compiled target macro definition not established"
+    },
+    "NEW_SKILL_2010_11": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "defined in pinned KTDXLIB/Always.h:2561; excludes target RT_REFLECT=17 in IsDamagedReaction"
+    },
+    "SERV_ADD_CHUNG_SHELLING_GUARDIAN": {
+      "target2016": "unconfirmed",
+      "referenceBranch": "present in source; compiled target macro definition not established; optional RT_CREATE_DAMAGE_EFFECT exclusion"
+    }
+  },
+  "expectationEvidence": "numeric fixtures transcribed from pinned-source equations and independent target raw fields; not generated by simulator; not native execution gold"
+}

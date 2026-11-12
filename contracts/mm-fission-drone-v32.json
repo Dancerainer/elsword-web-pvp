@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasured": false,
+  "evidenceClass": "target2016 literal declarations with a bounded qualified Add consumer adapter",
+  "source": {
+    "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+    "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+  },
+  "rows": [
+    {
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13.0,
+        "LifeTime": 0.2,
+        "ElasticCoeff": 0.5,
+        "ElasticCoeff_X": 0.0,
+        "SLASH_TRACE_TYPE": 1.0,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "UseSlashTrace": true,
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 2000.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADD_Dividing_Missile_MESH_01_DA",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2302033,
+        "line": 71801
+      },
+      "declarationSha256": "00c5c68344342a5c15b77469d5f6aa88776ace68707e5c9b4cfe562be5584b82",
+      "textures": {},
+      "glb": "fx/meshes/ADD_Rushing_Drone_MESH_01.glb",
+      "poseData": "fx/meshes/ADD_Rushing_Drone_MESH_01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.5,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "initialSize": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "initialVelocity": null,
+      "initialDirSpeed": 2000.0,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "missingExplicitTickRate": false
+    },
+    {
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13.0,
+        "LifeTime": 1.0,
+        "SLASH_TRACE_TYPE": 1.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            1000.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.2,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 1000.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADD_Dividing_Missile_MESH_02_DA",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2302669,
+        "line": 71824
+      },
+      "declarationSha256": "5a79627bbb25762600a0a63c51fecb3c0b0bfc45072959ea26a10d9d7a9b972f",
+      "textures": {},
+      "glb": "fx/meshes/ADD_Rushing_Drone_MESH_01.glb",
+      "poseData": "fx/meshes/ADD_Rushing_Drone_MESH_01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.5,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialVelocity": [
+        0.0,
+        1000.0,
+        0.0
+      ],
+      "initialDirSpeed": 1000.0,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "missingExplicitTickRate": false
+    }
+  ],
+  "damage": [
+    {
+      "name": "DamageEffect_ADD_Dividing_Missile_Dynamo_DA",
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "ADD_Dividing_Missile_MESH_01_DA",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 10,
+          "LOCK_ON_TYPE": 4
+        },
+        "DAMAGE_DATA": {
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big",
+          "DAMAGE_TYPE": 0,
+          "REACT_TYPE": 11,
+          "CAN_REVENGE": 0,
+          "APPLIED_SKILL_ID": 29209
+        },
+        "PASSIVE_PARTICLE0": {
+          "SCALE_Z": 1,
+          "SCALE_X": 1,
+          "SCALE_Y": 1,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Rushing_Drone_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "SCALE_Y": 0.7,
+          "SCALE_Z": 0.7,
+          "OFFSET_X": 5,
+          "SCALE_X": 0.7,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Drone_Activator_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 0,
+          "TRACE_MORE": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "ROTATE_Z": 45,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "ROTATE_Z": -45,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT2": {
+          "ROTATE_Z": 135,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT3": {
+          "ROTATE_Z": -135,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT4": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Dividing_Missile_Divide_Sound",
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 155970
+      },
+      "rawSha256": "5139c09c51f85f469e5721e55cbc6bf12698f99b9988979d7b98b3eada968f91"
+    },
+    {
+      "name": "DamageEffect_ADD_Dividing_Missile_Dynamo_Mutation_DA",
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "ADD_Dividing_Missile_MESH_01_DA",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 10,
+          "LOCK_ON_TYPE": 4
+        },
+        "DAMAGE_DATA": {
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big_MUC",
+          "DAMAGE_TYPE": 0,
+          "REACT_TYPE": 11,
+          "CAN_REVENGE": 0,
+          "APPLIED_SKILL_ID": 29209
+        },
+        "PASSIVE_PARTICLE0": {
+          "SCALE_Z": 1,
+          "SCALE_X": 1,
+          "SCALE_Y": 1,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Rushing_Drone_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "SCALE_Y": 0.7,
+          "SCALE_Z": 0.7,
+          "OFFSET_X": 5,
+          "SCALE_X": 0.7,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Drone_Activator_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 0,
+          "TRACE_MORE": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "ROTATE_Z": 45,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "ROTATE_Z": -45,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT2": {
+          "ROTATE_Z": 135,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT3": {
+          "ROTATE_Z": -135,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT4": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Z": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Y": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT5": {
+          "ROTATE_Z": 90,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT6": {
+          "ROTATE_Z": 180,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT7": {
+          "ROTATE_Z": -90,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+          "SCALE_Y": 0.66,
+          "SCALE_X": 0.66,
+          "SCALE_Z": 0.66,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "LIFE_TIME_ONLY": 1,
+          "INHERITLOCKONDATA": 1
+        },
+        "DIE_DAMAGE_EFFECT8": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Dividing_Missile_Divide_Sound",
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 156141
+      },
+      "rawSha256": "a6ec022d01db87b3f4577795e4f82e5b072aeab0ef1cccc0f3b57f64198c3a1e"
+    },
+    {
+      "name": "DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA",
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "ADD_Dividing_Missile_MESH_02_DA",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 10,
+          "LOCK_ON_TYPE": 4
+        },
+        "DAMAGE_DATA": {
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Small",
+          "DAMAGE_TYPE": 0,
+          "REACT_TYPE": 11,
+          "CAN_REVENGE": 0,
+          "APPLIED_SKILL_ID": 29209
+        },
+        "PASSIVE_PARTICLE0": {
+          "SCALE_Z": 1,
+          "SCALE_X": 1,
+          "SCALE_Y": 1,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Rushing_Drone_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "SCALE_Y": 0.5,
+          "SCALE_Z": 0.5,
+          "SCALE_X": 0.5,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Drone_Activator_Loop_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 0,
+          "TRACE_MORE": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Small",
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "LIFE_TIME_ONLY": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 156281
+      },
+      "rawSha256": "43300eb4e358b9f51bb6af222177d780431ecd31b5cdeedd7c0168a36be32ed0"
+    }
+  ],
+  "geometryReuse": [
+    {
+      "name": "ADD_Dividing_Missile_MESH_01_DA",
+      "baseTemplate": "ADD_Dividing_Missile_MESH_01",
+      "meshName": "ADD_Rushing_Drone_MESH_01.X",
+      "glb": "fx/meshes/ADD_Rushing_Drone_MESH_01.glb",
+      "poseData": "fx/meshes/ADD_Rushing_Drone_MESH_01.pose.json",
+      "glbSha256": "b47eed277408bc784ce854f808b9580aa2748f53e1333f4a7043b829a9afbcd0",
+      "poseSha256": "e148bce1c069343edcd7ac225a40fb34b936518761f05530ca62ac0cf716be9f"
+    },
+    {
+      "name": "ADD_Dividing_Missile_MESH_02_DA",
+      "baseTemplate": "ADD_Dividing_Missile_MESH_02",
+      "meshName": "ADD_Rushing_Drone_MESH_01.X",
+      "glb": "fx/meshes/ADD_Rushing_Drone_MESH_01.glb",
+      "poseData": "fx/meshes/ADD_Rushing_Drone_MESH_01.pose.json",
+      "glbSha256": "b47eed277408bc784ce854f808b9580aa2748f53e1333f4a7043b829a9afbcd0",
+      "poseSha256": "e148bce1c069343edcd7ac225a40fb34b936518761f05530ca62ac0cf716be9f"
+    }
+  ],
+  "qualifiedConsumer": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "lines": [
+      17138,
+      17166
+    ],
+    "laterReconstruction": true,
+    "behavior": "At .4 choose base/mutation + _DA from valid Drone Activator mark; retarget with x1.2"
+  },
+  "inheritanceBoundary": "Target2016 DIE declarations explicitly request INHERITLOCKONDATA=1. The pinned reconstructed reference copies LockOnData on CREATE at2243..2253 and parses this DIE flag at6914, but lacks a DIE copy branch. The scoped child UID/epoch inheritance is a Web adapter of the target declaration, not a recovered2016 consumer or client trace.",
+  "profileSha256": "fabc11e75c6689e6e38c6515e0b7fb2b4b3103969e86533895ad83ab58074344",
+  "fxIndexSha256": "2ab57f0b08688159db95d6f9fb7c8885edea9fedb1b2be24e104051ebb51d3fb"
+}

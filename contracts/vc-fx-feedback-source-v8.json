@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "ruleEvidenceClass": "explicit-user-feedback-web-adaptation",
+  "sourceDeclarations": [
+    {
+      "path": "asset_work/raw/data/data036.kom/DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "decodedInput": ".cache/vc/damage-declarations.json"
+    },
+    {
+      "path": "asset_work/raw/data/data036.kom/SkillNoteTemplet.lua",
+      "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816",
+      "decodedInput": ".cache/vc/skill-note-declarations.json"
+    }
+  ],
+  "silentResidualHitEffects": [
+    "RAVEN_BARRAGE_ATTACK_EXTRA_MEMO",
+    "DAMAGE_EFFECT_A_RWT_FLAME_SWORD_MEMO"
+  ],
+  "silentResidualChannels": ["original-damage-hit", "original-critical"],
+  "projectileMissRule": {
+    "professionUnitClass": 115,
+    "projectiles": [
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_1",
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_2",
+      "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_3",
+      "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_1",
+      "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_2",
+      "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_3"
+    ],
+    "acceptedEnemyContacts": 0,
+    "requiredProjectileEndReason": "template-life-time",
+    "missSuccessors": ["DAMAGE_EFFECT_SHADOW_BURSTER", "DamageEffect_RVC_Napalm_Grenade_Flame"],
+    "successorLandCrashAndLifeTimeSelectors": "original declarations retained",
+    "hitImpactExplosion": "original reaction effect retained"
+  },
+  "crowUseful": {
+    "professionUnitClass": 115,
+    "skillId": 24022,
+    "branchId": "memo-61",
+    "damageMultiplier": 0.7,
+    "damagePhases": ["first crow hit", "subsequent ground fire"],
+    "ordinaryAndOverheat": true,
+    "residualHitGapBaseSeconds": 1.1,
+    "residualHitGapUsefulSeconds": 0.55,
+    "unchangedResidualLifetimeSeconds": 8.3,
+    "otherSkillsAndProfessions": "original supported/unsupported policies retained"
+  },
+  "boundaries": [
+    "Rule values are user-authorized behavior, not constants proven by a matching target2016 native consumer.",
+    "Original damage and memo source declarations remain byte/hash unchanged.",
+    "Production-attribute tests use converted original poses and native helpers on authored Garpai map.",
+    "Simulation event silence does not by itself prove physical audio output or original-client visual parity."
+  ]
+}

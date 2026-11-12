@@ -1,0 +1,21 @@
+/* User-requested classic tooltip treatment, shared by tree and battle HUD. */
+.picker-tooltip,.skill-tooltip{background:#000f;color:#fff;border-color:#888;scrollbar-color:#888 #000}
+.picker-tooltip .picker-skill-title,.skill-tooltip strong{display:block;color:#fff;margin:0 0 5px;font-size:13px}
+.picker-tooltip>span,.skill-tooltip>span{display:block;white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0 0}
+.picker-tooltip>.picker-detail-summary,.skill-tooltip>.skill-detail-summary{margin:0;font-size:11px;color:#fff}
+.picker-tooltip .picker-detail-multipliers,.skill-tooltip .skill-detail-multipliers{font-size:11px}
+.picker-tooltip p{color:#fff}
+.picker-tooltip{width:440px;font-size:14px;font-weight:normal;line-height:1.45;border:2px solid #454545;background:#080808ed;z-index:90}
+.skill-tooltip{width:440px;font-weight:normal;line-height:1.45;filter:none}
+.skill-description-header{display:grid;grid-template-columns:58px minmax(0,1fr);gap:10px;min-height:104px;padding:4px 0 14px}
+.skill-description-header>.skill-description-icon{position:static;width:58px;height:58px;object-fit:contain;grid-row:span 2}
+.skill-description-title{font-size:17px;font-weight:normal;line-height:1.5;color:#fff}
+.skill-description-meta{grid-column:2;display:flex;flex-direction:column;align-items:flex-end;text-align:right;font-size:13px;font-weight:normal;color:#fff}
+.skill-description-category{color:#ffcc00}.skill-description-block{display:block;white-space:pre-wrap;margin:0;padding:16px 0;border-top:1px solid #636363;color:#fff;font-size:14px;font-weight:normal;overflow-wrap:anywhere}
+.skill-description-block>span{display:block}.skill-description-heading{margin-bottom:3px}
+.skill-description-pve>.skill-description-heading,.skill-description-values>.skill-description-heading{color:#52a1ff}.skill-description-pvp>.skill-description-heading{color:#fa5c52}
+.skill-description-true>.skill-description-heading,.skill-description-trait{color:#ffda00}.skill-description-notes{font-size:12px;color:#c8c8c8}
+.skill-description-true{border-top:0;padding-top:2px}
+.skill-slot[data-shared-tooltip=true]>.skill-tooltip{display:none}
+.skill-description-sword-vitality,.skill-description-sword-destruction{border-top:0;padding:0 0 16px}
+.skill-description-sword-vitality{color:#4488ff}.skill-description-sword-destruction{color:#ff4444}

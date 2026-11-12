@@ -1,0 +1,469 @@
+{
+  "schema": "rf-dash-zx-source-v12",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetVersion": "SteamNA2016 V6.0420.5",
+  "originalClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "referenceStatus": "fixed source consumers are version references; missing target2016 callback and Now/Future frame ordering remain unverified",
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547,
+      "spans": [
+        {
+          "startLine": 7839,
+          "endLine": 7876,
+          "meaning": "ARRANGED_FLY selects attacker/effect FollowLineRight",
+          "bytes": 1116,
+          "sha256": "f487e18dd926292e166fd58e6e0afb35c0cadc086ef095df4fc0c5f5d3f78411"
+        },
+        {
+          "startLine": 8050,
+          "endLine": 8066,
+          "meaning": "ARRANGED_FLY overrides front/back positional test",
+          "bytes": 499,
+          "sha256": "9de4b66d9a25a20c58d7fc6e122a0e58fa53c93f69a4004307b88fb4d42a6dc7"
+        },
+        {
+          "startLine": 8097,
+          "endLine": 8111,
+          "meaning": "ARRANGED_FLY applies local BACK_SPEED_X",
+          "bytes": 411,
+          "sha256": "31a88e8c5bd1d63f682d6cda5e7cf729ba36c1f3d71f9e117763ab6d2ad8a158"
+        },
+        {
+          "startLine": 13625,
+          "endLine": 13668,
+          "meaning": "animation speed and APPLY_ANIM_MOVE default",
+          "bytes": 1743,
+          "sha256": "4da240f28808f4e204ee840c8ded89886294ce0decd792b6b620d94ca7bd7515"
+        },
+        {
+          "startLine": 14892,
+          "endLine": 14924,
+          "meaning": "timed SPEED flag1 adds velocity",
+          "bytes": 881,
+          "sha256": "53de657f48435f9a08d70bbeedfa01e6478b1c74a39642af7070ad84771ad4b9"
+        },
+        {
+          "startLine": 19965,
+          "endLine": 19979,
+          "meaning": "horizontal velocity decay",
+          "bytes": 442,
+          "sha256": "69a7a27f4dcb97e5a8cf7f98a869886826df5c35b8ff83adb4a34b27c7068506"
+        },
+        {
+          "startLine": 20117,
+          "endLine": 20139,
+          "meaning": "velocity translation",
+          "bytes": 564,
+          "sha256": "ca6bcea275e57892845c79d8a00d123ab55c689eddc23ba3af039eeb94b727d2"
+        },
+        {
+          "startLine": 20193,
+          "endLine": 20225,
+          "meaning": "separate authored motion offset translation",
+          "bytes": 844,
+          "sha256": "86833391cc4117173e1ebb6e926d8690776443cb686a2da8fe36f07cb4595985"
+        },
+        {
+          "startLine": 20227,
+          "endLine": 20338,
+          "meaning": "native body pass/push gating",
+          "bytes": 6197,
+          "sha256": "796496a504cd4a1a1b0f95e2fa77506d19b5b687c262035785dfcceaa36be1c3"
+        },
+        {
+          "startLine": 37774,
+          "endLine": 37851,
+          "meaning": "state effect-set binding and nonzero-delay clock override",
+          "bytes": 3281,
+          "sha256": "3d46f1b45c5243006d1afba6582905092b0bdd258c00c5e791ebd91100129ec6"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245,
+      "spans": [
+        {
+          "startLine": 1278,
+          "endLine": 1305,
+          "meaning": "owner FollowLineRight is saved by CEffect creation",
+          "bytes": 784,
+          "sha256": "917642e5375c762f18b1163d3de09cfd970cdf150e4c95799d977740f17226c6"
+        },
+        {
+          "startLine": 2358,
+          "endLine": 2378,
+          "meaning": "damage checks mesh global age or mesh animation time",
+          "bytes": 600,
+          "sha256": "dadeb26aefda69354dd4edf7b58fa6e81ea6ad395e2a04dc4a9725ff1c7b1b20"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "bytes": 146678,
+      "spans": [
+        {
+          "startLine": 122,
+          "endLine": 183,
+          "meaning": "ESTT_ANIM is absolute owner animation time; CUSTOM is separate",
+          "bytes": 2491,
+          "sha256": "bf9dbb6f96807731955f96a1eea602f9f7cae09855b779971ceb80a7f1f2c52c"
+        },
+        {
+          "startLine": 1287,
+          "endLine": 1301,
+          "meaning": "traced damage effect position update",
+          "bytes": 617,
+          "sha256": "59340b4a44ddca842d87239dfb521055490467fbf151016a7de926ab0954688c"
+        },
+        {
+          "startLine": 2218,
+          "endLine": 2220,
+          "meaning": "default event timer is ESTT_ANIM",
+          "bytes": 238,
+          "sha256": "9ba0bea594f4d89578c063c5b7850722aed4413fe5bd55c6fc0f80b4ee644380"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "bytes": 167669,
+      "spans": [
+        {
+          "startLine": 1262,
+          "endLine": 1263,
+          "meaning": "mesh global time starts at zero",
+          "bytes": 55,
+          "sha256": "c6b27c5bde37fdc00b563e614ab1316492328247202bbe5acadaf93e00bf49c1"
+        },
+        {
+          "startLine": 2065,
+          "endLine": 2068,
+          "meaning": "mesh global time accumulates elapsed time",
+          "bytes": 159,
+          "sha256": "44989ec9f2ce0ac273e3ea5e804e5e8d1ac632c477b0d489e06ae8542f2543fc"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGXSkinAnim.h",
+      "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "bytes": 30326,
+      "spans": [
+        {
+          "startLine": 439,
+          "endLine": 462,
+          "meaning": "root XZ delta captured and model XZ cleared",
+          "bytes": 593,
+          "sha256": "f5d23401c4eb58f6318366c6863d8e4bd80c32f8d80524dd16abd297809066b8"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "bytes": 192825,
+      "spans": [
+        {
+          "startLine": 2767,
+          "endLine": 2772,
+          "meaning": "ARRANGED_FLY_DAMAGE_TEST enabled in fixed reference",
+          "bytes": 407,
+          "sha256": "31beddb3545645d0416728b6c0ee2a784ddde95a230ab14c9e2c4a0449f4186e"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216,
+      "spans": [
+        {
+          "startLine": 1517,
+          "endLine": 1545,
+          "meaning": "dash callbacks registration; lacks 2016 dashZX callback",
+          "bytes": 1171,
+          "sha256": "86b1974b2d37e8015d8e2bdfa7d6a7a4b9ef6e7ac4e2687b9cee2ba142570cad"
+        },
+        {
+          "startLine": 8620,
+          "endLine": 8659,
+          "meaning": "dashZ Z-only input latch",
+          "bytes": 1014,
+          "sha256": "0b555d295c5f5665f218c0a9b05adb5408f7b3881aff521e984c1f8e3b5593d4"
+        },
+        {
+          "startLine": 9362,
+          "endLine": 9390,
+          "meaning": "active PowerAssault callback, distinct from combo state",
+          "bytes": 934,
+          "sha256": "b6d2ca58a7bda02be208a9745ab96176a7da27853dc611a56f36155ebca899cf"
+        }
+      ]
+    }
+  ],
+  "targetDeclarations": [
+    {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+        "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+      },
+      "name": "RSI_OVER_TAKER_DASH_COMBO_ZX",
+      "location": {
+        "prototype": 0,
+        "assignmentInstruction": 1830
+      },
+      "raw": {
+        "ANIM_NAME": "SP2a_PowerAssault",
+        "ANIM_SPEED": 1.75,
+        "WALK_CANCEL_AFTER": 1.266,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "CAN_PUSH_UNIT": 1,
+        "SUPER_ARMOR_TIME0": {
+          "1": 0.325,
+          "2": 1.1
+        },
+        "SUPER_ARMOR_NOT_RED": 0,
+        "AFTER_IMAGE": {
+          "1": 0.01,
+          "2": 0.8
+        },
+        "SPEED_TIME0": {
+          "1": 900,
+          "2": 0,
+          "3": 0.25,
+          "4": 1
+        },
+        "CAN_PASS_UNIT_TIME0": {
+          "1": 0,
+          "2": 0
+        },
+        "CAN_PASS_UNIT_TIME1": {
+          "1": 0.2,
+          "2": 1
+        },
+        "SOUND_PLAY0": {
+          "1": 0.33,
+          "2": "RavenVoice_Shout01.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Raven_Dash01.ogg"
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Lhand1",
+          "2": "Sword"
+        },
+        "IS_ATTACK_STATE": 1,
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_RF_DASH_ZX",
+          "2": 0
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      },
+      "name": "Damage_Effect_Raven_ROT_Dash_ZX",
+      "location": {
+        "prototype": 20,
+        "assignmentInstruction": 385195
+      },
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RAVEN_ROT_DASH_ZX_ATTACK_BOX",
+        "ATTACK_TIME_START": 0.15,
+        "ATTACK_TIME_END": 0.35,
+        "EFFECT_TYPE": 1,
+        "USE_GLOBAL_TIME": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "STOP_TIME_ATK": 0.1,
+          "CAMERA_CRASH_GAP": 20,
+          "FORCE_DOWN": 11.63,
+          "BACK_SPEED_Y": 1700,
+          "CAMERA_CRASH_TIME": 0.5,
+          "HIT_ADD_MP": 6.89,
+          "TECH_POINT": 693,
+          "BACK_SPEED_X": 2075,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": {
+            "$symbol": "HIT_TYPE.HT_METEL_PUNCH_HIT",
+            "$unsupported": "target enum member absent"
+          },
+          "REACT_TYPE": 5,
+          "ARRANGED_FLY": 1,
+          "RE_ATTACK": 0,
+          "DAMAGE": {
+            "PHYSIC": 3.85
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "TRIGGER_COUNT": 30,
+          "SCALE_X": 1,
+          "SCALE_Z": 1,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "HellDiveP01",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        }
+      }
+    },
+    {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "name": "EffectSet_RF_DASH_ZX",
+      "callLocation": {
+        "prototype": 3,
+        "instruction": 11000,
+        "execution": "not-executed",
+        "nativeEffects": "unsupported",
+        "argumentOperand": 3,
+        "resultOperand": 1,
+        "opcode": "CALL",
+        "scriptEffects": null
+      },
+      "raw": {
+        "NAME": "EffectSet_RF_DASH_ZX",
+        "EFFECT0": {
+          "NAME": "Damage_Effect_Raven_ROT_Dash_ZX",
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "HellDiveM04",
+          "ROTATE_Z": 180,
+          "POSITION_OFFSET_X": 50,
+          "ROTATE_X": 180,
+          "START_TIME": 0.385,
+          "BONE_NAME": "Bip01_Footsteps",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.03,
+          "START_TIME": 0.4,
+          "TWO_DIR_TIME": 0.2,
+          "TWO_DIR_GAP": 20,
+          "SHAKE_TYPE": 3
+        }
+      }
+    }
+  ],
+  "originalMotionInventory": [
+    {
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "animationSetCount": 83,
+      "matchingNames": [
+        "SP2a_PowerAssault"
+      ]
+    },
+    {
+      "source": "raw/data/data033.kom/Motion_Raven_Common.x",
+      "sha256": "0803e26f32e46da65daefb79d26c9c632fcd822431a81e3eddd7be961e29f296",
+      "animationSetCount": 35,
+      "matchingNames": []
+    },
+    {
+      "source": "raw/data/data033.kom/Motion_Raven_OT.x",
+      "sha256": "eb59f6b899eda9e7208e36ce0214fc42adf8037c349ea13fbdc73b053db8a060",
+      "animationSetCount": 28,
+      "matchingNames": []
+    },
+    {
+      "source": "raw/data/data033.kom/Motion_Raven_RF.x",
+      "sha256": "6ca8764a6a0b23ce02f8a2e96352bac0647912cf7bf62de6bd34bce118c08064",
+      "animationSetCount": 21,
+      "matchingNames": []
+    },
+    {
+      "source": "raw/data/data033.kom/Motion_Raven_WT.x",
+      "sha256": "e1c6bcce13404b980d16db8a2b7a0237b97c6736b9c69a2deeb6b5f5c0dd1a2f",
+      "animationSetCount": 43,
+      "matchingNames": []
+    },
+    {
+      "source": "raw/data/data033.kom/Motion_Raven_VC.x",
+      "sha256": "cfaae409b0994665e378b42fc589c4cabdad9fd241d3b06c7d417f5a02d837aa",
+      "animationSetCount": 23,
+      "matchingNames": []
+    }
+  ],
+  "callbackInventory": [
+    {
+      "sourceClass": "fixed-reference",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "containsTargetComboState": false,
+      "containsRvcReplacementAnimation": false,
+      "containsOldDashZHandler": true
+    },
+    {
+      "sourceClass": "reconstruction-2026",
+      "sha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+      "containsTargetComboState": false,
+      "containsRvcReplacementAnimation": false,
+      "containsOldDashZHandler": true
+    }
+  ],
+  "arrangedFlyConsumer": {
+    "macro": "ARRANGED_FLY_DAMAGE_TEST",
+    "unitMeshManualDirection": "current attacker GetIsRight",
+    "effectDirection": "CEffect FollowLineRight, captured at mesh creation; owner turns do not change it",
+    "frontEquation": "damageDirectionRight != victim.GetIsRight",
+    "localVelocityEquation": "front ? -BACK_SPEED_X : BACK_SPEED_X",
+    "followLineBounceLimit": "Other reference code can change FollowLineRight on bouncing FOLLOW_LINE effects. RF dashZX has no such declaration; general bounce execution is not newly implemented."
+  },
+  "timingConsumers": {
+    "effectSetStart": "absolute owner animation time .2 (zero set delay; default ESTT_ANIM)",
+    "damageWindow": "main mesh global age [.15,.35), since creation; neither hit interval nor owner animation time",
+    "velocity": "SPEED_TIME0 flag1 adds +900 at owner animation time .25, independently of authored root delta",
+    "pass": "CAN_PASS_UNIT_TIME1 starts at owner animation time .2, allowing the rush to cross a body"
+  },
+  "candidateLimits": [
+    "Target2016 native dashZ-to-X callback missing in both acquired Raven.cpp files.",
+    "Current host target-state binding uses EVENT_PROCESS_TIME0 from dashZ as a static candidate.",
+    "Now/Future animation controllers and exact newborn mesh update ordering are not a complete target2016 port.",
+    "Original attack-sphere helper consumer radius and original-client close-range outcomes have no measured baseline.",
+    "Simulation observations are diagnostics, never generated original expectations."
+  ]
+}

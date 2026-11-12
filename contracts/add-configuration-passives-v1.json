@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original target2016 fields and resources; qualified fixedV5 callback timing; explicit data adapters",
+  "source": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "gitBlob": "39888c9b632990e855057e61499363247e438a15",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5 reference containing later reconstruction; not matching 2016"
+  },
+  "callbacks": [
+    {
+      "method": "StateChangeSpecialAttack",
+      "line": 79,
+      "lastLine": 82,
+      "sha256": "6d23d0c74ef4a45924a968ec17484ac16c0a95696439f892c768cee9a20c6d29",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetReduceDebuffDurationRate",
+      "line": 82,
+      "lastLine": 82,
+      "sha256": "0ea086abe40d95658ce79035dab7c40d6697ab999c63d27a327bf44f9a735ce1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_MindControlCostRecoveryProc",
+      "line": 83,
+      "lastLine": 85,
+      "sha256": "256a37d1ec65fc9261218d9b43b809325fe1bcfa47b7105569d02dac1dc05e27",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_StateStart",
+      "line": 419,
+      "lastLine": 419,
+      "sha256": "1e52b0aa057de0613f6dc8231c936a0b4d21b65f7c27ea0f6bec4d9f52e02334",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_FrameMove",
+      "line": 419,
+      "lastLine": 421,
+      "sha256": "3f62f1644e5ba698201ee6f72de31cdf9d4e83afbfa7c44d01665ef8bfd254fc",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_DIVIDING_MISSILE_DYNAMO_FrameMove",
+      "line": 427,
+      "lastLine": 429,
+      "sha256": "53ea73e9b720fbd0944da847e1b3d89af74315ff08846e6e949374437c60e374",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_FLICK_DISC_DYNAMO_FrameMove",
+      "line": 432,
+      "lastLine": 437,
+      "sha256": "26315e76c1cc2e741414665af0c6eb28924a16bd85fae1893bc529784da9ee5a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_COUNTDOWN_BOMB_DYNAMO_FrameMove",
+      "line": 437,
+      "lastLine": 437,
+      "sha256": "5f2354517bd36d9e51b5cfebfadd9d788a0be4d9570435782eab756bb737c6d2",
+      "laterReconstruction": true
+    }
+  ],
+  "targetSources": {
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "passives": [
+    {
+      "skillId": 29406,
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_07.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "Hidden Records",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Increases maximum MP and duration of Dynamo Configuration skills. Also lowers the knockdown rate and increases natural MP recovery while in Dynamo Configuration Mode (Awakening).\n\nSkills:\n- Rushing Drone, Pylons, Fusion Blast, Flick Disc, Delayed Explosion",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_AAT_HIDDEN_MEMORY",
+        "m_eID": 29406,
+        "m_EffectiveDesc": {
+          "1": "Duration Increase: 10%\nMax MP Increase: 10\nKnockdown Decrease: 10%\nConfiguration Mode (Awakening) MP recovered per sec increase: 0.5",
+          "2": "Duration Increase: 20%\nMax MP Increase: 20\nKnockdown Decrease: 15%\nConfiguration Mode (Awakening) MP Recovery per sec: 0.75",
+          "3": "Duration Increase: 30%\nMax MP Increase: 30\nKnockdown Decrease: 20%\nConfiguration Mode (Awakening) MP Recovery per sec: 1"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 1,
+        "m_RequireCharacterLevel": {
+          "1": 40,
+          "2": 51,
+          "3": 59
+        },
+        "SA_MAX_MP_ABS": {
+          "1": 10,
+          "2": 20,
+          "3": 30
+        },
+        "SA_PROJECTILE_SIZE": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "SA_EFFECTIVE_TIME": {
+          "1": 1.1,
+          "2": 1.2,
+          "3": 1.3
+        },
+        "SA_FORCE_DOWN_REL": {
+          "1": 0.9,
+          "2": 0.85,
+          "3": 0.8
+        },
+        "BUFF_FACTOR": {
+          "1": 346
+        }
+      }
+    },
+    {
+      "skillId": 29408,
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_07.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "New Update!",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Gain an MP regeneration buff when activating or switching Dynamo Factory Mode. (Can only be stacked to a maximum of 3)",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_AMM_NEW_UPDATE",
+        "m_eID": 29408,
+        "m_EffectiveDesc": {
+          "1": "MP Recovery Increase: 5% (Max 3 Stacks)\nDuration: 10 sec",
+          "2": "MP Recovery Increase: 7.5% (Max 3 Stacks)\nDuration: 12.5 sec",
+          "3": "MP Recovery Increase: 10% (Max 3 Stacks)\nDuration: 15 sec"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 3,
+        "m_RequireCharacterLevel": {
+          "1": 60,
+          "2": 66,
+          "3": 68
+        },
+        "BUFF_FACTOR": {
+          "1": 367
+        }
+      }
+    },
+    {
+      "skillId": 29412,
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_08.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "Mind Control",
+        "m_eActiveSkillUseCondtion": 1,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Cost of certain skills used will be recovered depending on the current Nasod Armor Mode and reduces the effects of debuffs. Also lowers knockdown rate with attacks and increases MP regen while in Dynamo Configuration Mode (Awakening).\n\n- Reduced Debuffed Effects: Stun/Confusion/Silence/Panic/Fear/Suppression",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_ADE_MIND_CONTROL",
+        "m_eID": 29412,
+        "m_EffectiveDesc": {
+          "1": "Recovery amount when using skills in different modes\n - Configuration Mode (Awakening) DP Recovery: 5% Chance to recover 5%\n - Dissolution Mode (Non-Awakening) MP Recovery: 5% Chance to recover 5%\nDebuff Duration Decrease: 30%",
+          "2": "Recovery amount when using skills in different modes\n - Configuration Mode (Awakening) DP Recovery: 5% Chance to recover 7.5%\n - Dissolution Mode (Non-Awakening) MP Recovery: 5% Chance to recover 7.5%\nDebuff Duration Decrease: 40%",
+          "3": "Recovery amount when using skills in different modes\n - Configuration Mode (Awakening) DP Recovery: 5% Chance to recover 10%\n - Dissolution Mode (Non-Awakening) MP Recovery: 5% Chance to recover 10%\nDebuff Duration Decrease: 50%"
+        },
+        "m_bBornSealed": 0,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 2,
+        "m_RequireCharacterLevel": {
+          "1": 35,
+          "2": 46,
+          "3": 47
+        },
+        "SA_REDUCE_EDT_TIME_REL": {
+          "1": 0.3,
+          "2": 0.4,
+          "3": 0.5
+        },
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.05,
+          "2": 0.05,
+          "3": 0.05
+        },
+        "SA_RECOVERY_VALUE_REL": {
+          "1": 0.05,
+          "2": 0.075,
+          "3": 0.1
+        }
+      }
+    }
+  ],
+  "hiddenRecords": {
+    "durationField": "SA_EFFECTIVE_TIME",
+    "sizeField": "SA_PROJECTILE_SIZE",
+    "adapter": "Duration extends only emitted carrier original LT_TIME. DAMAGE_TIME remains hit count. Projectile size is exactly1 at every target tier.",
+    "pylonDurationSeconds": 20,
+    "pylonEvidence": {
+      "1": "Activated Energy\n- MP Recovery Increase: 10%\nInitial Blow (Magical): 220%\nParticle Beam (Magical): 122% Multi Hit\nPylon Duration: 20 sec."
+    },
+    "unresolved": "Whether later split child projectiles inherit increased duration is not established"
+  },
+  "newUpdate": {
+    "factorId": 367,
+    "templateId": 343,
+    "perStackPercent": 1.1,
+    "stackLimit": 3,
+    "seconds": 15,
+    "trigger": "factory first selection or switch; not repeated fire",
+    "targetFactor": {
+      "raw": {
+        "BUFF_TEMPLET_ID": 343,
+        "RATE": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1,
+          "17": 1,
+          "18": 1,
+          "19": 1,
+          "20": 1,
+          "21": 1,
+          "22": 1,
+          "23": 1,
+          "24": 1,
+          "25": 1,
+          "26": 1,
+          "27": 1,
+          "28": 1,
+          "29": 1,
+          "30": 1
+        },
+        "IGNORE_REGIST_FOR_RATE": 1,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 24,
+            "2": 25,
+            "3": 26
+          },
+          "BBT_CHARGE_MP_HIT_MELEE_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7,
+            "PERCENT": {
+              "1": 1.05,
+              "2": 1.075,
+              "3": 1.1,
+              "4": 1.1,
+              "5": 1.1,
+              "6": 1.1,
+              "7": 1.1,
+              "8": 1.1,
+              "9": 1.1,
+              "10": 1.1,
+              "11": 1.1,
+              "12": 1.1,
+              "13": 1.1,
+              "14": 1.1,
+              "15": 1.1,
+              "16": 1.1,
+              "17": 1.1,
+              "18": 1.1,
+              "19": 1.1,
+              "20": 1.1,
+              "21": 1.1,
+              "22": 1.1,
+              "23": 1.1,
+              "24": 1.1,
+              "25": 1.1,
+              "26": 1.1,
+              "27": 1.1,
+              "28": 1.1,
+              "29": 1.1,
+              "30": 1.1
+            }
+          },
+          "BBT_CHARGE_MP_HIT_RANGE_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7,
+            "PERCENT": {
+              "1": 1.05,
+              "2": 1.075,
+              "3": 1.1,
+              "4": 1.1,
+              "5": 1.1,
+              "6": 1.1,
+              "7": 1.1,
+              "8": 1.1,
+              "9": 1.1,
+              "10": 1.1,
+              "11": 1.1,
+              "12": 1.1,
+              "13": 1.1,
+              "14": 1.1,
+              "15": 1.1,
+              "16": 1.1,
+              "17": 1.1,
+              "18": 1.1,
+              "19": 1.1,
+              "20": 1.1,
+              "21": 1.1,
+              "22": 1.1,
+              "23": 1.1,
+              "24": 1.1,
+              "25": 1.1,
+              "26": 1.1,
+              "27": 1.1,
+              "28": 1.1,
+              "29": 1.1,
+              "30": 1.1
+            }
+          },
+          "BBT_CHARGE_MP_HITTED": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7,
+            "PERCENT": {
+              "1": 1.05,
+              "2": 1.075,
+              "3": 1.1,
+              "4": 1.1,
+              "5": 1.1,
+              "6": 1.1,
+              "7": 1.1,
+              "8": 1.1,
+              "9": 1.1,
+              "10": 1.1,
+              "11": 1.1,
+              "12": 1.1,
+              "13": 1.1,
+              "14": 1.1,
+              "15": 1.1,
+              "16": 1.1,
+              "17": 1.1,
+              "18": 1.1,
+              "19": 1.1,
+              "20": 1.1,
+              "21": 1.1,
+              "22": 1.1,
+              "23": 1.1,
+              "24": 1.1,
+              "25": 1.1,
+              "26": 1.1,
+              "27": 1.1,
+              "28": 1.1,
+              "29": 1.1,
+              "30": 1.1
+            }
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1,
+            "NORMAL_TIME": {
+              "1": 10,
+              "2": 12.5,
+              "3": 15,
+              "4": 10,
+              "5": 10,
+              "6": 10,
+              "7": 10,
+              "8": 10,
+              "9": 10,
+              "10": 10,
+              "11": 15,
+              "12": 15,
+              "13": 15,
+              "14": 15,
+              "15": 15,
+              "16": 15,
+              "17": 15,
+              "18": 15,
+              "19": 15,
+              "20": 15,
+              "21": 15,
+              "22": 15,
+              "23": 15,
+              "24": 15,
+              "25": 15,
+              "26": 15,
+              "27": 15,
+              "28": 15,
+              "29": 15,
+              "30": 15
+            }
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 23281
+      },
+      "sourceKey": "buff-factor",
+      "evidenceClass": "static-target-2016; behavior-execution-separate"
+    },
+    "targetTemplate": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 3,
+        "ACCUMULATION_MULTIPLIER": 1,
+        "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_Pylon",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 343,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 0,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 24,
+            "2": 25,
+            "3": 26
+          },
+          "BBT_CHARGE_MP_HIT_MELEE_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          },
+          "BBT_CHARGE_MP_HIT_RANGE_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          },
+          "BBT_CHARGE_MP_HITTED": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_30583",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_30580",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 21477
+      },
+      "sourceKey": "battle-buff",
+      "evidenceClass": "static-target-2016; registration-execution-separate"
+    }
+  },
+  "mindControl": {
+    "chanceComparison": "roll <= target SA_EFFECTIVE_RATE",
+    "refundBase": "actual committed plan mpCost or dpCost, target SA_RECOVERY_VALUE_REL",
+    "dpRecoveryConsumer": "UpNowDPValue including DP gain modifiers",
+    "targetDebuffTemplateIds": [
+      1,
+      52,
+      53,
+      61,
+      161,
+      223
+    ],
+    "referenceAdditionalStunIds": [
+      172,
+      184,
+      291
+    ],
+    "durationAdapter": "1-SA_REDUCE_EDT_TIME_REL matches target reduction descriptions; old reference returned the raw value directly, not adopted at tiers1/2"
+  },
+  "rushing": {
+    "normal": [
+      {
+        "time": 0.4,
+        "count": 1
+      }
+    ],
+    "mutationUnlocked": [
+      {
+        "time": 0.4,
+        "count": 2,
+        "yawPerIndex": 30
+      }
+    ],
+    "mutationLocked": "unsupported pending general Drone Activator targeting, no unconditional.6 shot"
+  },
+  "mutationPayloadRoots": [
+    "DamageEffect_ADD_Dividing_Missile_Dynamo_Mutation",
+    "DamageEffect_AMM_Countdown_Bomb_Projectile_Mutation",
+    "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation0",
+    "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation1"
+  ]
+}

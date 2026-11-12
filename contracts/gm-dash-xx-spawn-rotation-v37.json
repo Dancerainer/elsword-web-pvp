@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 original mesh Rotate declarations; explicit current-Web seeded instance adapter",
+  "targetClientMeasured": false,
+  "setName": "EffectSet_SGM_Dash_XX_Loop_FX",
+  "effectName": "DamageEffect_SGM_Dash_Combo_XX_Loop_FX",
+  "templateName": "Mesh_SGM_Dash_XX_Spawnpoint",
+  "source": {
+    "archive": "data/data036.kom",
+    "name": "GameMajorXMeshPlayer.txt",
+    "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+    "byteOffset": 1108350,
+    "line": 34881,
+    "declarationSha256": "6cbbe31389c5ee1afee7db0c086e7bb14d98e046dfbd2910b048d7ac09e39752"
+  },
+  "rotateEvents": [
+    {"property": "Rotate", "start": 0, "end": 0, "fade": false, "value": [0, {"random": [0, 50]}, 0]},
+    {"property": "Rotate", "start": 0.01, "end": 2, "fade": true, "value": [0, {"random": [3600, 7200]}, 0]}
+  ],
+  "adapter": "Resolve the two original yaw endpoints once from the snapshot-owned Web combat RNG at effect creation, retain the resulting binary32 values in owner state, and sample those same values for bone/child generation and presentation. Original CRT TLS seed/call chronology and target-client Rotate fade scheduling remain unmeasured. Other random meshes are outside this capability."
+}

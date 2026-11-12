@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "targetMeasuredTrajectories": 0,
+  "classification": "target2016 declarations + pinned-V5 bounded host consumers + explicit target-description candidates",
+  "sources": {
+    "Raven": {
+      "readOnlyInput": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237"
+    },
+    "User": {
+      "readOnlyInput": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38"
+    },
+    "DamageEffect": {
+      "readOnlyInput": ".cache/native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8"
+    },
+    "DamageManager": {
+      "readOnlyInput": ".cache/native-reference/X2Lib/X2DamageManager.cpp",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231"
+    },
+    "BuffFactor": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffFactor.cpp",
+      "sha256": "dd458eaa4febae9c16bcf48f1809dc1ab632a9dc40906dc5569ea3e2ebddced1"
+    },
+    "BuffBehavior": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d"
+    },
+    "BuffFinalizer": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffFinalizerTemplet.cpp",
+      "sha256": "c41cc3b322eb602b74b8d6581393c1079121fcabdd1e742b6d02f0bb30e2f173"
+    },
+    "BuffTemplet": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffTemplet.cpp",
+      "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a"
+    },
+    "SkillTree": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2SkillTree.cpp",
+      "sha256": "d424be44bc394c9681545f572d20179b58caa3f8981db8e8250dda6832802b9f"
+    }
+  },
+  "originalTargetSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "skills": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effects": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "consumers": [
+    {
+      "id": "core-request",
+      "source": "Raven",
+      "range": [
+        14265,
+        14370
+      ],
+      "fields": [
+        "DTT_RAVEN_RAGE_ATTACK",
+        "damage.m_fRateModifier"
+      ],
+      "operations": {
+        "delaySeconds": 0.3,
+        "startAnimationAt": "request",
+        "attackScale": [
+          1,
+          1.6,
+          1.4,
+          1.6,
+          1.5
+        ],
+        "levelQuantum": 20,
+        "maxGauge": 100
+      }
+    },
+    {
+      "id": "core-launch",
+      "source": "Raven",
+      "range": [
+        14418,
+        14493
+      ],
+      "operations": {
+        "offsetBackwards": 150,
+        "dirSpeed": 3600,
+        "curveSpeed": 30,
+        "unlockTime": 0.06,
+        "attackTime": [
+          0,
+          9999
+        ],
+        "landY": 0,
+        "powerByLevel": [
+          2.2,
+          4.4,
+          6.6,
+          8.8,
+          11
+        ]
+      }
+    },
+    {
+      "id": "core-idle-birth-follow",
+      "source": "Raven",
+      "range": [
+        13958,
+        14052
+      ],
+      "followRange": [
+        14584,
+        14638
+      ],
+      "operations": {
+        "localOffset": [
+          -162,
+          126,
+          0
+        ],
+        "birthUsesTargetPosition": true,
+        "idlePerPacketInterpolation": 0.05,
+        "followsDuringPrepare": false
+      }
+    },
+    {
+      "id": "core-timeout",
+      "source": "Raven",
+      "range": [
+        14664,
+        14732
+      ],
+      "operations": {
+        "timerStartsAt": "request",
+        "timeoutSeconds": 1.2,
+        "successfulCost": "currentLevel*20",
+        "miss": "restore Wait"
+      }
+    },
+    {
+      "id": "core-unlock",
+      "source": "DamageEffect",
+      "range": [
+        2798,
+        2807
+      ],
+      "operations": {
+        "decrementBeforeCondition": true,
+        "lockedUpdatesAt60Hz": 3,
+        "homingAfterUnlock": false
+      }
+    },
+    {
+      "id": "preserve-hit-cooldown",
+      "source": "DamageManager",
+      "symbol": "HitUnit.fRemainGap = pDamageData->fHitGap",
+      "stageSource": "DamageEffect",
+      "stageRange": [
+        7201,
+        7253
+      ],
+      "operations": {
+        "copyHitUnitListOnStageChange": true,
+        "assignGapAtAcceptedHit": true,
+        "clearOnlyWhenDeclared": true
+      },
+      "hostBoundary": "absolute simulation time + remembered birth gap; same cooldown memory policy, not a full native frame scheduler"
+    },
+    {
+      "id": "awakening-first",
+      "targetSkillId": 24405,
+      "rawField": "SA_EFFECTIVE_TIME",
+      "maxLevelValue": 0.7,
+      "evidence": "target2016 description explicitly decreases awakening duration30%",
+      "operation": "baseSeconds*consumedOrbs*.7",
+      "classification": "target-description adapter; matched target-native consumer unavailable"
+    },
+    {
+      "id": "reawakening-start",
+      "source": "User",
+      "range": [
+        26157,
+        26220
+      ],
+      "operations": {
+        "orbConsumption": 1,
+        "enterAwakeningState": true
+      }
+    },
+    {
+      "id": "reawakening-apply",
+      "source": "Raven",
+      "range": [
+        6866,
+        6896
+      ],
+      "operations": {
+        "applyAtAnimationTime": 0.83
+      }
+    },
+    {
+      "id": "reawakening-time-value",
+      "source": "Raven",
+      "range": [
+        14740,
+        14770
+      ],
+      "rawField": "SA_EFFECTIVE_TIME",
+      "operations": {
+        "returnWhenAlreadyAwakened": "literal ability value"
+      }
+    },
+    {
+      "id": "reawakening-additive-time",
+      "source": "BuffBehavior",
+      "range": [
+        1519,
+        1565
+      ],
+      "operations": {
+        "duration": "remaining+suppliedTime",
+        "retainPreviousHyperCount": true
+      },
+      "classification": "acquired older V5 consumer candidate; target2016 added-time consumer missing"
+    },
+    {
+      "id": "reawakening-core-refill",
+      "targetSkillId": 24405,
+      "operations": {
+        "refillGauge": 100
+      },
+      "classification": "explicit target2016 description adapter; old V5 source refills only+40"
+    },
+    {
+      "id": "explosive-proc",
+      "source": "Raven",
+      "range": [
+        2328,
+        2342
+      ],
+      "additionalSources": [
+        {
+          "source": "User",
+          "range": [
+            12812,
+            12822
+          ]
+        },
+        {
+          "source": "DamageEffect",
+          "range": [
+            3976,
+            3986
+          ]
+        }
+      ],
+      "targetSkillId": 24402,
+      "operations": {
+        "probability": 0.1,
+        "condition": "CREATE_DAMAGE_EFFECT_NAME exists; excludes melee RT_CREATE callbacks; NO_DAMAGE excluded",
+        "rng": "native float <=; independent data-rate draw only on owner-rate failure",
+        "effect": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+        "impactPosition": true
+      }
+    },
+    {
+      "id": "archenemy-system-exclusion",
+      "operations": {
+        "excludeAttackType": 1,
+        "excludeOriginKind": "core",
+        "excludeEffectName": "RAVEN_HYPER_AURA"
+      },
+      "classification": "target Archenemy ordinary/active descriptor adapter; stable original damage provenance wins over inherited owner skill id"
+    }
+  ],
+  "unsupported": [
+    {
+      "id": "target-client-traces",
+      "reason": "no runnable matching2016 input/measured trajectory acquired"
+    },
+    {
+      "id": "explosive-critical-buff-activation",
+      "targetSkillId": 24402,
+      "buffFactorId": 437,
+      "reason": "factor definition found; acquired rate/hit-create callbacks do not grant it; no matching target activation consumer"
+    },
+    {
+      "id": "24404-mp-soul",
+      "reason": "received MP .1 / soul .09 composition consumer missing"
+    },
+    {
+      "id": "24405-magic-stat",
+      "reason": "1.075 magic-stat stage/composition consumer missing"
+    },
+    {
+      "id": "nasod-helper-radius",
+      "reason": "actual .X animated helper pose; radius is source-vertex bounding sphere candidate, not acquired native stored KSM radius"
+    },
+    {
+      "id": "nasod-level-recreation",
+      "reason": "idle birth and level power are supported; full source instance recreation during prepare/attack level changes remains partial"
+    },
+    {
+      "id": "stage-pvp-rate",
+      "reason": "acquired SetDamageDataNext PVP_SEASON2 preserves primary PVP_RATE; matching target build flag unavailable; no new guessed override in this patch"
+    }
+  ]
+}

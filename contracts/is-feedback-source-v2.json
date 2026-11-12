@@ -1,0 +1,2086 @@
+{
+  "schemaVersion": 2,
+  "clientMeasured": false,
+  "sources": {
+    "elsword": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+        "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+      },
+      "evidenceClass": "static-2016-declaration",
+      "states": {
+        "ESSI_COMBO_Z2": {
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "ANIM_NAME": "ComboZ2",
+          "PHANTOM_BLADE_BACK_SPEED_X": 740,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "SPEED_Y": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.2,
+            "2": 0.24
+          },
+          "CREATE_EFFECT_SET": {
+            "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+            "2": 0.2,
+            "3": 0
+          },
+          "SPEED_X": 750.0,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.13,
+            "2": "Slash.ogg"
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.366,
+            "3": 0.366
+          },
+          "EVENT_PROCESS_TIME1": {
+            "1": 0,
+            "2": 0.366,
+            "3": 0.366
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 8.5,
+            "STOP_TIME_ATT": 0.05,
+            "HIT_ADD_MP": 6.5,
+            "TECH_POINT": 137,
+            "CAMERA_CRASH_TIME": 0.2,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": 740,
+            "DAMAGE": {
+              "PHYSIC": 1.83
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_ZZZZ": {
+          "ANIM_SPEED": 1,
+          "DAMAGEDATA_CHANGE_TIME": 0.233,
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 1,
+          "ANIM_NAME": "ESSI_COMBO_ETK_ZZZZ",
+          "SPEED_X": 800,
+          "SKILL_CANCEL_AFTER": 0.4,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA_NEXT",
+          "WALK_CANCEL_AFTER": 0.6,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.166,
+            "2": 0.233
+          },
+          "ATTACK_TIME1": {
+            "1": 0.266,
+            "2": 0.333
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.166,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.266,
+            "2": "Slash.ogg"
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0.266,
+            "2": 0.533,
+            "3": 0.533
+          },
+          "PHANTOM_BLADE_REACT_TYPE": 2,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 300,
+            "FORCE_DOWN": 5.25,
+            "CAMERA_CRASH_GAP": 10,
+            "HIT_ADD_MP": 3.8,
+            "TECH_POINT": 99,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.32
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": -7,
+            "BACK_SPEED_X": 800,
+            "BACK_SPEED_Y": 1300,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 143,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "HIT_ADD_MP": 4.2,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "FORCE_FLY": 1,
+            "DAMAGE": {
+              "PHYSIC": 1.43
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_ZZZZZ": {
+          "DAMAGEDATA_CHANGE_TIME": 0.433,
+          "ANIM_SPEED": 1.1,
+          "PHANTOM_BLADE_BACK_SPEED_Y": 880,
+          "HIT_CAMERA1_RATE": 35,
+          "PHANTOM_BLADE_BACK_SPEED_X": 1440,
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 1,
+          "SKILL_CANCEL_AFTER": 0.5,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA_NEXT",
+          "ANIM_NAME": "ESSI_COMBO_ETK_ZZZZZ",
+          "HIT_CAMERA2_RATE": 25,
+          "SPEED_Y": 0,
+          "WALK_CANCEL_AFTER": 0.966,
+          "HIT_CAMERA0_RATE": 40,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.333,
+            "2": 0.433
+          },
+          "ATTACK_TIME1": {
+            "1": 0.466,
+            "2": 0.533
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.333,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.466,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.412,
+            "2": "ElswordVoice_Shout02.ogg"
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 600,
+            "FORCE_DOWN": 4.69,
+            "CAMERA_CRASH_GAP": 10,
+            "HIT_ADD_MP": 4.16,
+            "TECH_POINT": 113,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.5
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": -6.25,
+            "BACK_SPEED_X": 1800,
+            "BACK_SPEED_Y": 1100,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 169,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "STOP_TIME_DEF": 0.066,
+            "HIT_ADD_MP": 4.59,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 5,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "FORCE_FLY": 1,
+            "DAMAGE": {
+              "PHYSIC": 1.69
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 100,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": 200,
+              "DISTANCE": 800,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "EYEDISTANCE": 100,
+              "HEIGHT": 150,
+              "LOOKATDISTANCE": 300,
+              "DISTANCE": 1100,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_XX": {
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 1,
+          "DAMAGEDATA_CHANGE_TIME": 0.5,
+          "ANIM_NAME": "ESSI_COMBO_ETK_XX",
+          "DASH_CANCEL_AFTER": 0.1,
+          "PHANTOM_BLADE_BACK_SPEED_X": 400,
+          "SPEED_X": 850,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA_NEXT",
+          "WALK_CANCEL_AFTER": 1,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.466,
+            "2": 0.5
+          },
+          "ATTACK_TIME1": {
+            "1": 0.566,
+            "2": 0.633
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.466,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.566,
+            "2": "Slash.ogg"
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.666,
+            "3": 0.666
+          },
+          "EVENT_PROCESS_TIME1": {
+            "1": 0,
+            "2": 0.666,
+            "3": 0.666
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 4.25,
+            "HIT_ADD_MP": 3.25,
+            "TECH_POINT": 56,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.49
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "BACK_SPEED_X": 750,
+            "FORCE_DOWN": 4.25,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 56,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "STOP_TIME_DEF": 0.066,
+            "HIT_ADD_MP": 3.25,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.49
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_XXX_LOOP": {
+          "ANIM_NAME": "ESSI_COMBO_ETK_XXX_Loop",
+          "DAMAGEDATA_CHANGE_TIME": 0.3,
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 1,
+          "ANIM_SPEED": 0.8,
+          "PHANTOM_BLADE_BACK_SPEED_X": 400,
+          "SPEED_X": 850,
+          "SKILL_CANCEL_AFTER": 0.266,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA_NEXT",
+          "WALK_CANCEL_AFTER": 0.466,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "SUPER_ARMOR_TIME0": {
+            "1": 0,
+            "2": 100
+          },
+          "ATTACK_TIME0": {
+            "1": 0.266,
+            "2": 0.3
+          },
+          "ATTACK_TIME1": {
+            "1": 0.4,
+            "2": 0.433
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.233,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.366,
+            "2": "Slash.ogg"
+          },
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.433,
+            "3": 0.433
+          },
+          "EVENT_PROCESS_TIME1": {
+            "1": 0,
+            "2": 0.433,
+            "3": 0.433
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 3.88,
+            "HIT_ADD_MP": 3.63,
+            "TECH_POINT": 40,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "PVP_RATE": 0.66,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.06
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "STOP_TIME_DEF": 0.066,
+            "FORCE_DOWN": 3.88,
+            "BACK_SPEED_X": 750,
+            "CAMERA_CRASH_GAP": 10,
+            "TECH_POINT": 40,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "PVP_RATE": 0.66,
+            "HIT_ADD_MP": 3.63,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.06
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_XXX_END": {
+          "WALK_CANCEL_AFTER": 0.9,
+          "DAMAGEDATA_CHANGE_TIME": 0.3,
+          "ANIM_NAME": "ESSI_COMBO_ETK_XXX_End",
+          "HIT_CAMERA1_RATE": 35,
+          "HIT_CAMERA2_RATE": 25,
+          "PHANTOM_BLADE_BACK_SPEED_X": 1800,
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 1,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA_NEXT",
+          "HIT_CAMERA0_RATE": 40,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "SUPER_ARMOR_TIME0": {
+            "1": 0,
+            "2": 0.577
+          },
+          "ATTACK_TIME0": {
+            "1": 0.233,
+            "2": 0.3
+          },
+          "ATTACK_TIME1": {
+            "1": 0.366,
+            "2": 0.433
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.233,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.366,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.282,
+            "2": "ElswordVoice_Shout07.ogg"
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 3.5,
+            "STOP_TIME_ATT": 0.066,
+            "TECH_POINT": 44,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "STOP_TIME_DEF": 0.066,
+            "HIT_ADD_MP": 4,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.17
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": -14,
+            "BACK_SPEED_X": 1500,
+            "CAMERA_CRASH_GAP": 10,
+            "STOP_TIME_ATT": 0.066,
+            "TECH_POINT": 251,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "STOP_TIME_DEF": 0.166,
+            "HIT_ADD_MP": 4.4,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.67
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": 200,
+              "DISTANCE": 800,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -20,
+              "EYEDISTANCE": 0,
+              "HEIGHT": 200,
+              "LOOKATDISTANCE": 350,
+              "DISTANCE": 1150,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_COMBO_XXXZ": {
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "DAMAGEDATA_CHANGE_TIME": 0.233,
+          "SKILL_CANCEL_AFTER": 0.5,
+          "ANIM_NAME": "ESSI_COMBO_ETK_XXXZ",
+          "HIT_CAMERA1_RATE": 35,
+          "ANIM_SPEED": 0.8,
+          "PHANTOM_BLADE_BACK_SPEED_X": 740,
+          "SPEED_X": 500,
+          "PHANTOM_BLADE_BACK_SPEED_Y": 1800,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "HIT_CAMERA2_RATE": 25,
+          "WALK_CANCEL_AFTER": 0.6,
+          "HIT_CAMERA0_RATE": 40,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.2,
+            "2": 0.233
+          },
+          "ATTACK_TIME1": {
+            "1": 0.266,
+            "2": 0.366
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.2,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.3,
+            "2": "ElswordVoice_Shout08.ogg"
+          },
+          "PHANTOM_BLADE_REACT_TYPE": 4,
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.5,
+            "HIT_ADD_MP": 4,
+            "TECH_POINT": 47,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.26
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": -7,
+            "BACK_SPEED_X": 750,
+            "BACK_SPEED_Y": 1800,
+            "CAMERA_CRASH_GAP": 10,
+            "STOP_TIME_ATT": 0.033,
+            "TECH_POINT": 143,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.65,
+            "STOP_TIME_DEF": 0.166,
+            "HIT_ADD_MP": 4.2,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.43
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": -30,
+              "LOOKATDISTANCE": 200,
+              "DISTANCE": 900,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "EYEDISTANCE": 0,
+              "HEIGHT": 180,
+              "LOOKATDISTANCE": 200,
+              "DISTANCE": 1200,
+              "TRACKINGTIME": 0.666,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_DASH_COMBO_ZZ": {
+          "1": 1,
+          "HIT_CAMERA2_RATE": 25,
+          "HIT_CAMERA1_RATE": 35,
+          "DAMAGEDATA_CHANGE_TIME": 0.4,
+          "ANIM_NAME": "ESSI_DASH_COMBO_ETK_ZZ",
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "PHANTOM_BLADE_BACK_SPEED_X": 200,
+          "DAMAGEDATA_CHANGE_TIME2": 0.566,
+          "DASH_CANCEL_AFTER": 0.2,
+          "ANIM_SPEED": 1.2,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "WALK_CANCEL_AFTER": 1.2,
+          "HIT_CAMERA0_RATE": 40,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "ATTACK_TIME0": {
+            "1": 0.33,
+            "2": 0.4
+          },
+          "ATTACK_TIME1": {
+            "1": 0.466,
+            "2": 0.566
+          },
+          "ATTACK_TIME2": {
+            "1": 0.933,
+            "2": 1.066
+          },
+          "SPEED_X": 500,
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.33,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.466,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 1,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY3": {
+            "1": 0.001,
+            "2": "ElswordVoice_Shout03.ogg"
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 2.13,
+            "BACK_SPEED_X": 200,
+            "CAMERA_CRASH_GAP": 10,
+            "STOP_TIME_ATT": 0.033,
+            "TECH_POINT": 11,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 1.63,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 0.5
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": 3.19,
+            "STOP_TIME_ATT": 0.033,
+            "TECH_POINT": 22,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0.433,
+            "HIT_ADD_MP": 1.54,
+            "CAMERA_CRASH_GAP": 10,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 0.52
+            }
+          },
+          "DAMAGE_DATA_LAST": {
+            "FORCE_DOWN": 3.19,
+            "BACK_SPEED_X": -700,
+            "CAMERA_CRASH_GAP": 10,
+            "STOP_TIME_ATT": 0.033,
+            "TECH_POINT": 22,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 1.54,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DAMAGE": {
+              "PHYSIC": 0.52
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 20,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.666,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 800,
+              "HEIGHT": -50,
+              "LOOKATDISTANCE": 100,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            }
+          },
+          "CAMERA2": {
+            "1": {
+              "ANGLEDEGREE": -30,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.666,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 700,
+              "HEIGHT": 150,
+              "LOOKATDISTANCE": 50,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "COMBO_GUIDE": {
+            "1": "Z",
+            "2": "ZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_EIS_DASH_COMBO_XX": {
+          "ANIM_SPEED": 1.2,
+          "NORMAL_CAMERA0_RATE": 60,
+          "ANIM_NAME": "EIS_DASH_COMBO_XX",
+          "NORMAL_CAMERA1_RATE": 40,
+          "DASH_CANCEL_AFTER": 0.966,
+          "WALK_CANCEL_AFTER": 1.033,
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "EVENT_PROCESS_TIME0": {
+            "1": 0,
+            "2": 0.86,
+            "3": 0.86
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 20,
+              "LOOK_PARTS": "Dummy1_Rhand",
+              "HEIGHT": -100,
+              "LOOKATDISTANCE": 100,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 1000,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "SOUND_PLAY0": {
+            "1": 0.28,
+            "2": "Elsword_RRXX.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_EIS_DASHJUMP_COMBO_XXX": {
+          "ANIM_NAME": "EIS_DASHJUMP_COMBO_XXX",
+          "DAMAGEDATA_CHANGE_TIME": 0.44,
+          "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+          "DASH_CANCEL_AFTER": 0.7,
+          "PHANTOM_BLADE_BACK_SPEED_X": 740,
+          "PHANTOM_BLADE_BACK_SPEED_Y": 500,
+          "ANIM_SPEED": 1.15,
+          "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+          "SKILL_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.75,
+          "NORMAL_CAMERA1_RATE": 40,
+          "NORMAL_CAMERA0_RATE": 60,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "ATTACK_TIME0": {
+            "1": 0.36,
+            "2": 0.533
+          },
+          "SUPER_ARMOR_TIME0": {
+            "1": 0.1,
+            "2": 100
+          },
+          "SUPER_ARMOR_NOT_RED": 0,
+          "SPEED_TIME0": {
+            "1": -300,
+            "2": 0,
+            "3": 0.033,
+            "4": 2
+          },
+          "SPEED_TIME1": {
+            "1": 1550,
+            "2": 500,
+            "3": 0.166,
+            "4": 2
+          },
+          "SPEED_TIME2": {
+            "1": 900,
+            "2": 350,
+            "3": 0.3,
+            "4": 2
+          },
+          "SPEED_TIME3": {
+            "1": 700,
+            "2": 0,
+            "3": 0.633,
+            "4": 2
+          },
+          "SLASH_TRACE": {
+            "1": 0,
+            "2": 100
+          },
+          "SOUND_PLAY0": {
+            "1": 0.33,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.466,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.33,
+            "2": "ElswordVoice_Shout01.ogg"
+          },
+          "DAMAGE_DATA": {
+            "FORCE_DOWN": 5.81,
+            "BACK_SPEED_X": 500,
+            "HIT_GAP": 0.1,
+            "CAMERA_CRASH_GAP": 10,
+            "STOP_TIME_ATT": 0.033,
+            "TECH_POINT": 167,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0.066,
+            "HIT_ADD_MP": 3.44,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "RE_ATTACK": 1,
+            "CAN_REVENGE": 1,
+            "DAMAGE": {
+              "PHYSIC": 1.86
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "FORCE_DOWN": 5.81,
+            "BACK_SPEED_X": 885,
+            "CAMERA_CRASH_GAP": 20,
+            "STOP_TIME_ATT": 0.066,
+            "TECH_POINT": 167,
+            "CAMERA_CRASH_TIME": 0.2,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 3.44,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ENABLE_ATTACKBOX": {
+              "1": "sisSword"
+            },
+            "DISABLE_ATTACKBOX": {
+              "1": "Sword"
+            },
+            "CAN_REVENGE": 1,
+            "DAMAGE": {
+              "PHYSIC": 1.86
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 25,
+              "LOOK_PARTS": "Dummy1_Rhand",
+              "DISTANCE": 1000,
+              "LOOKATDISTANCE": 100,
+              "EYEDISTANCE": 0,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_SECOND_BLADE_COMBO",
+            "2": 0
+          },
+          "DELETE_EFFECT_SET_ON_STATE_END": 1,
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_ETK_DASH_JUMP_ZZZ": {
+          "ANIM_NAME": "DashJumpComboZ3",
+          "HIT_CAMERA1_RATE": 100,
+          "SPEED_Y": 600,
+          "HIT_CAMERA0_RATE": 0,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "SPEED_X": 740,
+          "SOUND_PLAY0": {
+            "1": 0.26,
+            "2": "Slash.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.24,
+            "2": "ElswordVoice_Shout05.ogg"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.219,
+            "2": 0.325
+          },
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 3.88,
+            "STOP_TIME_ATT": 0.1,
+            "HIT_ADD_MP": 2.3,
+            "TECH_POINT": 46,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 1,
+            "STOP_TIME_DEF": 0.15,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 2,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 0.76
+            }
+          },
+          "CAMERA1": {
+            "1": {
+              "ANGLEDEGREE": 40,
+              "DISTANCE": 600,
+              "HEIGHT": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 1
+            }
+          },
+          "COMBO_GUIDE": {
+            "1": "A",
+            "2": "AZZZ"
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_SI_SA_ETK_SWORD_FALL": {
+          "NORMAL_CAMERA1_RATE": 30,
+          "WALK_CANCEL_AFTER": 1.566,
+          "NORMAL_CAMERA0_RATE": 40,
+          "ANIM_NAME": "ESSI_SI_SA_ETK_SWORD_FALL",
+          "ANIM_SPEED": 1.25,
+          "NORMAL_CAMERA2_RATE": 30,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "INVINCIBLE": {
+            "1": 0,
+            "2": 3.1
+          },
+          "STOP_OTHER_UNIT0": {
+            "1": 0.066,
+            "2": 2.5
+          },
+          "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "Energy.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.001,
+            "2": "ElswordVoice_SwordFall.ogg"
+          },
+          "SOUND_PLAY2": {
+            "1": 0.155,
+            "2": "Elsword_SwordFall_Effect.ogg"
+          },
+          "CAMERA1": {
+            "SUB_CAMERA_TIMING": {
+              "1": 0.75
+            },
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": -60,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.333,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 500,
+              "HEIGHT": 0,
+              "LOOKATDISTANCE": -30,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": 30,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.666,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 900,
+              "HEIGHT": 100,
+              "LOOKATDISTANCE": 200,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "CAMERA2": {
+            "SUB_CAMERA_TIMING": {
+              "1": 0.75
+            },
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.333,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 600,
+              "HEIGHT": 200,
+              "LOOKATDISTANCE": 100,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": -10,
+              "LOOK_PARTS": "Bip01_Head",
+              "TRACKINGTIME": 0.666,
+              "EYEDISTANCE": 0,
+              "DISTANCE": 1200,
+              "HEIGHT": 100,
+              "LOOKATDISTANCE": 200,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_ETK_SWORD_FALL",
+            "2": 0
+          },
+          "IS_ATTACK_STATE": 1
+        }
+      }
+    },
+    "effect": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "evidenceClass": "static-2016-declaration",
+      "sets": {
+        "EffectSet_SECOND_BLADE_COMBO": {
+          "NAME": "EffectSet_SECOND_BLADE_COMBO",
+          "EVENT_TIMER_TYPE": 1,
+          "EFFECT0": {
+            "NAME": "SecondBlade",
+            "BONE_NAME": "Dummy2_Lhand",
+            "EFFECT_TYPE": 4,
+            "TRACE": 1,
+            "TRACE_MATRIX": 1,
+            "USE_SUB_ATTACK_LIST_SET": 1
+          }
+        },
+        "EffectSet_EIS_DASH_XX": {
+          "NAME": "EffectSet_EIS_DASH_XX",
+          "EFFECT0": {
+            "NAME": "elsword_C_DashXX_sheath_M01",
+            "EFFECT_TYPE": 4
+          },
+          "EFFECT1": {
+            "START_TIME": 0.05,
+            "NAME": "ELSWORD_C_DASHXX_SWORD_M01_ATTACK",
+            "EFFECT_TYPE": 1
+          },
+          "EFFECT2": {
+            "START_TIME": 0.1,
+            "NAME": "ELSWORD_C_DASHXX_SWORD_M02_ATTACK",
+            "POSITION_OFFSET_X": -100,
+            "EFFECT_TYPE": 1
+          },
+          "EFFECT3": {
+            "START_TIME": 0.15,
+            "NAME": "ELSWORD_C_DASHXX_SWORD_M03_ATTACK",
+            "POSITION_OFFSET_X": 100,
+            "EFFECT_TYPE": 1
+          }
+        },
+        "EffectSet_ETK_DASH_JUMP_ZZZ": {
+          "NAME": "EffectSet_ETK_DASH_JUMP_ZZZ",
+          "EFFECT0": {
+            "ROTATE_Z": -75,
+            "NAME": "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M01_ATTACK",
+            "POSITION_OFFSET_Y": 50,
+            "POSITION_OFFSET_X": 100,
+            "START_TIME": 0.15,
+            "EFFECT_TYPE": 1
+          },
+          "EFFECT1": {
+            "ROTATE_Z": -75,
+            "NAME": "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M02_ATTACK",
+            "POSITION_OFFSET_Y": -50,
+            "POSITION_OFFSET_X": -100,
+            "START_TIME": 0.3,
+            "EFFECT_TYPE": 1
+          },
+          "EFFECT2": {
+            "ROTATE_Z": -75,
+            "NAME": "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M03_ATTACK",
+            "POSITION_OFFSET_Y": 50,
+            "START_TIME": 0.4,
+            "EFFECT_TYPE": 1
+          }
+        },
+        "Effectset_A_ETK_SWORD_SHIELD": {
+          "NAME": "Effectset_A_ETK_SWORD_SHIELD",
+          "EFFECT0": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD",
+            "POSITION_OFFSET_Y": -200,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT1": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 72,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT2": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 144,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT3": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 216,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT4": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 288,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          }
+        },
+        "Effectset_A_ETK_SWORD_SHIELD_ULTIMATE": {
+          "NAME": "Effectset_A_ETK_SWORD_SHIELD_ULTIMATE",
+          "EFFECT0": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE",
+            "POSITION_OFFSET_Y": -200,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT1": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 72,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT2": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 144,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT3": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 216,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          },
+          "EFFECT4": {
+            "BONE_NAME": "Bip01",
+            "NAME": "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE",
+            "POSITION_OFFSET_Y": -200,
+            "ROTATE_Y": 288,
+            "EFFECT_TYPE": 1,
+            "TRACE": 1
+          }
+        }
+      }
+    },
+    "damage": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      },
+      "evidenceClass": "static-2016-declaration",
+      "effects": {
+        "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M01_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M01",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": 5.81,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 104,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.25,
+            "HIT_ADD_MP": 4.89,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.15
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M02_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M02",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": 5.81,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 104,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.25,
+            "HIT_ADD_MP": 4.89,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.15
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_C_DASH_JUMP_ZZZ_SWORD_M03_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M03",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": 5.81,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 104,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.25,
+            "HIT_ADD_MP": 4.89,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.15
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_C_DASHXX_SWORD_M01_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M01",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": -5.67,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 91,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 3.23,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.19
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_C_DASHXX_SWORD_M02_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M02",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": -5.67,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "PVP_RATE": 0.6,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 91,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 3.23,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.19
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_C_DASHXX_SWORD_M03_ATTACK": {
+          "MAIN_EFFECT_NAME": "elsword_C_DashXX_sword_M03",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 850,
+            "FORCE_DOWN": -5.67,
+            "BACK_SPEED_Y": 1250,
+            "CAMERA_CRASH_TIME": 0.3,
+            "PVP_RATE": 0.6,
+            "CLEAR_SCREEN": 0,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 20,
+            "TECH_POINT": 91,
+            "RATE_MODIFIER": 0.33,
+            "STOP_TIME_DEF": 0.133,
+            "HIT_ADD_MP": 3.23,
+            "WAY_OF_SWORD_TYPE": 4,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 4,
+            "ATTACK_TYPE": 2,
+            "ARRANGED_FLY": 1,
+            "FORCE_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "DAMAGE": {
+              "PHYSIC": 1.19
+            }
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          }
+        },
+        "DAMAGE_EFFECT_SWORD_SHIELD": {
+          "DAMAGE_TIME": 3,
+          "MAIN_EFFECT_NAME": "A_ETK_SWORD_SHIELD_ATTACKBOX",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+            "1": 0.2
+          },
+          "DAMAGE_DATA": {
+            "HIT_ADD_MP": 0.25,
+            "TECH_POINT": 25,
+            "PVP_RATE": 0.48,
+            "RATE_MODIFIER": 0.2,
+            "HIT_GAP": 1,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "CAN_REVENGE": 0,
+            "RE_ATTACK": 1,
+            "BUFF_FACTOR_ID": {
+              "1": 235
+            },
+            "BUFF_FACTOR_RELATIVE_SKILL_ID": 21212,
+            "APPLIED_SKILL_ID": 21212,
+            "DAMAGE": {
+              "PHYSIC": 0.73
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "HIT_ADD_MP": 0.25,
+            "TECH_POINT": 25,
+            "PVP_RATE": 0.48,
+            "RATE_MODIFIER": 0,
+            "HIT_GAP": 1,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 7,
+            "CAN_REVENGE": 0,
+            "RE_ATTACK": 1,
+            "BUFF_FACTOR_ID": {
+              "1": 235
+            },
+            "BUFF_FACTOR_RELATIVE_SKILL_ID": 21212,
+            "APPLIED_SKILL_ID": 21212,
+            "DAMAGE": {
+              "PHYSIC": 0.73
+            }
+          },
+          "PASSIVE_PARTICLE0": {
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "A_ETK_SWORD_SHIELD_P01",
+            "POSITION_TYPE": 0,
+            "TRACE": 1,
+            "FORCE_DIE": 1,
+            "FORCE_DIE_HIT": 1
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpact",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlash",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCore",
+            "POSITION_TYPE": 2
+          }
+        },
+        "DAMAGE_EFFECT_SWORD_SHIELD_ULTIMATE": {
+          "DAMAGE_TIME": 3,
+          "MAIN_EFFECT_NAME": "A_ETK_SWORD_SHIELD_ATTACKBOX",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+            "1": 0.2
+          },
+          "DAMAGE_DATA": {
+            "HIT_ADD_MP": 0.25,
+            "TECH_POINT": 25,
+            "PVP_RATE": 0.48,
+            "RATE_MODIFIER": 0.2,
+            "HIT_GAP": 1,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "CAN_REVENGE": 0,
+            "RE_ATTACK": 1,
+            "BUFF_FACTOR_ID": {
+              "1": 718
+            },
+            "BUFF_FACTOR_RELATIVE_SKILL_ID": 21212,
+            "APPLIED_SKILL_ID": 21212,
+            "DAMAGE": {
+              "PHYSIC": 0.73
+            }
+          },
+          "DAMAGE_DATA_NEXT": {
+            "HIT_ADD_MP": 0.25,
+            "TECH_POINT": 25,
+            "PVP_RATE": 0.48,
+            "RATE_MODIFIER": 0,
+            "HIT_GAP": 1,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 7,
+            "CAN_REVENGE": 0,
+            "RE_ATTACK": 1,
+            "BUFF_FACTOR_ID": {
+              "1": 718
+            },
+            "BUFF_FACTOR_RELATIVE_SKILL_ID": 21212,
+            "APPLIED_SKILL_ID": 21212,
+            "DAMAGE": {
+              "PHYSIC": 0.73
+            }
+          },
+          "PASSIVE_PARTICLE0": {
+            "BONE_NAME": "ATTACK_SPHERE1",
+            "PARTICLE_NAME": "A_ETK_SWORD_SHIELD_P01",
+            "POSITION_TYPE": 0,
+            "TRACE": 1,
+            "FORCE_DIE": 1,
+            "FORCE_DIE_HIT": 1
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpact",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlash",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCore",
+            "POSITION_TYPE": 2
+          }
+        },
+        "ELSWORD_SWORDFALL_BLADE1": {
+          "DAMAGE_TIME": 9999,
+          "ATTACK_TIME_START": 0.125,
+          "MAIN_EFFECT_NAME": "SwordFallBlade1",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "DAMAGE_DATA": {
+            "BACK_SPEED_Y": 550,
+            "BACK_SPEED_X": 850,
+            "PVP_RATE": 0.6,
+            "CAMERA_CRASH_GAP": 3,
+            "STOP_TIME_ATT": 0,
+            "TECH_POINT": 247.5,
+            "CAMERA_CRASH_TIME": 1,
+            "STOP_TIME_DEF": 0,
+            "HIT_ADD_MP": 3.3000000000000003,
+            "WAY_OF_SWORD_TYPE": 6,
+            "DAMAGE_TYPE": 0,
+            "ATTACK_TYPE": 1,
+            "HIT_TYPE": 19,
+            "REACT_TYPE": 5,
+            "FORCE_FLY": 1,
+            "ARRANGED_FLY": 1,
+            "CAN_REVENGE": 0,
+            "CAN_REFLEX": 0,
+            "RE_ATTACK": 0,
+            "APPLIED_SKILL_ID": 21019,
+            "DAMAGE": {
+              "PHYSIC": 4.831200000000001
+            }
+          },
+          "PASSIVE_PARTICLE0": {
+            "OFFSET_Y": 48,
+            "OFFSET_X": 54,
+            "ROTATE_X": -5,
+            "BONE_NAME": "Particle_View_01",
+            "PARTICLE_NAME": "elsword_A_swordFall_08",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATED_OFFSET": 1,
+            "FORCE_DIE": 1,
+            "TRACE": 1
+          },
+          "PASSIVE_PARTICLE1": {
+            "OFFSET_Y": 0,
+            "OFFSET_X": 0,
+            "BONE_NAME": "Particle_View_01",
+            "ROTATE_X": 5,
+            "PARTICLE_NAME": "elsword_A_swordFall_02",
+            "POSITION_TYPE": 0,
+            "APPLY_ROTATED_OFFSET": 1,
+            "TRACE": 1
+          },
+          "PASSIVE_PARTICLE2": {
+            "BONE_NAME": "ATTACK_LINE_END0",
+            "PARTICLE_NAME": "elsword_A_swordFall_09",
+            "POSITION_TYPE": 0,
+            "TRACE": 1
+          },
+          "PASSIVE_PARTICLE3": {
+            "BONE_NAME": "Particle_View_01",
+            "PARTICLE_NAME": "elsword_A_swordFall_09",
+            "POSITION_TYPE": 0,
+            "TRACE": 1
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          },
+          "DIE_DAMAGE_EFFECT0": {
+            "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_FALLEN4",
+            "POSITION_TYPE": 3,
+            "APPLY_ROTATE": 1
+          },
+          "DIE_DAMAGE_EFFECT1": {
+            "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SPARK4",
+            "POSITION_TYPE": 3,
+            "APPLY_ROTATE": 1
+          },
+          "DIE_DAMAGE_EFFECT2": {
+            "DAMAGE_EFFECT_NAME": "ELSWORD_SWORDFALL_BLADE_SECOND_SPARK4",
+            "POSITION_TYPE": 3,
+            "APPLY_ROTATE": 1
+          }
+        }
+      }
+    }
+  },
+  "referenceConsumers": [
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "signature": "void CX2GUUser::CommonStateEnd()",
+      "line": 636,
+      "lastLine": 638,
+      "sha256": "a635cfcde3028d9e2472ee242dfb895f4f8eed3dea1bce5bccfc90969ed79512",
+      "evidenceClass": "pinned fixedV5 reference; not target2016 native execution"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "signature": "void CX2GUUser::CommonFrameMove_EffectSet( float",
+      "line": 1202,
+      "lastLine": 1206,
+      "sha256": "d7527a458b7bf61f62f2e8fb500447aad8642f2b1b2218243af6bc5a33704696",
+      "evidenceClass": "pinned fixedV5 reference; not target2016 native execution"
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "fileSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "signature": "void CX2DamageEffect::CEffect::AttackResult()",
+      "line": 113,
+      "lastLine": 138,
+      "sha256": "5cf06ecad627921d5dc19401bc2ccaa0aa0cde70459e47ebda2b2318d48e5a17",
+      "evidenceClass": "pinned fixedV5 reference; not target2016 native execution"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "signature": "void CX2GUElsword_SwordMan::ESSI_ETK_COMBO_XXX_LOOP_EventProcess()",
+      "line": 459,
+      "lastLine": 460,
+      "sha256": "5e2e96c061044ee83072a036a3b368ad8c51dee434f788289e63168dab1b5569",
+      "evidenceClass": "pinned fixedV5 reference; not target2016 native execution"
+    },
+    {
+      "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "fileSha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "signature": "void CX2GUElsword_SwordMan::ESSI_A_ETK_SWORD_SHIELD_FrameMove()",
+      "line": 545,
+      "lastLine": 545,
+      "sha256": "c9c25cbc8450100b001a8b8bc83588052bb2d2c7ce2bffed51ba37d47b493b8c",
+      "evidenceClass": "pinned fixedV5 reference; not target2016 native execution"
+    }
+  ],
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceDLL": "reports/is-feedback-d3dx-sources-v2.json",
+  "userAdapters": {
+    "cancelAnimationSeconds": {
+      "Z2": {
+        "skill": 0.24,
+        "dash": 0.24,
+        "walk": 0.24
+      },
+      "Z4": {
+        "skill": 0.24,
+        "dash": 0.34,
+        "walk": 0.34
+      },
+      "Z5": {
+        "skill": 0.44,
+        "dash": 0.54,
+        "walk": 0.54
+      },
+      "XX": {
+        "skill": 0.5
+      },
+      "XXX_LOOP": {
+        "dash": 0.44,
+        "walk": 0.44
+      },
+      "XXX_END": {
+        "skill": 0.3,
+        "dash": 0.44,
+        "walk": 0.44
+      },
+      "XXXZ": {
+        "skill": 0.37,
+        "dash": 0.37,
+        "walk": 0.37,
+        "recover": 0.4
+      }
+    },
+    "earlyWalkInput": "fresh directional edge only; a held direction must not discard the queued follow-up attack",
+    "animationEnd": "qualified IsAnimationEnd branch; no 10% grace before the .433 X loop routing",
+    "dashXX": {
+      "set": "EffectSet_EIS_DASH_XX",
+      "callAnimationTime": 0.28,
+      "timingEvidence": "Web binding at target voice time; matching V6 callback unmeasured"
+    },
+    "dashJumpZZZ": {
+      "set": "EffectSet_ETK_DASH_JUMP_ZZZ",
+      "callAnimationTime": 0,
+      "mpCost": 10,
+      "paymentEvidence": "explicit user requirement; gated before third-Z entry"
+    },
+    "swordFall": {
+      "waves": 1,
+      "releaseAnimationTime": 1,
+      "blades": 4,
+      "reaction": "RT_BIG_DAMAGE",
+      "stopDef": 0.25,
+      "backY": 0,
+      "spawnGeometry": "four original mesh Dummy01 paths; original -59 facing/+42 world-Y offsets",
+      "excluded": "old cast/sheath/hover display, DIE/HIT/CREATE_DAMAGE_EFFECT descendants",
+      "retained": "original blade helper geometry, source damage/850 knockback/hit particles"
+    }
+  },
+  "limits": [
+    "No original2016-client input, collision, GPU or feel trace.",
+    "DLL measurement proves the two unchanged model AnimationSet clocks/keys only.",
+    "Original raw declarations, fixedV5 reference and explicit user Web adaptations remain separate."
+  ]
+}

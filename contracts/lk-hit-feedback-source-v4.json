@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasured": false,
+  "references": [
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "startLine": 7575,
+      "endLine": 7609,
+      "fragmentSha256": "f82f8fe9d75a010bd075780eba3f49e81fa0d6518fcc53ee3399df0e11166161",
+      "purpose": "destruction rage",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "startLine": 13472,
+      "endLine": 13525,
+      "fragmentSha256": "0b013e2b6df4455d288090f29e5afde31eae8e7f9f215122413b15503eb7fcea",
+      "purpose": "Kick consumer",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 8428,
+      "endLine": 8432,
+      "fragmentSha256": "9794002d596da9d6953dcc4b7ceaf5848790f3f84b24534550d4973fa6372fbc",
+      "purpose": "conditional received-hit stun erase",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 12904,
+      "endLine": 12917,
+      "fragmentSha256": "231259a2106ddf133897bec5a295ee49af412672f5a14d147e49ebba0485257e",
+      "purpose": "RT_REVENGE state",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 26039,
+      "endLine": 26120,
+      "fragmentSha256": "e5dfb9b166bf46bc9b91d4cbce67485a402d159b0246e569335bde21a551f3cc",
+      "purpose": "DamageRevenge start and end",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "startLine": 1845,
+      "endLine": 1865,
+      "fragmentSha256": "5497c1bd26d59c293b921e962d38faa3c6f741dfa57cffd8397ad63e80255531",
+      "purpose": "mesh size applied to transform",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    },
+    {
+      "file": "KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "startLine": 3219,
+      "endLine": 3271,
+      "fragmentSha256": "d69bb134f5a8a03d4c757c06acb1e36d7d0aa2d20586609eb6d0d5e8a8200244",
+      "purpose": "literal Size interpolation",
+      "evidenceClass": "fixedV5-version-reference",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633"
+    }
+  ],
+  "targetDeclarations": {
+    "LK": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+        "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+      },
+      "states": {
+        "ESSI_DAMAGE_REVENGE": {
+          "NORMAL_CAMERA1_RATE": 30,
+          "NORMAL_CAMERA0_RATE": 40,
+          "ANIM_NAME": "DamageRevenge",
+          "NORMAL_CAMERA2_RATE": 30,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "STOP_MY_UNIT0": {
+            "1": 0.2,
+            "2": 0.2
+          },
+          "CAMERA1": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "CAMERA2": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 700,
+              "TRACKINGTIME": 0.5,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        },
+        "ESSI_SI_A_ES_KICK": {
+          "ANIM_NAME": "SI_A_ESK_KICK",
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "CAN_PUSH_UNIT": 1,
+          "CAN_PASS_UNIT": 0,
+          "ENABLE_ATTACK_BOX": {
+            "1": "Lfoot"
+          },
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "ATTACK_TIME0": {
+            "1": 0.1,
+            "2": 0.22
+          },
+          "DAMAGE_DATA": {
+            "BACK_SPEED_X": 800,
+            "PVP_RATE": 0.48,
+            "BACK_SPEED_Y": -600,
+            "CAMERA_CRASH_GAP": 50,
+            "STOP_TIME_ATT": 0.1,
+            "TECH_POINT": 150,
+            "CAMERA_CRASH_TIME": 0.3,
+            "STOP_TIME_DEF": 0.2,
+            "HIT_ADD_MP": 1.5,
+            "WAY_OF_SWORD_TYPE": 2,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 14,
+            "REACT_TYPE": 2,
+            "CAMERA_SHAKE_TYPE": 7,
+            "CUSTOM_HIT_PARTICLE0": {
+              "PARTICLE_NAME": "Light_Impact_SI_A_ES_KICK01"
+            },
+            "CUSTOM_HIT_PARTICLE1": {
+              "PARTICLE_NAME": "Flare_SI_A_ES_KICK01"
+            },
+            "DAMAGE": {
+              "PHYSIC": 7.08
+            },
+            "APPLIED_SKILL_ID": 21202
+          },
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "Elsword_Kick.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.163,
+            "2": "ElswordVoice_Shout07.ogg"
+          },
+          "IS_ATTACK_STATE": 1
+        }
+      }
+    },
+    "RF": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+        "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+      },
+      "states": {
+        "RSI_DAMAGE_REVENGE": {
+          "NORMAL_CAMERA1_RATE": 30,
+          "NORMAL_CAMERA0_RATE": 40,
+          "ANIM_NAME": "DamageRevenge",
+          "NORMAL_CAMERA2_RATE": 30,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "STOP_MY_UNIT0": {
+            "1": 0.2,
+            "2": 0.2
+          },
+          "CAMERA1": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "CAMERA2": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 700,
+              "TRACKINGTIME": 0.5,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        }
+      }
+    },
+    "VC": {
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+        "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+      },
+      "states": {
+        "RSI_DAMAGE_REVENGE": {
+          "NORMAL_CAMERA1_RATE": 30,
+          "NORMAL_CAMERA0_RATE": 40,
+          "ANIM_NAME": "DamageRevenge",
+          "NORMAL_CAMERA2_RATE": 30,
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "STOP_MY_UNIT0": {
+            "1": 0.2,
+            "2": 0.2
+          },
+          "CAMERA1": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "CAMERA2": {
+            "SUB_CAMERA0": {
+              "ANGLEDEGREE": 40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": -100,
+              "DISTANCE": 500,
+              "CAMERA_TYPE": 3,
+              "LOOK_TYPE": 0
+            },
+            "SUB_CAMERA1": {
+              "ANGLEDEGREE": -40,
+              "LOOK_PARTS": "Bip01_Head",
+              "HEIGHT": 100,
+              "DISTANCE": 700,
+              "TRACKINGTIME": 0.5,
+              "CAMERA_TYPE": 1,
+              "LOOK_TYPE": 0
+            }
+          },
+          "IS_ATTACK_STATE": 1
+        }
+      }
+    }
+  },
+  "rageDamage": {
+    "raw": {
+      "DAMAGE_TIME": 99999,
+      "MAIN_EFFECT_NAME": "MonsterAngryWind_AttackBox",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "DAMAGE_DATA": {
+        "CLEAR_SCREEN_COLOR_A": 0,
+        "STOP_TIME_DEF": 0.3,
+        "BACK_SPEED_Y": 1000,
+        "CLEAR_SCREEN_COLOR_B": 1,
+        "CLEAR_SCREEN": 1,
+        "CLEAR_SCREEN_COLOR_G": 1,
+        "HIT_GAP": 0,
+        "TECH_POINT": 0,
+        "CAMERA_CRASH_GAP": 20,
+        "STOP_TIME_ATT": 0.2,
+        "CLEAR_SCREEN_COLOR_R": 1,
+        "CAMERA_CRASH_TIME": 0.5,
+        "PVP_RATE": 0.33,
+        "BACK_SPEED_X": 1000,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 17,
+        "REACT_TYPE": 5,
+        "DAMAGE": {
+          "MAGIC": 3
+        },
+        "RE_ATTACK": 0,
+        "CAN_REVENGE": 0,
+        "FORCE_FLY": 1
+      },
+      "CAMERA0": {
+        "EVENT_TIME": 0.01,
+        "GAP": 5,
+        "TIME": 0.05,
+        "UNIT_SELECT": 1,
+        "CRASH_TYPE": 3
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "swordcrash.ogg"
+      }
+    },
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 190921
+    }
+  },
+  "limits": [
+    "User explicitly chooses stun cure on received hit; target macro selection remains unknown.",
+    "UI scales and outline thickness are user-requested web presentation changes.",
+    "Kick overlap measurements and rendered-matrix tests are current simulation evidence.",
+    "No target2016 executable trajectory or GPU pixel comparison."
+  ]
+}

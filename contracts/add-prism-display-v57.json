@@ -1,0 +1,36 @@
+{
+  "scope": "Exact Particle Prism visible material stages; original geometry and source1.5 scale retained",
+  "evidenceClass": "Original2016 shader/assets/declarations + pinned V5 particle/renderer consumer + separate Web regression",
+  "originalClientExecuted": false,
+  "original2016GpuMeasured": false,
+  "thisSliceBrowserGpuMeasured": false,
+  "sourceComparison": "../reports/add-prism-display-v57-evidence/source-comparison.json",
+  "shader": {
+    "path": "data/data041.kom/XRenderer.fx",
+    "sha256": "96b4bb61c56924a3427d6ab800631489471cd70538f30ad0919544ea2a244cc8",
+    "uvOffsetLines": [378, 379],
+    "cartoonStages01Lines": [1028, 1044],
+    "blackPassLines": [1069, 1083],
+    "bodyRgbStages01": "Texture0 * saturated Diffuse * normal-ramp Texture1",
+    "bodyAlpha": "Texture0.a * saturated Diffuse.a",
+    "blackPassRgba": [0, 0, 0, 1],
+    "blackPassCull": "CW",
+    "edgeNormal": "Unnormalized transformed original normal"
+  },
+  "fixedV5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "particleSha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+    "rendererSha256": "b3074301549d625ed1fbee6cafddb58d0f47002ba82107a506528861fdf97ae5",
+    "particleDefaultLight": {"line": 2727, "value": [0, 0, 0]},
+    "particleRenderLines": [4794, 4819],
+    "rendererCartoonAndUvLines": [437, 464],
+    "outlineWidth": "distance >700 ? distance/1000 : distance/700"
+  },
+  "exactTargetTemplates": ["AN_PARTICLE_PRISM_01", "AN_PARTICLE_PRISM_01_1", "AN_PARTICLE_PRISM_02"],
+  "blackPassTemplate": "AN_PARTICLE_PRISM_02",
+  "bodySpecialization": "The original template has no LIGHTPOS. Pinned constructor supplies zero light, so the verified stage1 normal-ramp coordinate is zero and uses original CartoonNormal first texel [232,218,221,255]. Saturate source Diffuse before multiplying that texel. Source RenderType remains RT_CARTOON_BLACK_EDGE.",
+  "uv": {"operation": "Addition to source UV", "sharedTextureMutation": false, "originalYAndGlbUvEqual": true, "glbTextureTransform": "identity", "addressing": "REPEAT", "texturePixelsEqualToOriginalTga": true, "otherUvChannels": "Unsupported diagnostics preserved"},
+  "sourceScale": {"initialFlashEffect9": 1, "laterEffect10": 1.5, "laterEffect11": 1.5, "helperCarrierEffect12": 1.5, "modified": false},
+  "mainMesh": {"name": "Mesh_Particle_Prism", "glb": null, "poseRetained": true, "inventedGeometry": false},
+  "limits": ["Static original shader and qualified fixed-V5 consumer are distinct evidence layers", "The restored stage0/1 and black pass do not claim full original2016 material/rim/whole-frame equivalence", "Source size change is preserved; user memory of a smaller field does not override original declarations", "Real browser result must be verified by root integration task"]
+}

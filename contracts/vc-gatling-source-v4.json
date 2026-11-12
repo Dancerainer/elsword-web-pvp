@@ -1,0 +1,3624 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "original target2016 declarations; fixed V5 callback is a distinct version reference",
+  "clientMeasured": false,
+  "luaSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    }
+  },
+  "skill": {
+    "m_wstrIconTextureName": "DLG_SKILL_RavenActive_03.tga",
+    "m_wstrImageTexturePieceName": "SI_SA_RWT_HELLFIRE_GATLING",
+    "m_wstrName": "Hellfire Gatling",
+    "m_eActiveSkillUseCondtion": 1,
+    "m_iRequireLearnSkillPoint": 0,
+    "m_usFPConsumtion": 0,
+    "m_usCBConsumption": 0,
+    "m_wstrImageTextureName": "DLG_Raven_SKILL_ScreenShot_04.tga",
+    "m_eType": 16,
+    "m_iRequireUpgradeSkillPoint": 0,
+    "m_usWOSType": 0,
+    "m_wstrMainDesc": "Create multiple explosions with your Nasod Arm.\n\n#CFF4444Overheat#CX\n- Uses HP for additional damage\n- Activate by repeat presses of skill key\n- Attack power +5% for 10 sec.",
+    "m_usFPGainCount": 0,
+    "m_wstrIconTexturePieceName": "SI_SA_RWT_HELLFIRE_GATLING",
+    "m_eID": 24020,
+    "m_EffectiveDesc": {
+      "1": "Fire Explosion (Magic): 186% Multi Hit (Overheat: Additional Hit)"
+    },
+    "m_bBornSealed": 0,
+    "m_bShowSkillLevel": 0,
+    "m_ePowerRate": 1,
+    "m_RequireCharacterLevel": {
+      "1": 35
+    },
+    "m_SkillCoolTime": {
+      "1": 21
+    },
+    "m_MPConsumption": {
+      "1": 250
+    }
+  },
+  "states": {
+    "RSI_SA_RWT_HELLFIRE_GATLING": {
+      "raw": {
+        "SOUND_SET1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 40,
+        "ANIM_NAME": "SI_SA_RWT_HELLFIRE_GATLING_Start",
+        "SOUND_SET0_RATE": 70,
+        "ANIM_SPEED": 1.5,
+        "NORMAL_CAMERA2_RATE": 30,
+        "NORMAL_CAMERA1_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0.033,
+          "2": 100
+        },
+        "AFTER_IMAGE": {
+          "1": 0.01,
+          "2": 100
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.06,
+          "2": 1.3
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "SOUND_SET0": {
+          "NORMAL": {
+            "SOUND_PLAY0": {
+              "1": 0.001,
+              "2": "Raven_HellfireGatling_Start.ogg"
+            },
+            "SOUND_PLAY1": {
+              "1": 0.1,
+              "2": "RavenVoice_HellfireGatling_1.ogg"
+            },
+            "SOUND_PLAY2": {
+              "1": 0.1,
+              "2": "Raven_SP_SevenBurst2.ogg"
+            }
+          }
+        },
+        "SOUND_SET1": {
+          "NORMAL": {
+            "SOUND_PLAY0": {
+              "1": 0.001,
+              "2": "Raven_HellfireGatling_Start.ogg"
+            },
+            "SOUND_PLAY1": {
+              "1": 0.1,
+              "2": "RavenVoice_HellfireGatling_2.ogg"
+            },
+            "SOUND_PLAY2": {
+              "1": 0.1,
+              "2": "Raven_SP_SevenBurst2.ogg"
+            }
+          }
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_RWT_HellFire",
+          "2": 0
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -60,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": -100,
+            "DISTANCE": 700,
+            "TRACKINGTIME": 0.15,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 60,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 100,
+            "DISTANCE": 600,
+            "TRACKINGTIME": 2,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6500
+      }
+    },
+    "RSI_SA_RWT_HELLFIRE_GATLING_LOOP": {
+      "raw": {
+        "ANIM_NAME": "SI_SA_RWT_HELLFIRE_GATLING_Loop",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "SOUND_PLAY0": {
+          "1": 0.001,
+          "2": "Raven_SP_SevenBurst2.ogg"
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6518
+      }
+    },
+    "RSI_SA_RWT_HELLFIRE_GATLING_END": {
+      "raw": {
+        "ANIM_SPEED": 0.7,
+        "ANIM_NAME": "SI_SA_RWT_HELLFIRE_GATLING_End",
+        "SPEED_X": -600,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 0.3
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "SOUND_PLAY0": {
+          "1": 0.001,
+          "2": "Raven_HellfireGatling_End.ogg"
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_RWT_HellFire_End",
+          "2": 0
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6539
+      }
+    },
+    "RSI_SA_RWT_HELLFIRE_GATLING_OVER_END": {
+      "raw": {
+        "ANIM_SPEED": 0.8,
+        "ANIM_NAME": "SI_SA_RWT_HELLFIRE_GATLING_OVER_End",
+        "SPEED_X": -700,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 0.3
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "SOUND_PLAY0": {
+          "1": 0.001,
+          "2": "Raven_HellfireGatling_OverEnd.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.001,
+          "2": "RavenVoice_Shout03.ogg"
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_RWT_HellFire_End_OverHit",
+          "2": 0
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6562
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_SA_RWT_HellFire": {
+      "raw": {
+        "NAME": "EffectSet_SA_RWT_HellFire",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SA_RWT_HellFire",
+          "POSITION_OFFSET_Y": 35,
+          "POSITION_OFFSET_X": 350,
+          "START_TIME": 0.9,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.02,
+          "START_TIME": 1,
+          "TWO_DIR_TIME": 0.53,
+          "TWO_DIR_GAP": 35,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12058
+      }
+    },
+    "EffectSet_SA_RWT_HellFire_Loop": {
+      "raw": {
+        "NAME": "EffectSet_SA_RWT_HellFire_Loop",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SA_RWT_HellFire_Explosion",
+          "POSITION_OFFSET_Y": 35,
+          "POSITION_OFFSET_X": 350,
+          "START_TIME": 0.01,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.02,
+          "START_TIME": 0.05,
+          "TWO_DIR_TIME": 0.53,
+          "TWO_DIR_GAP": 35,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12073
+      }
+    },
+    "EffectSet_SA_RWT_HellFire_Loop_OverHit": {
+      "raw": {
+        "NAME": "EffectSet_SA_RWT_HellFire_Loop_OverHit",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SA_RWT_HellFire_Explosion_OverHit",
+          "POSITION_OFFSET_Y": 35,
+          "POSITION_OFFSET_X": 350,
+          "START_TIME": 0.01,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.02,
+          "START_TIME": 0.05,
+          "TWO_DIR_TIME": 0.53,
+          "TWO_DIR_GAP": 35,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12105
+      }
+    },
+    "EffectSet_SA_RWT_HellFire_End": {
+      "raw": {
+        "NAME": "EffectSet_SA_RWT_HellFire_End",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SA_RWT_HellFire_Explosion_End",
+          "POSITION_OFFSET_Y": 35,
+          "POSITION_OFFSET_X": 350,
+          "START_TIME": 0.01,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "BONE_TRACE_TARGET_MESH": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.02,
+          "START_TIME": 0.05,
+          "TWO_DIR_TIME": 0.53,
+          "TWO_DIR_GAP": 35,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12090
+      }
+    },
+    "EffectSet_SA_RWT_HellFire_End_OverHit": {
+      "raw": {
+        "NAME": "EffectSet_SA_RWT_HellFire_End_OverHit",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SA_RWT_HellFire_Explosion_End_OverHit",
+          "POSITION_OFFSET_Y": 35,
+          "POSITION_OFFSET_X": 350,
+          "START_TIME": 0.01,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 1,
+          "BONE_TRACE_TARGET_MESH": 1
+        },
+        "CAMERA_SHAKE0": {
+          "TWO_DIR_TIME_GAP": 0.02,
+          "START_TIME": 0.05,
+          "TWO_DIR_TIME": 0.53,
+          "TWO_DIR_GAP": 35,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12122
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_SA_RWT_HellFire": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RWT_HellFire_Attack_Box",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "BLACKHOLE_DATA": {
+          "DRAGGING_SPEED": 500,
+          "DRAGGING_RANGE": 500,
+          "CAN_PASS_UNIT": 0
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_Y": 1000,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "TECH_POINT": 58,
+          "PVP_RATE": 0.7,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 0.77,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24020,
+          "DAMAGE": {
+            "MAGIC": 1.86
+          }
+        },
+        "1": {
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "SCALE_Y": 2,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 3
+        },
+        "2": {
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "SCALE_Y": 2,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 3
+        },
+        "3": {
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "SCALE_Y": 2,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 3
+        },
+        "4": {
+          "PARTICLE_NAME": "Raven_ReadyS_P04",
+          "POSITION_TYPE": 3
+        },
+        "5": {
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "SCALE_Y": 2,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 3
+        },
+        "6": {
+          "SCALE_X": 1.6,
+          "SCALE_Z": 1.6,
+          "SCALE_Y": 1.6,
+          "PARTICLE_NAME": "Raven_ReadyS_P06",
+          "POSITION_TYPE": 3
+        },
+        "7": {
+          "SCALE_X": 1.8,
+          "SCALE_Z": 1.8,
+          "SCALE_Y": 1.8,
+          "PARTICLE_NAME": "MaximumCannon_P01",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE0": {
+          "ROTATE_Y": 10,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireEP02",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireP06",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE2": {
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "PARTICLE_NAME": "RWT_HellFireEP04",
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.01,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -100,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.05,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.1,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "OFFSET_Y": -100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.15,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT4": {
+          "OFFSET_Y": 100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.2,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT5": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.25,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT6": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.3,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT7": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.35,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": 170,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 386643
+      }
+    },
+    "DamageEffect_SA_RWT_HellFire_ExplosionFX": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "EffectDummy_0_5",
+        "EFFECT_TYPE": 1,
+        "START_PARTICLE0": {
+          "PARTICLE_NAME": "RWT_HellFireEP01",
+          "POSITION_TYPE": 3
+        },
+        "1": {
+          "SCALE_X": 0.5,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "2": {
+          "SCALE_X": 1.2,
+          "SCALE_Z": 1.2,
+          "SCALE_Y": 1.2,
+          "PARTICLE_NAME": "EnchantHand_P02",
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 386834
+      }
+    },
+    "DamageEffect_SA_RWT_HellFire_Explosion": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RWT_HellFire_Attack_Box",
+        "ATTACK_TIME_START": 0.1,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "BLACKHOLE_DATA": {
+          "DRAGGING_SPEED": 500,
+          "DRAGGING_RANGE": 500,
+          "CAN_PASS_UNIT": 0
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_Y": 1000,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 0,
+          "TECH_POINT": 58,
+          "PVP_RATE": 0.7,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 0.77,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24020,
+          "DAMAGE": {
+            "MAGIC": 1.86
+          }
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.04,
+          "GAP": 40,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "START_PARTICLE0": {
+          "ROTATE_Y": 10,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireEP02",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireP06",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE2": {
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "PARTICLE_NAME": "RWT_HellFireEP04",
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.01,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -100,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.03,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.06,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "OFFSET_Y": -100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.09,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT4": {
+          "OFFSET_Y": 100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.12,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT5": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.15,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT6": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.18,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT7": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.21,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": 170,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 386814
+      }
+    },
+    "DamageEffect_SA_RWT_HellFire_Explosion_OverHit": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RWT_HellFire_Attack_Box",
+        "ATTACK_TIME_START": 0.1,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "BLACKHOLE_DATA": {
+          "DRAGGING_SPEED": 500,
+          "DRAGGING_RANGE": 500,
+          "CAN_PASS_UNIT": 0
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_Y": 1000,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 0,
+          "TECH_POINT": 58,
+          "PVP_RATE": 0.7,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 0.77,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24020,
+          "DAMAGE": {
+            "MAGIC": 2.5854
+          }
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.04,
+          "GAP": 40,
+          "TIME": 0.4,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "START_PARTICLE0": {
+          "ROTATE_Y": 10,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireEP02",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireP06",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE2": {
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "PARTICLE_NAME": "RWT_HellFireEP04",
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.01,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -100,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.03,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.06,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "OFFSET_Y": -100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.09,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT4": {
+          "OFFSET_Y": 100,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.12,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT5": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.15,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT6": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.18,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT7": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.21,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": 170,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 387504
+      }
+    },
+    "DamageEffect_SA_RWT_HellFire_Explosion_End": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RWT_HellFire_Attack_Box",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_Y": 500,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 0,
+          "HIT_GAP": 0.1,
+          "TECH_POINT": 58,
+          "PVP_RATE": 0.7,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 0.77,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24020,
+          "DAMAGE": {
+            "MAGIC": 1.86
+          }
+        },
+        "START_PARTICLE0": {
+          "ROTATE_Y": 10,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireEP02",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireP06",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE2": {
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "PARTICLE_NAME": "RWT_HellFireEP04",
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -90,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": 80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.05,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.1,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.15,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT4": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.2,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT5": {
+          "OFFSET_Y": -75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.25,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT6": {
+          "OFFSET_Y": 75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.3,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT7": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.35,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -90,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT8": {
+          "OFFSET_Y": 80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.45,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT9": {
+          "OFFSET_Y": -80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.5,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT10": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.55,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT11": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.6,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT12": {
+          "OFFSET_Y": -75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.65,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT13": {
+          "OFFSET_Y": 75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.7,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 387064
+      }
+    },
+    "DamageEffect_SA_RWT_HellFire_Explosion_End_OverHit": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RWT_HellFire_Attack_Box",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_Y": 500,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 0,
+          "HIT_GAP": 0.1,
+          "TECH_POINT": 58,
+          "PVP_RATE": 0.7,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 0.77,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24020,
+          "DAMAGE": {
+            "MAGIC": 2.5854
+          }
+        },
+        "START_PARTICLE0": {
+          "ROTATE_Y": 10,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.5,
+          "SCALE_Y": 0.5,
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireEP02",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "PARTICLE_NAME": "RWT_HellFireP06",
+          "POSITION_TYPE": 1
+        },
+        "START_PARTICLE2": {
+          "PARTICLE_NAME": "RWT_HellFireEP03",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "PARTICLE_NAME": "RWT_HellFireEP04",
+          "POSITION_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -90,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": 80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.05,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.1,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.15,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT4": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.2,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT5": {
+          "OFFSET_Y": -75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.25,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT6": {
+          "OFFSET_Y": 75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.3,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT7": {
+          "OFFSET_Y": 10,
+          "EVENT_TIME": 0.35,
+          "OFFSET_Z": 0,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "OFFSET_X": -90,
+          "POSITION_TYPE": 3,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT8": {
+          "OFFSET_Y": 80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.45,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT9": {
+          "OFFSET_Y": -80,
+          "OFFSET_X": -20,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.5,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT10": {
+          "OFFSET_Y": -90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.55,
+          "OFFSET_Z": 50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT11": {
+          "OFFSET_Y": 90,
+          "OFFSET_X": 50,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.6,
+          "OFFSET_Z": -50,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT12": {
+          "OFFSET_Y": -75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.65,
+          "OFFSET_Z": 75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "CREATE_DAMAGE_EFFECT13": {
+          "OFFSET_Y": 75,
+          "OFFSET_X": 110,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_RWT_HellFire_ExplosionFX",
+          "EVENT_TIME": 0.7,
+          "OFFSET_Z": -75,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 387734
+      }
+    }
+  },
+  "templates": {
+    "EffectDummy_0_5": {
+      "name": "EffectDummy_0_5",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.5,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1791,
+        "line": 67
+      },
+      "declarationSha256": "13583c9208ec84918aafac6fb1ed8a3d2f0a60e99d79b51302d8e90add47f8ea"
+    },
+    "EnchantHand_P02": {
+      "name": "EnchantHand_P02",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.2,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EL_FIRE_06.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                1.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            330.0,
+            330.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.6,
+              1.8
+            ]
+          }
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 50783,
+        "line": 1393
+      },
+      "declarationSha256": "78a2e4ed5378ab39c9c500838ec6d1898599e6a19314dabde49b43146214b8f0"
+    },
+    "MaximumCannon_P01": {
+      "name": "MaximumCannon_P01",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.25,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 2.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ROT_FireBall01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.25,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            450.0,
+            450.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            400.0,
+            400.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.8,
+              2.0
+            ]
+          }
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 54221,
+        "line": 1487
+      },
+      "declarationSha256": "00323aa9dcd517b36158f0514fcff55022bc9a23053cce68568e1896d0a23092"
+    },
+    "RWT_HellFireEP01": {
+      "name": "RWT_HellFireEP01",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200.0,
+        "Lifetime": 0.9,
+        "NumParticles": 14.0,
+        "TriggerCount": 14.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -120.0,
+              120.0
+            ]
+          },
+          {
+            "random": [
+              -120.0,
+              80.0
+            ]
+          },
+          {
+            "random": [
+              -120.0,
+              120.0
+            ]
+          }
+        ],
+        "Gravity": [
+          -200.0,
+          {
+            "random": [
+              100.0,
+              300.0
+            ]
+          },
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_F01"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EMK_Fire001.dds"
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                200.0,
+                250.0
+              ]
+            },
+            {
+              "random": [
+                200.0,
+                250.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.75,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.3,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -100.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 200317,
+        "line": 5566
+      },
+      "declarationSha256": "9f2cb353037819731f818f13f1589874a1acf6a2753fd50a3ad91e2c7001978a"
+    },
+    "RWT_HellFireEP02": {
+      "name": "RWT_HellFireEP02",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100.0,
+        "Lifetime": 0.6,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          50.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "aisha_SA_SCREWDRIVER_circle.X"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ColorBallFire.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.7,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            1.5,
+            1.5
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 201411,
+        "line": 5593
+      },
+      "declarationSha256": "8a9d3455023374254b6b829c93f879ca2c3486902fe1ddd3491dd3cf9fbf67c1"
+    },
+    "RWT_HellFireEP03": {
+      "name": "RWT_HellFireEP03",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 13.0,
+        "Lifetime": 0.2,
+        "NumParticles": 4.0,
+        "TriggerCount": 4.0,
+        "DrawCount": 3.0,
+        "Layer": 12.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "SDK_AIRWAVE_T01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            300.0,
+            300.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            900.0,
+            900.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            300.0,
+            300.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 202143,
+        "line": 5616
+      },
+      "declarationSha256": "0321927d07fbacbeed338df07eda4fd00d456b4c70701540c074122e84364bda"
+    },
+    "RWT_HellFireEP04": {
+      "name": "RWT_HellFireEP04",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 200.0,
+        "Lifetime": 0.2,
+        "NumParticles": 30.0,
+        "TriggerCount": 30.0,
+        "DrawCount": 0.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "SCA_CRIMSON_BREAK_P01.Y"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "VERITABLE_PANDEMONIUM_T02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            0.3,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.3,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.15,
+                0.18
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.4,
+                0.5
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                0.35
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -45.0,
+                45.0
+              ]
+            },
+            {
+              "random": [
+                -10.0,
+                10.0
+              ]
+            },
+            {
+              "random": [
+                -360.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 202961,
+        "line": 5640
+      },
+      "declarationSha256": "6c775539b4f03051b65abef8a06a842ca08b79af7cfe6fe07b681547957c6899"
+    },
+    "RWT_HellFireP06": {
+      "name": "RWT_HellFireP06",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.2,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "Layer": 15.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "TraceParticleList": "HellDive_AP01_1"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "MagicSquareLight01_Poision.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.5
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.5
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            550.0,
+            550.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            150.0,
+            150.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1500.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.09,
+          "end": 0.09,
+          "fade": false,
+          "value": [
+            3000.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 198559,
+        "line": 5516
+      },
+      "declarationSha256": "2858e42a7708b36ba8437349fc7a2e0b433008b4fe240e776e14f6931004e564"
+    },
+    "RWT_HellFire_Attack_Box": {
+      "name": "RWT_HellFire_Attack_Box",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.5,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            6.0,
+            6.0,
+            6.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 3072905,
+        "line": 96293
+      },
+      "declarationSha256": "66e6f1f21a533030b5fb240a3da4b1fcd757ccff3437ce41175d2562bb22f1ca"
+    },
+    "Raven_ReadyS_P01": {
+      "name": "Raven_ReadyS_P01",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.18,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ROT_FireBall01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            500.0,
+            500.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.18,
+          "fade": true,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 23726,
+        "line": 603
+      },
+      "declarationSha256": "e9b7c724e26957deae1eee678daeb83a574fd3be6bd501bb7c0fa78759816ec2"
+    },
+    "Raven_ReadyS_P02": {
+      "name": "Raven_ReadyS_P02",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 200.0,
+        "Lifetime": 0.2,
+        "NumParticles": 30.0,
+        "TriggerCount": 30.0,
+        "DrawCount": 2.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "SCA_CRIMSON_BREAK_P01.Y"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "VERITABLE_PANDEMONIUM_T02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            0.3,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.35,
+                0.45
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.15
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.24,
+                0.27
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -45.0,
+                45.0
+              ]
+            },
+            {
+              "random": [
+                -10.0,
+                10.0
+              ]
+            },
+            {
+              "random": [
+                -360.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 25159,
+        "line": 648
+      },
+      "declarationSha256": "eea46d0065d91e923f6d74b5b29ad8add444dd99382ef9800e3a04d5b337d45d"
+    },
+    "Raven_ReadyS_P03": {
+      "name": "Raven_ReadyS_P03",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10.0,
+        "Lifetime": 0.2,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 2.0,
+        "Layer": 16.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "SpreadLightNoAlpha01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            600.0,
+            600.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 26092,
+        "line": 674
+      },
+      "declarationSha256": "6f7402e342a1f4c41a1599f785a90cf049ed150617e2a2cd3251097f76fd46db"
+    },
+    "Raven_ReadyS_P04": {
+      "name": "Raven_ReadyS_P04",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200.0,
+        "Lifetime": 1.5,
+        "NumParticles": 10.0,
+        "TriggerCount": 10.0,
+        "Layer": 16.0,
+        "Emitradius": [
+          {
+            "random": [
+              -70.0,
+              70.0
+            ]
+          },
+          {
+            "random": [
+              -70.0,
+              70.0
+            ]
+          },
+          {
+            "random": [
+              -70.0,
+              70.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "WhitePointSmall.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            5.0,
+            5.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.06,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                250.0,
+                350.0
+              ]
+            },
+            {
+              "random": [
+                250.0,
+                350.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.06,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            65.0,
+            65.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 1.5,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              0.8,
+              1.2
+            ]
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -1100.0,
+                1100.0
+              ]
+            },
+            {
+              "random": [
+                -900.0,
+                900.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.06,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -400.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                700.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 26786,
+        "line": 697
+      },
+      "declarationSha256": "4ca5ab354dadf7f5474f833d57ed4c73d73559b7270c2bd7d45ed12929ac26a6"
+    },
+    "Raven_ReadyS_P05": {
+      "name": "Raven_ReadyS_P05",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60.0,
+        "Lifetime": 0.3,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "Layer": 16.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "WhitePoint.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.4,
+                0.8
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1400.0,
+            1400.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1000.0,
+            1000.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 27971,
+        "line": 724
+      },
+      "declarationSha256": "58546a8e7c70364bb1be8511a023fa94de68a002699899b9ee9fe6191a7809b0"
+    },
+    "Raven_ReadyS_P06": {
+      "name": "Raven_ReadyS_P06",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.18,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "RingAlpha.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            500.0,
+            500.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.18,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 28878,
+        "line": 749
+      },
+      "declarationSha256": "6f00aab9320836fce7c9ac3cd4b351fa3ebc08fb738d121df8d1a61cf260d050"
+    }
+  },
+  "missingTemplates": [],
+  "fixedV5Sources": [
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragments": [
+        {
+          "start": 12,
+          "end": 27,
+          "sha256": "f83498e6de70e6b8d1a29dfb8007795c0934d91ec42595e1dd233957451893d0"
+        },
+        {
+          "start": 18908,
+          "end": 19115,
+          "sha256": "afe9f4a11f12a9e9b674555fb1db3d1eb3dd1ab4f85adc79358a428ad2b1ce31"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "start": 2350,
+          "end": 2430,
+          "sha256": "d345a85c22b34064c750897b31fe49088b975699660d059d29ce67e6815df9cd"
+        },
+        {
+          "start": 3830,
+          "end": 3880,
+          "sha256": "749fb803b0958d0808d4a1415d07905d352bd63c39d02cc9e240fe124bfd43a1"
+        },
+        {
+          "start": 6163,
+          "end": 6370,
+          "sha256": "02e17de87a14133109ecb25488f248ca21bed0658b4021debb59abe01b6b2951"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "fragments": [
+        {
+          "start": 1294,
+          "end": 1308,
+          "sha256": "769e085709f1708f670f6626150c56a666ba361d4897ae24f042a146137d1aef"
+        }
+      ]
+    }
+  ],
+  "targetFacts": {
+    "loopStartAnimationTime": 0.01,
+    "loopBone": "Bip01",
+    "loopOffsets": [
+      350,
+      35,
+      0
+    ],
+    "normalMagic": 1.86,
+    "overheatMagic": 2.5854,
+    "pvpRate": 0.7,
+    "childExplosionTimes": [
+      0.01,
+      0.03,
+      0.06,
+      0.09,
+      0.12,
+      0.15,
+      0.18,
+      0.21
+    ],
+    "childExplosionOffsets": [
+      [
+        -100,
+        10,
+        0
+      ],
+      [
+        -20,
+        90,
+        -50
+      ],
+      [
+        -20,
+        -90,
+        50
+      ],
+      [
+        50,
+        -100,
+        50
+      ],
+      [
+        50,
+        100,
+        -50
+      ],
+      [
+        110,
+        -90,
+        75
+      ],
+      [
+        110,
+        90,
+        -75
+      ],
+      [
+        170,
+        10,
+        0
+      ]
+    ],
+    "muzzleParticle": {
+      "name": "RWT_HellFireEP02",
+      "positionType": 1,
+      "bone": "Dummy2_Lhand",
+      "rotateY": 10,
+      "scale": [
+        0.4,
+        0.5,
+        0.5
+      ]
+    },
+    "impactPointParticlesInTargetLoop": 0
+  },
+  "adapterChoices": {
+    "normalLoops": 17,
+    "overheatLoops": 27,
+    "overheatPresses": 5,
+    "loopSetSchedule": "one target set on loop state entry, preserving original child START_TIME .01",
+    "overheatSelfDamage": "one target Explosion_OverHit data penalty at .01 per extra loop; generic V5 HP-cost formula",
+    "evidence": "17/27/5 remain old V5 constants; set selection and penalty scheduling are target-data adapter decisions, not matching target2016 callback proof"
+  },
+  "removedFromActualSkill": [
+    "EffectSet_Raven_Hellfire_Gatling",
+    "RAVEN_HELLFIRE_GATLING_BULLET",
+    "RAVEN_HELLFIRE_GATLING_BULLET_OVERHEAT"
+  ],
+  "limits": [
+    "No original target2016 execution/GPU trajectory available",
+    "Target Explosion_End_Bomb is present in Lua but has no established selected consumer; not auto-added or emitted",
+    "Old impactPoint default zero and first-frame DamageCheck evidence applies to the old impact consumer; it is not the target2016 skill design"
+  ]
+}

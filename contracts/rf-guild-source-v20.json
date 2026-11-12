@@ -1,0 +1,245 @@
+{
+  "schema": "elsword.guild-source-contract-v20",
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "evidence": "static-2016-declaration"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "evidence": "static-2016-declaration"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+      "evidence": "static-2016-declaration"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "evidence": "static-2016-declaration"
+    }
+  ],
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceRepository": "reference-v5",
+  "referenceVersion": "fixed V5 reference, not matching target2016 source",
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GUUser.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2GUUser.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "bytes": 202266,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GUUser.h",
+        "./.cache\\native-reference\\X2Lib\\X2GUUser.h"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GURaven.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2GURaven.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.cpp",
+      "relativePath": "X2Lib/X2DamageManager.cpp",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "bytes": 130812,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2DamageManager.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2DamageManager.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+      "relativePath": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+      "bytes": 263245,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2DamageEffect.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2DamageEffect.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "relativePath": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json",
+        "./reports/rf-native-execution-source.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\KTDXLIB\\Always.h",
+        "./.cache\\native-reference\\KTDXLIB\\Always.h"
+      ]
+    }
+  ],
+  "catalogSha256": "2fae4f64a1c92e12e494d8616824584fd988b4f1349102bb455428cd29f4aeb1",
+  "targetNodes": {
+    "500": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 0,
+      "m_iColumnIndex": 0,
+      "m_iSkillID": 500
+    },
+    "501": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 0,
+      "m_iColumnIndex": 1,
+      "m_iSkillID": 501
+    },
+    "502": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 0,
+      "m_iColumnIndex": 3,
+      "m_iSkillID": 502
+    },
+    "503": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 0,
+      "m_iColumnIndex": 2,
+      "m_iSkillID": 503
+    },
+    "504": {
+      "m_iPrecedingSkill": 500,
+      "m_iColumnIndex": 0,
+      "m_iSkillID": 504,
+      "m_iRowIndex": 1,
+      "m_iMasterLevel": 5
+    },
+    "505": {
+      "m_iPrecedingSkill": 501,
+      "m_iColumnIndex": 1,
+      "m_iSkillID": 505,
+      "m_iRowIndex": 1,
+      "m_iMasterLevel": 5
+    },
+    "506": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 1,
+      "m_iColumnIndex": 3,
+      "m_iSkillID": 506
+    },
+    "507": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 1,
+      "m_iColumnIndex": 2,
+      "m_iSkillID": 507
+    },
+    "508": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 2,
+      "m_iColumnIndex": 3,
+      "m_iSkillID": 508
+    },
+    "509": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 2,
+      "m_iColumnIndex": 2,
+      "m_iSkillID": 509
+    },
+    "510": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 2,
+      "m_iColumnIndex": 1,
+      "m_iSkillID": 510
+    },
+    "511": {
+      "m_iMasterLevel": 5,
+      "m_iRowIndex": 2,
+      "m_iColumnIndex": 0,
+      "m_iSkillID": 511
+    }
+  },
+  "consumers": {
+    "hero": "X2GUUser.cpp30538–30605; RF death front6043/back6087; animationEvent1.12; team/UID/death/distance checks",
+    "recovery": "X2GUUser.cpp8940–8942 IsDamagedReaction&&!NoDamage outer gate,9959–9989 attacker&&!NoDamage,30502–30529; X2GUUser.h709–743; Always.h3259 active BALANCE_PATCH_20120329; RT_DUMMY_DAMAGE7 is not excluded by IsDamagedReaction",
+    "resourceGains": "X2GUUser.cpp9703–9737,12340–12372; DamageEffect.cpp4071–4114 multiplicative effect-path conflict preserved",
+    "criticalCounter": "X2GUUser.cpp30481–30484/33352–33364; DamageManager.cpp1546–1558/1897–1909/2316–2328/2537–2549 all exclusively inside bCheckMiss/bMiss==true; targetfactor54/template57; not accepted-hit triggers"
+  },
+  "criticalCounterTriggerBoundary": {
+    "skillId": 509,
+    "grantedLevel": 5,
+    "target2016Description": "Upon an attack/hit; target text preserved separately from fixed-reference behavior",
+    "fixedV5Conditions": "DamageManager Miss branches at1536/1883/2301/2523, after setting reActResult=RT_NO_DAMAGE; user defender and user attacker/owner receive GuildSkillProcess",
+    "fixedV5Calls": [
+      1550,
+      1556,
+      1901,
+      1907,
+      2320,
+      2326,
+      2541,
+      2547
+    ],
+    "buffClosure": "Native Buff54 probability3%, Template57 critical swap, 30seconds/15hit finalizers supported independently",
+    "currentM3": "Internal processGuildMiss hook reserved for a real Miss producer; complete evasion producer unported, automatic activation incomplete",
+    "acceptedHitSubstituteSupported": false,
+    "matchingTarget2016ConsumerObtained": false
+  },
+  "recoveryReactionReference": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp",
+    "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+    "lines": "7214–7237 IsDamagedReaction excludes NO_DAMAGE/SENSOR/REVENGE/REFLECT/THROW/CREATE_DAMAGE_EFFECT; no RT_DUMMY_DAMAGE7 exclusion",
+    "evidence": "fixed V5 reference, not matching target2016 source"
+  },
+  "nativeModulesRebuilt": false,
+  "originalClientMeasured": false,
+  "gpuMeasured": false
+}

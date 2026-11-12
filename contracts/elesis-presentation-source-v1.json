@@ -1,0 +1,1218 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-fields-and-qualified-fixed-reference",
+  "originalClientRuntimeMeasurements": 0,
+  "reference": {
+    "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+    "gitBlob": "087da6d5c5c35f2ba3ee82d436e4a464118eee0f",
+    "evidenceClass": "fixed-V5-reference-containing-qualified-2026-reconstructions"
+  },
+  "awakening": {
+    "aura": [
+      "HyperBoostRight",
+      "HyperBoostLeft"
+    ],
+    "shockTime": 0.83,
+    "consumer": "HyperModeFrameMove/CommonHyperModeFrameMove and HyperModeBuffEffectStart"
+  },
+  "professionStates": {
+    "GM": {
+      "profileSha256": "5e79fc845cec83b759f01ca7578179d7fdd5a737fb64a4622491777160205ff6",
+      "states": {
+        "ESI_COMMON_BUFF": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "COMMON_BUFF_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.08,
+              "2": 1.144
+            }
+          }
+        },
+        "ESI_HA_SGM_SWORD_OF_RELICS": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": "ESI_SA_SDK_BRUTAL_CUTTER_BuffFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 2
+            }
+          }
+        },
+        "ESI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SA_SGM_CRITICAL_DIVE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.6
+            }
+          }
+        },
+        "ESI_SA_SGM_CRITICAL_DIVE_HIT": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SA_SGM_JUGGERNAUT_BUSTER_END": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SA_SGM_JUGGERNAUT_BUSTER_LOOP_LAST": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SA_SGM_JUGGERNAUT_BUSTER_START": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.1
+            }
+          }
+        },
+        "ESI_SA_SGM_SONIC_BLADE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.5
+            }
+          }
+        },
+        "ESI_SA_SGM_WAR_PRELUDE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.7
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_SA_EL_MEGA_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SI_SA_EL_POWER_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.033,
+              "2": 0.766
+            }
+          }
+        },
+        "ESI_SI_SA_EL_UNLIMITED_BLADE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.66
+            }
+          }
+        },
+        "ESI_SI_SA_EL_WILD_SHOCK": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.333
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_EXTINCTION_ATTACK": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_SA_SSK_EXTINCTION_ATTACK_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SSK_EXTINCTION_CHARGE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_SA_SSK_EXTINCTION_CHARGE_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_EXTINCTION_DEGREE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_SA_SSK_EXTINCTION_DEGREE_DOWN_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SSK_EXTINCTION_START": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SSK_JUDGEMENT_DRIVE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.3
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.95
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_VICTORIOUS_SWORD": {
+          "lightTimes": [
+            0.01
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": "ESI_SI_SA_SSK_VICTORIOUS_SWORD_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.5
+            }
+          }
+        },
+        "RSI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        }
+      }
+    },
+    "BH": {
+      "profileSha256": "6336a5d41464dcc9fc4637e820399c22e545efff217554c3140f7f5226f1261d",
+      "states": {
+        "ESI_COMMON_BUFF": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "COMMON_BUFF_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.08,
+              "2": 1.144
+            }
+          }
+        },
+        "ESI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_A_SPK_SWORD_ERUPTION": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.9
+            }
+          }
+        },
+        "ESI_SI_HA_SBH_ANCIENT_FIRE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": "ESI_SI_HA_SBH_ANCIENT_FIRE_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.5
+            }
+          }
+        },
+        "ESI_SI_SA_EL_MEGA_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SI_SA_EL_POWER_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.033,
+              "2": 0.766
+            }
+          }
+        },
+        "ESI_SI_SA_EL_UNLIMITED_BLADE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.66
+            }
+          }
+        },
+        "ESI_SI_SA_EL_WILD_SHOCK": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.333
+            }
+          }
+        },
+        "ESI_SI_SA_SBH_BLAZE_WING": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_SA_SBH_BLAZING_DANCE_1ST": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SBH_BLAZING_DANCE_ATTACK_BACK": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SBH_BLAZING_DANCE_ATTACK_FRONT": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SBH_BLAZING_DANCE_FINISH": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_SA_SBH_BLAZING_DANCE_START": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1
+            }
+          }
+        },
+        "ESI_SI_SA_SBH_SCALDIC_SWORD": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.7
+            }
+          }
+        },
+        "ESI_SI_SA_SBH_WALL_OF_PROMINENCE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.9
+            }
+          }
+        },
+        "ESI_SI_SA_SPK_ETERNAL_FIRE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.5
+            }
+          }
+        },
+        "ESI_SI_SA_SPK_INFERNAL_BLADE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_SA_SPK_SWORDFIRE_FLY": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 2
+            }
+          }
+        },
+        "ESI_SI_SA_SPK_SWORDFIRE_GROUND": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.35
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.95
+            }
+          }
+        },
+        "RSI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        }
+      }
+    },
+    "CA": {
+      "profileSha256": "4bd8ff6b3a64ed2a371542c0e949d1982c3a9e6921fe357bb804eeb5c495abf3",
+      "states": {
+        "ESI_COMMON_BUFF": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "COMMON_BUFF_FrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.08,
+              "2": 1.144
+            }
+          }
+        },
+        "ESI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_CHARGE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_FIRE_FrameMove",
+          "source": null,
+          "stops": {}
+        },
+        "ESI_SI_A_EL_SONIC_ASSAULT_STING_MEMO_READY": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.2
+            }
+          }
+        },
+        "ESI_SI_SA_EL_MEGA_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        },
+        "ESI_SI_SA_EL_POWER_BURSTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.033,
+              "2": 0.766
+            }
+          }
+        },
+        "ESI_SI_SA_EL_UNLIMITED_BLADE": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.66
+            }
+          }
+        },
+        "ESI_SI_SA_EL_WILD_SHOCK": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.333
+            }
+          }
+        },
+        "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 0.95
+            }
+          }
+        },
+        "SI_HA_SCA_FATE_SMASHER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": false,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SCA_BLOOD_CUTTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 1.2
+            }
+          }
+        },
+        "SI_SA_SCA_DREAD_WEAPON_END": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SCA_DREAD_WEAPON_LOOP": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SCA_DREAD_WEAPON_START": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 0.7
+            }
+          }
+        },
+        "SI_SA_SCA_SHADE_THE_ILLUSION": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 1.2
+            }
+          }
+        },
+        "SI_SA_SDK_BRANDISH_BREAKER_FINISH": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_BRANDISH_BREAKER_LOOP": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_BRANDISH_BREAKER_START": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 1
+            }
+          }
+        },
+        "SI_SA_SDK_BRUTAL_CUTTER": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 0.8
+            }
+          }
+        },
+        "SI_SA_SDK_BURNING_PHANTOM_END": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_BURNING_PHANTOM_LOOP": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_BURNING_PHANTOM_READY": {
+          "lightTimes": [
+            0.1
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 1
+            }
+          }
+        },
+        "SI_SA_SDK_BURNING_PHANTOM_START": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_EJECTION_BUSTER_ATTACK": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": null,
+          "source": null,
+          "stops": {}
+        },
+        "SI_SA_SDK_EJECTION_BUSTER_CHARGE": {
+          "lightTimes": [
+            0.01
+          ],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": false,
+          "lightEvidence": "target2016-state-field",
+          "callback": null,
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0,
+              "2": 1
+            }
+          }
+        },
+        "RSI_HYPER_MODE": {
+          "lightTimes": [],
+          "bone": "Dummy1_Rhand",
+          "dark": true,
+          "awakening": true,
+          "lightEvidence": "no-enabled-hand-light",
+          "callback": "HyperModeFrameMove",
+          "source": null,
+          "stops": {
+            "STOP_OTHER_UNIT0": {
+              "1": 0.03,
+              "2": 1.4
+            }
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Hand light stays disabled by the existing user display policy.",
+    "Original target executable playback unavailable; reference file contains later reconstruction blocks."
+  ]
+}

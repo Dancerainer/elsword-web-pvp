@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "targetMeasuredTrajectories": 0,
+  "sources": {
+    "User": {
+      "readOnlyInput": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547
+    },
+    "Raven": {
+      "readOnlyInput": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216
+    },
+    "BuffFactor": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffFactor.cpp",
+      "sha256": "dd458eaa4febae9c16bcf48f1809dc1ab632a9dc40906dc5569ea3e2ebddced1",
+      "bytes": 106634
+    },
+    "BuffBehavior": {
+      "readOnlyInput": ".cache/native-skills-source/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "bytes": 138729
+    }
+  },
+  "consumers": [
+    {
+      "source": "User",
+      "symbol": "void CX2GUUser::HyperModeStart()",
+      "range": [
+        26157,
+        26181
+      ],
+      "sha256": "b0078121e1d4b76b63f87a456b0908215b9de64aea2bfe19528c2530d5240fa1"
+    },
+    {
+      "source": "Raven",
+      "symbol": "float CX2GURaven::GetHyperModeTime() const",
+      "range": [
+        14740,
+        14770
+      ],
+      "sha256": "4a10925834a71aad2c383b6b68d19afa39d537ce1e4ea4b57eb1a0dca80d79ee"
+    },
+    {
+      "source": "Raven",
+      "symbol": "void CX2GURaven::HyperModeFrameMove()",
+      "range": [
+        6866,
+        6902
+      ],
+      "sha256": "6eee7fcf605ab89344671b9676aaa82e13cbbc6ce071b90320be22a2ccc21a06"
+    },
+    {
+      "source": "Raven",
+      "symbol": "void CX2GURaven::HyperModeBuffEffectStart()",
+      "range": [
+        21807,
+        21831
+      ],
+      "sha256": "4e149cea43e9f56eff0ed74e47b4d12d211fc69dfa3dda10e08ebfd4838cba50"
+    },
+    {
+      "source": "BuffFactor",
+      "symbol": "void CX2BuffFactor::SetGameUnitChangeHyperModeBehavior(",
+      "range": [
+        1740,
+        1751
+      ],
+      "sha256": "4c53ffa1bacb9151689ff7c9dd4faa7ef03989e7243037371c243bed40ea87f7"
+    },
+    {
+      "source": "BuffBehavior",
+      "symbol": "bool CX2BuffChangeHyperModeBehaviorTemplet::SetFactor(",
+      "range": [
+        1521,
+        1541
+      ],
+      "sha256": "cd42aa489b4d61711c617770352e3f52624c90634e57020d42df57734e211bea"
+    }
+  ],
+  "targetSkillSource": {
+    "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+    "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+  },
+  "behavior": {
+    "skillId": 24405,
+    "maxLevel": 3,
+    "inputAvailableBeads": "save before decrement",
+    "reawakenCost": 1,
+    "applyAnimationTime": 0.83,
+    "fullModeUpgrade": "existing full OR input available beads == 3",
+    "fullModeUpgradeEvidence": "user explicitly confirms target behavior; acquired old V5 differs",
+    "existingAura": "keep; never duplicate/downgrade",
+    "newFullAura": "EffectSet_RAVEN_HYPER_AURA",
+    "coreRefill": 100,
+    "coreRefillEvidence": "target2016 description adapter"
+  },
+  "duration": {
+    "initialMultiplier": 0.7,
+    "reawakenAddedSecondsCandidate": 0.7,
+    "operation": "remaining += suppliedTime at original animation apply event",
+    "classification": "unchanged old-V5 literal-field consumer candidate; target2016 seconds unresolved",
+    "unknown": "Target2016 SA_EFFECTIVE_TIME .7 is described as a duration multiplier. No matched 2016 reawakening time consumer acquired; do not invent seconds or call .7s verified."
+  },
+  "sourceDivergence": {
+    "oldBuff": "only initializes activation count if m_uiHyperModeCount==0, so normal-to-full upgrade cannot be inferred from it",
+    "userRequiredBehavior": "reawakening with three available beads upgrades to electric field while spending one",
+    "classification": "explicit target-behavior adaptation, not an unchanged old-V5 execution"
+  },
+  "hudParticleContract": "contracts/rf-awakening-bead-fx-v14.json",
+  "limits": [
+    "Matching target2016 full source/executable behavior unavailable",
+    "Current regression tests are simulation evidence only"
+  ]
+}

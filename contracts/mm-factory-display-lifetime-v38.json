@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "originalDurationSeconds": 30,
+  "originalMaximumParticleLifetimeSeconds": 0.3,
+  "testGraceSeconds": 5,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 skill/BuffFactor/effect declarations + qualified fixed-V5/2026 factory reference + current Web lifetime regression",
+  "displays": {
+    "29016": {
+      "effectName": "DAMAGE_EFFECT_Star_Fall_Generate",
+      "mainEffectName": "ADD_Star_Fall_FollowDrone_Mesh_Stat",
+      "retainedVisualTemplateNames": ["ADD_Star_Fall_FollowDrone_Mesh_Stat", "ADD_Drone_Activator_Loop_02", "ADD_Installation_Drone_Generate_04", "ADD_PULSE_GATLING_Start_02"],
+      "particleLifetimes": {"ADD_Drone_Activator_Loop_02": 0.1, "ADD_Installation_Drone_Generate_04": 0.3, "ADD_PULSE_GATLING_Start_02": 0.3},
+      "attackController": "starfall",
+      "attackStageTestSeconds": 15,
+      "originalAttackDurationSeconds": 7.4
+    },
+    "29018": {
+      "effectName": "DAMAGE_EFFECT_Shooting_Chaser_Generate",
+      "mainEffectName": "ADD_Shooting_Chaser_Generate01",
+      "retainedVisualTemplateNames": ["ADD_Shooting_Chaser_Generate01", "ADD_Installation_Drone_Generate_06", "ADD_Installation_Drone_Generate_05", "ADD_PULSE_GATLING_Start_02"],
+      "particleLifetimes": {"ADD_Installation_Drone_Generate_06": 0.3, "ADD_Installation_Drone_Generate_05": 0.2, "ADD_PULSE_GATLING_Start_02": 0.3},
+      "attackController": "chaser",
+      "attackStageTestSeconds": 10
+    }
+  },
+  "originalDurationProvenance": {
+    "skillFile": "data/data036.kom/NewSkillTempletVer2.lua",
+    "skillFileSha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+    "descriptionField": "m_wstrMainDesc: Dynamo Factory Mode Duration : 30 secs",
+    "buffFactorFile": "data/data036.kom/BattleFieldBuffFactor.lua",
+    "buffFactorFileSha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+    "buffFactorId": 366,
+    "buffTemplateId": 342,
+    "durationField": "FINALIZER.BFT_TIME.NORMAL_TIME",
+    "durationLevels": "All original levels 1 through 30 declare 30 seconds.",
+    "sourceContract": "contracts/add-systems-source-v1.json"
+  },
+  "displayProvenance": {
+    "damageFile": "data/data036.kom/DamageEffect.lua",
+    "damageFileSha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+    "meshFile": "data/data036.kom/GameMajorXMeshPlayer.txt",
+    "meshFileSha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+    "closure": "Exact MAIN_EFFECT_NAME plus PASSIVE_PARTICLE/TIME_PARTICLE names and recursive TraceParticleList/FinalParticleList descendants. These two displays have no further Trace/Final descendants.",
+    "mainLifeType": "LT_TIME",
+    "mainLifeTimeSeconds": 999,
+    "ownership": "The 999-second main is explicitly destroyed when the factory mode ends. Its own template lifetime is not the mode duration. Particle emission stops; existing authored finite particles expire.",
+    "reference": {
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+      "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+      "spawnMethod": "ThirdPath_FactorySpawnDrone",
+      "followMethod": "ThirdPath_OnFactoryFrameMove",
+      "clearMethod": "ThirdPath_FactoryModeClear",
+      "stateEnd": "ANSI_AAT_CREATE_DYNAMO_FACTORY_StateEnd calls CommonStateEnd; the skill action ending is separate from the persistent factory mode.",
+      "qualification": "Fixed-V5 source contains 2026 reconstructed factory callbacks. It corroborates handle ownership but is not an original target-client execution or a 1:1 target consumer claim."
+    }
+  },
+  "webObservation": {
+    "selectionState": "actor.sourceAdd.generator: skillId, phase, generation, remaining; there is no elapsed field.",
+    "selectionEvent": "addGeneratorSelected carries the selected skill and original remaining duration. Prefer its source step/time or the first observed selected generator when measuring mode age; attack start is a later clock.",
+    "liveDisplayIdentity": "Exact ownerId and displays[selectedSkillId].effectName/mainEffectName, associated with a still-valid selected generator. Raw particle counts are not independent attack-controller handles.",
+    "expiredState": "actor.sourceAdd.generator is null; tickAddFactory emits add-factory-generation-ended for its previous exact display handle.",
+    "graceQualification": "Five seconds is a bounded current-Web test allowance, not an original particle lifetime or an additional original mode duration."
+  },
+  "regression": {
+    "test": "tests/integration/mm-factory-display-lifetime-v38.test.mjs",
+    "method": "Actual Native selection and firing inputs; attack phase retires at the earlier source-specific observation while the selected factory display remains. The same simulation then reaches natural mode expiry and finite presentation tail cleanup without reset.",
+    "log": "runtime/player-v38-mm-factory-lifetime.log",
+    "observedResult": {"tests": 2, "pass": 2, "fail": 0},
+    "presentationQualification": "Production effects-view with original mesh/pose assets under NullEngine and ready white-pixel texture I/O; separate from browser/GPU and original-client measurement."
+  },
+  "retainedFailure": "runtime/player-feedback-v37/browser-MM-r8/report.json"
+}

@@ -1,0 +1,927 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "classification": "original audio bytes; current runtime binding audit; playback verified separately",
+  "auditSha256": "d2c25d2d63f570533ecf9e6bac169f90e85429212bddb9a662a4fe7922ac9dfa",
+  "triggerAuditSha256": "899cd5781cff609362a31b7bad61f7646781e7d32db8a32647d00db99393e3d1",
+  "reachabilityInputs": [
+    {
+      "path": "packages/combat-core/de-profile.json",
+      "sha256": "95e721d690f8238e3df44ae024bc2c02b8b1725e7d179b20a3bf9988b6682328"
+    },
+    {
+      "path": "packages/combat-core/add-analysis-skills.mjs",
+      "sha256": "71e23a2fce79ef419352a9e30a50d27f9a8d54d045597309e425d1a2b0a2fe70"
+    }
+  ],
+  "excludedBindings": [
+    {
+      "profession": "DE",
+      "name": "ADD_ChaserAttack01.ogg",
+      "reason": "Shared MM damage-effect declarations have no current DE skill, state/effect-set root, or controller start route.",
+      "evidence": [
+        "packages/combat-core/de-profile.json#skillCatalog excludes 29016 and 29018",
+        "packages/combat-core/de-profile.json#states/effectSets: no root references to DamageEffect_AMM_Shooting_Chaser_Attacker, DamageEffect_AMM_Shooting_Chaser_Attack, or DAMAGE_EFFECT_Star_Fall_Explode",
+        "packages/combat-core/add-analysis-skills.mjs#startAddStarfall and startAddShootingChaser both reject professionId other than MM",
+        "packages/combat-core/de-profile.json#damageEffects: child sound effects are referenced only from the unreachable shared MM roots"
+      ]
+    },
+    {
+      "profession": "DE",
+      "name": "ADD_ChaserAttack02.ogg",
+      "reason": "Shared MM damage-effect declarations have no current DE skill, state/effect-set root, or controller start route.",
+      "evidence": [
+        "packages/combat-core/de-profile.json#skillCatalog excludes 29016 and 29018",
+        "packages/combat-core/de-profile.json#states/effectSets: no root references to DamageEffect_AMM_Shooting_Chaser_Attacker, DamageEffect_AMM_Shooting_Chaser_Attack, or DAMAGE_EFFECT_Star_Fall_Explode",
+        "packages/combat-core/add-analysis-skills.mjs#startAddStarfall and startAddShootingChaser both reject professionId other than MM",
+        "packages/combat-core/de-profile.json#damageEffects: child sound effects are referenced only from the unreachable shared MM roots"
+      ]
+    },
+    {
+      "profession": "DE",
+      "name": "ADD_ChaserCreat01.ogg",
+      "reason": "Shared MM damage-effect declarations have no current DE skill, state/effect-set root, or controller start route.",
+      "evidence": [
+        "packages/combat-core/de-profile.json#skillCatalog excludes 29016 and 29018",
+        "packages/combat-core/de-profile.json#states/effectSets: no root references to DamageEffect_AMM_Shooting_Chaser_Attacker, DamageEffect_AMM_Shooting_Chaser_Attack, or DAMAGE_EFFECT_Star_Fall_Explode",
+        "packages/combat-core/add-analysis-skills.mjs#startAddStarfall and startAddShootingChaser both reject professionId other than MM",
+        "packages/combat-core/de-profile.json#damageEffects: child sound effects are referenced only from the unreachable shared MM roots"
+      ]
+    },
+    {
+      "profession": "DE",
+      "name": "ADD_StarFall_Attack01.ogg",
+      "reason": "Shared MM damage-effect declarations have no current DE skill, state/effect-set root, or controller start route.",
+      "evidence": [
+        "packages/combat-core/de-profile.json#skillCatalog excludes 29016 and 29018",
+        "packages/combat-core/de-profile.json#states/effectSets: no root references to DamageEffect_AMM_Shooting_Chaser_Attacker, DamageEffect_AMM_Shooting_Chaser_Attack, or DAMAGE_EFFECT_Star_Fall_Explode",
+        "packages/combat-core/add-analysis-skills.mjs#startAddStarfall and startAddShootingChaser both reject professionId other than MM",
+        "packages/combat-core/de-profile.json#damageEffects: child sound effects are referenced only from the unreachable shared MM roots"
+      ]
+    },
+    {
+      "profession": "DE",
+      "name": "ADD_StarFall_Attack02.ogg",
+      "reason": "Shared MM damage-effect declarations have no current DE skill, state/effect-set root, or controller start route.",
+      "evidence": [
+        "packages/combat-core/de-profile.json#skillCatalog excludes 29016 and 29018",
+        "packages/combat-core/de-profile.json#states/effectSets: no root references to DamageEffect_AMM_Shooting_Chaser_Attacker, DamageEffect_AMM_Shooting_Chaser_Attack, or DAMAGE_EFFECT_Star_Fall_Explode",
+        "packages/combat-core/add-analysis-skills.mjs#startAddStarfall and startAddShootingChaser both reject professionId other than MM",
+        "packages/combat-core/de-profile.json#damageEffects: child sound effects are referenced only from the unreachable shared MM roots"
+      ]
+    }
+  ],
+  "profileSha256": {
+    "RF": "c72b478d7b9868760f151f26834a290b5ac8478b2f623194399fd5616b429889",
+    "LK": "b378662f668954029aa42ecfde92591c3138a3887d9339f909dcb45d4d7c7e2a",
+    "VC": "94cbb6dfeebd2a3ec4d8169957874cd9a2d2eb40ed10ed8022fdffe2b2c295c3",
+    "RS": "3ab5182a67d402b9f3519d302b882429d20ddf0d9897b9460744c83462eb2b3e",
+    "BM": "9712d8651698a2abe1a75f7dade0fad853f62caed24156c76a12a095be835c69",
+    "IS": "46d487ea11f3f389b38a6f85e234a97758a6313a043fb4753c67b8bcb74daa5a",
+    "GM": "a9dad52042b4d9aa337b13f4994af8e997fdff35a28beb8cd0dead3b2b8ba271",
+    "BH": "938139e4b93d46b81bd36aa075445e15e820e6020057bcc6d9c3e06a7bd7ad89",
+    "CA": "edcd253420b34edcecc0bf216c360a8cf049d42a3408172a3e3ee532e720cdc6",
+    "LP": "0773bc4779e9ee152659f03f0eaaf54311e66a71e32c0dae3d880a7c4199cf01",
+    "MM": "c98f5f0a3f42d5e2e2b38a7699720f21a6f0b7344d44dfde4cd2ea0486fbfdb6",
+    "DE": "95e721d690f8238e3df44ae024bc2c02b8b1725e7d179b20a3bf9988b6682328"
+  },
+  "professions": {
+    "RF": {
+      "manifest": "audio/manifest.json",
+      "baseManifestSha256": "acacf19b1a26c1e09e75bf6fd3769505b036c22c891c2ee937f34acd39e2cca2",
+      "missingBefore": [
+        "Raven_NasodCore_Attack.ogg",
+        "Raven_NasodCore_Trans_Attack.ogg"
+      ],
+      "added": [
+        "Raven_NasodCore_Attack.ogg",
+        "Raven_NasodCore_Trans_Attack.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "Raven_NasodCore_Attack.ogg",
+          "manifest": "rf/core-shield-audio/manifest.json",
+          "assetPath": "rf/core-shield-audio/Raven_NasodCore_Attack.ogg"
+        },
+        {
+          "name": "Raven_NasodCore_Trans_Attack.ogg",
+          "manifest": "rf/core-shield-audio/manifest.json",
+          "assetPath": "rf/core-shield-audio/Raven_NasodCore_Trans_Attack.ogg"
+        }
+      ],
+      "unresolved": []
+    },
+    "LK": {
+      "manifest": "lk/audio/manifest.json",
+      "baseManifestSha256": "3c6e44188dc2528f864d368193db921a6b4fd97543f772eaed93d3edaa4187c2",
+      "missingBefore": [
+        "HitArrow2.wav",
+        "HitStone3.wav",
+        "HitWind1.wav",
+        "KickHit.ogg",
+        "swordcrash.ogg"
+      ],
+      "added": [
+        "HitArrow2.wav",
+        "HitStone3.wav",
+        "HitWind1.wav",
+        "KickHit.ogg",
+        "swordcrash.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "lk/audio/manifest.json",
+          "assetPath": "lk/audio/HitArrow2.wav"
+        },
+        {
+          "name": "HitStone3.wav",
+          "manifest": "lk/audio/manifest.json",
+          "assetPath": "lk/audio/HitStone3.wav"
+        },
+        {
+          "name": "HitWind1.wav",
+          "manifest": "lk/audio/manifest.json",
+          "assetPath": "lk/audio/HitWind1.wav"
+        },
+        {
+          "name": "KickHit.ogg",
+          "manifest": "lk/audio/manifest.json",
+          "assetPath": "lk/audio/KickHit.ogg"
+        },
+        {
+          "name": "swordcrash.ogg",
+          "manifest": "lk/audio/manifest.json",
+          "assetPath": "lk/audio/swordcrash.ogg"
+        }
+      ],
+      "unresolved": []
+    },
+    "VC": {
+      "manifest": "vc/audio/manifest.json",
+      "baseManifestSha256": "f39a57380db75c247eea532926df810645f2884066ee7fc7e51e035ce063d617",
+      "missingBefore": [],
+      "added": [],
+      "addedBindings": [],
+      "unresolved": []
+    },
+    "RS": {
+      "manifest": "rs/audio/manifest.json",
+      "baseManifestSha256": "10f16e5919bfc31386f893610c396113894459f8b7a5154a466a70a29e6f419d",
+      "missingBefore": [
+        "HitArrow2.wav",
+        "Hit_Soul1.wav",
+        "Hit_Soul2.wav",
+        "KickHit.ogg"
+      ],
+      "added": [
+        "HitArrow2.wav",
+        "Hit_Soul1.wav",
+        "Hit_Soul2.wav",
+        "KickHit.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "rs/audio/manifest.json",
+          "assetPath": "rs/audio/HitArrow2.wav"
+        },
+        {
+          "name": "Hit_Soul1.wav",
+          "manifest": "rs/audio/manifest.json",
+          "assetPath": "rs/audio/Hit_Soul1.wav"
+        },
+        {
+          "name": "Hit_Soul2.wav",
+          "manifest": "rs/audio/manifest.json",
+          "assetPath": "rs/audio/Hit_Soul2.wav"
+        },
+        {
+          "name": "KickHit.ogg",
+          "manifest": "rs/audio/manifest.json",
+          "assetPath": "rs/audio/KickHit.ogg"
+        }
+      ],
+      "unresolved": []
+    },
+    "BM": {
+      "manifest": "bm/audio/manifest.json",
+      "baseManifestSha256": "1357c610feec60b06fdacedf1b67461b4121aeb6b49c9eb223ce527994aed5b9",
+      "missingBefore": [],
+      "added": [],
+      "addedBindings": [],
+      "unresolved": []
+    },
+    "IS": {
+      "manifest": "is/audio/manifest.json",
+      "baseManifestSha256": "8922f0544ca2327396cf37acd52b6eecae64c7f77dc932ddb8c31288b9d87131",
+      "missingBefore": [
+        "HitArrow2.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "added": [
+        "HitArrow2.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "is/audio/manifest.json",
+          "assetPath": "is/audio/HitArrow2.wav"
+        },
+        {
+          "name": "HitWind1.wav",
+          "manifest": "is/audio/manifest.json",
+          "assetPath": "is/audio/HitWind1.wav"
+        },
+        {
+          "name": "KickHit.ogg",
+          "manifest": "is/audio/manifest.json",
+          "assetPath": "is/audio/KickHit.ogg"
+        }
+      ],
+      "unresolved": []
+    },
+    "GM": {
+      "manifest": "gm/audio/manifest.json",
+      "baseManifestSha256": "b484c41a892fd26d10386ca59ab21155faef68f5d0bad8b5ddb8fa192e8ebbb4",
+      "missingBefore": [
+        "ElesisVoice_Provoke01.ogg",
+        "Elesis_SGM_XX_Attack1.ogg",
+        "HitArrow2.wav"
+      ],
+      "added": [
+        "ElesisVoice_Provoke01.ogg",
+        "Elesis_SGM_XX_Attack1.ogg",
+        "HitArrow2.wav"
+      ],
+      "addedBindings": [
+        {
+          "name": "ElesisVoice_Provoke01.ogg",
+          "manifest": "gm/audio/manifest.json",
+          "assetPath": "gm/audio/ElesisVoice_Provoke01.ogg"
+        },
+        {
+          "name": "Elesis_SGM_XX_Attack1.ogg",
+          "manifest": "gm/audio/manifest.json",
+          "assetPath": "gm/audio/Elesis_SGM_XX_Attack1.ogg"
+        },
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "gm/audio/manifest.json",
+          "assetPath": "gm/audio/HitArrow2.wav"
+        }
+      ],
+      "unresolved": []
+    },
+    "BH": {
+      "manifest": "bh/audio/manifest.json",
+      "baseManifestSha256": "37da42684727ad4e195f1c84d729e4f0876c88342f7ff3c8b97ffab1585caa90",
+      "missingBefore": [
+        "HitArrow2.wav"
+      ],
+      "added": [
+        "HitArrow2.wav"
+      ],
+      "addedBindings": [
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "bh/audio/manifest.json",
+          "assetPath": "bh/audio/HitArrow2.wav"
+        }
+      ],
+      "unresolved": []
+    },
+    "CA": {
+      "manifest": "ca/audio/manifest.json",
+      "baseManifestSha256": "1dca09f4154136f85b9fee825ff3ce5f19b1503a9207d20f0c091a4ba84cc959",
+      "missingBefore": [
+        "Elesis_BrandishiBreaker03.ogg",
+        "Elesis_BurningPhantom2.ogg",
+        "Elesis_Charging01.ogg",
+        "HitArrow2.wav",
+        "HitElectric1.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "added": [
+        "Elesis_BrandishiBreaker03.ogg",
+        "Elesis_BurningPhantom2.ogg",
+        "Elesis_Charging01.ogg",
+        "HitArrow2.wav",
+        "HitElectric1.wav",
+        "HitWind1.wav",
+        "KickHit.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "Elesis_BrandishiBreaker03.ogg",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/Elesis_BrandishiBreaker03.ogg"
+        },
+        {
+          "name": "Elesis_BurningPhantom2.ogg",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/Elesis_BurningPhantom2.ogg"
+        },
+        {
+          "name": "Elesis_Charging01.ogg",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/Elesis_Charging01.ogg"
+        },
+        {
+          "name": "HitArrow2.wav",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/HitArrow2.wav"
+        },
+        {
+          "name": "HitElectric1.wav",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/HitElectric1.wav"
+        },
+        {
+          "name": "HitWind1.wav",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/HitWind1.wav"
+        },
+        {
+          "name": "KickHit.ogg",
+          "manifest": "ca/audio/manifest.json",
+          "assetPath": "ca/audio/KickHit.ogg"
+        }
+      ],
+      "unresolved": []
+    },
+    "LP": {
+      "manifest": "lp/audio/manifest.json",
+      "baseManifestSha256": "18e214ac66b7a23c1381c71ef978a17448e64bf5d374b35f557703a5d0bc0b32",
+      "missingBefore": [
+        "AddVoice_Stasis_Field04.ogg",
+        "Add_NA_Effect04.ogg"
+      ],
+      "added": [],
+      "addedBindings": [],
+      "unresolved": [
+        "AddVoice_Stasis_Field04.ogg",
+        "Add_NA_Effect04.ogg"
+      ]
+    },
+    "MM": {
+      "manifest": "mm/audio/manifest.json",
+      "baseManifestSha256": "29c52294f41cf00e0f4812dfb0a5d6f33dca6474e83009fb7d2220b641407982",
+      "missingBefore": [
+        "ADD_ChaserAttack02.ogg",
+        "ADD_ChaserCreat01.ogg",
+        "ADD_StarFall_Attack01.ogg",
+        "ADD_StarFall_Attack02.ogg",
+        "Add_NA_Effect04.ogg"
+      ],
+      "added": [
+        "ADD_ChaserAttack02.ogg",
+        "ADD_ChaserCreat01.ogg",
+        "ADD_StarFall_Attack01.ogg",
+        "ADD_StarFall_Attack02.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "ADD_ChaserAttack02.ogg",
+          "manifest": "mm/audio/manifest.json",
+          "assetPath": "mm/audio/ADD_ChaserAttack02.ogg"
+        },
+        {
+          "name": "ADD_ChaserCreat01.ogg",
+          "manifest": "mm/audio/manifest.json",
+          "assetPath": "mm/audio/ADD_ChaserCreat01.ogg"
+        },
+        {
+          "name": "ADD_StarFall_Attack01.ogg",
+          "manifest": "mm/audio/manifest.json",
+          "assetPath": "mm/audio/ADD_StarFall_Attack01.ogg"
+        },
+        {
+          "name": "ADD_StarFall_Attack02.ogg",
+          "manifest": "mm/audio/manifest.json",
+          "assetPath": "mm/audio/ADD_StarFall_Attack02.ogg"
+        }
+      ],
+      "unresolved": [
+        "Add_NA_Effect04.ogg"
+      ]
+    },
+    "DE": {
+      "manifest": "de/audio/manifest.json",
+      "baseManifestSha256": "d25310c0b51b2cdd1f33cf2626fb4ae0c5c63f2aa3ca35576a0762fd28677d51",
+      "missingBefore": [
+        "ADD_STARDUST_SHOWER_START02.ogg",
+        "ADD_STARDUST_SHOWER_START03.ogg",
+        "ADD_VOID_FIELD02.ogg",
+        "Add_NA_Effect04.ogg"
+      ],
+      "added": [
+        "ADD_STARDUST_SHOWER_START02.ogg",
+        "ADD_STARDUST_SHOWER_START03.ogg",
+        "ADD_VOID_FIELD02.ogg"
+      ],
+      "addedBindings": [
+        {
+          "name": "ADD_STARDUST_SHOWER_START02.ogg",
+          "manifest": "de/audio/manifest.json",
+          "assetPath": "de/audio/ADD_STARDUST_SHOWER_START02.ogg"
+        },
+        {
+          "name": "ADD_STARDUST_SHOWER_START03.ogg",
+          "manifest": "de/audio/manifest.json",
+          "assetPath": "de/audio/ADD_STARDUST_SHOWER_START03.ogg"
+        },
+        {
+          "name": "ADD_VOID_FIELD02.ogg",
+          "manifest": "de/audio/manifest.json",
+          "assetPath": "de/audio/ADD_VOID_FIELD02.ogg"
+        }
+      ],
+      "unresolved": [
+        "Add_NA_Effect04.ogg"
+      ]
+    }
+  },
+  "sources": {
+    "Raven_NasodCore_Attack.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 1200,
+      "name": "Raven_NasodCore_Attack.ogg",
+      "sha256": "37af186c3f15fa36e48ba0dbbd5f5270945b0a94a72829b8fbf455f20af4c6ea",
+      "raw_path": "raw/data/data069.kom/Raven_NasodCore_Attack.ogg",
+      "bytes": 23447,
+      "status": "verified"
+    },
+    "Raven_NasodCore_Trans_Attack.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 1204,
+      "name": "Raven_NasodCore_Trans_Attack.ogg",
+      "sha256": "99db82dc6d4547ec96a1698cdf22552b50d6a53aa585c048fe1b89d7f81a549e",
+      "raw_path": "raw/data/data069.kom/Raven_NasodCore_Trans_Attack.ogg",
+      "bytes": 17263,
+      "status": "verified"
+    },
+    "HitArrow2.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 168,
+      "name": "HitArrow2.wav",
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "raw_path": "raw/data/data070.kom/HitArrow2.wav",
+      "bytes": 56778,
+      "status": "verified"
+    },
+    "HitStone3.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 200,
+      "name": "HitStone3.wav",
+      "sha256": "b2dda7ef5bfd36e41e8c4a67dd60d5b30dc73895edf6755bb9f78438038e6b71",
+      "raw_path": "raw/data/data070.kom/HitStone3.wav",
+      "bytes": 165940,
+      "status": "verified"
+    },
+    "HitWind1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 204,
+      "name": "HitWind1.wav",
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "raw_path": "raw/data/data070.kom/HitWind1.wav",
+      "bytes": 261052,
+      "status": "verified"
+    },
+    "KickHit.ogg": {
+      "archive": "data/data070.kom",
+      "ordinal": 250,
+      "name": "KickHit.ogg",
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "raw_path": "raw/data/data070.kom/KickHit.ogg",
+      "bytes": 6496,
+      "status": "verified"
+    },
+    "swordcrash.ogg": {
+      "archive": "data/data070.kom",
+      "ordinal": 414,
+      "name": "swordcrash.ogg",
+      "sha256": "28723d8a9cd05bd463be5cfc62889fd1229b8ec7afe123b419e19c39c90daae9",
+      "raw_path": "raw/data/data070.kom/swordcrash.ogg",
+      "bytes": 9613,
+      "status": "verified"
+    },
+    "Hit_Soul1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 219,
+      "name": "Hit_Soul1.wav",
+      "sha256": "8a4f1f599fcf95340ea75cfecd7943c5092adf77a4166d867afe425ba408429d",
+      "raw_path": "raw/data/data070.kom/Hit_Soul1.wav",
+      "bytes": 347144,
+      "status": "verified"
+    },
+    "Hit_Soul2.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 220,
+      "name": "Hit_Soul2.wav",
+      "sha256": "6510d5ee4febb3973aa88bbecd2941a66318baf2dafae113c7eaad7043f4bf7d",
+      "raw_path": "raw/data/data070.kom/Hit_Soul2.wav",
+      "bytes": 510688,
+      "status": "verified"
+    },
+    "ElesisVoice_Provoke01.ogg": {
+      "archive": "data/data145.kom",
+      "ordinal": 180,
+      "name": "ElesisVoice_Provoke01.ogg",
+      "sha256": "1924919f51b0b9070a1123b5fa1dc3a7c405e82a31dc928aaaa54a58b3c99d93",
+      "raw_path": "raw/data/data145.kom/ElesisVoice_Provoke01.ogg",
+      "bytes": 14959,
+      "status": "verified"
+    },
+    "Elesis_SGM_XX_Attack1.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 628,
+      "name": "Elesis_SGM_XX_Attack1.ogg",
+      "sha256": "8a4bf1af4704d859a294c81f9b65fdee28696bd93f6412fc26ccba6dc226ec33",
+      "raw_path": "raw/data/data069.kom/Elesis_SGM_XX_Attack1.ogg",
+      "bytes": 22267,
+      "status": "verified"
+    },
+    "Elesis_BrandishiBreaker03.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 593,
+      "name": "Elesis_BrandishiBreaker03.ogg",
+      "sha256": "ded4e5ee4556d2743527298155a4e26bc095e854b192a2a315578a43170e9098",
+      "raw_path": "raw/data/data069.kom/Elesis_BrandishiBreaker03.ogg",
+      "bytes": 73090,
+      "status": "verified"
+    },
+    "Elesis_BurningPhantom2.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 597,
+      "name": "Elesis_BurningPhantom2.ogg",
+      "sha256": "22ddb73c4893c8b52fb87a850831e99cb89be681888587ac1940856743e75f8a",
+      "raw_path": "raw/data/data069.kom/Elesis_BurningPhantom2.ogg",
+      "bytes": 70008,
+      "status": "verified"
+    },
+    "Elesis_Charging01.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 601,
+      "name": "Elesis_Charging01.ogg",
+      "sha256": "873413c1bbf2d9c3d9982499c7e4da3b1e44c2e0219fdcccd5402a95a1696d20",
+      "raw_path": "raw/data/data069.kom/Elesis_Charging01.ogg",
+      "bytes": 55556,
+      "status": "verified"
+    },
+    "HitElectric1.wav": {
+      "archive": "data/data070.kom",
+      "ordinal": 174,
+      "name": "HitElectric1.wav",
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "raw_path": "raw/data/data070.kom/HitElectric1.wav",
+      "bytes": 141826,
+      "status": "verified"
+    },
+    "AddVoice_Stasis_Field04.ogg": {
+      "status": "missing",
+      "candidates": []
+    },
+    "Add_NA_Effect04.ogg": {
+      "status": "missing",
+      "candidates": []
+    },
+    "ADD_ChaserAttack02.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 23,
+      "name": "ADD_ChaserAttack02.ogg",
+      "sha256": "9ca6dcaa53971e79e340b2b6496585a23963f5a31a7665b138183a7c7e5294a3",
+      "raw_path": "raw/data/data069.kom/ADD_ChaserAttack02.ogg",
+      "bytes": 223405,
+      "status": "verified"
+    },
+    "ADD_ChaserCreat01.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 24,
+      "name": "ADD_ChaserCreat01.ogg",
+      "sha256": "21c6568560b34272943020bb92df3be2124106ab8fc991f811af3bf5b8aa7c91",
+      "raw_path": "raw/data/data069.kom/ADD_ChaserCreat01.ogg",
+      "bytes": 95992,
+      "status": "verified"
+    },
+    "ADD_StarFall_Attack01.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 81,
+      "name": "ADD_StarFall_Attack01.ogg",
+      "sha256": "18a325fa8f9640d8f2e65872aee0d20ed0478d98c8cd8ca818d1628956dfcd0c",
+      "raw_path": "raw/data/data069.kom/ADD_StarFall_Attack01.ogg",
+      "bytes": 87452,
+      "status": "verified"
+    },
+    "ADD_StarFall_Attack02.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 82,
+      "name": "ADD_StarFall_Attack02.ogg",
+      "sha256": "cb76d4c5889487b2c9b6e38adcaf9de338546f617200b9483cf9e47da0080969",
+      "raw_path": "raw/data/data069.kom/ADD_StarFall_Attack02.ogg",
+      "bytes": 73198,
+      "status": "verified"
+    },
+    "ADD_STARDUST_SHOWER_START02.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 79,
+      "name": "ADD_STARDUST_SHOWER_START02.ogg",
+      "sha256": "786162674fbb98e0e525e0e3f3c24f23feffa21e545cb443bdee773c89d3a400",
+      "raw_path": "raw/data/data069.kom/ADD_STARDUST_SHOWER_START02.ogg",
+      "bytes": 31309,
+      "status": "verified"
+    },
+    "ADD_STARDUST_SHOWER_START03.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 80,
+      "name": "ADD_STARDUST_SHOWER_START03.ogg",
+      "sha256": "48c34c6fff72834b86f9c214c1fbdcba63dd3369faf728c515b1557e01c85352",
+      "raw_path": "raw/data/data069.kom/ADD_STARDUST_SHOWER_START03.ogg",
+      "bytes": 91805,
+      "status": "verified"
+    },
+    "ADD_VOID_FIELD02.ogg": {
+      "archive": "data/data069.kom",
+      "ordinal": 197,
+      "name": "Add_Void_Field02.ogg",
+      "sha256": "9c80cfab01e5ee034e85a9fa11904a76ce83e1738aaeac666ab21447fc8559a5",
+      "raw_path": "raw/data/data069.kom/Add_Void_Field02.ogg",
+      "bytes": 105140,
+      "status": "verified"
+    }
+  },
+  "outputs": {
+    "rf/core-shield-audio/Raven_NasodCore_Attack.ogg": {
+      "bytes": 23447,
+      "sha256": "37af186c3f15fa36e48ba0dbbd5f5270945b0a94a72829b8fbf455f20af4c6ea",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rf/core-shield-audio/Raven_NasodCore_Trans_Attack.ogg": {
+      "bytes": 17263,
+      "sha256": "99db82dc6d4547ec96a1698cdf22552b50d6a53aa585c048fe1b89d7f81a549e",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lk/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lk/audio/HitStone3.wav": {
+      "bytes": 165940,
+      "sha256": "b2dda7ef5bfd36e41e8c4a67dd60d5b30dc73895edf6755bb9f78438038e6b71",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lk/audio/HitWind1.wav": {
+      "bytes": 261052,
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lk/audio/KickHit.ogg": {
+      "bytes": 6496,
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "lk/audio/swordcrash.ogg": {
+      "bytes": 9613,
+      "sha256": "28723d8a9cd05bd463be5cfc62889fd1229b8ec7afe123b419e19c39c90daae9",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rs/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rs/audio/Hit_Soul1.wav": {
+      "bytes": 347144,
+      "sha256": "8a4f1f599fcf95340ea75cfecd7943c5092adf77a4166d867afe425ba408429d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rs/audio/Hit_Soul2.wav": {
+      "bytes": 510688,
+      "sha256": "6510d5ee4febb3973aa88bbecd2941a66318baf2dafae113c7eaad7043f4bf7d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rs/audio/KickHit.ogg": {
+      "bytes": 6496,
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "is/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "is/audio/HitWind1.wav": {
+      "bytes": 261052,
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "is/audio/KickHit.ogg": {
+      "bytes": 6496,
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "gm/audio/ElesisVoice_Provoke01.ogg": {
+      "bytes": 14959,
+      "sha256": "1924919f51b0b9070a1123b5fa1dc3a7c405e82a31dc928aaaa54a58b3c99d93",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "gm/audio/Elesis_SGM_XX_Attack1.ogg": {
+      "bytes": 22267,
+      "sha256": "8a4bf1af4704d859a294c81f9b65fdee28696bd93f6412fc26ccba6dc226ec33",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "gm/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "bh/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/Elesis_BrandishiBreaker03.ogg": {
+      "bytes": 73090,
+      "sha256": "ded4e5ee4556d2743527298155a4e26bc095e854b192a2a315578a43170e9098",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/Elesis_BurningPhantom2.ogg": {
+      "bytes": 70008,
+      "sha256": "22ddb73c4893c8b52fb87a850831e99cb89be681888587ac1940856743e75f8a",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/Elesis_Charging01.ogg": {
+      "bytes": 55556,
+      "sha256": "873413c1bbf2d9c3d9982499c7e4da3b1e44c2e0219fdcccd5402a95a1696d20",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/HitArrow2.wav": {
+      "bytes": 56778,
+      "sha256": "0deb1a65dbce222c78002737536917454e19380e6ca2ee5201cf839d7f549c5d",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/HitElectric1.wav": {
+      "bytes": 141826,
+      "sha256": "f55ad8d240bbc517d4b284626df4b4648768679f7374aabdd9a8e7fcfaf5453f",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/HitWind1.wav": {
+      "bytes": 261052,
+      "sha256": "921db4c4e4d0cf3f8f02ba0732289974e00ce1b9e0479085220ca7bb9b24401c",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "ca/audio/KickHit.ogg": {
+      "bytes": 6496,
+      "sha256": "33a62dbb1a0ad420778e818948cf3b96e3797c09a920b090b6eea43ad3fc8f22",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/ADD_ChaserAttack02.ogg": {
+      "bytes": 223405,
+      "sha256": "9ca6dcaa53971e79e340b2b6496585a23963f5a31a7665b138183a7c7e5294a3",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/ADD_ChaserCreat01.ogg": {
+      "bytes": 95992,
+      "sha256": "21c6568560b34272943020bb92df3be2124106ab8fc991f811af3bf5b8aa7c91",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/ADD_StarFall_Attack01.ogg": {
+      "bytes": 87452,
+      "sha256": "18a325fa8f9640d8f2e65872aee0d20ed0478d98c8cd8ca818d1628956dfcd0c",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "mm/audio/ADD_StarFall_Attack02.ogg": {
+      "bytes": 73198,
+      "sha256": "cb76d4c5889487b2c9b6e38adcaf9de338546f617200b9483cf9e47da0080969",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/ADD_STARDUST_SHOWER_START02.ogg": {
+      "bytes": 31309,
+      "sha256": "786162674fbb98e0e525e0e3f3c24f23feffa21e545cb443bdee773c89d3a400",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/ADD_STARDUST_SHOWER_START03.ogg": {
+      "bytes": 91805,
+      "sha256": "48c34c6fff72834b86f9c214c1fbdcba63dd3369faf728c515b1557e01c85352",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "de/audio/ADD_VOID_FIELD02.ogg": {
+      "bytes": 105140,
+      "sha256": "9c80cfab01e5ee034e85a9fa11904a76ce83e1738aaeac666ab21447fc8559a5",
+      "baselineSha256": null,
+      "baselineBytes": null
+    },
+    "rf/core-shield-audio/manifest.json": {
+      "bytes": 3517,
+      "sha256": "2e8554327c6f156a7f18a0f51c1fe44cac7c246b267e13d0bd924fee65bf7772",
+      "baselineSha256": "247498ac49c199b4868f96e142c3f4181974022ba08181fbff514dafeab1cf78",
+      "baselineBytes": 1813
+    },
+    "lk/audio/manifest.json": {
+      "bytes": 140055,
+      "sha256": "ec433a569fdd7d51702b6af6e496cdb8d0f6a708161974a5c2b1aeb47cf67504",
+      "baselineSha256": "3c6e44188dc2528f864d368193db921a6b4fd97543f772eaed93d3edaa4187c2",
+      "baselineBytes": 141206
+    },
+    "rs/audio/manifest.json": {
+      "bytes": 143512,
+      "sha256": "d8b23ca9215f9c25b0b38c9aa5fb432a5d42bcf6235a265a2cb79e742d45ac16",
+      "baselineSha256": "10f16e5919bfc31386f893610c396113894459f8b7a5154a466a70a29e6f419d",
+      "baselineBytes": 140741
+    },
+    "is/audio/manifest.json": {
+      "bytes": 143846,
+      "sha256": "272799c5e2cac3cb02dae27c8f2efaea25b5d4f047d74e4d9a4affc0a6fb64b0",
+      "baselineSha256": "8922f0544ca2327396cf37acd52b6eecae64c7f77dc932ddb8c31288b9d87131",
+      "baselineBytes": 141723
+    },
+    "gm/audio/manifest.json": {
+      "bytes": 183152,
+      "sha256": "31a1a5f2424f2d498a5c1f2cdd5d3e0774fe9ddbc8989a16763867c6b60c51c5",
+      "baselineSha256": "b484c41a892fd26d10386ca59ab21155faef68f5d0bad8b5ddb8fa192e8ebbb4",
+      "baselineBytes": 180788
+    },
+    "bh/audio/manifest.json": {
+      "bytes": 183037,
+      "sha256": "4efaaa034790d59fb7de1c8b80f17f1c95261d3b8c7f847baf4edece3f37bd64",
+      "baselineSha256": "37da42684727ad4e195f1c84d729e4f0876c88342f7ff3c8b97ffab1585caa90",
+      "baselineBytes": 182320
+    },
+    "ca/audio/manifest.json": {
+      "bytes": 180049,
+      "sha256": "98ebcefa610fe11427ca91870c1bb4540b86480f6db40f3fcf49cf1cd5f237ee",
+      "baselineSha256": "1dca09f4154136f85b9fee825ff3ce5f19b1503a9207d20f0c091a4ba84cc959",
+      "baselineBytes": 174791
+    },
+    "mm/audio/manifest.json": {
+      "bytes": 235145,
+      "sha256": "b0c6599643ad4d4f3aa16ee857c3e11decda03745a7f0758e6b1b75de36ad2f8",
+      "baselineSha256": "29c52294f41cf00e0f4812dfb0a5d6f33dca6474e83009fb7d2220b641407982",
+      "baselineBytes": 231860
+    },
+    "de/audio/manifest.json": {
+      "bytes": 253264,
+      "sha256": "a9a441a378ba024a394d657a53dbb83dcf025d2d2b072c1a5eb9747cc001dd87",
+      "baselineSha256": "d25310c0b51b2cdd1f33cf2626fb4ae0c5c63f2aa3ca35576a0762fd28677d51",
+      "baselineBytes": 250689
+    }
+  },
+  "unresolved": [
+    {
+      "profession": "LP",
+      "name": "AddVoice_Stasis_Field04.ogg",
+      "reason": "missing"
+    },
+    {
+      "profession": "LP",
+      "name": "Add_NA_Effect04.ogg",
+      "reason": "missing"
+    },
+    {
+      "profession": "MM",
+      "name": "Add_NA_Effect04.ogg",
+      "reason": "missing"
+    },
+    {
+      "profession": "DE",
+      "name": "Add_NA_Effect04.ogg",
+      "reason": "missing"
+    }
+  ]
+}

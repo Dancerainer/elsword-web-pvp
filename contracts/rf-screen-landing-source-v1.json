@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static + fixed-V5-consumers + source-DLL-resource-measurement + browser-adapter",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "files": [
+    {
+      "relativePath": "pvp-source/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237"
+    },
+    {
+      "relativePath": "pvp-source/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38"
+    },
+    {
+      "relativePath": "X2Lib/X2World.cpp",
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2World.cpp",
+      "sha256": "854058a6ffc894f11bbce442d08790274616ff7f840b927d4074baa471a5ba2c",
+      "gitBlob": "40ede32e2e7aeda75dde4b9cbfb4322a341b46e2",
+      "bytes": 49316
+    },
+    {
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.h",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "gitBlob": "41349c64aee113dd97dbe4128d58a109a2886ab2",
+      "bytes": 191004
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGParticleSystem.cpp",
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGParticleSystem.cpp",
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "gitBlob": "2afaac41a9de94c6a0d0dda5d7df4849429e0c08",
+      "bytes": 222204
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGParticleSystem.h",
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGParticleSystem.h",
+      "sha256": "2146e70e9ca5e7a3a2d653923a7e7e6a2e0562fc07fba6ca8309c2c2cfa7ab74",
+      "gitBlob": "5b8eaa2670db1bb8ccc9d5ff1518d17224ae2be9",
+      "bytes": 91935
+    },
+    {
+      "relativePath": "X2Lib/X2WorldObject.cpp",
+      "sha256": "115c7b6dcc9bf95ee32fa4e13d6c2c79b610fa01c018473ce7a9d54320ccf34f",
+      "gitBlob": "56ecae457beed4c973f4d393187dcfb1a604d0b8",
+      "constructorDefaultUseWorldColor": true,
+      "line": 12
+    }
+  ],
+  "functions": {
+    "GetShowCutInAndChangeWorldColor": {
+      "function": "GetShowCutInAndChangeWorldColor",
+      "startLine": 32952,
+      "endLine": 32973,
+      "sha256": "30323cd497f77fcf8d09cb1e188da0e17fa42c24507dd212f7475108b885d94d"
+    },
+    "ChangeWorldColorByHyperMode": {
+      "function": "ChangeWorldColorByHyperMode",
+      "startLine": 32977,
+      "endLine": 32986,
+      "sha256": "c0c195b1c54e302ec8dc3fa0f8455bde534a75646f402d52f20ba58b660c389e"
+    },
+    "CommonStateEnd": {
+      "function": "CommonStateEnd",
+      "startLine": 19559,
+      "endLine": 19648,
+      "sha256": "a635cfcde3028d9e2472ee242dfb895f4f8eed3dea1bce5bccfc90969ed79512"
+    },
+    "DamageAirDownLandingStart": {
+      "function": "DamageAirDownLandingStart",
+      "startLine": 25907,
+      "endLine": 25936,
+      "sha256": "158f9e2317196a077426c7bd0da8880a6ffc3bbe48a1a91ff04bafefd8727814"
+    },
+    "DamageAirDownLandingFrameMove": {
+      "function": "DamageAirDownLandingFrameMove",
+      "startLine": 25941,
+      "endLine": 25959,
+      "sha256": "2c7120ccb042dcbd6ef5e3827e91e51982c2f2edd79c364d968e79323e81fc77"
+    },
+    "HyperModeFrameMove": {
+      "function": "HyperModeFrameMove",
+      "startLine": 6866,
+      "endLine": 6902,
+      "sha256": "6eee7fcf605ab89344671b9676aaa82e13cbbc6ce071b90320be22a2ccc21a06"
+    }
+  },
+  "colorCallbacks": {
+    "RSI_SI2_POWER_ASSAULT": {
+      "function": "RSI_SI2_POWER_ASSAULT_FrameMove",
+      "startLine": 9390,
+      "endLine": 9515,
+      "sha256": "be9a725ab9050909ba7c0d6aa9088db3517621237ead87f1ec8190287de65f47"
+    },
+    "RSI_A_ROT_NUCLEAR": {
+      "function": "RSI_A_ROT_NUCLEAR_FrameMove",
+      "startLine": 15668,
+      "endLine": 15684,
+      "sha256": "bc9c86838c41248b902986184d9147a2af2ed007aa674ec42d0a5e610dd1a0fa"
+    },
+    "RSI_SA_ROT_VALKYRIESJAVELIN": {
+      "function": "RSI_SA_ROT_VALKYRIESJAVELIN_FrameMove",
+      "startLine": 15288,
+      "endLine": 15335,
+      "sha256": "f583be9f276c7d5661d36e529a037c01fedec679114e8c1a9f88e64280fd44d0"
+    },
+    "RSI_SA_RRF_WILD_CHARGE_READY": {
+      "function": "RSI_SA_RRF_WILD_CHARGE_READY_FrameMove",
+      "startLine": 16891,
+      "endLine": 16907,
+      "sha256": "2f4cda1405c50601bffc277982e4d20b476d0cdcf50b606ab7ae6af25ca61a16"
+    },
+    "RSI_SI1_MAXIMUM_CANNON": {
+      "function": "RSI_SI1_MAXIMUM_CANNON_FrameMove",
+      "startLine": 9070,
+      "endLine": 9197,
+      "sha256": "19c941719c9b40f9d2f356b4818aee91bc2d3f617a6cf01030516b1d3adb58a9"
+    },
+    "RSI_SI1_OVER_TAKER_CHARGED_BOLT": {
+      "function": "RSI_SI1_OVER_TAKER_CHARGED_BOLT_FrameMove",
+      "startLine": 12918,
+      "endLine": 12981,
+      "sha256": "7d75a7c46389a8a8bdf3edea89e5964c2615b908da1fc505f7a569c5bf476ba8"
+    },
+    "RSI_SI2_CANNON_BLADE": {
+      "function": "RSI_SI2_CANNON_BLADE_FrameMove",
+      "startLine": 10501,
+      "endLine": 10550,
+      "sha256": "210b5fdbd6557f642c57024474b79f8f77b00f2bbab5b9475036f1831fe2dc58"
+    },
+    "RSI_SI2_OVER_TAKER_ARC_ENEMY": {
+      "function": "RSI_SI2_OVER_TAKER_ARC_ENEMY_FrameMove",
+      "startLine": 13146,
+      "endLine": 13307,
+      "sha256": "05fc487d5fe70622cdbdebe538e6131b7f76bd42997de3ec8bb30adb93eeaf66"
+    },
+    "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE": {
+      "function": "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE_FrameMove",
+      "startLine": 13515,
+      "endLine": 13671,
+      "sha256": "041863c20fcfe2a96a41a464071274a8e36a90f585736c43d854ca41a99df15a"
+    },
+    "RSI_SI3_SEVEN_BURST": {
+      "function": "RSI_SI3_SEVEN_BURST_FrameMove",
+      "startLine": 9721,
+      "endLine": 9918,
+      "sha256": "a47e6abba7af16b84c8fee5b68518cbeaa51c176d966640994884c309561eedc"
+    },
+    "SI_SA_RRF_X_CRASH": {
+      "function": "SI_SA_RRF_X_CRASH_FrameMove",
+      "startLine": 16380,
+      "endLine": 16414,
+      "sha256": "c194602818f61d7741daa094d405231c7b696569904bfe102eff5a3658fa1b4f"
+    }
+  },
+  "targetChangeWorldColorStates": [
+    "RSI_HA_RRF_INFERNAL_ARM",
+    "RSI_SI1_MAXIMUM_CANNON",
+    "RSI_SI2_CANNON_BLADE",
+    "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE",
+    "RSI_SI3_SEVEN_BURST",
+    "SI_SA_RRF_X_CRASH"
+  ],
+  "worldColor": {
+    "normalArgb": "0xff222222",
+    "awakenedSkillArgb": "0xffff0000",
+    "awakeningMotionArgb": "0xff222222",
+    "pvpScope": "global world color; no distance gate",
+    "battleFieldScope": "800-unit CutIn visibility gate; not implemented as PvP darken radius",
+    "restoreSeconds": 1,
+    "objects": "only UseWorldColor; sky dome receives color factor",
+    "actors": "original consumer reads world LightPos, independent of NowColor"
+  },
+  "landing": {
+    "state": "RSI_DAMAGE_AIR_DOWN_LANDING",
+    "start": [
+      {
+        "name": "DropDown",
+        "position": "actor Now position"
+      },
+      {
+        "name": "GroundShockWave",
+        "position": "landPosition + [0,5,0]",
+        "emitRate": [
+          5,
+          10
+        ],
+        "triggerCount": 1
+      },
+      {
+        "name": "AirDownTick",
+        "position": "actor Now position",
+        "landY": "landPosition.y",
+        "emitRate": [
+          200,
+          200
+        ],
+        "triggerCount": 10
+      }
+    ],
+    "animationTimers": [
+      0.029,
+      0.46
+    ],
+    "timerParticle": "DownSmoke",
+    "timerEmitRate": [
+      100,
+      100
+    ],
+    "timerTriggerCount": 7,
+    "commonSequenceRetrigger": "SetTriggerCount resets Count to0; preserves live particles and per-sequence cap"
+  },
+  "targetResourceIndex": "contracts/rf-landing-fx-index-v1.json",
+  "nativeKeyManifest": "reports/rf-landing-d3dx-keyframes-v1.json",
+  "webAdapters": [
+    "World-material multiplication; character/particle/HUD materials excluded.",
+    "Snapshot stateSerial drives one-shot landing births; old packet replay is ignored.",
+    "A refreshed browser observing mid-landing omits historical births, keeping only future timer crossings.",
+    "Common source minor sequence is reused per actor/name and retains NumParticles across retriggers."
+  ],
+  "limits": [
+    "Full target2016 client and GPU comparison remain unmeasured.",
+    "Exact multi-actor CommonStateEnd ordering is not transplanted; active source casts hold color until all observed casts finish."
+  ]
+}

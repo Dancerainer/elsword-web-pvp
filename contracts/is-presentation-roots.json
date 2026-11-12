@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "target2016-static declarations + fixed-V5 consumer reachability + source-DLL resource measurement + current adapter verification",
+  "clientMeasured": false,
+  "roots": [
+    "DamageImpact",
+    "DamageImpactCore",
+    "DamageImpactSlash",
+    "GroundShockWave",
+    "AirDownTick",
+    "DownSmoke",
+    "HyperBoostRight",
+    "HyperBoostLeft",
+    "STR_KAAng",
+    "SwordFireTip",
+    "elswrod_vitality_UI_01",
+    "elswrod_vitality_UI_02",
+    "elswrod_vitality_UI_03",
+    "elswrod_demolition_UI_01",
+    "elswrod_demolition_UI_02",
+    "elswrod_demolition_UI_03",
+    "DropDown",
+    "CriticalHit01",
+    "MonsterAngryWind",
+    "Counter_Particle01"
+  ],
+  "consumers": [
+    {
+      "file": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "method": "CreateMajorParticleArray",
+      "lines": [
+        4813,
+        4849
+      ],
+      "roots": [
+        "DamageImpact",
+        "DamageImpactCore",
+        "DamageImpactSlash"
+      ],
+      "calls": [
+        {
+          "name": "DamageImpact",
+          "line": 4820,
+          "drawCount": 2,
+          "triggerWait": true
+        },
+        {
+          "name": "DamageImpactCore",
+          "line": 4824,
+          "drawCount": 2,
+          "triggerWait": true
+        },
+        {
+          "name": "DamageImpactSlash",
+          "line": 4828,
+          "drawCount": 2,
+          "triggerWait": true
+        }
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "method": "PlaySmallDamageReactTypeParticle",
+      "lines": [
+        13006,
+        13018
+      ],
+      "roots": [
+        "DamageImpact",
+        "DamageImpactCore",
+        "DamageImpactSlash"
+      ],
+      "triggerRatesAndCounts": [
+        [
+          100,
+          200,
+          10
+        ],
+        [
+          100,
+          200,
+          10
+        ],
+        [
+          50,
+          50,
+          2
+        ]
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "method": "DamageAirDownLandingStart",
+      "lines": [
+        25907,
+        25935
+      ],
+      "roots": [
+        "DropDown",
+        "GroundShockWave",
+        "AirDownTick"
+      ],
+      "triggerRatesAndCounts": {
+        "GroundShockWave": [
+          5,
+          10,
+          1
+        ],
+        "AirDownTick": [
+          200,
+          200,
+          10
+        ]
+      }
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "method": "DamageAirDownLandingFrameMove",
+      "lines": [
+        25941,
+        25960
+      ],
+      "roots": [
+        "DownSmoke"
+      ],
+      "animationTimes": [
+        0.029,
+        0.46
+      ],
+      "triggerRateAndCount": [
+        100,
+        7
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "method": "DamageReact",
+      "lines": [
+        9216,
+        9216
+      ],
+      "roots": [
+        "CriticalHit01"
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "method": "HyperModeBuffEffectStart",
+      "lines": [
+        18640,
+        18654
+      ],
+      "roots": [
+        "HyperBoostRight",
+        "HyperBoostLeft"
+      ]
+    },
+    {
+      "file": "X2Lib/X2GageUI.cpp",
+      "sha256": "2e3a631f62ba5b2f4a6854989d2432ec96e00973f88852a5fdc1b224ae6805a8",
+      "method": "StartDestEffect / StartVigorEffect",
+      "lines": [
+        2159,
+        2240
+      ],
+      "roots": [
+        "elswrod_vitality_UI_01",
+        "elswrod_vitality_UI_02",
+        "elswrod_vitality_UI_03",
+        "elswrod_demolition_UI_01",
+        "elswrod_demolition_UI_02",
+        "elswrod_demolition_UI_03"
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUElsword_SwordMan.cpp",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "method": "SetDestructionRage",
+      "lines": [
+        7598,
+        7607
+      ],
+      "roots": [
+        "MonsterAngryWind",
+        "Counter_Particle01"
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "method": "CommonFrameMove first successful ATTACK_TIME window",
+      "lines": [
+        18156,
+        18192
+      ],
+      "roots": [
+        "STR_KAAng"
+      ],
+      "projectedPixelOffset": [
+        50,
+        -50
+      ],
+      "emitrate": 100,
+      "triggerCount": 1
+    },
+    {
+      "file": "GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "method": "target reachable SwordFire trail child declaration",
+      "roots": [
+        "SwordFireTip"
+      ]
+    }
+  ],
+  "limits": [
+    "Literal LK display closure; ordinary SwordMan awakening, original Way of Sword HUD and common damage/landing effects.",
+    "Fixed source consumers are version references; target2016 full-client/GPU comparison remains unmeasured.",
+    "DropDown requires original measured native keys or the individually SHA-frozen conversion inventory; no arbitrary animation tick rate."
+  ],
+  "professionId": "is",
+  "sharedConsumerEvidence": "contracts/lk-presentation-roots.json",
+  "scope": "Common SwordMan/actor callbacks only; LK Armageddon-specific roots excluded"
+}

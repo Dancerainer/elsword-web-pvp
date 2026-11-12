@@ -1,0 +1,521 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "targetGoldenTraces": 0,
+  "evidenceClass": "target-2016 tables; 2026 reconstructed reference callbacks; host trajectory diagnostics separately",
+  "targetSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effects": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    }
+  },
+  "targetStates": {
+    "RSI_OVER_TAKER_COMBO_XXdownX": {
+      "raw": {
+        "SKILL_CANCEL_AFTER": 0.3,
+        "ANIM_NAME": "OT_ComboX3Front_New",
+        "DASH_CANCEL_AFTER": 0.5,
+        "BWALK_CANCEL_AFTER": 0.5,
+        "ANIM_SPEED": 1.25,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "IS_ATTACK_STATE": 1,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword",
+          "2": "Lhand1"
+        },
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "SOUND_PLAY0": {
+          "1": 0.286,
+          "2": "Raven_PunchAttack1.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1786
+      }
+    },
+    "RSI_OVER_TAKER_COMBO_XXfrontXXdownX": {
+      "raw": {
+        "SKILL_CANCEL_AFTER": 0.3,
+        "DASH_CANCEL_AFTER": 0.5,
+        "ANIM_NAME": "OT_ComboX3Front_New",
+        "BWALK_CANCEL_AFTER": 0.5,
+        "ANIM_SPEED": 1.25,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "UNIT_SLASH_TRACE0": {
+          "1": 0,
+          "2": 0,
+          "3": 100,
+          "4": 0
+        },
+        "ATTACK_TIME0": {
+          "1": 0.45,
+          "2": 0.5
+        },
+        "SOUND_PLAY0": {
+          "1": 0.286,
+          "2": "Raven_PunchAttack2.ogg"
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_RSI_OVER_TAKER_COMBO_XXfrontXXdownX_SPINE",
+          "2": 0.3
+        },
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 3.13,
+          "STOP_TIME_ATT": 0.1,
+          "HIT_ADD_MP": 4.38,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 0,
+          "TECH_POINT": 87,
+          "STOP_TIME_DEF": 0.2,
+          "BACK_SPEED_X": 1000,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 25,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 2.22
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1769
+      }
+    }
+  },
+  "targetDamageEffects": {
+    "DamageEffect_RSI_OVER_TAKER_XX_DOWN_X": {
+      "raw": {
+        "DAMAGE_TIME": 0,
+        "MAIN_EFFECT_NAME": "Mesh_Raven_OverTaker_XX_Down_X_Dummy",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "FOLLOW_ON_LINE": 1,
+        "DAMAGE_DATA": {
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": -1,
+          "REACT_TYPE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 0
+          },
+          "NO_DAMAGE": 1
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RSI_OVER_TAKER_UP_SPINE",
+          "EVENT_TIME": 0.01,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE_ORIGIN": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RSI_OVER_TAKER_UP_SPINE",
+          "EVENT_TIME": 0.11,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE_ORIGIN": 1
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RSI_OVER_TAKER_UP_SPINE",
+          "EVENT_TIME": 0.21,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE_ORIGIN": 1
+        },
+        "CREATE_DAMAGE_EFFECT3": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_RSI_OVER_TAKER_UP_SPINE",
+          "EVENT_TIME": 0.31,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE_ORIGIN": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 65949
+      }
+    },
+    "DamageEffect_RSI_OVER_TAKER_UP_SPINE": {
+      "raw": {
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "Raven_OverTaker_Iron_Attack01",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 3.13,
+          "STOP_TIME_ATT": 0,
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_ADD_MP": 4.38,
+          "HIT_GAP": 1,
+          "TECH_POINT": 87,
+          "BACK_SPEED_X": 650,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ARRANGED_FLY": 1,
+          "DAMAGE": {
+            "MAGIC": 2.22
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpact",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpactCore",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "FireDamageImpactSlash",
+          "POSITION_TYPE": 2
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_OT_ComboX3Front.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 66005
+      }
+    }
+  },
+  "targetEffectSet": {
+    "name": "EffectSet_RSI_OVER_TAKER_COMBO_XXfrontXXdownX_SPINE",
+    "raw": {
+      "NAME": "EffectSet_RSI_OVER_TAKER_COMBO_XXfrontXXdownX_SPINE",
+      "EVENT_TIMER_TYPE": 1,
+      "EFFECT0": {
+        "NAME": "DamageEffect_RSI_OVER_TAKER_XX_DOWN_X",
+        "POSITION_OFFSET_X": 110,
+        "EFFECT_TYPE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "START_TIME": 0.01,
+        "TWO_DIR_GAP": 10,
+        "TWO_DIR_TIME": 0.1,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "sourcePc": {
+      "prototype": 3,
+      "instruction": 12200
+    }
+  },
+  "effectTemplates": {
+    "Mesh_Raven_OverTaker_XX_Down_X_Dummy": {
+      "meshName": "DummyAttackBox_50x50x50.X",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "helperNames": [
+        "ATTACK_SPHERE1"
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2420411,
+        "line": 75645
+      },
+      "meshSource": {
+        "archive": "data/data002.kom",
+        "ordinal": 443,
+        "name": "DummyAttackBox_50x50x50.x",
+        "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+        "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+        "bytes": 801,
+        "signatureHex": "786f662030333033627a697030303332"
+      },
+      "initialSize": null,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "initialVelocity": null,
+      "initialLiterals": {
+        "Size": null,
+        "AniName": "\"Normal\", XAP_LOOP",
+        "Velocity": null,
+        "Color": "RGBA(0, 0, 0, 0)"
+      },
+      "drawCountLiteral": "0",
+      "lifeTimeLiteral": "0.500",
+      "unsupportedPoseTracks": [],
+      "missingExplicitTickRate": false,
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.5,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 1000.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Mesh_Raven_OverTaker_XX_Down_X_Dummy",
+      "kind": "mesh",
+      "declarationSha256": "400ddeba30f0bd982005cb100c8599c1dda2df72117313996688605f3473ea03",
+      "textures": {},
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "initialDirSpeed": 1000.0
+    },
+    "Raven_OverTaker_Iron_Attack01": {
+      "fields": {
+        "MeshName": "Raven_Iron_Attack01.X",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "PlayCount": 1.0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.5,
+          "end": 0.667,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_OverTaker_Iron_Attack01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 203203,
+        "line": 6423
+      },
+      "declarationSha256": "46b21ca80f57e04cba63328344e550654ae64d56d8fda261762dafb64b844d55",
+      "textures": {},
+      "glb": "fx/meshes/Raven_Iron_Attack01.glb",
+      "poseData": "fx/meshes/Raven_Iron_Attack01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.7666666507720947,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "initialSize": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "initialVelocity": null,
+      "initialDirSpeed": null,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      },
+      "missingExplicitTickRate": false
+    }
+  },
+  "reference": {
+    "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+    "sourcePath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+    "sourceSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+    "sourceGitBlob": "eb381c89af35bcd2a74a0fee7981c9180202c023",
+    "sourceBytes": 819439
+  },
+  "referenceFunctions": [
+    {
+      "name": "RSI_OVER_TAKER_COMBO_XXfrontXXdownX_EventProcess",
+      "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "startLine": 10830,
+      "endLine": 10845,
+      "sha256": "aadb021efa1f3868b9f4ac9bf4c5876c78e22d3e4ad0f9da7ff97c3d8ae62426",
+      "bodySha256": "0fc1572307e51c6197c58143f6a8eb1086a00d5174b21c16bb05f6ab9cb0de78",
+      "bytes": 641
+    },
+    {
+      "name": "RSI_OVER_TAKER_COMBO_XXdownX_EventProcess",
+      "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "startLine": 10530,
+      "endLine": 10551,
+      "sha256": "06cdd07a236bbed17633d1ae58d260bcce8ba8ffac78bb364be52027cf4d5dc7",
+      "bodySha256": "014097caed4440bec9930e6c7d8d419f2b312f73448d24f91703ea4964e94216",
+      "bytes": 556
+    },
+    {
+      "name": "RSI_OVER_TAKER_COMBO_XXdownX_FrameMove",
+      "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+      "startLine": 10482,
+      "endLine": 10529,
+      "sha256": "3757fb71833950b1cc629ccf099bae35d4e260d4cf525c95a4372713ef9fd11b",
+      "bodySha256": "2a47f297a3f89163d34c570333fe912ac4d17d96224d25b4a61dd259405b227b",
+      "bytes": 1583
+    }
+  ],
+  "callbackSchedule": {
+    "particleAnimationSeconds": 0.3,
+    "damageAnimationSeconds": 0.3666,
+    "mpCostReference": 4,
+    "disabledCameraAnimationSeconds": 0.4333,
+    "sameTickPriority": "if/else-if, particle before damage before camera"
+  },
+  "derivedEffectSetSchedule": {
+    "animationSeconds": 0.3,
+    "localXOffset": 110,
+    "frameMoveBound": false,
+    "mpCostAdded": 0
+  },
+  "knownGaps": [
+    "Target2016 C++ callbacks unavailable; new callback equivalence to target client is unmeasured",
+    "Raven_attackX3Front_Particle01 resource closed by rf-xx2x-fx-index-v12; original UseLand/LandPos bounce remains unsupported in presentation",
+    "FollowLine host uses finite X/Y support projection; native full 3D line yaw/MoveAxis/endpoint-radius equivalence not established",
+    "GetPowerRate host source shim is 1; configured attacker damage path supplies attack/passive values; direct per-callback source power equivalence not established",
+    "Reference SpecialAttackEventProcess host boundary false; actual host skill dispatch uses target raw .3 cancel timing rather than the reconstructed .01 macro"
+  ],
+  "particleResourceFollowup": {
+    "index": "contracts/rf-xx2x-fx-index-v12.json",
+    "sha256": "3b6e9653c7f8bf9336580d7a8095656d45759b68b5ceb56a9bd5774b56232439",
+    "resourceClosed": true,
+    "runtimeComplete": false,
+    "nativePublicationChanged": false
+  }
+}

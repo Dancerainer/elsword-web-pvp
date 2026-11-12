@@ -1,0 +1,533 @@
+{
+  "schema": "rf-command-reactions-source-v9",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetVersion": "SteamNA2016 V6.0420.5",
+  "targetClientMeasured": false,
+  "sourceFiles": [
+    {
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "bytes": 202266
+    },
+    {
+      "relativePath": "X2Lib/X2DamageManager.cpp",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "gitBlob": "82d5df873bf3eaf8d9ac36c690bbf3988703fda9",
+      "bytes": 130812
+    },
+    {
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "bytes": 57466
+    },
+    {
+      "relativePath": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGLineMap.cpp",
+      "sha256": "3306c7370a282b18137c676db2491b0fed4b2939cc1015876965e506cb8e23b2",
+      "gitBlob": "10e46b5b150094051b0ae60315a9d43ae44552a9",
+      "bytes": 92246
+    },
+    {
+      "relativePath": "KTDXLIB/KTDGLineMap.h",
+      "sha256": "03e819b20d42a502a2d6cafb72fb1cefa28e10d98bfe91b95655c7b0a9dbdf32",
+      "gitBlob": "1ccd794d2ae46ee66e5315237629c7ef528d5075",
+      "bytes": 63814
+    }
+  ],
+  "sourceSections": [
+    {
+      "name": "dash-x-second-stage",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "lineStart": 8676,
+      "lineEnd": 8720,
+      "sha256": "19d38174b44195fa63b986469b0a8158de599b73444850285c51bb100e8f5773",
+      "markers": [
+        "m_fDamageDataChangeTime",
+        "m_DamageData.SimpleInit()",
+        "SetDamageData( \"DAMAGE_DATA_NEXT\" )"
+      ]
+    },
+    {
+      "name": "character-attack-strict-time",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 18144,
+      "lineEnd": 18162,
+      "sha256": "60b888522b6840d043a93661f0f8aafe6bdf967d5d03bd31c23d68b40d980cd9",
+      "markers": [
+        "GetNowAnimationTime() > attackTime.x",
+        "GetNowAnimationTime() < attackTime.y",
+        "DamageCheck( &m_DamageData )"
+      ]
+    },
+    {
+      "name": "simple-init-clear-hit-list",
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "lineStart": 1103,
+      "lineEnd": 1164,
+      "sha256": "3586029364ada2dc83abddde06559b333bab953a68c4489963a084cf6681f894",
+      "markers": [
+        "void SimpleInit()",
+        "hitUnitList.resize(0)"
+      ]
+    },
+    {
+      "name": "reaction-down-up",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 11617,
+      "lineEnd": 11718,
+      "sha256": "f7309f4f181afd4cab16ab337f776beb46d0a2bed4874a17e1ea7bb7a81cda57",
+      "markers": [
+        "RT_DOWN",
+        "IsOnSomethingFuture()",
+        "USI_DAMAGE_AIR_DOWN",
+        "RT_UP",
+        "USI_DAMAGE_AIR_UP"
+      ]
+    },
+    {
+      "name": "jump-x-optional-bounding",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "lineStart": 9009,
+      "lineEnd": 9020,
+      "sha256": "f079b337d2c0bcac58232358917c1e733b128b0ac40e11417b75d5a88b8e4660",
+      "markers": [
+        "BOUNDING_COMBO_TEST",
+        "RT_BOUNDING",
+        "-1800.f"
+      ]
+    },
+    {
+      "name": "ground-hit-route",
+      "relativePath": "X2Lib/X2DamageManager.cpp",
+      "lineStart": 589,
+      "lineEnd": 650,
+      "sha256": "d7072a3c74748ed9f0139deb931ba509d97864687ae62c5aac2dac9678f18fb2",
+      "markers": [
+        "AT_UNIT",
+        "UnitToUnit",
+        "HT_GROUND_HIT",
+        "GroundHit"
+      ]
+    },
+    {
+      "name": "ground-hit-filters",
+      "relativePath": "X2Lib/X2DamageManager.cpp",
+      "lineStart": 853,
+      "lineEnd": 1074,
+      "sha256": "c5a3417d62078655cf2ebccfff240e10253be0a19f7601ff949adea20411fd12",
+      "markers": [
+        "DamageDistance",
+        "bFootOnLine",
+        "DamageLineGroup",
+        "GetNearestLine",
+        "GetLineGroupIncludesLineData"
+      ]
+    },
+    {
+      "name": "now-foot-on-line",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "lineStart": 17458,
+      "lineEnd": 17469,
+      "sha256": "7fbcd05be2d11387a53669bebc49b7f0ff626fcbd77f79b1af8eb8408b7ec661",
+      "markers": [
+        "GetLandPosition",
+        "LINE_RADIUS",
+        "bFootOnLine"
+      ]
+    },
+    {
+      "name": "unit-condition-default-now",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "lineStart": 1551,
+      "lineEnd": 1551,
+      "sha256": "8a31c4c838ffad5652e6c46ca42498d05ce45dd2c4f48af1066fe326f91c18dc",
+      "markers": [
+        "bFuture = false"
+      ]
+    },
+    {
+      "name": "nearest-line",
+      "relativePath": "KTDXLIB/KTDGLineMap.h",
+      "lineStart": 1442,
+      "lineEnd": 1481,
+      "sha256": "8aed623051d50a2ae7bd55b2f609347b463fe3b944ef0f787f3de638b586d281",
+      "markers": [
+        "GetNearestLine",
+        "VerifyLine",
+        "fFinalLength <= touchDistance"
+      ]
+    }
+  ],
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  ],
+  "targetEnums": {
+    "HT_GROUND_HIT": 26,
+    "RT_DOWN": 3,
+    "RT_UP": 4,
+    "RT_FLY": 5,
+    "RT_SMALL_DAMAGE": 1,
+    "RT_BOUNDING": 15
+  },
+  "targetStates": [
+    {
+      "state": "RSI_DASH_COMBO_X",
+      "fields": {
+        "DAMAGEDATA_CHANGE_TIME": 0.63,
+        "ANIM_SPEED": 1.6,
+        "ANIM_NAME": "DashAttackX",
+        "PLAY_TYPE": 2,
+        "ATTACK_TIME0": {
+          "1": 0.27,
+          "2": 0.4
+        },
+        "ATTACK_TIME1": {
+          "1": 0.65,
+          "2": 0.81
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": 6.94,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "TECH_POINT": 131,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "HIT_ADD_MP": 2.5,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1.52
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "FORCE_DOWN": 12.5,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "TECH_POINT": 75,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.5,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 15,
+          "STOP_TIME_DEF": 0.35,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          },
+          "BACK_SPEED_X": 1014.9999999999999
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 658
+      }
+    },
+    {
+      "state": "RSI_JUMP_COMBO_X",
+      "fields": {
+        "ANIM_NAME": "JumpAttackX",
+        "PLAY_TYPE": 2,
+        "ATTACK_TIME0": {
+          "1": 0.17,
+          "2": 0.23
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": -37,
+          "TECH_POINT": 1361,
+          "HIT_ADD_MP": 5,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_TIME": 0.2,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 3,
+          "REACT_TYPE": 3,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 725,
+          "DAMAGE": {
+            "PHYSIC": 3.78
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 873
+      }
+    },
+    {
+      "state": "RSI_COMBO_ZZXX",
+      "fields": {
+        "ANIM_NAME": "ComboZ3a2",
+        "PLAY_TYPE": 2,
+        "ATTACK_TIME0": {
+          "1": 0.37,
+          "2": 0.437
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": -14,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "HIT_ADD_MP": 8.4,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "TECH_POINT": 864,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 4,
+          "ATTACK_TYPE": 2,
+          "BACK_SPEED_X": 942.5,
+          "BACK_SPEED_Y": 1800.0,
+          "FORCE_FLY": 1,
+          "DAMAGE": {
+            "PHYSIC": 4.32
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 364
+      }
+    },
+    {
+      "state": "RRF_DASH_JUMP_COMBO_XX_LANDING",
+      "fields": {
+        "ANIM_NAME": "RRF_DASH_JUMP_COMBO_XX_Landing",
+        "PLAY_TYPE": 2,
+        "ATTACK_TIME0": {
+          "1": 0.01,
+          "2": 0.04
+        },
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": -15.5,
+          "STOP_RESERVE_TIME_DEF": 0,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "BACK_SPEED_Y": 1400,
+          "STOP_TIME_ATT": 0,
+          "CAMERA_CRASH_GAP": 15,
+          "DAMAGE_DISTANCE": 400,
+          "TECH_POINT": 924,
+          "CAMERA_CRASH_TIME": 0.2,
+          "STOP_RESERVE_TIME_ATT": 0,
+          "STOP_TIME_DEF": 0.05,
+          "HIT_ADD_MP": 7.61,
+          "BACK_SPEED_X": 600,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 26,
+          "REACT_TYPE": 4,
+          "ATTACK_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "DAMAGE_LINEGROUP": 1,
+          "DAMAGE": {
+            "PHYSIC": 3.85
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2788
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_DOWN",
+      "fields": {
+        "ANIM_NAME": "DamageAirDown",
+        "PLAY_TYPE": 2
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10538
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_UP",
+      "fields": {
+        "ANIM_NAME": "DamageAirUp",
+        "PLAY_TYPE": 2,
+        "APPLY_ANIM_MOVE": 0
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10624
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_FALL",
+      "fields": {
+        "ANIM_NAME": "DamageAirFall",
+        "PLAY_TYPE": 2
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10586
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_SMALL",
+      "fields": {
+        "ANIM_NAME": "DamageAirSmall",
+        "PLAY_TYPE": 2,
+        "APPLY_ANIM_MOVE": 0
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10525
+      }
+    }
+  ],
+  "targetEffects": [
+    {
+      "name": "DamageEffect_RF_COMBO_Z",
+      "raw": {
+        "ATTACK_TIME_START": 0.092,
+        "ATTACK_TIME_END": 0.2,
+        "MAIN_EFFECT_NAME": "Raven_WeaponDummy01",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "NOT_CULL": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 5,
+          "FORCE_DOWN": 9.25,
+          "TECH_POINT": 116,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 5,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1.54
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 424397
+      }
+    }
+  ],
+  "animationSources": [
+    {
+      "name": "ComboZ3a2",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 74,
+      "durationSeconds": 1.5,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "a5a2d4cd13bdfd0c027dbccfbe5c8f0c422611cbc81b349d64ede8a29aedc287"
+    },
+    {
+      "name": "DamageAirDown",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 66,
+      "durationSeconds": 0.26666666666666666,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "8052f5f9a44d6e2e2df658583706c4861be8de4cd3763cdeef8ea7127fce11f8"
+    },
+    {
+      "name": "DamageAirFall",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 65,
+      "durationSeconds": 0.6666666666666666,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "5de72a0b0cdc76da79fbe62e9f31ccecc77d8d34a60fa6e19f7ca628dd3d30d8"
+    },
+    {
+      "name": "DamageAirSmall",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 62,
+      "durationSeconds": 0.5333333333333333,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "26d887c831af407eb216562f11be94160830f465ee0be23894c23f927eb8ba3a"
+    },
+    {
+      "name": "DamageAirUp",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 61,
+      "durationSeconds": 0.6666666666666666,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "14a6195797a698491e6f92bf25bbce0319f51923ad6c25b70bf02569e8b5cf5a"
+    },
+    {
+      "name": "DashAttackX",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 51,
+      "durationSeconds": 1.3333333333333333,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "c8fd0a00b5bf4a86b6be515973c98ec165d5f2da751b0abf14d96cbf7caa6a79"
+    },
+    {
+      "name": "JumpAttackX",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9",
+      "sourceAnimationIndex": 37,
+      "durationSeconds": 0.8,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "a3d8fa0a9fdce6fa32f2d4fb51ad299b91f024d6fd7797e07e9865fd6258c8de"
+    },
+    {
+      "name": "RRF_DASH_JUMP_COMBO_XX_Landing",
+      "source": "raw/data/data033.kom/Motion_Raven_RF.x",
+      "sourceSha256": "6ca8764a6a0b23ce02f8a2e96352bac0647912cf7bf62de6bd34bce118c08064",
+      "sourceAnimationIndex": 12,
+      "durationSeconds": 0.9333333333333333,
+      "ticksPerSecond": 4800.0,
+      "decodedKeysSha256": "a24c839edf09a3516a5b030bb8b085863b199f1c7d6b40fefe63e43d2e96472b"
+    }
+  ],
+  "macroEvidence": {
+    "BALANCE_BLADE_MASTER_20130117": "defined in pinned Always.h",
+    "GROUND_HIT": "defined in pinned Always.h",
+    "BOUNDING_COMBO_TEST": "not defined in pinned Always.h; no target2016 native macro proof; JumpX override not adopted"
+  },
+  "executionBoundary": {
+    "attackTiming": "strict current animation clock; complete window crossing does not create a bone hit outside that window",
+    "dashX": "SimpleInit clearing hit list transcribed in host; original unchanged callback not yet compiled",
+    "groundHit": "native nearest/group queries, raw distance and Now foot gate; host unit iteration/damage formula remain candidates",
+    "reaction": "RT_UP and RT_DOWN mappings kept; no forced FLY or unconditional ground-snapping",
+    "targetGoldenTraces": 0
+  }
+}

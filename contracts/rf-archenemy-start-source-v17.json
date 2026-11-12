@@ -1,0 +1,685 @@
+{
+  "schemaVersion": 1,
+  "targetClientCombatMeasured": false,
+  "fullClientExecuted": false,
+  "fixedReferenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceRows": [
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "lineSpans": [
+        [
+          475,
+          552
+        ],
+        [
+          5351,
+          5428
+        ],
+        [
+          13146,
+          13307
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016",
+      "spanSha256": [
+        "3f3bcc1e34fd62ebf19caf08e4eee83b90fbc8fde0f6dffdf39764c1bb2908f6",
+        "2f424736db103b3d652e7c74842ab1260260c41a93bd4e3758f54c3878af272e",
+        "3c8ff2bb394dc250ab101b5f45a7f828ae02982bd396ff4f417ddf10be59e6c0"
+      ]
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sourceFileSha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "lineSpans": [
+        [
+          305,
+          375
+        ],
+        [
+          1216,
+          1268
+        ],
+        [
+          1466,
+          1522
+        ],
+        [
+          1573,
+          1637
+        ],
+        [
+          1951,
+          2030
+        ],
+        [
+          2065,
+          2146
+        ],
+        [
+          2443,
+          2548
+        ],
+        [
+          2918,
+          2944
+        ],
+        [
+          2997,
+          3004
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016",
+      "spanSha256": [
+        "506305b685da161acb58ca5e5a276107f37a92c6f460df05e91261c127d6d026",
+        "71c4a28e5e70ed6f8a2223f718443da8a6fb618b81e1778d50b5ebbbe1d1909c",
+        "99bf1f480d8dbbe6db32f2e74c9520308484c5524e5d28bd0029baf550793256",
+        "a926765b1ec5eddfa82070ee91bce107ea77546105229ab92c02e3e5f39f0e50",
+        "1719f1823b92239c0eb2cd4b1689b1aaf273ba151f8870892f4dd90355424f8d",
+        "203f8dde0b1ef6ba046410c56f7ba05bf36c859b09f5195d441d3a5a2e64cf02",
+        "4f3437b960ccfda1eeffd7e2ab892487cf35a2c47bda90117d1c52f3f269278d",
+        "045f34e68b44a78b6baee7394e67edc517ca9062396412da46de60fb7cb7856a",
+        "f0e78679be1418ab9a95e4811768595405996bc3061ea6a880cacd9f0ac80318"
+      ]
+    },
+    {
+      "file": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "sourceFileSha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "lineSpans": [
+        [
+          6,
+          42
+        ],
+        [
+          758,
+          796
+        ],
+        [
+          1166,
+          1288
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016",
+      "spanSha256": [
+        "b9fd610960278ed0ae1b11f71429c646eb2985e431f99b4ee15d21cbdd27a15b",
+        "92079d35bc9aa7537b91e4869d9fbe3cab7cd89147ab1fcd396aabfd1d7f1c73",
+        "b38c3f0c0e116b539bdcf75a732da0331406d67f37cf70d750e45ab8a4ce6b6e"
+      ]
+    },
+    {
+      "file": "KTDXLIB/KTDGXSkinAnim.h",
+      "sourceFileSha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "lineSpans": [
+        [
+          150,
+          152
+        ],
+        [
+          380,
+          435
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-a8438f3-not2016",
+      "spanSha256": [
+        "f9b2b826abe80aefdaff2cff23f3beb94f777b85e358ffcdd69bd84d8433ba76",
+        "3bf9e6d544339150aa74fcbe4da3cfdbe57f3c9a74b63c729b1c78f7f5c9e66f"
+      ]
+    }
+  ],
+  "targetDeclaration": {
+    "file": "GameMajorXMeshPlayer.txt",
+    "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+    "lines": [
+      [
+        6458,
+        6476
+      ],
+      [
+        6478,
+        6496
+      ],
+      [
+        6498,
+        6516
+      ],
+      [
+        6518,
+        6536
+      ]
+    ],
+    "templates": [
+      {
+        "name": "Raven_Overtaker_Sp2a_FlyingImpact_Start_01",
+        "declarationSha256": "8f609bf33f42897b45ec4f7b4328fb2f41c61f3747b779f25a6a18fa34ae5d37",
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "initialAniSpeed": 1.4,
+        "initialSize": [
+          1.2,
+          1.2,
+          1.2
+        ],
+        "fields": {
+          "MeshName": "Raven_Overtaker_SP2a_FlyingImpact_Start_01.X",
+          "LifeType": "LT_PLAY_COUNT",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14,
+          "PlayCount": 1,
+          "ZEnable": true,
+          "UseSlashTrace": true
+        },
+        "events": [
+          {
+            "property": "SlashTrace",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": false,
+            "clock": "global"
+          },
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            },
+            "clock": "global"
+          },
+          {
+            "property": "AniSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 1.4,
+            "clock": "global"
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1.2,
+              1.2,
+              1.2
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "SlashTrace",
+            "start": 0.05,
+            "end": 0.05,
+            "fade": false,
+            "value": true,
+            "clock": "animation"
+          }
+        ]
+      },
+      {
+        "name": "Raven_Overtaker_Sp2a_FlyingImpact_Start_02",
+        "declarationSha256": "8b65d117be67d4e4d4512cd385b56514592c23ef1a3f7367a69b86757e658fd1",
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "initialAniSpeed": 1.4,
+        "initialSize": [
+          1.2,
+          1.2,
+          1.2
+        ],
+        "fields": {
+          "MeshName": "Raven_Overtaker_SP2a_FlyingImpact_Start_02.X",
+          "LifeType": "LT_PLAY_COUNT",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14,
+          "PlayCount": 1,
+          "ZEnable": true,
+          "UseSlashTrace": true
+        },
+        "events": [
+          {
+            "property": "SlashTrace",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": false,
+            "clock": "global"
+          },
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            },
+            "clock": "global"
+          },
+          {
+            "property": "AniSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 1.4,
+            "clock": "global"
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1.2,
+              1.2,
+              1.2
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "SlashTrace",
+            "start": 0.05,
+            "end": 0.05,
+            "fade": false,
+            "value": true,
+            "clock": "animation"
+          }
+        ]
+      },
+      {
+        "name": "Raven_Overtaker_Sp2a_FlyingImpact_Start_03",
+        "declarationSha256": "e35af1449ba7243279d26a1b68a2b669547e99cff0b3c7469be7f88a30a7cbe6",
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "initialAniSpeed": 1.4,
+        "initialSize": [
+          1.2,
+          1.2,
+          1.2
+        ],
+        "fields": {
+          "MeshName": "Raven_Overtaker_SP2a_FlyingImpact_Start_03.X",
+          "LifeType": "LT_PLAY_COUNT",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14,
+          "PlayCount": 1,
+          "ZEnable": true,
+          "UseSlashTrace": true
+        },
+        "events": [
+          {
+            "property": "SlashTrace",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": false,
+            "clock": "global"
+          },
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            },
+            "clock": "global"
+          },
+          {
+            "property": "AniSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 1.4,
+            "clock": "global"
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1.2,
+              1.2,
+              1.2
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "SlashTrace",
+            "start": 0.05,
+            "end": 0.05,
+            "fade": false,
+            "value": true,
+            "clock": "animation"
+          }
+        ]
+      },
+      {
+        "name": "Raven_Overtaker_Sp2a_FlyingImpact_Start_04",
+        "declarationSha256": "0a1bdf9619df17d3bf51d841d61626d2e8d241d0d51bbea7b019b3592a92fd59",
+        "initialAnimation": {
+          "name": "Normal",
+          "playback": "XAP_ONE"
+        },
+        "initialAniSpeed": 1.4,
+        "initialSize": [
+          1.2,
+          1.2,
+          1.2
+        ],
+        "fields": {
+          "MeshName": "Raven_Overtaker_SP2a_FlyingImpact_Start_04.X",
+          "LifeType": "LT_PLAY_COUNT",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14,
+          "PlayCount": 1,
+          "ZEnable": true,
+          "UseSlashTrace": true
+        },
+        "events": [
+          {
+            "property": "SlashTrace",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": false,
+            "clock": "global"
+          },
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_ONE"
+            },
+            "clock": "global"
+          },
+          {
+            "property": "AniSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 1.4,
+            "clock": "global"
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1.2,
+              1.2,
+              1.2
+            ],
+            "clock": "global"
+          },
+          {
+            "property": "SlashTrace",
+            "start": 0.05,
+            "end": 0.05,
+            "fade": false,
+            "value": true,
+            "clock": "animation"
+          }
+        ]
+      }
+    ]
+  },
+  "originalDll": {
+    "sourceRequest": "reports/rf-archenemy-start-d3dx-sources-v17.json",
+    "sourceRequestSha256": "6c5234fcbb7b82490d62d46fb71a2ce6b00383045a4c83936ae484e2f90238ca",
+    "keyManifest": "reports/rf-archenemy-start-d3dx-keyframes-v17.json",
+    "sources": [
+      {
+        "source": "asset_work/raw/data/data002.kom/Raven_OverTaker_SP2a_FlyingImpact_Start_01.X",
+        "sourceSha256": "db914787d32a62e7e1bd98555098de4ce36d7d2e03e87f7d623b4e8550624e24",
+        "sourceBytes": 10747,
+        "actualLoaderHresult": "0x00000000",
+        "nativeAnimations": [
+          {
+            "index": 0,
+            "name": "Normal",
+            "playbackType": 0,
+            "period": 0.8999999761581421,
+            "ticksPerSecond": 4800
+          }
+        ]
+      },
+      {
+        "source": "asset_work/raw/data/data002.kom/Raven_OverTaker_SP2a_FlyingImpact_Start_02.X",
+        "sourceSha256": "a8f772abeb646731d560f40608e59546bb0e1994b6088b41fc1c290241318182",
+        "sourceBytes": 10781,
+        "actualLoaderHresult": "0x00000000",
+        "nativeAnimations": [
+          {
+            "index": 0,
+            "name": "Normal",
+            "playbackType": 0,
+            "period": 0.7666666507720947,
+            "ticksPerSecond": 4800
+          }
+        ]
+      },
+      {
+        "source": "asset_work/raw/data/data002.kom/Raven_OverTaker_SP2a_FlyingImpact_Start_03.X",
+        "sourceSha256": "11391fe6d45e0233f0254d9df306e03c75618a92ce8db796769bff25e2e79212",
+        "sourceBytes": 10799,
+        "actualLoaderHresult": "0x00000000",
+        "nativeAnimations": [
+          {
+            "index": 0,
+            "name": "Normal",
+            "playbackType": 0,
+            "period": 0.5333333611488342,
+            "ticksPerSecond": 4800
+          }
+        ]
+      },
+      {
+        "source": "asset_work/raw/data/data002.kom/Raven_OverTaker_SP2a_FlyingImpact_Start_04.X",
+        "sourceSha256": "964bb3c213411a2c2f179ebaeea271c801d10533f56bfe496096975ff4af036a",
+        "sourceBytes": 10784,
+        "actualLoaderHresult": "0x00000000",
+        "nativeAnimations": [
+          {
+            "index": 0,
+            "name": "Normal",
+            "playbackType": 0,
+            "period": 0.4000000059604645,
+            "ticksPerSecond": 4800
+          }
+        ]
+      }
+    ],
+    "dllSha256": "0b28546be22c71834501f7d7185ede5d79742457331c7ee09efc14490dd64f5f"
+  },
+  "binding": {
+    "creation": "four source Now mesh commands at .6666/.8/1/1.1333; instance GetPos/GetRotateDegree; no BONE_NAME attachment",
+    "handToRear": "original Start Dummy04/05/06/07 keys; no synthetic path or owner follow",
+    "waiting": "existing1.5 callback creates separate four owned damage meshes and SetPos rear immediately",
+    "controller": "fixed-V5 initial .1 speed ramp, mesh AniSpeed1.4, strict XAP_ONE end pulse consumed by next mesh packet",
+    "lifetime": "each original measured Normal period; never extend Start to the1.5 waiting callback",
+    "slashTrace": "global Initial false; Anim .05 true using prior SkinAnim clock; original TRACE endpoints through existing renderer"
+  },
+  "integration": {
+    "index": "contracts/rf-archenemy-start-fx-index-v17.json",
+    "servedIndex": "/assets/rf/archenemy-fx-v17/index.json",
+    "mergeProfileTemplates": [
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_01",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_02",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_03",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_04"
+    ],
+    "resourceOnlyTemplates": [
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_01",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_02",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_03",
+      "Raven_Overtaker_Sp2a_FlyingImpact_Start_04"
+    ],
+    "inventory": [
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/index.json",
+        "bytes": 15743,
+        "sha256": "7a6044f1090108dde9a511c381286c268c076ea059b775dbb89ac2b75b00d9c7"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_01.animation.json",
+        "bytes": 49866,
+        "sha256": "5dcf39e304fbb3a81646e78ff23b57952583466ebb72441b7559db2f236c29e8"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_01.glb",
+        "bytes": 128032,
+        "sha256": "67960964e32d171952155686a0e8f5a6b169a4d1078dcb7769e1738bdaa6aa42"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_01.pose.json",
+        "bytes": 32060,
+        "sha256": "59c2f9eb25bcd17728448819cadb5ca5a8d27c0a6983b0e1211d6f1811d5d3d3"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_02.animation.json",
+        "bytes": 50397,
+        "sha256": "a6f86a67152acf5d1e2d6e6fb394c372987a5088ca613f7ff9848a8429dc9848"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_02.glb",
+        "bytes": 128032,
+        "sha256": "b4aebfeeef13231d1f5bb05f103bcaffeb5b16849e9b14c81e65742388d3cb63"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_02.pose.json",
+        "bytes": 32587,
+        "sha256": "1239623a7b0471fee23b24de0176e022db5bcc04f79f458923b6529f4278ecb5"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_03.animation.json",
+        "bytes": 50483,
+        "sha256": "f406b42917bc174fb3132e95b4132681f6929b14ec52951eee4d789629d08794"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_03.glb",
+        "bytes": 128032,
+        "sha256": "cb474567f5477ea006add94cb6a77419197bb4386d15e3b8b53a890929f55227"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_03.pose.json",
+        "bytes": 32671,
+        "sha256": "9ceeb1cb80d97ffb8652076c15ecf499e31453790f39092b9b624586aab1da9c"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_04.animation.json",
+        "bytes": 49891,
+        "sha256": "3ffef8bb4161b67f047221449264ccab582ab1cc8643c7bb26befea45f6087f7"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_04.glb",
+        "bytes": 128032,
+        "sha256": "82e5a35ec32b0ed3909156317fe2c596b4358f90556197967dc9d3c346073f36"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/Raven_OverTaker_SP2a_FlyingImpact_Start_04.pose.json",
+        "bytes": 32086,
+        "sha256": "3e2259d886e330b555fb677ffaebe434a3f2d912cece6610a211fe6b10bbd4a5"
+      },
+      {
+        "path": "artifacts/rf/archenemy-fx-v17/meshes/textures/Raven_Overtaker_SP2_FlyingImpact.png",
+        "bytes": 75845,
+        "sha256": "6ecdf5fe375a69e5ce134c36dfdd93943c372aafb56c7bd9aa2557fd3a16ab94"
+      }
+    ],
+    "ignoredDllKeys": "artifacts/native-d3dx/archenemy-start-v17-keyframes.json"
+  },
+  "nativeSeal": {
+    "moduleCount": 10,
+    "manifestContentSha256": "e804bbfea9c3cf698a77355c98b6e1eeed4f2aae921489c09d41d7da8c23c4f8",
+    "arcTaskModuleBytesChanged": false,
+    "integrationChangedModules": [
+      "skills"
+    ]
+  },
+  "limitations": [
+    "No original2016 whole-client trajectory or GPU comparison.",
+    "Original DLL GetKeys confirms resources, not the2016 production controller or callback schedule.",
+    "Fixed V5 Start instances revert to perFrame=false after .0001 creation; current-host step does not recreate render FinalFrame grouping.",
+    "Exact actor hand overlap in2016 was not measured; no extra hand attachment was inferred.",
+    "Waiting/Normal failed-LOOP candidate and unresolved target4.48/7.61 coefficient boundary stay as documented in v12."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "version": "user-equipment-and-lethal-balance-v2",
+  "evidenceClass": "explicit-user-requested-custom-balance",
+  "professions": ["RF", "LK", "VC"],
+  "weaponEnhancement": 9,
+  "weaponEnhancementReferenceMultiplier": 1.75,
+  "armorEnhancementUnchanged": 9,
+  "equipmentOptionPolicy": "user-150hp-skill-damage-v2",
+  "hpBonus": 1.5,
+  "hpPolicy": "Use existing accepted level-point/ranked-PvP candidate; explicit user override extends original reference cap50% to150%. Not a target2016 rule.",
+  "skillDamageBonus": 0.2,
+  "skillDamageScope": "One multiplier per hit with a recorded skill ID in that profession catalog, including delayed, secondary and explicitly attributed passive skill effects. Ordinary command/core attacks, self costs and independent status DOT do not inherit a current skill.",
+  "criticalRate": {"RF": 50, "LK": 40, "VC": 50},
+  "lethalTrait": {
+    "memoTypeName": "MI_CRITICAL",
+    "defenceIgnoredFraction": 0.25,
+    "defencePierceMultiplier": 0.75,
+    "ignoreDefence": false,
+    "retained": "Original MP multiplier and other branch fields; existing unsupported defensive-effect bypass remains unsupported.",
+    "sourceDeclarationsChanged": false,
+    "displayOverlay": "Ignore 25% of enemy defense."
+  },
+  "unchanged": ["characterLevel85", "weaponLevel80", "careerSpecificBaseStats", "armorLevel80", "mpMax360", "damageReduction42%", "movementAndJumpOptions", "actionSpeed35%", "MPGainOptions", "awakeningOptions", "initialGauge50"],
+  "sourceReferences": ["equipment-2016-source-v1.json", "equipment-2016-reference-v1.json", "equipment-options-source-v1.json", "pvp-damage-formulas-source-v1.json"],
+  "originalClientRuntimeMeasurements": 0
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "Web finite allocation bounds for one equipped Add cast per frozen roster owner",
+  "evidenceLayers": {
+    "original2016Static": [
+      "add-analysis-v53/LP_CONQUEROR_SCATTER_2016.md",
+      "add-analysis-v53/STARDUST_TERMINAL_2016.md",
+      "add-analysis-v56/STARDUST_RECORD_FOLLOWUP_2016.md",
+      "de-stardust-mesh-v56.json"
+    ],
+    "webImplementation": "../apps/web/add-compiled-prewarm-v57.mjs",
+    "webRegression": "../tests/combat/add-stream-prewarm-v57.test.mjs",
+    "originalClientBattleMeasured": false,
+    "browserGpuMeasuredByThisSlice": false
+  },
+  "originalProducerLimits": {
+    "conqueror29008": {"normalBase": 12, "maxMutation": 3, "hyperExtraUsesOnlyMutation": true, "hyperMain": 1},
+    "stardust29021": {
+      "baseSeconds": 2.5,
+      "secondsPerMutation": 0.33,
+      "maxMutation": 3,
+      "initialAccumulator": 1,
+      "intervalSeconds": 0.1,
+      "requestsPerCallbackMaximum": 1,
+      "ballNodes": 10,
+      "ballNodesAreSuccessivePositions": true,
+      "ballLifetimeSeconds": [0.6, 0.62],
+      "smallExplosionLifetimeSeconds": 9
+    }
+  },
+  "webPoolBounds": {
+    "conquerorAlternatives": [{"projectiles": 15}, {"projectiles": 3, "hyperMain": 1}],
+    "stardustTotalRequestFormula": "ceil(float32(base + float32(3*per)) / float32(.1)) + 1",
+    "stardustTotalRequestUpperBound": 36,
+    "directParticleConcurrencyFormula": "min(total, ceil((maxBallLifetime + particleLifetime + 2*hostTickSeconds) / float32(.1)) + 1)",
+    "directParticleConcurrencyConditions": ["Direct PASSIVE/START/TIME sequence", "Finite original particle lifetime", "No TraceParticleList or FinalParticleList"],
+    "sixthLayerDrawPasses": 3,
+    "finalBigBallIsAdditional": true,
+    "nineSecondDieChildrenUseWholeCastBound": true,
+    "unknownDuration": "Explicit single-emitter lower-bound preparation with unsupported note",
+    "unknownTail": "No tightening; retain finite whole-cast source request bound",
+    "rosterRecastScope": "One cast per owner; not a bound on arbitrary forced recasts"
+  },
+  "preserved": ["Particle producers", "Particle counts", "Particle lifetimes", "DrawCount", "Materials", "Movement", "Skill timing", "Damage", "Resource closure", "Original profiles"],
+  "notAnOriginalExpectation": ["Web pool sizes", "Observed Web particle peaks", "NullEngine allocation time", "NullEngine heap deltas"]
+}

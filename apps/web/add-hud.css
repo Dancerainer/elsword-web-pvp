@@ -1,0 +1,22 @@
+/* Target2016 DLG_Add_DP_And_Mutation coordinates and unmodified atlas crops.
+   The containing native HUD owns viewport scaling; resources are display only. */
+.add-resource-gain{position:absolute;right:10px;top:48px;color:#aeffb0;font:700 15px Tahoma,system-ui,sans-serif;text-shadow:0 1px 3px #000}
+.add-resource-gain[hidden]{display:none}
+.add-resource-hud{position:absolute;inset:0;color:#fff;font:10px RFClientTahoma,Tahoma,system-ui,sans-serif;text-shadow:1px 1px 2px #000;pointer-events:none;z-index:4}
+.add-resource-hud[hidden],.add-resource-hud [hidden]{display:none}
+.add-dp-gauge{position:absolute;width:235px;height:17px}
+.native-hud .add-dp-gauge img{position:absolute;left:0;top:0;max-width:none}
+/* Formation is already authoritative in sourceAdd. Keep the original atlas
+   and gauge amount; distinguish its active state without another resource. */
+.add-resource-hud[data-active=true] .add-dp-fill{filter:hue-rotate(70deg) saturate(1.8) brightness(1.25)}
+.add-dp-amount{position:absolute;left:37px;top:1px;width:193px;text-align:right;line-height:15px;font-size:12px;font-weight:normal;font-variant-numeric:tabular-nums}
+.add-mutation-points{position:absolute;width:88px;height:45px;background-repeat:no-repeat}
+.add-mutation-points span{position:absolute;width:20px;height:20px;background-repeat:no-repeat;opacity:0}
+.add-mutation-points [data-filled=true]{opacity:1}
+/* Mode/help remains accessible in the status label without adding a new panel. */
+.add-resource-detail{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.native-hud[data-profession-id=LP] .wake-bead,.native-hud[data-profession-id=MM] .wake-bead,.native-hud[data-profession-id=DE] .wake-bead,
+.native-hud[data-profession-id=LP] .wake-bead-bg,.native-hud[data-profession-id=MM] .wake-bead-bg,.native-hud[data-profession-id=DE] .wake-bead-bg,
+.native-hud[data-profession-id=LP] .native-rage,.native-hud[data-profession-id=MM] .native-rage,.native-hud[data-profession-id=DE] .native-rage,
+.native-hud[data-profession-id=LP] .wake-readout,.native-hud[data-profession-id=MM] .wake-readout,.native-hud[data-profession-id=DE] .wake-readout{display:none}
+.native-hud:is([data-profession-id=LP],[data-profession-id=MM],[data-profession-id=DE]) #wake-time{display:none}

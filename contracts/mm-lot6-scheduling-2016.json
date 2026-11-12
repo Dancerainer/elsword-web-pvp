@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "scope": "Target2016 ordinary MM Flick/Countdown LOT6 scheduling and direction compensation",
+  "sourceOriginalSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "targetExecuted": false,
+  "V5UsedForNewBehavior": false,
+  "sourceBodies": [
+    {
+      "endInclusive": "0x31f01aba",
+      "entry": "0x31effdd0",
+      "evidenceId": "ev_78b96a579f6a59c42e88506937cd8a8c93c706f7eb3a70704456aded332f2ebe",
+      "sha256": "862be2dcb4179e78ad52c09a159ae98aa2b4b2d67bf74ec657d620986dea9f5d",
+      "start": "0x31effdd0"
+    },
+    {
+      "endInclusive": "0x31ee95db",
+      "entry": "0x31ee7b60",
+      "evidenceId": "ev_bb745488a3e6fe6d1223031c9305fe131431549f96e5132824784dedf19436f9",
+      "sha256": "fd165499212749de6fa53dc82c2ed882ad7414cab3f3462b17c63e3af77a3b77",
+      "start": "0x31ee7b60"
+    }
+  ],
+  "defaults": {
+    "TIME_UNLOCK_AFTER_START": 9999,
+    "TARGET_RANGE": -1,
+    "RETARGET_COOLTIME_AFTER_ATTACK": -1
+  },
+  "rules": {
+    "start": "848>0 subtract dt and return even on crossing",
+    "active": "84c>0 subtract dt, then84c<=0 returns",
+    "attack": "878>0 requires actual754>=878 then set-1",
+    "retarget": "87c>0 subtract dt and return even on crossing",
+    "valid": "steer first;754>758+local writes758 and87c then searches from old aim",
+    "dead": "old resolved targetHP<=0+local clears all UID slots then searches from mesh",
+    "invalid": "local and750>=754>=758 search from mesh; do not immediately steer at new result",
+    "failedStore": "out-type starts0 and selector writes only on success, failure clears NPC slot, retains User pair",
+    "compensation": "mode2/3/4 steer at currentXYZ+(mesh47c*forwardX,0,mesh47c*forwardZ); no extra mesh translation"
+  },
+  "qualification": "Web object collection/identity and unchanged qualified vector turning remain host adapters; counters and timers are explicit instance values"
+}

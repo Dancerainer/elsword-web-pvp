@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "RevengeWait": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 6.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lifetime": 0.5,
+        "BillBoardType": "BT_NONE"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Revenge.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            384.0,
+            384.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RevengeWait",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 24447,
+        "line": 795
+      },
+      "declarationSha256": "9a644f32f4c0d6a6d0b75f334a4bdf7574a97bb9c29bde163682d8c1a22519ac",
+      "sourceTokenNormalization": "reference-V5 unquoted tokens; original byte hash retained",
+      "textures": {
+        "Revenge.dds": {
+          "file": "counter-v49/textures/Revenge-4d4b161d41.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 422,
+            "name": "Revenge.dds",
+            "rawPath": "raw/data/data048.kom/Revenge.dds",
+            "sha256": "4d4b161d415c64e01aaed2600b3dc6c47310ebaf0f2bdddd0de0337ca461fff5",
+            "bytes": 22000,
+            "signatureHex": "444453207c00000007100a0080000000"
+          }
+        }
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 146,
+      "name": "GameMinorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+      "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+      "bytes": 23778,
+      "signatureHex": "0d0a584d455348504c41594552202255"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 422,
+      "name": "Revenge.dds",
+      "rawPath": "raw/data/data048.kom/Revenge.dds",
+      "sha256": "4d4b161d415c64e01aaed2600b3dc6c47310ebaf0f2bdddd0de0337ca461fff5",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    }
+  ],
+  "nativeBinding": "contracts/lk-counter-native-v49.json",
+  "limits": [
+    "Original target runtime/GPU unmeasured; exact .09 registration and callback are offline target2016 evidence."
+  ]
+}

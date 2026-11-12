@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "scope": "Original436 recipient display only; existing TimeRing resource/revive behavior remains independent",
+  "buffTemplate": {
+    "raw": {
+      "ACCUMULATION_LIMIT": 1,
+      "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_CREST_OF_TIME",
+      "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+      "BUFF_TEMPLET_ID": 436,
+      "IS_WORLD_BUFF": 0,
+      "IS_DEBUF": 0,
+      "REGIST_TYPE": 0,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 55
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1
+        }
+      },
+      "DISPLAYER": {
+        "COMBINATION": {
+          "1": 3
+        },
+        "BDT_EFFECT_SET": {
+          "1": "EffectSet_ATT_Common_Crest_of_Time_Buff"
+        }
+      },
+      "BUFF_NAME": {
+        "$symbol": "STR_ID_31971",
+        "$unsupported": "native/global value not resolved"
+      },
+      "BUFF_DESC": {
+        "$symbol": "STR_ID_31972",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 26782
+    }
+  },
+  "effectSets": {
+    "EffectSet_ATT_Common_Crest_of_Time_Buff": {
+      "raw": {
+        "NAME": "EffectSet_ATT_Common_Crest_of_Time_Buff",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "NAME": "Buff_Crest_of_Time_Time",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 41938
+      }
+    }
+  },
+  "templates": {
+    "Buff_Crest_of_Time_Time": {
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100.0,
+        "Lifetime": 9999.0,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          -80.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "Crest_of_Time_Time_Start.X",
+        "TraceParticleList": "Buff_Crest_of_Time_Time01"
+      },
+      "events": [
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.01,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            200.0,
+            0.0,
+            200.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.51,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            200.0,
+            0.0,
+            -200.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 1.01,
+          "end": 1.5,
+          "fade": true,
+          "value": [
+            -200.0,
+            0.0,
+            -200.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 1.51,
+          "end": 2.0,
+          "fade": true,
+          "value": [
+            -200.0,
+            0.0,
+            200.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "EventTimer",
+          "start": 2.0,
+          "end": 2.0,
+          "fade": false,
+          "value": 0.001
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Buff_Crest_of_Time_Time",
+      "kind": "particle",
+      "declarationSha256": "c2b2a42fa39f6cdc6c0deb5acb09363420bbc8df4a8f8a325c78330e009aefdb",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "byteOffset": 302054,
+        "line": 8479
+      },
+      "textures": {},
+      "glb": "fx/meshes/Crest_of_Time_Time_Start.glb",
+      "poseData": "fx/meshes/Crest_of_Time_Time_Start.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 4.166666507720947,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false
+    },
+    "Buff_Crest_of_Time_Time01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.4,
+        "NumParticles": 20.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Ring2.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            0.2
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Buff_Crest_of_Time_Time01",
+      "kind": "particle",
+      "declarationSha256": "d0ab2a632490ed2354743763abd6640eab1bd303811ce5b08c2e5d830dd635f6",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "byteOffset": 302877,
+        "line": 8504
+      },
+      "textures": {
+        "Arme_Ring2.dds": {
+          "file": "fx/textures/Arme_Ring2-9fa65a5787.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 13,
+            "name": "Arme_Ring2.dds",
+            "rawPath": "raw/data/data048.kom/Arme_Ring2.dds",
+            "sha256": "9fa65a5787fc8896f49dfe0fd0a18776958235805091fc3ec85dec39c2cb2102",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    }
+  },
+  "meshDonor": {
+    "template": "Crest_of_Time_Time_Start",
+    "declarationSha256": "7b2e3116b49729f37943c60cbe01c7dea01453c267bfbf1ffbd99bd0bc3f8a2c",
+    "mesh": "Crest_of_Time_Time_Start.X",
+    "poseData": "fx/meshes/Crest_of_Time_Time_Start.pose.json",
+    "originalMeshSha256": "0ca1b76aa7120d9c44d87568bd65fc04aecfd4c6e67219ce577c08c148aeb5d7"
+  },
+  "sourceFiles": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\GameMajorParticle31.txt",
+      "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465"
+    }
+  ]
+}

@@ -1,0 +1,2233 @@
+{
+  "schemaVersion": 1,
+  "contractId": "rf-archenemy-trigger-source-v8",
+  "targetClientCombatMeasured": false,
+  "targetClientMeasuredTrajectories": 0,
+  "browserGpuUsed": false,
+  "auditBase": {
+    "fixedReferenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "productChangesAuthoredByThisAudit": false,
+    "allowedWrites": [
+      "contracts/rf-archenemy-trigger-source-v8.json",
+      "reports/rf-archenemy-trigger-source-v8.md"
+    ]
+  },
+  "sourceRows": [
+    {
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "absolutePath": "./.cache\\native-source-runtime\\X2Lib\\X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "lineSpans": [
+        [
+          474,
+          552
+        ],
+        [
+          5478,
+          5481
+        ],
+        [
+          13146,
+          13307
+        ],
+        [
+          13907,
+          13916
+        ],
+        [
+          15528,
+          15562
+        ],
+        [
+          15740,
+          15819
+        ],
+        [
+          15820,
+          15895
+        ],
+        [
+          22562,
+          22582
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "absolutePath": "./.cache\\native-source-runtime\\X2Lib\\X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "lineSpans": [
+        [
+          12192,
+          12243
+        ],
+        [
+          12245,
+          12261
+        ],
+        [
+          12852,
+          12902
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "relativePath": "X2Lib/X2DamageEffect.cpp",
+      "absolutePath": "./.cache\\native-source-runtime\\X2Lib\\X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "lineSpans": [
+        [
+          1270,
+          1275
+        ],
+        [
+          3663,
+          3676
+        ],
+        [
+          3982,
+          3992
+        ],
+        [
+          4150,
+          4155
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "relativePath": "X2Lib/X2DamageManager.cpp",
+      "absolutePath": "./.cache\\native-source-runtime\\X2Lib\\X2DamageManager.cpp",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "lineSpans": [
+        [
+          76,
+          76
+        ],
+        [
+          370,
+          376
+        ],
+        [
+          603,
+          636
+        ],
+        [
+          1315,
+          1315
+        ],
+        [
+          1590,
+          1590
+        ],
+        [
+          1634,
+          1636
+        ],
+        [
+          1963,
+          1963
+        ],
+        [
+          2359,
+          2359
+        ],
+        [
+          2581,
+          2581
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "absolutePath": "./.cache\\native-source-runtime\\X2Lib\\X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "lineSpans": [
+        [
+          30,
+          40
+        ],
+        [
+          76,
+          81
+        ],
+        [
+          1107,
+          1107
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "relativePath": "KTDXLIB/Always.h",
+      "absolutePath": "./.cache\\native-source-runtime\\KTDXLIB\\Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "lineSpans": [
+        [
+          3250,
+          3259
+        ],
+        [
+          3317,
+          3317
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target2016"
+    }
+  ],
+  "originalArchive": {
+    "path": "asset_sources/client/data/data036.kom",
+    "sha256": "0399edcd64e5edd5bdc5c63c86ea48ab8deef5a4490c72619584635034e661e3",
+    "sizeBytes": 20193975,
+    "verification": "read-only index/unpack in memory with upstream tools/kom.py; five raw entries byte-equal; no source execution"
+  },
+  "targetRows": [
+    {
+      "name": "RAVEN_FIGHTER.lua",
+      "archive": "asset_sources/client/data/data036.kom",
+      "archiveEntryOrdinal": 206,
+      "rawReadOnlyPath": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "sizeBytes": 183136,
+      "format": "compiled-KL82",
+      "originalArchiveExtractionByteEqualToUpstreamRaw": true,
+      "textLineNumbersAvailable": false
+    },
+    {
+      "name": "DamageEffect.lua",
+      "archive": "asset_sources/client/data/data036.kom",
+      "archiveEntryOrdinal": 49,
+      "rawReadOnlyPath": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "sizeBytes": 5409874,
+      "format": "compiled-KL82",
+      "originalArchiveExtractionByteEqualToUpstreamRaw": true,
+      "textLineNumbersAvailable": false
+    },
+    {
+      "name": "EffectSet.lua",
+      "archive": "asset_sources/client/data/data036.kom",
+      "archiveEntryOrdinal": 60,
+      "rawReadOnlyPath": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "sizeBytes": 4395607,
+      "format": "compiled-KL82",
+      "originalArchiveExtractionByteEqualToUpstreamRaw": true,
+      "textLineNumbersAvailable": false
+    },
+    {
+      "name": "Enum.lua",
+      "archive": "asset_sources/client/data/data036.kom",
+      "archiveEntryOrdinal": 74,
+      "rawReadOnlyPath": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "sizeBytes": 398092,
+      "format": "compiled-KL82",
+      "originalArchiveExtractionByteEqualToUpstreamRaw": true,
+      "textLineNumbersAvailable": false
+    },
+    {
+      "name": "NewSkillTempletVer2.lua",
+      "archive": "asset_sources/client/data/data036.kom",
+      "archiveEntryOrdinal": 182,
+      "rawReadOnlyPath": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "sizeBytes": 3548949,
+      "format": "compiled-KL82",
+      "originalArchiveExtractionByteEqualToUpstreamRaw": true,
+      "textLineNumbersAvailable": false
+    }
+  ],
+  "originalCallbackRouting": {
+    "unitRoutes": [
+      {
+        "attackerType": "AT_UNIT",
+        "collisionMethod": "UnitToUnit",
+        "attackResultLines": [
+          1315,
+          1590
+        ]
+      },
+      {
+        "attackerType": "AT_MESH",
+        "collisionMethod": "MeshToUnit",
+        "attackResultLines": [
+          2359
+        ]
+      },
+      {
+        "attackerType": "AT_MANUAL_COLLISION_DATA",
+        "collisionMethod": "CollisionDataToUnit",
+        "attackResultLines": [
+          2581
+        ]
+      }
+    ],
+    "effectRoute": {
+      "attackerType": "AT_EFFECT",
+      "collisionMethod": "EffectToUnit",
+      "effectAttackResultLine": 1963,
+      "effectAttackerInitializationLine": 1273,
+      "directOwnerCalls": [
+        {
+          "method": "DoDelegateProcessInAttackResult",
+          "line": 3989
+        },
+        {
+          "method": "ProcessAttackResult",
+          "line": 4154,
+          "conditions": [
+            "owner exists",
+            "owner type GUT_USER",
+            "attackType != AT_SPECIAL"
+          ]
+        }
+      ],
+      "directOwnerAttackResultPlayEffectCall": false,
+      "scope": "pinned V5 bytes; no target2016 executable consumer acquired"
+    },
+    "callbackReachability": "Unit AttackResult returns on RT_NO_DAMAGE or RT_SENSOR; successful path calls virtual AttackResultPlayEffect at User12852. Raven override calls User base first; the base returning does not terminate the Raven override."
+  },
+  "originalRavenReleaseGuards": [
+    {
+      "condition": "m_fArcEnemyEachTime <= 0",
+      "lines": [
+        479,
+        480
+      ],
+      "compileGuard": "BALANCE_PATCH_20110303 enabled in Always3317"
+    },
+    {
+      "condition": "m_DamageData.reActResult != RT_DUMMY_DAMAGE",
+      "lines": [
+        483,
+        483
+      ]
+    },
+    {
+      "condition": "m_vecArcEnemyData nonempty; first entry valid",
+      "lines": [
+        485,
+        496
+      ],
+      "compileGuard": "null-entry guard under X2OPTIMIZE_PARTICLE_AND_ETC_HANDLE"
+    },
+    {
+      "condition": "first held effect resolves live and has main mesh",
+      "lines": [
+        499,
+        506
+      ]
+    },
+    {
+      "condition": "defenderType == AT_UNIT",
+      "lines": [
+        508,
+        508
+      ]
+    },
+    {
+      "condition": "defender observable exists",
+      "lines": [
+        510,
+        510
+      ]
+    }
+  ],
+  "originalReleaseEffects": {
+    "firstSpearOnly": true,
+    "userOrNpcUIDLock": [
+      "Raven515-522"
+    ],
+    "positionAdvance": 150,
+    "attackTime": [
+      0,
+      9999
+    ],
+    "dirSpeed": 3000,
+    "nowLifeTime": 0,
+    "maxLifeTime": 0.35,
+    "landPos": 0,
+    "consumeFirstEntry": true,
+    "cooldownSeconds": 0.3,
+    "invalidMainMeshClearsAllHeldSpearData": true,
+    "attackTypeFilterInRavenOverride": false,
+    "meleeNameFilterInRavenOverride": false,
+    "source": "Raven526-550"
+  },
+  "targetEnums": {
+    "ATTACK_TYPE": {
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 71
+      },
+      "members": {
+        "AT_NORMAL": 0,
+        "AT_COMMAND": 2,
+        "AT_SPECIAL": 1,
+        "AT_NONE": -1
+      }
+    },
+    "REACT_TYPE": {
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 79
+      },
+      "members": {
+        "RT_BIG_DAMAGE": 2,
+        "RT_BOUNDING": 15,
+        "RT_REVENGE": 6,
+        "RT_UP": 4,
+        "RT_FLY": 5,
+        "RT_FLIP_DIFF_DIR": 21,
+        "RT_ABSORB_MAGIC": 19,
+        "RT_GUARD": 9,
+        "RT_AVOIDANCE": 20,
+        "RT_DRAG_UP": 16,
+        "RT_NO_DAMAGE": 0,
+        "RT_FLIP_DIFF_DIR_DUMMY_DAMAGE": 22,
+        "RT_SMALL_DAMAGE": 1,
+        "RT_SENSOR": 10,
+        "RT_THROW": 14,
+        "RT_CREATE_DAMAGE_EFFECT": 11,
+        "RT_DUMMY_DAMAGE": 7,
+        "RT_REFLECT": 17,
+        "RT_GROGGY": 8,
+        "RT_FLIP_SAME_DIR": 18,
+        "RT_CREATE_EFFECT_SET": 12,
+        "RT_DOWN": 3,
+        "RT_GRAPPLE": 13
+      }
+    },
+    "SKILL_TYPE": {
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 347
+      },
+      "members": {
+        "ST_GUILD_PASSIVE_MAGIC_ATTCK_PHYSIC_DEFENCE": 10,
+        "ST_PASSIVE_PHYSIC_DEFENCE": 4,
+        "ST_GUILD_PASSIVE_PHYSIC_ATTACK_MAGIC_DEFENCE": 9,
+        "ST_PASSIVE": 8,
+        "ST_ACTIVE": 6,
+        "ST_RELATIONSHIP_SKILL": 12,
+        "ST_SPECIAL_ACTIVE_GRADE_2": 15,
+        "ST_NONE": 0,
+        "ST_PASSIVE_PHYSIC_ATTACK": 1,
+        "ST_SPECIAL_ACTIVE": 7,
+        "ST_GUILD_PASSIVE": 11,
+        "ST_SPECIAL_ACTIVE_GRADE_3": 16,
+        "ST_BUFF": 5,
+        "ST_HYPER_ACTIVE_SKILL": 13,
+        "ST_PASSIVE_MAGIC_DEFENCE": 3,
+        "ST_PASSIVE_MAGIC_ATTACK": 2,
+        "ST_SPECIAL_ACTIVE_GRADE_1": 14
+      }
+    },
+    "DAMAGE_TRIGGER_TYPE": {
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 365
+      },
+      "members": {
+        "DTT_EVE_THOUSAND_STAR": 2,
+        "DTT_BURNING_PHANTOM": 9,
+        "DTT_SHARP_KICK_RELATE_ACTIVE_SKILL_INCREASE_MP_RATE": 4,
+        "DTT_REVOLVER_COMMAND": 10,
+        "DTT_CHAIN_REVOLVER_BLADE": 11,
+        "DTT_BURST_FIRE": 8,
+        "DTT_MOONLIGHT_RHAPSODY": 7,
+        "DTT_RAVEN_RAGE_ATTACK": 1,
+        "DTT_KILL_POINT": 12,
+        "DTT_KS_83": 13,
+        "DTT_MARK_OF_COMMANDER": 3,
+        "DTT_EVE_MANEUVER_ATTACK": 5,
+        "DTT_AUTOGUN_COMMAND": 14,
+        "DTT_PANDEMONIUM_FEAR": 6,
+        "DTT_NONE": 0,
+        "DTT_END": 15
+      }
+    }
+  },
+  "attackTriggerTypeMeaning": {
+    "field": "ATTACK_TRIGGER_TYPE",
+    "loader": "DamageManager.cpp373",
+    "enum": "DAMAGE_TRIGGER_TYPE",
+    "value1": "DTT_RAVEN_RAGE_ATTACK",
+    "ArchenemyEligibilityProven": false
+  },
+  "arcTargetDescription": {
+    "skillId": 24008,
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 21372
+    },
+    "mainDesc": "Summons 4 javelins to enhance your attacks. (Special/Hyper Skill excluded)",
+    "effectiveDesc": {
+      "1": "Nasod Spear (Magic): 761%\nKnockdown Rate Decrease: 15 Each hit\nDuration: 30 Seconds"
+    },
+    "interpretation": "excludes Special/Hyper skills; no literal melee-only, active-effect, or callback-routing declaration"
+  },
+  "668X": {
+    "state": {
+      "name": "RRF_DASH_JUMP_COMBO_X",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2671
+      },
+      "raw": {
+        "ANIM_NAME": "RRF_DASH_JUMP_COMBO_X",
+        "SPEED_Y": 300,
+        "ANIM_SPEED": 1.25,
+        "SPEED_X": 1000,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "CAN_PASS_UNIT_TIME0": {
+          "1": 0.2,
+          "2": 1
+        },
+        "SOUND_PLAY0": {
+          "1": 0.05,
+          "2": "RavenVoice_Shout02.ogg"
+        },
+        "SPEED_TIME0": {
+          "1": 300,
+          "2": -300,
+          "3": 0.4,
+          "4": 1
+        },
+        "SPEED_TIME1": {
+          "1": 700,
+          "2": -400,
+          "3": 0.5,
+          "4": 1
+        },
+        "BURNING_NASOD_HAND_POSSIBLE": 1,
+        "DELETE_EFFECT_SET_ON_DAMAGE_REACT": 1,
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": 2.78,
+          "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0.1,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 24,
+          "CAMERA_CRASH_TIME": 0.2,
+          "HIT_ADD_MP": 1,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 9,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "RE_ATTACK": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "DAMAGE": {
+            "MAGIC": 0.66
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    "nativeStart": {
+      "file": "X2GURaven.cpp",
+      "line": 15748,
+      "attackerType": "AT_MANUAL_COLLISION_DATA"
+    },
+    "nativeDamageEmission": {
+      "eventTime": 0.26,
+      "mpFlush": 10,
+      "file": "X2GURaven.cpp",
+      "lines": [
+        15773,
+        15794
+      ],
+      "effectSet": "EffectSet_RRF_DashJumpX",
+      "fallbackCreateInstance": "RRF_DASH_JUMP_X",
+      "compileGuard": "BALANCE_PATCH_20120329 enabled in Always3259"
+    },
+    "effectSet": {
+      "name": "EffectSet_RRF_DashJumpX",
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 126322
+      },
+      "raw": {
+        "NAME": "EffectSet_RRF_DashJumpX",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "RRF_DASH_JUMP_X",
+          "EFFECT_TYPE": 1
+        },
+        "EFFECT1": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Flare_Raven_RFF_DashJumpAttackX1_Burst01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT2": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Impact_Raven_RFF_DashJumpAttackX1_Burst01",
+          "EFFECT_TYPE": 8
+        }
+      }
+    },
+    "damageEffect": {
+      "name": "RRF_DASH_JUMP_X",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 215313
+      },
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RRF_DASHJUMP_X",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "FORCE_DOWN": 2.78,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 24,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.12,
+          "CLEAR_SCREEN_COLOR_A": 0.3,
+          "STOP_TIME_ATT": 0,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.2,
+          "RATE_MODIFIER": 0.4,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 1,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 23,
+          "REACT_TYPE": 1,
+          "ATTACK_TYPE": 2,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "DAMAGE": {
+            "MAGIC": 0.66
+          }
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ComboZ4aFire.ogg"
+        }
+      }
+    },
+    "declaredAttackTypeLabel": "AT_COMMAND (2)",
+    "declaredDamageTypeLabel": "DT_MAGIC (1)",
+    "declaredDamageMagic": 0.66,
+    "actualHitSourceUnderV5": "independent AT_EFFECT, despite owner state attackerType manual",
+    "triggerDecision": "exclude effect hit under fixed-V5 callback-route candidate; user says this 668X must not trigger",
+    "targetClientConsumerMeasured": false,
+    "doNotExcludeFollowupsByComboPrefix": [
+      "RRF_DASH_JUMP_COMBO_XX",
+      "RRF_DASH_JUMP_COMBO_XX_LANDING"
+    ]
+  },
+  "boundedTargetMeleeCompatibility": [
+    {
+      "state": "RSI_COMBO_Z",
+      "damageEffect": {
+        "name": "DamageEffect_RF_COMBO_Z",
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 424397
+        },
+        "raw": {
+          "ATTACK_TIME_START": 0.092,
+          "ATTACK_TIME_END": 0.2,
+          "MAIN_EFFECT_NAME": "Raven_WeaponDummy01",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 5,
+            "FORCE_DOWN": 9.25,
+            "TECH_POINT": 116,
+            "CAMERA_CRASH_TIME": 0.2,
+            "HIT_ADD_MP": 5,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 1.54
+            }
+          }
+        }
+      },
+      "effectSet": {
+        "name": "EffectSet_RF_COMBO_Z",
+        "sourcePc": {
+          "prototype": 3,
+          "instruction": 261852
+        },
+        "raw": {
+          "NAME": "EffectSet_RF_COMBO_Z",
+          "EFFECT0": {
+            "START_TIME": 0,
+            "BONE_NAME": "Bip01",
+            "POSITION_OFFSET_Y": 30,
+            "POSITION_OFFSET_X": 140,
+            "SCALE_Y": 2.6,
+            "NAME": "DamageEffect_RF_COMBO_Z",
+            "SCALE_X": 2.6,
+            "SCALE_Z": 2.6,
+            "EFFECT_TYPE": 1,
+            "TRACE_MORE": 1
+          }
+        }
+      },
+      "mainEffectName": "Raven_WeaponDummy01",
+      "traceMore": 1,
+      "classification": "explicit target2016 body-melee compatibility adapter; not a measured or recovered 2016 AttackResultPlayEffect consumer"
+    },
+    {
+      "state": "RSI_COMBO_X",
+      "damageEffect": {
+        "name": "DamageEffect_RF_COMBO_X",
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 424468
+        },
+        "raw": {
+          "ATTACK_TIME_START": 0.2,
+          "ATTACK_TIME_END": 0.35,
+          "MAIN_EFFECT_NAME": "Raven_WeaponDummy01",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 5,
+            "FORCE_DOWN": 13.88,
+            "STOP_TIME_ATT": 0.1,
+            "HIT_ADD_MP": 5,
+            "TECH_POINT": 429,
+            "CAMERA_CRASH_TIME": 0.2,
+            "CLEAR_SCREEN": 1,
+            "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+            "BACK_SPEED_X": 600,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "PHYSIC": 2.86
+            }
+          }
+        }
+      },
+      "effectSet": {
+        "name": "EffectSet_RF_COMBO_X",
+        "sourcePc": {
+          "prototype": 3,
+          "instruction": 261876
+        },
+        "raw": {
+          "NAME": "EffectSet_RF_COMBO_X",
+          "EFFECT0": {
+            "START_TIME": 0,
+            "BONE_NAME": "Bip01",
+            "POSITION_OFFSET_Y": 40,
+            "POSITION_OFFSET_X": 85,
+            "SCALE_Y": 1.6,
+            "NAME": "DamageEffect_RF_COMBO_X",
+            "SCALE_X": 1.6,
+            "SCALE_Z": 1.6,
+            "EFFECT_TYPE": 1,
+            "TRACE_MORE": 1
+          }
+        }
+      },
+      "mainEffectName": "Raven_WeaponDummy01",
+      "traceMore": 1,
+      "classification": "explicit target2016 body-melee compatibility adapter; not a measured or recovered 2016 AttackResultPlayEffect consumer"
+    },
+    {
+      "state": "RSI_DASH_COMBO_Z",
+      "damageEffect": {
+        "name": "DamageEffect_RF_DASH_COMBO_Z",
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 424436
+        },
+        "raw": {
+          "ATTACK_TIME_START": 0.2,
+          "ATTACK_TIME_END": 0.3,
+          "MAIN_EFFECT_NAME": "Raven_WeaponDummy01",
+          "DAMAGE_TIME": 9999,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "USE_GLOBAL_TIME": 1,
+          "NOT_CULL": 1,
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 10,
+            "FORCE_DOWN": 13.88,
+            "TECH_POINT": 311,
+            "HIT_ADD_MP": 5,
+            "BACK_SPEED_Y": 0,
+            "CAMERA_CRASH_TIME": 0.2,
+            "CLEAR_SCREEN": 1,
+            "DAMAGE_TYPE": 0,
+            "HIT_TYPE": 3,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 2,
+            "BACK_SPEED_X": {
+              "$expression": "ADDVN",
+              "left": {
+                "$symbol": "INIT_PHYSIC.WALK_SPEED",
+                "$unsupported": "native/global value not resolved"
+              },
+              "right": 250,
+              "$unsupported": "unresolved arithmetic operand"
+            },
+            "DAMAGE": {
+              "PHYSIC": 1.8
+            }
+          }
+        }
+      },
+      "effectSet": {
+        "name": "EffectSet_RF_DASH_COMBO_Z",
+        "sourcePc": {
+          "prototype": 3,
+          "instruction": 261864
+        },
+        "raw": {
+          "NAME": "EffectSet_RF_DASH_COMBO_Z",
+          "EFFECT0": {
+            "START_TIME": 0,
+            "BONE_NAME": "Bip01",
+            "POSITION_OFFSET_Y": 30,
+            "POSITION_OFFSET_X": 170,
+            "SCALE_Y": 2.6,
+            "NAME": "DamageEffect_RF_DASH_COMBO_Z",
+            "SCALE_X": 2.6,
+            "SCALE_Z": 2.6,
+            "EFFECT_TYPE": 1,
+            "TRACE_MORE": 1
+          }
+        }
+      },
+      "mainEffectName": "Raven_WeaponDummy01",
+      "traceMore": 1,
+      "classification": "explicit target2016 body-melee compatibility adapter; not a measured or recovered 2016 AttackResultPlayEffect consumer"
+    }
+  ],
+  "otherIndependentComboEffects": [
+    {
+      "name": "Damage_Effect_Raven_ROT_Dash_ZX",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385195
+      },
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "RAVEN_ROT_DASH_ZX_ATTACK_BOX",
+        "ATTACK_TIME_START": 0.15,
+        "ATTACK_TIME_END": 0.35,
+        "EFFECT_TYPE": 1,
+        "USE_GLOBAL_TIME": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "STOP_TIME_ATK": 0.1,
+          "CAMERA_CRASH_GAP": 20,
+          "FORCE_DOWN": 11.63,
+          "BACK_SPEED_Y": 1700,
+          "CAMERA_CRASH_TIME": 0.5,
+          "HIT_ADD_MP": 6.89,
+          "TECH_POINT": 693,
+          "BACK_SPEED_X": 2075,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": {
+            "$symbol": "HIT_TYPE.HT_METEL_PUNCH_HIT",
+            "$unsupported": "target enum member absent"
+          },
+          "REACT_TYPE": 5,
+          "ARRANGED_FLY": 1,
+          "RE_ATTACK": 0,
+          "DAMAGE": {
+            "PHYSIC": 3.85
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "TRIGGER_COUNT": 30,
+          "SCALE_X": 1,
+          "SCALE_Z": 1,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "HellDiveP01",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "FireDamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_RRF_ZZXfrontXX",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385411
+      },
+      "raw": {
+        "DAMAGE_TIME": 18,
+        "MAIN_EFFECT_NAME": "RAVEN_RF_XXX_ATTACK_BOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 2,
+          "LOCK_ON_TYPE": 4
+        },
+        "BLACKHOLE_DATA": {
+          "DRAGGING_SPEED": 500,
+          "DRAGGING_RANGE": 500
+        },
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.32
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": 3.13,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 97,
+          "BACK_SPEED_X": -300,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.77,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.62
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "BACK_SPEED_X": 750,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 22,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "PVP_RATE": 0.56,
+          "HIT_ADD_MP": 0.22,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.31
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01_D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EnchantHand_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EMK_BigBurst_P03",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_Big_Burst.ogg"
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_ROT_DASH_JUMP_COMBO_ZX_Ground",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 201343
+      },
+      "raw": {
+        "ATTACK_TIME_START": 0.01,
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "Mesh_ROT_DASH_JUMP_COMBO_ZX_Ground_Dummy",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "STOP_TIME_DEF": 0.3,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0,
+          "CAMERA_CRASH_GAP": 20,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 150,
+          "CAMERA_CRASH_TIME": 0.5,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_X": 750,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 24,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.31
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "FORCE_FLY": 1,
+          "ATTACK_TYPE": 2
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 185539
+      },
+      "raw": {
+        "ATTACK_TIME_START": 0.1,
+        "DAMAGE_TIME": 3,
+        "MAIN_EFFECT_NAME": "Vibration_Shooting_Impact",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "STOP_TIME_DEF": 0,
+          "STOP_RESERVE_TIME_DEF": 0,
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_GAP": 15,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 50,
+          "CAMERA_CRASH_TIME": 0.3,
+          "STOP_RESERVE_TIME_ATT": 0,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0,
+          "BACK_SPEED_X": 0,
+          "ATTACK_TYPE": 1,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 7,
+          "RE_ATTACK": 0,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "DAMAGE": {
+            "MAGIC": 2.39
+          }
+        },
+        "START_PARTICLE0": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "SA_RVC_DeadlyRaid_P02",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "SA_RVC_DeadlyRaid_P04",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "RWT_BARRAGE_ATTACK_Flame_Smoke02",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "RWT_BARRAGE_ATTACK_Flame_Smoke01",
+          "POSITION_TYPE": 3
+        },
+        "START_PARTICLE4": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "RWT_BARRAGE_ATTACK_Spark",
+          "POSITION_TYPE": 3
+        }
+      }
+    }
+  ],
+  "comboDeclarationInventory": [
+    {
+      "state": "RSI_COMBO_Z",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 125
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_ZZ",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 164
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.176,
+          "2": 0.256
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 1,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_ZZZ",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 201
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.163,
+          "2": 0.222
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_ZZZZ",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 233
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.245,
+          "2": 0.35
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 5,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_X",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 417
+      },
+      "attackWindows": {},
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_XX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 462
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.33,
+          "2": 0.41
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_XXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 506
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_JUMP_COMBO_Z",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 828
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.11,
+          "2": 100
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 1,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_JUMP_COMBO_X",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 873
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.17,
+          "2": 0.23
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 3,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_COMBO_Z",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 542
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_COMBO_ZZ",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 586
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.33,
+          "2": 0.42
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 3,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_COMBO_X",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 658
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.27,
+          "2": 0.4
+        },
+        "ATTACK_TIME1": {
+          "1": 0.65,
+          "2": 0.81
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_DASH_COMBO_ZX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1830
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": {
+        "1": "EffectSet_RF_DASH_ZX",
+        "2": 0
+      },
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_JUMP_COMBO_Z",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 706
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.1,
+          "2": 0.16
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 1,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RRF_DASH_JUMP_COMBO_X",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2671
+      },
+      "attackWindows": {},
+      "declaredAttackType": 2,
+      "declaredReactType": 1,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_STANDUP_ATTACK_FRONT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10802
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.43,
+          "2": 0.5
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 3,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_ZZX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 312
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.26,
+          "2": 0.33
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_COMBO_ZZXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 364
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.37,
+          "2": 0.437
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 4,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RRF_COMBO_ZZXFRONTX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2579
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.1,
+          "2": 0.51
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RRF_COMBO_ZZXFRONTXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2617
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": {
+        "1": "EffectSet_A_RRF_ZZXfrontXX",
+        "2": 0.275
+      },
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1503
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.32,
+          "2": 0.433
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXdownX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1786
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1555
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.381,
+          "2": 0.48
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX2",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1609
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.315,
+          "2": 0.375
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX3",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1672
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.35,
+          "2": 0.433
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXX4",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1725
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.35,
+          "2": 0.471
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 5,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_COMBO_XXfrontXXdownX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1769
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.45,
+          "2": 0.5
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": {
+        "1": "EffectSet_RSI_OVER_TAKER_COMBO_XXfrontXXdownX_SPINE",
+        "2": 0.3
+      },
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1877
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.31,
+          "2": 100
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_LANDING",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1901
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": {
+        "1": "EffectSet_ROT_DASH_JUMP_COMBO_ZX_Ground",
+        "2": 0.01
+      },
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZXX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1927
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.143,
+          "2": 0.2
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_JUMP_COMBO_ZZ",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 758
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.166,
+          "2": 0.3
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 3,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_DASH_JUMP_COMBO_ZZ_Landing",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 767
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RRF_DASH_JUMP_COMBO_XX",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2720
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0,
+          "2": 100
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 2,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RRF_DASH_JUMP_COMBO_XX_LANDING",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2788
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.01,
+          "2": 0.04
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 4,
+      "stateEffectSetList": {
+        "1": "EffectSet_RRF_LandImpact",
+        "2": 0
+      },
+      "declaredCreateDamageEffectName": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    },
+    {
+      "state": "RSI_STANDUP_ATTACK_BACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10845
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.46,
+          "2": 0.53
+        },
+        "ATTACK_TIME1": {
+          "1": 0.86,
+          "2": 0.93
+        }
+      },
+      "declaredAttackType": 2,
+      "declaredReactType": 3,
+      "stateEffectSetList": null,
+      "declaredCreateDamageEffectName": null,
+      "interpretation": "declaration-only; empty windows alone do not prove no native manual/mesh attack"
+    }
+  ],
+  "activeDeclarationInventory": [
+    {
+      "state": "RSI_A_RF_MEGADRILL_BREAK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2389
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.29,
+          "2": 0.34
+        },
+        "ATTACK_TIME1": {
+          "1": 0.7,
+          "2": 0.85
+        },
+        "ATTACK_TIME2": {
+          "1": 1.2,
+          "2": 2
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": 24203,
+      "stateEffectSetList": {
+        "1": "Effectset_SI_A_RF_MEGADRILL_BREAK_MEMO",
+        "2": 0
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_SHADOW_STEP_Z",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1060
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.01,
+          "2": 0.3
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": null,
+      "stateEffectSetList": null,
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_SHADOW_STEP_Z_UPGRADE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1116
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.01,
+          "2": 0.3
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": null,
+      "stateEffectSetList": null,
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RWT_FLAME_SWORD_GROUND",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 1377
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.245,
+          "2": 0.35
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 1,
+      "appliedSkillId": 24201,
+      "stateEffectSetList": {
+        "1": "Effectset_A_RWT_FLAME_SWORD_MEMO_FX",
+        "2": 0,
+        "3": "Effectset_A_RWT_FLAME_SWORD_MEMO_Damage",
+        "4": 0.26
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RWT_FLAME_SWORD_FLY",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 8079
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.233,
+          "2": 0.433
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 4,
+      "appliedSkillId": 24201,
+      "stateEffectSetList": {
+        "1": "Effectset_A_RWT_FLAME_SWORD_MEMO_FX",
+        "2": 0,
+        "3": "Effectset_A_RWT_FLAME_SWORD_MEMO_Damage",
+        "4": 0.26
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RRF_HELL_DIVE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2027
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.933,
+          "2": 1.14
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": 24202,
+      "stateEffectSetList": null,
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RRF_HELL_DIVE_UPGRADE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2133
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.933,
+          "2": 1.14
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": 24202,
+      "stateEffectSetList": null,
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RRF_LIMIT_CRUSHER_REVENGE_ATTACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2976
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.2,
+          "2": 0.73
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 2,
+      "appliedSkillId": 24205,
+      "stateEffectSetList": {
+        "1": "EffectSet_A_RRF_LimitCrusher_Finish",
+        "2": 0.01
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RRF_LIMIT_CRUSHER_AVOID_ATTACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3057
+      },
+      "attackWindows": {
+        "ATTACK_TIME0": {
+          "1": 0.07,
+          "2": 0.53
+        }
+      },
+      "declaredAttackType": null,
+      "declaredReactType": 5,
+      "appliedSkillId": 24205,
+      "stateEffectSetList": {
+        "1": "EffectSet_RF_LIMIT_CRUSHER_PASS_ATTACK",
+        "2": 0
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_ROT_WEAPON_BREAK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2417
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "appliedSkillId": null,
+      "stateEffectSetList": {
+        "1": "EffectSet_A_ROT_WeaponBreak",
+        "2": 0
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    },
+    {
+      "state": "RSI_A_RRF_ENCHANT_HAND",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 3349
+      },
+      "attackWindows": {},
+      "declaredAttackType": null,
+      "declaredReactType": null,
+      "appliedSkillId": null,
+      "stateEffectSetList": {
+        "1": "EffectSet_A_RRF_EnchantHand",
+        "2": 0
+      },
+      "evidenceClass": "target2016-static-declaration; V5 route adaptation separate"
+    }
+  ],
+  "activeEffectBoundary": {
+    "weaponBreak": {
+      "skillId": 24204,
+      "skillType": 6,
+      "skillSourcePc": {
+        "prototype": 0,
+        "instruction": 22038
+      },
+      "state": {
+        "name": "RSI_A_ROT_WEAPON_BREAK",
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 2417
+        },
+        "raw": {
+          "ANIM_NAME": "SI_A_ROT_WEAPON_BREAK",
+          "PLAY_TYPE": 2,
+          "TRANSITION": 0,
+          "LAND_CONNECT": 0,
+          "UNIT_SLASH_TRACE0": {
+            "1": 0,
+            "2": 0,
+            "3": 100,
+            "4": 0
+          },
+          "SPEED_X": 725,
+          "DISABLE_ATTACK_BOX": {
+            "1": "Sword"
+          },
+          "SOUND_PLAY0": {
+            "1": 0.263,
+            "2": "Raven_Slash3.ogg"
+          },
+          "SOUND_PLAY1": {
+            "1": 0.315,
+            "2": "Raven_Weapon_Break.ogg"
+          },
+          "EFFECT_SET_LIST": {
+            "1": "EffectSet_A_ROT_WeaponBreak",
+            "2": 0
+          },
+          "IS_ATTACK_STATE": 1
+        }
+      },
+      "effectSet": {
+        "name": "EffectSet_A_ROT_WeaponBreak",
+        "sourcePc": {
+          "prototype": 3,
+          "instruction": 10383
+        },
+        "raw": {
+          "NAME": "EffectSet_A_ROT_WeaponBreak",
+          "EFFECT0": {
+            "NAME": "DamageEffect_Raven_Weapon_Break",
+            "POSITION_OFFSET_Y": -25,
+            "POSITION_OFFSET_X": 150,
+            "START_TIME": 0.2,
+            "BONE_NAME": "Bip01_Spine1",
+            "EFFECT_TYPE": 1
+          },
+          "EFFECT1": {
+            "START_TIME": 0.01,
+            "SCALE_Y": 0.85,
+            "ROTATE_X": 175,
+            "NAME": "DamageEffect_A_Raven_WeaponBreak_FX",
+            "SCALE_X": 0.85,
+            "SCALE_Z": 0.85,
+            "BONE_NAME": "Bip01_Spine1",
+            "EFFECT_TYPE": 1,
+            "TRACE_MORE": 1
+          },
+          "EFFECT2": {
+            "NAME": "Raven_Hand_Fire01",
+            "START_TIME": 0.01,
+            "BONE_NAME": "Dummy2_Lhand",
+            "EFFECT_TYPE": 8,
+            "TRACE": 1
+          },
+          "CAMERA_SHAKE0": {
+            "TWO_DIR_TIME_GAP": 0.02,
+            "START_TIME": 0.3,
+            "TWO_DIR_TIME": 0.2,
+            "TWO_DIR_GAP": 20,
+            "SHAKE_TYPE": 3
+          }
+        }
+      },
+      "damageEffect": {
+        "name": "DamageEffect_Raven_Weapon_Break",
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 66493
+        },
+        "raw": {
+          "DAMAGE_TIME": 9999,
+          "ATTACK_TIME_START": 0.01,
+          "MAIN_EFFECT_NAME": "Mesh_ROT_Raven_Weapon_Break",
+          "ATTACK_TIME_END": 0.1,
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "REFLECT": 0,
+          "FOLLOW_LINE": 0,
+          "USE_GLOBAL_TIME": 1,
+          "DAMAGE_DATA": {
+            "CAMERA_CRASH_GAP": 50,
+            "STOP_TIME_ATT": 0,
+            "TECH_POINT": 150,
+            "CAMERA_CRASH_TIME": 0.2,
+            "CLEAR_SCREEN": 0,
+            "BUFF_FACTOR_RELATIVE_SKILL_ID": 24204,
+            "STOP_TIME_DEF": 0.1,
+            "HIT_ADD_MP": 1.5,
+            "PVP_RATE": 0.48,
+            "DAMAGE_TYPE": 1,
+            "HIT_TYPE": 1,
+            "REACT_TYPE": 2,
+            "BUFF_FACTOR_ID": {
+              "1": 42
+            },
+            "ATTACK_TRIGGER_TYPE": 1,
+            "APPLIED_SKILL_ID": 24204,
+            "DAMAGE": {
+              "MAGIC": 7.77
+            }
+          },
+          "HIT_PARTICLE0": {
+            "PARTICLE_NAME": "RF_HitP01",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "PARTICLE_NAME": "RF_HitP02",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "PARTICLE_NAME": "RF_HitP03",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "PARTICLE_NAME": "RF_HitP04",
+            "POSITION_TYPE": 2
+          }
+        }
+      },
+      "triggerDecision": "excluded by fixed-V5 independent-effect routing candidate",
+      "target2016ConsumerUnknown": true,
+      "oldWebSimulationReleaseDoesNotProveOriginal2016Release": true
+    },
+    "enchantHand": {
+      "skillId": 24206,
+      "damageEffect": {
+        "name": "DamageEffect_A_RRF_EnchantHand",
+        "sourcePc": {
+          "prototype": 20,
+          "assignmentInstruction": 216645
+        },
+        "raw": {
+          "DAMAGE_TIME": 9999,
+          "MAIN_EFFECT_NAME": "RRF_EnchantHand_Attack_Box",
+          "EFFECT_TYPE": 1,
+          "DAMAGE_DATA": {
+            "STOP_TIME_DEF": 0.25,
+            "CAMERA_CRASH_GAP": 20,
+            "PVP_RATE": 0.6,
+            "BACK_SPEED_Y": 0,
+            "CLEAR_SCREEN": 1,
+            "STOP_TIME_ATT": 0,
+            "TECH_POINT": 200,
+            "CAMERA_CRASH_TIME": 0.3,
+            "RATE_MODIFIER": 0.4,
+            "HIT_ADD_MP": 2,
+            "BACK_SPEED_X": 50,
+            "DAMAGE_TYPE": 1,
+            "HIT_TYPE": 20,
+            "REACT_TYPE": 2,
+            "ATTACK_TYPE": 0,
+            "CAN_REVENGE": 0,
+            "NO_DETONATION": 1,
+            "ATTACK_TRIGGER_TYPE": 1,
+            "APPLIED_SKILL_ID": 24206,
+            "DAMAGE": {
+              "MAGIC": 12.6
+            }
+          },
+          "PASSIVE_PARTICLE0": {
+            "SCALE_X": 0.3,
+            "SCALE_Z": 0.3,
+            "SCALE_Y": 0.3,
+            "BONE_NAME": "Dummy01",
+            "PARTICLE_NAME": "Raven_Explosion2_P01",
+            "POSITION_TYPE": 0
+          },
+          "PASSIVE_PARTICLE1": {
+            "SCALE_X": 0.3,
+            "SCALE_Z": 0.3,
+            "SCALE_Y": 0.3,
+            "BONE_NAME": "Dummy01",
+            "PARTICLE_NAME": "Raven_Explosion2_P04",
+            "POSITION_TYPE": 0
+          },
+          "PASSIVE_PARTICLE2": {
+            "SCALE_X": 0.5,
+            "SCALE_Z": 0.3,
+            "SCALE_Y": 0.3,
+            "BONE_NAME": "Dummy01",
+            "PARTICLE_NAME": "Raven_Explosion2_P02",
+            "POSITION_TYPE": 0
+          },
+          "PASSIVE_PARTICLE3": {
+            "BONE_NAME": "Dummy01",
+            "PARTICLE_NAME": "Raven_ReadySL_P05",
+            "POSITION_TYPE": 0
+          },
+          "PASSIVE_PARTICLE4": {
+            "BONE_NAME": "Dummy01",
+            "PARTICLE_NAME": "EnchantHand_PM",
+            "POSITION_TYPE": 0
+          },
+          "HIT_PARTICLE0": {
+            "PARTICLE_NAME": "RF_HitP01",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "PARTICLE_NAME": "RF_HitP02",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "PARTICLE_NAME": "RF_HitP04",
+            "POSITION_TYPE": 2
+          }
+        }
+      },
+      "target2016ConsumerUnknown": true
+    },
+    "rule": "ordinary/active description alone does not grant all effect hits a character callback; independent active damage remains unmeasured target boundary"
+  },
+  "productAuditFindings": {
+    "baseGateMissing": "stable source AttackResult routing; base gate permitted any non-core, non-special, non-aura effect including 668X projectile and passive damage",
+    "baseGateConditions": [
+      "origin.kind != core",
+      "ATTACK_TYPE != 1",
+      "effect.name != RAVEN_HYPER_AURA"
+    ],
+    "rootCorrectionScope": "character accepted hits plus exactly three target body-melee proxy identities; reject special/aura/spear/self and RT_NO_DAMAGE/RT_DUMMY_DAMAGE/RT_SENSOR declaration results",
+    "reactResultBoundary": "current source adapter uses declared REACT_TYPE as resolved result; arcNativeInput retains dummyDamage:false for fixture compatibility. If reflection/guard/dummy routing later rewrites result, pass resolved result rather than reusing the declaration. This is not full native DamageManager parity.",
+    "specialSkillTypeBoundary": "target enums include legacy ST_SPECIAL_ACTIVE7 as well as 14/15/16 and hyper13; ATTACK_TYPE1 is the primary source data filter; do not infer eligibility from current owner skill/state alone."
+  },
+  "evidenceBoundaries": [
+    "Pinned V5 callback is a version reference, not target2016 executable behavior.",
+    "Target KL82 declarations are byte-verified against the original client archive, not executed.",
+    "Target compiled Lua has no meaningful text source line numbers; sourcePc prototype/instruction replaces invented line citations.",
+    "Three melee proxies are explicit compatibility, never target-client measured evidence.",
+    "No browser, GPU, upstream writes, deployment, or product/test edits performed by this audit."
+  ]
+}

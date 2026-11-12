@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "target": {"skillId":29403,"factorId":357,"templateId":335,"behavior":"BBT_CHANGE_HYPER_CHARGE_SPEED","changeType":3,"maxLevelValue":1.4},
+  "input": "User-specified +50% final DP gain option; not raw socket points",
+  "composition": "DP gain = (1 + final equipment bonus) * product(BCT_PERCENT buffs) + independent Overlimit attack bonus",
+  "example": {"equipment":0.5,"buff":1.4,"gainMultiplier":2.1},
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "consumers": [
+    {"file":"X2GUAdd.cpp","sha256":"b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a","lines":[12032,12045],"role":"GetEffectiveIncreaseDPValue = GetHyperChargeSpeed + passive delta; fixed Add contains later reconstruction"},
+    {"file":"X2GameUnit.h","sha256":"072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5","lines":[2629,2629],"role":"GetHyperChargeSpeed reads AdditionalHyperCharge result"},
+    {"file":"X2GameUnit.cpp","sha256":"764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923","lines":[12115,12506],"role":"update option with default modifier1; base stat0"},
+    {"file":"X2BuffTemplet.h","sha256":"729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b","lines":[893,945],"role":"base0 temporarily1; multiply final option and percent buff; subtract temporary1"}
+  ],
+  "unsupported": ["Raw-point FIX/RELATION factors require original option conversion; no such target factor is enabled here","Target2016 executable consumer has not been measured"]
+}

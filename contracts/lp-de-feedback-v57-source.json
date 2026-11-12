@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "sourceGit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+  "originalExeSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "derivedPeSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "targetExecuted": false,
+  "evidenceClass": "original2016 static bytes and selected original resources; qualified fixedV5 input-mask adapter; current Web regressions separately recorded",
+  "reusedPhysicsEvidence": "ev_a47437860e8e653e3dc29050fdd293041d2e82a9e52a1b983265c01cee475084",
+  "reusedSupportResetEvidence": "ev_4f0dc62c203751a6ffbb42fa903e315557a72c501e72d3ecf9f567a8a98a11db",
+  "reusedContracts": [
+    {
+      "path": "contracts/add-analysis-v53/ADD_PULSE_CANNON_2016.md",
+      "sha256": "2952405490f37399a01e36b9c18c4ebfa9749a84788a0f8f7427f6c036115efe"
+    },
+    {
+      "path": "contracts/add-analysis-v53/LP_STASIS_FIELD_2016.md",
+      "sha256": "cdbaa892aa37fa3033a5c55dd428166026dbec89120d6be99be47de925313fe8"
+    },
+    {
+      "path": "contracts/add-analysis-v53/DE_VOID_FIELD_TERMINAL_2016.md",
+      "sha256": "c46eda610bc97077cc13516112d3784017d8b9f88e33eb31a4a322df33322bd8"
+    },
+    {
+      "path": "contracts/add-analysis-v53/DE_PHYSICS_CLOSURE_2016.md",
+      "sha256": "67e35f82d59522447084178db73dbd8ad01c08be16607d41f11d373212eb3beb"
+    }
+  ],
+  "buffTemplate437": {
+    "raw": {
+      "ACCUMULATION_LIMIT": 1,
+      "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_VOID_FIELD",
+      "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+      "BUFF_TEMPLET_ID": 437,
+      "IS_WORLD_BUFF": 0,
+      "IS_DEBUF": 1,
+      "REGIST_TYPE": 0,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 5,
+          "2": 12,
+          "3": 13,
+          "4": 51
+        },
+        "BBT_ATTACK_IMPOSSIBLE": {},
+        "BBT_CHANGE_WALK_RUN_SPEED": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7
+        },
+        "BBT_CHANGE_JUMP_POWER": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7
+        },
+        "BBT_NEVER_MOVE": {
+          "IS_GRAVITY": 0
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1
+        }
+      },
+      "DISPLAYER": {
+        "COMBINATION": {
+          "1": 3
+        },
+        "BDT_EFFECT_SET": {
+          "1": "EffectSet_ATT_Void_Field_Hit"
+        }
+      },
+      "BUFF_NAME": {
+        "$symbol": "STR_ID_31969",
+        "$unsupported": "native/global value not resolved"
+      },
+      "BUFF_DESC": {
+        "$symbol": "STR_ID_31970",
+        "$unsupported": "native/global value not resolved"
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 26866
+    },
+    "source": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    }
+  },
+  "buffFactor475": {
+    "raw": {
+      "BUFF_TEMPLET_ID": 437,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 5,
+          "2": 12,
+          "3": 13,
+          "4": 51
+        },
+        "BBT_ATTACK_IMPOSSIBLE": {},
+        "BBT_CHANGE_WALK_RUN_SPEED": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7,
+          "SWAP_VALUE": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          }
+        },
+        "BBT_CHANGE_JUMP_POWER": {
+          "BUFF_CHANGE_TYPE": 0,
+          "BUFF_RELATION_TYPE": 7,
+          "SWAP_VALUE": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          }
+        },
+        "BBT_NEVER_MOVE": {}
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          }
+        }
+      }
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "instruction": 29420
+    },
+    "source": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+    }
+  },
+  "sourceRanges": [
+    {
+      "role": "never-move-object-rtti-name",
+      "start": "0x33261a54",
+      "endExclusive": "0x33261a74",
+      "bytes": 32,
+      "sha256": "f8610f966b98769d903f0003aaec3eac33be71f2437454392bdfd0288360e446",
+      "hex": "94a30c33000000002e3f41564358324e657665724d6f76654279427566664040"
+    },
+    {
+      "role": "never-move-behavior-rtti-name",
+      "start": "0x3326b0b0",
+      "endExclusive": "0x3326b0e0",
+      "bytes": 48,
+      "sha256": "c6b3f306743a7ac5dfefe4f753a068e0ecb83445b149edc0b52e66df83056869",
+      "hex": "94a30c33000000002e3f4156435832427566664e657665724d6f76654265686176696f7254656d706c65744040000000"
+    },
+    {
+      "role": "never-move-behavior-vtable",
+      "start": "0x330a46e4",
+      "endExclusive": "0x330a4708",
+      "bytes": 36,
+      "sha256": "c5db0a5b9d4e3e2d1352e146672d7035534a23b90fe5afe07da9bea645c97956",
+      "hex": "10a6ad3250ebab31e0cfac32b0f5ac32e040ad3260d0ac32c0cdac3210ceac3230f6ac32"
+    },
+    {
+      "role": "never-move-behavior-create",
+      "start": "0x32ada970",
+      "endExclusive": "0x32ada9ba",
+      "bytes": 74,
+      "sha256": "28cf3b6d1754aba44b83d83f78bedaa24cbb255797fcd80a1c98587cc1ee0a89",
+      "hex": "515333db6a20895c2408e8ffb2100083c4043bc37422d9ee89580489580888580cc700e4460a33d95010d950148bc8d958186689581ceb0233c98b44240c3bcb89085b7403ff410459c3"
+    },
+    {
+      "role": "never-move-behavior-apply",
+      "start": "0x32accfe0",
+      "endExclusive": "0x32acd059",
+      "bytes": 121,
+      "sha256": "dd2b1c647987acad717cb4f816204a5d4ce110ccfb7b016953bdb07a3cfb9381",
+      "hex": "51568bf18b46088d4c2404518b4c241050c744240c00000000e822bfecff84c0744b807e0c00753e578b7c24148b178b82240100006a018bcfffd08b108d4e1089118b50048951048b40080fb6561c6a008941088b44241c525183c034508bcfe8ab5272ff5fb0015e59c20c0032c05e59c20c00cccccccccc"
+    },
+    {
+      "role": "never-move-behavior-remove",
+      "start": "0x32acd060",
+      "endExclusive": "0x32acd074",
+      "bytes": 20,
+      "sha256": "168b35137c7f54c878534c11534d526541d393d1c141941563c47e60a7642a58",
+      "hex": "8b4424088b4c240483c03450e8bf4572ffc20800"
+    },
+    {
+      "role": "never-move-append-39a4",
+      "start": "0x321f22f0",
+      "endExclusive": "0x321f23bf",
+      "bytes": 207,
+      "sha256": "4df10c5e39222581d9528e69df20e0f417ca02c72b32e6fd74c1e12de6ae3ea6",
+      "hex": "6aff68506aeb3264a1000000005056a120d2263333c4508d44240864a3000000008bf16a20e864399f0083c40485c074448b4c2418c7002c0d01338b118950048b49048948088b4c241cc7400c00000000c700bc4802338b118950108b51048950148b49088a54242089481888501cc6401d00eb0233c08bc8894c242085c07403ff400cc74424100000000085c074148d442420508d8ea4390000e8008301008b4c242083c8ff8944241085c9740d01410c75088b118b026a01ffd08b4c240864890d00000000595e83c40cc21000"
+    },
+    {
+      "role": "never-move-erase-39a4",
+      "start": "0x321f1630",
+      "endExclusive": "0x321f1671",
+      "bytes": 65,
+      "sha256": "f687d0f13c3dc6da500558d776102ce0dadcc2a39e540a5893b017fdaaa78b89",
+      "hex": "56578bf98b8fa43900008b87a83900003bc8740f8b54240c525051e8805f010083c40c3987a83900007411508d442410508d8fa4390000e8348b01005f5ec20400"
+    },
+    {
+      "role": "user-physics-position-consumer",
+      "start": "0x31f70660",
+      "endExclusive": "0x31f706d0",
+      "bytes": 112,
+      "sha256": "221458ad2517374ef041f2d4e6f3752fca043b24e7ce14d00280d32cbde0027e",
+      "hex": "8b96a43900003b96a839000074628b8ea83900008379fc0074568b41fc8b50108b78148b49fc80791c008b4018899424e0000000898424e8000000741ed98424e0000000d99c2498000000d98424e8000000d99c24a0000000eb158994249800000089bc249c000000898424a0000000"
+    }
+  ],
+  "nativeFacts": [
+    "RTTI type CX2BuffNeverMoveBehaviorTemplet has primary vtable330a46e4; apply slot+8=32accfe0, remove slot+14=32acd060",
+    "32accfe0 reads actual target v124(1) XYZ when its existing apply latch is clear and calls321f22f0 with saved XYZ and member1c gravity",
+    "321f22f0 creates CX2NeverMoveByBuff primary330248bc, writes10/14/18 XYZ,1c gravity and appends actor39a4",
+    "32acd060 removes the matching identity through321f1630, which uses actor39a4/39a8",
+    "31f70660..31f706c9 reads the final39a4 registration; gravity0 restores XYZ, nonzero restores XZ; velocities are not zeroed here",
+    "The physics restore precedes remaining near-line/final SetPos; support reset31f5d110/31fbe000 erases the registration independently of the Buff timer"
+  ],
+  "qualifiedInputMask": {
+    "fixedV5Commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "fileSha256": {
+      "X2GUUser.cpp": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "X2GameUnit.cpp": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "X2GUElsword_SwordMan.cpp": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d"
+    },
+    "reference": "fixedV5 X2GUUser.cpp28806..28885; X2GameUnit.cpp12918..12920",
+    "behavior": "AttackImpossible masks Z/X and eight skill slots, preserving directions and awakening. No replacement stun reaction.",
+    "nativeOrdinal5DispatchIndependentlyClosed": false
+  },
+  "qualifiedJumpPost": {
+    "reference": "fixedV5 X2GUElsword_SwordMan.cpp5856..5885",
+    "behavior": "JumpReady EventProcess changes state, reads JumpSpeed, then unconditionally adds LINE_RADIUS to bodyY; no positive JumpSpeed gate. NeverMove restores the saved point in the next physics phase; it is not a global post-state SetPos veto."
+  },
+  "boundaries": [
+    "Primary RTTI and direct call bytes are static evidence, not original battle execution or exact floating-point history.",
+    "Pulse formed extra-loop local10 DP value remains an original machine/TLS instance input; no default500 is fabricated.",
+    "Stasis accepted wrapped-damage observation is the existing Web integration boundary; tests separately check original helper radius."
+  ]
+}

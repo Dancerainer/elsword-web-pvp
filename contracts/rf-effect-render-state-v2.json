@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "fixed-V5-source-consumer + locked-Babylon-9.29.0 + actual-NullEngine-draw",
+  "target2016ClientMeasured": false,
+  "browserGPUComparison": "parent-task-recorded-separately",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceFiles": [
+    {
+      "path": "KTDXLIB/KTDGParticleSystem.cpp",
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "consumers": {
+        "sequenceDepthWriteDefaultTrue": 2701,
+        "sequenceAlphaTestDefaultFalse": 2843,
+        "quadBlendAndDepthScope": [3374, 3400],
+        "meshAlphaBlendAndDepthFields": [4806, 4816],
+        "quadForcedDepthWriteFalse": [17, 18]
+      }
+    },
+    {
+      "path": "KTDXLIB/KTDGXRenderer.cpp",
+      "sha256": "b3074301549d625ed1fbee6cafddb58d0f47002ba82107a506528861fdf97ae5",
+      "consumers": {
+        "scopedRenderParamState": [628, 642],
+        "restoreOriginalStateStack": [683, 683],
+        "optionalAlphaTestRef136Greater": [631, 635]
+      }
+    }
+  ],
+  "babylonFiles": [
+    {
+      "path": "@babylonjs/core/Engines/Extensions/engine.alpha.pure.js",
+      "sha256": "0db43aa99021f8f3806e829bd0b766d5bebd0b11fbbcadd8b040bfd5cd3ff09a",
+      "consumer": "same cached alpha mode returns without resetting custom blend factors"
+    },
+    {
+      "path": "@babylonjs/core/Meshes/mesh.pure.js",
+      "sha256": "e9ddcb55af0e64211628fcb3938c50271cc672836737618e1ec023e208400bc1",
+      "consumer": "setAlphaMode -> forceDepthWrite -> material.bind -> actual draw -> material.unbind"
+    },
+    {
+      "path": "@babylonjs/core/Materials/material.pure.js",
+      "sha256": "c62aca5e39455f05bf09f8b07107eb2250ed30f4a4c24cfefdc9e35070841217",
+      "consumer": "onBind precedes material depth-write/function override; onUnBind precedes its restoration"
+    },
+    {
+      "path": "@babylonjs/core/States/alphaCullingState.js",
+      "sha256": "d9d5499f83a5c6f449df966e4e0e9051fa6f78d1fe2023cdc7e789e6b05c02df",
+      "consumer": "read cached incoming factors; restore through public setter to retain dirty flags"
+    }
+  ],
+  "confirmedDefects": [
+    "custom native factors persisted after unbind; ordinary same-mode transparent PBR draws inherited DESTALPHA/ONE instead of Babylon alpha combine",
+    "transparent mesh alpha mode disabled depth writes despite original explicit/default ZWriteEnable=true"
+  ],
+  "materialInventory": {
+    "sceneCount": 16,
+    "sceneMaterialDeclarations": {"OPAQUE": 2567, "MASK": 116, "BLEND": 604},
+    "rfCharacterMaterialDeclarations": {"OPAQUE": 8},
+    "rfCharacterBaseAlpha": 1,
+    "currentMeshSequenceTemplates": 120,
+    "currentMeshSequenceExplicitAlphaTests": 0,
+    "currentConvertedMeshMaterialMode": "BLEND"
+  },
+  "verification": {
+    "baselineReproduction": "existing v20 actual-draw test fails when asserting the next normal material uses 770,771,1,1",
+    "drawRegressions": "four repeated frames, two meshes sharing a native material, different native factors, PBR map/fade/opaque/alpha-test passes, depth-write/function, original TRUE/default/FALSE mesh clones",
+    "sourceParametersUnchanged": "particle counts, draw counts, source factors, timeline, lifetimes, texture alpha, actor opacity and map material classifications",
+    "headlessLimitation": "actual scene draw commands and engine state are exercised; NullEngine does not rasterize or provide GPU timing"
+  }
+}

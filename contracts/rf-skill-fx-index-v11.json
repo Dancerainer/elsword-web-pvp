@@ -1,0 +1,4794 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "VALKYRIESJAVELIN_EXPLOSION_03": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100.0,
+        "Lifetime": 1.2,
+        "NumParticles": 1.0,
+        "TriggerTime": 1.0,
+        "Layer": 14.0,
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Mesh": "ADD_Effect_Ground_Explosion_01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.4,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.8,
+          "end": 1.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.4,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.7,
+            0.5,
+            0.7
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            },
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "VALKYRIESJAVELIN_EXPLOSION_03",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 263267,
+        "line": 7270
+      },
+      "declarationSha256": "503bb24af5b462ed0d389a645afea0d1bb7dfac07c8620a76c0d45647e73e472",
+      "textures": {},
+      "glb": "fx/meshes/ADD_Effect_Ground_Explosion_01.glb",
+      "poseData": "fx/meshes/ADD_Effect_Ground_Explosion_01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "VALKYRIESJAVELIN_EXPLOSION_02": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 250.0,
+        "Lifetime": 1.0,
+        "NumParticles": 200.0,
+        "TriggerTime": 0.6,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          {
+            "random": [
+              -40.0,
+              150.0
+            ]
+          },
+          {
+            "random": [
+              -100.0,
+              100.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          -200.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "elsword_SA_rageCutter_smogPoint.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.4,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.2,
+            0.1,
+            0.1,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": {
+            "random": [
+              1.5,
+              2.0
+            ]
+          }
+        },
+        {
+          "property": "Scale",
+          "start": 0.4,
+          "end": 1.0,
+          "fade": true,
+          "value": {
+            "random": [
+              0.3,
+              0.5
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                200.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "VALKYRIESJAVELIN_EXPLOSION_02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 262309,
+        "line": 7245
+      },
+      "declarationSha256": "812d55bdb81faecf0d50c1d07b871aba645f3bde39ec004e108f8ad5506cd01e",
+      "textures": {
+        "elsword_SA_rageCutter_smogPoint.dds": {
+          "file": "fx/textures/elsword_SA_rageCutter_smogPoint-65868ac4a1.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data118.kom",
+            "ordinal": 211,
+            "name": "elsword_SA_rageCutter_smogPoint.dds",
+            "rawPath": "raw/data/data118.kom/elsword_SA_rageCutter_smogPoint.dds",
+            "sha256": "65868ac4a144e80094001ec038bac5d37676a6cee9eb31a30a40b51bce1d5493",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          }
+        }
+      }
+    },
+    "VALKYRIESJAVELIN_EXPLOSION_01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 250.0,
+        "Lifetime": 0.6,
+        "NumParticles": 200.0,
+        "TriggerTime": 0.6,
+        "Layer": 15.0,
+        "Emitradius": [
+          {
+            "random": [
+              -50.0,
+              50.0
+            ]
+          },
+          {
+            "random": [
+              -40.0,
+              150.0
+            ]
+          },
+          {
+            "random": [
+              -100.0,
+              100.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          -200.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EL_FIRE_03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            0.3,
+            0.3,
+            0.8
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            0.2,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": {
+            "random": [
+              1.0,
+              1.5
+            ]
+          }
+        },
+        {
+          "property": "Scale",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": {
+            "random": [
+              0.3,
+              0.5
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                200.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "VALKYRIESJAVELIN_EXPLOSION_01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 261370,
+        "line": 7220
+      },
+      "declarationSha256": "d6fc278d94f685aa6a6fa85679ffa36a221fcfd9e873231444e086d9bc98d98c",
+      "textures": {
+        "EL_FIRE_03.dds": {
+          "file": "fx/textures/EL_FIRE_03-ddc8afcf5e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data142.kom",
+            "ordinal": 76,
+            "name": "EL_FIRE_03.dds",
+            "rawPath": "raw/data/data142.kom/EL_FIRE_03.dds",
+            "sha256": "ddc8afcf5e31140235281a62e933e4e39f18e08f44e2fde5fc1fee7d547dd8e8",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          }
+        }
+      }
+    },
+    "UnitStunA": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 9999.0,
+        "NumParticles": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ApplyUnitScale": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "State_Stun.tga"
+        },
+        {
+          "property": "Texture",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": "State_Stun2.tga"
+        },
+        {
+          "property": "Texture",
+          "start": 0.3,
+          "end": 0.3,
+          "fade": false,
+          "value": "State_Stun.tga"
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            128.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": [
+            128.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.3,
+          "fade": false,
+          "value": [
+            128.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "EventTimer",
+          "start": 0.5,
+          "end": 0.5,
+          "fade": false,
+          "value": 0.01
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "UnitStunA",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 101115,
+        "line": 3018
+      },
+      "declarationSha256": "7695ad88a99000bee3e4ce852fe31aacf45efa9be34a55ef8dcee96e234a20bc",
+      "textures": {
+        "State_Stun.tga": {
+          "file": "fx/textures/State_Stun-d0cd7f34d3.png",
+          "width": 150,
+          "height": 150,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 463,
+            "name": "State_Stun.tga",
+            "rawPath": "raw/data/data048.kom/State_Stun.tga",
+            "sha256": "d0cd7f34d3c81f2e3d3f49020ab4d19eb327c40f2197f10343651607dc024480",
+            "bytes": 90044,
+            "signatureHex": "00000200000000000000000096009600"
+          }
+        },
+        "State_Stun2.tga": {
+          "file": "fx/textures/State_Stun2-bfc4f00188.png",
+          "width": 150,
+          "height": 150,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 464,
+            "name": "State_Stun2.tga",
+            "rawPath": "raw/data/data048.kom/State_Stun2.tga",
+            "sha256": "bfc4f0018843729eff6a5f03e6de11c3e4d05bf7cdbe70cb74725363c4d9a146",
+            "bytes": 90044,
+            "signatureHex": "00000200000000000000000096009600"
+          }
+        }
+      }
+    },
+    "SI_SA_RRF_WILD_CHARGE_Smoke": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "meshRenderType": "RT_REAL_COLOR",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "NumParticles": 70.0,
+        "Gravity": [
+          0.0,
+          {
+            "random": [
+              -50.0,
+              -100.0
+            ]
+          },
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -200.0,
+              250.0
+            ]
+          },
+          {
+            "random": [
+              0.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          }
+        ],
+        "UseLand": true,
+        "Lifetime": 0.5,
+        "Emitrate": 70.0,
+        "TriggerTime": 0.5,
+        "BillBoardType": "BT_ALL"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Smoke.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            30.0,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            90.0,
+            90.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            -400.0,
+            100.0,
+            {
+              "random": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_RRF_WILD_CHARGE_Smoke",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 213698,
+        "line": 6660
+      },
+      "declarationSha256": "1060fea4ef62503557a0cb0fe24bc78a1980e5adcb6d38ac9a0c60935fe0f7ee",
+      "sourceFamily": "game-minor",
+      "sourceTokenNormalization": "reference-V5 native uppercase unquoted tokens; original quoted names and source hash retained",
+      "textures": {
+        "Smoke.dds": {
+          "file": "fx/textures/Smoke-cd0af4fdbd.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 554,
+            "name": "smoke.dds",
+            "rawPath": "raw/data/data048.kom/smoke.dds",
+            "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "SI_SA_AHD_ENERGY_VOID_P02": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 8.0,
+        "Lifetime": 0.3,
+        "NumParticles": 8.0,
+        "TriggerTime": 0.3,
+        "Layer": 15.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "aisha_active_guillotinePress_circleParticle.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.4,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.4,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.3
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            800.0,
+            800.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SI_SA_AHD_ENERGY_VOID_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 99,
+        "name": "GameMajorParticle17.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+        "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+        "bytes": 306699,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 126461,
+        "line": 3677
+      },
+      "declarationSha256": "8fa35673ac4e33302a24eb2772a1c6e764ade84b842542bcaa3072446476d1cb",
+      "textures": {
+        "aisha_active_guillotinePress_circleParticle.dds": {
+          "file": "fx/textures/aisha_active_guillotinePress_circleParticle-c8b3e543ae.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data116.kom",
+            "ordinal": 201,
+            "name": "aisha_active_guillotinePress_circleParticle.dds",
+            "rawPath": "raw/data/data116.kom/aisha_active_guillotinePress_circleParticle.dds",
+            "sha256": "c8b3e543ae8068528a101bce29574a87ebc4d696457efe8d731f215655c682ae",
+            "bytes": 22000,
+            "signatureHex": "444453207c00000007100a0080000000"
+          }
+        }
+      }
+    },
+    "SA_EL_SONIC_ASSAULT_STAB_P02": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.8,
+        "NumParticles": 200.0,
+        "TriggerTime": 0.3,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -15.0,
+              50.0
+            ]
+          },
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "random": [
+              -15.0,
+              15.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          100.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EL_FIRE_03.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.65,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            90.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.16,
+          "end": 0.33,
+          "fade": true,
+          "value": [
+            10.0,
+            10.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                300.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SA_EL_SONIC_ASSAULT_STAB_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 97,
+        "name": "GameMajorParticle15.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle15.txt",
+        "sha256": "af56dcd9d5fe59e21eb46000d69cfcee86fcc23fb4e0e4382aa3842f8a070807",
+        "bytes": 332579,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 34108,
+        "line": 960
+      },
+      "declarationSha256": "4b60f471211647e867d0d66f13bc821057060fa6b673082b33a66d4156528606",
+      "textures": {
+        "EL_FIRE_03.dds": {
+          "file": "fx/textures/EL_FIRE_03-ddc8afcf5e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data142.kom",
+            "ordinal": 76,
+            "name": "EL_FIRE_03.dds",
+            "rawPath": "raw/data/data142.kom/EL_FIRE_03.dds",
+            "sha256": "ddc8afcf5e31140235281a62e933e4e39f18e08f44e2fde5fc1fee7d547dd8e8",
+            "bytes": 5616,
+            "signatureHex": "444453207c00000007100a0040000000"
+          }
+        }
+      }
+    },
+    "Riding_Pet_Coca_P05": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.5,
+        "NumParticles": 50.0,
+        "TriggerCount": 5.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Ring2.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.2,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            700.0,
+            700.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Riding_Pet_Coca_P05",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 95,
+        "name": "GameMajorParticle13.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle13.txt",
+        "sha256": "889af066c76e37cd16e6c06565be8b7149ea5cbeba88fa330d804f6599ecf593",
+        "bytes": 363952,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 333640,
+        "line": 9138
+      },
+      "declarationSha256": "778da5aebef68c5bbdd7cdeda279f0440b8197dce26e0634e5c7abe621309bf9",
+      "textures": {
+        "Arme_Ring2.dds": {
+          "file": "fx/textures/Arme_Ring2-9fa65a5787.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 13,
+            "name": "Arme_Ring2.dds",
+            "rawPath": "raw/data/data048.kom/Arme_Ring2.dds",
+            "sha256": "9fa65a5787fc8896f49dfe0fd0a18776958235805091fc3ec85dec39c2cb2102",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "Riding_Mobi_Red_01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10.0,
+        "Lifetime": 0.1,
+        "NumParticles": 10.0,
+        "TriggerTime": 0.3,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "WhitePoint.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.06,
+          "fade": true,
+          "value": [
+            1.0,
+            0.1,
+            0.0,
+            {
+              "random": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.06,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                600.0,
+                700.0
+              ]
+            },
+            {
+              "random": [
+                600.0,
+                700.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                200.0,
+                300.0
+              ]
+            },
+            {
+              "random": [
+                200.0,
+                300.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              0.8,
+              1.0
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Riding_Mobi_Red_01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 121,
+        "name": "GameMajorParticle37.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle37.txt",
+        "sha256": "2c32a84e7e7c0eef9c8eaba11f02dfe40fc2e6b2bc9c75475073d4dfe1d9dc9e",
+        "bytes": 333886,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 139515,
+        "line": 3950
+      },
+      "declarationSha256": "873f945c9c236d63aba734511242c11d22f73238d9371456d3146dc54fbb7bf1",
+      "textures": {
+        "WhitePoint.dds": {
+          "file": "fx/textures/WhitePoint-83183cc04b.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 496,
+            "name": "WhitePoint.dds",
+            "rawPath": "raw/data/data048.kom/WhitePoint.dds",
+            "sha256": "83183cc04bbb66f24241abf8de986595d83ae3054f317dc4c8435e41e596b27d",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "Raven_OT_VKJ_Spear_Mesh02": {
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.8,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            2.0,
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_OT_VKJ_Spear_Mesh02",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 343394,
+        "line": 10785
+      },
+      "declarationSha256": "68b09933783342aa8f20c8e77ef60b0093f7ac4fc0ac4b55728db45f42e7b282",
+      "textures": {},
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "Raven_OT_VKJ_Spear_Mesh01": {
+      "fields": {
+        "MeshName": "Raven_SI_SA_ROT_VKJ_Spear_Mesh01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13.0,
+        "LifeTime": 2.1,
+        "NOT_CHECK_LAND_TIME": 0.6,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.033,
+          "end": 0.366,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.466,
+          "end": 0.466,
+          "fade": false,
+          "value": [
+            0.0,
+            -2500.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_OT_VKJ_Spear_Mesh01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 342767,
+        "line": 10765
+      },
+      "declarationSha256": "1b4b8a27bbb236fc7dde38f5ca656d5a505b44024a80844e134709c82e2d495c",
+      "textures": {},
+      "glb": "fx/meshes/Raven_SI_SA_ROT_VKJ_Spear_Mesh01.glb",
+      "poseData": "fx/meshes/Raven_SI_SA_ROT_VKJ_Spear_Mesh01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 2.2333333492279053,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "LobbyLevelUp01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30.0,
+        "Lifetime": 0.8,
+        "NumParticles": 100.0,
+        "TriggerTime": 0.8,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -80.0,
+              80.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -80.0,
+              80.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          -50.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Sphere.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.65,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            170.0,
+            170.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.25,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            134.0,
+            134.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            {
+              "random": [
+                200.0,
+                300.0
+              ]
+            },
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "LobbyLevelUp01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 214766,
+        "line": 6814
+      },
+      "declarationSha256": "153fe2cd94903df76553242dcf4e4def6cf8f673336dd2d85bc6aa6e1b384e5c",
+      "textures": {
+        "Explosion_Sphere.dds": {
+          "file": "fx/textures/Explosion_Sphere-a7b20861c3.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 154,
+            "name": "Explosion_Sphere.dds",
+            "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+            "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "Heal_Effect01_Loop": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60.0,
+        "Lifetime": 0.8,
+        "NumParticles": 100.0,
+        "TriggerTime": 0.6,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          80.0,
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Heal01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            0.4,
+            0.7,
+            1.0,
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            64.0,
+            64.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            64.0,
+            350.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Heal_Effect01_Loop",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 96,
+        "name": "GameMajorParticle14.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+        "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+        "bytes": 305895,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 99590,
+        "line": 2846
+      },
+      "declarationSha256": "0ba49d72df173ebbeb3d085f837243662bf6dd33a25bef757a8a2f79ba9daac5",
+      "textures": {
+        "Heal01.dds": {
+          "file": "fx/textures/Heal01-3b5728b455.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 272,
+            "name": "Heal01.dds",
+            "rawPath": "raw/data/data048.kom/Heal01.dds",
+            "sha256": "3b5728b455c51674a2e0d96859f255ffee48cc13a121c33151f2380b2a24b6cd",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "Heal_Effect01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60.0,
+        "Lifetime": 0.8,
+        "NumParticles": 100.0,
+        "TriggerTime": 0.6,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          {
+            "random": [
+              80.0,
+              60.0
+            ]
+          },
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Heal01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            0.4,
+            0.7,
+            1.0,
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            64.0,
+            64.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            64.0,
+            350.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Heal_Effect01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 213963,
+        "line": 6790
+      },
+      "declarationSha256": "669d5d1a9aff3bbcbeb1ee0531ed6d9d2ac287ed537a251066fe5fba038ceb28",
+      "textures": {
+        "Heal01.dds": {
+          "file": "fx/textures/Heal01-3b5728b455.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 272,
+            "name": "Heal01.dds",
+            "rawPath": "raw/data/data048.kom/Heal01.dds",
+            "sha256": "3b5728b455c51674a2e0d96859f255ffee48cc13a121c33151f2380b2a24b6cd",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "DG_G_Potion_Baby_P07_Loop": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.6,
+        "NumParticles": 100.0,
+        "TriggerTime": 99999.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Heal01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                1.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            80.0,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            80.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "DG_G_Potion_Baby_P07_Loop",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 96,
+        "name": "GameMajorParticle14.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+        "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+        "bytes": 305895,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 101998,
+        "line": 2917
+      },
+      "declarationSha256": "0efc7ce21ebd7de75b7ef61f99d728b37f472caebdee1a02a159b594becb3a0b",
+      "textures": {
+        "Heal01.dds": {
+          "file": "fx/textures/Heal01-3b5728b455.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 272,
+            "name": "Heal01.dds",
+            "rawPath": "raw/data/data048.kom/Heal01.dds",
+            "sha256": "3b5728b455c51674a2e0d96859f255ffee48cc13a121c33151f2380b2a24b6cd",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "DG_G_Potion_Baby_P06_Loop": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60.0,
+        "Lifetime": 0.8,
+        "NumParticles": 100.0,
+        "TriggerTime": 99999.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          {
+            "random": [
+              -50.0,
+              50.0
+            ]
+          },
+          0.0
+        ],
+        "Gravity": [
+          0.0,
+          100.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Sphere.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.6,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            0.6,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            70.0,
+            70.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              0.5,
+              1.5
+            ]
+          }
+        },
+        {
+          "property": "Scale",
+          "start": 0.4,
+          "end": 0.8,
+          "fade": true,
+          "value": {
+            "random": [
+              0.3,
+              0.5
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                80.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "DG_G_Potion_Baby_P06_Loop",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 96,
+        "name": "GameMajorParticle14.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+        "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+        "bytes": 305895,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 101152,
+        "line": 2893
+      },
+      "declarationSha256": "57ca4c57913d8eb051509300119dc137b2294764c681e1adada72fe519321e09",
+      "textures": {
+        "Explosion_Sphere.dds": {
+          "file": "fx/textures/Explosion_Sphere-a7b20861c3.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 154,
+            "name": "Explosion_Sphere.dds",
+            "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+            "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 91,
+      "name": "GameMajorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+      "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+      "bytes": 316223,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 102,
+      "name": "GameMajorParticle2.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle2.txt",
+      "sha256": "4556ecc2a7c2768f47e47c177a71ea33b8b8d45e0fc97ee5c198adcc606ec9c5",
+      "bytes": 298090,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 113,
+      "name": "GameMajorParticle3.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+      "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+      "bytes": 283881,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 124,
+      "name": "GameMajorParticle4.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+      "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+      "bytes": 342260,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 135,
+      "name": "GameMajorParticle5.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle5.txt",
+      "sha256": "c390af8d48d964d298fc299981a8d29d3c87a1e766b7bad5d383ab3603b06b41",
+      "bytes": 358466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 140,
+      "name": "GameMajorParticle6.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle6.txt",
+      "sha256": "8d75723131050ce1194d7503d132af75849ee6e3feea4dcb8f6f798c392028e7",
+      "bytes": 322342,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 141,
+      "name": "GameMajorParticle7.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle7.txt",
+      "sha256": "a875c52daa5c9812fd8cc5d655b7cef61d941c48414649a66400a3aec9503ac2",
+      "bytes": 327981,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 142,
+      "name": "GameMajorParticle8.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle8.txt",
+      "sha256": "75a8c9253a2dcb3a10dafb5e0c6713be59b3ca3f51d2b59b200fdb24c7bab081",
+      "bytes": 331668,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 143,
+      "name": "GameMajorParticle9.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle9.txt",
+      "sha256": "9d77c4ef0dbb53b79388eaab5cba4d8415f765edbc4a884fa663c0410f0fa3e7",
+      "bytes": 288144,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 92,
+      "name": "GameMajorParticle10.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+      "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+      "bytes": 313708,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 93,
+      "name": "GameMajorParticle11.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+      "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+      "bytes": 356374,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 94,
+      "name": "GameMajorParticle12.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle12.txt",
+      "sha256": "67fe5d27a86e699569045646ac3361a3b806b2f77ee8ea0863b0405553dbbd92",
+      "bytes": 319547,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 95,
+      "name": "GameMajorParticle13.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle13.txt",
+      "sha256": "889af066c76e37cd16e6c06565be8b7149ea5cbeba88fa330d804f6599ecf593",
+      "bytes": 363952,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 96,
+      "name": "GameMajorParticle14.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+      "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+      "bytes": 305895,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 97,
+      "name": "GameMajorParticle15.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle15.txt",
+      "sha256": "af56dcd9d5fe59e21eb46000d69cfcee86fcc23fb4e0e4382aa3842f8a070807",
+      "bytes": 332579,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 98,
+      "name": "GameMajorParticle16.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+      "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+      "bytes": 226239,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 99,
+      "name": "GameMajorParticle17.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+      "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+      "bytes": 306699,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 100,
+      "name": "GameMajorParticle18.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle18.txt",
+      "sha256": "8fcd53672b23df603314ea5d5d9a195d3313f30a0b3edc382e81e2aa0066fe51",
+      "bytes": 339337,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 101,
+      "name": "GameMajorParticle19.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle19.txt",
+      "sha256": "792dcc2b03803e01b79b7181e8184de531991c6bd162b92ffb60332daf920c3c",
+      "bytes": 197651,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 103,
+      "name": "GameMajorParticle20.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle20.txt",
+      "sha256": "7a574255221172355431399c94663779405c9b85c0686e4375aa708c5149cf98",
+      "bytes": 332331,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 104,
+      "name": "GameMajorParticle21.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+      "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+      "bytes": 298427,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 105,
+      "name": "GameMajorParticle22.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle22.txt",
+      "sha256": "ceb08a5c9dc945c58c412564b2304dddf1df195f0f7c44672b84359f7f252556",
+      "bytes": 299984,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 106,
+      "name": "GameMajorParticle23.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle23.txt",
+      "sha256": "f05604057e5d534d5067dea52c342111ae8a509753fc8be9729c0f7130cd92ca",
+      "bytes": 268645,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 107,
+      "name": "GameMajorParticle24.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+      "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+      "bytes": 282323,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 108,
+      "name": "GameMajorParticle25.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle25.txt",
+      "sha256": "1a6e0020da434a5b0288bf56f0f66abcf128171848648590c910879febbfa5d7",
+      "bytes": 178906,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 109,
+      "name": "GameMajorParticle26.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle26.txt",
+      "sha256": "94886684931010b82ce36172eee975c3799ec781b8de35ac627ec5d50f0fe4df",
+      "bytes": 75231,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 110,
+      "name": "GameMajorParticle27.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle27.txt",
+      "sha256": "2d533f02ba08d7db4cb0605cd516ecb1b68292ef206e10c9e580c68cd0aa958e",
+      "bytes": 217027,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 111,
+      "name": "GameMajorParticle28.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle28.txt",
+      "sha256": "41d3749c8528e8727f4fddbcde62f607e24fd494e81092254058bee54439eaf5",
+      "bytes": 319,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 112,
+      "name": "GameMajorParticle29.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+      "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+      "bytes": 282466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 114,
+      "name": "GameMajorParticle30.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle30.txt",
+      "sha256": "87c94a0776ed70461c861cd24b2be6990ba172ed5b858e2d86dcedc861349ad6",
+      "bytes": 331716,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 115,
+      "name": "GameMajorParticle31.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+      "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+      "bytes": 326380,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 116,
+      "name": "GameMajorParticle32.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+      "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+      "bytes": 298501,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 117,
+      "name": "GameMajorParticle33.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle33.txt",
+      "sha256": "c33c5989e06db46ebf8c8679e58cbb54e714fa51df7e40b9b455c5cd11dffc07",
+      "bytes": 312517,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 118,
+      "name": "GameMajorParticle34.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle34.txt",
+      "sha256": "ef79e3391e244ed14094f3eb11537262bf7fe237164a69f5e0262e1d8c7be223",
+      "bytes": 326411,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 119,
+      "name": "GameMajorParticle35.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle35.txt",
+      "sha256": "5b53ed3d1d704c2a8574f10e0411d9a155ca4a89357cf925c2a3ff82fd05269d",
+      "bytes": 73070,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 120,
+      "name": "GameMajorParticle36.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle36.txt",
+      "sha256": "2eaf3a554917c702198d37fe650cf6dc76dcf3a976670382b68e4e28e812ee4b",
+      "bytes": 342075,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 121,
+      "name": "GameMajorParticle37.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle37.txt",
+      "sha256": "2c32a84e7e7c0eef9c8eaba11f02dfe40fc2e6b2bc9c75475073d4dfe1d9dc9e",
+      "bytes": 333886,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 122,
+      "name": "GameMajorParticle38.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle38.txt",
+      "sha256": "37f8d87f0fcf22d887c872b37c72be90fb07a9cc3d25d69424748084aa86a140",
+      "bytes": 339874,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 123,
+      "name": "GameMajorParticle39.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle39.txt",
+      "sha256": "2439bd0974e1718fd2a78e856e777e60540673b81f6630924da2741f0c9021f2",
+      "bytes": 324167,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 125,
+      "name": "GameMajorParticle40.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle40.txt",
+      "sha256": "37137cd95fe1df46d87c1636876b1fdf373e1d02b3019f8071f6eb9bf26d7bbb",
+      "bytes": 335340,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 126,
+      "name": "GameMajorParticle41.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle41.txt",
+      "sha256": "1633dbf19adf27fe4630f152f7fd2e2bb6e405243d2cd97d5624ae83761941b9",
+      "bytes": 325864,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 127,
+      "name": "GameMajorParticle42.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle42.txt",
+      "sha256": "2714b610707c5b74a567b626531cc4ac910100f09e3c7828bf6ea7bf9c071c3e",
+      "bytes": 325169,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 128,
+      "name": "GameMajorParticle43.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle43.txt",
+      "sha256": "7b65a1364e56ecd2b5db643b509bcf56e7d8caca114de06d41d4da4ff0d22460",
+      "bytes": 261445,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 129,
+      "name": "GameMajorParticle44.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle44.txt",
+      "sha256": "ac8c3b0d2475db740b7ee34a1725b30d587fbe0a9788661c867b0dda578d1eb0",
+      "bytes": 343554,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 130,
+      "name": "GameMajorParticle45.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle45.txt",
+      "sha256": "bdbfbd69f50ba396fa5d12928aeb4f20601bbbe6f352a3b7d521fd79788b5c86",
+      "bytes": 301746,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 131,
+      "name": "GameMajorParticle46.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle46.txt",
+      "sha256": "2bd5e5e8cb047ab0b568597fd08236d87ecc4118680d017832ca1cdbf75b6cc5",
+      "bytes": 319974,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 132,
+      "name": "GameMajorParticle47.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle47.txt",
+      "sha256": "e295a41a1e2e954ea08a46f261070ec63b3f8542d31d0578f15d7ba0075e1c96",
+      "bytes": 87033,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 133,
+      "name": "GameMajorParticle48.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle48.txt",
+      "sha256": "b1ed4b12b8a2c959bfcb437c191c66dd8d21489d54d2e6eac45655e5f7dfe9a9",
+      "bytes": 318540,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 134,
+      "name": "GameMajorParticle49.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle49.txt",
+      "sha256": "5420b34984cafe7e5c15afb87a4e8cd0c108e5a1b9b923802552b3bc54ceef5b",
+      "bytes": 324985,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 136,
+      "name": "GameMajorParticle50.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle50.txt",
+      "sha256": "9f9101a78e8cb8565c0d26ed2e79515517e17ad295b36942865e2eac2683c907",
+      "bytes": 325770,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 137,
+      "name": "GameMajorParticle51.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle51.txt",
+      "sha256": "33f9dc4c674d51a8038de768452e28137e0be18c207dae3ce371d26537a06039",
+      "bytes": 67558,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 138,
+      "name": "GameMajorParticle52.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle52.txt",
+      "sha256": "bbf6445bc4819440a4749d75e080a534d601220cbc633f0d65e385d691c19f60",
+      "bytes": 339420,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 139,
+      "name": "GameMajorParticle53.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle53.txt",
+      "sha256": "20f88b02c8f7a70c39ea3a33c86606fb109f49e02926a280f97b5ce1452dfb32",
+      "bytes": 330309,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 221,
+      "name": "raven_powrUp_thunder.DDS",
+      "rawPath": "raw/data/data120.kom/raven_powrUp_thunder.DDS",
+      "sha256": "76004313c1b548a935dcd0509b3de2c59a7aed36016050be2c5f7002eb99e798",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 562,
+      "name": "state_potion_flare.DDS",
+      "rawPath": "raw/data/data048.kom/state_potion_flare.DDS",
+      "sha256": "19fe0a588ceeec44fd6447d24486becfeddc9b37b9fea9b1b4935f51987e8eca",
+      "bytes": 1520,
+      "signatureHex": "444453207c00000007100a0020000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 216,
+      "name": "raven_powrUp_M_lightning02.Y",
+      "rawPath": "raw/data/data120.kom/raven_powrUp_M_lightning02.Y",
+      "sha256": "98835d8a2f76c243812d229faf0598d215b6cc2e854c2ec541b538b5b3ab705b",
+      "bytes": 1801,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 217,
+      "name": "raven_powrUp_M_lightning02.tga",
+      "rawPath": "raw/data/data120.kom/raven_powrUp_M_lightning02.tga",
+      "sha256": "a417b80d814293184bad7d0e19768fda78987d033996ee00ce6e115a67354482",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 214,
+      "name": "raven_powrUp_M_lightning01.Y",
+      "rawPath": "raw/data/data120.kom/raven_powrUp_M_lightning01.Y",
+      "sha256": "0fbbce92812f559f27c8db72620feece7612e8b4dc7d84b8a8ad560e2dd27d56",
+      "bytes": 934,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2156,
+      "name": "ran_startC_lineAura.DDS",
+      "rawPath": "raw/data/data002.kom/ran_startC_lineAura.DDS",
+      "sha256": "be5618754c60abff4ab357f9ca5c4c8e667ecd09646281887a06eb9ff0e24ee9",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 259,
+      "name": "elswrod_demolition_aura.dds",
+      "rawPath": "raw/data/data118.kom/elswrod_demolition_aura.dds",
+      "sha256": "9939002b6534f3e6e6268798c348470506f1731b459688a0c876bdde511f96ac",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 549,
+      "name": "raven_beed_hit_circle.DDS",
+      "rawPath": "raw/data/data048.kom/raven_beed_hit_circle.DDS",
+      "sha256": "89aafbbf048540907d090387cc0df5aa46cca307e737d0d9fc1513df898ce4aa",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 550,
+      "name": "raven_beed_hit_piece.DDS",
+      "rawPath": "raw/data/data048.kom/raven_beed_hit_piece.DDS",
+      "sha256": "c66dbce44314eb1b9b2fee87666c42e5ad62eb228afaf3bd30806dde85a9912a",
+      "bytes": 1520,
+      "signatureHex": "444453207c00000007100a0020000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 551,
+      "name": "raven_beed_hit_spark.DDS",
+      "rawPath": "raw/data/data048.kom/raven_beed_hit_spark.DDS",
+      "sha256": "33830b1f866585876819bd8b6da658cc98b5960d4ffb4a89e18a47549c56befc",
+      "bytes": 2960,
+      "signatureHex": "444453207c00000007100a0010000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 88,
+      "name": "RRF_Trace_Gray001.dds",
+      "rawPath": "raw/data/data120.kom/RRF_Trace_Gray001.dds",
+      "sha256": "b34cedd177a549723fcea3a59582cc5456a063e3101d0dfa68a8d7a4ab339a8a",
+      "bytes": 8320,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2048,
+      "name": "Wedding_Heart.X",
+      "rawPath": "raw/data/data002.kom/Wedding_Heart.X",
+      "sha256": "2c55d75fd0610130e25cfb06825fdfc7cc967aa34833980f1e9898633a84a4c6",
+      "bytes": 7043,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2041,
+      "name": "Weading_Heart_01.tga",
+      "rawPath": "raw/data/data002.kom/Weading_Heart_01.tga",
+      "sha256": "b1d0d3e351e1b7949c7e2b2ae4a5556944c517e8a831acd16853fb6cf4d9bd19",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 371,
+      "name": "Particle_Blur.dds",
+      "rawPath": "raw/data/data048.kom/Particle_Blur.dds",
+      "sha256": "654b5256a042de9ff57701da3f8c41c4fde632e6364b8f70e808c1faeb275df6",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2044,
+      "name": "Weading_Heart_04.dds",
+      "rawPath": "raw/data/data002.kom/Weading_Heart_04.dds",
+      "sha256": "0e71c8cb06a7fe61150abf7be37bfffd1cef77f33d934c076d777983ca7d8817",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2040,
+      "name": "Weading_Heart_01.dds",
+      "rawPath": "raw/data/data002.kom/Weading_Heart_01.dds",
+      "sha256": "835adc59cddb9b03eaa1ffed06c851ca6823b41f1e2ccd1455c32feccbddd251",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 157,
+      "name": "SI_SA_LCR_VIOLENT_ATTACK_Effect_Wave_Bottom.tga",
+      "rawPath": "raw/data/data121.kom/SI_SA_LCR_VIOLENT_ATTACK_Effect_Wave_Bottom.tga",
+      "sha256": "72a2c0cb64a83979dac25e3d61a7eb9a0b9ee358d3b5977e9f1857c49e3b3c8f",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 154,
+      "name": "Explosion_Sphere.dds",
+      "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+      "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 16,
+      "name": "Arme_smoke.dds",
+      "rawPath": "raw/data/data048.kom/Arme_smoke.dds",
+      "sha256": "d106bc56cc484b4f172ea4054b991c6569c7b4c0843fba2c33e3ccf2cfad46d5",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 443,
+      "name": "DummyAttackBox_50x50x50.x",
+      "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+      "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+      "bytes": 801,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 79,
+      "name": "ADD_Effect_Ground_Explosion_01.Y",
+      "rawPath": "raw/data/data147.kom/ADD_Effect_Ground_Explosion_01.Y",
+      "sha256": "a2613b793fc2f2a89a5e76cf6218ac2b5e1c950f759cfe4e3f9a3deea46337d6",
+      "bytes": 15390,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 80,
+      "name": "ADD_Effect_Ground_Explosion_01.tga",
+      "rawPath": "raw/data/data147.kom/ADD_Effect_Ground_Explosion_01.tga",
+      "sha256": "5dfbfc67cbd7166505963884e250ab8ff6bb52904637d5bd9c078bbb5a5d0f9e",
+      "bytes": 4646,
+      "signatureHex": "00000200000000000000000020002000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 211,
+      "name": "elsword_SA_rageCutter_smogPoint.dds",
+      "rawPath": "raw/data/data118.kom/elsword_SA_rageCutter_smogPoint.dds",
+      "sha256": "65868ac4a144e80094001ec038bac5d37676a6cee9eb31a30a40b51bce1d5493",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 76,
+      "name": "EL_FIRE_03.dds",
+      "rawPath": "raw/data/data142.kom/EL_FIRE_03.dds",
+      "sha256": "ddc8afcf5e31140235281a62e933e4e39f18e08f44e2fde5fc1fee7d547dd8e8",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 496,
+      "name": "WhitePoint.dds",
+      "rawPath": "raw/data/data048.kom/WhitePoint.dds",
+      "sha256": "83183cc04bbb66f24241abf8de986595d83ae3054f317dc4c8435e41e596b27d",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 461,
+      "name": "Stat_Stun_B.tga",
+      "rawPath": "raw/data/data048.kom/Stat_Stun_B.tga",
+      "sha256": "26451a4752fbf823ab41b720ec7b5087690fc066c32ed69e57e69665f9efaf04",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 463,
+      "name": "State_Stun.tga",
+      "rawPath": "raw/data/data048.kom/State_Stun.tga",
+      "sha256": "d0cd7f34d3c81f2e3d3f49020ab4d19eb327c40f2197f10343651607dc024480",
+      "bytes": 90044,
+      "signatureHex": "00000200000000000000000096009600"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 464,
+      "name": "State_Stun2.tga",
+      "rawPath": "raw/data/data048.kom/State_Stun2.tga",
+      "sha256": "bfc4f0018843729eff6a5f03e6de11c3e4d05bf7cdbe70cb74725363c4d9a146",
+      "bytes": 90044,
+      "signatureHex": "00000200000000000000000096009600"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 50,
+      "name": "EMK_Fire001.dds",
+      "rawPath": "raw/data/data118.kom/EMK_Fire001.dds",
+      "sha256": "42cfef458e1015b138be25f1e95cf0ed1542eb5c09883304dfdb4b7a50ab14d8",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 497,
+      "name": "WhitePointSmall.dds",
+      "rawPath": "raw/data/data048.kom/WhitePointSmall.dds",
+      "sha256": "560ad77817b71e7a29341ece86aeab770341c9e3ceceb73dc0ec5c4d3f5643aa",
+      "bytes": 1520,
+      "signatureHex": "444453207c00000007100a0020000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 555,
+      "name": "smoke02.dds",
+      "rawPath": "raw/data/data048.kom/smoke02.dds",
+      "sha256": "0497abcc20205fd67191b70c278ffe23cbcdec54a3cedae229a6678a256fa050",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 200,
+      "name": "Weapon_Break01.dds",
+      "rawPath": "raw/data/data120.kom/Weapon_Break01.dds",
+      "sha256": "712f6831bdb355f74da24292ffb96219cac40c21bc462de8be5f99b2e58b0cf7",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 89,
+      "name": "DarkSmoke01.dds",
+      "rawPath": "raw/data/data048.kom/DarkSmoke01.dds",
+      "sha256": "15da8f54b352cb3164b4c540dee37d0834b94e0b82fe6703743ff5287f689dbc",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data132.kom",
+      "ordinal": 221,
+      "name": "ELK_WIND_SLICER_01.dds",
+      "rawPath": "raw/data/data132.kom/ELK_WIND_SLICER_01.dds",
+      "sha256": "d837f2c24e7ce4d59f47633cd8cf795642bb010723b79bc5c35184b321cb5980",
+      "bytes": 4224,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 244,
+      "name": "SCA_CRIMSON_BREAK_P01.Y",
+      "rawPath": "raw/data/data142.kom/SCA_CRIMSON_BREAK_P01.Y",
+      "sha256": "56931dd638634745e9660f7cba5ac13f214e1aa0b3e2aab6a9d211756dec1040",
+      "bytes": 657,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 71,
+      "name": "ROT_FireBall01.dds",
+      "rawPath": "raw/data/data120.kom/ROT_FireBall01.dds",
+      "sha256": "03af5d328452df83ede7463366c0c881603f44b064df2dd04f7d71318e1dfbfc",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 554,
+      "name": "smoke.dds",
+      "rawPath": "raw/data/data048.kom/smoke.dds",
+      "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 199,
+      "name": "Up_Impact01.Y",
+      "rawPath": "raw/data/data120.kom/Up_Impact01.Y",
+      "sha256": "b804b60e4c587cb38fa05154c24a29c0fb764d4b37cd0706a7b110c995384737",
+      "bytes": 1595,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 163,
+      "name": "Bat_StandUp01.tga",
+      "rawPath": "raw/data/data002.kom/Bat_StandUp01.tga",
+      "sha256": "1ddc4be32617656cb76a6ba9a2c573607e191e2743729ccaf84d501cf556185e",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data119.kom",
+      "ordinal": 218,
+      "name": "GroundShockWave02.dds",
+      "rawPath": "raw/data/data119.kom/GroundShockWave02.dds",
+      "sha256": "72d6518d6b4d13032d5042735c888f4147f3e434dfaaf375433e7a3ff2ab96c4",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 153,
+      "name": "Explosion_Light_Ring01.tga",
+      "rawPath": "raw/data/data048.kom/Explosion_Light_Ring01.tga",
+      "sha256": "37e6ce22bd94ee24d37beb39a0ae77b05315f216c4613f536cf12f6180641e70",
+      "bytes": 196652,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1924,
+      "name": "SpinningKick02.x",
+      "rawPath": "raw/data/data002.kom/SpinningKick02.x",
+      "sha256": "e2870763b7ec0707a521ffacc5d93e9d83e07ffe5a69c8554a6f394b106d8c96",
+      "bytes": 4430,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1082,
+      "name": "Lire_01_SpinningKick05.tga",
+      "rawPath": "raw/data/data002.kom/Lire_01_SpinningKick05.tga",
+      "sha256": "ec9ade459257a4f56f10cd88cb6838bbdfbb578eecf0e3d2f7218a4fa918bf31",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 192,
+      "name": "SI_SA_RRF_WILD_CHARGE_Wind.X",
+      "rawPath": "raw/data/data120.kom/SI_SA_RRF_WILD_CHARGE_Wind.X",
+      "sha256": "22f58c768d99324ae641908759e70a23b39786ee4375df1caeec7ffa868e13fc",
+      "bytes": 11422,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 225,
+      "name": "wildcharge_wind.tga",
+      "rawPath": "raw/data/data120.kom/wildcharge_wind.tga",
+      "sha256": "cd25642f465db8baf6d886a7eb779ab3aa03387407a57ef12a2310fcf50fddd6",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000028000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 601,
+      "name": "Elsword_Double_Slash_Mesh004.X",
+      "rawPath": "raw/data/data002.kom/Elsword_Double_Slash_Mesh004.X",
+      "sha256": "4fa4a0c0e3d71c60ac944b3d263da81a9ca9dd12d3f6b22703af34af17bcb953",
+      "bytes": 7830,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2018,
+      "name": "WC_01.tga",
+      "rawPath": "raw/data/data002.kom/WC_01.tga",
+      "sha256": "391835392a0adcde0a68cfb5d34c9015d6633fb10d6f5da4bd0efdd05b466b0f",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 15,
+      "name": "ADD_CENTER_LIGHT01.dds",
+      "rawPath": "raw/data/data147.kom/ADD_CENTER_LIGHT01.dds",
+      "sha256": "714512c0aa17ce7657cd94d5b1a2a80d5aa89fa94ae0afa368570003c135eac3",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 52,
+      "name": "CenterLight_Gray01.dds",
+      "rawPath": "raw/data/data048.kom/CenterLight_Gray01.dds",
+      "sha256": "7d87c6366f65d359c7ba932a2bface83eb966fc07671e9388fa1ada46d757f68",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 201,
+      "name": "aisha_active_guillotinePress_circleParticle.dds",
+      "rawPath": "raw/data/data116.kom/aisha_active_guillotinePress_circleParticle.dds",
+      "sha256": "c8b3e543ae8068528a101bce29574a87ebc4d696457efe8d731f215655c682ae",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1095,
+      "name": "Lire_SpecialAttackPierceArrow1a.X",
+      "rawPath": "raw/data/data002.kom/Lire_SpecialAttackPierceArrow1a.X",
+      "sha256": "33c903105f18f49e158a4b9c643bcb3504c899892fda3c4df0d7ec5b341b042a",
+      "bytes": 3435,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1916,
+      "name": "SpecialAttack_PierceArrow1a2.tga",
+      "rawPath": "raw/data/data002.kom/SpecialAttack_PierceArrow1a2.tga",
+      "sha256": "80ee0129536305b51496d3eb0578e90276ce5edb66c3796324ef7d8ce99320ad",
+      "bytes": 7607,
+      "signatureHex": "00000a00000000000000000040004000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1917,
+      "name": "SpecialAttack_PierceArrow1a3.tga",
+      "rawPath": "raw/data/data002.kom/SpecialAttack_PierceArrow1a3.tga",
+      "sha256": "25ad27aacdc7a603de8e6623e664d4d71231c2bc447840bb6aa2f2d0864f843c",
+      "bytes": 16428,
+      "signatureHex": "00000200000000000000000040004000"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 198,
+      "name": "SA_SPK_BURST_WAVE_FIRE.Y",
+      "rawPath": "raw/data/data142.kom/SA_SPK_BURST_WAVE_FIRE.Y",
+      "sha256": "f2b8875e1d7ef4392424cc0b4b692098a7d835f7bf817b92d7c06c152852e8d6",
+      "bytes": 1775,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 199,
+      "name": "SA_SPK_BURST_WAVE_FIRE.tga",
+      "rawPath": "raw/data/data142.kom/SA_SPK_BURST_WAVE_FIRE.tga",
+      "sha256": "06b9ab293c1f27628959b27a038b814851b7419b1665eb6a6cf960e44f2a6456",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 110,
+      "name": "RVC_SA_DeadlyRaid_line.dds",
+      "rawPath": "raw/data/data120.kom/RVC_SA_DeadlyRaid_line.dds",
+      "sha256": "86d3c9986a96976ab3768ecb53519322a8c6ce5ca2821f31c0737bf6d5f5fac6",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 108,
+      "name": "RVC_SA_DeadlyRaid_circleLine.X",
+      "rawPath": "raw/data/data120.kom/RVC_SA_DeadlyRaid_circleLine.X",
+      "sha256": "255c08abfc66ed5f147281525e13872c2e7358e095c63e55caada40d5d29ca74",
+      "bytes": 1977,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 109,
+      "name": "RVC_SA_DeadlyRaid_circleLine.dds",
+      "rawPath": "raw/data/data120.kom/RVC_SA_DeadlyRaid_circleLine.dds",
+      "sha256": "a0e48f4a058a61c92228354e09429f86eeadfb8eb2d8ce624735fad8725b40c1",
+      "bytes": 1152,
+      "signatureHex": "444453207c00000007100a0010000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 493,
+      "name": "WhiteCircle02.dds",
+      "rawPath": "raw/data/data048.kom/WhiteCircle02.dds",
+      "sha256": "9682fb22722a90835eec99550259dd88d15d3f348333315dea75e2a28838453d",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 150,
+      "name": "SA_AEM_ELEMENTAL_STORM_FIRE01.X",
+      "rawPath": "raw/data/data116.kom/SA_AEM_ELEMENTAL_STORM_FIRE01.X",
+      "sha256": "41f4318242a60d09411f0c69249de13eb6ab9e1b12df4d6d18c4579e3d6f9fc6",
+      "bytes": 2596,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 149,
+      "name": "SA_AEM_ELEMENTAL_STORM_FIRE.dds",
+      "rawPath": "raw/data/data116.kom/SA_AEM_ELEMENTAL_STORM_FIRE.dds",
+      "sha256": "fba53676f82f9be6ba0b6264d60f822a7d432621f3118f4ac3556040fdeaab75",
+      "bytes": 87536,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 13,
+      "name": "Arme_Ring2.dds",
+      "rawPath": "raw/data/data048.kom/Arme_Ring2.dds",
+      "sha256": "9fa65a5787fc8896f49dfe0fd0a18776958235805091fc3ec85dec39c2cb2102",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 311,
+      "name": "Spiral_Ground_spark.dds",
+      "rawPath": "raw/data/data142.kom/Spiral_Ground_spark.dds",
+      "sha256": "26fda5e10340bb9c2265c0f4822e7b95b0d1d7b410bf7c3223a6158b6902bf94",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 161,
+      "name": "Raven_SI_A_RF_Shadow_Step_Mesh01.X",
+      "rawPath": "raw/data/data120.kom/Raven_SI_A_RF_Shadow_Step_Mesh01.X",
+      "sha256": "ef0820049869277f5275585cbd6b16006a73ca8d0452e8be8ad48ff16d547cee",
+      "bytes": 2070,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 382,
+      "name": "Dash_Wave01.tga",
+      "rawPath": "raw/data/data002.kom/Dash_Wave01.tga",
+      "sha256": "28a50d030f8527961101a3df5bad15835245be730218d4ca905d04b3a73fbec6",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 424,
+      "name": "RingAlpha.dds",
+      "rawPath": "raw/data/data048.kom/RingAlpha.dds",
+      "sha256": "2e1741d0f5ccd6c1efafd8408e4b21e0c6595ab76275d5a53902b673b354eb52",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data132.kom",
+      "ordinal": 390,
+      "name": "VERITABLE_PANDEMONIUM_T02.dds",
+      "rawPath": "raw/data/data132.kom/VERITABLE_PANDEMONIUM_T02.dds",
+      "sha256": "18bd7c5148b6e3cfdf7e73b66d39c59fc871ccad7ef6f00f905d940070cf108b",
+      "bytes": 65664,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 171,
+      "name": "SpreadLightNoAlpha01.dds",
+      "rawPath": "raw/data/data118.kom/SpreadLightNoAlpha01.dds",
+      "sha256": "7ad0d133ac8409795d8ddcaddf200254b745544579486dda4ef0d97878fdb625",
+      "bytes": 8320,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 155,
+      "name": "Raven_RRF_SI_SA_X_Crash_Mesh03.X",
+      "rawPath": "raw/data/data120.kom/Raven_RRF_SI_SA_X_Crash_Mesh03.X",
+      "sha256": "d560606513dc37ff02595ca40fd10e82b7be77ecbb120198593c4a6e2935eeb1",
+      "bytes": 1069,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1675,
+      "name": "Raven_OverTaker_SP1a_ChargedBolt.X",
+      "rawPath": "raw/data/data002.kom/Raven_OverTaker_SP1a_ChargedBolt.X",
+      "sha256": "584c7e5a197a0230c7590212aa699a6d7562e7d598380b6d9d3858c5a27ada04",
+      "bytes": 19995,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1680,
+      "name": "Raven_Overtaker_SP1a_ChargedBolt.tga",
+      "rawPath": "raw/data/data002.kom/Raven_Overtaker_SP1a_ChargedBolt.tga",
+      "sha256": "f9db2fb64a52003b66232168b69c0a7472e3e867020bc1501f2c1b76c4da1ce2",
+      "bytes": 197158,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1681,
+      "name": "Raven_Overtaker_SP1a_ChargedBolt01.tga",
+      "rawPath": "raw/data/data002.kom/Raven_Overtaker_SP1a_ChargedBolt01.tga",
+      "sha256": "cd59cc2c489bc83c11bc562c5e1f5901bde41cbf300a33c1a87fff7c9a785b29",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1674,
+      "name": "Raven_OT_SP2_FlyingImpact_Effect.X",
+      "rawPath": "raw/data/data002.kom/Raven_OT_SP2_FlyingImpact_Effect.X",
+      "sha256": "4590f245991762362d07c9c291728fae313f48f94f5ad5207d28906f4df844a1",
+      "bytes": 10822,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1682,
+      "name": "Raven_Overtaker_SP2_FlyingImpact.tga",
+      "rawPath": "raw/data/data002.kom/Raven_Overtaker_SP2_FlyingImpact.tga",
+      "sha256": "65293b4040f32df82dccad80bf984089fff3932d66425aba2a004c46b5ac9414",
+      "bytes": 197158,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1673,
+      "name": "Raven_Iron_Attack01.X",
+      "rawPath": "raw/data/data002.kom/Raven_Iron_Attack01.X",
+      "sha256": "19c642c08554e16546fdee6a639152e8fd3df15d83f7b18ea8af2d2b446dfa4f",
+      "bytes": 14461,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 982,
+      "name": "Iron_Attack01.tga",
+      "rawPath": "raw/data/data002.kom/Iron_Attack01.tga",
+      "sha256": "20f3316a8c80ffb27987b1f501d964bb5b1cc7fc9d89b73003fb10e959f7db09",
+      "bytes": 49702,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 164,
+      "name": "Raven_SI_SA_ROT_VKJ_Spear_Mesh01.X",
+      "rawPath": "raw/data/data120.kom/Raven_SI_SA_ROT_VKJ_Spear_Mesh01.X",
+      "sha256": "84b901afb4a05ec6b165115135bcc0b66a39eff03c4d18d49ee414a5afd340ff",
+      "bytes": 10063,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 55,
+      "name": "Motion_Raven_RageMode_Nasod.x",
+      "rawPath": "raw/data/data120.kom/Motion_Raven_RageMode_Nasod.x",
+      "sha256": "5ceb8dfbfcd2a5d66659717e4ca10e8deb0fa26139aa6aada18d69c46a608a60",
+      "bytes": 37132,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 160,
+      "name": "Raven_RageMode_B.tga",
+      "rawPath": "raw/data/data120.kom/Raven_RageMode_B.tga",
+      "sha256": "7e7ae34f4a2afcf0592b4f0aeb18400f964d670dd3a70ec700b31aeeaad798bc",
+      "bytes": 49702,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 159,
+      "name": "Raven_RageMode_A.tga",
+      "rawPath": "raw/data/data120.kom/Raven_RageMode_A.tga",
+      "sha256": "1ca86362fb98c40d1ed07d5fab86e6d22523a5b4a77698fff97c5a697cb483a7",
+      "bytes": 49702,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1152,
+      "name": "Maximumcanon_Mesh01.X",
+      "rawPath": "raw/data/data002.kom/Maximumcanon_Mesh01.X",
+      "sha256": "d80547e09e3f20e4199c445c43dbd3fa2906a59d0d18e09e88609dab5b109005",
+      "bytes": 6889,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1150,
+      "name": "MaximumCannon01.tga",
+      "rawPath": "raw/data/data002.kom/MaximumCannon01.tga",
+      "sha256": "9eaa9f0275c1497903a6fdaa10febb812ef5b7ce618feb5e1678a1d4102aeaf7",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1132,
+      "name": "MagnumBlaster_Mesh01.X",
+      "rawPath": "raw/data/data002.kom/MagnumBlaster_Mesh01.X",
+      "sha256": "0e726e9e02ed735fd5ffbcfb137db9887b27f996e44dff4f61375932fdc84f02",
+      "bytes": 1787,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1131,
+      "name": "MagnumBlaster01_Mesh.tga",
+      "rawPath": "raw/data/data002.kom/MagnumBlaster01_Mesh.tga",
+      "sha256": "d6d8fff15614a670085f937fcf56bee5c82b819aeed4e6bdeea95c763662002b",
+      "bytes": 16428,
+      "signatureHex": "00000200000000000000000040004000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 10,
+      "name": "Blur_16.dds",
+      "rawPath": "raw/data/data118.kom/Blur_16.dds",
+      "sha256": "6503e2081b13f6b27c7f076263df4268da9d800259521c2d66ab7c72fc81ef0e",
+      "bytes": 384,
+      "signatureHex": "444453207c0000000710080010000000"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 79,
+      "name": "EL_FIRE_06.dds",
+      "rawPath": "raw/data/data142.kom/EL_FIRE_06.dds",
+      "sha256": "dd604ec1be8e9f41cca819a89bfea665fbe4372d8244fec251d7fd5b4a7da0eb",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 119,
+      "name": "RWT_BARRAGE_ATTACK_TRACE_Stand.X",
+      "rawPath": "raw/data/data120.kom/RWT_BARRAGE_ATTACK_TRACE_Stand.X",
+      "sha256": "6c5806fbb1abc7aee4094311846bd54670952ca2e6cd1925594dd7f5b1804644",
+      "bytes": 1573,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 121,
+      "name": "RWT_EFFECT_TRACE.tga",
+      "rawPath": "raw/data/data120.kom/RWT_EFFECT_TRACE.tga",
+      "sha256": "e9502e9c9027ead86ae4646616bc3bfd27919c036b09d330ace9a207e87d98ba",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 57,
+      "name": "ColorBallFire.dds",
+      "rawPath": "raw/data/data048.kom/ColorBallFire.dds",
+      "sha256": "84381a3ea5b0e45e67c118e133a80955ea5d138a3ef2fe3d3723186f45baedc0",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1358,
+      "name": "Nasod_King_Laser03.dds",
+      "rawPath": "raw/data/data002.kom/Nasod_King_Laser03.dds",
+      "sha256": "e088fe77587f7517bcc22082b131ba0e451ad0e132fb295ed0e6ed9fc0e88830",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 90,
+      "name": "Dark_Smoke.dds",
+      "rawPath": "raw/data/data048.kom/Dark_Smoke.dds",
+      "sha256": "95a52053203c07dc67af16d7ba413ac2b283b5a55e5008112839530a3659ffb5",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 27,
+      "name": "Flame_REVOLVER.dds",
+      "rawPath": "raw/data/data120.kom/Flame_REVOLVER.dds",
+      "sha256": "66bca69024baab022853498160e43dd27d9aca9d96d90590beaac142b4dedd47",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 5,
+      "name": "BREAKING_FIST_Attack_Box.X",
+      "rawPath": "raw/data/data120.kom/BREAKING_FIST_Attack_Box.X",
+      "sha256": "8db97d0f2495538aae158938cbe0ccb1ddd72c0e518b017a8af82f632f3ae875",
+      "bytes": 807,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2189,
+      "name": "secretVelder_perpit_fire_flame.dds",
+      "rawPath": "raw/data/data002.kom/secretVelder_perpit_fire_flame.dds",
+      "sha256": "f70a64220a5b9a1448b291bbd23447479432c3b69f52988474e6bf248550c0aa",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 199,
+      "name": "rana_C_explosionArrow_boom_circle.dds",
+      "rawPath": "raw/data/data121.kom/rana_C_explosionArrow_boom_circle.dds",
+      "sha256": "7cb4580004baefe865c8399d4d11e154fe9ab0c6a3ef7cabb1712c9935e0a381",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 465,
+      "name": "Steam_BP.dds",
+      "rawPath": "raw/data/data048.kom/Steam_BP.dds",
+      "sha256": "0430ebd48947a64250c66bacaa6efb6c6b387365132ac932d8517fbd08e3f0eb",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 150,
+      "name": "Explosion_Fire01.dds",
+      "rawPath": "raw/data/data048.kom/Explosion_Fire01.dds",
+      "sha256": "990e6e25b7581ed8566b048bb17fcf960489bc1b317137682c91f4d67b1c2320",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 53,
+      "name": "Circle_Light01.dds",
+      "rawPath": "raw/data/data048.kom/Circle_Light01.dds",
+      "sha256": "2b329122f132a0109d2958fb34e98ac603e75d8e145f9d214ff11edddd993791",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 104,
+      "name": "RVC_C_ShadowBackSlide_grenade.X",
+      "rawPath": "raw/data/data120.kom/RVC_C_ShadowBackSlide_grenade.X",
+      "sha256": "c5bbf032b8100f784b616bcb0510f4617bd1c23895f0b6bf5f16e3eb77b711c8",
+      "bytes": 8744,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 105,
+      "name": "RVC_C_ShadowBackSlide_grenade.dds",
+      "rawPath": "raw/data/data120.kom/RVC_C_ShadowBackSlide_grenade.dds",
+      "sha256": "5bf0a7a8272237426141cb40093ccdf6f71ce21d988810cfdc9c6d5e61db8513",
+      "bytes": 2176,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 90,
+      "name": "RRF_XCrash_ScrachDummy.X",
+      "rawPath": "raw/data/data120.kom/RRF_XCrash_ScrachDummy.X",
+      "sha256": "550717160085e6e082afa97c13664b45c3efa74678a6296dcc4e5e1e416dd4ff",
+      "bytes": 508,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 89,
+      "name": "RRF_XCrash_FireDummy.X",
+      "rawPath": "raw/data/data120.kom/RRF_XCrash_FireDummy.X",
+      "sha256": "cffe45e2f60ec34cd662b6e93677ee863b284cfe1ff68f0d9aa346d8206e594f",
+      "bytes": 942,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data132.kom",
+      "ordinal": 104,
+      "name": "ALS_SLICER_01.dds",
+      "rawPath": "raw/data/data132.kom/ALS_SLICER_01.dds",
+      "sha256": "d802c2e6f170c427fd3ed05043f32c3600bcd046ffb43808e3856d1cfb07ceda",
+      "bytes": 4224,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 184,
+      "name": "aisha_SA_MorningStar_circle.dds",
+      "rawPath": "raw/data/data116.kom/aisha_SA_MorningStar_circle.dds",
+      "sha256": "0acc0f68430b9fba7dc78baf51ef0b652a2d4153ab5a87e2945b625544154d11",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 86,
+      "name": "ROT_NUCLEAR_NEW11.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW11.X",
+      "sha256": "afd90a5074ca2c56a919ccf8f3834499e317fa97600052e5f172697e8e0080f1",
+      "bytes": 1907,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 295,
+      "name": "SPK_ETERNAL_FIRE_Image02.dds",
+      "rawPath": "raw/data/data142.kom/SPK_ETERNAL_FIRE_Image02.dds",
+      "sha256": "8daa1b20efc893f79a5a139b18a0267270be1d795f478d8730d3ac26e48eddc6",
+      "bytes": 65664,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 85,
+      "name": "ROT_NUCLEAR_NEW10.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW10.X",
+      "sha256": "78a9341d57287047b9703aa28df798801c4eefbf14dcac16b44c547764e3ce38",
+      "bytes": 10791,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 89,
+      "name": "ADD_Effect_Triangle01.tga",
+      "rawPath": "raw/data/data147.kom/ADD_Effect_Triangle01.tga",
+      "sha256": "5fb5d463fbd0c1f0289c4c0d780d6570a94fb894620bf637d31e1483c71d7921",
+      "bytes": 16428,
+      "signatureHex": "00000200000000000000000040004000"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 92,
+      "name": "ADD_Ground_Explosion_02.Y",
+      "rawPath": "raw/data/data147.kom/ADD_Ground_Explosion_02.Y",
+      "sha256": "793514e96e3465e7f80edf3aed2e8dea3732bafd18d985cb26120dd8b184ad77",
+      "bytes": 1289,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 83,
+      "name": "ROT_NUCLEAR_NEW08.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW08.X",
+      "sha256": "f3855318a3c4cc353fb7a318d07f70c49a19322e8aa8f3e10bd0c9c88794f0ca",
+      "bytes": 10348,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 60,
+      "name": "NUCLEAR_Effect_Column_Wave.tga",
+      "rawPath": "raw/data/data120.kom/NUCLEAR_Effect_Column_Wave.tga",
+      "sha256": "a0bc8fbdd65a30218a1ed66d50850272d178f09a8fbda2a27d1bf9412d96e90c",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 82,
+      "name": "ROT_NUCLEAR_NEW07.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW07.X",
+      "sha256": "e504b427cd328d16e172c0953b85511b65fb68a01f0876ef891a4116d80c9633",
+      "bytes": 9837,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 58,
+      "name": "NUCLEAR_Effect_Column01.tga",
+      "rawPath": "raw/data/data120.kom/NUCLEAR_Effect_Column01.tga",
+      "sha256": "7de957d0aca51075f06e53da5b06fb9e09213a1f58581047c64c44fc5649cf91",
+      "bytes": 562,
+      "signatureHex": "00000200000000000000000002000200"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 81,
+      "name": "ROT_NUCLEAR_NEW06.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW06.X",
+      "sha256": "f72ec9c3be6ea04c81c41a0959288c7e83d2e4fde37de6132812682918e18be0",
+      "bytes": 3108,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 80,
+      "name": "ROT_NUCLEAR_NEW05.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW05.X",
+      "sha256": "d20217b06818f40fbfcc8f6ccee7864631e9f8bb5178883375ff214f76c23ee6",
+      "bytes": 1440,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 79,
+      "name": "ROT_NUCLEAR_NEW04.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW04.X",
+      "sha256": "f9d4ad467429fd99ed0e49e112489aaa61be9de4a9965d6590a60ecb818f296d",
+      "bytes": 6151,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 45,
+      "name": "ADD_DOOMS_DAY_Grow01.Y",
+      "rawPath": "raw/data/data147.kom/ADD_DOOMS_DAY_Grow01.Y",
+      "sha256": "3dcac1b1cdb82ae6a6759d4e23e95e542ba35314a52bcc69a509c6d0436fd00c",
+      "bytes": 595,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 349,
+      "name": "GlowBall_G01.tga",
+      "rawPath": "raw/data/data147.kom/GlowBall_G01.tga",
+      "sha256": "fa0bf05128ea87bfa169b3cea7d0c483cb5d585ebc265ebff9e2670d5515d1a7",
+      "bytes": 4140,
+      "signatureHex": "00000200000000000000000020002000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 77,
+      "name": "ROT_NUCLEAR_NEW02.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW02.X",
+      "sha256": "c8684f2d7bc0cef02c6a60823fa76255e2d5775a89fb5b2818c879c0d4ddf3e7",
+      "bytes": 5007,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data142.kom",
+      "ordinal": 142,
+      "name": "MaximumCannon01.dds",
+      "rawPath": "raw/data/data142.kom/MaximumCannon01.dds",
+      "sha256": "2fd52454b40b93425ca735b961e10ca4f647f5636f7e592a482d12a978c8fb48",
+      "bytes": 16512,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 76,
+      "name": "ROT_NUCLEAR_NEW01.X",
+      "rawPath": "raw/data/data120.kom/ROT_NUCLEAR_NEW01.X",
+      "sha256": "b6365db94b7b67a4ae3a8ba86e61e0bb4e1d30eb4267f5390561365c9d043e0e",
+      "bytes": 4557,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 174,
+      "name": "GuardianStrike01.X",
+      "rawPath": "raw/data/data048.kom/GuardianStrike01.X",
+      "sha256": "e602ff79a396ac97b7250df1edd9ee47065540808c8180bd0443779a78ba0096",
+      "bytes": 4034,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 73,
+      "name": "Lire_SI_SA_Gungnir_Mesh05.X",
+      "rawPath": "raw/data/data121.kom/Lire_SI_SA_Gungnir_Mesh05.X",
+      "sha256": "ac9c6bd85e85a6adca1f00182f46cffc6a1aa69fbb25f1a776f4f608b5b0b905",
+      "bytes": 4016,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 177,
+      "name": "Wind_Impact01_1.tga",
+      "rawPath": "raw/data/data121.kom/Wind_Impact01_1.tga",
+      "sha256": "fc5c3f4474f7421cb4f9c7aa9d5d790b61327aeeb711324076b4f96fe60c9e8d",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 12,
+      "name": "Break_Impact01.dds",
+      "rawPath": "raw/data/data120.kom/Break_Impact01.dds",
+      "sha256": "9de487ab217f6dadb06b57da926bbf46c40eb51c1250a74336c1250c09cd63cd",
+      "bytes": 32896,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data157.kom",
+      "ordinal": 148,
+      "name": "LD_RingAlpha.dds",
+      "rawPath": "raw/data/data157.kom/LD_RingAlpha.dds",
+      "sha256": "9140b1ef95b9668620e91a2f4eb8523f2935c02daf085bf4d22086cf4906edf9",
+      "bytes": 8320,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data157.kom",
+      "ordinal": 93,
+      "name": "LD_Blade_Liner01.dds",
+      "rawPath": "raw/data/data157.kom/LD_Blade_Liner01.dds",
+      "sha256": "311f7b580cf752ea7aec3d25c22293097fee615e117e6dd3885096c8f9b75499",
+      "bytes": 4224,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 8,
+      "name": "BURSTING_BLADE_flame.dds",
+      "rawPath": "raw/data/data120.kom/BURSTING_BLADE_flame.dds",
+      "sha256": "87e43a749a79a369cf4e74f2f007f2fbc8f9f74285447c9a6bc8646723f31198",
+      "bytes": 1520,
+      "signatureHex": "444453207c00000007100a0020000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 173,
+      "name": "GroundShockWave.dds",
+      "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+      "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 101,
+      "name": "RVC_A_bleedingSlicer_smoke.dds",
+      "rawPath": "raw/data/data120.kom/RVC_A_bleedingSlicer_smoke.dds",
+      "sha256": "bfc7f2b4ff1ba0e3378b38dae7cefb4b97c7f6508b9f2a3f97899022ee79cf98",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data128.kom",
+      "ordinal": 7,
+      "name": "Arme_FireballS2_ICE.dds",
+      "rawPath": "raw/data/data128.kom/Arme_FireballS2_ICE.dds",
+      "sha256": "d7f4b4140e17a373d2d8bf79768bbec49f23ada60a07c761711c2ddea1d6771e",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data132.kom",
+      "ordinal": 153,
+      "name": "ALS_flame_002.dds",
+      "rawPath": "raw/data/data132.kom/ALS_flame_002.dds",
+      "sha256": "e1fb7f7ff6a6bf86d26252623f09b972c61908a08328238f1b265a3163fb4cc9",
+      "bytes": 1152,
+      "signatureHex": "444453207c0000000710080020000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 819,
+      "name": "FireImpactG04.Y",
+      "rawPath": "raw/data/data002.kom/FireImpactG04.Y",
+      "sha256": "b70fa84d4a31e053bdf76540748b533a364e1efdac3eb11a270d1764ff34c172",
+      "bytes": 1012,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 820,
+      "name": "FireImpactGrow01.dds",
+      "rawPath": "raw/data/data002.kom/FireImpactGrow01.dds",
+      "sha256": "b0fd5a80464ce64849bac8d38906532db21d7792304d477a57a18626ea8856e4",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 815,
+      "name": "FireImpactG01.Y",
+      "rawPath": "raw/data/data002.kom/FireImpactG01.Y",
+      "sha256": "e21bff90188b8e0c98de5db94ca227defc5350080e7d829a2238a0ab820c77b4",
+      "bytes": 1595,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 816,
+      "name": "FireImpactG01.dds",
+      "rawPath": "raw/data/data002.kom/FireImpactG01.dds",
+      "sha256": "2ab90b56e60140a8150022966a25b255d4949532573d7944457574eb0da62409",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 105,
+      "name": "RGA_AeroStrafe_F01.Y",
+      "rawPath": "raw/data/data121.kom/RGA_AeroStrafe_F01.Y",
+      "sha256": "4fd5506eda79286c43cd0f3aeb2ce978ec09857cfcfb90b312db625255f4a5fd",
+      "bytes": 1848,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 63,
+      "name": "NUCLEAR_NEW_AttackBox.X",
+      "rawPath": "raw/data/data120.kom/NUCLEAR_NEW_AttackBox.X",
+      "sha256": "4fa955fbb8f4d228f9dc81c75972bc85beba54a627a7d30bee289f832806ae5c",
+      "bytes": 8295,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 191,
+      "name": "SI_SA_ROT_NUCLEAR_Effect_Nuclear.X",
+      "rawPath": "raw/data/data120.kom/SI_SA_ROT_NUCLEAR_Effect_Nuclear.X",
+      "sha256": "11680af6e9db99a893b4c84002e1281900175b3ca91c1426c8244aa6dc6ed8b1",
+      "bytes": 20544,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 203,
+      "name": "elsword_SA_rageCutter_attackSphere.X",
+      "rawPath": "raw/data/data118.kom/elsword_SA_rageCutter_attackSphere.X",
+      "sha256": "292da037a2750b9e6dd7e70d46270b56c56346219ea1435bce76e1f9e457aaa9",
+      "bytes": 1347,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 152,
+      "name": "Raven_RRF_Ground_Impact_AttackBox01.X",
+      "rawPath": "raw/data/data120.kom/Raven_RRF_Ground_Impact_AttackBox01.X",
+      "sha256": "99b4405608fdad0a210f4ff374537a2efafa2eae9f0eb48d0cd0ab784ab8a534",
+      "bytes": 872,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1844,
+      "name": "ST_DarkFireBall_Dummy.X",
+      "rawPath": "raw/data/data002.kom/ST_DarkFireBall_Dummy.X",
+      "sha256": "a7e4c4022cbf9a1116fa90392ead4de506106ebb218c75acf0767a7ac676011a",
+      "bytes": 854,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 271,
+      "name": "ADE_PE01.Y",
+      "rawPath": "raw/data/data147.kom/ADE_PE01.Y",
+      "sha256": "7d190ce81c092bad654807dc82245fee266268add728161ea5b01b47b64f2a98",
+      "bytes": 713,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data147.kom",
+      "ordinal": 260,
+      "name": "ADE_GRAVITY_BURSTER_M01.dds",
+      "rawPath": "raw/data/data147.kom/ADE_GRAVITY_BURSTER_M01.dds",
+      "sha256": "497ddeca1416f188cf7b07860bcc7d15e356fc3bfc7e809798fe276435d0e96b",
+      "bytes": 1152,
+      "signatureHex": "444453207c00000007100a0020000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 187,
+      "name": "aisha_SA_SCREWDRIVER_circle.X",
+      "rawPath": "raw/data/data116.kom/aisha_SA_SCREWDRIVER_circle.X",
+      "sha256": "62f7e4a84d4a91d2a728341d85aef1b885c2a9e281114a3e409c44321da4bb12",
+      "bytes": 3042,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 188,
+      "name": "aisha_SA_SCREWDRIVER_circle.dds",
+      "rawPath": "raw/data/data116.kom/aisha_SA_SCREWDRIVER_circle.dds",
+      "sha256": "153c005386e520660ba45c1d9f49919592899dae93ff2cbdf8baf59761f2f43a",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 68,
+      "name": "Lire_SI_A_Low_Kick_Mesh02.X",
+      "rawPath": "raw/data/data121.kom/Lire_SI_A_Low_Kick_Mesh02.X",
+      "sha256": "7cdcdf82c33e3e8e51377678d01491eb875295f2bb1ba0db4aa337eb30806a6b",
+      "bytes": 965,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data121.kom",
+      "ordinal": 65,
+      "name": "Lire_LowKick_Impact01.tga",
+      "rawPath": "raw/data/data121.kom/Lire_LowKick_Impact01.tga",
+      "sha256": "7fe5cf9f0b44a1b531e4ad16bc53737c17126de91a0783e61c1f1d1784366632",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 138,
+      "name": "Land_Dimolisher_M05.X",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M05.X",
+      "sha256": "3d976f98f231db2af9aef497568ca103492a4e02f1bb21560b11b722adeadc7a",
+      "bytes": 1516,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 139,
+      "name": "Land_Dimolisher_M05.dds",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M05.dds",
+      "sha256": "98e3ac707e11d3fb4a11017624474043d9f0f4980fc1e9768b2d072e8e369198",
+      "bytes": 87536,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data157.kom",
+      "ordinal": 162,
+      "name": "LD_Slicer_trace_01.dds",
+      "rawPath": "raw/data/data157.kom/LD_Slicer_trace_01.dds",
+      "sha256": "a6c7d797770a5e35a80a9e2f6d7bb370e82ffb2ab727976ba8c10b380ec102be",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 132,
+      "name": "Land_Dimolisher_M01.X",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M01.X",
+      "sha256": "9fad3e5e164789ca8cf9673f46c10bf75dcb1d75ba25dc484e71856835f3d485",
+      "bytes": 4180,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 133,
+      "name": "Land_Dimolisher_M01.dds",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M01.dds",
+      "sha256": "2d98c5a642a8d3bcccd6ee7e181c980ea048cc17ed3f0946a18eff048274d041",
+      "bytes": 65664,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 136,
+      "name": "Land_Dimolisher_M03.X",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M03.X",
+      "sha256": "a22f8ea2f69a2944eae1a153421085dd7349333603692fb0c77593d3716907b0",
+      "bytes": 1380,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data117.kom",
+      "ordinal": 137,
+      "name": "Land_Dimolisher_M03.dds",
+      "rawPath": "raw/data/data117.kom/Land_Dimolisher_M03.dds",
+      "sha256": "43b6f8e3f7443d8af7a016ba697e6c940f846d457b3f695fb38e94b971f79afa",
+      "bytes": 65664,
+      "signatureHex": "444453207c00000007100a0000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 64,
+      "name": "Condense_Pulse02.dds",
+      "rawPath": "raw/data/data048.kom/Condense_Pulse02.dds",
+      "sha256": "51b4e1c4dbc7cc18eb504d2880ec703da139e5f79d5e332912ae126c406e71ca",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data122.kom",
+      "ordinal": 6,
+      "name": "MagicSquareLight01_Poision.tga",
+      "rawPath": "raw/data/data122.kom/MagicSquareLight01_Poision.tga",
+      "sha256": "3913c46fa9718a603108cbb29cf3e35ab3bab5a9db0eba28049e31085e6e6dda",
+      "bytes": 16428,
+      "signatureHex": "00000200000000000000000040004000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 75,
+      "name": "ROT_HellDive_M02.X",
+      "rawPath": "raw/data/data120.kom/ROT_HellDive_M02.X",
+      "sha256": "872ce4afac96689e6607dc25c75725d46e94b25cf66d47b14b98bcd8372eb893",
+      "bytes": 1932,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 13,
+      "name": "CSG_BUSTER_Shell_Red.tga",
+      "rawPath": "raw/data/data120.kom/CSG_BUSTER_Shell_Red.tga",
+      "sha256": "bd6b472188b647a4557c968a61415f8364c517438a91b72edb2fc97e5e0ee2e2",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 74,
+      "name": "ROT_HellDive_M01.X",
+      "rawPath": "raw/data/data120.kom/ROT_HellDive_M01.X",
+      "sha256": "e095cd3659bb6ace4427273e16cd8a06d9fafa6d79e47295ace8163bd43a8630",
+      "bytes": 2885,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 272,
+      "name": "Heal01.dds",
+      "rawPath": "raw/data/data048.kom/Heal01.dds",
+      "sha256": "3b5728b455c51674a2e0d96859f255ffee48cc13a121c33151f2380b2a24b6cd",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2207,
+      "name": "trockBome_0_MagicAttackA_spark01.X",
+      "rawPath": "raw/data/data002.kom/trockBome_0_MagicAttackA_spark01.X",
+      "sha256": "fcc04d549268801bfaa3754f1a387d451970410023d981f1e41e92f3da53ad52",
+      "bytes": 1819,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2206,
+      "name": "trockBome_0_MagicAttackA_spark.dds",
+      "rawPath": "raw/data/data002.kom/trockBome_0_MagicAttackA_spark.dds",
+      "sha256": "5e6b22e836f5d26cd55b5aaf85dda6a70977c2c7982c90fc1fba077899641a9b",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 5,
+      "name": "AEM_M_lightning01.Y",
+      "rawPath": "raw/data/data116.kom/AEM_M_lightning01.Y",
+      "sha256": "138422719663e986db532b2442929cc5ff852cc760c739e6eb2ab5b7a3a3fe95",
+      "bytes": 1235,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 157,
+      "name": "SA_AEM_ELEMENTAL_STORM_Lightining.dds",
+      "rawPath": "raw/data/data116.kom/SA_AEM_ELEMENTAL_STORM_Lightining.dds",
+      "sha256": "3b0ddb45c45bd3958cbd2f0fbe5cb635df8131c8e7a04d1a45db733176fe0ca1",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 6,
+      "name": "AEM_M_lightning02.Y",
+      "rawPath": "raw/data/data116.kom/AEM_M_lightning02.Y",
+      "sha256": "f591b0017121cf1df41299fbecececab0903d8c7aa4c34c446623fead33f5f3a",
+      "bytes": 2151,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data125.kom",
+      "ordinal": 50,
+      "name": "Gear_Water.tga",
+      "rawPath": "raw/data/data125.kom/Gear_Water.tga",
+      "sha256": "e1c6a1770967862059b020cd63eba10b311a594f7c6072f2ad321213e2b6d590",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 58,
+      "name": "ColorBallGray.dds",
+      "rawPath": "raw/data/data048.kom/ColorBallGray.dds",
+      "sha256": "200078232fe864aedf1802d8bff536e58e9b441681cf960633da7b561a1f16b7",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 99,
+      "name": "RTW_Flame_Buster.dds",
+      "rawPath": "raw/data/data120.kom/RTW_Flame_Buster.dds",
+      "sha256": "83969317bcb69985a24e2e597315169ba6bb805e4882cfd2c0028ce921103b0c",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 135,
+      "name": "Riding_Ancient_Pporu_Fireball02A.dds",
+      "rawPath": "raw/data/data118.kom/Riding_Ancient_Pporu_Fireball02A.dds",
+      "sha256": "a0acfe083d6b3388a0ad3c4fc2a69b23b914f16e6d5b0fb730a873b44233ac01",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 280,
+      "name": "Inspector_State_Shield.tga",
+      "rawPath": "raw/data/data048.kom/Inspector_State_Shield.tga",
+      "sha256": "4c34bae986f27cec9c191ba119e37f5941547b84e18f426da1e525b7f181effa",
+      "bytes": 262188,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data119.kom",
+      "ordinal": 305,
+      "name": "eve_SA_photonFlare_lightLine.Y",
+      "rawPath": "raw/data/data119.kom/eve_SA_photonFlare_lightLine.Y",
+      "sha256": "08516d7de547870a0cea8c9e447e571970387a70a3a94ce6bc5da814db0f8780",
+      "bytes": 638,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data119.kom",
+      "ordinal": 306,
+      "name": "eve_SA_photonFlare_lightLine.dds",
+      "rawPath": "raw/data/data119.kom/eve_SA_photonFlare_lightLine.dds",
+      "sha256": "6e73bab066fef198ab3511236320a06af97c8dacecfffa19197937b1dfcc9788",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 346,
+      "name": "DarkGate_G_Baby_Potion2.dds",
+      "rawPath": "raw/data/data002.kom/DarkGate_G_Baby_Potion2.dds",
+      "sha256": "8f6b0c9d4111fec41fc6c95c82a5a5f7fc83e81ca3c7ee83dbf7eea698d8407d",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 34,
+      "name": "HA_RRF_Reckless_Fiste_HAND_R.X",
+      "rawPath": "raw/data/data120.kom/HA_RRF_Reckless_Fiste_HAND_R.X",
+      "sha256": "84a719d517cec3ab5708b365eface57561273c3e9d8db96eab4a5d7dffefdb89",
+      "bytes": 107957,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 52,
+      "name": "Mesh_Raven_RRF_Cash_Left_Hand.dds",
+      "rawPath": "raw/data/data120.kom/Mesh_Raven_RRF_Cash_Left_Hand.dds",
+      "sha256": "4830906077639cef49fb0f314b91ff67ae440c7f99a0fdca52a9bd5f5b54fd28",
+      "bytes": 16512,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 31,
+      "name": "HA_RRF_Reckless_Fiste_FX_Map02.tga",
+      "rawPath": "raw/data/data120.kom/HA_RRF_Reckless_Fiste_FX_Map02.tga",
+      "sha256": "b7b9f0b17769a70c118561343ee760802fbebe8b4132784961c3d58dfd0443e4",
+      "bytes": 262188,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 30,
+      "name": "HA_RRF_Reckless_Fiste_FX_Map01.tga",
+      "rawPath": "raw/data/data120.kom/HA_RRF_Reckless_Fiste_FX_Map01.tga",
+      "sha256": "861d8e7e7c2c5ed49ad5faf38f279142f1b70305077b9b67ac38e4c8f65696de",
+      "bytes": 262188,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1926,
+      "name": "SpreadLight01.dds",
+      "rawPath": "raw/data/data002.kom/SpreadLight01.dds",
+      "sha256": "2b15db6df7f43b2790efb75f4af2773fa55f5efe4112db563e7e8dace70cb7c2",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 63,
+      "name": "Condense_Pulse01.dds",
+      "rawPath": "raw/data/data048.kom/Condense_Pulse01.dds",
+      "sha256": "e217d1328a54a094a050874a2019c478be851b5ea3a53600a32851ab278be1a6",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 197,
+      "name": "aisha_active_energySpurt_circle.X",
+      "rawPath": "raw/data/data116.kom/aisha_active_energySpurt_circle.X",
+      "sha256": "d3cd43ed9ed0afcae6df2ea454434cbaf06885d03d0906c454f71e206036ebff",
+      "bytes": 3997,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data116.kom",
+      "ordinal": 196,
+      "name": "aisha_active_energySpurt_circle.DDS",
+      "rawPath": "raw/data/data116.kom/aisha_active_energySpurt_circle.DDS",
+      "sha256": "4ea269c3b88f7a2f501b66ae38cf724675afc2febca247e4a16dd71c2fcf0c35",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 413,
+      "name": "Raven_CanonBlade01.dds",
+      "rawPath": "raw/data/data048.kom/Raven_CanonBlade01.dds",
+      "sha256": "7ef25058cac427674e000ff817c66aa945431bf52ac0e997d15431286fb658cc",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data120.kom",
+      "ordinal": 22,
+      "name": "FireHit_Impact01.dds",
+      "rawPath": "raw/data/data120.kom/FireHit_Impact01.dds",
+      "sha256": "b345d83d33a1f1cb5aa8b5343890198fd694a15134d4c4bc23756cc990522be5",
+      "bytes": 32896,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 7,
+      "name": "Arme_Critical.dds",
+      "rawPath": "raw/data/data048.kom/Arme_Critical.dds",
+      "sha256": "ab54b7572e31609c167af61760a91592bf49d7dc178a1257984873296364c5f1",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 10,
+      "name": "Arme_Damage_Ring.dds",
+      "rawPath": "raw/data/data048.kom/Arme_Damage_Ring.dds",
+      "sha256": "38fda3a9ec0461486a619f0d37e74193f976f51a9e05609d74d56f2988cbebe5",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 558,
+      "name": "star2.dds",
+      "rawPath": "raw/data/data048.kom/star2.dds",
+      "sha256": "bd6213b4385088ddb734bc955fa0c2ecc02f3c0ed460d37e9389a03b4c288df8",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 9,
+      "name": "Arme_Damage_Center.dds",
+      "rawPath": "raw/data/data048.kom/Arme_Damage_Center.dds",
+      "sha256": "78207cabb8d9e34f8107278f3fabd30ec3158b375544a44616762058dfdc15ca",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 557,
+      "name": "star1.dds",
+      "rawPath": "raw/data/data048.kom/star1.dds",
+      "sha256": "c207645850c629bc629cdae00325aeb494d62f464524fbe7d1bbe49770c9a0a8",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 295,
+      "name": "Leg_Wound.tga",
+      "rawPath": "raw/data/data048.kom/Leg_Wound.tga",
+      "sha256": "51ad20c817d4f9ec3ea97a7ef83f76ab6eeff7ce4613f5441118758e65dbff68",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1422,
+      "name": "PET_GOLDFOX_MIHOEffect02.tga",
+      "rawPath": "raw/data/data002.kom/PET_GOLDFOX_MIHOEffect02.tga",
+      "sha256": "da5be87b0b2a245fad657d68bb46721199d0e4994504531889252748f91dd56e",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data118.kom",
+      "ordinal": 247,
+      "name": "elsword_active_swordFall_downSpark.DDS",
+      "rawPath": "raw/data/data118.kom/elsword_active_swordFall_downSpark.DDS",
+      "sha256": "f4c7a89c9e13c6be6dba51265f056eb95cf2d0e2f376016b53a389a9b162acb0",
+      "bytes": 22000,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 2160,
+      "name": "secretVelder_Unohound_fire.dds",
+      "rawPath": "raw/data/data002.kom/secretVelder_Unohound_fire.dds",
+      "sha256": "cff0619350602fdc3bd43d781d148717896ecabc3f0a8664269fb56569a6ad21",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 84,
+      "name": "Damage_Line.dds",
+      "rawPath": "raw/data/data048.kom/Damage_Line.dds",
+      "sha256": "8d328ee9dc0b66619c595b2095225e2f2b816bdef0c7c20653ba107e0553e86f",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 438,
+      "name": "SlashLight.dds",
+      "rawPath": "raw/data/data048.kom/SlashLight.dds",
+      "sha256": "852736aa9f56d2d462b624502133eae6af9d316898fe85ce53e2933b0b44604e",
+      "bytes": 87508,
+      "signatureHex": "444453207c00000007100a0080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 85,
+      "name": "Damage_Ling.dds",
+      "rawPath": "raw/data/data048.kom/Damage_Ling.dds",
+      "sha256": "1480c4694a614d770dcedd40e4cee6232d81d3db34fdcbf9b208879b09c5b4a0",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 446,
+      "name": "Star.dds",
+      "rawPath": "raw/data/data048.kom/Star.dds",
+      "sha256": "ad155d522eeeae926f7f904f8aeb0fb2645dd166555a31e62e2a2ae4f7acb939",
+      "bytes": 5616,
+      "signatureHex": "444453207c00000007100a0040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 83,
+      "name": "Damage_Center.dds",
+      "rawPath": "raw/data/data048.kom/Damage_Center.dds",
+      "sha256": "35030c8408b5520481810eb6fd48240d56e02bc049f798787424d16fc425a781",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    }
+  ],
+  "runtimeDefaultsEvidence": "reference-V5 KTDGParticleSystem.h CParticle::Init; .cpp CParticleEventSequence constructor; native runtime not measured",
+  "limits": [
+    "Unsupported DSL fields are retained, not interpreted by guesswork.",
+    "Native RNG, composite emission timing and GPU blend remain target-client acceptance items."
+  ],
+  "meshFailures": [],
+  "missingTemplates": [],
+  "profileSha256": "eea9d9f661b15eeb1e821247db6892deac22a2da9741c5a0d7536617fd62b58c",
+  "incrementalBaseIndexes": [
+    "rf-fx-index.json",
+    "rf-buff-display-fx-index.json",
+    "rf-shadow-weapon-fx-index.json",
+    "rf-awakening-fx-index.json",
+    "rf-command-fx-index-v9.json"
+  ],
+  "incrementalUniqueTemplates": 16
+}

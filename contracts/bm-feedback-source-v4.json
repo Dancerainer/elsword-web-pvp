@@ -1,0 +1,1022 @@
+{
+  "schemaVersion": 1,
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "targetNativeConsumerAvailable": false,
+  "targetSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "targetStates": {
+    "RBM_COMBO_ZZZX": {
+      "raw": {
+        "SKILL_CANCEL_AFTER": 0.033,
+        "ANIM_SPEED": 2,
+        "ATTACK_CANCEL_AFTER": 100,
+        "ANIM_NAME": "RBM_COMBO_ZZZX",
+        "DASH_CANCEL_AFTER": 0.033,
+        "WALK_CANCEL_AFTER": 0.033,
+        "BWALK_CANCEL_AFTER": 100,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "SOUND_PLAY0": {
+          "1": 0.2,
+          "2": "Raven_PunchAttack1.ogg"
+        },
+        "ATTACK_TIME0": {
+          "1": 0.24,
+          "2": 0.3
+        },
+        "UNIT_SLASH_TRACE0": {
+          "1": 0,
+          "2": 0,
+          "3": 100,
+          "4": 0
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4645
+      }
+    },
+    "RBM_COMBO_ZZZXZ": {
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 100,
+        "ANIM_NAME": "RBM_COMBO_ZZZXZ",
+        "BWALK_CANCEL_AFTER": 100,
+        "DASH_CANCEL_AFTER": 0.209,
+        "SKILL_CANCEL_AFTER": 0.209,
+        "WALK_CANCEL_AFTER": 0.209,
+        "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "CAN_PUSH_UNIT": 0,
+        "CAN_PASS_UNIT": 1,
+        "AFTER_IMAGE": {
+          "1": 0.09,
+          "2": 0.39
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.09,
+          "2": 0.39
+        },
+        "SPEED_TIME0": {
+          "1": 2800,
+          "2": 0,
+          "3": 0.09,
+          "4": 2
+        },
+        "SPEED_TIME1": {
+          "1": 1000,
+          "2": 0,
+          "3": 0.21,
+          "4": 2
+        },
+        "SPEED_TIME2": {
+          "1": 0,
+          "2": 0,
+          "3": 0.39,
+          "4": 2
+        },
+        "FLIP_DIR_END": 1,
+        "SOUND_PLAY0": {
+          "1": 0.321,
+          "2": "Raven_Slash1.ogg"
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Lhand1"
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 4.69,
+          "HIT_ADD_MP": 4.16,
+          "TECH_POINT": 117,
+          "BACK_SPEED_Y": 1300,
+          "CAMERA_CRASH_TIME": 0.2,
+          "CLEAR_SCREEN": 1,
+          "STOP_TIME_DEF": 0.4,
+          "BACK_SPEED_X": -1000,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 4,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1.56
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4741
+      }
+    },
+    "RSI_COMBO_XXX": {
+      "raw": {
+        "ATTACK_CANCEL_AFTER": 1,
+        "HIT_CAMERA0_RATE": 40,
+        "ANIM_NAME": "ComboX3",
+        "HIT_CAMERA1_RATE": 30,
+        "ANIM_SPEED": 1.1,
+        "DASH_CANCEL_AFTER": 0.6,
+        "SKILL_CANCEL_AFTER": 0.333,
+        "WALK_CANCEL_AFTER": 1,
+        "BWALK_CANCEL_AFTER": 0.733,
+        "HIT_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "UNIT_SLASH_TRACE0": {
+          "1": 0,
+          "2": 0,
+          "3": 100,
+          "4": 0
+        },
+        "SOUND_PLAY0": {
+          "1": 0.02,
+          "2": "RavenVoice_Shout03.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Raven_ComboX2Explosion.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "DISTANCE": 540,
+            "EYEDISTANCE": 100,
+            "HEIGHT": 50,
+            "CAMERA_TYPE": 1,
+            "LOOK_TYPE": 1
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 60,
+            "DISTANCE": 700,
+            "HEIGHT": 100,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 1
+          }
+        },
+        "COMBO_GUIDE": {
+          "1": "X",
+          "2": "XXX"
+        },
+        "IS_ATTACK_STATE": 1,
+        "USE_COMMON_CANCEL_AFTER": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 506
+      }
+    },
+    "RSI_SI3_SOUL_TAKER_HYPERSONIC_STAB": {
+      "raw": {
+        "ANIM_NAME": "ST_SP3a_HypersonicStab",
+        "ANIM_SPEED": 1.625,
+        "SHOW_SKILL_CUT_IN_TIME": 0.04,
+        "NORMAL_CAMERA1_RATE": 70,
+        "NORMAL_CAMERA0_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 1.3
+        },
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_HyperSonicStab.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.825,
+          "2": "Raven_ST_SP3_HyperSonicStab3.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.842,
+          "2": "Raven_ST_SP3_HyperSonicStab2.ogg"
+        },
+        "SOUND_PLAY4": {
+          "1": 0.852,
+          "2": "Raven_ST_SP3_HyperSonicStab1.ogg"
+        },
+        "SOUND_PLAY5": {
+          "1": 0.821,
+          "2": "Raven_Slash1.ogg"
+        },
+        "SOUND_PLAY6": {
+          "1": 1.212,
+          "2": "RavenVoice_Shout02.ogg"
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.01,
+          "2": 2
+        },
+        "CAN_PUSH_UNIT": 0,
+        "CAN_PASS_UNIT": 1,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "AFTER_IMAGE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.6,
+          "2": 0.94
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 20,
+          "CREATE_DAMAGE_EFFECT_NAME": "RAVEN_HYPER_SONIC_STAB",
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_GAP": 5,
+          "DAMAGE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 1,
+          "CAN_REVENGE": 0,
+          "APPLIED_SKILL_ID": 24013
+        },
+        "CHANGE_WORLD_COLOR": 1,
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_RST_HyperSonicStab",
+          "2": 0
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -40,
+            "LOOK_PARTS": "Bip01_Spine",
+            "HEIGHT": 200,
+            "DISTANCE": 1200,
+            "TRACKINGTIME": 1,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4491
+      }
+    },
+    "RSI_SI3_SOUL_TAKER_HYPERSONIC_STAB_HYPER": {
+      "raw": {
+        "ANIM_NAME": "ST_SP3b_HypersonicStab",
+        "ANIM_SPEED": 1.625,
+        "SHOW_SKILL_CUT_IN_TIME": 0.04,
+        "NORMAL_CAMERA0_RATE": 30,
+        "NORMAL_CAMERA1_RATE": 70,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 1.3
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.01,
+          "2": 2
+        },
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_HyperSonicStab.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.825,
+          "2": "Raven_ST_SP3_HyperSonicStab3.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.842,
+          "2": "Raven_ST_SP3_HyperSonicStab2.ogg"
+        },
+        "SOUND_PLAY4": {
+          "1": 0.852,
+          "2": "Raven_ST_SP3_HyperSonicStab1.ogg"
+        },
+        "SOUND_PLAY5": {
+          "1": 0.821,
+          "2": "Raven_Slash1.ogg"
+        },
+        "SOUND_PLAY6": {
+          "1": 1.68,
+          "2": "Raven_Slash5.ogg"
+        },
+        "SOUND_PLAY7": {
+          "1": 2.514,
+          "2": "Raven_Slash1.ogg"
+        },
+        "SOUND_PLAY8": {
+          "1": 0.912,
+          "2": "RavenVoice_Shout02.ogg"
+        },
+        "CAN_PUSH_UNIT": 0,
+        "CAN_PASS_UNIT": 1,
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "AFTER_IMAGE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.6,
+          "2": 0.94
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 20,
+          "CREATE_DAMAGE_EFFECT_NAME": "RAVEN_HYPER_SONIC_STAB_HYPER",
+          "TECH_POINT": 900,
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_GAP": 5,
+          "DAMAGE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 11,
+          "RE_ATTACK": 1,
+          "APPLIED_SKILL_ID": 24013
+        },
+        "CHANGE_WORLD_COLOR": 1,
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_RST_HyperSonicStab",
+          "2": 0
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -40,
+            "LOOK_PARTS": "Bip01_Spine",
+            "HEIGHT": 200,
+            "DISTANCE": 1200,
+            "TRACKINGTIME": 1,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 4586
+      }
+    }
+  },
+  "targetSets": {
+    "EffectSet_A_RF_XXX": {
+      "raw": {
+        "NAME": "EffectSet_A_RF_XXX",
+        "EFFECT0": {
+          "BONE_NAME": "Dummy2_Lhand",
+          "NAME": "Raven_Hand_FireSM",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "DamageEffect_RF_XXX",
+          "POSITION_OFFSET_Y": 100,
+          "POSITION_OFFSET_X": 150,
+          "START_TIME": 0.25,
+          "EFFECT_TYPE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0.35,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 10954
+      }
+    },
+    "EffectSet_RBM_BLACKHOLE": {
+      "raw": {
+        "NAME": "EffectSet_RBM_BLACKHOLE",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "RBM_BLACKHOLE",
+          "POSITION_OFFSET_Y": -90,
+          "POSITION_OFFSET_X": 130,
+          "EFFECT_TYPE": 1
+        },
+        "EFFECT1": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Condenselight_Raven_RSM_ComboZ4a_BlackHole01",
+          "POSITION_OFFSET_X": 130,
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT2": {
+          "BONE_NAME": "Bip01_L_Hand",
+          "NAME": "Light_Raven_RSM_ComboZ4a_BlackHole01",
+          "POSITION_OFFSET_X": 130,
+          "EFFECT_TYPE": 8
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 90556
+      }
+    }
+  },
+  "targetDamageEffects": {
+    "RBM_BLACKHOLE": {
+      "raw": {
+        "ATTACK_TIME_START": 0.01,
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RBM_BlackHole",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "BLACKHOLE_DATA": {
+          "DRAGGING_SPEED": 600,
+          "DRAGGING_RANGE": 9999,
+          "DRAG_ONLY_HITTED_UNIT": 1
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": -7,
+          "HIT_ADD_MP": 4.2,
+          "TECH_POINT": 260,
+          "BACK_SPEED_Y": 1300,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0,
+          "HIT_GAP": 0.5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "ATTACK_TYPE": 2,
+          "RE_ATTACK": 1,
+          "DAMAGE": {
+            "MAGIC": 2.6
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "DamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_RBM_Blackhole_Generate.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 215213
+      }
+    },
+    "RAVEN_HYPER_SONIC_STAB": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "Raven_ST_Sp1_SonicStab",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "CREATE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HYPER_SONIC_STAB_Damage",
+          "EVENT_TIME": 0.001,
+          "SET_GROUP_ID": 1,
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 63061
+      }
+    },
+    "RAVEN_HYPER_SONIC_STAB_Damage": {
+      "raw": {
+        "ATTACK_TIME_START": 0.5,
+        "DAMAGE_TIME": 99,
+        "ATTACK_TIME_END": 0.65,
+        "MAIN_EFFECT_NAME": "Raven_ST_Sp1_SonicStab",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "GROUP_DAMAGE": 1,
+        "DAMAGE_DATA": {
+          "STOP_TIME_DEF": 0,
+          "CAMERA_CRASH_GAP": 20,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0.1,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 1125,
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_ADD_MP": 15,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24013,
+          "DAMAGE": {
+            "PHYSIC": 28.93
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpact",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpactCore",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "DamageImpactSlash_New01",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ST_SP3_HyperSonicStab4.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 63132
+      }
+    },
+    "RAVEN_HYPER_SONIC_STAB_HYPER": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "Raven_ST_Sp1_SonicStab",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "CREATE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HYPER_SONIC_STAB_HYPER_Damage",
+          "EVENT_TIME": 0.001,
+          "SET_GROUP_ID": 1,
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 63151
+      }
+    },
+    "RAVEN_HYPER_SONIC_STAB_HYPER_Damage": {
+      "raw": {
+        "ATTACK_TIME_START": 0.5,
+        "DAMAGE_TIME": 44,
+        "ATTACK_TIME_END": 1.5,
+        "MAIN_EFFECT_NAME": "Raven_ST_Sp1_SonicStab",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "GROUP_DAMAGE": 1,
+        "DAMAGE_DATA": {
+          "STOP_TIME_DEF": 0,
+          "CAMERA_CRASH_GAP": 20,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 0.1,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 173,
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_ADD_MP": 2.31,
+          "BACK_SPEED_X": 0,
+          "DAMAGE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24013,
+          "DAMAGE": {
+            "PHYSIC": 5.54
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpact",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "DamageImpactCore",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 2,
+          "PARTICLE_NAME": "DamageImpactSlash_New01",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "FireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Raven_ST_SP3_HyperSonicStab4.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 63222
+      }
+    },
+    "DamageEffect_RF_XXX": {
+      "raw": {
+        "DAMAGE_TIME": 18,
+        "MAIN_EFFECT_NAME": "RAVEN_RF_XXX_ATTACK_BOX",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 2,
+          "LOCK_ON_TYPE": 4
+        },
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.15
+        },
+        "DAMAGE_DATA": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 750,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": -300,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "CLEAR_SCREEN_COLOR_A": 0,
+          "FORCE_DOWN": -5.17,
+          "BACK_SPEED_Y": 300,
+          "CLEAR_SCREEN_COLOR_B": 1,
+          "CLEAR_SCREEN": 1,
+          "CLEAR_SCREEN_COLOR_G": 1,
+          "HIT_GAP": 0.15,
+          "TECH_POINT": 80,
+          "BACK_SPEED_X": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CLEAR_SCREEN_COLOR_R": 1,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.4,
+          "HIT_ADD_MP": 2.54,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 4,
+          "RE_ATTACK": 1,
+          "FORCE_FLY": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 1.2
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P01_D",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EnchantHand_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "EMK_BigBurst_P03",
+          "POSITION_TYPE": 0
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "Elsword_Big_Burst.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 385135
+      }
+    }
+  },
+  "referenceSource": {
+    "path": "X2Lib/X2GURaven.cpp",
+    "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixed-V5-version-reference-not-target2016",
+    "spans": [
+      {
+        "method": "RBM_COMBO_ZZZX_StateStart",
+        "firstLine": 16091,
+        "lastLine": 16098,
+        "bytes": 355,
+        "sha256": "e47b865005149fe44eb5f79f969ee87b47b3aa912e2bc5659c68033e0075cdc4"
+      },
+      {
+        "method": "RBM_COMBO_ZZZX_FrameMove",
+        "firstLine": 16101,
+        "lastLine": 16122,
+        "bytes": 748,
+        "sha256": "83bd42e78546136baa237a3a797fd52bd4e2178402d925818c53444839446245"
+      },
+      {
+        "method": "RBM_COMBO_ZZZX_EventProcess",
+        "firstLine": 16123,
+        "lastLine": 16149,
+        "bytes": 818,
+        "sha256": "0639c689614a2fbd071ef10d4355185cbe50f26fae37ae4a52b0287c4c711646"
+      },
+      {
+        "method": "RBM_COMBO_ZZZXZ_Start",
+        "firstLine": 16150,
+        "lastLine": 16173,
+        "bytes": 762,
+        "sha256": "9e55c0e49bf301e34aa873f673198eecd984b87a0e14f391e47a9ef4dbf07665"
+      },
+      {
+        "method": "RBM_COMBO_ZZZXZ_EventProcess",
+        "firstLine": 16174,
+        "lastLine": 16216,
+        "bytes": 1264,
+        "sha256": "c4d5f95ab2b09e7ab3c4cd1b2e42e055c29d8742d73de75ac9804009b83fbe96"
+      },
+      {
+        "method": "RBM_COMBO_ZZZX_EXPLOSION_StateStart",
+        "firstLine": 16219,
+        "lastLine": 16224,
+        "bytes": 312,
+        "sha256": "149b44a11eff3e8bf1e787c5e48b3c50ccdac0583f7a5d03e68261ab472c9464"
+      },
+      {
+        "method": "RBM_COMBO_ZZZX_EXPLOSION_FrameMove",
+        "firstLine": 16227,
+        "lastLine": 16254,
+        "bytes": 876,
+        "sha256": "fc8f4e9109ccdc5a1641af55a925c16f69572e5e127394f08d0c8c3281d3c932"
+      },
+      {
+        "method": "RSI_WAIT_Start",
+        "firstLine": 6114,
+        "lastLine": 6127,
+        "bytes": 476,
+        "sha256": "e5747b3b91f8c6d632ed0c521ce7189c7045d53c43118460bd95aafb3222e5b7"
+      },
+      {
+        "method": "RSI_WALK_Start",
+        "firstLine": 6180,
+        "lastLine": 6190,
+        "bytes": 339,
+        "sha256": "e29d881edb1b324fa7a24df4effe8ba5f120946fb4e5a23b74b1a8c2051ae899"
+      },
+      {
+        "method": "RSI_DASH_END_Start",
+        "firstLine": 6488,
+        "lastLine": 6501,
+        "bytes": 418,
+        "sha256": "ef1c0eed4f039324020bef20dbe63eabce18926affe09767c416185de206492c"
+      },
+      {
+        "method": "DamageReact",
+        "firstLine": 430,
+        "lastLine": 472,
+        "bytes": 1848,
+        "sha256": "5fb8a87f7abb1a4ca1b2cd9388cb6f228b2faf414976576b520e1fdf05a4a49d"
+      },
+      {
+        "method": "RSI_SI3_SOUL_TAKER_HYPERSONIC_STAB_FrameMoveFuture",
+        "firstLine": 12447,
+        "lastLine": 12463,
+        "bytes": 530,
+        "sha256": "a6714c042edcf5dff50ab8426a05a10a6c00b52c6ae1e4c97cac70adbfcf1d81"
+      },
+      {
+        "method": "RSI_SI3_SOUL_TAKER_HYPERSONIC_STAB_FrameMove",
+        "firstLine": 12466,
+        "lastLine": 12656,
+        "bytes": 5741,
+        "sha256": "06a6c8b5ea2676a65487af6e5245b195d6e88bc2be3c9161070dd5eb1ea43124"
+      },
+      {
+        "method": "RSI_COMBO_XXX_FrameMove",
+        "firstLine": 8541,
+        "lastLine": 8600,
+        "bytes": 1943,
+        "sha256": "5d51e9c03f453b0c90b9f278035597228360aac8a12ac173166a4bc532b77c84"
+      },
+      {
+        "method": "SpecialAttackEventProcess",
+        "firstLine": 5683,
+        "lastLine": 5990,
+        "bytes": 12153,
+        "sha256": "47bcd5e5f9105d0ad17ca5462df11bc42bc58486ee1794d6d43b5657bf0b5e54"
+      }
+    ]
+  },
+  "stopSetReference": {
+    "path": "X2Lib/X2EffectSet.cpp",
+    "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+    "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixed-V5-version-reference-not-target2016",
+    "spans": [
+      {
+        "signature": "void CX2EffectSet::StopEffectSet(",
+        "firstLine": 2033,
+        "lastLine": 2090,
+        "bytes": 1731,
+        "sha256": "d8b19d03712ddf1658c8de5996dffe4a01073125e6cd61941cd213f03ef37c74"
+      },
+      {
+        "signature": "CX2EffectSet::EffectSetInstance::~EffectSetInstance(",
+        "firstLine": 2614,
+        "lastLine": 2633,
+        "bytes": 560,
+        "sha256": "943de51e260b79fab7282d532d4dfa2644514ba659bba801106be1e4ab79fff9"
+      },
+      {
+        "signature": "CX2EffectSet::EffectInstance::~EffectInstance(",
+        "firstLine": 2480,
+        "lastLine": 2609,
+        "bytes": 3581,
+        "sha256": "56bdb2ce0565f40146073d24bfad27ce8dc6418a3dd008a6074e12a8d9bae485"
+      }
+    ],
+    "stopPolicy": "StopEffectSet deletes the saved instance; its destructor deletes every effect member, including the damage handle and particle handles."
+  },
+  "blackHoleTimerReference": {
+    "firstLine": 5485,
+    "lastLine": 5509,
+    "clock": "m_fElapsedTime; no animation speed multiplier",
+    "stopCondition": "remaining <= 0 or owner death; explicit StopEffectSet handle",
+    "cancelCallbacks": {
+      "successfulSpecialAttack": [
+        5975,
+        5982
+      ],
+      "waitStart": [
+        6116,
+        6123
+      ],
+      "walkStart": [
+        6180,
+        6187
+      ],
+      "dashEndStart": [
+        6490,
+        6497
+      ],
+      "loseFloorZZZX": [
+        16134,
+        16139
+      ],
+      "loseFloorZZZXZ": [
+        16177,
+        16183
+      ],
+      "nonDummyDamageReaction": [
+        455,
+        472
+      ]
+    },
+    "cancelPolicy": "BALANCE_BLADE_MASTER_20130117 clears the timer/count after successful skill acceptance or the listed movement callbacks; failed skills and internal ZZZXZ continuations do not clear it.",
+    "recheck": "V5 recheck supersedes the earlier incomplete v4 lifetime conclusion."
+  },
+  "xxxReuse": {
+    "authorization": "Project rule reuses the RF XXX implementation for BM.",
+    "adapterContract": "contracts/rf-xxx-candidate-v15.json",
+    "targetNativeOwnerVerified": false,
+    "mpGate": "Existing compiled fixed-V5 .16 / 7 MP gate; target2016 equivalence pending.",
+    "unchanged": [
+      "Original .25 set delay",
+      "Original .4 mesh lifetime",
+      "Original damage and helpers",
+      "Original accepted-hit ceiling",
+      "Existing cancellation and payment failure policy"
+    ]
+  },
+  "conclusions": {
+    "blackHoleSkillGate": "Target .033 / .209 strict gates are already implemented; preserve.",
+    "blackHoleSkillCancelLifetime": "Pinned fixed V5 explicitly clears the retained timer on successful SpecialAttack; its next FrameMove stops the saved set. Preserve no-DELETE_STATE declarations but consume these cancellation callbacks.",
+    "ordinaryHypersonicStab": "Preserve target .6-.94 contact and child .5-.65 global damage windows; no source supports an arbitrary delay.",
+    "hypersonicDynamicFeel": "Target2016 original-client trajectory unavailable; player timing suspicion remains a dynamic verification boundary."
+  }
+}

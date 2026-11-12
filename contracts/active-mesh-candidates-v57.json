@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "babylonVersion": "9.29.0",
+  "evidenceClass": "Installed pinned Babylon library source and current Web implementation; no original2016 renderer equivalence claim",
+  "inputs": [
+    {
+      "path": "node.js",
+      "sha256": "e4859368dbf13688644adb6a17bb3dc65220133d3a979889a4f8ae8e95bafad7",
+      "bytes": 44267,
+      "sections": [
+        {
+          "first": 102,
+          "last": 139,
+          "purpose": "Public reparent calls native cached enabled synchronization",
+          "sha256": "989a246929b5f491f88174f14fe291d257405bca7609ff71aa64c8c69998fec0"
+        },
+        {
+          "first": 513,
+          "last": 584,
+          "purpose": "isEnabled is two cached booleans; own/effective public notifications",
+          "sha256": "a686bacd48545756121fe2dc8037efd10a472372dfc1c8df39a1a58e3fb11567"
+        },
+        {
+          "first": 808,
+          "last": 822,
+          "purpose": "Node dispose clears own/effective notifications",
+          "sha256": "7bad0425220a71b8fb8ff2e0656ce76803617481466332b30e80ad81455a3f51"
+        }
+      ]
+    },
+    {
+      "path": "scene.pure.js",
+      "sha256": "7306a197afd211ba2e6269dddd68c6dac4974429fce500948cbbb4498a69e69a",
+      "bytes": 239027,
+      "sections": [
+        {
+          "first": 206,
+          "last": 218,
+          "purpose": "Public getNodes includes render and non-render nodes",
+          "sha256": "e204f1f51d9cdba42e2f59c3a979a9d1a49fc530142d39d126d91ff339c9bb33"
+        },
+        {
+          "first": 1630,
+          "last": 1654,
+          "purpose": "Constructor-default provider is an instance arrow over current scene.meshes",
+          "sha256": "12f905137ab1f6a6fcd268be997fb964d178eef1d9089784a987f5692a5dfcd9"
+        },
+        {
+          "first": 2326,
+          "last": 2367,
+          "purpose": "Mesh add notification deferred; remove notification synchronous",
+          "sha256": "a0421663c2194f6feea2b6511f535e209fb1a7943ff97e57bd4d7dc70f22781e"
+        }
+      ]
+    },
+    {
+      "path": "Misc/observable.pure.js",
+      "sha256": "cfe17166bc9a1120d9d2e94ac72943c53bc7c82e004acf498ed6c4f118fd3a71",
+      "bytes": 14407,
+      "sections": [
+        {
+          "first": 147,
+          "last": 178,
+          "purpose": "Public add supports insertFirst and returns removal handle",
+          "sha256": "e0b4b9c810e185d58dbf5632e108800da45d444698c9b7702873207a55511b68"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    "Node.isEnabled is not a recursive per-query ancestor walk; it reads cached own/parent booleans.",
+    "setEnabled/reparent synchronizes descendants and emits effective notifications, including inherited changes.",
+    "Scene default getActiveMeshCandidates is a per-instance arrow. Function names or a nonexistent prototype function do not prove default identity.",
+    "The game captures that provider directly after new Scene and opts into public Scene-managed membership and stock Node enabled semantics.",
+    "Mesh add is notified later, so data identity/length checks complement public membership events before an indexed result.",
+    "Own/effective notification turns may reenter during native descendant propagation; those queries retain the previous literal filter until the next microtask.",
+    "Custom/unknown providers, incompatible runtime, provider shape changes, duplicate candidate identities and unsupported Node methods use the literal original filter."
+  ],
+  "boundaries": [
+    "Silent same-array same-length scene.meshes writes bypassing public Scene membership are outside the explicit production contract.",
+    "Private Node cache writes and unregistered/custom enabled-observable implementations are not indexed.",
+    "The inserted-first observer guard is owned by the controlled scene; arbitrary later custom insertFirst callbacks that deliberately preempt it are outside that production ownership contract.",
+    "No isReady, culling, LOD, geometry, visibility or material count is changed. Candidate iteration still keeps original provider order.",
+    "Only operation counters and semantics are unit-tested here. Runtime FPS/CPU improvements require the separate actual-browser comparison."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "compiled-fixed-V5-Gauge-and-User-ManaBreak-subset; target2016 constants + reference host scheduling candidate",
+  "files": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h",
+      "relativePath": "KTDXLIB/Always.h",
+      "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+      "gitBlob": "df98aa59c900c86559ecb1d804f59651fdb6a0ba",
+      "bytes": 192825,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json",
+        "./reports/rf-native-execution-source.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\KTDXLIB\\Always.h",
+        "./.cache\\native-reference\\KTDXLIB\\Always.h"
+      ]
+    },
+    {
+      "relativePath": "KncWX2Server/Common/ServerDefine.h",
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/Common/ServerDefine.h",
+      "gitBlob": "d2ab84a4d390189ddee1f3224a654e03da55fa7b",
+      "sha256": "a83078882b7ff835acaae640eb3b8b58a000f33da2e3ab01eb30c0b9170fed29",
+      "bytes": 251310
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.h",
+      "relativePath": "X2Lib/X2DamageManager.h",
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "gitBlob": "9be2a8cc3118808d094ae00b050ebe29b2d3612f",
+      "bytes": 57466,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageManager.h"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2DamageManager.h"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GUUser.cpp",
+        "./.cache\\native-reference\\X2Lib\\X2GUUser.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.cpp",
+      "relativePath": "X2Lib/X2GageData.cpp",
+      "sha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8",
+      "gitBlob": "abf8e30e410b0552deeea0198b592cfe670e95b7",
+      "bytes": 40241,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.cpp"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GageData.cpp"
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.h",
+      "relativePath": "X2Lib/X2GageData.h",
+      "sha256": "ad9b998352f09864fb770a534d27e6d50c3f8c492a9131486efd7bd70bf7915f",
+      "gitBlob": "ac49bd9c815cfc1f668078f17258db88c455886b",
+      "bytes": 35173,
+      "gitPaths": [
+        "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.h"
+      ],
+      "manifests": [
+        "./reports/rf-v5-native-reference.json"
+      ],
+      "verifiedInputs": [
+        "./.cache\\native-v5-unified\\X2Lib\\X2GageData.h"
+      ]
+    },
+    {
+      "relativePath": "X2Lib/X2GageUI.h",
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageUI.h",
+      "gitBlob": "aa4bd9bcc1cac1df7eee0c1aa394466e9de47b7c",
+      "sha256": "226734011c12ea7b2101ed967612437c27ff1d29f1906940bc7d54ffd039f212",
+      "bytes": 29881
+    }
+  ],
+  "macros": [
+    "FIX_FORCE_DOWN_AND_DETONATION_BUG",
+    "RIDING_SYSTEM",
+    "NO_DETONATION",
+    "SERV_9TH_NEW_CHARACTER"
+  ],
+  "constants": {
+    "minimumCharge": 100,
+    "maxCharge": 300,
+    "targetChargeRate": 130
+  },
+  "targetComponent": {
+    "field": "components.MP_CHARGE_RATE",
+    "value": 130,
+    "ravenSource": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "evidenceClass": "target2016 KL declaration; not client measured"
+  },
+  "adapterSha256": "129c0697c9eb31fedf38678c8aa5dc859a88fcf1b04e04366d5baf1ab32fc847",
+  "fragments": [
+    {
+      "path": "X2Lib/X2GageData.cpp",
+      "sha256": "56c117b2e9b638e0e357902a5c7bd5fd53759af793a25a249d220c70200e1d3a",
+      "bytes": 239,
+      "lineStart": 4,
+      "lineEnd": 17,
+      "group": "gauge"
+    },
+    {
+      "path": "X2Lib/X2GageData.cpp",
+      "sha256": "e9b70eaf97e0bcf8656e11607edc8adcaabe2e28819320175b4caaf3caa2919a",
+      "bytes": 767,
+      "lineStart": 18,
+      "lineEnd": 42,
+      "group": "gauge"
+    },
+    {
+      "path": "X2Lib/X2GageData.cpp",
+      "sha256": "d603d62631dd1de747532ac6005f883d33503435ec6d9aee78d0b293a6f678a4",
+      "bytes": 409,
+      "lineStart": 106,
+      "lineEnd": 122,
+      "group": "gauge"
+    },
+    {
+      "path": "X2Lib/X2GageData.cpp",
+      "sha256": "9f28c9c3783b6b6c893a36c45045355e8bc87251cc74d711b02d4b96c3904960",
+      "bytes": 285,
+      "lineStart": 162,
+      "lineEnd": 177,
+      "group": "gauge"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "sha256": "f474e1aed7de34ae80c0a0631679cfce52b69974cb73016e0f2d327e5ed37b31",
+      "bytes": 447,
+      "lineStart": 19415,
+      "lineEnd": 19434,
+      "group": "user"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "sha256": "53009be5d2cee353b64086248ef7429de6bbed6f1d62d1fcbc02dd5df9a6367d",
+      "bytes": 1775,
+      "lineStart": 12072,
+      "lineEnd": 12130,
+      "group": "user"
+    }
+  ],
+  "hostBoundary": [
+    "Only the listed six bodies are original compiled functions; full OnFrameMove/StateStart are bounded JS scheduling adapters",
+    "RF host supplies raw held Z/X, future-foot status, attacker-front, noDetonation and actual registered BBT_DETONATION_IMPOSSIBLE identities",
+    "DetonationEventProcess contains a 2026-09-01 comment; this frozen reference implementation is not proof of target2016 equivalent control flow",
+    "MP regen and item MP factors in original OnFrameMove are outside this module; charge precedes any host MP gain",
+    "Riding is false; state enums map to host front/back/air-down labels; DT_BUFF ordinal is confirmed separately from original DamageManager header",
+    "Original down request preserves pending gauge cost; actual consumption occurs at bounded immediate host down StateStart; complete native Now/Future frame buffers remain unported",
+    "Packet-start stop>0 skips this Gauge/Event packet even when it expires midpacket; existing movement partial-elapsed clock is a separate candidate",
+    "Screen flash suppressed by user policy; RevengeImpactTick request returned as an event, not claimed as rendered",
+    "Enchant Hand target immediate factor trigger consumer is missing; the caster two-second EMPTY factor does not justify a guessed target two-second debuff"
+  ]
+}

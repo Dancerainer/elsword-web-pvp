@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "HyperBoostRightBlack": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 60.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "Lifetime": 0.2
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Energy.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            0.8,
+            0.8,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            128.0,
+            40.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                95.0,
+                130.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 400.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "HyperBoostRightBlack",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 10173,
+        "line": 332
+      },
+      "declarationSha256": "e931ae227ef68c25ee94d3757630627bf81056c56ab2c4d53cef2bb97e30ffe7",
+      "sourceTokenNormalization": "reference-V5 uppercase unquoted tokens; original names/hash retained",
+      "textures": {
+        "Energy.dds": {
+          "file": "awakening-fx/textures/Energy-40f11f8a4c.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 115,
+            "name": "Energy.dds",
+            "rawPath": "raw/data/data048.kom/Energy.dds",
+            "sha256": "40f11f8a4c09850252e91864ba87efeb3891c79b960136cfe5386c47c0264964",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080080000000"
+          }
+        }
+      }
+    },
+    "HyperBoostLeftBlack": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 60.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "Lifetime": 0.2
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Energy.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            0.8,
+            0.8,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            128.0,
+            40.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                85.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 400.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "HyperBoostLeftBlack",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 10867,
+        "line": 352
+      },
+      "declarationSha256": "807d74cab129a15d1ab60f06fc225525231fc2e156318ab36262bf709633f9a2",
+      "sourceTokenNormalization": "reference-V5 uppercase unquoted tokens; original names/hash retained",
+      "textures": {
+        "Energy.dds": {
+          "file": "awakening-fx/textures/Energy-40f11f8a4c.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 115,
+            "name": "Energy.dds",
+            "rawPath": "raw/data/data048.kom/Energy.dds",
+            "sha256": "40f11f8a4c09850252e91864ba87efeb3891c79b960136cfe5386c47c0264964",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080080000000"
+          }
+        }
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 115,
+      "name": "Energy.dds",
+      "rawPath": "raw/data/data048.kom/Energy.dds",
+      "sha256": "40f11f8a4c09850252e91864ba87efeb3891c79b960136cfe5386c47c0264964",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    }
+  ],
+  "runtimeDefaultsEvidence": "reference-V5 CParticleEventSequence constructor: BT_ALL, TriggerCount=-1, TriggerTime=-1; Raven startup and GameUnit aura frame callbacks",
+  "limits": [
+    "Original client is unmeasured; fixed V5 routing is a reference candidate.",
+    "No generic glow or replacement particle texture is generated."
+  ],
+  "missingTemplates": [],
+  "meshFailures": []
+}

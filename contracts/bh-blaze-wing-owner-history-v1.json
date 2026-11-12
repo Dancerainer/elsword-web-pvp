@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "bh-blaze-wing-owner-history-v1",
+  "sourceClass": "fixed-V5 call-chain audit + explicit Web owner-domain adaptation",
+  "targetClientMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sectionHashRule": "Inclusive original byte lines, preserving CR/LF and final newline.",
+  "fixedSources": {
+    "X2Lib/X2DamageEffect.cpp": {
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245,
+      "sections": [
+        {
+          "firstLine": 82,
+          "lastLine": 156,
+          "sha256": "5e9e7af3e1e52d02dd2f8d8c92461d836dac4dfae4ce87ea02ff2bc91bf93d57",
+          "meaning": "DamageEffect frame manager iterates live effects and calls each effect; no local-owner gate."
+        },
+        {
+          "firstLine": 1839,
+          "lastLine": 2452,
+          "sha256": "ed342e9aed7697c0d17aa2e4e6bdae2d87701cef2373d391defb16ae312beac1",
+          "meaning": "CEffect frame path: stop/live-mesh guards and direct call to OnFrameMove_LockOnData; no local-owner gate enclosing that call."
+        },
+        {
+          "firstLine": 2780,
+          "lastLine": 2807,
+          "sha256": "39ad84632f4d9cf2e6f7d862dbabd07e97b2de6e24fee19f404c2165fccf32e9",
+          "meaning": "Lock-on entry has game, mesh and delayed-unlock guards, not an owner-authority guard."
+        },
+        {
+          "firstLine": 3092,
+          "lastLine": 3299,
+          "sha256": "42c30e47b07bb72e6c7ad8991b721cb030a8fcb4a4afec3fb47fb35f1728309c",
+          "meaning": "LOT6 branch chooses and retargets through X2Game; no local-only branch or synchronized-target packet path in this branch."
+        }
+      ]
+    },
+    "X2Lib/X2Game.cpp": {
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "bytes": 618989,
+      "sections": [
+        {
+          "firstLine": 11993,
+          "lastLine": 12091,
+          "sha256": "4b32263561bd270dab15620baae629b1fdd0b750d3c023f221c68c56b6841173",
+          "meaning": "Nearest target uses the X2Game-global previous-target set; exclusion-enabled failed search clears it and successful search inserts the UID."
+        }
+      ]
+    }
+  },
+  "originalDeclarationContract": "bh-blaze-wing-lock-on-source-v1.json",
+  "sourceFindings": {
+    "historyScope": "Client-local X2Game, shared across its effects and owners.",
+    "ownerGate": "No local-owner gate was found in the audited frame/LOT6/nearest-target call chain.",
+    "syncEvidence": "No synchronized target/history packet consumer was identified in the audited call chain. This is not a claim about every uninspected source file.",
+    "historyLifetime": "Search failure clears, search success inserts; this audited selection path does not clear on cast end or actor death."
+  },
+  "webAdaptation": {
+    "offline": "All actors use state.sourceBlazeWingPreviousTargets and state.sourceBlazeWingSelectionSerial.",
+    "onlineLocal": "The local networkOwnerId uses those same client-local globals.",
+    "onlineRemote": "Each remote owner uses state.sourceBlazeWingMirrors[ownerId]={history,serial}, isolated from the local domain and every other remote owner.",
+    "receipt": "Only full endMissing reports for a known remote owner, current epoch when supplied by the host, and a strictly newer (epoch,frameSeq) watermark can restore mirror history.",
+    "packetSelection": "Maximum sourceBlazeWingLockOn.selectionSerial among matching Blaze Wing effects selects that report history. Equal serials must agree. A later authoritative frame may lower a predicted mirror serial.",
+    "absence": "A full report without a live history advances the receipt watermark and retains the previous mirror; absence never means an empty set.",
+    "rollback": "state.localBlazeWingHistoryReceipts stores per-owner epoch/frameSeq with snapshot-restored mirrors. No WeakMap(sim) watermark survives an older state restore.",
+    "historicalActions": "Partial endMissing:false reports do not write receipt or mirror. Zero-time effect evaluation must return before movement or selection in the caller.",
+    "wire": "No new player-supplied top-level fields. Existing per-effect historySnapshot and selectionSerial are validated by the ownership protocol; local mirrors and receipt tables are not owned actor/effect payload."
+  },
+  "limits": [
+    "This isolates Web owner prediction; it is not a native authority gate or a reconstruction of original networking.",
+    "Client-local serials do not define a global order across different browser owners.",
+    "Per-effect snapshots can be absent after all carriers expire; the last received mirror is then retained, not asserted to be a complete source-global history.",
+    "Reference contains later reconstructed source code. Target2016 declarations and this fixed reference are separate evidence; original client networking and trajectory remain unmeasured."
+  ],
+  "validation": {
+    "test": "tests/combat/bh-blaze-wing-history-v1.test.mjs",
+    "cases": 10,
+    "assetsRequired": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "contractId": "rf-pvp-resources-source-v3",
+  "ruleVersion": "rf-2v2-reference-v3",
+  "targetClientMeasured": false,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceStatus": "Fixed V5 source reconstruction including later patches; not a target2016 executable measurement.",
+  "referenceFiles": [
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "cachePath": ".cache/pvp-source/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "cachePath": ".cache/pvp-source/X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "bytes": 521479
+    },
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "cachePath": ".cache/pvp-source/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "bytes": 836216
+    },
+    {
+      "path": "X2Lib/X2GameUnit.h",
+      "cachePath": ".cache/native-reference/X2Lib/X2GameUnit.h",
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "gitBlob": "41349c64aee113dd97dbe4128d58a109a2886ab2",
+      "bytes": 191004
+    },
+    {
+      "path": "X2Lib/X2GageData.h",
+      "cachePath": ".cache/native-reference/X2Lib/X2GageData.h",
+      "sha256": "ad9b998352f09864fb770a534d27e6d50c3f8c492a9131486efd7bd70bf7915f",
+      "gitBlob": "ac49bd9c815cfc1f668078f17258db88c455886b",
+      "bytes": 35173
+    }
+  ],
+  "retention": {
+    "evaluation": "At actual resurrection, after the host has accepted current score changes; not at death or at a later presentation phase.",
+    "scoreDifference": "ownScore - enemyScore",
+    "tiedOrBehind": 1,
+    "leadingOne": 0.5,
+    "leadingTwoOrMore": 0,
+    "mpEvidence": "X2GUUser.cpp:1954-1968 PVP_SEASON2 ReInit explicitly sets MP0 for lead>1 and halves MP for lead1; all other gaps leave its current value.",
+    "specialResourceEvidence": "Project-specific resource extension. No acquired fixed V5 seasonal special-resource penalty is asserted.",
+    "consumption": "Capture registered balances before clean-template replacement, restore once with the revival factor; alive players cannot be revived again."
+  },
+  "awakening": {
+    "penalizedByScore": false,
+    "orbs": "Preserve. X2GUUser::ReInit:1701 saves GetHyperModeCount;2126 restores SetHyperModeCount.",
+    "gauge": "Preserve by static source inference. GameUnit.h:2313-2316 delegates Soul to the persistent GageData; GageData.h:332-342 separates m_SoulGage.fNow from fMax. SetMaxSoul100 only writes fMax; GameUnit::ReInit:666-796 does not recreate/initialize GageData. GUUser::ReInit writes SetNowSoul0 only in the old non-PVP_SEASON2 #else branch:1973/1978, not the selected seasonal branch.",
+    "activeTime": "Clear independently. GameUnit::ReInit:679 sets remaining hypermode time0. This is not a score penalty.",
+    "initialGauge": "User-selected50 with zero orbs only at match start; resurrection never grants this initial bonus again."
+  },
+  "ravenCore": {
+    "registeredSpecialResource": false,
+    "evidence": "X2GURaven::ReInit:402-425 under UPGRADE_RAVEN unconditionally clears core level at417 and rage gauge at418. Core reset is an independent lifecycle, regardless of score."
+  },
+  "specialResourceRegistration": {
+    "api": "PvpMatch constructor specialResourcePools: [{ id, read(actor), write(actor,value) }]",
+    "id": "Unique lowercase ASCII /^[a-z][a-z0-9_-]{0,63}$/; mp, awakening and core are reserved and rejected.",
+    "read": "Host-authored callback returns a finite nonnegative balance, or null when this actor has no supported pool. Invalid balances fail before actor replacement.",
+    "write": "Host-authored callback restores the captured retained balance on the replacement actor. Must be synchronous, deterministic and must not throw for its declared supported pool.",
+    "configuration": "Provider records and ID list are copied and frozen; snapshot carries IDs and restore requires identical IDs. Provider code is host program behavior, not serialized state.",
+    "rfSupportedPools": [],
+    "network": "No actor.specialResources field or new wire IDs are introduced. Future character support must also implement and validate its codec state and source semantics before registration.",
+    "unregisteredFields": "Never iterate arbitrary actor numbers. Only MP, the separately sourced awakening storage, and explicitly registered pools are preserved across the template reset."
+  },
+  "evidenceBoundary": "Native four-actor and pure controller regressions verify this webpage implementation and source-derived conditions. No original target2016 runtime or GPU trace has been acquired."
+}

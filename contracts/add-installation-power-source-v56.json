@@ -1,0 +1,304 @@
+{
+  "version": "add-installation-power-source-v56",
+  "freeze": "c3be320c07b5f2158b513093010d22dcb15491ee",
+  "qualification": "Static original2016 sealed native evidence; no original EXE/DLL/Lua execution, no upstream edits. Aggregate29409 consumer prose is narrowed by actual per-entry ASM. Web simulation is independently tested, not an original-client measurement.",
+  "sources": [
+    {
+      "path": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "sha256": "550ea9c7e31d89ac6857ccb46aa9fdb6e76418ca61a5e56b6649c763cf39c93b",
+      "bytes": 6376805
+    },
+    {
+      "path": "reports/analysis/mm-install-targets-2016/native-evidence.json.gz",
+      "sha256": "d9286cda53213e1da77115702622d116dda6c9f33dbc96448aa1d134aae7b04a",
+      "bytes": 2004128
+    },
+    {
+      "path": "reports/analysis/awake-state-producer-pass2-2016/source-windows.json",
+      "sha256": "22eac13a2194bae8475072d50715aee39e69741b516645c413422ca853cd35a8",
+      "bytes": 10064
+    },
+    {
+      "path": "reports/analysis/full-skills/function-source-bytes.json.gz",
+      "sha256": "5f734e7d9a1000f0a3010588bc095f0f52c4031dff05394a79dd429622b449c3",
+      "bytes": 29920
+    },
+    {
+      "path": "docs/contracts/add-core-passives-contract-2016.json",
+      "sha256": "a1efc32d0ad9eac5fe0c74b6348b38fd93e896413e4ee87c133e0c9b97846f81",
+      "bytes": 16628
+    }
+  ],
+  "nativeSourceSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "originalExeSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "parameter": {
+    "skillId": 29409,
+    "rawKey": "SA_DAMAGE_REL",
+    "abilityId": 15,
+    "actorField": "0x70c8",
+    "levels": [
+      1.05,
+      1.1,
+      1.15
+    ],
+    "resetDefault": 1
+  },
+  "getter": {
+    "vtableAddress": "0x330625bc",
+    "slot": "0x1d0",
+    "target": "0x31f31bd0",
+    "bindingSource": "reports/analysis/awake-state-producer-pass2-2016/source-windows.json",
+    "vtableSha256": "8a0ba3b55c15c355b8d22bf154ee53a2c89ca184e5f03114475f247fcafa27da",
+    "body": {
+      "address": "0x31f31bd0",
+      "bytesHex": "518d81c45c00008b480433c88b400833c1890424d9042459c3",
+      "label": "power-1d0-reads-xor-actor5cc4",
+      "sha256": "6649a0b74672c72ed077b1688eeac4c4ae9cbbd59eeec1effa91df2de2226469"
+    },
+    "meaning": "Return decoded float actor5cc4; does not read actor70c8."
+  },
+  "factories": [
+    {
+      "name": "selection follower",
+      "entry": "0x32771560",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_8394d24a3abe1fde40727ff16c3df15cb108d3d8adfd1fb6cdf447ce024594fe",
+      "assemblyLfSha256": "5436216d7a526f12a3e079c02b942474d646aafa23a68ddf020a9aa5589e227c",
+      "assemblyLines": 313,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x32771937: MOV EDX, dword ptr [ESI]",
+        "0x32771939: MOV dword ptr [EAX + 0x8], ECX",
+        "0x3277193c: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x32771942: MOV ECX, ESI",
+        "0x32771944: CALL EAX",
+        "0x32771946: PUSH ECX",
+        "0x32771947: MOV ECX, dword ptr [ESP + 0xb8]",
+        "0x3277194e: FSTP float ptr [ESP]",
+        "0x32771951: PUSH ECX",
+        "0x32771952: MOV ECX, dword ptr [ESP + 0xc0]",
+        "0x32771959: PUSH ESI"
+      ]
+    },
+    {
+      "name": "Activator",
+      "entry": "0x32740500",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_7a6c8ff1548fc0e744827e0983c6ac5adbbcf4066c68142e78b3871b3faa3104",
+      "assemblyLfSha256": "1f06f474f3e6d9ba5d01c4bea5d148f46b81649275a84d27bd16bc9e7f77e6c8",
+      "assemblyLines": 109,
+      "consumer": "explicit FMUL actor70c8 then FSTP once",
+      "window": [
+        "0x32740541: MOV EAX, dword ptr [ESI]",
+        "0x32740543: MOV EDX, dword ptr [EAX + 0x1d0]",
+        "0x32740549: MOV ECX, ESI",
+        "0x3274054b: CALL EDX",
+        "0x3274054d: FMUL float ptr [ESI + 0x70c8]",
+        "0x32740553: MOV EAX, dword ptr [ESI]",
+        "0x32740555: MOV EDX, dword ptr [EAX + 0x80]",
+        "0x3274055b: PUSH 0x330043e8",
+        "0x32740560: FSTP float ptr [ESP + 0x10]"
+      ]
+    },
+    {
+      "name": "Flick Disc",
+      "entry": "0x32761410",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_b943c7c5c8bc73b6e6911894a9e69d37b6390edc990cfe95171b2502ad2122cd",
+      "assemblyLfSha256": "14cd7d244cd07fa68c05786157519cedb2e25ba1e2ca0fc4a406c86cd9f983c3",
+      "assemblyLines": 356,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x3276156f: ADD ESP, 0x10",
+        "0x32761572: MOV EDX, dword ptr [EBP]",
+        "0x32761575: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x3276157b: MOV ECX, EBP",
+        "0x3276157d: CALL EAX",
+        "0x3276157f: FSTP float ptr [ESP + 0x18]",
+        "0x32761583: CMP byte ptr [EBP + 0x7288], 0x1",
+        "0x3276158a: JNZ 0x3276159a",
+        "0x3276158c: FLD float ptr [ESP + 0x18]",
+        "0x32761590: FMUL double ptr [0x3300e658]",
+        "0x32761596: FSTP float ptr [ESP + 0x18]"
+      ]
+    },
+    {
+      "name": "Countdown",
+      "entry": "0x3275b770",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_9f39a38e97adba8f8c067ace8e1b55cf3ab605837788bca20d55caed9c10f5e0",
+      "assemblyLfSha256": "0b4d17fa58af9b1dc6e6e174cfdf4ef020c1291fd3733f8917e39fcedf4425b7",
+      "assemblyLines": 219,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x3275b90b: MOV EDX, dword ptr [ESI]",
+        "0x3275b90d: MOV dword ptr [ECX + 0x8], EAX",
+        "0x3275b910: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x3275b916: MOV ECX, ESI",
+        "0x3275b918: CALL EAX",
+        "0x3275b91a: PUSH ECX",
+        "0x3275b91b: MOV ECX, dword ptr [ESP + 0x68]",
+        "0x3275b91f: FSTP float ptr [ESP]",
+        "0x3275b922: PUSH ECX",
+        "0x3275b923: PUSH ESI",
+        "0x3275b924: MOV ECX, EBP"
+      ]
+    },
+    {
+      "name": "Rushing Drones",
+      "entry": "0x3273ca90",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_8fd0323a93abc39527e404f8b46cf793827bb08eb077f230df5b4549dbfbf837",
+      "assemblyLfSha256": "9d8708f9c31c8b197505dc3ccbce62fd15759e194af2117731793aaf14b7eba1",
+      "assemblyLines": 216,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x3273cb7b: MOV EDX, dword ptr [ESI]",
+        "0x3273cb7d: MOV dword ptr [ECX + 0x8], EAX",
+        "0x3273cb80: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x3273cb86: MOV ECX, ESI",
+        "0x3273cb88: CALL EAX",
+        "0x3273cb8a: PUSH ECX",
+        "0x3273cb8b: FSTP float ptr [ESP]",
+        "0x3273cb8e: PUSH 0x3305f7bc",
+        "0x3273cb93: PUSH ESI",
+        "0x3273cb94: MOV ECX, EBX",
+        "0x3273cb96: CALL 0x31f0a1e0"
+      ]
+    },
+    {
+      "name": "Fission Shot",
+      "entry": "0x3275b440",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_99d3a35acef50961bbac4773984f0b3f25151093d5ea376a5a55798e7b4582b8",
+      "assemblyLfSha256": "ae25c9727ab318fac85585ee8f1b0d3368f73f1223cc23638cf15e453a24dd81",
+      "assemblyLines": 244,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x3275b5fb: MOV EDX, dword ptr [ESI]",
+        "0x3275b5fd: MOV dword ptr [ECX + 0x8], EAX",
+        "0x3275b600: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x3275b606: MOV ECX, ESI",
+        "0x3275b608: CALL EAX",
+        "0x3275b60a: PUSH ECX",
+        "0x3275b60b: MOV ECX, dword ptr [ESP + 0x6c]",
+        "0x3275b60f: FSTP float ptr [ESP]",
+        "0x3275b612: PUSH ECX",
+        "0x3275b613: PUSH ESI",
+        "0x3275b614: MOV ECX, EBX"
+      ]
+    },
+    {
+      "name": "Magnetron",
+      "entry": "0x32761160",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_3253bb4d3cc7f957c0bb13ab3b3e1d8c4c4164ce866e82ef7b1c16dd8791ae49",
+      "assemblyLfSha256": "2c7e390fc1f888ebe6513af027fc111881aaf3ec2688614d19e358dfc79e4853",
+      "assemblyLines": 190,
+      "consumer": "direct v1d0; no read of actor70c8 in full sealed procedure",
+      "window": [
+        "0x327611ae: CALL 0x32760320",
+        "0x327611b3: MOV EAX, dword ptr [ESI]",
+        "0x327611b5: MOV EDX, dword ptr [EAX + 0x1d0]",
+        "0x327611bb: MOV ECX, ESI",
+        "0x327611bd: CALL EDX",
+        "0x327611bf: FSTP float ptr [ESI + 0x7124]",
+        "0x327611c5: MOV dword ptr [ESP + 0x14], 0x0",
+        "0x327611cd: LEA ECX, [ECX]",
+        "0x327611d0: MOV EAX, [0x332a35f4]",
+        "0x327611d5: TEST EAX, EAX",
+        "0x327611d7: JZ 0x32761371"
+      ]
+    },
+    {
+      "name": "Fury",
+      "entry": "0x32768200",
+      "source": "reports/analysis/add-core-passives-2016/native-evidence.json.gz",
+      "evidenceId": "ev_7dd129400fe0e4d1eba5d4d93e8526743e5b0fb44d5e8f484d115fe13673db8f",
+      "assemblyLfSha256": "9686a15cca269b0a7ccf29b1a7ba2542582e1769624c85f87d2b877598c588b9",
+      "assemblyLines": 234,
+      "consumer": "explicit FMUL actor70c8 then FSTP once",
+      "window": [
+        "0x327682bc: MOV EAX, dword ptr [EDX + 0x1d0]",
+        "0x327682c2: MOV ECX, ESI",
+        "0x327682c4: FSTP float ptr [ESI + 0x72b0]",
+        "0x327682ca: CALL EAX",
+        "0x327682cc: FMUL float ptr [ESI + 0x70c8]",
+        "0x327682d2: LEA ECX, [ESP + 0x18]",
+        "0x327682d6: PUSH ECX",
+        "0x327682d7: PUSH 0x1",
+        "0x327682d9: FSTP float ptr [ESI + 0x72b8]"
+      ]
+    },
+    {
+      "name": "Chaser",
+      "entry": "0x32766960",
+      "source": "reports/analysis/mm-install-targets-2016/native-evidence.json.gz",
+      "evidenceId": "ev_6940e187a7b4bc7fa5c8ba289620fdabfaabcfa2ccf629b13929a0c496a6ea64",
+      "assemblyLfSha256": "41ea09aed22c19d66664d18ba1ca4a801a84a1462af753e4213728b04e0ce2f5",
+      "assemblyLines": 162,
+      "consumer": "explicit FMUL actor70c8 then FSTP once",
+      "window": [
+        "0x327669c1: MOV EAX, dword ptr [ESI]",
+        "0x327669c3: MOV EDX, dword ptr [EAX + 0x1d0]",
+        "0x327669c9: MOV ECX, ESI",
+        "0x327669cb: CALL EDX",
+        "0x327669cd: FMUL float ptr [ESI + 0x70c8]",
+        "0x327669d3: MOV EAX, dword ptr [ESI]",
+        "0x327669d5: MOV EDX, dword ptr [EAX + 0x80]",
+        "0x327669db: PUSH 0x32ff5a7c",
+        "0x327669e0: FSTP float ptr [ESP + 0x14]"
+      ]
+    },
+    {
+      "name": "Starfall",
+      "entry": "0x32761ac0",
+      "source": "reports/analysis/mm-install-targets-2016/native-evidence.json.gz",
+      "evidenceId": "ev_d52c95136adf540d6ffc919753879f9dc8ae3d7e12b692f990dfac17da624c35",
+      "assemblyLfSha256": "d8cabd5b082bf40663971ed3d2cee12f8f2c5d3392f3050338253f957d2c492c",
+      "assemblyLines": 181,
+      "consumer": "explicit FMUL actor70c8 then FSTP once",
+      "window": [
+        "0x32761af6: PUSH EDI",
+        "0x32761af7: MOV word ptr [ESP + 0x30], 0x0",
+        "0x32761afe: MOV byte ptr [ESP + 0x32], 0x0",
+        "0x32761b03: CALL EDX",
+        "0x32761b05: FMUL float ptr [ESI + 0x70c8]",
+        "0x32761b0b: MOV EAX, dword ptr [ESI]",
+        "0x32761b0d: MOV EDX, dword ptr [EAX + 0x124]",
+        "0x32761b13: FSTP float ptr [ESP + 0x3c]",
+        "0x32761b17: PUSH 0x0"
+      ]
+    }
+  ],
+  "selectionStart": {
+    "entry": "0x32771ce0",
+    "source": "reports/analysis/full-skills/function-source-bytes.json.gz",
+    "ranges": [
+      {
+        "start": "0x32771ce0",
+        "endInclusive": "0x3277210b",
+        "sha256": "2c474fa0b44a3158b230ad58a0b11dbcea9fbcd43d367efc7189b23b6841346a"
+      }
+    ],
+    "meaning": "selection/switch state-start, dispatches factory follower32771560; no additional29409 scalar attached here"
+  },
+  "inheritance": {
+    "Activator": "Current getter times70c8 at projectile birth; generic CREATE/DIE retain effect1c8. Later marker scalar rewrites are independent.",
+    "Fury": "327682cc stores current getter times70c8 to actor72b8 before mutation consumption; drones preserve it for later beam factories. Command ZZXX Fury is independent.",
+    "Starfall": "32761b05 stores current getter times70c8 in installation record+c and passes it to the initial carrier; later selected-target attack uses saved record+c.",
+    "Chaser": "327669cd passes current getter times70c8 to initial attacker, then copies resulting effect1c8 to actor7260; laterAk receives saved scalar times allocation k.",
+    "negative": "Configuration roots, Flick groups, Magnetron saved7124 and selection follower use direct getter. Marker1.2 remains a distinct known consumer; no extra29409 factor added."
+  },
+  "webScope": {
+    "positiveRoots": [
+      "DamageEffect_AAT_Dynamo_Factory_Projectile",
+      "Mesh_ADD_Ultimate_Fury_Attack_Dron",
+      "DAMAGE_EFFECT_Star_Fall_Start_MESH",
+      "DamageEffect_AMM_Shooting_Chaser_Attacker"
+    ],
+    "floatStore": "f32(f32(currentPower) * f32(learnedScalar)); no formation guard",
+    "hitTime": "Remove former five-skill current-formation multiplier; no passive resampling for descendants or receiver restore",
+    "unknownBoundary": "Current actor power itself remains an explicit runtime getter input. No fabricated cast value or new original-client fidelity claim."
+  }
+}

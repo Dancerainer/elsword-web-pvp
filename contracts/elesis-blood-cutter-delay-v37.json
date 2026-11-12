@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 historical snapshot source-bound static bytes + original KL static parse; no target execution",
+  "targetExecuted": false,
+  "source": {
+    "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "qualification": "Existing late snapshot3 derived analysis PE; capture can be non-atomic; not the original on-disk EXE identity."
+  },
+  "casterBinding": "contracts/elesis-native-consumers-v37.json#/bloodCutter",
+  "request": {
+    "animationGate": 0.01,
+    "npcId": 1641,
+    "floatArgumentDwordIndex": 8,
+    "delay": {
+      "address": "0x3300da54",
+      "fileOffset": 22466132,
+      "bytes": 4,
+      "sha256": "45a6d738a7607576d3fe0862200bc67b10c12d5ed74167b4d5d5a708974c0f32",
+      "hex": "9a99993e",
+      "purpose": "NPC request float32 delay argument8"
+    },
+    "semantics": "Capture position, facing and request metadata when the caster timer creates the temporary dummy and queues the request. The float is a separate delay, not a second animation gate."
+  },
+  "clock": {
+    "pvpMethod": {
+      "address": "0x3265ad20",
+      "fileOffset": 12296480,
+      "bytes": 653,
+      "sha256": "72901d2e55d76ef7eb95da2c04e43baf1757b328045974972055e313bd6d10af",
+      "hex": "d944240c5683ec0cd95c24088bf1dd442414dd1c24e8f61ba7ff83be94020000020f855102000080be400b000000d9ee7532d896440b0000dfe0f6c4057a10d986440b0000d8642410d99e440b0000d896440b0000dfe0f6c4017508d99e440b0000eb02ddd88b86a00200008b8ea40200008bd00bd10f84cb0000003b86980200000f85bf0000003b8e9c0200000f85b30000008b8e380b000085c90f84a5000000e8a937feff3c010f859800000083be780b000000d9ee7e34d99e800b0000d986840b0000d8442410d95c2408d9442408d996840b0000d81d0c9efe32dfe0f6c401750f8bcee8b4feffffd9eed99e840b000083be780b0000007f4ad986800b0000d8442410d95c2408d9442408d996800b0000dc1d689cfe32dfe0f6c40175258bcee807f0ffff85c07808508bcee83bfeffffd9eec786780b000001000000d99e800b00008b86a80200008b48442b4840535533ed57f7c1fcffffff0f8e780000008b8ea802000055e880eb80ff8bf885ff74528b470c83f802744a83f801744583f80374408bcfe8d1f380ff84c07535e8b8d7caff8bd885db742a8b47508b48288b402c8b16508b82a0000000518bceffd08b7f508b4f2c8b57285051528bcbe8e890caff8b86a80200008b48442b484045c1f9023be97c888b86a80200008b88b40000002b88b0000000b867666666f7e9c1fa058bc2c1e81f03c233ff85c07e70eb098da424000000008bff8b8ea802000057e8a4ee80ff8bd885db742be829d7caff8be885ed74208b168b43088b92a8000000508bceffd28b4b08508b430c50518bcde86390caff8b86a80200008b88b40000002b88b0000000b867666666f7e9c1fa058bc2c1e81f4703c23bf87c9b5f5d5bd9442410518bced91c24e8f92aa6ff33c05ec20c00",
+      "purpose": "RTTI-bound CX2PVPGame frame method: forwards its original float elapsed to delay consumer"
+    },
+    "forwardSite": {
+      "address": "0x3265af98",
+      "fileOffset": 12297112,
+      "bytes": 15,
+      "sha256": "e1a0bfbafc03be093c910a6e9946820bc742358779916e3e3626e0d0ad705664",
+      "hex": "d9442410518bced91c24e8f92aa6ff",
+      "purpose": "fld original frame float entryESP+0xc; push float; call320bdaa0"
+    },
+    "class": ".?AVCX2PVPGame@@",
+    "rttiCatalog": "asset_sources/upstream/reports/analysis/full-native/rtti-catalog.json.gz",
+    "rttiCatalogSha256": "8f91cfc137c3933c8b0ffa3d6d9ee09cfc368fcf8ac9f4342d6772ee888dae61",
+    "vtable": "0x3304d8dc",
+    "slot": "0x4",
+    "meaning": "The original CX2PVPGame frame method always forwards its unmodified float elapsed argument at the final branch join, after ordinary unit processing. This path does not consult the caster animation, STOP or skill state."
+  },
+  "consumer": {
+    "function": {
+      "address": "0x320bdaa0",
+      "fileOffset": 6409888,
+      "bytes": 1667,
+      "sha256": "c02fa337949edd5d75f11c63e284d22ec7da47507a808aedaa7aa64e24a89d8c",
+      "hex": "6aff685fc6e93264a1000000005083ec6453555657a120d2263333c4508d44247864a3000000008bd9895c241483bbf806000002751f6a008d8be4030000e89dd201006a008d8bfc030000e8806d0100e9180600008bb3f403000085f60f840a0600008bab0c0400003bf5730e568d8bfc030000e8576d0100eb5c765a8d8bfc03000085ed7513d9ee8d44241850d95c241c56e8c86f0100eb3de88117d800d9008d4c2418d95c2418512bf5568d54245c528d8bfc030000e8930dd80083ec0c8bcc8964243c50e86479a4008d8bfc030000e8596e0100d9eed9842488000000d8d1dfe0f6c4050f8b8e000000ded9dfe0f6c4410f85850000008d442454508d8bfc030000e8168788008d4c2448518d8bfc030000e8360dd8008b74245c3b70080f95c084c074578b44245485c0750433d2eb028b108b7a088bc68bcec1e80283e1033bf877022bc78b52048b0482d904888d0488d8a424880000008d4c2448518d8bfc030000d91846e8e10cd8003b70080f95c084c075afeb04ddd8ddd880bb6d030000010f85e80100008d54243c528d8be4030000e8848688008d4424308d8bfc03000050e8748688008d4c2454518d8be4030000e8940cd8008b7c24443b78080f95c084c00f84a60100008bff8b6c243c85ed750433d2eb038b55008b4a088bc73bcf77022bc18b52048b0482807868000f855701000083ec0c8bf489642438c70600000000c746040000000085ed742f8b45008b2db884f73285c0751c6a038d8c2498000000ffd58b1da884f7328d8c2494000000ffd3eb128b08890eeb068b2db884f7328b1da884f7328b4c24208d5424545281c1e4030000897e08e8cad101008bf08b063944243c742e85c0741c8b0085c0750e6a038d4c241cffd58d4c2418eb148b008944243ceb0e6a038d4c2420ffd58d4c241cffd38b7e088b44243083ec0c8bf489642438c70600000000c746040000000085c0741a8b0085c075106a038d4c2430ffd58d4c242cffd3eb048b08890e8b5424448b4c24208d44246c5081c1fc030000895608e8bc6c01008bf08b0639442430744685c074348b0085c0751b6a038d4c2428ffd58d4c2424ffd38b56088b5c241489542438eb338b088b56088b5c2414894c243089542438eb206a038d4c242cffd58d4c2428ffd38b56088b5c241489542438eb0547ff4424388d442454508d8be4030000e8ea0ad8003b78080f95c084c00f855cfeffff83bbf4030000000f84ec0200008d5424308d8be403000052894c2428e88b8488008dabfc0300008d44243c508bcd896c2424e8758488008d4c243c518d4c2458e87776a4008d542448528bcde88b0ad8008b7c245c3b78080f95c084c0744a8b44245485c0750433f6eb028b308b56088bc78bcfc1e80283e1033bd077022bc28b5604d9ee8b0482d81c88dfe0f6c4057b178d4c2448518bcd47e83d0ad8003b78080f95c084c075b68b4c24448bc72bc185c00f8440020000508d54244c528d4c2438e8f43101008dab140400006a008bcde885e101008b5c244883ec0c8bf489642438c70600000000c746040000000085db74288b0385c0751e6a038d8c2498000000e823d5472d908d8c249400000090e842d5472deb048b0089068b4c245c894e088b44243c33c983ec0c8bf4898c249800000089642440890e894e043bc174228b003bc175186a038d4c244490e8d7d4472d8d4c244090e8fad4472deb048b1089168b4424508946088bcdc7842498000000ffffffffe8deea01008b0dec352a338b49606a006a015568a9000000e806a80100d905a085ff32518b0de8352a33d91c2468aa000000e86cc3c8ff83ec0c33ed8bf489642438892e896e043bdd742a8b1b3bdd75208b1db884f7326a038d8c2498000000ffd38d8c2494000000e872d4472d90eb0a8b1389168b1db884f7328b44245c8946088b44243c83ec0c8bf4c78424980000000100000089642440892e896e043bc5741e8b003bc575146a038d4c2444ffd38d4c2440e826d4472d90eb048b08890e8b5424508b4c243c8d44247889560850c784249c000000ffffffffe882c701008b44245483ec0c8bf489642438892e896e043bc574248b003bc5751a6a038d8c2498000000ffd38d8c2494000000e8ccd3472d90eb048b08890e897e088b44244883ec0c8bf4c78424980000000200000089642440892e896e043bc5741e8b003bc575146a038d4c2430ffd38d4c242ce88ad3472d90eb048b1089168b44245c8d8c2484000000518b4c243c894608c784249c000000ffffffffe8734501008b4c247864890d00000000595f5e5d5b83c470c20400",
+      "purpose": "Original paired-deque NPC request delay consumer"
+    },
+    "pairedDequeOffsets": {
+      "requests": "0x3e4",
+      "remainingSeconds": "0x3fc"
+    },
+    "subtractSite": "0x320bdbef..0x320bdc17",
+    "readyPrefixSite": "0x320bde73..0x320bdec7",
+    "releaseSite": "0x320bdf92..0x320bdfa5",
+    "protocolEvent": "0xa9",
+    "meaning": "Subtract the frame float from stored delays and release only the corresponding request prefix whose delays are <=0. These are parallel deques, not a float-key map.",
+    "cancellationBoundary": "Game-state2 clears both queues; an additional game+36d/request+68 policy exists. The delay consumer does not look up caster life or current skill."
+  },
+  "temporaryDummy": {
+    "casterCleanupSite": {
+      "address": "0x327fc1f5",
+      "fileOffset": 14005749,
+      "bytes": 23,
+      "sha256": "f7b4abf37298ab1e104c69bb023674755ba8327e839d3210d65b8041667ba8f9",
+      "hex": "a1f4352a338b88680300006a008d54241852e8843a70ff",
+      "purpose": "After NPC request: global damage manager +368, push false, address of saved dummy pointer, call31effc90"
+    },
+    "callee": {
+      "address": "0x31effc90",
+      "fileOffset": 4583568,
+      "bytes": 286,
+      "sha256": "bedb405a9f1a895052cc4a4ed69b9d2fc9d53c0d87ea7b8c67a31438f6cc4603",
+      "hex": "83ec08568b7424108b06894c240485c00f8401010000538b98d800000083fbff0f84ea0000008b513055578b792c2bd7b8abaaaa2af7ead1fa8bc2c1e81f0fb7eb03c23be80f83c30000008b068d546d003904978d3c970f85b1000000c1eb1066395f040f85a4000000837f0800b3017521807c242000751a3898e500000075128bc8e838c6feff8b0ee871faffff8b4c241038593c75198b065f5dc680e5000000005bc706000000005e83c408c20800c70700000000c74708020000008b1e85db742e8bcbe81571ffffe8107800008bf857e878464245908b4718890357895f1890e8e83642458b4c2410c706000000008b511c8b421483c11c558d54241452894c24188944241ce8220ad8ff5f5dc706000000005b5e83c408c20800",
+      "purpose": "Same-callback temporary DUMMY DestroyInstance(pointer&,false); clears the pointer and manager instance"
+    },
+    "meaning": "The caster destroys its saved dummy instance in the same callback after queuing NPC1641. It must not become an independently living permanent melee damage effect."
+  },
+  "npcScript": {
+    "path": "asset_work\\raw\\data\\data037.kom\\Elesis_BloodCutter.lua",
+    "sha256": "cfe229e11f92a42b66ae84529fa1090e1688fc1992917b51c971dd7ddf41c8d2",
+    "bytes": 3325,
+    "walkFunction": "ELESIS_FIRE_WALL_WALK_FRAME_MOVE",
+    "walkPrototype": 0,
+    "prototypeWords": [
+      132108,
+      33555263,
+      1303,
+      33751852,
+      196627,
+      2148402260,
+      66572,
+      16843583,
+      33686316,
+      132364,
+      33686591,
+      33686572,
+      778,
+      2147878228,
+      198156,
+      50529599,
+      263956,
+      264204,
+      133388,
+      17106220,
+      132108,
+      33555263,
+      66839,
+      33751852,
+      196627,
+      2147812436,
+      132108,
+      33882943,
+      131073302,
+      1558,
+      17040172,
+      65607
+    ],
+    "constants": [
+      "SetPassiveSpeed",
+      "EffectSet_SI_SA_SCA_BLOOD_CUTTER_Projectile",
+      "PlayEffectSetTraceTarget_LUA",
+      "GetOwnerGameUnit",
+      "GetEffectSet",
+      "AnimEventTimer_LUA"
+    ],
+    "numbers": [
+      0.01,
+      0.1
+    ],
+    "interpretation": [
+      "pc0..5 tests NPC animation timer .01.",
+      "pc6..19 traces the Projectile set to NPC using GetOwnerGameUnit and GetEffectSet.",
+      "pc20..30 tests NPC animation timer .1 and sets passive speed(2000,0)."
+    ],
+    "qualification": "NPC-local .01 visual birth and .1 motion belong to a later clock after request release and NPC creation; they are distinct from caster .01 and request .3."
+  },
+  "limits": [
+    "No original target process, original DLL or live capture was executed.",
+    "Packet transport, ACK latency and actual target-client frame quantization were not measured.",
+    "Whole-game pause semantics upstream of the frame callback are outside this proof.",
+    "The current Web adapter must state how it represents delayed request release and the subsequent NPC-local timer; no simple animationTime>=.31 substitution.",
+    "The older fixed-V5 CreateNPCReq formal fDelayTime is corroborating nomenclature, not the evidence for this captured2016 queue clock."
+  ]
+}

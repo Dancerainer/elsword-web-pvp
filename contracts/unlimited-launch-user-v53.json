@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "user-unlimited-launch-v53",
+  "evidenceClass": "explicit-user-product-rule",
+  "request": "Remove the reduced launch height on the third and subsequent launches.",
+  "scope": {
+    "reactionTypes": [4, 5],
+    "verticalSpeed": "BACK_SPEED_Y for every accepted ordinary UP/FLY reaction",
+    "disabledRule": "flyCount > 2 ? BACK_SPEED_Y / (flyCount - 1) : BACK_SPEED_Y",
+    "sourceCounterRetained": true,
+    "sourceForceFlyResetRetained": true,
+    "otherDamageAndKnockdownRulesRetained": true
+  },
+  "originalClientMeasured": false,
+  "originalBehaviourClaim": false
+}

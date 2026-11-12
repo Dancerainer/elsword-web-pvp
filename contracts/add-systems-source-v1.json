@@ -1,0 +1,1679 @@
+{
+  "schemaVersion": 1,
+  "version": "add-systems-target2016-candidate-v1",
+  "targetClientMeasured": false,
+  "targetSources": {
+    "add": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Add_NasodRuler.lua",
+      "sha256": "47476953d8ab9fd70f518938cf1306ef719ccf58c51313d3342747c3074a243d"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "buff-factor": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+    },
+    "battle-buff": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": [
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+        "gitBlob": "39888c9b632990e855057e61499363247e438a15",
+        "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+        "bytes": 731392
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.h",
+        "gitBlob": "ae01a2ed8e74da03f882a4316f3a9f15aa190fca",
+        "sha256": "040e51f3723b8beea44251c945be3c2de4dfc742ea6ef83306b26af014d66f04",
+        "bytes": 100009
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.cpp",
+        "gitBlob": "abf8e30e410b0552deeea0198b592cfe670e95b7",
+        "sha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8",
+        "bytes": 40241
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+        "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "bytes": 1323547
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h",
+        "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+        "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+        "bytes": 202266
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+        "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+        "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+        "bytes": 263245
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Define.h",
+        "gitBlob": "13d53fbed006876e17e3ac20f7d75ff03f698d87",
+        "sha256": "f757a93843e12f29adbdcee65266105e77f2532ca3a337bbf9d7c51563b36476",
+        "bytes": 107509
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GageData.h",
+        "gitBlob": "ac49bd9c815cfc1f668078f17258db88c455886b",
+        "sha256": "ad9b998352f09864fb770a534d27e6d50c3f8c492a9131486efd7bd70bf7915f",
+        "bytes": 35173
+      }
+    ]
+  },
+  "consumerRanges": [
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "FormationModeStart",
+      "startLine": 4832,
+      "endLine": 4886,
+      "sha256": "d94bad0fd117a1f375e784da16c3a634a2d2252b5352c46e84f5087d6006c0d2",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "GetPossibleChangeFormationMode",
+      "startLine": 10944,
+      "endLine": 10976,
+      "sha256": "a25e9b791ec3ea7a48e3a9f2bcc000af1b38d25f939ec0be4dc0b954867600b2",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "GetDPRateByType",
+      "startLine": 11345,
+      "endLine": 11373,
+      "sha256": "12c425552826653388925b1674784d815a0ad77ba447f523265d3725e5b0e711",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "UpNowDPValue",
+      "startLine": 11471,
+      "endLine": 11532,
+      "sha256": "64671f38da10fcf17bcd60758d85777451b779342fde6fc566d52adfa7f87bb3",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "UpNowDPValueByDamage",
+      "startLine": 11538,
+      "endLine": 11572,
+      "sha256": "1aaa54b294e04b4fe2dbcb6b3e9bb5f638f3a53c6db4e3dd5b74a662f7c05ecd",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "UpNowDPValueByHit",
+      "startLine": 11578,
+      "endLine": 11618,
+      "sha256": "0a2d6fa85eaa93c24eb97e4ce41faac868eeb53d9f9c6c6ce67b96997cd02bcb",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "UpNowDPValueByUseMP",
+      "startLine": 11624,
+      "endLine": 11634,
+      "sha256": "a53d07397ab1807b0c79e2a03e820dcb21cd90dd83ec04b984830999ec9bba74",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "GetActualDPConsume",
+      "startLine": 11641,
+      "endLine": 11740,
+      "sha256": "e2b6d10691fa757b526c14265c3c2ef7d575aa0a22bfe330d9d78a051210058d",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "SetIsFormationMode",
+      "startLine": 11771,
+      "endLine": 11785,
+      "sha256": "8b7bf147bb58e05045b2fd74680107b68bc473edd036d3c01aea175e757a9ab5",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "ANSI_SA_COMMON_CREST_OF_TIME_FrameMove",
+      "startLine": 14565,
+      "endLine": 14596,
+      "sha256": "25f0a9a071aa7fabfac0638861bded5603b3c2ff66fa7dcb30c93984e63cdd9a",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "RecordCrestSnapshot",
+      "startLine": 14601,
+      "endLine": 14609,
+      "sha256": "9b83ae62b554291fc1ec61b192946a38d9d4ae5c6a183472948656d37c05a49a",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "RestoreCrestSnapshot",
+      "startLine": 14618,
+      "endLine": 14626,
+      "sha256": "c2b1a26d8c764d91c7f5e48f599a55289dc7c7a6b53ea3ac4b9a529a5b926a21",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUAdd.cpp",
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_StateStart",
+      "startLine": 9822,
+      "endLine": 9857,
+      "sha256": "cce16dffc61a96cced7b869f54040601047775c672226dc12e47fda9d490ee99",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "method": "ProcessSkillAtDie",
+      "startLine": 37323,
+      "endLine": 37415,
+      "sha256": "90cce5670633e451e3a510b40983b45e93fd29d9a30e6eabef86d4b1d6a828c7",
+      "reconstructionMarker": true,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "method": "RecordCrestSnapshot",
+      "startLine": 37419,
+      "endLine": 37427,
+      "sha256": "efb77beeb7e4a7e5aeb57a2b1bfa55e15b4154d81c126ca0d95b1de17d9f5da9",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    },
+    {
+      "file": "X2GUUser.cpp",
+      "method": "RestoreCrestSnapshot",
+      "startLine": 37429,
+      "endLine": 37448,
+      "sha256": "b7cdc2ac3c9bef152628ef9b55e8c98a23eeed772fb20501502847a470646e37",
+      "reconstructionMarker": false,
+      "evidenceClass": "fixed-V5-reference-with-2026-reconstruction"
+    }
+  ],
+  "components": {
+    "DP_RATE_BY_COMMAND": 2,
+    "DP_RATE_BY_SPECIAL_ACTIVE": 0,
+    "CHANGE_FORMATION_MODE_COOL_TIME": 5,
+    "DP_RATE_BY_FORMATION_MODE_HIT": 8000,
+    "DP_RATE_BY_NO_FORMATION_MODE_ATTACK": 40,
+    "USE_DP_BY_ENABLE_FORMATION_MODE": 2000,
+    "USE_DP_BY_NASOD_BARRIER": 1000,
+    "DP_RATE_BY_NASOD_ARMOR": 2,
+    "USE_DP_BY_FORMATION_MODE": 1000,
+    "DP_RATE_BY_FORMATION_MODE_USE_MP": 4,
+    "DP_RATE_BY_ACTIVE": 1,
+    "DP_RATE_BY_FORMATION_MODE_ATTACK": 40
+  },
+  "skills": {
+    "29000": {
+      "m_wstrName": "Energy Boom",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 14,
+      "m_wstrIconTexturePieceName": "SI_SA_AN_ENERGY_BOOM",
+      "m_eID": 29000,
+      "m_EffectiveDesc": {
+        "1": "Shockwave (Magic): 1420%"
+      },
+      "m_SkillCoolTime": {
+        "1": 6
+      },
+      "m_MPConsumption": {
+        "1": 100
+      },
+      "SA_PROJECTILE_RANGE_REL": {
+        "1": 1.217
+      },
+      "SA_PROJECTILE_RANGE_REL_2": {
+        "1": 1.4
+      }
+    },
+    "29001": {
+      "m_wstrName": "Void Breaker",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AN_VOID_BREAKER",
+      "m_eID": 29001,
+      "m_EffectiveDesc": {
+        "1": "Multi Hit Black Hole (Magic): 38%\nEnergy Explosion (Magic): 738% Multi Hit"
+      },
+      "m_SkillCoolTime": {
+        "1": 10
+      },
+      "m_MPConsumption": {
+        "1": 200
+      },
+      "SA_DAMAGE_REL": {
+        "1": 0.15
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 2
+      }
+    },
+    "29002": {
+      "m_wstrName": "Particle Accelerator",
+      "m_usFPConsumtion": 1200,
+      "m_usCBConsumption": 0,
+      "m_eType": 16,
+      "m_wstrIconTexturePieceName": "SI_SA_AN_PARTICLE_ACCELERATOR",
+      "m_eID": 29002,
+      "m_EffectiveDesc": {
+        "1": "Shock (Magic): 3932%\nStun Duration: 4 sec."
+      },
+      "m_SkillCoolTime": {
+        "1": 20
+      },
+      "m_MPConsumption": {
+        "1": 230
+      },
+      "SA_DAMAGE_REL": {
+        "1": 0.1
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 3
+      }
+    },
+    "29005": {
+      "m_wstrName": "Quake Buster",
+      "m_usFPConsumtion": 800,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_APT_QUAKE_BUSTER",
+      "m_eID": 29005,
+      "m_EffectiveDesc": {
+        "1": "Energy Shot (Magic): 196% (Dynamo Configuration Mode (Awaken) 226%)\nMulti Hit Energy Shot (Magic): 3320% Second Shot 79% Multi Hit\n           (Dynamo Configuration Mode (Awaken) 3831% Second Shot 91% Multi Hit)"
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "m_MPConsumption": {
+        "1": 150
+      },
+      "SA_DAMAGE_REL": {
+        "1": 1.1
+      }
+    },
+    "29009": {
+      "m_wstrName": "Psychic Storm",
+      "m_usFPConsumtion": 600,
+      "m_usCBConsumption": 0,
+      "m_eType": 14,
+      "m_wstrIconTexturePieceName": "SI_SA_ALP_PSYCHIC_STORM",
+      "m_eID": 29009,
+      "m_EffectiveDesc": {
+        "1": "Plasma Blast (Magic): 349% Multi Hit\n-Duration: 0.8 sec.\n(Increase duration by 0.2 sec in Dynamo Configuration Mode (Awakening))\n(Duration increased by 0.233 sec per DP Point)\n-Size Increase per 1 DP Point: 31%\nPlasma Convergence\n- Attack Speed/Jump Speed Increase: 20%\n- Movement Speed: 50%\n- Duration: 30 sec.\nPlasma Shock\n- Plasma Particles (Magical): 50%\n- Movement Speed Reduction: 15%\n- Debuff Duration: 1 sec."
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "m_MPConsumption": {
+        "1": 150
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 0.235
+      },
+      "SA_EFFECTIVE_TIME_HYPER": {
+        "1": 0.2
+      },
+      "SA_PROJECTILE_SIZE": {
+        "1": 1.31
+      }
+    },
+    "29012": {
+      "m_wstrName": "Panzer Buster",
+      "m_usFPConsumtion": 800,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AAT_PANZER_BUSTER",
+      "m_eID": 29012,
+      "m_EffectiveDesc": {
+        "1": "Shock Blast (Physical) : 3362%"
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "m_MPConsumption": {
+        "1": 150
+      }
+    },
+    "29013": {
+      "m_wstrName": "Install\n- Drone Activator",
+      "m_usFPConsumtion": 600,
+      "m_usCBConsumption": 0,
+      "m_eType": 14,
+      "m_wstrIconTexturePieceName": "SI_SA_AAT_INSTALLATION_DRONE_ACTIVATOR",
+      "m_eID": 29013,
+      "m_EffectiveDesc": {
+        "1": "Marker Blast (Physical): 1622%\nPhysical/Magical Defense Reduction: 21.5%\nMarker Duration :9.7 sec (PVP: 4.9 sec)"
+      },
+      "m_SkillCoolTime": {
+        "1": 7
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 100
+      },
+      "SA_REMOTE_SPEED_ABS": {
+        "1": 1250
+      }
+    },
+    "29015": {
+      "m_wstrName": "Phantom Seeker",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 16,
+      "m_wstrIconTexturePieceName": "SI_SA_AAT_PHANTOM_SEEKER",
+      "m_eID": 29015,
+      "m_EffectiveDesc": {
+        "1": "Drone Strike (Physical): 319% Multi Hit\n - Additional Damage on initial disk strike (Physical): 797%→199%\n   (Offensive powers will decrease over time)\nDuration: 5 sec"
+      },
+      "m_SkillCoolTime": {
+        "1": 23
+      },
+      "m_MPConsumption": {
+        "1": 300
+      }
+    },
+    "29016": {
+      "m_wstrName": "Install - Starfall",
+      "m_usFPConsumtion": 600,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AMM_INSTALLATION_STAR_FALL",
+      "m_eID": 29016,
+      "m_EffectiveDesc": {
+        "1": "Plasma Beam (Magical): 536%\nDuration: 7 sec"
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 200
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 7.4
+      },
+      "SA_COOLTIME_1": {
+        "1": 0.5
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 3
+      }
+    },
+    "29017": {
+      "m_usFPConsumtion": 600,
+      "m_wstrName": "Install - Ultimate Fury",
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AMM_INSTALLATION_ULTIMATE_FURY",
+      "m_eID": 29017,
+      "m_EffectiveDesc": {
+        "1": "Particle Fragment (Physical): 109% Multi Hit ×3\nDuration: 6 sec\nMaximum hit duration: 4.5 sec"
+      },
+      "m_SkillCoolTime": {
+        "1": 13
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 200
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 6
+      },
+      "SA_DAMAGE_TIME": {
+        "1": 13.5
+      },
+      "SA_SCOPE_ABS": {
+        "1": 1000
+      },
+      "SA_SCOPE_ABS_PVP": {
+        "1": 500
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 3
+      }
+    },
+    "29018": {
+      "m_wstrName": "Install\n- Shooting Chaser",
+      "m_usFPConsumtion": 600,
+      "m_usCBConsumption": 0,
+      "m_eType": 14,
+      "m_wstrIconTexturePieceName": "SI_SA_AMM_INSTALLATION_SHOOTING_CHASER",
+      "m_eID": 29018,
+      "m_EffectiveDesc": {
+        "1": "Psionic Bullet (Physical): 136% × Number of Linked Drones (Multi Hit)\nChaser Cooldown: 3 sec"
+      },
+      "m_SkillCoolTime": {
+        "1": 11
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 130
+      }
+    },
+    "29019": {
+      "m_wstrName": "Gravity Buster",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_ADE_GRAVITY_BURSTER",
+      "m_eID": 29019,
+      "m_EffectiveDesc": {
+        "1": "Gravity Field (Magical): 3850%"
+      },
+      "m_SkillCoolTime": {
+        "1": 14
+      },
+      "m_MPConsumption": {
+        "1": 200
+      },
+      "SA_USE_DP_REL_AT_FORMATION_MODE": {
+        "1": 1
+      }
+    },
+    "29021": {
+      "m_wstrName": "Stardust Shower",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 16,
+      "m_wstrIconTexturePieceName": "SI_SA_ATT_STARDUST_SHOWER",
+      "m_eID": 29021,
+      "m_EffectiveDesc": {
+        "1": "Gravity Spheres (Magical): 184% Multi Hit\nFinal Gravity Sphere (Magical): 2200%"
+      },
+      "m_SkillCoolTime": {
+        "1": 21
+      },
+      "m_MPConsumption": {
+        "1": 300
+      },
+      "SA_USE_DP_REL_AT_FORMATION_MODE": {
+        "1": 1
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 2.5
+      },
+      "SA_DAMAGE_TIME": {
+        "1": 0.33
+      }
+    },
+    "29027": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CX\nVoid Breaker",
+      "m_usFPConsumtion": 0,
+      "m_DeleteSkillIDByUpgrade": 29001,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AN_VOID_BREAKER",
+      "m_eID": 29027,
+      "m_EffectiveDesc": {
+        "1": "Multi Hit Black Hole (Magic): 45%\nEnergy Explosion (Magic): 885% Multi Hit"
+      },
+      "m_SkillCoolTime": {
+        "1": 10
+      },
+      "m_MPConsumption": {
+        "1": 200
+      },
+      "SA_DAMAGE_REL": {
+        "1": 0.15
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 2
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1.2
+      }
+    },
+    "29028": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CXParticle Accelerator",
+      "m_usFPConsumtion": 1200,
+      "m_DeleteSkillIDByUpgrade": 29002,
+      "m_usCBConsumption": 0,
+      "m_eType": 16,
+      "m_wstrIconTexturePieceName": "SI_SA_AN_PARTICLE_ACCELERATOR",
+      "m_eID": 29028,
+      "m_EffectiveDesc": {
+        "1": "Shock (Magic): 4718%\nStun Duration: 4 sec."
+      },
+      "m_SkillCoolTime": {
+        "1": 20
+      },
+      "m_MPConsumption": {
+        "1": 230
+      },
+      "SA_DAMAGE_REL": {
+        "1": 0.1
+      },
+      "SA_MUTATION_CONSUME_MAX_COUNT": {
+        "1": 4
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1.2
+      }
+    },
+    "29031": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CX\nQuake Buster",
+      "m_usFPConsumtion": 800,
+      "m_DeleteSkillIDByUpgrade": 29005,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_APT_QUAKE_BUSTER",
+      "m_eID": 29031,
+      "m_EffectiveDesc": {
+        "1": "Energy Shot (Magic): 235% (Dynamo Configuration Mode (Awaken) 271%)\nMulti Hit Energy Shot (Magic): 3984% Second Shot 95% Multi Hit\n           (Dynamo Configuration Mode (Awaken) 4597% Second Shot 109% Multi Hit)"
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "m_MPConsumption": {
+        "1": 150
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1.2
+      },
+      "SA_DAMAGE_REL": {
+        "1": 1.1
+      }
+    },
+    "29032": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CX Panzer Buster",
+      "m_usFPConsumtion": 800,
+      "m_DeleteSkillIDByUpgrade": 29012,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_AAT_PANZER_BUSTER",
+      "m_eID": 29032,
+      "m_EffectiveDesc": {
+        "1": "Shock Blast (Physical): 3362%"
+      },
+      "m_SkillCoolTime": {
+        "1": 15
+      },
+      "m_MPConsumption": {
+        "1": 150
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1
+      }
+    },
+    "29033": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CX\nGravity Buster",
+      "m_usFPConsumtion": 0,
+      "m_DeleteSkillIDByUpgrade": 29019,
+      "m_usCBConsumption": 0,
+      "m_eType": 15,
+      "m_wstrIconTexturePieceName": "SI_SA_ADE_GRAVITY_BURSTER",
+      "m_eID": 29033,
+      "m_EffectiveDesc": {
+        "1": "Gravity Field (Magical): 3850%"
+      },
+      "m_SkillCoolTime": {
+        "1": 14
+      },
+      "m_MPConsumption": {
+        "1": 180
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1
+      },
+      "SA_USE_DP_REL_AT_FORMATION_MODE": {
+        "1": 1
+      }
+    },
+    "29035": {
+      "m_wstrName": "#Cffcc00[Enhanced]#CX\nInstall - Drone Activator",
+      "m_usFPConsumtion": 600,
+      "m_DeleteSkillIDByUpgrade": 29013,
+      "m_usCBConsumption": 0,
+      "m_eType": 14,
+      "m_wstrIconTexturePieceName": "SI_SA_AAT_INSTALLATION_DRONE_ACTIVATOR",
+      "m_eID": 29035,
+      "m_EffectiveDesc": {
+        "1": "Marker Blast (Physical): 1622%\nPhysical/Magical Defense Reduction: 21.5%\nMark Duration: 14.5 sec. (PVP: 7.4 sec.)"
+      },
+      "m_SkillCoolTime": {
+        "1": 7
+      },
+      "SA_ULTIMATE_STRENGTHENED_SKILL_POWERRATE": {
+        "1": 1
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 100
+      },
+      "SA_REMOTE_SPEED_ABS": {
+        "1": 1250
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 1.5
+      }
+    },
+    "29213": {
+      "m_wstrName": "Seal of Time",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 5,
+      "m_wstrIconTexturePieceName": "SI_SA_COMMON_CREST_OF_TIME",
+      "m_eID": 29213,
+      "m_EffectiveDesc": {
+        "1": "Cooldown Time Decrease: 24 sec.\nDuration: 16.5 sec."
+      },
+      "m_SkillCoolTime": {
+        "1": 30
+      },
+      "m_MPConsumption": {
+        "1": 94
+      },
+      "SA_DECREASE_REL": {
+        "1": 24
+      },
+      "SA_USE_DP_REL_AT_FORMATION_MODE": {
+        "1": 1
+      }
+    },
+    "29400": {
+      "m_wstrName": "Nasod Armor Mode - Battle Gear",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_APT_NASOD_ARMOR_MODE",
+      "m_eID": 29400,
+      "m_EffectiveDesc": {
+        "1": "DP Usage Reduction: 10%\nNasod Armor Command Attack Damage: +40%\nAdditional Mutation Point Gain Chance: 30%",
+        "2": "DP Usage Reduction in Configuration Mode: 15%\nNasod Armor Command Attack Damage: +55%\nAdditional Mutation Point Gain Chance: 40%",
+        "3": "DP Usage Reduction: 20%\nNasod Armor Command Attack Damage: +70%\nAdditional Mutation Point Gain Chance: 50%",
+        "4": "DP Usage Reduction: 25%\nNasod Armor Command Attack Damage: +100%\nAdditional Mutation Point Gain Chance: 50%"
+      },
+      "SA_DP_USE_REL": {
+        "1": 0.9,
+        "2": 0.85,
+        "3": 0.8,
+        "4": 0.75
+      },
+      "SA_DAMAGE_REL": {
+        "1": 1.4,
+        "2": 1.55,
+        "3": 1.7,
+        "4": 2
+      },
+      "SA_EFFECTIVE_RATE": {
+        "1": 0.3,
+        "2": 0.4,
+        "3": 0.5,
+        "4": 0.5
+      }
+    },
+    "29401": {
+      "m_wstrName": "Particle Storm",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_APT_DUST_STORM",
+      "m_eID": 29401,
+      "m_EffectiveDesc": {
+        "1": "Storm Creation Chance (Attacking): 7%\nStorm Creation Chance (Receiving): 3%\nParticle Damage: 20% of Activated Attack's Damage\nCooldown Decrease: 10%\nConfiguration Mode (Awakening) Increase Natural MP Recovery per sec.: 0.5",
+        "2": "Storm Chance (Attack): 14%\nStorm Chance (Receiving Attack): 6%\nParticle Damage: 20% of damage done\nKnockdown Decrease: 15%\nConfiguration Mode (Awakening) MP Recovery per sec: 0.75",
+        "3": "Storm Chance (Attack): 21%\nStorm Chance (Receiving Attack): 9%\nParticle Damage: 20% of damage done\nKnockdown Decrease: 20%\nConfiguration Mode (Awakening) MP Recovery per sec: 1"
+      },
+      "SA_ATK_MAGIC_FIRST_REL": {
+        "1": 0.07,
+        "2": 0.14,
+        "3": 0.21
+      },
+      "SA_ATK_MAGIC_SECOND_REL": {
+        "1": 0.03,
+        "2": 0.06,
+        "3": 0.09
+      },
+      "SA_FORCE_DOWN_REL": {
+        "1": 0.9,
+        "2": 0.85,
+        "3": 0.8
+      }
+    },
+    "29405": {
+      "m_wstrName": "Nasod Armor Mode - Transform",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_APT_NASOD_ARMOR_MODE",
+      "m_eID": 29405,
+      "m_EffectiveDesc": {
+        "1": "MP gain when Mutation Point acquired: 4\n - No MP Gain when Dynamo Mutation Points are full\nNasod Armor Command Attack Damage: +35%",
+        "2": "MP gain when Mutation Point acquired: 8\n - No MP Gain when Dynamo Mutation Points are full\nNasod Armor Command Attack Damage: +40%",
+        "3": "MP gain when Mutation Point acquired: 12\n - No MP Gain when Dynamo Mutation Points are full\nNasod Armor Command Attack Damage: +45%",
+        "4": "MP gain when Mutation Point acquired: 15\n - No MP Gain when Dynamo Mutation Points are full\nNasod Armor Command Attack Damage: +55%"
+      },
+      "SA_MP_RETAKE_ABS": {
+        "1": 4,
+        "2": 8,
+        "3": 12,
+        "4": 15
+      },
+      "SA_DAMAGE_REL": {
+        "1": 1.35,
+        "2": 1.4,
+        "3": 1.45,
+        "4": 1.55
+      },
+      "SA_EFFECTIVE_COUNT": {
+        "1": 6,
+        "2": 6,
+        "3": 6,
+        "4": 6
+      }
+    },
+    "29406": {
+      "m_wstrName": "Hidden Records",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_AAT_HIDDEN_MEMORY",
+      "m_eID": 29406,
+      "m_EffectiveDesc": {
+        "1": "Duration Increase: 10%\nMax MP Increase: 10\nKnockdown Decrease: 10%\nConfiguration Mode (Awakening) MP recovered per sec increase: 0.5",
+        "2": "Duration Increase: 20%\nMax MP Increase: 20\nKnockdown Decrease: 15%\nConfiguration Mode (Awakening) MP Recovery per sec: 0.75",
+        "3": "Duration Increase: 30%\nMax MP Increase: 30\nKnockdown Decrease: 20%\nConfiguration Mode (Awakening) MP Recovery per sec: 1"
+      },
+      "SA_MAX_MP_ABS": {
+        "1": 10,
+        "2": 20,
+        "3": 30
+      },
+      "SA_PROJECTILE_SIZE": {
+        "1": 1,
+        "2": 1,
+        "3": 1
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 1.1,
+        "2": 1.2,
+        "3": 1.3
+      },
+      "SA_FORCE_DOWN_REL": {
+        "1": 0.9,
+        "2": 0.85,
+        "3": 0.8
+      }
+    },
+    "29407": {
+      "m_wstrName": "Dynamo Factory\n- Transform Reinforcement",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_AMM_ENHANCED_DYNAMO_FACTORY_TRANSFORM",
+      "m_eID": 29407,
+      "m_EffectiveDesc": {
+        "1": "Install Skills MP Consumption: -10%\nDynamo Factory Mode Swap\n - Increase Mode Duration: 10 sec\n - Install Skills Cooldown Reduction: -2 sec",
+        "2": "Install Skills MP Consumption: -15%\nDynamo Factory Mode Swap\n - Increase Mode Duration: 15 sec\n - Install Skills Cooldown Reduction: -2.5 sec",
+        "3": "Install Skills MP Consumption: -20%\nDynamo Factory Mode Swap\n - Increase Mode Duration: 20 sec\n - Install Skills Cooldown Reduction: -3 sec"
+      },
+      "SA_EFFECTIVE_TIME": {
+        "1": 2,
+        "2": 2.5,
+        "3": 2.85
+      },
+      "SA_CHARGING_TIME": {
+        "1": 10,
+        "2": 15,
+        "3": 20
+      },
+      "SA_MP_CONSUMPTION": {
+        "1": 0.9,
+        "2": 0.85,
+        "3": 0.8
+      }
+    },
+    "29410": {
+      "m_wstrName": "Nasod Armor Mode - Overlimit",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_ATT_NASOD_ARMOR_MODE",
+      "m_eID": 29410,
+      "m_EffectiveDesc": {
+        "1": "Cost and gain amount when attacking in different modes\n - Configuration Mode (Awakening) MP Gain increase: 6%\n - Dissolution Mode (Non-Awakening) DP Gain increase: 6%\nNasod Armor Command Attack Damage: +35%",
+        "2": "Cost and gain amount when attacking in different modes\n - Configuration Mode (Awakening) MP Gain increase: 8%\n - Dissolution Mode (Non-Awakening) DP Gain increase: 8%\nNasod Armor Command Attack Damage: +40%",
+        "3": "Cost and gain amount when attacking in different modes\n - Configuration Mode (Awakening) MP Gain increase: 10%\n - Dissolution Mode (Non-Awakening) DP Gain increase: 10%\nNasod Armor Command Attack Damage: +45%",
+        "4": "Cost and gain amount when attacking in different modes\n - Configuration Mode (Awakening) MP Gain increase: 15%\n - Dissolution Mode (Non-Awakening) DP Gain increase: 15%\nNasod Armor Command Attack Damage: +55%"
+      },
+      "SA_COOLTIME_1": {
+        "1": 1.5,
+        "2": 1.5,
+        "3": 1.5,
+        "4": 1.5
+      },
+      "SA_MP_GAIN_ON_HIT_REL": {
+        "1": 1.06,
+        "2": 1.08,
+        "3": 1.1,
+        "4": 1.15
+      },
+      "SA_MP_GAIN_GET_HIT_REL": {
+        "1": 1.06,
+        "2": 1.08,
+        "3": 1.1,
+        "4": 1.15
+      },
+      "SA_DP_GAIN_REL": {
+        "1": 1.06,
+        "2": 1.08,
+        "3": 1.1,
+        "4": 1.15
+      },
+      "SA_DP_USE_REL": {
+        "1": 1.06,
+        "2": 1.08,
+        "3": 1.1,
+        "4": 1.15
+      },
+      "SA_DAMAGE_REL": {
+        "1": 1.35,
+        "2": 1.4,
+        "3": 1.45,
+        "4": 1.55
+      }
+    },
+    "29411": {
+      "m_wstrName": "Time Control",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_ADE_CONTROL_TIME",
+      "m_eID": 29411,
+      "m_EffectiveDesc": {
+        "1": "Skill Cooldown Decrease: 30%\n - Activation Chance: 20%\nAttack Speed Increase: 2%\nKnockdown Decrease: 10%\nConfiguration Mode (Awakening) MP recovered per sec increase: 0.5\nDP Consumption Decrease: -3%",
+        "2": "Skill Cooldown Decrease: 40%\n - Activation Chance: 30%\nAttack Speed Increase: 3%\nKnockdown Decrease: 15%\nConfiguration Mode (Awakening) MP Recovery per sec: 0.75\nDP Consumption Decrease: -6%",
+        "3": "Skill Cooldown Decrease: 50%\n - Activation Chance: 40%\nAttack Speed Increase: 4%\nKnockdown Decrease: 20%\nConfiguration Mode (Awakening) MP Recovery per sec: 1\nDP Consumption Decrease: -10%"
+      },
+      "SA_EFFECTIVE_RATE": {
+        "1": 0.2,
+        "2": 0.3,
+        "3": 0.4
+      },
+      "SA_COOLTIME_1": {
+        "1": 0.3,
+        "2": 0.4,
+        "3": 0.5
+      },
+      "SA_ANI_SPEED": {
+        "1": 1.02,
+        "2": 1.03,
+        "3": 1.04
+      },
+      "SA_DP_USE_REL": {
+        "1": 0.97,
+        "2": 0.94,
+        "3": 0.9
+      },
+      "SA_FORCE_DOWN_REL": {
+        "1": 0.9,
+        "2": 0.85,
+        "3": 0.8
+      }
+    },
+    "29413": {
+      "m_wstrName": "Mind Circle",
+      "m_usFPConsumtion": 0,
+      "m_usCBConsumption": 0,
+      "m_eType": 8,
+      "m_wstrIconTexturePieceName": "SI_P_ADE_MIND_CIRCLE",
+      "m_eID": 29413,
+      "m_EffectiveDesc": {
+        "1": "Configuration Mode (Awakening): MP Recovery +9\nDissolution Mode (Non-Awakening): DP Recovery +9",
+        "2": "Configuration Mode (Awakening): MP Recovery +12\nDissolution Mode (Non-Awakening): DP Recovery +12",
+        "3": "Configuration Mode (Awakening): MP Recovery +15\nDissolution Mode (Non-Awakening): DP Recovery +15"
+      },
+      "SA_ADD_MP_VALUE_ABS": {
+        "1": 9,
+        "2": 12,
+        "3": 15
+      },
+      "SA_ADD_DP_VALUE_ABS": {
+        "1": 9,
+        "2": 12,
+        "3": 15
+      }
+    }
+  },
+  "buffFactors": {
+    "315": {
+      "BUFF_TEMPLET_ID": 320,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 27,
+          "2": 45,
+          "3": 29,
+          "4": 30
+        },
+        "BBT_CHANGE_HYPER_MODE": {},
+        "BBT_EFFECT_SET_WITH_DAMAGE": {
+          "NOT_USE": 1
+        },
+        "BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_MELEE_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.2,
+            "2": 1.2,
+            "3": 1.2,
+            "4": 1.2,
+            "5": 1.2,
+            "6": 1.2,
+            "7": 1.2,
+            "8": 1.2,
+            "9": 1.2,
+            "10": 1.2,
+            "11": 1.2,
+            "12": 1.2,
+            "13": 1.2,
+            "14": 1.2,
+            "15": 1.2,
+            "16": 1.2,
+            "17": 1.2,
+            "18": 1.2,
+            "19": 1.2,
+            "20": 1.2,
+            "21": 1.2,
+            "22": 1.2,
+            "23": 1.2,
+            "24": 1.2,
+            "25": 1.2,
+            "26": 1.2,
+            "27": 1.2,
+            "28": 1.2,
+            "29": 1.2,
+            "30": 1.2
+          }
+        },
+        "BBT_CHANGE_FINAL_DAMAGE_MULTIPLIER_RANGE_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.2,
+            "2": 1.2,
+            "3": 1.2,
+            "4": 1.2,
+            "5": 1.2,
+            "6": 1.2,
+            "7": 1.2,
+            "8": 1.2,
+            "9": 1.2,
+            "10": 1.2,
+            "11": 1.2,
+            "12": 1.2,
+            "13": 1.2,
+            "14": 1.2,
+            "15": 1.2,
+            "16": 1.2,
+            "17": 1.2,
+            "18": 1.2,
+            "19": 1.2,
+            "20": 1.2,
+            "21": 1.2,
+            "22": 1.2,
+            "23": 1.2,
+            "24": 1.2,
+            "25": 1.2,
+            "26": 1.2,
+            "27": 1.2,
+            "28": 1.2,
+            "29": 1.2,
+            "30": 1.2
+          }
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 3,
+          "FORCE_TIME": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          }
+        }
+      }
+    },
+    "366": {
+      "BUFF_TEMPLET_ID": 342,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 55
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1,
+          "2": 13
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 30,
+            "2": 30,
+            "3": 30,
+            "4": 30,
+            "5": 30,
+            "6": 30,
+            "7": 30,
+            "8": 30,
+            "9": 30,
+            "10": 30,
+            "11": 30,
+            "12": 30,
+            "13": 30,
+            "14": 30,
+            "15": 30,
+            "16": 30,
+            "17": 30,
+            "18": 30,
+            "19": 30,
+            "20": 30,
+            "21": 30,
+            "22": 30,
+            "23": 30,
+            "24": 30,
+            "25": 30,
+            "26": 30,
+            "27": 30,
+            "28": 30,
+            "29": 30,
+            "30": 30
+          }
+        },
+        "BFT_X2STATE_CHANGE": {}
+      }
+    },
+    "367": {
+      "BUFF_TEMPLET_ID": 343,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 24,
+          "2": 25,
+          "3": 26
+        },
+        "BBT_CHARGE_MP_HIT_MELEE_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.05,
+            "2": 1.075,
+            "3": 1.1,
+            "4": 1.1,
+            "5": 1.1,
+            "6": 1.1,
+            "7": 1.1,
+            "8": 1.1,
+            "9": 1.1,
+            "10": 1.1,
+            "11": 1.1,
+            "12": 1.1,
+            "13": 1.1,
+            "14": 1.1,
+            "15": 1.1,
+            "16": 1.1,
+            "17": 1.1,
+            "18": 1.1,
+            "19": 1.1,
+            "20": 1.1,
+            "21": 1.1,
+            "22": 1.1,
+            "23": 1.1,
+            "24": 1.1,
+            "25": 1.1,
+            "26": 1.1,
+            "27": 1.1,
+            "28": 1.1,
+            "29": 1.1,
+            "30": 1.1
+          }
+        },
+        "BBT_CHARGE_MP_HIT_RANGE_ATTACK": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.05,
+            "2": 1.075,
+            "3": 1.1,
+            "4": 1.1,
+            "5": 1.1,
+            "6": 1.1,
+            "7": 1.1,
+            "8": 1.1,
+            "9": 1.1,
+            "10": 1.1,
+            "11": 1.1,
+            "12": 1.1,
+            "13": 1.1,
+            "14": 1.1,
+            "15": 1.1,
+            "16": 1.1,
+            "17": 1.1,
+            "18": 1.1,
+            "19": 1.1,
+            "20": 1.1,
+            "21": 1.1,
+            "22": 1.1,
+            "23": 1.1,
+            "24": 1.1,
+            "25": 1.1,
+            "26": 1.1,
+            "27": 1.1,
+            "28": 1.1,
+            "29": 1.1,
+            "30": 1.1
+          }
+        },
+        "BBT_CHARGE_MP_HITTED": {
+          "BUFF_CHANGE_TYPE": 3,
+          "BUFF_RELATION_TYPE": 7,
+          "PERCENT": {
+            "1": 1.05,
+            "2": 1.075,
+            "3": 1.1,
+            "4": 1.1,
+            "5": 1.1,
+            "6": 1.1,
+            "7": 1.1,
+            "8": 1.1,
+            "9": 1.1,
+            "10": 1.1,
+            "11": 1.1,
+            "12": 1.1,
+            "13": 1.1,
+            "14": 1.1,
+            "15": 1.1,
+            "16": 1.1,
+            "17": 1.1,
+            "18": 1.1,
+            "19": 1.1,
+            "20": 1.1,
+            "21": 1.1,
+            "22": 1.1,
+            "23": 1.1,
+            "24": 1.1,
+            "25": 1.1,
+            "26": 1.1,
+            "27": 1.1,
+            "28": 1.1,
+            "29": 1.1,
+            "30": 1.1
+          }
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 10,
+            "2": 12.5,
+            "3": 15,
+            "4": 10,
+            "5": 10,
+            "6": 10,
+            "7": 10,
+            "8": 10,
+            "9": 10,
+            "10": 10,
+            "11": 15,
+            "12": 15,
+            "13": 15,
+            "14": 15,
+            "15": 15,
+            "16": 15,
+            "17": 15,
+            "18": 15,
+            "19": 15,
+            "20": 15,
+            "21": 15,
+            "22": 15,
+            "23": 15,
+            "24": 15,
+            "25": 15,
+            "26": 15,
+            "27": 15,
+            "28": 15,
+            "29": 15,
+            "30": 15
+          }
+        }
+      }
+    },
+    "474": {
+      "BUFF_TEMPLET_ID": 436,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 55
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 16.5,
+            "2": 16.5,
+            "3": 16.5,
+            "4": 16.5,
+            "5": 16.5,
+            "6": 16.5,
+            "7": 16.5,
+            "8": 16.5,
+            "9": 16.5,
+            "10": 16.5,
+            "11": 16.5,
+            "12": 16.5,
+            "13": 16.5,
+            "14": 16.5,
+            "15": 16.5,
+            "16": 16.5,
+            "17": 16.5,
+            "18": 16.5,
+            "19": 16.5,
+            "20": 16.5,
+            "21": 16.5,
+            "22": 16.5,
+            "23": 16.5,
+            "24": 16.5,
+            "25": 16.5,
+            "26": 16.5,
+            "27": 16.5,
+            "28": 16.5,
+            "29": 16.5,
+            "30": 16.5
+          }
+        }
+      }
+    },
+    "501": {
+      "BUFF_TEMPLET_ID": 442,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 34
+        },
+        "BBT_RESET_SKILL_COOL_TIME": {
+          "SKILL_TYPE": 0,
+          "BUFF_CHANGE_TYPE": 1,
+          "FIX_VALUE": {
+            "1": -24,
+            "2": -24,
+            "3": -24,
+            "4": -24,
+            "5": -24,
+            "6": -24,
+            "7": -24,
+            "8": -24,
+            "9": -24,
+            "10": -24,
+            "11": -24,
+            "12": -24,
+            "13": -24,
+            "14": -24,
+            "15": -24,
+            "16": -24,
+            "17": -24,
+            "18": -24,
+            "19": -24,
+            "20": -24,
+            "21": -24,
+            "22": -24,
+            "23": -24,
+            "24": -24,
+            "25": -24,
+            "26": -24,
+            "27": -24,
+            "28": -24,
+            "29": -24,
+            "30": -24
+          }
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 8
+        },
+        "BFT_IMMEDIATE": {}
+      }
+    },
+    "683": {
+      "BUFF_TEMPLET_ID": 673,
+      "RATE": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1,
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1
+      },
+      "IGNORE_REGIST_FOR_RATE": 1,
+      "BEHAVIOR": {
+        "COMBINATION": {
+          "1": 55
+        }
+      },
+      "FINALIZER": {
+        "COMBINATION": {
+          "1": 1
+        },
+        "BFT_TIME": {
+          "BUFF_DURATION_TIME_TYPE": 1,
+          "NORMAL_TIME": {
+            "1": 120,
+            "2": 120,
+            "3": 120,
+            "4": 120,
+            "5": 120,
+            "6": 120,
+            "7": 120,
+            "8": 120,
+            "9": 120,
+            "10": 120,
+            "11": 120,
+            "12": 120,
+            "13": 120,
+            "14": 120,
+            "15": 120,
+            "16": 120,
+            "17": 120,
+            "18": 120,
+            "19": 120,
+            "20": 120,
+            "21": 120,
+            "22": 120,
+            "23": 120,
+            "24": 120,
+            "25": 120,
+            "26": 120,
+            "27": 120,
+            "28": 120,
+            "29": 120,
+            "30": 120
+          }
+        }
+      }
+    }
+  },
+  "constants": {
+    "dpMax": 8000,
+    "mutationMax": 6,
+    "dpDisplayScale": 20,
+    "formationSentinel": 99999
+  },
+  "constantEvidence": {
+    "dpMaxMutationMax": "fixed X2Define.h lines 88,90; matching target native consumer unavailable",
+    "dpDisplayScale": "fixed X2GUAdd GetActualDPConsume and FormationModeStart",
+    "formationSentinel": "fixed X2GUAdd FormationModeStart"
+  },
+  "targetDescriptionAdapters": {
+    "formedNaturalMp": "LP29401/MM29406/DE29411 target effective descriptions give .5/.75/1 per second; old factor346 tier3 .258 conflicts and is not used.",
+    "29213": "PvP HP cap 50%; exclude wedding/hyper/seal cooldown; time sickness 120s. No position rewind.",
+    "DEOverlimit": "Awakened SA declares MP recovery equal to 20% listed MP. Kept separate from old source passive.",
+    "mutation": "Only complete numeric damage payloads are consumed by shared cast hook; other payloads belong to skill executors."
+  },
+  "customPolicy": {
+    "equipmentDpGainBonus": 0.5,
+    "equipmentDpConsumptionReduction": 0.5,
+    "source": "project rule; not original default"
+  },
+  "unsupported": [
+    "2016 native consumers and original-client traces unavailable",
+    "unknown DPRT_SPECIAL symbol and anomalous old DT_MIX branch do not receive guessed DP",
+    "full factory autonomous projectiles/target ownership remains skill-executor work",
+    "unknown mutation effect payloads never consume points with no effect",
+    "map death, void fall and external room penalty are not inferred as ring-revivable"
+  ]
+}

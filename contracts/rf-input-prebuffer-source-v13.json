@@ -1,0 +1,946 @@
+{
+  "schema": "rf-input-prebuffer-source-v13",
+  "schemaVersion": 1,
+  "evidenceClass": "fixed-V5-source-static-review + compiled-reference-probe + simulation-implementation-observation",
+  "targetClientMeasured": false,
+  "target2016MeasuredTraceCount": 0,
+  "m3FidelityAccepted": false,
+  "scope": {
+    "readOnlyIntegrationTree": ".",
+    "independentReportTree": ".",
+    "implementationModified": false,
+    "clientRun": false,
+    "browserOperated": false,
+    "servicesOperated": false,
+    "accountsModified": false
+  },
+  "source": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "manifestPath": "contracts/rf-native-runtime-sources.json",
+    "manifestReadOnlyPath": "./contracts/rf-native-runtime-sources.json",
+    "manifestSha256": "16c9bb8be5050d7c0d6058a1a68586b9ce391b36e754700600065ab1ed62d21d",
+    "sampledSourceFileCount": 79,
+    "verification": "manifest SHA256 and Git blob vs unchanged source bytes; no remote Git membership lookup",
+    "warning": "Fixed reference repository contains later reconstruction comments, including 2026 MARCH2015gc. Neither its V5 label nor a function hash proves official target2016 provenance."
+  },
+  "files": [
+    {
+      "relativePath": "KTDXLIB/KTDIDevice.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/KTDXLIB/KTDIDevice.cpp",
+      "bytes": 19435,
+      "sha256": "8b54ccb1b622653ead48c09c996be250e9c1adc8e327aaa9bf1a7018864fc83a",
+      "gitBlob": "dd88c26dce5f480aa587a23a5cfde95809b2cc00",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "KTDXLIB/KTDIDevice.h",
+      "readOnlyPath": "./.cache/native-source-runtime/KTDXLIB/KTDIDevice.h",
+      "bytes": 4319,
+      "sha256": "c1baea66587dce02fb9386423610d79d55d10b0799a778f3635a0a82b3f96bf8",
+      "gitBlob": "2a73b25d27734e78f532d5e4f570278d57c84873",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/KTDXLIB/KTDIDeviceWinKey.cpp",
+      "bytes": 17886,
+      "sha256": "0d00dd7699ba6803dec3df17615b2b7fc561c1db9e2eb4532d46616a0f07cceb",
+      "gitBlob": "b4aa05959c15d8fc31a447cb08688121f3044a22",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.h",
+      "readOnlyPath": "./.cache/native-source-runtime/KTDXLIB/KTDIDeviceWinKey.h",
+      "bytes": 3208,
+      "sha256": "aed201f10d54bbdae4203f56a6e95cf3d9a2fe2f158332f1ee61097791006542",
+      "gitBlob": "1d3e738393dc3982ae8e541675f456f94e50fa36",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "KTDXLIB/KTDX.h",
+      "readOnlyPath": "./.cache/native-source-runtime/KTDXLIB/KTDX.h",
+      "bytes": 44424,
+      "sha256": "0097cffed97c4446e45fd586cc873290e6770a93e03b3bc7873383fb85d297cf",
+      "gitBlob": "88fda6a003046b3b8a7ee3d1838cbae0eba73125",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2Game.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2Game.cpp",
+      "bytes": 618989,
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "gitBlob": "a513f2429514e858b02b5d41643c498b1edb117f",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2Game.h",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2Game.h",
+      "bytes": 77999,
+      "sha256": "3ebc9cc8fc6f4e177bdd0632995aba47e54dabc62ed0f1c718410ede391b165d",
+      "gitBlob": "43e58eea7cdc9e2d91c34a3d991f39b8757226c3",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2GUUser.h",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2GUUser.h",
+      "bytes": 202266,
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "gitBlob": "ba39e29184c740f4832f071a6394af891487a7cf",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2GameUnit.h",
+      "bytes": 191004,
+      "sha256": "072559b9b5dbfcc8520906e1b775198470fc514635e766d50428ecaa9aa1cbb5",
+      "gitBlob": "41349c64aee113dd97dbe4128d58a109a2886ab2",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    },
+    {
+      "relativePath": "X2Lib/X2GameUnit.cpp",
+      "readOnlyPath": "./.cache/native-source-runtime/X2Lib/X2GameUnit.cpp",
+      "bytes": 521479,
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "manifestMatch": true,
+      "nativeReferenceCopyByteIdentical": true
+    }
+  ],
+  "fragments": [
+    {
+      "id": "win-read",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::Read",
+      "kind": "function",
+      "startLine": 70,
+      "endLine": 117,
+      "sha256": "e2d3951887802b9f2b0a2977ed6580be59c7b917d2fb41f9f73728309dbb250b",
+      "bytes": 1244,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-one",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::GetKeyState",
+      "kind": "function",
+      "startLine": 137,
+      "endLine": 149,
+      "sha256": "42f9ea0c4e67551fd77169226b40395180986d953f999e2e2bfaf4878a0ce6fd",
+      "bytes": 253,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-pure",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::GetPureKeyState",
+      "kind": "function",
+      "startLine": 160,
+      "endLine": 166,
+      "sha256": "f6d93281bdf61bdec27985881fc31c548d3cebea30f5a2af13805712c42bf930",
+      "bytes": 159,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-double-pure",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::GetDoubleKeyPureState",
+      "kind": "function",
+      "startLine": 168,
+      "endLine": 213,
+      "sha256": "18ab01fec2302a5a9b3dc0bf4db9eba2ed3760df5337b48abc554cc72abdaa36",
+      "bytes": 895,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-double-one",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::GetDoubleKeyState",
+      "kind": "function",
+      "startLine": 215,
+      "endLine": 264,
+      "sha256": "ff9350d28401bfef120d94c63895d1a670b64bcc814d4c5a8e24b429c8121252",
+      "bytes": 995,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-double-reset",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::SetDoubleKeyReset",
+      "kind": "function",
+      "startLine": 266,
+      "endLine": 277,
+      "sha256": "da82df108276e7a7889fbc74c0ca0ad1daed7d8645bfb2978d2e9e3a422e8725",
+      "bytes": 326,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-message",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "CKTDIDeviceWinKey::MsgProc_KeyMsg",
+      "kind": "function",
+      "startLine": 397,
+      "endLine": 532,
+      "sha256": "8fc0f210bed78b578446ae5ef5940accff58711ee80c2a85afd28e2ec4980350",
+      "bytes": 4854,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-double-init",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.h",
+      "symbol": "DoubleKey::Init",
+      "kind": "inline-function",
+      "startLine": 37,
+      "endLine": 45,
+      "sha256": "3501ff18ad80a39732d6b07d32a3aea7acd8871565a4262d47984939b57fcb49",
+      "bytes": 151,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "win-double-gap",
+      "relativePath": "KTDXLIB/KTDIDeviceWinKey.cpp",
+      "symbol": "DOUBLE_INPUT_GAP=0.4f",
+      "kind": "macro",
+      "startLine": 7,
+      "endLine": 7,
+      "sha256": "4c60140d45640064e4e6ce63ba7d665e8e54714ad8275cf45f936fdb62dd6522",
+      "bytes": 30,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "directinput-read",
+      "relativePath": "KTDXLIB/KTDIDevice.cpp",
+      "symbol": "CKTDIDevice::Read",
+      "kind": "function",
+      "startLine": 273,
+      "endLine": 379,
+      "sha256": "4702e41d19176619327f18f23984f7994dec6d743a2209b073f9f26f622f47f4",
+      "bytes": 2109,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "directinput-one",
+      "relativePath": "KTDXLIB/KTDIDevice.cpp",
+      "symbol": "CKTDIDevice::GetKeyState",
+      "kind": "function",
+      "startLine": 481,
+      "endLine": 491,
+      "sha256": "15c0350564c5fdb1e625b82e60fa0288be35ff19dc6790d51913b9a3c6ddf66c",
+      "bytes": 203,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "directinput-pure",
+      "relativePath": "KTDXLIB/KTDIDevice.cpp",
+      "symbol": "CKTDIDevice::GetPureKeyState",
+      "kind": "function",
+      "startLine": 497,
+      "endLine": 500,
+      "sha256": "4f6c93512d16c8b3bd2813d8d8e840f5042920a09034a617fc36a47d25f11564",
+      "bytes": 108,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "device-choice-macro",
+      "relativePath": "KTDXLIB/KTDX.h",
+      "symbol": "X2TOOL defines CHANGE_KEY_DEVICE",
+      "kind": "macro-fragment",
+      "startLine": 555,
+      "endLine": 557,
+      "sha256": "3f93c76edb4988b21ab3fd0230599978e177ac68edabb1e0ec9fb71b53cca091",
+      "bytes": 77,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "game-input-getter-order",
+      "relativePath": "X2Lib/X2Game.h",
+      "symbol": "CX2Game::InputData",
+      "kind": "inline-function",
+      "startLine": 1852,
+      "endLine": 1870,
+      "sha256": "eca69c39544cefcdcb5fe70405602fba9cd33d124783a71e31061ea9b416a8d8",
+      "bytes": 464,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "game-keyprocess",
+      "relativePath": "X2Lib/X2Game.cpp",
+      "symbol": "CX2Game::KeyProcess",
+      "kind": "function",
+      "startLine": 5216,
+      "endLine": 5604,
+      "sha256": "2f73243d869658a41bf42112400e09118c697d075200ccbd3ed2cada331e6374",
+      "bytes": 16006,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "game-input-before-unit-update",
+      "relativePath": "X2Lib/X2Game.cpp",
+      "symbol": "OnFrameMove KeyProcess call under camera gates",
+      "kind": "control-flow-fragment",
+      "startLine": 2715,
+      "endLine": 2723,
+      "sha256": "3ec3b3dcb91cbc8d3a650888d53b9417225b643122aae249772dedceccf749a4",
+      "bytes": 231,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "game-unit-update-call",
+      "relativePath": "X2Lib/X2Game.cpp",
+      "symbol": "OnFrameMove user/NPC unit loop",
+      "kind": "control-flow-fragment",
+      "startLine": 3003,
+      "endLine": 3031,
+      "sha256": "559f1d243593ba00290592034176906c202598ff7a1a1254a9667839463f9370",
+      "bytes": 1472,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "future-state-enter",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::DoStateEndStartFuture",
+      "kind": "function",
+      "startLine": 6401,
+      "endLine": 6446,
+      "sha256": "ad64ff5a1541cd0241ed10a1eba0e3237c0bc003dbc3a03e8b54f87480a0e65b",
+      "bytes": 1515,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "future-callback-then-event",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::DoFrameMoveFuture",
+      "kind": "function",
+      "startLine": 6491,
+      "endLine": 6510,
+      "sha256": "e9bbf621d7f65867b702dfffd8552c03bc6c9778ad4feeb211a9d146e1d5ae6c",
+      "bytes": 441,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "now-frame",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::DoFrameMove",
+      "kind": "function",
+      "startLine": 6512,
+      "endLine": 6560,
+      "sha256": "9aa92a1accb828cae209e6c3a21f1883619168bd070bda1ef9a6638704667dd0",
+      "bytes": 1131,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "future-stop-gate",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "Future fStopTime/fStop2Time branch",
+      "kind": "control-flow-fragment",
+      "startLine": 6767,
+      "endLine": 6785,
+      "sha256": "f242d942543d95c86b15b7afceacc799903c21242afa0a56d2d84746f8005031",
+      "bytes": 662,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "push-pop-now-order",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "PushFrameData then PopFrameData/Now",
+      "kind": "control-flow-fragment",
+      "startLine": 6794,
+      "endLine": 6851,
+      "sha256": "22fe19b4288e94b4894e233e5a16e8e990e84ca171ee933bb35a9ee5f063c3c7",
+      "bytes": 1885,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "state-change",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::StateChange",
+      "kind": "function",
+      "startLine": 7426,
+      "endLine": 7586,
+      "sha256": "46ca804c471a4a5e666487236e0edea56ac1108b41b63ccc54f0f8477dfd66b9",
+      "bytes": 5522,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "state-table-cancel-read",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "EventTime and cancel field readers",
+      "kind": "control-flow-fragment",
+      "startLine": 13881,
+      "endLine": 13899,
+      "sha256": "611a521b0a440982adf525ac83a478c2e21ead9a2f0eef89ca89de5e6684908b",
+      "bytes": 1004,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "common-future-jump-decrement",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "m_fCanNotJumpTime decrease and clamp",
+      "kind": "control-flow-fragment",
+      "startLine": 14961,
+      "endLine": 14966,
+      "sha256": "bc87d9e1c4f99fc8d6fcd2ed2d8b8c201d98e047b4e8e797eb29b94c995cdcd6",
+      "bytes": 145,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "common-future-attack-decrement",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "m_fCanNotAttackTime decrease and clamp",
+      "kind": "control-flow-fragment",
+      "startLine": 14955,
+      "endLine": 14960,
+      "sha256": "35f4fc57aff719bf29163349ea17ce0ba62e3b3acfa4e15a502ca7a283016c7d",
+      "bytes": 153,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "common-future-animation",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "Future animation update",
+      "kind": "control-flow-fragment",
+      "startLine": 15049,
+      "endLine": 15084,
+      "sha256": "090f494d5cbebe4a9d3ba73a7138228b526707bd40e94158159e047f9b4b720b",
+      "bytes": 1428,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "common-future-other-update",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CommonFuture gauge/physics/passive paths",
+      "kind": "control-flow-fragment",
+      "startLine": 15129,
+      "endLine": 15193,
+      "sha256": "94ea98c2bbc8cb5e9e960cd020b62c069795d67c8e306dc74781076c7194c158",
+      "bytes": 1267,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "skill-one-key-consumer",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CommonSpecialAttackEventProcess",
+      "kind": "function",
+      "startLine": 21116,
+      "endLine": 21233,
+      "sha256": "5593d6299c23642271347a6ba90ae38fa7a8bb6d786ddb2e5b4c7199002a7d1d",
+      "bytes": 4271,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "set-input-data",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::SetInputData",
+      "kind": "function",
+      "startLine": 28782,
+      "endLine": 28984,
+      "sha256": "a2956d6623374209727193ba781b2ad0b83f6fe19b7d6f351c87d9581c1a9612",
+      "bytes": 5885,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "packet-attack-mask",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "Attack lock masks one/pure/double Z/X",
+      "kind": "control-flow-fragment",
+      "startLine": 28786,
+      "endLine": 28804,
+      "sha256": "f28312a8661e2429f55a318aa46b9b41458e9033cf97a7b85fdc9120aeefb4aa",
+      "bytes": 506,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "packet-jump-mask",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "Jump lock masks one/pure/double UP",
+      "kind": "control-flow-fragment",
+      "startLine": 28896,
+      "endLine": 28902,
+      "sha256": "a5031e58feba071600d6a85babd9241cd9f5c7489641e9b23edf1f01e275e8c1",
+      "bytes": 187,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "packet-overwrite-and-block",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "Before/Input overwrite and input block",
+      "kind": "control-flow-fragment",
+      "startLine": 28954,
+      "endLine": 28969,
+      "sha256": "050e458cea5ba2f8b0949634d10c1206041ef12698c65f7f76430a45f85f8ead",
+      "bytes": 489,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "input-block-helper",
+      "relativePath": "X2Lib/X2GUUser.cpp",
+      "symbol": "CX2GUUser::InitInpuDataProcess",
+      "kind": "function",
+      "startLine": 37981,
+      "endLine": 37992,
+      "sha256": "846b5f4cbe3fba2eb1dee25fcb406e80f099c48c0c9f2f243fa69d9067292fd2",
+      "bytes": 205,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "input-block-condition",
+      "relativePath": "X2Lib/X2GameUnit.cpp",
+      "symbol": "CX2GameUnit::IsCanNotIntput",
+      "kind": "function",
+      "startLine": 15078,
+      "endLine": 15084,
+      "sha256": "1936557072c8b44a7fdc8672cb6ed21dbdbfddf9211c291719cb922ab15bba4b",
+      "bytes": 147,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "direction-clears-flags",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "symbol": "CANCEL_COMBO_ON_DIRECTION_CHANGE",
+      "kind": "macro-fragment",
+      "startLine": 215,
+      "endLine": 219,
+      "sha256": "f36c241b7486cee64db9fead3b81032d7d55f32076054de91ce06c39f9aee170",
+      "bytes": 436,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "generic-command-flags",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "symbol": "ELSE_IF_STATE_CHANGE_ON_",
+      "kind": "macro-fragment",
+      "startLine": 224,
+      "endLine": 228,
+      "sha256": "42acec1b716139b889962b53658b234b90b7e96cd4b68ce96b44d630f1ad4345",
+      "bytes": 566,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "extended-command-flags",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "symbol": "IF/ELSE_IF_STATE_CHANGE_ON_EX_",
+      "kind": "macro-fragment",
+      "startLine": 231,
+      "endLine": 241,
+      "sha256": "769feb2ca3aa815dc86c8ddebfc545a37f1cdc2bf29d16bd73f7d917b0ddca14",
+      "bytes": 1571,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "struct-command-flags",
+      "relativePath": "X2Lib/X2GUUser.h",
+      "symbol": "NEW_CHARACTER_EL EventTime macros",
+      "kind": "macro-fragment",
+      "startLine": 245,
+      "endLine": 254,
+      "sha256": "02483075ce88b67030320cae2e9f80b2e0922aec9ac4df8bf070d56f50575176",
+      "bytes": 1432,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "state-flags-definition",
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "symbol": "StateParam bEventFlagList",
+      "kind": "struct-fragment",
+      "startLine": 720,
+      "endLine": 720,
+      "sha256": "f930a2578f2a3e06e31f826e27ed71fb0be2d45346c86125c451599a35aba0f6",
+      "bytes": 50,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "state-flags-copy",
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "symbol": "StateParam flags memcpy",
+      "kind": "struct-fragment",
+      "startLine": 815,
+      "endLine": 815,
+      "sha256": "d16370062259e8e7cd399bb6294405124704c18151e04227f4997278a4436aef",
+      "bytes": 88,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "state-flags-clear",
+      "relativePath": "X2Lib/X2GameUnit.h",
+      "symbol": "StateParam flags ZeroMemory",
+      "kind": "struct-fragment",
+      "startLine": 873,
+      "endLine": 873,
+      "sha256": "6105fa813127b3f2630b07c1f823082d2b3084eec8f720bc8f4b9e5776532109",
+      "bytes": 71,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-wait-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_WAIT_EventProcess",
+      "kind": "function",
+      "startLine": 6129,
+      "endLine": 6177,
+      "sha256": "9183c5a8d5f5bc15a39111a6009ded7604f535709e924f43a648a647b530faa2",
+      "bytes": 1513,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-jump-ready-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_JUMP_READY_EventProcess",
+      "kind": "function",
+      "startLine": 6248,
+      "endLine": 6280,
+      "sha256": "f3a29a5aabbdf2fb989be0173419617b8a2a4af646885a45c29c865e4897165f",
+      "bytes": 889,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-jump-up-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_JUMP_UP_EventProcess",
+      "kind": "function",
+      "startLine": 6282,
+      "endLine": 6314,
+      "sha256": "71341cf9f0e941585a3c6ceb7769f16504602f135d34809ccefbfe8ba17066c6",
+      "bytes": 670,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-jump-down-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_JUMP_DOWN_EventProcess",
+      "kind": "function",
+      "startLine": 6316,
+      "endLine": 6362,
+      "sha256": "242d74ff5e8ad6708a3037b9ad8ca7c7d91564f97d8f65b4382e6ca9d99a2865",
+      "bytes": 1044,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-dash-jump-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_DASH_JUMP_EventProcess",
+      "kind": "function",
+      "startLine": 6628,
+      "endLine": 6727,
+      "sha256": "b75e47f55952205e6bd3ff70c5d95030839688caad57bcf2ca085e4a02cc5150",
+      "bytes": 2530,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-z-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_COMBO_Z_EventProcess",
+      "kind": "function",
+      "startLine": 7774,
+      "endLine": 7820,
+      "sha256": "01aa187bd056703428a9e37f71756e21e8bc14227e7d82081f0125393c948662",
+      "bytes": 1365,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-zz-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_COMBO_ZZ_EventProcess",
+      "kind": "function",
+      "startLine": 7823,
+      "endLine": 7877,
+      "sha256": "c02e19a1f80e256f502c5bc30bc5cca665a611b81191f59cdbb941ec24a41733",
+      "bytes": 1921,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-zzx-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_COMBO_ZZX_EventProcess",
+      "kind": "function",
+      "startLine": 8311,
+      "endLine": 8369,
+      "sha256": "46ea46324e5aab8685bd60f68713c1dafe4a1a8f41549052e588d3b33997fa73",
+      "bytes": 1939,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    },
+    {
+      "id": "raven-zzxx-event",
+      "relativePath": "X2Lib/X2GURaven.cpp",
+      "symbol": "RSI_COMBO_ZZXX_EventProcess",
+      "kind": "function",
+      "startLine": 8386,
+      "endLine": 8406,
+      "sha256": "41e2770938b3f289be897910f26e1759b9418952f4a7cc0d05ed84e405eb78ac",
+      "bytes": 438,
+      "bytePolicy": "original source bytes; inclusive one-based lines; CRLF/LF retained"
+    }
+  ],
+  "programSnapshots": [
+    {
+      "path": "packages/combat-core/index.mjs",
+      "sha256": "33008b30938ad7f390db333303b29e70028b5b54ae28893200dd58d39d60913e",
+      "bytes": 155695,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    },
+    {
+      "path": "packages/combat-core/direction-buffer.mjs",
+      "sha256": "8ccc59b15f93757bdcfee71d32294a41230ac00ec34dbbc5562491d42cb36a08",
+      "bytes": 2333,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    },
+    {
+      "path": "apps/web/input-buffer.mjs",
+      "sha256": "c94f910b98657df2371ddb94f9af096ef64047429bf52d668ccee6037ef3e433",
+      "bytes": 1104,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    },
+    {
+      "path": "packages/native-source/commands.mjs",
+      "sha256": "ca393caf105a8eb8fcf8d9559799b31761b339ee869a64ee66b40070a6758901",
+      "bytes": 9701,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    },
+    {
+      "path": "packages/combat-core/rf-profile.json",
+      "sha256": "8bfa5ba868bd66c03828a004a35b2c857857c815cecc6c88b3cb713ca0d644df",
+      "bytes": 1476834,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    },
+    {
+      "path": "config/rf-preset.json",
+      "sha256": "fe076a280c3e12b81280a387830cd45165c2860667de4cdc43525b94836493b6",
+      "bytes": 3086,
+      "evidenceClass": "simulation-implementation-before-audit-fix"
+    }
+  ],
+  "macroBoundaries": [
+    {
+      "macro": "CHANGE_KEY_DEVICE",
+      "definitionFragment": "device-choice-macro",
+      "guards": [
+        "KTDIDeviceWinKey.cpp lines3-700",
+        "KTDIDeviceWinKey.h lines1-141"
+      ],
+      "target2016SelectionVerified": false,
+      "reason": "Observed X2TOOL definition; complete target build flags and application/device manager dispatch not acquired."
+    },
+    {
+      "macros": [
+        "SKILL_CANCEL_BY_HYPER_MODE",
+        "RAVEN_SECOND_CLASS_CHANGE",
+        "NEW_CHARACTER_EL",
+        "X2OPTIMIZE_NPC_ADAPTIVE_FRAME_MOVE",
+        "FIX_SHOOTING_MEGABALL_AT_JUMP_LINE_MAP",
+        "FIX_SKILL_SLOT_CHANGE_BUG"
+      ],
+      "target2016SelectionVerified": false,
+      "reason": "Original branches retained in audited fragments; no official2016 build macro map."
+    }
+  ],
+  "confirmedReferenceFacts": [
+    {
+      "id": "device-levels",
+      "fragments": [
+        "win-message",
+        "win-read",
+        "win-one",
+        "win-pure",
+        "game-input-getter-order"
+      ],
+      "fact": "Timestamped distinct key state changes are consumed through the packet cutoff; pure reads final level, one consumes an unlocked held key. InputData order is doublePure, doubleOne, pure, one."
+    },
+    {
+      "id": "packet-jump-mask-before-decrement",
+      "fragments": [
+        "game-input-before-unit-update",
+        "game-unit-update-call",
+        "game-keyprocess",
+        "set-input-data",
+        "packet-jump-mask",
+        "common-future-jump-decrement"
+      ],
+      "fact": "In ordinary local game update input collection/SetInputData precedes unit Future update. Positive packet-start jump lock suppresses one/pure/double UP even if that step later expires the timer."
+    },
+    {
+      "id": "combo-flags",
+      "fragments": [
+        "raven-z-event",
+        "raven-zz-event",
+        "raven-zzx-event",
+        "direction-clears-flags",
+        "state-flags-definition",
+        "state-flags-copy",
+        "state-flags-clear"
+      ],
+      "fact": "Combo preinput is per-state event flags with authored comparisons and branch order; reverse pure direction clears selected flags. This is not an arbitrary global command queue."
+    },
+    {
+      "id": "future-before-now",
+      "fragments": [
+        "future-state-enter",
+        "future-callback-then-event",
+        "push-pop-now-order",
+        "state-change"
+      ],
+      "fact": "Future state enter/FrameMove/Event precede Push/Pop and Now frame. Ordinary StateChange writes pending state; bDirectChange has a separate immediate sync path."
+    },
+    {
+      "id": "stopped-future",
+      "fragments": [
+        "future-stop-gate",
+        "packet-overwrite-and-block"
+      ],
+      "fact": "Stopped Future path skips state enter and Event for that packet, decreases stop times, and still pushes frame. SetInputData replaces per-packet InputData; no same all-pressed cache found in these acquired consumers."
+    },
+    {
+      "id": "skill-edge-only",
+      "fragments": [
+        "skill-one-key-consumer"
+      ],
+      "fact": "CommonSpecialAttackEventProcess consumes oneA/S/D/C/Q/W/E/R. Pure-held skill fallback is not justified by this dispatcher."
+    }
+  ],
+  "candidateAndUnknown": [
+    {
+      "id": "target-updown-consumer",
+      "field": "RSI_COMBO_ZZXX.UPDOWN_CANCEL_AFTER",
+      "targetDeclarationValue": 0.6,
+      "fixedConsumer": "raven-zzxx-event",
+      "status": "matching-target2016-reader-and-callback-not-acquired",
+      "webAdapter": "packages/combat-core/direction-buffer.mjs captures ordered UP,DOWN,optional Z/X with restricted continuation states",
+      "warning": "Fixed ZZXX callback has pure skip after >0.7 and no UPDOWN field reader. The0.6 declaration is not a proven buffering, duration, or ordered replay consumer."
+    },
+    {
+      "id": "hitstop-global-pending",
+      "implementation": "packages/combat-core/index.mjs pendingPressed",
+      "status": "candidate-difference-retained-awaiting-complete-device-schedule-and-target-evidence",
+      "warning": "Released UP can be reintroduced after stop by current adapter. Do not delete all pendingPressed on source-only inference; per-state source combo flags and future callback stops must be treated separately."
+    },
+    {
+      "id": "device-message-schedule",
+      "status": "not-acquired",
+      "missing": [
+        "X2Main.cpp",
+        "KTDXApp.cpp",
+        "complete CKTDIManager implementation"
+      ],
+      "warning": "Available WinKey source and device declarations do not establish target2016 compile path or whole application packet/device ordering."
+    },
+    {
+      "id": "scoped-negative-search",
+      "searched": [
+        "CKTDInput",
+        "CmdEvent",
+        "UPDOWN_CANCEL_AFTER"
+      ],
+      "scope": "79-file native-source-runtime sample",
+      "found": false,
+      "warning": "Negative result applies only to acquired sample; not a claim about complete original2016 sources."
+    }
+  ],
+  "readOnlyProbe": {
+    "invocation": "PowerShell here-string piped to bundled node.exe --input-type=module; working directory is readOnlyIntegrationTree",
+    "nodePath": "node",
+    "module": {
+      "path": "artifacts/native/commands.wasm",
+      "sha256": "6a6517df5f6032ffc2c325c234f0fa20cb6d28459ad26d16edf2a42838eed64c",
+      "bytes": 50083
+    },
+    "javascript": "import {readFileSync} from 'node:fs';\nimport {createNativeCommands} from './packages/native-source/commands.mjs';\nimport {createSimulation} from './packages/combat-core/index.mjs';\nimport {createInputBuffer} from './apps/web/input-buffer.mjs';\nconst profile=JSON.parse(readFileSync('packages/combat-core/rf-profile.json','utf8')),preset=JSON.parse(readFileSync('config/rf-preset.json','utf8'));\nconst c=await createNativeCommands({bytes:readFileSync('artifacts/native/commands.wasm')});\nconst actor=(state,time,flags=0)=>({state,animationTime:time,animationBeforeTime:time,animationOneshotTimer:0,sourceCommandFlags:flags,vx:0,vy:0,passiveSpeed:{x:0,y:-1},facing:1,grounded:true,y:30,stats:{moveSpeedMultiplier:1},mp:300,hp:800000});\nlet result=c.runEvent(actor('RSI_COMBO_ZZX',.2),{pressed:['X']},profile);\nconsole.log('native ZZX press .2',JSON.stringify({flags:result.flags,next:result.state}));\nresult=c.runEvent(actor('RSI_COMBO_ZZX',.61,result.flags),{},profile);\nconsole.log('native ZZX release then .61',JSON.stringify({flags:result.flags,next:result.state}));\nfor(const time of [.59,.61,.71]){\n result=c.runEvent(actor('RSI_COMBO_ZZXX',time),{held:['UP'],pressed:['UP']},profile);\n console.log('native ZZXX held UP',time,JSON.stringify({flags:result.flags,next:result.state}));\n}\nconst input=createInputBuffer();input.down('UP',10);input.up('UP',10.001);\nconsole.log('web buffer consume before timestamp boundary has no cutoff',JSON.stringify(input.consume()));\nconst floor={sceneId:'read-only-probe',lines:[{lineId:0,start:[-5000,0,0],end:[5000,0,0],type:'LT_NORMAL',nativeFields:{CAN_DOWN:false}}]};\nconst make=()=>createSimulation({profile,preset,map:floor,nativeCommands:c,actors:[{id:'rf',team:0,x:0,y:0,lineId:0}]});\nconst s=make(),a=s.actor('rf');a.canNotJumpTime=.005;s.step(.01,{pressed:['UP'],held:['UP']},{snapshot:false});\nconsole.log('web jump-lock .005 at packet start, .01 dt',JSON.stringify({state:a.state,remaining:a.canNotJumpTime,y:a.y,grounded:a.grounded}));\nconst stop=make(),b=stop.actor('rf');b.hitStop=.04;stop.step(.01,{pressed:['UP'],released:['UP']},{snapshot:false});\nfor(let i=0;i<5;i++)stop.step(.01,{}, {snapshot:false});\nconsole.log('web released UP tap in hitstop then empty inputs',JSON.stringify({state:b.state,y:b.y,grounded:b.grounded,pending:b.pendingPressed}));\n",
+    "javascriptSha256": "ade96ab4f67b27fce36a42c1c2820ec290b33191d056c31ced66c9bd53512c62",
+    "observedStdout": "native ZZX press .2 {\"flags\":1,\"next\":null}\nnative ZZX release then .61 {\"flags\":0,\"next\":\"RSI_COMBO_ZZXX\"}\nnative ZZXX held UP 0.59 {\"flags\":0,\"next\":null}\nnative ZZXX held UP 0.61 {\"flags\":0,\"next\":null}\nnative ZZXX held UP 0.71 {\"flags\":0,\"next\":\"RSI_WAIT\"}\nweb buffer consume before timestamp boundary has no cutoff {\"held\":[],\"pressed\":[\"UP\"],\"released\":[\"UP\"],\"edges\":[{\"key\":\"UP\",\"down\":true,\"time\":10},{\"key\":\"UP\",\"down\":false,\"time\":10.001}]}\nweb jump-lock .005 at packet start, .01 dt {\"state\":\"RSI_JUMP_UP\",\"remaining\":0,\"y\":30,\"grounded\":false}\nweb released UP tap in hitstop then empty inputs {\"state\":\"RSI_JUMP_UP\",\"y\":61.949999999999996,\"grounded\":false,\"pending\":[]}\n",
+    "classification": "observed referenceWASM/current host results; not golden target2016 trajectory",
+    "packetBoundaryFinding": "Captured at archived revision before ROOT correction archived revision. Corrective diff read-only inspected; this historical probe does not claim the live tree still has the defect."
+  },
+  "readOnlySearches": [
+    {
+      "command": "rg -n \"KeyProcess\\(|CKTDInput|CmdEvent|UPDOWN_CANCEL_AFTER|Read\\(.*dwStepTime\" .cache/native-source-runtime",
+      "result": "KeyProcess call X2Game2723 and unit OnFrameMove3031 located; no CKTDInput/CmdEvent/UPDOWN_CANCEL_AFTER consumers in acquired sample."
+    },
+    {
+      "command": "rg -n \"DOUBLE_INPUT_GAP|CHANGE_KEY_DEVICE|void CX2GUUser::CommonFrameMoveFuture|bool CX2GameUnit::IsCanNotIntput|void CX2GUUser::InitInpuDataProcess\" <audited source files>",
+      "result": "WinKey gap line7=0.4f; WinKey guards; CommonFuture14813; IsCanNotIntput15078; InitInpuDataProcess37981."
+    }
+  ],
+  "boundedExtractionProposal": {
+    "implemented": false,
+    "functions": [
+      "win-read",
+      "win-one",
+      "win-pure",
+      "win-double-pure",
+      "win-double-one",
+      "win-double-reset",
+      "win-double-init",
+      "game-input-getter-order"
+    ],
+    "hostBoundaries": [
+      "WM/DOM event bridge into original KeyTime",
+      "VK to DIK map",
+      "deque and snapshot storage",
+      "shared cutoff/elapsed clock mapping",
+      "32-bit DWORD/LONG and BOOL/BYTE types"
+    ],
+    "requiredCases": [
+      "eligible/not-yet-due messages",
+      "repeat suppression",
+      "press-release within same packet",
+      "two taps with/without observed release packet",
+      "query-order and key-lock behavior",
+      "0.4 timeout strict boundary",
+      "DWORD wrap and signed LONG comparison"
+    ],
+    "warning": "Compile these unchanged bytes as separate fixed-reference candidates. Do not select WinKey as target2016 without compile/runtime evidence, and do not infer missing2016 UPDOWN behavior."
+  },
+  "postAuditRootCorrection": {
+    "inspection": "read-only git show diff, not executed by this audit",
+    "programSnapshots": [
+      {
+        "path": "packages/combat-core/index.mjs",
+        "sha256": "bfa67057b8246626c768a848bfccdb8b9e748ad64315fd4b3c01b78d7fb029d2",
+        "bytes": 156138
+      },
+      {
+        "path": "tests/combat/jump-source-v9.test.mjs",
+        "sha256": "ea2408c879ce9bfc11b196626170db81a78c0781fb43b87996dfc266d4e4f318",
+        "bytes": 6264
+      }
+    ],
+    "changes": [
+      "Filter UP and Z/X using lock values at received packet start before stop adapters store pressed",
+      "After Future timer decrement, screen earlier pending reintroduced UP/ZX using same packet-start values"
+    ],
+    "regressionCasesAdded": [
+      "SetInputData rejects this packet Up before CommonFuture expires the jump lock",
+      "received Up and X during their source locks do not enter the hit-stop edge adapter"
+    ],
+    "testsRunByThisAudit": false,
+    "remaining": [
+      "pressed direction synthesized as one-frame held",
+      "global stopped pendingPressed deduplicated replay, not original full edge FIFO",
+      "ordered 82 adapter without matching2016 consumer"
+    ],
+    "parallelDeviceFixStatus": "Per-packet time cutoff and same-key queue blockage changes are being implemented by sibling agent; no completion or validation count asserted here."
+  }
+}

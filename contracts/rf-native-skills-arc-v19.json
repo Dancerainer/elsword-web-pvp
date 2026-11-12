@@ -1,0 +1,2609 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "bounded-fixed-V5-callback-extension-not-target2016",
+  "previousRuntimeVersion": "original-source-functions-v10",
+  "previousManifestContentSha256": "e804bbfea9c3cf698a77355c98b6e1eeed4f2aae921489c09d41d7da8c23c4f8",
+  "previousSkills": {
+    "file": "skills.wasm",
+    "sha256": "60f604ff17f81008cbf4cca1efdad7e171967d0d61005dd7cf92dafa6ea32d95",
+    "bytes": 31707,
+    "originalFunctions": [
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_READY_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16909,
+        "endLine": 16917,
+        "sha256": "b513e23bb34f1ade8cfe0b2356ee6ed71b8120a9dc63cec518f9cb543b543627",
+        "bodySha256": "eb5c8f338e185093628c3051060923febe62c696ee60bd66a6936e34878c31fd",
+        "bytes": 192
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16928,
+        "endLine": 16976,
+        "sha256": "d2cd7128ef856af5843fd337c633f019ce04bf629b4f1b7441a578be4f71dedf",
+        "bodySha256": "924b9032f69444e69e8fdb5b8c979c0e3948269d6a66946577ace93a7732beff",
+        "bytes": 2646
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16978,
+        "endLine": 16990,
+        "sha256": "58edbe15ffa722cc9af7622dc996d9be5a18992799df40aed87fff9b6714cafa",
+        "bodySha256": "e67da708d57e5fabe1a8381b55888b951f137478cf861a1293b0de9796a23493",
+        "bytes": 560
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_DASH_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 17002,
+        "endLine": 17029,
+        "sha256": "d7da0c7ee61d75f13ef6dcffe9bd151b0cf1c681b2b50b07caf43a036e875641",
+        "bodySha256": "3c12295c2dc5805f49dabcf48a5afc643f9c133d0a853391eaf49cde2b5880c2",
+        "bytes": 1143
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_DASH_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 17031,
+        "endLine": 17047,
+        "sha256": "c3bb4918816243e415ebe63175928c18fff79d6f88d7b68858dcd55c1e2cd611",
+        "bodySha256": "fed472ffccd4657c3eb0c8ce1a853ceb8b4bb5fb2fad9315f0c669ae50d45578",
+        "bytes": 341
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_CHARGE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22480,
+        "endLine": 22499,
+        "sha256": "86300b73b0ddcf4820cf4c044987c005f5ec31f71115987d01e1ea924070bfc8",
+        "bodySha256": "f51cdbe82c1916628000172df1ab6c2541a9102219d5b422dd41378e9837254e",
+        "bytes": 731
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22626,
+        "endLine": 22638,
+        "sha256": "c235973eed80dda16fe3e2178a62ad6ee8ac97a837aeb1c70b0a680a5e61ea4f",
+        "bodySha256": "4fb000332b60ff1228a9e5b2ea263b5ff5500653c150252a060edd0a6082c7ab",
+        "bytes": 228
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_GROUND_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22662,
+        "endLine": 22680,
+        "sha256": "9eed10230f250c8fd129a740880d2df990c77e0ad64534afed6bb7490d16e8c8",
+        "bodySha256": "e40774d610c95a352f005548d965a984c7f6ca5aef0f5d1a8190c54cd188ae5f",
+        "bytes": 387
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_AIR_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22726,
+        "endLine": 22740,
+        "sha256": "8d88979efa08f981e8f386309076f5e1acdda5cc36c93b1ffcb60396a4e0e104",
+        "bodySha256": "c08e4b4f3ebb1a292ad022edb004cbdf5e81ad7d66739bf83adbd0e4f91b59f1",
+        "bytes": 350
+      },
+      {
+        "name": "RSI_SI1_MAXIMUM_CANNON_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9199,
+        "endLine": 9209,
+        "sha256": "8bb3050d4a4515a09582e6fc618c91808d1e1a88859f1a14b0ab18e4525a0781",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 246
+      },
+      {
+        "name": "RSI_SI2_CANNON_BLADE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 10552,
+        "endLine": 10562,
+        "sha256": "fc36c25abcdea05ec35042dfb47302d7db7760616775bd46cebb26d0f4c0e386",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 244
+      },
+      {
+        "name": "RSI_SI3_SEVEN_BURST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9920,
+        "endLine": 9930,
+        "sha256": "ba8d9b969c7b7e9c043d04847c3a00f22418043ccb883c42d8e3c978ea29a145",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 243
+      },
+      {
+        "name": "RSI_SI1_OVER_TAKER_CHARGED_BOLT_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 12983,
+        "endLine": 13000,
+        "sha256": "1e09ab4dc54053f104d2f04aab8b7504704cb120c99ea07126825a62e3d1424c",
+        "bodySha256": "7d3b184e3b15d70a99ef3db51a00ad8e19eae708a44a14c2878e522cd6124fe8",
+        "bytes": 472
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22224,
+        "endLine": 22237,
+        "sha256": "49e84f1ed93811267c49c9bcbd69ac145e51cb0afcf007fa9287dc8138e63ac1",
+        "bodySha256": "1fa11d71cda362edd2235cbf2a0d6b1d870d744d6ad61358aeb8969b16707b25",
+        "bytes": 373
+      },
+      {
+        "name": "RSI_A_ROT_WEAPON_BREAK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15562,
+        "endLine": 15579,
+        "sha256": "4f0b5649b5e29e8f74fa7fee70e0095c48481755747c6f1bf4d48528333d5707",
+        "bodySha256": "eceb4a00592e15421b0af31c28baec55e75b175e00aaf61c477ece3f2fc168a7",
+        "bytes": 385
+      },
+      {
+        "name": "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13673,
+        "endLine": 13683,
+        "sha256": "26f835e25ccf418eab8b85e5982ac828d83bbe11a9e2052a1cf5d43d629102ae",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 258
+      },
+      {
+        "name": "RSI_A_ROT_NUCLEAR_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15686,
+        "endLine": 15704,
+        "sha256": "588945531b358db1b52f6def9ef1d883acd351b0f9f9d32eb18646ebae498959",
+        "bodySha256": "9cce9f065f984df4a5d843dd9697793b89c20b3b5df0c0415bf26bba06eec5e5",
+        "bytes": 389
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_REVENGE_ATTACK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22508,
+        "endLine": 22523,
+        "sha256": "93a176a1c7ced4499fe4f3f68d2c6cbcf9b00e89c1a6b1c484117fb6f2491100",
+        "bodySha256": "78a4f96ac69d1b613680f637f25144efb37b697368e3b79dc2b5acfcd599e430",
+        "bytes": 389
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_AVOID_ATTACK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22525,
+        "endLine": 22540,
+        "sha256": "ea5f1597cbe0d38e40b5b522db18412cd2e342b012c46a5c91cc02d50af7befe",
+        "bodySha256": "78a4f96ac69d1b613680f637f25144efb37b697368e3b79dc2b5acfcd599e430",
+        "bytes": 387
+      },
+      {
+        "name": "RSI_SI2_OVER_TAKER_ARC_ENEMY_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13310,
+        "endLine": 13320,
+        "sha256": "44537a166a600c63f4c3a96ac14ae3859c936dacefb53cb21bd200496f90ad83",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 252
+      },
+      {
+        "name": "SI_SA_RRF_X_CRASH_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16415,
+        "endLine": 16432,
+        "sha256": "01add15ab1e4e662488a11dfa87fce31a1d1c9a9ad789d9dc417136b9d090d63",
+        "bodySha256": "2b661e585b9bfaf0587c0e56bcb2fc16e6bab126645205a33053a48b8fdef7b4",
+        "bytes": 349
+      },
+      {
+        "name": "RSI_HA_RRF_INFERNAL_ARM_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23323,
+        "endLine": 23334,
+        "sha256": "0421290803628f0b1c170aa2533633aae4e3ccba41ea944962097fc439f1de51",
+        "bodySha256": "f91690d674f9b88e3eba487fddb8a0cd0b7d67f9ab2154c727132ee2ec85e422",
+        "bytes": 248
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15337,
+        "endLine": 15345,
+        "sha256": "cc9802275d5621cb59fced26a3f4f1f3c458ac0e07e3cfb8e9877138bf070335",
+        "bodySha256": "91f1ed62e1d6dfda61c78ae4817cc2b6b6595f4912839432616d6ba3b61fe583",
+        "bytes": 242
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_LANDING_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15439,
+        "endLine": 15449,
+        "sha256": "3b0b3e7bd56145070d8a58bcf172e7ad4e82304910b6cbddd31f57eaf4eded3b",
+        "bodySha256": "f10c9f97ff478a54e478bf8e58a8a66acc2554bb9c6305f5e08d9f6fe7d5f9d2",
+        "bytes": 261
+      },
+      {
+        "name": "RSI_SI2_POWER_ASSAULT_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9517,
+        "endLine": 9527,
+        "sha256": "055923951a622e7b25c4a854f588b9ea6334df18061ac5609e28e5928352962d",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 245
+      },
+      {
+        "name": "RSI_SI1_OVER_TAKER_CHARGED_BOLT_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 12918,
+        "endLine": 12981,
+        "sha256": "7d75a7c46389a8a8bdf3edea89e5964c2615b908da1fc505f7a569c5bf476ba8",
+        "bodySha256": "dd841773e79fdeb11fb566ca2e60acea79a169f773167e7fea73eb886fbcdbf4",
+        "bytes": 2429
+      },
+      {
+        "name": "RSI_SI2_OVER_TAKER_ARC_ENEMY_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13146,
+        "endLine": 13307,
+        "sha256": "05fc487d5fe70622cdbdebe538e6131b7f76bd42997de3ec8bb30adb93eeaf66",
+        "bodySha256": "08ba33dd4c4469b7cec180e644fbc70dad53ec0e585ab8cbe28ecd336b3f3b73",
+        "bytes": 5822
+      },
+      {
+        "name": "ClearArcEnemyData",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13907,
+        "endLine": 13916,
+        "sha256": "d6b32e6de8b5522c0bc4f0e0def9949d1c198907df2dde29434c1fc1f8b47928",
+        "bodySha256": "fd79cefa9b25366cf9712c26372ff51c3bcffdbd5ecc44ee35db15a8b584f9de",
+        "bytes": 197
+      },
+      {
+        "name": "AttackResultPlayEffect",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 474,
+        "endLine": 552,
+        "sha256": "581f55e27a527eec60e0f56467b36ea450a89c7c58ccdd775bbd9f7ff4da79a9",
+        "bodySha256": "c3518ada9d7ed88e793451714fd39f1d875633197997be07f64d14117a747e8c",
+        "bytes": 2956
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14775,
+        "endLine": 14778,
+        "sha256": "dfa95b1059981ee82a390eb581e7941040e3deb77e14e9e6f1afdc785bb5b4a8",
+        "bodySha256": "6e5b81bbf437220d049fbe9c6a5c971b5b2db808f65571ed4938500d87d39833",
+        "bytes": 121
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_StartFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14781,
+        "endLine": 14818,
+        "sha256": "a70665e8e6b1e40355e5a155e01c8938617c05b651bc793299949102e9a06030",
+        "bodySha256": "d37499344f8c30f889ee9d983e2f808978420c36936da317ace6c849f4dd8178",
+        "bytes": 1268
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14820,
+        "endLine": 14864,
+        "sha256": "233eebbf9ea98935f977e4eacb985bbfbfbae5e3732c4872204d4a44f0bdcfc9",
+        "bodySha256": "b792054d7ec32276f13837ac8b66fcb63104c98c223de7575b262a8a19710960",
+        "bytes": 1809
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14866,
+        "endLine": 14883,
+        "sha256": "1b66daca7f093fb3eb1141f9499ae157e69252620b8185389776a56920df4a10",
+        "bodySha256": "8958c41630678226f154675e95a03db77433700b76e321c6c8c81686c7ef4201",
+        "bytes": 490
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14887,
+        "endLine": 14975,
+        "sha256": "ecc31d65b6ee306385af48b4e8b017a0d43e1ace3293faeba8f117575b6e0896",
+        "bodySha256": "65af1722e4572cc4b940506c9a9c72ae494862094b34d88fbdeea1b42daad6fc",
+        "bytes": 2542
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14980,
+        "endLine": 14998,
+        "sha256": "c4f87d8c95d66f80d56385b5f7915cdc95f2e45652ea10031b9138c414b7f1e5",
+        "bodySha256": "759c76c73a06e562e8c77310cb47443af97e2529dc3529b1d055eebacf60e668",
+        "bytes": 540
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15001,
+        "endLine": 15004,
+        "sha256": "82ba52b6297e32bc48d9ed298b16922c99817dcba2ab5a3de902797536132f3a",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 115
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15008,
+        "endLine": 15029,
+        "sha256": "26e89bc922f6ddd0de8cd40984956572e3556adac197ed58be1a5ec653686525",
+        "bodySha256": "83082509541f88634c5af5bb1f8d95b0fe87cd0bb2c11afa52efe97639d6d645",
+        "bytes": 858
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15031,
+        "endLine": 15047,
+        "sha256": "3f046bf2b0ece2f8521710fa24f84fa2dccff39c03cc6967b2850f2cf6525a9d",
+        "bodySha256": "65a6ffca84f1d8c08b729a319df924ba66b34efb577311afc7924a44e6dd1670",
+        "bytes": 327
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_StartFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20842,
+        "endLine": 20871,
+        "sha256": "3b04d4222033c4118492bf649326e65b21a3dc5fb711b3ef9b52af704bb3ec73",
+        "bodySha256": "df4d4ee6a45119c9ad5018c8c2210c675398fbff3157cd0c7a1c8d3de22e3cc8",
+        "bytes": 1177
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20873,
+        "endLine": 20890,
+        "sha256": "d2d13b54256dd48fb170a488b0e8b57a3792b6ec797daffdbbace08efd16358e",
+        "bodySha256": "c84bccc6ceacc27656742c504222017e369704c53623367e05f3aba34a0b4979",
+        "bytes": 524
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20892,
+        "endLine": 20909,
+        "sha256": "03902c5cc77a16516942fbf5cfc384e2e09a7f696f68cfdd89d085b4b2792f23",
+        "bodySha256": "2cc624ee1c15cc915a9229e47e2964085b31df10837a93bc5481d50f08886ad1",
+        "bytes": 518
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20911,
+        "endLine": 20965,
+        "sha256": "c6bb85f41d6a78d8b86a4275351504f12c13a7fc44a54ac8c4011d2a1b783c6a",
+        "bodySha256": "de24eb4b55299fb7b19542873b1e8b801cd70cd1bc5f6ddadc42cd7ab156abe3",
+        "bytes": 1401
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20967,
+        "endLine": 20986,
+        "sha256": "e5175fafa74213520f613571104f5fc69b87bc2f87f09b8056b766033c1103a3",
+        "bodySha256": "4f4d31b843b067fb2c2e72a07b0c144b610e12e0cc01495ff121fd4f34413bca",
+        "bytes": 463
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_END_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20989,
+        "endLine": 20994,
+        "sha256": "f4e9854d4f89d23978808ede1c7a87ea9f96d3d73f142d13f121e4b4666fa1ff",
+        "bodySha256": "43380d8e753b70b876be886c7f46147ca942beec5a12b67047d10c919e6f1a92",
+        "bytes": 134
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_END_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20996,
+        "endLine": 21012,
+        "sha256": "6d5108994419208133efa0abdc45aa6edfa62c14bbe15151f7d097b25cd9dafd",
+        "bodySha256": "65a6ffca84f1d8c08b729a319df924ba66b34efb577311afc7924a44e6dd1670",
+        "bytes": 335
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21161,
+        "endLine": 21168,
+        "sha256": "879c554517648c62d9425bcc314558ce086e224ab660d39d7935692c4703bc62",
+        "bodySha256": "cddc1ba1a8988c09d006c3317b0cf2b86fad5e48d1bbfd1289d929657f8e36a2",
+        "bytes": 314
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21172,
+        "endLine": 21177,
+        "sha256": "fde91fa947dd559ffe3200b9c4df86d00f9c3ac20d119206baf624b2301deb47",
+        "bodySha256": "1cf6d60dd38c6a78b319b8a8a5132d46e15caf54ee57c05e697b6b8fbc62ba62",
+        "bytes": 130
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21179,
+        "endLine": 21192,
+        "sha256": "f6ef7d5c98487232b16254169aef3bffca002977f4bcaec89bca18df9ffaea39",
+        "bodySha256": "8dd543681ffb959b6e9f62899d269e2d3f61e5f5094d924430ab732db689e46e",
+        "bytes": 509
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21194,
+        "endLine": 21213,
+        "sha256": "9c5f480dfaac1c7fca79da2282a2510089a841522ec110ab3fd033445852e69f",
+        "bodySha256": "e03f211edd5d1ba35adfbbd8c6f9191fefb6621ee50dc806636911494cdd98c9",
+        "bytes": 452
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23159,
+        "endLine": 23162,
+        "sha256": "dad68627f62c2282cc435453008e40301731ae8f05c4cf14cdf4d1bd83fdfe5b",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 121
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23166,
+        "endLine": 23174,
+        "sha256": "5e726136c2952d204479dd72773af3ce1a8a2cc3f4720b60e48779b18787686d",
+        "bodySha256": "b62bd54e97e6c338e2370c73ab38683c93968261892d0750e3c425f489b8ace3",
+        "bytes": 328
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23176,
+        "endLine": 23195,
+        "sha256": "c28ce9159233113d661efa4253db5a53fd4045b57636af0c590a917f7ed7013a",
+        "bodySha256": "58e772f17b19291f391324c35efff3e8eb4e541c54467ce1369597181e57d128",
+        "bytes": 458
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23199,
+        "endLine": 23202,
+        "sha256": "4f8db95deced279f181c0a9f208697127c1cf6550fe13d3fe045f76d215ca0d8",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 118
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23206,
+        "endLine": 23216,
+        "sha256": "540d68091b2012d7bd25063c09a6788c99ff54f624096eda02655ae0f8106fbb",
+        "bodySha256": "f7b701b66e13dfaeed9bceedb587935e8ff3e70684834486c69404a659e20b4e",
+        "bytes": 380
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23218,
+        "endLine": 23236,
+        "sha256": "0b8d8c849b47c488bef1fae1d3d988c31110631585aa493c578d8ee7b54415bf",
+        "bodySha256": "51a523940fb008d23c7e4dd8fe41cc2c9e3600803ec32ecdf5036a76782af8d5",
+        "bytes": 454
+      },
+      {
+        "name": "SetShadowStepAttackSkill",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21215,
+        "endLine": 21303,
+        "sha256": "28e4b4e80865af0621a3604dfdf8a3646ae0ffa2189ec260891090aa2ce041a5",
+        "bodySha256": "d54f98315d982cc58e4feb7e0bbac042dc2d9e6db757fcac0b77bbe389c71c71",
+        "bytes": 3610
+      },
+      {
+        "name": "InitShadowStep",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21305,
+        "endLine": 21322,
+        "sha256": "9e7ddea3ee872ab678d8a90b19ea6028cc18ad953c3289ff33c05655db27f1d9",
+        "bodySha256": "15f51ce15560bc9549c86c94e86e5d9645792bfa83c490c5280df44f99ff2396",
+        "bytes": 883
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22104,
+        "endLine": 22131,
+        "sha256": "04e7b2a073e8ece800f8f9197ce9121efeb775d2a88cf0887d373fca257a64ad",
+        "bodySha256": "035c1312f4da7c6e91cd027810cf9c1db3cd2dfa3fc48f9e52022faf4a848582",
+        "bytes": 1162
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22133,
+        "endLine": 22222,
+        "sha256": "5538a82a9a49e5db273c8dd38750009b0c016e2073c04a15c431a4bcdc23337e",
+        "bodySha256": "009eb36c054822a907324fb322ff8a967735c5dd8a05c806ec02d76dadb958e0",
+        "bytes": 3170
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22239,
+        "endLine": 22244,
+        "sha256": "cdc80fb3c8caa860490fc02fee1a89baf232655b685f14486866e7ffa58ce62b",
+        "bodySha256": "808c77da04113e5a3f85419f4eb13254bcf30fc7948f6862102c7f12773f6aa4",
+        "bytes": 150
+      },
+      {
+        "name": "RSI_SI2_POWER_ASSAULT_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9367,
+        "endLine": 9388,
+        "sha256": "4dc849833d9d13331eb88c8c8c72455fbd4efd29787b698209b6f72e5c0d7d96",
+        "bodySha256": "5557bd538e5f71cfffd27ffe0621b7b76e98e3c1823a492ce23548e22a1145cd",
+        "bytes": 778
+      },
+      {
+        "name": "RSI_SI3_SEVEN_BURST_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9706,
+        "endLine": 9719,
+        "sha256": "ffbfad15b07b569bdb887751ac3c65dbae7e08be8332cf56680ce56ff95489ca",
+        "bodySha256": "a663492825593e4d3bf01ba849c733e58af8f8132bfa74cf1d097723968856a8",
+        "bytes": 410
+      },
+      {
+        "name": "SI_SA_RRF_X_CRASH_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16380,
+        "endLine": 16414,
+        "sha256": "c194602818f61d7741daa094d405231c7b696569904bfe102eff5a3658fa1b4f",
+        "bodySha256": "d7e85f20667903eefda7324ef15cff66f7b822cfdba94a68fa845a3008fd1f0b",
+        "bytes": 1416
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_StateStart",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14544,
+        "endLine": 14552,
+        "sha256": "0b2292a87281b4d5ab0376daa79f7785ac6d50b9da36a52c31d418b23f0c2d8b",
+        "bodySha256": "d973e9f0b41c26ca16c9396b72f0564725813839bb9accc04bc01bb1e3cdcf3b",
+        "bytes": 212,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14555,
+        "endLine": 14602,
+        "sha256": "05b8f9a9dc2ce5f7f6b584bf7889dc8f949fa5507d0ece8eb4a37c9334d688b2",
+        "bodySha256": "05b0052a60f185ec9d18e1fdb564549e8903a922c5dd8f24ce14a5a0e00ffb67",
+        "bytes": 1917,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_StateEnd",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14615,
+        "endLine": 14619,
+        "sha256": "695f65e31cac70951aeaed8c6c17f606a0d045ff32953e33465f1f845dab87d0",
+        "bodySha256": "e76829faabc604a632624ad5cbda7295e8e49ef6a1d53deae4df127772090035",
+        "bytes": 106,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_READY_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16891,
+        "endLine": 16907,
+        "sha256": "2f4cda1405c50601bffc277982e4d20b476d0cdcf50b606ab7ae6af25ca61a16",
+        "bodySha256": "27c6d1c1dcfd8c0c7b246ad885ca2608b65a7595aa31707db4683dc68572169b",
+        "bytes": 590,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_StateStart",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16919,
+        "endLine": 16926,
+        "sha256": "2ef2f926c392b11b5e1808efefe0684c24396a8acce09cb41696e96dbedf0fc7",
+        "bodySha256": "908b8437f01f1a36a2f7cd459006090e476a866b6b39102db491b42b4c4d890d",
+        "bytes": 237,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_StateEnd",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16992,
+        "endLine": 17000,
+        "sha256": "7d508586800a2a301647af65ab74056595b94775c13e85a25827e4e038d95f90",
+        "bodySha256": "de708325035f6c43748bc2d5c7610fb71a8d6d1ddab4419c7dd4c849f8ca6df6",
+        "bytes": 342,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "CX2DamageEffect::CEffect::VectorLockOn",
+        "file": "X2Lib/X2DamageEffect.cpp",
+        "startLine": 6712,
+        "endLine": 6834,
+        "sha256": "3b442466848e78f9a7a9bb98f0a1b0dea6edf710e2232890765a0a890352f704",
+        "bodySha256": "69b89f77985ba4c06f0171e6bb4ea500a7efb05f7af2da01372283e33a363905",
+        "bytes": 4435,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+        "evidenceClass": "reference-V5-not2016",
+        "compileFlags": "NEW_CHARACTER_CHUNG/FINALITY_SKILL_SYSTEM optional branches disabled; base interpolation preserved"
+      }
+    ],
+    "evidenceClass": "mixed-fixed-V5-and-2026-reconstructed-reference-not2016"
+  },
+  "runtimeModule": {
+    "file": "skills.wasm",
+    "sha256": "9b1e0a19ce5af642453d378d71b478e04c97c80f2085c421bb63a2b4a5c2afb0",
+    "bytes": 37013,
+    "originalFunctions": [
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_READY_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16909,
+        "endLine": 16917,
+        "sha256": "b513e23bb34f1ade8cfe0b2356ee6ed71b8120a9dc63cec518f9cb543b543627",
+        "bodySha256": "eb5c8f338e185093628c3051060923febe62c696ee60bd66a6936e34878c31fd",
+        "bytes": 192
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16928,
+        "endLine": 16976,
+        "sha256": "d2cd7128ef856af5843fd337c633f019ce04bf629b4f1b7441a578be4f71dedf",
+        "bodySha256": "924b9032f69444e69e8fdb5b8c979c0e3948269d6a66946577ace93a7732beff",
+        "bytes": 2646
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16978,
+        "endLine": 16990,
+        "sha256": "58edbe15ffa722cc9af7622dc996d9be5a18992799df40aed87fff9b6714cafa",
+        "bodySha256": "e67da708d57e5fabe1a8381b55888b951f137478cf861a1293b0de9796a23493",
+        "bytes": 560
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_DASH_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 17002,
+        "endLine": 17029,
+        "sha256": "d7da0c7ee61d75f13ef6dcffe9bd151b0cf1c681b2b50b07caf43a036e875641",
+        "bodySha256": "3c12295c2dc5805f49dabcf48a5afc643f9c133d0a853391eaf49cde2b5880c2",
+        "bytes": 1143
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_DASH_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 17031,
+        "endLine": 17047,
+        "sha256": "c3bb4918816243e415ebe63175928c18fff79d6f88d7b68858dcd55c1e2cd611",
+        "bodySha256": "fed472ffccd4657c3eb0c8ce1a853ceb8b4bb5fb2fad9315f0c669ae50d45578",
+        "bytes": 341
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_CHARGE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22480,
+        "endLine": 22499,
+        "sha256": "86300b73b0ddcf4820cf4c044987c005f5ec31f71115987d01e1ea924070bfc8",
+        "bodySha256": "f51cdbe82c1916628000172df1ab6c2541a9102219d5b422dd41378e9837254e",
+        "bytes": 731
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22626,
+        "endLine": 22638,
+        "sha256": "c235973eed80dda16fe3e2178a62ad6ee8ac97a837aeb1c70b0a680a5e61ea4f",
+        "bodySha256": "4fb000332b60ff1228a9e5b2ea263b5ff5500653c150252a060edd0a6082c7ab",
+        "bytes": 228
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_GROUND_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22662,
+        "endLine": 22680,
+        "sha256": "9eed10230f250c8fd129a740880d2df990c77e0ad64534afed6bb7490d16e8c8",
+        "bodySha256": "e40774d610c95a352f005548d965a984c7f6ca5aef0f5d1a8190c54cd188ae5f",
+        "bytes": 387
+      },
+      {
+        "name": "RSI_A_RWT_FLAME_SWORD_AIR_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22726,
+        "endLine": 22740,
+        "sha256": "8d88979efa08f981e8f386309076f5e1acdda5cc36c93b1ffcb60396a4e0e104",
+        "bodySha256": "c08e4b4f3ebb1a292ad022edb004cbdf5e81ad7d66739bf83adbd0e4f91b59f1",
+        "bytes": 350
+      },
+      {
+        "name": "RSI_SI1_MAXIMUM_CANNON_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9199,
+        "endLine": 9209,
+        "sha256": "8bb3050d4a4515a09582e6fc618c91808d1e1a88859f1a14b0ab18e4525a0781",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 246
+      },
+      {
+        "name": "RSI_SI2_CANNON_BLADE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 10552,
+        "endLine": 10562,
+        "sha256": "fc36c25abcdea05ec35042dfb47302d7db7760616775bd46cebb26d0f4c0e386",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 244
+      },
+      {
+        "name": "RSI_SI3_SEVEN_BURST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9920,
+        "endLine": 9930,
+        "sha256": "ba8d9b969c7b7e9c043d04847c3a00f22418043ccb883c42d8e3c978ea29a145",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 243
+      },
+      {
+        "name": "RSI_SI1_OVER_TAKER_CHARGED_BOLT_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 12983,
+        "endLine": 13000,
+        "sha256": "1e09ab4dc54053f104d2f04aab8b7504704cb120c99ea07126825a62e3d1424c",
+        "bodySha256": "7d3b184e3b15d70a99ef3db51a00ad8e19eae708a44a14c2878e522cd6124fe8",
+        "bytes": 472
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22224,
+        "endLine": 22237,
+        "sha256": "49e84f1ed93811267c49c9bcbd69ac145e51cb0afcf007fa9287dc8138e63ac1",
+        "bodySha256": "1fa11d71cda362edd2235cbf2a0d6b1d870d744d6ad61358aeb8969b16707b25",
+        "bytes": 373
+      },
+      {
+        "name": "RSI_A_ROT_WEAPON_BREAK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15562,
+        "endLine": 15579,
+        "sha256": "4f0b5649b5e29e8f74fa7fee70e0095c48481755747c6f1bf4d48528333d5707",
+        "bodySha256": "eceb4a00592e15421b0af31c28baec55e75b175e00aaf61c477ece3f2fc168a7",
+        "bytes": 385
+      },
+      {
+        "name": "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13673,
+        "endLine": 13683,
+        "sha256": "26f835e25ccf418eab8b85e5982ac828d83bbe11a9e2052a1cf5d43d629102ae",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 258
+      },
+      {
+        "name": "RSI_A_ROT_NUCLEAR_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15686,
+        "endLine": 15704,
+        "sha256": "588945531b358db1b52f6def9ef1d883acd351b0f9f9d32eb18646ebae498959",
+        "bodySha256": "9cce9f065f984df4a5d843dd9697793b89c20b3b5df0c0415bf26bba06eec5e5",
+        "bytes": 389
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_REVENGE_ATTACK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22508,
+        "endLine": 22523,
+        "sha256": "93a176a1c7ced4499fe4f3f68d2c6cbcf9b00e89c1a6b1c484117fb6f2491100",
+        "bodySha256": "78a4f96ac69d1b613680f637f25144efb37b697368e3b79dc2b5acfcd599e430",
+        "bytes": 389
+      },
+      {
+        "name": "RSI_A_RRF_LIMIT_CRUSHER_AVOID_ATTACK_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22525,
+        "endLine": 22540,
+        "sha256": "ea5f1597cbe0d38e40b5b522db18412cd2e342b012c46a5c91cc02d50af7befe",
+        "bodySha256": "78a4f96ac69d1b613680f637f25144efb37b697368e3b79dc2b5acfcd599e430",
+        "bytes": 387
+      },
+      {
+        "name": "RSI_SI2_OVER_TAKER_ARC_ENEMY_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13310,
+        "endLine": 13320,
+        "sha256": "44537a166a600c63f4c3a96ac14ae3859c936dacefb53cb21bd200496f90ad83",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 252
+      },
+      {
+        "name": "SI_SA_RRF_X_CRASH_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16415,
+        "endLine": 16432,
+        "sha256": "01add15ab1e4e662488a11dfa87fce31a1d1c9a9ad789d9dc417136b9d090d63",
+        "bodySha256": "2b661e585b9bfaf0587c0e56bcb2fc16e6bab126645205a33053a48b8fdef7b4",
+        "bytes": 349
+      },
+      {
+        "name": "RSI_HA_RRF_INFERNAL_ARM_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23323,
+        "endLine": 23334,
+        "sha256": "0421290803628f0b1c170aa2533633aae4e3ccba41ea944962097fc439f1de51",
+        "bodySha256": "f91690d674f9b88e3eba487fddb8a0cd0b7d67f9ab2154c727132ee2ec85e422",
+        "bytes": 248
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15337,
+        "endLine": 15345,
+        "sha256": "cc9802275d5621cb59fced26a3f4f1f3c458ac0e07e3cfb8e9877138bf070335",
+        "bodySha256": "91f1ed62e1d6dfda61c78ae4817cc2b6b6595f4912839432616d6ba3b61fe583",
+        "bytes": 242
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_LANDING_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15439,
+        "endLine": 15449,
+        "sha256": "3b0b3e7bd56145070d8a58bcf172e7ad4e82304910b6cbddd31f57eaf4eded3b",
+        "bodySha256": "f10c9f97ff478a54e478bf8e58a8a66acc2554bb9c6305f5e08d9f6fe7d5f9d2",
+        "bytes": 261
+      },
+      {
+        "name": "RSI_SI2_POWER_ASSAULT_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9517,
+        "endLine": 9527,
+        "sha256": "055923951a622e7b25c4a854f588b9ea6334df18061ac5609e28e5928352962d",
+        "bodySha256": "a7d09fc11ebd809dbea05e6c0931fba3815c66226dc6189e73670439bf1c3b73",
+        "bytes": 245
+      },
+      {
+        "name": "RSI_SI1_OVER_TAKER_CHARGED_BOLT_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 12918,
+        "endLine": 12981,
+        "sha256": "7d75a7c46389a8a8bdf3edea89e5964c2615b908da1fc505f7a569c5bf476ba8",
+        "bodySha256": "dd841773e79fdeb11fb566ca2e60acea79a169f773167e7fea73eb886fbcdbf4",
+        "bytes": 2429
+      },
+      {
+        "name": "RSI_SI2_OVER_TAKER_ARC_ENEMY_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13146,
+        "endLine": 13307,
+        "sha256": "05fc487d5fe70622cdbdebe538e6131b7f76bd42997de3ec8bb30adb93eeaf66",
+        "bodySha256": "08ba33dd4c4469b7cec180e644fbc70dad53ec0e585ab8cbe28ecd336b3f3b73",
+        "bytes": 5822
+      },
+      {
+        "name": "ClearArcEnemyData",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13907,
+        "endLine": 13916,
+        "sha256": "d6b32e6de8b5522c0bc4f0e0def9949d1c198907df2dde29434c1fc1f8b47928",
+        "bodySha256": "fd79cefa9b25366cf9712c26372ff51c3bcffdbd5ecc44ee35db15a8b584f9de",
+        "bytes": 197
+      },
+      {
+        "name": "AttackResultPlayEffect",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 474,
+        "endLine": 552,
+        "sha256": "581f55e27a527eec60e0f56467b36ea450a89c7c58ccdd775bbd9f7ff4da79a9",
+        "bodySha256": "c3518ada9d7ed88e793451714fd39f1d875633197997be07f64d14117a747e8c",
+        "bytes": 2956
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14775,
+        "endLine": 14778,
+        "sha256": "dfa95b1059981ee82a390eb581e7941040e3deb77e14e9e6f1afdc785bb5b4a8",
+        "bodySha256": "6e5b81bbf437220d049fbe9c6a5c971b5b2db808f65571ed4938500d87d39833",
+        "bytes": 121
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_StartFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14781,
+        "endLine": 14818,
+        "sha256": "a70665e8e6b1e40355e5a155e01c8938617c05b651bc793299949102e9a06030",
+        "bodySha256": "d37499344f8c30f889ee9d983e2f808978420c36936da317ace6c849f4dd8178",
+        "bytes": 1268
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14820,
+        "endLine": 14864,
+        "sha256": "233eebbf9ea98935f977e4eacb985bbfbfbae5e3732c4872204d4a44f0bdcfc9",
+        "bodySha256": "b792054d7ec32276f13837ac8b66fcb63104c98c223de7575b262a8a19710960",
+        "bytes": 1809
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14866,
+        "endLine": 14883,
+        "sha256": "1b66daca7f093fb3eb1141f9499ae157e69252620b8185389776a56920df4a10",
+        "bodySha256": "8958c41630678226f154675e95a03db77433700b76e321c6c8c81686c7ef4201",
+        "bytes": 490
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14887,
+        "endLine": 14975,
+        "sha256": "ecc31d65b6ee306385af48b4e8b017a0d43e1ace3293faeba8f117575b6e0896",
+        "bodySha256": "65af1722e4572cc4b940506c9a9c72ae494862094b34d88fbdeea1b42daad6fc",
+        "bytes": 2542
+      },
+      {
+        "name": "RSI_SI_A_RF_SHADOW_STEP_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14980,
+        "endLine": 14998,
+        "sha256": "c4f87d8c95d66f80d56385b5f7915cdc95f2e45652ea10031b9138c414b7f1e5",
+        "bodySha256": "759c76c73a06e562e8c77310cb47443af97e2529dc3529b1d055eebacf60e668",
+        "bytes": 540
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15001,
+        "endLine": 15004,
+        "sha256": "82ba52b6297e32bc48d9ed298b16922c99817dcba2ab5a3de902797536132f3a",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 115
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15008,
+        "endLine": 15029,
+        "sha256": "26e89bc922f6ddd0de8cd40984956572e3556adac197ed58be1a5ec653686525",
+        "bodySha256": "83082509541f88634c5af5bb1f8d95b0fe87cd0bb2c11afa52efe97639d6d645",
+        "bytes": 858
+      },
+      {
+        "name": "RSI_SHADOW_STEP_THRUST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 15031,
+        "endLine": 15047,
+        "sha256": "3f046bf2b0ece2f8521710fa24f84fa2dccff39c03cc6967b2850f2cf6525a9d",
+        "bodySha256": "65a6ffca84f1d8c08b729a319df924ba66b34efb577311afc7924a44e6dd1670",
+        "bytes": 327
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_StartFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20842,
+        "endLine": 20871,
+        "sha256": "3b04d4222033c4118492bf649326e65b21a3dc5fb711b3ef9b52af704bb3ec73",
+        "bodySha256": "df4d4ee6a45119c9ad5018c8c2210c675398fbff3157cd0c7a1c8d3de22e3cc8",
+        "bytes": 1177
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20873,
+        "endLine": 20890,
+        "sha256": "d2d13b54256dd48fb170a488b0e8b57a3792b6ec797daffdbbace08efd16358e",
+        "bodySha256": "c84bccc6ceacc27656742c504222017e369704c53623367e05f3aba34a0b4979",
+        "bytes": 524
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20892,
+        "endLine": 20909,
+        "sha256": "03902c5cc77a16516942fbf5cfc384e2e09a7f696f68cfdd89d085b4b2792f23",
+        "bodySha256": "2cc624ee1c15cc915a9229e47e2964085b31df10837a93bc5481d50f08886ad1",
+        "bytes": 518
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20911,
+        "endLine": 20965,
+        "sha256": "c6bb85f41d6a78d8b86a4275351504f12c13a7fc44a54ac8c4011d2a1b783c6a",
+        "bodySha256": "de24eb4b55299fb7b19542873b1e8b801cd70cd1bc5f6ddadc42cd7ab156abe3",
+        "bytes": 1401
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20967,
+        "endLine": 20986,
+        "sha256": "e5175fafa74213520f613571104f5fc69b87bc2f87f09b8056b766033c1103a3",
+        "bodySha256": "4f4d31b843b067fb2c2e72a07b0c144b610e12e0cc01495ff121fd4f34413bca",
+        "bytes": 463
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_END_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20989,
+        "endLine": 20994,
+        "sha256": "f4e9854d4f89d23978808ede1c7a87ea9f96d3d73f142d13f121e4b4666fa1ff",
+        "bodySha256": "43380d8e753b70b876be886c7f46147ca942beec5a12b67047d10c919e6f1a92",
+        "bytes": 134
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BACK_SLIDE_END_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 20996,
+        "endLine": 21012,
+        "sha256": "6d5108994419208133efa0abdc45aa6edfa62c14bbe15151f7d097b25cd9dafd",
+        "bodySha256": "65a6ffca84f1d8c08b729a319df924ba66b34efb577311afc7924a44e6dd1670",
+        "bytes": 335
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21161,
+        "endLine": 21168,
+        "sha256": "879c554517648c62d9425bcc314558ce086e224ab660d39d7935692c4703bc62",
+        "bodySha256": "cddc1ba1a8988c09d006c3317b0cf2b86fad5e48d1bbfd1289d929657f8e36a2",
+        "bytes": 314
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21172,
+        "endLine": 21177,
+        "sha256": "fde91fa947dd559ffe3200b9c4df86d00f9c3ac20d119206baf624b2301deb47",
+        "bodySha256": "1cf6d60dd38c6a78b319b8a8a5132d46e15caf54ee57c05e697b6b8fbc62ba62",
+        "bytes": 130
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21179,
+        "endLine": 21192,
+        "sha256": "f6ef7d5c98487232b16254169aef3bffca002977f4bcaec89bca18df9ffaea39",
+        "bodySha256": "8dd543681ffb959b6e9f62899d269e2d3f61e5f5094d924430ab732db689e46e",
+        "bytes": 509
+      },
+      {
+        "name": "RVC_SI_P_SHADOW_BUSTER_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21194,
+        "endLine": 21213,
+        "sha256": "9c5f480dfaac1c7fca79da2282a2510089a841522ec110ab3fd033445852e69f",
+        "bodySha256": "e03f211edd5d1ba35adfbbd8c6f9191fefb6621ee50dc806636911494cdd98c9",
+        "bytes": 452
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23159,
+        "endLine": 23162,
+        "sha256": "dad68627f62c2282cc435453008e40301731ae8f05c4cf14cdf4d1bd83fdfe5b",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 121
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23166,
+        "endLine": 23174,
+        "sha256": "5e726136c2952d204479dd72773af3ce1a8a2cc3f4720b60e48779b18787686d",
+        "bodySha256": "b62bd54e97e6c338e2370c73ab38683c93968261892d0750e3c425f489b8ace3",
+        "bytes": 328
+      },
+      {
+        "name": "RSI_P_RBM_SHADOW_STEP_THRUST_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23176,
+        "endLine": 23195,
+        "sha256": "c28ce9159233113d661efa4253db5a53fd4045b57636af0c590a917f7ed7013a",
+        "bodySha256": "58e772f17b19291f391324c35efff3e8eb4e541c54467ce1369597181e57d128",
+        "bytes": 458
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_Init",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23199,
+        "endLine": 23202,
+        "sha256": "4f8db95deced279f181c0a9f208697127c1cf6550fe13d3fe045f76d215ca0d8",
+        "bodySha256": "09b09837850605fbb31e3cafde1424f38e15ac2c63e1302538b92375a5be02f8",
+        "bytes": 118
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_Start",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23206,
+        "endLine": 23216,
+        "sha256": "540d68091b2012d7bd25063c09a6788c99ff54f624096eda02655ae0f8106fbb",
+        "bodySha256": "f7b701b66e13dfaeed9bceedb587935e8ff3e70684834486c69404a659e20b4e",
+        "bytes": 380
+      },
+      {
+        "name": "RSI_P_RRF_SHADOW_PUNISHER_EventProcess",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 23218,
+        "endLine": 23236,
+        "sha256": "0b8d8c849b47c488bef1fae1d3d988c31110631585aa493c578d8ee7b54415bf",
+        "bodySha256": "51a523940fb008d23c7e4dd8fe41cc2c9e3600803ec32ecdf5036a76782af8d5",
+        "bytes": 454
+      },
+      {
+        "name": "SetShadowStepAttackSkill",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21215,
+        "endLine": 21303,
+        "sha256": "28e4b4e80865af0621a3604dfdf8a3646ae0ffa2189ec260891090aa2ce041a5",
+        "bodySha256": "d54f98315d982cc58e4feb7e0bbac042dc2d9e6db757fcac0b77bbe389c71c71",
+        "bytes": 3610
+      },
+      {
+        "name": "InitShadowStep",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 21305,
+        "endLine": 21322,
+        "sha256": "9e7ddea3ee872ab678d8a90b19ea6028cc18ad953c3289ff33c05655db27f1d9",
+        "bodySha256": "15f51ce15560bc9549c86c94e86e5d9645792bfa83c490c5280df44f99ff2396",
+        "bytes": 883
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22104,
+        "endLine": 22131,
+        "sha256": "04e7b2a073e8ece800f8f9197ce9121efeb775d2a88cf0887d373fca257a64ad",
+        "bodySha256": "035c1312f4da7c6e91cd027810cf9c1db3cd2dfa3fc48f9e52022faf4a848582",
+        "bytes": 1162
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22133,
+        "endLine": 22222,
+        "sha256": "5538a82a9a49e5db273c8dd38750009b0c016e2073c04a15c431a4bcdc23337e",
+        "bodySha256": "009eb36c054822a907324fb322ff8a967735c5dd8a05c806ec02d76dadb958e0",
+        "bytes": 3170
+      },
+      {
+        "name": "RSI_A_RF_MEGADRILL_BREAK_End",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 22239,
+        "endLine": 22244,
+        "sha256": "cdc80fb3c8caa860490fc02fee1a89baf232655b685f14486866e7ffa58ce62b",
+        "bodySha256": "808c77da04113e5a3f85419f4eb13254bcf30fc7948f6862102c7f12773f6aa4",
+        "bytes": 150
+      },
+      {
+        "name": "RSI_SI2_POWER_ASSAULT_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9367,
+        "endLine": 9388,
+        "sha256": "4dc849833d9d13331eb88c8c8c72455fbd4efd29787b698209b6f72e5c0d7d96",
+        "bodySha256": "5557bd538e5f71cfffd27ffe0621b7b76e98e3c1823a492ce23548e22a1145cd",
+        "bytes": 778
+      },
+      {
+        "name": "RSI_SI3_SEVEN_BURST_FrameMoveFuture",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 9706,
+        "endLine": 9719,
+        "sha256": "ffbfad15b07b569bdb887751ac3c65dbae7e08be8332cf56680ce56ff95489ca",
+        "bodySha256": "a663492825593e4d3bf01ba849c733e58af8f8132bfa74cf1d097723968856a8",
+        "bytes": 410
+      },
+      {
+        "name": "SI_SA_RRF_X_CRASH_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16380,
+        "endLine": 16414,
+        "sha256": "c194602818f61d7741daa094d405231c7b696569904bfe102eff5a3658fa1b4f",
+        "bodySha256": "d7e85f20667903eefda7324ef15cff66f7b822cfdba94a68fa845a3008fd1f0b",
+        "bytes": 1416
+      },
+      {
+        "name": "RSI_SI2_OVER_TAKER_ARC_ENEMY_HYPER_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 13322,
+        "endLine": 13482,
+        "sha256": "384a2b65898800558aceb6dc6bd0b570474ccf4f949058063699a8f13ae6cbec",
+        "bodySha256": "a2b5675161daea14d3ab4f61ce9fb0bf956850ac5190db4407656341babdb897",
+        "bytes": 5874
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_StateStart",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14544,
+        "endLine": 14552,
+        "sha256": "0b2292a87281b4d5ab0376daa79f7785ac6d50b9da36a52c31d418b23f0c2d8b",
+        "bodySha256": "d973e9f0b41c26ca16c9396b72f0564725813839bb9accc04bc01bb1e3cdcf3b",
+        "bytes": 212,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14555,
+        "endLine": 14602,
+        "sha256": "05b8f9a9dc2ce5f7f6b584bf7889dc8f949fa5507d0ece8eb4a37c9334d688b2",
+        "bodySha256": "05b0052a60f185ec9d18e1fdb564549e8903a922c5dd8f24ce14a5a0e00ffb67",
+        "bytes": 1917,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_ROT_VALKYRIESJAVELIN_StateEnd",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 14615,
+        "endLine": 14619,
+        "sha256": "695f65e31cac70951aeaed8c6c17f606a0d045ff32953e33465f1f845dab87d0",
+        "bodySha256": "e76829faabc604a632624ad5cbda7295e8e49ef6a1d53deae4df127772090035",
+        "bytes": 106,
+        "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+        "sourceFileSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+        "evidenceClass": "2026-reconstructed-V5-reference-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGE_READY_FrameMove",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16891,
+        "endLine": 16907,
+        "sha256": "2f4cda1405c50601bffc277982e4d20b476d0cdcf50b606ab7ae6af25ca61a16",
+        "bodySha256": "27c6d1c1dcfd8c0c7b246ad885ca2608b65a7595aa31707db4683dc68572169b",
+        "bytes": 590,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_StateStart",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16919,
+        "endLine": 16926,
+        "sha256": "2ef2f926c392b11b5e1808efefe0684c24396a8acce09cb41696e96dbedf0fc7",
+        "bodySha256": "908b8437f01f1a36a2f7cd459006090e476a866b6b39102db491b42b4c4d890d",
+        "bytes": 237,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "RSI_SA_RRF_WILD_CHARGING_StateEnd",
+        "file": "X2Lib/X2GURaven.cpp",
+        "startLine": 16992,
+        "endLine": 17000,
+        "sha256": "7d508586800a2a301647af65ab74056595b94775c13e85a25827e4e038d95f90",
+        "bodySha256": "de708325035f6c43748bc2d5c7610fb71a8d6d1ddab4419c7dd4c849f8ca6df6",
+        "bytes": 342,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "evidenceClass": "reference-V5-not2016"
+      },
+      {
+        "name": "CX2DamageEffect::CEffect::VectorLockOn",
+        "file": "X2Lib/X2DamageEffect.cpp",
+        "startLine": 6712,
+        "endLine": 6834,
+        "sha256": "3b442466848e78f9a7a9bb98f0a1b0dea6edf710e2232890765a0a890352f704",
+        "bodySha256": "69b89f77985ba4c06f0171e6bb4ea500a7efb05f7af2da01372283e33a363905",
+        "bytes": 4435,
+        "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+        "sourceFileSha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+        "evidenceClass": "reference-V5-not2016",
+        "compileFlags": "NEW_CHARACTER_CHUNG/FINALITY_SKILL_SYSTEM optional branches disabled; base interpolation preserved"
+      }
+    ],
+    "evidenceClass": "mixed-fixed-V5-and-2026-reconstructed-reference-not2016"
+  },
+  "unchangedOriginalMethods": 70,
+  "newOriginalMethods": 1,
+  "callbackGroups": 70,
+  "generatedSourceContract": ".cache/native-archenemy-skills-v19/source-contract.json",
+  "compiledFiles": [
+    {
+      "path": ".cache/native-archenemy-skills-v19/skills.wasm",
+      "bytes": 37013,
+      "sha256": "9b1e0a19ce5af642453d378d71b478e04c97c80f2085c421bb63a2b4a5c2afb0"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/skills.generated.cpp",
+      "bytes": 42841,
+      "sha256": "43e5c10f57408971d1e346dd959567c09ea7b196d24530309195bdc6e6b6ad13"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/source-contract.json",
+      "bytes": 40752,
+      "sha256": "cbbfe6d6cc893c7d6c92e5de8c24515686ec2b75078959e45a6fc75301e03ba4"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_arc_cooldown.inc",
+      "bytes": 80,
+      "sha256": "8787a5f77ce1d00b23ed66177a93f6e2de20ef3c8cce79b7f602747fb0838e84"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_arc_follow.inc",
+      "bytes": 2360,
+      "sha256": "2f424736db103b3d652e7c74842ab1260260c41a93bd4e3758f54c3878af272e"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_arc_lifecycle.inc",
+      "bytes": 722,
+      "sha256": "376a3673e805b2bc59bcbbdf3e9edc0de33b9c556aed412a47b5b79454d47f41"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_extra_skill_methods.inc",
+      "bytes": 3415,
+      "sha256": "6a2bf9a8d86d081bb3b47e69e1069be5942cc963555fe8ac16fe1f028cda0cef"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_skill_macros.inc",
+      "bytes": 1015,
+      "sha256": "71fea723cb6836447fbc474dc16cf17586418cf0749a244166490b3ed939775b"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_skill_methods.inc",
+      "bytes": 56431,
+      "sha256": "b37f7c9199d7f1729f4a837725103e4b1a7011d10f484d53d0ed2615940e2769"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_skill_timer_inline.inc",
+      "bytes": 143,
+      "sha256": "a1fa524937a12b846d9c9d80bccda04de75bd91283db413dfa239dcbca103ca2"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_skill_timer_out.inc",
+      "bytes": 151,
+      "sha256": "b0414404fd76892e2716c2c9c5053db62f574c0e13fdfab3a8d9f95de976a6bf"
+    },
+    {
+      "path": ".cache/native-archenemy-skills-v19/original_vector_lockon.inc",
+      "bytes": 4436,
+      "sha256": "df85763188b3c4d38a964444ac4832a8c84205a9ad844dfe0295936de4c86e1c"
+    }
+  ],
+  "independentWasmRebuildByteEqual": true,
+  "independentCppCompositionByteEqual": true,
+  "retainedPairings": {
+    "geometry": {
+      "file": "geometry.wasm",
+      "sha256": "03ddf8629912168f3eb0b4df2dee9a8de7adf09edb0ad20c777064cfe868d847",
+      "bytes": 67970,
+      "originalFunctions": [
+        {
+          "name": "GetDistance",
+          "file": "KTDXCommonFunc.h",
+          "startLine": 311,
+          "endLine": 315,
+          "bytes": 147,
+          "sha256": "4a8856c13a12b50d9dcaf65f85060320f6eb48844813a1ac4e83a75c0863dc58",
+          "bodySha256": "d44707c2b2fa130c010dc1f498cd5b3b1eb2d987e4d5f7e22fdf4671a4ce9afa"
+        },
+        {
+          "name": "GetDistance3Sq",
+          "file": "KTDXCommonFunc.h",
+          "startLine": 341,
+          "endLine": 346,
+          "bytes": 167,
+          "sha256": "93ce6e3fcdca4ce956e2c36809d19a3f05a63ccc85befdae6c10fe762e310760",
+          "bodySha256": "fa6367090c804369278f217d46b931d47d74a2b9f79423c16229eda85aedf959"
+        },
+        {
+          "name": "OUTOF_RANGE",
+          "file": "KTDXCommonFunc.h",
+          "startLine": 348,
+          "endLine": 354,
+          "bytes": 166,
+          "sha256": "8df31eb4bb8fdde0768b0ba0e74cc5c57e5008e04d38fd057c36435377435e1a",
+          "bodySha256": "345fd61bc4a583e3af9b8dd08ac3106f23eb6cf5854144d2ee8d5c49d641522d"
+        },
+        {
+          "name": "SphereToSphere",
+          "file": "KTDXCollision.h",
+          "startLine": 1491,
+          "endLine": 1510,
+          "bytes": 518,
+          "sha256": "7413e5141d052208481ff593f180b5a8e1d17e456aa6a0e753ac82a1e7dec428",
+          "bodySha256": "80e11e0935b511587f96a09cd367ad79bb83e386c5cc051717058f76fae9911c"
+        },
+        {
+          "name": "LineToSphere",
+          "file": "KTDXCollision.h",
+          "startLine": 1534,
+          "endLine": 1612,
+          "bytes": 2567,
+          "sha256": "2ea16ec74722cc62a1bbb37386c2550d2503c90e2a3909b2b9f3de623c025d1c",
+          "bodySha256": "ca75f875fe5bdb93978e1b0e84032fd40a98bd37103e72fd39e2fd483881c7b8"
+        },
+        {
+          "name": "LineToLine.scalar",
+          "file": "KTDXCollision.h",
+          "startLine": 1662,
+          "endLine": 1771,
+          "bytes": 3831,
+          "sha256": "89cc1b2fa1a3b56b4a789b469bd8772bc8d792e803e30029ac54360fdfac1241",
+          "bodySha256": "70745c51df4041dd7dd3795b4658cc77458024bd08a396175c522c2c42d8de83"
+        },
+        {
+          "name": "LineToLine.vector",
+          "file": "KTDXCollision.h",
+          "startLine": 1773,
+          "endLine": 1779,
+          "bytes": 465,
+          "sha256": "5f3de459923ec9a0e0cc4543131f7eb3b902a71b6d1bf4e251ff7d67b8ae4da6",
+          "bodySha256": "0a50822dd028ba34e63ab420eea3794363c808e4b5589970cf86ca523e937d91"
+        },
+        {
+          "name": "FindNearestPointOnLineSegment",
+          "file": "KTDXCollision.h",
+          "startLine": 1938,
+          "endLine": 1970,
+          "bytes": 1032,
+          "sha256": "7b1019e01dd2f5fce7a18a21f510dee78beba2ddc219b09d97a3b47715f2d221",
+          "bodySha256": "3701ba3c4b2298c5ce0e6c35b16882ac31c0d77a574fd0443de780b53de81c34"
+        },
+        {
+          "name": "FindNearestPointOfParallelLineSegments",
+          "file": "KTDXCollision.h",
+          "startLine": 1972,
+          "endLine": 2044,
+          "bytes": 2113,
+          "sha256": "0d17050ee695dda210938a5a6ed1e9c56c6e688688f0f14e20bfcd5ce79a204d",
+          "bodySha256": "3d4542e4f9885c60cce012df2ef3256c5807077ed1219439fc5b853a0e4bd0fe"
+        },
+        {
+          "name": "AdjustNearestPoints",
+          "file": "KTDXCollision.h",
+          "startLine": 2046,
+          "endLine": 2105,
+          "bytes": 2305,
+          "sha256": "870dd193440afecc14f59dd482a7c6d028892ee3932d7c07e2d875f84e435113",
+          "bodySha256": "40bfdf6e0b79829c2b9d92f951a1dc33fe4925990357502a51261213f6b782c0"
+        },
+        {
+          "name": "LINE_TYPE",
+          "file": "KTDGLineMap.h",
+          "startLine": 40,
+          "endLine": 60,
+          "bytes": 327,
+          "sha256": "6f02e586b08697db41af46499e81a0dec1ffde51d4b088101bdb64eac25aef4c",
+          "bodySha256": "856b34193adaf85913a241a6a1498dc38121c1d5a9e072c1258db66ced44f40c"
+        },
+        {
+          "name": "LineGroupID",
+          "file": "KTDGLineMap.h",
+          "startLine": 240,
+          "endLine": 276,
+          "bytes": 1199,
+          "sha256": "a2d8f514389296fbd9ae3c31b0233c63b5794d21587655c6574bd7b97178fbcb",
+          "bodySha256": "213fb673187a4aa805fc3427490f89b7afa7bc19493f06f3c216b885d8f2c201"
+        },
+        {
+          "name": "IsOnLine",
+          "file": "KTDGLineMap.h",
+          "startLine": 957,
+          "endLine": 992,
+          "bytes": 1217,
+          "sha256": "e31ed9d3424ba8c9c382caa420a05a0bb0879a4af0e81d505bb21eccdf1ee03f",
+          "bodySha256": "989255e619069b0d090a5903c581caf06108307948058e845b7321b08bf734ff"
+        },
+        {
+          "name": "GetLineData",
+          "file": "KTDGLineMap.h",
+          "startLine": 1092,
+          "endLine": 1101,
+          "bytes": 257,
+          "sha256": "edb0913e8ecab315bf5816d7d76d38fc9ab9f44873b01e71e41071f48d2f056b",
+          "bodySha256": "6b7931ed0c39d0b6be7b3bf70d7c8b834bdc9d3c17c83dff8afd15da09748bc4"
+        },
+        {
+          "name": "GetNearestLine",
+          "file": "KTDGLineMap.h",
+          "startLine": 1442,
+          "endLine": 1481,
+          "bytes": 1345,
+          "sha256": "8aed623051d50a2ae7bd55b2f609347b463fe3b944ef0f787f3de638b586d281",
+          "bodySha256": "dacc06d11cc8ad2d80557580b1e3d44fd3e37c6ecf467d45c90bd0d4da0d059d"
+        },
+        {
+          "name": "VerifyLine",
+          "file": "KTDGLineMap.h",
+          "startLine": 1547,
+          "endLine": 1587,
+          "bytes": 856,
+          "sha256": "24274ebe3d84ff82973c772261cb7d2a59367dae0fe19d68eec90294b78bb570",
+          "bodySha256": "a6a5c9069de2b52707a46c11f57ae070f2630399bf6ae23eb23b6f01e62b4e5e"
+        },
+        {
+          "name": "GetLengthToLine",
+          "file": "KTDGLineMap.h",
+          "startLine": 1592,
+          "endLine": 1629,
+          "bytes": 1497,
+          "sha256": "0f6b69bcf4efd74eeb39f8a941cd4b6a2dc47b4eae22881a37694aa55affe047",
+          "bodySha256": "ce6fb4aab42e06f24f7172fd77131327099117bea2ac2ecd296266e0c4860ca8"
+        },
+        {
+          "name": "GetNearestWithBound",
+          "file": "KTDGLineMap.h",
+          "startLine": 1710,
+          "endLine": 1865,
+          "bytes": 5150,
+          "sha256": "8ec3f00a905673338ac0c16911fc3dccc8beb43518fb89e7675f1b86fe14c801",
+          "bodySha256": "13780fff78258402b76adc5abf32b505a3c654e9fc58e8fff56135c020242e09"
+        },
+        {
+          "name": "GetLandPosition",
+          "file": "KTDGLineMap.cpp",
+          "startLine": 998,
+          "endLine": 1103,
+          "bytes": 2641,
+          "sha256": "c38eff595ad5a0fccec972cbf9bd0444aabf8e09182b469bfebf73c27a375104",
+          "bodySha256": "3eb09616b6177c5216f2f7971a7807427c92a722b70f9e12577a1656faca519e"
+        },
+        {
+          "name": "CanDown",
+          "file": "KTDGLineMap.cpp",
+          "startLine": 1106,
+          "endLine": 1350,
+          "bytes": 5395,
+          "sha256": "55d6b9668c6746e769f2c036eb6e3c06b10f86962f5b8ff114eba826fbb49117",
+          "bodySha256": "1043a9eda9c2ec98e640e1364ba3c04b958b2e63fca6db578a5c07bae98dad0c"
+        },
+        {
+          "name": "CanPassUp",
+          "file": "KTDGLineMap.cpp",
+          "startLine": 1355,
+          "endLine": 1414,
+          "bytes": 1438,
+          "sha256": "d99c3b730426c62f0c1e4ab7e45c556f16db3486a08fc80b6272f58b1d26764e",
+          "bodySha256": "0202c214823cb3be7a8c4cd277af1b167d69ac8031eba21f073354bcda9ef51b"
+        },
+        {
+          "name": "GetLineGroupIncludesLineData",
+          "file": "KTDGLineMap.cpp",
+          "startLine": 1466,
+          "endLine": 1479,
+          "bytes": 490,
+          "sha256": "570d64f70511c23bc8ef6eac3df637372980bd00f0f11737295ff853b63e2560",
+          "bodySha256": "e9b05a91604bf3c418684b196e51faf14505882d0b590c46d0c013fee5bdc950"
+        },
+        {
+          "name": "ReBuildLineGroup",
+          "file": "KTDGLineMap.cpp",
+          "startLine": 1735,
+          "endLine": 1840,
+          "bytes": 2590,
+          "sha256": "57985f6cf685c01c3c8ba1475d34cf9f6048a4407e5b559c73b1f24aa94c9b87",
+          "bodySha256": "916f966c484ec56c3698ab0966fd73a8c11182dd153f9b8359657a10266ba53c"
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "camera": {
+      "file": "camera.wasm",
+      "sha256": "4b1649055fcbc3e07773a88dd468aa1eb3780d9011c5fb8695ebce909c142a15",
+      "bytes": 12951,
+      "originalFunctions": [
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+          "signature": "void CKTDGCamera::Point(",
+          "sha256": "9a5cdca3dc262952ed359a5df35ecfa96c0e051441db1073dff2311df40ed48c",
+          "bytes": 456,
+          "lines": [
+            69,
+            87
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+          "signature": "void CKTDGCamera::MoveRel( float",
+          "sha256": "fbf6cbd13b3f8b8c6d2238285ad8fade6ecd11438f25da2c0e2f4cfb949b1515",
+          "bytes": 148,
+          "lines": [
+            96,
+            101
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+          "signature": "void CKTDGCamera::LookAtRel( float",
+          "sha256": "9f841999b3cff992c6dfc4c02807073e0fd93828d9228e6700dec9e1ea207d00",
+          "bytes": 159,
+          "lines": [
+            115,
+            120
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+          "signature": "void CKTDGCamera::SetTracking(",
+          "sha256": "185fe628c5315da992a374a18d2305ea5ec3572620e0d6fa7a8712e9903e2315",
+          "bytes": 760,
+          "lines": [
+            268,
+            295
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.cpp",
+          "signature": "void CKTDGCamera::UpdateCamera(",
+          "sha256": "18ee1afc429e944226663e9c8e994e6221a722db52e86f209020a7b56e756af4",
+          "bytes": 1555,
+          "lines": [
+            183,
+            248
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+          "signature": "struct CameraData",
+          "sha256": "bd2c43d5c269712c54e7b51bafd020fb4361e5ed077dea22c2f5a3dcb15b08cf",
+          "bytes": 125,
+          "lines": [
+            28,
+            34
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGCamera.h",
+          "signature": "struct UpSideDownCameraData",
+          "sha256": "915fc505edea9289f2c9055c8f3fc5a026ae760cd08b8f462e9af3a834972531",
+          "bytes": 314,
+          "lines": [
+            37,
+            57
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+          "signature": "inline bool IsSamef(",
+          "sha256": "5f5818ea4e6ded0da41f79842c07d2640070534bd664afccd35414d14d6f01b1",
+          "bytes": 114,
+          "lines": [
+            1505,
+            1510
+          ]
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "commands": {
+      "file": "commands.wasm",
+      "sha256": "6a6517df5f6032ffc2c325c234f0fa20cb6d28459ad26d16edf2a42838eed64c",
+      "bytes": 50083,
+      "originalFunctions": [
+        {
+          "name": "LINE_RADIUS",
+          "file": "X2Lib/X2GameUnit.h",
+          "startLine": 6,
+          "endLine": 6,
+          "sha256": "2a861cd3b786f1802f42d8713aec338693e79f027799b6c3e67182a98311e464",
+          "bodySha256": null,
+          "bytes": 27
+        },
+        {
+          "name": "ELSE_IF_ARROW_ZXASDC_PRESSED_AFTER",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 40,
+          "endLine": 45,
+          "sha256": "2bf01c11806a549356dbf7e10bbf721e09f6cb510ed47b8b4db213f1b8c85e2a",
+          "bodySha256": null,
+          "bytes": 571
+        },
+        {
+          "name": "SKILL_CANCEL_AFTER",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 100,
+          "endLine": 109,
+          "sha256": "0b1b7df7a3b4fe173738d11743e0a9b5a12a4a4901766712a560be15f6626185",
+          "bodySha256": "737b958ea53fba421e593534ec83d841e89c5f708b83b5d816bb9314f66d2561",
+          "bytes": 539
+        },
+        {
+          "name": "IF_SKILL_CANCEL_AFTER",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 111,
+          "endLine": 119,
+          "sha256": "86ebf9d11521ea1842bf47262ccef0ab9927e94e0048059ab73daa39ff00f7a5",
+          "bodySha256": "737b958ea53fba421e593534ec83d841e89c5f708b83b5d816bb9314f66d2561",
+          "bytes": 535
+        },
+        {
+          "name": "ELSE_IF_KEY_PRESSED_AT_SKIP_POINT_C",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 189,
+          "endLine": 193,
+          "sha256": "ff267784f17fd2b8d139dd67434da654649b3eaf9fcca4633ee8d467a030d0cd",
+          "bodySha256": null,
+          "bytes": 426
+        },
+        {
+          "name": "ELSE_IF_KEY_PRESSED_AT_SKIP_POINT_ZXC",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 197,
+          "endLine": 201,
+          "sha256": "9f251e1279a832a4dcb84440a39fd549d22740fa8a27955aad4277e0583bce3b",
+          "bodySha256": null,
+          "bytes": 488
+        },
+        {
+          "name": "ELSE_IF_STATE_CHANGE_ON_",
+          "file": "X2Lib/X2GUUser.h",
+          "startLine": 224,
+          "endLine": 228,
+          "sha256": "42acec1b716139b889962b53658b234b90b7e96cd4b68ce96b44d630f1ad4345",
+          "bodySha256": "a190cdacfb063b862b0079fb711414982b8127fa3b890476004b2f50b1904f4d",
+          "bytes": 566
+        },
+        {
+          "name": "EventTimerOneshot",
+          "file": "KTDXLIB/KTDGXSkinAnim.h",
+          "startLine": 228,
+          "endLine": 231,
+          "sha256": "a1fa524937a12b846d9c9d80bccda04de75bd91283db413dfa239dcbca103ca2",
+          "bodySha256": "6f0016d06f19c8e687b29ab258e4330a78c41daa91e2acfee00971e3c2f04bf3",
+          "bytes": 143
+        },
+        {
+          "name": "UpdateBeforeAnimationTime",
+          "file": "KTDXLIB/KTDGXSkinAnim.h",
+          "startLine": 249,
+          "endLine": 253,
+          "sha256": "66847b20996c5f6c4cf07c937472fff0ae5e97defb658c9ea808a637c320dad6",
+          "bodySha256": "6af7d995160c5d7bb1ace35d06251514a22916b37488085301232dbc9ba95cc9",
+          "bytes": 202
+        },
+        {
+          "name": "EventTimer",
+          "file": "KTDXLIB/KTDGXSkinAnim.cpp",
+          "startLine": 1350,
+          "endLine": 1357,
+          "sha256": "b0414404fd76892e2716c2c9c5053db62f574c0e13fdfab3a8d9f95de976a6bf",
+          "bodySha256": "ffdc632c6fc301f192804317fa50d7b80fd61315eda23529960a40ada9501bef",
+          "bytes": 151
+        },
+        {
+          "name": "DamageAirSmallStartFuture",
+          "file": "X2Lib/X2GUUser.cpp",
+          "startLine": 25842,
+          "endLine": 25855,
+          "sha256": "bf0fb8e4ee9131b64b0ae4075224046122dcfd4a1cd68e378974e2633c21429e",
+          "bodySha256": "3ff48c2cd94b6e79c9fb31709ec4e283e8356c0ff18912e524695df5a3a98788",
+          "bytes": 433
+        },
+        {
+          "name": "DamageAirSmallEventProcess",
+          "file": "X2Lib/X2GUUser.cpp",
+          "startLine": 25860,
+          "endLine": 25868,
+          "sha256": "93fdad229b1a256d7dc7ce3b0ad6b44c4100f3aed00fb2ff7597f40d929f3dc6",
+          "bodySha256": "0f2123460c6e3eb2bcc8d868bd0b9270e0103833cb9a5b588fa94c5a3e90c4b2",
+          "bytes": 160
+        },
+        {
+          "name": "RSI_DAMAGE_SMALL_FRONT_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 6926,
+          "endLine": 6944,
+          "sha256": "af7a006b9b3dbb3c19dac5ee065369e86a942a58abdf85b0e46e71eb3cbe1568",
+          "bodySha256": "8f806da8395e06438517c7d75e6f5aef6368bf56b5cd32fec12668a2df4ba0ff",
+          "bytes": 544
+        },
+        {
+          "name": "RSI_DAMAGE_SMALL_BACK_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 6959,
+          "endLine": 6977,
+          "sha256": "dfe4e3ae4dd4f78d840a62a7eeb71b1b1636478575050f3217e58c157219af81",
+          "bodySha256": "8f806da8395e06438517c7d75e6f5aef6368bf56b5cd32fec12668a2df4ba0ff",
+          "bytes": 543
+        },
+        {
+          "name": "RSI_DAMAGE_BIG_FRONT_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 6989,
+          "endLine": 7016,
+          "sha256": "c5cc32c927c0f3751301295e65a15dadba2dabb7e46073d4d1cd8e21b0fc1cd4",
+          "bodySha256": "ea5eb7757bec8916db305e9b01dca7625d47e336fa63fb16f103b60daf6e0bb8",
+          "bytes": 683
+        },
+        {
+          "name": "RSI_DAMAGE_BIG_BACK_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 7031,
+          "endLine": 7049,
+          "sha256": "0475a354a679cbf70d217e873638680c910b7fd253218e18ceb13a6a12e02878",
+          "bodySha256": "8f806da8395e06438517c7d75e6f5aef6368bf56b5cd32fec12668a2df4ba0ff",
+          "bytes": 541
+        },
+        {
+          "name": "RSI_COMBO_ZZXX_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8372,
+          "endLine": 8384,
+          "sha256": "e38159e399a09b1d9c72b28645235a798f2589fb0aad4c7af63baf9579e18c62",
+          "bodySha256": "2ddc8484fcb57024213dbb6bc168fc8a09c65ed19ddefc10df092120941b091e",
+          "bytes": 411
+        },
+        {
+          "name": "RSI_COMBO_ZZXX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8386,
+          "endLine": 8406,
+          "sha256": "41e2770938b3f289be897910f26e1759b9418952f4a7cc0d05ed84e405eb78ac",
+          "bodySha256": "93c46c031c668d0f2f53961e933ebe7346cdd85f4ec290469254f6bfb6ee38b6",
+          "bytes": 438
+        },
+        {
+          "name": "RSI_DASH_JUMP_COMBO_Z_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8742,
+          "endLine": 8800,
+          "sha256": "79d5ac69740106ac97b7860d4ed2ee3b2b3ce9f00d3b09aa625685fbac7e969a",
+          "bodySha256": "142e9a11e872221f3beb488270c03ef8169df46dd86ede8ab218f4dfa8761029",
+          "bytes": 2048
+        },
+        {
+          "name": "RSI_DASH_JUMP_COMBO_ZZ_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8815,
+          "endLine": 8826,
+          "sha256": "e1e57a0c2c70bdc379ed8d20a8b31782ebd84073d69380f1c97dac56833e632e",
+          "bodySha256": "7411d0dc4ba8a74b42c6172778581ae8041ca5f87d77775fd4e03e7dbfce8a7c",
+          "bytes": 434
+        },
+        {
+          "name": "RSI_DASH_JUMP_COMBO_ZZ_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8828,
+          "endLine": 8836,
+          "sha256": "e27ccb19af4b06593aa35c66f37d3a0a5de01c66744dd6fca4564592f5331c1b",
+          "bodySha256": "aa4022dfdae8fb3a110aa7e3fb3afa4906fc282b91eeb641d25027f1b4d82112",
+          "bytes": 175
+        },
+        {
+          "name": "RSI_JUMP_COMBO_Z_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8972,
+          "endLine": 8990,
+          "sha256": "ba0cc1d2189898d7d920df2c13c5862ef00aa631ac07fc1a564c34a3ed88dbdc",
+          "bodySha256": "5620a0faa67d48c3a177af28f02144df167f67e3015e6a1eb96eb74e9c811969",
+          "bytes": 559
+        },
+        {
+          "name": "RSI_JUMP_COMBO_Z_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8992,
+          "endLine": 9004,
+          "sha256": "900fd09a99439b76e9351e038d695adbc02f0be19294d79776e269803a0f92dc",
+          "bodySha256": "2f9fd70bfbc451c67acb7502a1770e71d95ee5453ac7d377cc025ae7cee33399",
+          "bytes": 255
+        },
+        {
+          "name": "RSI_JUMP_COMBO_X_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 9022,
+          "endLine": 9040,
+          "sha256": "8c924209e079e6df7ed3e36088d64c1dc4ba3c5647a4082ff8c18909e6147c1d",
+          "bodySha256": "5b5f236a63b8ae62ee3da55a3a800e4b1ca91121454a3d1d4fb2a7fe7682af2c",
+          "bytes": 528
+        },
+        {
+          "name": "RSI_JUMP_COMBO_X_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 9044,
+          "endLine": 9056,
+          "sha256": "e8684c01747970053bbd3b604e792da6f1c4ad1508feaeac2d6827c5a968ba1d",
+          "bodySha256": "2f9fd70bfbc451c67acb7502a1770e71d95ee5453ac7d377cc025ae7cee33399",
+          "bytes": 255
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 11603,
+          "endLine": 11616,
+          "sha256": "5b7df00b8b90f2054b9a6d79ca246278473eafe297ed39f85b7fd32ebbd072a5",
+          "bodySha256": "d2536d25fd707dbf411948566890cc7052710a0f4a9d6e1ec9604164c22cd215",
+          "bytes": 505
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 11623,
+          "endLine": 11631,
+          "sha256": "9d76adb2e339746934a6f215835351a6e3f721dce098155d1c3cf1818307bb12",
+          "bodySha256": "1fdfcd20498f92254c1c109ab1af0b58830d0670a245f881dc9b07f0b6311e21",
+          "bytes": 197
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_LANDING_StartFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 11638,
+          "endLine": 11644,
+          "sha256": "78411672376417a2df22074099d3babe158a4bec8a5752ad10f5b847ae3285ea",
+          "bodySha256": "fe164e319179d31d109a68eae91899c5443753100153fa9226545b70e52ec87d",
+          "bytes": 211
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_LANDING_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 11655,
+          "endLine": 11699,
+          "sha256": "25872694ef8972ab807ca9382ce3a26502d816dd238931fbed2bd15688e8fe5c",
+          "bodySha256": "2cb7f7f15d1ae4b4de23d4e7a00bbfa90983c982fbc59a486ca536c7274ab1b5",
+          "bytes": 1296
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZXX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 11707,
+          "endLine": 11720,
+          "sha256": "793e24ba18a9a1e3c3ff7d2386a69ee9baa40ade28721b99e4659b8236ecea3a",
+          "bodySha256": "b658d0942fd9db2c05af943fe7721b767059413c97dbaf6b11d23eab8e8d4fa2",
+          "bytes": 324
+        },
+        {
+          "name": "RSI_COMBO_Z_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 7774,
+          "endLine": 7820,
+          "sha256": "01aa187bd056703428a9e37f71756e21e8bc14227e7d82081f0125393c948662",
+          "bodySha256": "7badce68fd2afbe4f3e23a669883d3e0111cb46d6ca9430b82eeed2a6bb25244",
+          "bytes": 1365
+        },
+        {
+          "name": "RSI_COMBO_ZZ_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 7823,
+          "endLine": 7877,
+          "sha256": "c02e19a1f80e256f502c5bc30bc5cca665a611b81191f59cdbb941ec24a41733",
+          "bodySha256": "8078ac7d56ab325a60547215dd87b33ba1cafa6a1205eb56ab8355269981624e",
+          "bytes": 1921
+        },
+        {
+          "name": "RSI_COMBO_ZZZ_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 7879,
+          "endLine": 8000,
+          "sha256": "836527aca79f17d2acfed6d401da529dc81ee6f7e2e1b31bebae0e08dcdaed25",
+          "bodySha256": "4bde03c812bcaf4ad4fd0b330e98f32df5eaae9198715ffb0bea2d589488f63a",
+          "bytes": 4944
+        },
+        {
+          "name": "RSI_COMBO_ZZZZ_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8003,
+          "endLine": 8015,
+          "sha256": "b172fbbe03dc4ca0d825b62111bc01a5b774cafa84a5fccba5d58dc81594f110",
+          "bodySha256": "b941c81cae5e5b9d41d0f28d99144102cac61d2bba45cf349e744eedc9ca5714",
+          "bytes": 415
+        },
+        {
+          "name": "RSI_COMBO_ZZZZ_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8017,
+          "endLine": 8037,
+          "sha256": "e937a51af0fa9cdf6a62f734e418d99b93f5a6babd091af3657904f0b21ed5be",
+          "bodySha256": "e2b7a0352747c7fc35a884c19f7d9fecea82eb202d0f9fa87814702da1fffe8d",
+          "bytes": 438
+        },
+        {
+          "name": "RSI_COMBO_ZZX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8311,
+          "endLine": 8369,
+          "sha256": "46ea46324e5aab8685bd60f68713c1dafe4a1a8f41549052e588d3b33997fa73",
+          "bodySha256": "c77255b2235a4e990735d404ee4ee13f63ceaa79b6c66875b5a9f4cd0444314d",
+          "bytes": 1939
+        },
+        {
+          "name": "RSI_COMBO_X_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8409,
+          "endLine": 8449,
+          "sha256": "e3fdda5bf1106419a1087132a87b19e02a5e6a0f9ea67c32a6aae8cdf994a2ef",
+          "bodySha256": "d675f3670b72a2b0b7e07b7d2d5d3916c5804beb67b835a0c004330324098129",
+          "bytes": 1353
+        },
+        {
+          "name": "RSI_COMBO_XX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8452,
+          "endLine": 8539,
+          "sha256": "e9b0779f5a780580ecab551f2a6794b6379859821c729c778ba69849b506e5d2",
+          "bodySha256": "55d3283188ed80b39a87eba7cbaabe94e9a9f7eeeeed4e2598a40ef70fc36a9f",
+          "bytes": 3205
+        },
+        {
+          "name": "RSI_DASH_JUMP_COMBO_ZZ_Landing_StartFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8840,
+          "endLine": 8845,
+          "sha256": "e564e555fdc885f1d941970f276396956c5c3ab9a3b644a7b9ded2506b9a4b50",
+          "bodySha256": "3186313a69b3017b69886fc2fdfee13ab3a5cc094be2cb5b6b32005e6055e146",
+          "bytes": 129
+        },
+        {
+          "name": "RSI_DASH_JUMP_COMBO_ZZ_Landing_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 8847,
+          "endLine": 8892,
+          "sha256": "05c2ae8a8094e6a320ff47077ed77c3d138e6c3078707bb2ddf055401acc7eae",
+          "bodySha256": "b614bc62decae4f9131846022f1e3cd2d24f31ffe4cb09ff1437599422f6bdd7",
+          "bytes": 1269
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_X_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15752,
+          "endLine": 15768,
+          "sha256": "dfffb40e37c3b2cab6a261851126fe9ef2c0e654d06821f314f26075f31e4337",
+          "bodySha256": "30e3da205d87a06d0dba3c766a1542ba61be4fa70b96d9680113a5b8d67a5f21",
+          "bytes": 465
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_X_FrameMove",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15770,
+          "endLine": 15818,
+          "sha256": "9e19bbc6bec825c34d7ace46fc20e5d15fcaf8d9892783dbb5f204f5d3dfdef9",
+          "bodySha256": "cc6a56ed5781342445b84faea16393ed61c87a54e6b6a8033828c9a8d7b04b86",
+          "bytes": 1702
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_X_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15820,
+          "endLine": 15848,
+          "sha256": "b43b90e734859a9e4c33b9b9f2cb2af189fef3d4fcbc7730d3083cd45e890e7d",
+          "bodySha256": "b125092720ae8083eaa6acd109894c4d3c47e4339d0292a2b3f76fad3f5ca3b3",
+          "bytes": 688
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_XX_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15856,
+          "endLine": 15864,
+          "sha256": "e80f6af15fb3a18da1874b5465864615f241c82a6fe69006a8108e76c04000ce",
+          "bodySha256": "33332e67e40b5b8b735df41ec9a78f3901aefa958aa57bd1fee8e417cf34d549",
+          "bytes": 280
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_XX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15872,
+          "endLine": 15880,
+          "sha256": "19801667805e5f2633463a08035054d99da889bea200d4846372f2d5d60cfb02",
+          "bodySha256": "1191826e9cd466a4e4894850340fc511f66278706924cfca9056a024a33ac348",
+          "bytes": 175
+        },
+        {
+          "name": "RRF_DASH_JUMP_COMBO_XX_LANDING_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15892,
+          "endLine": 15921,
+          "sha256": "aadaa680be81dabe97f12af6f77ac7e54ecc2fc1492e28c6574735793c1ec05e",
+          "bodySha256": "6d60f77eb0236446a05cb8be71a608fb6d622141bbb0f48af11c578b9f39f819",
+          "bytes": 712
+        },
+        {
+          "name": "RRF_COMBO_ZZXFRONTX_FrameMoveFuture",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15928,
+          "endLine": 15941,
+          "sha256": "158b782dfdf1530ff39ae485338adb2205ef04887c2a5d5b59f77e2dedac8709",
+          "bodySha256": "e3145dd087e65b850188e181abc516c1aa3f410104acc85a8ebba870f5174793",
+          "bytes": 383
+        },
+        {
+          "name": "RRF_COMBO_ZZXFRONTX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15948,
+          "endLine": 15984,
+          "sha256": "d206b7f6a8a6de54e0bb4b45974a5443887e163d6e657067c1cec071bac45db3",
+          "bodySha256": "151045d33cd6de964b4f84b1c95e502b4374d18e6da0071992f8647ea8722bb4",
+          "bytes": 1220
+        },
+        {
+          "name": "RRF_COMBO_ZZXFRONTX_End",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15985,
+          "endLine": 15991,
+          "sha256": "a640ffe82a3d2bdc13d049e00a860466faa22497fa97cc197b359d5d5ac29d22",
+          "bodySha256": "4e5060dd4a2ce62efecd1916da1bdae83597ff7cd2313551b72bfa68d4bfc273",
+          "bytes": 143
+        },
+        {
+          "name": "RRF_COMBO_ZZXFRONTXX_EventProcess",
+          "file": "X2Lib/X2GURaven.cpp",
+          "startLine": 15999,
+          "endLine": 16013,
+          "sha256": "e154f8746e12facd29b6412a302618d94480c1e73e81e4e270b41be03390df2c",
+          "bodySha256": "b38f46a8dfe3a569977fd30f7592b77b30e0eca8bd8046c0a25c683c9fe6a8cc",
+          "bytes": 331
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "skill-values": {
+      "file": "skill-values.wasm",
+      "sha256": "91fac29ff37930135de1b0d54857bf48d248690c201a5758a5c3b5717648d524",
+      "bytes": 9572,
+      "originalFunctions": [
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+          "signature": "float GetSkillAbilityValue( CX2SkillTree::SKILL_ABILITY_TYPE eType, int iLevel ) const",
+          "group": "members",
+          "sha256": "22945f0dff9d4f7e497a0c6b55c098abbcb00ec8ca40d3abae13886ada1487d8",
+          "bytes": 578,
+          "lines": [
+            2366,
+            2383
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+          "signature": "const float GetSkillPowerRateValue( int iLevel ) const",
+          "group": "members",
+          "sha256": "d69ad47f19be7c5c186eae17b67b077cf7179053611556f3c1211b562c47a0ba",
+          "bytes": 230,
+          "lines": [
+            2299,
+            2306
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+          "signature": "inline float CalculateIncreasingRate( float fRate )",
+          "group": "rate",
+          "sha256": "502456dd7e84010df21b9b04fe9149dc16c43a6292a46e9d54026671ffd0cb16",
+          "bytes": 163,
+          "lines": [
+            1452,
+            1457
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+          "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetFixValuePerSecond(",
+          "group": "buff",
+          "sha256": "853ddd149bacba8e5ce0743358e68decaa701e26cad4da295150c10f879c683a",
+          "bytes": 246,
+          "lines": [
+            428,
+            432
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+          "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetValuePerSecond(",
+          "group": "buff",
+          "sha256": "d44a5694e5baf322f9fac20170f453d55745b641b0b58af0140b1e0f85de1fef",
+          "bytes": 307,
+          "lines": [
+            439,
+            443
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+          "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetPercentPerSecondByPercent(",
+          "group": "buff",
+          "sha256": "97114aa31dcae71606e864447fa780a74e4ee7d189a42bf3c2d173cad4de88e4",
+          "bytes": 241,
+          "lines": [
+            450,
+            454
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.h",
+          "signature": "class CKTDXCheckElapsedTime",
+          "group": "timer",
+          "sha256": "610f81bab947d66138c0a4b3b21c0767b6c62452d9f3e33c1a0f6ce960e6908b",
+          "bytes": 1253,
+          "lines": [
+            27,
+            72
+          ],
+          "classTerminator": true
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.cpp",
+          "signature": "void    CKTDXCheckElapsedTime::OnFrameMove( float fElapsedTime )",
+          "group": "timer",
+          "sha256": "687e7ceeab06055bbfb95aa76fd2cfd3f39fa6cc8b2245d5dcf514942b87cb48",
+          "bytes": 106,
+          "lines": [
+            10,
+            13
+          ]
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "effect-random": {
+      "file": "effect-random.wasm",
+      "sha256": "fd7a299bcf419cce00a212a510b651c7f6f03d2188f4e27f939e256ef1973eb5",
+      "bytes": 3155,
+      "originalFunctions": [
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.cpp",
+          "signature": "int RandomNumber(int iMin, int iMax)",
+          "sha256": "6956b583e127a8c288c7395b470390c95d0975fa2e6909f38c8eba7eb2aa94a6",
+          "bytes": 120,
+          "lines": [
+            7,
+            11
+          ]
+        },
+        {
+          "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/MinMax.cpp",
+          "signature": "float RandomNumber(float fMin, float fMax)",
+          "sha256": "cacc576a0cdf0c028276e2732ba1b4e6d14897cbe2ac29b07233b154998c7910",
+          "bytes": 182,
+          "lines": [
+            13,
+            18
+          ]
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "commands-recovery": {
+      "file": "commands-recovery.wasm",
+      "bytes": 70785,
+      "sha256": "44b3d8af7f96fb22b935fc74ada9f3c35e59e12bc4f459942db4929269952470",
+      "sourceCommit": "a1bcdabf39ee1699873b587b40cedefcce61c7f0",
+      "sourceSha256": "b6c8db97bea7d086a430ca069f4c047c9fb0290dc6f659906ba871e685c4e641",
+      "sourceContract": "contracts/rf-combo-recovery-source-v11.json",
+      "originalFunctions": [
+        {
+          "name": "RSI_COMBO_XX_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 8270,
+          "endLine": 8359,
+          "sha256": "2c0479a61645a05ac13a93852e0f9d52330a320b015ea0229b2a0502fc100caa",
+          "bodySha256": "7b3e9cd671ebfd781a382b34e2e0316bd63b159ef79636582834f3181f16c4e5",
+          "bytes": 3402
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontX_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10638,
+          "endLine": 10682,
+          "sha256": "13489fd6752e928e6ef4f33cbc67a79b9727480c2e213706ec85fbb82e09246a",
+          "bodySha256": "052beb2e5feb47aa72076e55b77546ed2dd8ae958a8e78ac651f931fcbc8ae27",
+          "bytes": 2101
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontXX_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10686,
+          "endLine": 10731,
+          "sha256": "b605a2e20c01ec6b42358eae37ac48901b9767bb4706a2e529ee505a6b75d8f0",
+          "bodySha256": "50fd2bd9ad40ce0099f00b21d39cb4b1ffcf76e07e08afb5998f3f3131aba7af",
+          "bytes": 2254
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontXX2_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10733,
+          "endLine": 10778,
+          "sha256": "592fb03a68ecfee20c747278941ed671f2dd026d73ab87a7b601f8cc85aacb4e",
+          "bodySha256": "e4d15ea9096560c43aca1c71e5be53d7445fc6f54b9fe01b8c4cd628a18708b7",
+          "bytes": 2255
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontXX3_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10780,
+          "endLine": 10811,
+          "sha256": "5b2225be553dc30774167778ead914288d85fcc1c5dff0c552b692bbff595350",
+          "bodySha256": "be3b7b9476a5200c4e063339c1f257b3afb5b98f641754bb402b91f84ba814a9",
+          "bytes": 1553
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontXX4_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10813,
+          "endLine": 10828,
+          "sha256": "e21d7ebce4d920c7464eb001964460dde17a2759c279912bb39b05ee405e64fb",
+          "bodySha256": "9e9e105d7dc5247b8546865d7f876d7ea398e1d7c4e67d9b14c7ed34bf173768",
+          "bytes": 640
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXfrontXXdownX_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10830,
+          "endLine": 10845,
+          "sha256": "aadb021efa1f3868b9f4ac9bf4c5876c78e22d3e4ad0f9da7ff97c3d8ae62426",
+          "bodySha256": "0fc1572307e51c6197c58143f6a8eb1086a00d5174b21c16bb05f6ab9cb0de78",
+          "bytes": 641
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXdownX_EventProcess",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10530,
+          "endLine": 10551,
+          "sha256": "06cdd07a236bbed17633d1ae58d260bcce8ba8ffac78bb364be52027cf4d5dc7",
+          "bodySha256": "014097caed4440bec9930e6c7d8d419f2b312f73448d24f91703ea4964e94216",
+          "bytes": 556
+        },
+        {
+          "name": "RSI_OVER_TAKER_COMBO_XXdownX_FrameMove",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10482,
+          "endLine": 10529,
+          "sha256": "3757fb71833950b1cc629ccf099bae35d4e260d4cf525c95a4372713ef9fd11b",
+          "bodySha256": "2a47f297a3f89163d34c570333fe912ac4d17d96224d25b4a61dd259405b227b",
+          "bytes": 1583
+        },
+        {
+          "name": "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZXX_FrameMove",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 10953,
+          "endLine": 10972,
+          "sha256": "32207017507bfc9997dcb4888b081a8a53cfb0f60927d3a17c357b1183043f31",
+          "bodySha256": "0566ab70bb878fb306b27606dff0cdf777cae58e6379c844976807106df944eb",
+          "bytes": 1213
+        },
+        {
+          "name": "RSI_COMBO_XXX_FrameMove",
+          "file": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GURaven.cpp",
+          "startLine": 8361,
+          "endLine": 8420,
+          "sha256": "5d51e9c03f453b0c90b9f278035597228360aac8a12ac173166a4bc532b77c84",
+          "bodySha256": "dfc98a83d6a52d45e40dcd3dc6ee0708ac71271697bad38f9d6701446770f11d",
+          "bytes": 1943
+        }
+      ],
+      "evidenceClass": "2026-source-reconstruction-of-reference-2015; not-target-2016"
+    },
+    "nasod": {
+      "file": "nasod.wasm",
+      "sha256": "addc78c0ae552ef1095cf20e3cf77ba84459be2189a5d8df8603fa720fba531b",
+      "bytes": 15260,
+      "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "sourceContract": "contracts/rf-native-nasod-v11.json",
+      "originalFunctions": [
+        {
+          "file": "X2Lib/X2GURaven.cpp",
+          "signature": "bool CX2GURaven::CanParryingState()",
+          "lines": [
+            14113,
+            14141
+          ],
+          "bytes": 604,
+          "sha256": "66e8cc7634fe8f37aedcce5357f02f3bf86fd0539e8d7b608b57700db4a2d564"
+        },
+        {
+          "file": "X2Lib/X2GURaven.cpp",
+          "signature": "void CX2GURaven::DoParrying()",
+          "lines": [
+            14143,
+            14193
+          ],
+          "bytes": 1786,
+          "sha256": "37824d2a2ad38504418ae3799c3c2b276db807b6539b868dc0e75a449a7585a3"
+        },
+        {
+          "file": "X2Lib/X2GURaven.cpp",
+          "signature": "void CX2GURaven::RSI_PARRYING_Start()",
+          "lines": [
+            17058,
+            17080
+          ],
+          "bytes": 442,
+          "sha256": "b0b376dbc0e7e49326ce70b805b755ae53c3957c0a4255ec34d9d9f40e246e89"
+        },
+        {
+          "file": "X2Lib/X2GURaven.cpp",
+          "signature": "void CX2GURaven::RSI_PARRYING_StateEnd()",
+          "lines": [
+            17109,
+            17117
+          ],
+          "bytes": 156,
+          "sha256": "e96477ef73524d5e1155399fba51c307828c20bbf4ba19b0d61465169f2ab932"
+        },
+        {
+          "file": "X2Lib/X2GUUser.cpp",
+          "lines": [
+            8487,
+            8535
+          ],
+          "sha256": "012d00dbfd6d2c1551786e4aec794b8c79b1b9564241dac47cce2d883c305489",
+          "bytes": 1739,
+          "hostWrapper": "bounded member function"
+        },
+        {
+          "file": "X2Lib/X2GURaven.cpp",
+          "lines": [
+            14500,
+            14511
+          ],
+          "sha256": "44dc1b5cc4213e55a08d8761baca44cabd6a61e73a26276022ae76f7494803ae",
+          "bytes": 410,
+          "hostWrapper": "bounded member function"
+        }
+      ],
+      "evidenceClass": "reference-V5-not2016"
+    },
+    "critical": {
+      "file": "critical.wasm",
+      "sha256": "abac2e52cf38135badad1c85e3c20449ac131cb93edaf416e2d3cb3d6107ad6b",
+      "bytes": 16874,
+      "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "evidenceClass": "compiled-reference-V5-critical-subset; not target2016 measurement",
+      "originalFunctions": [
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "lineStart": 23094,
+          "lineEnd": 23131,
+          "sha256": "690c2eeeccaf5dc298da122e56cac4ae25115af5d9fd05e1e6e51e0453095b22",
+          "bytes": 1234
+        },
+        {
+          "path": "X2Lib/X2GameUnit.cpp",
+          "lineStart": 10487,
+          "lineEnd": 10501,
+          "sha256": "1a95098cb3b4fa3596de50796847121e4328362570342b36952baad9e89440a7",
+          "bytes": 478
+        },
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "lineStart": 9092,
+          "lineEnd": 9098,
+          "sha256": "15bb448bce9ac7a9176c435ab57e1e9bdffc90e3fc17a6ca5f8169361fcaea0b",
+          "bytes": 167
+        },
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "lineStart": 9118,
+          "lineEnd": 9231,
+          "sha256": "b20476af49d01ada2f1e9f4c4410b68d581923cf867f944336360d45602b5b82",
+          "bytes": 4089
+        },
+        {
+          "path": "X2Lib/X2GameUnit.cpp",
+          "lineStart": 2713,
+          "lineEnd": 2740,
+          "sha256": "73995f5db8db5b417b3a8e9723b35631e82ef568ac2c49ddd278d1aa904787cb",
+          "bytes": 910
+        },
+        {
+          "path": "X2Lib/X2GURaven.cpp",
+          "lineStart": 22473,
+          "lineEnd": 22478,
+          "sha256": "e3a7ad7761a5a031deb4ed112e423e866d2b91b679c8c970cb873004746df6b4",
+          "bytes": 119
+        },
+        {
+          "path": "X2Lib/X2GURaven.cpp",
+          "lineStart": 22501,
+          "lineEnd": 22506,
+          "sha256": "44a0d791392c3886dbb507e88d39ffe03781dabb4abc8aa9f9cd708829069988",
+          "bytes": 116
+        },
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "lineStart": 11469,
+          "lineEnd": 11480,
+          "sha256": "ff783a6ba9616a7c9adff225d77ce7d21e9eba5b6ade316aaec91987e17aa2b7",
+          "bytes": 453
+        }
+      ],
+      "sourceContract": "contracts/rf-critical-source-v11.json"
+    },
+    "mana-break": {
+      "file": "mana-break.wasm",
+      "sha256": "3ea75dcc013b6dea97a436e547cb0c9ee189b128f5feecfdad427c101a9f029a",
+      "bytes": 12057,
+      "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "compilationStatus": "compiled",
+      "evidenceClass": "compiled-fixed-V5-Gauge-and-User-ManaBreak-subset; target2016 constants + reference host scheduling candidate",
+      "originalFunctions": [
+        {
+          "path": "X2Lib/X2GageData.cpp",
+          "sha256": "56c117b2e9b638e0e357902a5c7bd5fd53759af793a25a249d220c70200e1d3a",
+          "bytes": 239,
+          "lineStart": 4,
+          "lineEnd": 17,
+          "group": "gauge"
+        },
+        {
+          "path": "X2Lib/X2GageData.cpp",
+          "sha256": "e9b70eaf97e0bcf8656e11607edc8adcaabe2e28819320175b4caaf3caa2919a",
+          "bytes": 767,
+          "lineStart": 18,
+          "lineEnd": 42,
+          "group": "gauge"
+        },
+        {
+          "path": "X2Lib/X2GageData.cpp",
+          "sha256": "d603d62631dd1de747532ac6005f883d33503435ec6d9aee78d0b293a6f678a4",
+          "bytes": 409,
+          "lineStart": 106,
+          "lineEnd": 122,
+          "group": "gauge"
+        },
+        {
+          "path": "X2Lib/X2GageData.cpp",
+          "sha256": "9f28c9c3783b6b6c893a36c45045355e8bc87251cc74d711b02d4b96c3904960",
+          "bytes": 285,
+          "lineStart": 162,
+          "lineEnd": 177,
+          "group": "gauge"
+        },
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "sha256": "f474e1aed7de34ae80c0a0631679cfce52b69974cb73016e0f2d327e5ed37b31",
+          "bytes": 447,
+          "lineStart": 19415,
+          "lineEnd": 19434,
+          "group": "user"
+        },
+        {
+          "path": "X2Lib/X2GUUser.cpp",
+          "sha256": "53009be5d2cee353b64086248ef7429de6bbed6f1d62d1fcbc02dd5df9a6367d",
+          "bytes": 1775,
+          "lineStart": 12072,
+          "lineEnd": 12130,
+          "group": "user"
+        }
+      ],
+      "sourceContract": "contracts/rf-mana-break-source-v12.json",
+      "compilation": {
+        "translationUnitSha256": "129c0697c9eb31fedf38678c8aa5dc859a88fcf1b04e04366d5baf1ab32fc847",
+        "includeHashes": {
+          "mana_constants.inc": "a5df9d13d067100d196c82ab62e361265b63cc01e4fa8d1da42bd9459fad7562",
+          "mana_gauge.inc": "69d4bea33ccba8a9015ad2041d7a573fbc7888673a0dddec96a1efb3ac652d50",
+          "mana_user.inc": "4d7c3b1b5d95ade30b5ede5ffe280012a34323d1608bb6114e99b7429781f7e2"
+        },
+        "compilerExeSha256": "d408dd38eed3e5204af841bcebf70502a4dbbb8399a3a3262be55059370bc018",
+        "moduleSha256": "3ea75dcc013b6dea97a436e547cb0c9ee189b128f5feecfdad427c101a9f029a"
+      }
+    }
+  },
+  "boundary": "Original method bytes execute with serialized host handles/pose/time; complete target client not executed."
+}

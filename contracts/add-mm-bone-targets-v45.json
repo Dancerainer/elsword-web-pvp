@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 declarations, per-instance Web binding using existing fixed-V5 EffectSet consumer",
+  "profileRawUnchanged": true,
+  "bindings": {
+    "EffectSet_SI_SA_AAT_Psionic_Generator_Start": "DamageEffect_Psionic_Generator_Explode",
+    "EffectSet_SI_SA_AAT_Installation_Drone_Activator_Generate": "ADD_Installation_Drone_Generate_Dummy01",
+    "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation1": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+    "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation0": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+    "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+    "EffectSet_SI_SA_AMM_Installation_Ultimate_Fury_Start": "ADD_Ultimate_Fury_Start_Dummy01",
+    "EffectSet_SI_SA_AAT_Phantom_Seeker_Fire2": "DamageEffect_AAT_Phantom_Seeker_Projectile_Sub",
+    "EffectSet_SI_SA_AAT_Phantom_Seeker_Fire1": "DamageEffect_AAT_Phantom_Seeker_Projectile_Sub",
+    "EffectSet_SI_SA_AAT_Phantom_Seeker_Start": "ADD_MM_Phantom_Seeker_Dummy_01",
+    "EffectSet_SI_SA_AAT_Installation_Drone_Activator_Start": "ADD_MM_Drone_Activator_Dummy01",
+    "EffectSet_SI_HA_AMM_Apocalypse": "ADD_Apocalypes_Dummy01",
+    "EffectSet_SI_A_AMM_Flick_Disc_Dynamo_Start": "ADD_MM_Drone_Activator_Dummy01",
+    "EffectSet_SI_A_AMM_Dividing_Missile_Dynamo_Start": "ADD_MM_Drone_Activator_Dummy01",
+    "EffectSet_SI_A_AMM_Countdown_Bomb_Dynamo_Start": "ADD_MM_Drone_Activator_Dummy01",
+    "EffectSet_SI_A_AAT_Rushing_Drone_Dynamo_Start": "ADD_MM_Drone_Activator_Dummy01"
+  },
+  "evidence": [
+    {
+      "set": "EffectSet_SI_SA_AAT_Psionic_Generator_Start",
+      "member": "EFFECT3",
+      "carrier": "DamageEffect_Psionic_Generator_Explode",
+      "main": "ADD_psionic_generate_DronMesh_01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 36952
+      },
+      "rawSha256": "8ac4d2b60296c351ca0f7e78b0d365e909a6b2d24adef996a74d73427b04896d",
+      "meshDeclarationSha256": "50ceeb1982f388d40b8467432aab759218cf684e60f8d2aef7c7d839e65aee11"
+    },
+    {
+      "set": "EffectSet_SI_SA_AAT_Installation_Drone_Activator_Generate",
+      "member": "EFFECT0",
+      "carrier": "ADD_Installation_Drone_Generate_Dummy01",
+      "main": "ADD_Installation_Drone_Generate_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 37589
+      },
+      "rawSha256": "5e3c79857cb48c3b872f10275237988f9ee726c32b8a20442e04d2207c57b1cb",
+      "meshDeclarationSha256": "7af0ea667886f4d4411cc25cd431437e5f71de769f23eb6c29f72b2fd55e532c"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation1",
+      "member": "EFFECT0",
+      "carrier": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+      "main": "Mesh_AMM_Flick_Disc_Attack",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38556
+      },
+      "rawSha256": "cabe211946387b02c97cad8ba828b3720625a0314b4f14d2beca69b8c85fb0c9",
+      "meshDeclarationSha256": "47bf45974f93abe9dfe5784ad5e1fa9493e19ea26054620843b9673774cca483"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock_Mutation0",
+      "member": "EFFECT0",
+      "carrier": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+      "main": "Mesh_AMM_Flick_Disc_Attack",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38534
+      },
+      "rawSha256": "6163231152c76bb83c01348423420750747fd01b0691f9ea5115c6647132d111",
+      "meshDeclarationSha256": "47bf45974f93abe9dfe5784ad5e1fa9493e19ea26054620843b9673774cca483"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Flick_Disc_Fire_Lock",
+      "member": "EFFECT0",
+      "carrier": "DamageEffect_AMM_Flick_Disc_Dynamo_Damage_Sub",
+      "main": "Mesh_AMM_Flick_Disc_Attack",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38512
+      },
+      "rawSha256": "61e168087c81ced835aca18bd7e21f63efd53d732d82509e1b349f0dd40fd4b1",
+      "meshDeclarationSha256": "47bf45974f93abe9dfe5784ad5e1fa9493e19ea26054620843b9673774cca483"
+    },
+    {
+      "set": "EffectSet_SI_SA_AMM_Installation_Ultimate_Fury_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_Ultimate_Fury_Start_Dummy01",
+      "main": "ADD_Ultimate_Fury_Start_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38150
+      },
+      "rawSha256": "17123d8a27ef5b4aa727657a1e4eb27604260f993acd404f1d3547ddf4ac6b72",
+      "meshDeclarationSha256": "9b2c54a65c5f642858d4dd38dfdc16b4632341f1b1e61a3a2a743826e3000e74"
+    },
+    {
+      "set": "EffectSet_SI_SA_AAT_Phantom_Seeker_Fire2",
+      "member": "EFFECT1",
+      "carrier": "DamageEffect_AAT_Phantom_Seeker_Projectile_Sub",
+      "main": "Mesh_AAT_Phantom_Seeker_AttackBox_Sub",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 37115
+      },
+      "rawSha256": "6a92c526245448904d5b5e33e76dd6b546d1865b2e05e860ed9554c1887fb009",
+      "meshDeclarationSha256": "1e9392f1f12d9b581d1998613f77a8c1f7d0fb391db46db4c1154f3e03a10d3f"
+    },
+    {
+      "set": "EffectSet_SI_SA_AAT_Phantom_Seeker_Fire1",
+      "member": "EFFECT1",
+      "carrier": "DamageEffect_AAT_Phantom_Seeker_Projectile_Sub",
+      "main": "Mesh_AAT_Phantom_Seeker_AttackBox_Sub",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 37086
+      },
+      "rawSha256": "e7981b442f437a7103f96b08623722abf7beed1850bb1cd77600e94e9c2ea0de",
+      "meshDeclarationSha256": "1e9392f1f12d9b581d1998613f77a8c1f7d0fb391db46db4c1154f3e03a10d3f"
+    },
+    {
+      "set": "EffectSet_SI_SA_AAT_Phantom_Seeker_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Phantom_Seeker_Dummy_01",
+      "main": "ADD_MM_Phantom_Seeker_Dummy_01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 37057
+      },
+      "rawSha256": "ffe935e9669c94017d8370aa8c859142c098b69e6ce7ebf091c22d46284571a7",
+      "meshDeclarationSha256": "6c55026cd305ed2bbabf753ea5cf375c83255ee7cfd73bfa60df39146826b7bc"
+    },
+    {
+      "set": "EffectSet_SI_SA_AAT_Installation_Drone_Activator_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Drone_Activator_Dummy01",
+      "main": "ADD_MM_Drone_Activator_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 36837
+      },
+      "rawSha256": "d060afe5037f8b0117eff3cf59e6decbc9a8d260821d949026b3fa3099c4c190",
+      "meshDeclarationSha256": "af050ce6092ac4d4654847b540a1ce9db0962d1ea4dbc7e7d03b8bd308e40ea0"
+    },
+    {
+      "set": "EffectSet_SI_HA_AMM_Apocalypse",
+      "member": "EFFECT0",
+      "carrier": "ADD_Apocalypes_Dummy01",
+      "main": "ADD_Apocalypes_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 39958
+      },
+      "rawSha256": "9fe1043c3047c463e00bb9565662663c161dad8a3d6a4a078dfcfe8e64055ca0",
+      "meshDeclarationSha256": "f806ffb0f0333c11e4060e3b38fcc8ca4413fbf38d7d32ef1a3c6688809a4248"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Flick_Disc_Dynamo_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Drone_Activator_Dummy01",
+      "main": "ADD_MM_Drone_Activator_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38490
+      },
+      "rawSha256": "ce056c16ecd49ae189f0bd7cb4ffa3e807f51f0b8c314c29e7666ca423fbe635",
+      "meshDeclarationSha256": "af050ce6092ac4d4654847b540a1ce9db0962d1ea4dbc7e7d03b8bd308e40ea0"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Dividing_Missile_Dynamo_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Drone_Activator_Dummy01",
+      "main": "ADD_MM_Drone_Activator_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38427
+      },
+      "rawSha256": "cd7043ca7aaf4c56e1af888fa4b02b4fb40735afea47ea8bf870767740dc94e2",
+      "meshDeclarationSha256": "af050ce6092ac4d4654847b540a1ce9db0962d1ea4dbc7e7d03b8bd308e40ea0"
+    },
+    {
+      "set": "EffectSet_SI_A_AMM_Countdown_Bomb_Dynamo_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Drone_Activator_Dummy01",
+      "main": "ADD_MM_Drone_Activator_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 38621
+      },
+      "rawSha256": "8f4995b15d4571bd4202759b5fff4f8717b6ccdad2b3752a345d7fce757b00a0",
+      "meshDeclarationSha256": "af050ce6092ac4d4654847b540a1ce9db0962d1ea4dbc7e7d03b8bd308e40ea0"
+    },
+    {
+      "set": "EffectSet_SI_A_AAT_Rushing_Drone_Dynamo_Start",
+      "member": "EFFECT0",
+      "carrier": "ADD_MM_Drone_Activator_Dummy01",
+      "main": "ADD_MM_Drone_Activator_Dummy01",
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 36886
+      },
+      "rawSha256": "5c099859a0073ca54145b879d5522b50da2ecefe520ee6d88c865d794e9a49d5",
+      "meshDeclarationSha256": "af050ce6092ac4d4654847b540a1ce9db0962d1ea4dbc7e7d03b8bd308e40ea0"
+    }
+  ]
+}

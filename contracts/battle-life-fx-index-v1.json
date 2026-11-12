@@ -1,0 +1,2880 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "UpLight_GS_Sacrifice_of_Hero01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 60.0,
+        "Lifetime": 0.6,
+        "NumParticles": 15.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 3.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "Up_Light01_Mesh.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.7,
+            0.9,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.7,
+            0.9,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0.7,
+            0.9,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            2.0,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.1,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.4,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "UpLight_GS_Sacrifice_of_Hero01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 260898,
+        "line": 7807
+      },
+      "declarationSha256": "bc095c42445329364d00b9ef18ff8f879135675397c3370e61bb3f6bceba4ff3",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data048.kom",
+            "ordinal": 491,
+            "name": "Up_Light01_Mesh.Y",
+            "rawPath": "raw/data/data048.kom/Up_Light01_Mesh.Y",
+            "sha256": "ea116f4e62b6bc8f16911e033a44314048dc43fcbcbf429f819e191bbc6d8ed8",
+            "bytes": 582,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "MagicSquareLight02_Red.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1126,
+            "name": "MagicSquareLight02_Red.tga",
+            "rawPath": "raw/data/data002.kom/MagicSquareLight02_Red.tga",
+            "sha256": "c21b9334b804bb010ad5dd78e2dd61ccba4d341fa23abda5fd3f48c3977aad90",
+            "bytes": 66086,
+            "signatureHex": "00000200000000000000000080008000"
+          }
+        }
+      ],
+      "glb": "fx/meshes/Up_Light01_Mesh.glb",
+      "poseData": "fx/meshes/Up_Light01_Mesh.pose.json",
+      "animationClips": [],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false
+    },
+    "Smoke_UnoHound_AttackB01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 150.0,
+        "Lifetime": 0.6,
+        "NumParticles": 200.0,
+        "TriggerTime": 0.2,
+        "Layer": 14.0,
+        "Spherical_Emitradius": {
+          "random": [
+            80.0,
+            100.0
+          ]
+        },
+        "Spherical_Emitazimuth": {
+          "random": [
+            0.0,
+            360.0
+          ]
+        },
+        "Spherical_Emitpolar": {
+          "random": [
+            0.0,
+            5.0
+          ]
+        },
+        "Gravity": [
+          0.0,
+          100.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Smoke.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            30.0,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.2,
+              2.0
+            ]
+          }
+        },
+        {
+          "property": "Scale",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": {
+            "random": [
+              0.6,
+              0.8
+            ]
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                -10.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                -100.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Smoke_UnoHound_AttackB01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 165883,
+        "line": 4947
+      },
+      "declarationSha256": "a193ca477ee5c768b3fd5a6b52582844cbf6341c8d41c59afd8b7053b7ee24bb",
+      "textures": {
+        "Smoke.dds": {
+          "file": "fx/textures/Smoke-cd0af4fdbd.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 554,
+            "name": "smoke.dds",
+            "rawPath": "raw/data/data048.kom/smoke.dds",
+            "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "Ring_GS_Sacrifice_of_Hero01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10.0,
+        "Lifetime": 2.6,
+        "NumParticles": 20.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Light_Ring01.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.5,
+          "end": 1.5,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            500.0,
+            500.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1500.0,
+            1500.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 1.3,
+          "fade": true,
+          "value": [
+            1550.0,
+            1550.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 1.3,
+          "end": 1.5,
+          "fade": true,
+          "value": [
+            1600.0,
+            1600.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Ring_GS_Sacrifice_of_Hero01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 261607,
+        "line": 7830
+      },
+      "declarationSha256": "c5bfe8a7751341e7dd54759c784607d1121fc8e1c31b210b006f8160dbdffbee",
+      "textures": {
+        "Explosion_Light_Ring01.tga": {
+          "file": "fx/textures/Explosion_Light_Ring01-37e6ce22bd.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 153,
+            "name": "Explosion_Light_Ring01.tga",
+            "rawPath": "raw/data/data048.kom/Explosion_Light_Ring01.tga",
+            "sha256": "37e6ce22bd94ee24d37beb39a0ae77b05315f216c4613f536cf12f6180641e70",
+            "bytes": 196652,
+            "signatureHex": "00000200000000000000000000010001"
+          }
+        }
+      }
+    },
+    "RespawnLanding_P04": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 2.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "Emitrate": 60.0,
+        "TriggerCount": 2.0,
+        "Lifetime": 0.4
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Ring2.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.033,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            300.0,
+            300.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            85.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding_P04",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 91589,
+        "line": 3010
+      },
+      "declarationSha256": "9cc333cd99b205977f89bb67c0c2f3a7eff90716fc9bc082bf4504968c26aaeb",
+      "textures": {
+        "Arme_Ring2.dds": {
+          "file": "fx/textures/Arme_Ring2-9fa65a5787.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 13,
+            "name": "Arme_Ring2.dds",
+            "rawPath": "raw/data/data048.kom/Arme_Ring2.dds",
+            "sha256": "9fa65a5787fc8896f49dfe0fd0a18776958235805091fc3ec85dec39c2cb2102",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "RespawnLanding_P03": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "meshRenderType": "RT_REAL_COLOR",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 5.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lifetime": 1.0,
+        "Emitrate": 200.0,
+        "TriggerCount": 1.0,
+        "BillBoardType": "BT_Y",
+        "Mesh": "RespawnLanding03.Y",
+        "ZEnable": true,
+        "DrawCount": 1.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.833,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.833,
+          "fade": true,
+          "value": [
+            1.4,
+            1.4,
+            1.4
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.833,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding_P03",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 90894,
+        "line": 2986
+      },
+      "declarationSha256": "a5b8d785d0eaaff8514b15025c7d7fa1e24679ada50f202aa322746269755411",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1714,
+            "name": "RespawnLanding03.Y",
+            "rawPath": "raw/data/data002.kom/RespawnLanding03.Y",
+            "sha256": "afddefdf40f14afd48e16d86506683320eb5614c1483e19bde43150cb2a3a6e2",
+            "bytes": 983,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "Respawn01.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1711,
+            "name": "Respawn01.tga",
+            "rawPath": "raw/data/data002.kom/Respawn01.tga",
+            "sha256": "26836d7321e7ca6fccf0bfa3a97759aad15b800bfbaa75cfc778c6470e195fcb",
+            "bytes": 65580,
+            "signatureHex": "00000200000000000000000080008000"
+          }
+        }
+      ],
+      "glb": "fx/meshes/RespawnLanding03.glb",
+      "poseData": "fx/meshes/RespawnLanding03.pose.json",
+      "animationClips": [],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false
+    },
+    "RespawnLanding_P02": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 2.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "Emitrate": 60.0,
+        "TriggerCount": 2.0,
+        "Lifetime": 0.4
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "GroundShockWave.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            1200.0,
+            1200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding_P02",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 90314,
+        "line": 2965
+      },
+      "declarationSha256": "a5b9f799f47f1b31da0cc4ec4d6324b0e20f5f0a51204e0d4eb5db5c1f19d2ba",
+      "textures": {
+        "GroundShockWave.dds": {
+          "file": "fx/textures/GroundShockWave-2c3c493997.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 173,
+            "name": "GroundShockWave.dds",
+            "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+            "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "RespawnLanding_P01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "meshRenderType": "RT_REAL_COLOR",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "NumParticles": 100.0,
+        "Gravity": [
+          0.0,
+          -20.0,
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -100.0,
+              100.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -100.0,
+              100.0
+            ]
+          }
+        ],
+        "UseLand": true,
+        "Lifetime": 0.8,
+        "Emitrate": 30.0,
+        "TriggerTime": 0.7,
+        "BillBoardType": "BT_ALL"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Sphere.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.6,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.25,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            64.0,
+            64.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "random": [
+                320.0,
+                420.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding_P01",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 89372,
+        "line": 2939
+      },
+      "declarationSha256": "2964cae243b38d87a8ac75cf4b6d7a5dcf3f530cc4f887d917fa7e0adc4bdda9",
+      "textures": {
+        "Explosion_Sphere.dds": {
+          "file": "fx/textures/Explosion_Sphere-a7b20861c3.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 154,
+            "name": "Explosion_Sphere.dds",
+            "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+            "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "RespawnLanding02": {
+      "fields": {
+        "Layer": 14.0,
+        "LifeType": "LT_PLAY_COUNT",
+        "PlayCount": 1.0,
+        "MeshType": "X_SKIN_MESH",
+        "MeshName": "RespawnLanding02.X",
+        "RenderType": "RT_REAL_COLOR",
+        "ZEnable": false,
+        "UseDieEvent": false,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.033,
+          "end": 0.266,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.733,
+          "end": 1.066,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding02",
+      "kind": "mesh",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 146,
+        "name": "GameMinorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+        "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+        "bytes": 23778,
+        "signatureHex": "0d0a584d455348504c41594552202255",
+        "byteOffset": 7033,
+        "line": 242
+      },
+      "declarationSha256": "f259d2b8f4858e28ee703e7c932e1e2a1398a8b14a1d9faf2b4f716e732168f8",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1713,
+            "name": "RespawnLanding02.X",
+            "rawPath": "raw/data/data002.kom/RespawnLanding02.X",
+            "sha256": "293baa39e6a530609148b711f1c78c311b2b61872735319da24fdb6d2b7c2a13",
+            "bytes": 2641,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "Respawn01.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1711,
+            "name": "Respawn01.tga",
+            "rawPath": "raw/data/data002.kom/Respawn01.tga",
+            "sha256": "26836d7321e7ca6fccf0bfa3a97759aad15b800bfbaa75cfc778c6470e195fcb",
+            "bytes": 65580,
+            "signatureHex": "00000200000000000000000080008000"
+          }
+        }
+      ],
+      "glb": "fx/meshes/RespawnLanding02.glb",
+      "poseData": "fx/meshes/RespawnLanding02.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.2000000476837158,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      }
+    },
+    "RespawnLanding01": {
+      "fields": {
+        "Layer": 14.0,
+        "LifeType": "LT_PLAY_COUNT",
+        "PlayCount": 1.0,
+        "MeshType": "X_SKIN_MESH",
+        "MeshName": "RespawnLanding01.X",
+        "RenderType": "RT_REAL_COLOR",
+        "ZEnable": false,
+        "UseDieEvent": false,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.033,
+          "end": 0.266,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.9
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.733,
+          "end": 1.066,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "RespawnLanding01",
+      "kind": "mesh",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 146,
+        "name": "GameMinorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+        "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+        "bytes": 23778,
+        "signatureHex": "0d0a584d455348504c41594552202255",
+        "byteOffset": 6440,
+        "line": 223
+      },
+      "declarationSha256": "8caba3492e8194bc26df38b4bbfbd54b1bcc88f093d1fe690fd613cb029f6a46",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1712,
+            "name": "RespawnLanding01.X",
+            "rawPath": "raw/data/data002.kom/RespawnLanding01.X",
+            "sha256": "9d41ae16ce8bdcb728752a5b61bda90e3a007b959f635111e63d738d98d1f69d",
+            "bytes": 2593,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "Respawn01.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 1711,
+            "name": "Respawn01.tga",
+            "rawPath": "raw/data/data002.kom/Respawn01.tga",
+            "sha256": "26836d7321e7ca6fccf0bfa3a97759aad15b800bfbaa75cfc778c6470e195fcb",
+            "bytes": 65580,
+            "signatureHex": "00000200000000000000000080008000"
+          }
+        }
+      ],
+      "glb": "fx/meshes/RespawnLanding01.glb",
+      "poseData": "fx/meshes/RespawnLanding01.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.2000000476837158,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE"
+      }
+    },
+    "Lightning_GS_Chance_to_Reverse01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.4,
+        "NumParticles": 100.0,
+        "TriggerTime": 30.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Lightning_Piercing01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.2,
+            0.5,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            30.2,
+            30.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Lightning_GS_Chance_to_Reverse01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 259458,
+        "line": 7762
+      },
+      "declarationSha256": "cf70b8662dae9401ec05a4fe9485f4b7ee274f45c9cf7f91be9c75599a7e45e0",
+      "textures": {
+        "Lightning_Piercing01.dds": {
+          "file": "fx/textures/Lightning_Piercing01-5598f22f77.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 298,
+            "name": "Lightning_Piercing01.dds",
+            "rawPath": "raw/data/data048.kom/Lightning_Piercing01.dds",
+            "sha256": "5598f22f778acae7d94379fdbece3cd523a759d05720d83f4e8d078ace4820c5",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080080000000"
+          }
+        }
+      }
+    },
+    "Light_GS_Sacrifice_of_Hero01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 60.0,
+        "Lifetime": 1.5,
+        "NumParticles": 15.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "Blur_Light_Mesh01.y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.9,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0.8,
+            0.9,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.7,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.8,
+            0.9,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.7,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            1.4,
+            1.4,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Light_GS_Sacrifice_of_Hero01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 260179,
+        "line": 7784
+      },
+      "declarationSha256": "f3e2bb42d75b14567d5e562bf07529cc6a450383b52447c2b55073d917591a83",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data048.kom",
+            "ordinal": 38,
+            "name": "Blur_Light_Mesh01.Y",
+            "rawPath": "raw/data/data048.kom/Blur_Light_Mesh01.Y",
+            "sha256": "bd22fcc9dd8f5d2d741f0dada1cb104be5781ea8dfd6b0ea98bdc097263e2630",
+            "bytes": 1074,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "Particle_Blur.dds",
+          "textureSource": {
+            "archive": "data/data048.kom",
+            "ordinal": 371,
+            "name": "Particle_Blur.dds",
+            "rawPath": "raw/data/data048.kom/Particle_Blur.dds",
+            "sha256": "654b5256a042de9ff57701da3f8c41c4fde632e6364b8f70e808c1faeb275df6",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080080000000"
+          }
+        }
+      ],
+      "glb": "fx/meshes/Blur_Light_Mesh01.glb",
+      "poseData": "fx/meshes/Blur_Light_Mesh01.pose.json",
+      "animationClips": [],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false
+    },
+    "LightParticle_GS_Sacrifice_of_Hero01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 300.0,
+        "Lifetime": 0.75,
+        "NumParticles": 60.0,
+        "TriggerTime": 0.2,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -300.0,
+              300.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              150.0
+            ]
+          },
+          {
+            "random": [
+              -50.0,
+              50.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          100.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Explosion_Sphere.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.8,
+            0.8,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.6,
+          "end": 0.75,
+          "fade": true,
+          "value": [
+            0.8,
+            0.8,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            80.0,
+            80.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.3,
+          "end": 0.75,
+          "fade": true,
+          "value": [
+            20.0,
+            20.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "LightParticle_GS_Sacrifice_of_Hero01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 262365,
+        "line": 7853
+      },
+      "declarationSha256": "4941e6c43b0303727e2a41f1e3317d941a85b4c3f72dd13c4649d62252163448",
+      "textures": {
+        "Explosion_Sphere.dds": {
+          "file": "fx/textures/Explosion_Sphere-a7b20861c3.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 154,
+            "name": "Explosion_Sphere.dds",
+            "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+            "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "Impact_Arme_GS_Chance_to_Revers01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20.0,
+        "Lifetime": 0.2,
+        "NumParticles": 5.0,
+        "TriggerCount": 3.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Mesh": "Impact_Wave_Half01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            0.7,
+            0.7,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.2,
+            1.2,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Impact_Arme_GS_Chance_to_Revers01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 258876,
+        "line": 7743
+      },
+      "declarationSha256": "4676af3180dd796b0d8f3380166d9340dd43b438f111c4cb50649d2e93db8671",
+      "textures": {},
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "",
+          "resolution": "inline",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 980,
+            "name": "Impact_Wave_Half01.Y",
+            "rawPath": "raw/data/data002.kom/Impact_Wave_Half01.Y",
+            "sha256": "293109c4d97e18b4c73bb69bc25cb0f73f4c099c999267bfa0a41c2d0ce0cb1a",
+            "bytes": 589,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "texture": "Impact_Wave_Half01.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 981,
+            "name": "Impact_Wave_Half01.tga",
+            "rawPath": "raw/data/data002.kom/Impact_Wave_Half01.tga",
+            "sha256": "2e554c1bed23dabf9022344d34d5627dd418ef9bd9d29e965171b17f938b8d89",
+            "bytes": 262694,
+            "signatureHex": "00000200000000000000000000010001"
+          }
+        }
+      ],
+      "glb": "fx/meshes/Impact_Wave_Half01.glb",
+      "poseData": "fx/meshes/Impact_Wave_Half01.pose.json",
+      "animationClips": [],
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false
+    },
+    "Ground_ShockWave_GS_Chance_to_Revers01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.3,
+        "NumParticles": 10.0,
+        "TriggerCount": 3.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          0.0,
+          2.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "GroundShockWave.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            400.0,
+            400.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            800.0,
+            800.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Ground_ShockWave_GS_Chance_to_Revers01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 258207,
+        "line": 7722
+      },
+      "declarationSha256": "19f80e19287ce26ceb3dfd2036ca02c09b1e835e58a19ed47a7e8bf2a53be20b",
+      "textures": {
+        "GroundShockWave.dds": {
+          "file": "fx/textures/GroundShockWave-2c3c493997.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 173,
+            "name": "GroundShockWave.dds",
+            "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+            "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_ChanceToReverse": {
+      "raw": {
+        "NAME": "EffectSet_ChanceToReverse",
+        "EFFECT0": {
+          "NAME": "Smoke_UnoHound_AttackB01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT1": {
+          "NAME": "Ground_ShockWave_GS_Chance_to_Revers01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT2": {
+          "NAME": "Impact_Arme_GS_Chance_to_Revers01",
+          "EFFECT_TYPE": 8,
+          "APPLY_UNIT_ROTATION": 0
+        },
+        "EFFECT3": {
+          "NAME": "Lightning_GS_Chance_to_Reverse01",
+          "BONE_NAME": "Dummy1_Rhand",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1,
+          "TRACE_MORE": 1
+        },
+        "EFFECT4": {
+          "NAME": "Lightning_GS_Chance_to_Reverse01",
+          "BONE_NAME": "Dummy2_Lhand",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1,
+          "TRACE_MORE": 1
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0,
+          "TWO_DIR_GAP": 20,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 95886
+      }
+    },
+    "EffectSet_SacrificeOfHero": {
+      "raw": {
+        "NAME": "EffectSet_SacrificeOfHero",
+        "EFFECT0": {
+          "START_TIME": 0.1,
+          "NAME": "Light_GS_Sacrifice_of_Hero01",
+          "EFFECT_TYPE": 8,
+          "APPLY_UNIT_ROTATION": 0
+        },
+        "EFFECT1": {
+          "NAME": "UpLight_GS_Sacrifice_of_Hero01",
+          "EFFECT_TYPE": 8,
+          "APPLY_UNIT_ROTATION": 0
+        },
+        "EFFECT2": {
+          "START_TIME": 0.65,
+          "NAME": "Ring_GS_Sacrifice_of_Hero01",
+          "EFFECT_TYPE": 8
+        },
+        "EFFECT3": {
+          "START_TIME": 0.65,
+          "NAME": "LightParticle_GS_Sacrifice_of_Hero01",
+          "EFFECT_TYPE": 8
+        },
+        "CAMERA_SHAKE0": {
+          "START_TIME": 0.7,
+          "TWO_DIR_GAP": 10,
+          "TWO_DIR_TIME": 0.2,
+          "SHAKE_TYPE": 3
+        }
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 95922
+      }
+    }
+  },
+  "callbacks": {
+    "respawn": {
+      "initialTemplates": [
+        "RespawnLanding01",
+        "RespawnLanding02",
+        "RespawnLanding_P01",
+        "RespawnLanding_P02",
+        "RespawnLanding_P03"
+      ],
+      "forwardOffset": 10,
+      "ringTemplate": "RespawnLanding_P04",
+      "ringTimes": [
+        0.1,
+        0.26,
+        0.39,
+        0.52
+      ],
+      "ringHeights": [
+        50,
+        100,
+        150,
+        200
+      ],
+      "referenceLines": [
+        25413,
+        25488
+      ],
+      "state": [
+        "RSI_START_INTRUDE",
+        "ESSI_START_INTRUDE"
+      ]
+    },
+    "heroSacrifice": {
+      "event": "guildHeroSacrifice",
+      "effectSet": "EffectSet_SacrificeOfHero",
+      "referenceLines": [
+        30537,
+        30625
+      ]
+    },
+    "chanceToReverse": {
+      "buffTemplateId": 57,
+      "effectSet": "EffectSet_ChanceToReverse",
+      "source": "guild-catalog.json Template57 DISPLAYER"
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 74,
+      "name": "Enum.lua",
+      "rawPath": "raw/data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": 398092,
+      "signatureHex": "1b4b4c820283a61802000300d708b701"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 60,
+      "name": "EffectSet.lua",
+      "rawPath": "raw/data/data036.kom/EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "bytes": 4395607,
+      "signatureHex": "1b4b4c820266000109010300133a0100"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 91,
+      "name": "GameMajorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+      "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+      "bytes": 316223,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 102,
+      "name": "GameMajorParticle2.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle2.txt",
+      "sha256": "4556ecc2a7c2768f47e47c177a71ea33b8b8d45e0fc97ee5c198adcc606ec9c5",
+      "bytes": 298090,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 113,
+      "name": "GameMajorParticle3.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+      "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+      "bytes": 283881,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 124,
+      "name": "GameMajorParticle4.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+      "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+      "bytes": 342260,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 135,
+      "name": "GameMajorParticle5.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle5.txt",
+      "sha256": "c390af8d48d964d298fc299981a8d29d3c87a1e766b7bad5d383ab3603b06b41",
+      "bytes": 358466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 140,
+      "name": "GameMajorParticle6.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle6.txt",
+      "sha256": "8d75723131050ce1194d7503d132af75849ee6e3feea4dcb8f6f798c392028e7",
+      "bytes": 322342,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 141,
+      "name": "GameMajorParticle7.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle7.txt",
+      "sha256": "a875c52daa5c9812fd8cc5d655b7cef61d941c48414649a66400a3aec9503ac2",
+      "bytes": 327981,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 142,
+      "name": "GameMajorParticle8.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle8.txt",
+      "sha256": "75a8c9253a2dcb3a10dafb5e0c6713be59b3ca3f51d2b59b200fdb24c7bab081",
+      "bytes": 331668,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 143,
+      "name": "GameMajorParticle9.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle9.txt",
+      "sha256": "9d77c4ef0dbb53b79388eaab5cba4d8415f765edbc4a884fa663c0410f0fa3e7",
+      "bytes": 288144,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 92,
+      "name": "GameMajorParticle10.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+      "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+      "bytes": 313708,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 93,
+      "name": "GameMajorParticle11.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+      "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+      "bytes": 356374,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 94,
+      "name": "GameMajorParticle12.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle12.txt",
+      "sha256": "67fe5d27a86e699569045646ac3361a3b806b2f77ee8ea0863b0405553dbbd92",
+      "bytes": 319547,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 95,
+      "name": "GameMajorParticle13.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle13.txt",
+      "sha256": "889af066c76e37cd16e6c06565be8b7149ea5cbeba88fa330d804f6599ecf593",
+      "bytes": 363952,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 96,
+      "name": "GameMajorParticle14.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+      "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+      "bytes": 305895,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 97,
+      "name": "GameMajorParticle15.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle15.txt",
+      "sha256": "af56dcd9d5fe59e21eb46000d69cfcee86fcc23fb4e0e4382aa3842f8a070807",
+      "bytes": 332579,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 98,
+      "name": "GameMajorParticle16.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+      "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+      "bytes": 226239,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 99,
+      "name": "GameMajorParticle17.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+      "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+      "bytes": 306699,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 100,
+      "name": "GameMajorParticle18.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle18.txt",
+      "sha256": "8fcd53672b23df603314ea5d5d9a195d3313f30a0b3edc382e81e2aa0066fe51",
+      "bytes": 339337,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 101,
+      "name": "GameMajorParticle19.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle19.txt",
+      "sha256": "792dcc2b03803e01b79b7181e8184de531991c6bd162b92ffb60332daf920c3c",
+      "bytes": 197651,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 103,
+      "name": "GameMajorParticle20.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle20.txt",
+      "sha256": "7a574255221172355431399c94663779405c9b85c0686e4375aa708c5149cf98",
+      "bytes": 332331,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 104,
+      "name": "GameMajorParticle21.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+      "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+      "bytes": 298427,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 105,
+      "name": "GameMajorParticle22.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle22.txt",
+      "sha256": "ceb08a5c9dc945c58c412564b2304dddf1df195f0f7c44672b84359f7f252556",
+      "bytes": 299984,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 106,
+      "name": "GameMajorParticle23.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle23.txt",
+      "sha256": "f05604057e5d534d5067dea52c342111ae8a509753fc8be9729c0f7130cd92ca",
+      "bytes": 268645,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 107,
+      "name": "GameMajorParticle24.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+      "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+      "bytes": 282323,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 108,
+      "name": "GameMajorParticle25.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle25.txt",
+      "sha256": "1a6e0020da434a5b0288bf56f0f66abcf128171848648590c910879febbfa5d7",
+      "bytes": 178906,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 109,
+      "name": "GameMajorParticle26.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle26.txt",
+      "sha256": "94886684931010b82ce36172eee975c3799ec781b8de35ac627ec5d50f0fe4df",
+      "bytes": 75231,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 110,
+      "name": "GameMajorParticle27.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle27.txt",
+      "sha256": "2d533f02ba08d7db4cb0605cd516ecb1b68292ef206e10c9e580c68cd0aa958e",
+      "bytes": 217027,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 111,
+      "name": "GameMajorParticle28.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle28.txt",
+      "sha256": "41d3749c8528e8727f4fddbcde62f607e24fd494e81092254058bee54439eaf5",
+      "bytes": 319,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 112,
+      "name": "GameMajorParticle29.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+      "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+      "bytes": 282466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 114,
+      "name": "GameMajorParticle30.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle30.txt",
+      "sha256": "87c94a0776ed70461c861cd24b2be6990ba172ed5b858e2d86dcedc861349ad6",
+      "bytes": 331716,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 115,
+      "name": "GameMajorParticle31.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+      "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+      "bytes": 326380,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 116,
+      "name": "GameMajorParticle32.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+      "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+      "bytes": 298501,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 117,
+      "name": "GameMajorParticle33.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle33.txt",
+      "sha256": "c33c5989e06db46ebf8c8679e58cbb54e714fa51df7e40b9b455c5cd11dffc07",
+      "bytes": 312517,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 118,
+      "name": "GameMajorParticle34.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle34.txt",
+      "sha256": "ef79e3391e244ed14094f3eb11537262bf7fe237164a69f5e0262e1d8c7be223",
+      "bytes": 326411,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 119,
+      "name": "GameMajorParticle35.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle35.txt",
+      "sha256": "5b53ed3d1d704c2a8574f10e0411d9a155ca4a89357cf925c2a3ff82fd05269d",
+      "bytes": 73070,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 120,
+      "name": "GameMajorParticle36.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle36.txt",
+      "sha256": "2eaf3a554917c702198d37fe650cf6dc76dcf3a976670382b68e4e28e812ee4b",
+      "bytes": 342075,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 121,
+      "name": "GameMajorParticle37.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle37.txt",
+      "sha256": "2c32a84e7e7c0eef9c8eaba11f02dfe40fc2e6b2bc9c75475073d4dfe1d9dc9e",
+      "bytes": 333886,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 122,
+      "name": "GameMajorParticle38.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle38.txt",
+      "sha256": "37f8d87f0fcf22d887c872b37c72be90fb07a9cc3d25d69424748084aa86a140",
+      "bytes": 339874,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 123,
+      "name": "GameMajorParticle39.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle39.txt",
+      "sha256": "2439bd0974e1718fd2a78e856e777e60540673b81f6630924da2741f0c9021f2",
+      "bytes": 324167,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 125,
+      "name": "GameMajorParticle40.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle40.txt",
+      "sha256": "37137cd95fe1df46d87c1636876b1fdf373e1d02b3019f8071f6eb9bf26d7bbb",
+      "bytes": 335340,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 126,
+      "name": "GameMajorParticle41.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle41.txt",
+      "sha256": "1633dbf19adf27fe4630f152f7fd2e2bb6e405243d2cd97d5624ae83761941b9",
+      "bytes": 325864,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 127,
+      "name": "GameMajorParticle42.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle42.txt",
+      "sha256": "2714b610707c5b74a567b626531cc4ac910100f09e3c7828bf6ea7bf9c071c3e",
+      "bytes": 325169,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 128,
+      "name": "GameMajorParticle43.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle43.txt",
+      "sha256": "7b65a1364e56ecd2b5db643b509bcf56e7d8caca114de06d41d4da4ff0d22460",
+      "bytes": 261445,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 129,
+      "name": "GameMajorParticle44.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle44.txt",
+      "sha256": "ac8c3b0d2475db740b7ee34a1725b30d587fbe0a9788661c867b0dda578d1eb0",
+      "bytes": 343554,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 130,
+      "name": "GameMajorParticle45.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle45.txt",
+      "sha256": "bdbfbd69f50ba396fa5d12928aeb4f20601bbbe6f352a3b7d521fd79788b5c86",
+      "bytes": 301746,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 131,
+      "name": "GameMajorParticle46.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle46.txt",
+      "sha256": "2bd5e5e8cb047ab0b568597fd08236d87ecc4118680d017832ca1cdbf75b6cc5",
+      "bytes": 319974,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 132,
+      "name": "GameMajorParticle47.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle47.txt",
+      "sha256": "e295a41a1e2e954ea08a46f261070ec63b3f8542d31d0578f15d7ba0075e1c96",
+      "bytes": 87033,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 133,
+      "name": "GameMajorParticle48.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle48.txt",
+      "sha256": "b1ed4b12b8a2c959bfcb437c191c66dd8d21489d54d2e6eac45655e5f7dfe9a9",
+      "bytes": 318540,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 134,
+      "name": "GameMajorParticle49.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle49.txt",
+      "sha256": "5420b34984cafe7e5c15afb87a4e8cd0c108e5a1b9b923802552b3bc54ceef5b",
+      "bytes": 324985,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 136,
+      "name": "GameMajorParticle50.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle50.txt",
+      "sha256": "9f9101a78e8cb8565c0d26ed2e79515517e17ad295b36942865e2eac2683c907",
+      "bytes": 325770,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 137,
+      "name": "GameMajorParticle51.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle51.txt",
+      "sha256": "33f9dc4c674d51a8038de768452e28137e0be18c207dae3ce371d26537a06039",
+      "bytes": 67558,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 138,
+      "name": "GameMajorParticle52.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle52.txt",
+      "sha256": "bbf6445bc4819440a4749d75e080a534d601220cbc633f0d65e385d691c19f60",
+      "bytes": 339420,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 139,
+      "name": "GameMajorParticle53.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle53.txt",
+      "sha256": "20f88b02c8f7a70c39ea3a33c86606fb109f49e02926a280f97b5ce1452dfb32",
+      "bytes": 330309,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 146,
+      "name": "GameMinorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+      "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+      "bytes": 23778,
+      "signatureHex": "0d0a584d455348504c41594552202255"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 491,
+      "name": "Up_Light01_Mesh.Y",
+      "rawPath": "raw/data/data048.kom/Up_Light01_Mesh.Y",
+      "sha256": "ea116f4e62b6bc8f16911e033a44314048dc43fcbcbf429f819e191bbc6d8ed8",
+      "bytes": 582,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1126,
+      "name": "MagicSquareLight02_Red.tga",
+      "rawPath": "raw/data/data002.kom/MagicSquareLight02_Red.tga",
+      "sha256": "c21b9334b804bb010ad5dd78e2dd61ccba4d341fa23abda5fd3f48c3977aad90",
+      "bytes": 66086,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 554,
+      "name": "smoke.dds",
+      "rawPath": "raw/data/data048.kom/smoke.dds",
+      "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 153,
+      "name": "Explosion_Light_Ring01.tga",
+      "rawPath": "raw/data/data048.kom/Explosion_Light_Ring01.tga",
+      "sha256": "37e6ce22bd94ee24d37beb39a0ae77b05315f216c4613f536cf12f6180641e70",
+      "bytes": 196652,
+      "signatureHex": "00000200000000000000000000010001"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 13,
+      "name": "Arme_Ring2.dds",
+      "rawPath": "raw/data/data048.kom/Arme_Ring2.dds",
+      "sha256": "9fa65a5787fc8896f49dfe0fd0a18776958235805091fc3ec85dec39c2cb2102",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1714,
+      "name": "RespawnLanding03.Y",
+      "rawPath": "raw/data/data002.kom/RespawnLanding03.Y",
+      "sha256": "afddefdf40f14afd48e16d86506683320eb5614c1483e19bde43150cb2a3a6e2",
+      "bytes": 983,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1711,
+      "name": "Respawn01.tga",
+      "rawPath": "raw/data/data002.kom/Respawn01.tga",
+      "sha256": "26836d7321e7ca6fccf0bfa3a97759aad15b800bfbaa75cfc778c6470e195fcb",
+      "bytes": 65580,
+      "signatureHex": "00000200000000000000000080008000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 173,
+      "name": "GroundShockWave.dds",
+      "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+      "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 154,
+      "name": "Explosion_Sphere.dds",
+      "rawPath": "raw/data/data048.kom/Explosion_Sphere.dds",
+      "sha256": "a7b20861c31c6abdafbcf4c9f392ba2d9bd84ad8660efe29596e9bc6dba17366",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1713,
+      "name": "RespawnLanding02.X",
+      "rawPath": "raw/data/data002.kom/RespawnLanding02.X",
+      "sha256": "293baa39e6a530609148b711f1c78c311b2b61872735319da24fdb6d2b7c2a13",
+      "bytes": 2641,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 1712,
+      "name": "RespawnLanding01.X",
+      "rawPath": "raw/data/data002.kom/RespawnLanding01.X",
+      "sha256": "9d41ae16ce8bdcb728752a5b61bda90e3a007b959f635111e63d738d98d1f69d",
+      "bytes": 2593,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 298,
+      "name": "Lightning_Piercing01.dds",
+      "rawPath": "raw/data/data048.kom/Lightning_Piercing01.dds",
+      "sha256": "5598f22f778acae7d94379fdbece3cd523a759d05720d83f4e8d078ace4820c5",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 38,
+      "name": "Blur_Light_Mesh01.Y",
+      "rawPath": "raw/data/data048.kom/Blur_Light_Mesh01.Y",
+      "sha256": "bd22fcc9dd8f5d2d741f0dada1cb104be5781ea8dfd6b0ea98bdc097263e2630",
+      "bytes": 1074,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 371,
+      "name": "Particle_Blur.dds",
+      "rawPath": "raw/data/data048.kom/Particle_Blur.dds",
+      "sha256": "654b5256a042de9ff57701da3f8c41c4fde632e6364b8f70e808c1faeb275df6",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 980,
+      "name": "Impact_Wave_Half01.Y",
+      "rawPath": "raw/data/data002.kom/Impact_Wave_Half01.Y",
+      "sha256": "293109c4d97e18b4c73bb69bc25cb0f73f4c099c999267bfa0a41c2d0ce0cb1a",
+      "bytes": 589,
+      "signatureHex": "786f662030333033627a697030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 981,
+      "name": "Impact_Wave_Half01.tga",
+      "rawPath": "raw/data/data002.kom/Impact_Wave_Half01.tga",
+      "sha256": "2e554c1bed23dabf9022344d34d5627dd418ef9bd9d29e965171b17f938b8d89",
+      "bytes": 262694,
+      "signatureHex": "00000200000000000000000000010001"
+    }
+  ],
+  "reference": {
+    "kind": "fixed-V5 source reference",
+    "file": "X2Lib/X2GUUser.cpp",
+    "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38"
+  },
+  "meshFailures": [],
+  "missingTemplates": [],
+  "limits": [
+    "Fixed-V5 timing reference, target2016 original declarations, original DLL skin key measurements are distinct evidence.",
+    "No full original client or GPU trace; camera shake remains disabled under the existing web presentation policy.",
+    "Template57 display follows an existing active buff; the unresolved guild 509 Miss producer is not substituted."
+  ]
+}

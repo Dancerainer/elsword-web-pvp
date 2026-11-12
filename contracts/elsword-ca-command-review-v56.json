@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "originalClientExecuted": false,
+  "rawConfigurationChanged": false,
+  "sources": [
+    {
+      "scope": "frozen2016",
+      "root": "asset_sources/upstream",
+      "commit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+      "path": "docs/HISTORICAL_CANCEL_TERMINAL_2016.md",
+      "sha256": "119eb5855a5a009ccfc14a5630c82d1e74f9d403fe043590a4654d2694891dc3"
+    },
+    {
+      "scope": "frozen2016",
+      "root": "asset_sources/upstream",
+      "commit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+      "path": "reports/analysis/historical-cancel-terminal-2016/state-consumers.json",
+      "sha256": "243596c42d6dd700798d32213ba7940b9b090b918a872df1d9541cf7f9ae1765"
+    },
+    {
+      "scope": "frozen2016",
+      "root": "asset_sources/upstream",
+      "commit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+      "path": "reports/analysis/historical-cancel-terminal-2016/function-contracts.json.gz",
+      "sha256": "d219fca3565b42319bb6fa9bf30c4eb1029be74fcd4fe82e47da3bfb330b7943"
+    },
+    {
+      "scope": "mainREA",
+      "root": "asset_sources/analysis-project",
+      "commit": "8c6d6f4a533cae2fcec9d13ca0a71ff7f423dab4",
+      "path": "docs/HIT_LAUNCH_MEMORY_CONTRACT_2016.md",
+      "sha256": "328e061bde6753d508d50f8a5e77d9a2821019e519cb53bc7a333141cc0d0f70"
+    },
+    {
+      "scope": "mainREA",
+      "root": "asset_sources/analysis-project",
+      "commit": "8c6d6f4a533cae2fcec9d13ca0a71ff7f423dab4",
+      "path": "docs/HIT_LAUNCH_HEAP_RETURN_2016.md",
+      "sha256": "963f1ad31b205edaa1e0e9b26964a70fc3b513a17d2b048e0d29074e034b3bd7"
+    }
+  ],
+  "originalPostBodies": [
+    {
+      "entry": "0x3294c4f0",
+      "evidenceIds": [
+        "ev_aec26721714140d1930111f82c06ffdd03ce3ded316ff301d82a3084afc99611"
+      ],
+      "source": {
+        "bytes": 227,
+        "bytesHex": "53568bf1b20133db389657640000750f8896695d000066899e6a5d0000eb5b8a8e536400003aca75518b86ec6300008b80280900003bc3741a8378040b7514889e695d000088966a5d0000889e6b5d0000eb273aca75238b86ec6300008b80280900003bc3741383780465750d66899e695d000088966b5d00003896ec5d0000750e8b068b505c536a168bceffd2eb458b861865000038906801000075373896695d00007508536890000000eb1e38966a5d00007508536891000000eb0e38966b5d0000750f5368a00000008b168b425c8bceffd08b168b82240600008bce5e5bffe0",
+        "sha256": "c5e17362b80de88bba10dbf2bcbb40634574a285194dec367b260db66c1666b3",
+        "start": "0x3294c4f0"
+      },
+      "states": [
+        "ESSI_DASH_JUMP_COMBO_X1"
+      ]
+    },
+    {
+      "entry": "0x3294c690",
+      "evidenceIds": [
+        "ev_3f140cfde49ee6ff26237c19eebc40cb869e8a9061b9c91b543353993b072a6f"
+      ],
+      "source": {
+        "bytes": 39,
+        "bytesHex": "568bf180beec5d000001750e8b068b505c6a006892000000ffd28b068b90240600008bce5effe2",
+        "sha256": "e39eb28a4350dd5cdd2d1aaf9cfead2cf6d7155a79dc1c3c875fb127a2b943ea",
+        "start": "0x3294c690"
+      },
+      "states": [
+        "ESSI_DASH_JUMP_COMBO_X2"
+      ]
+    }
+  ],
+  "original66X": {
+    "sourceState": "ESSI_DASH_ATTACK_X",
+    "declarationSha256": "2cf61d0042333230ff3530701469a07f1ce030178242af1295fb343c2d24132b",
+    "raw": {
+      "ANIM_NAME": "DashAttackX",
+      "ATTACK_CANCEL_AFTER": 0.733,
+      "ATTACK_TIME0": {
+        "1": 0.26,
+        "2": 0.37,
+        "3": "STR_KuaAng"
+      },
+      "COMBO_GUIDE": {
+        "1": "R",
+        "2": "RX"
+      },
+      "CREATE_EFFECT_SET": {
+        "1": "EffectSet_SI_P_ELK_WIND_SLICER",
+        "2": 0.275,
+        "3": 0
+      },
+      "DAMAGE_DATA": {
+        "ATTACK_TYPE": 2,
+        "BACK_SPEED_X": 1060.0,
+        "BACK_SPEED_Y": 1950.0,
+        "CAMERA_CRASH_GAP": 10,
+        "CAMERA_CRASH_TIME": 0.2,
+        "CLEAR_SCREEN": 1,
+        "DAMAGE": {
+          "PHYSIC": 3.19
+        },
+        "DAMAGE_TYPE": 0,
+        "ENABLE_ATTACKBOX": {
+          "1": "Sword"
+        },
+        "FORCE_DOWN": -18.5,
+        "HIT_ADD_MP": 5,
+        "HIT_TYPE": 2,
+        "REACT_TYPE": 4,
+        "TECH_POINT": 734,
+        "WAY_OF_SWORD_TYPE": 4
+      },
+      "DASH_CANCEL_AFTER": 0.733,
+      "EVENT_PROCESS_TIME0": {
+        "1": 0.2,
+        "2": 0.7333,
+        "3": 0.666
+      },
+      "EVENT_PROCESS_TIME1": {
+        "1": 0,
+        "2": 0.7333,
+        "3": 0.666
+      },
+      "IS_ATTACK_STATE": 1,
+      "LAND_CONNECT": 0,
+      "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+      "PHANTOM_BLADE_BACK_SPEED_X": 888,
+      "PHANTOM_BLADE_BACK_SPEED_Y": 1560,
+      "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+      "PLAY_TYPE": 2,
+      "SKILL_CANCEL_AFTER": 0.733,
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      },
+      "SOUND_PLAY0": {
+        "1": 0.26,
+        "2": "Slash.ogg"
+      },
+      "SOUND_PLAY1": {
+        "1": 0.24,
+        "2": "ElswordVoice_Shout05.ogg"
+      },
+      "TRANSITION": 0,
+      "WALK_CANCEL_AFTER": 0.733
+    },
+    "runtimeInputs": {
+      "reactType": 4,
+      "backSpeedY": 1950,
+      "gravity": 4000,
+      "frameSeconds": "1/60"
+    },
+    "webProbe": {
+      "acceptedHits": 1,
+      "launchVy": 1950,
+      "heightAboveStart": 459.1666666666665,
+      "qualification": "Current Web semi-implicit60Hz result, not an original-client measured apex."
+    }
+  },
+  "lk668XXX": {
+    "original143FreshXSuccessor": 144,
+    "original144GroundSuccessor": 146,
+    "legacyKnightDeclaredStates": [
+      "ESSI_KNIGHT_DASH_JUMP_COMBO_X2",
+      "ESSI_KNIGHT_DASH_JUMP_COMBO_X3"
+    ],
+    "decision": "Keep original target2016 selected post. The legacy named declaration alone cannot override the registered143→144→146 path."
+  },
+  "caFinisher": {
+    "sourceContract": "contracts/elesis-core-source-v1.json",
+    "sourceContractSha256": "7d08aaeaed35bda66faa22f12e987e0ce1c2823b8d1c74ee496ed82bba1030b7",
+    "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_END",
+    "reactType": 5,
+    "backSpeedX": 500,
+    "backSpeedYDeclared": false,
+    "missingBackSpeedYRuntimeDefault": 0,
+    "maximumExistingLoops": 4,
+    "fix": "Complete the existing Web renewal binding after its existing fourth loop by entering the existing END. Do not alter raw fields, intervals, loop cap, or damage.",
+    "evidenceBoundary": "Original2016 declaration and current adapter reachability defect. Renewal local-post producer is not closed in the reviewed original evidence; the added edge is a qualified current adapter correction, not original machine-code parity."
+  },
+  "sheath": {
+    "source": "apps/web/remote-combat-playback.mjs:createBirth",
+    "failure": "A validated IS-only non-damaging ElswordSheath02 birth lost both required full anchors in generic collider reset; a subsequent owner encoder raised invalid-owner-is-sheath beside the local LK.",
+    "fix": "Use the actually playing local left-hand matrix while following; otherwise retain the validated pure-visual frozen matrix. Preserve required anchors. Keep validation and remote damage authority unchanged.",
+    "explicitGeometryInputs": true
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "reference-V5-not2016",
+  "targetClientMeasured": false,
+  "originalMethodsUnchanged": true,
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+      "relativePath": "X2Lib/X2SkillTree.h",
+      "sha256": "32d6a263a09347c3390a237f1aafab0b2551400fd85f477059cbe9affc802cc0",
+      "gitBlob": "dfecbb721acf6246956a95cf1649099f53b5cd20",
+      "bytes": 158129
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+      "relativePath": "KTDXLIB/KTDXCommonFunc.h",
+      "sha256": "b659140c28707eae0b3c1156e73cb4cd72f4c4eb940263375bfce99da799b084",
+      "gitBlob": "7fe528e45eab9ecd058ed7266d5b8b5d967008b2",
+      "bytes": 40229
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+      "bytes": 138729
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.h",
+      "relativePath": "KTDXLIB/KTDXTimer.h",
+      "bytes": 2102,
+      "sha256": "fca9e4ee3e9636ec2dd160ac87725084687dc98ef3769305ceb6f51cce83e5ec",
+      "gitBlob": "b69dd00b90850d435c4768ed5e3647905dd2f9c8"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.cpp",
+      "relativePath": "KTDXLIB/KTDXTimer.cpp",
+      "bytes": 390,
+      "sha256": "8b276e7fb3c3ea45ee4fcf14257f2632f9e1067357f8d2317501d2ce5677c8a3",
+      "gitBlob": "62bfc47a1e7f3e0271eadf3e587c0f51bbdd6e46"
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.h",
+      "relativePath": "X2Lib/X2BuffBehaviorTemplet.h",
+      "sha256": "f3f12c506c776da714e08a1975e55fd523df7b87ed179f66d7ae3e921bba41ba",
+      "gitBlob": "e2b6938161f279d9d3c8ac45c8b4d1dfac4cf78b",
+      "bytes": 43985
+    }
+  ],
+  "extractions": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+      "signature": "float GetSkillAbilityValue( CX2SkillTree::SKILL_ABILITY_TYPE eType, int iLevel ) const",
+      "group": "members",
+      "sha256": "22945f0dff9d4f7e497a0c6b55c098abbcb00ec8ca40d3abae13886ada1487d8",
+      "bytes": 578,
+      "lines": [
+        2366,
+        2383
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SkillTree.h",
+      "signature": "const float GetSkillPowerRateValue( int iLevel ) const",
+      "group": "members",
+      "sha256": "d69ad47f19be7c5c186eae17b67b077cf7179053611556f3c1211b562c47a0ba",
+      "bytes": 230,
+      "lines": [
+        2299,
+        2306
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXCommonFunc.h",
+      "signature": "inline float CalculateIncreasingRate( float fRate )",
+      "group": "rate",
+      "sha256": "502456dd7e84010df21b9b04fe9149dc16c43a6292a46e9d54026671ffd0cb16",
+      "bytes": 163,
+      "lines": [
+        1452,
+        1457
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetFixValuePerSecond(",
+      "group": "buff",
+      "sha256": "853ddd149bacba8e5ce0743358e68decaa701e26cad4da295150c10f879c683a",
+      "bytes": 246,
+      "lines": [
+        428,
+        432
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetValuePerSecond(",
+      "group": "buff",
+      "sha256": "d44a5694e5baf322f9fac20170f453d55745b641b0b58af0140b1e0f85de1fef",
+      "bytes": 307,
+      "lines": [
+        439,
+        443
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "signature": "float CX2BuffChangeNowHpPerSecondBehaviorTemplet::GetPercentPerSecondByPercent(",
+      "group": "buff",
+      "sha256": "97114aa31dcae71606e864447fa780a74e4ee7d189a42bf3c2d173cad4de88e4",
+      "bytes": 241,
+      "lines": [
+        450,
+        454
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.h",
+      "signature": "class CKTDXCheckElapsedTime",
+      "group": "timer",
+      "sha256": "610f81bab947d66138c0a4b3b21c0767b6c62452d9f3e33c1a0f6ce960e6908b",
+      "bytes": 1253,
+      "lines": [
+        27,
+        72
+      ],
+      "classTerminator": true
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXTimer.cpp",
+      "signature": "void    CKTDXCheckElapsedTime::OnFrameMove( float fElapsedTime )",
+      "group": "timer",
+      "sha256": "687e7ceeab06055bbfb95aa76fd2cfd3f39fa6cc8b2245d5dcf514942b87cb48",
+      "bytes": 106,
+      "lines": [
+        10,
+        13
+      ]
+    }
+  ],
+  "abiExports": [
+    "sv_input_ptr",
+    "sv_input_capacity",
+    "sv_ability",
+    "sv_power",
+    "sv_increasing",
+    "sv_buff_fixed",
+    "sv_buff_relation",
+    "sv_buff_percent",
+    "sv_buff_interval",
+    "sv_buff_interval_sum"
+  ],
+  "compatibilityDeclarations": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffBehaviorTemplet.h",
+      "lines": [
+        88,
+        100
+      ],
+      "meaning": "Original FACTOR_ORDER offsets mirrored in minimal primitive compatibility class; no parser or actor engine inferred"
+    }
+  ]
+}

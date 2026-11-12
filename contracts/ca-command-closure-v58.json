@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "ca-command-closure-v58",
+  "originalClientExecuted": false,
+  "sources": {
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "effectSets": {
+    "EffectSet_C_SCA_Dash_ZZZ_Finish": {
+      "raw": {
+        "NAME": "EffectSet_C_SCA_Dash_ZZZ_Finish",
+        "EFFECT0": {
+          "NAME": "DamageEffect_SCA_Combo_ZZZ_Projectile01_Finish",
+          "SCALE_X": 1.33,
+          "SCALE_Z": 1.33,
+          "SCALE_Y": 1.33,
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 24545
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_SCA_Combo_ZZZ_Projectile01_Finish": {
+      "raw": {
+        "DAMAGE_TIME": 20,
+        "MAIN_EFFECT_NAME": "SCA_Combo_ZZZ_Projectile_Finish_AttackBoX",
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 700,
+          "FORCE_DOWN": 3.5,
+          "BACK_SPEED_X": 1500,
+          "HIT_GAP": 0.1,
+          "CAMERA_CRASH_GAP": 10,
+          "TECH_POINT": 52,
+          "CAMERA_CRASH_TIME": 0.3,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 3.24,
+          "WAY_OF_SWORD_TYPE": 4,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.87
+          },
+          "ARRANGED_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        },
+        "TIME_PARTICLE0": {
+          "SCALE_Z": 1,
+          "SCALE_Y": 2,
+          "EVENT_TIME": 0.01,
+          "SCALE_X": 1,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_ADP01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "APPLY_ROTATED_OFFSET": 1,
+          "TRACE": 1
+        },
+        "TIME_PARTICLE1": {
+          "SCALE_Z": 1,
+          "SCALE_Y": 3,
+          "EVENT_TIME": 0.01,
+          "SCALE_X": 1,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_ADP01_D",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        },
+        "TIME_PARTICLE2": {
+          "EVENT_TIME": 0.01,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_ADP03_3",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 140707
+      }
+    }
+  },
+  "effectTemplates": {
+    "SCA_Combo_ZZZ_Projectile_Finish_AttackBoX": {
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.33,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            2250.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SCA_Combo_ZZZ_Projectile_Finish_AttackBoX",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2588396,
+        "line": 80823
+      },
+      "declarationSha256": "df6d75f9b9ccaf76a51885bc7b13c28ee14428ad57565b6661a95a6a2f7dca29",
+      "glb": null,
+      "poseData": "fx/meshes/BREAKING_FIST_Attack_Box.pose.json",
+      "textures": {},
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "convertedArtifactReuse": {
+        "template": "SCA_Combo_ZZZ_Projectile_AttackBoX",
+        "meshName": "BREAKING_FIST_Attack_Box.x",
+        "reason": "Identical original invisible X_SKIN_MESH helper; same existing conversion/pose, independent original template events and lifetime"
+      },
+      "initialSize": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "initialVelocity": [
+        2250.0,
+        0.0,
+        0.0
+      ],
+      "initialDirSpeed": null,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_ONE_WAIT"
+      },
+      "missingExplicitTickRate": false
+    }
+  }
+}

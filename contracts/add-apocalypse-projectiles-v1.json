@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "targetClientMeasured": false,
+  "evidence": "target2016 declarations; fixed-source selection and unchanged VectorLockOn ABI; qualified Web scheduling/rotation adapter",
+  "targetDamageSource": {
+    "name": "DamageEffect.lua",
+    "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+  },
+  "fixedReference": [
+    {
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "lines": "2780 (unlock), 3092..3298 (LOT6), 6712..6790 (VectorLockOn)",
+      "role": "qualified non-target reference"
+    },
+    {
+      "file": "X2Lib/X2Game.cpp",
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "lines": "11993..12102",
+      "role": "nearest live enemy, strict range bounds and first tie"
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "lines": "1276,1796..1832",
+      "role": "creation angle retained until manual steering; move with preceding callback direction"
+    }
+  ],
+  "projectiles": {
+    "DamageEffect_AMM_APOCALYPSE_Attack_A_Projectile_PVP": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "ADD_APOCALYPSE_Attack_A_Dummy01",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 20,
+          "TIME_UNLOCK_FROM_START": 0.5,
+          "LOCK_ON_TYPE": 6,
+          "DUNGEON_TARGET_RANGE_MIN_MAX": {
+            "1": 0,
+            "2": 99999
+          },
+          "PVP_TARGET_RANGE_MIN_MAX": {
+            "1": 0,
+            "2": 9999
+          }
+        },
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "BACK_SPEED_X": 800,
+          "CAMERA_CRASH_TIME": 0.2,
+          "USED_SKILL_ID": 29601,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 7,
+          "DAMAGE": {
+            "MAGIC": 1
+          },
+          "NO_DAMAGE": 1,
+          "ARRANGED_FLY": 1,
+          "CAN_REVENGE": 0,
+          "APPLIED_SKILL_ID": 29601
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "ADD_psionic_generate_MESH_01",
+          "SCALE_X": 1,
+          "SCALE_Z": 1,
+          "SCALE_Y": 1,
+          "PARTICLE_NAME": "ADD_Drone_Activator_Loop_02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "ADD_psionic_generate_MESH_01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "ADD_Rushing_Drone_Loop_01",
+          "POSITION_TYPE": 0
+        },
+        "HIT_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_AMM_APOCALYPSE_Attack_A_Projectile_Explosion_PVP",
+          "POSITION_TYPE": 2,
+          "APPLY_ROTATE": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_AMM_APOCALYPSE_Attack_A_Projectile_Explosion_PVP",
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 159118
+      },
+      "template": {
+        "name": "ADD_APOCALYPSE_Attack_A_Dummy01",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 2303795,
+          "line": 71862
+        },
+        "declarationSha256": "24500603518fad11c1fe1bb96afa22c68822fc7c38f32aa61cb9e8dfb042757c",
+        "fields": {
+          "MeshName": "ADD_psionic_generate_MESH_01.X",
+          "SLASH_TRACE_TEXTURE": "ADD_EXTINCTION_Trace02.dds",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Layer": 14,
+          "LifeTime": 4,
+          "DrawCount": 2,
+          "SLASH_TRACE_TYPE": 1,
+          "ZEnable": true,
+          "ZWriteEnable": true,
+          "UseSlashTrace": true
+        },
+        "events": [
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_LOOP"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1.2,
+              0.5,
+              1.2
+            ]
+          },
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "property": "Color",
+            "start": 0.01,
+            "end": 0.1,
+            "fade": true,
+            "value": [
+              1,
+              0,
+              0.1,
+              1
+            ]
+          },
+          {
+            "property": "DirSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 3000
+          },
+          {
+            "property": "SlashTrace",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": true
+          }
+        ],
+        "initialVelocity": null,
+        "initialDirSpeed": 3000
+      }
+    },
+    "DamageEffect_AMM_APOCALYPSE_Attack_B_Projectile_PVP": {
+      "raw": {
+        "DAMAGE_TIME": 1,
+        "MAIN_EFFECT_NAME": "Mesh_AMM_HA_Attack_B",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "LOCK_ON_DATA": {
+          "CURVE_SPEED": 99,
+          "LOCK_ON_TYPE": 6,
+          "DUNGEON_TARGET_RANGE_MIN_MAX": {
+            "1": 0,
+            "2": 99999
+          },
+          "PVP_TARGET_RANGE_MIN_MAX": {
+            "1": 0,
+            "2": 9999
+          }
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_AMM_APOCALYPSE_Attack_B_Explosion_FX_PVP",
+          "POSITION_TYPE": 3
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_AMM_APOCALYPSE_Attack_B_Explosion_Impact_PVP",
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 160492
+      },
+      "template": {
+        "name": "Mesh_AMM_HA_Attack_B",
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 144,
+          "name": "GameMajorXMeshPlayer.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+          "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+          "bytes": 3452494,
+          "signatureHex": "584d455348504c41594552202247616d",
+          "byteOffset": 1319752,
+          "line": 41442
+        },
+        "declarationSha256": "04eadd8f4d02ddabeee4a1308318af379b803aed65102b1dfb4bd9ae4ba4f016",
+        "fields": {
+          "MeshName": "DummyAttackBox_50x50x50.X",
+          "LifeType": "LT_TIME",
+          "MeshType": "X_SKIN_MESH",
+          "BillBoardType": "BT_NONE",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+          "Layer": 14,
+          "LifeTime": 0.75,
+          "DrawCount": 0
+        },
+        "events": [
+          {
+            "property": "Color",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "property": "AniName",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": {
+              "animation": "Normal",
+              "playback": "XAP_LOOP"
+            }
+          },
+          {
+            "property": "Size",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": [
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "property": "DirSpeed",
+            "start": 0,
+            "end": 0,
+            "fade": false,
+            "value": 1500
+          }
+        ],
+        "initialVelocity": null,
+        "initialDirSpeed": 1500
+      }
+    }
+  },
+  "qualifications": [
+    "Target NPC Lua has original local-rotation edits. Shared EffectSet sampling currently combines global/declared/aim angles into birthAnchor.rotation; full native global-versus-local rotation splitting is not verified.",
+    "Web unit order is actors then available Apocalypse NPC proxies. It is deterministic but native m_UnitList creation order is unmeasured.",
+    "After-hit retarget maps native m_DamageTimeNow to the existing accepted effect hitCount; target projectile DAMAGE_TIME is 1.",
+    "Target lock points require actual original collision helpers. No generic target-height fallback is introduced.",
+    "Original renderer mesh phase and damage-effect callback are ordered in the host fixed step; target executable scheduling has not been measured."
+  ]
+}

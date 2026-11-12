@@ -1,0 +1,3750 @@
+{
+  "schemaVersion": 1,
+  "id": "costumes-2016-v1",
+  "clientMeasured": false,
+  "sourceBuild": "NA2016 V6.0420.5",
+  "sets": {
+    "officer": {
+      "name": "El Search Party Officer",
+      "elsword": {
+        "body": [
+          130555,
+          130556,
+          130557,
+          130558,
+          130717
+        ],
+        "weapon": 130550,
+        "accessories": [
+          130646,
+          89185
+        ]
+      },
+      "raven": {
+        "body": [
+          130570,
+          130571,
+          130572,
+          130573,
+          130720
+        ],
+        "weapon": 130553,
+        "accessories": [
+          130649,
+          89188
+        ]
+      }
+    },
+    "nasod": {
+      "name": "Nasod Battle Suit",
+      "elsword": {
+        "body": [
+          130938,
+          130939,
+          130940,
+          130941,
+          130942
+        ],
+        "weapon": 130892,
+        "accessories": [
+          131010
+        ]
+      },
+      "raven": {
+        "body": [
+          130953,
+          130954,
+          130955,
+          130956,
+          130957
+        ],
+        "weapon": 130895,
+        "accessories": [
+          131013
+        ]
+      }
+    },
+    "royal": {
+      "name": "Royal Servant",
+      "elsword": {
+        "body": [
+          132547,
+          132548,
+          132549,
+          132550,
+          132551
+        ],
+        "weapon": 132546,
+        "accessories": [
+          132763,
+          82154
+        ]
+      },
+      "raven": {
+        "body": [
+          132565,
+          132566,
+          132567,
+          132568,
+          132569
+        ],
+        "weapon": 132564,
+        "accessories": [
+          132766,
+          82157
+        ]
+      }
+    },
+    "solace": {
+      "name": "Salvatore Solace",
+      "elsword": {
+        "body": [
+          131773,
+          131774,
+          131775,
+          131776,
+          131777
+        ],
+        "weapon": 131646,
+        "accessories": [
+          131835,
+          88402
+        ]
+      },
+      "raven": {
+        "body": [
+          131788,
+          131789,
+          131790,
+          131791,
+          131792
+        ],
+        "weapon": 131649,
+        "accessories": [
+          131841,
+          88405
+        ]
+      }
+    }
+  },
+  "characters": {
+    "elsword": {
+      "unitType": 1,
+      "motion": "Motion_Elsword.x"
+    },
+    "raven": {
+      "unitType": 4,
+      "motion": "Motion_Raven.x"
+    }
+  },
+  "professions": {
+    "LK": {
+      "unitType": "UNIT_TYPE.UT_ELSWORD",
+      "instruction": 269,
+      "faceItem": {
+        "itemId": 44,
+        "name": "Elsword's Lord Knight Face.",
+        "unitType": 1,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Elsword_ELK_Basic_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Elsword_ELK_Basic_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 388156,
+        "recordSha256": "f7ac877a058976cca97d0b2c990095e1d728c303f9cd4814a8d155767bb1f41a"
+      },
+      "leftArmItem": null
+    },
+    "RF": {
+      "unitType": "UNIT_TYPE.UT_RAVEN",
+      "instruction": 374,
+      "faceItem": {
+        "itemId": 29,
+        "name": "Raven's basic face.",
+        "unitType": 4,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_Cash_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Raven_Cash_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 385036,
+        "recordSha256": "7625b02b2508e029ebcbe1893c9f4ad5e337667caf28e84971d0fb92f6a31cee"
+      },
+      "leftArmItem": {
+        "itemId": 131599,
+        "name": "Reckless Fist's Left Arm",
+        "unitType": 4,
+        "slot": 36,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_RRF_Cash_Left_Hand_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 3375868,
+        "recordSha256": "a7d146fbd08552cb38fc544527ff301245436c4dd5c5df0d48375df3784a7b31"
+      }
+    },
+    "VC": {
+      "unitType": "UNIT_TYPE.UT_RAVEN",
+      "instruction": 599,
+      "faceItem": {
+        "itemId": 29,
+        "name": "Raven's basic face.",
+        "unitType": 4,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_Cash_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Raven_Cash_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 385036,
+        "recordSha256": "7625b02b2508e029ebcbe1893c9f4ad5e337667caf28e84971d0fb92f6a31cee"
+      },
+      "leftArmItem": {
+        "itemId": 41330,
+        "name": "Veteran Commander Left Arm",
+        "unitType": 4,
+        "slot": 36,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_RVC_Cash_Left_Hand_Sorted.X",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 806860,
+        "recordSha256": "f736378a8195a231b4a515ba9696f106e828cd9a71186d5bcd0a84b62430389d"
+      }
+    },
+    "BM": {
+      "unitType": "UNIT_TYPE.UT_RAVEN",
+      "instruction": 359,
+      "faceItem": {
+        "itemId": 29,
+        "name": "Raven's basic face.",
+        "unitType": 4,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_Cash_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Raven_Cash_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 385036,
+        "recordSha256": "7625b02b2508e029ebcbe1893c9f4ad5e337667caf28e84971d0fb92f6a31cee"
+      },
+      "leftArmItem": {
+        "itemId": 131598,
+        "name": "Blade Master's Left Arm",
+        "unitType": 4,
+        "slot": 36,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Raven_RBM_Cash_Left_Hand_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 3375660,
+        "recordSha256": "68716fd17feb116e992b873b7eda6283bb5c3206ee5516fb08c0a0b5425d3df6"
+      }
+    },
+    "RS": {
+      "unitType": "UNIT_TYPE.UT_ELSWORD",
+      "instruction": 284,
+      "faceItem": {
+        "itemId": 45,
+        "name": "Elsword's Rune Slayer Face.",
+        "unitType": 1,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Elsword_ERS_Basic_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Elsword_ERS_Basic_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 388364,
+        "recordSha256": "f47c697611bf5a0ce68e4aa3a0861c5fee75b91ba991c1834c7fefb31325da2d"
+      },
+      "leftArmItem": null
+    },
+    "IS": {
+      "unitType": "UNIT_TYPE.UT_ELSWORD",
+      "instruction": 554,
+      "faceItem": {
+        "itemId": 69,
+        "name": "Elsword Infinity Sword Face",
+        "unitType": 1,
+        "slot": 7,
+        "useType": 1,
+        "canHyperMode": false,
+        "attachFrames": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "models": [
+          "Mesh_Elsword_EIS_Basic_Face_Sorted.x",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "textureChange": "",
+        "animationXet": "Mesh_Elsword_EIS_Basic_Face_Sorted.XET",
+        "animationName": "",
+        "attachedParticles": [],
+        "attachedMeshes": [],
+        "cosmeticSlashTraceRaw": [],
+        "recordOffset": 393356,
+        "recordSha256": "0de9017b7d83a19dcb73875c66f953bed1b669a46a22ca19b2d0619c3f51800d"
+      },
+      "leftArmItem": null
+    }
+  },
+  "items": {
+    "130555": {
+      "itemId": 130555,
+      "name": "El Search Party Officer's Top Piece (Elsword)",
+      "unitType": 1,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_UPBody03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3161836,
+      "recordSha256": "ffecd4d1c48946699a2f6ef1c8213672ca5b75c9baec0f3351e103b3ed7e1160",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4103,
+            "name": "Mesh_Elsword_Event_Upbody03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Upbody03_Sorted.X",
+            "sha256": "edcbbb931a1c19da28b2ca9e1f33ebdd5287d1b9c45611833632b58b4d34efb0",
+            "bytes": 51522,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130556": {
+      "itemId": 130556,
+      "name": "El Search Party Officer's Bottom Piece  (Elsword)",
+      "unitType": 1,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_LowBody03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3162044,
+      "recordSha256": "81dd349e04a0711ff18cbbbddb07fd1d650d4be8bf4461b0863ccbd9eade303b",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4027,
+            "name": "Mesh_Elsword_Event_Lowbody03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Lowbody03_Sorted.X",
+            "sha256": "c929a16768ebfc63eb6fd2e416a9b5f0db43da20a6b272aa1e301f71de81e4be",
+            "bytes": 20891,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130557": {
+      "itemId": 130557,
+      "name": "El Search Party Officer's Gloves (Elsword)",
+      "unitType": 1,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hand03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3162252,
+      "recordSha256": "66cd4823ff3f95d5909313a51729568a7ac43bce74494dcc5041e3bfa3ce8ee1",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3951,
+            "name": "Mesh_Elsword_Event_Hand03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hand03_Sorted.X",
+            "sha256": "575ae25b6eada7149fad111e0a46f7b09ecf38deccdae7c8655e81e688250fba",
+            "bytes": 15863,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130558": {
+      "itemId": 130558,
+      "name": "El Search Party Officer's Shoes (Elsword)",
+      "unitType": 1,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Foot03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3162460,
+      "recordSha256": "f4e50602624fb6ae86c4296bc98a788f7e268be02e9bbdd7f8e7089a89b71a59",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3787,
+            "name": "Mesh_Elsword_Event_Foot03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Foot03_Sorted.X",
+            "sha256": "ae52ee69c586b9795fff59153fa9670b70a32fa17565ed990c92dc8ff0ecf746",
+            "bytes": 18013,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130717": {
+      "itemId": 130717,
+      "name": "El Search Party Officer's Hat (Elsword)",
+      "unitType": 1,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hair03_A_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3195532,
+      "recordSha256": "9d15c310607d6c57d39a009ed93a3b62acbee9cc3fd44ddccb52f0bdd4cd41ec",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3863,
+            "name": "Mesh_Elsword_Event_Hair03_A_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hair03_A_Sorted.X",
+            "sha256": "e88c75f85f5ee198b8dc71742db8443740875e8d89c6e0b2727b7aaab6d037ce",
+            "bytes": 13946,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130550": {
+      "itemId": 130550,
+      "name": "El Search Party Officer's Sword (Elsword)",
+      "unitType": 1,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Weapon03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3160796,
+      "recordSha256": "77770ee5fc578a8df9e3ea6ca5abc117363a21935fcb3e4b4aa4275d85b6c47c",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4195,
+            "name": "Mesh_Elsword_Event_Weapon03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon03_Sorted.X",
+            "sha256": "6d6e2929a47b20e66518f35b1b7efbd32376687fa4ea1a439da0eb6e615cb451",
+            "bytes": 6449,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130646": {
+      "itemId": 130646,
+      "name": "El Search Party Officer's Cape (Elsword)",
+      "unitType": 1,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_Upbody_130646_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3180764,
+      "recordSha256": "62373420c8dcf18ba5735e6fd2c26c709c6bdeaa87257f32fa8981fe42f3e4c5",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 1087,
+            "name": "Mesh_Elsword_AC_Upbody_130646_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_Upbody_130646_Sorted.X",
+            "sha256": "17ea524334ce711b881573e7ce284496cae4079d43a76672a650323733bf76f3",
+            "bytes": 8715,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data017.kom",
+            "ordinal": 323,
+            "name": "Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.X",
+            "sha256": "17ea524334ce711b881573e7ce284496cae4079d43a76672a650323733bf76f3",
+            "bytes": 8715,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "89185": {
+      "itemId": 89185,
+      "name": "El Search Party Officer's Ceremonial Armband (Elsword)",
+      "unitType": 1,
+      "slot": 22,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_R_UpperArm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_Arm_Event03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Elsword_AC_Arm_Event03_Sorted_S.X",
+          "bone": "Dummy01",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data017.kom",
+            "ordinal": 979,
+            "name": "Mesh_Elsword_AC_Arm_Event03_Sorted_S.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_Arm_Event03_Sorted_S.X",
+            "sha256": "01a3aa8cc5bbed11ec5ebea8b440dbb132f459b077834af5931b9e4ec4b0e245",
+            "bytes": 1293,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 2040300,
+      "recordSha256": "be2610df71fb79621f38ffb871d80bd23c9316ba3038d495306c343852e23c2d",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 978,
+            "name": "Mesh_Elsword_AC_Arm_Event03_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_Arm_Event03_Sorted.X",
+            "sha256": "2dbde95c8ac564380e818ab213d27ec53a520014c64e4f89ac3fe38297203ea2",
+            "bytes": 5191,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130570": {
+      "itemId": 130570,
+      "name": "El Search Party Officer's Top Piece (Raven)",
+      "unitType": 4,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_UPBody03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3164956,
+      "recordSha256": "a46508e603c6c0f2b991791dcc111d315ec7bf4052b72f68e4378ce58e1baf6e",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3591,
+            "name": "Mesh_Raven_Event_Upbody03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Upbody03_Sorted.X",
+            "sha256": "adff9f85899f88c1539ab93a5187fda6b5f0ba42a7c25b7ffc24d99a5a703342",
+            "bytes": 49661,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130571": {
+      "itemId": 130571,
+      "name": "El Search Party Officer's Bottom Piece (Raven)",
+      "unitType": 4,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_LowBody03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3165164,
+      "recordSha256": "c7195b2110a48f4bbff48a0cd3285c03509c3e27efdbce98a74ad5f7fa9318e7",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3448,
+            "name": "Mesh_Raven_Event_Lowbody03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Lowbody03_Sorted.X",
+            "sha256": "70ce26948175a526873b5f01ac14b750a14f52e2f094fe205ea4ff39c70dd464",
+            "bytes": 21418,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130572": {
+      "itemId": 130572,
+      "name": "El Search Party Officer's Gloves (Raven)",
+      "unitType": 4,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Right_Hand03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3165372,
+      "recordSha256": "06cc5af4e83d2bd0cf7bb1d0218c8235a3de29dbf1317ceb9f5e079e7cf25b6d",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3518,
+            "name": "Mesh_Raven_Event_Right_Hand03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Right_Hand03_Sorted.X",
+            "sha256": "12c5d127f591695d3b180b3f0e529cbbf284b65af567f5f17451e76a63fec5bb",
+            "bytes": 10827,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130573": {
+      "itemId": 130573,
+      "name": "El Search Party Officer's Shoes (Raven)",
+      "unitType": 4,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Foot03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3165580,
+      "recordSha256": "ad48aea7d09acc4aa06a2cbb05087487624d0b2e1b3b6c3a24ef1197ab2b92c1",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3269,
+            "name": "Mesh_Raven_Event_Foot03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Foot03_Sorted.X",
+            "sha256": "f25e26c082db1b6d9645580f8dd1f4f99b5af9bd216ef938c9255ea6db971ef0",
+            "bytes": 17053,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130720": {
+      "itemId": 130720,
+      "name": "El Search Party Officer's Hat (Raven)",
+      "unitType": 4,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Hair03_A_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3196156,
+      "recordSha256": "2380a265f5064c4a2d874e6042b7f19427637e1aae7309b3f87403066f9262ac",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3341,
+            "name": "Mesh_Raven_Event_Hair03_A_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Hair03_A_Sorted.X",
+            "sha256": "301dabd684d42824ba22c674fd95009597c2cb00fa04ae851d4a8c95a9cbc2d4",
+            "bytes": 16015,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130553": {
+      "itemId": 130553,
+      "name": "El Search Party Officer's Blade (Raven)",
+      "unitType": 4,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Weapon03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3161420,
+      "recordSha256": "c966c7b2814ab63aa324ab3283a4df7b12bfa5b35917a269e1fc625983fc14e5",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3682,
+            "name": "Mesh_Raven_Event_Weapon03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon03_Sorted.X",
+            "sha256": "ab2af08d8d75427a0a12af9b4dbc5bee2d5b25be992594c8c87f27ca8ad6705d",
+            "bytes": 8405,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130649": {
+      "itemId": 130649,
+      "name": "El Search Party Officer's Cape (Raven)",
+      "unitType": 4,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_Upbody_130649_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3181388,
+      "recordSha256": "d7e1828ecc0098a06a8f43aa23dca1549bc5753a21fff2fedf77a3965d0cdfb9",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 299,
+            "name": "Mesh_Raven_AC_Upbody_130649_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_Upbody_130649_Sorted.X",
+            "sha256": "2936626732e87cd5e2612a78a6421b2039b098d5d5eca44ba68da41812ad9c46",
+            "bytes": 8269,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data020.kom",
+            "ordinal": 6,
+            "name": "Hyper_Mesh_Raven_AC_Upbody_130649_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Hyper_Mesh_Raven_AC_Upbody_130649_Sorted.X",
+            "sha256": "2936626732e87cd5e2612a78a6421b2039b098d5d5eca44ba68da41812ad9c46",
+            "bytes": 8269,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "89188": {
+      "itemId": 89188,
+      "name": "El Search Party Officer's Ceremonial Armband (Raven)",
+      "unitType": 4,
+      "slot": 22,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_R_UpperArm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_Arm_Event03_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Raven_AC_Arm_Event03_Sorted_S.X",
+          "bone": "Dummy01",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data020.kom",
+            "ordinal": 196,
+            "name": "Mesh_Raven_AC_Arm_Event03_Sorted_S.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_Arm_Event03_Sorted_S.X",
+            "sha256": "f1f52144f6afb10a3a0710413e9a1194567cb9dce4e635fb8d1f2765125a0dcd",
+            "bytes": 1302,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 2040924,
+      "recordSha256": "3a1e0f09c2f572ba4345920839a42c7860b41de3a0c2f2d7567dc97c6e9f7604",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 195,
+            "name": "Mesh_Raven_AC_Arm_Event03_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_Arm_Event03_Sorted.X",
+            "sha256": "f74b8456e1a88d55fd561afba4b7e7ca48441c652ec97673c5fcfa5c4e7ec462",
+            "bytes": 5200,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130938": {
+      "itemId": 130938,
+      "name": "Nasod Battle Suit Top Piece (Elsword)",
+      "unitType": 1,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_UPBody04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3241500,
+      "recordSha256": "166d4e858b01f5110d2ddce8dcab205f668d048859278144fde2580925c5f5f7",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4105,
+            "name": "Mesh_Elsword_Event_Upbody04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Upbody04_Sorted.X",
+            "sha256": "7c8aeba3f0e454e2f9048a29c02907710e942aef0ca00f6dbbb23bf89b9cc694",
+            "bytes": 23022,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130939": {
+      "itemId": 130939,
+      "name": "Nasod Battle Suit Bottom Piece (Elsword)",
+      "unitType": 1,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_LowBody04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3241708,
+      "recordSha256": "334d65fd5eb35d1e31fa44098babe9e7d4401e947286c74347df8f28f6b96cc9",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4028,
+            "name": "Mesh_Elsword_Event_Lowbody04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Lowbody04_Sorted.X",
+            "sha256": "884e6912817e0a656b54a5f5b76b761f49fda53aade5dd716473cc816e5abe10",
+            "bytes": 31484,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130940": {
+      "itemId": 130940,
+      "name": "Nasod Battle Suit Gloves (Elsword)",
+      "unitType": 1,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hand04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3241916,
+      "recordSha256": "56c721b2a9d7cf8422d570b989eb15aa7474386f077cb08b7cfb9be016328bea",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3953,
+            "name": "Mesh_Elsword_Event_Hand04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hand04_Sorted.X",
+            "sha256": "8ae3506f10593b4083c88d700604749834de60516bd12ac26e969822ce173348",
+            "bytes": 17003,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130941": {
+      "itemId": 130941,
+      "name": "Nasod Battle Suit Shoes (Elsword)",
+      "unitType": 1,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Foot04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3242124,
+      "recordSha256": "679a87d272885ff2af40987cd1aa11bef6cb3dd14394db56547c3420604b8a89",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3789,
+            "name": "Mesh_Elsword_Event_Foot04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Foot04_Sorted.X",
+            "sha256": "233d3cc8fc32f26d6b85ee8714ca4b02bc238b3ec05cbfc5958acf579dda3ae5",
+            "bytes": 19409,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130942": {
+      "itemId": 130942,
+      "name": "Nasod Battle Suit Hair (Elsword)",
+      "unitType": 1,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hair04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3242332,
+      "recordSha256": "c0e603039535eb257a408b959ed6edb95b16f3c1361a971b34b25e436e134c12",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3866,
+            "name": "Mesh_Elsword_Event_Hair04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hair04_Sorted.X",
+            "sha256": "0b25fe426df5c3a2d3f83381cc3dabe1788ba5c27bed3e4ae62f48d47243d18b",
+            "bytes": 14091,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130892": {
+      "itemId": 130892,
+      "name": "Nasod Lightsaber (Elsword)",
+      "unitType": 1,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Weapon04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Elsword_Event_Weapon04_effect1_Sorted.X",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data017.kom",
+            "ordinal": 4198,
+            "name": "Mesh_Elsword_Event_Weapon04_effect1_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon04_effect1_Sorted.X",
+            "sha256": "f43c3c0c28e60df15e7c83228d3a95ad704145c7a2463a8a642462351afb6128",
+            "bytes": 1428,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        },
+        {
+          "name": "Mesh_Elsword_Event_Weapon04_effect2_Sorted.X",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data017.kom",
+            "ordinal": 4199,
+            "name": "Mesh_Elsword_Event_Weapon04_effect2_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon04_effect2_Sorted.X",
+            "sha256": "df17d2679409005259996a3d0c287882f5cdeeac3b2264faf02259b6fc54ccb9",
+            "bytes": 1423,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [
+        [
+          0,
+          4294911280
+        ],
+        [
+          1,
+          4294911280
+        ],
+        [
+          2,
+          4294911280
+        ],
+        [
+          3,
+          4294911280
+        ]
+      ],
+      "recordOffset": 3231932,
+      "recordSha256": "4519eaab7f302f2a6ed85e9d5ef9723bafa97fe121353942cdc8db98f87dd757",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4197,
+            "name": "Mesh_Elsword_Event_Weapon04_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon04_Sorted.X",
+            "sha256": "c54f3257511b647b119b9803b1b70280f99ff7721cd91c29ede8d92438e35542",
+            "bytes": 14656,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131010": {
+      "itemId": 131010,
+      "name": "Nasod Battle Wings (Elsword)",
+      "unitType": 1,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_Upbody_131010_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3256476,
+      "recordSha256": "bc442ca93df0b6168330814df8f6b6e6468f2a773d9484622876dc55b2b933f0",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 1089,
+            "name": "Mesh_Elsword_AC_Upbody_131010_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_Upbody_131010_Sorted.X",
+            "sha256": "91bf6ec49271c6f2b131ce34fb1832eb102af949a30e3e5a60465dcd873ffc65",
+            "bytes": 6568,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data017.kom",
+            "ordinal": 325,
+            "name": "Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.X",
+            "sha256": "aad4a9fead8436845801bf42f2092e99bd1d419114753f64472a859e3b5dcc9c",
+            "bytes": 10862,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130953": {
+      "itemId": 130953,
+      "name": "Nasod Battle Suit Top Piece (Raven)",
+      "unitType": 4,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_UPBody04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3244620,
+      "recordSha256": "9b7db3ede4ff57d8a7dac5f0c7b277f7f442485731d3cc49d91933dafd9a6671",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3593,
+            "name": "Mesh_Raven_Event_Upbody04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Upbody04_Sorted.X",
+            "sha256": "3f4be5d3bc36236ccb3589bb1766924d7307cf607c88bbfbce80e0a3e2727aff",
+            "bytes": 20540,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130954": {
+      "itemId": 130954,
+      "name": "Nasod Battle Suit Bottom Piece (Raven)",
+      "unitType": 4,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_LowBody04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3244828,
+      "recordSha256": "ed1a24a570c3146b581c7e46095fc34939fc6db349fd3fd96576e49f5198c74b",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3449,
+            "name": "Mesh_Raven_Event_Lowbody04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Lowbody04_Sorted.X",
+            "sha256": "9c6800ec71df160d250f39d9695bd52a59a3cd574a1b7f828c58866e6d3455a6",
+            "bytes": 43823,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130955": {
+      "itemId": 130955,
+      "name": "Nasod Battle Suit Gloves (Raven)",
+      "unitType": 4,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Right_Hand04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3245036,
+      "recordSha256": "45a9c6960302837bbdb87210008aeda79c3c545406a158ac95a984bf22f386aa",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3520,
+            "name": "Mesh_Raven_Event_Right_Hand04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Right_Hand04_Sorted.X",
+            "sha256": "03ec430d2fa9ad487ff1356c50481b70feca6512ceb7bef49d773024ede46319",
+            "bytes": 11580,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130956": {
+      "itemId": 130956,
+      "name": "Nasod Battle Suit Shoes (Raven)",
+      "unitType": 4,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Foot04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3245244,
+      "recordSha256": "f897912266b679543edb12d6bca0a78cde18a2cc2ca242aa2d4f1519d1ffe09c",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3271,
+            "name": "Mesh_Raven_Event_Foot04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Foot04_Sorted.X",
+            "sha256": "f6b73e69611a467d12ced1e22dec6f87816fa54cb897c39724bb30e0a71cbb42",
+            "bytes": 15483,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130957": {
+      "itemId": 130957,
+      "name": "Nasod Battle Suit Hair (Raven)",
+      "unitType": 4,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Hair04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3245452,
+      "recordSha256": "2575f50865ba5928949f44e32ee9a5ebb7495903880f50a49a3669f88e1a2166",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3344,
+            "name": "Mesh_Raven_Event_Hair04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Hair04_Sorted.X",
+            "sha256": "dfaa176f043c16b9e01d98b9a2045213115a4d286b9c622568f5e60883712834",
+            "bytes": 16735,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "130895": {
+      "itemId": 130895,
+      "name": "Nasod Lightsaber (Raven)",
+      "unitType": 4,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Weapon04_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Raven_Event_Weapon04_effect_Sorted.X",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data020.kom",
+            "ordinal": 3685,
+            "name": "Mesh_Raven_Event_Weapon04_effect_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon04_effect_Sorted.X",
+            "sha256": "9be3f2bc48d5bf36a04bda18f0be16b62351456cb6db46d41fea503b47f7b5a4",
+            "bytes": 2099,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [
+        [
+          0,
+          4278235391
+        ],
+        [
+          1,
+          4278235391
+        ],
+        [
+          2,
+          4278235391
+        ],
+        [
+          3,
+          4278235391
+        ]
+      ],
+      "recordOffset": 3232556,
+      "recordSha256": "ca950dc7703ce1d338cba591759efef4f99c88350d7b6ab7a82366113de8ecd1",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3684,
+            "name": "Mesh_Raven_Event_Weapon04_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon04_Sorted.X",
+            "sha256": "3f70a25632202dd6b4ccc3991e7a7c832064139aa2ed24c7ab2bef94b9951145",
+            "bytes": 15102,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131013": {
+      "itemId": 131013,
+      "name": "Nasod Battle Wings (Raven)",
+      "unitType": 4,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_Upbody_131013_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3257100,
+      "recordSha256": "e2d80e04e85c2cfbc83b705d007553550e434efa80d56bbbcbd0a863ef70a680",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 301,
+            "name": "Mesh_Raven_AC_Upbody_131013_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_Upbody_131013_Sorted.X",
+            "sha256": "413eb069864f891c7fdb9a415bd32cc279581cb24be4e6bc274bf3d36276420c",
+            "bytes": 8405,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data020.kom",
+            "ordinal": 8,
+            "name": "Hyper_Mesh_Raven_AC_Upbody_131013_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Hyper_Mesh_Raven_AC_Upbody_131013_Sorted.X",
+            "sha256": "c5c56a08ec0a2c9b5f9b2b6486605060cdff0257bf8ca32f368363009a310d96",
+            "bytes": 9560,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132547": {
+      "itemId": 132547,
+      "name": "Royal Servant - Crimson Guard Top Piece (Elsword)",
+      "unitType": 1,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_UPBody09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3567644,
+      "recordSha256": "24d3c1019c57fa43d7fbdb3087eb27b3b36b2766da51ddf13e60f42574ff9eb0",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4115,
+            "name": "Mesh_Elsword_Event_Upbody09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Upbody09_Sorted.X",
+            "sha256": "ca27f3b1dd6f85e4ba8a3f2149377612b5cc4b0a84c1d5c3d28928d2c3674e8f",
+            "bytes": 37456,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132548": {
+      "itemId": 132548,
+      "name": "Royal Servant - Crimson Guard Bottom Piece (Elsword)",
+      "unitType": 1,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_LowBody09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3567852,
+      "recordSha256": "5ac455a815a1dbf69f42d88d2b11ca3c0b2697c370706429b2d9dc1152edb241",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4038,
+            "name": "Mesh_Elsword_Event_Lowbody09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Lowbody09_Sorted.X",
+            "sha256": "b73852d352ff2a693c6050b7c285c2d611f3fc1f0c5638a97113f9c460eba261",
+            "bytes": 17893,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132549": {
+      "itemId": 132549,
+      "name": "Royal Servant - Crimson Guard Gloves (Elsword)",
+      "unitType": 1,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hand09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3568060,
+      "recordSha256": "4bf7a234a1a18602606a3d50bca76c4543cabdbdd10b890407a4163de7d38d1c",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3964,
+            "name": "Mesh_Elsword_Event_Hand09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hand09_Sorted.X",
+            "sha256": "dea825af75da122b899eeba688aec70d3a2a170b5554ef264d951a01c9b59b50",
+            "bytes": 14877,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132550": {
+      "itemId": 132550,
+      "name": "Royal Servant - Crimson Guard Shoes (Elsword)",
+      "unitType": 1,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Foot09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3568268,
+      "recordSha256": "054a69b8eb5756f38e05d73fafb80f48d1ed180d16099b725b29bd48ffde16d5",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3800,
+            "name": "Mesh_Elsword_Event_Foot09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Foot09_Sorted.X",
+            "sha256": "65f3d0795a40af07e000038fe441a75638579aa9be38bc0b4937124889c3c84a",
+            "bytes": 19119,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132551": {
+      "itemId": 132551,
+      "name": "Royal Servant - Crimson Guard Hairstyle (Elsword)",
+      "unitType": 1,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hair09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3568476,
+      "recordSha256": "5ce4ee70450b2f4879f84141bdd525c248c87990b2dc5ce95957ec1054c353e9",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3879,
+            "name": "Mesh_Elsword_Event_Hair09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hair09_Sorted.X",
+            "sha256": "3bbf833d6a36123409f0a89b37b94a3d5d3aa5adad78b16ee75bfa25dce7a212",
+            "bytes": 20772,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132546": {
+      "itemId": 132546,
+      "name": "Royal Servant - Crimson Sword (Elsword)",
+      "unitType": 1,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Weapon09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Elsword_Event_Weapon09Effect_Sorted.x",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "unsupported": "Referenced mesh absent from target2016 catalog"
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3567436,
+      "recordSha256": "cdabfa6d1474bd44153b54e2601be0631cdb170ee3307d7ca5e1a7d6900b82f2",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4212,
+            "name": "Mesh_Elsword_Event_Weapon09_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon09_Sorted.X",
+            "sha256": "0afcfda9fcbaf955d2add7ed1d63072a2affc90402dc56f3c9a144b5679cf30e",
+            "bytes": 12581,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132763": {
+      "itemId": 132763,
+      "name": "Royal Servant Winged Monocle (Elsword)",
+      "unitType": 1,
+      "slot": 18,
+      "useType": 3,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_Head",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_Face2_132763_Sorted.Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3611740,
+      "recordSha256": "607f35b64e0feb22383e4eca745eaebe2a8151a3c0a3f0d291ccbf557c46874b",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data016.kom",
+            "ordinal": 2259,
+            "name": "Mesh_Elsword_AC_Face2_132763_Sorted.Y",
+            "rawPath": "raw/data/data016.kom/Mesh_Elsword_AC_Face2_132763_Sorted.Y",
+            "sha256": "d397438d6e3e87205b95440f9c0af6ca79ab450fe865f1d72550bb226b38acb1",
+            "bytes": 7050,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "82154": {
+      "itemId": 82154,
+      "name": "Royal Servant - Silver Earring (Elsword)",
+      "unitType": 1,
+      "slot": 19,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_Head",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [
+        {
+          "name": "Common_Event09_Eff",
+          "bone": "Dummy02"
+        },
+        {
+          "name": "Common_Event09_Eff",
+          "bone": "Dummy03"
+        }
+      ],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 1631788,
+      "recordSha256": "e3c500492aed45f0e8e5544a9b3daab779d13cb4ece9a4541dfc80404624097c",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 1176,
+            "name": "Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.X",
+            "sha256": "4c981011ce491360778a6d1d6e63842edc62c4da23f1ae98165b068eb373ec6b",
+            "bytes": 9307,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132565": {
+      "itemId": 132565,
+      "name": "Royal Servant - Abyss Crow Top Piece (Raven)",
+      "unitType": 4,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_UPBody09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3571388,
+      "recordSha256": "03c19eaee0d6d9d8ec85b02c56415d5f73b16722b62fe84527212cec4632e383",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3600,
+            "name": "Mesh_Raven_Event_Upbody09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Upbody09_Sorted.X",
+            "sha256": "b66e07041d47068bf26e926a40e801ad1313a308aa39f4ec32b0c463368b1b28",
+            "bytes": 37197,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132566": {
+      "itemId": 132566,
+      "name": "Royal Servant - Abyss Crow Bottom Piece (Raven)",
+      "unitType": 4,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_LowBody09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3571596,
+      "recordSha256": "e909c0381a77f71094073cb4d9fc2692430aa0db994b4bf9584ab9db46941d9e",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3461,
+            "name": "Mesh_Raven_Event_Lowbody09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Lowbody09_Sorted.X",
+            "sha256": "2027f3255dd55cd58db477cf8decb6bbe172eb2d0f403c28f8442b8f08b7a8c7",
+            "bytes": 18559,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132567": {
+      "itemId": 132567,
+      "name": "Royal Servant - Abyss Crow Gloves (Raven)",
+      "unitType": 4,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Right_Hand09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3571804,
+      "recordSha256": "ca59ddb348896eff4f24ea6cbd594b8facfcf89e4e02544b0d08687cd561c681",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3530,
+            "name": "Mesh_Raven_Event_Right_Hand09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Right_Hand09_Sorted.X",
+            "sha256": "e46c246f23d0f0f4831cd4f35c80b551398db234b159d546dd0e16cac57ffff3",
+            "bytes": 11976,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132568": {
+      "itemId": 132568,
+      "name": "Royal Servant - Abyss Crow Shoes (Raven)",
+      "unitType": 4,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Foot09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3572012,
+      "recordSha256": "041dc24a3cb1a90c4390c40e21e58d6348a118269ac2bb9c55c8b9502fe297d6",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3282,
+            "name": "Mesh_Raven_Event_Foot09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Foot09_Sorted.X",
+            "sha256": "e59d5bc5578233277bff55ef4ca9bed10a355515033d3a481c28cca8af5cde75",
+            "bytes": 18067,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132569": {
+      "itemId": 132569,
+      "name": "Royal Servant - Abyss Crow Hairstyle (Raven)",
+      "unitType": 4,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Hair09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3572220,
+      "recordSha256": "e3bebe4ae621ce5320b210890f469de237e6cfed9057d15e23e0489342238ca6",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3357,
+            "name": "Mesh_Raven_Event_Hair09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Hair09_Sorted.X",
+            "sha256": "98b48ac99dce2c4781631c8dfaf0dbd62387c8efde1b6259302693a44c9d90f0",
+            "bytes": 21982,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132564": {
+      "itemId": 132564,
+      "name": "Royal Servant - Black Lance (Raven)",
+      "unitType": 4,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Weapon09_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Raven_Event_Weapon09Effect_Sorted.x",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "unsupported": "Referenced mesh absent from target2016 catalog"
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3571180,
+      "recordSha256": "b428ade4d91222207b8c2c30f458fbcac13cebd8c4c22671dcc4458c889da718",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3698,
+            "name": "Mesh_Raven_Event_Weapon09_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon09_Sorted.X",
+            "sha256": "77a832c11ab53e2e4b13189f74bb57e5f813aa2e9b2cdcab912a1d3414455853",
+            "bytes": 11171,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "132766": {
+      "itemId": 132766,
+      "name": "Royal Servant Winged Monocle (Raven)",
+      "unitType": 4,
+      "slot": 18,
+      "useType": 3,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_Head",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_Face2_132766_Sorted.Y",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3612364,
+      "recordSha256": "58ea0ad63c57323dc19c9640dc34bed4f2dee3f4615eb9dd0502047fca7b1809",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data016.kom",
+            "ordinal": 2575,
+            "name": "Mesh_Raven_AC_Face2_132766_Sorted.Y",
+            "rawPath": "raw/data/data016.kom/Mesh_Raven_AC_Face2_132766_Sorted.Y",
+            "sha256": "a98435f42efbcad281b03b6e7be2efb6e8c9e9d2cbaf28bb4a5a3a4f0112cc51",
+            "bytes": 8288,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "82157": {
+      "itemId": 82157,
+      "name": "Royal Servant - Silver Earring (Raven)",
+      "unitType": 4,
+      "slot": 19,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_Head",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_CASH_AC_FACE3_82157_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [
+        {
+          "name": "Common_Event09_Eff",
+          "bone": "Dummy02"
+        },
+        {
+          "name": "Common_Event09_Eff",
+          "bone": "Dummy03"
+        }
+      ],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 1632412,
+      "recordSha256": "e3d981b299ea7f237fb5b6e49ebae57687c0095a75f031c08cd6c6118306a8ac",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 384,
+            "name": "Mesh_Raven_CASH_AC_FACE3_82157_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_CASH_AC_FACE3_82157_Sorted.X",
+            "sha256": "84c5e05d01ff3e78b3aad119d8f576038f8a2678e3c483f7bcd77cd3f681585d",
+            "bytes": 9961,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131773": {
+      "itemId": 131773,
+      "name": "Salvatore Solace Top Piece (Elsword)",
+      "unitType": 1,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_UPBody07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3411852,
+      "recordSha256": "e4f180bdc4d25d7e0c097dc93490911bb5da6b1af8fc4f050509096c79dd769a",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4110,
+            "name": "Mesh_Elsword_Event_Upbody07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Upbody07_Sorted.X",
+            "sha256": "de593f21f9483bed0ed04b1c858a407d6732585c4718f1d93e12dd7a270740cc",
+            "bytes": 57321,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131774": {
+      "itemId": 131774,
+      "name": "Salvatore Solace Bottom Piece (Elsword)",
+      "unitType": 1,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_LowBody07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3412060,
+      "recordSha256": "022994e5602296ad8ca50de55ed4f961d864a89e928847ea261e3a07876de875",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4034,
+            "name": "Mesh_Elsword_Event_Lowbody07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Lowbody07_Sorted.X",
+            "sha256": "27fe06734de0eed5b53a2a04053799d1ccc621a4e10ca31a2aea43f3a2548c0b",
+            "bytes": 8776,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131775": {
+      "itemId": 131775,
+      "name": "Salvatore Solace Gloves (Elsword)",
+      "unitType": 1,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hand07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3412268,
+      "recordSha256": "83f2339db23a36f4f1a4d4f437103c3b6e06323752bdcc55bf094be8210082ed",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3959,
+            "name": "Mesh_Elsword_Event_Hand07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hand07_Sorted.X",
+            "sha256": "0f653841ae1f6d6fa79b62450e0f3d5fc58a5d7dbafa61c83c54cc4b9510b063",
+            "bytes": 15580,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131776": {
+      "itemId": 131776,
+      "name": "Salvatore Solace Shoes (Elsword)",
+      "unitType": 1,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Foot07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3412476,
+      "recordSha256": "5c5cd51c65920612a159b318f53387f2d29b9ee9bca865597d168b696103aefd",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3795,
+            "name": "Mesh_Elsword_Event_Foot07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Foot07_Sorted.X",
+            "sha256": "f14f069b919682fe44159cef563af39aa3ee0601b9ff3618adf6241f60af1b68",
+            "bytes": 18832,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131777": {
+      "itemId": 131777,
+      "name": "Salvatore Solace Hair (Elsword)",
+      "unitType": 1,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Hair07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3412684,
+      "recordSha256": "f24d3b13f4255ecb4119c8ccff3d1c4780ca3c3801f3da67cf34210bad4fd74c",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 3874,
+            "name": "Mesh_Elsword_Event_Hair07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Hair07_Sorted.X",
+            "sha256": "c9b418320b20aace5d9d87688a6c73be4b0cd9f9c6c342c828c4aee2755e38f3",
+            "bytes": 23049,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131646": {
+      "itemId": 131646,
+      "name": "Salvatore Solace Sword (Elsword)",
+      "unitType": 1,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_Event_Weapon07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Elsword_Event_Weapon07Effect_Sorted.x",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data017.kom",
+            "ordinal": 4205,
+            "name": "Mesh_Elsword_Event_Weapon07Effect_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon07Effect_Sorted.X",
+            "sha256": "5878cac3c68b57a6ab92794175a8db95cdda99a3e424562da70ac3485372a54f",
+            "bytes": 5586,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3385436,
+      "recordSha256": "79f4bc58aa3cfd676ceacd1cb0cc2cf2db7f82f4178fc714fe1c775a1eb0b896",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 4206,
+            "name": "Mesh_Elsword_Event_Weapon07_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_Event_Weapon07_Sorted.X",
+            "sha256": "b548042d0680a1627ef9e657306f9c3422d27f0e09fcc2dbd8519a8760bddc3b",
+            "bytes": 12863,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131835": {
+      "itemId": 131835,
+      "name": "Salvatore Solace - Shade of the Sun (Elsword)",
+      "unitType": 1,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_Upbody_131835_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3424748,
+      "recordSha256": "a548d342b43e8f3f65aa713c3f641d039fb9106815232aa21dae4e7f87398b52",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 1091,
+            "name": "Mesh_Elsword_AC_Upbody_131835_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_Upbody_131835_Sorted.X",
+            "sha256": "23c54e5a49c4aad70b5f4ba7e575adc77a7fe4a5b567e00208d07360cd2d2842",
+            "bytes": 42392,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data017.kom",
+            "ordinal": 326,
+            "name": "Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.X",
+            "sha256": "48d4206a6f3d5ace78c343b1f4d8662d73b129171141b930f97ac849556f218c",
+            "bytes": 6260,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "88402": {
+      "itemId": 88402,
+      "name": "Salvatore Solace Arm Buckler (Elsword)",
+      "unitType": 1,
+      "slot": 22,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_L_Forearm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Elsword_AC_ARM_88402_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Elsword_AC_ARM_88402_Sorted_A.X",
+          "bone": "Dummy01",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data017.kom",
+            "ordinal": 974,
+            "name": "Mesh_Elsword_AC_ARM_88402_Sorted_A.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_ARM_88402_Sorted_A.X",
+            "sha256": "4eb3788cd83f52c79e215296b157af90b75e059b461653b22bbefd1572839192",
+            "bytes": 7157,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 1921324,
+      "recordSha256": "86b7c572ada71c7b551adfbb6decf65b8eee05f6ee0c69b0c684a69380ef2a8a",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data017.kom",
+            "ordinal": 973,
+            "name": "Mesh_Elsword_AC_ARM_88402_Sorted.X",
+            "rawPath": "raw/data/data017.kom/Mesh_Elsword_AC_ARM_88402_Sorted.X",
+            "sha256": "fdff15de967f1bedfb7700eb950ef2eeb08fcccad67653ddc6c145a80b232aaf",
+            "bytes": 7908,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131788": {
+      "itemId": 131788,
+      "name": "Salvatore Solace Top Piece (Raven)",
+      "unitType": 4,
+      "slot": 8,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_UPBody07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3414972,
+      "recordSha256": "b20a8da775829976c539b112e20e9f0eca71770134d13182e495478be46a1143",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3597,
+            "name": "Mesh_Raven_Event_Upbody07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Upbody07_Sorted.X",
+            "sha256": "aa7b2e5760216c193e715aa7719c8ab74618e0a94d4f66b2b95128d6976b358b",
+            "bytes": 55359,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131789": {
+      "itemId": 131789,
+      "name": "Salvatore Solace Bottom Piece (Raven)",
+      "unitType": 4,
+      "slot": 9,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_LowBody07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3415180,
+      "recordSha256": "2997e801f0c0fdaaea36032ec834139f13096667fc7740bb5715ccc5199aef45",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3455,
+            "name": "Mesh_Raven_Event_Lowbody07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Lowbody07_Sorted.X",
+            "sha256": "ecba1bd35c59508fd7bc6d6ba55de56ebe8ed1c964a7193629739599bf8b6f15",
+            "bytes": 15945,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131790": {
+      "itemId": 131790,
+      "name": "Salvatore Solace Gloves (Raven)",
+      "unitType": 4,
+      "slot": 10,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Right_Hand07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3415388,
+      "recordSha256": "03aea6f10afd262d44b157be245269ea8d2beaa70273cc082bd757e57c76a540",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3525,
+            "name": "Mesh_Raven_Event_Right_Hand07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Right_Hand07_Sorted.X",
+            "sha256": "4847f9ca6e1c1244be950d6e1e8d90c4dd166009153b2bea03cc9ca22cf8e11f",
+            "bytes": 10412,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131791": {
+      "itemId": 131791,
+      "name": "Salvatore Solace Shoes (Raven)",
+      "unitType": 4,
+      "slot": 11,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Foot07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3415596,
+      "recordSha256": "4b11d9a2e87d4dbeb65028e74eee0d47e019cfe97dfb6b7fd3d108b43f000be5",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3277,
+            "name": "Mesh_Raven_Event_Foot07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Foot07_Sorted.X",
+            "sha256": "e854c97e09df43433d4f3c969c621681d0e624a8aac87d14da65060fe74ee188",
+            "bytes": 20589,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131792": {
+      "itemId": 131792,
+      "name": "Salvatore Solace Hair (Raven)",
+      "unitType": 4,
+      "slot": 6,
+      "useType": 1,
+      "canHyperMode": false,
+      "attachFrames": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Hair07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3415804,
+      "recordSha256": "a8df2051e4615fb99376cdd87d8e1d72de020a7e9f377ff2496e7b5b3c547a62",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3352,
+            "name": "Mesh_Raven_Event_Hair07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Hair07_Sorted.X",
+            "sha256": "bf97f23fc6cf87cd14b331568643a59ac7142d536ff1443c615907cb29d85467",
+            "bytes": 16044,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131649": {
+      "itemId": 131649,
+      "name": "Salvatore Solace Blade (Raven)",
+      "unitType": 4,
+      "slot": 2,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Dummy1_Rhand",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_Event_Weapon07_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Raven_Event_Weapon07Effect_Sorted.x",
+          "bone": "Dummy1_Rhand",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data020.kom",
+            "ordinal": 3691,
+            "name": "Mesh_Raven_Event_Weapon07Effect_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon07Effect_Sorted.X",
+            "sha256": "1080615ea276e2aba465f3b3ba8ee2e7da6461cf3867399b442d067e26dded0d",
+            "bytes": 5163,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3386060,
+      "recordSha256": "f9c2da24b8ec2086ad67b4b6ca2bb324c3d6841ffe3f6b867e141f20e9145e96",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 3692,
+            "name": "Mesh_Raven_Event_Weapon07_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_Event_Weapon07_Sorted.X",
+            "sha256": "7c3a1c415ff7a901ce6cb92db127bb652b16d5867aaaf1b3fa4403c205b8160e",
+            "bytes": 17383,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "131841": {
+      "itemId": 131841,
+      "name": "Salvatore Solace - Shade of the Sun (Raven)",
+      "unitType": 4,
+      "slot": 20,
+      "useType": 2,
+      "canHyperMode": true,
+      "attachFrames": [
+        "Bip01_Spine1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_Upbody_131841_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 3425996,
+      "recordSha256": "8556007583040aa76ab9cb8a454eaa5ae1fb02024fde1b7d5eb79aeb79313523",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 303,
+            "name": "Mesh_Raven_AC_Upbody_131841_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_Upbody_131841_Sorted.X",
+            "sha256": "51bcb9b23eb0ab4df2f5b3d48bc8d920637a60db17630ed5622ce8dc497f339a",
+            "bytes": 42831,
+            "signatureHex": "786f662030333033627a697030303332"
+          },
+          "awakened": {
+            "archive": "data/data020.kom",
+            "ordinal": 9,
+            "name": "Hyper_Mesh_Raven_AC_Upbody_131841_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Hyper_Mesh_Raven_AC_Upbody_131841_Sorted.X",
+            "sha256": "7d202cd15a19a5b7162396a9348ac15c773c8262304bb90fdad8fe04f992706a",
+            "bytes": 6802,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    },
+    "88405": {
+      "itemId": 88405,
+      "name": "Salvatore Solace Arm Buckler (Raven)",
+      "unitType": 4,
+      "slot": 22,
+      "useType": 2,
+      "canHyperMode": false,
+      "attachFrames": [
+        "Bip01_L_Forearm",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "models": [
+        "Mesh_Raven_AC_ARM_88405_Sorted.X",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "textureChange": "",
+      "animationXet": "",
+      "animationName": "",
+      "attachedParticles": [],
+      "attachedMeshes": [
+        {
+          "name": "Mesh_Raven_AC_ARM_88405_Sorted_A.X",
+          "bone": "Dummy01",
+          "jiggle": false,
+          "source": {
+            "archive": "data/data020.kom",
+            "ordinal": 191,
+            "name": "Mesh_Raven_AC_ARM_88405_Sorted_A.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_ARM_88405_Sorted_A.X",
+            "sha256": "ada15bfe0cc081139c5e0e56be512529dd29c36841df93c00cca5db6dc764b18",
+            "bytes": 7200,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ],
+      "cosmeticSlashTraceRaw": [],
+      "recordOffset": 1921948,
+      "recordSha256": "12706f68e8a39d3b448eaf4733dde4832289cf884d4fd47e56d3e26c0c30402d",
+      "sourceModels": [
+        {
+          "normal": {
+            "archive": "data/data020.kom",
+            "ordinal": 190,
+            "name": "Mesh_Raven_AC_ARM_88405_Sorted.X",
+            "rawPath": "raw/data/data020.kom/Mesh_Raven_AC_ARM_88405_Sorted.X",
+            "sha256": "9b275e8b28127c70174b64e2328f5fb0b90f3724b250e8202448047bb7ff59df",
+            "bytes": 8286,
+            "signatureHex": "786f662030333033627a697030303332"
+          }
+        }
+      ]
+    }
+  },
+  "kimLayout": {
+    "recordBytes": 208,
+    "count": 94799,
+    "nameOffset": 56,
+    "modelOffset": 100,
+    "attachFrameOffset": 68,
+    "unitTypeOffset": 194,
+    "slotOffset": 197,
+    "checkedAllRecordIds": true
+  },
+  "inputs": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 278,
+      "name": "item.kim",
+      "rawPath": "raw/data/data036.kom/item.kim",
+      "sha256": "9b3d3d3428a48a038245b34b9162c188719f10c171e7f4d2509c9a668e7f4c56",
+      "bytes": 52674504,
+      "signatureHex": "4b494d20011200004f7201007b150000"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 261,
+      "name": "UnitTemplet.lua",
+      "rawPath": "raw/data/data036.kom/UnitTemplet.lua",
+      "sha256": "07c2c63560e5f220a0904f24638e2a40b1da1dd1f7ef33f225879e28e03cc777",
+      "bytes": 44836,
+      "signatureHex": "1b4b4c82029bde020200050095020094"
+    }
+  ],
+  "consumerReference": {
+    "evidenceClass": "fixed-V5-reference-not-target2016",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "files": [
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Eqip.cpp",
+        "sha256": "d44fe28b6c4b0ce2aa134175e585ad652c8108f281386463d92116102ba9b6f2",
+        "lines": [
+          [
+            223,
+            255
+          ],
+          [
+            1130,
+            1194
+          ],
+          [
+            1722,
+            1769
+          ],
+          [
+            2278,
+            2346
+          ]
+        ]
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Eqip.h",
+        "sha256": "a66ced6d6a615048a5b5ca2d3bb20cabcca8e8e33373fe82f5e61d5b17ff8d1e",
+        "lines": []
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "lines": [
+          [
+            33249,
+            33272
+          ]
+        ]
+      }
+    ],
+    "hyperPolicy": "bit6 enables Hyper_ model; awakening start/end toggles mode; original animations loop",
+    "attachment": "source bone name; these selected records declare no offset/scale/rotation overrides"
+  },
+  "selectionNotes": [
+    "Officer uses the original hat hairstyle; Royal uses Crimson Guard for Elsword and Abyss Crow for Raven.",
+    "Keep the current profession face and Raven mechanical left arm; no costume statistics or collision changes.",
+    "Shared Elsword/Raven geometry, original item identities, and V5 consumers are distinct from original-client execution."
+  ],
+  "visualConsumerV2": {
+    "references": [
+      {
+        "name": "X2Eqip.cpp",
+        "sha256": "d44fe28b6c4b0ce2aa134175e585ad652c8108f281386463d92116102ba9b6f2"
+      },
+      {
+        "name": "X2SubEquip.cpp",
+        "sha256": "66123de8fe877a8b0cd31d21d529d1a721d888fd78b0c3e3f2a7f7127a005b57"
+      },
+      {
+        "name": "X2Define.h",
+        "sha256": "f757a93843e12f29adbdcee65266105e77f2532ca3a337bbf9d7c51563b36476"
+      },
+      {
+        "name": "KTDGXRenderer.h",
+        "sha256": "f40301784238ca49feeafb68bf38dc701b37d2ced2f4eb563c2c57940e0defe4"
+      }
+    ],
+    "attachmentOffsets": {
+      "particles": 164,
+      "meshes": 168
+    },
+    "evidenceClass": "target2016 records plus fixed-V5 consumers; no full-client execution"
+  }
+}

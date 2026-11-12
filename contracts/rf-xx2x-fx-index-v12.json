@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "Raven_attackX3Front_Particle01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 250.0,
+        "Lifetime": 0.6,
+        "NumParticles": 10.0,
+        "TriggerTime": 0.15,
+        "DrawCount": 2.0,
+        "LandPos": 240.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              -10.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          -1700.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ColorBallGray.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.25,
+            0.25,
+            0.25,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.25,
+            0.25,
+            0.25,
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0.25,
+            0.25,
+            0.25,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            12.0,
+            12.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.0,
+              1.3
+            ]
+          }
+        },
+        {
+          "property": "Scale",
+          "start": 0.3,
+          "end": 0.6,
+          "fade": true,
+          "value": {
+            "random": [
+              0.6,
+              0.7
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -100.0,
+                350.0
+              ]
+            },
+            {
+              "random": [
+                300.0,
+                1050.0
+              ]
+            },
+            {
+              "random": [
+                -350.0,
+                350.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Raven_attackX3Front_Particle01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 102,
+        "name": "GameMajorParticle2.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle2.txt",
+        "sha256": "4556ecc2a7c2768f47e47c177a71ea33b8b8d45e0fc97ee5c198adcc606ec9c5",
+        "bytes": 298090,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 67745,
+        "line": 1985
+      },
+      "declarationSha256": "02e1cb7df3abadf273b6674e0efc4db5b73fa4ed07da22ee72d3ef8015c9407b",
+      "textures": {
+        "ColorBallGray.dds": {
+          "file": "fx/textures/ColorBallGray-200078232f.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 58,
+            "name": "ColorBallGray.dds",
+            "rawPath": "raw/data/data048.kom/ColorBallGray.dds",
+            "sha256": "200078232fe864aedf1802d8bff536e58e9b441681cf960633da7b561a1f16b7",
+            "bytes": 16512,
+            "signatureHex": "444453207c0000000710080080000000"
+          }
+        }
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 102,
+      "name": "GameMajorParticle2.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle2.txt",
+      "sha256": "4556ecc2a7c2768f47e47c177a71ea33b8b8d45e0fc97ee5c198adcc606ec9c5",
+      "bytes": 298090,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 58,
+      "name": "ColorBallGray.dds",
+      "rawPath": "raw/data/data048.kom/ColorBallGray.dds",
+      "sha256": "200078232fe864aedf1802d8bff536e58e9b441681cf960633da7b561a1f16b7",
+      "bytes": 16512,
+      "signatureHex": "444453207c0000000710080080000000"
+    }
+  ],
+  "meshFailures": [],
+  "missingTemplates": [],
+  "limits": [
+    "Original target client unmeasured; resource completeness does not prove native callback equivalence.",
+    "Original UseLand/LandPos remain declared; current particle interpreter reports land-plane clamp/bounce unsupported.",
+    "GPU blend, billboard particle roll, RNG call ordering and original frame scheduling remain target acceptance items."
+  ]
+}

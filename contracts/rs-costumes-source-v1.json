@@ -1,0 +1,870 @@
+{
+  "schemaVersion": 1,
+  "id": "rs-costumes-source-v1",
+  "clientMeasured": false,
+  "professionId": "RS",
+  "unitClass": 101,
+  "unitType": 1,
+  "sharedCharacter": "elsword",
+  "sourceTask": {
+    "checkout": ".",
+    "state": "active-uncommitted-resource-snapshot; no runtime completion claimed",
+    "contract": "contracts/costumes-2016-source-v1.json",
+    "contractSha256": "d4094ac392bb15d9133e1953ffa171d4bf72e33df031ea01260c14c558defc24",
+    "manifestSha256": "406901c204f73f7f4c3d264b017dc6c490c15b4f74e05d0e312b10f43036db5a"
+  },
+  "originalInputs": {
+    "UnitTemplet.lua": {
+      "path": "data/data036.kom/UnitTemplet.lua",
+      "sha256": "07c2c63560e5f220a0904f24638e2a40b1da1dd1f7ef33f225879e28e03cc777"
+    },
+    "item.kim": {
+      "path": "data/data036.kom/item.kim",
+      "sha256": "9b3d3d3428a48a038245b34b9162c188719f10c171e7f4d2509c9a668e7f4c56"
+    }
+  },
+  "unitTemplate": {
+    "prototype": 0,
+    "instruction": 284,
+    "raw": {
+      "basicBodyItemID": 3,
+      "basicFaceItemID": 45,
+      "basicHairItemID": 43,
+      "basicWeaponItemID": 7,
+      "basicLegItemID": 4,
+      "promotionBodyItemID": 131142,
+      "promotionWeaponItemID": 131141,
+      "m_CommonMotion": "Motion_Elsword_Common.x",
+      "m_FieldMotion": "Motion_Elsword_Field.x",
+      "m_LobbyMotion": "Motion_Elsword_Lobby.x",
+      "m_EmotionMotion": "Motion_Elsword_Emotion.x",
+      "m_GameMotion0": "Motion_Elsword.x",
+      "promotionLegItemID": 131143,
+      "m_GameMotion1": "Motion_Elsword_MK.x",
+      "basicFootItemID": 6,
+      "introMovieFIleName": "Movie_Create_ES_RS.avi",
+      "basicHandItemID": 5,
+      "m_GameMotion2": "Motion_Elsword_RS.x",
+      "promotionHandItemID": 131144,
+      "promotionFootItemID": 131145,
+      "unitType": {
+        "$symbol": "UNIT_TYPE.UT_ELSWORD",
+        "$unsupported": "native/global value not resolved"
+      },
+      "unitClass": {
+        "$symbol": "UNIT_CLASS.UC_ELSWORD_RUNE_SLAYER",
+        "$unsupported": "native/global value not resolved"
+      },
+      "name": {
+        "$symbol": "STR_ID_4642",
+        "$unsupported": "native/global value not resolved"
+      },
+      "description": {
+        "$symbol": "STR_ID_4644",
+        "$unsupported": "native/global value not resolved"
+      }
+    }
+  },
+  "face": {
+    "itemId": 45,
+    "recordOffset": 388364,
+    "recordSha256": "f47c697611bf5a0ce68e4aa3a0861c5fee75b91ba991c1834c7fefb31325da2d",
+    "name": "Elsword's Rune Slayer Face.",
+    "models": [
+      "Mesh_Elsword_ERS_Basic_Face_Sorted.x",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "unitType": 1,
+    "slot": 7
+  },
+  "presentationBaseline": {
+    "file": "rs/rs-runtime.glb",
+    "sha256": "0c3e68caa1fd61a81afaf7239eb143ef48d7b9b10b8ebd7743c2b46a974e9ae6",
+    "meshCount": 7,
+    "meshes": [
+      {
+        "node": "Object13",
+        "mesh": "Motion_Elsword/Object13",
+        "skin": null
+      },
+      {
+        "node": "Elsword_Face_render",
+        "mesh": "Motion_Elsword/Elsword_Face",
+        "skin": 0
+      },
+      {
+        "node": "Elsword_Foot_render",
+        "mesh": "Motion_Elsword/Elsword_Foot",
+        "skin": 1
+      },
+      {
+        "node": "Elsword_Hair_render",
+        "mesh": "Motion_Elsword/Elsword_Hair",
+        "skin": 2
+      },
+      {
+        "node": "Elsword_Hand_render",
+        "mesh": "Motion_Elsword/Elsword_Hand",
+        "skin": 3
+      },
+      {
+        "node": "Elsword_Lowbody_render",
+        "mesh": "Motion_Elsword/Elsword_Lowbody",
+        "skin": 4
+      },
+      {
+        "node": "Elsword_Upbody_render",
+        "mesh": "Motion_Elsword/Elsword_Upbody",
+        "skin": 5
+      }
+    ],
+    "keepFaceNodes": [
+      "Elsword_Face_render"
+    ],
+    "replaceBodyAndWeaponNodes": [
+      "Object13",
+      "Elsword_Foot_render",
+      "Elsword_Hair_render",
+      "Elsword_Hand_render",
+      "Elsword_Lowbody_render",
+      "Elsword_Upbody_render"
+    ],
+    "restoration": "Show all original RS meshes when the profession costume is selected; no collision or stat changes."
+  },
+  "sets": {
+    "officer": {
+      "name": "El Search Party Officer",
+      "sourceItems": {
+        "body": [
+          130555,
+          130556,
+          130557,
+          130558,
+          130717
+        ],
+        "weapon": 130550,
+        "accessories": [
+          130646,
+          89185
+        ]
+      },
+      "bodyGlb": "elsword/officer/body.glb",
+      "meshCount": 6,
+      "meshNames": [
+        "Motion_Elsword/Object08",
+        "Motion_Elsword/Elsword_Foot",
+        "Motion_Elsword/Elsword_Hand",
+        "Motion_Elsword/Elsword_Lowbody",
+        "Motion_Elsword/Elsword_Upbody",
+        "Motion_Elsword/Costume_Object01"
+      ],
+      "poseFrameCount": 68,
+      "skinJointCount": 36,
+      "missingRsBones": [],
+      "bindTransformComparison": {
+        "method": "compose local glTF TRS or original matrix; tolerance1e-5",
+        "maxAbsoluteError": 2.2861453558009615e-07
+      },
+      "bindTransformDifferences": [],
+      "accessories": [
+        {
+          "itemId": 130646,
+          "name": "El Search Party Officer's Cape (Elsword)",
+          "canHyperMode": true,
+          "models": [
+            {
+              "bone": "Bip01_Spine1",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/officer/effects/Mesh_Elsword_AC_Upbody_130646_Sorted.glb",
+                "poseData": "elsword/officer/effects/Mesh_Elsword_AC_Upbody_130646_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 1.1333333253860474,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              },
+              "awakened": {
+                "glb": "elsword/officer/effects/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.glb",
+                "poseData": "elsword/officer/effects/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 1.1333333253860474,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "itemId": 89185,
+          "name": "El Search Party Officer's Ceremonial Armband (Elsword)",
+          "canHyperMode": false,
+          "models": [
+            {
+              "bone": "Bip01_R_UpperArm",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/officer/effects/Mesh_Elsword_AC_Arm_Event03_Sorted.glb",
+                "poseData": "elsword/officer/effects/Mesh_Elsword_AC_Arm_Event03_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 0.06666667014360428,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "nasod": {
+      "name": "Nasod Battle Suit",
+      "sourceItems": {
+        "body": [
+          130938,
+          130939,
+          130940,
+          130941,
+          130942
+        ],
+        "weapon": 130892,
+        "accessories": [
+          131010
+        ]
+      },
+      "bodyGlb": "elsword/nasod/body.glb",
+      "meshCount": 6,
+      "meshNames": [
+        "Motion_Elsword/Object03",
+        "Motion_Elsword/Elsword_Foot",
+        "Motion_Elsword/Elsword_Hair",
+        "Motion_Elsword/Elsword_Hand",
+        "Motion_Elsword/Elsword_Lowbody",
+        "Motion_Elsword/Elsword_Upbody"
+      ],
+      "poseFrameCount": 68,
+      "skinJointCount": 36,
+      "missingRsBones": [],
+      "bindTransformComparison": {
+        "method": "compose local glTF TRS or original matrix; tolerance1e-5",
+        "maxAbsoluteError": 2.2861453558009615e-07
+      },
+      "bindTransformDifferences": [],
+      "accessories": [
+        {
+          "itemId": 131010,
+          "name": "Nasod Battle Wings (Elsword)",
+          "canHyperMode": true,
+          "models": [
+            {
+              "bone": "Bip01_Spine1",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/nasod/effects/Mesh_Elsword_AC_Upbody_131010_Sorted.glb",
+                "poseData": "elsword/nasod/effects/Mesh_Elsword_AC_Upbody_131010_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 0.06666667014360428,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              },
+              "awakened": {
+                "glb": "elsword/nasod/effects/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.glb",
+                "poseData": "elsword/nasod/effects/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 0.6666666865348816,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "royal": {
+      "name": "Royal Servant",
+      "sourceItems": {
+        "body": [
+          132547,
+          132548,
+          132549,
+          132550,
+          132551
+        ],
+        "weapon": 132546,
+        "accessories": [
+          132763,
+          82154
+        ]
+      },
+      "bodyGlb": "elsword/royal/body.glb",
+      "meshCount": 6,
+      "meshNames": [
+        "Motion_Elsword/Line03",
+        "Motion_Elsword/Elsword_Foot",
+        "Motion_Elsword/Elsword_Hair",
+        "Motion_Elsword/Elsword_Hand",
+        "Motion_Elsword/Elsword_Lowbody",
+        "Motion_Elsword/Elsword_Upbody"
+      ],
+      "poseFrameCount": 68,
+      "skinJointCount": 36,
+      "missingRsBones": [],
+      "bindTransformComparison": {
+        "method": "compose local glTF TRS or original matrix; tolerance1e-5",
+        "maxAbsoluteError": 2.2861453558009615e-07
+      },
+      "bindTransformDifferences": [],
+      "accessories": [
+        {
+          "itemId": 132763,
+          "name": "Royal Servant Winged Monocle (Elsword)",
+          "canHyperMode": false,
+          "models": [
+            {
+              "bone": "Bip01_Head",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/royal/effects/Mesh_Elsword_AC_Face2_132763_Sorted.glb",
+                "poseData": "elsword/royal/effects/Mesh_Elsword_AC_Face2_132763_Sorted.pose.json",
+                "animations": []
+              }
+            }
+          ]
+        },
+        {
+          "itemId": 82154,
+          "name": "Royal Servant - Silver Earring (Elsword)",
+          "canHyperMode": false,
+          "models": [
+            {
+              "bone": "Bip01_Head",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/royal/effects/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.glb",
+                "poseData": "elsword/royal/effects/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 0.06666667014360428,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "solace": {
+      "name": "Salvatore Solace",
+      "sourceItems": {
+        "body": [
+          131773,
+          131774,
+          131775,
+          131776,
+          131777
+        ],
+        "weapon": 131646,
+        "accessories": [
+          131835,
+          88402
+        ]
+      },
+      "bodyGlb": "elsword/solace/body.glb",
+      "meshCount": 6,
+      "meshNames": [
+        "Motion_Elsword/Object12",
+        "Motion_Elsword/Costume_Elsword_Event_Upbody07",
+        "Motion_Elsword/Costume_Elsword_Event_Lowbody07",
+        "Motion_Elsword/Costume_Elsword_Event_Hand_07",
+        "Motion_Elsword/Costume_Elsword_Event_Foot07",
+        "Motion_Elsword/Costume_Elsword_Event_Hair_07"
+      ],
+      "poseFrameCount": 68,
+      "skinJointCount": 36,
+      "missingRsBones": [],
+      "bindTransformComparison": {
+        "method": "compose local glTF TRS or original matrix; tolerance1e-5",
+        "maxAbsoluteError": 2.2861453558009615e-07
+      },
+      "bindTransformDifferences": [],
+      "accessories": [
+        {
+          "itemId": 131835,
+          "name": "Salvatore Solace - Shade of the Sun (Elsword)",
+          "canHyperMode": true,
+          "models": [
+            {
+              "bone": "Bip01_Spine1",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/solace/effects/Mesh_Elsword_AC_Upbody_131835_Sorted.glb",
+                "poseData": "elsword/solace/effects/Mesh_Elsword_AC_Upbody_131835_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "normal",
+                    "durationSeconds": 6.666666507720947,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              },
+              "awakened": {
+                "glb": "elsword/solace/effects/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.glb",
+                "poseData": "elsword/solace/effects/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "normal",
+                    "durationSeconds": 6.666666507720947,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "itemId": 88402,
+          "name": "Salvatore Solace Arm Buckler (Elsword)",
+          "canHyperMode": false,
+          "models": [
+            {
+              "bone": "Bip01_L_Forearm",
+              "bonePresentInRs": true,
+              "normal": {
+                "glb": "elsword/solace/effects/Mesh_Elsword_AC_ARM_88402_Sorted.glb",
+                "poseData": "elsword/solace/effects/Mesh_Elsword_AC_ARM_88402_Sorted.pose.json",
+                "animations": [
+                  {
+                    "name": "Normal",
+                    "durationSeconds": 0.06666667014360428,
+                    "nativePlaybackField": 0,
+                    "ticksPerSecond": 4800,
+                    "warnings": [],
+                    "trackWarnings": []
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "file": "elsword/nasod/body.glb",
+      "bytes": 639680,
+      "sha256": "8d396e010ea39f61ad114f65d9f4641453664fc2abf644500130dc4415461105"
+    },
+    {
+      "file": "elsword/nasod/effects/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.animation.json",
+      "bytes": 29427,
+      "sha256": "91ba66e0fd45c9d5cf32356ffbd5adcf8becd305d1144ea550de1f5baf00ed29"
+    },
+    {
+      "file": "elsword/nasod/effects/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.glb",
+      "bytes": 79004,
+      "sha256": "359e12f6e9e61b88df5839c6e017904bd66d0553e1614d4040251e821aa11dc9"
+    },
+    {
+      "file": "elsword/nasod/effects/Hyper_Mesh_Elsword_AC_Upbody_131010_Sorted.pose.json",
+      "bytes": 15566,
+      "sha256": "7f508f6597e45159ef06a269e00ae26cf429efc690c64ffd348c49c17df03b21"
+    },
+    {
+      "file": "elsword/nasod/effects/Mesh_Elsword_AC_Upbody_131010_Sorted.animation.json",
+      "bytes": 4878,
+      "sha256": "a0bdedfc8ae92b3f0f30e10821e663b276591f3df30ab14ef0857a81097c4ae7"
+    },
+    {
+      "file": "elsword/nasod/effects/Mesh_Elsword_AC_Upbody_131010_Sorted.glb",
+      "bytes": 59176,
+      "sha256": "47907bf0d1a99482a2bd8809a90658318cf2f469c7157e2111eff46c1441b5d1"
+    },
+    {
+      "file": "elsword/nasod/effects/Mesh_Elsword_AC_Upbody_131010_Sorted.pose.json",
+      "bytes": 3479,
+      "sha256": "451f94fd6b441e94dd07f1f37ae8285a5b06a6c7735eba44c6cea8e88148e59e"
+    },
+    {
+      "file": "elsword/nasod/effects/textures/Hyper_Mesh_Elsword_AC_Upbody_131010.png",
+      "bytes": 28420,
+      "sha256": "eb371d070ced8c5443b28d3945c210d3a312553e93bad34bc29961b8bb1b74a6"
+    },
+    {
+      "file": "elsword/nasod/effects/textures/Mesh_Elsword_AC_Upbody_131010.png",
+      "bytes": 26955,
+      "sha256": "b51be200dd2e8e6e0545e8c46b5559f102c0caf4305c08371877c8ac0cc8a804"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_Foot04.png",
+      "bytes": 7031,
+      "sha256": "0568fb2577b3a36ada6d0e5408b6a2b4fd270cb6dab5ae96ef313298f8e8f88a"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_Hair04.png",
+      "bytes": 7862,
+      "sha256": "07ae5b14d8b8d867fed2f7b460948fafb3f6a58932f3505193ce62821e70f67c"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_Hand04.png",
+      "bytes": 6762,
+      "sha256": "222276f385d2d03773ed4ed8941c6d1b09a703652e61bcb775d8f754fb341606"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_LowbodyA04.png",
+      "bytes": 9551,
+      "sha256": "1427ca98d17d50258f25f69808bf5a3e20ecc46bfd1d9bbbb70ea7826c7bb31f"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_LowbodyB04.png",
+      "bytes": 12559,
+      "sha256": "a439ca4f4dfc194da4748629a0b9da2cecd990d1cd8983e89c2c6a5003b3623e"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_Upbody04.png",
+      "bytes": 9323,
+      "sha256": "f8d2a857c58841faffaac5436dd066bf0be0908e3345eeceda3a3b1e48996fba"
+    },
+    {
+      "file": "elsword/nasod/textures/Mesh_Elsword_Event_Weapon04.png",
+      "bytes": 9974,
+      "sha256": "cd81babde09e871c35f7df54b9bfeb4149cabe98944552a66a606dd9a6805d66"
+    },
+    {
+      "file": "elsword/officer/body.glb",
+      "bytes": 716748,
+      "sha256": "3df19c7d78483c04e4855302ba57a94353b4392df92d86d45d6dd5ec53771d5f"
+    },
+    {
+      "file": "elsword/officer/effects/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.animation.json",
+      "bytes": 105056,
+      "sha256": "aa6fe477c0ee2db079312832800459d2f8d1802fd9effa30504e732d465a467c"
+    },
+    {
+      "file": "elsword/officer/effects/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.glb",
+      "bytes": 56684,
+      "sha256": "0cfc35108a24caf5eb08c345a2cf2134231dba3fac79f0320e04c5a73eadfddd"
+    },
+    {
+      "file": "elsword/officer/effects/Hyper_Mesh_Elsword_AC_Upbody_130646_Sorted.pose.json",
+      "bytes": 47536,
+      "sha256": "26d1994ee4233f3c5e57cfe685ad8f24ec7a176b29986533899da7bcdd206cfb"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Arm_Event03_Sorted.animation.json",
+      "bytes": 6861,
+      "sha256": "1ce485ef0c8084dbc373a38267fa33b149b6b1a14291f0cc18c98a6f6c6e6ec5"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Arm_Event03_Sorted.glb",
+      "bytes": 38888,
+      "sha256": "dc5c4d7cde9cbf38a366daf79e6240cdbd2095b71c69e4641c8e3cc2e40615c9"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Arm_Event03_Sorted.pose.json",
+      "bytes": 4687,
+      "sha256": "1b4496a97362aa97884d0afa991693a210edf64ad11d85b55403f8abc0bd9ae5"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Upbody_130646_Sorted.animation.json",
+      "bytes": 105056,
+      "sha256": "aa6fe477c0ee2db079312832800459d2f8d1802fd9effa30504e732d465a467c"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Upbody_130646_Sorted.glb",
+      "bytes": 56668,
+      "sha256": "a835d7c4ab63d1f6b1277759e30268a8aaa84dbaa171f2c39e1232911f3812a2"
+    },
+    {
+      "file": "elsword/officer/effects/Mesh_Elsword_AC_Upbody_130646_Sorted.pose.json",
+      "bytes": 47181,
+      "sha256": "45d0cd992df5d0c62b8e8a16622d3e3ee0f4f9c13dbcf89928c11c571cf5c64b"
+    },
+    {
+      "file": "elsword/officer/effects/textures/Mesh_Common_AC_Arm_Event03.png",
+      "bytes": 16927,
+      "sha256": "0a1a0c58212d1193cefbe25f159da3717a6d9963253e2a0dc80946ceca5039e4"
+    },
+    {
+      "file": "elsword/officer/effects/textures/Mesh_Elsword_AC_Upbody_130646.png",
+      "bytes": 12965,
+      "sha256": "80c6e552556ae08695cc17ab9361a3018ed300154b0f1ffb0751e75a599be6f6"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Common_Event_Hair03_A.png",
+      "bytes": 13279,
+      "sha256": "c44bdf2b2f4e99d3a6dc5a630e7108479237b11503d1960dfb87d01369b73a0a"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_Foot03.png",
+      "bytes": 13291,
+      "sha256": "1f7b801a677579498874451d042b79ac9126048534b2d091afe1309b00255b6c"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_Hand03.png",
+      "bytes": 8117,
+      "sha256": "db5e3c56f6eb7c891453ca4fd2fa7e23042b0e256b4ffe50fd866414b80b0a85"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_Lowbody03.png",
+      "bytes": 19701,
+      "sha256": "9eb30cb77989755f75ed1fc28f0e67d73bc1e3ebb98551256863ba3432c5c216"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_UpbodyA03.png",
+      "bytes": 25047,
+      "sha256": "f4c5a5a0d111fbdd85b43541bb75c5df7a762296692d272cf568565a0ebc4209"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_UpbodyB03.png",
+      "bytes": 25868,
+      "sha256": "7ea91f0c94d8068efcb40de8462544fbafcc5713e0befc68f37888735f1326e3"
+    },
+    {
+      "file": "elsword/officer/textures/Mesh_Elsword_Event_Weapon03.png",
+      "bytes": 25389,
+      "sha256": "6a3cb9d7ee7d6337dfcb2962afddb42ef80c6bf2d5d2fa4c49ad346286adadaa"
+    },
+    {
+      "file": "elsword/royal/body.glb",
+      "bytes": 641524,
+      "sha256": "c514a00d0f41037640f17ba212e44eda0e5d6c3200e3d8e0ad58a28114bffbf0"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_AC_Face2_132763_Sorted.animation.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_AC_Face2_132763_Sorted.glb",
+      "bytes": 41144,
+      "sha256": "7e7b7be9311f5e93271616ccb12b602013f1503a3471602bfb5570499bc9e27e"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_AC_Face2_132763_Sorted.pose.json",
+      "bytes": 997,
+      "sha256": "dc186096631f51ad1deec0b795de3f7735fc81ef46dca08d64a15dab6a2a3c3c"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.animation.json",
+      "bytes": 149282,
+      "sha256": "24d0452691a1b73b1dde8fdbe43cbf9f5ac4db511b8f2c19c847662892e7a63a"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.glb",
+      "bytes": 133452,
+      "sha256": "28ce8129bf7daacd8c074dab00c37f95a650409fc00a1003ab4a5dc53933a69f"
+    },
+    {
+      "file": "elsword/royal/effects/Mesh_Elsword_CASH_AC_FACE3_82154_Sorted.pose.json",
+      "bytes": 101898,
+      "sha256": "90466da66a08627ace16ec587fa16f71f6b4c406e5821ad9d396c0fc201add01"
+    },
+    {
+      "file": "elsword/royal/effects/textures/Mesh_Elsword_AC_Face2_132763.png",
+      "bytes": 20180,
+      "sha256": "85c4581e7ef27828d1bd5afb3ff784647456dcc5ba71febf7cadd90ec8cddbe8"
+    },
+    {
+      "file": "elsword/royal/effects/textures/Mesh_Elsword_CASH_AC_FACE3_82154.png",
+      "bytes": 15884,
+      "sha256": "99d458fa34def9af3cc5bb893a4c42aac3cc5f539c97f46bcf41562210a85262"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Foot09.png",
+      "bytes": 11684,
+      "sha256": "2866adcaa614463edf7c84c4e9b9af3974cd2d80e24bc508c032417b825a18e6"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Hair09.png",
+      "bytes": 12828,
+      "sha256": "605b9e385254f339a499cfd9b0110d45d590c7580642a2a9076a1214f1cbc2c9"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Hand09.png",
+      "bytes": 1657,
+      "sha256": "80b08cd8873f7433057b277aead7919594d22267326095d4f81c59e4c361ec78"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Lowbody09.png",
+      "bytes": 9967,
+      "sha256": "71d75198003d3c09c56bde370a6b88f50eb34943cde7363208a80ccf1e88dbb9"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Upbody09.png",
+      "bytes": 11763,
+      "sha256": "17fcda3c4a25332efe7a625ba3b07b007fd899b266950e1a468597c66ac86090"
+    },
+    {
+      "file": "elsword/royal/textures/Mesh_Elsword_Event_Weapon09.png",
+      "bytes": 28436,
+      "sha256": "c0dd078283d00d7cdac7362958c34f32a2078d0d829637aba0b2c1b90ab570bd"
+    },
+    {
+      "file": "elsword/solace/body.glb",
+      "bytes": 704032,
+      "sha256": "5473d5f2ddcaaee56cf3502508f579eb1defb5a23f81ae14687f6249738062a3"
+    },
+    {
+      "file": "elsword/solace/effects/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.animation.json",
+      "bytes": 217000,
+      "sha256": "29c08d6d6dd984a81914eace73f3848f03c7a3c4e371e644dd0eabb1de022c23"
+    },
+    {
+      "file": "elsword/solace/effects/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.glb",
+      "bytes": 88436,
+      "sha256": "354af2ef0278d56789f866171df59c6b7ce843280493e231a65317f31bdba8b0"
+    },
+    {
+      "file": "elsword/solace/effects/Hyper_Mesh_Elsword_AC_Upbody_131835_Sorted.pose.json",
+      "bytes": 90712,
+      "sha256": "87d4ced7e5faa6690424a916f621f5a540c3d11ce1c701e92f239109fc046b98"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_ARM_88402_Sorted.animation.json",
+      "bytes": 6748,
+      "sha256": "134b44fe2ef133c2a76676ecec381783d402432f63c34aaae2853ebcdb5c9b4b"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_ARM_88402_Sorted.glb",
+      "bytes": 70784,
+      "sha256": "f7090981e0429dabf5ab366a4f07b495eba4a063be3d57f6778e30793776882c"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_ARM_88402_Sorted.pose.json",
+      "bytes": 4245,
+      "sha256": "22b9d2b92741803e383ec47f700f5bc46b1ce3cf5cf6acad1fcc5416d414a40a"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_Upbody_131835_Sorted.animation.json",
+      "bytes": 2059612,
+      "sha256": "26499b7a2fbe46222307c6376782f33309f078a4536545049745cabae1252e19"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_Upbody_131835_Sorted.glb",
+      "bytes": 311040,
+      "sha256": "0d422d2091c8aad141f604813b58560f64ce97fb742143208686bf968dd96858"
+    },
+    {
+      "file": "elsword/solace/effects/Mesh_Elsword_AC_Upbody_131835_Sorted.pose.json",
+      "bytes": 835278,
+      "sha256": "5b2cdc6e2e84aefd26eab6eebb3abb1e84d50e282582b0387a9766cbc1036dd9"
+    },
+    {
+      "file": "elsword/solace/effects/textures/Mesh_Common_AC_Upbody_131835.png",
+      "bytes": 24831,
+      "sha256": "e93a0c91df09b53ab4da2d44d785b09f7c130678970348188df3e1202abd5b03"
+    },
+    {
+      "file": "elsword/solace/effects/textures/Mesh_Elsword_AC_ARM_88402.png",
+      "bytes": 20792,
+      "sha256": "cc104e3b8acb97164fe5940dbf78ac5a06e5ea5fd50f1d13bc5fb9abb2d11f2c"
+    },
+    {
+      "file": "elsword/solace/effects/textures/Mesh_Elsword_AC_ARM_88402_A.png",
+      "bytes": 20789,
+      "sha256": "c9a0d10453b142ba08614d611a3d8ab70507b6feff414c4d8396f4c47c4e83b8"
+    },
+    {
+      "file": "elsword/solace/effects/textures/Mesh_Elsword_AC_Upbody_131835.png",
+      "bytes": 21056,
+      "sha256": "f750aa20465787a634d6234b50b68254de55eb4afa5b1bc75d8f2874219cf6ca"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_Foot07.png",
+      "bytes": 8550,
+      "sha256": "cc0c4597f6356d1b461f992a96a5367ebcc5729072ea21e8fd10973e97c5d9e7"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_Hair07.png",
+      "bytes": 11483,
+      "sha256": "0c9daaa7f0823f93a3f164ece5130385f99f7545d3c6264e32472e390961b7ca"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_Hand07.png",
+      "bytes": 7511,
+      "sha256": "6984d2d15c99288b654433f13dcd16d3e7a65c5cfe2f8048c2396ab96c58eba0"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_Lowbody07.png",
+      "bytes": 9167,
+      "sha256": "47059f24f82be2d177ad5568df2a7cc55c191e72fc725910c10342b3425064c3"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_UpbodyA07.png",
+      "bytes": 15742,
+      "sha256": "712ef295284ab4cd3a429214a5c78b858c2b2b67bb4dc821d5f959b90773ee49"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_UpbodyB07.png",
+      "bytes": 20207,
+      "sha256": "76307e7567aa2e6c33b85281d228915d582fc67a6c229431d64cc897ec5dbda5"
+    },
+    {
+      "file": "elsword/solace/textures/Mesh_Elsword_Event_Weapon07.png",
+      "bytes": 32339,
+      "sha256": "697778c25fbe16e981cec656245c486cfc85d4580161b3dffcf04693bfa62a4d"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 127125,
+      "sha256": "406901c204f73f7f4c3d264b017dc6c490c15b4f74e05d0e312b10f43036db5a"
+    }
+  ],
+  "resourceTotals": {
+    "sharedFiles": 71,
+    "sharedBytes": 8056649,
+    "manifestFiles": 1
+  },
+  "runtimeStatus": {
+    "mapped": true,
+    "copied": true,
+    "evidenceClass": "resource-compatibility-not-runtime-approval",
+    "verificationTest": "tests/integration/rs-costumes-v1.test.mjs",
+    "report": "reports/rs-costumes-v1.md",
+    "note": "This contract pins original item identities and resource compatibility; runtime adapter validation is recorded separately."
+  }
+}

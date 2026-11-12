@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "independent static original2016 declarations; no game execution or simulation output",
+  "targetClientMeasured": false,
+  "archive": "data/data036.kom",
+  "damageSha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+  "enumSha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+  "parser": "tools/combat/kl82_static.py",
+  "parserSha256": "1866e24a475e36fab4211b927583899120227a3baad35836c58e8164bfc512b5",
+  "damageData": {
+    "RAVEN_OVER_TAKER_ARC_ENEMY": {
+      "PVP_RATE": 0.6,
+      "FORCE_DOWN": -15,
+      "BACK_SPEED_Y": -1000,
+      "CLEAR_SCREEN": 1,
+      "HIT_GAP": 1,
+      "CAMERA_CRASH_GAP": 20,
+      "STOP_TIME_ATT": 0,
+      "TECH_POINT": 188,
+      "CAMERA_CRASH_TIME": 0.5,
+      "STOP_TIME_DEF": 0,
+      "HIT_ADD_MP": 3.75,
+      "BACK_SPEED_X": 500,
+      "DAMAGE_TYPE": 1,
+      "ATTACK_TYPE": 1,
+      "HIT_TYPE": 3,
+      "REACT_TYPE": 2,
+      "DAMAGE": {
+        "MAGIC": 4.48
+      },
+      "RE_ATTACK": 1,
+      "ATTACK_TRIGGER_TYPE": 1
+    },
+    "RAVEN_OVER_TAKER_ARC_ENEMY_MEMO": {
+      "HIT_ADD_MP": 0,
+      "CREATE_DAMAGE_EFFECT_NAME": "DUMMY_DAMAGE_MEMO",
+      "DAMAGE_TYPE": 1,
+      "HIT_TYPE": 21,
+      "REACT_TYPE": 11,
+      "RE_ATTACK": 0,
+      "APPLIED_SKILL_ID": 24008
+    },
+    "SI_SA_RRF_WILD_CHARGE_ATTACK": {
+      "PVP_RATE": 0.75,
+      "BACK_SPEED_Y": 1000,
+      "CAMERA_CRASH_GAP": 50,
+      "STOP_TIME_ATT": 0.1,
+      "TECH_POINT": 1000,
+      "CAMERA_CRASH_TIME": 0.5,
+      "STOP_TIME_DEF": 0.2,
+      "HIT_ADD_MP": 6.67,
+      "BACK_SPEED_X": 2000,
+      "DAMAGE_TYPE": 1,
+      "ATTACK_TYPE": 1,
+      "HIT_TYPE": 1,
+      "REACT_TYPE": 5,
+      "DAMAGE": {
+        "MAGIC": 16.93
+      },
+      "CAN_REVENGE": 0,
+      "RE_ATTACK": 0,
+      "ATTACK_TRIGGER_TYPE": 1
+    }
+  },
+  "sourceLocations": {
+    "RAVEN_OVER_TAKER_ARC_ENEMY": {
+      "prototype": 20,
+      "assignmentInstruction": 201594
+    },
+    "RAVEN_OVER_TAKER_ARC_ENEMY_MEMO": {
+      "prototype": 20,
+      "assignmentInstruction": 218942
+    },
+    "SI_SA_RRF_WILD_CHARGE_ATTACK": {
+      "prototype": 20,
+      "assignmentInstruction": 226952
+    }
+  }
+}

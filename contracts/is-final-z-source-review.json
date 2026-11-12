@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "target": {
+    "evidenceClass": "fresh static target2016 declaration",
+    "source": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "state": "ESSI_ETK_COMBO_XXXZ",
+    "raw": {
+      "PHANTOM_BLADE_ATTACK_TIME_INDEX": 0,
+      "DAMAGEDATA_CHANGE_TIME": 0.233,
+      "SKILL_CANCEL_AFTER": 0.5,
+      "ANIM_NAME": "ESSI_COMBO_ETK_XXXZ",
+      "HIT_CAMERA1_RATE": 35,
+      "ANIM_SPEED": 0.8,
+      "PHANTOM_BLADE_BACK_SPEED_X": 740,
+      "SPEED_X": 500,
+      "PHANTOM_BLADE_BACK_SPEED_Y": 1800,
+      "PHANTOM_BLADE_DAMAGE_DATA_NAME": "DAMAGE_DATA",
+      "HIT_CAMERA2_RATE": 25,
+      "WALK_CANCEL_AFTER": 0.6,
+      "HIT_CAMERA0_RATE": 40,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "ATTACK_TIME0": {
+        "1": 0.2,
+        "2": 0.233
+      },
+      "ATTACK_TIME1": {
+        "1": 0.266,
+        "2": 0.366
+      },
+      "SLASH_TRACE": {
+        "1": 0,
+        "2": 100
+      },
+      "SOUND_PLAY0": {
+        "1": 0.2,
+        "2": "Slash.ogg"
+      },
+      "SOUND_PLAY1": {
+        "1": 0.3,
+        "2": "ElswordVoice_Shout08.ogg"
+      },
+      "PHANTOM_BLADE_REACT_TYPE": 4,
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_GAP": 10,
+        "FORCE_DOWN": 3.5,
+        "HIT_ADD_MP": 4,
+        "TECH_POINT": 47,
+        "CAMERA_CRASH_TIME": 0.2,
+        "RATE_MODIFIER": 0.65,
+        "WAY_OF_SWORD_TYPE": 1,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 1,
+        "REACT_TYPE": 1,
+        "ATTACK_TYPE": 2,
+        "ENABLE_ATTACKBOX": {
+          "1": "Sword"
+        },
+        "DISABLE_ATTACKBOX": {
+          "1": "sisSword"
+        },
+        "DAMAGE": {
+          "PHYSIC": 1.26
+        }
+      },
+      "DAMAGE_DATA_NEXT": {
+        "FORCE_DOWN": -7,
+        "BACK_SPEED_X": 750,
+        "BACK_SPEED_Y": 1800,
+        "CAMERA_CRASH_GAP": 10,
+        "STOP_TIME_ATT": 0.033,
+        "TECH_POINT": 143,
+        "CAMERA_CRASH_TIME": 0.2,
+        "RATE_MODIFIER": 0.65,
+        "STOP_TIME_DEF": 0.166,
+        "HIT_ADD_MP": 4.2,
+        "WAY_OF_SWORD_TYPE": 1,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 2,
+        "REACT_TYPE": 4,
+        "ATTACK_TYPE": 2,
+        "ENABLE_ATTACKBOX": {
+          "1": "sisSword"
+        },
+        "DISABLE_ATTACKBOX": {
+          "1": "Sword"
+        },
+        "DAMAGE": {
+          "PHYSIC": 1.43
+        }
+      },
+      "CAMERA1": {
+        "1": {
+          "ANGLEDEGREE": 30,
+          "EYEDISTANCE": 0,
+          "HEIGHT": -30,
+          "LOOKATDISTANCE": 200,
+          "DISTANCE": 900,
+          "TRACKINGTIME": 0.666,
+          "CAMERA_TYPE": 3,
+          "LOOK_TYPE": 1
+        }
+      },
+      "CAMERA2": {
+        "1": {
+          "ANGLEDEGREE": -30,
+          "EYEDISTANCE": 0,
+          "HEIGHT": 180,
+          "LOOKATDISTANCE": 200,
+          "DISTANCE": 1200,
+          "TRACKINGTIME": 0.666,
+          "CAMERA_TYPE": 3,
+          "LOOK_TYPE": 1
+        }
+      },
+      "EFFECT_SET_LIST": {
+        "1": "EffectSet_SECOND_BLADE_COMBO",
+        "2": 0
+      },
+      "DELETE_EFFECT_SET_ON_STATE_END": 1,
+      "COMBO_GUIDE": {
+        "1": "Z",
+        "2": "ZZ"
+      },
+      "IS_ATTACK_STATE": 1
+    }
+  },
+  "motion": {
+    "evidenceClass": "target2016 source hash rechecked; previously decoded original keyframes",
+    "source": {
+      "archive": "data/data033.kom",
+      "ordinal": 225,
+      "name": "Motion_Elsword_TK.x",
+      "rawPath": "raw/data/data033.kom/Motion_Elsword_TK.x",
+      "sha256": "a31899d5aeb4c086292b992598f35005e634008f3bbf2f8ce8257f6e0b7d5904",
+      "bytes": 2843578,
+      "signatureHex": "4b534d20000200000e5e0100008b7dc0"
+    },
+    "clip": {
+      "name": "ESSI_COMBO_ETK_XXXZ",
+      "sourceName": "ESSI_COMBO_ETK_XXXZ",
+      "source": "raw/data/data033.kom/Motion_Elsword_TK.x",
+      "sourceAnimationIndex": 22,
+      "durationSeconds": 1.2,
+      "durationTicks": 5760.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "940a793443055d3bd69461c7b942a8f2a76974ea44247b6bd8ef8b43b82afc83",
+      "trackCount": 67
+    }
+  },
+  "reference": {
+    "path": "X2Lib/X2GUElsword_SwordMan.cpp",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "gitBlob": "40dde7e70da2cd2888b1a08bcfe10cdab444e037",
+    "evidenceClass": "fixedV5 version reference, includes later reconstruction; not matching target2016 executable",
+    "actualMethods": [
+      {
+        "method": "ESSI_ETK_COMBO_XXXZ_FrameMove",
+        "line": 16128,
+        "lastLine": 16151,
+        "sha256": "ebd170cdeb283ddd9e0bdc8c0a92700646cb82ff97d3b2a8017397e8ef6103b0"
+      },
+      {
+        "method": "ESSI_ETK_COMBO_XXXZ_EventProcess",
+        "line": 16153,
+        "lastLine": 16170,
+        "sha256": "dcf0b6ebbc366d73273ddcc865c8847d3eeaa6edb6fad2fcf3a234f2ed1e6e30"
+      },
+      {
+        "method": "ESSI_ETK_COMBO_XXXZ_StateEnd",
+        "line": 16172,
+        "lastLine": 16176,
+        "sha256": "284faa2344511b6f7d59082e6f1a5c44b28c27a73dfda39b80af009cf0f496e8"
+      }
+    ],
+    "eventSemantics": [
+      "not grounded: JUMP_DOWN",
+      "IsAnimationEnd: WAIT",
+      "WALK_CANCEL_AFTER with movement input",
+      "SKILL_CANCEL_AFTER with skill input"
+    ],
+    "idleForcedRecoveryAtPoint4": false
+  },
+  "animationEndReference": {
+    "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+    "fileSha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "pinned V5 consumer; not target2016 executable",
+    "methods": [
+      {
+        "signature": "HRESULT CKTDGXSkinAnim::OnFrameMove(",
+        "line": 758,
+        "lastLine": 838,
+        "sha256": "3611fa1de2abf04d44526e9a3010d4f3ae4f28c0f825bbe9aedf193f5a4ce764"
+      },
+      {
+        "signature": "bool CKTDGXSkinAnim::ChangeAnim( LPD3DXANIMATIONSET",
+        "line": 1166,
+        "lastLine": 1288,
+        "sha256": "e396aa32b7edb3c40982eb296534ad647ab184b92f54fb27ae5a76170c8a960c"
+      }
+    ],
+    "formula": "IsAnimationEnd when animationTime > period - transitionTime",
+    "fallbackTransitionTime": "max(period/10, .03); per-clip target XET override has not been consumed",
+    "currentDefaultEndAnimationSeconds": 1.08
+  },
+  "webChange": {
+    "removed": "prior user adapter recover=.4 forced WAIT without input",
+    "retained": "prior explicit-input .37 skill/dash/fresh-walk windows; source raw fields remain .5/.6"
+  },
+  "limits": [
+    "Matching target2016 native callback/executable trace has not been acquired.",
+    "Pinned V5 consumer is a version reference, not target2016 runtime proof.",
+    "Simulation regressions and original-client evidence remain separate."
+  ]
+}

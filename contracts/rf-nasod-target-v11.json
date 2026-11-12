@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "targetClientMeasured": false,
+  "declarationSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  ],
+  "blockedExtraTypes": {
+    "EDT_MANA_DAMAGE": 16,
+    "EDT_DAMAGE_RATE": 26,
+    "EDT_WATER_HOLD": 34,
+    "EDT_ATTACK_ALL_TEAM": 47
+  },
+  "smallState": {
+    "raw": {
+      "ANIM_SPEED": 1.2,
+      "ANIM_NAME": "GuardBigFront",
+      "PASSIVE_SPEED_X": 0,
+      "PASSIVE_SPEED_Y": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "IMMUNITY_LIST_AT_THIS_STATE": {
+        "1": 25,
+        "2": 52,
+        "3": 77
+      },
+      "IS_ATTACK_STATE": 1
+    },
+    "sourceAssignment": {
+      "prototype": 0,
+      "assignmentInstruction": 10137
+    }
+  },
+  "effectSet": {
+    "raw": {
+      "NAME": "EffectSet_RAVEN_PARRING",
+      "EFFECT0": {
+        "NAME": "raven_bead_shield_01",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      },
+      "EFFECT1": {
+        "NAME": "raven_bead_shield_02",
+        "EFFECT_TYPE": 8,
+        "TRACE": 1
+      }
+    },
+    "sourceCall": {
+      "prototype": 3,
+      "instruction": 122962,
+      "target": "g_pEffectSet.AddEffectSetTemplet_LUA"
+    }
+  }
+}

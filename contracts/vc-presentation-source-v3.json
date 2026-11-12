@@ -1,0 +1,839 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016 original resource declarations; fixedV5 source consumers; original D3DX DLL key/period measurement",
+  "sourceFiles": [
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragments": [
+        {
+          "line": 5509,
+          "lastLine": 5529,
+          "purpose": "Overheat duration expires and closes the arm",
+          "sha256": "529250afea72036af2708c4022f3cecce177b2a333c62ae277534b922ccf392e"
+        },
+        {
+          "line": 5571,
+          "lastLine": 5610,
+          "purpose": "Per-frame Forearm matrix and Forearm/Hand fire position",
+          "sha256": "de3015a004e5c08907e8cb9876b9e25bae040089957e885237930fdc17fd04fe"
+        },
+        {
+          "line": 17376,
+          "lastLine": 17445,
+          "purpose": "Original overheat notice / overlap stage resources and head offsets",
+          "sha256": "988cf966d797488bf270926408ec8711a665ebb2cbcd42a2608ded010e110de0"
+        },
+        {
+          "line": 18681,
+          "lastLine": 18705,
+          "purpose": "Revolver accepted input notice",
+          "sha256": "eedc8351a8d6cbbd515387805adcb655636df839a56dfa819476465282d867eb"
+        },
+        {
+          "line": 18799,
+          "lastLine": 18830,
+          "purpose": "Harpoon accepted input notice",
+          "sha256": "6868d8794da422ad9889f8d841fafdde88a29e8f19ce875c3832dd1386d1eef0"
+        },
+        {
+          "line": 19057,
+          "lastLine": 19082,
+          "purpose": "Gatling accepted input notice",
+          "sha256": "27a9fab18e0d8d7d2f6070e551c32711cd9c0b40f06091e8df7276e0c765085a"
+        },
+        {
+          "line": 19382,
+          "lastLine": 19391,
+          "purpose": "Giga overheat finish entry notice",
+          "sha256": "27ef55a86190221098c191e22c4d51224a2676ad550529ed2c37e4b38f278e72"
+        },
+        {
+          "line": 20618,
+          "lastLine": 20668,
+          "purpose": "Deadly Raid notices 1/2/3 at original input thresholds",
+          "sha256": "f81ddde9dd3ec942f3141a185882ab11f566c6f8b46ed713065b755aae7c5f58"
+        },
+        {
+          "line": 20710,
+          "lastLine": 20738,
+          "purpose": "Ignition Crow accepted input notice",
+          "sha256": "a9769402d4669cd38a5282d95c7e3bb3a0e74f9d09730bbb407e598a4fb0bf5c"
+        },
+        {
+          "line": 23048,
+          "lastLine": 23076,
+          "purpose": "Incineration accepted input notice",
+          "sha256": "1408f2af3b1386fc665ea1c4f85f08d39a636c963daf7122bd40e8cb02379bda"
+        },
+        {
+          "line": 21603,
+          "lastLine": 21704,
+          "purpose": "Arm open/close mesh and two fire effect owners",
+          "sha256": "016ceeb7036300bb9b129a82642eac09a19e7e9f4b9481f4d47c60f3c958ec82"
+        },
+        {
+          "line": 21804,
+          "lastLine": 21836,
+          "purpose": "Shared Raven awakening starts four minor sequences",
+          "sha256": "49b67658dc4c0ee88bc73874c854b4a40110e2eab767370a74f7763d02387914"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "bytes": 1323547,
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragments": [
+        {
+          "line": 13145,
+          "lastLine": 13160,
+          "purpose": "GetHeadBonePos source frame plus world Y70",
+          "sha256": "337b7ac4f1d7b8a42dbf7f4898649d73da4ee2535b42c1bbb060db861927ebc4"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2GameUnit.cpp",
+      "bytes": 521479,
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "fragments": [
+        {
+          "line": 12783,
+          "lastLine": 12965,
+          "purpose": "Shared aura deletion, bones and remaining-time emission rate",
+          "sha256": "abe6ee568e6b1945f45dfc92c319cc0f834b5589f0f06d501ea696bd459fd244"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.h",
+      "bytes": 74061,
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "fragments": [
+        {
+          "line": 831,
+          "lastLine": 866,
+          "purpose": "Absent PlayCount defaults zero; mesh blend and depth defaults",
+          "sha256": "aca47b2ed34ea0e2387603e4384f21f157454be6ea26187adb9fb70ca697120a"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragments": [
+        {
+          "line": 2104,
+          "lastLine": 2128,
+          "purpose": "Skin end increments then equality-compares original play count",
+          "sha256": "c6864c814728fe788a11a34a3f1da7a527ca085a6f35d1255f4f0787a095a199"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "bytes": 42639,
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "fragments": [
+        {
+          "line": 756,
+          "lastLine": 824,
+          "purpose": "XAP_ONE/WAIT preserve end flag in STOP/WAIT; LOOP restarts",
+          "sha256": "4a5545559c7b5cacd67bee544d80e592611910a80729a86d8c98bbd9678ee716"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.h",
+      "bytes": 30326,
+      "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "fragments": [
+        {
+          "line": 269,
+          "lastLine": 312,
+          "purpose": "Confirmed missing clone frame returns literal world zero, not actor or mesh origin",
+          "sha256": "d77f880ef9ce6ead97162225320ee0f9bd1f0a9693eb024b7c6130c7985fccd7"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageManager.h",
+      "bytes": 57466,
+      "sha256": "a37e667e1d4c119a498aeac4f1d6d2222c05f8442060bfd5ea979cae95628cae",
+      "fragments": [
+        {
+          "line": 1300,
+          "lastLine": 1306,
+          "purpose": "DamageData initializes impactPoint to literal world zero",
+          "sha256": "9c487401d85dbd99695730830bd6d1edbd5cc28bc64d98141e38a1dde3233922"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "line": 2356,
+          "lastLine": 2434,
+          "purpose": "DamageCheck precedes first-frame START particles; impact point comes from that check",
+          "sha256": "08e7ac8d967d7537286ed11d50764f0e2c345cd6812d9f30d5be36d94d17ff4b"
+        },
+        {
+          "line": 5463,
+          "lastLine": 5488,
+          "purpose": "Particle creation copies the actual damage-effect land plane before SetParticleData",
+          "sha256": "7550ead006b115aefdad3f05312f6b3e36f1c6607d3281e36b522f13630039dd"
+        },
+        {
+          "line": 6163,
+          "lastLine": 6200,
+          "purpose": "DEPT_BONE uses GetCloneFramePosition with the source bone name",
+          "sha256": "c376422e5fad4bf3ebc68fb584af2c04559194fb49fea66e0635f02940d7712a"
+        },
+        {
+          "line": 6306,
+          "lastLine": 6327,
+          "purpose": "DEPT_IMPACT_POINT uses retained DamageData impactPoint, no invented mesh birth origin",
+          "sha256": "8bd89f567b9f73180ee84c50bbb7f01df5f8cde7f0003fa0d6f3cabb891e282b"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "bytes": 146678,
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "fragments": [
+        {
+          "line": 1298,
+          "lastLine": 1316,
+          "purpose": "TRACE update gets position, then breaks before SetPosition if target mesh became invalid",
+          "sha256": "db06dc7386f14909152c7d7ca7f4d56ad88c886b20fce94c76b00c6972e608d2"
+        },
+        {
+          "line": 2778,
+          "lastLine": 2804,
+          "purpose": "Target-mesh position precedes explicit/custom or owner routes",
+          "sha256": "9529ec934bebac641748854d7d724c09c19b7f76b594c044bdd1717c451c083f"
+        },
+        {
+          "line": 3779,
+          "lastLine": 3873,
+          "purpose": "Target handle mesh lookup and named target bone; dead target invalidates the handle",
+          "sha256": "04cf5cc7a0e12483734d20e10a0ea2c299df00e84faeb8ece1513b5873359f85"
+        }
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "name": "HyperBoostRightBlack",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 10173,
+        "line": 332
+      },
+      "declarationSha256": "e931ae227ef68c25ee94d3757630627bf81056c56ab2c4d53cef2bb97e30ffe7",
+      "sharedResourceEvidence": {
+        "index": "artifacts/rf/awakening-fx/index.json",
+        "declarationSha256": "e931ae227ef68c25ee94d3757630627bf81056c56ab2c4d53cef2bb97e30ffe7"
+      }
+    },
+    {
+      "name": "HyperBoostLeftBlack",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 10867,
+        "line": 352
+      },
+      "declarationSha256": "807d74cab129a15d1ab60f06fc225525231fc2e156318ab36262bf709633f9a2",
+      "sharedResourceEvidence": {
+        "index": "artifacts/rf/awakening-fx/index.json",
+        "declarationSha256": "807d74cab129a15d1ab60f06fc225525231fc2e156318ab36262bf709633f9a2"
+      }
+    },
+    {
+      "name": "WeaponTaker_Overheat",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 195570,
+        "line": 5082
+      },
+      "declarationSha256": "331452399b5d7cec7427872faa19a3cd0fcde5cfbcdbed6aaaeac860f932d070"
+    },
+    {
+      "name": "Overlap_EDT_Emoticon_1_OverHeat",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 237480,
+        "line": 6153
+      },
+      "declarationSha256": "224a3acd2c69be4b3fd0eb27104acec8009ba4d69addaa7b92ec3fdfe2bdc79a"
+    },
+    {
+      "name": "Overlap_EDT_Emoticon_2_OverHeat",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 238355,
+        "line": 6178
+      },
+      "declarationSha256": "6a05afaff31b6a7ca8e2fced43798ca120d42928d899e3f44d3f405888a75615"
+    },
+    {
+      "name": "Overlap_EDT_Emoticon_3_OverHeat",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 239230,
+        "line": 6203
+      },
+      "declarationSha256": "7f993a5698dd9db148fbe71ee8cad89bba57b4f7e401d39f837102be42ade723"
+    },
+    {
+      "name": "RVC_OverHeat_Object_Start",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1164483,
+        "line": 36704
+      },
+      "declarationSha256": "aae282fc6d001f21676dfae2186683fadacaf2c5b8f40ff6a8504bd3d6d87112",
+      "glb": "fx/meshes/Mesh_Raven_RVC_Cash_Left_Hand_Effect.glb",
+      "poseData": "fx/meshes/Mesh_Raven_RVC_Cash_Left_Hand_Effect.pose.json",
+      "animationClips": [
+        {
+          "name": "End",
+          "durationSeconds": 0.4000000059604645,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Start",
+          "durationSeconds": 0.3333333432674408,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "RVC_OverHeat_Object_End",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1164896,
+        "line": 36719
+      },
+      "declarationSha256": "34f7ca233f1492e236d2f3ecc7af50cadd0d3f8a8d80210b7a5d5c473f11842d",
+      "glb": "fx/meshes/Mesh_Raven_RVC_Cash_Left_Hand_Effect.glb",
+      "poseData": "fx/meshes/Mesh_Raven_RVC_Cash_Left_Hand_Effect.pose.json",
+      "animationClips": [
+        {
+          "name": "End",
+          "durationSeconds": 0.4000000059604645,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "Start",
+          "durationSeconds": 0.3333333432674408,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "RVC_OverHeat_Main_Effect",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1165305,
+        "line": 36734
+      },
+      "declarationSha256": "b318d197ac89c69f796336746aee51cf0e057bb15fe68eca97903428229059e2",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "RVC_buff_OverHit_P01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 233451,
+        "line": 6063
+      },
+      "declarationSha256": "6bbe713adfb9762e6194b848535960ff6e4f686a3ea28b57fee8ddaa0644b25f"
+    },
+    {
+      "name": "RVC_buff_OverHit_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 234601,
+        "line": 6091
+      },
+      "declarationSha256": "0ca1a280e9de4dde4c177962f1b4761672a8b52352a0c73e4369dd71d26e0200"
+    },
+    {
+      "name": "RWT_BARRAGE_ATTACK_TRACE_Stand",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1027301,
+        "line": 32311
+      },
+      "declarationSha256": "94085f96e19cff50fd65075ddaa9e3de5956f12f0a050f6b3a2e966e48653a37",
+      "glb": "../rf/fx/meshes/RWT_BARRAGE_ATTACK_TRACE_Stand.glb",
+      "poseData": "../rf/fx/meshes/RWT_BARRAGE_ATTACK_TRACE_Stand.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "sharedResourceEvidence": {
+        "index": "artifacts\\rf\\fx\\index.json",
+        "declarationSha256": "94085f96e19cff50fd65075ddaa9e3de5956f12f0a050f6b3a2e966e48653a37"
+      }
+    },
+    {
+      "name": "B_RWT_GIGA_PROMINENCE_pillar_fire_B",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1033986,
+        "line": 32509
+      },
+      "declarationSha256": "afa0b029d8efb728add6687d820b53f71be39d450cd8002b19eced2c2bd05d8c",
+      "glb": "fx/meshes/RWT_GIGA_PROMINENCE_pillar_fire02.glb",
+      "poseData": "fx/meshes/RWT_GIGA_PROMINENCE_pillar_fire02.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.6666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "RVC_NAPALM_BOMB_EXPLOSION_ATTACKBOX",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1152538,
+        "line": 36305
+      },
+      "declarationSha256": "5ad99d2464f57e46d35a660409cac312b75b32f40b13731a1849436e856ed60d",
+      "glb": null,
+      "poseData": "../rf/fx/meshes/BREAKING_FIST_Attack_Box.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "sharedResourceEvidence": {
+        "index": "artifacts\\rf\\shadow-weapon-fx\\index.json",
+        "declarationSha256": "5ad99d2464f57e46d35a660409cac312b75b32f40b13731a1849436e856ed60d"
+      }
+    },
+    {
+      "name": "RVC_C_dashJumpX_hitGround_P05_1",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 93,
+        "name": "GameMajorParticle11.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+        "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+        "bytes": 356374,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 196517,
+        "line": 5168
+      },
+      "declarationSha256": "ce1a44ed46000a17ee4f8699016882572ab2af902eec671533956bd255944454",
+      "sharedResourceEvidence": {
+        "index": "artifacts\\rf\\shadow-weapon-fx\\index.json",
+        "declarationSha256": "ce1a44ed46000a17ee4f8699016882572ab2af902eec671533956bd255944454"
+      }
+    },
+    {
+      "name": "raven_SA_hellFire_hit_01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 158984,
+        "line": 4176
+      },
+      "declarationSha256": "4c4d46ee21de1b47267c3f6bfc90bccca89802a07b14b43b6059cd6623ad20ad"
+    },
+    {
+      "name": "raven_SA_hellFire_hit_02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 160067,
+        "line": 4201
+      },
+      "declarationSha256": "303b074ea12f03376e9f1bd715504d4356728d9f2f8ad250edbf7c30782befb0"
+    },
+    {
+      "name": "raven_SA_hellFire_hit_03",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 161151,
+        "line": 4227
+      },
+      "declarationSha256": "814671cf556001a2fe90ae29046a1eeb1eba440b68394694bb8b184e6add08ed"
+    },
+    {
+      "name": "raven_SA_hellFire_hit_04",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 161886,
+        "line": 4249
+      },
+      "declarationSha256": "4c786fcecb51aef914fd8496ccaab797cf724ad7798ad59530448d2d3491d9ec"
+    },
+    {
+      "name": "raven_SA_hellFire_hit_05",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 162689,
+        "line": 4272
+      },
+      "declarationSha256": "48e591b00ed6838f8eb809edd86857cd81fca50e934dcdd12524ea76e50b1f47"
+    },
+    {
+      "name": "EffectSet_RVC_Flame_Buster_P05",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 98,
+        "name": "GameMajorParticle16.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+        "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+        "bytes": 226239,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 59386,
+        "line": 1691
+      },
+      "declarationSha256": "4478b44908c9d54c90b54a1d7efc3496095b407b68b409306424d2038e0b81ab"
+    },
+    {
+      "name": "SA_RVC_IGNITION_CROW_INCINERATION_M01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1520063,
+        "line": 47235
+      },
+      "declarationSha256": "8c29253b04738b709c7b3e0fda6f317911e219f1c68a9c7b8b6565faeb3b461d",
+      "glb": "fx/meshes/IGNITION_CROW_BIRD.glb",
+      "poseData": "fx/meshes/IGNITION_CROW_BIRD.pose.json",
+      "animationClips": [
+        {
+          "name": "IGNITION_CROW_CROW_START",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "IGNITION_CROW_CROW_END",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "SA_RVC_IGNITION_CROW_INCINERATION_OVERHEAT_M01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1520738,
+        "line": 47255
+      },
+      "declarationSha256": "957ab673fa6d69548d1f3dfd2dfccfa0e52c8315fcd49ce27f16b7c2ee1ee4ca",
+      "glb": "fx/meshes/IGNITION_CROW_BIRD.glb",
+      "poseData": "fx/meshes/IGNITION_CROW_BIRD.pose.json",
+      "animationClips": [
+        {
+          "name": "IGNITION_CROW_CROW_START",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        },
+        {
+          "name": "IGNITION_CROW_CROW_END",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    {
+      "name": "SA_RVC_IGNITION_CROW_INCINERATION_P01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 96,
+        "name": "GameMajorParticle14.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+        "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+        "bytes": 305895,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 211492,
+        "line": 5906
+      },
+      "declarationSha256": "b66689e3a7f59b50d6e1a867b1f538f74f382711d80b83e292305d4fd1b0f7af"
+    },
+    {
+      "name": "SA_RVC_IGNITION_CROW_INCINERATION_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 96,
+        "name": "GameMajorParticle14.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+        "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+        "bytes": 305895,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 212788,
+        "line": 5934
+      },
+      "declarationSha256": "185f24702bc79c083cff0526b381cbe175c5f06a1ffeaf59e315581e1c7d773b"
+    }
+  ],
+  "armNativeMeasurement": {
+    "source": "asset_work\\raw\\data\\data120.kom\\Mesh_Raven_RVC_Cash_Left_Hand_Effect.X",
+    "sourceSha256": "fbded0a39004e7497d936719e6148603de17efc9267bc622313fcb4ef5c4afaa",
+    "sourceBytes": 5482,
+    "actualLoaderHresult": "0x00000000",
+    "nativeAnimations": [
+      {
+        "index": 0,
+        "name": "Start",
+        "period": 0.3333333432674408,
+        "ticksPerSecond": 4800,
+        "playbackType": 0
+      },
+      {
+        "index": 1,
+        "name": "End",
+        "period": 0.4000000059604645,
+        "ticksPerSecond": 4800,
+        "playbackType": 0
+      }
+    ]
+  },
+  "bindings": {
+    "awakening": "Four shared Raven minor emitters, RF and VC each routed by profession; bones exchange on facing change",
+    "notice": "Accepted overheat input emits the original 0.5-second WeaponTaker_Overheat once; Deadly Raid adds original stage1/2/3",
+    "noticePosition": "GetHeadBonePos + lineDirection * (isRight ? 140 : -140), world Y+60; overlap adds unmirrored lineDirection*50 and world Y+20",
+    "arm": "RVC_OverHeat_Object_Start/End use complete Bip01_L_Forearm combineMatrix, not only XYZ/yaw",
+    "fire": "Two DAMAGE_EFFECT_OVERHEAT_EFFECT owners follow Bip01_L_Forearm and Bip01_L_Hand positions",
+    "meshPlayCount": "Absent count keeps original zero; count3 plus XAP_ONE consumes sticky end on three packets without replaying animation",
+    "gatlingImpactParticles": "First live damage check precedes START particles; POSITION_TYPE2 reads retained impactPoint, with literal zero only for no hit yet",
+    "missingDamageMeshBone": "Original BREAKING_FIST_Attack_Box has no Dummy01; this DEPT_BONE call returns source GetCloneFramePosition world zero, then OFFSET_Y10; no invented attachment",
+    "flameBusterLandPlane": "START particle EffectSet_RVC_Flame_Buster_P05 inherits current damage-effect landY before UseLand applies its original bounce/clamp",
+    "incinerationTarget": "Two source sets designate EFFECT0 damage mesh via BONE_TRACE_TARGET_MESH; eight TRACE children sample its original Dummy01/02/03/bip02_Bone03 and freeze last position after target deletion because update breaks before SetPosition"
+  },
+  "platformOptimizations": [
+    {
+      "name": "terminal-transparent-zero-count-visual",
+      "template": "RWT_BARRAGE_ATTACK_TRACE_Stand",
+      "lastVisibleTime": 0.4,
+      "proof": "Permanent global alpha0, source-alpha blend, opaque destination, no depth writes, no child/unknown events; renderer mesh only",
+      "behavior": "Release invisible render instance and owner bookkeeping; leave authored PlayCount/animation declarations unchanged",
+      "originalStopConsumer": "No finite original stop established; this is output-equivalent web optimization, not a claimed native lifetime"
+    }
+  ],
+  "resourceReuse": {
+    "newTextureFiles": 0,
+    "newMeshFiles": 0,
+    "aura": "Two source declarations reference existing RF awakening-fx/Energy PNG; all overheat resources already shipped in VC"
+  },
+  "limits": [
+    "No target2016 client runtime/GPU side-by-side capture",
+    "Fixed V5 source is version reference, not proof of target executable identity",
+    "Browser event de-duplication and per-owner handles are platform adapters",
+    "Other skill visuals and actor animation transitions are separately audited"
+  ]
+}

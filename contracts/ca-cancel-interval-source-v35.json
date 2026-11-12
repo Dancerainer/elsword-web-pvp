@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "profession": "CA",
+  "original2016": {
+    "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+    "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d",
+    "evidenceClass": "original2016-static-declaration-and-original-pose-metadata",
+    "profilePath": "packages/combat-core/ca-profile.json",
+    "profileSha256": "7fb5e6ea2313e4982d94f597e2e53609f251cbf3e4cdff9e958a9838a43657cf",
+    "state": "ESI_DASH_JUMP_COMBO_SDK_XX",
+    "animationName": "DashJumpCombo_XX",
+    "clipDurationSeconds": 0.6,
+    "authoredAnimationSpeed": 2.7,
+    "originalWindow": {
+      "keyInputStart": 0,
+      "keyInputEnd": 100,
+      "stateChange": 0.5
+    },
+    "stateTransitionRaw": 0,
+    "clipDecodedKeysSha256": "a1c186fef8a9a3ddf74b112eeb87f4f9a2da613e6eabf84ae2de1edee7c9ac2d"
+  },
+  "fixedV5": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "qualified-fixedV5-version-reference; CA SDK callback includes2026 reconstruction",
+    "files": [
+      {
+        "path": "KTDXLIB/KTDGXSkinAnim.h",
+        "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+        "bytes": 30326,
+        "localReadOnlyInput": "./.cache/native-reference/KTDXLIB/KTDGXSkinAnim.h",
+        "fragments": [
+          {
+            "firstLine": 92,
+            "lastLine": 93,
+            "purpose": "SetAnimXSkinMesh: optional XET defaults NULL",
+            "sha256": "be4204c0b1463decbdd0ed1bdea28a05fe82fb30d1a68a4b6901f55ff564f3a6"
+          },
+          {
+            "firstLine": 138,
+            "lastLine": 177,
+            "purpose": "GetMaxAnimationTime, SetPlaySpeed, IsAnimationEnd accessor",
+            "sha256": "7cfcc48a7bdb6afab6e80e49ec0afa58fb97d14c8bf007ccde8bce780e631540"
+          },
+          {
+            "firstLine": 186,
+            "lastLine": 190,
+            "purpose": "Predict_IsAnimationEnd: speed affects time prediction, not end threshold",
+            "sha256": "777c242fa833f3ba724ba0a7ff4ec82dddfb5db5019f6f0c62a11add410930ca"
+          },
+          {
+            "firstLine": 381,
+            "lastLine": 420,
+            "purpose": "UpdateAnimationFrameStructure: AdvanceTime then use track Position",
+            "sha256": "9d348903b970ee336bb2cf46bb7efb53e3ff92da320b3b605c25e855012a0efb"
+          }
+        ]
+      },
+      {
+        "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+        "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+        "bytes": 42639,
+        "localReadOnlyInput": "./.cache/native-source-runtime/KTDXLIB/KTDGXSkinAnim.cpp",
+        "fragments": [
+          {
+            "firstLine": 758,
+            "lastLine": 803,
+            "purpose": "OnFrameMove: strict end flag after advanced clock",
+            "sha256": "47841d4f755ad37ed292f14be73b28bec3ff93d96dd8f622db701099eddfd9c0"
+          },
+          {
+            "firstLine": 1198,
+            "lastLine": 1228,
+            "purpose": "ChangeAnim: transition time divided by speed only for blend keys",
+            "sha256": "a2beb75ca0553c0212770451628d4e256b41be96cb1d3a196b768d679e043d5d"
+          },
+          {
+            "firstLine": 1256,
+            "lastLine": 1283,
+            "purpose": "ChangeAnim: XET/fallback transition margin and compile-time .03 floor",
+            "sha256": "02116d455ebe864a2f42b6376ccc20d82918d8a69220f21e7d6699035aa55cb0"
+          },
+          {
+            "firstLine": 302,
+            "lastLine": 351,
+            "purpose": "SetAnimXSkinMesh: assign the supplied XET pointer",
+            "sha256": "1b75eaa5ff3e387f3757e67630048a9cec6867a535d7a31bdb333bb9b6398ab5"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GUUser.h",
+        "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+        "bytes": 202266,
+        "localReadOnlyInput": "./.cache/native-reference/X2Lib/X2GUUser.h",
+        "fragments": [
+          {
+            "firstLine": 2754,
+            "lastLine": 2760,
+            "purpose": "IsAnimFutureEnd forwards directly to IsAnimationEnd",
+            "sha256": "7879f9f67e015da11e67762da84dd8635c256f9d39eb9c8a06b7fe116bd2787d"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "bytes": 1323547,
+        "localReadOnlyInput": "./.cache/native-reference/X2Lib/X2GUUser.cpp",
+        "fragments": [
+          {
+            "firstLine": 4532,
+            "lastLine": 4541,
+            "purpose": "Player motion initialization: SetAnimXSkinMesh without XET",
+            "sha256": "4ecd74a91178afa291f286accabcb8c7586c9fb72e1efe69b6e80d5ba3642ec7"
+          },
+          {
+            "firstLine": 13595,
+            "lastLine": 13643,
+            "purpose": "CommonStateStartFuture: TRANSITION is ChangeAnim blend boolean, independent authored speed",
+            "sha256": "2e77f1dea7a9a7c2f1164191513a90f9d8e77be6fc3ce2cb33048ceb26bc995e"
+          },
+          {
+            "firstLine": 26853,
+            "lastLine": 26881,
+            "purpose": "ResetAnimSpeed: authored speed multiplied by item-ability speed",
+            "sha256": "e5b42210743c315bd4019e939dfe3cd23cafdcc99409ce49962ea67410855b6f"
+          },
+          {
+            "firstLine": 24685,
+            "lastLine": 24695,
+            "purpose": "Future motion replacement: SetAnimXSkinMesh without XET",
+            "sha256": "cb856b79e810e112377c70b170fe2e44374dab422d36f775687e85bf0e012510"
+          },
+          {
+            "firstLine": 24708,
+            "lastLine": 24718,
+            "purpose": "Now motion replacement: SetAnimXSkinMesh without XET",
+            "sha256": "c4e9cc3a2bbb93a391e1258d74cc16fa42935d26b33d68998467a98fb523b36b"
+          }
+        ]
+      },
+      {
+        "path": "KTDXLIB/Always.h",
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+        "bytes": 192825,
+        "localReadOnlyInput": "./.cache/native-reference/KTDXLIB/Always.h",
+        "fragments": [
+          {
+            "firstLine": 1470,
+            "lastLine": 1470,
+            "purpose": "FIX_SKIN_ANIM_ONE_WAIT_BUG enabled in qualified source build",
+            "sha256": "6b4fc5cbbbda9f171ab30633e1f626dce30cc54e639a1ef6d42c9c052e67e129"
+          }
+        ]
+      }
+    ],
+    "callback": {
+      "path": "X2Lib/X2GUEL.cpp",
+      "sha256": "f4f5a74f45688259f052c5b26fa667d9f781a59b3c771fc2f7ec7f24575714dc",
+      "firstLine": 8243,
+      "lastLine": 8271,
+      "rule": "IsAnimationEnd before previously latched X dispatch; original2016 matching callback unavailable",
+      "fragmentSha256": "613264cd1c93c817bd907b538fb0c87ec5c34ca5c9404e4718dd2e3051a028cb"
+    }
+  },
+  "endPrimitive": {
+    "accessor": "IsAnimationEnd returns stored m_bAnimEnd; IsAnimFutureEnd forwards without extra tolerance",
+    "clock": "AdvanceTime then D3DX track Position",
+    "endComparison": "strict binary32 animationTime > period - transitionTime",
+    "defaultTransition": "when no matching XET, max(period/10,.03) with FIX_SKIN_ANIM_ONE_WAIT_BUG enabled",
+    "defaultEndThreshold": 0.54,
+    "speed": "play speed changes track-clock advancement and blend key duration; it does not divide/multiply the end threshold",
+    "stateTransition": "raw TRANSITION controls ChangeAnim blend bool and does not set end transitionTime to zero",
+    "xetCaveat": "if matching XET AniData exists and fTransitionTime=0, two independent if statements ultimately select period/20; qualified player calls use the default NULL XET parameter"
+  },
+  "webAdapter": {
+    "evidenceClass": "current-Web-60Hz-interval-adapter",
+    "state": "ESI_DASH_JUMP_COMBO_SDK_XX",
+    "reason": "one 60Hz step at authored2.7 times equipment1.37 advances .4932 to .55485, crossing original dispatch.5 and default end.54 together",
+    "guards": [
+      "original continuation flag0 was already latched before this EventProcess",
+      "finite animationBeforeTime <= original stateChange .5",
+      "animationTime > original stateChange .5",
+      "original stateChange is before qualified default end threshold",
+      "animationStopped is false"
+    ],
+    "behavior": "dispatch the previously buffered continuation crossed earlier within this one Web interval; preserve original end priority otherwise",
+    "unchanged": [
+      "original raw EVENT_PROCESS_TIME0",
+      "raw ANIM_SPEED",
+      "clip duration and decoded pose",
+      "equipment multiplier",
+      "60Hz step",
+      "default animation end primitive",
+      "all unrelated states"
+    ],
+    "excluded": [
+      "freshX without pre-existing flag on an ended packet",
+      "before time absent/nonfinite",
+      "packet begins after the dispatch or end threshold",
+      "explicitly stopped animation",
+      "unknown charge/fire callbacks"
+    ]
+  },
+  "limits": [
+    "No original2016 client run or matching CA runtime callback acquired.",
+    "The interval adapter is a current Web stepping decision and is not reported as original callback or 1:1 fidelity.",
+    "No fallback end-margin change, XET injection, dt reduction or changed expected timing is authorized by this contract."
+  ]
+}

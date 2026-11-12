@@ -1,0 +1,1826 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "fixed-V5-reference-not-target2016",
+  "repository": "reference-v5",
+  "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "files": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/GameServer/GSUserFunction.cpp",
+      "sha256": "f59d0cb8ed3298b84e150aed209a20a35ae716113f11d6a396777fc4e55495c4",
+      "gitBlob": "2ce20652c7353cf3b350c385d25f9534eefac616",
+      "lines": [
+        12164,
+        12252
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/GameServer/Inventory.cpp",
+      "sha256": "7427f792429c44ba2c15543d7a9d5d3b43a07970d079c10c4c465b38b26966b4",
+      "gitBlob": "58c381108f43cbc103f7417211fd389bd80db0d5",
+      "lines": [
+        2290,
+        2364
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/ServerResource/EnchantTable.lua",
+      "sha256": "d0891ebc0a4aed669ef563c8eb95cb303766c890936feeaa6989f9e5920bad28",
+      "gitBlob": "32311d1370691cf1e06055c6c33db1a747746524",
+      "lines": [
+        288,
+        303
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/Common/CommonPacket.h",
+      "sha256": "df6b1c7065549880f788516d8279b665235eda210293e28a9e70eb70da671adf",
+      "gitBlob": "c5e2eddd0551d09c51f3bd5419cbc1fed56946fa",
+      "lines": [
+        1006,
+        1034
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/GameServer/UserSkillTree.cpp",
+      "sha256": "7dda6339706498866c58fecbf617de61d130e086a8e80a9ba50ece43961d2d0d",
+      "gitBlob": "a9aa0f8a3769acfc6bd4d3d65cb852a0dcb2d47a",
+      "lines": [
+        930,
+        969
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/Common/X2Data/XSLSkillTree.cpp",
+      "sha256": "9877490290b48176be52b47da4446d9aed36c5d47324a5e3545b7bb4b68d0e4a",
+      "gitBlob": "77feb36ed009b8b00f93c6e90def858cccb16146",
+      "lines": [
+        1065,
+        1070
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/Common/X2Data/XSLCharacterStatTable.cpp",
+      "sha256": "2e98b6740b547d00adc5c833ddbde658654392408071e05e903ec7f25375699b",
+      "gitBlob": "bfe9973781e64271eb0c0a115ffa281e3178f231",
+      "lines": [
+        246,
+        327
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2ItemStatCalculator.cpp",
+      "sha256": "bd1bf2f89788176513611cd91af4e7f7603302a01102d9b17801559634547ed6",
+      "gitBlob": "a9c3f491a69be0a5c6b89f27e5ebdbe579d44d42",
+      "lines": [
+        190,
+        389
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/ServerResource/StatTable.lua",
+      "sha256": "e021ecb9922057f704bf075fd4254b15c2d2de9e4f2b88c61104e9f97ed56080",
+      "gitBlob": "87b0511dafd72a30e90ef14646c164e2d35fcb63",
+      "lines": [
+        1294,
+        1957
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KncWX2Server/GameServer/StatTable.cpp",
+      "sha256": "69cff101de4d609028dd1e3d1673b805acc3598f4d2b54dce5a40a836bd8fc13",
+      "gitBlob": "61e4eb940650e1459fbca3b7c994fc599c2899ec",
+      "lines": [
+        82,
+        104
+      ]
+    }
+  ],
+  "enhancementRates": {
+    "9": 1.75,
+    "11": 2.55
+  },
+  "pvpChannel": "PCC_PLAY; not PCC_FREE or PCC_TOURNAMENT",
+  "growthCrossCheck": {
+    "careers": [
+      100,
+      107
+    ],
+    "levels": [
+      1,
+      80
+    ],
+    "statValuesChecked": 800,
+    "matches": 557,
+    "differences": [
+      {
+        "career": 100,
+        "level": 3,
+        "field": "magicAttack",
+        "reference": 312.0,
+        "inferred": 313
+      },
+      {
+        "career": 100,
+        "level": 3,
+        "field": "physicalDefence",
+        "reference": 84.0,
+        "inferred": 85
+      },
+      {
+        "career": 100,
+        "level": 4,
+        "field": "magicAttack",
+        "reference": 320.0,
+        "inferred": 321
+      },
+      {
+        "career": 100,
+        "level": 4,
+        "field": "physicalDefence",
+        "reference": 86.0,
+        "inferred": 87
+      },
+      {
+        "career": 100,
+        "level": 5,
+        "field": "physicalAttack",
+        "reference": 400.0,
+        "inferred": 401
+      },
+      {
+        "career": 100,
+        "level": 5,
+        "field": "magicDefence",
+        "reference": 73.0,
+        "inferred": 74
+      },
+      {
+        "career": 100,
+        "level": 6,
+        "field": "physicalAttack",
+        "reference": 410.0,
+        "inferred": 411
+      },
+      {
+        "career": 100,
+        "level": 6,
+        "field": "magicAttack",
+        "reference": 337.0,
+        "inferred": 338
+      },
+      {
+        "career": 100,
+        "level": 6,
+        "field": "magicDefence",
+        "reference": 75.0,
+        "inferred": 76
+      },
+      {
+        "career": 100,
+        "level": 7,
+        "field": "physicalAttack",
+        "reference": 420.0,
+        "inferred": 421
+      },
+      {
+        "career": 100,
+        "level": 7,
+        "field": "magicAttack",
+        "reference": 345.0,
+        "inferred": 346
+      },
+      {
+        "career": 100,
+        "level": 7,
+        "field": "physicalDefence",
+        "reference": 93.0,
+        "inferred": 94
+      },
+      {
+        "career": 100,
+        "level": 7,
+        "field": "magicDefence",
+        "reference": 77.0,
+        "inferred": 78
+      },
+      {
+        "career": 100,
+        "level": 8,
+        "field": "physicalAttack",
+        "reference": 430.0,
+        "inferred": 431
+      },
+      {
+        "career": 100,
+        "level": 8,
+        "field": "physicalDefence",
+        "reference": 95.0,
+        "inferred": 96
+      },
+      {
+        "career": 100,
+        "level": 9,
+        "field": "magicAttack",
+        "reference": 362.0,
+        "inferred": 363
+      },
+      {
+        "career": 100,
+        "level": 10,
+        "field": "magicAttack",
+        "reference": 370.0,
+        "inferred": 371
+      },
+      {
+        "career": 100,
+        "level": 12,
+        "field": "magicAttack",
+        "reference": 387.0,
+        "inferred": 388
+      },
+      {
+        "career": 100,
+        "level": 12,
+        "field": "physicalDefence",
+        "reference": 104.0,
+        "inferred": 105
+      },
+      {
+        "career": 100,
+        "level": 13,
+        "field": "physicalAttack",
+        "reference": 481.0,
+        "inferred": 482
+      },
+      {
+        "career": 100,
+        "level": 13,
+        "field": "magicAttack",
+        "reference": 395.0,
+        "inferred": 396
+      },
+      {
+        "career": 100,
+        "level": 13,
+        "field": "magicDefence",
+        "reference": 88.0,
+        "inferred": 89
+      },
+      {
+        "career": 100,
+        "level": 14,
+        "field": "physicalAttack",
+        "reference": 491.0,
+        "inferred": 492
+      },
+      {
+        "career": 100,
+        "level": 14,
+        "field": "magicDefence",
+        "reference": 90.0,
+        "inferred": 91
+      },
+      {
+        "career": 100,
+        "level": 15,
+        "field": "physicalAttack",
+        "reference": 501.0,
+        "inferred": 502
+      },
+      {
+        "career": 100,
+        "level": 15,
+        "field": "magicAttack",
+        "reference": 412.0,
+        "inferred": 413
+      },
+      {
+        "career": 100,
+        "level": 15,
+        "field": "physicalDefence",
+        "reference": 111.0,
+        "inferred": 112
+      },
+      {
+        "career": 100,
+        "level": 15,
+        "field": "magicDefence",
+        "reference": 92.0,
+        "inferred": 93
+      },
+      {
+        "career": 100,
+        "level": 16,
+        "field": "physicalAttack",
+        "reference": 511.0,
+        "inferred": 512
+      },
+      {
+        "career": 100,
+        "level": 16,
+        "field": "magicAttack",
+        "reference": 420.0,
+        "inferred": 421
+      },
+      {
+        "career": 100,
+        "level": 16,
+        "field": "physicalDefence",
+        "reference": 113.0,
+        "inferred": 114
+      },
+      {
+        "career": 100,
+        "level": 18,
+        "field": "magicAttack",
+        "reference": 437.0,
+        "inferred": 438
+      },
+      {
+        "career": 100,
+        "level": 19,
+        "field": "magicAttack",
+        "reference": 445.0,
+        "inferred": 446
+      },
+      {
+        "career": 100,
+        "level": 19,
+        "field": "physicalDefence",
+        "reference": 120.0,
+        "inferred": 121
+      },
+      {
+        "career": 100,
+        "level": 20,
+        "field": "physicalDefence",
+        "reference": 122.0,
+        "inferred": 123
+      },
+      {
+        "career": 100,
+        "level": 21,
+        "field": "physicalAttack",
+        "reference": 562.0,
+        "inferred": 563
+      },
+      {
+        "career": 100,
+        "level": 21,
+        "field": "magicAttack",
+        "reference": 462.0,
+        "inferred": 463
+      },
+      {
+        "career": 100,
+        "level": 21,
+        "field": "magicDefence",
+        "reference": 103.0,
+        "inferred": 104
+      },
+      {
+        "career": 100,
+        "level": 22,
+        "field": "physicalAttack",
+        "reference": 572.0,
+        "inferred": 573
+      },
+      {
+        "career": 100,
+        "level": 22,
+        "field": "magicAttack",
+        "reference": 470.0,
+        "inferred": 471
+      },
+      {
+        "career": 100,
+        "level": 22,
+        "field": "magicDefence",
+        "reference": 105.0,
+        "inferred": 106
+      },
+      {
+        "career": 100,
+        "level": 23,
+        "field": "physicalAttack",
+        "reference": 582.0,
+        "inferred": 583
+      },
+      {
+        "career": 100,
+        "level": 23,
+        "field": "physicalDefence",
+        "reference": 129.0,
+        "inferred": 130
+      },
+      {
+        "career": 100,
+        "level": 24,
+        "field": "physicalAttack",
+        "reference": 592.0,
+        "inferred": 593
+      },
+      {
+        "career": 100,
+        "level": 24,
+        "field": "physicalDefence",
+        "reference": 131.0,
+        "inferred": 132
+      },
+      {
+        "career": 100,
+        "level": 25,
+        "field": "magicAttack",
+        "reference": 495.0,
+        "inferred": 496
+      },
+      {
+        "career": 100,
+        "level": 27,
+        "field": "physicalDefence",
+        "reference": 138.0,
+        "inferred": 139
+      },
+      {
+        "career": 100,
+        "level": 28,
+        "field": "magicAttack",
+        "reference": 520.0,
+        "inferred": 521
+      },
+      {
+        "career": 100,
+        "level": 28,
+        "field": "physicalDefence",
+        "reference": 140.0,
+        "inferred": 141
+      },
+      {
+        "career": 100,
+        "level": 29,
+        "field": "physicalAttack",
+        "reference": 643.0,
+        "inferred": 644
+      },
+      {
+        "career": 100,
+        "level": 29,
+        "field": "magicDefence",
+        "reference": 118.0,
+        "inferred": 119
+      },
+      {
+        "career": 100,
+        "level": 30,
+        "field": "physicalAttack",
+        "reference": 653.0,
+        "inferred": 654
+      },
+      {
+        "career": 100,
+        "level": 30,
+        "field": "magicDefence",
+        "reference": 120.0,
+        "inferred": 121
+      },
+      {
+        "career": 100,
+        "level": 31,
+        "field": "physicalAttack",
+        "reference": 663.0,
+        "inferred": 664
+      },
+      {
+        "career": 100,
+        "level": 31,
+        "field": "magicAttack",
+        "reference": 545.0,
+        "inferred": 546
+      },
+      {
+        "career": 100,
+        "level": 31,
+        "field": "physicalDefence",
+        "reference": 147.0,
+        "inferred": 148
+      },
+      {
+        "career": 100,
+        "level": 32,
+        "field": "physicalAttack",
+        "reference": 673.0,
+        "inferred": 674
+      },
+      {
+        "career": 100,
+        "level": 32,
+        "field": "physicalDefence",
+        "reference": 149.0,
+        "inferred": 150
+      },
+      {
+        "career": 100,
+        "level": 34,
+        "field": "magicAttack",
+        "reference": 570.0,
+        "inferred": 571
+      },
+      {
+        "career": 100,
+        "level": 35,
+        "field": "physicalDefence",
+        "reference": 156.0,
+        "inferred": 157
+      },
+      {
+        "career": 100,
+        "level": 36,
+        "field": "physicalDefence",
+        "reference": 158.0,
+        "inferred": 159
+      },
+      {
+        "career": 100,
+        "level": 37,
+        "field": "physicalAttack",
+        "reference": 724.0,
+        "inferred": 725
+      },
+      {
+        "career": 100,
+        "level": 37,
+        "field": "magicAttack",
+        "reference": 595.0,
+        "inferred": 596
+      },
+      {
+        "career": 100,
+        "level": 37,
+        "field": "magicDefence",
+        "reference": 133.0,
+        "inferred": 134
+      },
+      {
+        "career": 100,
+        "level": 38,
+        "field": "physicalAttack",
+        "reference": 734.0,
+        "inferred": 735
+      },
+      {
+        "career": 100,
+        "level": 39,
+        "field": "physicalAttack",
+        "reference": 744.0,
+        "inferred": 745
+      },
+      {
+        "career": 100,
+        "level": 39,
+        "field": "physicalDefence",
+        "reference": 165.0,
+        "inferred": 166
+      },
+      {
+        "career": 100,
+        "level": 40,
+        "field": "physicalAttack",
+        "reference": 754.0,
+        "inferred": 755
+      },
+      {
+        "career": 100,
+        "level": 40,
+        "field": "magicAttack",
+        "reference": 620.0,
+        "inferred": 621
+      },
+      {
+        "career": 100,
+        "level": 40,
+        "field": "physicalDefence",
+        "reference": 167.0,
+        "inferred": 168
+      },
+      {
+        "career": 100,
+        "level": 43,
+        "field": "magicAttack",
+        "reference": 645.0,
+        "inferred": 646
+      },
+      {
+        "career": 100,
+        "level": 43,
+        "field": "physicalDefence",
+        "reference": 174.0,
+        "inferred": 175
+      },
+      {
+        "career": 100,
+        "level": 44,
+        "field": "magicAttack",
+        "reference": 653.0,
+        "inferred": 654
+      },
+      {
+        "career": 100,
+        "level": 44,
+        "field": "physicalDefence",
+        "reference": 176.0,
+        "inferred": 177
+      },
+      {
+        "career": 100,
+        "level": 45,
+        "field": "physicalAttack",
+        "reference": 805.0,
+        "inferred": 806
+      },
+      {
+        "career": 100,
+        "level": 45,
+        "field": "magicDefence",
+        "reference": 148.0,
+        "inferred": 149
+      },
+      {
+        "career": 100,
+        "level": 46,
+        "field": "physicalAttack",
+        "reference": 815.0,
+        "inferred": 816
+      },
+      {
+        "career": 100,
+        "level": 46,
+        "field": "magicAttack",
+        "reference": 670.0,
+        "inferred": 671
+      },
+      {
+        "career": 100,
+        "level": 47,
+        "field": "physicalAttack",
+        "reference": 825.0,
+        "inferred": 826
+      },
+      {
+        "career": 100,
+        "level": 47,
+        "field": "magicAttack",
+        "reference": 678.0,
+        "inferred": 679
+      },
+      {
+        "career": 100,
+        "level": 47,
+        "field": "physicalDefence",
+        "reference": 183.0,
+        "inferred": 184
+      },
+      {
+        "career": 100,
+        "level": 48,
+        "field": "physicalAttack",
+        "reference": 835.0,
+        "inferred": 836
+      },
+      {
+        "career": 100,
+        "level": 48,
+        "field": "physicalDefence",
+        "reference": 185.0,
+        "inferred": 186
+      },
+      {
+        "career": 100,
+        "level": 49,
+        "field": "magicAttack",
+        "reference": 695.0,
+        "inferred": 696
+      },
+      {
+        "career": 100,
+        "level": 50,
+        "field": "magicAttack",
+        "reference": 703.0,
+        "inferred": 704
+      },
+      {
+        "career": 100,
+        "level": 51,
+        "field": "physicalDefence",
+        "reference": 192.0,
+        "inferred": 193
+      },
+      {
+        "career": 100,
+        "level": 52,
+        "field": "magicAttack",
+        "reference": 720.0,
+        "inferred": 721
+      },
+      {
+        "career": 100,
+        "level": 52,
+        "field": "physicalDefence",
+        "reference": 194.0,
+        "inferred": 195
+      },
+      {
+        "career": 100,
+        "level": 53,
+        "field": "physicalAttack",
+        "reference": 886.0,
+        "inferred": 887
+      },
+      {
+        "career": 100,
+        "level": 53,
+        "field": "magicAttack",
+        "reference": 728.0,
+        "inferred": 729
+      },
+      {
+        "career": 100,
+        "level": 53,
+        "field": "magicDefence",
+        "reference": 163.0,
+        "inferred": 164
+      },
+      {
+        "career": 100,
+        "level": 54,
+        "field": "physicalAttack",
+        "reference": 896.0,
+        "inferred": 897
+      },
+      {
+        "career": 100,
+        "level": 55,
+        "field": "physicalAttack",
+        "reference": 906.0,
+        "inferred": 907
+      },
+      {
+        "career": 100,
+        "level": 55,
+        "field": "magicAttack",
+        "reference": 745.0,
+        "inferred": 746
+      },
+      {
+        "career": 100,
+        "level": 56,
+        "field": "physicalAttack",
+        "reference": 916.0,
+        "inferred": 917
+      },
+      {
+        "career": 100,
+        "level": 56,
+        "field": "magicAttack",
+        "reference": 753.0,
+        "inferred": 754
+      },
+      {
+        "career": 100,
+        "level": 56,
+        "field": "physicalDefence",
+        "reference": 203.0,
+        "inferred": 204
+      },
+      {
+        "career": 100,
+        "level": 58,
+        "field": "magicAttack",
+        "reference": 770.0,
+        "inferred": 771
+      },
+      {
+        "career": 100,
+        "level": 59,
+        "field": "magicAttack",
+        "reference": 778.0,
+        "inferred": 779
+      },
+      {
+        "career": 100,
+        "level": 59,
+        "field": "physicalDefence",
+        "reference": 210.0,
+        "inferred": 211
+      },
+      {
+        "career": 100,
+        "level": 60,
+        "field": "physicalDefence",
+        "reference": 212.0,
+        "inferred": 213
+      },
+      {
+        "career": 100,
+        "level": 61,
+        "field": "physicalAttack",
+        "reference": 967.0,
+        "inferred": 968
+      },
+      {
+        "career": 100,
+        "level": 61,
+        "field": "magicAttack",
+        "reference": 795.0,
+        "inferred": 796
+      },
+      {
+        "career": 100,
+        "level": 62,
+        "field": "physicalAttack",
+        "reference": 977.0,
+        "inferred": 978
+      },
+      {
+        "career": 100,
+        "level": 62,
+        "field": "magicAttack",
+        "reference": 803.0,
+        "inferred": 804
+      },
+      {
+        "career": 100,
+        "level": 63,
+        "field": "physicalAttack",
+        "reference": 987.0,
+        "inferred": 988
+      },
+      {
+        "career": 100,
+        "level": 63,
+        "field": "physicalDefence",
+        "reference": 219.0,
+        "inferred": 220
+      },
+      {
+        "career": 100,
+        "level": 64,
+        "field": "physicalAttack",
+        "reference": 997.0,
+        "inferred": 998
+      },
+      {
+        "career": 100,
+        "level": 64,
+        "field": "physicalDefence",
+        "reference": 221.0,
+        "inferred": 222
+      },
+      {
+        "career": 100,
+        "level": 65,
+        "field": "magicAttack",
+        "reference": 828.0,
+        "inferred": 829
+      },
+      {
+        "career": 100,
+        "level": 67,
+        "field": "physicalDefence",
+        "reference": 228.0,
+        "inferred": 229
+      },
+      {
+        "career": 100,
+        "level": 68,
+        "field": "magicAttack",
+        "reference": 853.0,
+        "inferred": 854
+      },
+      {
+        "career": 100,
+        "level": 68,
+        "field": "physicalDefence",
+        "reference": 230.0,
+        "inferred": 231
+      },
+      {
+        "career": 100,
+        "level": 69,
+        "field": "physicalAttack",
+        "reference": 1048.0,
+        "inferred": 1049
+      },
+      {
+        "career": 100,
+        "level": 70,
+        "field": "physicalAttack",
+        "reference": 1058.0,
+        "inferred": 1059
+      },
+      {
+        "career": 100,
+        "level": 71,
+        "field": "physicalAttack",
+        "reference": 1068.0,
+        "inferred": 1069
+      },
+      {
+        "career": 100,
+        "level": 71,
+        "field": "magicAttack",
+        "reference": 878.0,
+        "inferred": 879
+      },
+      {
+        "career": 100,
+        "level": 71,
+        "field": "physicalDefence",
+        "reference": 237.0,
+        "inferred": 238
+      },
+      {
+        "career": 100,
+        "level": 72,
+        "field": "physicalAttack",
+        "reference": 1078.0,
+        "inferred": 1079
+      },
+      {
+        "career": 100,
+        "level": 72,
+        "field": "physicalDefence",
+        "reference": 239.0,
+        "inferred": 240
+      },
+      {
+        "career": 100,
+        "level": 74,
+        "field": "magicAttack",
+        "reference": 903.0,
+        "inferred": 904
+      },
+      {
+        "career": 100,
+        "level": 75,
+        "field": "physicalDefence",
+        "reference": 246.0,
+        "inferred": 247
+      },
+      {
+        "career": 100,
+        "level": 76,
+        "field": "physicalDefence",
+        "reference": 248.0,
+        "inferred": 249
+      },
+      {
+        "career": 100,
+        "level": 76,
+        "field": "magicDefence",
+        "reference": 207.0,
+        "inferred": 206
+      },
+      {
+        "career": 100,
+        "level": 77,
+        "field": "physicalAttack",
+        "reference": 1129.0,
+        "inferred": 1130
+      },
+      {
+        "career": 100,
+        "level": 77,
+        "field": "magicAttack",
+        "reference": 928.0,
+        "inferred": 929
+      },
+      {
+        "career": 100,
+        "level": 78,
+        "field": "physicalAttack",
+        "reference": 1139.0,
+        "inferred": 1140
+      },
+      {
+        "career": 100,
+        "level": 79,
+        "field": "physicalAttack",
+        "reference": 1149.0,
+        "inferred": 1150
+      },
+      {
+        "career": 100,
+        "level": 80,
+        "field": "physicalAttack",
+        "reference": 1159.0,
+        "inferred": 1160
+      },
+      {
+        "career": 100,
+        "level": 80,
+        "field": "magicAttack",
+        "reference": 953.0,
+        "inferred": 954
+      },
+      {
+        "career": 100,
+        "level": 80,
+        "field": "physicalDefence",
+        "reference": 257.0,
+        "inferred": 258
+      },
+      {
+        "career": 107,
+        "level": 2,
+        "field": "physicalAttack",
+        "reference": 353.0,
+        "inferred": 354
+      },
+      {
+        "career": 107,
+        "level": 2,
+        "field": "magicAttack",
+        "reference": 312.0,
+        "inferred": 313
+      },
+      {
+        "career": 107,
+        "level": 2,
+        "field": "physicalDefence",
+        "reference": 84.0,
+        "inferred": 85
+      },
+      {
+        "career": 107,
+        "level": 4,
+        "field": "magicAttack",
+        "reference": 329.0,
+        "inferred": 330
+      },
+      {
+        "career": 107,
+        "level": 5,
+        "field": "physicalAttack",
+        "reference": 382.0,
+        "inferred": 383
+      },
+      {
+        "career": 107,
+        "level": 5,
+        "field": "physicalDefence",
+        "reference": 91.0,
+        "inferred": 92
+      },
+      {
+        "career": 107,
+        "level": 5,
+        "field": "magicDefence",
+        "reference": 73.0,
+        "inferred": 74
+      },
+      {
+        "career": 107,
+        "level": 6,
+        "field": "magicAttack",
+        "reference": 346.0,
+        "inferred": 347
+      },
+      {
+        "career": 107,
+        "level": 6,
+        "field": "magicDefence",
+        "reference": 75.0,
+        "inferred": 76
+      },
+      {
+        "career": 107,
+        "level": 7,
+        "field": "magicDefence",
+        "reference": 77.0,
+        "inferred": 78
+      },
+      {
+        "career": 107,
+        "level": 8,
+        "field": "physicalAttack",
+        "reference": 411.0,
+        "inferred": 412
+      },
+      {
+        "career": 107,
+        "level": 8,
+        "field": "magicAttack",
+        "reference": 363.0,
+        "inferred": 364
+      },
+      {
+        "career": 107,
+        "level": 8,
+        "field": "physicalDefence",
+        "reference": 98.0,
+        "inferred": 99
+      },
+      {
+        "career": 107,
+        "level": 10,
+        "field": "magicAttack",
+        "reference": 380.0,
+        "inferred": 381
+      },
+      {
+        "career": 107,
+        "level": 11,
+        "field": "physicalAttack",
+        "reference": 440.0,
+        "inferred": 441
+      },
+      {
+        "career": 107,
+        "level": 11,
+        "field": "physicalDefence",
+        "reference": 105.0,
+        "inferred": 106
+      },
+      {
+        "career": 107,
+        "level": 12,
+        "field": "physicalDefence",
+        "reference": 107.0,
+        "inferred": 108
+      },
+      {
+        "career": 107,
+        "level": 13,
+        "field": "magicAttack",
+        "reference": 406.0,
+        "inferred": 407
+      },
+      {
+        "career": 107,
+        "level": 13,
+        "field": "magicDefence",
+        "reference": 88.0,
+        "inferred": 89
+      },
+      {
+        "career": 107,
+        "level": 14,
+        "field": "physicalAttack",
+        "reference": 469.0,
+        "inferred": 470
+      },
+      {
+        "career": 107,
+        "level": 14,
+        "field": "physicalDefence",
+        "reference": 112.0,
+        "inferred": 113
+      },
+      {
+        "career": 107,
+        "level": 14,
+        "field": "magicDefence",
+        "reference": 90.0,
+        "inferred": 91
+      },
+      {
+        "career": 107,
+        "level": 15,
+        "field": "magicAttack",
+        "reference": 423.0,
+        "inferred": 424
+      },
+      {
+        "career": 107,
+        "level": 15,
+        "field": "physicalDefence",
+        "reference": 114.0,
+        "inferred": 115
+      },
+      {
+        "career": 107,
+        "level": 15,
+        "field": "magicDefence",
+        "reference": 92.0,
+        "inferred": 93
+      },
+      {
+        "career": 107,
+        "level": 17,
+        "field": "physicalAttack",
+        "reference": 498.0,
+        "inferred": 499
+      },
+      {
+        "career": 107,
+        "level": 17,
+        "field": "magicAttack",
+        "reference": 440.0,
+        "inferred": 441
+      },
+      {
+        "career": 107,
+        "level": 18,
+        "field": "physicalDefence",
+        "reference": 121.0,
+        "inferred": 122
+      },
+      {
+        "career": 107,
+        "level": 19,
+        "field": "magicAttack",
+        "reference": 457.0,
+        "inferred": 458
+      },
+      {
+        "career": 107,
+        "level": 20,
+        "field": "physicalAttack",
+        "reference": 527.0,
+        "inferred": 528
+      },
+      {
+        "career": 107,
+        "level": 21,
+        "field": "physicalAttack",
+        "reference": 537.0,
+        "inferred": 538
+      },
+      {
+        "career": 107,
+        "level": 21,
+        "field": "physicalDefence",
+        "reference": 128.0,
+        "inferred": 129
+      },
+      {
+        "career": 107,
+        "level": 21,
+        "field": "magicDefence",
+        "reference": 103.0,
+        "inferred": 104
+      },
+      {
+        "career": 107,
+        "level": 22,
+        "field": "magicAttack",
+        "reference": 483.0,
+        "inferred": 484
+      },
+      {
+        "career": 107,
+        "level": 22,
+        "field": "magicDefence",
+        "reference": 105.0,
+        "inferred": 106
+      },
+      {
+        "career": 107,
+        "level": 23,
+        "field": "physicalAttack",
+        "reference": 556.0,
+        "inferred": 557
+      },
+      {
+        "career": 107,
+        "level": 24,
+        "field": "physicalAttack",
+        "reference": 566.0,
+        "inferred": 567
+      },
+      {
+        "career": 107,
+        "level": 24,
+        "field": "magicAttack",
+        "reference": 500.0,
+        "inferred": 501
+      },
+      {
+        "career": 107,
+        "level": 24,
+        "field": "physicalDefence",
+        "reference": 135.0,
+        "inferred": 136
+      },
+      {
+        "career": 107,
+        "level": 26,
+        "field": "physicalAttack",
+        "reference": 585.0,
+        "inferred": 586
+      },
+      {
+        "career": 107,
+        "level": 26,
+        "field": "magicAttack",
+        "reference": 517.0,
+        "inferred": 518
+      },
+      {
+        "career": 107,
+        "level": 27,
+        "field": "physicalAttack",
+        "reference": 595.0,
+        "inferred": 596
+      },
+      {
+        "career": 107,
+        "level": 27,
+        "field": "physicalDefence",
+        "reference": 142.0,
+        "inferred": 143
+      },
+      {
+        "career": 107,
+        "level": 28,
+        "field": "magicAttack",
+        "reference": 534.0,
+        "inferred": 535
+      },
+      {
+        "career": 107,
+        "level": 29,
+        "field": "physicalAttack",
+        "reference": 614.0,
+        "inferred": 615
+      },
+      {
+        "career": 107,
+        "level": 29,
+        "field": "magicDefence",
+        "reference": 118.0,
+        "inferred": 119
+      },
+      {
+        "career": 107,
+        "level": 30,
+        "field": "physicalAttack",
+        "reference": 624.0,
+        "inferred": 625
+      },
+      {
+        "career": 107,
+        "level": 30,
+        "field": "magicAttack",
+        "reference": 551.0,
+        "inferred": 552
+      },
+      {
+        "career": 107,
+        "level": 30,
+        "field": "physicalDefence",
+        "reference": 149.0,
+        "inferred": 150
+      },
+      {
+        "career": 107,
+        "level": 30,
+        "field": "magicDefence",
+        "reference": 120.0,
+        "inferred": 121
+      },
+      {
+        "career": 107,
+        "level": 31,
+        "field": "magicAttack",
+        "reference": 560.0,
+        "inferred": 561
+      },
+      {
+        "career": 107,
+        "level": 32,
+        "field": "physicalAttack",
+        "reference": 643.0,
+        "inferred": 644
+      },
+      {
+        "career": 107,
+        "level": 33,
+        "field": "physicalAttack",
+        "reference": 653.0,
+        "inferred": 654
+      },
+      {
+        "career": 107,
+        "level": 33,
+        "field": "magicAttack",
+        "reference": 577.0,
+        "inferred": 578
+      },
+      {
+        "career": 107,
+        "level": 33,
+        "field": "physicalDefence",
+        "reference": 156.0,
+        "inferred": 157
+      },
+      {
+        "career": 107,
+        "level": 35,
+        "field": "physicalAttack",
+        "reference": 672.0,
+        "inferred": 673
+      },
+      {
+        "career": 107,
+        "level": 35,
+        "field": "magicAttack",
+        "reference": 594.0,
+        "inferred": 595
+      },
+      {
+        "career": 107,
+        "level": 36,
+        "field": "physicalAttack",
+        "reference": 682.0,
+        "inferred": 683
+      },
+      {
+        "career": 107,
+        "level": 36,
+        "field": "physicalDefence",
+        "reference": 163.0,
+        "inferred": 164
+      },
+      {
+        "career": 107,
+        "level": 37,
+        "field": "magicAttack",
+        "reference": 611.0,
+        "inferred": 612
+      },
+      {
+        "career": 107,
+        "level": 37,
+        "field": "magicDefence",
+        "reference": 133.0,
+        "inferred": 134
+      },
+      {
+        "career": 107,
+        "level": 38,
+        "field": "physicalAttack",
+        "reference": 701.0,
+        "inferred": 702
+      },
+      {
+        "career": 107,
+        "level": 39,
+        "field": "physicalAttack",
+        "reference": 711.0,
+        "inferred": 712
+      },
+      {
+        "career": 107,
+        "level": 39,
+        "field": "magicAttack",
+        "reference": 628.0,
+        "inferred": 629
+      },
+      {
+        "career": 107,
+        "level": 41,
+        "field": "physicalAttack",
+        "reference": 730.0,
+        "inferred": 731
+      },
+      {
+        "career": 107,
+        "level": 42,
+        "field": "physicalAttack",
+        "reference": 740.0,
+        "inferred": 741
+      },
+      {
+        "career": 107,
+        "level": 42,
+        "field": "magicAttack",
+        "reference": 654.0,
+        "inferred": 655
+      },
+      {
+        "career": 107,
+        "level": 44,
+        "field": "magicAttack",
+        "reference": 671.0,
+        "inferred": 672
+      },
+      {
+        "career": 107,
+        "level": 45,
+        "field": "physicalAttack",
+        "reference": 769.0,
+        "inferred": 770
+      },
+      {
+        "career": 107,
+        "level": 45,
+        "field": "magicDefence",
+        "reference": 148.0,
+        "inferred": 149
+      },
+      {
+        "career": 107,
+        "level": 46,
+        "field": "magicAttack",
+        "reference": 688.0,
+        "inferred": 689
+      },
+      {
+        "career": 107,
+        "level": 48,
+        "field": "physicalAttack",
+        "reference": 798.0,
+        "inferred": 799
+      },
+      {
+        "career": 107,
+        "level": 48,
+        "field": "magicAttack",
+        "reference": 705.0,
+        "inferred": 706
+      },
+      {
+        "career": 107,
+        "level": 50,
+        "field": "magicAttack",
+        "reference": 722.0,
+        "inferred": 723
+      },
+      {
+        "career": 107,
+        "level": 51,
+        "field": "physicalAttack",
+        "reference": 827.0,
+        "inferred": 828
+      },
+      {
+        "career": 107,
+        "level": 51,
+        "field": "magicAttack",
+        "reference": 731.0,
+        "inferred": 732
+      },
+      {
+        "career": 107,
+        "level": 52,
+        "field": "physicalDefence",
+        "reference": 200.0,
+        "inferred": 201
+      },
+      {
+        "career": 107,
+        "level": 53,
+        "field": "magicAttack",
+        "reference": 748.0,
+        "inferred": 749
+      },
+      {
+        "career": 107,
+        "level": 53,
+        "field": "magicDefence",
+        "reference": 163.0,
+        "inferred": 164
+      },
+      {
+        "career": 107,
+        "level": 54,
+        "field": "physicalAttack",
+        "reference": 856.0,
+        "inferred": 857
+      },
+      {
+        "career": 107,
+        "level": 55,
+        "field": "magicAttack",
+        "reference": 765.0,
+        "inferred": 766
+      },
+      {
+        "career": 107,
+        "level": 55,
+        "field": "physicalDefence",
+        "reference": 207.0,
+        "inferred": 208
+      },
+      {
+        "career": 107,
+        "level": 57,
+        "field": "physicalAttack",
+        "reference": 885.0,
+        "inferred": 886
+      },
+      {
+        "career": 107,
+        "level": 57,
+        "field": "magicAttack",
+        "reference": 782.0,
+        "inferred": 783
+      },
+      {
+        "career": 107,
+        "level": 59,
+        "field": "magicAttack",
+        "reference": 799.0,
+        "inferred": 800
+      },
+      {
+        "career": 107,
+        "level": 60,
+        "field": "physicalAttack",
+        "reference": 914.0,
+        "inferred": 915
+      },
+      {
+        "career": 107,
+        "level": 61,
+        "field": "physicalAttack",
+        "reference": 924.0,
+        "inferred": 925
+      },
+      {
+        "career": 107,
+        "level": 61,
+        "field": "magicAttack",
+        "reference": 816.0,
+        "inferred": 817
+      },
+      {
+        "career": 107,
+        "level": 62,
+        "field": "magicAttack",
+        "reference": 825.0,
+        "inferred": 826
+      },
+      {
+        "career": 107,
+        "level": 63,
+        "field": "physicalAttack",
+        "reference": 943.0,
+        "inferred": 944
+      },
+      {
+        "career": 107,
+        "level": 64,
+        "field": "physicalAttack",
+        "reference": 953.0,
+        "inferred": 954
+      },
+      {
+        "career": 107,
+        "level": 64,
+        "field": "magicAttack",
+        "reference": 842.0,
+        "inferred": 843
+      },
+      {
+        "career": 107,
+        "level": 66,
+        "field": "physicalAttack",
+        "reference": 972.0,
+        "inferred": 973
+      },
+      {
+        "career": 107,
+        "level": 66,
+        "field": "magicAttack",
+        "reference": 859.0,
+        "inferred": 860
+      },
+      {
+        "career": 107,
+        "level": 67,
+        "field": "physicalAttack",
+        "reference": 982.0,
+        "inferred": 983
+      },
+      {
+        "career": 107,
+        "level": 68,
+        "field": "magicAttack",
+        "reference": 876.0,
+        "inferred": 877
+      },
+      {
+        "career": 107,
+        "level": 69,
+        "field": "physicalAttack",
+        "reference": 1001.0,
+        "inferred": 1002
+      },
+      {
+        "career": 107,
+        "level": 70,
+        "field": "physicalAttack",
+        "reference": 1011.0,
+        "inferred": 1012
+      },
+      {
+        "career": 107,
+        "level": 70,
+        "field": "magicAttack",
+        "reference": 893.0,
+        "inferred": 894
+      },
+      {
+        "career": 107,
+        "level": 71,
+        "field": "magicAttack",
+        "reference": 902.0,
+        "inferred": 903
+      },
+      {
+        "career": 107,
+        "level": 72,
+        "field": "physicalAttack",
+        "reference": 1030.0,
+        "inferred": 1031
+      },
+      {
+        "career": 107,
+        "level": 73,
+        "field": "physicalAttack",
+        "reference": 1040.0,
+        "inferred": 1041
+      },
+      {
+        "career": 107,
+        "level": 73,
+        "field": "magicAttack",
+        "reference": 919.0,
+        "inferred": 920
+      },
+      {
+        "career": 107,
+        "level": 75,
+        "field": "physicalAttack",
+        "reference": 1059.0,
+        "inferred": 1060
+      },
+      {
+        "career": 107,
+        "level": 75,
+        "field": "magicAttack",
+        "reference": 936.0,
+        "inferred": 937
+      },
+      {
+        "career": 107,
+        "level": 76,
+        "field": "physicalAttack",
+        "reference": 1069.0,
+        "inferred": 1070
+      },
+      {
+        "career": 107,
+        "level": 76,
+        "field": "magicDefence",
+        "reference": 207.0,
+        "inferred": 206
+      },
+      {
+        "career": 107,
+        "level": 77,
+        "field": "magicAttack",
+        "reference": 953.0,
+        "inferred": 954
+      },
+      {
+        "career": 107,
+        "level": 78,
+        "field": "physicalAttack",
+        "reference": 1088.0,
+        "inferred": 1089
+      },
+      {
+        "career": 107,
+        "level": 79,
+        "field": "physicalAttack",
+        "reference": 1098.0,
+        "inferred": 1099
+      },
+      {
+        "career": 107,
+        "level": 79,
+        "field": "magicAttack",
+        "reference": 970.0,
+        "inferred": 971
+      },
+      {
+        "career": 107,
+        "level": 80,
+        "field": "physicalDefence",
+        "reference": 266.0,
+        "inferred": 265
+      }
+    ],
+    "maxAbsoluteDifference": 1.0,
+    "level85Present": false,
+    "note": "HP table retains .5; server integer conversion truncates. Requested level85 HP is integral."
+  },
+  "userAcceptedPolicies": [
+    "target-table-growth-inference-v1",
+    "fixed-v5-enhance-ranked-pvp-v1"
+  ],
+  "originalClientRuntimeMeasurements": 0
+}

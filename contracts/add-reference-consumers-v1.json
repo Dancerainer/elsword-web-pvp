@@ -1,0 +1,3998 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "source": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "gitBlob": "39888c9b632990e855057e61499363247e438a15",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixedV5 reference containing later reconstruction; not matching 2016"
+  },
+  "methods": [
+    {
+      "method": "AppendDeviceToDeviceList",
+      "line": 370,
+      "lastLine": 372,
+      "sha256": "d179617bce3580d57e01de11c9072ea08ef7ee4f2e07fe696022c7c828e3b33b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AppendComponentToDeviceList",
+      "line": 374,
+      "lastLine": 376,
+      "sha256": "c7e26db53839a75c80b46c80b2a0cd6c663cbaa258dcab6e5d75993e41509355",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AppendEffectToDeviceList",
+      "line": 378,
+      "lastLine": 383,
+      "sha256": "d254b559b83e18393d7bc6bd5671bf5d320e8d20e942a5ccb21a5792f78bbd9d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CanRidingState",
+      "line": 385,
+      "lastLine": 395,
+      "sha256": "ee89dbf84f470f064cc1a82f27cdf6d2d523a29484ca554d3216f2503ebad760",
+      "laterReconstruction": false
+    },
+    {
+      "method": "Init",
+      "line": 397,
+      "lastLine": 471,
+      "sha256": "6efdcf1b7472ee861c07abf424fa90c5f47181038abbc8bf1d9e2b1ddd583b9b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ParseCommonRandomState",
+      "line": 472,
+      "lastLine": 528,
+      "sha256": "5f6138ee91a3651bbf53b76bada85a684ab4c05fd8983b2f31da003eca18694c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "InitState",
+      "line": 529,
+      "lastLine": 628,
+      "sha256": "1b78c26435159bcae37edf8a1dc037f3e71ad4f8fbea4aff81339e67a33c5dce",
+      "laterReconstruction": true
+    },
+    {
+      "method": "InitComponent",
+      "line": 629,
+      "lastLine": 656,
+      "sha256": "ef707a30907a34d0a7db9620b811351947729af99709ba023c0e2a0a10992265",
+      "laterReconstruction": true
+    },
+    {
+      "method": "InitPassiveSkillState",
+      "line": 657,
+      "lastLine": 1039,
+      "sha256": "586f769439dcfc0faefc95ca3e9bd4ba4a00e37f9dccc4c060177d386917bd5a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "SetEquippedSkillFuncBySkillSlotIndex",
+      "line": 1040,
+      "lastLine": 2034,
+      "sha256": "af979c636eb247109a5dba7eee349ae0603c83c0c85042a9d6cfb130d95b3fe8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "SetEquippedSkillLevel",
+      "line": 2040,
+      "lastLine": 2183,
+      "sha256": "41e5d2cb2b313b9648ed920d4f865b27cda517f380a0bd1db669364820d969b8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonStateStartFuture",
+      "line": 2185,
+      "lastLine": 2217,
+      "sha256": "931a34d31022e0916ccc539b9dfc2fdb448abbecf56a0b386fc1239b806f426f",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonStateStart",
+      "line": 2218,
+      "lastLine": 2241,
+      "sha256": "e73af3ebcca5809a4ba7f0309b27ce91c48895964ebd654fe078b81347dc71c7",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonFrameMoveFuture",
+      "line": 2243,
+      "lastLine": 2278,
+      "sha256": "41d46486427149796cd9558a8bdfc5d510f965f1d6fb1b1db9792d97843dbd03",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonFrameMove",
+      "line": 2280,
+      "lastLine": 2396,
+      "sha256": "a821e1e88653f01ac8714ac828d8b4665d482b1c35eaf828005ecdb8cb95ba1a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonStateEndFuture",
+      "line": 2398,
+      "lastLine": 2402,
+      "sha256": "1ad5b0ac9b646173a4259fb922e209bce2a47e7d192aad2b15da37c7c7655804",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CommonStateEnd",
+      "line": 2404,
+      "lastLine": 2408,
+      "sha256": "ac1163b3e41d676d569269a9630d16ae1bcbc4d6817c73601d1955ad4d24e2c5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CommonEventProcess",
+      "line": 2410,
+      "lastLine": 2422,
+      "sha256": "9189d644be8d0fa8eedc81f19dbe5f8f2fe2ae773e34bdb838cccc568b52e934",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DetonationStateChange",
+      "line": 2424,
+      "lastLine": 2427,
+      "sha256": "73d81cc915b0e89bfdbca9822091c8fc68a11ee7102838f0e48157945d64385c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SpecialAttackEventProcess",
+      "line": 2436,
+      "lastLine": 2454,
+      "sha256": "3436fc205d22e39bb2d1958e1b3278e4b06dfdb2401f3dfc95ccc609d6366ca0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NoStateChangeActionFrameMove",
+      "line": 2458,
+      "lastLine": 2484,
+      "sha256": "24086526ea07831f6a2a9818e6bd964d27e3760083a182d52c3084fb360f6114",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetActualMPConsume",
+      "line": 2486,
+      "lastLine": 2578,
+      "sha256": "3449ba2b9b3cd482b48e110acc1f273adca1a5bed8bae5f380d1e615aaebb15d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetActualCoolTime",
+      "line": 2579,
+      "lastLine": 2685,
+      "sha256": "8f3847a112a4064fca5fb44007d80ec9074627e0d3b70f35e86204fc6fce9bb9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ShouldResetNotBusyTimer",
+      "line": 2702,
+      "lastLine": 2712,
+      "sha256": "3297e7624e250911a95273a0623a5454c4656d58213ebde6a9513e1152f223a4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "InitStateID",
+      "line": 2714,
+      "lastLine": 2717,
+      "sha256": "a98f45399674ab525b5a641a54c4c0eba94af6e0d4bcaf91b0d167cab01afc32",
+      "laterReconstruction": false
+    },
+    {
+      "method": "InitStateCommon",
+      "line": 2722,
+      "lastLine": 3526,
+      "sha256": "2af2485940a376dce108e0fd562ec33a7bc975cdcb79ed718f1fba4f1829dd5e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "InitStateByUnitClass",
+      "line": 3528,
+      "lastLine": 3844,
+      "sha256": "5c142adafb0407cf9b7b7a37166ad1581dad9ecb85bfcbacfff182b69692753b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "SetEquippedSkillLevelStateData",
+      "line": 3846,
+      "lastLine": 3850,
+      "sha256": "51ea35b28c450bf5d3abcea0abd50a800bf2b8ec6ecbd970f7e9e2d3fb9689a3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetSkillLevelStateData",
+      "line": 3852,
+      "lastLine": 3866,
+      "sha256": "99c7d08201e76d50915f0cd4c3b553623eafbfad616f720dace39be875c95dac",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ShowActiveSkillCutInAndLight",
+      "line": 3867,
+      "lastLine": 3882,
+      "sha256": "8427cf20c86037165bce4177a7d82732a5f32d4d2bf79bc78e7e26faa78bf046",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ShowActiveSkillCutInAndLightByScript",
+      "line": 3883,
+      "lastLine": 3886,
+      "sha256": "aae01757b93129bdde1785d0ef947a77f7438db9bc382e722644fb81988b575b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CanUseSpecialAttack",
+      "line": 3887,
+      "lastLine": 4052,
+      "sha256": "6fe0852eae19b1d4e6c81fec9b054cbf4a54d9dc9bb57ae1bf91940653ba413f",
+      "laterReconstruction": true
+    },
+    {
+      "method": "StateChangeSpecialAttack",
+      "line": 4054,
+      "lastLine": 4186,
+      "sha256": "6d23d0c74ef4a45924a968ec17484ac16c0a95696439f892c768cee9a20c6d29",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetReduceDebuffDurationRate",
+      "line": 4188,
+      "lastLine": 4208,
+      "sha256": "0ea086abe40d95658ce79035dab7c40d6697ab999c63d27a327bf44f9a735ce1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetESPProcDamageTakenScale",
+      "line": 4212,
+      "lastLine": 4217,
+      "sha256": "357922688348ecb7a90c67755146576c9f49d6cf8519dcd3e38ba6f51612066c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetMPGainOnHitFactorByFormation",
+      "line": 4222,
+      "lastLine": 4228,
+      "sha256": "17c38a2eee7770ef2f1eff1d0c95dd77f08426adf810b5d93565d255cd1a0230",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_IsSAFamilyWithCooldown",
+      "line": 4230,
+      "lastLine": 4241,
+      "sha256": "5b3d81487546b77333bf59afbb45995474e2f598936c6430cd4fbd0261f9988b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_IsOverlimitCoolListed",
+      "line": 4243,
+      "lastLine": 4252,
+      "sha256": "9c82e899c045bba348eeebda66948cf6d5377c2c6b2022ae3feab7aadf1a162a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_OverlimitCoolListRegister",
+      "line": 4254,
+      "lastLine": 4283,
+      "sha256": "41e1962259acdae854eccf6193810f40f670b5974df6123ced9f399dd85827a5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_OverlimitCoolListTick",
+      "line": 4285,
+      "lastLine": 4302,
+      "sha256": "3f7e072ee699a211fb9ff378f7ec582a2bb6eab5638cec09dcd744fe8cebebdf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_MindControlCostRecoveryProc",
+      "line": 4306,
+      "lastLine": 4343,
+      "sha256": "256a37d1ec65fc9261218d9b43b809325fe1bcfa47b7105569d02dac1dc05e27",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_TimeControlCooldownProc",
+      "line": 4347,
+      "lastLine": 4377,
+      "sha256": "f2bf491b2ccb4d10a2acececf7ef7c382e245088635e796ece272c144245beab",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetChangeDamageRateByAttackerSkill",
+      "line": 4380,
+      "lastLine": 4405,
+      "sha256": "050254bf8e098c74d9a1292b286e8afaab64d437111af5187dd4bf5dbf2b0714",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ReInit",
+      "line": 4406,
+      "lastLine": 4572,
+      "sha256": "035a9b4eaa1c236dbe759538113ee68099d8dbf54c03b655e36702417c8e1f95",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DamageReact",
+      "line": 4573,
+      "lastLine": 4609,
+      "sha256": "9cc2924ee2fec135ea455e84bfd4b8d2752250b00a777736bfb52449028c673e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "Win",
+      "line": 4610,
+      "lastLine": 4614,
+      "sha256": "c6d8a897a0c7e509a10aed2482d41368b7d676921c5631b41f6d17f0b80af875",
+      "laterReconstruction": false
+    },
+    {
+      "method": "Lose",
+      "line": 4615,
+      "lastLine": 4623,
+      "sha256": "584aec73fec52f37c4a893b91b16632245264639fcf8cec15cc91c922a045caa",
+      "laterReconstruction": false
+    },
+    {
+      "method": "Draw",
+      "line": 4624,
+      "lastLine": 4628,
+      "sha256": "1c0e77ede27d650645fff2cb73d6d6aba07488d97d898396acf64a5f9d1d57f3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "InitEffect",
+      "line": 4629,
+      "lastLine": 4635,
+      "sha256": "f8e4bda84f7c4d91569bdbc595b4e99e7787e7df9fce8ea89acba9e60c92a479",
+      "laterReconstruction": false
+    },
+    {
+      "method": "InitEnchantWeaponEffectUnitSpecific",
+      "line": 4636,
+      "lastLine": 4643,
+      "sha256": "19b0ddcf88927f45750161448e5d631c9d86e7b9a7174bcc6791711347f6ae56",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AttackResultByType",
+      "line": 4649,
+      "lastLine": 4679,
+      "sha256": "05b8ba602713403bf8b38b6be98127391104658fecd8e4832d71fb2cbb76116b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CreateMajorParticleArray",
+      "line": 4681,
+      "lastLine": 4715,
+      "sha256": "ac376d2bf06d88ea38bbc6fd3682b70c0b0619de6b4ad48e0196ec89522e54d8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CreateMinorParticleArray",
+      "line": 4716,
+      "lastLine": 4719,
+      "sha256": "113b033893479e08aa7897a13f91ac66b649293837e1b30c4426c4ef45be40ef",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AppendMajorParticleToDeviceList",
+      "line": 4720,
+      "lastLine": 4732,
+      "sha256": "043cc27aa06baf4c5493f06738b78357d6442cf39a6b203a8021df3b8610ecf5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AppendMinorParticleToDeviceList",
+      "line": 4733,
+      "lastLine": 4736,
+      "sha256": "6c5ebd57523df48397b0b864810d37aeb3c20c3c84214667cd3a52d8a3a9b4d9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SpecialAttackNoStageChange",
+      "line": 4737,
+      "lastLine": 4792,
+      "sha256": "cb5f5c1bc71f0113ea72f84ce1834edea9ff66c007699038b5740444ade5e1b9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "COMMON_BUFF_FrameMove",
+      "line": 4793,
+      "lastLine": 4830,
+      "sha256": "898d084464ee1369f10919d5d43ce7360a6866e4f6ff602864b681a79d98764d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "FormationModeStart",
+      "line": 4832,
+      "lastLine": 4886,
+      "sha256": "d94bad0fd117a1f375e784da16c3a634a2d2252b5352c46e84f5087d6006c0d2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "HyperModeFrameMove",
+      "line": 4888,
+      "lastLine": 4912,
+      "sha256": "f772639a0c1f32e0b88ed2d7d0c8185b0959183828cd22afa974ce326285230d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "HyperModeBuffEffectStart",
+      "line": 4913,
+      "lastLine": 4916,
+      "sha256": "5cd95f89d2df001edf3a7a562e4ab5084eaca6f6a666c008c71b2be2f160a854",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetSpecificValueByBuffTempletID",
+      "line": 4921,
+      "lastLine": 4959,
+      "sha256": "9a226b64ecb009961a5aaee2796f141cc9d9a1a9d997ba36f4a5a3dffb41554e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "UnSetSpecificValueByBuffTempletID",
+      "line": 4964,
+      "lastLine": 5002,
+      "sha256": "7b1a0b0d9cea6dbf8081ebfa1f6b5ac34e5440c39fd4568b482c0b76b90c32fb",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ApplyRenderParam",
+      "line": 5008,
+      "lastLine": 5038,
+      "sha256": "04956dea9b8b81e7e1e8e7f9889b6ce98a856a7a364ab086e56a52b771f388fd",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DieFrontStartFuture",
+      "line": 5045,
+      "lastLine": 5049,
+      "sha256": "39aa6cb0fc35d1f6ae2f706acc13fa744c3de40198c836e609e73d38bb06ac8b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DieFrontStart",
+      "line": 5050,
+      "lastLine": 5062,
+      "sha256": "31f75197f4b55172caf339c190a27e58ca457471aedfd58cd4825e6fe38b13d8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DieFrontFrameMove",
+      "line": 5063,
+      "lastLine": 5069,
+      "sha256": "215b5c7be7935362a44188bb002e9f1a9ec8504be550419bd9ddc43e0469f580",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DieFrontEventProcess",
+      "line": 5070,
+      "lastLine": 5076,
+      "sha256": "5cb0c787b0fa2656e4e4907e3a5d07b481ad25dc84707f083f822640bbe92bc1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DieBackStartFuture",
+      "line": 5079,
+      "lastLine": 5083,
+      "sha256": "df1b2a20dd5a29a0eba8ddfe88a698e779db156d9ad28458eadd846772a40dd4",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DieBackStart",
+      "line": 5084,
+      "lastLine": 5096,
+      "sha256": "11abe8ea08477223732d2072867a39b8aba806a90531fe583f589c96db91cba9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DieBackFrameMove",
+      "line": 5097,
+      "lastLine": 5103,
+      "sha256": "52c1d37b3b1fe7fdc1831e3f260202b9039d733de30c8bc207321105043dbb80",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DieBackEventProcess",
+      "line": 5104,
+      "lastLine": 5110,
+      "sha256": "d7f33af39730a3d3b9ff3612d796e148d511a08ed917772a466bec182064ca6e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "WaitStartFuture",
+      "line": 5113,
+      "lastLine": 5117,
+      "sha256": "792f6123c307a23224916b3f33facb3cc2153057ec35a30ca36808edcc545309",
+      "laterReconstruction": false
+    },
+    {
+      "method": "WaitStart",
+      "line": 5118,
+      "lastLine": 5127,
+      "sha256": "9c34c72bdce080e5da38134a23527b16717c759ce56401de363fb9c69471201d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "WaitEventProcess",
+      "line": 5128,
+      "lastLine": 5186,
+      "sha256": "1092547cde3b81c3660992acb7ed23d643a90eb6019fbdec87a5dcd2137a6f6c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "HyperWaitStartFuture",
+      "line": 5189,
+      "lastLine": 5192,
+      "sha256": "71054186dd4cbd6b8f01a319d495952c9ead5200a83cb04be008aa572484aa6b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "HyperWaitStart",
+      "line": 5193,
+      "lastLine": 5201,
+      "sha256": "4292b87f32ce6ab817de43882463f45d3f038eedf65d320c774aa5294a89f21f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "HyperWaitEventProcess",
+      "line": 5202,
+      "lastLine": 5259,
+      "sha256": "e5e1f624ac829405a1b9cc2640161233d6c8d2299dab1254cfa4fea5a63e99b1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "WalkEventProcess",
+      "line": 5262,
+      "lastLine": 5313,
+      "sha256": "a8ac2be048a9c6ff97ac4247d23ba590bc00e6210eae4ca9540375fd1cbe45fb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpReadyEventProcess",
+      "line": 5316,
+      "lastLine": 5334,
+      "sha256": "242658f815021b3e94453fa192ec7a99f8b35561b5dbfca30663145eaf0ad96e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpUpEventProcess",
+      "line": 5337,
+      "lastLine": 5377,
+      "sha256": "037eb0fbb5a38ca698710917efd2454472159dc717f5d5d2f2c5587b2137f5d1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpDownEventProcess",
+      "line": 5380,
+      "lastLine": 5420,
+      "sha256": "03e8b7680303f1e75fcd083ead0d9f56c59515fc58f07ae32cc479e668fbdae4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpLandingStartFuture",
+      "line": 5423,
+      "lastLine": 5426,
+      "sha256": "286976c2695b789af7f3ed5b3dc213cc9edd30a02b2b12877e3e020e051203da",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpLandingEventProcess",
+      "line": 5427,
+      "lastLine": 5496,
+      "sha256": "e72e7e70520ac81e2dda37800ba94cac9ba3d3ec096748d2cd80fa6b61013302",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashEventProcess",
+      "line": 5499,
+      "lastLine": 5570,
+      "sha256": "f69ea02da990650f0af5f13e889ff9e60473f94e2f58cfab85fe610b39f96b06",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AirDashEventProcess",
+      "line": 5573,
+      "lastLine": 5633,
+      "sha256": "c15975a1f3b9e14ffe31769f902dd50ad0a4a592641865a53da6043edd1b9d4f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AirDashStateEndFuture",
+      "line": 5635,
+      "lastLine": 5641,
+      "sha256": "7ea68d06dabe6952a771c842a0c0cae887e4eb0c837e5c8eb0c6de5d72ebfa49",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashEndStartFuture",
+      "line": 5644,
+      "lastLine": 5648,
+      "sha256": "d84cbf5b08367f50954ade4742a514cedd7871636d1d9855031ce2eff3f2568e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashEndFrameMove",
+      "line": 5650,
+      "lastLine": 5656,
+      "sha256": "c1e4b380e70b4a5b97cd994cc12ae85d97e1c20459d09ac1cf07f6a7b0babe01",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashEndEventProcess",
+      "line": 5657,
+      "lastLine": 5725,
+      "sha256": "70010d70325cf4425367de76b01dc7bc15ba4f187b59db78f354e5c9d040cdc5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpStartFuture",
+      "line": 5728,
+      "lastLine": 5737,
+      "sha256": "46cdab7d0235d6f4374983557dbf160026154b6c08e50456a7aa1bab30defebe",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpStart",
+      "line": 5738,
+      "lastLine": 5744,
+      "sha256": "8b8fe7252847a747546e608672d85b41123a996704ce7041d35451dc8c8ebf8c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpFrameMoveFuture",
+      "line": 5745,
+      "lastLine": 5759,
+      "sha256": "f0927de54207f16be110d440c4c19920876a9d97bae5feacb208e407a49d8403",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpEventProcess",
+      "line": 5760,
+      "lastLine": 5852,
+      "sha256": "afd3dd4846aeaabb92942f303337f5689d982fbe4d7ec5c69eefadbea26b4203",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpEndFuture",
+      "line": 5853,
+      "lastLine": 5857,
+      "sha256": "1390ace385500919bf3f9c0a4dcb5421c841efe7fdd3296f7a02239c3877cd29",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpLandingEventProcess",
+      "line": 5860,
+      "lastLine": 5917,
+      "sha256": "b9eb2c3afebdc2f34173debfa46a0b7a22ffa36da8a970aea0e5660e6390dd22",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpLandingStartFuture",
+      "line": 5918,
+      "lastLine": 5921,
+      "sha256": "6ab911027654149090192a91a167f07afc17f2df8693c15199a93c7126fbf717",
+      "laterReconstruction": false
+    },
+    {
+      "method": "LevitationWaitFrameMove",
+      "line": 5924,
+      "lastLine": 5935,
+      "sha256": "63ed093639a4ebb8c6020eb37465aa100121b2797c9d0f563cd121cdc77edb42",
+      "laterReconstruction": true
+    },
+    {
+      "method": "LevitationWaitEventProcess",
+      "line": 5937,
+      "lastLine": 5998,
+      "sha256": "67d584d8bfecd8ab6d4686fe3c70322aad8b6979c06f216a978007327861523b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DamageSmallEventProcess",
+      "line": 6002,
+      "lastLine": 6020,
+      "sha256": "b478f7ed0b564501e2cceb1ea257079c85a48dbcb2cf1d877754aef0910c7481",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageBigStart",
+      "line": 6023,
+      "lastLine": 6027,
+      "sha256": "a9ae001fc5e5303f910c08a153a3564dfa90a5c991f1b55ce52b7f001c759148",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageBigEventProcess",
+      "line": 6028,
+      "lastLine": 6058,
+      "sha256": "2eff609fb18e2276cace38937791bdf43521f49683182908ebf1905773533d6a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageDownFrontFrameMove",
+      "line": 6061,
+      "lastLine": 6071,
+      "sha256": "9e340eebb544b8936783fb0e6a36d4ce0d6556d259453f6c270a5a16044142d1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageDownFrontEventProcess",
+      "line": 6072,
+      "lastLine": 6174,
+      "sha256": "a6e9c6f8b99ef3bfb431879c9fe4a549817062305dc8825efd4f40a564b8d3c0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageDownBackFrameMove",
+      "line": 6177,
+      "lastLine": 6183,
+      "sha256": "e241ee5cfaa9851a59149121b0172f0a39d27246a845944276777ff661672d63",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageDownBackEventProcess",
+      "line": 6184,
+      "lastLine": 6290,
+      "sha256": "ed38f7153d7ae5cea8777c18fd1176e957c60fb9ba9e20d34881fad257b7a81f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DamageAirDownLandingEventProcess",
+      "line": 6293,
+      "lastLine": 6296,
+      "sha256": "1b681ce02d80928463d0bd695ca2d2c1549bf26fa9b1c5eb85dfe40c3f789de4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingFrontFrontEventProcess",
+      "line": 6299,
+      "lastLine": 6318,
+      "sha256": "de05213c483d3a97c15a6ee9ded9301a11b844198961bd002dfa9644a525594e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingFrontFrontEnd",
+      "line": 6319,
+      "lastLine": 6325,
+      "sha256": "c1bec11e039acba575ddc244df0a993f582c8372498470daf9602c59ad78de51",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingFrontBackEventProcess",
+      "line": 6328,
+      "lastLine": 6347,
+      "sha256": "07249b7f427874c8c68b2293f8061cb9a2f61c5a464bac787a2fda475d6777e6",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingFrontBackEnd",
+      "line": 6348,
+      "lastLine": 6353,
+      "sha256": "d296cfc3df846853631484106f72e66098877a3e97b25d77f5572a8e7d650210",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingBackFrontEventProcess",
+      "line": 6356,
+      "lastLine": 6374,
+      "sha256": "2f90b0af15ad370fc720dbeb5ff9d61528527d6bd4011c2e3ffaa0f93655af5b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingBackFrontEnd",
+      "line": 6375,
+      "lastLine": 6380,
+      "sha256": "ca9584bbaa8e772f4665ed897d6fbbda96797f2d8e0e95036f75cc393ab2336d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingBackBackEventProcess",
+      "line": 6383,
+      "lastLine": 6401,
+      "sha256": "2952190e42f7ae4e0bc1c9189212bf9d6240192ac283cb7118d4befa8cf51e03",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpRollingBackBackEnd",
+      "line": 6402,
+      "lastLine": 6407,
+      "sha256": "c2f8fd911f4e55251b8a37b28362411217dd735612fed6dd415eb42d95528fd4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpAttackFrontEventProcess",
+      "line": 6410,
+      "lastLine": 6429,
+      "sha256": "6d2d064d24e4a9a7fa2442aee98d3d8ca5640fda5058abed44dd7c2049a903e9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpAttackFrontEnd",
+      "line": 6430,
+      "lastLine": 6435,
+      "sha256": "73f618218384819f7725af5dae4b19f205d933d4596cab9ac3356e9ff320f5ec",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpAttackBackEventProcess",
+      "line": 6438,
+      "lastLine": 6457,
+      "sha256": "24d907a167378ca443777868d14a273b2809afe623a2f8d726b799a33992611d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpAttackBackEnd",
+      "line": 6458,
+      "lastLine": 6463,
+      "sha256": "465af2da610e369c99d65adb36565979764aa5beac3215b210e93acb732588db",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StandUpAttackBackStateEndFuture",
+      "line": 6464,
+      "lastLine": 6468,
+      "sha256": "46c9f58fbb225bdd09548391bf848987f23186446e5af5bba551ee3de83e3dea",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpPowerLandingStartFuture",
+      "line": 6471,
+      "lastLine": 6475,
+      "sha256": "6acc65592edab239225321e98138761d00b54cd679f13529ef0843f414a3c5d4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpPowerLandingStart",
+      "line": 6476,
+      "lastLine": 6480,
+      "sha256": "a4c8186d2c87d76ac81d9e3ecf5e8f558cbcc5a2f1632aa5d162d254923854b1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpPowerLandingEventProcess",
+      "line": 6481,
+      "lastLine": 6535,
+      "sha256": "b4801145acf0a41feba4a07b461b75c36f0cbacbcf85337e3cb3a9592153475c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboZEventProcess",
+      "line": 6541,
+      "lastLine": 6565,
+      "sha256": "f17df94726b444bc9f433d95d34e85401d4f1c57aa1a0c56449964f8eb1f7426",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboZZEventProcess",
+      "line": 6568,
+      "lastLine": 6592,
+      "sha256": "c742b714c611868c5ca43fff2458cbcbf04e67b8718965473e75be0d9fb76593",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboZZZEventProcess",
+      "line": 6595,
+      "lastLine": 6620,
+      "sha256": "232ef8a7ec7e10bdfe7f4f1ead618397127b58eeee279fc5a7a0e78dc26cd484",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboZZZZEventProcess",
+      "line": 6623,
+      "lastLine": 6645,
+      "sha256": "050e48382a2599462a44e69c3907b1069523730c11d06c879a0fd277a26ee962",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboZZZXEventProcess",
+      "line": 6648,
+      "lastLine": 6670,
+      "sha256": "bf6ba8818603f791372fb07186d0897c58e215966222371456111b0503e91d2a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboZZXEventProcess",
+      "line": 6673,
+      "lastLine": 6722,
+      "sha256": "e859962e524550131d8a67115ce2d4ab282cd4eb8a649191bd7013f252f5330e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboZZXXEventProcess",
+      "line": 6725,
+      "lastLine": 6762,
+      "sha256": "5b24514a8c3176965a4163d9f072236de0c1f20b29f9d1fae6e9e5348667e12d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboXEventProcess",
+      "line": 6765,
+      "lastLine": 6804,
+      "sha256": "0cd587d4092a3baa349c3992be4545d7d7f40b43b394642ffe77d8feda5a2585",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboXXEventProcess",
+      "line": 6807,
+      "lastLine": 6874,
+      "sha256": "c47f0258496f5e78b5d00be47343316ee8b06326449a89370e6670a04ac950bd",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboXXStateEnd",
+      "line": 6877,
+      "lastLine": 6881,
+      "sha256": "949c246bf9ccdcbe8200b34a18c5d84b7f6babe616bfe925755503453b71ae17",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXXEventProcess",
+      "line": 6885,
+      "lastLine": 6948,
+      "sha256": "f6c69d8e76a3aa275fbed9d24806bd8031c859dbd3be6a99c7b9581fa72c9aec",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboXXZEventProcess",
+      "line": 6951,
+      "lastLine": 6974,
+      "sha256": "e0c4c532cea833abc8bf5773339b345ae71713e3d7df07e8b7ccf61d26643292",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZStartEventProcess",
+      "line": 6977,
+      "lastLine": 6990,
+      "sha256": "16c1663d5dca706d8d3cff2e414728102e97bd66758ec984792b35f4bee00e62",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZStartStateEndFuture",
+      "line": 6992,
+      "lastLine": 6997,
+      "sha256": "9ba175fb15d661cb6a3a687587a9b990b972e5835c2809bcce70d61a32407516",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZLoopStateStart",
+      "line": 7000,
+      "lastLine": 7013,
+      "sha256": "f89885eb3ddf38460cdd0e0f0df0837a0c193322e21ad75d053eea4490620085",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ComboXXZZLoopEventProcess",
+      "line": 7015,
+      "lastLine": 7036,
+      "sha256": "b789c5fe113e14785d6582be769a4c2c0209f203919f85b63f339d5354869fbe",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZLoopStateEnd",
+      "line": 7038,
+      "lastLine": 7043,
+      "sha256": "538152992dbf3b807735d73670d83b87b4efe70a5768cbad1b9b3a9714abead8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZFinishStateStartFuture",
+      "line": 7046,
+      "lastLine": 7056,
+      "sha256": "d8d5f221fae2ae7103561fb1f036d1dccd15b54b985e479bb1257114f9e4f357",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZFinishStateStart",
+      "line": 7058,
+      "lastLine": 7061,
+      "sha256": "63da8866f80ca1df1b13f5922b19163b79078105079bd1d19db06bbd4e481d0d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ComboXXZZFinishEventProcess",
+      "line": 7063,
+      "lastLine": 7085,
+      "sha256": "9a4dd9c2f2500bd1c170de74eeea6278ace6869c48f7af246712761adaaf9158",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpComboZEventMoveFuture",
+      "line": 7088,
+      "lastLine": 7106,
+      "sha256": "893e66e9b10b71ff82a2142a6bc4769f46e80ee184ba8d987eb1c112bd5c643a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpComboZEventProcess",
+      "line": 7108,
+      "lastLine": 7123,
+      "sha256": "16eb64a5b72462ff02fd5b7c45e1880cdcb1db34f67c244e4b8fb1f67727d0c1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpComboXEventMoveFuture",
+      "line": 7126,
+      "lastLine": 7142,
+      "sha256": "ef76328321eedef1ce0850ffa2902d1937b965d0225260670bbf98fb8cd1b2fc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "JumpComboXEventProcess",
+      "line": 7144,
+      "lastLine": 7161,
+      "sha256": "2e992cee7de1097e4cddba352eaf7381318775f2f6cb1198f448abb7db0b2d6d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DashComboZFrameMoveFuture",
+      "line": 7164,
+      "lastLine": 7173,
+      "sha256": "4a4af1b6fd5ead93918532c11c233c4d8836c06fc7075e39f06e643d3be4bddc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboZEventProcess",
+      "line": 7175,
+      "lastLine": 7204,
+      "sha256": "6eb0d61eb08239af6a655edf31e1c8824f06cf0b25cb59090eca101b902e3ebd",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DashComboZZEventProcess",
+      "line": 7207,
+      "lastLine": 7229,
+      "sha256": "7fbe977d22fc188b590516689ff248b628b05c1a5fea7943b3346750ff5f42bb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboZZZEventProcess",
+      "line": 7232,
+      "lastLine": 7254,
+      "sha256": "e2cbd09ede673817d5ff8916d14e8a03531d1db9752629423b623a3107fee8af",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXStateStart",
+      "line": 7257,
+      "lastLine": 7262,
+      "sha256": "bc2df45053feae73b242672f7320c7a23eb1267213708dd115650638e5cba49c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXFrameMove",
+      "line": 7264,
+      "lastLine": 7274,
+      "sha256": "ebcb0b8252d095fa88d5e205e2bfe71d36b7adc595b421f54c169aba90730809",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXEventProcess",
+      "line": 7276,
+      "lastLine": 7298,
+      "sha256": "da71c2d0795d855c7c2de64b578aa98474f90aa5d858d733f3439ccacc827b38",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXStateEnd",
+      "line": 7300,
+      "lastLine": 7305,
+      "sha256": "442140c22be775df19f1cf98bee542d68c26f0ce2caa5b7826e0c59e4051a6cb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXStateEndFuture",
+      "line": 7307,
+      "lastLine": 7314,
+      "sha256": "9e1da49ad963c621a3f0d91aa933ccfd0208fea0c9bde40d6d25f8db5ef15b43",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXXEventProcess",
+      "line": 7317,
+      "lastLine": 7339,
+      "sha256": "f1b0a16ccc609a6e0197b5e42991ce5c385e235ac06b02ba922ff8a979e64925",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashComboXXXEventProcess",
+      "line": 7342,
+      "lastLine": 7364,
+      "sha256": "08048788a2cb8d3208891bc1961e9eded3f719c6f46619307d4779b22bdd0f17",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboZEventProcess",
+      "line": 7367,
+      "lastLine": 7384,
+      "sha256": "54c7f6188b9db3d481f4295b01d93ac9b4d1884e8cbb53e8d7fe6cf472624364",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboZZEventProcess",
+      "line": 7387,
+      "lastLine": 7405,
+      "sha256": "25c62a9d64c3a52a75fe8a9dc5bdd4a91ea68ff0b598509eb9e16928d6262130",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboZZZEventProcess",
+      "line": 7408,
+      "lastLine": 7425,
+      "sha256": "553548c77f50617aad895386d9bcc21f8d16524099a4e86a3638097f2595aac1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXEventProcess",
+      "line": 7428,
+      "lastLine": 7450,
+      "sha256": "8a8ffb67ec05638d5c4ca817ef334497cf353400a053b0848347f3a0236f61ff",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DashJumpComboXXStartEventProcess",
+      "line": 7453,
+      "lastLine": 7461,
+      "sha256": "3f41b8d3baf97de141b1021f72fbd20c82e8ad7d4ed7e2c2e3a76f5fb406ec82",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXStartStateEndFuture",
+      "line": 7463,
+      "lastLine": 7469,
+      "sha256": "053f87c8db6d9f9e9801f7b8b2819caa4a4bf3eb9aa8330add1d47054d7aeecd",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXLoopStateStart",
+      "line": 7472,
+      "lastLine": 7478,
+      "sha256": "fc737373e41c51cb9bd98b93bb16a8167bf1d39801d85664b3b5c6eeffbbbb00",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXLoopFrameMove",
+      "line": 7480,
+      "lastLine": 7489,
+      "sha256": "22aa18cb43e746fbb9bc457f835ad88012f4971c300d557bd5cf39ade2019598",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXLoopEventProcess",
+      "line": 7491,
+      "lastLine": 7504,
+      "sha256": "75a03d4465a509d6d3c140c06ecbc3bdce599d9c4e97a8c54ae7028b5df17934",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXLoopStateEnd",
+      "line": 7506,
+      "lastLine": 7511,
+      "sha256": "5ec788bda7eaa1bf75320a1131fe2f3940226c6dfa577a1e6865789ff8afaab6",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXFinishStateStartFuture",
+      "line": 7514,
+      "lastLine": 7520,
+      "sha256": "fc384df51882fc72542fc9bb59fe409972829a955a65d85d0723825770fc9de7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DashJumpComboXXFinishFrameMove",
+      "line": 7522,
+      "lastLine": 7556,
+      "sha256": "971e2e79e6d744ff654fb7a3ee48853a234ab88eb7ec050b7122841f89482c65",
+      "laterReconstruction": true
+    },
+    {
+      "method": "DashJumpComboXXFinishEventProcess",
+      "line": 7558,
+      "lastLine": 7576,
+      "sha256": "8e5320d617a50413298be4a011f6a3ff63b77c329a032de5a891635c71d88b30",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodBarrierActiveStateStartFuture",
+      "line": 7579,
+      "lastLine": 7585,
+      "sha256": "323033138a856247cca10b76cdee7b7310dcdd2c7906b6c031aa43c6bb629ddf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodBarrierActiveEventProcess",
+      "line": 7587,
+      "lastLine": 7604,
+      "sha256": "0374b4629210e5b44f1b4d2d4762988ab48e9145bdbf4c190aa25ebc86ae9edf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorReadyEventProcess",
+      "line": 7607,
+      "lastLine": 7626,
+      "sha256": "c501c501d5a0d88590b8432459dd15679070a44b9209d96301735eb4c841175c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorAttackStartFuture",
+      "line": 7629,
+      "lastLine": 7728,
+      "sha256": "3a147ce5b6eeac37d695c80e821aadd9d10e5c5f45779460e2f5c7e163145edb",
+      "laterReconstruction": true
+    },
+    {
+      "method": "NasodArmorAttackEventProcess",
+      "line": 7730,
+      "lastLine": 7754,
+      "sha256": "43cd184b1096ca3c7aa4b12329ca0454ca8cd07a73c147758a36fefe2770db03",
+      "laterReconstruction": true
+    },
+    {
+      "method": "NasodArmorLandingEventProcess",
+      "line": 7757,
+      "lastLine": 7783,
+      "sha256": "30d38c77c630a8871ee6bbb3f74aa83b1ceb418bceae518feb7f70fd020d4f40",
+      "laterReconstruction": true
+    },
+    {
+      "method": "NasodArmorLandingEndFuture",
+      "line": 7785,
+      "lastLine": 7835,
+      "sha256": "42d5675d6868c01cfe389dc022773340c8d40866ffd485929f71c2e2f8bd000a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZEventProcess",
+      "line": 7838,
+      "lastLine": 7861,
+      "sha256": "ca7aedcc97c0d5fdab18a007617bcd9e6b77c9c6601a8e8f6a0d1dde66f56c04",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZEventProcess",
+      "line": 7864,
+      "lastLine": 7899,
+      "sha256": "2e928469748d80c3f6cbea06a43664ec636395b2881814f5245b7f52d3b6b432",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZZEventProcess",
+      "line": 7902,
+      "lastLine": 7923,
+      "sha256": "d10e5a503a36da23399db27adc0ac0affbac143c91c712c5f2cbc0f1b835060d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZXEventProcess",
+      "line": 7926,
+      "lastLine": 7949,
+      "sha256": "f8a106173b04c116cc9a436d82302fd1b638e6eee6ab710e4e58a7b01b7a1d3c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZXXEventProcess",
+      "line": 7952,
+      "lastLine": 7972,
+      "sha256": "a219088f0eb047f1702ae0324ed29cd658257b2f4a3924af04ad8a336dbb1cc1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXEventProcess",
+      "line": 7975,
+      "lastLine": 8009,
+      "sha256": "611a8b24167efe4af5479b3c6faf2005ad8ae36b6abda2def9d6fdd9ae381e6e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXStateEndFuture",
+      "line": 8012,
+      "lastLine": 8017,
+      "sha256": "af8a9319cbf2218245be0627f55121fdb803f6340de165e2ead5aa05faa88aa2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXXEventProcess",
+      "line": 8021,
+      "lastLine": 8044,
+      "sha256": "a870a69d816faab6d059284cb66bc65e395052e60e67d409a7872fc08d218b61",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXXXEventProcess",
+      "line": 8047,
+      "lastLine": 8068,
+      "sha256": "c19d85dcdf1bafecdec435757ce2dcd30819820b684638bf496a3c70e194f2de",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_VOID_BREAKER_Init",
+      "line": 8076,
+      "lastLine": 8085,
+      "sha256": "9ac4a766e650787446ebcb3fb3bf6dad955f6b121ffa3fc878eb19b02d8763c4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_VOID_BREAKER_FrameMove",
+      "line": 8087,
+      "lastLine": 8144,
+      "sha256": "7a548e92e0887785f88da14e757fec655ab4f234b49ef0e9b3ec4eb96cbd7255",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AN_VOID_BREAKER_EventProcess",
+      "line": 8146,
+      "lastLine": 8163,
+      "sha256": "f597944a851ab27433d8071935405ed56a6bd70d5662456f87154e5a368fc338",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_PRISM_Init",
+      "line": 8166,
+      "lastLine": 8176,
+      "sha256": "0d85277530603a38ad829a04f24973ff1590eba470fe389ec9eb2a7ea45e6768",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_PRISM_FrameMove",
+      "line": 8178,
+      "lastLine": 8235,
+      "sha256": "ccb4f7b275c0fdfe019669a972717a1b39867cd97ec6c00c11af21596e4d8665",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_PRISM_EventProcess",
+      "line": 8236,
+      "lastLine": 8253,
+      "sha256": "c2a90decfc384bd8fe2ff896de99ec2bc985e7994ac80f4be7ef33a9a48beb0e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DestroyMinePrismNPC",
+      "line": 8257,
+      "lastLine": 8281,
+      "sha256": "f794f25181e214f190cd52c2fc2917d9a62e45b6dcd664d7380b9a687837fb55",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_ENERGY_BOOM_Init",
+      "line": 8285,
+      "lastLine": 8302,
+      "sha256": "62837aea178805f60351905e0a0ea30bb3bf269d31a982d370a3f31466bff6de",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_ENERGY_BOOM_FrameMove",
+      "line": 8304,
+      "lastLine": 8345,
+      "sha256": "9c6f35abaea4722ae4f274a2acc13f3711e1781ad19e35ebd18a23b0908934d4",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AN_ENERGY_BOOM_EventProcess",
+      "line": 8346,
+      "lastLine": 8363,
+      "sha256": "8f5c714ef57b1c1b9109326b8e3f57f6a5206c5fea4eee5baf9b6a91ef1beaef",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_ACCELERATOR_Init",
+      "line": 8366,
+      "lastLine": 8373,
+      "sha256": "cfb5db5a986b44107e4aa56ec1622e8f3fb65cd4452a4640f9aac1f895ff6f23",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_ACCELERATOR_StateStartFuture",
+      "line": 8376,
+      "lastLine": 8382,
+      "sha256": "95a46ff9056835204a18a2dac798647439869a2d92e6b469da95272645310054",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_ACCELERATOR_StateStart",
+      "line": 8384,
+      "lastLine": 8399,
+      "sha256": "847132da5d219eadf6354e5aed51d9690890e1001d2537f1af936210359c26ba",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_ACCELERATOR_FrameMove",
+      "line": 8402,
+      "lastLine": 8448,
+      "sha256": "ae2315054ea817f41cf3623b50940ccbcdaf4d316f4f97bb41a13c387f4b43f3",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AN_PARTICLE_ACCELERATOR_EventProcess",
+      "line": 8450,
+      "lastLine": 8467,
+      "sha256": "65b6cbbd6ec1c48a459e099b86196973a5ea3024a549a259958b80c3972d9412",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_NEUTRON_BOMB_Init",
+      "line": 8470,
+      "lastLine": 8481,
+      "sha256": "f75c5521c037a0c39164ef498ecdd94778eff15e87689eaacecdf52c9bc14cb4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_NEUTRON_BOMB_FrameMove",
+      "line": 8484,
+      "lastLine": 8502,
+      "sha256": "d5fe55d62cb0ab6a953ad3fa9747df1f26a3f1cd74e581710f227f21a9169e0d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AN_NEUTRON_BOMB_EventProcess",
+      "line": 8505,
+      "lastLine": 8523,
+      "sha256": "a83e444e9d0ad6a2c0567a739702cc590449284c615d678c7da601f31840bf16",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_READY_Init",
+      "line": 8526,
+      "lastLine": 8534,
+      "sha256": "2f4a3e906a4345e5a3ce76d4770a2b765f1feff30e3ca0024b89f98491887cd2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_READY_StateStartFuture",
+      "line": 8536,
+      "lastLine": 8542,
+      "sha256": "c056153740e95d9b4323db0cbbda323169bc2586815db8c54065cc90bb6b76bf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_READY_StateStart",
+      "line": 8544,
+      "lastLine": 8566,
+      "sha256": "782747d106421a62538d5363a0fb289b83a4405d3939044cb94d1a6703661566",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_READY_EventProcess",
+      "line": 8568,
+      "lastLine": 8576,
+      "sha256": "654d3f8e3df5c3a91ed6fbd7cb72742b5ba787d21b85996703c8c0db552ade2a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_LOOP_FrmaeMove",
+      "line": 8578,
+      "lastLine": 8605,
+      "sha256": "7c7e733cf3c5184875a2e0e02741d449057490ac4ca0b0fc5a217c2a4b94b2ee",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_LOOP_EventProcess",
+      "line": 8607,
+      "lastLine": 8631,
+      "sha256": "92b6718ea4776cbfc78efd8d3f5ee18673a4bc0e5a36e80259c21f370a678025",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_PULSE_CANNON_FINISH_EventProcess",
+      "line": 8633,
+      "lastLine": 8650,
+      "sha256": "eb505b80313db6bf0d07ae9d5148d48ad854f91b2a8c5c8a72a39d546e4ea7c4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_EMP_SHOCK_Init",
+      "line": 8653,
+      "lastLine": 8660,
+      "sha256": "6a013d230a6c1bfaa4919e5fcbaa3bb1c24e2700b3651eb9fb5039750817eefd",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_EMP_SHOCK_FrameMove",
+      "line": 8662,
+      "lastLine": 8709,
+      "sha256": "80e9bd0a968f91918190db5586568f9646c6d4b586a86361bdee7b188162e886",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_APT_EMP_SHOCK_EventProcess",
+      "line": 8711,
+      "lastLine": 8737,
+      "sha256": "e956e292b731fa1e2ce10ffad5fe82ca5aa5ca583f24dc62a01d293cb3182953",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_QUAKE_BUSTER_Init",
+      "line": 8740,
+      "lastLine": 8749,
+      "sha256": "453f2c14a1cb30ffd7b52ef74af66ce9ed131c1e430dc792ea1c300993a37d14",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_QUAKE_BUSTER_EventProcess",
+      "line": 8751,
+      "lastLine": 8768,
+      "sha256": "9d5121794c077f83a0f06c30107ff2946cb6831049ccfd0d29d3af3f806ba4f8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_QUAKE_BUSTER_FrameMove",
+      "line": 8769,
+      "lastLine": 8794,
+      "sha256": "95c66a3a4d43a1798ee3c07b0b42ab1339dfa8f1e2dfee7537c2e8ef4be4ec1c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_QUAKE_BUSTER_HYPER_EventProcess",
+      "line": 8795,
+      "lastLine": 8812,
+      "sha256": "f48ad8d48d351a3d1478b6c4f7d2b1d959c2f900f8be124ff2fc08a6cadfff5e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_Init",
+      "line": 8815,
+      "lastLine": 8827,
+      "sha256": "f3de3323d28efdff4219cd9ddc9f7fd8be5b60d14e8f18294930750d4af4eb26",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_StateStart",
+      "line": 8829,
+      "lastLine": 8839,
+      "sha256": "766ced185bac72e9b80e0804008937d41016aa1141af375e2eed6ab3cdbef31b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_FrameMove",
+      "line": 8841,
+      "lastLine": 8857,
+      "sha256": "1253c1af186b6ab20bdfe9fbc97481769db736871f21e4dda78b82d9b796c9d3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_EventProcess",
+      "line": 8859,
+      "lastLine": 8876,
+      "sha256": "e5f95d2aa6e5e63e57724d6fb2a25705780d03421c704351e0c6be80c77518f4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_ACTIVE_StateStart",
+      "line": 8878,
+      "lastLine": 8894,
+      "sha256": "9526c6678825348a18876365787bccabce362c17bfee27f398e7ac6c5f563d60",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_ACTIVE_FrameMove",
+      "line": 8896,
+      "lastLine": 8933,
+      "sha256": "6a3760723631c91e47ab1ea949ee9e3a8a206fe6a328fcc5ded47892d270a590",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_STASIS_FIELD_ACTIVE_EventProcess",
+      "line": 8935,
+      "lastLine": 8952,
+      "sha256": "25821e56e9147a73a885eca07a51a307f9ccff39b4f13aa6001a710f6957568f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_CONQUEROR_Init",
+      "line": 8955,
+      "lastLine": 8965,
+      "sha256": "57184b61fff1891050567238f686238c15ea07a6a9ec381a0399dba44ce98e90",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_CONQUEROR_EventProcess",
+      "line": 8967,
+      "lastLine": 8984,
+      "sha256": "a839ece4be92e85c7f78d8a68a642e9e5955b6a5dde79d92b7ffb07bcbaf81a7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_CONQUEROR_FrameMove",
+      "line": 8989,
+      "lastLine": 9017,
+      "sha256": "1ca1ea8068bb45289f0cc4d11becc008fffdfa6e160f3e2551d984f78d88077a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_APT_CONQUEROR_HYPER_FrameMove",
+      "line": 9020,
+      "lastLine": 9047,
+      "sha256": "eca7cbefe538f5bc82dd5250c36b66d802318d35b8a8c458b932df6c59e680fa",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZFrontZStartEventProcess",
+      "line": 9052,
+      "lastLine": 9073,
+      "sha256": "a893ad9919690796971797fd48d5f55e8852804ade5e971c6a599b853488b927",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZFrontZLoopStateStartFuture",
+      "line": 9076,
+      "lastLine": 9086,
+      "sha256": "2c774b7c2161419721026aeee4b967021bf3802285cace95bf5a00794bf9699f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZFrontZLoopStateStart",
+      "line": 9088,
+      "lastLine": 9098,
+      "sha256": "2ae75fe4f2ae86215386fea1dd86e4ac39812eb8205237df01bf5a482674b072",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZFrontZLoopEventProcess",
+      "line": 9100,
+      "lastLine": 9146,
+      "sha256": "b02b0d74669e965648032ac9472d9ecf221d05535c608d3c819ed457be18e997",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboZZFrontZXEventProcess",
+      "line": 9149,
+      "lastLine": 9169,
+      "sha256": "73f4aaf44d0218b3bc0a3112143393941593775685347c7528a82f94113ba2dc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXDirectionXLoopEventProcess",
+      "line": 9172,
+      "lastLine": 9214,
+      "sha256": "cf0fcc1326e9455f5988f4a12c227f31609d373629688e9fd8f48b5c8a92c043",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXDirectionXLoopStateEndFuture",
+      "line": 9216,
+      "lastLine": 9222,
+      "sha256": "8abfbce53bcbf15907fa4627ef5706448904bcf9bbe495cd229e1406e4a66444",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NasodArmorComboXDirectionXZEventProcess",
+      "line": 9225,
+      "lastLine": 9245,
+      "sha256": "e8d6f89f99adebc418acd9d01a872e46225a1c7f5d7ba9bbe3a5f48be983e3d4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_REVERSE_REACTOR_Init",
+      "line": 9249,
+      "lastLine": 9262,
+      "sha256": "d3a86c38cca958e41557d484571cda91ab2dfa1cb7200a811fc911b686214db9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_REVERSE_REACTOR_StateStart",
+      "line": 9264,
+      "lastLine": 9269,
+      "sha256": "aa9aafbe5c801cd949f4e2a67ea05ab401d3d7bd82737182c29babec3ae98a8c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_REVERSE_REACTOR_FrameMove",
+      "line": 9271,
+      "lastLine": 9387,
+      "sha256": "720482cee487db7f4f3d6426d3cc47b788a5599b6e15494e776493ffd510aa34",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ALP_REVERSE_REACTOR_EventProcess",
+      "line": 9389,
+      "lastLine": 9406,
+      "sha256": "a5eb5b27142852b32a6d95c0dcb83f20b679c423a18f3c1592be4f6ab4cdce7f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_Init",
+      "line": 9409,
+      "lastLine": 9417,
+      "sha256": "49e70ca0133607cc2372f752caf860a3121d762e41fa2146a2f58f1128c0304f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_FrameMove",
+      "line": 9419,
+      "lastLine": 9481,
+      "sha256": "da670113a5dc5e630ee26dfaf2540b3e8706e792a0378cb840dcc035dce84b76",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_EventProcess",
+      "line": 9483,
+      "lastLine": 9508,
+      "sha256": "b42a02d7d331391897fcd5a30415b5497879089e79413f79ca797d7a68c28e3d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_StateEnd",
+      "line": 9510,
+      "lastLine": 9520,
+      "sha256": "e0072082b106d3106db9c568d2d107e9ff508a7bc839d0266060987f113cb6e4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_BACK_FrameMove",
+      "line": 9522,
+      "lastLine": 9588,
+      "sha256": "78777022e4b87834ee9801727fd69bff8e0f077bbcc5d45db988850f48db83ca",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_BACK_EventProcess",
+      "line": 9590,
+      "lastLine": 9607,
+      "sha256": "dcd6a5a1c5a874b956cabc3d856689a0a6a6a46aef18fccfbe38ab29473e6ac0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_ACCEL_BACK_StateEnd",
+      "line": 9609,
+      "lastLine": 9619,
+      "sha256": "eeaca9b21f4e053a1c0152f3d03fcb5456552f8d9d279c84ab18ce44b0e66751",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_FRENZY_Init",
+      "line": 9622,
+      "lastLine": 9629,
+      "sha256": "30048fec96506d62eeab531b1f345395409350267ab7d5abc3d8bbe68a8cb919",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_FRENZY_FrameMove",
+      "line": 9631,
+      "lastLine": 9643,
+      "sha256": "6284c8c06e535011ddf5068f9d7c5abeb08a44bd436edf0652e43303b55fb62f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_QUICKSILVER_FRENZY_EventProcess",
+      "line": 9645,
+      "lastLine": 9662,
+      "sha256": "8dacf75cde230098ef54d3466912d9f66aad055d3663bf8a72f76a200bcd259c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_DUST_ANATOMY_Init",
+      "line": 9665,
+      "lastLine": 9678,
+      "sha256": "26783b188d060799c23f70c7b53a813dada9580d3a4a081e5ba461ecdede2c52",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_DUST_ANATOMY_FrameMove",
+      "line": 9680,
+      "lastLine": 9769,
+      "sha256": "5ccf17b2948f0ec0ee4a13186a53e2181388675568f3d7f5ad4197916cd4355f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_DUST_ANATOMY_EventProcess",
+      "line": 9771,
+      "lastLine": 9788,
+      "sha256": "e7d574b2b4bdf00dcc366db9a524e6911c16e2f76488b2805dd30c5e97900671",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_DUST_ANATOMY_StateEnd",
+      "line": 9790,
+      "lastLine": 9795,
+      "sha256": "75c622078169ab2cbfa706dd41bd5d0f3444ab37ae1ab78e59f83a84aa4a3605",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_Init",
+      "line": 9798,
+      "lastLine": 9811,
+      "sha256": "3b0435fdf99e52c30edb76948606dcaed40f87f360be7c2dcd83799e73331735",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_StateStartFuture",
+      "line": 9813,
+      "lastLine": 9820,
+      "sha256": "becb59088de2d3d7db02ff01f9d152cb63052cbcdce9eb1d5469bfea1bff528a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_StateStart",
+      "line": 9822,
+      "lastLine": 9857,
+      "sha256": "cce16dffc61a96cced7b869f54040601047775c672226dc12e47fda9d490ee99",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_EventProcess",
+      "line": 9859,
+      "lastLine": 9876,
+      "sha256": "c6dab6c328a5fa48c3d376bbba66dc8d45e02d0f401c219707d78c864b452f9e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_LOOP_StateStart",
+      "line": 9878,
+      "lastLine": 9903,
+      "sha256": "c4aae0191e07abf11b11bf54a2e94249a55426369a21333873c94a1c04533063",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_LOOP_FrameMove",
+      "line": 9905,
+      "lastLine": 9937,
+      "sha256": "a3f97f0526f662476a68324b6ee1d873e39c6fb53344252024cacaedf0a1d16b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_LOOP_EventProcess",
+      "line": 9939,
+      "lastLine": 9958,
+      "sha256": "cf687bec92ffc36f31f8250ac777c58f9744bdb6006af85172caa04ef040610c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_FINISH_FrameMove",
+      "line": 9960,
+      "lastLine": 9968,
+      "sha256": "bd5ba106d70673e79e422d8b2f82fb5ee67d3c27e60dfa0f0e5534cb79a1c0b6",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ALP_PSYCHIC_STORM_FINISH_EventProcess",
+      "line": 9970,
+      "lastLine": 9987,
+      "sha256": "f3835c9764ac370f48b6accfa4a4e337bb6919fba44d3001876f7b3e4c3a08f2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_Init",
+      "line": 9997,
+      "lastLine": 10003,
+      "sha256": "af869653c7d13eda679897dc26a9fb9be85d9bab74520ed9bcc7289f961d5579",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_EventProcess",
+      "line": 10004,
+      "lastLine": 10044,
+      "sha256": "feefc61bbc9704b2efa6324bbfeb555edda90e855b5ff3027735308ed3a4ad45",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_READY_StateStartFuture",
+      "line": 10047,
+      "lastLine": 10052,
+      "sha256": "999d3654e8ee361d63885e46daa9c929aa98ecc92ac8e46ec1d7649c1339ee4d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_READY_EventProcess",
+      "line": 10054,
+      "lastLine": 10062,
+      "sha256": "ea28df87de8f2ee23a40579bc718ac9f2d23ef1de8e99a50b34c10525f29999e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_READY_StateEndFuture",
+      "line": 10064,
+      "lastLine": 10070,
+      "sha256": "a70d0dbed0903d6526edca1c0a6e9ae81b42db6b56dad80745b286e408a08cf9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_CHARGE_StateStart",
+      "line": 10073,
+      "lastLine": 10077,
+      "sha256": "37c26b34be7f963d072cdf799a4e35209876b543d082295210eee66a89248dd0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_CHARGE_FrameMove",
+      "line": 10078,
+      "lastLine": 10082,
+      "sha256": "0c202473d51c20f414d2bde5d25dee691e3af571f1debf4263fe0d28a1ed33fb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_CHARGE_EventProcess",
+      "line": 10083,
+      "lastLine": 10095,
+      "sha256": "576857564af24b7ee2d076c461963fec2b191d5305e04e66ece699f09d4c9755",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_FIRE_StateStartFuture",
+      "line": 10098,
+      "lastLine": 10102,
+      "sha256": "2e1ae0bd8e0a32eddd9f82d39ef8f0aad424d3255530c5f18e81bf37cc28ea88",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_FIRE_FrameMove",
+      "line": 10108,
+      "lastLine": 10182,
+      "sha256": "69deb821b4731bc3a5a784aa8786955b0a9df342a0ea65f09f3aac30f3135245",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AN_PULSE_BULLET_CHARGED_IMPULSAR_FIRE_EventProcess",
+      "line": 10184,
+      "lastLine": 10201,
+      "sha256": "4e914726c86f57560335e561c53cb30417c26653b26c6c6aeab68a8b03453c83",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_MIND_BREAK_Init",
+      "line": 10204,
+      "lastLine": 10211,
+      "sha256": "d55972b0200d5980a6843855e5fb9aa9c329f6feeadfbf0205e5a9add0011980",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_MIND_BREAK_FrmaeMove",
+      "line": 10213,
+      "lastLine": 10310,
+      "sha256": "e87beccd04f639df918b341f07dd4b5f57921f900a1310c6b1d5546a1d4afbf7",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AN_MIND_BREAK_EventProcess",
+      "line": 10312,
+      "lastLine": 10329,
+      "sha256": "987215e00379641c7b5a9439f74f147a6a7d2b02cac5dc39511c0feb4ebb0a31",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PHASE_SHIFT_Init",
+      "line": 10332,
+      "lastLine": 10346,
+      "sha256": "b25af5f67a31f674b7c94c7c60ae7f336e42929b4363da173ffee383c43d5f1a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PHASE_SHIFT_FrameMove",
+      "line": 10347,
+      "lastLine": 10397,
+      "sha256": "9ca44c9a79e95e62d1ea31b2345f2a280cb08d98f8283f1159d19af9e3d3275e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PHASE_SHIFT_EventProcess",
+      "line": 10399,
+      "lastLine": 10416,
+      "sha256": "59e8c0dc2bd6664e0fb40f7c2c81abfea36ab70a9790e731ce41e8a9efbc6ed9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AN_PHASE_SHIFT_BLINK_StateStart",
+      "line": 10420,
+      "lastLine": 10472,
+      "sha256": "02ff57924796b1b83d5c5e13890d75fb7759c3b666bbe3462407272fedd2083e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AN_PHASE_SHIFT_BLINK_EventProcess",
+      "line": 10473,
+      "lastLine": 10490,
+      "sha256": "4d2cfe25122548bafa4ebf60626059f1f218542c595e0616990eb003db751f36",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_MAGNETRON_DYNAMO_Init",
+      "line": 10493,
+      "lastLine": 10501,
+      "sha256": "94ef098758865a0363a924550dc677bc49c114544bd4bd2a82f023dbdec95634",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_MAGNETRON_DYNAMO_FrameMove",
+      "line": 10503,
+      "lastLine": 10540,
+      "sha256": "d685e7cce8d1f7b8e1eb1589317fdae85dce5d57c802ecb73a31afab02fc34bf",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_APT_MAGNETRON_DYNAMO_EventProcess",
+      "line": 10542,
+      "lastLine": 10559,
+      "sha256": "16a9c1c52a341ac73f62528f3dd4e89c96f4904ec687fce60a91f165c0b3e476",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_DESOLVER_DYNAMO_Init",
+      "line": 10562,
+      "lastLine": 10573,
+      "sha256": "4d2c73befaa3e79f36a6f053fefce6c6e45d26161ec53b4ca0c151dbe3d8322b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_DESOLVER_DYNAMO_EventProcess",
+      "line": 10575,
+      "lastLine": 10592,
+      "sha256": "140ecea002eae3397e48bfa3e8fcee4ee6aded28ef450627355e324c9dd0775d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_PYLON_DYNAMO_Init",
+      "line": 10595,
+      "lastLine": 10603,
+      "sha256": "ace1c64c6fcafd79182d846c17392c03e864c8145802927028e4dc9e165ae22c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_PYLON_DYNAMO_FrameMove",
+      "line": 10605,
+      "lastLine": 10646,
+      "sha256": "99f5b737d56cc85b5ea9accd6ac892ef829c0b2b7d09edffd2734cfa2b90dafc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_APT_PYLON_DYNAMO_EventProcess",
+      "line": 10648,
+      "lastLine": 10665,
+      "sha256": "328202ae2ea48e01f247013fabea24a7c09f67b555da09953d20f0814fbabb61",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ALP_PSIONIC_BEAT_Init",
+      "line": 10670,
+      "lastLine": 10676,
+      "sha256": "32559965c29c46763bfda2eef2f550a9f04bca43f5425dab64d4f426d5b4c986",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ALP_PSIONIC_BEAT_EventProcess",
+      "line": 10678,
+      "lastLine": 10695,
+      "sha256": "833cfc2feeca020426c809cf686c66eedd0d5e6600498e94ea6c4fe8a7183534",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ALP_TWIRL_RUSH_Init",
+      "line": 10698,
+      "lastLine": 10707,
+      "sha256": "a99d24e950c52c2f397da0a04d9aff439faa5641249465e26cd5b644288778c9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ALP_TWIRL_RUSH_EventProcess",
+      "line": 10709,
+      "lastLine": 10726,
+      "sha256": "923b0a1abeab01745df84aebf9531593285358bdb2e96be763ef90ec6244ba38",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_HA_ALP_DOOMS_DAY_Init",
+      "line": 10737,
+      "lastLine": 10748,
+      "sha256": "50066143cd4092262b7d46501df21b739fb20585b70bbb867554766a719393f6",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_HA_ALP_DOOMS_DAY_StateStart",
+      "line": 10750,
+      "lastLine": 10755,
+      "sha256": "49d20fc53fb7e749291f0c805be84cc44d7875f25ed76f95a66715d2e9b783f7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_HA_ALP_DOOMS_DAY_FrameMove",
+      "line": 10757,
+      "lastLine": 10821,
+      "sha256": "3da50dfc71ff5ac63d3b22b7ac08735ff76b4afaa8d1e403adc0b4c260d23277",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_HA_ALP_DOOMS_DAY_EventProcess",
+      "line": 10823,
+      "lastLine": 10840,
+      "sha256": "89d2a091fa86b15509f8210e7fec18851a5e414144a4677dc3c705ebde2a7e28",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_HA_ALP_DOOMS_DAY_StateEnd",
+      "line": 10842,
+      "lastLine": 10854,
+      "sha256": "2d9222a548b7e0a16a151d9c79f2688f3375b408bc5a2a2bcecc10a3df635b35",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetDamageExceptionProcess",
+      "line": 10861,
+      "lastLine": 10867,
+      "sha256": "e62c27d8d796609f224e4d44e3a3cde1c583d534f6b71c22f4158d1b9d03356b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RidingHyperModeFrameMove",
+      "line": 10871,
+      "lastLine": 10876,
+      "sha256": "25ef02e6c700991a52abaa7f2488f3fb55f2c8c34c5690aac126bd48bcc5e72a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CommonHyperModeFrameMove",
+      "line": 10877,
+      "lastLine": 10935,
+      "sha256": "00f88e4236ce8175faee05a5c22968c369d8e159f4d45736d8d03405d6ee2410",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetPossibleChangeFormationMode",
+      "line": 10944,
+      "lastLine": 10976,
+      "sha256": "51a2ebc59e1d114236f3b4baccae03b4587002e6d5c931ec483e1655ae3cbd02",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetChangeFormationCoolTime",
+      "line": 10981,
+      "lastLine": 10984,
+      "sha256": "388802fd07da76ff8443dc7a0a0849a969f48855ffe61d79f9bf89512677138a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetChangeFormationCoolTime",
+      "line": 10990,
+      "lastLine": 10996,
+      "sha256": "4b97ca94376164885981f1d7051639b29cd6bab23ac4c2a89991eb2b8eb6a8cf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SpecialAttackCustomStateChange",
+      "line": 11012,
+      "lastLine": 11150,
+      "sha256": "b0d9ee193179d0cd507ab443aa383665439ac5740efd595caf2448cb563133b7",
+      "laterReconstruction": true
+    },
+    {
+      "method": "SetCustomAnimName",
+      "line": 11233,
+      "lastLine": 11272,
+      "sha256": "dc50df25a7244035cff110ef0ed0dae9e693d02895eca010ecedb11f87e277fe",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ConsumeMPorDP",
+      "line": 11323,
+      "lastLine": 11338,
+      "sha256": "1f3545403bcf01bf5b81a3bd4a0ea6a9d97ebfe913c7e9c06ecb1a9eca4be8c7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetDPRateByType",
+      "line": 11345,
+      "lastLine": 11373,
+      "sha256": "88ac0f1cd76611664db51b22fa2569b81304e3a14fbec430ed530213ffc45f17",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetMutationCount",
+      "line": 11379,
+      "lastLine": 11382,
+      "sha256": "e54d742fad33122839bbec12c8ad6cbceb297990970c2f73b12da78b9333e8cd",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetChangedMutationCount",
+      "line": 11388,
+      "lastLine": 11394,
+      "sha256": "03942c8365d10b0807596b42865a34386caf820326b06cc60c86ebb81720eccb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetMutationCount",
+      "line": 11400,
+      "lastLine": 11407,
+      "sha256": "4d2bdd605d140f92c55b2ac80a9ada700b4284852bcdea56afe3258521fea9fd",
+      "laterReconstruction": false
+    },
+    {
+      "method": "UpMutationCount",
+      "line": 11413,
+      "lastLine": 11428,
+      "sha256": "56904d5c2d1a548bbc8ed0c6cd4f2cc8c15af9bbe06fc351fb38fbca6f3fef6f",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetDPValue",
+      "line": 11443,
+      "lastLine": 11446,
+      "sha256": "75e04938fec021de0ad5e5b2851d6dd424b54228b284e9bf059e1adaf0eb26cf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetDPValue",
+      "line": 11452,
+      "lastLine": 11456,
+      "sha256": "9faf3022a90b0e59e1e1c144b3d3926107ae2a37a8a5e0bc5b989a91a3ae06b2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "UpNowDPValue",
+      "line": 11471,
+      "lastLine": 11532,
+      "sha256": "17d61d96e5575555e73e3fd00a3458a558d6ad8302efdd58ce4a7e5d8e42fe77",
+      "laterReconstruction": true
+    },
+    {
+      "method": "UpNowDPValueByDamage",
+      "line": 11538,
+      "lastLine": 11572,
+      "sha256": "13f0a9c88374afcfbdcc080d1e97ba018edb82dc11a1a028e050f1ca1985d775",
+      "laterReconstruction": true
+    },
+    {
+      "method": "UpNowDPValueByHit",
+      "line": 11578,
+      "lastLine": 11618,
+      "sha256": "225dd31bfc16b5908a89547f50bc75962b48deab3862d92bff611f09d6bdd2ac",
+      "laterReconstruction": true
+    },
+    {
+      "method": "UpNowDPValueByUseMP",
+      "line": 11624,
+      "lastLine": 11634,
+      "sha256": "a53d07397ab1807b0c79e2a03e820dcb21cd90dd83ec04b984830999ec9bba74",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetActualDPConsume",
+      "line": 11641,
+      "lastLine": 11740,
+      "sha256": "dd0d9011a83fabcd757267894d7af2345533950444e532586e2b46b2a858b180",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetMutationPointConsume",
+      "line": 11747,
+      "lastLine": 11756,
+      "sha256": "ca01b2a63945c44ef2f1645e2b13bb5de15ed26e32db85d9ef9fc025308c445e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetIsFormationMode",
+      "line": 11762,
+      "lastLine": 11765,
+      "sha256": "e0cf5f595b1dbbf982b71c1c57d7de4399ea0dcff456563b5306eea12b26e2bc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetIsFormationMode",
+      "line": 11771,
+      "lastLine": 11785,
+      "sha256": "b69d5ff35589ae86f483c00c8ef86ac81d82c22afac501cb6ab5bb63bf4492c4",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CreateDEFormationFaceObj",
+      "line": 11795,
+      "lastLine": 11822,
+      "sha256": "78868ded49bf3b53ba41a4c1536eb6b67d8b39922f042db05780790a2bed66d4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ReleaseDEFormationFaceObj",
+      "line": 11829,
+      "lastLine": 11837,
+      "sha256": "8ca669fd6c9c342513743704a9419335585c21a1b8f03021b67519248613b886",
+      "laterReconstruction": false
+    },
+    {
+      "method": "UpdateDEFormationFace",
+      "line": 11844,
+      "lastLine": 11860,
+      "sha256": "8fa0037853ca03fc2455f143ab37bbd13206b57937121fcb6e0b49e970441dfe",
+      "laterReconstruction": false
+    },
+    {
+      "method": "NotifyDGManagerChanged",
+      "line": 11868,
+      "lastLine": 11885,
+      "sha256": "2b7059ac0cbca6b24e25b6906443e45165f12780d697973f2b12e147a1a2e3da",
+      "laterReconstruction": false
+    },
+    {
+      "method": "IsPossibleChangeNasodBarrier",
+      "line": 11893,
+      "lastLine": 11911,
+      "sha256": "d060448e734ac4ef0c1e897de3b7ec10862692c597aac02df0e8fb9f4291455e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "PlayAnimationWaitStartByAdd",
+      "line": 11917,
+      "lastLine": 11969,
+      "sha256": "a2a59399f52fb556d1c61c681e6389ae8e1ede7932247409ef8fbc3480a36790",
+      "laterReconstruction": true
+    },
+    {
+      "method": "IsDPConsumptionSkill",
+      "line": 11977,
+      "lastLine": 12013,
+      "sha256": "01417c5bbccf42753c93fae69e394223f362b61e8ca9c04f8c1658498caa4a68",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetUseDPByFormationMode",
+      "line": 12018,
+      "lastLine": 12026,
+      "sha256": "dfce9ed37a257fc99b41e8267808c77fe3a04b9dd4244f46ceea8668fc7d3831",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetEffectiveIncreaseDPValue",
+      "line": 12032,
+      "lastLine": 12048,
+      "sha256": "47bcac3d7c375efd6c9fbb91a39732b219aa6713ff36bcc0f234de5279840a3c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StateChange",
+      "line": 12069,
+      "lastLine": 12079,
+      "sha256": "b3419b6493066620ed159149c7cf8f27c5defd58b1471e7612add083de155fa1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ApplyHyperModeBuff",
+      "line": 12084,
+      "lastLine": 12109,
+      "sha256": "25b10aca345e7d94e899f254076052a460ed237511f1fa67d4efa03ee7ddce44",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetAbilitySyncData",
+      "line": 12135,
+      "lastLine": 12144,
+      "sha256": "ff691183555abac0c9a1f7d851b3fa0153e512d7418022a26b4094c90ddc7cb9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AddPylonLinkDamageEffect",
+      "line": 12150,
+      "lastLine": 12246,
+      "sha256": "30f9d221e16a22c4a08f113b95f983e41f83137f57b913388cb28dcf63ed2290",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DeletePylonLinkDamageEffect",
+      "line": 12252,
+      "lastLine": 12276,
+      "sha256": "8614df5ae6e4e945ccb537158ddbfd120cd43d67c92748292e4cdb9615c72f0a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessPylonDamageEffect",
+      "line": 12281,
+      "lastLine": 12307,
+      "sha256": "f341965be064b5bd8463c4439e1f487562c332b56ed71214cf03d39ebdd7c2d1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetSummonPylonPos",
+      "line": 12314,
+      "lastLine": 12355,
+      "sha256": "2b46a34aa8e41e9def8ecb15aa7049c405c34b2b13372cd090af73677c2cc96d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ResetPylonData",
+      "line": 12360,
+      "lastLine": 12377,
+      "sha256": "e824313b521b96d7c4a577214e53c15bb4e6ab9754fd1f9edaf1b421165c057d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessNonstopSummonPylon",
+      "line": 12382,
+      "lastLine": 12395,
+      "sha256": "59d69665ea63eeaf699addbb099ff07b4bbdab30dabb700939e0febf1b95fbd4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetPossibleNonstopSummonPylon",
+      "line": 12400,
+      "lastLine": 12409,
+      "sha256": "8a6403f4e7f932155bb52a2863fc3937b8d0223fe6e1ce6e010771a652d59ba9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetNasodArmorAttackTarget",
+      "line": 12415,
+      "lastLine": 12558,
+      "sha256": "9144da46fb178c9e58cb81fa4367389a06408fddf30f5123874d2deb5142534e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ProcessMagnetronDamageEffect",
+      "line": 12563,
+      "lastLine": 12598,
+      "sha256": "6a1ebf65d170f6641c805bbca791dee568eb4b0378663af75edf13de6f405b29",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AttackMagnetronDamageEffect",
+      "line": 12604,
+      "lastLine": 12671,
+      "sha256": "ba1b3a4a8a29d7836c6b80b4baef40aa86a3593ae75675098fe17278bfa1f19c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "SetStasisfieldHitValue",
+      "line": 12677,
+      "lastLine": 12681,
+      "sha256": "ebbe65fd4f270633f4093ede017d0b78402ddaf82f9c3530e85157cae0f7980f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetStasisfieldDamageValue",
+      "line": 12687,
+      "lastLine": 12691,
+      "sha256": "c08f4c9ca8e07c1be20d6ab008b325839b9b4a389d307f8b415670d9ab6a9b57",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessStasisField",
+      "line": 12696,
+      "lastLine": 12719,
+      "sha256": "7731689d653fe65c68401783dbea797ad1e5796a4068015aadcc6c3235ee38c8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CreateDustStormToAttackResult",
+      "line": 12725,
+      "lastLine": 12754,
+      "sha256": "47876094d2399beb9c660661fcb92521a1792a6a24a07e7142f30a788db97d7a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CreateDustStormToDamageReact",
+      "line": 12761,
+      "lastLine": 12790,
+      "sha256": "8dc97f03aefb01d4f1cbcadc1bacf76180b395a95b8e3aeaa4d4b92625026052",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CreateDustStormDamageEffect",
+      "line": 12796,
+      "lastLine": 12805,
+      "sha256": "2435842028e9bdd3fa4a7175e36484bca92192b4460356d725cfa029ce4c25ae",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessDustStormCoolTime",
+      "line": 12810,
+      "lastLine": 12819,
+      "sha256": "c2e900645aa54b94fe515260186e95536bc4b327337d40818b74e6ef5ee6c479",
+      "laterReconstruction": false
+    },
+    {
+      "method": "EndStasisFieldByTime",
+      "line": 12824,
+      "lastLine": 12866,
+      "sha256": "31f320e541b8ba09a3d086993b408227b897178737210bce0e9ec71448d84df5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "DieDamageEffectProc",
+      "line": 12949,
+      "lastLine": 12970,
+      "sha256": "6b92afd7ceae00aada9cc7e0d9a2ee89a69e760dccbb669843462d8a12e1c09b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "PlayLoopSound",
+      "line": 12972,
+      "lastLine": 12984,
+      "sha256": "4a34b1a6fed449fce0535f59e0df3316e7183337fe86876acd0d2535394b7184",
+      "laterReconstruction": false
+    },
+    {
+      "method": "StopLoopSound",
+      "line": 12990,
+      "lastLine": 12997,
+      "sha256": "5bdafe6d0b43b48120526d0387a101e7397b8e310e387336e2063567fbe8e8e6",
+      "laterReconstruction": false
+    },
+    {
+      "method": "IsValideSkillRidingOn",
+      "line": 13004,
+      "lastLine": 13023,
+      "sha256": "68ab8607311b4091e5dded932d9f16fdf4eada6f748ff1ad653340fe0d44db53",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ChargeMpAndEtcInTrainingGame",
+      "line": 13027,
+      "lastLine": 13036,
+      "sha256": "2c87067933f5f9c70c36f1aab00f9f17d27d6f685eec1dc6f30911404f4757b3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RidingWaitEventProcess",
+      "line": 13038,
+      "lastLine": 13082,
+      "sha256": "9a62b3e8690dbc302f4e0ff187a61ec2bbc327a85e6bc90ea6e9fa620e74dca1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RidingWalkEventProcess",
+      "line": 13084,
+      "lastLine": 13129,
+      "sha256": "5c19e04a12c35d2f6979d23b26659c294a3cffdcc337f397bb8373f014e1d8b2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RidingJumpLandingEventProcess",
+      "line": 13131,
+      "lastLine": 13174,
+      "sha256": "66be601774d8e79d842f34f6fb49ea4ad22a8338323bcc55444278109cac7474",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RidingDashEventProcess",
+      "line": 13176,
+      "lastLine": 13242,
+      "sha256": "37eca888a54cc60f2d9bde15fc3403a7baa016d4857c6b610076b3e616016c73",
+      "laterReconstruction": true
+    },
+    {
+      "method": "RidingDashEndEventProcess",
+      "line": 13244,
+      "lastLine": 13295,
+      "sha256": "319bbd8a98c188ed05f09e871622ee54b2405187cc133a8c098bfa7148f4b4fe",
+      "laterReconstruction": false
+    },
+    {
+      "method": "InitPhaseShift",
+      "line": 13297,
+      "lastLine": 13317,
+      "sha256": "3114568226088a3d3836d62c879a0db601abb40cf7978db15706e3dc96756960",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessBodyOfTranscendence",
+      "line": 13354,
+      "lastLine": 13370,
+      "sha256": "4698706b3de4dcc9a92a4f33ec1f0b57769ebc2cc0b464a2ffba1c14474e08d8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessPowerExchanger",
+      "line": 13375,
+      "lastLine": 13408,
+      "sha256": "ac3cf34fb9f512fe44f2541196f374029acc78eeffccbae301fdc58df6da58ae",
+      "laterReconstruction": false
+    },
+    {
+      "method": "GetIsFantasyTracerTargetSkillID",
+      "line": 13415,
+      "lastLine": 13428,
+      "sha256": "bad87be1ee655c1d94e3bdca50ac097c5a80992fe2543971b7d74b161d164672",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetUseFantasyTracerTarget",
+      "line": 13434,
+      "lastLine": 13449,
+      "sha256": "e361b1254c8d64af4a504fca300e5b5ad3586e4684701d1b6018bed4cc6d14b4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessFantasyTracerTargetInfo",
+      "line": 13454,
+      "lastLine": 13486,
+      "sha256": "42a3d97e03e88afa70098d32567fe3898fd5d426e011338e8d2b4a55716cfe81",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetDustAnatomyTarget",
+      "line": 13492,
+      "lastLine": 13520,
+      "sha256": "7586b79392fc1c26533ffe91d0be9e5794a9f83d97a14b34345262781f8b8fb0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessReverseReactorTargetInfo",
+      "line": 13616,
+      "lastLine": 13670,
+      "sha256": "1668540b9c7fc18c7a3432b90d484d71d78496adff86d1451ba8bb5aeaac2836",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetReverseReactorTransitionDamage",
+      "line": 13676,
+      "lastLine": 13707,
+      "sha256": "f62e09e3869001580b992254598b0011cd9ec7ccea5d4e400bfef9c9a6d333dd",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessQuicksilverFrenzy",
+      "line": 13714,
+      "lastLine": 13735,
+      "sha256": "f11a5de24226f55c329ed8538d180e85ca5ce1f022f63ae7b2bbdd726b85f811",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AttackQuicksilverFrenzy",
+      "line": 13741,
+      "lastLine": 13775,
+      "sha256": "97b274ec5e6005e1ef4613e83cdc7199f22d09acd84615fe959d0d4c21aba1fe",
+      "laterReconstruction": false
+    },
+    {
+      "method": "CheckSkillSpecialUse",
+      "line": 13823,
+      "lastLine": 13851,
+      "sha256": "a9d15163ab368d489f083ca5ada941dab88361de842fb9f6d7fcaa60f4b864e3",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorXEventProcess",
+      "line": 13870,
+      "lastLine": 13897,
+      "sha256": "b2981b2a25c88c1ef3999227015a6c104f745288fd31e7e3ffaba11fcc710c51",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorXXEventProcess",
+      "line": 13899,
+      "lastLine": 13926,
+      "sha256": "1517dfd03b6840e216ed0c16811bddee4a7f26a303067c5e0078067ce73cd0df",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorXXXEventProcess",
+      "line": 13928,
+      "lastLine": 13952,
+      "sha256": "93190e2dbd9bb552e6bdcab2c0ac2dad45604b1224b9f422e3b02b1c0f2a6c4c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorZEventProcess",
+      "line": 13954,
+      "lastLine": 13981,
+      "sha256": "dcb49691356ff675990617650d65bdc55f7b431c68979510fcf18722362e8448",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorZZEventProcess",
+      "line": 13983,
+      "lastLine": 14010,
+      "sha256": "8f7b33d9d228160dff1f168e8f5acb470e4ea0a1283ac75c7f7afa50481a1bad",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATComboNasodArmorZZZEventProcess",
+      "line": 14012,
+      "lastLine": 14036,
+      "sha256": "22a09c70ff5e82dc5dcd7c12d408d581a81799edf56e5d2f22c7c1696261da66",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AATDashComboZBackXStateStart",
+      "line": 14039,
+      "lastLine": 14043,
+      "sha256": "087c831268e75c1d841ce1788e1ce33da6fc1403306096601a1d100248913aa1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZBackXFrameMove",
+      "line": 14045,
+      "lastLine": 14054,
+      "sha256": "dfe8d0a0056936e398c107ad94fcd0689ccdf99b4d481b278e47f6d3f39c52ed",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZBackXEventProcess",
+      "line": 14056,
+      "lastLine": 14088,
+      "sha256": "55f4bd6de11a5984a90778dee44d053ba191c40dd1a28ca053835bdf359714e9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZBackXStateEnd",
+      "line": 14090,
+      "lastLine": 14094,
+      "sha256": "eb266b991cb239358d102f278ff5bdc6768d2afa6ee1f129a317498a6f57930d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZXStateStart",
+      "line": 14096,
+      "lastLine": 14100,
+      "sha256": "99187fe9693e45dbe3ba775ae21b19a77514ef021280e40e039e2cf0a2a460af",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZXFrameMove",
+      "line": 14102,
+      "lastLine": 14111,
+      "sha256": "6f41a7cf3f35576cf3890afa2df698fc13264c3e1d038dfd59b2e046f3426796",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZXEventProcess",
+      "line": 14113,
+      "lastLine": 14137,
+      "sha256": "c0e4560bb36ae2bd1b0446793ebd76b1e6612ca81ac2540756f55042263887d1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZXStateEndFuture",
+      "line": 14139,
+      "lastLine": 14146,
+      "sha256": "8b713a057bcbad656a08f052949ce824da910a3e0ffd39621b01ee1421541fb2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AATDashComboZXStateEnd",
+      "line": 14148,
+      "lastLine": 14152,
+      "sha256": "bb03d9ae728c3586427b37a5141d07f9f98752598d02ca96850c1b2bf42927de",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AMMComboXXDownXStartEventProcess",
+      "line": 14159,
+      "lastLine": 14167,
+      "sha256": "607f312320ec91915fe90113d6ed79adfb4eb5ed820de91f92d6b744543f950f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "AMMComboXXDownXStartStateEnd",
+      "line": 14169,
+      "lastLine": 14174,
+      "sha256": "12048744f6995a9dc630b001b3d0ddee96842a4230c4f28afbe10546cd225fc8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXLoopEventProcess",
+      "line": 14176,
+      "lastLine": 14220,
+      "sha256": "0f2aae2e4bbcc6600f1fa38998b517127c3832ddb29f090b734c80147679c7a2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXLoopStateStart",
+      "line": 14231,
+      "lastLine": 14246,
+      "sha256": "502c4032c499503f87103bff810279731909dc9ca38a25b1ef27ae08b142d474",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXLoopFrameMove",
+      "line": 14247,
+      "lastLine": 14300,
+      "sha256": "705278c47a059a118807843f219580322e55b7aeb63055f0dd48ad1311370ee9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXLoopStateEnd",
+      "line": 14301,
+      "lastLine": 14309,
+      "sha256": "744b5e82658b9927d3e0e2ce52496fcb7980a04ceaedf84b14bee454a9741cb3",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXEndEventProcess",
+      "line": 14312,
+      "lastLine": 14335,
+      "sha256": "ec7a1b615fd2de5b7ceca28df30409291b138ba85f5e2898d96133698becb993",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMComboXXDownXEndStateStart",
+      "line": 14337,
+      "lastLine": 14352,
+      "sha256": "ec1e4da59247d514119b83e766e75067c156ff707659b33234962c7ec4349e7e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMDashJumpComboXZEventProcess",
+      "line": 14354,
+      "lastLine": 14381,
+      "sha256": "559ae84c459e44f389ec5651217500e70e70504bd45b6e0fe92166af146404b2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "AMMDashJumpComboXZZEventProcess",
+      "line": 14383,
+      "lastLine": 14401,
+      "sha256": "88fbbac961d43cade34bc9c537b0ba30444f25ae4566eb91f8a4a3de06826021",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_ThirdPath_CreateState",
+      "line": 14409,
+      "lastLine": 14415,
+      "sha256": "fa95a6d060d794e2b7b485a54cfb8dc1c4c75d50e32be593811979f1a50d73b4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_ThirdPath_CreateChainedState",
+      "line": 14417,
+      "lastLine": 14422,
+      "sha256": "e16fce3da3b613b74d1f32d92e5922353a1bbe8e7966c7e6909f57fb068be2cb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_ThirdPath_OneShot_EventProcess",
+      "line": 14424,
+      "lastLine": 14518,
+      "sha256": "a00b136eb81430a5cf15deb78769028a377158fdcfbf5c759b22c47b8ef08ffa",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_ThirdPath_Chain_EventProcess",
+      "line": 14521,
+      "lastLine": 14544,
+      "sha256": "1a1a95d354c15aa8db71360092bbc90841e88d823f7e848b169076134e3aed85",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_COMMON_CREST_OF_TIME_StateInit",
+      "line": 14549,
+      "lastLine": 14563,
+      "sha256": "9df402e7116637db678fc3a2f8b1d01996c1036324f866c2f1dba2d11f23cf86",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_COMMON_CREST_OF_TIME_FrameMove",
+      "line": 14565,
+      "lastLine": 14596,
+      "sha256": "25f0a9a071aa7fabfac0638861bded5603b3c2ff66fa7dcb30c93984e63cdd9a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "RecordCrestSnapshot",
+      "line": 14601,
+      "lastLine": 14609,
+      "sha256": "0c6937f168fc16462008b5c99a1355e2e51c1ab2997e114ef83c394709917dc2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "IsBlockPacketBuffTemplet",
+      "line": 14612,
+      "lastLine": 14615,
+      "sha256": "1a1b3abae1da1d01ca13e044b5095867db2f246d8fd4a1f6cdadeab8735be15f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "RestoreCrestSnapshot",
+      "line": 14618,
+      "lastLine": 14626,
+      "sha256": "e4029f941b656f968ec7b641537779d1709d64635271beebb8e93fdd2fde64b8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_IMPACT_StateInit",
+      "line": 14630,
+      "lastLine": 14645,
+      "sha256": "a722ceeb6233d03c89a63a3ff930c3220fc522961d5034aefa4a2dd18346bf45",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_StateInit",
+      "line": 14646,
+      "lastLine": 14672,
+      "sha256": "d24a904a850c3e2075ce0d4d8bd7ab067a2fed0cf7eefbc654a4e9580b3dcaf4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_MAXIMUM_STRIKE_StateInit",
+      "line": 14673,
+      "lastLine": 14693,
+      "sha256": "b8e94cd1d169e64df046a4efa930ce8973098e0210c4c37506d30a6c44a4ec7e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_StateInit",
+      "line": 14694,
+      "lastLine": 14715,
+      "sha256": "dffb88d0093f0c7bdd49ea08d1869f6867e92e4e58e05479121a94ad6b271449",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_REVERSE_CIRCLE_StateInit",
+      "line": 14716,
+      "lastLine": 14726,
+      "sha256": "55aa7b69b070ea6a8ee73a7dcc0df1fd64285431feb8596c26f65d020cd356f5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_REVERSE_STIGMA_StateInit",
+      "line": 14727,
+      "lastLine": 14733,
+      "sha256": "741e6a46ea75d6cd8f38bcefa16520cdafa622ac938cba7858a5654188ece4fc",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_MOONLIGHT_RHAPSODY_StateInit",
+      "line": 14734,
+      "lastLine": 14744,
+      "sha256": "80183949689a0b10c9944e023f3db3ae33ee27cdcce8932240f3235f021978b1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_GRAVITY_BURSTER_StateInit",
+      "line": 14745,
+      "lastLine": 14757,
+      "sha256": "513f865716923d47962a866fa30bc37e55b9ca562b6b38f7c968ad5ac1ff3bec",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_StateInit",
+      "line": 14758,
+      "lastLine": 14768,
+      "sha256": "75b5554bcccd730ad7c152513c81566c6bfc900ae14fe5f437a7a3da10c66ce8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ADE_FORCE_NOVA_StateInit",
+      "line": 14769,
+      "lastLine": 14782,
+      "sha256": "0c6f67c62785c9c558cc7fd3362dfe6d0d1f0312d5c6b921cedd5428b6cee863",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ADE_FORCE_FINGER_StateInit",
+      "line": 14783,
+      "lastLine": 14790,
+      "sha256": "23b5a8a0c87ce827ad6f62edee00cb8c2d186bf6d1037f8d540003d68dde70f7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_HA_ADE_PARANOIA_StateInit",
+      "line": 14791,
+      "lastLine": 14808,
+      "sha256": "47074437fee48506387fcea9ef07055f3abfc86b419ec362729e53ee1b8cfea4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_GetScanScope",
+      "line": 14813,
+      "lastLine": 14834,
+      "sha256": "6dc2ee5d013765219d50b0e94320fcb525a5036161bac6e58d2ec261506d3cf2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_FindScanTargets",
+      "line": 14836,
+      "lastLine": 14915,
+      "sha256": "416561280de011ba5644ca2ba70c6b741077e87f279312850fd769dbabe991ae",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_AnchorChaseTarget",
+      "line": 14926,
+      "lastLine": 15022,
+      "sha256": "afcd80103fc554be4fc49a67cc0df028e93aa6550fa4d75dc0651ab4fc5b99c0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_RecoverMPorDP",
+      "line": 15025,
+      "lastLine": 15042,
+      "sha256": "ee26826665a60deb3f6abd7a7300d85a423d04b2890b05bdf65197108f963dd2",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_IMPACT_FrameMove",
+      "line": 15045,
+      "lastLine": 15070,
+      "sha256": "0188d003137f94ece8e5313b559809d66e0d8d4aa4e77f38806eff528f0b9298",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_ThirdPath_OneShotGroundPinned_EventProcess",
+      "line": 15073,
+      "lastLine": 15089,
+      "sha256": "4c046de24afd4ada1c0a166dff810bee3a81a6a54d551d87f410634be0d38531",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_StigmaMarkTarget",
+      "line": 15092,
+      "lastLine": 15130,
+      "sha256": "8689dc17f4dbc973b784c3f930b5cb43b79a2681ac806c0869e7d947646393e5",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_StigmaClearMark",
+      "line": 15132,
+      "lastLine": 15185,
+      "sha256": "470fe74d264b1169927f0e184102a6678d191564c7903c0c5bad954945183b66",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_OnStigmaMarkFrameMove",
+      "line": 15187,
+      "lastLine": 15196,
+      "sha256": "498e1234eea08ef042864d64948004dae514f0c43962dd0107155294a9c637b7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_REVERSE_STIGMA_FrameMove",
+      "line": 15198,
+      "lastLine": 15245,
+      "sha256": "9dc7cf8878b60321d31b775a309d0622c42c5dac12f2d6cf0bad6e0c530163f1",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ADE_REVERSE_STIGMA_RETURN_FrameMove",
+      "line": 15247,
+      "lastLine": 15273,
+      "sha256": "aa4b9a864873120386ba50ac38249d9e69906a4eaa347e7964d6cc386284d923",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ADE_REVERSE_STIGMA_RETURN_EventProcess",
+      "line": 15275,
+      "lastLine": 15290,
+      "sha256": "f0e6ecaa0da048db27d3830adc98d979824c940addc80353d2d96978d43101f4",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ADE_GRAVITY_BURSTER_FrameMove",
+      "line": 15293,
+      "lastLine": 15308,
+      "sha256": "0ce475cce968c49ce1f4440103e6d2da5a01ed0aabae80f8c992335cda347366",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_HA_ADE_PARANOIA_FrameMove",
+      "line": 15312,
+      "lastLine": 15351,
+      "sha256": "a1c6abfefbf6ed9e4746599f06b76e76e8fabdbc04c07690fd3fd09fa26d0ed5",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_ADE_FORCE_NOVA_StateStart",
+      "line": 15355,
+      "lastLine": 15359,
+      "sha256": "b8e434acd67d6160a0f613a84fab30b9eb41eb24613ee14c9d5702fd27f87b9b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ADE_FORCE_NOVA_FrameMove",
+      "line": 15361,
+      "lastLine": 15376,
+      "sha256": "c2848501373fde53c5e74e9ab1750057006f663c2f3c522384303869bb21cc5b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ADE_FORCE_FINGER_FrameMove",
+      "line": 15379,
+      "lastLine": 15441,
+      "sha256": "b86200834f0a6738ffb96b1d9f9fe5254e7a2288ffe0f5eea860240d92301690",
+      "laterReconstruction": true
+    },
+    {
+      "method": "IsAddSkillKeyHeld",
+      "line": 15449,
+      "lastLine": 15464,
+      "sha256": "aecd3833f682aafa27cae29b90e3136594ee933ed029817f83191217f7d357e8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DPCheckOrConsume",
+      "line": 15466,
+      "lastLine": 15483,
+      "sha256": "4e050d60b319122e810fa6a0e781d63a52b3207b622d7b72b7b984a668041ee9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_ConsumeDPPoints",
+      "line": 15485,
+      "lastLine": 15515,
+      "sha256": "3b5ed146c41e3b927b2ede2d00a38d663e7b8b8d563fe049c82df14b044737b8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "CreateSpaceCrackField",
+      "line": 15517,
+      "lastLine": 15531,
+      "sha256": "1d42c3bef5c3d83c8805aee22b8062c2e3c117026670b999fa76070ab8214a3e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_StartFuture",
+      "line": 15534,
+      "lastLine": 15537,
+      "sha256": "1b36ae0d493c8cd2b54784d6bff70af636c74f362f6d982efbb2216be397170d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_FrameMove",
+      "line": 15539,
+      "lastLine": 15557,
+      "sha256": "033b569f5d7aff8f89bdd42457c8e19e473dbe2f3c17554e6cece73b26efdcb3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_EventProcess",
+      "line": 15559,
+      "lastLine": 15567,
+      "sha256": "cc10dcdc88d252f699854cbe470fa5a410c6c8fef7f391e67127d7cbbd70f426",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_LOOP_FrameMove",
+      "line": 15569,
+      "lastLine": 15575,
+      "sha256": "fabdcd13ace730960f7b31f207607773c7d21b76ccff242356c0035094ba253c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_LOOP_EventProcess",
+      "line": 15577,
+      "lastLine": 15588,
+      "sha256": "91b3a3151bf36eea7b70a81614532f832a1590eebd6c7c295c47e43914cbcd27",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_END_FrameMove",
+      "line": 15590,
+      "lastLine": 15607,
+      "sha256": "eafa835ff5ab56a2b9581bb3f5c12230fca0649f3453e1071a12fccabe71a4e6",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ATT_VOID_FIELD_END_EventProcess",
+      "line": 15609,
+      "lastLine": 15623,
+      "sha256": "33db74ba41a05aef2f63b2f7e23fe5cbb29cbc04040cc4dcddab5b5052d12990",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_MAXIMUM_STRIKE_FrameMove",
+      "line": 15626,
+      "lastLine": 15673,
+      "sha256": "7ee2c82d6292205d61d35277695a662520247390227c6e729a0611c7c2f4705b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ATT_MAXIMUM_STRIKE_EventProcess",
+      "line": 15675,
+      "lastLine": 15689,
+      "sha256": "8e7cb0e6be55a9e986196fce98151889c8503a0196cfdb5806eb611ed8207897",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_MaxStrikeRecordTarget",
+      "line": 15692,
+      "lastLine": 15702,
+      "sha256": "fbee9587704c9b9752c04e700ec1c37054f299b60a471d568c5a28accd54d6f8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_MaxStrikeFireOnHit",
+      "line": 15704,
+      "lastLine": 15750,
+      "sha256": "82b7b06b1055a5d455f10f49e87cd4026cedaa7290c74683f633d56c96454364",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_OnMaxStrikeFrameMove",
+      "line": 15752,
+      "lastLine": 15778,
+      "sha256": "3eb6acaefaa0a409b196b998169a079f370d08f85a8c433e4646675c728399c7",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_MaxStrikeTeardown",
+      "line": 15780,
+      "lastLine": 15797,
+      "sha256": "5e5f0829c8740946baf530853b974a867ee490b1ceab5a2f32c6b7e0c4107545",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_StartFuture",
+      "line": 15801,
+      "lastLine": 15833,
+      "sha256": "8bdd7c115978544228c56d66817b5d7293fc7fd2cbd831ced68ec3d4609926a2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_StateStart",
+      "line": 15835,
+      "lastLine": 15846,
+      "sha256": "5f2e4ed665cabed7cd2a5de6f923aa54a2524ea6b74ec8bdd9a987d6727e4e90",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_EventProcess",
+      "line": 15848,
+      "lastLine": 15865,
+      "sha256": "40332abed3aea5e398688fa602b7740aaccb6f8e43cc658deff20edb2455d8c3",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_LOOP_StartFuture",
+      "line": 15867,
+      "lastLine": 15874,
+      "sha256": "901c4fd34e45f0dcd28c78e3b82b00666054681ad64f6a631d9714d69ab601c0",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_LOOP_StateStart",
+      "line": 15876,
+      "lastLine": 15895,
+      "sha256": "2e2998cbf5792875f748f3c55e67dcc8189ba8b3d5a8897fa9775696e0340edb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_LOOP_FrameMove",
+      "line": 15897,
+      "lastLine": 15925,
+      "sha256": "e46318ff530a192bcf12b63bf1b9c4005df4436ee9e83a905ad99c9d38ffd16f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_LOOP_EventProcess",
+      "line": 15927,
+      "lastLine": 15932,
+      "sha256": "710f839a63ceac20e8c1d7278d37a5dd4e85a569709bb38e827047cecfbbb977",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_LOOP_StateEnd",
+      "line": 15934,
+      "lastLine": 15939,
+      "sha256": "b849ab135f2dbb879f64980861c6530dcf6f274a4321dfecd48b606796833295",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_END_FrameMove",
+      "line": 15941,
+      "lastLine": 15956,
+      "sha256": "9a865e6c9caf614edddd66243b9c2d2ff25c0dae32e77365b42e78d13e4a3114",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_END_EventProcess",
+      "line": 15958,
+      "lastLine": 15972,
+      "sha256": "766318056f666056f870be704c1631195783dddad99e95ecf74e6f035e6c538a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ATT_STARDUST_SHOWER_END_StateEnd",
+      "line": 15974,
+      "lastLine": 15979,
+      "sha256": "c54ea962bd9c33adf1dc99fb1cf431027f09c74e9551fa8656708fe758f293e0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_StartFuture",
+      "line": 15982,
+      "lastLine": 15989,
+      "sha256": "7a9369e8c637caa1bb2460acb0449dff177752974f7a4f5c94e2acda5e3bb9a1",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_FrameMove",
+      "line": 15991,
+      "lastLine": 16014,
+      "sha256": "eca31721f850af91d211ccf86b79339f26a412a3ba70b79bf19993f966dcc335",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_EventProcess",
+      "line": 16016,
+      "lastLine": 16030,
+      "sha256": "e569e4f4dac93f4a918122c1b609e78342baebcee8bc7bc14f0b8bf7ba50b5b3",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_MOVE_EventProcess",
+      "line": 16032,
+      "lastLine": 16061,
+      "sha256": "acb1fe05d3a4edfbbf2298893279cbb9a1b9a8b4ef463e0c3e11182bb1329505",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_WAIT_EventProcess",
+      "line": 16063,
+      "lastLine": 16092,
+      "sha256": "fbbf3dc8974dc426f8b07dccb80555ec783dd39e9efe9d89f05cc1996251b8f0",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_END_StartFuture",
+      "line": 16094,
+      "lastLine": 16098,
+      "sha256": "a50cab3010cf1ce574604df9582e4423ad9e8011944ac3ddb5e47903b3f3ff3a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_END_StateStart",
+      "line": 16100,
+      "lastLine": 16104,
+      "sha256": "53e57292a8856b9a4d48e3af1ef3625fd3af510b78e3f4d7463a657656fd30d9",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_ATT_SPACE_CRACK_END_EventProcess",
+      "line": 16106,
+      "lastLine": 16120,
+      "sha256": "6be48d8de3e5df5c225e2c0bf1d457848330bed283b272f8dced0427b5efefb6",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_ADE_MOONLIGHT_RHAPSODY_FrameMove",
+      "line": 16123,
+      "lastLine": 16159,
+      "sha256": "ec0476be818f53be17d5bc104f1e33ced7d4263a9cc82f2698b05c4ec85c1cf4",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_ADE_MOONLIGHT_RHAPSODY_EventProcess",
+      "line": 16161,
+      "lastLine": 16175,
+      "sha256": "ece5b50d2947fef5862c6e824eccb4d614a9cb7b4dab4077a763d26054009362",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_OnMoonlightWaveFrameMove",
+      "line": 16179,
+      "lastLine": 16209,
+      "sha256": "2dd03780a37b95b349c9c82d47df59576cda208bb71e51e86f120bcd42b2932d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_AddComboChain_EventProcess",
+      "line": 16213,
+      "lastLine": 16251,
+      "sha256": "7040ec213efc9b7603a3c24797b57732fd5b699d53696c0473a15ebbcdb0e22c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ATTComboNasodArmorLandingEventProcess",
+      "line": 16256,
+      "lastLine": 16295,
+      "sha256": "cca4837937a3e9b0fc34ddf92047421f088f4386c5d226f0a6ae62aad0104a01",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboNasodArmorXXXLoopStateStart",
+      "line": 16299,
+      "lastLine": 16304,
+      "sha256": "7b7ea61f0e8a99da5a1fe4cef8bb636e95bb7d57dce8d6bd1e571f2e76785c8b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboNasodArmorXXXLoopEventProcess",
+      "line": 16306,
+      "lastLine": 16327,
+      "sha256": "e8a43bca6f8e4aa5bb95a0fd8e33ca81fbe70fc59369d04c4fac7eff924f6a8c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboNasodArmorXXXLoopStateEnd",
+      "line": 16329,
+      "lastLine": 16334,
+      "sha256": "729971dd736050a5f9df47066a4dc615a6707421c6d8e3e2ce3785da5f75a52e",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboNasodArmorZZZZStartEventProcess",
+      "line": 16336,
+      "lastLine": 16358,
+      "sha256": "117e62707a0df5e3342e3377574321dd7901553193daf2e58f5db67ca871a479",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboNasodArmorZZZZLoopEventProcess",
+      "line": 16360,
+      "lastLine": 16397,
+      "sha256": "ff5cc340075d66b802b50fb7b768e911140279e894b3568210251b2c37728a6c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ATTComboZZXXFrameMove",
+      "line": 16401,
+      "lastLine": 16420,
+      "sha256": "2ca5fd7fdaa8e2d35a9ab275401ac3d24d8970520b83c23bdeb7a80d823cd4a7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_INSTALLATION_DRONE_ACTIVATOR_Init",
+      "line": 16423,
+      "lastLine": 16451,
+      "sha256": "e79ae464209b74b27b990f91d6d2ee5d59a3520d0333a7996a320ed98979746b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_INSTALLATION_DRONE_ACTIVATOR_EventProcess",
+      "line": 16452,
+      "lastLine": 16465,
+      "sha256": "709a9cd398ef0497e2a090918a1cf151d1363ad115aa9bb6ee1cc4564daf737d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_START_Init",
+      "line": 16467,
+      "lastLine": 16487,
+      "sha256": "4277a9221f429ab2f0f9cf6c4ff1e926edbd393bea9ab9c96761096e6a7e9600",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_PanzerResetAim",
+      "line": 16490,
+      "lastLine": 16503,
+      "sha256": "ad49300859071646bd361665444900042c2bbc2d6ea38c201304964a7b62edda",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_PanzerApplyAimAngle",
+      "line": 16506,
+      "lastLine": 16514,
+      "sha256": "01f4abae03295852b9abf1a1509f9ec076f02f7c3967e9003a5f2f25f9b9ed05",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_START_StateStartFuture",
+      "line": 16517,
+      "lastLine": 16529,
+      "sha256": "dfd3bd9c0fbafd38485aed81c17381ee7d0f68aa3a9855c0e202bd5a5d4120e5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_START_StateStart",
+      "line": 16532,
+      "lastLine": 16537,
+      "sha256": "0c1a8aeeb5ed06070f958b8f1231ee0b3647123f573b61451074b8497dd347cf",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_START_EventProcess",
+      "line": 16539,
+      "lastLine": 16546,
+      "sha256": "018cee0c84e192f3939176e323f81dc8e6495f2b3fa8de7e5a10f733df2de4b8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_AIMING_StateStart",
+      "line": 16549,
+      "lastLine": 16581,
+      "sha256": "e4cc6d2ee6d22c7022495edeed4ec118cc9908b75228e71a2eaed3f9cfb3d841",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_AIMING_FrameMove",
+      "line": 16584,
+      "lastLine": 16588,
+      "sha256": "119ef12655ea15028a0a4d06a20cc8599fe1d6630fd0f4b34dddabbd6464c89c",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_AIMING_EventProcess",
+      "line": 16591,
+      "lastLine": 16602,
+      "sha256": "2dc7fe6575e98837993d2d771de8b5d059a95ea48df67df02dd51b8e3c1ca12b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_UP_StateStartFuture",
+      "line": 16605,
+      "lastLine": 16609,
+      "sha256": "c342901e63aae80a532480a334d5aa569be98c6a06ccd0d38968a633aaf556e7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_UP_FrameMove",
+      "line": 16612,
+      "lastLine": 16625,
+      "sha256": "fd90e19de5ead5ba14f51d9b00af856440c2c555b309c45367d3a51adbff3fee",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_UP_EventProcess",
+      "line": 16627,
+      "lastLine": 16649,
+      "sha256": "9e1b3b587f027f7b2ef365268ac5a957fc7df451173b1b463ca235b73a8ee28d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_DOWN_StateStartFuture",
+      "line": 16652,
+      "lastLine": 16656,
+      "sha256": "1290c28bf02be4b75cc18561b0fc69a588940708ed5b8c3a8818e6a4e92bea1d",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_DOWN_FrameMove",
+      "line": 16659,
+      "lastLine": 16672,
+      "sha256": "cd4d33ca5bb0581bbfa1141c618af5b8589360f6e7b24256867da5aa258f3304",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_DEGREE_DOWN_EventProcess",
+      "line": 16674,
+      "lastLine": 16696,
+      "sha256": "71032585296ded34a608511d5ead91546bd2803b5f9dc9495bc2e256368e5751",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_FIRE_StateStartFuture",
+      "line": 16699,
+      "lastLine": 16708,
+      "sha256": "5210db88a86e4ce383abfc049b56bd15a446a40900e4b9bf55e07501fe7a21f0",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_FIRE_StateStart",
+      "line": 16711,
+      "lastLine": 16723,
+      "sha256": "26bd4f428e054bdc731b5e66e3db806296a73bbd5f5fab503a5234d9cae82ab8",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_FIRE_StateEnd",
+      "line": 16726,
+      "lastLine": 16734,
+      "sha256": "abdb284a1b734cb61d2c9b5700cbf6d6692702247a149d3a6df112d5d0aadeb1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_FIRE_FrameMove",
+      "line": 16737,
+      "lastLine": 16752,
+      "sha256": "1d355764a2656fdfe2326365f5524a9dc49781fb0283b6ef2d711c38ad9f4130",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PANZER_BUSTER_FIRE_EventProcess",
+      "line": 16754,
+      "lastLine": 16767,
+      "sha256": "e4753437858c37b6a83afa204664a06bad559cf6f7bc7a638dc881b80ab8531c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PSIONIC_GENERATOR_Init",
+      "line": 16770,
+      "lastLine": 16787,
+      "sha256": "3db36bea3e713bcb9152129ed521776dc474aa2d01e079a680d52714b062526d",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PSIONIC_GENERATOR_FrameMove",
+      "line": 16789,
+      "lastLine": 16835,
+      "sha256": "0a3f780fbc44949620d6aa6f16c0c0311cd2b85944423ae6eb63d9515ac50b2a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PSIONIC_GENERATOR_EventProcess",
+      "line": 16836,
+      "lastLine": 16849,
+      "sha256": "a6567c7b7e6db0a16f337c1512c28472ad5c1649e89c86742135397510ca0d19",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PHANTOM_SEEKER_Init",
+      "line": 16851,
+      "lastLine": 16869,
+      "sha256": "d292e84d9db4000e543f9e37b4ff81957ee843d2d870442cee0f265f1e98420c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AAT_PHANTOM_SEEKER_EventProcess",
+      "line": 16870,
+      "lastLine": 16883,
+      "sha256": "3e8239a8bd9d4c49d921f88dc094e27a827431f29e22858a81a81973a9687c71",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_Init",
+      "line": 16885,
+      "lastLine": 16897,
+      "sha256": "d039f11337fbcadad0211b7f6c6abf59e5cdabdb46b1d4332f45fa08ab61f247",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_StateStart",
+      "line": 16899,
+      "lastLine": 16906,
+      "sha256": "1e52b0aa057de0613f6dc8231c936a0b4d21b65f7c27ea0f6bec4d9f52e02334",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_FrameMove",
+      "line": 16907,
+      "lastLine": 16948,
+      "sha256": "3f62f1644e5ba698201ee6f72de31cdf9d4e83afbfa7c44d01665ef8bfd254fc",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AAT_RUSHING_DRONE_DYNAMO_EventProcess",
+      "line": 16949,
+      "lastLine": 16962,
+      "sha256": "1ac5a2b649ea19b682a32372e4b16ab2e102c12e480f442bde9005c9af732bc0",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_PULSE_GATLING_Init",
+      "line": 16969,
+      "lastLine": 16991,
+      "sha256": "7ded8c8f421ace8011854e2523e3d0aa89a8adcf9f1753cc753d8e5b0fe7062e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_PULSE_GATLING_EventProcess",
+      "line": 16992,
+      "lastLine": 17005,
+      "sha256": "dde0b51c5f60671328b79bdfe0b609032dc6e1f69965ec0f3510f1b437f9f952",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_SHOOTING_CHASER_Init",
+      "line": 17007,
+      "lastLine": 17028,
+      "sha256": "e0377a49415775eed248d1237e82ad1a093ccfd78666c9121e1e230f3767e1ae",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_SHOOTING_CHASER_EventProcess",
+      "line": 17029,
+      "lastLine": 17042,
+      "sha256": "238175667becc131f844d5ffdff075141ec3aec4f84003a43a6099dae0adcd89",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_ULTIMATE_FURY_Init",
+      "line": 17044,
+      "lastLine": 17059,
+      "sha256": "fce0aac5376dd2a58b68b4a67dd67099cff27aa9099596c9cfffff9ce6aab8a8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_ULTIMATE_FURY_EventProcess",
+      "line": 17060,
+      "lastLine": 17073,
+      "sha256": "3865e366a0c2858ebb8215ce1b224a72448ec1abfe619c49a9021782cbfd960e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_STAR_FALL_Init",
+      "line": 17075,
+      "lastLine": 17102,
+      "sha256": "bb28f5e20d7bc8f614bfc815acb84764f75f83f7e32ac3ba290505f791d8bfe9",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_STAR_FALL_EventProcess",
+      "line": 17103,
+      "lastLine": 17116,
+      "sha256": "1240365def3c944ba9861798a568c8e66579deb8c19f5b41670498ec60b2294a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_DIVIDING_MISSILE_DYNAMO_Init",
+      "line": 17118,
+      "lastLine": 17136,
+      "sha256": "493f841e97327c795c8cf1af3a93605cf62199e365a53a07b4bf61bd828b898f",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_DIVIDING_MISSILE_DYNAMO_FrameMove",
+      "line": 17138,
+      "lastLine": 17163,
+      "sha256": "53ea73e9b720fbd0944da847e1b3d89af74315ff08846e6e949374437c60e374",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_DIVIDING_MISSILE_DYNAMO_EventProcess",
+      "line": 17164,
+      "lastLine": 17177,
+      "sha256": "0af2d74dd6b300a8fa29901dc5dc6f5bdd3d2932b2559ea362416b6709673cdd",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_FLICK_DISC_DYNAMO_StateStart",
+      "line": 17181,
+      "lastLine": 17184,
+      "sha256": "3d4fe15b20d32ca6981e665fe711f98d9714f1689b9c5465fb3a1eccdd032d0a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_A_AMM_FLICK_DISC_DYNAMO_Init",
+      "line": 17186,
+      "lastLine": 17201,
+      "sha256": "1f6a5a0cb45e833dbca693c4dc3f0f9560605fa19efe44e7ed4e7d9d0d850338",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_FLICK_DISC_DYNAMO_FrameMove",
+      "line": 17203,
+      "lastLine": 17253,
+      "sha256": "26315e76c1cc2e741414665af0c6eb28924a16bd85fae1893bc529784da9ee5a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_FLICK_DISC_DYNAMO_EventProcess",
+      "line": 17254,
+      "lastLine": 17267,
+      "sha256": "1ea8b0a11bf47aca1d99cbcbfb9491f5d4a7a19ddd12c51076ac2801fa99d385",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_COUNTDOWN_BOMB_DYNAMO_Init",
+      "line": 17270,
+      "lastLine": 17282,
+      "sha256": "75069afda531e1753b032b3caf5ad69e211fd45e71cd9afb35508fd6dc46f9d2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_COUNTDOWN_BOMB_DYNAMO_FrameMove",
+      "line": 17284,
+      "lastLine": 17306,
+      "sha256": "5f2354517bd36d9e51b5cfebfadd9d788a0be4d9570435782eab756bb737c6d2",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_A_AMM_COUNTDOWN_BOMB_DYNAMO_EventProcess",
+      "line": 17307,
+      "lastLine": 17320,
+      "sha256": "4bfd37662be7071e20feb8b9dc8b82956a29f37a0b67fbe0e4f3b20186491a1b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_HA_AMM_APOCALYPSE_Init",
+      "line": 17325,
+      "lastLine": 17333,
+      "sha256": "97e96fe175c0b5c0d74e977e35e09f7b69297ff17618fc19e9354fd6d7d3eedb",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_HA_AMM_APOCALYPSE_EventProcess",
+      "line": 17334,
+      "lastLine": 17347,
+      "sha256": "8f66e92f71d26bf59cf3d2ed183e53462f3b3ee1208b3e5bec8043551f298fbc",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_HA_AMM_APOCALYPSE_FrameMove",
+      "line": 17351,
+      "lastLine": 17395,
+      "sha256": "aff92082b8dad445fa50797ef29b7384c395e62008ebb1e442de76cc3fdf4911",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_ApocalypseFinishSummon",
+      "line": 17397,
+      "lastLine": 17424,
+      "sha256": "89c637d6a7294a98a9b5bc25d2bf64ca98a668393976bc213a1d801d7993114c",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_ApocalypseClearMarker",
+      "line": 17426,
+      "lastLine": 17435,
+      "sha256": "b09f7d0eb4c6ec59c98a967a0f347cb73ce77f8c72e16404228a9f6938c85405",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_IsApocalypseSummonActive",
+      "line": 17437,
+      "lastLine": 17447,
+      "sha256": "6a8e1ddb5378d7161718c49cb4d03c34730bf5de5f48ee1ce8bb15c19d91d2a7",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_IsInstallFamilySkill",
+      "line": 17453,
+      "lastLine": 17458,
+      "sha256": "7a38aba261593862526c61455612b509adf226217c670a7902c0671579e4e0af",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_IsMarkedInstallSkill",
+      "line": 17460,
+      "lastLine": 17464,
+      "sha256": "0461be9c15a0d2628ef60ba033f091a5992f76b926694f12d4844dbcd3c934f5",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_FactoryModeClear",
+      "line": 17466,
+      "lastLine": 17490,
+      "sha256": "a8f7319bb90347c8c107414129e0661105ef41e4cfb61afd9b29f43582b043ea",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_DynamoLockClear",
+      "line": 17513,
+      "lastLine": 17524,
+      "sha256": "fbaa69c5e9119a56b64061b3f3b0664f62c319ae89076eafb572b506fc4a0d82",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DynamoLockValidOrClear",
+      "line": 17526,
+      "lastLine": 17535,
+      "sha256": "3679f207902b70f0059c427ed5e51db6ccd43904104fb639593c36b905c56457",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DynamoLockTimeout",
+      "line": 17537,
+      "lastLine": 17546,
+      "sha256": "422b454605de8261663d37179a048144f9ace230aa7f01ffbcf8688581ff096b",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DynamoLockRetarget",
+      "line": 17548,
+      "lastLine": 17571,
+      "sha256": "3f76bc46c5c01372173b08710764a0dafdeff51f7618e9dc6fe147acbf59a958",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DynamoLockReAimOrbits",
+      "line": 17573,
+      "lastLine": 17605,
+      "sha256": "8b2163ea0398b6ee78b5f9bd4b3bb95e0b3725f123d4806b887222c02c5b8d48",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_DynamoLockAcquire",
+      "line": 17607,
+      "lastLine": 17642,
+      "sha256": "1c3355912407402ceadfc047dd001ea9fd891ac293ae877913b2e7f2146bd641",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_OnFactoryFrameMove",
+      "line": 17645,
+      "lastLine": 17702,
+      "sha256": "0f105da02be17757136aa0873a7603daf7e7c3e976fac9ecc2acbd9034f4a304",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_FactorySkillValueLoader",
+      "line": 17704,
+      "lastLine": 17726,
+      "sha256": "8520d5d845287520c7daf42155868c80ebd77a365ba6c737686123a7feca0361",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_FactorySpawnDrone",
+      "line": 17729,
+      "lastLine": 17767,
+      "sha256": "2bd8bc726f26f90de74ad23fe8dfa160c2e97a27b399492e5c354c74c54be490",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_FactoryDronePlayMotion",
+      "line": 17770,
+      "lastLine": 17780,
+      "sha256": "d1991bca02ce269d3a9c369557d16fff050d4070616522514ddc16c5b0bb25be",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_GetInstallSlotOverlayIndex",
+      "line": 17783,
+      "lastLine": 17789,
+      "sha256": "79f0d30523533beaca8a1862f57ee1a4cfb06da438346c57fab16d89b8be8638",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_AAT_CREATE_DYNAMO_FACTORY_StateStartFuture",
+      "line": 17791,
+      "lastLine": 17827,
+      "sha256": "172d5c53e5272fe9bdb1d03a7d226d9b4d9fab14f8b9b74b060da2cad4cba96a",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_AAT_CREATE_DYNAMO_FACTORY_OnFrameMove",
+      "line": 17829,
+      "lastLine": 17847,
+      "sha256": "19ba6b39ce98b4f58faabc742a4eb9a8022d86aa26bf904d00d6f55936133617",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_AAT_CREATE_DYNAMO_FACTORY_StateEnd",
+      "line": 17849,
+      "lastLine": 17853,
+      "sha256": "fb8244c6d97ac6a6d8df68ca157e307de1f3919a15a539d596ecad6462129012",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AAT_INSTALLATION_DRONE_ACTIVATOR_FrameMove",
+      "line": 17855,
+      "lastLine": 17874,
+      "sha256": "99962812d8163e644a8681f48557215555de5bc736a494823dab4ba6f38124bd",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_PULSE_GATLING_FrameMove",
+      "line": 17876,
+      "lastLine": 17895,
+      "sha256": "92e03807611b3587dea8cc50c7b7a7ee01c091d007542377b670b1faec586733",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_SHOOTING_CHASER_FrameMove",
+      "line": 17897,
+      "lastLine": 17940,
+      "sha256": "017d17943b468818890c59f0d07e67a423ddccdb195f6365381b5b7f0b5cc1b8",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_ULTIMATE_FURY_FrameMove",
+      "line": 17942,
+      "lastLine": 17960,
+      "sha256": "191a9c77f7bec7b55d72df71a1485e0c4d682bee1ba08b70bff61c11dbbf74d6",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_UltimateFurySpawnAttack",
+      "line": 17963,
+      "lastLine": 17983,
+      "sha256": "5c05c221cc4ee70790e16556e328f393095ebbbe64a332f7e4560e9212423d77",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_UltimateFuryAttackDriver",
+      "line": 17985,
+      "lastLine": 18113,
+      "sha256": "0d68c894e17296f4676ecc18ac52969fb8623f9ff4ca36a537c0080c4bcac8cc",
+      "laterReconstruction": true
+    },
+    {
+      "method": "ThirdPath_UltimateFuryAssignTargets",
+      "line": 18115,
+      "lastLine": 18184,
+      "sha256": "e034e411cf0167cb346458b2a6f769dc198441e830b370fc6d830d157d4c01bb",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ThirdPath_UltimateFuryClearSet",
+      "line": 18186,
+      "lastLine": 18204,
+      "sha256": "0731e9d845b0d612428319712993810a7b3b86c918502846904ccfc52516339f",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_SA_AMM_INSTALLATION_STAR_FALL_FrameMove",
+      "line": 18207,
+      "lastLine": 18227,
+      "sha256": "dc24c7926906f09baae3ff940f6f4189622870feaa22c4ad3bbc87bb16b69ad1",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ANSI_CAN_NOT_ATTACK_JUMP_DOWN_EventProcess",
+      "line": 18236,
+      "lastLine": 18265,
+      "sha256": "b537e5f4e75fc09a37e379e0f57c186328238b0150577ae44620edee315e4356",
+      "laterReconstruction": false
+    }
+  ],
+  "header": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.h",
+    "sha256": "040e51f3723b8beea44251c945be3c2de4dfc742ea6ef83306b26af014d66f04",
+    "nasodMacroLines": [
+      23,
+      35
+    ],
+    "evidenceClass": "fixedV5 reference containing later reconstruction; not matching 2016"
+  }
+}

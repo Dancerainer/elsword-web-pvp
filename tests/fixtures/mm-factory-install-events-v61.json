@@ -1,0 +1,81 @@
+{
+  "schema": "mm-factory-install-current-web-event-fixture-v61",
+  "provenance": {
+    "path": "./runtime/v61/mm-visual/final-c/failure-details.json",
+    "sha256": "fe0b7bff22152beaed952c162a070d06b6a6601cc1fcf4476fa4016e4993964c",
+    "scope": "Selected current Web observations; not original-client golden evidence"
+  },
+  "actorId": "player-1",
+  "targetId": "player-2",
+  "initialDp": 1276.800048828125,
+  "finalDp": 808.800048828125,
+  "skillId": 29018,
+  "mode": "generator-select",
+  "expectedCost": 600,
+  "maxImpactGain": 132,
+  "events": [
+    {
+      "eventId": 237,
+      "time": 12.216666666666853,
+      "type": "addSkillResourcesCommitted",
+      "actorId": "player-1",
+      "skillId": 29018,
+      "mpCost": 0,
+      "dpCost": 600,
+      "mutationCost": 0,
+      "mode": "generator-select"
+    },
+    {
+      "eventId": 240,
+      "time": 12.216666666666853,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "ANSI_AAT_CREATE_DYNAMO_FACTORY",
+      "stateSerial": 30
+    },
+    {
+      "eventId": 253,
+      "time": 12.533333333333536,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 92,
+      "name": "DamageEffect_A_APT_Pylon_Dynamo_Impact",
+      "setName": "EffectSet_A_APT_Pylon_Dynamo_Impact",
+      "skillId": 29018,
+      "ownerStateSerial": 30
+    },
+    {
+      "eventId": 255,
+      "time": 12.533333333333536,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 676.800048828125,
+      "dp": 808.800048828125,
+      "delta": 132,
+      "reason": "hit"
+    },
+    {
+      "eventId": 258,
+      "time": 12.533333333333536,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 958.6266479492188,
+      "origin": {
+        "kind": "effect",
+        "id": 92,
+        "skillId": 29018
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 1,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 2,
+        "APPLIED_SKILL_ID": 29204,
+        "DAMAGE": {
+          "MAGIC": 2.2
+        }
+      }
+    }
+  ]
+}

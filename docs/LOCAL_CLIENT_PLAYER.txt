@@ -1,0 +1,13 @@
+web pvp portable client for Windows
+
+1. Extract the complete archive to a new folder.
+2. Set serverUrl in server-config.json beside Start-Client.bat, for example:
+   {"serverUrl":"https://pvp.example.org"}
+   Alternatively, set WEB_PVP_SERVER_URL before launching.
+3. Double-click Start-Client.bat. Leave the console open while playing.
+4. If the browser does not open automatically, use the loopback address printed by the launcher. Its default is http://127.0.0.1:4376/.
+5. Sign in using an account on the server you selected. Close the console when you finish playing.
+
+Models, motion, maps, audio and native modules load locally. Login, matchmaking and online battles require network access. Startup verifies the installed content and checks for compatible updates. Allow an update to finish, including its restart. Bandwidth is reserved for active matches, so downloads can pause.
+
+The update cap is 100,000,000 bytes for the plan and compressed changes together. Use a complete package if your version is unsupported, the change exceeds your updater's limit or installed files fail validation. Account data is stored on the server.

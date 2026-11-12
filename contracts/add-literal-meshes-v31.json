@@ -1,0 +1,4015 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 original mesh declarations bound to scoped source-referenced executor",
+  "originalClientMeasured": false,
+  "consumer": "bounded binary32 velocity/fade/DirSpeed/land executor; unknown events remain unsupported",
+  "rows": [
+    {
+      "name": "ADD_APOCALYPSE_Attack_A_Dummy01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2303795,
+        "line": 71862
+      },
+      "declarationSha256": "24500603518fad11c1fe1bb96afa22c68822fc7c38f32aa61cb9e8dfb042757c",
+      "fields": {
+        "MeshName": "ADD_psionic_generate_MESH_01.X",
+        "SLASH_TRACE_TEXTURE": "ADD_EXTINCTION_Trace02.dds",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 4,
+        "DrawCount": 2,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.2,
+            0.5,
+            1.2
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1,
+            0,
+            0.1,
+            1
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "professions": [
+        "MM",
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_Countdown_Bomb_Mesh_01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2297997,
+        "line": 71675
+      },
+      "declarationSha256": "cb1e39c1eca9f1b417d032d42ff678449f0706095a023660b6813c9e7d59e03a",
+      "fields": {
+        "MeshName": "ADD_Countdown_Bomb_Mesh_01.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 5,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.1,
+          "end": 7,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                720,
+                1440
+              ]
+            },
+            {
+              "random": [
+                720,
+                1440
+              ]
+            },
+            0
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.5,
+          "end": 0.5,
+          "fade": false,
+          "value": 333
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "professions": [
+        "MM",
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_DESOLVER_DYNAMO_Hyper_Dummy1",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2163699,
+        "line": 67324
+      },
+      "declarationSha256": "93be6b1cdc3748893b808f09b6f789fb218d81d4c55b3e9e6254d8eb0ff98da2",
+      "fields": {
+        "MeshName": "ADD_DESOLVER_DYNAMO_Hyper_DUMMY01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "DrawCount": 0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "AniSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 1.8
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "ADD_DESOLVER_DYNAMO_Start_Dummy1",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2163220,
+        "line": 67307
+      },
+      "declarationSha256": "4ab605ef5c212ab0f7283fbf5841fbddda5def0fee36cb25975f850ddd318124",
+      "fields": {
+        "MeshName": "ADD_DESOLVER_DYNAMO_Start_DUMMY01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.9,
+        "DrawCount": 0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "ADD_Dividing_Missile_MESH_01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2293922,
+        "line": 71543
+      },
+      "declarationSha256": "1467db2ad298481224e0d7fb8f3c9474f893070efd46212ce35ec58ff6cc0d95",
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 0.5,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1300,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "MM",
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_Dividing_Missile_MESH_02",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2294546,
+        "line": 71564
+      },
+      "declarationSha256": "8cc2c0c98d5936a575047326581d579be0c8346ea1a739ebb8b57ca8bb2311dd",
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 1,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            10
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            600,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_Drone_Activator_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2251361,
+        "line": 70239
+      },
+      "declarationSha256": "3a634e9343e15f94ab80b885a961ee626417a4bdeb360f1fe46437a1a489246d",
+      "fields": {
+        "MeshName": "ADD_psionic_generate_MESH_01.X",
+        "SLASH_TRACE_TEXTURE": "Gun_Fire_Impact03.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "Slash_Trace_Curve_Type": 1,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "SLASH_TRACE_TYPE": 1,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2000,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_ENERGY_BOOM_DummyAttackBox",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2166460,
+        "line": 67416
+      },
+      "declarationSha256": "601282a7aad7ad21772fae10041323c6f0dd8b40fb79b7fabcf11bb618f6dcf8",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.7
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 300
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.25,
+          "end": 0.45,
+          "fade": true,
+          "value": 3500
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "ADD_MAGNETRON_DYNAMO_MESH",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2154471,
+        "line": 67006
+      },
+      "declarationSha256": "2260c28f541f9f23734eabb7fdf6e0bdd2b49ba6f12bdfbe3c1b59e4561600b0",
+      "fields": {
+        "MeshName": "ADD_MAGNETRON_DYNAMO_MESH.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0.8
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 2000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "ADD_PARTICLE_ACCELERATO_Dummy1",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2166995,
+        "line": 67433
+      },
+      "declarationSha256": "0f022895ba3c873317966a381d01f1044d1e7ee21d680eb2111e47a65445758e",
+      "fields": {
+        "MeshName": "ADD_PARTICLE_ACCELERATOR_DUMMY01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.8,
+        "DrawCount": 0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP",
+        "MM",
+        "MM",
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "ADD_Phantom_Seeker_MESH_03",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2257891,
+        "line": 70444
+      },
+      "declarationSha256": "8cf8a2330029865faa08952a837b68315ce6e4245992a1fc13d89b6f941d1d9b",
+      "fields": {
+        "MeshName": "ADD_Phantom_Seeker_MESH_01.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 5,
+        "SLASH_TRACE_TYPE": 1,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -20,
+                20
+              ]
+            },
+            {
+              "random": [
+                -20,
+                20
+              ]
+            },
+            {
+              "random": [
+                -10,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -60,
+                60
+              ]
+            },
+            {
+              "random": [
+                -60,
+                60
+              ]
+            },
+            {
+              "random": [
+                -60,
+                60
+              ]
+            }
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 2000
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_Pulse_Bullet_DummyAttackBox",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2159794,
+        "line": 67199
+      },
+      "declarationSha256": "3a323c0d204d72af231aab0bb3c09d15dbaf30a4ad5cf3754b640a369acb7610",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.33
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2500,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": 2500
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "ADD_Rushing_Drone_MESH_01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2253375,
+        "line": 70301
+      },
+      "declarationSha256": "5c6075c5f69962c77319ce9538a33d65e797e02c18d17da2f408ac1093b51b00",
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 2,
+        "ElasticCoeff": 0.5,
+        "ElasticCoeff_X": 0,
+        "SLASH_TRACE_TYPE": 1,
+        "Gravity": [
+          0,
+          -2000,
+          0
+        ],
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.001,
+          "end": 0.001,
+          "fade": false,
+          "value": 2000
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": 1000
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            10
+          ]
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_Shooting_Chaser_Projectile_01",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2267618,
+        "line": 70745
+      },
+      "declarationSha256": "191ad192dac39e17f3c5a9ae79be8fbddbb74285e12c45c1c79ff52f681b2a4a",
+      "fields": {
+        "MeshName": "ADD_Shooting_Chaser_Projectile_01.X",
+        "ChangeTexXet": "ADD_Shooting_Chaser.XET",
+        "SLASH_TRACE_TEXTURE": "ADD_EXTINCTION_Trace02.dds",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "Slash_Trace_Curve_Type": 1,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 1,
+        "SLASH_TRACE_TYPE": 1,
+        "ZWriteEnable": true,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": 4000
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ADD_VOID_BREAKER_MEMO_DummyAttackBox",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2165346,
+        "line": 67380
+      },
+      "declarationSha256": "fb5f25b854f18e8b7ec8408a873fcbd9b379b536413f0656d9099027f252abcf",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.6
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 2000
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.2,
+          "end": 0.333,
+          "fade": true,
+          "value": 3500
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.333,
+          "end": 0.4,
+          "fade": true,
+          "value": 0
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "ADE_REVERSE_CIRCLE_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2624232,
+        "line": 81985
+      },
+      "declarationSha256": "686573a4d42d92f32a3b7bea00ff70cbcb88aadb17bfa9285556700b3f16ed85",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            -1800,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        }
+      ],
+      "professions": [
+        "DE"
+      ]
+    },
+    {
+      "name": "ALP_Dash_ComboXXX_Attack_Box",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 9896,
+        "line": 360
+      },
+      "declarationSha256": "2b11e692a98fe4aa1038522b8bcd57dbe71c79c32ca9a698b573717e58af1e19",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.3,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2000,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "AMM_Mini_Rushing_Drone",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2296207,
+        "line": 71620
+      },
+      "declarationSha256": "2c9bb12b962e7a95f6faf0b4382a5caabcd009891e5f4ab869368a68f233b89e",
+      "fields": {
+        "MeshName": "ADD_Rushing_Drone_MESH_01.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 1,
+        "ElasticCoeff": 0.5,
+        "ElasticCoeff_X": 0,
+        "SLASH_TRACE_TYPE": 1,
+        "Gravity": [
+          0,
+          -2000,
+          0
+        ],
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.001,
+          "end": 0.001,
+          "fade": false,
+          "value": 2000
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": 1000
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            -30
+          ]
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "ATT_Cpace_Crack_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2610395,
+        "line": 81550
+      },
+      "declarationSha256": "facdfd7c33015293e47812717b40dd54e2417e679e65b1abe5dcf851e4aad422",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.26,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 2000
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP",
+        "MM",
+        "MM",
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "ATT_Effect_Rupture_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2602621,
+        "line": 81303
+      },
+      "declarationSha256": "b4c5bd94b1f7fa045b84e0e29c2ec7bb3ed705bd8c0b3ea3e6997c4052b1c4f8",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 12,
+        "LifeTime": 0.1,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            5000,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "ATT_Maximum_Strike_Attack_M03",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2617633,
+        "line": 81771
+      },
+      "declarationSha256": "cc97c3a6a001caec60f1acac7f2e0b0a8eebc36ea1004381b207baf0c90a9bf5",
+      "fields": {
+        "MeshName": "ATT_Maximum_Strike_Ball_AttackBox.X",
+        "SLASH_TRACE_TEXTURE": "EBS_inductionTrace_trace2.dds",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 0.94,
+        "ZEnable": true,
+        "UseSlashTrace": true,
+        "AlphaTest": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.001,
+          "end": 0.001,
+          "fade": false,
+          "value": 200
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": 3500
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "AttackBox_AAT_DASH_JUMP_COMBO_ZX_Bullet",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2174909,
+        "line": 67707
+      },
+      "declarationSha256": "b4ea63b55f2c62994f8b636d2ab1cdcc0cb1e96e3d8c3be7c8d4b3f5d722e7f7",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.215,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_AAT_NA_Combo_XX",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2140076,
+        "line": 66517
+      },
+      "declarationSha256": "fa9d72507be236d72438451c2a161470a93b659d96fc4b399c4bd2734db88db9",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 4000
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_AAT_Panzer_Buster_Effect",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2299915,
+        "line": 71734
+      },
+      "declarationSha256": "52feaa11608c745f9131bf5ebe32cc33715ebe40c54754f131cff0f84ed98f0b",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 0,
+        "LifeTime": 0.5
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            6000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "MM",
+        "MM",
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_AAT_Phantom_Seeker_AttackBox_Sub",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2278646,
+        "line": 71083
+      },
+      "declarationSha256": "1e9392f1f12d9b581d1998613f77a8c1f7d0fb391db46db4c1154f3e03a10d3f",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 0,
+        "LifeTime": 5
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 6000
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_ADE_Combo_XXXX",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2642289,
+        "line": 82579
+      },
+      "declarationSha256": "c488a71dbb0660c85fa09a2ae95f5da3c92284347ebeb6f90cc4ca90e6ca56e5",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.27,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_ADE_Combo_XXXX_Mutation_Damage",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2644374,
+        "line": 82649
+      },
+      "declarationSha256": "8e1886a6aff6fcdf0bf04fa037e26a22c102c26bac1ddc8f08bcb0c8268a3f93",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.27,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "professions": [
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_ADE_Combo_XXXZ",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2642826,
+        "line": 82597
+      },
+      "declarationSha256": "a05d1310ba1f8f61dd9849af307e22e6fd84a1660080ffb64a7a9b750e3a87da",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.27,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_ALP_Psionic_Beat_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2212168,
+        "line": 68960
+      },
+      "declarationSha256": "f0583f85822ab6a448a42ef55f6a534c88b46b6ce0f028260381c98590d891c8",
+      "fields": {
+        "MeshName": "SHOOTING_STAR_Shell_Dummy.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "Slash_Trace_Curve_Type": 1,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "DrawCount": 0,
+        "SLASH_TRACE_TYPE": 1,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3500
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.19,
+          "end": 0.19,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_ALP_Psionic_Beat_Projectile_Long",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2212879,
+        "line": 68983
+      },
+      "declarationSha256": "2a4b72ac49444c92237016a7c67b8f839595304209170e7f9f2f6b69d279a578",
+      "fields": {
+        "MeshName": "SHOOTING_STAR_Shell_Dummy.X",
+        "SLASH_TRACE_TEXTURE": "AN_Formation_TRACE.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "Slash_Trace_Curve_Type": 1,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "DrawCount": 0,
+        "SLASH_TRACE_TYPE": 1,
+        "UseSlashTrace": true
+      },
+      "events": [
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3500
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.25,
+          "end": 0.25,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_AMM_Flick_Disc_Attack",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2306349,
+        "line": 71935
+      },
+      "declarationSha256": "47bf45974f93abe9dfe5784ad5e1fa9493e19ea26054620843b9673774cca483",
+      "fields": {
+        "MeshName": "ADD_MAGNETRON_DYNAMO_MESH.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.9
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.3,
+            1.3,
+            1.3
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 2500
+        }
+      ],
+      "professions": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_AMM_HA_Attack_B",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1319752,
+        "line": 41442
+      },
+      "declarationSha256": "04eadd8f4d02ddabeee4a1308318af379b803aed65102b1dfb4bd9ae4ba4f016",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.75,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 1500
+        }
+      ],
+      "professions": [
+        "MM",
+        "MM"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_X_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2126339,
+        "line": 66059
+      },
+      "declarationSha256": "92806b7c0632c929bab1ac6ac7c88046a97150feb5a2b5a79c8db2c3dd1970ed",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_XX_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2126871,
+        "line": 66077
+      },
+      "declarationSha256": "f9f77cd5f008ec7a18b158ca376b12c633638f96189f3a189e9b4e2cc8c667d3",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.22,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_XXX",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2143199,
+        "line": 66622
+      },
+      "declarationSha256": "4008928e79db88a628dfb508d9544b104f1ac2640b7f05af76ffe77fd0093858",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.3,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_XXX_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2127417,
+        "line": 66095
+      },
+      "declarationSha256": "769ffb34c04c4d5a054530a6abddd50dd14a3460d7d6f5254d31167a08ebe18a",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.25,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2.5,
+            2.5,
+            2.5
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_ZZX",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2139541,
+        "line": 66499
+      },
+      "declarationSha256": "ed9e84159bf1a8c60740c5f301a800f5e36e9cec2f02008c2926a0508b46dd42",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.19,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 4000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Combo_ZZXX_Loop",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2142670,
+        "line": 66604
+      },
+      "declarationSha256": "e4697a75f3551fc980bc6a514d8253c79cae5fc6b2233ae1ceaed6e47caae943",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.25,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_AN_Particle_Accelerator",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2124834,
+        "line": 66008
+      },
+      "declarationSha256": "2435964129a956a7c9050c913e31011eec41365c81a682f12a889377abdd26e7",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3600,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_APT_A_Desolver_Dynamo_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2141600,
+        "line": 66569
+      },
+      "declarationSha256": "9380fa8d19d15611d5252b7b32d50b89e2b1f7b41944575c61ba1f93f9bb5b0c",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.13,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 4000
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_Conqueror_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2154942,
+        "line": 67023
+      },
+      "declarationSha256": "aeb4cb41da515f5c7a6722604ada7d5c6498763bdb47f5dcbd5963adbf3cafd5",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 3,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0.8
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3500
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_Dash_Jump_Combo_XX_Bullet",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2175418,
+        "line": 67724
+      },
+      "declarationSha256": "eafdfe9f30ff49ed71e37107c03230e057dc84940d4b18858a7706bf109d7a9f",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.4,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1586,
+            -1586,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_Dash_Jump_Combo_Z_Bullet",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2174327,
+        "line": 67688
+      },
+      "declarationSha256": "2e9cc916525b0ff00f88673a7c864f7d4629fcf7392489aee9326cc040129d80",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.215,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            -30
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 3000
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP",
+        "MM",
+        "MM",
+        "DE",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_MIND_BREAK",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2182259,
+        "line": 67951
+      },
+      "declarationSha256": "ad0f87ad4e18040b833037453eced29f77c0adbb968139058155cd3161df2722",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 1
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.05,
+          "end": 0.05,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "MM",
+        "DE"
+      ]
+    },
+    {
+      "name": "Mesh_Pulse_Cannon",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2153918,
+        "line": 66987
+      },
+      "declarationSha256": "1fa795aeacc3f3788febfd911be16c33cabe0da13b3c76e8392b264e16f9f025",
+      "fields": {
+        "MeshName": "ADD_MAGNETRON_DYNAMO_MESH.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "CullMode": "D3DCULL_CCW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1,
+            0.8
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.001,
+          "end": 0.001,
+          "fade": false,
+          "value": 200
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.3,
+          "end": 0.5,
+          "fade": true,
+          "value": 3500
+        }
+      ],
+      "professions": [
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_Quake_Buster_Impact",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2153441,
+        "line": 66970
+      },
+      "declarationSha256": "87a6af7b662456dc376565cf844a91d65aca83afe48a90b0cd3531d8e627388d",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 1.5,
+        "DrawCount": 0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1.5,
+            1.5,
+            1.5
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP",
+        "LP",
+        "LP",
+        "LP",
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_Quake_Buster_Projectile",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2152868,
+        "line": 66950
+      },
+      "declarationSha256": "7859935241070d49f012ef6b5c8d21401b077bc4fa79a7b9d7de6493043381a9",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 13,
+        "LifeTime": 1,
+        "NOT_CHECK_LAND_TIME": 0.08,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2000,
+            -3000,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "LP",
+        "LP"
+      ]
+    },
+    {
+      "name": "Mesh_SI_SA_ADE_GRAVITY_BURSTER_DOWN_FORCE",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2647756,
+        "line": 82766
+      },
+      "declarationSha256": "2657b60422bbc64ac4caa9a50530bd78bc1d790c73ead9552096c776ac58e75d",
+      "fields": {
+        "MeshName": "SI_SA_ASD_SUPPRESSION_6Point.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 1,
+        "NOT_CHECK_LAND_TIME": 0.15,
+        "ZEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            -3000,
+            0
+          ]
+        }
+      ],
+      "professions": [
+        "DE",
+        "DE"
+      ]
+    }
+  ]
+}

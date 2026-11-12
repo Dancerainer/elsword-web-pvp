@@ -1,0 +1,479 @@
+{
+  "evidenceClass": "target2016-converted-declarations",
+  "clientMeasured": false,
+  "sourceFile": "contracts/ca-fx-index.json",
+  "sourceSha256": "697b4c048262eb5c9fdbecb78d11a5f897f599eb2c41b496fb052762df3cfe77",
+  "templates": {
+    "SCA_SHADOW_EDGE_Link": {
+      "fields": {
+        "MeshName": "ADD_Reverse_Reactor_Link01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 9999,
+        "DrawCount": 2,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniSpeed",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 1
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1.6,
+            1.6
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.2,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "TEX0UV",
+          "start": 0,
+          "end": 999,
+          "fade": true,
+          "value": [
+            -2000,
+            0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SCA_SHADOW_EDGE_Link",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2600529,
+        "line": 81232
+      },
+      "declarationSha256": "07b974f1c7bb5027220e5f14836d477f86e2aa9846bd670ad8e2f3b475b001ac",
+      "textures": {},
+      "glb": "fx/meshes/ADD_Reverse_Reactor_Link01.glb",
+      "poseData": "fx/meshes/ADD_Reverse_Reactor_Link01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.1666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "SDK_LINK_P00M": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.4,
+        "NumParticles": 2,
+        "DrawCount": 0,
+        "Layer": 15,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "TraceParticleList": "SDK_LINK_P01"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "WhiteImage.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0.5,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            600,
+            600,
+            1
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "SDK_LINK_P01",
+          "SDK_LINK_P02"
+        ]
+      },
+      "unsupported": [],
+      "name": "SDK_LINK_P00M",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 112,
+        "name": "GameMajorParticle29.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+        "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+        "bytes": 282466,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 123142,
+        "line": 3836
+      },
+      "declarationSha256": "73603def63ec27effef5c53ed29d14d6fd0113bb12818d3d045d12a5f515e551",
+      "textures": {
+        "WhiteImage.dds": {
+          "file": "fx/textures/WhiteImage-674b292ba4.png",
+          "width": 4,
+          "height": 4,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 495,
+            "name": "WhiteImage.dds",
+            "rawPath": "raw/data/data048.kom/WhiteImage.dds",
+            "sha256": "674b292ba42556246d2c203450c4d5e695b17a913c144dd61945db0999683d9a",
+            "bytes": 136,
+            "signatureHex": "444453207c0000000710080004000000"
+          }
+        }
+      }
+    },
+    "SDK_LINK_P01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "Lifetime": 0.3,
+        "NumParticles": 2,
+        "TriggerCount": 2,
+        "Layer": 13,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "ASL_HIT_P001.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.12,
+          "fade": true,
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            80,
+            80,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            100,
+            100,
+            1
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SDK_LINK_P01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 112,
+        "name": "GameMajorParticle29.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+        "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+        "bytes": 282466,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 123670,
+        "line": 3856
+      },
+      "declarationSha256": "0f7113ad897bd09d88d9b9f2cbaf9c721eb2d62a2d90f948f3e219c19ceef995",
+      "textures": {
+        "ASL_HIT_P001.dds": {
+          "file": "fx/textures/ASL_HIT_P001-f8deaaec07.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data132.kom",
+            "ordinal": 178,
+            "name": "ASL_HIT_P001.dds",
+            "rawPath": "raw/data/data132.kom/ASL_HIT_P001.dds",
+            "sha256": "f8deaaec07c8b84fee1c657b4b9277b2f17fc4149d0a44cf79bf08fa6623dc45",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      }
+    },
+    "SDK_LINK_P02": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "Lifetime": 0.2,
+        "NumParticles": 2,
+        "TriggerCount": 2,
+        "Layer": 15,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "SCA_CRIMSON_BREAK_PE02.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            {
+              "random": [
+                0.3,
+                0.6
+              ]
+            },
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.06,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1,
+            {
+              "random": [
+                0,
+                0.2
+              ]
+            },
+            0,
+            1
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            {
+              "random": [
+                -360,
+                360
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SDK_LINK_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 112,
+        "name": "GameMajorParticle29.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+        "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+        "bytes": 282466,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 124356,
+        "line": 3879
+      },
+      "declarationSha256": "067d8d3508db4d6ee5ae442b80ab53821dea66ef7343c3f23c1aba0e65313200",
+      "textures": {},
+      "glb": "fx/meshes/SCA_CRIMSON_BREAK_PE02.glb",
+      "poseData": "fx/meshes/SCA_CRIMSON_BREAK_PE02.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false
+    }
+  },
+  "damage": {
+    "raw": {
+      "MAIN_EFFECT_NAME": "SCA_SHADOW_EDGE_Link",
+      "LINK_EFFECT_RATE": 530,
+      "EFFECT_TYPE": 1,
+      "PASSIVE_PARTICLE0": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "SDK_LINK_P00M",
+        "POSITION_TYPE": 0,
+        "TRACE": 1,
+        "TRACE_MORE": 1,
+        "APPLY_ROTATE": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "BONE_NAME": "Dummy02",
+        "PARTICLE_NAME": "SDK_LINK_P00M",
+        "POSITION_TYPE": 0,
+        "TRACE": 1,
+        "TRACE_MORE": 1,
+        "APPLY_ROTATE": 1
+      }
+    },
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 141905
+    }
+  }
+}

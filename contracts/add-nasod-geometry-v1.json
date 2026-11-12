@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "sourceFile": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGLineMap.cpp",
+  "sourceSha256": "3306c7370a282b18137c676db2491b0fed4b2939cc1015876965e506cb8e23b2",
+  "method": "GetFixedDistancePositionForWeaponTaker",
+  "firstLine": 78,
+  "lastLine": 80,
+  "methodSha256": "e37f7ca6b315b3e51da4da7e8481be51ff8d1afd93cdb244e4f46b178151743b",
+  "evidenceClass": "fixedV5 source adapter, not target2016 measurement",
+  "semantics": [
+    "Original GetLandPosition radius30, input position used for initial 3D distance",
+    "Traverse before/next lines without replacing original layout",
+    "Return false if remaining distance is less than requested+15; original caller falls back to target position",
+    "Interpolate traversed line endpoints with float32 operations"
+  ]
+}

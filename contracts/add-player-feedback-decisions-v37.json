@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "scope": "ADD common/DE player feedback and selected completed target2016 offline static analysis control chains",
+  "baseline": "v36; current simulation observations are not target-client acceptance",
+  "decisions": [
+    {
+      "feedback": "ADD basic X cannot emit before the first prior damage",
+      "cause": "A reconstructed reference DP>=2 prerequisite was applied to basic dissolution commands while the accepted Web preset starts at0DP. The projectile that should earn DP therefore cannot be born.",
+      "change": "Keep the original target projectile declarations and qualified event times. Basic dissolution shots emit at zeroDP; the qualified two-native-unit debit saturates at0. Formation keeps the existing resource gate.",
+      "evidenceClass": "user-requested Web correction; fixed2026 reconstructed reference is not a matching2016 resource consumer",
+      "qualifiedReference": {
+        "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+        "contract": "contracts/add-reference-consumers-v1.json",
+        "methods": ["ComboXEventProcess", "ComboXXEventProcess", "ComboXXXEventProcess", "ComboZZXEventProcess", "ComboZZXXEventProcess", "DashJumpComboXXFinishFrameMove"]
+      },
+      "initialDpChanged": false
+    },
+    {
+      "feedback": "DE Reverse Stigma second activation leaves an effect indefinitely",
+      "cause": "The original marker ADE_PE03M_L has Emitrate4 without TriggerCount/TriggerTime. Its visual-only combat record can retire before clear, making a later scan of live effects unable to stop the real emitter.",
+      "change": "Preserve receiver-local actual emitter handles across trusted snapshots; emit explicit effectEnded for those handles on return, expiry, death or lost life epoch, even after collision retirement. Keep every original mesh and particle lifetime.",
+      "evidenceClass": "original2016 declarations plus current Web lifecycle correction",
+      "originalReturnMeshLifetimeSeconds": 1,
+      "wireFieldAdded": false
+    },
+    {
+      "feedback": "DE XXX should launch as LP/MM XXX",
+      "decision": "No reaction rewrite: the original2016 DE-specific explosion intentionally differs.",
+      "sourceFacts": {
+        "DE": {"root": "DamageEffect_ADE_Combo_XXX_Explosion", "REACT_TYPE": 2, "FORCE_DOWN": 7, "MAGIC": 2.25, "hasBackSpeedXY": false},
+        "LP_MM": {"root": "DamageEffect_AN_Combo_XXX_Explosion", "REACT_TYPE": 5, "BACK_SPEED_X": 1500, "BACK_SPEED_Y": 1300, "MAGIC": 3.54}
+      },
+      "evidenceClass": "original2016 immutable damage declarations; source-based rejection of an uncertain player assumption"
+    }
+  ],
+  "analysis": {
+    "sourceContracts": ["contracts/add-analysis-consumers-v37.json", "contracts/add-starfall-selection-source-v37.json"],
+    "Starfall": {
+      "skillId": 29016,
+      "profession": "MM",
+      "known": ["original1.2 animation threshold", "7.4 duration/.5 strict-negative interval reset", "formed3mutation secondary half-duration at paired+-50 offsets", "proved squared vec3 distance<=1000000", "exclude preceding target from rand modulo candidates with preceding-target fallback", "same-target alternating skip flag", "original Start/Wait/Attack carrier clips and target-specific LockOn/Explode roots"],
+      "webAdapters": ["snapshot-owned deterministic seed instead of unknown original CRT TLS seed/call chronology", "explicit live enemy policy for unmapped native virtual164 and player-state0/100 semantics", "posed targetBip01 and authored native land query for incompletely resolved dynamic bodypart-string/ground binding"],
+      "fidelityVerified": false
+    },
+    "ShootingChaser": {
+      "skillId": 29018,
+      "profession": "MM",
+      "known": ["original.4 animation threshold", "NO_DAMAGE attacker records actual contacts before reaction acceptance", "1second retention", "global4unit allocation by recorded counts1..4", "A1..A4 create one Attack plus1..4 display drones", "original child loop1+.5*n cap22 and endTime20", "main Attack mesh4.1 lifetime and child Box.2 lifetime", "raw LOT6/.15 unlock/curve30/PvP0..550"],
+      "webAdapters": ["explicit deterministic nearest-body selector and current protection policy; no old700 radius", "existing native vectorLockOn steering kernel"],
+      "unsupported": ["native count>=5 fallback target selection", "original Lua inheritance at missing CREATE_DAMAGE_EFFECT1", "unmeasured native lifetime overrides and timing"],
+      "fidelityVerified": false
+    },
+    "StardustShower": {
+      "skillId": 29021,
+      "profession": "DE",
+      "catalogRemainsDisabled": true,
+      "implementedControl": ["separate native initialization and activation APIs", "duration2.5+.33perMutation up to3", "initial accumulator1 and Y+700 rupture/carrier", ".1 accumulator reset with one spawn per frame", "actual world node sampler spwan_Dummy01..10", "saved-position End and explicit handle release"],
+      "unsupported": ["original action+58 activation phase", "original Loop/End motion availability/selection", "complete carrier attachment/random rotation and Ball collision closure"],
+      "fidelityVerified": false
+    }
+  },
+  "validation": {
+    "status": "Candidate source and independent regressions prepared; full Native/browser/release validation belongs to the parent task's final combined record",
+    "tests": ["tests/combat/add-player-feedback-v37.test.mjs", "tests/combat/add-analysis-skills-v37.test.mjs", "tests/combat/add-stigma.test.mjs"]
+  }
+}

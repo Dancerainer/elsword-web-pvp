@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 original declarations statically parsed, not target execution",
+  "originalEntrySha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+  "sourceArchiveSha256": "0399edcd64e5edd5bdc5c63c86ea48ab8deef5a4490c72619584635034e661e3",
+  "rows": {
+    "DamageEffect_ANSI_AMM_COMBO_ZZXX": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "ATTACK_TIME_START": 100,
+        "LINK_EFFECT_RATE": 950,
+        "MAIN_EFFECT_NAME": "ADD_Ultimate_Fury_AttackLine01",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 0,
+        "USE_GLOBAL_TIME": 1,
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_X": 30,
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1,
+          "SCALE_Z": 1,
+          "SCALE_Y": 1,
+          "PARTICLE_NAME": "ADD_Ultimate_Fury_Attack_01",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "ATTACK_LINE_END0",
+          "SCALE_X": 3,
+          "SCALE_Z": 3,
+          "SCALE_Y": 3,
+          "PARTICLE_NAME": "ADD_Ultimate_Fury_Attack_01",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_LINE_END0",
+          "PARTICLE_NAME": "ADD_Ultimate_Fury_Attack_02",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Ultimate_Fury_Attack_01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATED_OFFSET": 1,
+          "REVERSE_Y": 1,
+          "TRACE_MORE": 1,
+          "TRACE_MATRIX": 1
+        },
+        "PASSIVE_PARTICLE4": {
+          "SCALE_Y": 2,
+          "SCALE_X": 2,
+          "SCALE_Z": 2,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_Installation_Drone_Generate_05",
+          "POSITION_TYPE": 0,
+          "TRACE_MORE": 1,
+          "TRACE_MATRIX": 1,
+          "REVERSE_Y": 1,
+          "APPLY_ROTATED_OFFSET": 1
+        },
+        "PASSIVE_PARTICLE5": {
+          "OFFSET_X": -20,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ADD_PULSE_GATLING_Start_02",
+          "POSITION_TYPE": 0,
+          "REVERSE_Y": 1,
+          "APPLY_ROTATED_OFFSET": 1,
+          "TRACE_MORE": 1,
+          "TRACE_MATRIX": 1
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "LOOP_INTERVAL": 0.1,
+          "EVENT_TIME": 0.01,
+          "LOOP_END_TIME": 3,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ANSI_AMM_COMBO_ZZXX_Attack",
+          "BONE_NAME": "ATTACK_LINE_END0",
+          "LOOP_END_COUNT": 3,
+          "POSITION_TYPE": 0
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "LOOP_INTERVAL": 0.45,
+          "EVENT_TIME": 0.15,
+          "LOOP_END_TIME": 42,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ANSI_AMM_COMBO_ZZXX_Dummy_Attack",
+          "BONE_NAME": "ATTACK_LINE_END0",
+          "LOOP_END_COUNT": 30,
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 394369
+      }
+    },
+    "DamageEffect_ANSI_AMM_COMBO_ZZXX_Attack": {
+      "raw": {
+        "ATTACK_TIME_END": 0.15,
+        "MAIN_EFFECT_NAME": "Mesh_ADD_Shooting_Chaser_Buff_Attack_Box",
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "FORCE_DOWN": 1.05,
+          "HIT_GAP": 0.1,
+          "CAMERA_CRASH_GAP": 10,
+          "TECH_POINT": 4,
+          "CAMERA_CRASH_TIME": 0.1,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 0.76,
+          "BACK_SPEED_X": -300,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": -1,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 0,
+          "CAN_REVENGE": 0,
+          "CAN_ACTIVATE_NASOD_ARMOR_COMBO": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.27
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 394412
+      }
+    },
+    "DamageEffect_ANSI_AMM_COMBO_ZZXX_Dummy_Attack": {
+      "raw": {
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "Mesh_ADD_Shooting_Chaser_Buff_Attack_Box",
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 10,
+          "FORCE_DOWN": 1.05,
+          "TECH_POINT": 4,
+          "CAMERA_CRASH_TIME": 0.1,
+          "HIT_ADD_MP": 0.76,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_X": -300,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": -1,
+          "REACT_TYPE": 7,
+          "RE_ATTACK": 0,
+          "CAN_REVENGE": 0,
+          "CAN_ACTIVATE_NASOD_ARMOR_COMBO": 1,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 0.27
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 394456
+      }
+    }
+  }
+}

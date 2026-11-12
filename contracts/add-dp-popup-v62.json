@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "add-dp-popup-original2016-v62",
+  "targetClientMeasured": false,
+  "targetExecuted": false,
+  "source": {
+    "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+    "originalClientSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+    "classification": "selected historical non-atomic derived PE; static evidence"
+  },
+  "dpFormat": {
+    "address": "0x3305f80c",
+    "fileOffset": 22801420,
+    "bytes": 14,
+    "sha256": "648eff595b7da3aa276193bb40f1013238c77b37d2da19d53065a9278b823093",
+    "hex": "440050002b002000250064000000",
+    "encoding": "UTF-16LE",
+    "value": "DP+ %d"
+  },
+  "mpFormat": {
+    "address": "0x33016660",
+    "fileOffset": 22501984,
+    "bytes": 14,
+    "sha256": "9ff85c6b4177324cdd5555c25ad35072619525039c02d0e9a0399e4560f07e39",
+    "hex": "4d0050002b002000250064000000",
+    "encoding": "UTF-16LE",
+    "value": "MP+ %d"
+  },
+  "dpPopup": {
+    "address": "0x3273cf00",
+    "fileOffset": 13222656,
+    "bytes": 207,
+    "sha256": "59be2dd60c31590e8acf8ace5ce8e1905f3586daa6068d02860b21c7a8ad393d",
+    "hex": "81ec84000000a120d2263333c48984248000000033c06a7e508d4c240a51668944240ce8688d4a00d9842494000000dc0598ebfd32e8068f4a0050680cf805338d5424146a4052e8648536ffa1ec352a3383c41c85c074608b885001000085c97456d9ee8b94249800000051d91c246a0283ec0c8bc489108b9424b00000008950048b9424b40000008950088b9424a000000083ec0c8bc489108b9424b00000008950048b9424b40000008950088d44242050e8c8b26f008b8c248000000033cce8dc8c4a0081c484000000c21c00"
+  },
+  "picCharConsumer": {
+    "address": "0x32e38280",
+    "fileOffset": 20543104,
+    "bytes": 1366,
+    "sha256": "db6c2770efaba515a786a72b0630c356b0121c2f7e6366cc4a91d856637ba808",
+    "hex": "558d6c249c83ec646aff68706ff43264a1000000005083ec30a120d2263333c5894560535657508d45f464a3000000008b7d6c8bf133db8975e8897df0395e040f84ee040000c745580f000000895d54885d446aff538d4d44895dfce82fe8c6fe3bfb0f84b20000008bc78d50028bff668b0883c002663bcb75f52bc2d1f88bd885db0f8e920000006a006a006a006a0053576a006a00ff1588ac28338bf885ff7e758d47083d000400007716e8eee1daff8bf485f67424c706cccc000083c608eb195090e8e97e622c83c40485c07409c700dddd000083c0088bf08b45f06a006a00575653506a006a00ff1588ac283350568d4d44e89560000085f67416817ef8dddd00008d46f8750a5090e8bc7d622c83c4048b75e88b7df0d9eed99580000000d9858c000000dae9dfe0f6c4440f8a050200006a01518b4e088bc489088b4e048965ece87536eafe8bc8894dec85c90f84ca0300008b555433db85d20f8ebd0300003bd30f86d4010000837d58108b454473038d45440fbe341881fec80000000f8da40100008b55708b7de8d9873c03000083ec0c8bc4d95df089108b55748950048b5578895008e8c0c8eafed945f08bc885c9744fd9c0d905e880fe32dae9dfe0f6c4447a0bddd8d9413cd95df0d945f089b15c01000080bf400300000175248b874403000089411c8b97480300008951208b874c0300008941248b97500300008951288b555485db0f85e00000008b8588000000d9858400000048d98580000000d9457c745b480f85a20000008bc28945f0db45f085c07906d8059055fe32d8ccdc0d98ebfd32d95df0d945f0d9c0decad9c9d95ddcd9c0decad9c9d95de0dec9d95de4d94570d865dcd95d70d94574d865e0d95d74d94578d865e4d95d78eb548bc28945f0db45f085c07906d8059055fe32d8ccd95df0d945f0d9c0decad9c9d95dd0d9c0decad9c9d95dd4dec9d95dd8d94570d865d0d95d70d94574d865d4d95d74d94578d865d8d95d78eb06dddaddd8ddd885c974158b55708951688b457489416c8b55788951708b5554d9457c8b4decd8c9d95dc4d9c0d88d80000000d95dc8d88d84000000d95dccd945c4d84570d95d70d945c8d84574d95d74d945ccd84578d95d78433bd30f8f31feffffe9e7010000837d5400770b6800e8fd3290e898876e2c837d58108b454473038d45440fbe1881fbc80000000f8d210100006a01518b4e088bc489088b4e048965ece84434eafe85c00f84040100008b4d70d9863c03000083ec0cd95df08bd4890a8b4d74894a048b4d78894a088bc8e8c6c6eafe8bc885c9744bd945f0d905e880fe32dae9dfe0f6c4447a06d9413cd95df089995c01000080be400300000175248b964403000089511c8b86480300008941208b964c0300008951248b86500300008941288b858800000048741e48756b8b5554db455485d27906d8059055fe32d84df0dc0d98ebfd32eb138b4554db455485c07906d8059055fe32d84df0d95decd945ecd9c0d84d7cd95decd9c0d88d80000000d95de8d88d84000000d95df0d94570d865ecd95d70d94574d865e8d95d74d94578d865f0d95d7885c974128b55708951688b457489416c8b55788951708d4d00e8e00100008bc7c645fc018d50028da42400000000668b0883c0026685c975f52bc2d1f850578d4d00e8a78909ffd9ee8b4d70d95d3c8b8588000000d9858c0000008b5574d95d40894d208b4d7c89451c8b4578894d2c8d4d008955248b95800000008945288b8584000000518d8e2c030000895530894534c7453801000000e850080000837d1408720c8b550052e8a1d3daff83c404837d5810720c8b454450e88fd3daff83c4048d65b48b4df464890d00000000595f5e5b8b4d6033cde8d3d4daff8d65645dc22400",
+    "existingEvidenceId": "ev_4b86842b1d0c0a0b73f190e70e530067e1e2adb4f676ca592915128b82497be0",
+    "kind": "bounded direct CFG envelope; not linker-established function size",
+    "asciiTextureIdStore": {
+      "address": "0x32e38455",
+      "fileOffset": 20543573,
+      "bytes": 6,
+      "sha256": "ffc2b9427822a7065784e05847aba197c9682641320a2987de9756ce8eb0fe14",
+      "hex": "89b15c010000"
+    }
+  },
+  "glyph": {
+    "name": "PC_D.dds",
+    "archive": "data/data049.kom",
+    "ordinal": 81,
+    "rawPath": "raw/data/data049.kom/PC_D.dds",
+    "sha256": "c65a94379abeee950aae9a273d5cd06df0108a61f8485032b8027c851faa1ad4",
+    "bytes": 1152,
+    "width": 32,
+    "height": 32,
+    "textureId": 68,
+    "classification": "original target2016 extracted asset; not generated text"
+  },
+  "fontRegistrationReference": {
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Data.cpp",
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "sha256": "cc8543f0d18ef5962a83e5459d19d25643e8ebd93a8f31f3d4b7f5cdec541f05",
+    "lines": [
+      1822,
+      1845
+    ],
+    "selectedLfBytesSha256": "4c64ee474340c35ca3e75d2c7c1e570d1dcb82f7eb0960772e84d6a1ee12d974",
+    "classification": "fixed-V5 version reference, not target2016 execution",
+    "meaning": "PicCharDamage uses PC_ prefix; Red/Blue/Green clone the same font map with distinct original particle sequences"
+  },
+  "webRule": {
+    "prefix": "DP+ ",
+    "style": "red",
+    "mpStyle": "blue",
+    "classification": "retain user V61 red-DP/blue-MP presentation; add original missing D glyph",
+    "resourceAmounts": "existing actual clamped events; rawDP/20 remains unchanged"
+  },
+  "limits": [
+    "The original DP popup and same PicChar character consumer are positively bound.",
+    "This slice does not establish the complete Overlimit-to-popup caller path or original GPU pixels.",
+    "V61 Web imported glyph subset omitted D; this is not evidence that the original font lacked D.",
+    "Red DP is the project presentation rule; source popup style and other resource producers remain separate."
+  ]
+}

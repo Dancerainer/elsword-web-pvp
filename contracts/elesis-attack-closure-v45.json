@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "id": "elesis-attack-closure-v45",
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 hashchecked KL declarations; exactnative callback binding separate",
+  "sources": {
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "effectSets": {
+    "EffectSet_SI_A_SDK_INJECTION_STIGMA_BUFF": {
+      "raw": {
+        "NAME": "EffectSet_SI_A_SDK_INJECTION_STIGMA_BUFF",
+        "EFFECT0": {
+          "POSITION_OFFSET_Y": 100,
+          "NAME": "DamageEffect_SI_A_SDK_INJECTION_STIGMA_Buff",
+          "EFFECT_TYPE": 1,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02",
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT2": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02A",
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT3": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P04",
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT4": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P05",
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT5": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02",
+          "ROTATE_Y": 60,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT6": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02A",
+          "ROTATE_Y": 60,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT7": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P04",
+          "ROTATE_Y": 60,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT8": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P05",
+          "ROTATE_Y": 60,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT9": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02",
+          "ROTATE_Y": 120,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT10": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P02A",
+          "ROTATE_Y": 120,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT11": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P04",
+          "ROTATE_Y": 120,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        },
+        "EFFECT12": {
+          "NAME": "SI_A_SDK_INJECTION_STIGMA_P05",
+          "ROTATE_Y": 120,
+          "START_TIME": 0.2,
+          "BONE_NAME": "Bip01",
+          "EFFECT_TYPE": 8,
+          "TRACE_MORE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 23178
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_SI_A_SDK_INJECTION_STIGMA_Buff": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "SI_A_SDK_INJECTION_STIGMA_AttackBox_Buff",
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "NOT_CULL": 1,
+        "DAMAGE_DATA_CHANGE_TIME_GLOBAL_TIME": {
+          "1": 0.75
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0.5,
+          "TECH_POINT": 25,
+          "RATE_MODIFIER": 0.2,
+          "HIT_GAP": 1,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 1,
+          "APPLIED_SKILL_ID": 28213,
+          "DAMAGE": {
+            "PHYSIC": 0.52
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0.5,
+          "TECH_POINT": 25,
+          "RATE_MODIFIER": 0,
+          "HIT_GAP": 1,
+          "WAY_OF_SWORD_TYPE": 5,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 7,
+          "APPLIED_SKILL_ID": 28213,
+          "DAMAGE": {
+            "PHYSIC": 0.52
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "BUFF_FACTOR_ID": {
+            "1": 595
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "SDK_HIT_P00_2",
+          "POSITION_TYPE": 2
+        }
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      },
+      "declarationSha256": "e9bc65c3ad0d272a8a8bd5ec481764fb72e777263a29e082618f4ae34423ec84"
+    },
+    "DamageEffect_SCA_Dash_Combo_XZ": {
+      "raw": {
+        "DAMAGE_TIME": 999,
+        "MAIN_EFFECT_NAME": "SCA_Combo_ZZZ_Projectile_AttackBoX",
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_X": 500,
+          "FORCE_DOWN": 6.375,
+          "HIT_GAP": 0.1,
+          "CAMERA_CRASH_GAP": 10,
+          "TECH_POINT": 100.5,
+          "CAMERA_CRASH_TIME": 0.3,
+          "RATE_MODIFIER": 0.5,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 1.605,
+          "WAY_OF_SWORD_TYPE": 4,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1.675
+          },
+          "ARRANGED_FLY": 1,
+          "CAN_REVENGE": 0,
+          "CAN_REFLEX": 1,
+          "RE_ATTACK": 1
+        },
+        "TIME_PARTICLE0": {
+          "OFFSET_Y": -80,
+          "SCALE_Z": 0.8,
+          "SCALE_Y": 1.15,
+          "EVENT_TIME": 0.01,
+          "SCALE_X": 0.8,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_S_E_Projectile01",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "APPLY_ROTATED_OFFSET": 1,
+          "TRACE": 1
+        },
+        "TIME_PARTICLE1": {
+          "OFFSET_Y": -80,
+          "SCALE_Z": 1,
+          "SCALE_Y": 1.3,
+          "EVENT_TIME": 0.01,
+          "SCALE_X": 1,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_S_E_Projectile02",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        },
+        "TIME_PARTICLE2": {
+          "OFFSET_Y": -50,
+          "SCALE_Z": 0.8,
+          "SCALE_Y": 0.8,
+          "EVENT_TIME": 0.01,
+          "SCALE_X": 0.8,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "SCA_ADP03_3",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1
+        }
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+        "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+      },
+      "declarationSha256": "9ea752a7e2e488d76299dd3caf3d9164491b1882a8d872fa922ba2353c3af2b0"
+    }
+  },
+  "effectTemplates": {},
+  "bh": {
+    "effectSets": {},
+    "damageEffects": {
+      "DamageEffect_Elesis_SPK_DashJump_Combo_ZX": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "Mesh_SPK_Dashjump_ZX_Projectile",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "FOLLOW_LINE": 1,
+          "DAMAGE_DATA": {
+            "PVP_RATE": 0.6,
+            "FORCE_DOWN": 6.38,
+            "BACK_SPEED_X": 400,
+            "BACK_SPEED_Y": 0,
+            "CLEAR_SCREEN": 1,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 15,
+            "STOP_TIME_ATT": 0,
+            "TECH_POINT": 160,
+            "CAMERA_CRASH_TIME": 0.3,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0,
+            "HIT_ADD_MP": 4.38,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 1,
+            "HIT_TYPE": 19,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "MAGIC": 1.86
+            },
+            "RE_ATTACK": 0,
+            "CAN_REFLEX": 1,
+            "CAN_REVENGE": 0
+          },
+          "PASSIVE_PARTICLE0": {
+            "TRIGGER_TIME": 1.2,
+            "SCALE_X": 1.33,
+            "SCALE_Z": 1.33,
+            "SCALE_Y": 1.33,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall01",
+            "POSITION_TYPE": 3
+          },
+          "PASSIVE_PARTICLE1": {
+            "TRIGGER_TIME": 1.2,
+            "SCALE_Y": 1.33,
+            "SCALE_X": 1.33,
+            "SCALE_Z": 1.33,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall02",
+            "POSITION_TYPE": 3,
+            "TRACE": 1,
+            "TRACE_MORE": 1
+          },
+          "PASSIVE_PARTICLE2": {
+            "TRIGGER_TIME": 1.2,
+            "SCALE_Y": 1.33,
+            "SCALE_X": 1.33,
+            "SCALE_Z": 1.33,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall03",
+            "POSITION_TYPE": 3,
+            "TRACE": 1,
+            "TRACE_MORE": 1
+          },
+          "PASSIVE_PARTICLE3": {
+            "TRIGGER_TIME": 1.2,
+            "SCALE_Y": 1.33,
+            "SCALE_X": 1.33,
+            "SCALE_Z": 1.33,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall04",
+            "POSITION_TYPE": 3,
+            "TRACE": 1,
+            "TRACE_MORE": 1
+          },
+          "PASSIVE_PARTICLE4": {
+            "BONE_NAME": "Dummy01",
+            "TRIGGER_TIME": 1.2,
+            "SCALE_X": 1.33,
+            "SCALE_Z": 1.33,
+            "SCALE_Y": 1.33,
+            "PARTICLE_NAME": "EffectSet_A_SBH_FIREWORKS01",
+            "POSITION_TYPE": 0
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE4": {
+            "TRIGGER_COUNT": 20,
+            "PARTICLE_NAME": "FireDamageSmoke",
+            "POSITION_TYPE": 2
+          },
+          "HIT_DAMAGE_EFFECT0": {
+            "SCALE_Z": 0.75,
+            "SCALE_X": 0.75,
+            "DAMAGE_EFFECT_NAME": "DamageEffect_Elesis_SBH_Dash_Combo_X_Explosion",
+            "SCALE_Y": 0.75,
+            "POSITION_TYPE": 2,
+            "LIFE_TIME_ONLY": 1
+          },
+          "SOUND0": {
+            "EVENT_TIME": 0.001,
+            "FILE_NAME": "NASOD_SPRAY_Fire.ogg"
+          }
+        },
+        "source": {
+          "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+          "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+        },
+        "declarationSha256": "d74de88d95d42e5136726ee1cd4f6737855fbcc5e952d7de7144c6619805e536"
+      },
+      "DamageEffect_Elesis_SBH_DashJump_Combo_ZX": {
+        "raw": {
+          "DAMAGE_TIME": 1,
+          "MAIN_EFFECT_NAME": "Mesh_SPK_Dashjump_ZX_Projectile",
+          "EFFECT_TYPE": 1,
+          "ATTACKED_BY_UNIT": 0,
+          "ATTACKED_BY_EFFECT": 0,
+          "FOLLOW_LINE": 1,
+          "DAMAGE_DATA": {
+            "PVP_RATE": 0.6,
+            "FORCE_DOWN": 6.38,
+            "BACK_SPEED_X": 400,
+            "BACK_SPEED_Y": 0,
+            "CLEAR_SCREEN": 1,
+            "HIT_GAP": 0,
+            "CAMERA_CRASH_GAP": 15,
+            "STOP_TIME_ATT": 0,
+            "TECH_POINT": 160,
+            "CAMERA_CRASH_TIME": 0.3,
+            "RATE_MODIFIER": 0.5,
+            "STOP_TIME_DEF": 0,
+            "HIT_ADD_MP": 4.38,
+            "WAY_OF_SWORD_TYPE": 1,
+            "DAMAGE_TYPE": 1,
+            "HIT_TYPE": 19,
+            "REACT_TYPE": 1,
+            "ATTACK_TYPE": 2,
+            "DAMAGE": {
+              "MAGIC": 1.86
+            },
+            "RE_ATTACK": 0,
+            "CAN_REFLEX": 1,
+            "CAN_REVENGE": 0
+          },
+          "PASSIVE_PARTICLE0": {
+            "TRIGGER_TIME": 1.2,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall01",
+            "POSITION_TYPE": 3
+          },
+          "PASSIVE_PARTICLE1": {
+            "TRIGGER_TIME": 1.2,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall03",
+            "POSITION_TYPE": 3,
+            "TRACE": 1,
+            "TRACE_MORE": 1
+          },
+          "PASSIVE_PARTICLE2": {
+            "TRIGGER_TIME": 1.2,
+            "PARTICLE_NAME": "EffectSet_SBH_FireBall04",
+            "POSITION_TYPE": 3,
+            "TRACE": 1,
+            "TRACE_MORE": 1
+          },
+          "PASSIVE_PARTICLE3": {
+            "BONE_NAME": "Dummy01",
+            "TRIGGER_TIME": 1.2,
+            "PARTICLE_NAME": "EffectSet_A_SBH_FIREWORKS01",
+            "POSITION_TYPE": 0
+          },
+          "HIT_PARTICLE0": {
+            "TRIGGER_COUNT": 10,
+            "PARTICLE_NAME": "FireDamageImpactRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE1": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactRingRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE2": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactCoreRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE3": {
+            "TRIGGER_COUNT": 1,
+            "PARTICLE_NAME": "FireDamageImpactSlashRed",
+            "POSITION_TYPE": 2
+          },
+          "HIT_PARTICLE4": {
+            "TRIGGER_COUNT": 20,
+            "PARTICLE_NAME": "FireDamageSmoke",
+            "POSITION_TYPE": 2
+          },
+          "HIT_DAMAGE_EFFECT0": {
+            "SCALE_Z": 0.75,
+            "SCALE_X": 0.75,
+            "DAMAGE_EFFECT_NAME": "DamageEffect_Elesis_SBH_Dash_Combo_X_Explosion",
+            "SCALE_Y": 0.75,
+            "POSITION_TYPE": 2,
+            "LIFE_TIME_ONLY": 1
+          },
+          "SOUND0": {
+            "EVENT_TIME": 0.001,
+            "FILE_NAME": "NASOD_SPRAY_Fire.ogg"
+          }
+        },
+        "source": {
+          "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+          "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+        },
+        "declarationSha256": "e7597e6ea737ee33dc4c73dd9b224b27f3df6e25cbba6ea13b0abdcf7ef07c00"
+      }
+    },
+    "effectTemplates": {}
+  }
+}

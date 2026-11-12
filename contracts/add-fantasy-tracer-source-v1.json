@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "qualification": "2016 passive/skill/damage declarations; fixed a8438f3 Add C++ reference contains later2026 reconstruction, not target2016 native code",
+  "sources": {
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "fixedCpp": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a"
+    },
+    "fixedHeader": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.h",
+      "sha256": "040e51f3723b8beea44251c945be3c2de4dfc742ea6ef83306b26af014d66f04"
+    }
+  },
+  "targetPassive": [
+    {
+      "raw": {
+        "m_wstrIconTextureName": "DLG_SKILL_Passive_07.tga",
+        "m_wstrImageTexturePieceName": "",
+        "m_wstrName": "Fantasy Tracer",
+        "m_eActiveSkillUseCondtion": 0,
+        "m_iRequireLearnSkillPoint": 0,
+        "m_usFPConsumtion": 0,
+        "m_usCBConsumption": 0,
+        "m_wstrImageTextureName": "",
+        "m_eType": 8,
+        "m_iRequireUpgradeSkillPoint": 0,
+        "m_usWOSType": 0,
+        "m_wstrMainDesc": "Particle Shot and Phase Shift can now connect to Nasod Armor combos. Also restores MP while activating Dynamo Configuration Mode (Awakening).\n\nPress the skill button to activate combo within 2 seconds of the attack. Can only be activated while in Dynamo Configuration Mode (Awakening).\nCan be used while knocked down. (Cannot use while being attacked) ",
+        "m_usFPGainCount": 0,
+        "m_wstrIconTexturePieceName": "SI_P_ALP_FANTASY_TRACER",
+        "m_eID": 29404,
+        "m_EffectiveDesc": {
+          "1": "Dynamo Configuration Mode (Awaken) MP Recovery: 30% of Used DP",
+          "2": "Dynamo Configuration Mode (Awaken) MP Recovery: 40% of Consumed DP",
+          "3": "Dynamo Configuration Mode (Awaken) MP Recovery: 50% of Consumed DP"
+        },
+        "m_bBornSealed": 1,
+        "m_bShowSkillLevel": 1,
+        "m_ePowerRate": 3,
+        "m_RequireCharacterLevel": {
+          "1": 60,
+          "2": 67,
+          "3": 69
+        },
+        "SA_EFFECTIVE_RATE": {
+          "1": 0.3,
+          "2": 0.4,
+          "3": 0.5
+        },
+        "SA_SCOPE_ABS": {
+          "1": 1000,
+          "2": 1000,
+          "3": 1000
+        },
+        "SA_SCOPE_ABS_Y": {
+          "1": 500,
+          "2": 500,
+          "3": 500
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 32125
+      }
+    }
+  ],
+  "currentTreeNodes": [
+    {
+      "raw": {
+        "m_iColumnIndex": 4,
+        "m_iSkillID": 29404,
+        "m_iRowIndex": 12,
+        "m_iMasterLevel": 3,
+        "m_eUnitClass": 122
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 53375
+      }
+    }
+  ],
+  "sourceMethods": [
+    {
+      "method": "AttackResultByType",
+      "line": 4649,
+      "lastLine": 4679,
+      "sha256": "05b8ba602713403bf8b38b6be98127391104658fecd8e4832d71fb2cbb76116b",
+      "laterReconstruction": true
+    },
+    {
+      "method": "NasodArmorAttackStartFuture",
+      "line": 7629,
+      "lastLine": 7728,
+      "sha256": "3a147ce5b6eeac37d695c80e821aadd9d10e5c5f45779460e2f5c7e163145edb",
+      "laterReconstruction": true
+    },
+    {
+      "method": "NasodArmorLandingEndFuture",
+      "line": 7785,
+      "lastLine": 7835,
+      "sha256": "42d5675d6868c01cfe389dc022773340c8d40866ffd485929f71c2e2f8bd000a",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetNasodArmorAttackTarget",
+      "line": 12415,
+      "lastLine": 12558,
+      "sha256": "9144da46fb178c9e58cb81fa4367389a06408fddf30f5123874d2deb5142534e",
+      "laterReconstruction": true
+    },
+    {
+      "method": "GetIsFantasyTracerTargetSkillID",
+      "line": 13415,
+      "lastLine": 13428,
+      "sha256": "bad87be1ee655c1d94e3bdca50ac097c5a80992fe2543971b7d74b161d164672",
+      "laterReconstruction": false
+    },
+    {
+      "method": "SetUseFantasyTracerTarget",
+      "line": 13434,
+      "lastLine": 13449,
+      "sha256": "e361b1254c8d64af4a504fca300e5b5ad3586e4684701d1b6018bed4cc6d14b4",
+      "laterReconstruction": false
+    },
+    {
+      "method": "ProcessFantasyTracerTargetInfo",
+      "line": 13454,
+      "lastLine": 13486,
+      "sha256": "42a3d97e03e88afa70098d32567fe3898fd5d426e011338e8d2b4a55716cfe81",
+      "laterReconstruction": false
+    }
+  ],
+  "producerExcerpt": [
+    {
+      "line": 12415,
+      "code": "void CX2GUAdd::SetNasodArmorAttackTarget( IN const CX2DamageManager::DamageData& pDamageData_ )"
+    },
+    {
+      "line": 12417,
+      "code": "\tif( NULL != g_pX2Game &&"
+    },
+    {
+      "line": 12418,
+      "code": "\t\t0.f  >= pDamageData_.m_fHpPercentUp &&"
+    },
+    {
+      "line": 12419,
+      "code": "\t\tnull != pDamageData_.optrDefenderGameUnit &&"
+    },
+    {
+      "line": 12420,
+      "code": "\t\tCX2DamageManager::AT_UNIT == pDamageData_.defenderType )"
+    },
+    {
+      "line": 12450,
+      "code": "\t\tconst CX2SkillTree::SKILL_ID eSkillID = pDamageData_.m_eUsedSkillID;"
+    },
+    {
+      "line": 12456,
+      "code": "\t\tcase CX2SkillTree::SI_A_AN_PULSE_BULLET:"
+    },
+    {
+      "line": 12457,
+      "code": "\t\tcase CX2SkillTree::SI_A_AN_PHASE_SHIFT:"
+    },
+    {
+      "line": 12460,
+      "code": "\t\t\t\tif ( true == GetIsFormationMode() )"
+    },
+    {
+      "line": 12467,
+      "code": "\t\t\t\t\t\tif ( vIt->m_eSkillID == eSkillID )"
+    },
+    {
+      "line": 12469,
+      "code": "\t\t\t\t\t\t\tm_vecFantasyTracerTargetInfo.erase( vIt );"
+    },
+    {
+      "line": 12475,
+      "code": "\t\t\t\t\tconst float fRemainTime = _CONST_ADD_::FANTASY_TRACER_TARGET_REMAIN_TIME + _CONST_ADD_::FANTASY_TRACER_TARGET_DELETE_READY_TIME;"
+    },
+    {
+      "line": 12478,
+      "code": "\t\t\t\t\tFantasyTracerTargetInfo FTTargetInfo = FantasyTracerTargetInfo( fRemainTime, NAAttackTargetData, eSkillID );"
+    },
+    {
+      "line": 12481,
+      "code": "\t\t\t\t\tm_vecFantasyTracerTargetInfo.push_back( FantasyTracerTargetInfo( FTTargetInfo ) );"
+    }
+  ],
+  "constants": {
+    "lines": [
+      73,
+      74
+    ],
+    "FANTASY_TRACER_TARGET_REMAIN_TIME": 2,
+    "FANTASY_TRACER_TARGET_DELETE_READY_TIME": 1
+  },
+  "header": {
+    "targetInfoLines": [
+      242,
+      274
+    ],
+    "fields": [
+      "m_fRemainTime",
+      "m_NATargetData",
+      "m_eSkillID",
+      "m_bIsUseData"
+    ],
+    "unusedLegacyField": "m_bEnableChargedImpulsar is declared here but not initialized or consumed by this struct"
+  },
+  "allVectorWrites": [
+    {
+      "line": 213,
+      "operation": "constructor resize(0)"
+    },
+    {
+      "line": 12469,
+      "operation": "erase previous row with same USED skill identity"
+    },
+    {
+      "line": 12481,
+      "operation": "push initialized3s row, used=false"
+    },
+    {
+      "line": 13440,
+      "operation": "consume matching row: used=true; active attack skill=family"
+    },
+    {
+      "line": 13462,
+      "operation": "reference remaining -= effective actor elapsed"
+    },
+    {
+      "line": 13467,
+      "operation": "remaining<=1 sets used=true"
+    },
+    {
+      "line": 13477,
+      "operation": "remaining<=0 erase"
+    }
+  ],
+  "skillFamilies": {
+    "29201": [
+      29201,
+      29216
+    ],
+    "29202": [
+      29202,
+      29217
+    ]
+  },
+  "damageRoots": [
+    {
+      "name": "DamageEffect_A_AN_Phase_Shift_Impact",
+      "field": "DAMAGE_DATA",
+      "usedSkillId": 29201,
+      "appliedSkillId": 29201,
+      "canActivateNasodArmorCombo": null,
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 148327
+      }
+    },
+    {
+      "name": "DamageEffect_AN_Pulse_Bullet_Ball",
+      "field": "DAMAGE_DATA",
+      "usedSkillId": 29202,
+      "appliedSkillId": 29202,
+      "canActivateNasodArmorCombo": null,
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 148877
+      }
+    },
+    {
+      "name": "DamageEffect_AN_Pulse_Bullet_Ball_Shock",
+      "field": "DAMAGE_DATA",
+      "usedSkillId": 29202,
+      "appliedSkillId": 29202,
+      "canActivateNasodArmorCombo": null,
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 148937
+      }
+    },
+    {
+      "name": "DamageEffect_Add_Phase_Shift",
+      "field": "DAMAGE_DATA",
+      "usedSkillId": 29201,
+      "appliedSkillId": 29201,
+      "canActivateNasodArmorCombo": null,
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 151248
+      }
+    },
+    {
+      "name": "DamageEffect_Add_Phase_Shift_Explosion",
+      "field": "DAMAGE_DATA",
+      "usedSkillId": 29201,
+      "appliedSkillId": 29201,
+      "canActivateNasodArmorCombo": null,
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 151348
+      }
+    }
+  ],
+  "behavior": {
+    "producer": "accepted locally-owned AT_UNIT hit with HP_PERCENT_UP<=0; Formation; raw USED_SKILL_ID29201 or29202. Separate from ordinary CAN_ACTIVATE/range gates. Web omits unused unlearned-passive storage.",
+    "eligibility": "learned29404+Formation+matching unused row; source tick marks used at remaining<=1",
+    "retention": "initial remaining3, eligibility2, deletion at0; selected row is reread by Nasod AttackStart and LandingEnd",
+    "cost": "Pulse0MP/0DP, cooldown preserved; Phase live dummy retains target5MP price although Fantasy route has priority over blink; no dummy0MP; DP0 and cooldown preserved",
+    "stateException": "2016 passive explicitly permits knocked-down states, excludes being attacked; fixed11304..11310 upgrades use condition only DOWN_FRONT/BACK",
+    "targetScopeBoundary": "2016 passive exposes SA_SCOPE_ABS1000 and SA_SCOPE_ABS_Y500; fixed producer special branch does not read these values; ordinary default branch alone uses1000/500. No new range filter is inferred."
+  },
+  "legacyChargedImpulsar": {
+    "templates": [
+      {
+        "skillId": 9400,
+        "name": "Dynamo Research - Overcharge",
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 14014
+        }
+      }
+    ],
+    "currentTreeNodeCount": 0,
+    "status": "legacy-template-not-currently-configurable",
+    "instruction": "Do not present9400 as a missing current2016 profession passive."
+  },
+  "extractor": {
+    "cachedMethodPresent": "SetNasodArmorAttackTarget",
+    "returnType": "void",
+    "finding": "No parser return-type gap here; producer is outside methods named FantasyTracer.",
+    "legacyLineMetadataBug": "audit_add_sources.py recounts extract-returned line numbers as byte offsets. This contract uses the original returned line numbers directly; method SHA and cached code are unchanged."
+  }
+}

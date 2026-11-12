@@ -1,0 +1,1432 @@
+{
+  "schemaVersion": 1,
+  "scope": "Target2016 invisible Prism NPC1576/1577 bounded motion, collision and defence host",
+  "targetExecuted": false,
+  "packageScriptsExecuted": false,
+  "sourceModel": {
+    "archive": "data117.kom",
+    "ordinal": 162,
+    "indexSha256": "32ff33604b344319dcd25d33b593bb2c111dedb5037d7b25b1dc0897cd4de774",
+    "packedSha256": "f55b3b17ff5d8798bd2bc9f07dab1d1322cc3e6f64c67fbbe4a494584d29b2eb",
+    "rawSha256": "43cd694a00e7e1d34f45959c7ff4d6aa35efc4176377795a5e6340694e6c65d0",
+    "bytes": 25849
+  },
+  "declarationEvidence": {
+    "path": "reports/analysis/add-prism-consumers-2016/original-resources.json.gz",
+    "sha256": "a609c6d4cf85c52a931aafe0ed32cca144fb7a21c5ccba29ec4ccedc6db0b464"
+  },
+  "scripts": {
+    "Particle_Prism_Start.lua": {
+      "name": "Particle_Prism_Start.lua",
+      "ordinal": 1864,
+      "rawSha256": "f925e689cb9a1f54f6beec2e3e4e512f32d287a55ba73213e65ebb8920242e16",
+      "packedSha256": "8d0bf8831490f461b4084a250200b4dd7d78bd0fea1324f5b7d53155535de6b5",
+      "indexSha256": "05d9aae608b32d6088870f5f59d17c69698614417a5cc0542af6ae4b515a1ecb",
+      "declarations": {
+        "INIT_AI": {
+          "NO_BRAIN": 1
+        },
+        "INIT_COMPONENT": {
+          "DAMAGE_DOWN": 0,
+          "DELETE_NPC_BY_SUB_STAGE_END": 1,
+          "DIE_FLY": 0,
+          "EXCLAMATION_MARK_SEQ": "",
+          "FALL_DOWN": 1,
+          "HEAD_BONE_NAME": "REMOTE_MORTAR_Head",
+          "HITTED_TYPE": 1,
+          "IMMUNITY_DAMAGE_DATA_STOP_TIME": 1,
+          "IMMUNITY_TIME_STOP": 1,
+          "MP_CHANGE_RATE": 0,
+          "MP_CHARGE_RATE": 0,
+          "QUESTION_MARK_SEQ": "",
+          "SHADOW_FILE_NAME": "shadow.dds",
+          "SHADOW_SIZE": 200,
+          "USE_SLASH_TRACE": 0
+        },
+        "INIT_DEVICE": {
+          "READY_SOUND": {},
+          "READY_TEXTURE": {}
+        },
+        "INIT_MOTION": {
+          "MOTION_FILE_NAME": "SI_A_CTT_REMOTE_MORTAR_Effect.x"
+        },
+        "INIT_PHYSIC": {
+          "DASH_JUMP_SPEED": 2300,
+          "G_ACCEL": 4000,
+          "JUMP_SPEED": 1500,
+          "MAX_G_SPEED": -2000,
+          "RELOAD_ACCEL": 2000,
+          "RUN_SPEED": 400,
+          "WALK_SPEED": 400
+        },
+        "INIT_STATE": {
+          "1": {
+            "LUA_STATE_START_FUNC": "PARTICLE_PRISM_START_STATE_START",
+            "STATE_NAME": "PARTICLE_PRISM_START_START"
+          },
+          "2": {
+            "STATE_NAME": "PARTICLE_PRISM_START_WAIT"
+          },
+          "3": {
+            "LUA_STATE_START_FUNC": "PARTICLE_PRISM_START_DYING_STATE_START",
+            "STATE_NAME": "PARTICLE_PRISM_START_DYING"
+          },
+          "4": {
+            "STATE_NAME": "PARTICLE_PRISM_START_DAMAGE"
+          },
+          "BIG_DAMAGE_AIR": "PARTICLE_PRISM_START_DAMAGE",
+          "BIG_DAMAGE_LAND_BACK": "PARTICLE_PRISM_START_DAMAGE",
+          "BIG_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_START_DAMAGE",
+          "COMMON_FRAME_FUNC": "PARTICLE_PRISM_START_COMMON_FRAME_MOVE",
+          "DAMAGE_REVENGE": "PARTICLE_PRISM_START_DAMAGE",
+          "DOWN_DAMAGE_AIR": "PARTICLE_PRISM_START_DAMAGE",
+          "DOWN_DAMAGE_LAND_BACK": "PARTICLE_PRISM_START_DAMAGE",
+          "DOWN_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_START_DAMAGE",
+          "DYING_LAND_BACK": "PARTICLE_PRISM_START_DYING",
+          "DYING_LAND_FRONT": "PARTICLE_PRISM_START_DYING",
+          "DYING_SKY": "PARTICLE_PRISM_START_DYING",
+          "FLY_DAMAGE_BACK": "PARTICLE_PRISM_START_DAMAGE",
+          "FLY_DAMAGE_FRONT": "PARTICLE_PRISM_START_DAMAGE",
+          "REVENGE_ATTACK": "",
+          "SELF_DESTRUCTION_STATE": "PARTICLE_PRISM_START_DYING",
+          "SMALL_DAMAGE_AIR": "PARTICLE_PRISM_START_DAMAGE",
+          "SMALL_DAMAGE_LAND_BACK": "PARTICLE_PRISM_START_DAMAGE",
+          "SMALL_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_START_DAMAGE",
+          "START_STATE": "PARTICLE_PRISM_START_START",
+          "UP_DAMAGE": "PARTICLE_PRISM_START_DAMAGE",
+          "WAIT_STATE": "PARTICLE_PRISM_START_WAIT"
+        },
+        "INIT_SYSTEM": {
+          "HEURISTIC_SIMULATION": 1,
+          "LUA_SHAREABLE": 1,
+          "UNIT_HEIGHT": 250,
+          "UNIT_LAYER": 11,
+          "UNIT_SCALE": 2.2,
+          "UNIT_WIDTH": 50
+        },
+        "PARTICLE_PRISM_START_COMMON_FRAME_MOVE": {
+          "$prototype": 2,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_START_DAMAGE": {
+          "ANIM_NAME": "Damage",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "EVENT_PROCESS": {
+            "1": {
+              "1": 1,
+              "2": "PARTICLE_PRISM_START_WAIT"
+            }
+          },
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 2,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_START_DYING": {
+          "ANIM_NAME": "Wait",
+          "CAN_PASS_UNIT": 1,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "DYING_END": 1,
+          "DYING_SPEED": 4,
+          "INVINCIBLE": {
+            "1": 0,
+            "2": 100
+          },
+          "LAND_CONNECT": 0,
+          "PLAY_TYPE": 2,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "ADD_PARTICLE_PRISM_02.ogg"
+          },
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_START_DYING_STATE_START": {
+          "$prototype": 1,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_START_START": {
+          "ANIM_NAME": "Start",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "EVENT_PROCESS": {
+            "1": {
+              "1": 1,
+              "2": "PARTICLE_PRISM_START_WAIT"
+            }
+          },
+          "FLY_AI": 1,
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 2,
+          "SHOW": 0,
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "ADD_PARTICLE_PRISM_01.ogg"
+          },
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_START_STATE_START": {
+          "$prototype": 0,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_START_WAIT": {
+          "ANIM_NAME": "Wait",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 0,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "SOUND_PLAY0": {
+            "1": 0.01,
+            "2": "ADD_PARTICLE_PRISM_LOOP_01.ogg"
+          },
+          "TRANSITION": 0
+        }
+      }
+    },
+    "Particle_Prism_End.lua": {
+      "name": "Particle_Prism_End.lua",
+      "ordinal": 1863,
+      "rawSha256": "9d72653b848ef06fb206bd9820006aa2b4c744f09e69cf88cffa8f9c2c3ba115",
+      "packedSha256": "ce247b2b22fd577fab2ffbd954bddf1fb23839e250b2f1b3ffac36b01a7f63b8",
+      "indexSha256": "05d9aae608b32d6088870f5f59d17c69698614417a5cc0542af6ae4b515a1ecb",
+      "declarations": {
+        "INIT_AI": {
+          "NO_BRAIN": 1
+        },
+        "INIT_COMPONENT": {
+          "DAMAGE_DOWN": 0,
+          "DELETE_NPC_BY_SUB_STAGE_END": 1,
+          "DIE_FLY": 0,
+          "EXCLAMATION_MARK_SEQ": "",
+          "FALL_DOWN": 1,
+          "HEAD_BONE_NAME": "REMOTE_MORTAR_Head",
+          "HITTED_TYPE": 1,
+          "IMMUNITY_DAMAGE_DATA_STOP_TIME": 1,
+          "IMMUNITY_TIME_STOP": 1,
+          "MP_CHANGE_RATE": 0,
+          "MP_CHARGE_RATE": 0,
+          "QUESTION_MARK_SEQ": "",
+          "SHADOW_FILE_NAME": "shadow.dds",
+          "SHADOW_SIZE": 200,
+          "USE_SLASH_TRACE": 0
+        },
+        "INIT_DEVICE": {
+          "READY_SOUND": {},
+          "READY_TEXTURE": {}
+        },
+        "INIT_MOTION": {
+          "MOTION_FILE_NAME": "SI_A_CTT_REMOTE_MORTAR_Effect.x"
+        },
+        "INIT_PHYSIC": {
+          "DASH_JUMP_SPEED": 2300,
+          "G_ACCEL": 4000,
+          "JUMP_SPEED": 1500,
+          "MAX_G_SPEED": -2000,
+          "RELOAD_ACCEL": 2000,
+          "RUN_SPEED": 400,
+          "WALK_SPEED": 400
+        },
+        "INIT_STATE": {
+          "1": {
+            "LUA_STATE_START_FUNC": "PARTICLE_PRISM_END_STATE_START",
+            "STATE_NAME": "PARTICLE_PRISM_END_START"
+          },
+          "2": {
+            "STATE_NAME": "PARTICLE_PRISM_END_WAIT"
+          },
+          "3": {
+            "LUA_STATE_START_FUNC": "PARTICLE_PRISM_END_DYING_STATE_START",
+            "STATE_NAME": "PARTICLE_PRISM_END_DYING"
+          },
+          "4": {
+            "STATE_NAME": "PARTICLE_PRISM_END_DAMAGE"
+          },
+          "BIG_DAMAGE_AIR": "PARTICLE_PRISM_END_DAMAGE",
+          "BIG_DAMAGE_LAND_BACK": "PARTICLE_PRISM_END_DAMAGE",
+          "BIG_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_END_DAMAGE",
+          "COMMON_FRAME_FUNC": "PARTICLE_PRISM_END_COMMON_FRAME_MOVE",
+          "DAMAGE_REVENGE": "PARTICLE_PRISM_END_DAMAGE",
+          "DOWN_DAMAGE_AIR": "PARTICLE_PRISM_END_DAMAGE",
+          "DOWN_DAMAGE_LAND_BACK": "PARTICLE_PRISM_END_DAMAGE",
+          "DOWN_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_END_DAMAGE",
+          "DYING_LAND_BACK": "PARTICLE_PRISM_END_DYING",
+          "DYING_LAND_FRONT": "PARTICLE_PRISM_END_DYING",
+          "DYING_SKY": "PARTICLE_PRISM_END_DYING",
+          "FLY_DAMAGE_BACK": "PARTICLE_PRISM_END_DAMAGE",
+          "FLY_DAMAGE_FRONT": "PARTICLE_PRISM_END_DAMAGE",
+          "REVENGE_ATTACK": "",
+          "SELF_DESTRUCTION_STATE": "PARTICLE_PRISM_END_DYING",
+          "SMALL_DAMAGE_AIR": "PARTICLE_PRISM_END_DAMAGE",
+          "SMALL_DAMAGE_LAND_BACK": "PARTICLE_PRISM_END_DAMAGE",
+          "SMALL_DAMAGE_LAND_FRONT": "PARTICLE_PRISM_END_DAMAGE",
+          "START_STATE": "PARTICLE_PRISM_END_START",
+          "UP_DAMAGE": "PARTICLE_PRISM_END_DAMAGE",
+          "WAIT_STATE": "PARTICLE_PRISM_END_WAIT"
+        },
+        "INIT_SYSTEM": {
+          "HEURISTIC_SIMULATION": 1,
+          "LUA_SHAREABLE": 1,
+          "UNIT_HEIGHT": 250,
+          "UNIT_LAYER": 11,
+          "UNIT_SCALE": 2.2,
+          "UNIT_WIDTH": 50
+        },
+        "PARTICLE_PRISM_END_COMMON_FRAME_MOVE": {
+          "$prototype": 2,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_END_DAMAGE": {
+          "ANIM_NAME": "Damage",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "EVENT_PROCESS": {
+            "1": {
+              "1": 1,
+              "2": "PARTICLE_PRISM_END_WAIT"
+            }
+          },
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 2,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_END_DYING": {
+          "ANIM_NAME": "Wait",
+          "CAN_PASS_UNIT": 1,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "DYING_END": 1,
+          "DYING_SPEED": 4,
+          "INVINCIBLE": {
+            "1": 0,
+            "2": 100
+          },
+          "LAND_CONNECT": 0,
+          "PLAY_TYPE": 2,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_END_DYING_STATE_START": {
+          "$prototype": 1,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_END_START": {
+          "ANIM_NAME": "Start",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "EVENT_PROCESS": {
+            "1": {
+              "1": 1,
+              "2": "PARTICLE_PRISM_END_WAIT"
+            }
+          },
+          "FLY_AI": 1,
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 2,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "TRANSITION": 0
+        },
+        "PARTICLE_PRISM_END_STATE_START": {
+          "$prototype": 0,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_END_WAIT": {
+          "ANIM_NAME": "Wait",
+          "CAN_PASS_UNIT": 0,
+          "CAN_PUSH_UNIT": 0,
+          "DISABLE_GRAVITY_TIME_END": 100,
+          "DISABLE_GRAVITY_TIME_START": 0,
+          "LAND_CONNECT": 0,
+          "NEVER_MOVE": 1,
+          "PASSIVE_SPEED_X": 0,
+          "PASSIVE_SPEED_Y": 0,
+          "PLAY_TYPE": 0,
+          "RIGHT": 1,
+          "SHOW": 0,
+          "TRANSITION": 0
+        }
+      }
+    }
+  },
+  "npcStats": {
+    "1576": {
+      "ACCURACY": 0,
+      "ATK_MAGIC": 13,
+      "ATK_PHYSIC": 13,
+      "AVOIDANCE": 0,
+      "DAMAGE_TYPE": 0,
+      "DEF_BLUE": 500,
+      "DEF_DARK": 500,
+      "DEF_GREEN": 500,
+      "DEF_LIGHT": 500,
+      "DEF_MAGIC": 0,
+      "DEF_PHYSIC": 0,
+      "DEF_RED": 500,
+      "DEF_WIND": 500,
+      "HARD_LEVEL": {
+        "ATK_MAGIC": 2,
+        "ATK_PHYSIC": 2,
+        "DEF_MAGIC": 0,
+        "DEF_PHYSIC": 0,
+        "EXP": 0,
+        "HP": 5.4
+      },
+      "MAX_HP": 30,
+      "NPC_ID": 1576,
+      "SCAN_NEAR_RANGE": 0,
+      "SCAN_RATE": 0
+    },
+    "1577": {
+      "ACCURACY": 0,
+      "ATK_MAGIC": 13,
+      "ATK_PHYSIC": 13,
+      "AVOIDANCE": 0,
+      "DAMAGE_TYPE": 0,
+      "DEF_BLUE": 500,
+      "DEF_DARK": 500,
+      "DEF_GREEN": 500,
+      "DEF_LIGHT": 500,
+      "DEF_MAGIC": 0,
+      "DEF_PHYSIC": 0,
+      "DEF_RED": 500,
+      "DEF_WIND": 500,
+      "HARD_LEVEL": {
+        "ATK_MAGIC": 2,
+        "ATK_PHYSIC": 2,
+        "DEF_MAGIC": 0,
+        "DEF_PHYSIC": 0,
+        "EXP": 0,
+        "HP": 5.4
+      },
+      "MAX_HP": 30,
+      "NPC_ID": 1577,
+      "SCAN_NEAR_RANGE": 0,
+      "SCAN_RATE": 0
+    }
+  },
+  "pose": {
+    "schemaVersion": 1,
+    "frames": [
+      {
+        "name": "Scene_Root",
+        "parent": null,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Bip01",
+        "parent": 0,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "COLLISION_SPHERE1",
+        "parent": 1,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          79.62290954589844,
+          -3.000000106112566e-06,
+          1.0
+        ]
+      },
+      {
+        "name": "COLLISION_SPHERE2",
+        "parent": 1,
+        "nativeRowMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          21.255205154418945,
+          -9.999999974752427e-07,
+          1.0
+        ]
+      }
+    ],
+    "helpers": [
+      {
+        "name": "COLLISION_SPHERE1",
+        "parent": "Bip01",
+        "nativeStoredBoundingRadius": 36.37307357788086
+      },
+      {
+        "name": "COLLISION_SPHERE2",
+        "parent": "Bip01",
+        "nativeStoredBoundingRadius": 36.37306213378906
+      }
+    ],
+    "clips": [
+      {
+        "name": "Wait",
+        "ticks_per_second": 4800.0,
+        "durationSeconds": 0.5,
+        "nativePlaybackField": 0,
+        "tracks": [
+          {
+            "frame_name": "COLLISION_SPHERE2",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "COLLISION_SPHERE1",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ],
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Bip01",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Scene_Root",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Damage",
+        "ticks_per_second": 4800.0,
+        "durationSeconds": 0.5,
+        "nativePlaybackField": 0,
+        "tracks": [
+          {
+            "frame_name": "COLLISION_SPHERE2",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "COLLISION_SPHERE1",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ],
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Bip01",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Scene_Root",
+            "translation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.5
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Start",
+        "ticks_per_second": 4800.0,
+        "durationSeconds": 0.7,
+        "nativePlaybackField": 0,
+        "tracks": [
+          {
+            "frame_name": "COLLISION_SPHERE2",
+            "translation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ],
+                [
+                  0.0,
+                  21.255205154418945,
+                  -9.999999974752427e-07
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "COLLISION_SPHERE1",
+            "translation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ],
+                [
+                  0.0,
+                  79.62290954589844,
+                  -3.000000106112566e-06
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Bip01",
+            "translation": {
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.7
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  4.141128063201904,
+                  0.0
+                ],
+                [
+                  0.0,
+                  2.4156579971313477,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.7
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.1,
+                0.13333333333333333,
+                0.16666666666666666,
+                0.2,
+                0.7
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          },
+          {
+            "frame_name": "Scene_Root",
+            "translation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ]
+            },
+            "scale": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              ]
+            },
+            "rotation": {
+              "times": [
+                0.0,
+                0.7
+              ],
+              "values": [
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  -0.0,
+                  1.0
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "audio": {
+    "schemaVersion": 1,
+    "profile": {
+      "id": "add-prism-endpoints-2016"
+    },
+    "files": {
+      "ADD_PARTICLE_PRISM_01.ogg": {
+        "file": "../common/add-prism/audio/ADD_PARTICLE_PRISM_01.ogg",
+        "sha256": "9c89d3a71e7f1b1fb7de28248da079fd2cc86211d74f1bbe52592ead14af3895",
+        "bytes": 76431,
+        "source": {
+          "archive": "data/data069.kom",
+          "ordinal": 57,
+          "name": "ADD_PARTICLE_PRISM_01.ogg",
+          "rawPath": "raw/data/data069.kom/ADD_PARTICLE_PRISM_01.ogg",
+          "sha256": "9c89d3a71e7f1b1fb7de28248da079fd2cc86211d74f1bbe52592ead14af3895",
+          "bytes": 76431,
+          "signatureHex": "4f676753000200000000000000002f14"
+        },
+        "originalKom": {
+          "ordinal": 57,
+          "indexSha256": "683ae735eb5fd14335768d3f943c837d5a3afc8b136da1cfba75b432b6d4d86b",
+          "packedSha256": "8cb4f5df0713c9cd3df6b3cda320ac867dcb5ec1bc1ee271953d71fdca8eefd5"
+        }
+      },
+      "ADD_PARTICLE_PRISM_02.ogg": {
+        "file": "../common/add-prism/audio/ADD_PARTICLE_PRISM_02.ogg",
+        "sha256": "615e6ecb90c6dc34256113b377dd240a465fbbe57da0d83be7b4c48785187699",
+        "bytes": 52826,
+        "source": {
+          "archive": "data/data069.kom",
+          "ordinal": 58,
+          "name": "ADD_PARTICLE_PRISM_02.ogg",
+          "rawPath": "raw/data/data069.kom/ADD_PARTICLE_PRISM_02.ogg",
+          "sha256": "615e6ecb90c6dc34256113b377dd240a465fbbe57da0d83be7b4c48785187699",
+          "bytes": 52826,
+          "signatureHex": "4f676753000200000000000000005352"
+        },
+        "originalKom": {
+          "ordinal": 58,
+          "indexSha256": "683ae735eb5fd14335768d3f943c837d5a3afc8b136da1cfba75b432b6d4d86b",
+          "packedSha256": "336bf25b90441d401a8aa03146e286a45721461235073431a9494921a40b60db"
+        }
+      },
+      "ADD_PARTICLE_PRISM_LOOP_01.ogg": {
+        "file": "../common/add-prism/audio/ADD_PARTICLE_PRISM_LOOP_01.ogg",
+        "sha256": "e313efab3804c36e709f5d0f58f5a971880ecde616385209c9b8e4b4e73f49b3",
+        "bytes": 289596,
+        "source": {
+          "archive": "data/data069.kom",
+          "ordinal": 59,
+          "name": "ADD_PARTICLE_PRISM_LOOP_01.ogg",
+          "rawPath": "raw/data/data069.kom/ADD_PARTICLE_PRISM_LOOP_01.ogg",
+          "sha256": "e313efab3804c36e709f5d0f58f5a971880ecde616385209c9b8e4b4e73f49b3",
+          "bytes": 289596,
+          "signatureHex": "4f67675300020000000000000000d13e"
+        },
+        "originalKom": {
+          "ordinal": 59,
+          "indexSha256": "683ae735eb5fd14335768d3f943c837d5a3afc8b136da1cfba75b432b6d4d86b",
+          "packedSha256": "95a2bf5c9e2159b9608a62916ebb2bf65fa17411cdfe38f0460b176736e14580"
+        }
+      }
+    },
+    "states": {},
+    "effectSounds": {},
+    "unsupported": []
+  },
+  "limits": [
+    "Pose uses original KSM stored collision radii and selected source tracks; target battle not measured.",
+    "Source SHOW=0 means no visible NPC body resource is needed; caster field remains independently visible.",
+    "Current deterministic simulation timeline supplies the wallclock input. No original battle clock or runtime heap sampled.",
+    "NPC defence0/HARD_LEVEL defence0 are source declarations. The common qualified Web NPC damage formula is reused."
+  ]
+}

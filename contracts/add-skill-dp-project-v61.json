@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "add-skill-dp-project-v61",
+  "evidenceClass": "explicit user project rule; original declarations remain unchanged",
+  "finalRule": "LP, MM and DE skill-use DP expenditure ignores equipment addDpConsumptionReduction. The earlier DE exception was explicitly withdrawn by the user.",
+  "professions": [
+    "LP",
+    "MM",
+    "DE"
+  ],
+  "ignoredChannel": "equipmentAttributes.addDpConsumptionReduction",
+  "preservedChannels": [
+    "authored skill DP/MP conversion",
+    "authored profession passives including DE29411",
+    "skill traits",
+    "raw resource admission comparisons"
+  ],
+  "skillUseCallers": [
+    "addSkillResourceCost",
+    "void-field-maintenance",
+    "pulse-extra-loop",
+    "space-crack-extra",
+    "addHitResources DPRT_SPECIAL_ACTIVE0 / DPRT_ACTIVE1 contact negative changes"
+  ],
+  "separatePaths": [
+    "formation-enter",
+    "ordinary command resource gates",
+    "nasod-barrier",
+    "DPRT_COMMAND2 / DPRT_NASOD_ARMOR3 contact and received DP change",
+    "DP recovery and refund",
+    "respawn and time-ring restoration"
+  ],
+  "displayContract": {
+    "position": "current actor [x,y+50,z]",
+    "amount": "actual clamped recovered amount, expressed in displayed MP/DP units",
+    "zero": "no positive recovery event when the actual recovery is zero",
+    "events": {
+      "addOverlimitResourceRecovered": [
+        "MP",
+        "DP"
+      ],
+      "addMutationMpRecovered": [
+        "MP"
+      ],
+      "addMindControlRefund": [
+        "MP",
+        "DP"
+      ]
+    },
+    "dpScale": "raw DP /20; rawAmount retained when reporting DP"
+  },
+  "limits": [
+    "No new damage, resource amount or passive chance is inferred from a display request.",
+    "This rule is a Web project override, not original-client measurement.",
+    "Heavy tests and browser checks are queued by the integration task."
+  ],
+  "auditCorrection": "The first793 report separated every on-hit change too broadly. User final all-skill rule includes original ACTIVE/SPECIAL_ACTIVE on-contact expenditure; original special-active rate0 remains0."
+}

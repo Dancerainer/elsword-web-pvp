@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasurements": 0,
+  "target": {
+    "path": "data/data036.kom/SocketOptionForm.lua",
+    "sha256": "a8a0b4956aa24e06988b84a2723d038782b09733442325a1a70695ea57fcbc9e",
+    "prototypes": {
+      "CalculateLinearAdditionalAttackValue": {
+        "id": 8,
+        "flags": 0,
+        "params": 1,
+        "frame_size": 2,
+        "upvalues": "",
+        "instructions": [
+          9,
+          2147615060,
+          655638,
+          131400,
+          283,
+          16843041,
+          16908570,
+          131400
+        ],
+        "gc": [],
+        "numbers": [
+          1,
+          1.5,
+          9.5
+        ],
+        "firstline": 0,
+        "line_span": 0
+      },
+      "CalculateIntermediateAdditionalAttackValue": {
+        "id": 41,
+        "flags": 0,
+        "params": 2,
+        "frame_size": 4,
+        "upvalues": "",
+        "instructions": [
+          572,
+          66316,
+          33686060,
+          131879,
+          131912
+        ],
+        "gc": [
+          "CalculateLinearAdditionalAttackValue"
+        ],
+        "numbers": [],
+        "firstline": 0,
+        "line_span": 0
+      },
+      "CalculateFinalAdditionalAttackValue": {
+        "id": 74,
+        "flags": 0,
+        "params": 2,
+        "frame_size": 6,
+        "upvalues": "",
+        "instructions": [
+          572,
+          780,
+          66572,
+          33751596,
+          33554972,
+          66364,
+          50463551,
+          132108,
+          66839,
+          33751852,
+          197132,
+          131863,
+          131841,
+          2147746644,
+          33751841,
+          50594586,
+          33751846,
+          50659867,
+          33948188,
+          66364,
+          50463551,
+          132108,
+          66838,
+          197422
+        ],
+        "gc": [
+          "min",
+          "math",
+          "CalculateIntermediateAdditionalAttackValue"
+        ],
+        "numbers": [
+          0.01,
+          1.65,
+          0.4,
+          -0.4,
+          1.32,
+          0.064,
+          0.375
+        ],
+        "firstline": 0,
+        "line_span": 0
+      }
+    }
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidenceClass": "fixed V5 version reference; not target2016 executable",
+    "files": [
+      {
+        "path": "X2Lib/X2SocketItem.h",
+        "sha256": "c6a2188db7e90e8c22b9bbf2a1455aa5d5266c7dd2191dddf02c881a64c1f997",
+        "gitBlob": "5efa5f79b19215c58fb2b65724b2b80f95ee5d59",
+        "ranges": [
+          {
+            "firstLine": 1118,
+            "lastLine": 1122,
+            "sha256": "b99c41c8b4255c3bfa24f99f0df2deb2049c003932158f7c7788c1ed9ad93be1"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2BuffBehaviorTemplet.cpp",
+        "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+        "gitBlob": "5237c18c633c95e70145c520a67ce47786504cdd",
+        "ranges": [
+          {
+            "firstLine": 889,
+            "lastLine": 998,
+            "sha256": "e402eee739eec7584515304c4621aa5778fa9a14aa153d8aedb060160779c482"
+          },
+          {
+            "firstLine": 1042,
+            "lastLine": 1115,
+            "sha256": "a901bce72a3464db214b4eba2b5eb7171f379241dd24e6c4f4ed1834853fcf45"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2BuffTemplet.h",
+        "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b",
+        "gitBlob": "cce459ca0f237407dc40538edbb162fbac6e1574",
+        "ranges": [
+          {
+            "firstLine": 892,
+            "lastLine": 939,
+            "sha256": "3d0ca88e99e967b895358115b60b49339242ebed1dd0caf825abe3d5be093158"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GameUnit.cpp",
+        "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+        "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+        "ranges": [
+          {
+            "firstLine": 12073,
+            "lastLine": 12086,
+            "sha256": "4262991bb43b6046c08620dcfd2823cefe9b80f5751a8a7f4508ae169fd20f76"
+          },
+          {
+            "firstLine": 14251,
+            "lastLine": 14294,
+            "sha256": "f602a20eefe38a28d11cfbc17a56ec57a8c54fdd5b840e981d1d93645e023d5c"
+          },
+          {
+            "firstLine": 14297,
+            "lastLine": 14388,
+            "sha256": "15a0864207db2e64f5de85eafb951e517f0fa0cce611725cecaa508eb8e28a21"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+        "ranges": [
+          {
+            "firstLine": 9377,
+            "lastLine": 9410,
+            "sha256": "ce9acf7dfd71192bb18661dbb6520b06b239df9655c76230edd5c887bb8eb62b"
+          },
+          {
+            "firstLine": 22964,
+            "lastLine": 22974,
+            "sha256": "1e37e46e52a70466dfae8bf47191bff19f474d9dc61884250036a2f87caa36e5"
+          }
+        ]
+      }
+    ]
+  },
+  "rule": {
+    "buff": 20,
+    "template": 19,
+    "skill": 21410,
+    "maximumStacks": 5,
+    "maximumLevelFixValue": 10,
+    "fixToSocket": "FIX_VALUE * (1.5 * (level - 1) + 9.5); stack linearly",
+    "intermediate": "socketPoints / (level == 1 ? 10 : 1.5 * (level - 1) + 9.5) * .01",
+    "curve": "x=min(intermediate,1.65); if x>.4 then x=x*(-.4*x+1.32)-.064; result=min(x*.375,1)",
+    "damage": "1.5 * pow(motionPower * recordedCastPower,.65) * additionalAttack * totalAttackStat",
+    "order": "after critical and equipment additional defence; excludes level damage and no-damage packets"
+  },
+  "independentAlgebra": [
+    {
+      "stacks": 1,
+      "nominalPoints": 10,
+      "ratio": 0.0375
+    },
+    {
+      "stacks": 2,
+      "nominalPoints": 20,
+      "ratio": 0.075
+    },
+    {
+      "stacks": 3,
+      "nominalPoints": 30,
+      "ratio": 0.1125
+    },
+    {
+      "stacks": 4,
+      "nominalPoints": 40,
+      "ratio": 0.15
+    },
+    {
+      "stacks": 5,
+      "nominalPoints": 50,
+      "ratio": 0.186
+    }
+  ],
+  "limits": [
+    "Only IS nominal Buff FIX points are connected; equipment socket point presets remain independent.",
+    "No complete double-attack proc consumer is introduced.",
+    "Source version combination remains a simulation candidate, not original2016 measured behavior."
+  ]
+}

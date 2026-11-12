@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "targetExecuted": false,
+  "evidenceClass": "original2016 bounded static direct CFG plus separately labelled current Web/native observation",
+  "originalSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "derivedSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "capture": "reports/lp-feedback-v58-evidence/storm-source-c.json.gz",
+  "directFactory": {
+    "entry": "0x3273b120",
+    "return": "0x3273b300",
+    "bytes": 481,
+    "sha256": "927a12391820ed9d8983eca36aa508104bb3c02018a4267f8893a4cf949b498c",
+    "directFlowComplete": true,
+    "qualification": "Containing entry inferred from compiler alignment padding, and full decoded instructions cover the exact factory-name pointer. Calls are not followed and runtime object values are not observed.",
+    "bonePush": "0x3273b180 -> UTF16 0x330044e0 = Bip01_Footsteps",
+    "position": "GetBonePos return XYZ is copied unchanged to the original DamageEffect factory call at0x3273b243; no extra150Y is added.",
+    "effectNamePush": "0x3273b23b -> UTF16 0x3305f6d0 = DamageEffect_ALP_Psychic_Storm_Loop",
+    "intervalInstruction": "0x3273b152 fadd qword[0x3305f718]",
+    "intervalBytes": "000000a047e1ba3f",
+    "intervalSeconds": 0.10499999672174454,
+    "preservedSize": "After factory success, actor71bc>1 multiplies main mesh scale3cc/3d0/3d4; source mutation scale remains unchanged."
+  },
+  "loopVisualSet": {
+    "entry": "0x32759600",
+    "return": "0x327597e9",
+    "bytes": 490,
+    "sha256": "0f32952beabb2e1b47841396caacd91c916f5774b0030f53a925271eac46fa6c",
+    "directFlowComplete": true,
+    "setNamePush": "0x32759650 -> UTF16 0x330605d8 = EffectSet_SI_SA_ALP_Psychic_Storm_Loop",
+    "preservedSize": "Original group setter31dfe340 applies the actor71bc scale with originalflags0/1.",
+    "additionalObservedCall": "After the set, original body passes668 to actor virtual1e0; exact BF668 declarations are captured separately, but no new buff behavior is implemented by this fix."
+  },
+  "supersededReference": {
+    "file": "X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "lines": "9905..9937",
+    "behavior": "FixedV5 reference uses Bip01 plus150Y. This disagrees with target2016 factory and no longer supplies this target behavior."
+  },
+  "damageDeclarations": {
+    "attraction": "DamageEffect_ALP_Psychic_Storm_Start_BlackHole retains NO_DAMAGE1/MAGIC0; no guessed HP damage is assigned to the pulling carrier.",
+    "periodic": "DamageEffect_ALP_Psychic_Storm_Loop retains MAGIC3.49/PVP_RATE0.48 and original helper geometry; only factory bone placement is corrected.",
+    "resourceEnum": "Independent raw DPRT_SPEICAL_ACITVE remains unresolved. Existing resource fail-closed behavior is not changed and does not block the independent HP/reaction path."
+  },
+  "remainingBoundaries": [
+    "No original-client dynamic execution or pixel gold is asserted.",
+    "Web deterministic RNG, target IDs/positions, native-WASM helper adapter and original converted pose are reconstruction inputs.",
+    "Current narrow CFG does not independently close the whole skill registration, every caller or the observed additional buff virtual dispatch."
+  ]
+}

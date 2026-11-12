@@ -1,0 +1,652 @@
+{
+  "schemaVersion": 1,
+  "client": "Steam-NA-2016-V6.0420.5",
+  "originalClientMeasured": false,
+  "visuals": {
+    "schemaVersion": 1,
+    "portraits": {
+      "LK": {
+        "file": "portraits/lk.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "3c2b039c0955d07c6bdf3b2a95fddf0d869df924e4e64d6425c39176fd6a0e5c",
+        "atlas": "DLG_UI_Common_Texture16_NEW",
+        "piece": "L_KNIGHT_SMALL",
+        "bounds": [
+          437.0,
+          103.0,
+          487.0,
+          153.0
+        ]
+      },
+      "RS": {
+        "file": "portraits/rs.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "61152989ee4fbb84ebffbada6ce41c5f2b2a7bbe89eaafbfa9360cfaba373dff",
+        "atlas": "DLG_UI_Common_Texture16_NEW",
+        "piece": "R_SLAYER_SMALL",
+        "bounds": [
+          386.0,
+          103.0,
+          436.0,
+          153.0
+        ]
+      },
+      "IS": {
+        "file": "portraits/is.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "878d3e4e5580ae4b50b273549424ed2273b76ff7ae6cfbedd4395c0b49256b34",
+        "atlas": "DLG_UI_Common_Texture66_NEW",
+        "piece": "I_SWORD_SMALL",
+        "bounds": [
+          215.0,
+          248.0,
+          265.0,
+          298.0
+        ]
+      },
+      "RF": {
+        "file": "portraits/rf.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "0249622dc4bdf502e725720a39e1ced20c6a2a27b8c3d20fdd0402696b395d14",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "R_FIST_SMALL",
+        "bounds": [
+          372.0,
+          212.0,
+          422.0,
+          262.0
+        ]
+      },
+      "VC": {
+        "file": "portraits/vc.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "8727564587db4568970316fcdf1e9ca28c7b0cf5f84b24a6787e2c4cc25c20e5",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "V_COMMANDER_SMALL",
+        "bounds": [
+          417.0,
+          462.0,
+          467.0,
+          512.0
+        ]
+      },
+      "BM": {
+        "file": "portraits/bm.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "c0b40321ae76f013bf1b85323eed5e4243cd3730c2dea7f5bc9718a575a13424",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "B_MASTER_SMALL",
+        "bounds": [
+          420.0,
+          212.0,
+          470.0,
+          262.0
+        ]
+      }
+    },
+    "guildIcons": {
+      "500": {
+        "file": "guild/500.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "4401a9c9005cb99cb0a5c7d3621c8232a89f61b956812ed62aa66d24e0577750",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_BALANCED_BODY",
+        "bounds": [
+          54.0,
+          0.0,
+          108.0,
+          54.0
+        ]
+      },
+      "501": {
+        "file": "guild/501.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "3cbed929e263ef4347286862e2f022190e314699e1b77db571c888a54ba850c0",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_HARMONIC_SPIRIT",
+        "bounds": [
+          0.0,
+          0.0,
+          54.0,
+          54.0
+        ]
+      },
+      "502": {
+        "file": "guild/502.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "0cf3467584e6290a95f57d9b262f78c6725e7e2094449d73c953f0e1279d221c",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CHEERING_OF_TEAM",
+        "bounds": [
+          162.0,
+          54.0,
+          216.0,
+          108.0
+        ]
+      },
+      "503": {
+        "file": "guild/503.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "4272e317058d10abf8a9b700c5de0c0197a5fb720d8797128e546f8f2461086f",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_MASTER_OF_ALCHEMIST",
+        "bounds": [
+          108.0,
+          54.0,
+          162.0,
+          108.0
+        ]
+      },
+      "504": {
+        "file": "guild/504.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "599297bf3e202c5571f99e8b24347ce92a8526dd149b3f330eeea6947327ceb0",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CONCENTRATION_OF_SPIRIT",
+        "bounds": [
+          162.0,
+          0.0,
+          216.0,
+          54.0
+        ]
+      },
+      "505": {
+        "file": "guild/505.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "bff0502942da5877c1f9e74b9fec50f691d616ba7bd7da846e38827ce67b6098",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CONCENTRATION_MAGICAL_POWER",
+        "bounds": [
+          0.0,
+          54.0,
+          54.0,
+          108.0
+        ]
+      },
+      "506": {
+        "file": "guild/506.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "e76f6599f01073fa20d821f1232c635a747d6d95316b9c5246f2d6c39f91fb45",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_VIOLENT",
+        "bounds": [
+          108.0,
+          0.0,
+          162.0,
+          54.0
+        ]
+      },
+      "507": {
+        "file": "guild/507.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "c4cda9d54412e7d85b49ff208b783553058e5b4c1f0148d220122201db582b86",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_LIBERATION_OF_ANGER",
+        "bounds": [
+          54.0,
+          54.0,
+          108.0,
+          108.0
+        ]
+      },
+      "508": {
+        "file": "guild/508.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "f4d08137ffd192e92c97a675a762e52238d358b64b7dabb745a7d34ef6436aa7",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_INFINITE_STRENGTH",
+        "bounds": [
+          108.0,
+          108.0,
+          162.0,
+          162.0
+        ]
+      },
+      "509": {
+        "file": "guild/509.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "c49eda5b647955e366063936e8aef9aab7c78914757e2d934bd636b263f623e4",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CHANCE_TO_REVERSE",
+        "bounds": [
+          162.0,
+          108.0,
+          216.0,
+          162.0
+        ]
+      },
+      "510": {
+        "file": "guild/510.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "978b4f8864c7475e498d2a7d1b95a581d817027b9c6e0b6b7e85820ca8879df5",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_SACRIFICE_OF_HERO",
+        "bounds": [
+          54.0,
+          108.0,
+          108.0,
+          162.0
+        ]
+      },
+      "511": {
+        "file": "guild/511.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "e9843c898983f336913bfe5cfa3f2a2d3e3448d887a2733f8e6f62d125ed9781",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_MIDAS",
+        "bounds": [
+          0.0,
+          108.0,
+          54.0,
+          162.0
+        ]
+      }
+    },
+    "guildFrame": {
+      "file": "guild/frame.png",
+      "width": 56,
+      "height": 73,
+      "sha256": "8724dbafa996ae02a3735d978bc87102850524b4e408649823037d6ed552ed8c",
+      "atlas": "DLG_UI_Common_Texture10",
+      "piece": "SKILL_BG_PASSIVE",
+      "bounds": [
+        63.0,
+        219.0,
+        119.0,
+        292.0
+      ]
+    },
+    "pieces": {
+      "portraits/lk.png": {
+        "file": "portraits/lk.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "3c2b039c0955d07c6bdf3b2a95fddf0d869df924e4e64d6425c39176fd6a0e5c",
+        "atlas": "DLG_UI_Common_Texture16_NEW",
+        "piece": "L_KNIGHT_SMALL",
+        "bounds": [
+          437.0,
+          103.0,
+          487.0,
+          153.0
+        ]
+      },
+      "portraits/rs.png": {
+        "file": "portraits/rs.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "61152989ee4fbb84ebffbada6ce41c5f2b2a7bbe89eaafbfa9360cfaba373dff",
+        "atlas": "DLG_UI_Common_Texture16_NEW",
+        "piece": "R_SLAYER_SMALL",
+        "bounds": [
+          386.0,
+          103.0,
+          436.0,
+          153.0
+        ]
+      },
+      "portraits/is.png": {
+        "file": "portraits/is.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "878d3e4e5580ae4b50b273549424ed2273b76ff7ae6cfbedd4395c0b49256b34",
+        "atlas": "DLG_UI_Common_Texture66_NEW",
+        "piece": "I_SWORD_SMALL",
+        "bounds": [
+          215.0,
+          248.0,
+          265.0,
+          298.0
+        ]
+      },
+      "portraits/rf.png": {
+        "file": "portraits/rf.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "0249622dc4bdf502e725720a39e1ced20c6a2a27b8c3d20fdd0402696b395d14",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "R_FIST_SMALL",
+        "bounds": [
+          372.0,
+          212.0,
+          422.0,
+          262.0
+        ]
+      },
+      "portraits/vc.png": {
+        "file": "portraits/vc.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "8727564587db4568970316fcdf1e9ca28c7b0cf5f84b24a6787e2c4cc25c20e5",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "V_COMMANDER_SMALL",
+        "bounds": [
+          417.0,
+          462.0,
+          467.0,
+          512.0
+        ]
+      },
+      "portraits/bm.png": {
+        "file": "portraits/bm.png",
+        "width": 50,
+        "height": 50,
+        "sha256": "c0b40321ae76f013bf1b85323eed5e4243cd3730c2dea7f5bc9718a575a13424",
+        "atlas": "DLG_UI_Common_Texture25_NEW",
+        "piece": "B_MASTER_SMALL",
+        "bounds": [
+          420.0,
+          212.0,
+          470.0,
+          262.0
+        ]
+      },
+      "guild/500.png": {
+        "file": "guild/500.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "4401a9c9005cb99cb0a5c7d3621c8232a89f61b956812ed62aa66d24e0577750",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_BALANCED_BODY",
+        "bounds": [
+          54.0,
+          0.0,
+          108.0,
+          54.0
+        ]
+      },
+      "guild/501.png": {
+        "file": "guild/501.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "3cbed929e263ef4347286862e2f022190e314699e1b77db571c888a54ba850c0",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_HARMONIC_SPIRIT",
+        "bounds": [
+          0.0,
+          0.0,
+          54.0,
+          54.0
+        ]
+      },
+      "guild/502.png": {
+        "file": "guild/502.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "0cf3467584e6290a95f57d9b262f78c6725e7e2094449d73c953f0e1279d221c",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CHEERING_OF_TEAM",
+        "bounds": [
+          162.0,
+          54.0,
+          216.0,
+          108.0
+        ]
+      },
+      "guild/503.png": {
+        "file": "guild/503.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "4272e317058d10abf8a9b700c5de0c0197a5fb720d8797128e546f8f2461086f",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_MASTER_OF_ALCHEMIST",
+        "bounds": [
+          108.0,
+          54.0,
+          162.0,
+          108.0
+        ]
+      },
+      "guild/504.png": {
+        "file": "guild/504.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "599297bf3e202c5571f99e8b24347ce92a8526dd149b3f330eeea6947327ceb0",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CONCENTRATION_OF_SPIRIT",
+        "bounds": [
+          162.0,
+          0.0,
+          216.0,
+          54.0
+        ]
+      },
+      "guild/505.png": {
+        "file": "guild/505.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "bff0502942da5877c1f9e74b9fec50f691d616ba7bd7da846e38827ce67b6098",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CONCENTRATION_MAGICAL_POWER",
+        "bounds": [
+          0.0,
+          54.0,
+          54.0,
+          108.0
+        ]
+      },
+      "guild/506.png": {
+        "file": "guild/506.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "e76f6599f01073fa20d821f1232c635a747d6d95316b9c5246f2d6c39f91fb45",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_VIOLENT",
+        "bounds": [
+          108.0,
+          0.0,
+          162.0,
+          54.0
+        ]
+      },
+      "guild/507.png": {
+        "file": "guild/507.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "c4cda9d54412e7d85b49ff208b783553058e5b4c1f0148d220122201db582b86",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_LIBERATION_OF_ANGER",
+        "bounds": [
+          54.0,
+          54.0,
+          108.0,
+          108.0
+        ]
+      },
+      "guild/508.png": {
+        "file": "guild/508.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "f4d08137ffd192e92c97a675a762e52238d358b64b7dabb745a7d34ef6436aa7",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_INFINITE_STRENGTH",
+        "bounds": [
+          108.0,
+          108.0,
+          162.0,
+          162.0
+        ]
+      },
+      "guild/509.png": {
+        "file": "guild/509.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "c49eda5b647955e366063936e8aef9aab7c78914757e2d934bd636b263f623e4",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_CHANCE_TO_REVERSE",
+        "bounds": [
+          162.0,
+          108.0,
+          216.0,
+          162.0
+        ]
+      },
+      "guild/510.png": {
+        "file": "guild/510.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "978b4f8864c7475e498d2a7d1b95a581d817027b9c6e0b6b7e85820ca8879df5",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_SACRIFICE_OF_HERO",
+        "bounds": [
+          54.0,
+          108.0,
+          108.0,
+          162.0
+        ]
+      },
+      "guild/511.png": {
+        "file": "guild/511.png",
+        "width": 54,
+        "height": 54,
+        "sha256": "e9843c898983f336913bfe5cfa3f2a2d3e3448d887a2733f8e6f62d125ed9781",
+        "atlas": "DLG_SKILL_GUILD01",
+        "piece": "SI_GP_COMMON_MIDAS",
+        "bounds": [
+          0.0,
+          108.0,
+          54.0,
+          162.0
+        ]
+      },
+      "guild/frame.png": {
+        "file": "guild/frame.png",
+        "width": 56,
+        "height": 73,
+        "sha256": "8724dbafa996ae02a3735d978bc87102850524b4e408649823037d6ed552ed8c",
+        "atlas": "DLG_UI_Common_Texture10",
+        "piece": "SKILL_BG_PASSIVE",
+        "bounds": [
+          63.0,
+          219.0,
+          119.0,
+          292.0
+        ]
+      }
+    },
+    "sources": {
+      "DLG_UI_Common_Texture16_NEW.tet": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture16_NEW.TET",
+        "sha256": "856fd17941ce1d15703a7d37e43d4324fada3d1b5afe4cfbc74c6093c9e10901"
+      },
+      "DLG_UI_Common_Texture16_NEW.tga": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture16_NEW.tga",
+        "sha256": "49c4059764f8191b1bade03d147c8b7da3612722a0a53e3a386197b41ce7eb35"
+      },
+      "DLG_UI_Common_Texture66_NEW.tet": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture66_NEW.TET",
+        "sha256": "dd586594c332ab27089eb77db2462cd9f789bfeb496f5b7581b683b0a8b08bb4"
+      },
+      "DLG_UI_Common_Texture66_NEW.tga": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture66_NEW.tga",
+        "sha256": "cc9662f439a013d4c752f7be15346fb7973a023f3878d0c2230a39804748cb33"
+      },
+      "DLG_UI_Common_Texture25_NEW.tet": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture25_NEW.TET",
+        "sha256": "dfe1032b4a70266505f94ac4eb6be6793a86048a88f94aa161afcce8008f0978"
+      },
+      "DLG_UI_Common_Texture25_NEW.tga": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture25_NEW.tga",
+        "sha256": "6a8dffa2f8fa714f31acad218a89043f996b7d57de05317e10ee4e5a6a05d440"
+      },
+      "DLG_SKILL_GUILD01.tet": {
+        "archive": "data/data063.kom",
+        "rawPath": "raw/data/data063.kom/DLG_SKILL_GUILD01.tet",
+        "sha256": "a267a60b27001c5575bbd20c0ed85f490d467531ab2b2665a84d8ef3fbb8b344"
+      },
+      "DLG_SKILL_GUILD01.tga": {
+        "archive": "data/data063.kom",
+        "rawPath": "raw/data/data063.kom/DLG_SKILL_GUILD01.tga",
+        "sha256": "1ce2044eaf930014ccc8b97e25bf60e7a6d4f1fc888dee395b1d428811e1d88f"
+      },
+      "DLG_UI_Common_Texture10.tet": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture10.TET",
+        "sha256": "9deee27cfba3717e3dae28f6af613ec27ee72922540985947b37dda63988da83"
+      },
+      "DLG_UI_Common_Texture10.tga": {
+        "archive": "data/data057.kom",
+        "rawPath": "raw/data/data057.kom/DLG_UI_Common_Texture10.tga",
+        "sha256": "7e3a19d5c9492b6530a4da77b64222df0dab3baca18258f4c361baaeb4a3030a"
+      },
+      "X2_Button_Mouse_Up.ogg": {
+        "archive": "data/data085.kom",
+        "rawPath": "raw/data/data085.kom/X2_Button_Mouse_Up.ogg",
+        "sha256": "b5694a8dcf5218f5c15949a2d66461d85d299e09a0e87d412fd3e9567c288304"
+      },
+      "UI_PopUp_Positive_01.ogg": {
+        "archive": "data/data085.kom",
+        "rawPath": "raw/data/data085.kom/UI_PopUp_Positive_01.ogg",
+        "sha256": "0b565b52e863dfff64622f83f9ae9f04f9b3a57b1df28f9f9cb2faaa76270b3b"
+      },
+      "Count.ogg": {
+        "archive": "data/data085.kom",
+        "rawPath": "raw/data/data085.kom/Count.ogg",
+        "sha256": "227d5c6cf6bfceabb457bb510982476ef7918e8cbb18d2fbd0bfb8c50e36ab10"
+      }
+    },
+    "originalClientMeasured": false
+  },
+  "audio": {
+    "schemaVersion": 1,
+    "files": {
+      "lobby": {
+        "file": "lobby/lobby.ogg",
+        "bytes": 3027441,
+        "sha256": "1c84cff3d1e38d8dcf616c404d2b8b1cbb412cdde4f318c2b5a520083bccd903",
+        "durationSeconds": 187.11868480725624,
+        "source": "asset_sources/client\\data\\music\\lobby.ogg",
+        "originalName": "lobby.ogg"
+      },
+      "click": {
+        "file": "lobby/click.ogg",
+        "bytes": 4803,
+        "sha256": "b5694a8dcf5218f5c15949a2d66461d85d299e09a0e87d412fd3e9567c288304",
+        "durationSeconds": 0.19505668934240364,
+        "source": "asset_work\\raw\\data\\data085.kom\\X2_Button_Mouse_Up.ogg",
+        "originalName": "X2_Button_Mouse_Up.ogg"
+      },
+      "queue": {
+        "file": "lobby/queue.ogg",
+        "bytes": 23026,
+        "sha256": "0b565b52e863dfff64622f83f9ae9f04f9b3a57b1df28f9f9cb2faaa76270b3b",
+        "durationSeconds": 1.4194104308390023,
+        "source": "asset_work\\raw\\data\\data085.kom\\UI_PopUp_Positive_01.ogg",
+        "originalName": "UI_PopUp_Positive_01.ogg"
+      },
+      "count": {
+        "file": "lobby/count.ogg",
+        "bytes": 4272,
+        "sha256": "227d5c6cf6bfceabb457bb510982476ef7918e8cbb18d2fbd0bfb8c50e36ab10",
+        "durationSeconds": 0.04163265306122449,
+        "source": "asset_work\\raw\\data\\data085.kom\\Count.ogg",
+        "originalName": "Count.ogg"
+      }
+    },
+    "cuePolicy": "Original UI positive notification on accepted matching entry; original Count for countdown. Web triggers, not original-client playback evidence."
+  }
+}

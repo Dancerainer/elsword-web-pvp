@@ -1,0 +1,225 @@
+{
+  "schema": "common-charge-standup-sources-v8",
+  "targetClientMeasured": false,
+  "evidenceClass": "target2016-static-declarations+fixedV5-consumer-candidate+user-rule",
+  "originals": [
+    {
+      "path": "asset_work/raw/data/data036.kom/RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "evidenceClass": "target2016-declaration+original-D3DX-converted-keys; client-unmeasured"
+    },
+    {
+      "path": "asset_work/raw/data/data036.kom/Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    }
+  ],
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "localInput": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+    "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+    "methods": [
+      {
+        "name": "RVC_DASH_COMBO_ZZZ_StateStart",
+        "lineStart": 19851,
+        "lineEnd": 19856,
+        "sha256": "6014449ff6ffb3ff5011761dc7fa0f5d725b0271ca72f0b9d1ec25701db297d7"
+      },
+      {
+        "name": "RVC_DASH_COMBO_ZZZPushZ_READY_StateStart",
+        "lineStart": 19886,
+        "lineEnd": 19891,
+        "sha256": "33d5874cbe79ea5014cabcf32509d49a6ad8cd16fdb1e4d314dc8a2d7d9108ec"
+      },
+      {
+        "name": "RVC_DASH_COMBO_ZZZPushZ_StateStart",
+        "lineStart": 19911,
+        "lineEnd": 19940,
+        "sha256": "3535a3e05c70064848cea609b959efa19d0d2de857874cd46e90a96b3d5d85f6"
+      },
+      {
+        "name": "RSI_STANDUP_ATTACK_FRONT_NO_DOWN_End",
+        "lineStart": 15080,
+        "lineEnd": 15085,
+        "sha256": "83b9ec8594ef28942b228ed960da8df3a0474256af517ef6bd91b4a66d02b3fc"
+      },
+      {
+        "name": "RSI_STANDUP_ATTACK_BACK_NO_DOWN_End",
+        "lineStart": 15116,
+        "lineEnd": 15121,
+        "sha256": "176e2ab9f1c13649d70baa78d11842bc2add65825685b025eb9c31f3f0a8e77f"
+      }
+    ]
+  },
+  "originalChargeRows": {
+    "ESSI_ESK_DASH_COMBO_ZChargeX": {
+      "ANIM_NAME": "ESK_COMBO_DASH_ZX_CHARGE",
+      "ANIM_SPEED": 1.35,
+      "PLAY_TYPE": 0,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "SUPER_ARMOR_NOT_RED": 0,
+      "SUPER_ARMOR": 1,
+      "CAN_MANA_BREAK": 0,
+      "EVENT_PROCESS_TIME0": {
+        "1": 1.8,
+        "2": 0,
+        "3": 0
+      },
+      "IS_ATTACK_STATE": 1,
+      "EFFECT_SET_LIST_EX": {
+        "1": {
+          "1": "EffectSet_ESK_COMBO_DASH_ZX_CHARGE",
+          "2": 0,
+          "3": 2
+        }
+      }
+    },
+    "ESSI_ELK_DASH_COMBO_XChargeX": {
+      "ANIM_NAME": "ELK_DASH_COMBO_X_CHARGE_X",
+      "ANIM_START_TIME": 0.125,
+      "ANIM_SPEED": 1.2,
+      "PLAY_TYPE": 0,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "SUPER_ARMOR_NOT_RED": 0,
+      "SUPER_ARMOR": 1,
+      "CAN_MANA_BREAK": 0,
+      "EVENT_PROCESS_TIME0": {
+        "1": 1.8,
+        "2": 0,
+        "3": 0
+      },
+      "IS_ATTACK_STATE": 1
+    }
+  },
+  "originalRavenNonDown": {
+    "RSI_STANDUP_ATTACK_FRONT_NO_DOWN": {
+      "raw": {
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.23,
+          "2": 0.4
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CAMERA_CRASH_TIME": 0.2,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          },
+          "BACK_SPEED_X": 500
+        },
+        "IS_ATTACK_STATE": 1,
+        "ANIM_NAME": "SI_A_RF_GET_CHANCE_FRONT",
+        "SOUND_PLAY0": {
+          "1": 0.492,
+          "2": "Raven_Slash1.ogg"
+        }
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_A_RF_GET_CHANCE_FRONT",
+        "decodedKeysSha256": "31cc8de972841020bcbbabd2097fee65cba30dbdab33281672d547a1b7af0967"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12805
+      }
+    },
+    "RSI_STANDUP_ATTACK_BACK_NO_DOWN": {
+      "raw": {
+        "SPEED_Y": 0,
+        "SPEED_X": 0,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SLASH_TRACE": {
+          "1": 0,
+          "2": 100
+        },
+        "ATTACK_TIME0": {
+          "1": 0.23,
+          "2": 0.4
+        },
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 0,
+          "CAMERA_CRASH_GAP": 5,
+          "CAMERA_CRASH_TIME": 0.2,
+          "DAMAGE_TYPE": 0,
+          "HIT_TYPE": 1,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "PHYSIC": 1
+          },
+          "BACK_SPEED_X": 500
+        },
+        "IS_ATTACK_STATE": 1,
+        "ANIM_NAME": "SI_A_RF_GET_CHANCE_BACK",
+        "SOUND_PLAY0": {
+          "1": 0.477,
+          "2": "Raven_Slash1.ogg"
+        },
+        "FLIP_DIR_END": 1,
+        "SOUND_PLAY1": {
+          "1": 0.973,
+          "2": "Raven_Slash2.ogg"
+        }
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360,
+        "ticksPerSecond": 4800,
+        "sourceName": "SI_A_RF_GET_CHANCE_BACK",
+        "decodedKeysSha256": "d48bb97427c3637617d6e577548a6337b2b99cbb796bc188b9d066ef50af75fc"
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 12847
+      }
+    }
+  },
+  "sourceRules": {
+    "vcHeldZ": "three fixed Raven state starts set NoDetonation(true); End clears it; ordinary DamageReact replaces the flag",
+    "lkCharge": "2016 both CAN_MANA_BREAK=0; voluntary charge hold must not accumulate green",
+    "ravenNonDown": "original two GetChance poses, .23-.4 hit window, REACT_TYPE2, back speed500; state End supplies .3 seconds invulnerability"
+  },
+  "userRules": {
+    "xRise": "X deterministically chooses non-down; ignore old full knockdown threshold; Z keeps original down attack",
+    "lkRise": "no source non-down LK pose validated; current LK standup attack pose/hit timing reused with non-down reaction",
+    "input": "strict source .66-second choice window; X held through the boundary is an explicit web input accommodation"
+  },
+  "resourceReuse": {
+    "newMeshBytes": 0,
+    "newPoseKeyBytes": 0,
+    "vcSharedClipNames": [
+      "SI_A_RF_GET_CHANCE_FRONT",
+      "SI_A_RF_GET_CHANCE_BACK"
+    ]
+  },
+  "limitations": [
+    "No original2016 runtime trace or native GPU measurement",
+    "Fixed reference consumer macros are separate from the target declaration",
+    "LK X non-down outcome and held-X input accommodation are user-specified adapters"
+  ]
+}

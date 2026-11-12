@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "inputs": [
+    {
+      "cachePath": ".cache/rf-skills-v1/raven-declarations.json",
+      "cacheSha256": "7862ab6f91fbfabf06d27fb6984383d122d139213448cc2ce219eb366d90fc24",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+        "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+      }
+    },
+    {
+      "cachePath": ".cache/rf-skills-v1/skill-declarations.json",
+      "cacheSha256": "ea520816c3a54129afe92597d63bca4bfccaf5afc58ab8ca4a3c32bb8163ba81",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+        "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+      }
+    },
+    {
+      "cachePath": ".cache/rf-skills-v1/skill-note-declarations.json",
+      "cacheSha256": "8e558eea1adf82c69687d621ccdf5736f3884b188c9c83d950d5ac21890c29b4",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+        "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+      }
+    }
+  ],
+  "referenceSpans": [
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "startLine": 13625,
+      "endLine": 13654,
+      "purpose": "Future state reads authored speed; item-ability default true and ResetAnimSpeed gate",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragmentSha256": "b2cf2799d8237d8899a2694cd62bfb67a25a1d6f83ef9c5c4cf9ace5dfb87f88"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "startLine": 14182,
+      "endLine": 14197,
+      "purpose": "Now state reads the same default/gate",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragmentSha256": "dbc5a502edf450253d89cff424411e281925dfca32cab5dc03b42dc91a318e71"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "startLine": 26853,
+      "endLine": 26880,
+      "purpose": "ResetAnimSpeed: optional extra multiplier then gated GetAnimSpeedValue",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragmentSha256": "06afbcacf36244cbb46fdd5fa2b45673fe07f1d4bad7db4a6c76f61ed564141f"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "startLine": 26939,
+      "endLine": 26971,
+      "purpose": "Independent status/world speed layer and Now/Future track assignment",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "fragmentSha256": "faf04e3fc0751ce2ad5626b2d066186c2ba99d88ae755adb9f847a79ce3fc744"
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.h",
+      "startLine": 152,
+      "endLine": 160,
+      "purpose": "SetPlaySpeed keys linear speed over authored transition duration divided by target speed",
+      "fileSha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "fragmentSha256": "4a2237dd37e13e47de6f578a974a29f04d1e49135e1cffc48e8d7c83b1d6c100"
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "startLine": 1199,
+      "endLine": 1215,
+      "purpose": "ChangeAnim true starts incoming track at zero and keys speed/weight",
+      "fileSha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "fragmentSha256": "50284fcc1383f1aa37c7b54a03421ac3c57ef5d57bdfcd15a772f291b53391e6"
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "startLine": 1258,
+      "endLine": 1282,
+      "purpose": "Default transition clip-period/10 with floor .03",
+      "fileSha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "fragmentSha256": "dc46e68f77ef322df82a74d6831dcf8c1fffaad9dc17a9260bd95a5682b77911"
+    },
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "startLine": 4132,
+      "endLine": 4157,
+      "purpose": "MegaDrill same normal table for Hyper; old item-note alias conditional",
+      "fileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragmentSha256": "8515f51180157b671d83531ebeca6d63e73b05989668dee8baa1f64d0a825760"
+    },
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "startLine": 22104,
+      "endLine": 22236,
+      "purpose": "MegaDrill callbacks consume animation timers; no private speed reset",
+      "fileSha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragmentSha256": "94e590a34628f2a62c3446c87d37a8f62d6b6c6d5a5e1b4362d58ee20bad7275"
+    }
+  ],
+  "activeCount": 20,
+  "branchCount": 36,
+  "stateCount": 33,
+  "targetExplicitFalseCount": 13,
+  "userRule": {
+    "skillId": 24203,
+    "displayName": "Mega Drill Break",
+    "animationName": "SI_A_RF_MEGADRILL_BREAK",
+    "appliesItemAbility": false,
+    "evidenceClass": "user-requested-web-correction",
+    "targetConflict": "2016 state omits gate; fixedV5 defaults true. Preserve original declaration and label this override independently.",
+    "coverage": "normal and awakened casts, both selectable traits, any state using this exact character animation"
+  },
+  "boundaries": {
+    "traits": "36 arrays have no recovered action-speed modifier. MI_FASTEST is the target-described cooldown candidate, not animation acceleration.",
+    "hyper": "No target _HYPER alias exists for the 31 audited action tables. Existing casts share normal table, with separate effect/callback Hyper mode.",
+    "buffs": "Current RF supported buff behaviors do not compose an animation-speed additional stat. Resolved final-stat multiplier is gated; hit/world stops remain independent. Do not claim full ResetAnimSpeed status/world layers or live buff rekeying as restored.",
+    "clock": "Keep authored speed and transition integral driving both events and pose. Effect USE_GLOBAL_TIME and native movement consumers stay separate.",
+    "native": "Ten compiled module bytes retained; no rebuild or ABI/network change."
+  },
+  "fixture": "tests/fixtures/rf-skill-animation-speed-v6.json",
+  "fixtureSha256": "92225af82e4c89c36b2ccfdff5c019ddbd2396d7d8c7c3c0ed94efd7bb4ba687"
+}

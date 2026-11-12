@@ -1,0 +1,69 @@
+{
+  "schema": "rf-input-camera-source-v13",
+  "targetClientMeasured": false,
+  "sourceClass": "fixed-V5 consumers + target2016 declaration + user requirement adapter",
+  "files": {
+    "X2Lib/X2GUUser.cpp": {
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547
+    },
+    "X2Lib/X2Camera.cpp": {
+      "sha256": "1d16ff35b70a54e2ee2eca84ca9a57826d21fc94a4d6c61f72381cd5c1e105bc",
+      "bytes": 91051
+    },
+    "X2Lib/X2Camera.h": {
+      "sha256": "4500a41fc495ac9d1e9deaf3de0ade8765e5cb71c74ac510d367d4856dc5acb6",
+      "bytes": 16380
+    },
+    "KTDXLIB/KTDGCamera.cpp": {
+      "sha256": "1f04646a86764002cb5ff0edd80575b11d24ac75c3154d543001a0a2c0fc7b12",
+      "bytes": 20972
+    },
+    "KTDXLIB/KTDIDevice.cpp": {
+      "sha256": "8b54ccb1b622653ead48c09c996be250e9c1adc8e327aaa9bf1a7018864fc83a",
+      "bytes": 19435
+    }
+  },
+  "attackHelpers": {
+    "initiallyDisabled": [
+      "Rfoot",
+      "Lfoot",
+      "Lhand2"
+    ],
+    "initializeLines": [
+      1565,
+      1567,
+      2122,
+      2124
+    ],
+    "stateEnableDisableLines": [
+      14642,
+      14664
+    ],
+    "stateEndLines": [
+      19576,
+      19601
+    ]
+  },
+  "directionBuffer": {
+    "targetState": "RSI_COMBO_ZZXX",
+    "cancelAnimationTime": 0.6,
+    "queueScope": [
+      "RSI_COMBO_ZZX",
+      "RSI_COMBO_ZZXX"
+    ],
+    "replayOrder": [
+      "UP",
+      "DOWN",
+      "Z or X"
+    ],
+    "lifetime": "Only current combo continuation/immediate takeoff; rejected by hit, unrelated state, jump lock and stun",
+    "classification": "user-reported input behavior web adaptation; matching target2016 callback unavailable; no invented constant-time queue window"
+  },
+  "camera": {
+    "sourceEyeTrackingSeconds": 0.3,
+    "targetTrackingSeconds": 0,
+    "horizontalFollow": "direct native point sink",
+    "classification": "user-requested display adaptation; vertical native equations retained"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "evidence": {
+    "scope": "Small unchanged display declarations from current deployment data; no old executable run",
+    "catalogSha256": "ed988e44a2eeadf0325abd4292053f95337ee5b29428e0643822850840121da2"
+  },
+  "buffTemplates": {
+    "48": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 1,
+        "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Weapon_Break",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 48,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 1,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 7,
+            "2": 8
+          },
+          "BBT_CHANGE_PHYSIC_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          },
+          "BBT_CHANGE_MAGIC_ATTACK": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "DISPLAYER": {
+          "COMBINATION": {
+            "1": 3,
+            "2": 9
+          },
+          "BDT_EFFECT_SET": {
+            "1": "EffectSet_DEBUFF_WEAPON_BREAK"
+          },
+          "BDT_SOUND": {
+            "1": "Raven_Weapon_Break_SwordCrack.ogg"
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_20774",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_20775",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 3623
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+        "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+      }
+    },
+    "78": {
+      "raw": {
+        "ACCUMULATION_LIMIT": 1,
+        "BUFF_ICON_TEXTURE_KEY": "Debuff_Icon_Amor_Break",
+        "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+        "BUFF_TEMPLET_ID": 78,
+        "IS_WORLD_BUFF": 0,
+        "IS_DEBUF": 1,
+        "REGIST_TYPE": 0,
+        "BEHAVIOR": {
+          "COMBINATION": {
+            "1": 9
+          },
+          "BBT_CHANGE_PHYSIC_DEFENCE": {
+            "BUFF_CHANGE_TYPE": 3,
+            "BUFF_RELATION_TYPE": 7
+          }
+        },
+        "FINALIZER": {
+          "COMBINATION": {
+            "1": 1
+          },
+          "BFT_TIME": {
+            "BUFF_DURATION_TIME_TYPE": 1
+          }
+        },
+        "DISPLAYER": {
+          "COMBINATION": {
+            "1": 3,
+            "2": 9
+          },
+          "BDT_EFFECT_SET": {
+            "1": "EffectSet_ARMOR_BREAK"
+          },
+          "BDT_SOUND": {
+            "1": "Raven_Weapon_Break_SwordCrack.ogg"
+          }
+        },
+        "BUFF_NAME": {
+          "$symbol": "STR_ID_20744",
+          "$unsupported": "native/global value not resolved"
+        },
+        "BUFF_DESC": {
+          "$symbol": "STR_ID_20745",
+          "$unsupported": "native/global value not resolved"
+        }
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 5890
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+        "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+      }
+    }
+  },
+  "buffFactors": {},
+  "effectSets": {
+    "EffectSet_DEBUFF_WEAPON_BREAK": {
+      "raw": {
+        "NAME": "EffectSet_DEBUFF_WEAPON_BREAK",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "BONE_NAME": "_HEAD_BONE",
+          "NAME": "StateError_Weapon_Break01",
+          "POSITION_OFFSET_Y": 100,
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131961
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    },
+    "EffectSet_ARMOR_BREAK": {
+      "raw": {
+        "NAME": "EffectSet_ARMOR_BREAK",
+        "EVENT_TIMER_TYPE": 1,
+        "EFFECT0": {
+          "BONE_NAME": "_HEAD_BONE",
+          "NAME": "StateError_Armor_Break01",
+          "POSITION_OFFSET_Y": 100,
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 131375
+      },
+      "source": {
+        "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+        "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+      }
+    }
+  },
+  "effectTemplates": {
+    "StateError_Weapon_Break01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 99999,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "Layer": 15,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ApplyUnitScale": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "Weapon_Break01.dds"
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            80,
+            80,
+            1
+          ]
+        },
+        {
+          "property": "ResetCrash",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0.02
+        },
+        {
+          "property": "Crash",
+          "start": 0.01,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -3,
+                3
+              ]
+            },
+            {
+              "random": [
+                -3,
+                3
+              ]
+            },
+            0
+          ]
+        },
+        {
+          "property": "EventTimer",
+          "start": 0.3,
+          "end": 0.3,
+          "fade": false,
+          "value": 0.01
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "StateError_Weapon_Break01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 96696,
+        "line": 2871
+      },
+      "declarationSha256": "7ae1002f8d04a30d0f43d3bea4854c8b8bb43628e3cd2e1dcbf661c860054204",
+      "textures": {
+        "Weapon_Break01.dds": {
+          "file": "fx/textures/Weapon_Break01-712f6831bd.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data120.kom",
+            "ordinal": 200,
+            "name": "Weapon_Break01.dds",
+            "rawPath": "raw/data/data120.kom/Weapon_Break01.dds",
+            "sha256": "712f6831bdb355f74da24292ffb96219cac40c21bc462de8be5f99b2e58b0cf7",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    },
+    "StateError_Armor_Break01": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "Lifetime": 99999,
+        "NumParticles": 1,
+        "TriggerCount": 1,
+        "Layer": 15,
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ApplyUnitScale": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": "Armor_break01.dds"
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            80,
+            80,
+            1
+          ]
+        },
+        {
+          "property": "ResetCrash",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": 0.02
+        },
+        {
+          "property": "Crash",
+          "start": 0.01,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -3,
+                3
+              ]
+            },
+            {
+              "random": [
+                -3,
+                3
+              ]
+            },
+            0
+          ]
+        },
+        {
+          "property": "EventTimer",
+          "start": 0.3,
+          "end": 0.3,
+          "fade": false,
+          "value": 0.01
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "StateError_Armor_Break01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 113,
+        "name": "GameMajorParticle3.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+        "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+        "bytes": 283881,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 97285,
+        "line": 2892
+      },
+      "declarationSha256": "1fcf7406ede9faeb9c1f26017d5846754f70f0bcd328d2947f80a80cb8956d70",
+      "textures": {
+        "Armor_break01.dds": {
+          "file": "fx/textures/Armor_break01-25749cfc6b.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data120.kom",
+            "ordinal": 3,
+            "name": "Armor_Break01.dds",
+            "rawPath": "raw/data/data120.kom/Armor_Break01.dds",
+            "sha256": "25749cfc6b6fb54b563b91396316d9baa7e8db695e6a71f218c1a413c3a574a8",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      }
+    }
+  }
+}

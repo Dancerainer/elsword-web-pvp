@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "evidenceClasses": {
+    "target2016": "Existing frozen particle declarations and texture assets; no declaration count, lifetime, size or float colour is changed",
+    "fixedV5": "commit a8438f3ed18dd6f0944793de6c0d8bb9334e9633 source consumers",
+    "sdkCompatibility": "D3DX DWORD cast is an inline SDK operation, checked against Wine 10.0's primary implementation; not a measured run of the original client",
+    "simulation": "Actual production effect graph replay, NullEngine CPU and buffers; separate local-browser evidence is recorded by the parent deployment report"
+  },
+  "sources": [
+    {
+      "path": "KTDXLIB/KTDGParticleSystem.cpp",
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "consumers": {
+        "quadColorDwordLines": [
+          3981,
+          3994,
+          4007,
+          4028
+        ],
+        "finalNullOwner": "3069: CreateSequence(NULL, finalName, particlePosition, default overrides)",
+        "landClampBounce": "3150..3175, selected velocity-accumulator macro branch"
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/wine-mirror/wine/wine-10.0/include/d3dx9math.inl",
+      "sha256": "34b13cdd60604ff13adc0112d1c3d3947fbae48d604a84b44948e193b74204cf",
+      "consumer": "D3DXCOLOR::operator DWORD, lines 727..735",
+      "classification": "SDK compatibility implementation; independent from the target client's own inline SDK binary"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/direct3d9/d3dxcolor-extensions",
+      "supports": "D3DXCOLOR DWORD cast is implemented in d3dx9math.inl"
+    }
+  ],
+  "confirmedDefects": [
+    "Particle source float alpha=100 reached the shader before texture modulation; the original DWORD conversion saturates to alpha=1 first",
+    "Particle default sampling, fades, movement buffers and static template filtering repeatedly allocated per-particle/per-packet temporary objects",
+    "Effect bone requests resampled the complete identical effect skeleton for each attachment, including the 17 FireDummy bones",
+    "Only the local player's selected skill mesh burst was prewarmed; another player's skill or simultaneous casts could clone meshes and compile during battle",
+    "FinalParticleList wrongly inherited parent EffectSet scale/axis/trigger/anchor instead of the source's independent NULL-owner constructor defaults"
+  ],
+  "unchangedSourceSemantics": [
+    "Particle emission rate, NumParticles cap, TriggerCount, lifetime, DrawCount, random stream and declaration transforms",
+    "Native previous-packet velocity accumulator and life-bound checks",
+    "Quad src/dst blend factors, UV orientation, depth-write and material scene ordering"
+  ],
+  "verification": {
+    "fullXCrash": "4 actual normal/awakened left/right cases retain the same complete simulation digest as baseline archived revision",
+    "cpu": "3 runs x 2 normal directions, 300 ticks each, paired baseline/production digest and CPU measurements in reports/rf-particle-runtime-performance-v1.json",
+    "meshPoolStress": "6 simultaneous 668XX AP03/AM01 source bursts, 3 repeated rounds: 72 authored live particles, 84 prepared mesh views, zero battle-time model growth, particles/emitters return to zero",
+    "target2016ClientMeasured": false,
+    "gpuTimingMeasured": false
+  }
+}

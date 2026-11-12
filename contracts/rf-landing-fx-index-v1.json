@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "GroundShockWave": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "NumParticles": 2.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "Lifetime": 0.3
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "GroundShockWave.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1280.0,
+            1280.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            90.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "GroundShockWave",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 2733,
+        "line": 90
+      },
+      "declarationSha256": "6cbec7d8d8ea371cb811617692ba84e8da38e738778dbd03664080ccde073773",
+      "textures": {
+        "GroundShockWave.dds": {
+          "file": "landing-fx/textures/GroundShockWave-2c3c493997.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 173,
+            "name": "GroundShockWave.dds",
+            "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+            "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+            "bytes": 65664,
+            "signatureHex": "444453207c0000000710080000010000"
+          }
+        }
+      },
+      "sourceTokenNormalization": "reference-V5 unquoted tokens; original byte hash retained"
+    },
+    "AirDownTick": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "NumParticles": 50.0,
+        "Gravity": [
+          0.0,
+          -2000.0,
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -30.0,
+              30.0
+            ]
+          }
+        ],
+        "Lifetime": 2.0,
+        "UseLand": true
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "stone.dds"
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            16.0,
+            16.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 2.0,
+          "fade": true,
+          "value": [
+            3.0,
+            3.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -400.0,
+                400.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                800.0
+              ]
+            },
+            {
+              "random": [
+                -400.0,
+                400.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "AirDownTick",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 19273,
+        "line": 584
+      },
+      "declarationSha256": "2e50cb384b76b7d9e436d6c3b418a15ee2b681d7cc5b620a965d1bade236833b",
+      "textures": {
+        "stone.dds": {
+          "file": "landing-fx/textures/stone-5043309909.png",
+          "width": 32,
+          "height": 32,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 564,
+            "name": "stone.dds",
+            "rawPath": "raw/data/data048.kom/stone.dds",
+            "sha256": "5043309909f8d7061d6595f897f5e84427bbf2a3a3546431b015e67a572efab6",
+            "bytes": 1152,
+            "signatureHex": "444453207c0000000710080020000000"
+          }
+        }
+      },
+      "sourceTokenNormalization": "reference-V5 unquoted tokens; original byte hash retained"
+    },
+    "DownSmoke": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Layer": 14.0,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "NumParticles": 10.0,
+        "Gravity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Emitradius": [
+          {
+            "random": [
+              -80.0,
+              80.0
+            ]
+          },
+          {
+            "random": [
+              20.0,
+              40.0
+            ]
+          },
+          {
+            "random": [
+              -80.0,
+              80.0
+            ]
+          }
+        ],
+        "Lifetime": 1.0
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "smoke.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.5,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                220.0,
+                240.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "DownSmoke",
+      "kind": "particle",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 145,
+        "name": "GameMinorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+        "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+        "bytes": 288639,
+        "signatureHex": "0d0a7061727469636c6573797374656d",
+        "byteOffset": 24928,
+        "line": 813
+      },
+      "declarationSha256": "6ea4d92b315e4cb8bf358d641daa24a026b768130cf62e21a962bf7ce7275ca3",
+      "textures": {
+        "smoke.dds": {
+          "file": "landing-fx/textures/smoke-cd0af4fdbd.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data048.kom",
+            "ordinal": 554,
+            "name": "smoke.dds",
+            "rawPath": "raw/data/data048.kom/smoke.dds",
+            "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+            "bytes": 4224,
+            "signatureHex": "444453207c0000000710080040000000"
+          }
+        }
+      },
+      "sourceTokenNormalization": "reference-V5 unquoted tokens; original byte hash retained"
+    },
+    "DropDown": {
+      "fields": {
+        "Layer": 14.0,
+        "LifeType": "LT_PLAY_COUNT",
+        "PlayCount": 1.0,
+        "MeshType": "X_SKIN_MESH",
+        "MeshName": "Effect_ElSword_dropdown.X",
+        "RenderType": "RT_REAL_COLOR",
+        "ZEnable": false,
+        "UseDieEvent": false,
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA"
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "dropdown",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.7
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "DropDown",
+      "kind": "mesh",
+      "sourceFamily": "game-minor",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 146,
+        "name": "GameMinorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+        "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+        "bytes": 23778,
+        "signatureHex": "0d0a584d455348504c41594552202255",
+        "byteOffset": 37,
+        "line": 4
+      },
+      "declarationSha256": "28085c680fa20020d9490ee83047c25cef855149dafd4ef48df5179c35579ac9",
+      "textures": {},
+      "sourceTokenNormalization": "reference-V5 unquoted tokens; original byte hash retained",
+      "meshMaterialClosure": [
+        {
+          "meshName": "",
+          "slot": 0,
+          "materialName": "PDX04_-_Default",
+          "resolution": "named-reference",
+          "color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "meshSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 556,
+            "name": "Effect_ElSword_dropdown.X",
+            "rawPath": "raw/data/data002.kom/Effect_ElSword_dropdown.X",
+            "sha256": "0fa13de51117f352925d7b45366e5aa2c28b70812b6c37698add7a9adc788538",
+            "bytes": 132286,
+            "signatureHex": "786f6620303330337478742030303332"
+          },
+          "texture": "DropDown.tga",
+          "textureSource": {
+            "archive": "data/data002.kom",
+            "ordinal": 424,
+            "name": "DropDown.tga",
+            "rawPath": "raw/data/data002.kom/DropDown.tga",
+            "sha256": "4acaa73982f051c869be7f37380990504d1d9254e8c5b0a532254c2627331b96",
+            "bytes": 30788,
+            "signatureHex": "00000a00000000000000000080008000"
+          }
+        }
+      ],
+      "glb": "landing-fx/meshes/Effect_ElSword_dropdown.glb",
+      "poseData": "landing-fx/meshes/Effect_ElSword_dropdown.pose.json",
+      "animationMissingTickRate": false,
+      "animationRequiresUnconfirmedRate": false,
+      "animationClips": [
+        {
+          "name": "dropdown",
+          "durationSeconds": 0.3333333432674408,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "initialAnimation": {
+        "name": "dropdown",
+        "playback": "XAP_ONE"
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 173,
+      "name": "GroundShockWave.dds",
+      "rawPath": "raw/data/data048.kom/GroundShockWave.dds",
+      "sha256": "2c3c4939972c16f6f2d01b486c41c4deb4ea74c21982613fa488883dc2f0df2c",
+      "bytes": 65664,
+      "signatureHex": "444453207c0000000710080000010000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 564,
+      "name": "stone.dds",
+      "rawPath": "raw/data/data048.kom/stone.dds",
+      "sha256": "5043309909f8d7061d6595f897f5e84427bbf2a3a3546431b015e67a572efab6",
+      "bytes": 1152,
+      "signatureHex": "444453207c0000000710080020000000"
+    },
+    {
+      "archive": "data/data048.kom",
+      "ordinal": 554,
+      "name": "smoke.dds",
+      "rawPath": "raw/data/data048.kom/smoke.dds",
+      "sha256": "cd0af4fdbd2f5490790342058ba728d83ea04d7d64f18a0f1d872a12d3992386",
+      "bytes": 4224,
+      "signatureHex": "444453207c0000000710080040000000"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 146,
+      "name": "GameMinorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorXMeshPlayer.txt",
+      "sha256": "439d62bba191e5b6e8a80db9cafaf8e2bcdc7d1c6e9d418ed8cb12b95f4b9df1",
+      "bytes": 23778,
+      "signatureHex": "0d0a584d455348504c41594552202255"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 556,
+      "name": "Effect_ElSword_dropdown.X",
+      "rawPath": "raw/data/data002.kom/Effect_ElSword_dropdown.X",
+      "sha256": "0fa13de51117f352925d7b45366e5aa2c28b70812b6c37698add7a9adc788538",
+      "bytes": 132286,
+      "signatureHex": "786f6620303330337478742030303332"
+    },
+    {
+      "archive": "data/data002.kom",
+      "ordinal": 424,
+      "name": "DropDown.tga",
+      "rawPath": "raw/data/data002.kom/DropDown.tga",
+      "sha256": "4acaa73982f051c869be7f37380990504d1d9254e8c5b0a532254c2627331b96",
+      "bytes": 30788,
+      "signatureHex": "00000a00000000000000000080008000"
+    }
+  ],
+  "meshFailures": [],
+  "missingTemplates": [],
+  "limits": [
+    "Source air-down trigger uses fixed-V5 consumer, separate from target2016 static resources.",
+    "Original DLL keys/tick rate are resource measurements; full client/GPU behavior remains unmeasured."
+  ]
+}

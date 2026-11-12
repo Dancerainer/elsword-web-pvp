@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "clientMeasured": false,
+  "source": {
+    "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+    "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+  },
+  "roots": [
+    "DamageEffect_ATT_Maximum_Strike_Bullet_Projectile",
+    "DamageEffect_ATT_Maximum_Strike_Bullet_Attack",
+    "DamageEffect_AMM_Shooting_Chaser_Attacker",
+    "DamageEffect_AMM_Shooting_Chaser_Attack",
+    "DamageEffect_AMM_Shooting_Chaser_Buff_Attack",
+    "DamageEffect_Shooting_Chaser_Drone_FX",
+    "DamageEffect_Shooting_Chaser_Beam_FX",
+    "DAMAGE_EFFECT_Star_Fall_Explode"
+  ],
+  "damage": [
+    {
+      "name": "DAMAGE_EFFECT_Star_Fall_Explode",
+      "rawSha256": "cdce3bf789add3699e6841ec7caf3b1147607a4f08e6a8d802c7a29f98f46772",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 158140
+      }
+    },
+    {
+      "name": "DamageEffect_Starfall_Attack_Sound",
+      "rawSha256": "85331616247b2942287c0696375398445f0a52c9ae7263cd8cca264738b3c785",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 158034
+      }
+    },
+    {
+      "name": "DamageEffect_Shooting_Chaser_Beam_FX",
+      "rawSha256": "d3c85e38c1d94066fb1b462cf6a398c8a52fad442b39a36617e94986feb92251",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157711
+      }
+    },
+    {
+      "name": "DamageEffect_Shooting_Chaser_Drone_FX",
+      "rawSha256": "fea78e28236e65910303dadbb26ff384dc8228d8fc6f00a99cf40a2ce6f3974d",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157704
+      }
+    },
+    {
+      "name": "DamageEffect_AMM_Shooting_Chaser_Buff_Attack",
+      "rawSha256": "d69ce7c3e1fce32718f54550578a7695a6eb22743a433bec66a015db927044af",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157576
+      }
+    },
+    {
+      "name": "DamageEffect_AMM_Shooting_Chaser_Attack",
+      "rawSha256": "f1bb40c632bf54aebfb511ef1c472bbc0b7106bb581ef35b34ee821bb5579a98",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157518
+      }
+    },
+    {
+      "name": "DamageEffect_AMM_Shooting_Chaser_Attack_Sound",
+      "rawSha256": "ab73dcede296af2401ed8240aa6ba9ba1af75e1d9031d4ab499028bae9d35c0d",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157532
+      }
+    },
+    {
+      "name": "DamageEffect_AMM_Shooting_Chaser_Buff_Dummy_Attack",
+      "rawSha256": "f12eb359c91075895a7cf9b23647022b45d36ba47c620e738fd99eda43b57bc1",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157620
+      }
+    },
+    {
+      "name": "DamageEffect_AMM_Shooting_Chaser_Attacker",
+      "rawSha256": "6fec3a89e333c11b7e417b608ce6b8944020dc3ff75f5e987d8efd312d4f2805",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 157494
+      }
+    },
+    {
+      "name": "DamageEffect_ATT_Maximum_Strike_Bullet_Attack",
+      "rawSha256": "74a651e037f8920d80b78d4f2d523d52d20417404db45add5cd86f3f5d338b73",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350813
+      }
+    },
+    {
+      "name": "DamageEffect_ATT_Maximum_Strike_Bullet_Explosion",
+      "rawSha256": "65e39a6d3e8335472887eaede8b5ecde7ab43a2daf55b442c610f8bbc33d2eec",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350892
+      }
+    },
+    {
+      "name": "DamageEffect_ATT_Maximum_Strike_Bullet_Projectile",
+      "rawSha256": "8c86fd6a96f35f05f29f3c11188e6303714148a3fa7b64ed6daac8712ebb6ab9",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 350959
+      }
+    }
+  ],
+  "templates": {
+    "Mesh_Star_Fall_Explode": {
+      "declarationSha256": "d63ec2bfd2b57c9f4b8f21fea97555240a5b3f785c6ea31c227e171879fbd415",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2301528,
+        "line": 71784
+      }
+    },
+    "Mesh_DE_for_Sound_4sec": {
+      "declarationSha256": "f28f12fa866a065c2c96e5bbc98e065dd5d83bd5e143e4545bd6052c461f07e2",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1568261,
+        "line": 48737
+      }
+    },
+    "Mesh_ATT_Maximum_Strike_Bullet_Explosion": {
+      "declarationSha256": "297ab74ecb2b13243d3728ab4e400f28910778cddd32da234360eada7b80385e",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2610892,
+        "line": 81567
+      }
+    },
+    "Mesh_ADD_Shooting_Chaser_Buff_Attack_Box": {
+      "declarationSha256": "246e790e02528b87837f2522b61d0a6fdc9c946973718fa7356f9d438a3a0062",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2268878,
+        "line": 70786
+      }
+    },
+    "Mesh_ADD_Shooting_Chaser_Attack": {
+      "declarationSha256": "c923ab6f6ea84149704fbe4beb7ba4a774e79b207ba0e1dae030c5db1a6ac7ce",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2268380,
+        "line": 70769
+      }
+    },
+    "CSI_A_CSG_MAGNUM_SHOT_SOUND": {
+      "declarationSha256": "e72b78555329dd285b4fb311be587ad9c794530db19a6897366e37230ee40fb7",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1567242,
+        "line": 48701
+      }
+    },
+    "Aisha_ReadyS_P05": {
+      "declarationSha256": "7bcd67463f4e06e2e2c41767cb67c8d2371c7d70de0a1ebe8ad1422ac559c2cf",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 105,
+        "name": "GameMajorParticle22.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle22.txt",
+        "sha256": "ceb08a5c9dc945c58c412564b2304dddf1df195f0f7c44672b84359f7f252556",
+        "bytes": 299984,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 15599,
+        "line": 456
+      }
+    },
+    "ATT_Maximum_Strike_P07": {
+      "declarationSha256": "d9db1162a99c26594966252e6bf109aea4930504c828e03c9ee7a1bb7fd2fd74",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 265910,
+        "line": 7396
+      }
+    },
+    "ATT_Maximum_Strike_M02": {
+      "declarationSha256": "6e83f1452554b5ca095aa0457dba37043df720efd41bfe94410fe2dbc8c5ca15",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2616521,
+        "line": 81735
+      }
+    },
+    "ATT_Maximum_Strike_Ball_P13": {
+      "declarationSha256": "a6136db281ffa8c0eb9bdc26c9ed4224269493ec2ac840b5b7cd6af10ed57d78",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 310878,
+        "line": 8742
+      }
+    },
+    "ATT_Maximum_Strike_Attack_M03": {
+      "declarationSha256": "cc97c3a6a001caec60f1acac7f2e0b0a8eebc36ea1004381b207baf0c90a9bf5",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2617633,
+        "line": 81771
+      }
+    },
+    "ATT_Maxi_St_Ball_PP01_D": {
+      "declarationSha256": "ee5a1f1024158b6e160c6bc25ae751fb297fc9dbe812adbff1ff8219822b4b91",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 231675,
+        "line": 6416
+      }
+    },
+    "ATT_Maxi_St_Ball_PP01": {
+      "declarationSha256": "c814ac8f0752589ece5e4f62346d9fddfb979aa762d18ac1e80d685f132bbf3b",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 230595,
+        "line": 6389
+      }
+    },
+    "ATT_Maxi_St_Ball_P06": {
+      "declarationSha256": "37427213b84b4e87db8a0a4e1c448818c9059d78274adf4862e3e7933656db24",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 229671,
+        "line": 6365
+      }
+    },
+    "ATT_Maxi_St_Ball_P05": {
+      "declarationSha256": "8babebe606d8978d38a36ac5b66beb4fbc361b486006c1e23ba2745237ccf779",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 228507,
+        "line": 6338
+      }
+    },
+    "ATT_Maxi_St_Ball_P03": {
+      "declarationSha256": "0e95f69be5e3aa42ee37d19fa23d291f7fbd5a524dc7fb8d3c08034efe00ae0f",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 227607,
+        "line": 6316
+      }
+    },
+    "ATT_Maxi_St_Ball_P02": {
+      "declarationSha256": "7a7fde7ef2ce1a64fb487e09cd301e44d03a7f262b8ffd1ef87a5843d7ab32ee",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 226745,
+        "line": 6294
+      }
+    },
+    "ATT_Maxi_St_Ball_P01": {
+      "declarationSha256": "7ce8a1cc772c445d960864b71f2e9c6fdb2919e7b27e0161685f0f4dbe71fa72",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 225236,
+        "line": 6263
+      }
+    },
+    "ADE_RE_ST_PA03_S": {
+      "declarationSha256": "f5d71f032f1382c31242c83bd3325173882bcf6035d32882233bd5f71c921fe5",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 128997,
+        "line": 3717
+      }
+    },
+    "ADE_RE_ST_PA01_S": {
+      "declarationSha256": "2de8a7cc9816e420a8b78880c9f09c5edcdb5bf68a4821ac9866420e2f155189",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 127367,
+        "line": 3670
+      }
+    },
+    "ADE_PS00_MPEBL": {
+      "declarationSha256": "d564035626fa45cd37a6725e1fc9195eb85e9b3a9fc2bf37a69a8405e9d89542",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 1368,
+        "line": 45
+      }
+    },
+    "ADE_PS02": {
+      "declarationSha256": "68bf60b617498b257a223a3dc4cec299922ee6ce7841e6082a9cdc8496ef9c03",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 12518,
+        "line": 374
+      }
+    },
+    "ADD_Star_Fall_Explode_006": {
+      "declarationSha256": "6048ac3a2cc1596767e9faf7cf55abc1b54ec1e890919c99340ab8f0769c35f8",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 149600,
+        "line": 4140
+      }
+    },
+    "ADD_Star_Fall_Explode_005": {
+      "declarationSha256": "9fdc6d0e9bbf5d6a1dd8cddf9f35e2476872a046a34b98f194fb384f234c449b",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 148470,
+        "line": 4114
+      }
+    },
+    "ADD_Star_Fall_Explode_004": {
+      "declarationSha256": "9c1651ddbea4f1a971e148a88e08084c95a55d10639f7b5899fb268dcb8535f5",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 147472,
+        "line": 4089
+      }
+    },
+    "ADD_Star_Fall_Explode_002": {
+      "declarationSha256": "c73a382b7c8ae162976162df962e72f92d60a8b1849c5f2e23aeb7c1f6d1539f",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 146650,
+        "line": 4064
+      }
+    },
+    "ADD_Star_Fall_Explode_001": {
+      "declarationSha256": "702e63be2a8552beedd369d848f744e82503a99b9456192d062f7c38c43d35ca",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 145946,
+        "line": 4042
+      }
+    },
+    "ADD_Star_Fall_Attack_BIM_02": {
+      "declarationSha256": "11a77d2ff92a671f225deed2c445f7704d8d4772f5b33a9512499ba17ce6fdbe",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 144979,
+        "line": 4017
+      }
+    },
+    "ADD_Shooting_Chaser_Projectile_01": {
+      "declarationSha256": "191ad192dac39e17f3c5a9ae79be8fbddbb74285e12c45c1c79ff52f681b2a4a",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2267618,
+        "line": 70745
+      }
+    },
+    "ADD_Shooting_Chaser_Projectile_001": {
+      "declarationSha256": "299006edf8b31783e90769ab69e204c148a24c345cab0764cf1c0c34d4d7c0e2",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 128294,
+        "line": 3590
+      }
+    },
+    "ADD_Shooting_Chaser_Attack_02": {
+      "declarationSha256": "9df0f1f36def83fa958e527d5c3fe8de35b2ee7e3c94d0c26e4cbe2993e9882b",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 139350,
+        "line": 3871
+      }
+    },
+    "ADD_Shooting_Chaser_Attack_01_D": {
+      "declarationSha256": "0cac44c6c8a9a30742f8fe3c18fc9e8c6a4c4a5d4c53be7671141f45a75fce32",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 204956,
+        "line": 5604
+      }
+    },
+    "ADD_Shooting_Chaser_Attack_01": {
+      "declarationSha256": "5fe1b1cd13f39ca5a8339fd103f0ed01e62e1a9a85e8ad50ed021ce6f083d9a6",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 138419,
+        "line": 3847
+      }
+    },
+    "ADD_Shooting_Chaser_AttackM_BIM": {
+      "declarationSha256": "e5a08d88bf5aaec63409968aee31054798f8810f966e73927f23b75611898e82",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2277227,
+        "line": 71041
+      }
+    },
+    "ADD_Shooting_Chaser_AttackM": {
+      "declarationSha256": "cf22b831744089898974764df8095bb60db4917d60ccc7bddf8bc020f584971c",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2276251,
+        "line": 71014
+      }
+    },
+    "ADD_Rushing_Drone_Loop_01": {
+      "declarationSha256": "70f44ec00d1070dc64c1dbd576ee9cf6abe46d1ad5a4780aadb27afd080b7476",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 105138,
+        "line": 3008
+      }
+    },
+    "ADD_Panzer_Buster_Start_002": {
+      "declarationSha256": "35d3158cde3ee968ad52b6501b4408f3e8f1b1ae8a72bbbf9165d778b7b2caac",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 112961,
+        "line": 3207
+      }
+    }
+  },
+  "optionalMeshFailures": [],
+  "requiredAttackGeometryMissing": [],
+  "profiles": {
+    "mm": {
+      "profileSha256": "4a529c0ed0f48407236ba1d47ca0a2447a8dbac8018a581f734719c912e23af7",
+      "fxIndexSha256": "1ed359cf5f3e82c2b353951675bda891127bf1183d3ed5e9fac4d72ddbd85a45"
+    },
+    "de": {
+      "profileSha256": "677efa07cae8abca189ac2bfe17819b86ebd40300b7be9cee9cfa31d16c6d957",
+      "fxIndexSha256": "e759bb46a4450f1eb2ad0af1c49302a5bc05afbc7c184b37a0e121cd82fc8f00"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "implementation": "packages/combat-core/add-maximum-strike-orbit.mjs",
+  "status": "historical-v32-adapter; retired-by-v53",
+  "originalDeclarations": {
+    "damageEffect": "DamageEffect_ATT_Maximum_Strike_Bullet_Attack",
+    "mesh": "ATT_Maximum_Strike_Attack_M03",
+    "meshSource": "data/data036.kom/GameMajorXMeshPlayer.txt",
+    "meshSourceSha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+    "meshSourceLine": 81771,
+    "meshDeclarationSha256": "cc97c3a6a001caec60f1acac7f2e0b0a8eebc36ea1004381b207baf0c90a9bf5",
+    "lifeTimeSeconds": 0.94,
+    "directionSpeedEvents": [
+      [
+        0,
+        0
+      ],
+      [
+        0.001,
+        200
+      ],
+      [
+        0.1,
+        3500
+      ]
+    ],
+    "lockOnType": 8,
+    "curveSpeed": 50,
+    "damageEffectSourceSha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+  },
+  "qualifiedReference": {
+    "source": ".cache/client-skills-ui-v32/X2DamageEffect.cpp",
+    "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+    "vectorLockOnLines": [
+      6712,
+      6790
+    ],
+    "vectorLockOnBehavior": "normalizes relative/current direction, interpolates direction by curveSpeed*dt; contains no post-invincibility-collision small-radius orbit",
+    "lot8Lines": [
+      3334,
+      3440
+    ],
+    "lot8Boundary": "2026-09-06 added reconstruction with explicitly marked DI; not used as proof of a 2016 orbit radius or original-client trajectory"
+  },
+  "playerRequiredBehavior": "travel towards remembered enemy, enter fast small-radius orbit only after current collision with an invincible enemy, retry ordinary collision until original shot expiration",
+  "adapterChoices": {
+    "entry": "current native attack/body helper collision and current invincible or forceInvincible; no historical phase or body lookup",
+    "radius": "minimum of currently contacted body helper radius and attack helper radius; derived adapter choice, not a recovered original constant",
+    "angularSpeed": "current authored directionSpeed divided by current radius",
+    "plane": "world XY through current contacted body-helper center; adapter choice",
+    "missingHelpers": "unsupported; never substitutes guessed body extents",
+    "damage": "untouched normal damage executor and hit memory; no direct damage, no clearing invincibility, no marking failed hits as accepted",
+    "targetLifecycle": "detach orbit/UID on dead/disconnected target or changed epoch; continue previous tangent until original lifetime expires",
+    "wireMarker": "sourceAddMaximumStrikeOrbit has exactly sphereIndex, targetEpoch, angle; scoped to DE skill 29022 original shot"
+  },
+  "ordinaryTests": {
+    "receipt": "runtime/v32-maximum-orbit-unit-r2.log",
+    "passed": 5,
+    "failed": 0,
+    "resourceGuard": "15% total CPU, 2GiB Windows Job memory; assigned suspended before resume; Job closed without cleanup errors",
+    "priorFailure": "runtime/v32-maximum-orbit-unit.log fixture passed visual SlashTrace to movement executor; fixture corrected using existing addLiteralMotionEvents"
+  },
+  "nativeValidation": {
+    "receipt": "runtime/v32-maximum-orbit-native-r4.log",
+    "passed": 4,
+    "failed": 0,
+    "combinedPriorReceipt": "runtime/v32-maximum-orbit-native-r2.log",
+    "combinedPriorPassed": 13,
+    "scope": [
+      "left/right original .X/KSM helpers and native collisions",
+      "circle covers all four quadrants",
+      "current collision remains available every orbit packet",
+      "forced invincibility prevents damage",
+      "source-authored down invincibility prevents damage",
+      "leaving invincibility accepts exactly one original shot hit through lifetime",
+      "original impact child remains handled by ordinary damage executor",
+      "original mesh lifetime respects original hit STOP",
+      "full/critical/source-reference/application round trip and forged ownership rejection"
+    ],
+    "resourceGuard": "15% total CPU, 2GiB Windows Job, Node heap1536MiB; suspended assignment before resume; Job closed without cleanup errors",
+    "priorFailures": [
+      "runtime/v32-maximum-orbit-native.log wall-clock expiration assertion ignored original hit STOP",
+      "runtime/v32-maximum-orbit-native-r3.log down-state test called unavailable setState rather than production enter"
+    ]
+  },
+  "remainingValidation": [
+    "actual GPU visible trajectory"
+  ],
+  "supersededBy": "contracts/add-maximum-strike-native-v53.json"
+}

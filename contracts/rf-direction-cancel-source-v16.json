@@ -1,0 +1,79 @@
+{
+  "schema": "rf-direction-cancel-source-v16",
+  "evidenceClass": "fixed-V5-source-consumer + target2016-declaration + explicitly-scoped-candidate",
+  "targetClientMeasured": false,
+  "target2016MeasuredTraceCount": 0,
+  "m3FidelityAccepted": false,
+  "fixedSourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "fixedSourceFiles": {
+    "X2Lib/X2GURaven.cpp": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+    "X2Lib/X2GUUser.cpp": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+    "X2Lib/X2GUUser.h": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc"
+  },
+  "target2016": {
+    "entry": "data036.kom/RAVEN_FIGHTER.lua",
+    "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+    "declarationCache": ".cache/declarations-v11/raven-declarations.json",
+    "sourcePcPerState": "reports/rf-all-cancel-matrix-v16.json",
+    "matchingNativeReaderAndCallbacks": "not-acquired"
+  },
+  "unchangedCompiledProbe": {
+    "tool": "tools/native/check_rf_direction_source_v16.py",
+    "result": "reports/rf-direction-consumer-source-v16.json",
+    "methodCount": 7,
+    "macroCount": 1,
+    "cases": 24,
+    "publishedNativeModulesModified": false,
+    "hostBoundary": "Explicit input/frame/physics test storage, pending state-request recorder, fixed test speeds, unavailable line/skill/hyper dependencies disabled; whole Main/Future/Now/client not compiled"
+  },
+  "fixes": [
+    {
+      "id": "dash-end-facing",
+      "source": "Raven RSI_DASH_EventProcess requests DashEnd without changing Future.bIsRight; DashEnd fresh same-facing oneRight/oneLeft requests Dash; InitState binds no directional Future callback to DashEnd",
+      "oldHost": "Opposite Dash input changed facing immediately, so final6 of ZZX6646 selected WALK instead of DASH",
+      "newHost": "Retain facing through DashEnd; final6 can use original same-facing fresh-key branch",
+      "status": "confirmed-fixed-reference-host-condition-repair; target-client-unmeasured"
+    },
+    {
+      "id": "jump-up-floor-attack",
+      "source": "Raven RSI_JUMP_UP_EventProcess6282-6314 checks double/Z/X/skill before apex and has no ground guard; JumpDown/DashJump check ground first",
+      "oldHost": "Global grounded ternary substituted COMBO_Z for JUMP_COMBO_Z when a Down/turn cancellation touched the floor in the following Z packet",
+      "newHost": "Select command family from current free-state consumer; preserve earlier JumpDown/DashJump landing guards",
+      "status": "confirmed-fixed-reference-host-condition-repair; target-client-unmeasured"
+    },
+    {
+      "id": "zzx-backward-target-candidate",
+      "source": "Target ZZX BWALK_CANCEL_AFTER=.35 + fixed GUUser.h BWALK_CANCEL_AFTER macro: nonnegative threshold, strict time>threshold, opposite pure key, request WAIT retaining facing",
+      "oldHost": "Native callback ownership suppressed every target backward field; old ZZX Event only cleared pending combo flag",
+      "newHost": "Selected ZZX-only candidate; preserve ordered82, double/attack/skill priority when target insertion order is unknown",
+      "status": "candidate-target2016-binding-not-verified"
+    }
+  ],
+  "allComboAudit": {
+    "states": 32,
+    "report": "reports/rf-all-cancel-matrix-v16.json",
+    "sourceMethodRanges": "Audited original v9 line ranges plus current v11 recovery contract ranges, each rehashed from independently frozen source bytes; fixed and 2026 references remain separate",
+    "observations": 804,
+    "observationClass": "current-host-injected-state-reachability-probe-not-original-answer",
+    "realPrefixTraces": 8,
+    "traceDirectory": "artifacts/proof-input-v16",
+    "traceClass": "CLI-timestamped-current-simulation-device-adapter-not-original-client-input"
+  },
+  "remainingGaps": [
+    "X2Main.cpp, OnePureDouble/CmdEvent consumers, target2016 device macro choice and whole Main/Future/Now scheduling unavailable",
+    "JS enter applies requested states immediately; fixed original StateChange normally writes pending state for next DoStateEndStartFuture",
+    "Target ZZX DASH_CANCEL_AFTER=.35 differs from fixed unconditional pureDouble Event; do not silently relabel the old branch as target equivalence",
+    "Target fields in native-owned ZZ/ZZZZ/ZZXX/ZZXFRONTXX/XX-chain states need matching consumers before generic cancellation can override them",
+    "USE_COMMON_CANCEL_AFTER and ATTACK_CANCEL_AFTER exact target consumers remain unavailable",
+    "Early DashJump Down can land before a later turn packet; same-packet Z precedes turn in the unchanged original branch, so device edge order is not a license to execute several original Event callbacks in one packet",
+    "One-frame directional tap level, per-key delayed duplicate presses and hit-stop pending edges remain explicit web adapters"
+  ],
+  "unchangedScope": [
+    "damage declarations",
+    "damage formula",
+    "attack helpers and poses",
+    "physics and speed constants",
+    "preset and program versions",
+    "ten published native modules"
+  ]
+}

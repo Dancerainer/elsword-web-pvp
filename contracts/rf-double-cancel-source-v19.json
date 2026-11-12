@@ -1,0 +1,117 @@
+{
+  "schema": "rf-double-cancel-source-v19",
+  "referenceSourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "m3FidelityAccepted": false,
+  "sourceKeyboardProbe": {
+    "report": "reports/rf-keyboard-independent-source-v19.json",
+    "sha256": "7dfa21c2180e2f96c0f1871c747ab3b81bc2ab9d5c1573b587c726712cac6fcd",
+    "unchangedMethods": 17,
+    "macroBranches": [
+      "KEY_MAPPING disabled + WinKey alternate",
+      "KEY_MAPPING enabled + WinKey X2TOOL",
+      "KEY_MAPPING enabled + DI non-X2TOOL reference"
+    ],
+    "packetsPerBranch": 8,
+    "target2016BuildMacrosConfirmed": false,
+    "referenceBuildMacros": {
+      "KEY_MAPPING": {
+        "file": "KTDXLIB/Always.h",
+        "line": 2223,
+        "defined": true
+      },
+      "CHANGE_KEY_DEVICE": {
+        "file": "KTDXLIB/KTDX.h",
+        "line": 557,
+        "condition": "X2TOOL",
+        "toolDefined": true,
+        "gameDefinedHere": false
+      },
+      "target2016Confirmed": false
+    }
+  },
+  "sourceScheduleProbe": {
+    "report": "reports/rf-state-schedule-independent-source-v19.json",
+    "sha256": "b59e438cdc96b8db7cdb7dbff0eeea4eb2a560e26127233bbbfba836a5d8c6d7",
+    "unchangedMethods": 3,
+    "packets": 5,
+    "productionPendingStatePorted": false
+  },
+  "managerAcquisition": {
+    "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "membershipVerifiedViaContentsRef": true,
+    "files": [
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDIManager.cpp",
+        "url": "reference-v5@a8438f3ed18dd6f0944793de6c0d8bb9334e9633/JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDIManager.cpp",
+        "gitBlob": "8952b58e035f467d333b622f5b16dea422d33fca",
+        "bytes": 17002,
+        "sha256": "df4e04a9195146450421a56d89ef0099efe99ba2e54cb9949818518008799820",
+        "cache": ".cache/input-manager-source-v19/KTDIManager.cpp"
+      },
+      {
+        "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDIManager.h",
+        "url": "reference-v5@a8438f3ed18dd6f0944793de6c0d8bb9334e9633/JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDIManager.h",
+        "gitBlob": "0d49e85498f69af1ecb9cbc1584e677880630393",
+        "bytes": 14731,
+        "sha256": "67624f15256381c81fe8493a29718acbe4432e79aacaee4a3b63cdaf66f645c9",
+        "cache": ".cache/input-manager-source-v19/KTDIManager.h"
+      }
+    ]
+  },
+  "additionalSources": {
+    "KTDXLIB/KTDIDevice.cpp": {
+      "sha256": "8b54ccb1b622653ead48c09c996be250e9c1adc8e327aaa9bf1a7018864fc83a",
+      "bytes": 19435
+    },
+    "KTDXLIB/KTDIDeviceWinKey.h": {
+      "sha256": "aed201f10d54bbdae4203f56a6e95cf3d9a2fe2f158332f1ee61097791006542",
+      "bytes": 3208
+    },
+    "X2Lib/X2Game.cpp": {
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "bytes": 618989
+    },
+    "X2Lib/X2GUUser.cpp": {
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547
+    },
+    "X2Lib/X2GURaven.cpp": {
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216
+    },
+    "X2Lib/X2GUUser.h": {
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "bytes": 202266
+    }
+  },
+  "repairs": [
+    "Live DOM messages consumed to final key levels at cutoff, not delayed per-key edge packets.",
+    "Read-sampled release unlocks one key; an unseen release/repress retains its one lock.",
+    "Original ordered doublePure/doubleOne/pure/one getters and binary32 timeout replace indefinitely held synthetic pureDouble for sampled packets.",
+    "Explicit sourceDevice packets do not synthesize DASH, pressed-as-held direction, or replay stale pending edges after a source stop."
+  ],
+  "preserved": [
+    "Legacy inspector tap adapter and plain recorded packets.",
+    "Profile cancel values/attack windows, helpers, native modules, damage, animation ramp and preview60Hz.",
+    "Source DashEnd fresh same-facingone direction restart and period/8 attack priority.",
+    "Existing target82 preinput/platform ordering adapters remain separate and unsupported target bindings."
+  ],
+  "gaps": [
+    "Target2016 matching macros/callback/read timing and original-client input traces missing.",
+    "KEY_MAPPING is defined in fixed Always.h2223; CHANGE_KEY_DEVICE is conditional on X2TOOL in KTDX.h555-557. All three explicit raw macro/device routes execute full acquired Manager UpdateData/GetActionState/HandleAction/SetActionState/ApplyActionInput/Game InputData; host clock/action map/COM level fixture, optional joystick/mouse and2016 build configuration remain gaps.",
+    "Full StateChange/DoStateEndStartFuture/DoFrameMoveFuture methods are independently compiled; production JS still enters state immediately and does not reproduce full Push/Pop Now/Future.",
+    "Source ZZX unconditional pureDouble differs from target2016 declaredDASH_CANCEL_AFTER=.35; binding remains unknown.",
+    "8 shortest non-overlap traces still select source fresh6 Dash restart; this boundary was not forced into regularZZ.",
+    "DOM handler is actual production source executed in NodeEventTarget, not a browserGPU or original-client experiment.",
+    "Immediate Z at airX entry remains ignored by current cancel lock; landing Z returns regularComboZ, hit reconnection/fall height and target2016 UPDOWN_CANCEL_AFTER consumer remain unverified."
+  ],
+  "sourcePreinputProbe": {
+    "report": "reports/rf-sampled-preinput-v19.json",
+    "sha256": "96f4cf94c772923788f813989c67cb02bc576fb654b9d58e3c891e7bc55c9598",
+    "completeProductionDomTraces": 16,
+    "fullReplays": 16,
+    "jsonRestorePacketsPerCase": 120,
+    "targetClientMeasured": false
+  }
+}

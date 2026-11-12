@@ -1,0 +1,78 @@
+{
+  "schema": "rf-jump-cancel-source-v18",
+  "evidenceClass": "unchanged-fixed-V5-source-consumer + target2016-declaration + current-simulation-observation",
+  "targetClientMeasured": false,
+  "target2016MeasuredTraceCount": 0,
+  "m3FidelityAccepted": false,
+  "fixedSourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "fixedSourceProbe": "reports/rf-jump-consumer-source-v18.json",
+  "sourceFunctions": [
+    "JumpFrameMoveFuture",
+    "RSI_DASH_JUMP_FrameMoveFuture",
+    "RSI_DASH_JUMP_EventProcess",
+    "RSI_JUMP_UP_EventProcess",
+    "RSI_JUMP_DOWN_EventProcess",
+    "RSI_JUMP_COMBO_Z_FrameMoveFuture",
+    "RSI_JUMP_COMBO_Z_EventProcess"
+  ],
+  "target2016": {
+    "entry": "data036.kom/RAVEN_FIGHTER.lua",
+    "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+    "state": "RSI_JUMP_COMBO_Z",
+    "attackStartAnimationTime": 0.11,
+    "physicalDamageMultiplier": 1.78,
+    "transition": 0,
+    "matchingNativeCallback": "not-acquired"
+  },
+  "repairs": [
+    {
+      "id": "free-jump-pure-direction-overlap",
+      "source": "JumpFrameMoveFuture25726 tests pureRight before else pureLeft; DashJump Event6628 does the same, without subtracting the two independent bits",
+      "oldHost": "simultaneous Left/Right was reduced to zero, suppressing the original right-priority jump direction and reverse-state request",
+      "newHost": "only JumpUp/JumpDown/DashJump input selection uses original right-first priority; other states retain existing policy",
+      "status": "fixed-reference-host-condition-repair; target2016-unmeasured"
+    },
+    {
+      "id": "dash-jump-future-facing-condition",
+      "source": "DashJump Future6577 checks pureRight with Now.right, then pureLeft with Now.left",
+      "oldHost": "zero from overlapping directions suppressed the matched original facing branch",
+      "newHost": "match the source key/facing conditions independently of the Event's direction priority",
+      "status": "fixed-reference-host-condition-repair; target2016-unmeasured"
+    },
+    {
+      "id": "dash-jump-reverse-facing-phase",
+      "source": "DashJump Event6663-6709 limits vertical speed and requests JumpUp/Down; it does not assign Future.bIsRight",
+      "oldHost": "reverse immediately flipped facing during the DashJump Event",
+      "newHost": "retain facing through the requesting packet; next JumpFrameMoveFuture consumes the pure direction",
+      "status": "fixed-reference-host-condition-repair; full-pending-StateChange-host-boundary-remains"
+    }
+  ],
+  "verification": {
+    "unchangedCppAssertions": 20,
+    "nodeFocusedNew": 13,
+    "nodeRelatedRegression": 113,
+    "pythonSourceTests": 4,
+    "millisecondFullPrefixes": 32,
+    "jsonReplay": true,
+    "restoredStepsEach": 120,
+    "simulationObservations": "reports/rf-jump-cancel-observations-v18.json"
+  },
+  "remainingGaps": [
+    "Same packet Z remains before reverse in the acquired DashJump Event; ordered DOM edges do not authorize executing several original Event callbacks in one packet",
+    "Early forced-down jump can land before the target .11 attack point; entering JumpCombo_Z alone does not prove an effective press-down slash",
+    "Original StateChange queues nextState, whereas host enter is immediate; only the explicit facing write error is corrected here",
+    "Target2016 full input/device macro selection, Main/Now/Future, production clock and real client timing still missing",
+    "Fixed reference provenance includes later reconstruction; its byte-identical method body is not proof of official target2016 behavior",
+    "No original client or browser GPU comparison was performed"
+  ],
+  "unchangedScope": [
+    "attack windows",
+    "helpers and target poses",
+    "damage and knockdown declarations",
+    "input packet Hz and cutoffs",
+    "input buffer",
+    "all ten published native modules",
+    "skills and awakening",
+    "deployment"
+  ]
+}

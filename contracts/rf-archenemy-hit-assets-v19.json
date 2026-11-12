@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "targetDamageSource": {
+    "archive": "data/data036.kom",
+    "ordinal": 49,
+    "name": "DamageEffect.lua",
+    "rawPath": "raw/data/data036.kom/DamageEffect.lua",
+    "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+    "bytes": 5409874,
+    "signatureHex": "1b4b4c820266000109010300133a0100"
+  },
+  "bindings": {
+    "RAVEN_OVER_TAKER_ARC_ENEMY": {
+      "ATTACK_TIME_START": 0,
+      "ATTACK_TIME_END": 0,
+      "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+      "DAMAGE_TIME": 1,
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "LOCK_ON_DATA": {
+        "CURVE_SPEED": 1,
+        "LOCK_ON_TYPE": 4
+      },
+      "DAMAGE_DATA": {
+        "PVP_RATE": 0.6,
+        "FORCE_DOWN": -15,
+        "BACK_SPEED_Y": -1000,
+        "CLEAR_SCREEN": 1,
+        "HIT_GAP": 1,
+        "CAMERA_CRASH_GAP": 20,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 188,
+        "CAMERA_CRASH_TIME": 0.5,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.75,
+        "BACK_SPEED_X": 500,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 3,
+        "REACT_TYPE": 2,
+        "DAMAGE": {
+          "MAGIC": 4.48
+        },
+        "RE_ATTACK": 1,
+        "ATTACK_TRIGGER_TYPE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      }
+    },
+    "RAVEN_OVER_TAKER_ARC_ENEMY_HYPER": {
+      "DAMAGE_TIME": 1,
+      "ATTACK_TIME_END": 0,
+      "ATTACK_TIME_START": 0,
+      "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "LOCK_ON_DATA": {
+        "CURVE_SPEED": 1,
+        "LOCK_ON_TYPE": 4
+      },
+      "DAMAGE_DATA": {
+        "PVP_RATE": 0.4,
+        "FORCE_DOWN": -15,
+        "BACK_SPEED_Y": 0,
+        "CLEAR_SCREEN": 1,
+        "HIT_GAP": 1,
+        "CAMERA_CRASH_GAP": 20,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 188,
+        "CAMERA_CRASH_TIME": 0.5,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 3.75,
+        "BACK_SPEED_X": 500,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 3,
+        "REACT_TYPE": 2,
+        "DAMAGE": {
+          "MAGIC": 5.72
+        },
+        "RE_ATTACK": 1,
+        "ATTACK_TRIGGER_TYPE": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 40,
+        "PARTICLE_NAME": "Wally8thMissileExplosion",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE4": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE5": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE6": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE7": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      }
+    },
+    "RAVEN_OVER_TAKER_ARC_ENEMY_MEMO": {
+      "DAMAGE_TIME": 1,
+      "ATTACK_TIME_END": 0,
+      "ATTACK_TIME_START": 0,
+      "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "LOCK_ON_DATA": {
+        "CURVE_SPEED": 1,
+        "LOCK_ON_TYPE": 4
+      },
+      "DAMAGE_DATA": {
+        "HIT_ADD_MP": 0,
+        "CREATE_DAMAGE_EFFECT_NAME": "DUMMY_DAMAGE_MEMO",
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 21,
+        "REACT_TYPE": 11,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 24008
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 40,
+        "PARTICLE_NAME": "Wally8thMissileExplosion",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE4": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE5": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE6": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE7": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      }
+    },
+    "RAVEN_OVER_TAKER_ARC_ENEMY_MEMO_HYPER": {
+      "DAMAGE_TIME": 1,
+      "ATTACK_TIME_END": 0,
+      "ATTACK_TIME_START": 0,
+      "MAIN_EFFECT_NAME": "Raven_Overtaker_Flying_Impact",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "LOCK_ON_DATA": {
+        "CURVE_SPEED": 1,
+        "LOCK_ON_TYPE": 4
+      },
+      "DAMAGE_DATA": {
+        "HIT_ADD_MP": 0,
+        "CREATE_DAMAGE_EFFECT_NAME": "DUMMY_DAMAGE_MEMO_HYPER",
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 21,
+        "REACT_TYPE": 11,
+        "RE_ATTACK": 0,
+        "APPLIED_SKILL_ID": 24008
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE1": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE2": {
+        "TRIGGER_COUNT": 2,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE3": {
+        "TRIGGER_COUNT": 40,
+        "PARTICLE_NAME": "Wally8thMissileExplosion",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE4": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "FireDamageImpactRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE5": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactRingRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE6": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactCoreRed",
+        "POSITION_TYPE": 2
+      },
+      "HIT_PARTICLE7": {
+        "TRIGGER_COUNT": 1,
+        "PARTICLE_NAME": "FireDamageImpactSlashRed",
+        "POSITION_TYPE": 2
+      }
+    }
+  },
+  "releaseSound": {
+    "file": "Raven_OT_SP2_FlyingImpact3.ogg",
+    "sha256": "61420b7bc95a39cac65c58a240d8121a0f9627911be02be4b1e64bf42f8d36ca",
+    "bytes": 11848,
+    "source": {
+      "archive": "data/data069.kom",
+      "ordinal": 1215,
+      "name": "Raven_OT_SP2_FlyingImpact3.ogg",
+      "rawPath": "raw/data/data069.kom/Raven_OT_SP2_FlyingImpact3.ogg",
+      "sha256": "61420b7bc95a39cac65c58a240d8121a0f9627911be02be4b1e64bf42f8d36ca",
+      "bytes": 11848,
+      "signatureHex": "4f676753000200000000000000007287"
+    },
+    "mimeType": "audio/ogg",
+    "format": {
+      "codec": "vorbis",
+      "channels": 1,
+      "sampleRate": 44100,
+      "bitrateNominalRaw": 80000,
+      "blockSizes": [
+        256,
+        2048
+      ],
+      "pages": 4,
+      "crcValidated": true,
+      "finalGranuleSamples": 42304,
+      "containerDurationSeconds": 0.9592743764172336
+    }
+  },
+  "releaseSoundConsumer": {
+    "path": "X2Lib/X2GURaven.cpp",
+    "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+    "lines": [
+      474,
+      552
+    ],
+    "classification": "fixed-V5-reference-not-target2016"
+  },
+  "integration": {
+    "servedIndex": "/assets/rf/fx/index.json",
+    "inventory": [
+      {
+        "path": "artifacts/rf/fx/index.json",
+        "sha256": "debb3dc3acf5f62f81de754f3753fffe02a8d57b3c7c1f4e68dbda88afc2cb00",
+        "bytes": 1306720
+      },
+      {
+        "path": "artifacts/rf/fx/textures/Arme_Critical-ab54b7572e.png",
+        "sha256": "2f84fdb0b55dd558af8170eaef15174be6a8fbd3e70a91518656be42d2d0b0ec",
+        "bytes": 10548
+      },
+      {
+        "path": "artifacts/rf/fx/textures/Arme_Damage_Center-78207cabb8.png",
+        "sha256": "9a048f98ac8d31d9e43a2e083f3e1bf3b843cf33800e900c8d0ff5873a2d0058",
+        "bytes": 7816
+      },
+      {
+        "path": "artifacts/rf/fx/textures/Arme_Damage_Ring-38fda3a9ec.png",
+        "sha256": "0a99409c1b48172763b872f7ad1881efd8341dfb6a8772e88c7eb8ad792b4104",
+        "bytes": 63631
+      },
+      {
+        "path": "artifacts/rf/fx/textures/Arme_smoke-d106bc56cc.png",
+        "sha256": "343cf5322c8448cf4a24e502fca390e1bf5017e9489b212db79115f348751706",
+        "bytes": 2703
+      },
+      {
+        "path": "artifacts/rf/fx/textures/star2-bd6213b438.png",
+        "sha256": "29c6a76e78a019e8dc4443e821b1b3107245a0863880f0a37329de5953cd91fc",
+        "bytes": 2711
+      },
+      {
+        "path": "artifacts/audio/Raven_OT_SP2_FlyingImpact3.ogg",
+        "sha256": "61420b7bc95a39cac65c58a240d8121a0f9627911be02be4b1e64bf42f8d36ca",
+        "bytes": 11848
+      },
+      {
+        "path": "artifacts/audio/manifest.json",
+        "sha256": "acacf19b1a26c1e09e75bf6fd3769505b036c22c891c2ee937f34acd39e2cca2",
+        "bytes": 129476
+      }
+    ],
+    "addedFiles": [
+      "artifacts/audio/Raven_OT_SP2_FlyingImpact3.ogg"
+    ],
+    "updatedFiles": [
+      "artifacts/audio/manifest.json"
+    ],
+    "existingImpactClosureVerified": true
+  },
+  "limits": [
+    "Target2016 resource declarations are frozen data; fixed V5 trigger/registered Hyper mode remain candidates.",
+    "Normal hits own only three FireDamageImpact records; larger missile explosion belongs to HYPER/MEMO declarations.",
+    "No target client/GPU/audio-mixer comparison was performed."
+  ]
+}

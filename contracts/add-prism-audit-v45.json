@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 static original NPC Lua bytecode; not target runtime execution",
+  "targetClientMeasured": false,
+  "callbacks": [
+    {
+      "source": {
+        "path": "asset_work\\raw\\data\\data037.kom\\Particle_Prism_Start.lua",
+        "sha256": "f925e689cb9a1f54f6beec2e3e4e512f32d287a55ba73213e65ebb8920242e16"
+      },
+      "functionBindings": {
+        "PARTICLE_PRISM_START_STATE_START": {
+          "$prototype": 0,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_START_DYING_STATE_START": {
+          "$prototype": 1,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_START_COMMON_FRAME_MOVE": {
+          "$prototype": 2,
+          "$unsupported": "function body not executed"
+        }
+      },
+      "prototypes": [
+        {
+          "prototype": 0,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "SetTimerRestart",
+            "D3DXVECTOR3",
+            "SetVector_LUA"
+          ],
+          "numbers": [
+            8.5
+          ],
+          "bytecodeProjectionSha256": "0c6f08bbd3656fdd41be3e4b6f8709e0de889100f524ccee5073e0b641e9222c"
+        },
+        {
+          "prototype": 1,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "SetNowHP_LUA",
+            "GetOwnerUserUnitUID",
+            "NUI_PARTICLE_PRISM_END",
+            "NPC_UNIT_ID",
+            "IsUnitID",
+            "GetNPCUnit",
+            "GetNPCUnitListSize"
+          ],
+          "numbers": [
+            1
+          ],
+          "bytecodeProjectionSha256": "fbbafba5859b9bfe3643225550d8e8c363170a47722f116d1704ea791e53afab"
+        },
+        {
+          "prototype": 2,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "x",
+            "GetVector_LUA",
+            "GetTimerElapsedTime",
+            "SetNowHP_LUA",
+            "GetNowHP",
+            "GetOwnerUserUnitUID",
+            "GetUserUnitByUID"
+          ],
+          "numbers": [],
+          "bytecodeProjectionSha256": "519ffdc383e510955207c920883a2ee5c9d7537e677430d3bed2e4a0b20ae64f"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "asset_work\\raw\\data\\data037.kom\\Particle_Prism_End.lua",
+        "sha256": "9d72653b848ef06fb206bd9820006aa2b4c744f09e69cf88cffa8f9c2c3ba115"
+      },
+      "functionBindings": {
+        "PARTICLE_PRISM_END_STATE_START": {
+          "$prototype": 0,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_END_DYING_STATE_START": {
+          "$prototype": 1,
+          "$unsupported": "function body not executed"
+        },
+        "PARTICLE_PRISM_END_COMMON_FRAME_MOVE": {
+          "$prototype": 2,
+          "$unsupported": "function body not executed"
+        }
+      },
+      "prototypes": [
+        {
+          "prototype": 0,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "SetTimerRestart",
+            "D3DXVECTOR3",
+            "SetVector_LUA"
+          ],
+          "numbers": [],
+          "bytecodeProjectionSha256": "2d9a5c44401f84d9b24681cb1e324fac3a2a239747726fe312922cda34180673"
+        },
+        {
+          "prototype": 1,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "SetNowHP_LUA",
+            "GetOwnerUserUnitUID",
+            "NUI_PARTICLE_PRISM_START",
+            "NPC_UNIT_ID",
+            "IsUnitID",
+            "GetNPCUnit",
+            "GetNPCUnitListSize"
+          ],
+          "numbers": [
+            1
+          ],
+          "bytecodeProjectionSha256": "fbbafba5859b9bfe3643225550d8e8c363170a47722f116d1704ea791e53afab"
+        },
+        {
+          "prototype": 2,
+          "params": 3,
+          "nativeAndStringConstants": [
+            "x",
+            "GetVector_LUA",
+            "GetTimerElapsedTime",
+            "SetNowHP_LUA",
+            "GetNowHP",
+            "GetOwnerUserUnitUID",
+            "GetUserUnitByUID"
+          ],
+          "numbers": [],
+          "bytecodeProjectionSha256": "519ffdc383e510955207c920883a2ee5c9d7537e677430d3bed2e4a0b20ae64f"
+        }
+      ]
+    }
+  ],
+  "resolvedAttackProducer": {
+    "contract": "contracts/add-prism-native-v45.json",
+    "stateTime": 0.7,
+    "damageSet": "EffectSet_SA_AN_PARTICLE_PRISM_DAMAGE",
+    "cause": "Missing original failed-AniName controller caused an empty attack shape list; the original state producer was present."
+  }
+}

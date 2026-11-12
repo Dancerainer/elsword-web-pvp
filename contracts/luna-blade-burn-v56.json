@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "luna-blade-target-declaration-v56",
+  "skillId": 21017,
+  "sourceClass": "target2016-declarations; current-Web-consumers",
+  "originalClientMeasured": false,
+  "sourceContracts": [
+    "contracts/rs-combat-source-v1.json",
+    "contracts/rs-feedback-source-v2.json"
+  ],
+  "declarations": {
+    "DamageEffect_SA_ERS_LunaBlade": {
+      "magic": 17.84,
+      "reaction": 2,
+      "buffFactor": null
+    },
+    "DamageEffect_SA_ERS_LunaBlade_ExposionFinal": {
+      "magic": 17.84,
+      "reaction": 2,
+      "buffFactor": 117
+    },
+    "factor117": {
+      "templateId": 98,
+      "percentMaximumMp": -30,
+      "finalizer": "immediate"
+    }
+  },
+  "correction": "Remove the fixed-V5 blade callback and generic-explosion suppression; let the original explosion DD apply factor117 once through normal accepted contact",
+  "observers": "Show one declared explosion burn in an isolated presentation copy; never mutate foreign owner MP",
+  "feedbackDiscrepancy": "The supplied claim that the explosion has no HP damage contradicts both original DD rows and the original two1784-percent skill description.",
+  "explicitUserProductOverride": {
+    "request": "Project rule: the explosion deals no HP damage.",
+    "execution": "Exact21017 ExposionFinal effective DD adds NO_DAMAGE1; original reaction and factor117 remain. Original raw damage rows are unchanged."
+  },
+  "boundary": "No new original2016 native callback execution or dynamic combat trace is claimed"
+}

@@ -1,0 +1,371 @@
+{
+  "schema": "mm-visual-current-web-observer-fixture-v61",
+  "provenance": {
+    "path": "./runtime/v61/mm-visual/final-b/failure-details.json",
+    "sha256": "7914b7a52a202aa26c064ee3d0f44593960d0962d23c5a00411db18ce1b22194",
+    "scope": "Selected current Web event observations; not an original-client golden trace"
+  },
+  "actorId": "player-1",
+  "targetId": "player-2",
+  "initialDp": 0,
+  "finalDp": 1276.800048828125,
+  "events": [
+    {
+      "eventId": 11,
+      "time": 0.966666666666668,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 4
+    },
+    {
+      "eventId": 24,
+      "time": 1.0666666666666678,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 12,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 4
+    },
+    {
+      "eventId": 27,
+      "time": 1.0666666666666678,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 0,
+      "dp": 182.39999389648438,
+      "delta": 182.39999389648438,
+      "reason": "hit"
+    },
+    {
+      "eventId": 31,
+      "time": 1.0666666666666678,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 1427.9481201171875,
+      "origin": {
+        "kind": "effect",
+        "id": 12,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 43,
+      "time": 2.2666666666666635,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 8
+    },
+    {
+      "eventId": 56,
+      "time": 2.366666666666663,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 24,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 8
+    },
+    {
+      "eventId": 59,
+      "time": 2.366666666666663,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 182.39999389648438,
+      "dp": 364.79998779296875,
+      "delta": 182.39999389648438,
+      "reason": "hit"
+    },
+    {
+      "eventId": 63,
+      "time": 2.366666666666663,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 1427.9481201171875,
+      "origin": {
+        "kind": "effect",
+        "id": 24,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 76,
+      "time": 3.5333333333333257,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 12
+    },
+    {
+      "eventId": 89,
+      "time": 3.6333333333333253,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 36,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 12
+    },
+    {
+      "eventId": 91,
+      "time": 3.6333333333333253,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 364.79998779296875,
+      "dp": 547.199951171875,
+      "delta": 182.39996337890625,
+      "reason": "hit"
+    },
+    {
+      "eventId": 94,
+      "time": 3.6333333333333253,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 951.9653930664062,
+      "origin": {
+        "kind": "effect",
+        "id": 36,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 106,
+      "time": 4.883333333333321,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 16
+    },
+    {
+      "eventId": 119,
+      "time": 4.983333333333321,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 48,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 16
+    },
+    {
+      "eventId": 122,
+      "time": 4.983333333333321,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 547.199951171875,
+      "dp": 729.5999755859375,
+      "delta": 182.4000244140625,
+      "reason": "hit"
+    },
+    {
+      "eventId": 125,
+      "time": 4.983333333333321,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 1427.9481201171875,
+      "origin": {
+        "kind": "effect",
+        "id": 48,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 137,
+      "time": 6.26666666666665,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 20
+    },
+    {
+      "eventId": 150,
+      "time": 6.366666666666649,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 60,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 20
+    },
+    {
+      "eventId": 153,
+      "time": 6.366666666666649,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 729.5999755859375,
+      "dp": 912,
+      "delta": 182.4000244140625,
+      "reason": "hit"
+    },
+    {
+      "eventId": 156,
+      "time": 6.366666666666649,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 1427.9481201171875,
+      "origin": {
+        "kind": "effect",
+        "id": 60,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 168,
+      "time": 7.649999999999978,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 24
+    },
+    {
+      "eventId": 181,
+      "time": 7.749999999999978,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 72,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 24
+    },
+    {
+      "eventId": 183,
+      "time": 7.749999999999978,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 912,
+      "dp": 1094.4000244140625,
+      "delta": 182.4000244140625,
+      "reason": "hit"
+    },
+    {
+      "eventId": 186,
+      "time": 7.749999999999978,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 951.9653930664062,
+      "origin": {
+        "kind": "effect",
+        "id": 72,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    },
+    {
+      "eventId": 208,
+      "time": 10.966666666666791,
+      "type": "stateChanged",
+      "actorId": "player-1",
+      "state": "RSI_COMBO_Z",
+      "stateSerial": 28
+    },
+    {
+      "eventId": 221,
+      "time": 11.066666666666796,
+      "type": "effectStarted",
+      "actorId": "player-1",
+      "effectId": 84,
+      "name": "DamageEffect_AN_Combo_Z",
+      "setName": "EffectSet_AN_Combo_Z_Attack",
+      "skillId": null,
+      "ownerStateSerial": 28
+    },
+    {
+      "eventId": 223,
+      "time": 11.066666666666796,
+      "type": "addDpChanged",
+      "actorId": "player-1",
+      "before": 1094.4000244140625,
+      "dp": 1276.800048828125,
+      "delta": 182.4000244140625,
+      "reason": "hit"
+    },
+    {
+      "eventId": 226,
+      "time": 11.066666666666796,
+      "type": "hit",
+      "actorId": "player-1",
+      "targetId": "player-2",
+      "amount": 951.9653930664062,
+      "origin": {
+        "kind": "effect",
+        "id": 84,
+        "skillId": null
+      },
+      "data": {
+        "DYNAMO_PARTICLE_RATE_TYPE": 2,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 41,
+        "REACT_TYPE": 1,
+        "DAMAGE": {
+          "PHYSIC": 1.52
+        }
+      }
+    }
+  ]
+}

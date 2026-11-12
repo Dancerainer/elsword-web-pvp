@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "evidence": "resource conversion exceptions; no target client measurements",
+  "textureAliases": {
+    "pvp_winter_tree .dds": {
+      "resource": "pvp_Winter_Tree.dds",
+      "sha256": "ea1cb0e951bbd02046e339f3cb0bf60c0b5d11de0dc723e6eae60e4e1e22c97f",
+      "evidence": "static inference: authored texture name contains a space before extension; the only catalog sibling omits this space; preview alias only, native filename lookup unmeasured"
+    }
+  },
+  "unsupportedMeshes": {
+    "besma_besmalake_pvpmap_tower03.y": {
+      "sha256": "edbc083007eeec1a399925acb7c47e886380c1d892a79cf878f5c56a548ff082",
+      "evidence": "Original data028.kom algorithm0 entry independently decoded read-only, Adler32/extent verified, identical to extraction. MSZIP block at offset 8453 fails with invalid stored block lengths. No salvaged partial tree or replacement model is exported.",
+      "originalArchive": "asset_sources/client/data/data028.kom",
+      "entryOffset": 1810076,
+      "compressedBytes": 76723,
+      "decodedBytes": 77053,
+      "packedAdler32": "5781a165",
+      "originalClientMeasured": false
+    }
+  },
+  "missingAudio": {
+    "music007_boss.mp3": {
+      "evidence": "SUMMER_2008_PVP_Test.lua SetBGM declaration; no matching entry in catalog or original loose-file inventory; retained as unavailable, no substitute track"
+    }
+  }
+}

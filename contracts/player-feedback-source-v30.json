@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "evidenceClass": "original2016 static data; web adapters and qualified V5 consumers remain separate",
+  "sources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\ELESIS_KNIGHT.lua",
+      "sha256": "b586f221a5faf010d24f99a7250d5fa3feedadea1b8e52da798351d81a98cf0d",
+      "evidenceClass": "original2016 static declaration"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "evidenceClass": "original2016 static declaration"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "evidenceClass": "original2016 static declaration"
+    },
+    "skill": {
+      "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+      "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+      "evidenceClass": "original2016 static declaration"
+    },
+    "battle-buff": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+      "evidenceClass": "original2016 static declaration"
+    }
+  },
+  "npcSources": {
+    "Elesis_BloodCutter.lua": {
+      "path": "asset_work\\raw\\data\\data037.kom\\Elesis_BloodCutter.lua",
+      "sha256": "cfe229e11f92a42b66ae84529fa1090e1688fc1992917b51c971dd7ddf41c8d2"
+    },
+    "Elesis_FireWall.lua": {
+      "path": "asset_work\\raw\\data\\data037.kom\\Elesis_FireWall.lua",
+      "sha256": "7d0a43dbb2572651663d160d43a2fa717186fc9d44f52be15015ffbcbb5ddede"
+    }
+  },
+  "cancelPoints": {
+    "GM": {
+      "ESI_A_SGM_DRASTIC_CHARGE_END": {
+        "sourceState": "ESI_A_SGM_DRASTIC_CHARGE_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.716,
+          "DASH_CANCEL_AFTER": 0.716,
+          "WALK_CANCEL_AFTER": 0.766
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11551
+        }
+      },
+      "ESI_A_SGM_PROVOKE": {
+        "sourceState": "ESI_A_SGM_PROVOKE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.813,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 0.813
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11288
+        }
+      },
+      "ESI_A_SGM_PROVOKE_REVENGE": {
+        "sourceState": "ESI_A_SGM_PROVOKE_REVENGE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.945,
+          "DASH_CANCEL_AFTER": 0.866,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11357
+        }
+      },
+      "ESI_COMBO_SGM_XX_DOWN_X_END": {
+        "sourceState": "ESI_COMBO_SGM_XX_DOWN_X_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.707,
+          "DASH_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11040
+        }
+      },
+      "ESI_COMBO_SGM_ZZZX": {
+        "sourceState": "ESI_COMBO_SGM_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11136
+        }
+      },
+      "ESI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.733
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5732
+        }
+      },
+      "ESI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5875
+        }
+      },
+      "ESI_COMBO_XXZ": {
+        "sourceState": "ESI_COMBO_XXZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.966,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6006
+        }
+      },
+      "ESI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "ESI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "ESI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "ESI_COMBO_ZZZX": {
+        "sourceState": "ESI_COMBO_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5578
+        }
+      },
+      "ESI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "ESI_DASH_COMBO_SGM_XX_ATTACK": {
+        "sourceState": "ESI_DASH_COMBO_SGM_XX_ATTACK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 999,
+          "DASH_CANCEL_AFTER": 999,
+          "WALK_CANCEL_AFTER": 999
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11182
+        }
+      },
+      "ESI_DASH_COMBO_SGM_XX_END": {
+        "sourceState": "ESI_DASH_COMBO_SGM_XX_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.3,
+          "DASH_CANCEL_AFTER": 0.3,
+          "WALK_CANCEL_AFTER": 0.3
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11198
+        }
+      },
+      "ESI_DASH_COMBO_SSK_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SSK_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8630
+        }
+      },
+      "ESI_DASH_COMBO_SSK_ZZX": {
+        "sourceState": "ESI_DASH_COMBO_SSK_ZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.5,
+          "WALK_CANCEL_AFTER": 0.533
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8770
+        }
+      },
+      "ESI_DASH_COMBO_SSK_ZZZ": {
+        "sourceState": "ESI_DASH_COMBO_SSK_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "WALK_CANCEL_AFTER": 0.7
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8704
+        }
+      },
+      "ESI_DASH_COMBO_X": {
+        "sourceState": "ESI_DASH_COMBO_X",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "WALK_CANCEL_AFTER": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6384
+        }
+      },
+      "ESI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "ESI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6308
+        }
+      },
+      "ESI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN": {
+        "sourceState": "ESI_DASH_JUMP_COMBO_SGM_XZ_DOWN",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.3,
+          "DASH_CANCEL_AFTER": 0.3,
+          "WALK_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 10816
+        }
+      },
+      "ESI_DASH_JUMP_COMBO_SSK_XXX": {
+        "sourceState": "ESI_DASH_JUMP_COMBO_SSK_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.733,
+          "WALK_CANCEL_AFTER": 0.766,
+          "ATTACK_CANCEL_AFTER_EX": 0.766
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9009
+        }
+      },
+      "ESI_SA_SGM_CRITICAL_DIVE_HIT": {
+        "sourceState": "ESI_SA_SGM_CRITICAL_DIVE_HIT",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.1,
+          "DASH_CANCEL_AFTER": 1,
+          "WALK_CANCEL_AFTER": 1.2
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 11909
+        }
+      },
+      "ESI_SA_SGM_JUGGERNAUT_BUSTER_END": {
+        "sourceState": "ESI_SA_SGM_JUGGERNAUT_BUSTER_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.821,
+          "DASH_CANCEL_AFTER": 0.821,
+          "WALK_CANCEL_AFTER": 0.966
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12064
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7081
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.45,
+          "DASH_CANCEL_AFTER": 0.45,
+          "WALK_CANCEL_AFTER": 0.45
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7259
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_BACK": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7142
+        }
+      },
+      "ESI_SI_A_EL_RUSHING_SWORD": {
+        "sourceState": "ESI_SI_A_EL_RUSHING_SWORD",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.466,
+          "ATTACK_CANCEL_AFTER_EX": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7562
+        }
+      },
+      "ESI_SI_A_EL_RUSHING_SWORD_2nd": {
+        "sourceState": "ESI_SI_A_EL_RUSHING_SWORD_2nd",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.466,
+          "ATTACK_CANCEL_AFTER_EX": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7677
+        }
+      },
+      "ESI_SI_A_EL_RUSHING_SWORD_3rd": {
+        "sourceState": "ESI_SI_A_EL_RUSHING_SWORD_3rd",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.466,
+          "ATTACK_CANCEL_AFTER_EX": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7792
+        }
+      },
+      "ESI_SI_A_SSK_POWER_BREAK": {
+        "sourceState": "ESI_SI_A_SSK_POWER_BREAK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.533,
+          "DASH_CANCEL_AFTER": 0.533,
+          "WALK_CANCEL_AFTER": 0.566,
+          "ATTACK_CANCEL_AFTER_EX": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9128
+        }
+      },
+      "ESI_SI_SA_EL_POWER_BURSTER": {
+        "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.166,
+          "DASH_CANCEL_AFTER": 1.166,
+          "WALK_CANCEL_AFTER": 1.166,
+          "ATTACK_CANCEL_AFTER_EX": 1.166
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8248
+        }
+      },
+      "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+        "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.85,
+          "DASH_CANCEL_AFTER": 1.85,
+          "WALK_CANCEL_AFTER": 1.9,
+          "ATTACK_CANCEL_AFTER_EX": 1.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9348
+        }
+      },
+      "ESI_SI_SA_SSK_VICTORIOUS_SWORD": {
+        "sourceState": "ESI_SI_SA_SSK_VICTORIOUS_SWORD",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.8,
+          "DASH_CANCEL_AFTER": 1.8,
+          "WALK_CANCEL_AFTER": 1.8,
+          "ATTACK_CANCEL_AFTER_EX": 1.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9743
+        }
+      },
+      "ESI_THROW_ITEM": {
+        "sourceState": "ESI_THROW_ITEM",
+        "values": {
+          "DASH_CANCEL_AFTER": 350,
+          "WALK_CANCEL_AFTER": 1200
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 4911
+        }
+      },
+      "RSI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "RSI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "RSI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "RSI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "RSI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "RSI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.733
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5732
+        }
+      },
+      "RSI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5875
+        }
+      },
+      "RSI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "RSI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SSK_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8630
+        }
+      },
+      "RSI_DASH_COMBO_X": {
+        "sourceState": "ESI_DASH_COMBO_X",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "WALK_CANCEL_AFTER": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6384
+        }
+      }
+    },
+    "BH": {
+      "ESI_COMBO_SBH_XZ": {
+        "sourceState": "ESI_COMBO_SBH_XZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12305
+        }
+      },
+      "ESI_COMBO_SBH_XZZ": {
+        "sourceState": "ESI_COMBO_SBH_XZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "DASH_CANCEL_AFTER": 0.42,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12329
+        }
+      },
+      "ESI_COMBO_SBH_XZZZ": {
+        "sourceState": "ESI_COMBO_SBH_XZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.533,
+          "WALK_CANCEL_AFTER": 0.908
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12430
+        }
+      },
+      "ESI_COMBO_SBH_ZZZX": {
+        "sourceState": "ESI_COMBO_SBH_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.866,
+          "WALK_CANCEL_AFTER": 0.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12571
+        }
+      },
+      "ESI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.733
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5732
+        }
+      },
+      "ESI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5875
+        }
+      },
+      "ESI_COMBO_XXZ": {
+        "sourceState": "ESI_COMBO_XXZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.966,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6006
+        }
+      },
+      "ESI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "ESI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "ESI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "ESI_COMBO_ZZZX": {
+        "sourceState": "ESI_COMBO_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5578
+        }
+      },
+      "ESI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "ESI_DASH_COMBO_SBH_XX": {
+        "sourceState": "ESI_DASH_COMBO_SBH_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12486
+        }
+      },
+      "ESI_DASH_COMBO_SBH_XXX": {
+        "sourceState": "ESI_DASH_COMBO_SBH_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.65
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12512
+        }
+      },
+      "ESI_DASH_COMBO_SBH_XXXZ": {
+        "sourceState": "ESI_DASH_COMBO_SBH_XXXZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12537
+        }
+      },
+      "ESI_DASH_COMBO_SPK_ZX": {
+        "sourceState": "ESI_DASH_COMBO_SPK_ZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.866,
+          "WALK_CANCEL_AFTER": 0.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9988
+        }
+      },
+      "ESI_DASH_COMBO_SPK_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SPK_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9957
+        }
+      },
+      "ESI_DASH_COMBO_SPK_ZZZ": {
+        "sourceState": "ESI_DASH_COMBO_SPK_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.566,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 10011
+        }
+      },
+      "ESI_DASH_COMBO_X": {
+        "sourceState": "ESI_DASH_COMBO_X",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "WALK_CANCEL_AFTER": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6384
+        }
+      },
+      "ESI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "ESI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6308
+        }
+      },
+      "ESI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7081
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.45,
+          "DASH_CANCEL_AFTER": 0.45,
+          "WALK_CANCEL_AFTER": 0.45
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7259
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_BACK": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7142
+        }
+      },
+      "ESI_SI_A_SBH_FIREWORKS": {
+        "sourceState": "ESI_SI_A_SBH_FIREWORKS",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.715,
+          "DASH_CANCEL_AFTER": 0.715,
+          "WALK_CANCEL_AFTER": 0.766
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12692
+        }
+      },
+      "ESI_SI_A_SBH_FLAME_SWORD": {
+        "sourceState": "ESI_SI_A_SBH_FLAME_SWORD",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.522,
+          "DASH_CANCEL_AFTER": 0.785,
+          "WALK_CANCEL_AFTER": 0.785
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12634
+        }
+      },
+      "ESI_SI_A_SBH_FLAME_SWORD_FINISH": {
+        "sourceState": "ESI_SI_A_SBH_FLAME_SWORD_FINISH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.581,
+          "DASH_CANCEL_AFTER": 0.581,
+          "WALK_CANCEL_AFTER": 0.62
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12652
+        }
+      },
+      "ESI_SI_A_SBH_SCALET_ROSE": {
+        "sourceState": "ESI_SI_A_SBH_SCALET_ROSE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.706,
+          "DASH_CANCEL_AFTER": 0.706,
+          "WALK_CANCEL_AFTER": 0.706
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12730
+        }
+      },
+      "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS": {
+        "sourceState": "ESI_SI_A_SBH_SCALET_ROSE_SUCCESS",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12752
+        }
+      },
+      "ESI_SI_A_SPK_AVATAR_OF_THE_FIRE": {
+        "sourceState": "ESI_SI_A_SPK_AVATAR_OF_THE_FIRE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.7,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.7
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 10289
+        }
+      },
+      "ESI_SI_A_SPK_BIG_BURST": {
+        "sourceState": "ESI_SI_A_SPK_BIG_BURST",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.05,
+          "DASH_CANCEL_AFTER": 1.05,
+          "WALK_CANCEL_AFTER": 1.1,
+          "ATTACK_CANCEL_AFTER_EX": 1.1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 10246
+        }
+      },
+      "ESI_SI_A_SPK_SWORD_ERUPTION": {
+        "sourceState": "ESI_SI_A_SPK_SWORD_ERUPTION",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.8,
+          "DASH_CANCEL_AFTER": 0.8,
+          "WALK_CANCEL_AFTER": 0.85,
+          "ATTACK_CANCEL_AFTER_EX": 0.85
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 10171
+        }
+      },
+      "ESI_SI_SA_EL_POWER_BURSTER": {
+        "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.166,
+          "DASH_CANCEL_AFTER": 1.166,
+          "WALK_CANCEL_AFTER": 1.166,
+          "ATTACK_CANCEL_AFTER_EX": 1.166
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8248
+        }
+      },
+      "ESI_SI_SA_SBH_BLAZE_WING": {
+        "sourceState": "ESI_SI_SA_SBH_BLAZE_WING",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.591,
+          "DASH_CANCEL_AFTER": 1.591,
+          "WALK_CANCEL_AFTER": 1.614
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13001
+        }
+      },
+      "ESI_SI_SA_SBH_SCALDIC_SWORD": {
+        "sourceState": "ESI_SI_SA_SBH_SCALDIC_SWORD",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.001,
+          "DASH_CANCEL_AFTER": 0.966,
+          "WALK_CANCEL_AFTER": 1.001
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12827
+        }
+      },
+      "ESI_SI_SA_SBH_WALL_OF_PROMINENCE": {
+        "sourceState": "ESI_SI_SA_SBH_WALL_OF_PROMINENCE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.089,
+          "DASH_CANCEL_AFTER": 1.089,
+          "WALK_CANCEL_AFTER": 1.158
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 12913
+        }
+      },
+      "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+        "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.85,
+          "DASH_CANCEL_AFTER": 1.85,
+          "WALK_CANCEL_AFTER": 1.9,
+          "ATTACK_CANCEL_AFTER_EX": 1.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9348
+        }
+      },
+      "ESI_THROW_ITEM": {
+        "sourceState": "ESI_THROW_ITEM",
+        "values": {
+          "DASH_CANCEL_AFTER": 350,
+          "WALK_CANCEL_AFTER": 1200
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 4911
+        }
+      },
+      "RSI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "RSI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "RSI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "RSI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "RSI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "RSI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.733
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5732
+        }
+      },
+      "RSI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5875
+        }
+      },
+      "RSI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "RSI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SPK_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9957
+        }
+      }
+    },
+    "CA": {
+      "ESI_COMBO_SDK_XX": {
+        "sourceState": "ESI_COMBO_SDK_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13880
+        }
+      },
+      "ESI_COMBO_SDK_XXX": {
+        "sourceState": "ESI_COMBO_SDK_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.535,
+          "DASH_CANCEL_AFTER": 0.535,
+          "WALK_CANCEL_AFTER": 0.535
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13960
+        }
+      },
+      "ESI_COMBO_SDK_XXXX": {
+        "sourceState": "ESI_COMBO_SDK_XXXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14037
+        }
+      },
+      "ESI_COMBO_SDK_XXXXX": {
+        "sourceState": "ESI_COMBO_SDK_XXXXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.41,
+          "DASH_CANCEL_AFTER": 0.41,
+          "WALK_CANCEL_AFTER": 0.41
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14117
+        }
+      },
+      "ESI_COMBO_SDK_XXXXXX": {
+        "sourceState": "ESI_COMBO_SDK_XXXXXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.43,
+          "DASH_CANCEL_AFTER": 0.43,
+          "WALK_CANCEL_AFTER": 0.43
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14197
+        }
+      },
+      "ESI_COMBO_SDK_XXXXXXX": {
+        "sourceState": "ESI_COMBO_SDK_XXXXXXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.5,
+          "WALK_CANCEL_AFTER": 0.5
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14262
+        }
+      },
+      "ESI_COMBO_SDK_ZZZX": {
+        "sourceState": "ESI_COMBO_SDK_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.85,
+          "DASH_CANCEL_AFTER": 0.9,
+          "WALK_CANCEL_AFTER": 0.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13570
+        }
+      },
+      "ESI_COMBO_SDK_ZZZXX": {
+        "sourceState": "ESI_COMBO_SDK_ZZZXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.831,
+          "DASH_CANCEL_AFTER": 1.2,
+          "WALK_CANCEL_AFTER": 1.2
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13638
+        }
+      },
+      "ESI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.666,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.733
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5732
+        }
+      },
+      "ESI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.766,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5875
+        }
+      },
+      "ESI_COMBO_XXZ": {
+        "sourceState": "ESI_COMBO_XXZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.766,
+          "DASH_CANCEL_AFTER": 0.966,
+          "WALK_CANCEL_AFTER": 1
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6006
+        }
+      },
+      "ESI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "ESI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "ESI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "ESI_COMBO_ZZZX": {
+        "sourceState": "ESI_COMBO_ZZZX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.5,
+          "DASH_CANCEL_AFTER": 0.7,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5578
+        }
+      },
+      "ESI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZX_END": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZX_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.8,
+          "DASH_CANCEL_AFTER": 0.8,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15119
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZX_LOOP": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZX_LOOP",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.001
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15036
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZX_START": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZX_START",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.549,
+          "DASH_CANCEL_AFTER": 0.549,
+          "WALK_CANCEL_AFTER": 0.549
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14872
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14387
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZZZ_END": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_END",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.8,
+          "DASH_CANCEL_AFTER": 0.8,
+          "WALK_CANCEL_AFTER": 0.866
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14778
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZZZ_LOOP_1": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_1",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.2
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14591
+        }
+      },
+      "ESI_DASH_COMBO_SCA_ZZZ_LOOP_2": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZZZ_LOOP_2",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.15
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14711
+        }
+      },
+      "ESI_DASH_COMBO_X": {
+        "sourceState": "ESI_DASH_COMBO_X",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "WALK_CANCEL_AFTER": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6384
+        }
+      },
+      "ESI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "ESI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6308
+        }
+      },
+      "ESI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "ESI_DASH_JUMP_COMBO_SDK_XXX": {
+        "sourceState": "ESI_DASH_JUMP_COMBO_SDK_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.75,
+          "DASH_CANCEL_AFTER": 0.75,
+          "WALK_CANCEL_AFTER": 0.75,
+          "ATTACK_CANCEL_AFTER_EX": 0.766
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13803
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7081
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_ATTACK_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.45,
+          "DASH_CANCEL_AFTER": 0.45,
+          "WALK_CANCEL_AFTER": 0.45
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7259
+        }
+      },
+      "ESI_SI_A_EL_DODGE_AND_SLASH_BACK": {
+        "sourceState": "ESI_SI_A_EL_DODGE_AND_SLASH_BACK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 7142
+        }
+      },
+      "ESI_SI_SA_EL_POWER_BURSTER": {
+        "sourceState": "ESI_SI_SA_EL_POWER_BURSTER",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.166,
+          "DASH_CANCEL_AFTER": 1.166,
+          "WALK_CANCEL_AFTER": 1.166,
+          "ATTACK_CANCEL_AFTER_EX": 1.166
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 8248
+        }
+      },
+      "ESI_SI_SA_SSK_SPIRAL_BLAST": {
+        "sourceState": "ESI_SI_SA_SSK_SPIRAL_BLAST",
+        "values": {
+          "SKILL_CANCEL_AFTER": 1.85,
+          "DASH_CANCEL_AFTER": 1.85,
+          "WALK_CANCEL_AFTER": 1.9,
+          "ATTACK_CANCEL_AFTER_EX": 1.9
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 9348
+        }
+      },
+      "ESI_THROW_ITEM": {
+        "sourceState": "ESI_THROW_ITEM",
+        "values": {
+          "DASH_CANCEL_AFTER": 350,
+          "WALK_CANCEL_AFTER": 1200
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 4911
+        }
+      },
+      "SI_A_SCA_ASSAULT_STRIKE": {
+        "sourceState": "SI_A_SCA_ASSAULT_STRIKE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.6,
+          "DASH_CANCEL_AFTER": 0.6,
+          "WALK_CANCEL_AFTER": 0.65
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15408
+        }
+      },
+      "SI_A_SCA_SHADE_SCRATCH": {
+        "sourceState": "SI_A_SCA_SHADE_SCRATCH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.6,
+          "DASH_CANCEL_AFTER": 0.6,
+          "WALK_CANCEL_AFTER": 0.65
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15291
+        }
+      },
+      "SI_A_SCA_SHADE_SCRATCH_ATTACK": {
+        "sourceState": "SI_A_SCA_SHADE_SCRATCH_ATTACK",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.6,
+          "DASH_CANCEL_AFTER": 0.6,
+          "WALK_CANCEL_AFTER": 0.65
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15340
+        }
+      },
+      "SI_A_SCA_SHADOW_EDGE": {
+        "sourceState": "SI_A_SCA_SHADOW_EDGE",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.433
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15374
+        }
+      },
+      "SI_A_SDK_INJECTION_STIGMA": {
+        "sourceState": "SI_A_SDK_INJECTION_STIGMA",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.78,
+          "DASH_CANCEL_AFTER": 0.78,
+          "WALK_CANCEL_AFTER": 0.78
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15189
+        }
+      },
+      "SI_SA_SDK_BRANDISH_BREAKER_FINISH": {
+        "sourceState": "SI_SA_SDK_BRANDISH_BREAKER_FINISH",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.532,
+          "DASH_CANCEL_AFTER": 0.532,
+          "WALK_CANCEL_AFTER": 0.532
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 15915
+        }
+      },
+      "RSI_DASH_END": {
+        "sourceState": "ESI_DASH_END",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.266
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 3686
+        }
+      },
+      "RSI_COMBO_Z": {
+        "sourceState": "ESI_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0,
+          "WALK_CANCEL_AFTER": 0.566
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5239
+        }
+      },
+      "RSI_COMBO_ZZ": {
+        "sourceState": "ESI_COMBO_ZZ",
+        "values": {
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5310
+        }
+      },
+      "RSI_COMBO_ZZZ": {
+        "sourceState": "ESI_COMBO_ZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.266,
+          "DASH_CANCEL_AFTER": 0.266,
+          "WALK_CANCEL_AFTER": 0.8
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5395
+        }
+      },
+      "RSI_COMBO_ZZZZ": {
+        "sourceState": "ESI_COMBO_ZZZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.6
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 5485
+        }
+      },
+      "RSI_COMBO_XX": {
+        "sourceState": "ESI_COMBO_SDK_XX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.4,
+          "DASH_CANCEL_AFTER": 0.4,
+          "WALK_CANCEL_AFTER": 0.4
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13880
+        }
+      },
+      "RSI_COMBO_XXX": {
+        "sourceState": "ESI_COMBO_SDK_XXX",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.535,
+          "DASH_CANCEL_AFTER": 0.535,
+          "WALK_CANCEL_AFTER": 0.535
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 13960
+        }
+      },
+      "RSI_DASH_COMBO_Z": {
+        "sourceState": "ESI_DASH_COMBO_Z",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.333
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6218
+        }
+      },
+      "RSI_DASH_COMBO_ZZ": {
+        "sourceState": "ESI_DASH_COMBO_SCA_ZZ",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.833,
+          "WALK_CANCEL_AFTER": 0.933
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 14387
+        }
+      },
+      "RSI_DASH_COMBO_X": {
+        "sourceState": "ESI_DASH_COMBO_X",
+        "values": {
+          "SKILL_CANCEL_AFTER": 0.466,
+          "WALK_CANCEL_AFTER": 0.466
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "assignmentInstruction": 6384
+        }
+      }
+    }
+  },
+  "motion": {
+    "SGM_Dash_Combo_XX_LOOP": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 3084287,
+        "line": 96680
+      },
+      "declarationSha256": "abc490773685316f0f92274a9b5cba622bfe61b6d32f0d8d890c48af818418a8",
+      "fields": {
+        "MeshName": "SGM_ProjectileWeaponM01.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_Y",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 12,
+        "LifeTime": 0.2,
+        "LightPos": [
+          100,
+          100,
+          -100
+        ],
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            -90
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0,
+          "end": 0.05,
+          "fade": true,
+          "value": 2500
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        }
+      ]
+    },
+    "EXTINCTION_ATTACK_DUMMY": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1558483,
+        "line": 48445
+      },
+      "declarationSha256": "66545120adbe8fffc5f66f9b9f862882d377eeaa603b86e6406394d04a623e35",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14,
+        "LifeTime": 1.2,
+        "ElasticCoeff": 0
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            150,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.06,
+          "end": 0.16,
+          "fade": true,
+          "value": [
+            2000,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "SI_SA_EL_WILD_SHOCK_ATTACK": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1560111,
+        "line": 48497
+      },
+      "declarationSha256": "cae8060708e7e9181e2a8f985c6c1fd6e4cd7371438a5e31e6721112c363356d",
+      "fields": {
+        "MeshName": "SI_SA_EL_WILD_SHOCK_ATTACKBOX.X",
+        "SLASH_TRACE_TEXTURE": "SA_EL_MEGA_SLASH_TRACE",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 13,
+        "LifeTime": 1.7,
+        "ElasticCoeff": 0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.006,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.5,
+            0.95,
+            1
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.8,
+          "end": 1.5,
+          "fade": true,
+          "value": [
+            0.6,
+            0.4,
+            0.4
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            2000,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.501,
+          "end": 1,
+          "fade": true,
+          "value": [
+            700,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "Mesh_Elesis_SBH_SCALDIC_SWORD_2nd": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2017925,
+        "line": 62569
+      },
+      "declarationSha256": "ea438753264a89f11f8558cc8caeb72097e8607ade563dcd60440c5be3679fdf",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.7,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2500,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.1,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            200,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    "SA_SPK_SWORDFIRE_PROJECTILE": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1709160,
+        "line": 53011
+      },
+      "declarationSha256": "5a2ca10f82e303333ebc06ed3b4e2bd6109118290e8c4375111c476185cf9e0a",
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 1.3,
+        "DrawCount": 0,
+        "NOT_CHECK_LAND_TIME": 0.12,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            4.5,
+            4.5,
+            4.5
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1800,
+            -1800,
+            0
+          ]
+        }
+      ]
+    },
+    "SCA_Combo_ZZZ_Projectile_AttackBoX": {
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2587875,
+        "line": 80806
+      },
+      "declarationSha256": "3d5648c0983595ffa7897c6d050589fb39557ded8fbf4470492b14386b1a6e18",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.3,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE_WAIT"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2250,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      ]
+    }
+  },
+  "skillNotes": {
+    "28014": {
+      "name": "Infernal Blade",
+      "description": "Swing a flaming sword and slash 3 times. Grants the user the ability\nto wield an Infernal Blade for a set duration. The Infernal\nBlade ignores the same amount of defense as the wielder's fire resistance.\n\n#CFF4444Annihilation Skill#CX\n- Consumes #CFF4444Annihilation Gauge#CX and acquire #C4488FFGale Gauge#CX\n- 100% Critical, Ignores Defensive Skills (Guard/Knockdown) when Annihilation activated ",
+      "effectiveDescription": {
+        "1": "3 Hit Strike (Magical): 1922% ×3\nFire Sword Duration: 20 sec"
+      },
+      "sourcePc": null
+    },
+    "28034": {
+      "name": "#Cffcc00[Enhanced]#CX Sword Fire",
+      "description": "Unleash a flaming sword attack that incinerates the ground and gives your sword a flame buff.\n(Can also be used in the air)\n\n#C4488FFGale Skill#CX\n-Consumes #C4488FFGale Gauge#CX and acquire #CFF4444Annihilation Gauge#CX\n-MP Consumption↓ Cooldown↓ when Gale activated\n\n#Cffcc00Final Enhanced Skill#CX\n - MP Consumption Decreased by 10%",
+      "effectiveDescription": {
+        "1": "Fire Projectile/Explosion (Magical): 451% Multi Hit"
+      },
+      "sourcePc": null
+    },
+    "28037": {
+      "name": "#Cffcc00[Enhanced]#CX\nScaldic Sword",
+      "description": "Charge forward to slash enemies 2 times while unleashing a flame wave. Enemies hit by the 1st attack will be critically hit by the second attack.\n\n#CFF4444Annihilation Skill#CX\n- Consumes #CFF4444Annihilation Gauge#CX and acquire #C4488FFGale Gauge#CX\n- 100% Critical, Ignore Guard (Guard/Knockdown) when Annihilation activated\n\n#Cffcc00Final Enhanced Skill#CX\n - MP consumption decreased by 20%",
+      "effectiveDescription": {
+        "1": "Bursting Flame (Magical): 894%\nPenetrating Flame (Magical): 1267%"
+      },
+      "sourcePc": null
+    },
+    "28204": {
+      "name": "Leap",
+      "description": "Execute a high leap while smashing the ground and leaps a further distance if used while dashing. (Super Armor status)\n\n#CFF4444Annihilation Skill#CX\n- Consumes #CFF4444Annihilation Gauge#CX and acquire #C4488FFGale Gauge#CX\n- 100% Critical, Ignore Guard (Guard/Knockdown) when Annihilation activated",
+      "effectiveDescription": {
+        "1": "Landing Shockwave (Physical): 755~1510% (Max 2.5 sec charge)"
+      },
+      "sourcePc": null
+    }
+  },
+  "limitations": [
+    "No target2016 complete combat executable source or original-client trajectory has been recovered.",
+    "Blood Cutter caster spawn phase uses qualified reconstructed EL .01 timing; original NPC script supplies travel, attack and lifetime.",
+    "Leap launch uses a requested web adapter with original class walk/run/jump physics; exact original charge/landing shockwave consumer remains unverified.",
+    "FireWall NPC script exists separately from the qualified reconstructed projectile callback; original caster binding remains unresolved.",
+    "CA dash ZZZ original COMBO_GUIDE Z/ZZ and separate event windows require additional Z presses for the loop stages."
+  ]
+}

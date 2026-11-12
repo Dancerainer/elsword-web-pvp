@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "war-prelude-time-ring-resource-bound-v1",
+  "evidenceClass": "target2016 declarations + existing Web Time Ring owner validation adaptation",
+  "targetClientMeasured": false,
+  "target2016": {
+    "warPreludeSkill": 28009,
+    "warPreludeSkillSha256": "8ad43eca602fba24683e9a23256bbe07b66020deb3c4e38218e07641b14814f4",
+    "allyCarrier": "DamageEffect_SA_SGM_War_Prelude_Buff",
+    "allyCarrierRawSha256": "d0157cbdd5780882f579b40578a8c2509730a8308ee651c4f406b1a64c7156b3",
+    "positive": {
+      "factor": 298,
+      "template": 297,
+      "factorRawSha256": "6bf09d76bc625971f73c178cda94a0f258b253fed65810ce4dffebb03de45c65",
+      "templateRawSha256": "0baa6ab5f00688223f3096a881e1cd7acc9e974db179349172b2e3570f3b4351",
+      "sourcePc": {
+        "prototype": 0,
+        "instruction": 18964
+      },
+      "changeType": 1,
+      "relation": 7,
+      "maximumMpAdd": 50,
+      "accumulationLimit": 1,
+      "duration": 30
+    },
+    "negative": {
+      "factor": 657,
+      "template": 567,
+      "factorRawSha256": "32183cd825903d00be17b79e8ca1d691ecd11f9d06e770e3f51bcc6f10b530a6",
+      "maximumMpAdd": -50,
+      "duration": 10
+    },
+    "timeRing": {
+      "skillId": 29213,
+      "rawSha256": "c9ca917b92ad30a6a6ef28f5a978ec3fc5c9246dd20774d63c0ab31d981d58cc",
+      "duration": 16.5,
+      "description": "Reduces the skill cooldown time of all party members within range and applies the [Time Traveler] buff.\n\n#CFFC000Time Traveler#CX\n- Records the current HP/MP/DP/Way of the Sword/NF/Cannon Ball/Energy/Mutation Point\n- If a player is defeated during the duration of the skill, they are resurrected with the same status as the recorded point in time.\n- This ability has top priority over other resurrection skills.\n- PVP only record 50% of Maximum HP\n- If a player is resurrected with the [Time Traveler] buff, they will have the [Time Sickness] debuff for 120 seconds.\n- Cooldown Reduction is not applied to Hyper/Wedding/Seal of Time skills.\n\n#C4488FFDP Skill#CX\n- Dynamo Configuration Mode (Awakening) consumes DP and not MP"
+    }
+  },
+  "existingConsumers": {
+    "buff": "buffs.mjs parses original factor MAX_MP change; passive-attributes-v20.mjs composes and caps current MP on maximum change.",
+    "ringCapture": "add-systems.mjs applyAddTimeRingToActor records actor.mp at grant.",
+    "ringRevive": "add-systems.mjs tryAddTimeRingRevive restores min(saved MP, current mpMax).",
+    "network": "owned-state.mjs continues validating current MP against the candidate current buff set."
+  },
+  "change": {
+    "savedMpLimit": "Frozen passive-adjusted buffBaseStats.mpMax plus the single supported positive temporary maximum from an eligible War Prelude source.",
+    "grantEligibility": "Same-team frozen class120 profile, equipped skill28009, original ally carrier applies298, factor298 links297, template297 has one stack and self-relation additive MAX_MP; use frozen master-level FIX_VALUE.",
+    "pastVersusNow": "Do not require current buff, current caster HP or current range; they cannot disprove a saved grant from before expiry/death/movement.",
+    "bounds": "No eligible grant preserves the permanent-base cap; two Grand Masters still add one grant; no sender-supplied maximum is accepted.",
+    "unchanged": "Seal DE source/team/equipped29213, HP, DP, mutation, sword ranges, current MP, runtime capture, timers and revival remain unchanged."
+  },
+  "validation": {
+    "test": "tests/combat/war-prelude-time-ring-v1.test.mjs",
+    "cases": 6,
+    "passed": 6,
+    "preFixProof": "The first-arrival boosted report and post-expiry saved350 report both failed with invalid-add-time-ring-resources before this validation change.",
+    "trajectory": "Grant original factor298 -> advance29s -> MP350 -> TimeRing save350 -> expire remaining1s of buff -> validate current300/saved350 -> revive with current cap300; separate factor657 path restores250.",
+    "nativeModuleSha256": "91fac29ff37930135de1b0d54857bf48d248690c201a5758a5c3b5717648d524"
+  },
+  "limits": [
+    "Possible-history bound within this Web owner protocol, not proof that a past cast occurred or an anti-cheat authority model.",
+    "Only the implemented source-declared positive temporary MP maximum is admitted; future maximum-MP providers require their own bounded source consumer.",
+    "No original-client networking trace or 1:1 claim."
+  ]
+}

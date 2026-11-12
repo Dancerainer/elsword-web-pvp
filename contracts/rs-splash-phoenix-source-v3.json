@@ -1,0 +1,943 @@
+{
+  "schemaVersion": 1,
+  "originalClientMeasurements": 0,
+  "evidenceClass": "target2016-static+qualified-fixedV5-consumer",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "references": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUElsword_SwordMan.cpp",
+      "cachePath": ".cache/native-source-runtime/X2Lib/X2GUElsword_SwordMan.cpp",
+      "gitBlob": "40dde7e70da2cd2888b1a08bcfe10cdab444e037",
+      "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d",
+      "bytes": 714851,
+      "fragments": [
+        {
+          "firstLine": 3911,
+          "lastLine": 3942,
+          "sha256": "376f339f32032087a2ed2622ba6fcd707fc0356a071ef471e88d8022c3dc3b49",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        },
+        {
+          "firstLine": 15023,
+          "lastLine": 15036,
+          "sha256": "0f173f149fafd7138ad71b6d8a242b9d475327bf7f7ac8c89a9574b290044b56",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "cachePath": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547,
+      "fragments": [
+        {
+          "firstLine": 26371,
+          "lastLine": 26395,
+          "sha256": "b89eaacbae3a6907ee21be427127b16d99d3b55af1445999eb072c39f623f69f",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.h",
+      "cachePath": ".cache/native-source-runtime/X2Lib/X2GUUser.h",
+      "gitBlob": "aae9761ea40f4e6d5edbb298e0a7b8e4a26c274c",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "bytes": 202266,
+      "fragments": [
+        {
+          "firstLine": 40,
+          "lastLine": 46,
+          "sha256": "8881ce5866777583c1622834763502f1512328b4f39a60edc3c52cb8c43e3f58",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        }
+      ]
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2DamageEffect.cpp",
+      "cachePath": ".cache/native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "gitBlob": "b5e926abecbde51f7ed29d6b7dc0448eb0d30e91",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245,
+      "fragments": [
+        {
+          "firstLine": 2330,
+          "lastLine": 2348,
+          "sha256": "d76973d886f8d4dca09579f7914c12d77e5d00c619559498aded1f6beb805b6a",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        },
+        {
+          "firstLine": 2395,
+          "lastLine": 2418,
+          "sha256": "78213cb276c4b5015d375ca89cdf68adaf917f5d29ef0ea29c592b3da974185c",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        },
+        {
+          "firstLine": 4717,
+          "lastLine": 4728,
+          "sha256": "cd9b12bae34840c8cc1eb463b3f131cef262568bf9abbbacec00031e15908a4a",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        },
+        {
+          "firstLine": 6072,
+          "lastLine": 6082,
+          "sha256": "76e944363f69e20cb5a06b791da4889cdd3d9ebab08ba41295d02ffe9c778a2e",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        },
+        {
+          "firstLine": 7201,
+          "lastLine": 7239,
+          "sha256": "ef7bda52f866a6282ddf245d918a78755940294aeacadf540d97405dab7f9a57",
+          "normalization": "original Latin1 bytes with LF, no final LF"
+        }
+      ]
+    }
+  ],
+  "targetSources": {
+    "state": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "splash": {
+    "rawState": {
+      "ANIM_NAME": "SI_SA_ERS_SPLASH_EXPLOSION",
+      "SKIP_TIME": 1.4,
+      "NORMAL_CAMERA1_RATE": 30,
+      "NORMAL_CAMERA2_RATE": 30,
+      "SHOW_SKILL_CUT_IN_TIME": 0.1,
+      "SPEED_X": 1000,
+      "NORMAL_CAMERA0_RATE": 40,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "CHANGE_WORLD_COLOR": 1,
+      "LAND_CONNECT": 0,
+      "INVINCIBLE": {
+        "1": 0,
+        "2": 3
+      },
+      "AFTER_IMAGE": {
+        "1": 0.1,
+        "2": 100
+      },
+      "SLASH_TRACE": {
+        "1": 0.1,
+        "2": 100
+      },
+      "STOP_OTHER_UNIT0": {
+        "1": 0.1,
+        "2": 0.6
+      },
+      "SOUND_PLAY0": {
+        "1": 0.001,
+        "2": "Energy.ogg"
+      },
+      "SOUND_PLAY1": {
+        "1": 0.015,
+        "2": "ElswordVoice_SplashExplosion.ogg"
+      },
+      "SOUND_PLAY2": {
+        "1": 0.368,
+        "2": "Elsword_SI_SA_Splash_Explosion1.ogg"
+      },
+      "SOUND_PLAY3": {
+        "1": 1.253,
+        "2": "Elsword_SI_SA_Splash_Explosion2.ogg"
+      },
+      "CAMERA1": {
+        "1": {
+          "ANGLEDEGREE": -30,
+          "LOOK_PARTS": "Bip01_Head",
+          "HEIGHT": 0,
+          "DISTANCE": 500,
+          "CAMERA_TYPE": 3,
+          "LOOK_TYPE": 0
+        }
+      },
+      "CAMERA2": {
+        "1": {
+          "ANGLEDEGREE": 40,
+          "LOOK_PARTS": "Bip01_Head",
+          "HEIGHT": -100,
+          "DISTANCE": 600,
+          "CAMERA_TYPE": 3,
+          "LOOK_TYPE": 0
+        }
+      },
+      "IS_ATTACK_STATE": 1
+    },
+    "sourcePc": {
+      "prototype": 0,
+      "assignmentInstruction": 12851
+    },
+    "marking": {
+      "DAMAGE_TIME": 9999,
+      "MAIN_EFFECT_NAME": "SA_ERS_SplashExplosion_AttackBox_01",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "FOLLOW_LINE": 0,
+      "DAMAGE_DATA": {
+        "BACK_SPEED_X": 0,
+        "PVP_RATE": 0.6,
+        "BACK_SPEED_Y": 0,
+        "CAMERA_CRASH_GAP": 15,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 188,
+        "CAMERA_CRASH_TIME": 0.3,
+        "STOP_TIME_DEF": 0.9,
+        "HIT_ADD_MP": 2.5,
+        "WAY_OF_SWORD_TYPE": 3,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 1,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 1,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "APPLIED_SKILL_ID": 21018,
+        "DAMAGE": {
+          "MAGIC": 5.47
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "ERS_SplashExplosionS_PM",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE0": {
+        "BONE_NAME": "Dummy01",
+        "EVENT_TIME": 0.2,
+        "PARTICLE_NAME": "ERS_SplashExplosionSL01",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "TIME_PARTICLE1": {
+        "BONE_NAME": "Dummy01",
+        "EVENT_TIME": 0.2,
+        "PARTICLE_NAME": "ERS_SplashExplosionSL02",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "DIE_DAMAGE_EFFECT0": {
+        "DAMAGE_EFFECT_NAME": "DamageEffect_SA_ERS_SplashExplosion_Attack_2",
+        "POSITION_TYPE": 3
+      }
+    },
+    "explosion": {
+      "DAMAGE_TIME": 9999,
+      "MAIN_EFFECT_NAME": "SA_ERS_SplashExplosion_AttackBox_02",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "FOLLOW_LINE": 0,
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_TIME": 0.3,
+        "CAMERA_CRASH_GAP": 15,
+        "PVP_RATE": 0.6,
+        "BACK_SPEED_Y": 1000,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 563,
+        "STOP_TIME_DEF": 0,
+        "HIT_ADD_MP": 7.5,
+        "WAY_OF_SWORD_TYPE": 3,
+        "DAMAGE_TYPE": 1,
+        "HIT_TYPE": 2,
+        "REACT_TYPE": 5,
+        "ATTACK_TYPE": 1,
+        "RE_ATTACK": 0,
+        "CAN_REFLEX": 0,
+        "CAN_REVENGE": 0,
+        "FORCE_FLY": 1,
+        "APPLIED_SKILL_ID": 21018,
+        "DAMAGE": {
+          "MAGIC": 14.76
+        }
+      },
+      "PASSIVE_PARTICLE0": {
+        "BONE_NAME": "Dummy01",
+        "SCALE_X": 1.4,
+        "SCALE_Z": 1.4,
+        "SCALE_Y": 1.4,
+        "PARTICLE_NAME": "ERS_SplashExplosionSL01",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "PASSIVE_PARTICLE1": {
+        "BONE_NAME": "Dummy01",
+        "SCALE_X": 1.4,
+        "SCALE_Z": 1.4,
+        "SCALE_Y": 1.4,
+        "PARTICLE_NAME": "ERS_SplashExplosionSL02",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "PASSIVE_PARTICLE2": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "ERS_SplashExplosionE01",
+        "POSITION_TYPE": 0
+      },
+      "PASSIVE_PARTICLE3": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "ERS_SplashExplosionE02",
+        "POSITION_TYPE": 0
+      },
+      "PASSIVE_PARTICLE4": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "ERS_SplashExplosionE03",
+        "POSITION_TYPE": 0
+      },
+      "PASSIVE_PARTICLE5": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "DoubleSlash_P02",
+        "POSITION_TYPE": 0
+      },
+      "PASSIVE_PARTICLE6": {
+        "BONE_NAME": "Dummy01",
+        "PARTICLE_NAME": "UnlimitedBladeP04",
+        "POSITION_TYPE": 0
+      }
+    },
+    "markingMesh": {
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.8,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SA_ERS_SplashExplosion_AttackBox_01",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2993618,
+        "line": 93674
+      },
+      "declarationSha256": "6960ba24c342c80145dff6ba7501f839d215fe9e1dc73e20716554c3efd0c992",
+      "textures": {},
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "explosionMesh": {
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 0.5,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            4.5,
+            4.5,
+            4.5
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "SA_ERS_SplashExplosion_AttackBox_02",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2994073,
+        "line": 93690
+      },
+      "declarationSha256": "0ebf195a44d44d56d1c8cf92e09bde19d8fed4e265ce6e09feccc5182cf4117c",
+      "textures": {},
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false
+    },
+    "independentExpectations": {
+      "skipTime": 1.4,
+      "skipComparison": "strict animation time >1.4 and held arrow/ZXASDCQWER; animation end first",
+      "markBirth": 0.36,
+      "markMeshLife": 0.8,
+      "markReaction": 2,
+      "explosionMeshLife": 0.5,
+      "explosionReaction": 5,
+      "explosionYSpeed": 1000,
+      "explosionForceFly": 1
+    },
+    "passiveLifetimeScope": "SwordMan multiplies EffectSetInstance.m_fLifeTime, not its spawned attack mesh lifetime. This set has only one birth at.36; preserve the mesh.8s die-child clock.",
+    "childScaleConsumer": "CEffect SetScale4717 sets DieDamageScale; CreateDieDamageEffect6079 applies it to child SetScale. Preserve the same validated rune level and instance size on explosion.",
+    "templates": [
+      {
+        "name": "ERS_SplashExplosionSL01",
+        "fields": {
+          "particleType": "PT_3D_PLANE",
+          "Emitrate": 10,
+          "Lifetime": 0.2,
+          "NumParticles": 10,
+          "DrawCount": 2,
+          "Layer": 15,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 237924,
+          "line": 6699
+        },
+        "declarationSha256": "b245d7b59391ea5cc48a15ac37006e0b598bb4da2661af3c02681b2013eec90f"
+      },
+      {
+        "name": "ERS_SplashExplosionSL02",
+        "fields": {
+          "particleType": "PT_3D_PLANE",
+          "Emitrate": 10,
+          "Lifetime": 0.2,
+          "NumParticles": 10,
+          "DrawCount": 2,
+          "Layer": 14,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 238593,
+          "line": 6721
+        },
+        "declarationSha256": "e402aba5e08c77c99198a94f3bbcfe4580fcc2471005405686c8dc1704c09a44"
+      },
+      {
+        "name": "ERS_SplashExplosionS01",
+        "fields": {
+          "particleType": "PT_3D_PLANE",
+          "Emitrate": 15,
+          "Lifetime": 0.18,
+          "NumParticles": 2,
+          "TriggerCount": 2,
+          "DrawCount": 2,
+          "Layer": 14,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 234877,
+          "line": 6604
+        },
+        "declarationSha256": "7d7bd01c832aa156205232174191f035d03a9fb119c7c27108f2e411c2b21a33"
+      },
+      {
+        "name": "ERS_SplashExplosionS02",
+        "fields": {
+          "particleType": "PT_MESH",
+          "Emitrate": 150,
+          "Lifetime": 0.2,
+          "NumParticles": 15,
+          "TriggerCount": 15,
+          "DrawCount": 2,
+          "Layer": 13,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false,
+          "Mesh": "SCA_CRIMSON_BREAK_P01.Y"
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 235609,
+          "line": 6628
+        },
+        "declarationSha256": "f79fd8a5247cf9b43246ee97d6fee7606bfdbd4596726c2572dd88767dcc891d"
+      },
+      {
+        "name": "ERS_SplashExplosionE01",
+        "fields": {
+          "particleType": "PT_3D_PLANE",
+          "Emitrate": 15,
+          "Lifetime": 0.5,
+          "NumParticles": 2,
+          "TriggerCount": 2,
+          "DrawCount": 2,
+          "Layer": 14,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 239822,
+          "line": 6762
+        },
+        "declarationSha256": "ec78ba49bc02fcd9f84ac9b15efa64b8d9654682d2f33bc9cd9ee879c196726b"
+      },
+      {
+        "name": "ERS_SplashExplosionE02",
+        "fields": {
+          "particleType": "PT_MESH",
+          "Emitrate": 200,
+          "Lifetime": 0.4,
+          "NumParticles": 23,
+          "TriggerCount": 23,
+          "DrawCount": 2,
+          "Layer": 14,
+          "BillBoardType": "BT_ALL",
+          "SourceBlendMode": "D3DBLEND_SRCALPHA",
+          "DestBlendMode": "D3DBLEND_DESTALPHA",
+          "Trace": true,
+          "ZEnable": false,
+          "ZWriteEnable": false,
+          "Mesh": "SCA_CRIMSON_BREAK_P01.Y"
+        },
+        "source": {
+          "archive": "data/data036.kom",
+          "ordinal": 104,
+          "name": "GameMajorParticle21.txt",
+          "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+          "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+          "bytes": 298427,
+          "signatureHex": "7061727469636c6573797374656d2022",
+          "byteOffset": 240669,
+          "line": 6788
+        },
+        "declarationSha256": "4d57aa46cdd724748265a3953db74883af0a71a32de495708571e3ec3f3db16d"
+      }
+    ]
+  },
+  "phoenix": {
+    "raw": {
+      "DAMAGE_TIME": 9999,
+      "MAIN_EFFECT_NAME": "Phoenix_Talon_Mesh",
+      "EFFECT_TYPE": 1,
+      "ATTACKED_BY_UNIT": 0,
+      "ATTACKED_BY_EFFECT": 0,
+      "REFLECT": 0,
+      "DAMAGE_DATA_CHANGE_TIME": {
+        "1": 1.35
+      },
+      "DAMAGE_DATA": {
+        "FORCE_DOWN": 0,
+        "BACK_SPEED_X": 0,
+        "BACK_SPEED_Y": 700,
+        "HIT_GAP": 0.1,
+        "TECH_POINT": 134,
+        "PVP_RATE": 0.6,
+        "HIT_ADD_MP": 1.79,
+        "WAY_OF_SWORD_TYPE": 3,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 19,
+        "REACT_TYPE": 16,
+        "BUFF_FACTOR": {
+          "BUFF_TEMPLET_ID": 37,
+          "RATE": {
+            "1": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BBT_CHANGE_NOW_HP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 2,
+              "BUFF_RELATION_TYPE": 3,
+              "MULTIPLIER": {
+                "1": -0.3
+              }
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 20
+              }
+            }
+          }
+        },
+        "CAN_REVENGE": 0,
+        "RE_ATTACK": 1,
+        "APPLIED_SKILL_ID": 21015,
+        "DAMAGE": {
+          "MAGIC": 3.21
+        }
+      },
+      "DAMAGE_DATA_NEXT": {
+        "FORCE_DOWN": 0,
+        "BACK_SPEED_X": 750,
+        "BACK_SPEED_Y": 0,
+        "DAMAGE_DISTANCE": 1000,
+        "CLEAR_SCREEN": 0,
+        "PVP_RATE": 0.48,
+        "CAMERA_CRASH_GAP": 20,
+        "STOP_TIME_ATT": 0,
+        "TECH_POINT": 938,
+        "CAMERA_CRASH_TIME": 0.5,
+        "STOP_TIME_DEF": 0.7,
+        "HIT_ADD_MP": 12.5,
+        "WAY_OF_SWORD_TYPE": 3,
+        "DAMAGE_TYPE": 1,
+        "ATTACK_TYPE": 1,
+        "HIT_TYPE": 20,
+        "REACT_TYPE": 2,
+        "BUFF_FACTOR": {
+          "BUFF_TEMPLET_ID": 37,
+          "RATE": {
+            "1": 1
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "BEHAVIOR": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BBT_CHANGE_NOW_HP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 2,
+              "BUFF_RELATION_TYPE": 3,
+              "MULTIPLIER": {
+                "1": -0.3
+              }
+            }
+          },
+          "FINALIZER": {
+            "COMBINATION": {
+              "1": 1
+            },
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 10
+              }
+            }
+          }
+        },
+        "CAN_REVENGE": 0,
+        "RE_ATTACK": 0,
+        "FORCE_FLY": 1,
+        "APPLIED_SKILL_ID": 21015,
+        "DAMAGE": {
+          "MAGIC": 14.53
+        }
+      },
+      "START_PARTICLE0": {
+        "OFFSET_Y": 300,
+        "BONE_NAME": "bip02",
+        "PARTICLE_NAME": "PhoenixTalon_FM01",
+        "POSITION_TYPE": 0
+      },
+      "START_PARTICLE1": {
+        "BONE_NAME": "Dummy_Bip",
+        "SCALE_X": 2,
+        "SCALE_Z": 2,
+        "SCALE_Y": 2,
+        "PARTICLE_NAME": "EMK_RisingSlashP05",
+        "POSITION_TYPE": 0,
+        "APPLY_ROTATE": 0
+      },
+      "START_PARTICLE2": {
+        "BONE_NAME": "Dummy_Bip",
+        "SCALE_X": 2,
+        "SCALE_Z": 2,
+        "SCALE_Y": 2,
+        "PARTICLE_NAME": "PhoenixTalon_P02",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE0": {
+        "EVENT_TIME": 0.25,
+        "BONE_NAME": "bip02",
+        "PARTICLE_NAME": "PhoenixTalon_FM02",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE1": {
+        "EVENT_TIME": 1.35,
+        "BONE_NAME": "bip02",
+        "PARTICLE_NAME": "PhoenixTalon_FM02",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE2": {
+        "OFFSET_Y": 20,
+        "EVENT_TIME": 0.2,
+        "BONE_NAME": "bip02",
+        "PARTICLE_NAME": "PhoenixTalon_P01",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE3": {
+        "OFFSET_Y": -130,
+        "EVENT_TIME": 0.2,
+        "SCALE_X": 0.65,
+        "SCALE_Z": 0.65,
+        "SCALE_Y": 0.75,
+        "BONE_NAME": "bip02",
+        "PARTICLE_NAME": "PhoenixTalon_P01",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE4": {
+        "BONE_NAME": "Dummy_Bip",
+        "EVENT_TIME": 0.2,
+        "SCALE_X": 1.1,
+        "SCALE_Z": 1.1,
+        "SCALE_Y": 1.8,
+        "PARTICLE_NAME": "EMK_RisingSlashP03",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE5": {
+        "BONE_NAME": "Dummy_Bip",
+        "EVENT_TIME": 0.2,
+        "SCALE_X": 1.2,
+        "SCALE_Z": 1.2,
+        "SCALE_Y": 1.8,
+        "PARTICLE_NAME": "EMK_RisingSlashP05",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE6": {
+        "BONE_NAME": "Dummy_Bip",
+        "EVENT_TIME": 0.5,
+        "SCALE_X": 1.7,
+        "SCALE_Z": 1.7,
+        "SCALE_Y": 1,
+        "PARTICLE_NAME": "PhoenixTalon_P03",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE7": {
+        "BONE_NAME": "Dummy01",
+        "EVENT_TIME": 1.5,
+        "ROTATE_Z": -90,
+        "PARTICLE_NAME": "PhoenixTalon_EM",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE8": {
+        "OFFSET_Y": 20,
+        "BONE_NAME": "Dummy_Bip",
+        "ROTATE_Z": -90,
+        "EVENT_TIME": 1.65,
+        "PARTICLE_NAME": "PhoenixTalon_E05",
+        "POSITION_TYPE": 0
+      },
+      "TIME_PARTICLE9": {
+        "BONE_NAME": "Dummy01",
+        "EVENT_TIME": 1.9,
+        "ROTATE_Z": -90,
+        "PARTICLE_NAME": "DoubleSlash_FireP04_1",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "TIME_PARTICLE10": {
+        "BONE_NAME": "bip02",
+        "EVENT_TIME": 0.5,
+        "PARTICLE_NAME": "PhoenixTalon_P04",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "TIME_PARTICLE11": {
+        "BONE_NAME": "bip02",
+        "EVENT_TIME": 1.25,
+        "PARTICLE_NAME": "PhoenixTalon_P04",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "CREATE_DAMAGE_EFFECT0": {
+        "EVENT_TIME": 1.75,
+        "DAMAGE_EFFECT_NAME": "DamageEffect_SA_ERS_PhoenixTalonFX",
+        "BONE_NAME": "Dummy_Bip",
+        "POSITION_TYPE": 0,
+        "USE_GLOBAL_TIME": 1
+      },
+      "HIT_PARTICLE0": {
+        "TRIGGER_COUNT": 10,
+        "PARTICLE_NAME": "DamageImpact",
+        "POSITION_TYPE": 2
+      },
+      "CAMERA0": {
+        "EVENT_TIME": 0.266,
+        "GAP": 35,
+        "TIME": 0.3,
+        "UNIT_SELECT": 1,
+        "CRASH_TYPE": 3
+      },
+      "CAMERA1": {
+        "EVENT_TIME": 1.766,
+        "GAP": 40,
+        "TIME": 0.4,
+        "UNIT_SELECT": 1,
+        "CRASH_TYPE": 3
+      }
+    },
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 6724
+    },
+    "independentExpectations": {
+      "ascendingReaction": 16,
+      "ascendingHitGap": 0.1,
+      "phaseChangeAnimationTime": 1.35,
+      "returningReaction": 2,
+      "returningDefenderStop": 0.7,
+      "returningReattack": 0
+    },
+    "receiptConsumer": "Repeat-hit entries expire before damage-stage switching; SetDamageDataNext retains only entries still present. Expired ascending entries must not block a returning contact forever.",
+    "correctionScope": "Only RS Phoenix first stage; do not blanket-clear live gaps or replay a returning one-shot hit. Preserve prior user-authorized ascending FORCE_FLY1 override."
+  },
+  "limitations": [
+    "Fixed V5 includes later reconstruction and conditional SKILL_BALANCE_PATCH consumer; not a recovered target2016 executable.",
+    "Original client dynamic comparison remains unmeasured; current model collision, owner reports and GPU are separately recorded.",
+    "Medium particle density preservation is a web presentation policy, not a native medium-setting particle-count claim."
+  ]
+}

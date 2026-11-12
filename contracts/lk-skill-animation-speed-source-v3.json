@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "inputs": [
+    {
+      "path": ".cache/lk/elsword-declarations.json",
+      "sha256": "cd57171234951a4c326a64c487817b0c1272206bcb4266831f0c6b36a0e1f8dc",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+        "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+      }
+    },
+    {
+      "path": ".cache/lk/skill-declarations.json",
+      "sha256": "ea520816c3a54129afe92597d63bca4bfccaf5afc58ab8ca4a3c32bb8163ba81",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\NewSkillTempletVer2.lua",
+        "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266"
+      }
+    },
+    {
+      "path": ".cache/lk/skill-note-declarations.json",
+      "sha256": "8e558eea1adf82c69687d621ccdf5736f3884b188c9c83d950d5ac21890c29b4",
+      "targetSource": {
+        "path": "asset_work\\raw\\data\\data036.kom\\SkillNoteTemplet.lua",
+        "sha256": "eadf9ccd9b546500688ef4eaf60e9b6183cbe8c65103ff3f198d7d144ef72816"
+      }
+    }
+  ],
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "referenceSpans": [
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 13625,
+      "endLine": 13654,
+      "fragmentSha256": "b2cf2799d8237d8899a2694cd62bfb67a25a1d6f83ef9c5c4cf9ace5dfb87f88"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 14182,
+      "endLine": 14197,
+      "fragmentSha256": "dbc5a502edf450253d89cff424411e281925dfca32cab5dc03b42dc91a318e71"
+    },
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "fileSha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "startLine": 26853,
+      "endLine": 26880,
+      "fragmentSha256": "06afbcacf36244cbb46fdd5fa2b45673fe07f1d4bad7db4a6c76f61ed564141f"
+    }
+  ],
+  "activeCount": 20,
+  "branchCount": 38,
+  "stateCount": 31,
+  "targetExplicitFalseCount": 5,
+  "userCorrections": [
+    {
+      "skillId": 21031,
+      "name": "[Enhanced] Spiral Blast",
+      "fixedSpeed": 1,
+      "evidenceClass": "user-confirmed-web-correction",
+      "targetConflict": "Original target tables omit the gate and fixed V5 defaults true; preserve raw declarations and record the user correction separately."
+    },
+    {
+      "skillId": 21205,
+      "name": "Rolling Smash",
+      "fixedSpeeds": [
+        5,
+        1.5,
+        1
+      ],
+      "evidenceClass": "user-confirmed-web-correction",
+      "targetConflict": "Original target tables omit the gate and fixed V5 defaults true; preserve raw declarations and record the user correction separately."
+    }
+  ],
+  "fixture": "tests/fixtures/lk-skill-animation-speed-v3.json",
+  "fixtureSha256": "8c2455c68804543bbf9f04ee1f93ca716813558f0be8a17066ad5615f0619740",
+  "boundaries": [
+    "No generic fixed-speed rule by skill category",
+    "Iron Body casts without changing animation, so the prior command clock remains authoritative",
+    "Fixed skill speed still respects hitstop/worldstop; source effect clocks stay independent",
+    "No measured 2016 client action-speed trajectory"
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "add-core-passives-target2016-v56",
+  "originalClientMeasured": false,
+  "source": {
+    "repository": "asset_sources/upstream",
+    "commit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+    "path": "reports/analysis/add-core-passives-2016/original-resources.json.gz",
+    "sha256": "405a10ffe8e7067d59cc1a49800b78d663add5e0fe0cd4f77656a841a9ff0ab2",
+    "archive": "asset_sources/client\\data\\data036.kom",
+    "archiveSha256": "0399edcd64e5edd5bdc5c63c86ea48ab8deef5a4490c72619584635034e661e3"
+  },
+  "buffCatalog": {
+    "schemaVersion": 1,
+    "targetVersion": "Steam-NA-2016-V6.0420.5",
+    "targetClientMeasured": false,
+    "scope": "two newly imported original Add core factors and templates; existing raw rows unchanged",
+    "buffFactors": {
+      "619": {
+        "raw": {
+          "BEHAVIOR": {
+            "BBT_CHANGE_WALK_RUN_SPEED": {
+              "BUFF_CHANGE_TYPE": 3,
+              "BUFF_RELATION_TYPE": 7,
+              "PERCENT": {
+                "1": 1.035,
+                "10": 1.153,
+                "11": 1.166,
+                "12": 1.179,
+                "13": 1.192,
+                "14": 1.205,
+                "15": 1.218,
+                "16": 1.232,
+                "17": 1.245,
+                "18": 1.258,
+                "19": 1.271,
+                "2": 1.048,
+                "20": 1.284,
+                "21": 1.297,
+                "22": 1.31,
+                "23": 1.323,
+                "24": 1.336,
+                "25": 1.349,
+                "26": 1.363,
+                "27": 1.376,
+                "28": 1.389,
+                "29": 1.402,
+                "3": 1.061,
+                "30": 1.415,
+                "4": 1.074,
+                "5": 1.087,
+                "6": 1.101,
+                "7": 1.114,
+                "8": 1.127,
+                "9": 1.14
+              }
+            },
+            "COMBINATION": {
+              "1": 12
+            }
+          },
+          "BUFF_TEMPLET_ID": 530,
+          "FINALIZER": {
+            "BFT_FINISH_HYPER": {},
+            "COMBINATION": {
+              "1": 11
+            }
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "RATE": {
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "3": 1,
+            "30": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 38127
+        },
+        "source": {
+          "name": "BattleFieldBuffFactor.lua",
+          "rawSha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+          "packedSha256": "c4564bf71410ddd6578d316af5416b62877bc41ea8c22e7b46bbe2fe9dd35841",
+          "ordinal": 14
+        }
+      },
+      "669": {
+        "raw": {
+          "BEHAVIOR": {
+            "BBT_CHANGE_NOW_MP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 1,
+              "FIX_VALUE": {
+                "1": 0.5,
+                "10": 1,
+                "11": 1,
+                "12": 1,
+                "13": 1,
+                "14": 1,
+                "15": 1,
+                "16": 1,
+                "17": 1,
+                "18": 1,
+                "19": 1,
+                "2": 0.75,
+                "20": 1,
+                "21": 1,
+                "22": 1,
+                "23": 1,
+                "24": 1,
+                "25": 1,
+                "26": 1,
+                "27": 1,
+                "28": 1,
+                "29": 1,
+                "3": 1,
+                "30": 1,
+                "4": 1,
+                "5": 1,
+                "6": 1,
+                "7": 1,
+                "8": 1,
+                "9": 1
+              }
+            },
+            "COMBINATION": {
+              "1": 2
+            }
+          },
+          "BUFF_TEMPLET_ID": 669,
+          "FINALIZER": {
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1,
+              "NORMAL_TIME": {
+                "1": 9999,
+                "10": 9999,
+                "11": 9999,
+                "12": 9999,
+                "13": 9999,
+                "14": 9999,
+                "15": 9999,
+                "16": 9999,
+                "17": 9999,
+                "18": 9999,
+                "19": 9999,
+                "2": 9999,
+                "20": 9999,
+                "21": 9999,
+                "22": 9999,
+                "23": 9999,
+                "24": 9999,
+                "25": 9999,
+                "26": 9999,
+                "27": 9999,
+                "28": 9999,
+                "29": 9999,
+                "3": 9999,
+                "30": 9999,
+                "4": 9999,
+                "5": 9999,
+                "6": 9999,
+                "7": 9999,
+                "8": 9999,
+                "9": 9999
+              }
+            },
+            "COMBINATION": {
+              "1": 1
+            }
+          },
+          "IGNORE_REGIST_FOR_RATE": 1,
+          "RATE": {
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "3": 1,
+            "30": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          }
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 41010
+        },
+        "source": {
+          "name": "BattleFieldBuffFactor.lua",
+          "rawSha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804",
+          "packedSha256": "c4564bf71410ddd6578d316af5416b62877bc41ea8c22e7b46bbe2fe9dd35841",
+          "ordinal": 14
+        }
+      }
+    },
+    "buffTemplates": {
+      "530": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BEHAVIOR": {
+            "BBT_CHANGE_WALK_RUN_SPEED": {
+              "BUFF_CHANGE_TYPE": 3,
+              "BUFF_RELATION_TYPE": 7
+            },
+            "COMBINATION": {
+              "1": 12
+            }
+          },
+          "BUFF_TEMPLET_ID": 530,
+          "FINALIZER": {
+            "BFT_FINISH_HYPER": {},
+            "COMBINATION": {
+              "1": 11
+            }
+          },
+          "IS_DEBUF": 0,
+          "IS_WORLD_BUFF": 0,
+          "REGIST_TYPE": 0
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 32916
+        },
+        "source": {
+          "name": "BattleFieldBuffTemplet.lua",
+          "rawSha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+          "packedSha256": "7bb39d53cf8bbaa4515b2237cecb502dcb7bf01636e75172e7e4f5f2210b71d8",
+          "ordinal": 15
+        }
+      },
+      "669": {
+        "raw": {
+          "ACCUMULATION_LIMIT": 1,
+          "BEHAVIOR": {
+            "BBT_CHANGE_NOW_MP_PER_SECOND": {
+              "BUFF_CHANGE_TYPE": 1,
+              "DRAW_TEXT": 0,
+              "TIME_INTERVAL": 1
+            },
+            "COMBINATION": {
+              "1": 2
+            }
+          },
+          "BUFF_DESC": {
+            "$symbol": "STR_ID_30057",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_ICON_TEXTURE_KEY": "Buff_Icon_Pylon",
+          "BUFF_ICON_TEXTURE_NAME": "DLG_UI_Common_Texture_Buff.tga",
+          "BUFF_NAME": {
+            "$symbol": "STR_ID_30056",
+            "$unsupported": "native/global value not resolved"
+          },
+          "BUFF_TEMPLET_ID": 669,
+          "FINALIZER": {
+            "BFT_TIME": {
+              "BUFF_DURATION_TIME_TYPE": 1
+            },
+            "COMBINATION": {
+              "1": 1
+            }
+          },
+          "IS_DEBUF": 0,
+          "IS_WORLD_BUFF": 0,
+          "REGIST_TYPE": 0
+        },
+        "sourcePc": {
+          "prototype": 0,
+          "instruction": 35422
+        },
+        "source": {
+          "name": "BattleFieldBuffTemplet.lua",
+          "rawSha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef",
+          "packedSha256": "7bb39d53cf8bbaa4515b2237cecb502dcb7bf01636e75172e7e4f5f2210b71d8",
+          "ordinal": 15
+        }
+      }
+    },
+    "effectSets": {},
+    "effectTemplates": {}
+  },
+  "consumers": {
+    "status": "parsed-selected-original2016-passive-consumers",
+    "skillIds": [
+      29400,
+      29401,
+      29402,
+      29403,
+      29404,
+      29405,
+      29406,
+      29407,
+      29408,
+      29409,
+      29410,
+      29411
+    ],
+    "scope": "Learned/template/level conditional parameter producers and their actual battle consumers. Runtime actor values, seed, objects, state, FPU environment and existing Buff/skill maps remain inputs. No whole profession or unique match result is claimed.",
+    "refresh": "Actual Add330625bc+510=32763400 calls User31f594b0, resets its selected fields, switches on original component63ec+38 class. Base32/33/36 and advanced122/123/126 paths are retained, including advanced-to-base fallthrough. Declarations and slot:false are not activation proof.",
+    "29400": {
+      "production": "SA15->7030 armor multiplier; SA142->7034 DP entry-use multiplier; SA5->protected7434 awakening mutation chance. Original missing/level/template guards and reset defaults preserved.",
+      "armor": "Actual final damage321f4610 calls resolved DD owner+324. Actual Add32743910: DD4d8==3 returns7030; 0/1 select7024/702c via32741650; other cases1. The owner multiplier is consumed in the existing staged damage, not a new HP subtraction.",
+      "awakening": "Actual32768bf0 multiplies original7004 by7034 for its DP entry-cost path; protected7434 is compared to the actual seeded sample and eligible branch invokes32744ac0(+1). No passive declaration is substituted for awakening attack production."
+    },
+    "29401": {
+      "production": "SA73->703c attack feedback chance; SA74->7040 received feedback chance; learned level->7464; independent SA27 forceDown rebuild on37b0/37ac.",
+      "feedback": "Refresh registers actor5658 {this,32774d40->32741780} and5688 {this,32774d50->32741830}. Base refresh clears logical delegates first. Actual body/effect attacker feedback dispatches5658; target hit tail dispatches5688. DD8!=1, actual1cc false, cooldown7044<=0 and sample strictly below selected chance*DD4a8 are retained. Not once per keypress or guaranteed HP damage.",
+      "effect": "3273c260 creates original DamageEffect_ADD_DUST_STORM with DD-derived position and coefficient; abs(coefficient)>epsilon. DD0==2 uses(DD38+DD38)*.5 in original code. Factory return is followed by7044=.1 even without checking nonnull result. Default Add61c after base decrements positive7044 byactor160 and clampsnegative0.",
+      "regeneration": "Awakening Add+BC3273c0f0 requests BF669 at7464 level; it is not historical BF346. ActualBF669->BFT669 periodic behavior2, mode1, interval1, rawrate .5/.75/1, TIME9999. Native behavior pipeline below governs actual amount, clock and removal."
+    },
+    "29402": {
+      "production": "SA5->7048 DDassembly chance; SA133->protected7440 mutation chance; SA148->protected744c delay; refresh copies delay toprotected7458 elapsed, so initially ready. Unlearned selected defaults:7048=0,protected7440=-1,protected744c/7458=-1.",
+      "damageAssembly": "Actual Add+25832741060 callsbase31f3d2f0, then only nonnull DD4d8==3 samples31c181c0(0,1); ordered sample<=7048 setsDD4b4=DD4c1=1. No hard unconditional critical or ignore-defense behavior is invented from byte names.",
+      "mutation": "Actualownerfeedback32771c70 calls32767b60. DD4d8==3 and orderedelapsed>=delay; one v1a4(0) sample strictly<protected7440 invokes32744ac0(+1) and writeselapsed0, irrespective of cap causing no actual extra point. Equality at chance fails. Timer32767c80 runs in Add61c after base: positive delay and elapsed<delay then elapsed+=actor160; no clamp, so may overshoot.",
+      "movement": "Actualawakening32768bf0@32769104..35 querieslearned29402 andrequestsBF619atpositivelevel. BF619->BFT530,BBT12mode3relation7limit1: actual30levelarraystarts1.035/1.048/1.061,notSA_MOVE_SPEED1.1/1.15/1.2. Selectednormalrefresh/awakening/Buffchain doesnotconsumethatSAdeclaration; noglobalabsenceclaim. Actualpropertyswitchadds/changes/removesboth3f54/4008 keys,result3ff4/40a8; actualAddv45c31f39630/v47c31f397a0 use40a8 in3930*decoded40a8*originaldouble32fe96c8 to1ac. Direction/inputandotheroriginalgatesremain.",
+      "movementEnd": "BFT530hasFinishHyper11andnoTIME. Factory32aebe90case11->32aed680typed330a55dc; actualBuffclone3220abf0 selectsfinalizervC32aeaf50 whichclearsforceC0. v832ae9db0 requiresfactorrecord,targetandtargetvB0>0; actualAddvB0327793d0 returns9999999. Initsetsactive10=1 andsavedID18=Buffinstance28. Original32297480 firstv432aeb000 readsactor97c protectedE4(missing0)toactive10,thenv1032ae9e20 endswhenforceC!=0oractive10==0; finitepositiveE4maintains. UnorderedflagsretainedinASM. Commonpollthenremovesbehavior12keysonbothpropertiesanddirtyrecomputes. Nofixednewdurationorresourcecost."
+    },
+    "29403": {
+      "production": "Learned/template sets704c; refresh resets7050 state0. Unlearned removes template334/335, not factors334/335.",
+      "selection": "Actualdefault61c3276ed90->3273c610 compares currentDP with .5*component110maxDP; below selects2/BF357, equal or above1/BF356. Only state change appliesBuff;7050 updated beforecomponent63ec guard. Componentabsent gives0/0 and state1. Not fixed200DP.",
+      "buffs": "BF356->BFT334: BBT8 magic mode3 1.02/1.04/1.06 and BBT16 critical mode1 +2/4/6. BF357->BFT335: BBT72 hypercharge mode3 1.2/1.3/1.4. BothTIME99999, limit1; behavior47 parser and32ad1a90 remove the other template. BBT72 actualproperty53c8/result5468 is read by Add DPgain helper327416f0, so this is an actual downstream DPgain input."
+    },
+    "29404": {
+      "production": "7054 enabled; protected7058 SA5=.3/.4/.5;741c SA29 range1000;7420 SA158 verticalrange500.",
+      "awakeningRefund": "Original32768bf0 with7054enabled savesbeforeDP, paysviaactual+248,readsafterDP,thenrefunds max(beforeDP-afterDP,0)*protected7058/20 throughactual+e8. Protected7058 .3/.4/.5 isadeterministicscalar,notrandomchance; later7434mutationRNGisaseparatebranch. Preserveoriginalx87flags,paymentclampandordering; notfixed20MP.",
+      "memoryProducer": "Actual feedback3275fb50 requires positive DD490, valid DD400 weak target, DD3fc==0 and DD4e0==1 or four special IDs29201/29202/29216/29217. It normalizes DD500 through original owner gates. Selected four IDs additionally require awakening, erase first sameID oldrecord, then append stride32 {remaining3,target identity at8..14,skillID18,disabled1c=0}. It does not independently require7054; the passive is checked by consumer32753230.",
+      "lifetime": "Actual Add+61832764770->3275eca0 subtracts actor160 each invocation. remaining<1 marksdisabled1c once and notifies; remaining<0 erases, so equality0 is retained and equality1 is not disabled. No catchup exemption invented. Record3 with disabled threshold1 gives the usual two-second eligibility window, not an immediate delete at2.",
+      "freeUse": "32753230 requires awakening and7054==1, same skillID anddisabled==0; actual slot cost/cooldown getters32753a90/32753cf0 use it to return0 on their original branches. Other permit/resource gates remain.",
+      "targetUse": "327557c0 scans all matching records;3272ec50 resolves target, compares sqrt(3D distance)<=741c and in original game3209bb40 mode absY<=7420. Missing target returns true here; later use-entry has its own target/HP/team/geometric guards. Accepted record identity is copied70d0..70dc,disabled=1,7074=skillID,7078=0. Failure on any matching record returnsfalse immediately. The actual32753fe0 local-enter and32754ac0 exit/retarget use the recorded identity; the original common state/collision consumers are retained."
+    },
+    "29405": {
+      "production": "Protected7094 SA66 givesMP4/8/12/15;7030 SA15 armor multiplier;7418 SA2 cap6.",
+      "consumer": "Mutation setter32744ac0 adds/clamps request to0..6. Its original positive-reward branch usesprotected7094 once through actual+e8 when the request results within cap without overflow; this is not amount*delta and not unconditional at already-full6. Negative request separately invokes MindCircle before final write, per29413 contract. Armor uses actualv324 as29400."
+    },
+    "29406": {
+      "production": "70bc SA50 projectile-size1;70c0 SA1 primary-mesh-life1.1/1.2/1.3;7464 level and independent forceDown27 rebuild. SA21 maxMP10/20/30 is consumed by another original method, not missing from32763400 by accident.",
+      "sizeLife": "Actualselected install factories in MM Dynamo/Activator/Magnetron/Fury contracts pass70bc as external size and70c0 as independent third lifetime scalar. Actual mesh/DD consumers and child CREATE/DIE scalar inheritance remain those contracts; do not rename70c0 as damage.",
+      "maxMP": "Actualrefresh31f2eff0 callsv510 thenv504(1) thenv4ec. Addv4ec31f3bee0 calls3225f4a0(component63ec,300,0); original skill29406 learnedlevel/template/key21[level-1] adds10/20/30, absent/out-of-range yields0. 3225f4a0 sequentially accumulates its actual ten skill lookups; no generic type2 traversal is inferred. 31f3bee0 puts300 base inproperty5314 and additive q+stat64fc1ec+q*decoded64fc248-300, recomputes, then sendsresult53b4 throughvDC31fcb670 to actualAddGagev14=322105e0; this writes component8 protected10 maximumMP. Other active property inputs remain."
+    },
+    "29407": {
+      "production": "70a4 starts3 then becomes3-SA1(2/2.5/2.85), not30-SA1; protected70a8 SA143 .9/.85/.8 with original positive fallback1;70b4 SA24=10/15/20,70b8 learnedlevel.",
+      "selectedMode": "Actual32753a90 selected IDs29013/29016/29017/29018/29035 when71ec==ID usekey143 with actual5c8 andprotected70a8. Actual32753cf0 selected mode-changing install branches return70a4 under original selector; same selected active mode and other specialbranches retain their own results.",
+      "extension": "Actual32771560 on modechange and manager availability: BF367 if70c4, +1mutation, and when old71ec nonzero performs original modeexit. If70b8>0 collect local Buffrecords stride66, find template342 with nonempty finalizer/floatdata, last matching remaining wins. Positive remaining createsBF366 at70b8 and changes TIME finalizer1 toremaining+70b4 beforeactual1e8 application. Not unconditional30+10 refresh and not loop per same mode. BFT342 hasTIME plusX2STATE_CHANGE; actual Add1fc removal342 readsoriginalv428. Ifvalue is oneof fiveinstallIDs orphase7200!=2, sets7205=1; otherwise3273c710(this=actor71ec subobject)clearsmode/displayhandle. Default61c32741f00 consumes7205==1 andphase2 afterv428 leavesfiveinstallIDs, thenperformsdeferredmode/handlecleanup. Buffenddoesnotalwaysclearimmediately."
+    },
+    "29408": {
+      "production": "Learnedlevel->70c4; actual32771560 changed mode requestsBF367(level,0), before mutation and old modecleanup.",
+      "buff": "BF367->BFT343, limit3,multiplier1, behavior24/25/26 mode3 relation7, levelrates1.05/1.075/1.1, TIME10/12.5/15. Originalsharedapply belowstacklimit calls32298c50, behavior32ad0670 usespriorstacku =>1+(u+1)*(p-1), then incrementsstack after successful behavior/finalizer initialization. At3 only finalizers refresh. Not p^3 and not three separate factors. Actualproperties4888/493c/49f0 results4928/49dc/4a90 feed shared melee/range/received MP gain; original Add5a4/5a8 multipliesfurther in awakening. End removes keyed entries and originaldirty recompute retains others."
+    },
+    "29409": {
+      "production": "SA15->70c8=1.05/1.1/1.15.",
+      "consumer": "ActualActivator32740500, FlickDisc32761410, Countdown3275b770, Rushing3273ca90, Fission3275b440, Magnetron32761160 and install32771560/32771ce0/Fury32768200 paths passv1d0*70c8 asfactorydamage scalar or saveit toselected per-install record; exact per-skill templates/loops remain sealed producer contracts. Genericfactory31f0a1e0->31efd1e0->31ef8ec0->effect1c8->DDa4 consumes that scalar; laterCREATE/DIE caninherit1c8. No immediate multiplier to all existingDD is asserted."
+    },
+    "29410": {
+      "production": "72f0 enable;72fc SA28 MPonhit;7300 SA56 MPgethit;72f4 SA141 DPgain;72f8 SA142 DPuse;7030 SA15 armor damage;7304 SA148 cooldown1.5. Originalgetters5a4 and5a8 bothactuallyread72fc inawakening; do not fix the second to7300.",
+      "resource": "Actualv2443273bed0 computes DD-derived amount then invokes+248 with generic326346a0 scalar plusnormal(72f4-1); actualv52c327411b0 invokes+248 withgeneric326347c0 plusnormal(72f8-1). +248 retains327432c0 andnegative5b08 modifier then3273d2d0 clamp. AwakeMP hit/received actual5a4/5a8 use72fc; normalreturn1. SA labels do not override mode gates.",
+      "payment": "Actual327427d0 usesDPpayer3273cdb0 onlywhen72f0==1 andawake; finitecurrentDP>=requestedcost permits, equality accepts; otherwiseoriginalMPpayer. This is separate from strict32741130 DPmaintenance gate. Skillpayment3272eb40 on originalspecialtypes usesDP/MPexchange;positiveargument3272e8e0 divides20 then+e8. NormalMP use andawakeDP use retain original6af0/6fb0.",
+      "cooldown": "32762250 first erasesfirst sameID7308record, then awake+specialtype321063d0+template164 appends{skillID,180}. OriginalMaximum/ReverseStigma gates remain. Actual+41832744db0 returns7304 onlyenable==1 and matchingrecord; otherwise1. Slot321065c0 multipliesselectedtemplate cooldown by actualactor+418. Default61c->3275f070 uses321db6c0: positive timer decreases by160, clamps0 and returns1 oncrossing<=0; removes onthatreturn. Initial0 is not automaticallyremoved. No timer180 wallclock guarantee.",
+      "normalArmor": "3273d020 allowsoriginalawake path or enable72f0+positive mutation points while normal. Actualregistered armor request callbacks call it, retainingtheir source-specific inputs. Subsequentoriginalstate/skillpayment mutationconsumption stays in original producer chain; no free normal awakening is invented. Armor DD damage uses7030/v324."
+    },
+    "29411": {
+      "production": "7464 level;independent forceDown27;6e30 +=SA103-1 afterbase reset1;7334 SA5 chance .2/.3/.4 and7338 SA148 factor .3/.4/.5, bothmultiply.5 whenoriginal3209bb40 returns1;7028 SA142 DPuse .97/.94/.9.",
+      "animation": "Actuallocal31f91460 andreceived31f96ef0 invoke31f482e0; it multiplies sourcecomputed animationrate by6e30, then selected6518/6acc/sharedmodel->31c802c0. This writesmodel11c speed and usesactualmodel110 v6c path withoriginaltiming. Not merelyanunreadfloat or a blanketdoubleapplication tobothclocks.",
+      "cooldown": "32762300 afterpayment/refund andslotcooldown invokes3273ce10 onlywhen321063d0(template+4) denotes7 or14..16. Positivechance thenactualseeded32e32ef0 comparison; ordered sample<=chance passes. Originalthree skill-specific exclusions andcomponent63ec guard remain. Actual32637170(factor,1,1) traverses two4-slotsets,learnedmap3d0,templateexists,excludesC/D andignore3b0 IDs; positive remaining*=factor directly. This is not1-factor. Clearignorelistafterbothsets. Unknownactualslotlist/seed isinput, not unparsedconsumer.",
+      "DPuseAndRegen": "7028 consumed innegative327432c0 DPmodifier, thenwrapper32744c90/3273d2d0; awakening7464 usesoriginalBF669 periodic chain as29401."
+    },
+    "shared": {
+      "statBuff": "32ad5400selectedcases8/12/16/24/25/26/72 ->32ada720 typed330a45a4;32ad0670 initializesactualvalue/mode,321f9f80registerskeyBuffinstance+34,321dd320changes,32acc330->321fa870->32298f20removeskey;321ff390 framepoll before321fb280dirtyrecompute. Magic8registersboth3b1c/3c84;walkRun12both3f54/4008;critical16 438c;MP24/25/26 4888/493c/49f0;hyper72 53c8. Sharedgetter/damage/resourceconsumers retainexistingcontracts, not pureaddpercentage.",
+      "periodicMP": "Factorycase2->32add070->32adc6a0 actualvtable330a499c. Parserv1c32acb950 readsoriginalmode/interval/draw. v8=32ad23b0 requiresfactorrecord/mode match. ActualAddv278=321e50b0 receivesBuffREGIST_TYPE0 via32296f20, skips1..6 attribute cases andreadsactor344c integerkey0;missing0. Freshfiniteamount raw*(1-returned/100); originalexistingstackmax-absolute logicpreserved. Mode1 binds{this,32adae10->32ad0580};v432acbcd0 advances10/14clock bythirdfloatdelta via32e390a0 theninvokesdelegatewithtarget. Orderedelapsed>=interval resetselapsed=0 thenactualtarget+e8(amount), atmostoneperupdate,nocatchupcarry. DRAW_TEXT onlyoptionalpresentationafterresource. TIME finalizer/sharedpoll removesactualinstance; not perframeunconditionalsum.",
+      "forceDown": "29401/29406/29411 independentlearned/templatebranches addSA27-1+originalepsilon to37b0/37ac, retainingoriginal0<value<=1else1 finite behavior. Sharedreaction/forceDown nativeconsumers areexistingsealedcontracts; thisscopeaddsnoUIorcustomknockdownrule.",
+      "floatingPoint": "Mathematical prose usesoriginalx87intermediates/controlword;roundonlyatactualFST/FSTPstores. Detailed unordered behavior remains sourceASM/fourwayflags; ordinaryexamplesnever replaceit."
+    },
+    "targetExecuted": false,
+    "packageScriptExecuted": false,
+    "V5Used": false,
+    "WebModified": false,
+    "communicationStudied": false
+  }
+}

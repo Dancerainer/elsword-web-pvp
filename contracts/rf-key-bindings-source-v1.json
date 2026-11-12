@@ -1,0 +1,2459 @@
+{
+  "schemaVersion": 1,
+  "targetVersion": "Steam-NA-2016-V6.0420.5",
+  "nativeClientMeasured": false,
+  "sources": {
+    "DLG_UI_KEYSETTING.tet": {
+      "name": "DLG_UI_KEYSETTING.TET",
+      "rawPath": "raw/data/data063.kom/DLG_UI_KEYSETTING.TET",
+      "sha256": "d4f0b643d220819b058ca2ba8bd7d349ec6936e55c9d07771437fe3ec5059bdb"
+    },
+    "DLG_UI_KEYSETTING.tga": {
+      "name": "DLG_UI_KEYSETTING.tga",
+      "rawPath": "raw/data/data063.kom/DLG_UI_KEYSETTING.tga",
+      "sha256": "1f7ef06d16a7626b2366dc877832223b8d073eda4269a9d34916d5e36d2f650f"
+    },
+    "DLG_UI_KEY.tet": {
+      "name": "DLG_UI_KEY.TET",
+      "rawPath": "raw/data/data063.kom/DLG_UI_KEY.TET",
+      "sha256": "5244419b811c190ddba30e1242f3ee61afd08a578583ffc83686dee5bb1d8e6c"
+    },
+    "DLG_UI_KEY.tga": {
+      "name": "DLG_UI_KEY.tga",
+      "rawPath": "raw/data/data063.kom/DLG_UI_KEY.tga",
+      "sha256": "9fb3df5492d95de5c7172a41729097c93943f9601bee8aa04e30c134b3202fce"
+    },
+    "DLG_UI_KeyboardConfig.tet": {
+      "name": "DLG_UI_KeyboardConfig.tet",
+      "rawPath": "raw/data/datai021.kom/DLG_UI_KeyboardConfig.tet",
+      "sha256": "57fab35a2bd329aec3f0d19deb9ac0ec22302a8c5d3ad2516c419256e59fe730"
+    },
+    "DLG_UI_KeyboardConfig.tga": {
+      "name": "DLG_UI_KeyboardConfig.tga",
+      "rawPath": "raw/data/datai021.kom/DLG_UI_KeyboardConfig.tga",
+      "sha256": "9f42afc5e9caeae9bad652f0be165e09a6fbc059cf544c87df31dbff5de1ba94"
+    },
+    "DLG_UI_KEY_SETTING.LUA": {
+      "name": "DLG_UI_KEY_SETTING.LUA",
+      "rawPath": "raw/data/data034.kom/DLG_UI_KEY_SETTING.LUA",
+      "sha256": "85eac39476bef99e786ef082d241ec4fcacfbb338b9ea2bb8f4c826b5a59b4bc"
+    },
+    "DLG_UI_Option_KeyBoardConfig.lua": {
+      "name": "DLG_UI_Option_KeyBoardConfig.lua",
+      "rawPath": "raw/data/datai014.kom/DLG_UI_Option_KeyBoardConfig.lua",
+      "sha256": "01b34d3e63fadd66062d2c062eb785f22ed8cdfe12eea6fb26074100a2ec3c30"
+    }
+  },
+  "layouts": {
+    "DLG_UI_KEY_SETTING.LUA": {
+      "instructionPrefixEnd": 687,
+      "totalInstructions": 2891,
+      "nextOpcode": 73,
+      "branchExecution": "unsupported",
+      "calls": [
+        {
+          "target": "call@0.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@0.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "g_pStatic_KEY"
+          ],
+          "prototype": 0,
+          "instruction": 14,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@6.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@6.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_LEFT_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 46,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@6.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@6.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@9.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 56,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@11.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@11.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_CENTER_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 72,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@11.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@11.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_X": 798,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@14.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 82,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@16.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@16.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_RIGHT_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 98,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@16.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@16.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@19.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 108,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@21.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@21.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_LEFT_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 124,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@21.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@21.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 372,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@24.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 134,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@26.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@26.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_CENTER_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 150,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@26.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@26.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_X": 808,
+              "CHANGE_TIME": 0,
+              "ADD_SIZE_Y": 372,
+              "LEFT_TOP": {
+                "$symbol": "call@29.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 160,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@31.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@31.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_RIGHT_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 176,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@31.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@31.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 372,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@34.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 186,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@36.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@36.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_LEFT_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 202,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@36.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@36.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@39.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 212,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@41.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@41.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_CENTER_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 228,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@41.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@41.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_X": 798,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@44.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 238,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@46.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@46.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_Common_Texture49_NEW.TGA",
+            "BG_RIGHT_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 254,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@46.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@46.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@49.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 264,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@51.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@51.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "TITLE"
+          ],
+          "prototype": 0,
+          "instruction": 280,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@51.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@51.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@54.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 290,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@56.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@56.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_W_LEFT"
+          ],
+          "prototype": 0,
+          "instruction": 306,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@56.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@56.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@59.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 316,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@61.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@61.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_W_CENTER"
+          ],
+          "prototype": 0,
+          "instruction": 332,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@61.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@61.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_X": 846,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@64.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 342,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@66.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@66.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_W_RIGHT"
+          ],
+          "prototype": 0,
+          "instruction": 358,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@66.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@66.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@69.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 368,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@71.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@71.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_G_LEFT"
+          ],
+          "prototype": 0,
+          "instruction": 384,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@71.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@71.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 37,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@74.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 394,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@76.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@76.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_G_CENTER"
+          ],
+          "prototype": 0,
+          "instruction": 410,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@76.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@76.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_X": 845,
+              "CHANGE_TIME": 0,
+              "ADD_SIZE_Y": 37,
+              "LEFT_TOP": {
+                "$symbol": "call@79.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 420,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@81.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@81.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEYSETTING.TGA",
+            "KEY_BG_G_RIGHT"
+          ],
+          "prototype": 0,
+          "instruction": 436,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@81.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@81.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 37,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@84.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 446,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@86.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@86.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEY.TGA",
+            "KEY_1"
+          ],
+          "prototype": 0,
+          "instruction": 462,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@86.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@86.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@89.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 472,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@91.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@91.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEY.TGA",
+            "KEY_2"
+          ],
+          "prototype": 0,
+          "instruction": 488,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@91.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@91.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@94.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 498,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@96.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@96.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KEY.TGA",
+            "KEY_3"
+          ],
+          "prototype": 0,
+          "instruction": 514,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@96.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@96.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@99.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 524,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        }
+      ]
+    },
+    "DLG_UI_Option_KeyBoardConfig.lua": {
+      "instructionPrefixEnd": 1140,
+      "totalInstructions": 1574,
+      "nextOpcode": 73,
+      "branchExecution": "unsupported",
+      "calls": [
+        {
+          "target": "call@0.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@0.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "g_pStaticheater_use"
+          ],
+          "prototype": 0,
+          "instruction": 14,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "g_pUIDialog.SetPos",
+          "args": [
+            {
+              "$symbol": "g_pUIDialog",
+              "$unsupported": "native/global value not resolved"
+            },
+            259,
+            23
+          ],
+          "prototype": 0,
+          "instruction": 42,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@8.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@8.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG1_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 58,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@8.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@8.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@11.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 68,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@13.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@13.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG1_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 84,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@13.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@13.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 612,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@16.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 94,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@18.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@18.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG1_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 110,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@18.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@18.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@21.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 120,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@23.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@23.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG2_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 136,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@23.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@23.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@26.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 146,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@28.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@28.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG2_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 162,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@28.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@28.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 522,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@31.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 172,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@33.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@33.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG2_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 188,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@33.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@33.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@36.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 198,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@38.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@38.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG3_TOP"
+          ],
+          "prototype": 0,
+          "instruction": 214,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@38.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@38.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@41.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 224,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@43.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@43.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG3_MIDDLE"
+          ],
+          "prototype": 0,
+          "instruction": 240,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@43.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@43.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "ADD_SIZE_Y": 479,
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@46.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 250,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@48.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@48.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_BG3_BOTTOM"
+          ],
+          "prototype": 0,
+          "instruction": 266,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@48.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@48.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@51.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 276,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@53.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@53.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_TITLE"
+          ],
+          "prototype": 0,
+          "instruction": 292,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@53.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@53.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@56.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 302,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@58.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@58.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "Exit"
+          ],
+          "prototype": 0,
+          "instruction": 317,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@58.return0.SetNormalTex",
+          "args": [
+            {
+              "$symbol": "call@58.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_BUTTON01.tga",
+            "EXIT_NORMAL"
+          ],
+          "prototype": 0,
+          "instruction": 323,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@58.return0.SetNormalPoint",
+          "args": [
+            {
+              "$symbol": "call@58.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@64.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 345,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@71.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@71.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "BasicCtrlTap"
+          ],
+          "prototype": 0,
+          "instruction": 396,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@71.return0.SetNormalTex",
+          "args": [
+            {
+              "$symbol": "call@71.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_TAB_BASICCONTROL_NORMAL"
+          ],
+          "prototype": 0,
+          "instruction": 402,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@91.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@91.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "BasicCtrlTap_RedCircle"
+          ],
+          "prototype": 0,
+          "instruction": 490,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@94.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@94.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_RED"
+          ],
+          "prototype": 0,
+          "instruction": 506,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@94.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@94.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@97.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 516,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@99.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@99.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "BasicCtrlTap_BlueCircle"
+          ],
+          "prototype": 0,
+          "instruction": 531,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@102.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@102.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_BLUE"
+          ],
+          "prototype": 0,
+          "instruction": 547,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@102.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@102.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@105.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 557,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@108.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@108.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "QuickSlotTap"
+          ],
+          "prototype": 0,
+          "instruction": 588,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@108.return0.SetNormalTex",
+          "args": [
+            {
+              "$symbol": "call@108.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_TAB_QUICKSLOT_NORMAL"
+          ],
+          "prototype": 0,
+          "instruction": 594,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@127.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@127.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "QuickSlotTap_RedCircle"
+          ],
+          "prototype": 0,
+          "instruction": 677,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@130.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@130.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_RED"
+          ],
+          "prototype": 0,
+          "instruction": 693,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@130.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@130.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@133.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 703,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@135.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@135.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "QuickSlotTap_BlueCircle"
+          ],
+          "prototype": 0,
+          "instruction": 718,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@138.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@138.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_BLUE"
+          ],
+          "prototype": 0,
+          "instruction": 734,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@138.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@138.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@141.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 744,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@144.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@144.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "SystemFunctionKeyTap"
+          ],
+          "prototype": 0,
+          "instruction": 775,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@144.return0.SetNormalTex",
+          "args": [
+            {
+              "$symbol": "call@144.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_TAB_SYSTEMFUNCTIONKEY_NORMAL"
+          ],
+          "prototype": 0,
+          "instruction": 781,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@163.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@163.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "SystemFunctionKeyTap_RedCircle"
+          ],
+          "prototype": 0,
+          "instruction": 864,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@166.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@166.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_RED"
+          ],
+          "prototype": 0,
+          "instruction": 880,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@166.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@166.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@169.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 890,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@171.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@171.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "SystemFunctionKeyTap_BlueCircle"
+          ],
+          "prototype": 0,
+          "instruction": 905,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@174.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@174.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_BLUE"
+          ],
+          "prototype": 0,
+          "instruction": 921,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@174.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@174.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@177.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 931,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@180.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@180.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "EtcTab"
+          ],
+          "prototype": 0,
+          "instruction": 962,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@180.return0.SetNormalTex",
+          "args": [
+            {
+              "$symbol": "call@180.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.tga",
+            "KEYBOARDCONFIG_TAB_ETC_NORMAL"
+          ],
+          "prototype": 0,
+          "instruction": 968,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@199.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@199.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "EtcTap_RedCircle"
+          ],
+          "prototype": 0,
+          "instruction": 1051,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@202.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@202.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_RED"
+          ],
+          "prototype": 0,
+          "instruction": 1067,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@202.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@202.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@205.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 1077,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@207.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@207.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "EtcTap_BlueCircle"
+          ],
+          "prototype": 0,
+          "instruction": 1092,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@210.return0.SetTex",
+          "args": [
+            {
+              "$symbol": "call@210.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "DLG_UI_KeyboardConfig.TGA",
+            "KEYBOARDCONFIG_CIRCLE_BLUE"
+          ],
+          "prototype": 0,
+          "instruction": 1108,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@210.return0.SetPoint",
+          "args": [
+            {
+              "$symbol": "call@210.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            {
+              "CHANGE_TIME": 0,
+              "LEFT_TOP": {
+                "$symbol": "call@213.return0",
+                "$unsupported": "native/global value not resolved"
+              }
+            }
+          ],
+          "prototype": 0,
+          "instruction": 1118,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        }
+      ]
+    },
+    "DLG_BuffManager.lua": {
+      "instructionPrefixEnd": 50,
+      "totalInstructions": 51,
+      "nextOpcode": 71,
+      "branchExecution": "unsupported",
+      "calls": [
+        {
+          "target": "g_pUIDialog.SetPos",
+          "args": [
+            {
+              "$symbol": "g_pUIDialog",
+              "$unsupported": "native/global value not resolved"
+            },
+            720,
+            2
+          ],
+          "prototype": 0,
+          "instruction": 16,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 4,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        },
+        {
+          "target": "call@7.return0.SetName",
+          "args": [
+            {
+              "$symbol": "call@7.return0",
+              "$unsupported": "native/global value not resolved"
+            },
+            "MouseOver"
+          ],
+          "prototype": 0,
+          "instruction": 49,
+          "execution": "not-executed",
+          "nativeEffects": "unsupported",
+          "argumentOperand": 3,
+          "resultOperand": 1,
+          "opcode": "CALL",
+          "scriptEffects": null
+        }
+      ]
+    }
+  },
+  "pixelAssets": {
+    "keysetting:TITLE": {
+      "file": "keysetting-title.png",
+      "width": 144,
+      "height": 18,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "TITLE",
+      "declarationPiece": "TITLE",
+      "bounds": [
+        98.0,
+        139.0,
+        242.0,
+        157.0
+      ],
+      "rgbaSha256": "8204d15d8e6fd76ad1cb5f1ba51e489110a70098250a367019392453b6653efd",
+      "sha256": "0fda0aea87faeb4086651de5059a55205a4fcc9bdf2edaed85cc5fca78b89ee7"
+    },
+    "keysetting:KEY_BG_W_LEFT": {
+      "file": "keysetting-key_bg_w_left.png",
+      "width": 12,
+      "height": 284,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_W_LEFT",
+      "declarationPiece": "KEY_BG_W_LEFT",
+      "bounds": [
+        0.0,
+        0.0,
+        12.0,
+        284.0
+      ],
+      "rgbaSha256": "82b0871b1a1b2f720002dc25b0d8f7477bda843ac3db892669a69c40773c21e1",
+      "sha256": "537612fb51bb8696d9eb8cc85cfb04e9acd36cb6e10c4005863eb8c7248ce215"
+    },
+    "keysetting:KEY_BG_W_CENTER": {
+      "file": "keysetting-key_bg_w_center.png",
+      "width": 2,
+      "height": 284,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_W_CENTER",
+      "declarationPiece": "KEY_BG_W_CENTER",
+      "bounds": [
+        12.0,
+        0.0,
+        14.0,
+        284.0
+      ],
+      "rgbaSha256": "2468d079a3e90378d94e975797b405c50a3c7352b515378efee88a97fc31a302",
+      "sha256": "47570bc607ee23da4ac76905e5947e2d03627697e698f7dbb697e14ca2fca55f"
+    },
+    "keysetting:KEY_BG_W_RIGHT": {
+      "file": "keysetting-key_bg_w_right.png",
+      "width": 12,
+      "height": 284,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_W_RIGHT",
+      "declarationPiece": "KEY_BG_W_RIGHT",
+      "bounds": [
+        15.0,
+        0.0,
+        27.0,
+        284.0
+      ],
+      "rgbaSha256": "623393ce9dca500748acf2b3ef24e42af80f8f45bb1a18a5008e62ad416104a7",
+      "sha256": "ec78684a9823a6e300b00fe666593ea0889e8945d1369c743571d4c72acfa973"
+    },
+    "keysetting:KEY_BG_G_LEFT": {
+      "file": "keysetting-key_bg_g_left.png",
+      "width": 10,
+      "height": 86,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_G_LEFT",
+      "declarationPiece": "KEY_BG_G_LEFT",
+      "bounds": [
+        2.0,
+        287.0,
+        12.0,
+        373.0
+      ],
+      "rgbaSha256": "44e3d1ae05223ff76c21c178d52b9aa8bd813466ff44500ae219048ee13da557",
+      "sha256": "8c89533e83b21a6c54b4171a5ddd9a63dc5d9df9dd6cc79047d4fa060fbef563"
+    },
+    "keysetting:KEY_BG_G_CENTER": {
+      "file": "keysetting-key_bg_g_center.png",
+      "width": 2,
+      "height": 86,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_G_CENTER",
+      "declarationPiece": "KEY_BG_G_CENTER",
+      "bounds": [
+        12.0,
+        287.0,
+        14.0,
+        373.0
+      ],
+      "rgbaSha256": "90ad2ed850ff0405ec5529ba63188a964785119080d2e2021ee30da81ef6ceaf",
+      "sha256": "6d06470df0d23a1dfa884bf946ba8dffab6d59baab77096899a51a0fbc86da5e"
+    },
+    "keysetting:KEY_BG_G_RIGHT": {
+      "file": "keysetting-key_bg_g_right.png",
+      "width": 11,
+      "height": 86,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "KEY_BG_G_RIGHT",
+      "declarationPiece": "KEY_BG_G_RIGHT",
+      "bounds": [
+        14.0,
+        287.0,
+        25.0,
+        373.0
+      ],
+      "rgbaSha256": "ccbabffc1e0d646dd96a7a3d2c777c58eba0126c297dc9d24d8d30864f03e31a",
+      "sha256": "05c415a52311c296ca311fd08fc6031e0841011705ae534038cd04b1edf1877f"
+    },
+    "keysetting:DEFAULT_NORMAL": {
+      "file": "keysetting-default_normal.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "DEFAULT_NORMAL",
+      "declarationPiece": "DEFAULT_NORMAL",
+      "bounds": [
+        244.0,
+        137.0,
+        311.0,
+        158.0
+      ],
+      "rgbaSha256": "c90492112fc5e5b346a40c473b7707604ed6a597d9c89fd3b067d4c5074f56a7",
+      "sha256": "7fd553cebb018c6f09fe14e05434659ea9857f7fdffe2082c90c9e442ff1343c"
+    },
+    "keysetting:DEFAULT_OVER": {
+      "file": "keysetting-default_over.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "DEFAULT_OVER",
+      "declarationPiece": "DEFAULT_OVER",
+      "bounds": [
+        312.0,
+        137.0,
+        379.0,
+        158.0
+      ],
+      "rgbaSha256": "787fba8d3c3fcc07ee61881d97061fd801fa0b1b3f5f5034882f4ed99fc207b9",
+      "sha256": "da381d6bac366481e32d941f9ffdebbc1f14f307fc843369df062ca32824c0a1"
+    },
+    "keysetting:CANCEL_NORMAL": {
+      "file": "keysetting-cancel_normal.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "CANCEL_NORMAL",
+      "declarationPiece": "CANCEL_NORMAL",
+      "bounds": [
+        438.0,
+        115.0,
+        505.0,
+        136.0
+      ],
+      "rgbaSha256": "72dbd2586677e1e853e1003accd9bb5d2277ef3b0e31a7cf8a35c58b61ded309",
+      "sha256": "2036ed4e25a3a978b5716424552874cf8e419e6b144e5207b619e0a4f445437f"
+    },
+    "keysetting:CANCEL_OVER": {
+      "file": "keysetting-cancel_over.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "CANCEL_OVER",
+      "declarationPiece": "CANCEL_OVER",
+      "bounds": [
+        28.0,
+        137.0,
+        95.0,
+        158.0
+      ],
+      "rgbaSha256": "cfd3fdba69bcc342be2ece644bca509b8a7edc25dd2b3a180d4e93c5de935199",
+      "sha256": "dd7d38efe525ccffa07e652bd198c5bc773c2fe9a62d7ac3bd146ed5212389a9"
+    },
+    "keysetting:SAVE_NORMAL": {
+      "file": "keysetting-save_normal.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "SAVE_NORMAL",
+      "declarationPiece": "SAVE_NORMAL",
+      "bounds": [
+        302.0,
+        115.0,
+        369.0,
+        136.0
+      ],
+      "rgbaSha256": "c9cc7a9e7e1ef844fe38df863bc916c708e1927e61c0c63d968df24cfccb2c44",
+      "sha256": "40c3403bfa5aa95e6d75720358d169bfbf4b944ae1af584e7a13f69a5ce23427"
+    },
+    "keysetting:SAVE_OVER": {
+      "file": "keysetting-save_over.png",
+      "width": 67,
+      "height": 21,
+      "atlas": "DLG_UI_KEYSETTING",
+      "piece": "SAVE_OVER",
+      "declarationPiece": "SAVE_OVER",
+      "bounds": [
+        370.0,
+        115.0,
+        437.0,
+        136.0
+      ],
+      "rgbaSha256": "171b0fa456fce3ce0d7eca2570b83c3f1c38b93b69ae8bbc02ed03a40dbae5f8",
+      "sha256": "564a0205f1493b4b0e2fef9e30602b7e938943ac6443a8bfcc5bfdc5a9376823"
+    },
+    "key:KEY_1": {
+      "file": "key-key_1.png",
+      "width": 511,
+      "height": 236,
+      "atlas": "DLG_UI_KEY",
+      "piece": "KEY_1",
+      "declarationPiece": "KEY_1",
+      "bounds": [
+        1.0,
+        1.0,
+        512.0,
+        237.0
+      ],
+      "rgbaSha256": "31fec8ec8c2f8ddc32f750507555ab0bcec83e4279fca15452111296d5de6b06",
+      "sha256": "6cf18e37982c9e50a3513568b5523d2b9593b7fcd8324777fda5e34db7587b54"
+    },
+    "keyboardconfig:KEYBOARDCONFIG_TITLE": {
+      "file": "keyboardconfig-keyboardconfig_title.png",
+      "width": 148,
+      "height": 37,
+      "atlas": "DLG_UI_KeyboardConfig",
+      "piece": "KEYBOARDCONFIG_TITLE",
+      "declarationPiece": "KEYBOARDCONFIG_TITLE",
+      "bounds": [
+        359.0,
+        396.0,
+        507.0,
+        433.0
+      ],
+      "rgbaSha256": "496d4ed840d42b6c681a55ab0c32e8f0a934b2b6a83dc0576086a70cd1c75750",
+      "sha256": "861acf3986c9903ec1dfbae657c01135c1f666a22d7c601d1a4e99393a7eb71e"
+    },
+    "keyboardconfig:KEYBOARDCONFIG_BUTTON_KEY_NORMAL": {
+      "file": "keyboardconfig-keyboardconfig_button_key_normal.png",
+      "width": 178,
+      "height": 24,
+      "atlas": "DLG_UI_KeyboardConfig",
+      "piece": "KEYBOARDCONFIG_BUTTON_KEY_NORMAL",
+      "declarationPiece": "KEYBOARDCONFIG_BUTTON_KEY_NORMAL",
+      "bounds": [
+        13.0,
+        202.0,
+        191.0,
+        226.0
+      ],
+      "rgbaSha256": "f196557f349db180c869b55ecf1a450fe895528aed486ad3b4fc6e186ee6304a",
+      "sha256": "e189f0a1dd09e4f03efaa4f1f559f87bae7710066643aeba596ac694e4d21771"
+    },
+    "keyboardconfig:KEYBOARDCONFIG_BUTTON_KEY_CHECK": {
+      "file": "keyboardconfig-keyboardconfig_button_key_check.png",
+      "width": 178,
+      "height": 24,
+      "atlas": "DLG_UI_KeyboardConfig",
+      "piece": "KEYBOARDCONFIG_BUTTON_KEY_CHECK",
+      "declarationPiece": "KEYBOARDCONFIG_BUTTON_KEY_CHECK",
+      "bounds": [
+        13.0,
+        232.0,
+        191.0,
+        256.0
+      ],
+      "rgbaSha256": "d2c9102d1fe45c4dd6a445093b6898494a2fd94ec88067ad853cf964bbfacc73",
+      "sha256": "033639ceae8f13f78d8590f271511bf1d626568f5cc0167eb5ecc1fd67b90aad"
+    },
+    "keyboardconfig:KEYBOARDCONFIG_TAB_BASICCONTROL_CHECK": {
+      "file": "keyboardconfig-keyboardconfig_tab_basiccontrol_check.png",
+      "width": 103,
+      "height": 48,
+      "atlas": "DLG_UI_KeyboardConfig",
+      "piece": "KEYBOARDCONFIG_TAB_BASICCONTROL_CHECK",
+      "declarationPiece": "KEYBOARDCONFIG_TAB_BASICCONTROL_CHECK",
+      "bounds": [
+        14.0,
+        264.0,
+        117.0,
+        312.0
+      ],
+      "rgbaSha256": "6e649b52a2d29d4e7afd0f3711b1d171efebc03c5cb358d996d4c5a388e0ca11",
+      "sha256": "7ad90897691b369bb1143be98d84e3cd9ac40a9785f0045d3c382d5ffd54cd9e"
+    },
+    "keyboardconfig:KEYBOARDCONFIG_TAB_QUICKSLOT_NORMAL": {
+      "file": "keyboardconfig-keyboardconfig_tab_quickslot_normal.png",
+      "width": 90,
+      "height": 33,
+      "atlas": "DLG_UI_KeyboardConfig",
+      "piece": "KEYBOARDCONFIG_TAB_QUICKSLOT_NORMAL",
+      "declarationPiece": "KEYBOARDCONFIG_TAB_QUICKSLOT_NORMAL",
+      "bounds": [
+        123.0,
+        353.0,
+        213.0,
+        386.0
+      ],
+      "rgbaSha256": "2e5aca62a33933704167f82c66171d9880737100c1ff8673aed58ec79c0f7e05",
+      "sha256": "61a623a60a5ef58be65eecdbbb7b44c130433cdc0520fdc6f09ca5de0fb7a8c2"
+    }
+  },
+  "webActions": [
+    "up",
+    "down",
+    "left",
+    "right",
+    "z",
+    "x",
+    "awaken",
+    "skill1",
+    "skill2",
+    "skill3",
+    "skill4",
+    "skill5",
+    "skill6",
+    "skill7",
+    "skill8",
+    "special"
+  ],
+  "adaptations": [
+    "Only project combat actions are exposed",
+    "Default QWER/ASDC is the current user preset",
+    "KeyboardEvent.code replaces Win32/DI scan codes",
+    "Esc/Tab/system/function keys remain reserved",
+    "Conflict checking and transactional save/cancel are shared web rules"
+  ],
+  "limits": [
+    "Conditional UI code is not executed; only the recorded prefix is read",
+    "Original Win32 input configuration manager is not ported",
+    "Original title/keyboard/key button pixels retain hashes; web layout is responsive adaptation"
+  ]
+}

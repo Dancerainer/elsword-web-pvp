@@ -1,0 +1,3486 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "Steam-NA-2016-V6.0420.5",
+  "clientMeasured": false,
+  "templates": {
+    "Mesh_ADE_Dash_Jump_Combo_XXX": {
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.27,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 2000.0
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Mesh_ADE_Dash_Jump_Combo_XXX",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 3112880,
+        "line": 97554
+      },
+      "declarationSha256": "f39f2adc20120be8f26ee06bc29309cc0bf807cf8e51c3c327fbe41a1a22b89f",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "convertedArtifactReuse": {
+        "index": "contracts/de-fx-index.json",
+        "template": "SA_ATT_Void_Impact_Blackhole",
+        "originalMesh": {
+          "archive": "data/data002.kom",
+          "ordinal": 443,
+          "name": "DummyAttackBox_50x50x50.x",
+          "rawPath": "raw/data/data002.kom/DummyAttackBox_50x50x50.x",
+          "sha256": "18368b6b6f9bfe672b2b4109b6509b6a84e0e29aa0ec4cd561c18121dbdb50d0",
+          "bytes": 801,
+          "signatureHex": "786f662030333033627a697030303332"
+        },
+        "rule": "Identical original MeshName bytes; the independently parsed command declaration retains its own fields."
+      }
+    },
+    "Mesh_ADE_Combo_XXXX_Explosion": {
+      "fields": {
+        "MeshName": "DummyAttackBox_50x50x50.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.4,
+        "DrawCount": 0.0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            3.0,
+            3.0,
+            3.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "Mesh_ADE_Combo_XXXX_Explosion",
+      "kind": "mesh",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2644883,
+        "line": 82666
+      },
+      "declarationSha256": "682fa90696760b5e8c1011cb828bce9c172d214295d95cf92d71e53fc2fe5937",
+      "glb": "fx/meshes/DummyAttackBox_50x50x50.glb",
+      "poseData": "fx/meshes/DummyAttackBox_50x50x50.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.06666667014360428,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "682fa90696760b5e8c1011cb828bce9c172d214295d95cf92d71e53fc2fe5937"
+      }
+    },
+    "ATT_Effect_Rupture15_R": {
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100.0,
+        "Lifetime": 0.5,
+        "NumParticles": 1.0,
+        "TriggerTime": 0.1,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "Mesh": "ATT_ArmorComboZZZZ_Gate.X",
+        "TraceParticleList": "ATT_Effect_Rupture16_R"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.5,
+            0.7,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.5,
+            0.5,
+            0.7,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.0,
+              1.2
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            -60.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "ATT_Effect_Rupture16_R",
+          "ATT_Effect_Rupture17_R"
+        ]
+      },
+      "unsupported": [],
+      "name": "ATT_Effect_Rupture15_R",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 281955,
+        "line": 7865
+      },
+      "declarationSha256": "af81367279012a06ff13a323e0145abb461a3346a109542bbd6ba6c571b49a22",
+      "glb": "fx/meshes/ATT_ArmorComboZZZZ_Gate.glb",
+      "poseData": "fx/meshes/ATT_ArmorComboZZZZ_Gate.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "af81367279012a06ff13a323e0145abb461a3346a109542bbd6ba6c571b49a22"
+      }
+    },
+    "ATT_Effect_Rupture17_R": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20.0,
+        "Lifetime": 0.2,
+        "NumParticles": 10.0,
+        "TriggerTime": 0.8,
+        "DrawCount": 2.0,
+        "Layer": 12.0,
+        "CullMode": "D3DCULL_CW",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "PROTECT_GUARD_MAGIC_Map08.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.3,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            0.5,
+            0.3,
+            1.0,
+            0.8
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.3,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            220.0,
+            220.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            -60.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ATT_Effect_Rupture17_R",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 283434,
+        "line": 7912
+      },
+      "declarationSha256": "54f555686701db424336a217927d159dfa28916d7f8b9a6f8e4e6d936de76530",
+      "textures": {
+        "PROTECT_GUARD_MAGIC_Map08.dds": {
+          "file": "fx/textures/PROTECT_GUARD_MAGIC_Map08-288ad29309.png",
+          "width": 256,
+          "height": 256,
+          "source": {
+            "archive": "data/data002.kom",
+            "ordinal": 1465,
+            "name": "PROTECT_GUARD_MAGIC_Map08.dds",
+            "rawPath": "raw/data/data002.kom/PROTECT_GUARD_MAGIC_Map08.dds",
+            "sha256": "288ad293092001f39f9842a3dc4c4ea78ee3ea77d25f8219282ac8963983cb51",
+            "bytes": 65664,
+            "signatureHex": "444453207c00000007100a0000010000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "54f555686701db424336a217927d159dfa28916d7f8b9a6f8e4e6d936de76530"
+      }
+    },
+    "ATT_Effect_Rupture16_R": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20.0,
+        "Lifetime": 1.0,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "Layer": 12.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "GlowBall_G01.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.5,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            10.0,
+            10.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            180.0,
+            220.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            200.0,
+            260.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            -60.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 1.0,
+          "fade": true,
+          "value": [
+            0.0,
+            -60.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ATT_Effect_Rupture16_R",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 115,
+        "name": "GameMajorParticle31.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+        "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+        "bytes": 326380,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 282664,
+        "line": 7888
+      },
+      "declarationSha256": "0bf5fa6c271d8fb97d6e6d60ab3d01499b4779818288848564113d29c171d9c6",
+      "textures": {
+        "GlowBall_G01.tga": {
+          "file": "fx/textures/GlowBall_G01-fa0bf05128.png",
+          "width": 32,
+          "height": 32,
+          "source": {
+            "archive": "data/data147.kom",
+            "ordinal": 349,
+            "name": "GlowBall_G01.tga",
+            "rawPath": "raw/data/data147.kom/GlowBall_G01.tga",
+            "sha256": "fa0bf05128ea87bfa169b3cea7d0c483cb5d585ebc265ebff9e2670d5515d1a7",
+            "bytes": 4140,
+            "signatureHex": "00000200000000000000000020002000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "0bf5fa6c271d8fb97d6e6d60ab3d01499b4779818288848564113d29c171d9c6"
+      }
+    },
+    "ADE_RE_ST_PA03S_70": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.3,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 2.0,
+        "Layer": 15.0,
+        "Emitradius": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ADD_RingAlpha.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.4,
+                0.7
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            0.6
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.07,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.05,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.3,
+            0.0,
+            0.8,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            600.0,
+            600.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            -70.0,
+            0.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_RE_ST_PA03S_70",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 134239,
+        "line": 3866
+      },
+      "declarationSha256": "f9faaff38af43aaf6667cc7ea4e086ead261e19fdc7162d3d664f99b1ff227d8",
+      "textures": {
+        "ADD_RingAlpha.tga": {
+          "file": "fx/textures/ADD_RingAlpha-c9b5dff97e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data147.kom",
+            "ordinal": 207,
+            "name": "ADD_RingAlpha.tga",
+            "rawPath": "raw/data/data147.kom/ADD_RingAlpha.tga",
+            "sha256": "c9b5dff97eb2453fc8e7230ffec002aeccd5ceaf6c96d5bb7467dbbc4b2c4618",
+            "bytes": 16428,
+            "signatureHex": "00000200000000000000000040004000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "f9faaff38af43aaf6667cc7ea4e086ead261e19fdc7162d3d664f99b1ff227d8"
+      }
+    },
+    "ADE_REVERSE_STIGMA_PAM3_2": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.5,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 0.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "TraceParticleList": "ADE_C_XXXX_P01M"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "ADE_C_XXXX_P01M",
+          "ADE_RE_ST_PA01",
+          "ADE_RE_ST_PA02",
+          "ADE_RE_ST_PA03"
+        ]
+      },
+      "unsupported": [],
+      "name": "ADE_REVERSE_STIGMA_PAM3_2",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 115880,
+        "line": 3299
+      },
+      "declarationSha256": "50261f01b04101b59b6da5f03f013d4791adefd2a6d9a73ef8ee96d29efe3836",
+      "textures": {}
+    },
+    "ADE_RE_ST_PA03": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15.0,
+        "Lifetime": 0.5,
+        "NumParticles": 2.0,
+        "TriggerCount": 2.0,
+        "DrawCount": 2.0,
+        "Layer": 15.0,
+        "Emitradius": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ADD_RingAlpha.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            0.4
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.07,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.05,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            0.3,
+            0.0,
+            0.8,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            550.0,
+            550.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            -180.0
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_RE_ST_PA03",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 126437,
+        "line": 3644
+      },
+      "declarationSha256": "65511c3dcfbf140b8cb9ea9e2c0c150928eb9d1ec2778afa9887617e1b9dcbd4",
+      "textures": {
+        "ADD_RingAlpha.tga": {
+          "file": "fx/textures/ADD_RingAlpha-c9b5dff97e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data147.kom",
+            "ordinal": 207,
+            "name": "ADD_RingAlpha.tga",
+            "rawPath": "raw/data/data147.kom/ADD_RingAlpha.tga",
+            "sha256": "c9b5dff97eb2453fc8e7230ffec002aeccd5ceaf6c96d5bb7467dbbc4b2c4618",
+            "bytes": 16428,
+            "signatureHex": "00000200000000000000000040004000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "65511c3dcfbf140b8cb9ea9e2c0c150928eb9d1ec2778afa9887617e1b9dcbd4"
+      }
+    },
+    "ADE_RE_ST_PA02": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100.0,
+        "Lifetime": 0.25,
+        "NumParticles": 2.0,
+        "TriggerCount": 1.0,
+        "Layer": 13.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_PE04.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.08,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.13,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            0.2
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.165,
+          "end": 0.25,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_RE_ST_PA02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 125626,
+        "line": 3621
+      },
+      "declarationSha256": "4d5309a764c59c027ba07e4c20c96b39fe051fd7af5885dcaca0f90a83a8729e",
+      "glb": "fx/meshes/ADE_PE04.glb",
+      "poseData": "fx/meshes/ADE_PE04.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "4d5309a764c59c027ba07e4c20c96b39fe051fd7af5885dcaca0f90a83a8729e"
+      }
+    },
+    "ADE_RE_ST_PA01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100.0,
+        "Lifetime": 0.25,
+        "NumParticles": 2.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_PE04.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.08,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.13,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.165,
+          "end": 0.25,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_RE_ST_PA01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 124810,
+        "line": 3597
+      },
+      "declarationSha256": "2dec2f47aeeea1265f25dbd8ba47b55a70c587f4273597f56bd3d91b491b6a46",
+      "glb": "fx/meshes/ADE_PE04.glb",
+      "poseData": "fx/meshes/ADE_PE04.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "2dec2f47aeeea1265f25dbd8ba47b55a70c587f4273597f56bd3d91b491b6a46"
+      }
+    },
+    "ADE_C_XXXX_P01M": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 300.0,
+        "Lifetime": 0.2,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 0.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "TraceParticleList": "ADE_C_XXXX_P01"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "ADE_C_XXXX_P01",
+          "ADE_C_XXXX_P02",
+          "ADE_C_XXXX_P03",
+          "ADE_C_XXXX_P04"
+        ]
+      },
+      "unsupported": [],
+      "name": "ADE_C_XXXX_P01M",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 136209,
+        "line": 3932
+      },
+      "declarationSha256": "d56fea10313abda8fa4f9511a0a7cd1ea2893012397cac3e0589158566664daa",
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "d56fea10313abda8fa4f9511a0a7cd1ea2893012397cac3e0589158566664daa"
+      }
+    },
+    "ADE_C_XXXX_P04": {
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 50.0,
+        "Lifetime": 0.2,
+        "NumParticles": 15.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_Cycle_Spark01.X"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.16,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                0.8
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.16,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.5
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -360.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_C_XXXX_P04",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 139518,
+        "line": 4025
+      },
+      "declarationSha256": "236dc9534ec5f88a08462e81a825f7f4719e1bc3a92dcd4e95ac9927cf9a65bb",
+      "glb": "fx/meshes/ADE_Cycle_Spark01.glb",
+      "poseData": "fx/meshes/ADE_Cycle_Spark01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.1666666716337204,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "236dc9534ec5f88a08462e81a825f7f4719e1bc3a92dcd4e95ac9927cf9a65bb"
+      }
+    },
+    "ADE_C_XXXX_P03": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60.0,
+        "Lifetime": 0.35,
+        "NumParticles": 3.0,
+        "Layer": 12.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ADD_RingAlpha.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.5
+              ]
+            },
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            210.0,
+            210.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.35,
+          "fade": true,
+          "value": [
+            400.0,
+            400.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_C_XXXX_P03",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 138686,
+        "line": 4002
+      },
+      "declarationSha256": "27ef54a7c1d4c132c6160b6c37e48471fe68c16a9b7f5ee064ad63cfff4f0858",
+      "textures": {
+        "ADD_RingAlpha.tga": {
+          "file": "fx/textures/ADD_RingAlpha-c9b5dff97e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data147.kom",
+            "ordinal": 207,
+            "name": "ADD_RingAlpha.tga",
+            "rawPath": "raw/data/data147.kom/ADD_RingAlpha.tga",
+            "sha256": "c9b5dff97eb2453fc8e7230ffec002aeccd5ceaf6c96d5bb7467dbbc4b2c4618",
+            "bytes": 16428,
+            "signatureHex": "00000200000000000000000040004000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "27ef54a7c1d4c132c6160b6c37e48471fe68c16a9b7f5ee064ad63cfff4f0858"
+      }
+    },
+    "ADE_C_XXXX_P02": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 80.0,
+        "Lifetime": 0.25,
+        "NumParticles": 3.0,
+        "Layer": 15.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "eve_A_blink_light.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.13,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.13,
+          "end": 0.17,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.17,
+          "end": 0.25,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                0.9
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            160.0,
+            160.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            240.0,
+            240.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            260.0,
+            260.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_C_XXXX_P02",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 137771,
+        "line": 3978
+      },
+      "declarationSha256": "4e44ea5f0fe9e08cac59174160bf67ba0b1b58fba7ebed9f6ba30255796681c6",
+      "textures": {
+        "eve_A_blink_light.dds": {
+          "file": "fx/textures/eve_A_blink_light-e62d0402e0.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data119.kom",
+            "ordinal": 301,
+            "name": "eve_A_blink_light.DDS",
+            "rawPath": "raw/data/data119.kom/eve_A_blink_light.DDS",
+            "sha256": "e62d0402e096d0b770c1ece7ebbe5c90e53cf2fe3f605fe3473e6ef39c0a7dfb",
+            "bytes": 11064,
+            "signatureHex": "444453207c00000007100a0080000000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "4e44ea5f0fe9e08cac59174160bf67ba0b1b58fba7ebed9f6ba30255796681c6"
+      }
+    },
+    "ADE_C_XXXX_P01": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 35.0,
+        "Lifetime": 0.2,
+        "NumParticles": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_PS01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.08,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.25,
+            0.25,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            0.45,
+            0.45,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.1,
+          "end": 0.1,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.15,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_C_XXXX_P01",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 136795,
+        "line": 3954
+      },
+      "declarationSha256": "267c3e83993107ce0fe9d285e318470ad7d9c724655ab5af8cf04065f5df3246",
+      "glb": "fx/meshes/ADE_PS01.glb",
+      "poseData": "fx/meshes/ADE_PS01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "267c3e83993107ce0fe9d285e318470ad7d9c724655ab5af8cf04065f5df3246"
+      }
+    },
+    "ADE_REVERSE_STIGMA_PAM3": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.5,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 0.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          {
+            "random": [
+              -60.0,
+              60.0
+            ]
+          },
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "TraceParticleList": "ADE_C_XXXX_P01M"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "repeated": {
+        "TraceParticleList": [
+          "ADE_C_XXXX_P01M",
+          "ADE_RE_ST_PA01",
+          "ADE_RE_ST_PA02",
+          "ADE_RE_ST_PA03"
+        ]
+      },
+      "unsupported": [],
+      "name": "ADE_REVERSE_STIGMA_PAM3",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 115226,
+        "line": 3276
+      },
+      "declarationSha256": "c725bc255b75bd04b755bcce70d53e71efd88474ef0b2723bd87a4514bdf588e",
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "c725bc255b75bd04b755bcce70d53e71efd88474ef0b2723bd87a4514bdf588e"
+      }
+    },
+    "ADE_PS02_SS": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.3,
+        "NumParticles": 10.0,
+        "Layer": 12.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Trace": true,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ADD_RingAlpha.tga"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.4
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0,
+            {
+              "random": [
+                0.15,
+                0.2
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.15,
+          "end": 0.25,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            150.0,
+            150.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            450.0,
+            450.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_PS02_SS",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 28815,
+        "line": 871
+      },
+      "declarationSha256": "5c999e48746e896148fc24158c5c6c53455affcc1184afaec1a91f66446df4cb",
+      "textures": {
+        "ADD_RingAlpha.tga": {
+          "file": "fx/textures/ADD_RingAlpha-c9b5dff97e.png",
+          "width": 64,
+          "height": 64,
+          "source": {
+            "archive": "data/data147.kom",
+            "ordinal": 207,
+            "name": "ADD_RingAlpha.tga",
+            "rawPath": "raw/data/data147.kom/ADD_RingAlpha.tga",
+            "sha256": "c9b5dff97eb2453fc8e7230ffec002aeccd5ceaf6c96d5bb7467dbbc4b2c4618",
+            "bytes": 16428,
+            "signatureHex": "00000200000000000000000040004000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "5c999e48746e896148fc24158c5c6c53455affcc1184afaec1a91f66446df4cb"
+      }
+    },
+    "ADE_PS01_S_SS": {
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 60.0,
+        "Lifetime": 0.2,
+        "NumParticles": 20.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_Cycle_Spark01.X"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.16,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                0.8
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.16,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.5
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.001,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -360.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_PS01_S_SS",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 29577,
+        "line": 893
+      },
+      "declarationSha256": "632334c85d4927402b9b66e1a35106c337902870262a0f0ab956cdbaa22b9229",
+      "glb": "fx/meshes/ADE_Cycle_Spark01.glb",
+      "poseData": "fx/meshes/ADE_Cycle_Spark01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.1666666716337204,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "632334c85d4927402b9b66e1a35106c337902870262a0f0ab956cdbaa22b9229"
+      }
+    },
+    "ADE_PS01_SS": {
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 40.0,
+        "Lifetime": 0.1,
+        "NumParticles": 3.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "ADE_PS01.Y"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.15,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "random": [
+                0.6,
+                0.8
+              ]
+            },
+            {
+              "random": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.25,
+            0.25,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.12,
+          "fade": true,
+          "value": [
+            0.7,
+            0.7,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.05,
+          "end": 0.05,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_PS01_SS",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 28027,
+        "line": 849
+      },
+      "declarationSha256": "dedd1a1a8eecc38ac3a139839dc03e1c80ab6a08898afa34f39b9958f70eacf0",
+      "glb": "fx/meshes/ADE_PS01.glb",
+      "poseData": "fx/meshes/ADE_PS01.pose.json",
+      "animationMissingTickRate": false,
+      "animationClips": [],
+      "animationRequiresUnconfirmedRate": false,
+      "textures": {},
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "dedd1a1a8eecc38ac3a139839dc03e1c80ab6a08898afa34f39b9958f70eacf0"
+      }
+    },
+    "ADE_PS00_SS": {
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.2,
+        "NumParticles": 8.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "eve_A_blink_light.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.03,
+          "end": 0.08,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.25,
+                0.35
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.09,
+          "end": 0.18,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            1.0,
+            {
+              "random": [
+                0.25,
+                0.55
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.18,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            120.0,
+            120.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            400.0,
+            400.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 10.03,
+          "end": 10.12,
+          "fade": true,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -180.0,
+                180.0
+              ]
+            }
+          ]
+        }
+      ],
+      "repeated": {},
+      "unsupported": [],
+      "name": "ADE_PS00_SS",
+      "kind": "particle",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 116,
+        "name": "GameMajorParticle32.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+        "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+        "bytes": 298501,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 27151,
+        "line": 825
+      },
+      "declarationSha256": "ff5a61f475395c9355837b56de47a1b338249be9c35e4f55b4f787c0efd4eadc",
+      "textures": {
+        "eve_A_blink_light.dds": {
+          "file": "fx/textures/eve_A_blink_light-e62d0402e0.png",
+          "width": 128,
+          "height": 128,
+          "source": {
+            "archive": "data/data119.kom",
+            "ordinal": 301,
+            "name": "eve_A_blink_light.DDS",
+            "rawPath": "raw/data/data119.kom/eve_A_blink_light.DDS",
+            "sha256": "e62d0402e096d0b770c1ece7ebbe5c90e53cf2fe3f605fe3473e6ef39c0a7dfb",
+            "bytes": 11064,
+            "signatureHex": "444453207c00000007100a0080000000"
+          }
+        }
+      },
+      "sharedResourceEvidence": {
+        "index": "contracts/de-fx-index.json",
+        "declarationSha256": "ff5a61f475395c9355837b56de47a1b338249be9c35e4f55b4f787c0efd4eadc"
+      }
+    }
+  },
+  "sourceFiles": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 91,
+      "name": "GameMajorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+      "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+      "bytes": 316223,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 102,
+      "name": "GameMajorParticle2.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle2.txt",
+      "sha256": "4556ecc2a7c2768f47e47c177a71ea33b8b8d45e0fc97ee5c198adcc606ec9c5",
+      "bytes": 298090,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 113,
+      "name": "GameMajorParticle3.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle3.txt",
+      "sha256": "201b095f9669b5c2ccba25188816d289d159b7b9d7125e88fb5e2a21b3f0b452",
+      "bytes": 283881,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 124,
+      "name": "GameMajorParticle4.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle4.txt",
+      "sha256": "4ea69b24975e15bed33e1aca3da1e37790c29ab97301d4b7f045aa3fa0f46788",
+      "bytes": 342260,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 135,
+      "name": "GameMajorParticle5.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle5.txt",
+      "sha256": "c390af8d48d964d298fc299981a8d29d3c87a1e766b7bad5d383ab3603b06b41",
+      "bytes": 358466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 140,
+      "name": "GameMajorParticle6.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle6.txt",
+      "sha256": "8d75723131050ce1194d7503d132af75849ee6e3feea4dcb8f6f798c392028e7",
+      "bytes": 322342,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 141,
+      "name": "GameMajorParticle7.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle7.txt",
+      "sha256": "a875c52daa5c9812fd8cc5d655b7cef61d941c48414649a66400a3aec9503ac2",
+      "bytes": 327981,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 142,
+      "name": "GameMajorParticle8.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle8.txt",
+      "sha256": "75a8c9253a2dcb3a10dafb5e0c6713be59b3ca3f51d2b59b200fdb24c7bab081",
+      "bytes": 331668,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 143,
+      "name": "GameMajorParticle9.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle9.txt",
+      "sha256": "9d77c4ef0dbb53b79388eaab5cba4d8415f765edbc4a884fa663c0410f0fa3e7",
+      "bytes": 288144,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 92,
+      "name": "GameMajorParticle10.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+      "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+      "bytes": 313708,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 93,
+      "name": "GameMajorParticle11.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle11.txt",
+      "sha256": "8f8e39341dc84ce4bcce7ba80a09f74df231310cf1c84b06c66fa15a3a61347c",
+      "bytes": 356374,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 94,
+      "name": "GameMajorParticle12.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle12.txt",
+      "sha256": "67fe5d27a86e699569045646ac3361a3b806b2f77ee8ea0863b0405553dbbd92",
+      "bytes": 319547,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 95,
+      "name": "GameMajorParticle13.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle13.txt",
+      "sha256": "889af066c76e37cd16e6c06565be8b7149ea5cbeba88fa330d804f6599ecf593",
+      "bytes": 363952,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 96,
+      "name": "GameMajorParticle14.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle14.txt",
+      "sha256": "1864e3e4eab6ec1e82eeb2be0fc42bbaaa7316a33c39220c2cd94f5f45065cd1",
+      "bytes": 305895,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 97,
+      "name": "GameMajorParticle15.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle15.txt",
+      "sha256": "af56dcd9d5fe59e21eb46000d69cfcee86fcc23fb4e0e4382aa3842f8a070807",
+      "bytes": 332579,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 98,
+      "name": "GameMajorParticle16.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle16.txt",
+      "sha256": "8dd81ac6c830a07a417ef7c3fd0c0596e627722b22012558859b8d3bb2874280",
+      "bytes": 226239,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 99,
+      "name": "GameMajorParticle17.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle17.txt",
+      "sha256": "9845c0c4f4c1f3b45e0013fddfb051b5d1adaeb1eae172260557df9f11dd9247",
+      "bytes": 306699,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 100,
+      "name": "GameMajorParticle18.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle18.txt",
+      "sha256": "8fcd53672b23df603314ea5d5d9a195d3313f30a0b3edc382e81e2aa0066fe51",
+      "bytes": 339337,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 101,
+      "name": "GameMajorParticle19.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle19.txt",
+      "sha256": "792dcc2b03803e01b79b7181e8184de531991c6bd162b92ffb60332daf920c3c",
+      "bytes": 197651,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 103,
+      "name": "GameMajorParticle20.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle20.txt",
+      "sha256": "7a574255221172355431399c94663779405c9b85c0686e4375aa708c5149cf98",
+      "bytes": 332331,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 104,
+      "name": "GameMajorParticle21.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle21.txt",
+      "sha256": "1980b71606233f87c29c2a32a9c4d52f758952059b819b29a421b00a4521324b",
+      "bytes": 298427,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 105,
+      "name": "GameMajorParticle22.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle22.txt",
+      "sha256": "ceb08a5c9dc945c58c412564b2304dddf1df195f0f7c44672b84359f7f252556",
+      "bytes": 299984,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 106,
+      "name": "GameMajorParticle23.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle23.txt",
+      "sha256": "f05604057e5d534d5067dea52c342111ae8a509753fc8be9729c0f7130cd92ca",
+      "bytes": 268645,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 107,
+      "name": "GameMajorParticle24.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+      "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+      "bytes": 282323,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 108,
+      "name": "GameMajorParticle25.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle25.txt",
+      "sha256": "1a6e0020da434a5b0288bf56f0f66abcf128171848648590c910879febbfa5d7",
+      "bytes": 178906,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 109,
+      "name": "GameMajorParticle26.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle26.txt",
+      "sha256": "94886684931010b82ce36172eee975c3799ec781b8de35ac627ec5d50f0fe4df",
+      "bytes": 75231,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 110,
+      "name": "GameMajorParticle27.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle27.txt",
+      "sha256": "2d533f02ba08d7db4cb0605cd516ecb1b68292ef206e10c9e580c68cd0aa958e",
+      "bytes": 217027,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 111,
+      "name": "GameMajorParticle28.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle28.txt",
+      "sha256": "41d3749c8528e8727f4fddbcde62f607e24fd494e81092254058bee54439eaf5",
+      "bytes": 319,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 112,
+      "name": "GameMajorParticle29.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle29.txt",
+      "sha256": "23e32f8b48189644d41641eaf99f790bf6de2b76c521d0cd1719296dd54b7cff",
+      "bytes": 282466,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 114,
+      "name": "GameMajorParticle30.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle30.txt",
+      "sha256": "87c94a0776ed70461c861cd24b2be6990ba172ed5b858e2d86dcedc861349ad6",
+      "bytes": 331716,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 115,
+      "name": "GameMajorParticle31.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle31.txt",
+      "sha256": "1df800643621f2187738f9848b61d522b6aeae20c4b660efc2b82eada08bf465",
+      "bytes": 326380,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 116,
+      "name": "GameMajorParticle32.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle32.txt",
+      "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f",
+      "bytes": 298501,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 117,
+      "name": "GameMajorParticle33.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle33.txt",
+      "sha256": "c33c5989e06db46ebf8c8679e58cbb54e714fa51df7e40b9b455c5cd11dffc07",
+      "bytes": 312517,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 118,
+      "name": "GameMajorParticle34.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle34.txt",
+      "sha256": "ef79e3391e244ed14094f3eb11537262bf7fe237164a69f5e0262e1d8c7be223",
+      "bytes": 326411,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 119,
+      "name": "GameMajorParticle35.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle35.txt",
+      "sha256": "5b53ed3d1d704c2a8574f10e0411d9a155ca4a89357cf925c2a3ff82fd05269d",
+      "bytes": 73070,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 120,
+      "name": "GameMajorParticle36.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle36.txt",
+      "sha256": "2eaf3a554917c702198d37fe650cf6dc76dcf3a976670382b68e4e28e812ee4b",
+      "bytes": 342075,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 121,
+      "name": "GameMajorParticle37.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle37.txt",
+      "sha256": "2c32a84e7e7c0eef9c8eaba11f02dfe40fc2e6b2bc9c75475073d4dfe1d9dc9e",
+      "bytes": 333886,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 122,
+      "name": "GameMajorParticle38.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle38.txt",
+      "sha256": "37f8d87f0fcf22d887c872b37c72be90fb07a9cc3d25d69424748084aa86a140",
+      "bytes": 339874,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 123,
+      "name": "GameMajorParticle39.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle39.txt",
+      "sha256": "2439bd0974e1718fd2a78e856e777e60540673b81f6630924da2741f0c9021f2",
+      "bytes": 324167,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 125,
+      "name": "GameMajorParticle40.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle40.txt",
+      "sha256": "37137cd95fe1df46d87c1636876b1fdf373e1d02b3019f8071f6eb9bf26d7bbb",
+      "bytes": 335340,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 126,
+      "name": "GameMajorParticle41.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle41.txt",
+      "sha256": "1633dbf19adf27fe4630f152f7fd2e2bb6e405243d2cd97d5624ae83761941b9",
+      "bytes": 325864,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 127,
+      "name": "GameMajorParticle42.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle42.txt",
+      "sha256": "2714b610707c5b74a567b626531cc4ac910100f09e3c7828bf6ea7bf9c071c3e",
+      "bytes": 325169,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 128,
+      "name": "GameMajorParticle43.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle43.txt",
+      "sha256": "7b65a1364e56ecd2b5db643b509bcf56e7d8caca114de06d41d4da4ff0d22460",
+      "bytes": 261445,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 129,
+      "name": "GameMajorParticle44.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle44.txt",
+      "sha256": "ac8c3b0d2475db740b7ee34a1725b30d587fbe0a9788661c867b0dda578d1eb0",
+      "bytes": 343554,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 130,
+      "name": "GameMajorParticle45.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle45.txt",
+      "sha256": "bdbfbd69f50ba396fa5d12928aeb4f20601bbbe6f352a3b7d521fd79788b5c86",
+      "bytes": 301746,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 131,
+      "name": "GameMajorParticle46.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle46.txt",
+      "sha256": "2bd5e5e8cb047ab0b568597fd08236d87ecc4118680d017832ca1cdbf75b6cc5",
+      "bytes": 319974,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 132,
+      "name": "GameMajorParticle47.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle47.txt",
+      "sha256": "e295a41a1e2e954ea08a46f261070ec63b3f8542d31d0578f15d7ba0075e1c96",
+      "bytes": 87033,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 133,
+      "name": "GameMajorParticle48.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle48.txt",
+      "sha256": "b1ed4b12b8a2c959bfcb437c191c66dd8d21489d54d2e6eac45655e5f7dfe9a9",
+      "bytes": 318540,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 134,
+      "name": "GameMajorParticle49.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle49.txt",
+      "sha256": "5420b34984cafe7e5c15afb87a4e8cd0c108e5a1b9b923802552b3bc54ceef5b",
+      "bytes": 324985,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 136,
+      "name": "GameMajorParticle50.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle50.txt",
+      "sha256": "9f9101a78e8cb8565c0d26ed2e79515517e17ad295b36942865e2eac2683c907",
+      "bytes": 325770,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 137,
+      "name": "GameMajorParticle51.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle51.txt",
+      "sha256": "33f9dc4c674d51a8038de768452e28137e0be18c207dae3ce371d26537a06039",
+      "bytes": 67558,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 138,
+      "name": "GameMajorParticle52.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle52.txt",
+      "sha256": "bbf6445bc4819440a4749d75e080a534d601220cbc633f0d65e385d691c19f60",
+      "bytes": 339420,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 139,
+      "name": "GameMajorParticle53.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorParticle53.txt",
+      "sha256": "20f88b02c8f7a70c39ea3a33c86606fb109f49e02926a280f97b5ce1452dfb32",
+      "bytes": 330309,
+      "signatureHex": "7061727469636c6573797374656d2022"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 145,
+      "name": "GameMinorParticle.txt",
+      "rawPath": "raw/data/data036.kom/GameMinorParticle.txt",
+      "sha256": "c94f61653d3aeb22f72252e2e5b596c55064f4963ff1a599197c5efcb7e83370",
+      "bytes": 288639,
+      "signatureHex": "0d0a7061727469636c6573797374656d"
+    }
+  ],
+  "runtimeDefaultsEvidence": "reference-V5 KTDGParticleSystem.h CParticle::Init; .cpp CParticleEventSequence constructor; native runtime not measured",
+  "limits": [
+    "Unsupported DSL fields are retained, not interpreted by guesswork.",
+    "Native RNG, composite emission timing and GPU blend remain target-client acceptance items."
+  ],
+  "meshFailures": [],
+  "missingTemplates": [],
+  "profileSha256": "5b029341b338d3c0cb2d4f11e8193c8f663124ae3f465a66e7f7e157aedb6868",
+  "sharedTemplates": [
+    "Mesh_ADE_Dash_Jump_Combo_XXX",
+    "Mesh_ADE_Combo_XXXX_Explosion",
+    "ATT_Effect_Rupture15_R",
+    "ATT_Effect_Rupture17_R",
+    "ATT_Effect_Rupture16_R",
+    "ADE_RE_ST_PA03S_70",
+    "ADE_RE_ST_PA03",
+    "ADE_RE_ST_PA02",
+    "ADE_RE_ST_PA01",
+    "ADE_C_XXXX_P01M",
+    "ADE_C_XXXX_P04",
+    "ADE_C_XXXX_P03",
+    "ADE_C_XXXX_P02",
+    "ADE_C_XXXX_P01",
+    "ADE_REVERSE_STIGMA_PAM3",
+    "ADE_PS02_SS",
+    "ADE_PS01_S_SS",
+    "ADE_PS01_SS",
+    "ADE_PS00_SS"
+  ]
+}

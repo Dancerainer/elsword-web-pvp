@@ -1,0 +1,1402 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static-fields-and-web-display-policy",
+  "targetClientMeasured": false,
+  "policy": "Keep source emission clock and capacity for these sparse/short Elesis layers. Dense fields retain selected web density; high remains source density.",
+  "sourceIndexes": {
+    "gm": {
+      "sha256": "d6e67ef632c8e3c7679154674c57a913b7d3c9d8e60cbe9bf9e6c073f55f1071"
+    },
+    "bh": {
+      "sha256": "236ad9d76944d71452eb349b5cc9655ff0d52b414a18425f1940953887bc2e2f"
+    },
+    "ca": {
+      "sha256": "05487ac08356ca8559e27a003ed9dcd5255d072793620840dbc14e4dbc233892"
+    }
+  },
+  "cues": [
+    {
+      "name": "A_EL_INDURANCE_P03",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "A_EL_Mega_Slash_Spot_P01",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40,
+        "NumParticles": 20,
+        "TriggerTime": 0.16
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_CRITICAL_DIVE_P02",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 30,
+        "NumParticles": 20,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_CRITICAL_DIVE_P03",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 30,
+        "NumParticles": 50,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_DRASTIC_CHARGE_Power_P05",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 4,
+        "TriggerTime": 9999
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 15,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P02",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 15,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P03",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P04",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 10,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P05",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 15,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P06",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 15,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P07",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 5,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "A_SGM_SNAP_CRESHER_LOOP_P08",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "A_SPK_SWORD_ERUPTION_BLADE_P02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 3,
+        "TriggerTime": 0.76
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "Aisha_Fire_P01",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "BLOOD_CUTTER_W_P01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "BLOOD_CUTTER_W_P02",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "BLOOD_CUTTER_W_P03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "BLOOD_CUTTER_W_P05",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "BLOOD_CUTTER_W_P05_D",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "Damage_attack01",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_ADW_Fate_Space_P05",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_B_EL_SDC_Bleeding_P03",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 4,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_E_SCA_Lose_P03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 3,
+        "NumParticles": 3,
+        "TriggerTime": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_E_SCA_START_P05",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 3,
+        "NumParticles": 3,
+        "TriggerTime": 2.5
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_EBS_Dragon_Slave_P07",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 8,
+        "NumParticles": 20,
+        "TriggerTime": 0.3
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_P_EL_DARK_FORCE_demolition_wake_03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_P_EL_DARK_FORCE_demolition_wake_04",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_P_EL_DARK_FORCE_demolition_wake_05",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 20,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_P_EL_DARK_FORCE_demolition_wake_06",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_P_EL_DARK_FORCE_vitality_04",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 2,
+        "NumParticles": 2,
+        "TriggerTime": 100000000
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_SA_SBH_BLAZE_WING_Start02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 15,
+        "TriggerTime": 0.5
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_SA_SBH_BLAZE_WING_Start03",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 25,
+        "NumParticles": 5,
+        "TriggerTime": 0.3
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_SA_SBH_BLAZE_WING_Start04",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 20,
+        "NumParticles": 10,
+        "TriggerTime": 0.3
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_SA_SBH_BLAZING_DANCE_10",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.4
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_SA_SBH_BLAZING_DANCE_12",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 17,
+        "NumParticles": 4,
+        "TriggerCount": 4
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_SBH_FireBall_Explosion02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.4
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "EffectSet_SBH_FireBall02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 50,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_SBH_FireBall02_Long",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 50,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_SBH_FireBall04",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 5,
+        "NumParticles": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EffectSet_SBH_FireBall05",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 5,
+        "NumParticles": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EL_MegaBursterP01",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 80,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EL_MegaBursterP02",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 8,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EL_MegaBursterP03",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "EL_MegaBursterP04",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 20,
+        "NumParticles": 10,
+        "TriggerTime": 0.3
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "equip_darkShadowReform_aura_P02_RE",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 3,
+        "NumParticles": 3,
+        "TriggerTime": 1000000000
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "Ground_ShockWave02",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "HA_SGM_SWORD_OF_RELICS_P07",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerTime": 7
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "HA_SGM_SWORD_OF_RELICS_P08",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerTime": 7
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "P_SBH_FIRE_BLOSSOMS_P04",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 2,
+        "TriggerTime": 0.19
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "Riding_Mobi_Missile_Particle_P09",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 20,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "Ring_Elsword_Sp3a_DoubleSlash02",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_ALD_HELL_OF_TORNADO_HIT_P03",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerTime": 0.3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_ALH_DOUBLE_COLLISION_P11",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 30,
+        "NumParticles": 20,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_ALH_PEERLESSNESS_SLASH_END_P02",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 7,
+        "NumParticles": 7,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_EL_UNLIMITED_BLADE_P03",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 9,
+        "NumParticles": 8,
+        "TriggerTime": 0.66
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_SGM_JUGGERNAUT_BUSTER_LOOP_P01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerTime": 9999
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_SGM_SWORD_OF_RELICS_SWORD_EXP01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 4,
+        "TriggerTime": 5
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_SGM_WAR_PRELUDE_P03",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15,
+        "NumParticles": 15,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_SGM_WAR_PRELUDE_P08",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 15,
+        "NumParticles": 10,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_SPK_ETERNAL_FIRE_P02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 200,
+        "NumParticles": 4,
+        "TriggerTime": 3.46
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_SPK_ETERNAL_FIRE_P06",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerTime": 1.6
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SA_SSK_EXTINCTION_CHARGE_P13",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 10,
+        "TriggerTime": 0.33
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SA_SSK_SPIRAL_BLAST_P02",
+      "professions": [
+        "GM",
+        "BH",
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 20,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SCA_BR_BR_PA01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_BR_BR_PT01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_BR_BR_PT01_1",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_BR_BR_PT01_2",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_BR_BR_PT01_3",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_BR_BR_PT01_4",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_CRIMSON_BREAK_PS01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_Dash_ZX_START_P03_B",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_Dash_ZX_START_P03_R",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_FA_SM_PB02",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_FA_SM_PT01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 15,
+        "NumParticles": 4,
+        "TriggerCount": 4
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_FATE_SMASHER_P03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_GC01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_PE03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_PE07",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCA_SHADE_THE_ILLUSION_P01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SCALDIC_SWORD_02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 50,
+        "NumParticles": 10,
+        "TriggerTime": 0.15
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SCALDIC_SWORD_03",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100,
+        "NumParticles": 3,
+        "TriggerTime": 0.1
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BR_BR_PE02",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BR_BR_PE02_S",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BR_BR_PE03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BRANDISH_BREAKER_PE00_1",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BRANDISH_BREAKER_PE00_S",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 25,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BURNING_PHANTOM_P01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BURNING_PHANTOM_PE03",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BURNING_PHANTOM_PE05",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_BURNING_PHANTOM_PE06_B",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_HIT_P2_00",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 5,
+        "NumParticles": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_LINK_P00M",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_LINK_P01",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SDK_LINK_P02",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_MESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SGM_PROVOKE_Revenge_P01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SGM_ProvokeReadyTM01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 60,
+        "NumParticles": 3,
+        "TriggerCount": 3
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SGM_ProvokeReadyTM01D",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SGM_XXX_Start_P01",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerTime": 9999
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SI_SA_ALH_DESCENT_DRAGON_LED_Eye",
+      "professions": [
+        "GM"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 30,
+        "NumParticles": 100,
+        "TriggerTime": 0.2
+      },
+      "reason": "at most eight authored births; /8 can erase the entire short packet"
+    },
+    {
+      "name": "SI_SA_SCA_SHADE_THE_ILLUSION_P05",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 8,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SI_SA_SDK_EJECTION_BUSTER_Oura5_A",
+      "professions": [
+        "CA"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 60,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SPK_Avatar_Of_TheFireP01",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100,
+        "NumParticles": 4,
+        "TriggerCount": 4
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SPK_Avatar_Of_TheFireP02",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 10,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    },
+    {
+      "name": "SPK_Swordfire_P03",
+      "professions": [
+        "BH"
+      ],
+      "source": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 20,
+        "NumParticles": 2,
+        "TriggerCount": 2
+      },
+      "reason": "at most four simultaneous structural particles"
+    }
+  ]
+}

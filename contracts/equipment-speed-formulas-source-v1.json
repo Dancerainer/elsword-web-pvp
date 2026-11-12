@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "formulaVersion": "equipment-final-percent-buff-composition-v1",
+  "authorization": "Project rule specifies PvP formula corrections and classification of existing configured attributes as equipment; no character-value rebalance in this step",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "fixed-V5-source-consumer-with-target2016-Buff-declarations; not target2016-client-measurement",
+  "targetClientMeasured": false,
+  "inputContract": {
+    "equipmentValues": "1 + already-converted final equipment option percentage; keep configured 40% / 23% / 23% unchanged",
+    "rawSocketPoints": "unsupported; converting a final percentage again would apply a second diminishing-return curve",
+    "passives": "separate sum and multiple, not equipment options",
+    "buffPercentages": "pre-resisted native factor values; multiply in insertion order, independently of equipment and passive terms",
+    "absoluteSwaps": "last BCT_SWAP_VALUE wins in native speed units; shared movement/jump multiplier adapter rejects absolute swaps because walk/run and normal/dash-jump have different base values",
+    "fixedAndRelationBuffs": "unsupported in final-percent adapter: source adds them to raw option points before socket conversion"
+  },
+  "consumers": [
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.h", "sha256": "729f86193d873c0d912c72e3898aed135e80f62ff035d6a0f2450a2b5ebd5f6b", "lines": [893, 945], "symbol": "CX2AdditionalStatByBuff::UpdateResultValueWithOptionData"},
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2BuffTemplet.cpp", "sha256": "3f6a42069971f31ae683bcdb6a5879e1c54e55c65aedf18aedc845f2b73e704a", "lines": [495, 552], "symbol": "CX2AdditionalStatByBuff::UpdateResultValueByChangeType"},
+    {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameUnit.cpp", "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923", "lines": [12061, 12067], "symbol": "CheckAndUpdateAdditionalStat: animation modifier 1; walk/dash/jump/dash-jump modifier .5"},
+    {"path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/Always.h", "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069", "lines": [169, 169], "symbol": "ADJUST_BUFF_CALCULATE defined in reference; target build macros unconfirmed"}
+  ],
+  "composition": {
+    "product": "M = (1 + equipmentPercent) * (1 + passiveSum) * passiveMultiple * product(buffPercentages)",
+    "animation": "baseAnimationMultiplier * M",
+    "movementAndJumpPositiveBuff": "baseSpeed * (1 + (M - 1) * .5), when product(buffPercentages) >= 1",
+    "movementAndJumpSlowBuff": "baseSpeed * M, when product(buffPercentages) < 1",
+    "zeroProductGuard": "source multiplies base only if M > 0; otherwise base is retained",
+    "rounding": "float32 assignments and intermediate products in original source order"
+  },
+  "target2016Declarations": {
+    "profile": "packages/combat-core/lk-profile.json",
+    "buff18MovementPercent": 1.625,
+    "buff237MovementAndAnimationPercent": 1.1,
+    "buff314MovementPercent": 1.75,
+    "buff714MovementPercent": 1.625,
+    "consumerCompatibility": "candidate; these target factors do not establish the target executable's complete stat consumer"
+  },
+  "vigorSpeedDeferred": {
+    "reason": "Fixed V5 Vigor uses an older separate GetOptionRateCorrection path; target2016 matching consumer and curve not verified. Applying the old function directly to current final +40% equipment would slow action animation. No guessed +20% multiplier is inserted.",
+    "socketSource": {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2SocketItem.cpp", "sha256": "75cb43741db96a53f1f9a7dddcb8791cce53522224c5e92b26b89ba61e7f6b07", "lines": [2255, 2271]},
+    "swordmanSource": {"path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUElsword_SwordMan.cpp", "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d", "lines": [440, 471]},
+    "targetSocketDeclaration": {"path": "asset_work/raw/data/data036.kom/SocketOptionForm.lua", "sha256": "a8a0b4956aa24e06988b84a2723d038782b09733442325a1a70695ea57fcbc9e", "format": "KL82", "status": "parsed structure contains named final/intermediate conversion functions; opcode meaning and Vigor consumer linkage unverified"}
+  },
+  "validation": {
+    "tests": "tests/combat/equipment-speed-formulas.test.mjs",
+    "expectationProvenance": "hand evaluated reference formulas and literal target Buff values; exact binary-fraction cases plus bounded float32 tolerance; not captured implementation answers",
+    "targetOriginalTrajectories": 0
+  },
+  "remainingUnknowns": [
+    "Target2016 exact stat consumer, macro selection, and frame scheduling",
+    "Raw socket point conversion and handling of fixed/relation speed Buffs",
+    "Target2016 Vigor speed correction and whether the older double-offset movement branch applies",
+    "Native absolute speed swap integration for separate walk/run and normal/dash-jump channels"
+  ]
+}

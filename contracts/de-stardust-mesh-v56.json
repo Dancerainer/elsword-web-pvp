@@ -1,0 +1,191 @@
+{
+  "scope": "DE29021 original Drop carrier and M01 visual ball mesh declarations",
+  "inputPolicy": "Web deterministic RNG supplies explicit independent instances; original TLS seed and cross-event call order remain unmeasured",
+  "rows": [
+    {
+      "fields": {
+        "MeshName": "elsword_SA_rageCutter_spwanPoint.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 10
+      },
+      "events": [
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            {
+              "random": [
+                0,
+                360
+              ]
+            },
+            0
+          ]
+        }
+      ],
+      "poseSha256": "5da83b49d694dd7af69946cb203e029791fea091877f1493ae20d6f467c64d26",
+      "declarationSha256": "0c943940a2503d31e5111986bf54fbfcecb8c0eed75f8a729f3e230cdbadfcfa",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2621834,
+        "line": 81901
+      },
+      "name": "Mesh_ATT_Stardust_Shower_Drop",
+      "poseData": "fx/meshes/elsword_SA_rageCutter_spwanPoint.pose.json"
+    },
+    {
+      "fields": {
+        "MeshName": "ATT_Maximum_Strike_Ball_AttackBox.X",
+        "SLASH_TRACE_TEXTURE": "Bobosse_Magic_wind.tga",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 12,
+        "LifeTime": {
+          "random": [
+            0.6,
+            0.62
+          ]
+        },
+        "ZEnable": true,
+        "UseSlashTrace": true,
+        "AlphaTest": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.5,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -1500,
+                1500
+              ]
+            },
+            -5000,
+            0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            90
+          ]
+        },
+        {
+          "property": "SlashTrace",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": true
+        }
+      ],
+      "poseSha256": "051f6fb313b1828b7ca7796468878cc30c13bd9c3ead3521207727e5f1cde6f8",
+      "declarationSha256": "7a09cddbdff4010ca1b5f29623454e6fa13c9873ce87c8ddae0ab7c0cde0841e",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2618350,
+        "line": 81794
+      },
+      "name": "ATT_Stardust_Shower_M01",
+      "poseData": "fx/meshes/ATT_Maximum_Strike_Ball_AttackBox.pose.json"
+    }
+  ],
+  "schemaVersion": 1,
+  "targetExecuted": false,
+  "targetClientMeasured": false
+}

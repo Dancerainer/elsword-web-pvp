@@ -1,0 +1,87 @@
+{
+  "schema": "rf-combo-stop-input-contract-v7",
+  "adapter": "sampled-native-combo-hitstop-latch-v7",
+  "evidenceClass": "user-feedback-driven-web-input-adaptation",
+  "targetClientMeasured": false,
+  "sourceReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "sourceProbe": "reports/rf-combo-stop-source-v7.json",
+    "sha256": "2a933873224b052f128c6089b1166c7ff18d08807ecda6b4ab362b733fefc876",
+    "originalStopBehavior": "Each sampled packet overwrites input; the exact stop guard skips the native state callback until the following unfrozen packet.",
+    "productionRecoveryReference": "a1bcdabf39ee1699873b587b40cedefcce61c7f0; 2026 reconstruction of 2015 reference, not target2016 official consumer"
+  },
+  "acceptance": {
+    "device": "sampledDevice true",
+    "stop": "hitStop > 0, worldStop <= 0",
+    "state": "current native event-supported COMBO state",
+    "input": "fresh Z/X accepted by unchanged native callback with original frozen animation time and real native direction/double/awakening priority",
+    "result": "native positive command flag; reject free-state, skill, reaction, dash/awakening requests, invalid original windows and input/attack locks"
+  },
+  "cache": {
+    "boundTo": [
+      "state",
+      "stateSerial"
+    ],
+    "retained": [
+      "accepted source command flags",
+      "capture animation time",
+      "diagnostic Z/X names"
+    ],
+    "invalidatedBy": [
+      "state entry",
+      "state/serial mismatch",
+      "world stop",
+      "death",
+      "input/attack lock",
+      "input-blocking buff",
+      "legacy/non-sampled packet"
+    ],
+    "replay": "Once at the first positive elapsed packet, before normal animation/physics/Event. Fresh valid Z/X runs native composition with the accepted stopped flags: ZZ last-selection replaces, while 668Z independent bits survive. Invalid fresh keys do not erase already accepted flags. Normal native Event still clears reversal and decides landing/next state."
+  },
+  "compatibilitySwitch": {
+    "presetField": "sampledComboStopLatch",
+    "disabledValue": false,
+    "purpose": "simulation diagnostics and compatibility only; no player UI control"
+  },
+  "unchanged": [
+    "native WASM bytes",
+    "profile attack/cancel windows",
+    "animation speed",
+    "hitstop values",
+    "map geometry",
+    "global pendingPressed/legacy tap behavior",
+    "network wire protocol"
+  ],
+  "profileSha256": "528f8ae8dcc5a7c634f7a7edc54e34b8c3c5a3e7197df5dc1e170dca01fe90b4",
+  "nativeModules": {
+    "geometry": "03ddf8629912168f3eb0b4df2dee9a8de7adf09edb0ad20c777064cfe868d847",
+    "camera": "4b1649055fcbc3e07773a88dd468aa1eb3780d9011c5fb8695ebce909c142a15",
+    "commands": "6a6517df5f6032ffc2c325c234f0fa20cb6d28459ad26d16edf2a42838eed64c",
+    "skills": "9b1e0a19ce5af642453d378d71b478e04c97c80f2085c421bb63a2b4a5c2afb0",
+    "skill-values": "91fac29ff37930135de1b0d54857bf48d248690c201a5758a5c3b5717648d524",
+    "effect-random": "fd7a299bcf419cce00a212a510b651c7f6f03d2188f4e27f939e256ef1973eb5",
+    "commands-recovery": "44b3d8af7f96fb22b935fc74ada9f3c35e59e12bc4f459942db4929269952470",
+    "nasod": "addc78c0ae552ef1095cf20e3cf77ba84459be2189a5d8df8603fa720fba531b",
+    "critical": "abac2e52cf38135badad1c85e3c20449ac131cb93edaf416e2d3cb3d6107ad6b",
+    "mana-break": "3ea75dcc013b6dea97a436e547cb0c9ee189b128f5feecfdad427c101a9f029a"
+  },
+  "verification": {
+    "directedNodeTests": 113,
+    "directedNodeTestsBeforeIndependentReview": 110,
+    "adapterTestsAfterIndependentFlagFix": 21,
+    "freshIndependentFlagRegression": "Sealed native RSI_DASH_JUMP_COMBO_Z at .1: stopped X then fresh Z and stopped Z then fresh X both compose to flags3; pre-fix adapter returned flags1/flags2. ZZ still overwrites to flags1/flags2.",
+    "unchangedCppSourceAssertions": 13,
+    "productionTraceRows": 152,
+    "pairedTraceImprovements": 16,
+    "fullInputReplays": 16,
+    "jsonRestorePacketsPerReplay": 60,
+    "actualStoppedSnapshotRestorePackets": 60,
+    "readOnlyOwnedWireProjectionValidated": true
+  },
+  "gaps": [
+    "No original target2016 client recording or GPU/browser execution.",
+    "A down/up completed wholly between Read samples remains collapsed by the fixed source device; this adaptation cannot recover an unseen key level.",
+    "Actual dash-first X remains the source single dash-X before later normal X; a held forward level never implies a fresh dash gesture.",
+    "An edge outside the native frozen-time latch window stays rejected; speed/input schedules can still deliberately miss a finite source window."
+  ]
+}

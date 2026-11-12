@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "mana-rs-project-v62",
+  "originalClientExecuted": false,
+  "sourceEvidence": [
+    {
+      "path": "contracts/mana-host-v61.json",
+      "bytes": 91270,
+      "sha256": "c02399bf009013d4bab6fa7d0d3907fd37c0a29c6f64471d3f502987d700137c"
+    },
+    {
+      "path": "contracts/rf-mana-break-source-v12.json",
+      "bytes": 7975,
+      "sha256": "2f1d943712fd25f27065eb8c27dfe9a59bf3d52c082234b3198d9cd3ffe004cf"
+    },
+    {
+      "path": "contracts/rs-luna-source-v28.json",
+      "bytes": 12695,
+      "sha256": "0850ba5317a9b0e2c0d80d919c4f53ff4546e95c4a6eb25f4d19dd38dbb3b664"
+    },
+    {
+      "path": "contracts/rs-feedback-source-v2.json",
+      "bytes": 43193,
+      "sha256": "57d5f892ae388d34ad2fb1197a8515a1adb4083184e445af62286a08e7790a80"
+    },
+    {
+      "path": "packages/combat-core/rs-profile.json",
+      "bytes": 3347293,
+      "sha256": "3ab5182a67d402b9f3519d302b882429d20ddf0d9897b9460744c83462eb2b3e"
+    }
+  ],
+  "target2016LunaSources": {
+    "elsword": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Elsword_SwordMan.lua",
+      "sha256": "743fc48b74fd35ed69a2e8573acd2d7759d3005340ff4e1655c0678dbf741031"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "enum": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    },
+    "buff-factor": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffFactor.lua",
+      "sha256": "70399835c2efa93b1db867cc1fcbf107130fc3fcc519facf071003d45f0e8804"
+    },
+    "battle-buff": {
+      "path": "asset_work\\raw\\data\\data036.kom\\BattleFieldBuffTemplet.lua",
+      "sha256": "79bf16f5a905c895280ca02db11f4c83896bb4587432643615b5043145f5ccef"
+    }
+  },
+  "mana": {
+    "version": "project-mana-break-hold-intent-v62",
+    "holdIntentSeconds": 0.5,
+    "policy": "Continuous fixed-packet Z or X separately; before threshold no UI charge and no hidden Gauge accumulation. Every sampled release clears that key including up/down in one packet; repeat down does not reset. Clock uses simulation dt including stopped packets, while original Gauge still obeys original actor stop scheduling. No backfill at eligibility.",
+    "unchanged": {
+      "minimumBreakCharge": 100,
+      "rateIsProfessionComponent": true,
+      "rate130MinimumEffectiveChargeSeconds": 0.7692307692307693
+    },
+    "sourceBoundary": "V61 original pure input/Gauge chain has no extra N-second wait. The new .5 is explicitly a project rule, not recovered2016. Elesis annihilation stays on its existing separate sword consumer after the same intentional-key latch."
+  },
+  "luna": {
+    "version": "project-rs-luna-once-per-cast-target-v62",
+    "skillId": 21017,
+    "carriers": [
+      "DamageEffect_SA_ERS_LunaBlade",
+      "DamageEffect_SA_ERS_LunaBlade_ExposionFinal"
+    ],
+    "frozenSource": "Both MAGIC17.84, REACT2; only final explosion declares BF117. Frozen source rows remain unchanged.",
+    "override": "Either stage may settle one ordinary HP damage attempt and one BF117(-30%maximumMP) application per cast/target; both retain authored contact/reaction/STOP. First accepted shield-zero settlement also spends HP attempt. Later shield expiry cannot retry HP. Existing living DD-factor gate controls MP;0 currentMP still spends the one application.",
+    "identity": [
+      "attacker ID",
+      "attacker life epoch",
+      "original carrier ownerStateSerial inherited through die child",
+      "target life epoch"
+    ],
+    "rejectedContacts": "Dead/invincible, Miss, unsupported numeric resolution, projectile absorption/reflection and counter early returns consume neither quota. Accepted source immunity settles HP attempt but keeps its original blocked-MP gate.",
+    "retention": "Defender-owned receipts keep every distinct cast for the current attacker/target life; no latest-serial truncation or guessed TTL. Existing strict owner packet size/count guards remain. New life replaces that attacker receipt.",
+    "ownership": "Defender stores receipt with pending original Buff98 in full/critical reports. Attacker prediction and third-party observation use separate local cosmetic receipts in simulation snapshots; no foreign actor resource write.",
+    "sourceBoundary": "V62 changes V56 explosion-zero-HP product rule and moves one117 application to the first eligible stage. This is a project rule, not original2016 equivalence.",
+    "npcBoundary": "The existing independent Apocalypse/Prism receiver also consumes the HP attempt after a successful numeric settlement, in NPC-kind/serial namespaces on the actual defender owner. It keeps its existing no-MP/no-player-buff domain and never spends owner MP. No NPC fixed shape, producer, numeric source or DP rule is changed."
+  },
+  "verification": {
+    "status": "current-Web/native acceptance passed; no original-client/GPU/WAN claim",
+    "light": {
+      "tests": 9,
+      "pass": 9,
+      "seconds": 1.281
+    },
+    "native": {
+      "tests": 37,
+      "pass": 37,
+      "fail": 0,
+      "seconds": 7.359
+    },
+    "baseline": {
+      "tests": 37,
+      "pass": 5,
+      "fail": 32,
+      "seconds": 7.297
+    },
+    "retainedFirstFailure": {
+      "before": {
+        "tests": 34,
+        "pass": 4,
+        "fail": 30,
+        "seconds": 10.891
+      },
+      "after": {
+        "tests": 34,
+        "pass": 32,
+        "fail": 2,
+        "seconds": 7.391
+      },
+      "failuresPreserved": true,
+      "repairs": "Only test oracles/setup: source Frame consumes canCharge=false; real two-contact case uses authored central Garpai line2, while original wall-side case retains full actual native geometry and one valid HP/MP settlement."
+    },
+    "evidenceReport": "reports/mana-rs-project-v62.json",
+    "newTests": [
+      "tests/combat/mana-break-intent-v62.test.mjs",
+      "tests/combat/mana-break-project-v62.test.mjs",
+      "tests/combat/rs-luna-project-v62.test.mjs",
+      "tests/combat/rs-luna-npc-project-v62.test.mjs"
+    ],
+    "nativeGaugeLatchProof": {
+      "fullFileSha256": "d30c9acb4fa3f3f0e545259cde3d39d63c20dc1b2f3b5d74c5aa02e51f1583e8",
+      "fragmentSha256": "e9b70eaf97e0bcf8656e11607edc8adcaabe2e28819320175b4caaf3caa2919a",
+      "lines": [
+        18,
+        42
+      ],
+      "fact": "Original compiled DetonationFrameMove consumes canCharge and explicitly setsfalse; absent foreign input cannot manufacture a new Event."
+    },
+    "neighbors": "pending root integrated serialized batch"
+  }
+}

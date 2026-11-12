@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "evidence": "reference-v5; target triggers unmeasured",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "source": {
+    "file": "X2Lib/X2GUElsword_SwordMan.cpp",
+    "sha256": "ebf61b55464e6c43a0d5fd0b75b1cef8be6bf1049a3e1a4c818104bb6c03e84d"
+  },
+  "files": [
+    {"name": "elsword_vitality_use_VOX.ogg", "consumer": "Start_SwordmanVigor", "line": 482},
+    {"name": "elsword_vitality_end.ogg", "consumer": "End_SwordmanVigor", "line": 500},
+    {"name": "elsword_demolition_use_VOX.ogg", "consumer": "Start_SwordmanDestruction", "line": 515},
+    {"name": "elsword_demolition_end.ogg", "consumer": "End_SwordmanDestruction", "line": 527}
+  ],
+  "limits": ["Only the four uncommented SwordMan sound calls are selected. Loop sounds are commented out in the pinned consumer.", "Copied files come from the original target2016 archive catalog; each page CRC and full file SHA256 is checked separately."]
+}

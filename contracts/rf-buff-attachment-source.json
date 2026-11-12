@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "reference-V5-not2016",
+  "targetClientMeasured": false,
+  "headConsumer": {
+    "scope": "RF CX2GUUser, not arbitrary NPC/riding head",
+    "token": "_HEAD_BONE",
+    "sourceBoundNode": "Bip01_Head",
+    "nodeBindingSource": "X2GUUser.cpp:4584",
+    "worldYOffset": 70,
+    "function": {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "signature": "D3DXVECTOR3 CX2GUUser::GetHeadBonePos() const",
+      "sha256": "8b7bdde9f7bb705adcc6a0f8449f33e563b6c25dd9205e3b4a106541c218c37a",
+      "bytes": 165,
+      "lines": [
+        13145,
+        13152
+      ]
+    },
+    "effectSetSourceLines": [
+      2818,
+      2854
+    ]
+  },
+  "fireConsumer": {
+    "scope": "target EffectSet_DEBUFF_FIRE literal EFFECT0/EFFECT1",
+    "effectType": 9,
+    "family": "game-minor",
+    "boneName": null,
+    "sourceRoute": "X2EffectSet.cpp:751-766 GetMinorParticle()->CreateSequence(vEffectPos)",
+    "offsets": [
+      [
+        0,
+        90,
+        0
+      ],
+      [
+        30,
+        120,
+        0
+      ]
+    ],
+    "traceSource": "X2EffectSet.cpp:1297-1305 /1422-1429 SetPosition(...TraceMore,TraceMore); KTDGParticleSystem.cpp:2973-2976 and3092-3095 template Trace adds position gap once",
+    "specialWeaponAttachmentConfirmed": false
+  },
+  "referenceFiles": [
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "gitBlob": "f608ea3f556770d5aa5b43d5b00270d6351b6fcd",
+      "bytes": 1323547
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+      "bytes": 146678
+    },
+    {
+      "path": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDGParticleSystem.cpp",
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "gitBlob": "2afaac41a9de94c6a0d0dda5d7df4849429e0c08",
+      "bytes": 222204
+    }
+  ],
+  "originalFunctionsExecuted": false
+}

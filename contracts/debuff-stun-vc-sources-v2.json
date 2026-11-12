@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "fixedV5Commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientExecuted": false,
+  "originalClientTraces": 0,
+  "records": [
+    {
+      "kind": "target2016-static",
+      "role": "VC",
+      "file": "RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3",
+      "state": "RSI_DAMAGE_GROGGY",
+      "raw": {
+        "ANIM_NAME": "Fatal",
+        "PLAY_TYPE": 0,
+        "TRANSITION": 1,
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10339
+      },
+      "clip": {
+        "durationSeconds": 1.0666666666666667,
+        "durationTicks": 5120.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "Fatal",
+        "decodedKeysSha256": "74f29b69d4e76cf1acb195313b586adaca5fecf9b816e02560b329472346119e"
+      },
+      "clipInventorySha256": "2bd7e5a0d4cb8c9b2ae07913d8035f7338c98d9012a34b68b60a622d8985f3fd"
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "pvp-source/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "spans": [
+        {
+          "first": 6566,
+          "last": 6571,
+          "meaning": "Base unit buff update precedes Future frame-stop gate",
+          "sha256": "d8817c427fb2ed4375cad023308a00e6ef578c7f10746c24886cb8ed575bfcc4"
+        },
+        {
+          "first": 6765,
+          "last": 6785,
+          "meaning": "Frame-stop skips Future and reduces stop timers",
+          "sha256": "6c9a9be6e86a6ceef2861633a9bcc69e80004358daa4a2b5258ff5e5b12f33ae"
+        },
+        {
+          "first": 16281,
+          "last": 16344,
+          "meaning": "Stun selects groggy; reference macro includes KD/detonation exceptions",
+          "sha256": "54821bbd52cfe5d19c549050afe42ec6703c56240ffa50bb7bc4fa8338f38780"
+        },
+        {
+          "first": 24434,
+          "last": 24443,
+          "meaning": "No stun registration: groggy returns to common wait",
+          "sha256": "7b636ea38bf288f45477fac81f46c0b170fabefeee02463d2154c0529714a0a7"
+        }
+      ]
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "pvp-source/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "spans": [
+        {
+          "first": 1269,
+          "last": 1273,
+          "meaning": "RF binds groggy to common event handler",
+          "sha256": "4fc84a73cfd62ae2db8c6fa17bf5477d46e3ff3d31a19ff9d5481f6265444b6e"
+        }
+      ]
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "pvp-source/X2Lib/X2GameUnit.cpp",
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "spans": [
+        {
+          "first": 1021,
+          "last": 1031,
+          "meaning": "OnFrameMoveBuff receives normal elapsed time",
+          "sha256": "95e79e15acdc3a4902c43fa660c17d7a023e1dfd740e1f4b9e25a746cd0412d9"
+        },
+        {
+          "first": 12647,
+          "last": 12683,
+          "meaning": "Finished buff removes behavior, displayer and gauge icon",
+          "sha256": "e8e93279ed32297ebc933417ab4220c26ec2078a67979c59dd2241fbe02dab40"
+        }
+      ]
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "native-skills-source/X2Lib/X2BuffFinalizerTemplet.cpp",
+      "sha256": "c41cc3b322eb602b74b8d6581393c1079121fcabdd1e742b6d02f0bb30e2f173",
+      "spans": [
+        {
+          "first": 152,
+          "last": 166,
+          "meaning": "Time finalizer decrements application/explicit elapsed time",
+          "sha256": "91ec6cbf4ebedbb282356249735951ce74ff416d2d7edd1edf2390f4616d8a58"
+        }
+      ]
+    },
+    {
+      "kind": "fixedV5-reference",
+      "file": "native-skills-source/X2Lib/X2BuffBehaviorTemplet.cpp",
+      "sha256": "6996a32c7c7fa3c4feba22a6732f946cea38ddc080d45bb83d61cfb1c5a84c5d",
+      "spans": [
+        {
+          "first": 2012,
+          "last": 2033,
+          "meaning": "First stun registration requests groggy",
+          "sha256": "b3184d723ba35d363eb84c4c1dbb2c0f9de8d8edd0a274f12f1f7f1f60b7e174"
+        },
+        {
+          "first": 2061,
+          "last": 2082,
+          "meaning": "Packet registration and finish deregistration",
+          "sha256": "34eda3fbc658c661f985ab550c7077dc59f60338d2a77f87865a5fc8aa914211"
+        }
+      ]
+    }
+  ],
+  "userRequiredPolicy": "Accepted stun forces groggy, clears current/pending knockdown and its activation latch, including a threshold hit; expiration returns to wait.",
+  "limits": [
+    "Reference macro guards are not proof of target2016 executable behavior.",
+    "User-required stun-over-knockdown precedence is explicit and supersedes the reference guard.",
+    "Web fixed-step elapsed is deterministic; browser pause and room time scale remain host behavior."
+  ]
+}

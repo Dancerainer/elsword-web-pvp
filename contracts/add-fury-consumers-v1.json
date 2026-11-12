@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "status": "target2016 magnitudes + reconstructed fixed-reference adapter; target-client-unmeasured",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "references": {
+    "add": {
+      "path": "X2Lib/X2GUAdd.cpp",
+      "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+      "methods": [
+        "ANSI_SA_AMM_INSTALLATION_ULTIMATE_FURY_FrameMove",
+        "ThirdPath_UltimateFurySpawnAttack",
+        "ThirdPath_UltimateFuryAttackDriver",
+        "ThirdPath_UltimateFuryAssignTargets",
+        "ThirdPath_UltimateFuryClearSet"
+      ]
+    },
+    "link": {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "lines": [
+        7625,
+        7669
+      ],
+      "method": "CEffect::SetLinkMainEffectByPos"
+    }
+  },
+  "target": {
+    "skillId": 29017,
+    "SA_SCOPE_ABS_PVP": 500,
+    "SA_EFFECTIVE_TIME": 6,
+    "SA_DAMAGE_TIME": 13.5,
+    "damageRoot": "DamageEffect_AMM_Ultimate_Fury_Dynamo",
+    "childRoot": "DamageEffect_AMM_Ultimate_Fury_Dynamo_Dummy_Attack",
+    "childInterval": 0.166,
+    "childEndCount": 30,
+    "childPhysical": 1.09,
+    "LINK_EFFECT_RATE": 950
+  },
+  "differences": [
+    "Target PvP scope500 supersedes fixed-reference hardcoded700",
+    "Pinned two-target third-drone choice is explicitly DESIGN INFERENCE; third drone stays idle only in that case",
+    "Mutation duplicate factory remains unsupported; mutation points are not consumed for absent enhancement"
+  ],
+  "ownership": "Effect groups keyed by ownerId/stateSerial group/index/role, no cross-wire effect ID references",
+  "tests": "add-profiles.test.mjs; deterministic implementation evidence only"
+}

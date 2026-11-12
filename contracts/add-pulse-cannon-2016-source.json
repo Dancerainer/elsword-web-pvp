@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "asset_sources/analysis-project/",
+  "sourceGit": "79ea1ec5f7ba40887b975b13818ef743dd19475f",
+  "sourceOriginalSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "sourceDerivedSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "targetExecuted": false,
+  "evidenceClass": "original2016 static native conditional contract; Web simulation verification",
+  "rows": [
+    {
+      "sourcePath": "docs/ADD_PULSE_CANNON_2016.md",
+      "sha256": "2952405490f37399a01e36b9c18c4ebfa9749a84788a0f8f7427f6c036115efe"
+    },
+    {
+      "sourcePath": "docs/contracts/add-pulse-cannon-contract-2016.json",
+      "sha256": "162bddb56364bace2ad24690387728b7e7a763488bfd146ad0c5a4188f171ca2"
+    },
+    {
+      "sourcePath": "docs/ADD_PARTICLE_SHOT_2016.md",
+      "sha256": "4c6b65ff3d3fff189f5f1791dc633a45508aa2c48d45773970e01e58fcbc3d5a"
+    }
+  ],
+  "formedMaintenanceInput": {
+    "normalMp": 25,
+    "normalGate": ">=",
+    "formedGate": ">",
+    "formedDpDefault": null,
+    "provider": "sim.addPulseMaintenanceInput(actor,{completedLoops}) -> {dpArgument: actual original local10 float}",
+    "missingInput": "four mandatory loops retained; no extra loops/debit; explicit unsupported"
+  },
+  "instanceBoundaries": [
+    "Web deterministic seed supplies CRT-sized samples; no original battle seed captured",
+    "Web ordered opponent actor collection and IDs",
+    "Web actor lineId at factory maps to original ONLY_FRONT path snapshot; qualified current vectorLockOn math",
+    "original full NPC candidate predicate population and dynamic matrices remain instance-host boundaries"
+  ],
+  "particleShot": {
+    "selectedLot": 0,
+    "autonomousTargeting": false,
+    "legacy9400HasCurrentSkillTreeNode": false
+  }
+}

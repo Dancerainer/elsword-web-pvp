@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "target2016-declarations-plus-fixed-V5-host-candidate",
+  "targetClientMeasured": false,
+  "targetClientRuns": 0,
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 2419447,
+      "line": 75612
+    }
+  ],
+  "referenceSources": [
+    {
+      "file": "X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "readRanges": [
+        [
+          11603,
+          11631
+        ],
+        [
+          11638,
+          11699
+        ],
+        [
+          5627,
+          5637
+        ]
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "readRanges": [
+        [
+          6491,
+          6528
+        ],
+        [
+          6743,
+          6841
+        ],
+        [
+          14427,
+          14447
+        ],
+        [
+          19519,
+          19637
+        ],
+        [
+          20372,
+          20747
+        ],
+        [
+          37755,
+          37830
+        ]
+      ]
+    },
+    {
+      "file": "X2Lib/X2GUUser.h",
+      "sha256": "c0f49d892b2639281d0196f90ff650d52421887bbad43189e6d6b9d841937adc",
+      "readRanges": [
+        [
+          1927,
+          1938
+        ]
+      ]
+    },
+    {
+      "file": "X2Lib/X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "readRanges": [
+        [
+          125,
+          151
+        ],
+        [
+          227,
+          330
+        ],
+        [
+          2784,
+          2905
+        ]
+      ]
+    },
+    {
+      "file": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "readRanges": [
+        [
+          1254,
+          1290
+        ],
+        [
+          1861,
+          1886
+        ]
+      ]
+    },
+    {
+      "file": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "readRanges": [
+        [
+          2132,
+          2148
+        ]
+      ]
+    }
+  ],
+  "targetStates": {
+    "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX": {
+      "ANIM_NAME": "OT_DashJumpComboZ2a",
+      "SPEED_Y": 550,
+      "ANIM_SPEED": 1.175,
+      "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "UNIT_SLASH_TRACE0": {
+        "1": 0,
+        "2": 0,
+        "3": 100,
+        "4": 0
+      },
+      "ATTACK_TIME0": {
+        "1": 0.31,
+        "2": 100
+      },
+      "AFTER_IMAGE": {
+        "1": 0.25,
+        "2": 100
+      },
+      "SOUND_PLAY0": {
+        "1": 0.001,
+        "2": "Swing_Big06.ogg"
+      },
+      "BURNING_NASOD_HAND_POSSIBLE": 1,
+      "DISABLE_ATTACK_BOX": {
+        "1": "Sword"
+      },
+      "DAMAGE_DATA": {
+        "CAMERA_CRASH_GAP": 10,
+        "FORCE_DOWN": 12.75,
+        "STOP_TIME_ATT": 0.15,
+        "BACK_SPEED_Y": -500,
+        "CAMERA_CRASH_TIME": 0.3,
+        "CLEAR_SCREEN": 1,
+        "HIT_ADD_MP": 6.18,
+        "STOP_TIME_DEF": 0.35,
+        "TECH_POINT": 626,
+        "CREATE_DAMAGE_EFFECT_NAME": "DamageEffect_RRF_ExplosiveHand_Impact_NEW",
+        "BACK_SPEED_X": 500,
+        "DAMAGE_TYPE": 0,
+        "HIT_TYPE": 9,
+        "REACT_TYPE": 2,
+        "ATTACK_TYPE": 2,
+        "DAMAGE": {
+          "PHYSIC": 3.48
+        }
+      },
+      "IS_ATTACK_STATE": 1
+    },
+    "RSI_OVER_TAKER_DASH_JUMP_COMBO_ZX_LANDING": {
+      "SKILL_CANCEL_AFTER": 0.01,
+      "ANIM_NAME": "OT_DashJumpComboZ2aLanding",
+      "DASH_CANCEL_AFTER": 0.15,
+      "WALK_CANCEL_AFTER": 0.15,
+      "BWALK_CANCEL_AFTER": 0.15,
+      "ANIM_SPEED": 1.2,
+      "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+      "PLAY_TYPE": 2,
+      "TRANSITION": 0,
+      "LAND_CONNECT": 0,
+      "AFTER_IMAGE": {
+        "1": 0.01,
+        "2": 0.1
+      },
+      "EVENT_PROCESS_TIME0": {
+        "1": 0,
+        "2": 0.45,
+        "3": 0.25
+      },
+      "SOUND_PLAY0": {
+        "1": 0.022,
+        "2": "Raven_OT_DashJumpComboZ2aLanding.ogg"
+      },
+      "EFFECT_SET_LIST": {
+        "1": "EffectSet_ROT_DASH_JUMP_COMBO_ZX_Ground",
+        "2": 0.01
+      },
+      "IS_ATTACK_STATE": 1
+    },
+    "RSI_JUMP_DOWN": {
+      "ANIM_NAME": "JumpDown",
+      "ANIM_SPEED": 1.15,
+      "PLAY_TYPE": 0,
+      "LAND_CONNECT": 0,
+      "COMBO_GUIDE": {
+        "1": "J",
+        "2": "J"
+      },
+      "HEAD_IK": 1
+    },
+    "RSI_JUMP_LANDING": {
+      "ANIM_NAME": "JumpLanding",
+      "ANIM_SPEED": 1.15,
+      "DASH_CANCEL_AFTER": 0.25,
+      "WALK_CANCEL_AFTER": 0.25,
+      "PLAY_TYPE": 2,
+      "LAND_CONNECT": 0,
+      "SOUND_PLAY0": {
+        "1": 0.02,
+        "2": "Step.ogg"
+      },
+      "HEAD_IK": 1
+    }
+  },
+  "groundDamage": {
+    "ATTACK_TIME_START": 0.01,
+    "ATTACK_TIME_END": 0.1,
+    "MAIN_EFFECT_NAME": "Mesh_ROT_DASH_JUMP_COMBO_ZX_Ground_Dummy",
+    "DAMAGE_TIME": 9999,
+    "EFFECT_TYPE": 1,
+    "ATTACKED_BY_UNIT": 0,
+    "ATTACKED_BY_EFFECT": 0,
+    "REFLECT": 0,
+    "USE_GLOBAL_TIME": 1,
+    "DAMAGE_DATA": {
+      "STOP_TIME_DEF": 0.3,
+      "BACK_SPEED_Y": 0,
+      "CLEAR_SCREEN": 1,
+      "HIT_GAP": 0,
+      "CAMERA_CRASH_GAP": 20,
+      "STOP_TIME_ATT": 0,
+      "TECH_POINT": 150,
+      "CAMERA_CRASH_TIME": 0.5,
+      "PVP_RATE": 0.6,
+      "BACK_SPEED_X": 750,
+      "DAMAGE_TYPE": 1,
+      "HIT_TYPE": 24,
+      "REACT_TYPE": 2,
+      "DAMAGE": {
+        "MAGIC": 4.31
+      },
+      "CAN_REVENGE": 0,
+      "RE_ATTACK": 0,
+      "FORCE_FLY": 1,
+      "ATTACK_TYPE": 2
+    }
+  },
+  "groundEffectSet": {
+    "NAME": "EffectSet_ROT_DASH_JUMP_COMBO_ZX_Ground",
+    "EFFECT0": {
+      "BONE_NAME": "Bip01",
+      "NAME": "ERS_Luna_Buster00_P01",
+      "POSITION_OFFSET_Y": -50,
+      "SCALE_X": 0.8,
+      "SCALE_Z": 0.8,
+      "SCALE_Y": 0.8,
+      "EFFECT_TYPE": 8
+    },
+    "EFFECT1": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "ROT_DASH_JUMP_ZX_Ground01",
+      "POSITION_OFFSET_Y": -50,
+      "EFFECT_TYPE": 8
+    },
+    "EFFECT2": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "Riding_Mobi_Red_02",
+      "POSITION_OFFSET_Y": -50,
+      "EFFECT_TYPE": 8
+    },
+    "EFFECT3": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "SA_AEM_ELEMENTAL_STORM_FX_M01",
+      "POSITION_OFFSET_Y": -50,
+      "SCALE_X": 0.6,
+      "SCALE_Z": 0.6,
+      "SCALE_Y": 0.6,
+      "EFFECT_TYPE": 4
+    },
+    "EFFECT4": {
+      "BONE_NAME": "Bip01_Footsteps",
+      "NAME": "ROT_DASH_JUMP_ZX_Ground02",
+      "POSITION_OFFSET_Y": -50,
+      "SCALE_X": 0.6,
+      "SCALE_Z": 0.6,
+      "SCALE_Y": 1,
+      "EFFECT_TYPE": 8
+    },
+    "EFFECT5": {
+      "NAME": "DamageEffect_ROT_DASH_JUMP_COMBO_ZX_Ground",
+      "EFFECT_TYPE": 1
+    },
+    "CAMERA_SHAKE0": {
+      "TWO_DIR_TIME_GAP": 0.03,
+      "START_TIME": 0,
+      "TWO_DIR_TIME": 0.33,
+      "TWO_DIR_GAP": 40,
+      "SHAKE_TYPE": 3
+    }
+  },
+  "groundMeshFields": {
+    "MeshName": "Raven_RRF_Ground_Impact_AttackBox01.X",
+    "LifeType": "LT_TIME",
+    "MeshType": "X_SKIN_MESH",
+    "BillBoardType": "BT_NONE",
+    "SourceBlendMode": "D3DBLEND_SRCALPHA",
+    "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+    "Layer": 14.0,
+    "LifeTime": 0.05,
+    "DrawCount": 0.0
+  },
+  "implementation": {
+    "offFootPredicate": "ZX_LANDING && !Future.bFootOnLine (host: !actor.grounded, after integrate)",
+    "nativeCallback": "Existing commands.wasm probeLandingEvent; grounded branches remain unbound",
+    "offsetY": -45,
+    "offsetEquation": "-LINE_RADIUS * 1.5; LINE_RADIUS=30 in pinned reference",
+    "ordering": "physics -> character damage check -> off-foot callback -> request JumpDown; no second integration this tick",
+    "damageLifetime": "Ground effect already generated survives state exit, USE_GLOBAL_TIME=1; authored LT_TIME=.05 controls retirement",
+    "groundedWindows": "Target EVENT_PROCESS_TIME0={0,.45,.25} candidate unchanged; fixed-V5 .1/.3 not imported"
+  },
+  "verification": {
+    "nodeTests": 38,
+    "newLandingTests": 13,
+    "fixtureMap": "sander-garpai-rock-pvp authored collision, unchanged",
+    "bothEdges": true,
+    "bothWalls": true,
+    "realKeyboard668ZX": true,
+    "groundDamageAfterFall": true,
+    "jsonReplaySteps": 120,
+    "nativeWasmRecompiled": false
+  },
+  "unverified": [
+    "Target2016 binary callback equivalence and macro set",
+    "Exact target Now/Future buffered packet/EffectSet creation phase, especially a blast born in the same tick as a state change",
+    "Existing root-motion/collision helper adapters retain their reported evidence scope",
+    "Grounded2016 cancel-window callback binding remains a candidate"
+  ]
+}

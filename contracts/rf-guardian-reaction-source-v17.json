@@ -1,0 +1,2072 @@
+{
+  "schema": "elsword.rf-guardian-reaction-source.v17",
+  "targetClientMeasured": false,
+  "targetGoldenTraces": 0,
+  "targetSources": [
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  ],
+  "targetEnums": {
+    "RT_NO_DAMAGE": 0,
+    "RT_DUMMY_DAMAGE": 7,
+    "RT_BIG_DAMAGE": 2,
+    "RT_DOWN": 3,
+    "RT_FLY": 5,
+    "RT_CREATE_DAMAGE_EFFECT": 11,
+    "RT_CREATE_EFFECT_SET": 12
+  },
+  "targetEffectSet": {
+    "raw": {
+      "NAME": "EffectSet_SA_ROT_GuardianStrike",
+      "EVENT_TIMER_TYPE": 1,
+      "EFFECT0": {
+        "NAME": "DamageEffect_SA_ROT_GuardianStrike_ReadyFX",
+        "START_TIME": 0.01,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 1,
+        "TRACE_MORE": 1
+      },
+      "EFFECT1": {
+        "NAME": "DamageEffect_SA_ROT_GuardianStrike",
+        "SCALE_Y": 1.3,
+        "SCALE_X": 1.3,
+        "SCALE_Z": 1.3,
+        "START_TIME": 0.5,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "TWO_DIR_TIME_GAP": 0.02,
+        "START_TIME": 0.1,
+        "TWO_DIR_TIME": 5,
+        "TWO_DIR_GAP": 30,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "sourcePc": {
+      "prototype": 3,
+      "instruction": 10408
+    }
+  },
+  "targetStates": [
+    {
+      "state": "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 2483
+      },
+      "raw": {
+        "ANIM_NAME": "OT_SP3a_GuardianStrike",
+        "DISABLE_GRAVITY_TIME_START": 0.01,
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA2_RATE": 30,
+        "ANIM_SPEED": 1,
+        "SHOW_SKILL_CUT_IN_TIME": 0.04,
+        "DISABLE_GRAVITY_TIME_END": 1.9,
+        "NORMAL_CAMERA0_RATE": 40,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SPEED_TIME0": {
+          "1": 0,
+          "2": 0,
+          "3": 0.01,
+          "4": 2
+        },
+        "CHANGE_WORLD_COLOR": 1,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 2.3
+        },
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_GuardianStrike.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.01,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.1,
+          "2": "Raven_OT_SP3_GuardianStrike1.ogg"
+        },
+        "SOUND_PLAY3": {
+          "1": 0.58,
+          "2": "Raven_OT_SP3_GuardianStrike3.ogg"
+        },
+        "SOUND_PLAY4": {
+          "1": 0.526,
+          "2": "RavenVoice_Shout06.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": -100,
+            "DISTANCE": 800,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0,
+            "ANGLEDEGREE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 50,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 300,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.06,
+          "2": 1.23
+        },
+        "AFTER_IMAGE": {
+          "1": 0,
+          "2": 100
+        },
+        "EFFECT_SET_LIST": {
+          "1": "EffectSet_SA_ROT_GuardianStrike",
+          "2": 0.001
+        },
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_BIG_FRONT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10383
+      },
+      "raw": {
+        "ANIM_NAME": "DamageBigFront",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 1,
+        "LAND_CONNECT": 0,
+        "APPLY_ANIM_MOVE": 0,
+        "SOUND_PLAY0": {
+          "1": 0.07,
+          "2": "RavenVoice_DamageScream03.ogg",
+          "3": 20
+        },
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_BIG_BACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10399
+      },
+      "raw": {
+        "ANIM_NAME": "DamageBigBack",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 1,
+        "LAND_CONNECT": 0,
+        "APPLY_ANIM_MOVE": 0,
+        "SOUND_PLAY0": {
+          "1": 0.07,
+          "2": "RavenVoice_DamageScream03.ogg",
+          "3": 20
+        },
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_FLY_FRONT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10637
+      },
+      "raw": {
+        "ANIM_NAME": "DamageAirFlyFront",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_AIR_FLY_BACK",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10650
+      },
+      "raw": {
+        "ANIM_NAME": "DamageAirFlyBack",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "SOUND_PLAY0": {
+          "1": 0.01,
+          "2": "RavenVoice_DamageScream02.ogg",
+          "3": 30
+        },
+        "LAND_CONNECT": 0,
+        "IS_ATTACK_STATE": 1
+      }
+    },
+    {
+      "state": "RSI_DAMAGE_DOWN_FRONT",
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 10442
+      },
+      "raw": {
+        "ANIM_NAME": "DamageDownFront",
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 40,
+        "NORMAL_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 1,
+        "CAN_PUSH_UNIT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "SOUND_PLAY0": {
+          "1": 0.19,
+          "2": "Down.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.19,
+          "2": "RavenVoice_DamageScream01.ogg"
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": -30,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 200,
+            "DISTANCE": 300,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": 50,
+            "LOOK_PARTS": "Bip01_Head",
+            "HEIGHT": 300,
+            "DISTANCE": 600,
+            "CAMERA_TYPE": 3,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      }
+    }
+  ],
+  "targetDamageClosure": [
+    {
+      "name": "DamageEffect_SA_ROT_GuardianStrike",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62876
+      },
+      "raw": {
+        "DAMAGE_TIME": 999,
+        "MAIN_EFFECT_NAME": "ROT_GuardianStrike01_NEW_MEMO",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA_CHANGE_TIME": {
+          "1": 1.5
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 250,
+          "HIT_GAP": 0.15,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 250,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 3.33,
+          "BACK_SPEED_X": 350,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24006,
+          "DAMAGE": {
+            "MAGIC": 5.86
+          }
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 250,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 5,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 250,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 3.33,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "APPLIED_SKILL_ID": 24006,
+          "DAMAGE": {
+            "MAGIC": 5.86
+          }
+        },
+        "HIT_PARTICLE0": {
+          "PARTICLE_NAME": "RF_HitP01",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "PARTICLE_NAME": "RF_HitP04",
+          "POSITION_TYPE": 2
+        },
+        "START_PARTICLE0": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_Explosion2_P01",
+          "POSITION_TYPE": 0
+        },
+        "START_PARTICLE1": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_Explosion2_P02",
+          "POSITION_TYPE": 0
+        },
+        "START_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_Explosion2_P04",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P04",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE7": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE8": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE9": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "GuardianStrike_P08",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE10": {
+          "BONE_NAME": "Bip01",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "GuardianStrike_P13",
+          "POSITION_TYPE": 1
+        },
+        "TIME_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "EVENT_TIME": 0.4,
+          "PARTICLE_NAME": "GuardianStrike_P09",
+          "POSITION_TYPE": 0,
+          "USE_GLOBAL_TIME": 1
+        },
+        "TIME_PARTICLE1": {
+          "BONE_NAME": "Dummy02",
+          "EVENT_TIME": 0.4,
+          "PARTICLE_NAME": "GuardianStrike_P09",
+          "POSITION_TYPE": 0,
+          "USE_GLOBAL_TIME": 1
+        },
+        "TIME_PARTICLE2": {
+          "BONE_NAME": "Dummy03",
+          "EVENT_TIME": 0.4,
+          "PARTICLE_NAME": "GuardianStrike_P09",
+          "POSITION_TYPE": 0,
+          "USE_GLOBAL_TIME": 1
+        },
+        "TIME_PARTICLE3": {
+          "BONE_NAME": "Dummy04",
+          "EVENT_TIME": 0.4,
+          "PARTICLE_NAME": "GuardianStrike_P09",
+          "POSITION_TYPE": 0,
+          "USE_GLOBAL_TIME": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_ROT_GuardianStrike_EndFX",
+          "POSITION_TYPE": 3
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.005,
+          "FILE_NAME": "Raven_OT_SP3_GuardianStrike4.ogg"
+        },
+        "SOUND1": {
+          "EVENT_TIME": 0.015,
+          "FILE_NAME": "Raven_OT_SP3_GuardianStrike2.ogg"
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_SA_ROT_GuardianStrike_ReadyFX",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62643
+      },
+      "raw": {
+        "MAIN_EFFECT_NAME": "EffectDummy_0_2",
+        "EFFECT_TYPE": 1,
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P02",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P04",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_X": 1.5,
+          "SCALE_Z": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "Raven_ReadyS_P06",
+          "POSITION_TYPE": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_SA_ROT_GuardianStrike_ReadyFX2",
+          "POSITION_TYPE": 3
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_SA_ROT_GuardianStrike_ReadyFX2",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62679
+      },
+      "raw": {
+        "MAIN_EFFECT_NAME": "EffectDummy_0_2",
+        "EFFECT_TYPE": 1,
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.9,
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "SCALE_X": 0.4,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.9,
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "SCALE_X": 0.7,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.7,
+          "PARTICLE_NAME": "Raven_Ready2_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "PowerAssault_PM",
+          "POSITION_TYPE": 0
+        }
+      }
+    },
+    {
+      "name": "DamageEffect_SA_ROT_GuardianStrike_EndFX",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62924
+      },
+      "raw": {
+        "MAIN_EFFECT_NAME": "EffectDummy_0_6",
+        "EFFECT_TYPE": 1,
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "Raven_Ready2_P01",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "Raven_Ready2_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "GuardianStrike_P03",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "GuardianStrike_P05",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "SCALE_X": 0.6,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "SCALE_X": 0.6,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 0.8,
+          "PARTICLE_NAME": "GuardianStrike_P06",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE6": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "SCALE_X": 0.6,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 1,
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE7": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "ROTATE_Z": 90,
+          "SCALE_X": 0.6,
+          "SCALE_Z": 0.7,
+          "SCALE_Y": 1,
+          "PARTICLE_NAME": "GuardianStrike_P07",
+          "POSITION_TYPE": 0
+        }
+      }
+    }
+  ],
+  "legacyGuardianDamageDeclarations": [
+    {
+      "name": "DamageEffect_ROT_GUARDIAN_STRIKE_NEW",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 61710
+      },
+      "fields": {
+        "MAIN_EFFECT_NAME": "ROT_GuardianStrike01_NEW",
+        "DAMAGE_DATA_CHANGE_TIME": {
+          "1": 1.13
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "STOP_TIME_ATT": 0,
+          "BACK_SPEED_Y": 400,
+          "TECH_POINT": 214,
+          "STOP_TIME_DEF": 0,
+          "HIT_GAP": 0.2,
+          "HIT_ADD_MP": 4.29,
+          "BACK_SPEED_X": 400,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.98
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "STOP_TIME_ATT": 0,
+          "BACK_SPEED_Y": 200,
+          "TECH_POINT": 179,
+          "STOP_TIME_DEF": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 5,
+          "HIT_ADD_MP": 3.57,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "DAMAGE": {
+            "MAGIC": 4.39
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        }
+      },
+      "selectedByTargetState": false
+    },
+    {
+      "name": "DamageEffect_ROT_GUARDIAN_STRIKE_NEW_HYPER",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62029
+      },
+      "fields": {
+        "MAIN_EFFECT_NAME": "ROT_GuardianStrike01_NEW",
+        "DAMAGE_DATA_CHANGE_TIME": {
+          "1": 1.2
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 400,
+          "HIT_GAP": 0.15,
+          "CAMERA_CRASH_GAP": 20,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 214,
+          "CAMERA_CRASH_TIME": 0.5,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 3.33,
+          "BACK_SPEED_X": 400,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.95
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 200,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 5,
+          "CAMERA_CRASH_GAP": 15,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 139,
+          "CAMERA_CRASH_TIME": 0.3,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 2.78,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "DAMAGE": {
+            "MAGIC": 4.36
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        }
+      },
+      "selectedByTargetState": false
+    },
+    {
+      "name": "DamageEffect_ROT_GUARDIAN_STRIKE_NEW_MEMO",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62293
+      },
+      "fields": {
+        "MAIN_EFFECT_NAME": "ROT_GuardianStrike01_NEW_MEMO",
+        "DAMAGE_DATA_CHANGE_TIME": {
+          "1": 1.13
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "STOP_TIME_ATT": 0,
+          "BACK_SPEED_Y": 400,
+          "TECH_POINT": 214,
+          "STOP_TIME_DEF": 0,
+          "HIT_GAP": 0.2,
+          "HIT_ADD_MP": 4.29,
+          "BACK_SPEED_X": 400,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.98
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "STOP_TIME_ATT": 0,
+          "BACK_SPEED_Y": 200,
+          "TECH_POINT": 179,
+          "STOP_TIME_DEF": 0,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 5,
+          "HIT_ADD_MP": 3.57,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "DAMAGE": {
+            "MAGIC": 4.39
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        }
+      },
+      "selectedByTargetState": false
+    },
+    {
+      "name": "DamageEffect_ROT_GUARDIAN_STRIKE_NEW_HYPER_MEMO",
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 62601
+      },
+      "fields": {
+        "MAIN_EFFECT_NAME": "ROT_GuardianStrike01_NEW_MEMO",
+        "DAMAGE_DATA_CHANGE_TIME": {
+          "1": 1.2
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 400,
+          "HIT_GAP": 0.15,
+          "CAMERA_CRASH_GAP": 20,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 214,
+          "CAMERA_CRASH_TIME": 0.5,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 3.33,
+          "BACK_SPEED_X": 400,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 4.95
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ATTACK_TRIGGER_TYPE": 1
+        },
+        "DAMAGE_DATA_NEXT": {
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": 200,
+          "CLEAR_SCREEN": 1,
+          "HIT_GAP": 5,
+          "CAMERA_CRASH_GAP": 15,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 139,
+          "CAMERA_CRASH_TIME": 0.3,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 2.78,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 19,
+          "REACT_TYPE": 5,
+          "DAMAGE": {
+            "MAGIC": 4.36
+          },
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1
+        }
+      },
+      "selectedByTargetState": false
+    }
+  ],
+  "targetStateHyperDeclarations": [
+    "RSI_SI3_OVER_TAKER_GUARDIAN_STRIKE"
+  ],
+  "targetTemplate": {
+    "fields": {
+      "MeshName": "GuardianStrike01.X",
+      "LifeType": "LT_TIME",
+      "MeshType": "X_SKIN_MESH",
+      "BillBoardType": "BT_NONE",
+      "SourceBlendMode": "D3DBLEND_SRCALPHA",
+      "DestBlendMode": "D3DBLEND_DESTALPHA",
+      "Layer": 13.0,
+      "LifeTime": 1.7,
+      "DrawCount": 0.0
+    },
+    "events": [
+      {
+        "property": "AniName",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_ONE"
+        }
+      },
+      {
+        "property": "Size",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          1.6,
+          1.6,
+          1.6
+        ]
+      }
+    ],
+    "source": {
+      "archive": "data/data036.kom",
+      "ordinal": 144,
+      "name": "GameMajorXMeshPlayer.txt",
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "signatureHex": "584d455348504c41594552202247616d",
+      "byteOffset": 2458787,
+      "line": 76792
+    },
+    "declarationSha256": "2f195162c8ee157b2f5dc78c53b264b7ea1410b66333d50cd27027ff7344b3af",
+    "initialSize": [
+      1.6,
+      1.6,
+      1.6
+    ],
+    "initialAnimation": {
+      "name": "Normal",
+      "playback": "XAP_ONE"
+    },
+    "animationClips": [
+      {
+        "name": "Normal",
+        "durationSeconds": 1.6666666269302368,
+        "nativePlaybackField": 0,
+        "ticksPerSecond": 4800,
+        "warnings": [],
+        "trackWarnings": []
+      }
+    ]
+  },
+  "animationSources": [
+    {
+      "name": "DamageDownFront",
+      "sourceName": "DamageDownFront",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceAnimationIndex": 57,
+      "durationSeconds": 1.2666666666666666,
+      "durationTicks": 6080.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "1845ca33a9d9c53a73bf7a2c935e30c007545e0d737d9b0aef95c45fcdfabe07",
+      "trackCount": 68,
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          1.2666666666666666
+        ],
+        "positionsGltf": [
+          [
+            -87.45116424560547,
+            100.78446960449219,
+            -0.389828085899353
+          ],
+          [
+            -96.91857147216797,
+            94.51439666748047,
+            -0.389828085899353
+          ],
+          [
+            -106.38597869873047,
+            88.23908233642578,
+            -0.389828085899353
+          ],
+          [
+            -116.27552032470703,
+            78.79096984863281,
+            -0.389828085899353
+          ],
+          [
+            -127.07264709472656,
+            63.7664909362793,
+            -0.389828085899353
+          ],
+          [
+            -138.3986053466797,
+            45.60918426513672,
+            -0.389828085899353
+          ],
+          [
+            -149.37924194335938,
+            28.42448616027832,
+            -0.389828085899353
+          ],
+          [
+            -159.1404266357422,
+            16.312570571899414,
+            -0.389828085899353
+          ],
+          [
+            -167.18466186523438,
+            13.197249412536621,
+            -0.389828085899353
+          ],
+          [
+            -173.57896423339844,
+            16.65609359741211,
+            -0.389828085899353
+          ],
+          [
+            -178.29595947265625,
+            21.244911193847656,
+            -0.389828085899353
+          ],
+          [
+            -180.95602416992188,
+            26.145923614501953,
+            -0.38982802629470825
+          ],
+          [
+            -181.9387969970703,
+            32.153839111328125,
+            -0.38982799649238586
+          ],
+          [
+            -182.35568237304688,
+            36.230621337890625,
+            -0.3898279368877411
+          ],
+          [
+            -182.70887756347656,
+            38.19276428222656,
+            -0.3898279070854187
+          ],
+          [
+            -182.80894470214844,
+            39.67100143432617,
+            -0.3898278474807739
+          ],
+          [
+            -182.72999572753906,
+            40.350921630859375,
+            -0.38982781767845154
+          ],
+          [
+            -182.54615783691406,
+            39.918434143066406,
+            -0.38982778787612915
+          ],
+          [
+            -182.33152770996094,
+            38.05952453613281,
+            -0.38982778787612915
+          ],
+          [
+            -181.98806762695312,
+            33.16717529296875,
+            -0.3898278474807739
+          ],
+          [
+            -181.468994140625,
+            25.54273223876953,
+            -0.3898279368877411
+          ],
+          [
+            -180.92526245117188,
+            17.725162506103516,
+            -0.38982802629470825
+          ],
+          [
+            -180.50784301757812,
+            12.235236167907715,
+            -0.389828085899353
+          ],
+          [
+            -180.43185424804688,
+            13.436381340026855,
+            -0.38982799649238586
+          ],
+          [
+            -180.50784301757812,
+            16.97442626953125,
+            -0.3898278772830963
+          ],
+          [
+            -180.50784301757812,
+            17.270626068115234,
+            -0.3898278474807739
+          ],
+          [
+            -180.50784301757812,
+            16.97442626953125,
+            -0.3898278772830963
+          ],
+          [
+            -180.50784301757812,
+            16.97442626953125,
+            -0.3898278772830963
+          ]
+        ],
+        "deltaGltf": [
+          -93.05667877197266,
+          -83.81004333496094,
+          2.086162567138672e-07
+        ],
+        "boundsGltf": {
+          "min": [
+            -182.80894470214844,
+            12.235236167907715,
+            -0.389828085899353
+          ],
+          "max": [
+            -87.45116424560547,
+            100.78446960449219,
+            -0.38982778787612915
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9"
+    },
+    {
+      "name": "DamageBigFront",
+      "sourceName": "DamageBigFront",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceAnimationIndex": 59,
+      "durationSeconds": 1.2,
+      "durationTicks": 5760.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "f3aeeef6175fa67beeaad204584c17af67e638655c40f97d8e81ea151a4fca48",
+      "trackCount": 68,
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          0.9,
+          0.9333333333333333,
+          0.9666666666666667,
+          1.0,
+          1.0333333333333334,
+          1.2
+        ],
+        "positionsGltf": [
+          [
+            0.0,
+            81.35060119628906,
+            -0.0
+          ],
+          [
+            0.0,
+            84.01509857177734,
+            -0.0
+          ],
+          [
+            0.0,
+            86.94055938720703,
+            -0.0
+          ],
+          [
+            0.0,
+            89.3477783203125,
+            -0.0
+          ],
+          [
+            0.0,
+            90.45691680908203,
+            -0.0
+          ],
+          [
+            0.0,
+            90.44469451904297,
+            -0.0
+          ],
+          [
+            0.0,
+            90.05469512939453,
+            -0.0
+          ],
+          [
+            0.0,
+            89.35791015625,
+            -0.0
+          ],
+          [
+            0.0,
+            88.42530059814453,
+            -0.0
+          ],
+          [
+            0.0,
+            87.32780456542969,
+            -0.0
+          ],
+          [
+            0.0,
+            86.13629150390625,
+            -0.0
+          ],
+          [
+            0.0,
+            84.92158508300781,
+            -0.0
+          ],
+          [
+            0.0,
+            83.75446319580078,
+            -0.0
+          ],
+          [
+            0.0,
+            82.04364776611328,
+            -0.0
+          ],
+          [
+            0.0,
+            79.7513198852539,
+            -0.0
+          ],
+          [
+            0.0,
+            77.77725982666016,
+            -0.0
+          ],
+          [
+            0.0,
+            77.01957702636719,
+            -0.0
+          ],
+          [
+            0.0,
+            77.85647583007812,
+            -0.0
+          ],
+          [
+            0.0,
+            79.67269897460938,
+            -0.0
+          ],
+          [
+            0.0,
+            81.8760986328125,
+            -0.0
+          ],
+          [
+            0.0,
+            83.87531280517578,
+            -0.0
+          ],
+          [
+            0.0,
+            85.07978057861328,
+            -0.0
+          ],
+          [
+            0.0,
+            85.59518432617188,
+            -0.0
+          ],
+          [
+            0.0,
+            85.94062805175781,
+            -0.0
+          ],
+          [
+            0.0,
+            86.14620971679688,
+            -0.0
+          ],
+          [
+            0.0,
+            86.24195861816406,
+            -0.0
+          ],
+          [
+            0.0,
+            86.25789642333984,
+            -0.0
+          ],
+          [
+            0.0,
+            86.22401428222656,
+            -0.0
+          ],
+          [
+            0.0,
+            86.17030334472656,
+            -0.0
+          ],
+          [
+            0.0,
+            86.12672424316406,
+            -0.0
+          ],
+          [
+            0.0,
+            86.12322235107422,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          4.839141845703125,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.0,
+            77.01957702636719,
+            -0.0
+          ],
+          "max": [
+            0.0,
+            90.45691680908203,
+            -0.0
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9"
+    },
+    {
+      "name": "DamageBigBack",
+      "sourceName": "DamageBigBack",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceAnimationIndex": 60,
+      "durationSeconds": 1.2,
+      "durationTicks": 5760.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "9ee5511d9c7669cb52643e34acc61dd2ed161121e0761e7a9e49b342542afd2f",
+      "trackCount": 68,
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333,
+          0.36666666666666664,
+          0.4,
+          0.43333333333333335,
+          0.4666666666666667,
+          0.5,
+          0.5333333333333333,
+          0.5666666666666667,
+          0.6,
+          0.6333333333333333,
+          0.6666666666666666,
+          0.7,
+          0.7333333333333333,
+          0.7666666666666667,
+          0.8,
+          0.8333333333333334,
+          0.8666666666666667,
+          0.9,
+          0.9333333333333333,
+          0.9666666666666667,
+          1.0,
+          1.0333333333333334,
+          1.2
+        ],
+        "positionsGltf": [
+          [
+            0.0,
+            84.3236312866211,
+            -0.0
+          ],
+          [
+            0.0,
+            85.96795654296875,
+            -0.0
+          ],
+          [
+            0.0,
+            84.26593780517578,
+            -0.0
+          ],
+          [
+            0.0,
+            81.95287322998047,
+            -0.0
+          ],
+          [
+            0.0,
+            79.81279754638672,
+            -0.0
+          ],
+          [
+            0.0,
+            78.63214874267578,
+            -0.0
+          ],
+          [
+            0.0,
+            78.31764221191406,
+            -0.0
+          ],
+          [
+            0.0,
+            78.21990203857422,
+            -0.0
+          ],
+          [
+            0.0,
+            78.29253387451172,
+            -0.0
+          ],
+          [
+            0.0,
+            78.4891128540039,
+            -0.0
+          ],
+          [
+            0.0,
+            78.76316833496094,
+            -0.0
+          ],
+          [
+            0.0,
+            79.06816101074219,
+            -0.0
+          ],
+          [
+            0.0,
+            79.35748291015625,
+            -0.0
+          ],
+          [
+            0.0,
+            79.58446502685547,
+            -0.0
+          ],
+          [
+            0.0,
+            79.70232391357422,
+            -0.0
+          ],
+          [
+            0.0,
+            79.6642074584961,
+            -0.0
+          ],
+          [
+            0.0,
+            79.42322540283203,
+            -0.0
+          ],
+          [
+            0.0,
+            78.60523223876953,
+            -0.0
+          ],
+          [
+            0.0,
+            77.10920715332031,
+            -0.0
+          ],
+          [
+            0.0,
+            75.29798126220703,
+            -0.0
+          ],
+          [
+            0.0,
+            73.53445434570312,
+            -0.0
+          ],
+          [
+            0.0,
+            72.18157958984375,
+            -0.0
+          ],
+          [
+            0.0,
+            71.6023178100586,
+            -0.0
+          ],
+          [
+            0.0,
+            72.15966033935547,
+            -0.0
+          ],
+          [
+            0.0,
+            81.27511596679688,
+            -0.0
+          ],
+          [
+            0.0,
+            90.64421081542969,
+            -0.0
+          ],
+          [
+            0.0,
+            91.63469696044922,
+            -0.0
+          ],
+          [
+            0.0,
+            91.37721252441406,
+            -0.0
+          ],
+          [
+            0.0,
+            90.287841796875,
+            -0.0
+          ],
+          [
+            0.0,
+            88.78269958496094,
+            -0.0
+          ],
+          [
+            0.0,
+            87.27793884277344,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ],
+          [
+            0.0,
+            86.18974304199219,
+            -0.0
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          1.8661117553710938,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.0,
+            71.6023178100586,
+            -0.0
+          ],
+          "max": [
+            0.0,
+            91.63469696044922,
+            -0.0
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9"
+    },
+    {
+      "name": "DamageAirFlyFront",
+      "sourceName": "DamageAirFlyFront",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceAnimationIndex": 63,
+      "durationSeconds": 0.3333333333333333,
+      "durationTicks": 1600.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "fc31e3df6ccc84e4b9ca6eb65305f175e0de23abf1d5f29eca543400b58632d6",
+      "trackCount": 68,
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.3333333333333333
+        ],
+        "positionsGltf": [
+          [
+            0.21206709742546082,
+            69.35702514648438,
+            0.05378501117229462
+          ],
+          [
+            0.21206709742546082,
+            69.35702514648438,
+            0.05378501117229462
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.21206709742546082,
+            69.35702514648438,
+            0.05378501117229462
+          ],
+          "max": [
+            0.21206709742546082,
+            69.35702514648438,
+            0.05378501117229462
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9"
+    },
+    {
+      "name": "DamageAirFlyBack",
+      "sourceName": "DamageAirFlyBack",
+      "source": "raw/data/data033.kom/Motion_Raven.x",
+      "sourceAnimationIndex": 64,
+      "durationSeconds": 0.3333333333333333,
+      "durationTicks": 1600.0,
+      "ticksPerSecond": 4800.0,
+      "nativePlaybackField": 0,
+      "decodedKeysSha256": "fcd1d15658dc0fb725a6b09c5c416eaf75771b64c3551ccff5a04929fdfd9556",
+      "trackCount": 68,
+      "rootMotion": {
+        "bone": "Bip01",
+        "timesSeconds": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.2,
+          0.23333333333333334,
+          0.26666666666666666,
+          0.3,
+          0.3333333333333333
+        ],
+        "positionsGltf": [
+          [
+            0.0,
+            117.67185974121094,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.6737289428711,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67586517333984,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67787170410156,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67935943603516,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67993927001953,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67935943603516,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67787170410156,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67586517333984,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.6737289428711,
+            1.341104507446289e-07
+          ],
+          [
+            0.0,
+            117.67185974121094,
+            1.341104507446289e-07
+          ]
+        ],
+        "deltaGltf": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "boundsGltf": {
+          "min": [
+            0.0,
+            117.67185974121094,
+            1.341104507446289e-07
+          ],
+          "max": [
+            0.0,
+            117.67993927001953,
+            1.341104507446289e-07
+          ]
+        },
+        "semantics": "authored absolute bone-local translation; gameplay consumption unverified"
+      },
+      "sourceSha256": "c7bfa7e2ae325ce11d321a0a35365d22771a656682c0f246fb5ba2c566daf4e9"
+    }
+  ],
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidence": "fixed-V5 source; target2016 native macro/runtime applicability pending",
+    "files": [
+      {
+        "path": "X2Lib/X2DamageManager.cpp",
+        "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+        "ranges": [
+          {
+            "start": 279,
+            "end": 292,
+            "textSha256": "6167a683c5584e62bb4d0d11616a3fb067daf09ee94586635dba3d634a681ab2"
+          },
+          {
+            "start": 356,
+            "end": 356,
+            "textSha256": "a246e2df789cb0be7672b7e7c0437121f279547509bf143f8fe12750d1827308"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "ranges": [
+          {
+            "start": 6401,
+            "end": 6491,
+            "textSha256": "c100aaedbb543323745c469d692d73d40455481874cad83b2a11b27bc38a0316"
+          },
+          {
+            "start": 6767,
+            "end": 6786,
+            "textSha256": "08603b6994a35e71efbc5e981e2d0049698710209c4a1ef3250a4f495822fe19"
+          },
+          {
+            "start": 6838,
+            "end": 6843,
+            "textSha256": "903ee2b7cc8adb1e17a56fcb8ece657ceb74b469c0e684fdadade78193593592"
+          },
+          {
+            "start": 7426,
+            "end": 7530,
+            "textSha256": "bd138e71b13339e37cf0bd200c6d5c7b0e5ce708caf133100b376e7adea30611"
+          },
+          {
+            "start": 7930,
+            "end": 7943,
+            "textSha256": "30e35f3fed55fc82708e4b55cb96cc65959acd37343db243ccc78996103cf14d"
+          },
+          {
+            "start": 8080,
+            "end": 8096,
+            "textSha256": "2de857448cd87fc081092547042aa585a48cd7eb204e3d073c6d3cbed938405b"
+          },
+          {
+            "start": 8923,
+            "end": 8936,
+            "textSha256": "4658f572b3c6ca98acff70f285924e665137493190e41b6039fa70b9d0aac9b0"
+          },
+          {
+            "start": 11576,
+            "end": 11618,
+            "textSha256": "145f6f6ce27e9290ad63393823dc01282cd8babfe8ee2896b3fcb0a820614f1b"
+          },
+          {
+            "start": 11717,
+            "end": 11793,
+            "textSha256": "5099336cf240812b2c47d357b7721f1aae3dc6d72a6b497bbff2822b246a3c1b"
+          },
+          {
+            "start": 12009,
+            "end": 12058,
+            "textSha256": "1963a9b721f0e3cb5fd2bfd13a0ec701761b7d034dedec2542abf26c3060b547"
+          },
+          {
+            "start": 12250,
+            "end": 12253,
+            "textSha256": "90b500b80dc4d58d7364756c08b3f13c0accde3f2cfd57cced22da87d1cf0207"
+          },
+          {
+            "start": 12621,
+            "end": 12621,
+            "textSha256": "8cced07a58f846be8c95338588997dcc484766a8c213b85bd141b67b2c039ea6"
+          },
+          {
+            "start": 13601,
+            "end": 13654,
+            "textSha256": "0bacf812e2625e635496978bb10b2f36757814405dc371ca89ba00fc3db44141"
+          },
+          {
+            "start": 14166,
+            "end": 14197,
+            "textSha256": "bba9c7a78cdecfb7df102d01628a5d96e012b5bd2d8275b2dbd785761ed63a76"
+          },
+          {
+            "start": 15790,
+            "end": 15802,
+            "textSha256": "740379bee18dde293117623e0e8b47f72e032318501fb31f5241402fad26120a"
+          },
+          {
+            "start": 18263,
+            "end": 18287,
+            "textSha256": "b178283294bcb8a2abd68deccc60ef006f4b066015ac8da486d9a73ca5cba79f"
+          },
+          {
+            "start": 26006,
+            "end": 26034,
+            "textSha256": "98611c359fba5c9088eecd43cee7c8f40e15d90199f1f935847450070735f23c"
+          },
+          {
+            "start": 26983,
+            "end": 27014,
+            "textSha256": "d2d72d96bb99cbf79ef4d82e26e14b6b82612c279ebc518b82916332239447b8"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2GURaven.cpp",
+        "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "ranges": [
+          {
+            "start": 445,
+            "end": 456,
+            "textSha256": "b1d3ce60c1743485dd708a530bf96b1e76a3d4bcf71bc6e27f6579ad5329222a"
+          },
+          {
+            "start": 2997,
+            "end": 3008,
+            "textSha256": "3317365bf6edb53ff7c4b9cc9d8741f9d058d5c8997e3c30a75b25b4cde4a36d"
+          },
+          {
+            "start": 6981,
+            "end": 7049,
+            "textSha256": "6fc8624301b09b3cbfce836484cec43a9621a1a42b8c22bff9603770895592f9"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2Game.cpp",
+        "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+        "ranges": [
+          {
+            "start": 4124,
+            "end": 4168,
+            "textSha256": "446ac111088672b1862ab899e15417b8d56b5cd63dd6319fe3f850e5fe93e2e4"
+          }
+        ]
+      },
+      {
+        "path": "X2Lib/X2DamageEffect.cpp",
+        "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+        "ranges": [
+          {
+            "start": 3663,
+            "end": 3673,
+            "textSha256": "1155bcb2447d7e80d21ad91da5e2104b5fd98e4899dd8164e78cc525f691ff35"
+          },
+          {
+            "start": 4006,
+            "end": 4010,
+            "textSha256": "d836409c2e4b8c589110ce3c2f4f259065d756365f3ddaddad4f25e296e4170c"
+          },
+          {
+            "start": 4416,
+            "end": 4428,
+            "textSha256": "cee528aff840dbb097a9ddef71ffabc36b67b9c22d59dcbdd3e6aec0d9ed4b97"
+          }
+        ]
+      },
+      {
+        "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+        "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+        "ranges": [
+          {
+            "start": 1166,
+            "end": 1245,
+            "textSha256": "fd2ff658d17046d9ba84362e17e2d7cebdc225f12f5f99a74f92a7ba53576fd5"
+          }
+        ]
+      },
+      {
+        "path": "KTDXLIB/KTDGXSkinAnim.h",
+        "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+        "ranges": [
+          {
+            "start": 155,
+            "end": 160,
+            "textSha256": "1dcf945f9bbfa6bec47ce019e940a6a95155c9e4e34d1f50a123c45499ceb30e"
+          }
+        ]
+      },
+      {
+        "path": "KTDXLIB/Always.h",
+        "sha256": "a891fefd95c54a4c7382e6a23a80617360d8e343088145c58cba780545f65069",
+        "ranges": [
+          {
+            "start": 1405,
+            "end": 1405,
+            "textSha256": "1fe58836de5ac231597e08f2006aa462309845aada8b2d137c8bade6ecbd5b2d"
+          },
+          {
+            "start": 1606,
+            "end": 1606,
+            "textSha256": "08ffb7b01ba37741803fba5c921a865d9522aeb81797973ac76fe9c093041f92"
+          },
+          {
+            "start": 2684,
+            "end": 2684,
+            "textSha256": "6725efab9d39c36496a42e4bcea6d31464f957a50bd73e83b4904bf188d2f7fd"
+          }
+        ]
+      }
+    ]
+  },
+  "rules": {
+    "ordinary": {
+      "reactType": 2,
+      "hitGap": 0.15,
+      "backX": 350,
+      "backY": 250,
+      "stopAtt": 0,
+      "stopDef": 0,
+      "forceDownDeclared": false,
+      "grounded": "RSI_DAMAGE_BIG_FRONT/BACK",
+      "directChange": true,
+      "restartOnSameState": true
+    },
+    "last": {
+      "changeAnimationTime": 1.5,
+      "reactType": 5,
+      "hitGap": 5,
+      "backX": 800,
+      "backY": 250,
+      "stopAtt": 0,
+      "stopDef": 0,
+      "forceDownDeclared": false,
+      "directGroundDown": false,
+      "reaction": "RSI_DAMAGE_AIR_FLY_FRONT/BACK",
+      "groundedAfterHit": false,
+      "unheldUngrappledGroundSuccessor": "RSI_DAMAGE_DOWN_FRONT"
+    },
+    "knockdown": {
+      "absentForceDownLoaderDefault": 0,
+      "existingPriorFullGaugeCanOverrideReaction": true,
+      "distinctFromRtDown": true
+    },
+    "defenderStop": {
+      "assignStopTime": true,
+      "clearStop2Time": true,
+      "zeroReleasesSkillStop": true,
+      "excludedReactTypes": [
+        0,
+        7
+      ],
+      "superArmorExcluded": true,
+      "createDamageOrSetOnlyPositiveStop": [
+        11,
+        12
+      ]
+    },
+    "attackerStop": {
+      "assignStopTime": true,
+      "clearsSameSlotSkillStop": true,
+      "sourceSetStop2TimeAbsent": true,
+      "implementedOrdinaryTypes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "effectIncreaseMpOrBuffExcluded": true,
+      "coreAndManualUnresolved": true,
+      "atkAliasOverrideDated2026": "host existing ATT-first fallback retained; not new target2016 precedence"
+    },
+    "animation": {
+      "directChangeDisablesPoseBlend": true,
+      "preservesCurrentTrackSpeed": true,
+      "setPlaySpeedStillKeysTowardTarget": true,
+      "originalDllSyntheticRows": 15,
+      "fatalDedicatedClockPreserved": true
+    }
+  },
+  "limitations": [
+    "Original-client keyboard/runtime trajectories remain zero.",
+    "FixedV5 macro/source consumers are reference candidates, not proven target2016 native executable consumers.",
+    "Displayed hit poses rely on current source-key renderer/samplers, not a target screenshot.",
+    "No HYPER target state selected; legacy NEW/HYPER damage resources do not prove runtime registration.",
+    "Core/manual/other unsupported AttackResult paths and STOP_TIME_ATK target precedence are not broadened.",
+    "No damage values, helper sizes/windows, global physics speed/tickrate, or map geometry changed."
+  ]
+}

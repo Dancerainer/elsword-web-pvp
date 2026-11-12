@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Independent declaration and existing Web-behavior oracle for performance-only changes to MM Fission Shot 29209 with Drone Activator 29035",
+  "originalClientMeasured": false,
+  "sources": [
+    {
+      "path": "packages/combat-core/mm-profile.json",
+      "sha256": "c98f5f0a3f42d5e2e2b38a7699720f21a6f0b7344d44dfde4cd2ea0486fbfdb6",
+      "classification": "Converted target2016 declarations at V61 release; this hash records the inspected baseline, not a measured client trace"
+    },
+    {
+      "path": "contracts/mm-fission-drone-v32.json",
+      "sha256": "60066164003cba8d81063afd81af093229da7ffb02f08f6a7e822e04ffff5512",
+      "classification": "Previously sealed DA damage/mesh declarations and qualified reference consumer"
+    },
+    {
+      "path": "asset_work/raw/data/data036.kom/DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "classification": "Original source identity recorded by the existing V32 contract; not re-executed or re-extracted in V62"
+    },
+    {
+      "path": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "classification": "Original source identity in converted mesh declarations"
+    },
+    {
+      "path": "artifacts/mm/fx/meshes/ADD_Rushing_Drone_MESH_01.pose.json",
+      "sha256": "e148bce1c069343edcd7ac225a40fb34b936518761f05530ca62ac0cf716be9f",
+      "classification": "Converted original pose; attack radius is a vertex-derived candidate, not a native KSM stored radius"
+    }
+  ],
+  "variants": [
+    {"caseId":"normal","marked":false,"formation":false,"mutationSpent":0,"parent":"DamageEffect_ADD_Dividing_Missile_Dynamo","child":"DamageEffect_ADD_Dividing_Missile_Dynamo_Small","childCount":4,"anglesDegrees":[45,-45,135,-135],"rootLifetime":0.5,"contactExplosion":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big"},
+    {"caseId":"marked","marked":true,"formation":false,"mutationSpent":0,"parent":"DamageEffect_ADD_Dividing_Missile_Dynamo_DA","child":"DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA","childCount":4,"anglesDegrees":[45,-45,135,-135],"rootLifetime":0.2,"contactExplosion":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big"},
+    {"caseId":"mutation","marked":false,"formation":true,"mutationSpent":1,"parent":"DamageEffect_ADD_Dividing_Missile_Dynamo_Mutation","child":"DamageEffect_ADD_Dividing_Missile_Dynamo_Small","childCount":8,"anglesDegrees":[45,-45,135,-135,0,90,180,-90],"rootLifetime":0.5,"contactExplosion":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big_MUC"},
+    {"caseId":"mutation-marked","marked":true,"formation":true,"mutationSpent":1,"parent":"DamageEffect_ADD_Dividing_Missile_Dynamo_Mutation_DA","child":"DamageEffect_ADD_Dividing_Missile_Dynamo_Small_DA","childCount":8,"anglesDegrees":[45,-45,135,-135,0,90,180,-90],"rootLifetime":0.2,"contactExplosion":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big_MUC"}
+  ],
+  "sourceSplit": {
+    "parentCount": 1,
+    "childScale": [0.66,0.66,0.66],
+    "positionType": 3,
+    "applyRotate": 0,
+    "lifeTimeOnly": 1,
+    "markedInheritLockOnData": 1,
+    "extraDieSoundCount": 1,
+    "extraDieSound": "DamageEffect_Dividing_Missile_Divide_Sound",
+    "soundIsProjectile": false,
+    "childRecursiveFissionCount": 0,
+    "childDieExplosion": "DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Small"
+  },
+  "meshDeclarations": [
+    {"name":"ADD_Dividing_Missile_MESH_01","declarationSha256":"1467db2ad298481224e0d7fb8f3c9474f893070efd46212ce35ec58ff6cc0d95","lifeTime":0.5,"size":[1.5,1.5,1.5],"velocity":[1300,0,0],"rotate":[0,0,10]},
+    {"name":"ADD_Dividing_Missile_MESH_01_DA","declarationSha256":"00c5c68344342a5c15b77469d5f6aa88776ace68707e5c9b4cfe562be5584b82","lifeTime":0.2,"size":[1.5,1.5,1.5],"dirSpeed":2000},
+    {"name":"ADD_Dividing_Missile_MESH_02","declarationSha256":"8cc2c0c98d5936a575047326581d579be0c8346ea1a739ebb8b57ca8bb2311dd","lifeTime":1,"size":[1,1,1],"velocity":[600,0,0],"rotate":[0,0,10]},
+    {"name":"ADD_Dividing_Missile_MESH_02_DA","declarationSha256":"5a79627bbb25762600a0a63c51fecb3c0b0bfc45072959ea26a10d9d7a9b972f","lifeTime":1,"size":[1,1,1],"dirSpeed":1000,"velocity":[0,1000,0],"velocityStopAt":0.2},
+    {"name":"Mesh_AMM_Dividing_Missile_Explosion_Big","declarationSha256":"e601601f52d74ccea2b976d7a950d18d9b911d834a8e8f747250726c26215f27","lifeTime":1.5,"size":[4.5,4.5,4.5],"drawCount":0},
+    {"name":"Mesh_AMM_Dividing_Missile_Explosion_Small","declarationSha256":"fd74b0cf89c65006b68d4cfb348f0ca279b7bd14d66fb2e8db165e0634f329c4","lifeTime":1.5,"size":[3.125,3.125,3.125],"drawCount":0}
+  ],
+  "collisionShapeBoundary": {
+    "meshFile": "ADD_Rushing_Drone_MESH_01.X",
+    "helper": "ATTACK_SPHERE1",
+    "vertexDerivedRadius": 43.30127018922193,
+    "radiusEvidence": "Farthest original vertex from AABB center; D3DXFrameCalculateBoundingSphere equality unverified. Preserve current source-pose sampling and all scale factors; do not label this a native measured radius.",
+    "sourceChildScaleIndependentOfFacing": true,
+    "ordinaryChildRollIncludesTemplateDegrees": 10
+  },
+  "contactProducers": {
+    "carrierDamageTime": 1,
+    "carrierReactType": 11,
+    "carrierHitDamageEffectMembers": 0,
+    "carrierNoDamageDeclared": false,
+    "carrierReAttackDeclared": false,
+    "route": "Accepted REACT_TYPE11 contact with real impactPoint creates DAMAGE_DATA.CREATE_DAMAGE_EFFECT_NAME via Simulation.createReactionEffect. It emits effectContact/reactionEffectCreated; the carrier itself reports accepted amount0/effectTrigger, while the explosion is a separate attack.",
+    "explosions": [
+      {"name":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big","physical":10.91,"stopDef":0.2,"hitMp":2},
+      {"name":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Big_MUC","physical":21.82,"stopDef":0.2,"hitMp":2},
+      {"name":"DamageEffect_AMM_Dividing_Missile_Dynamo_Explosion_Small","physical":3.34,"stopDef":0.1,"hitMp":0.5}
+    ],
+    "explosionAttackEnd": 0.15,
+    "explosionDamageTime": 100,
+    "explosionHitGap": 100,
+    "explosionReAttack": 0,
+    "explosionPvpRate": 0.6,
+    "explosionStopAtt": 0,
+    "explosionSound": "ADD_DivingMissileExplosion.ogg",
+    "explosionSoundTime": 0.01,
+    "startParticles": ["ADD_Cycle_SPARK_Explode01","ADD_Cycle_SPARK_Explode03","ADD_Cycle_SPARK_Explode04"],
+    "webGateBoundary": "Current allowDieDamageChild treats LIFE_TIME_ONLY1 as not template-land-crash, not as an exclusive template-life-time check. Thus current hit-limit retirement can also produce the DIE children: parent contact may also split; child contact may yield both contact and DIE Small explosions. This is a current shared Web-consumer boundary, not an independently established target-client multiplicity. V62 performance work must not silently change it or count each carrier as guaranteed contact damage."
+  },
+  "visualSourceDeclarations": [
+    {"name":"ADD_Rushing_Drone_Loop_01","particleType":"PT_3D_PLANE","drawCount":4,"emitRate":70,"numParticles":70,"lifetime":0.3,"declarationSha256":"70f44ec00d1070dc64c1dbd576ee9cf6abe46d1ad5a4780aadb27afd080b7476"},
+    {"name":"ADD_Drone_Activator_Loop_01","particleType":"PT_SKINMESH","drawCount":{"random":[2,3]},"emitRate":100,"numParticles":20,"lifetime":0.4,"declarationSha256":"845332a9990eb2dcd676ea0ae6ba99fdd8b7e0cce4cfb84b3fd3c216fcc42842"},
+    {"name":"ADD_Cycle_SPARK_Explode01","particleType":"PT_SKINMESH","drawCount":{"random":[2,3]},"emitRate":100,"numParticles":30,"triggerCount":30,"lifetime":0.4,"declarationSha256":"59a7a0919c3bf2f35d4c3949af3209b77f70214ef7b3aa5033164dbba6e85875"},
+    {"name":"ADD_Cycle_SPARK_Explode03","particleType":"PT_3D_PLANE","drawCount":2,"emitRate":20,"numParticles":1,"triggerTime":0.2,"lifetime":0.5,"declarationSha256":"e63851a623386aba91c1802cd2bab83da92a2a0f5598faa4b16eaf9dc7182678"},
+    {"name":"ADD_Cycle_SPARK_Explode04","particleType":"PT_3D_PLANE","drawCount":2,"emitRate":50,"numParticles":5,"triggerTime":0.1,"lifetime":0.2,"declarationSha256":"3d64b670df766b7504d04b51da28a32ce1e11c089b78759aeace9bd143a508ad"}
+  ],
+  "visualMultiplicityBoundary": "Each root and each of four/eight children declares both passive particle sequences, including unmarked variants. A single cast therefore has five/nine distinct Loop_01 emitter lifetimes before explosions; each Loop_01 declaration has DrawCount4. These are declaration/branch counts, not simultaneous rendered particles, pool capacity or measured GPU draw calls. Child DIE already supplies four/eight Small-explosion branches; do not assume missing mesh prewarm without inspecting the plan. Presentation quality can reduce spatial particle density but must retain source sequence times and combat geometry.",
+  "qualifiedWebRules": {
+    "castAnimationEvent": 0.4,
+    "callbackReference": "contracts/mm-fission-drone-v32.json qualifiedConsumer: fixed a8438f3 X2GUAdd.cpp17138..17166 includes later reconstruction; not target runtime measurement",
+    "rootOnlyDurationMultiplierAtHiddenRecords3": 1.3,
+    "childLifetimeNotExtended": true,
+    "markedRootRetargetSpeed": 1250,
+    "markedRootUnlockDelay": 0.1,
+    "markedChildUnlockDelay": 0,
+    "markedChildRetainsSourceDirSpeed": 1000,
+    "markedPowerAppliedOnce": 1.2,
+    "markedCurveSpeed": 15,
+    "rawCurveSpeed": 10,
+    "markDurationExpression": "fround(fround(4.9)*fround(1.5)), not displayed rounded7.4",
+    "markIdentity": "Accepted target UID plus life epoch; cancellation/generator switching does not transfer or reset a live projectile's inherited UID. Life-epoch mismatch must not steer toward a respawn.",
+    "installationPowerBoundary": "contracts/add-installation-power-source-v56.json Fission3275b440 uses direct v1d0, no actor70c8 installation multiplier; performance changes must retain inherited origin power/trait scalar once."
+  },
+  "staticHotspotCandidates": [
+    "Four/eight marked children call vectorLockOn and target defender pose sampling each packet; cache only if target pose/generation and all geometry inputs are identical.",
+    "Each carrier's two passive sequences remain separately owned; missing Fission compiled-group inclusion may underprepare whole-sequence quad multiplicity even when mesh closures are already present.",
+    "Four/eight natural Small explosions start the same three particle declarations together; DrawCount4 of Loop_01 and random2..3 skin-mesh copies are independent multipliers.",
+    "DIE/RT11 child creation clones definitions and performs profile lookups; any reuse must preserve per-effect hit memory, scale, lock vectors, target epoch, clock and retirement ownership."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Record 2026-dated markers and explicit host stubs inside delivered reference-source fragments. Markers flag a provenance question; they do not by themselves establish a semantic difference from target2016.",
+  "verificationRule": "For each divergence: the fragment range must be part of the named module originalFunctions in artifacts/native/manifest.json, its SHA256 must match the source lines, and every listed 2026 marker must occur inside those bytes. tests/native/source-tree-divergence.test.mjs recomputes these checks and finds unrecorded 2026-dated lines in line-ranged compiled fragments; extracted hash-only bodies and other years are outside this scan. A sourceRange records the complete original line range when signature-based extraction omits its leading /*virtual*/ annotation and closing-line CRLF after the final brace; both the complete raw range and delivered signature fragment are independently hashed.",
+  "sourceTreeNature": "The pinned reference tree (.cache/native-source-runtime, commit a8438f3ed18dd6f0944793de6c0d8bb9334e9633) is a 2015-era code line that also carries 2026 revision markers. It is a reference, never the 2016 V6.0420.5 client source.",
+  "divergences": [
+    {
+      "module": "critical",
+      "moduleSha256": "abac2e52cf38135badad1c85e3c20449ac131cb93edaf416e2d3cb3d6107ad6b",
+      "moduleEvidenceClass": "compiled-reference-V5-critical-subset; not target2016 measurement",
+      "path": "X2Lib/X2GameUnit.cpp",
+      "lineStart": 2713,
+      "lineEnd": 2740,
+      "sha256": "73995f5db8db5b417b3a8e9723b35631e82ef568ac2c49ddd278d1aa904787cb",
+      "bytes": 910,
+      "kind": "dated-source-edit-inside-compiled-fragment",
+      "sourceTreeMarkers": [
+        {
+          "line": 2727,
+          "text": "\t\tif( pAttDamageData->m_bGuard == true && false == IsIgnoreStateGuardByBuff() ) //{{ 2026-08-18 MARCH2015gc",
+          "lineSha256": "1fb0014a370482d72e395de6b9cab7b259b5ae5cc7cc7a9cf5c0897308bdf4ef"
+        }
+      ],
+      "hostStubDependencies": [
+        {
+          "symbol": "CX2GameUnit::IsIgnoreStateGuardByBuff()",
+          "file": "tools/native/critical_adapter.cpp",
+          "line": 22,
+          "stub": "return false;",
+          "consequence": "The method always returns false. When the separately supplied m_bGuard flag is true, this consumer takes the guard path; when m_bGuard is false it does not. Whether a target2016 buff can bypass guard remains unverified."
+        },
+        {
+          "symbol": "DamageData::m_bGuard",
+          "file": "tools/native/critical_adapter.cpp",
+          "line": 12,
+          "stub": "host-supplied flag (default false)",
+          "consequence": "Reaches the compiled branch only when the web executor sets skillDamageReducePercent/guard input; no target default is asserted.",
+          "sourceText": "bool m_bPenetrate=false,m_bIgnoreStateDefence=false,m_bGuard=false,bCanRevenge=true;};"
+        }
+      ]
+    },
+    {
+      "module": "mana-break",
+      "moduleSha256": "3ea75dcc013b6dea97a436e547cb0c9ee189b128f5feecfdad427c101a9f029a",
+      "moduleEvidenceClass": "compiled-fixed-V5-Gauge-and-User-ManaBreak-subset; target2016 constants + reference host scheduling candidate",
+      "path": "X2Lib/X2GUUser.cpp",
+      "lineStart": 19415,
+      "lineEnd": 19434,
+      "sha256": "f474e1aed7de34ae80c0a0631679cfce52b69974cb73016e0f2d327e5ed37b31",
+      "bytes": 447,
+      "kind": "dated-source-marker-inside-compiled-fragment; target2016 semantic relation unknown",
+      "sourceRange": {
+        "bytes": 461,
+        "sha256": "0b27dce4f3e9898a265fed319688bd748c15d511673573f5baf8d43b41a611ee",
+        "omittedPrefix": "/*virtual*/ ",
+        "omittedSuffix": "\r\n"
+      },
+      "sourceTreeMarkers": [
+        {
+          "line": 19427,
+          "text": "\t//{{ 2026-09-01 MARCH2015gc",
+          "lineSha256": "5e7ec2dcf6c27fe77c2dab31ad0add0bcedefd1ee28b0b24caea58ae9f8d991f"
+        }
+      ],
+      "hostStubDependencies": [
+        {
+          "symbol": "CX2GUUser::GetRidingOn()",
+          "file": "tools/native/mana_break_adapter.cpp",
+          "line": 51,
+          "stub": "return false;",
+          "consequence": "RF fixture has no riding subsystem. The compiled early return for a riding character is not reached; target2016 riding behavior is outside this module."
+        },
+        {
+          "symbol": "CX2GUUser::GetNoDetonation()",
+          "file": "tools/native/mana_break_adapter.cpp",
+          "line": 52,
+          "stub": "host-supplied noDet flag",
+          "sourceText": "bool GetNoDetonation(){return noDet;}",
+          "consequence": "The compiled early return reads the bounded host NO_DETONATION state, not an entire original user object."
+        },
+        {
+          "symbol": "CX2GUUser::IsDetonationImpossibleByBuff()",
+          "file": "tools/native/mana_break_adapter.cpp",
+          "line": 53,
+          "stub": "host-supplied registered Buff identity flag",
+          "sourceText": "bool IsDetonationImpossibleByBuff(){return blocked;}",
+          "consequence": "Reads the supported actual BBT_DETONATION_IMPOSSIBLE identity flag. The Enchant Hand target trigger consumer is unconfirmed; no two-second target disable is fabricated."
+        }
+      ],
+      "semanticConclusion": "The marker identifies a dated reference fragment. It does not establish that held input or Buff gating differs from target2016; no original target client trace has been measured."
+    }
+  ],
+  "notCovered": [
+    "Dated markers inside files or functions that no delivered module compiles (for example UI, world and option code) are outside this record; the selected Mana Break Gauge/User bodies are covered.",
+    "Dated markers in the recovery reference commit a1bcdabf39ee1699873b587b40cedefcce61c7f0 are recorded separately by contracts/rf-combo-recovery-source-v11.json, which labels the whole module as a 2026 reconstruction."
+  ]
+}

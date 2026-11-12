@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016 original static declarations and bound-node sphere geometry; no client executed",
+  "originalEntries": [
+    {
+      "archive": "data/data036.kom",
+      "sha256": "47476953d8ab9fd70f518938cf1306ef719ccf58c51313d3342747c3074a243d",
+      "entry": {
+        "Algorithm": "3",
+        "Checksum": "4970ba3a",
+        "CompressedSize": "34380",
+        "FileTime": "4970ba3a",
+        "Name": "Add_NasodRuler.lua",
+        "Size": "197208",
+        "offset": 35193
+      }
+    },
+    {
+      "archive": "data/data036.kom",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "entry": {
+        "Algorithm": "3",
+        "Checksum": "c5fe9fd6",
+        "CompressedSize": "663381",
+        "FileTime": "c5fe9fd6",
+        "Name": "DamageEffect.lua",
+        "Size": "5409874",
+        "offset": 675467
+      }
+    },
+    {
+      "archive": "data/data036.kom",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "entry": {
+        "Algorithm": "3",
+        "Checksum": "9e3c2f80",
+        "CompressedSize": "571536",
+        "FileTime": "9e3c2f80",
+        "Name": "EffectSet.lua",
+        "Size": "4395607",
+        "offset": 1404311
+      }
+    },
+    {
+      "archive": "data/data036.kom",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "entry": {
+        "Algorithm": "3",
+        "Checksum": "16e5842f",
+        "CompressedSize": "132751",
+        "FileTime": "16e5842f",
+        "Name": "Enum.lua",
+        "Size": "398092",
+        "offset": 2042950
+      }
+    },
+    {
+      "archive": "data/data036.kom",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "entry": {
+        "Algorithm": "3",
+        "Checksum": "cc3a20cf",
+        "CompressedSize": "203949",
+        "FileTime": "cc3a20cf",
+        "Name": "GameMajorXMeshPlayer.txt",
+        "Size": "3452494",
+        "offset": 4177247
+      }
+    },
+    {
+      "archive": "data/data132.kom",
+      "sha256": "ac96e9c797bf5d1e0d250cc81084208a0d8975cb92a42034fb8dc2780d41f260",
+      "entry": {
+        "Algorithm": "0",
+        "Checksum": "d208b7eb",
+        "CompressedSize": "892",
+        "FileTime": "d208b7eb",
+        "Name": "DummyAttackBox_100x50x50_center.X",
+        "Size": "881",
+        "offset": 5795672
+      }
+    }
+  ],
+  "damageEffects": {
+    "DamageEffect_AN_Hyper": {
+      "raw": {
+        "ATTACKED_BY_EFFECT": 0,
+        "ATTACKED_BY_UNIT": 0,
+        "DAMAGE_DATA": {
+          "ATTACK_TYPE": 2,
+          "CAMERA_CRASH_GAP": 10,
+          "CAMERA_CRASH_TIME": 0.3,
+          "CAN_REVENGE": 0,
+          "CLEAR_SCREEN": 0,
+          "DAMAGE": {
+            "MAGIC": 3
+          },
+          "DAMAGE_TYPE": 1,
+          "DYNAMO_PARTICLE_RATE_TYPE": 2,
+          "HIT_GAP": 0.1,
+          "HIT_TYPE": 44,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 0,
+          "STOP_TIME_ATT": 0,
+          "STOP_TIME_DEF": 0.5,
+          "TECH_POINT": 150
+        },
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "FOLLOW_LINE": 0,
+        "HIT_PARTICLE0": {
+          "PARTICLE_NAME": "ADD_DamageImpact01",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 10
+        },
+        "HIT_PARTICLE1": {
+          "PARTICLE_NAME": "ADD_DamageImpact02_Ring",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "HIT_PARTICLE2": {
+          "PARTICLE_NAME": "ADD_DamageImpact03_Core",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "HIT_PARTICLE3": {
+          "PARTICLE_NAME": "ADD_DamageImpact04_SlashRed",
+          "POSITION_TYPE": 2,
+          "TRIGGER_COUNT": 1
+        },
+        "MAIN_EFFECT_NAME": "Mesh_AN_Hyper_Attack",
+        "NOT_CULL": 1,
+        "REFLECT": 0
+      },
+      "sourcePc": {
+        "assignmentInstruction": 145342,
+        "prototype": 20
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_AN_Hyper_Attack": {
+      "raw": {
+        "EFFECT0": {
+          "BONE_NAME": "Bip01_Footsteps",
+          "EFFECT_TYPE": 1,
+          "NAME": "DamageEffect_AN_Hyper",
+          "POSITION_OFFSET_Y": 100,
+          "SCALE_X": 1.15,
+          "SCALE_Y": 1.15,
+          "SCALE_Z": 1.15,
+          "START_TIME": 0.05
+        },
+        "NAME": "EffectSet_AN_Hyper_Attack"
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 26818
+      }
+    }
+  },
+  "effectTemplates": {
+    "Mesh_AN_Hyper_Attack": {
+      "name": "Mesh_AN_Hyper_Attack",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "DummyAttackBox_100x50x50_center.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "Layer": 14,
+        "LifeTime": 0.2,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            3.5,
+            3.5,
+            3.5
+          ]
+        }
+      ],
+      "initialSize": [
+        3.5,
+        3.5,
+        3.5
+      ],
+      "initialVelocity": [
+        0,
+        0,
+        0
+      ],
+      "initialDirSpeed": 0,
+      "initialAnimation": {
+        "name": "Normal",
+        "playback": "XAP_LOOP"
+      },
+      "sourceModelSha256": "ac96e9c797bf5d1e0d250cc81084208a0d8975cb92a42034fb8dc2780d41f260",
+      "sourceTemplateText": "TEMPLET \"Mesh_AN_Hyper_Attack\"\n\t{\n\t\tMeshName\t\t= \"DummyAttackBox_100x50x50_center.X\"\n\t\tLifeType\t\t= LT_TIME\n\t\tMeshType\t\t= X_SKIN_MESH\n\t\tBillBoardType\t= BT_NONE\n\t\tSourceBlendMode\t= D3DBLEND_SRCALPHA\n\t\tDestBlendMode\t= D3DBLEND_INVSRCALPHA\n\t\tLayer\t\t\t= 14\n\t\tLifeTime\t\t= 0.200\n\t\tDrawCount\t\t= 0\n\n\t\tGlobal Initial\t\t\t\t\t\tColor = RGBA(0, 0, 0, 0)\n\t\tGlobal Initial\t\t\t\t\t\tAniName = \"Normal\", XAP_LOOP\n\t\tGlobal Initial\t\t\t\t\t\tVelocity = XYZ(0, 0, 0)\n\t\tGlobal Initial\t\t\t\t\t\tSize = XYZ(3.500, 3.500, 3.500)\n\t}\n\t",
+      "originalInvisibleCollision": true
+    }
+  },
+  "sphereGeometry": {
+    "modelSha256": "ac96e9c797bf5d1e0d250cc81084208a0d8975cb92a42034fb8dc2780d41f260",
+    "radius43_30126953125": true,
+    "centers": [
+      [
+        -25,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0
+      ]
+    ],
+    "arithmetic": [
+      {
+        "authoredFrameMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          25,
+          0,
+          0,
+          1
+        ],
+        "expandedVertexBounds": [
+          [
+            0,
+            50
+          ],
+          [
+            -25,
+            25
+          ],
+          [
+            -25,
+            25
+          ]
+        ],
+        "maxDistanceSquared": 1875,
+        "name": "ATTACK_SPHERE2",
+        "qualification": "Offline arithmetic from actual original vertices and matrices. D3DX native algorithm is separately evidenced. Loader discards returned mean; runtime collider center must come from actual node binding, not this mean.",
+        "radiusDouble": 43.30127018922193,
+        "radiusFloat32": 43.30126953125,
+        "vertexCount": 24,
+        "vertexMean": [
+          25,
+          0,
+          0
+        ]
+      },
+      {
+        "authoredFrameMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -25,
+          0,
+          0,
+          1
+        ],
+        "expandedVertexBounds": [
+          [
+            -50,
+            0
+          ],
+          [
+            -25,
+            25
+          ],
+          [
+            -25,
+            25
+          ]
+        ],
+        "maxDistanceSquared": 1875,
+        "name": "ATTACK_SPHERE1",
+        "qualification": "Offline arithmetic from actual original vertices and matrices. D3DX native algorithm is separately evidenced. Loader discards returned mean; runtime collider center must come from actual node binding, not this mean.",
+        "radiusDouble": 43.30127018922193,
+        "radiusFloat32": 43.30126953125,
+        "vertexCount": 24,
+        "vertexMean": [
+          -25,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}

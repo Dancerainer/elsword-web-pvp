@@ -1,0 +1,4545 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "target2016 declarations and original D3DX periods; fixed V5 consumer reference",
+  "targetClientMeasured": false,
+  "luaSources": {
+    "raven": {
+      "path": "asset_work\\raw\\data\\data036.kom\\RAVEN_FIGHTER.lua",
+      "sha256": "a5c3a8abf0f6c9c7d6fa185e20bdf7d43c0f2b463a3a98168bf9c7e0f92552e3"
+    },
+    "effect": {
+      "path": "asset_work\\raw\\data\\data036.kom\\EffectSet.lua",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"
+    },
+    "damage": {
+      "path": "asset_work\\raw\\data\\data036.kom\\DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    }
+  },
+  "sourceFiles": [
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "bytes": 836216,
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "fragments": [
+        {
+          "start": 23,
+          "end": 29,
+          "purpose": "Giga source maximum loop count is eight",
+          "sha256": "f31f80acf0443ca36f5c0ccf3049711520be6253f874801e79a6fe3bee0f02bf"
+        },
+        {
+          "start": 18757,
+          "end": 18906,
+          "purpose": "Harpoon state, input choice, gravity and overheat consumers",
+          "sha256": "ccca579fc259021c2148c3edab15041ef2a9d8c15f424d4be61477045c8f41e2"
+        },
+        {
+          "start": 19227,
+          "end": 19306,
+          "purpose": "Giga two flame EffectSets per loop and finite loop exit",
+          "sha256": "4f0cf112916326aeb709f608ce3040da60139784ac7dcead35e68ecc391c94f7"
+        },
+        {
+          "start": 19314,
+          "end": 19467,
+          "purpose": "Giga normal/overheat finishing branches create two stones and two flame effects",
+          "sha256": "161a85e8568b485da1f3d21a9ec3e109f10e5ddd66a35a58f1498ddd0dbd8a2d"
+        },
+        {
+          "start": 20751,
+          "end": 20813,
+          "purpose": "Ignition Crow normal/overheat directly creates damage from compiled callbacks",
+          "sha256": "8b32d98ecd285338fb10cb8f055602836da028836670f05c9f9059d9e1b10694"
+        },
+        {
+          "start": 22783,
+          "end": 22844,
+          "purpose": "Napalm callback directly creates three grenade damage effects absent from state DSL",
+          "sha256": "be3f8494fccd7b34ef5dbb3f1ff64e4dea66a7ccebf0acdb3541586e99ff7b3d"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.h",
+      "bytes": 58169,
+      "sha256": "eb9034b22594cb80561bceae3b2d7312637e03aacef3050d4c04caa4f2cf0f60",
+      "fragments": [
+        {
+          "start": 30,
+          "end": 40,
+          "purpose": "DEPT_DIE_POS is position type four",
+          "sha256": "54c2f8a306dc1cb36f356dacbe7ec681e1741b98c8825793817be87ef78195b5"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "bytes": 263245,
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "fragments": [
+        {
+          "start": 1024,
+          "end": 1034,
+          "purpose": "Only SetLandHeightOnStart initializes the saved land vector from owner",
+          "sha256": "50d83d84ce338607d54bc123ccf79e81e7b8225e7ef7a40097e6659447df5f6e"
+        },
+        {
+          "start": 1253,
+          "end": 1269,
+          "purpose": "Saved land vector starts at literal zero; birth land scalar is distinct",
+          "sha256": "f4d8d6e2269cc387f3de7373ec4fe153a9bef5e6274265f744437b77929617a1"
+        },
+        {
+          "start": 1282,
+          "end": 1291,
+          "purpose": "FollowLine direction is copied from the owner at construction",
+          "sha256": "f08f35abe785d3a1caa55b1e1b2b34624fd8612f373306bcefbf9d97d3264b04"
+        },
+        {
+          "start": 1427,
+          "end": 1434,
+          "purpose": "Initial saved main mesh rotation and position",
+          "sha256": "c2509a1e3a9943e8158b1e4605a91f581444a709d3216bba1c6b8331259a7127"
+        },
+        {
+          "start": 1579,
+          "end": 1584,
+          "purpose": "FollowLine also runs at construction before the first movement packet",
+          "sha256": "c56930a37d877183270d2bfccf7976c59c3148df11c9503879df9195c7c73f55"
+        },
+        {
+          "start": 1854,
+          "end": 1914,
+          "purpose": "Capture live mesh transform, then FollowLine, then passive particle updates",
+          "sha256": "7420b0582fb37e4a1f9d1295a032b14d65887cefc8c7893f907145e393bf1a98"
+        },
+        {
+          "start": 2038,
+          "end": 2074,
+          "purpose": "Timed child lifetime bound and one global-time event per packet",
+          "sha256": "0ad2273a535a728bd771db257a256f595ae67511e20674bb87110a7fd57c7d50"
+        },
+        {
+          "start": 2236,
+          "end": 2268,
+          "purpose": "AUTO_DIE registers the new child for stage cleanup; it does not kill parent",
+          "sha256": "574bc6eef79a6d6dbf949681a2858d64541a0fc0645cdd19612d97fb66fdd3d0"
+        },
+        {
+          "start": 2290,
+          "end": 2309,
+          "purpose": "Successful CREATE_DAMAGE increments count and removes declaration at source cap",
+          "sha256": "faf57536cb05a204e4a6b9581aa547b2b10b1739f370864693fb956d8b2b3cfa"
+        },
+        {
+          "start": 7110,
+          "end": 7114,
+          "purpose": "CREATE_DAMAGE loop interval, count and end-time loader defaults",
+          "sha256": "c23129e93b7ef893e16d21b36cac4540d998fa88a8bd2ff349a28cfe4ae09813"
+        },
+        {
+          "start": 2494,
+          "end": 2531,
+          "purpose": "Save current mesh position and full CrashLand query vector on live frames",
+          "sha256": "3a121d972fe7369894ba933c3dad4968ed46c871df68c4787ac8505ffabc535e"
+        },
+        {
+          "start": 5902,
+          "end": 5939,
+          "purpose": "Die type four reads saved land vector, rejects negative Y and inherits main axis",
+          "sha256": "e6b260fd0387cb4a868e5ad7f430c6f2916dcb5f63b3a5734b21a47cff61a272"
+        },
+        {
+          "start": 6394,
+          "end": 6540,
+          "purpose": "FollowLine native radius, yaw, move axis, height gates and missing-line stop",
+          "sha256": "c41caa1014b709c05093d1190655b9ac8fb5fd8016daaeb6020d5f53e10a13e2"
+        },
+        {
+          "start": 5390,
+          "end": 5443,
+          "purpose": "Passive particle APPLY_ROTATE and TRACE both default true",
+          "sha256": "8989930887f97972dcd1590c93c3481927417dd5256d320290ac8d5182265018"
+        },
+        {
+          "start": 6163,
+          "end": 6254,
+          "purpose": "Bone particle uses main mesh transform and original bone position; only this branch consumes offset",
+          "sha256": "c0623d65046b9bd898df061e372ac47395283d9a5e15f2b3949b81362d3f15de"
+        },
+        {
+          "start": 6275,
+          "end": 6354,
+          "purpose": "Unit-bone always updates AxisAngle but gates AddRotate; unit-bone, impact and main-position ignore offset",
+          "sha256": "c395cb9e51e8fb1d89043be5f92b7d0f53b44b707f234e370bee2497949e387a"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.h",
+      "bytes": 74061,
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "fragments": [
+        {
+          "start": 857,
+          "end": 875,
+          "purpose": "SetLandHeightOnStart defaults false",
+          "sha256": "1da4b178047c27863f6236e6cc092853039b57dc2ce04e307ee0bc4f4aef0351"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "bytes": 167669,
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "fragments": [
+        {
+          "start": 1584,
+          "end": 1823,
+          "purpose": "Native movement axes and gravity/DirSpeed order",
+          "sha256": "8eb9d02b2e35b22ac01aa4de7c8eed93b4dbf66f59a33dbcfc1f9a511bb1025c"
+        },
+        {
+          "start": 2039,
+          "end": 2055,
+          "purpose": "GetDirVec transforms +X by global plus local yaw/pitch/roll for rotated particle offsets",
+          "sha256": "b192a52d71c5153f6ed3522fcfa10a950f6bf2e3bcc71d2199351b29485b02d7"
+        },
+        {
+          "start": 2062,
+          "end": 2153,
+          "purpose": "Old lifetime/CrashLand branch; original global clock",
+          "sha256": "3b3c3ef572e8b6ed1a0286dc228794ae62fd2ca7190770237bfc2b399b8e25be"
+        },
+        {
+          "start": 3219,
+          "end": 3250,
+          "purpose": "Literal Size fades update mesh scale during the active collision window",
+          "sha256": "adf8a524816de8a9a9cc17302d9c9ab2224f221ac925e7f5ef78e6b6e0f34aad"
+        },
+        {
+          "start": 3573,
+          "end": 3624,
+          "purpose": "LOCAL_ROTATE_EFFECT applies Rotate events to the local mesh rotation",
+          "sha256": "68b7301b0ffddf786bb58b738b7efd8cb5d0d70038a673539b179086c49a352c"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDXCollision.h",
+      "bytes": 80385,
+      "sha256": "e29238e40c77e5ddca97de9cf1713677669cac863565dc7d1ef92bb77288313b",
+      "fragments": [
+        {
+          "start": 99,
+          "end": 131,
+          "purpose": "Sphere radius uses world X scale unless original radius-Y flag is enabled",
+          "sha256": "165bd7c92021a476f84dd37d0e630cbfe9cf69252b1bd482401dd14d339f88ba"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGParticleSystem.cpp",
+      "bytes": 222204,
+      "sha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "fragments": [
+        {
+          "start": 3090,
+          "end": 3097,
+          "purpose": "Template Trace updates existing particle axis after current movement",
+          "sha256": "59b6a307a0dc484e3c829b882a363a26281f33591c34d82ed0c372943400d0db"
+        },
+        {
+          "start": 5188,
+          "end": 5202,
+          "purpose": "New particle copies current sequence movement axis before time-zero events",
+          "sha256": "b886fdd8d04edb191bcaa24a038437ac551c9a2d86f19e507e9da92362ce5481"
+        },
+        {
+          "start": 5242,
+          "end": 5243,
+          "purpose": "New particle copies sequence AddRotate into its global visual rotation",
+          "sha256": "eb5fc82bdae9705c7e18f3fac76a58e1aa776f3b59e403894ea8445e4e9aca01"
+        },
+        {
+          "start": 4710,
+          "end": 4835,
+          "purpose": "PT_MESH uses Size and global/local rotation, not Stretch",
+          "sha256": "741681e9b8086a5a65b13eba7299decaf5095959f206f92f28db2c3565816c96"
+        }
+      ]
+    },
+    {
+      "path": "KTDXLIB/KTDGParticleSystem.h",
+      "bytes": 91935,
+      "sha256": "2146e70e9ca5e7a3a2d653923a7e7e6a2e0562fc07fba6ca8309c2c2cfa7ab74",
+      "fragments": [
+        {
+          "start": 344,
+          "end": 391,
+          "purpose": "Velocity uses mutable movement axis; DirSpeed uses global plus local visual rotation",
+          "sha256": "2f6dfde56788abb02d12dde7450b930a4b27ac9c57820f7eabfc8ef54511c6c1"
+        }
+      ]
+    },
+    {
+      "path": "X2Lib/X2Game.h",
+      "bytes": 77999,
+      "sha256": "3ebc9cc8fc6f4e177bdd0632995aba47e54dabc62ed0f1c718410ede391b165d",
+      "fragments": [
+        {
+          "start": 1219,
+          "end": 1270,
+          "purpose": "AUTO_DIE deferred stage cleanup list",
+          "sha256": "8c7103b36cddc24f7a9abac01fb19afe97c9447afe9a863277c70bc4acb0ba13"
+        }
+      ]
+    }
+  ],
+  "states": {
+    "RSI_SA_RWT_HARPOON_SPEAR": {
+      "raw": {
+        "NORMAL_CAMERA1_RATE": 30,
+        "NORMAL_CAMERA0_RATE": 40,
+        "ANIM_NAME": "SI_SA_RWT_HARPOON_SPEAR_Start",
+        "NORMAL_CAMERA2_RATE": 30,
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 100
+        },
+        "STOP_OTHER_UNIT0": {
+          "1": 0.06,
+          "2": 0.75
+        },
+        "SPEED_TIME0": {
+          "1": 0,
+          "2": 0,
+          "3": 0.001,
+          "4": 2
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "SOUND_PLAY0": {
+          "1": 0.001,
+          "2": "Raven_HarpoonSpear.ogg"
+        },
+        "SOUND_PLAY1": {
+          "1": 0.001,
+          "2": "Energy.ogg"
+        },
+        "SOUND_PLAY2": {
+          "1": 0.25,
+          "2": "RavenVoice_HarpoonSpear_1.ogg"
+        },
+        "EFFECT_SET_LIST_FINAL": {
+          "EFFECT_SET0": {
+            "START_TIME": 0,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "EFFECT_SET_LIST_FINAL_ULTIMATE": {
+          "EFFECT_SET0": {
+            "START_TIME": 0,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear_Ultimate",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "CAMERA1": {
+          "1": {
+            "ANGLEDEGREE": 60,
+            "LOOK_PARTS": "Bip01",
+            "HEIGHT": 300,
+            "LOOKATDISTANCE": -50,
+            "DISTANCE": 600,
+            "TRACKINGTIME": 0.15,
+            "CAMERA_TYPE": 0,
+            "LOOK_TYPE": 0
+          }
+        },
+        "CAMERA2": {
+          "1": {
+            "ANGLEDEGREE": -50,
+            "LOOK_PARTS": "Bip01",
+            "HEIGHT": -500,
+            "DISTANCE": 1000,
+            "TRACKINGTIME": 0.15,
+            "CAMERA_TYPE": 0,
+            "LOOK_TYPE": 0
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6150
+      },
+      "clip": {
+        "durationSeconds": 0.8333333333333334,
+        "durationTicks": 4000.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "SI_SA_RWT_HARPOON_SPEAR_Start",
+        "decodedKeysSha256": "1099fe6b761b2bc1af523c9778fe4999147bc6b93721bf9c165e5de8fb3a268d"
+      }
+    },
+    "RSI_SA_RWT_HARPOON_SPEAR_FIRE": {
+      "raw": {
+        "ANIM_NAME": "SI_SA_RWT_HARPOON_SPEAR_End",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 0.6
+        },
+        "AFTER_IMAGE": {
+          "1": 0.001,
+          "2": 0.25
+        },
+        "SPEED_TIME0": {
+          "1": -750,
+          "2": 1050,
+          "3": 0.01,
+          "4": 2
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "EFFECT_SET_LIST_FINAL": {
+          "EFFECT_SET0": {
+            "START_TIME": 0.02,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear_Shell_MEMO",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "EFFECT_SET_LIST_FINAL_ULTIMATE": {
+          "EFFECT_SET0": {
+            "START_TIME": 0.02,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear_Shell_Ultimate",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6197
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "SI_SA_RWT_HARPOON_SPEAR_End",
+        "decodedKeysSha256": "9ed8612c6339f20a0fd5eb164cf923065a0b84af7d7bd537cf5f9df0261bb92a"
+      }
+    },
+    "RSI_SA_RWT_HARPOON_SPEAR_FIRE_OVERHEAT": {
+      "raw": {
+        "ANIM_NAME": "SI_SA_RWT_HARPOON_SPEAR_End",
+        "PLAY_TYPE": 2,
+        "TRANSITION": 0,
+        "LAND_CONNECT": 0,
+        "INVINCIBLE": {
+          "1": 0,
+          "2": 0.6
+        },
+        "AFTER_IMAGE": {
+          "1": 0.001,
+          "2": 0.25
+        },
+        "SPEED_TIME0": {
+          "1": -750,
+          "2": 1050,
+          "3": 0.01,
+          "4": 2
+        },
+        "DISABLE_ATTACK_BOX": {
+          "1": "Sword"
+        },
+        "EFFECT_SET_LIST_FINAL": {
+          "EFFECT_SET0": {
+            "START_TIME": 0.02,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear_Shell_Overheat_MEMO",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "EFFECT_SET_LIST_FINAL_ULTIMATE": {
+          "EFFECT_SET0": {
+            "START_TIME": 0.02,
+            "EFFECT_NAME": "EffectSet_Raven_Harpoon_Spear_Shell_Overheat_Ultimate",
+            "DELETE_CONDITION": {
+              "1": 0
+            }
+          }
+        },
+        "IS_ATTACK_STATE": 1
+      },
+      "sourcePc": {
+        "prototype": 0,
+        "assignmentInstruction": 6244
+      },
+      "clip": {
+        "durationSeconds": 0.7,
+        "durationTicks": 3360.0,
+        "ticksPerSecond": 4800.0,
+        "sourceName": "SI_SA_RWT_HARPOON_SPEAR_End",
+        "decodedKeysSha256": "9ed8612c6339f20a0fd5eb164cf923065a0b84af7d7bd537cf5f9df0261bb92a"
+      }
+    }
+  },
+  "effectSets": {
+    "EffectSet_Raven_Harpoon_Spear_Ultimate": {
+      "raw": {
+        "NAME": "EffectSet_Raven_Harpoon_Spear_Ultimate",
+        "EFFECT0": {
+          "NAME": "Raven_Hand_Fire01",
+          "START_TIME": 0.3,
+          "BONE_NAME": "Bip01_L_Hand",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        },
+        "EFFECT1": {
+          "NAME": "RWT_SA_HARPOON_SPEAR_ShockWave",
+          "START_TIME": 0.63,
+          "BONE_NAME": "Bip01_L_Hand",
+          "EFFECT_TYPE": 8,
+          "TRACE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12331
+      }
+    },
+    "EffectSet_Raven_Harpoon_Spear_Shell_Ultimate": {
+      "raw": {
+        "NAME": "EffectSet_Raven_Harpoon_Spear_Shell_Ultimate",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "NAME": "RAVEN_HARPOON_SPEAR_SHELL_Ultimate",
+          "POSITION_OFFSET_Y": 50,
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12341
+      }
+    },
+    "EffectSet_Raven_Harpoon_Spear_Shell_Overheat_Ultimate": {
+      "raw": {
+        "NAME": "EffectSet_Raven_Harpoon_Spear_Shell_Overheat_Ultimate",
+        "EFFECT0": {
+          "BONE_NAME": "Bip01",
+          "NAME": "RAVEN_HARPOON_SPEAR_SHELL_OVERHEAT_Ultimate",
+          "POSITION_OFFSET_Y": 50,
+          "EFFECT_TYPE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 3,
+        "instruction": 12351
+      }
+    }
+  },
+  "damageEffects": {
+    "RAVEN_HARPOON_SPEAR_SHELL_Ultimate": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "Raven_Harpoon_Spear_Shell_MEMO",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 50,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": -1000,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 125,
+          "CAMERA_CRASH_TIME": 0.2,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 1.67,
+          "BACK_SPEED_X": 500,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 0,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 2.84
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "Raven_Hand_Fire07",
+          "POSITION_TYPE": 0
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_IMPACT",
+          "OFFSET_Y": 50,
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_STONE",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT2": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_Main_Damage_MEMO",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT3": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_Sub_Damage_Ultimate",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67366
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_IMPACT": {
+      "raw": {
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_ASSAULT",
+        "ATTACK_TIME_START": 0.001,
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 650,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 33,
+          "TECH_POINT": 50,
+          "CAMERA_CRASH_TIME": 0.666,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 1,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 0.5
+          },
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "APPLIED_SKILL_ID": 24018
+        },
+        "PASSIVE_PARTICLE0": {
+          "PARTICLE_NAME": "RWT_SA_HARPOON_SPEAR_Lightning01",
+          "POSITION_TYPE": 3,
+          "TRACE": 0,
+          "APPLY_ROTATE": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.01,
+          "GAP": 75,
+          "TIME": 0.5,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67935
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_STONE": {
+      "raw": {
+        "ATTACK_TIME_START": 0.001,
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_Stone",
+        "DAMAGE_TIME": 9999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "FOLLOW_ON_LINE": 1,
+        "DAMAGE_DATA": {
+          "TECH_POINT": 0,
+          "HIT_ADD_MP": 0,
+          "BACK_SPEED_X": 1000,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 7,
+          "DAMAGE": {
+            "MAGIC": 0
+          },
+          "NO_DAMAGE": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "APPLIED_SKILL_ID": 24018
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67824
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_Main_Damage_MEMO": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_EXPLOSION_MEMO",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "TECH_POINT": 750,
+          "HIT_ADD_MP": 10,
+          "PVP_RATE": 0.6,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 23.14
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 66704
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_Sub_Damage_Ultimate": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_EXPLOSION_Ultimate",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 575,
+          "CAMERA_CRASH_TIME": 0.666,
+          "PVP_RATE": 0.6,
+          "HIT_GAP": 0.2,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 125,
+          "HIT_ADD_MP": 1.67,
+          "BACK_SPEED_X": 925,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 2.84
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_Y": -150,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_HarpoonSpearFireP2",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "OFFSET_Y": -150,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_HarpoonSpearFireP3",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_Hand_Fire09",
+          "POSITION_TYPE": 0,
+          "TRACE": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.01,
+          "GAP": 33,
+          "TIME": 2,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_END",
+          "EVENT_TIME": 0.81,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "AUTO_DIE": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": -100,
+          "LOOP_INTERVAL": 0.13,
+          "EVENT_TIME": 0,
+          "LOOP_END_TIME": 1.3,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Harpoon_Spear_Shell_Explosion_Add_Flame_Sun",
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "LOOP_END_COUNT": 10,
+          "POSITION_TYPE": 0
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -150,
+          "LOOP_INTERVAL": 0.13,
+          "EVENT_TIME": 0,
+          "LOOP_END_TIME": 1.3,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Harpoon_Spear_Shell_Explosion_Stone_Ultimate",
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "LOOP_END_COUNT": 10,
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67466
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_END": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_EXPLOSION_FINISH",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.666,
+          "BACK_SPEED_Y": 600,
+          "PVP_RATE": 0.6,
+          "HIT_GAP": 100,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 125,
+          "HIT_ADD_MP": 1.67,
+          "BACK_SPEED_X": 1000,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 5,
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 2.84
+          }
+        },
+        "HIT_PARTICLE0": {
+          "TRIGGER_COUNT": 10,
+          "PARTICLE_NAME": "CustomFireDamageImpactRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE1": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "CustomFireDamageImpactRingRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE2": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "CustomFireDamageImpactCoreRed",
+          "POSITION_TYPE": 2
+        },
+        "HIT_PARTICLE3": {
+          "TRIGGER_COUNT": 1,
+          "PARTICLE_NAME": "CustomFireDamageImpactSlashRed",
+          "POSITION_TYPE": 2
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 66909
+      }
+    },
+    "DamageEffect_Harpoon_Spear_Shell_Explosion_Add_Flame_Sun": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "Mesh_Harpoon_Spear_Shell_Explosion_Add_Flame",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "GROUP_DAMAGE": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.666,
+          "HIT_GAP": 0.6,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 31.25,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 7,
+          "DAMAGE": {
+            "MAGIC": 0.71
+          },
+          "RE_ATTACK": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "FORCE_FLY": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018
+        },
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_Y": 0,
+          "BONE_NAME": "Plane01",
+          "PARTICLE_NAME": "Raven_Hand_Fire04",
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67524
+      }
+    },
+    "DamageEffect_Harpoon_Spear_Shell_Explosion_Stone_Ultimate": {
+      "raw": {
+        "MAIN_EFFECT_NAME": "Mesh_Harpoon_Spear_Shell_Explosion_Add_Flame",
+        "EFFECT_TYPE": 1,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "MUST_ON_LINE": 1,
+        "START_PARTICLE0": {
+          "PARTICLE_NAME": "Raven_HarpoonSpearSton1",
+          "POSITION_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67878
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_OVERHEAT_Ultimate": {
+      "raw": {
+        "DAMAGE_TIME": 9999,
+        "MAIN_EFFECT_NAME": "Raven_Harpoon_Spear_Shell_MEMO",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 50,
+          "PVP_RATE": 0.6,
+          "BACK_SPEED_Y": -1000,
+          "STOP_TIME_ATT": 0,
+          "TECH_POINT": 125,
+          "CAMERA_CRASH_TIME": 0.2,
+          "STOP_TIME_DEF": 0,
+          "HIT_ADD_MP": 1.67,
+          "BACK_SPEED_X": 500,
+          "DAMAGE_TYPE": 1,
+          "ATTACK_TYPE": 1,
+          "HIT_TYPE": 21,
+          "REACT_TYPE": 2,
+          "RE_ATTACK": 0,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 3.9475999999999996
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "RWT_SA_HARPOON_SPEAR_FireSpark",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "FORCE_DIE": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_IMPACT_OVERHEAT",
+          "OFFSET_Y": 50,
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT1": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_STONE",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT2": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_OVERHEAT_Main_Damage_MEMO",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        },
+        "DIE_DAMAGE_EFFECT3": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_Harpoon_Spear_Shell_Explosion_Sub_Damage_Ultimate_Overheat",
+          "POSITION_TYPE": 4,
+          "APPLY_ROTATE": 1
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67620
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_IMPACT_OVERHEAT": {
+      "raw": {
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_ASSAULT",
+        "ATTACK_TIME_START": 0.001,
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 650,
+          "CLEAR_SCREEN": 1,
+          "CAMERA_CRASH_GAP": 33,
+          "TECH_POINT": 50,
+          "CAMERA_CRASH_TIME": 0.666,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 1,
+          "BACK_SPEED_X": 800,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "DAMAGE": {
+            "MAGIC": 0.5
+          },
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "APPLIED_SKILL_ID": 24018
+        },
+        "PASSIVE_PARTICLE0": {
+          "PARTICLE_NAME": "RWT_SA_HARPOON_SPEAR_Lightning01",
+          "POSITION_TYPE": 3,
+          "TRACE": 0,
+          "APPLY_ROTATE": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.01,
+          "GAP": 75,
+          "TIME": 0.5,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67992
+      }
+    },
+    "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_OVERHEAT_Main_Damage_MEMO": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_EXPLOSION_MEMO",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "HIT_ADD_MP": 10,
+          "TECH_POINT": 750,
+          "PVP_RATE": 0.7,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 0,
+          "ARRANGED_FLY": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 32.1646
+          }
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67062
+      }
+    },
+    "RAVEN_Harpoon_Spear_Shell_Explosion_Sub_Damage_Ultimate_Overheat": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "RWT_SA_HARPOON_SPEAR_EXPLOSION_Ultimate",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "FOLLOW_LINE": 1,
+        "FOLLOW_LINE_NEW": 1,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "BACK_SPEED_Y": 575,
+          "CAMERA_CRASH_TIME": 0.666,
+          "PVP_RATE": 0.6,
+          "HIT_GAP": 0.2,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 125,
+          "HIT_ADD_MP": 1.67,
+          "BACK_SPEED_X": 925,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 2,
+          "FORCE_FLY": 1,
+          "CAN_REVENGE": 0,
+          "RE_ATTACK": 1,
+          "ARRANGED_FLY": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018,
+          "DAMAGE": {
+            "MAGIC": 3.9475999999999996
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_Y": -150,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_HarpoonSpearFireP2",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE1": {
+          "OFFSET_Y": -150,
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_HarpoonSpearFireP3",
+          "POSITION_TYPE": 0
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "PARTICLE_NAME": "Raven_Hand_Fire09",
+          "POSITION_TYPE": 0,
+          "TRACE": 1
+        },
+        "CAMERA0": {
+          "EVENT_TIME": 0.01,
+          "GAP": 33,
+          "TIME": 2,
+          "UNIT_SELECT": 1,
+          "CRASH_TYPE": 3
+        },
+        "CREATE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "RAVEN_HARPOON_SPEAR_SHELL_EXPLOSION_END",
+          "EVENT_TIME": 0.81,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "AUTO_DIE": 1
+        },
+        "CREATE_DAMAGE_EFFECT1": {
+          "OFFSET_Y": -100,
+          "LOOP_INTERVAL": 0.13,
+          "EVENT_TIME": 0,
+          "LOOP_END_TIME": 1.3,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Harpoon_Spear_Shell_Explosion_OVERHEAT_Add_Flame_Sun",
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "LOOP_END_COUNT": 10,
+          "POSITION_TYPE": 0
+        },
+        "CREATE_DAMAGE_EFFECT2": {
+          "OFFSET_Y": -150,
+          "LOOP_INTERVAL": 0.13,
+          "EVENT_TIME": 0,
+          "LOOP_END_TIME": 1.3,
+          "DAMAGE_EFFECT_NAME": "DamageEffect_Harpoon_Spear_Shell_Explosion_Stone_Ultimate",
+          "BONE_NAME": "ATTACK_SPHERE1",
+          "LOOP_END_COUNT": 10,
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67720
+      }
+    },
+    "DamageEffect_Harpoon_Spear_Shell_Explosion_OVERHEAT_Add_Flame_Sun": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "Mesh_Harpoon_Spear_Shell_Explosion_Add_Flame",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_TIME": 0.666,
+          "HIT_GAP": 0.6,
+          "CAMERA_CRASH_GAP": 20,
+          "TECH_POINT": 31.25,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 19,
+          "ATTACK_TYPE": 1,
+          "REACT_TYPE": 7,
+          "DAMAGE": {
+            "MAGIC": 0.9868999999999999
+          },
+          "RE_ATTACK": 1,
+          "CAN_REFLEX": 0,
+          "CAN_REVENGE": 0,
+          "ARRANGED_FLY": 1,
+          "FORCE_FLY": 1,
+          "ATTACK_TRIGGER_TYPE": 1,
+          "APPLIED_SKILL_ID": 24018
+        },
+        "PASSIVE_PARTICLE0": {
+          "OFFSET_Y": 0,
+          "BONE_NAME": "Plane01",
+          "PARTICLE_NAME": "Raven_Hand_Fire04",
+          "POSITION_TYPE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 67775
+      }
+    }
+  },
+  "templates": {
+    "CustomFireDamageImpactCoreRed": {
+      "name": "CustomFireDamageImpactCoreRed",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": {
+          "random": [
+            100.0,
+            200.0
+          ]
+        },
+        "Lifetime": 0.4,
+        "NumParticles": 10.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Damage_Center.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 284155,
+        "line": 8966
+      },
+      "declarationSha256": "d215e9ed047a5ca1b3303d05fd995d9449c7ae15b8db189d29ddc121eea81c94"
+    },
+    "CustomFireDamageImpactRed": {
+      "name": "CustomFireDamageImpactRed",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": {
+          "random": [
+            100.0,
+            200.0
+          ]
+        },
+        "Lifetime": {
+          "random": [
+            0.2,
+            0.4
+          ]
+        },
+        "NumParticles": 20.0,
+        "TriggerCount": 10.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          },
+          {
+            "random": [
+              -10.0,
+              10.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "star2.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.3,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.3,
+                1.0
+              ]
+            },
+            100.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            128.0,
+            128.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            32.0,
+            32.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -1500.0,
+                1500.0
+              ]
+            },
+            {
+              "random": [
+                -1500.0,
+                1500.0
+              ]
+            },
+            {
+              "random": [
+                -1500.0,
+                1500.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 282723,
+        "line": 8925
+      },
+      "declarationSha256": "246393842dcf0613b4af1cbd43f174c0a81e394520e7fc9f382578f999497def"
+    },
+    "CustomFireDamageImpactRingRed": {
+      "name": "CustomFireDamageImpactRingRed",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": {
+          "random": [
+            100.0,
+            200.0
+          ]
+        },
+        "Lifetime": 0.4,
+        "NumParticles": 10.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Damage_Ring.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.4,
+          "fade": true,
+          "value": [
+            768.0,
+            768.0,
+            1.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 283610,
+        "line": 8948
+      },
+      "declarationSha256": "d4a18cf0127bf2022ec2c3eb5dfed9ef7e0d673e3b8a2d819ee48b0954670d8a"
+    },
+    "CustomFireDamageImpactSlashRed": {
+      "name": "CustomFireDamageImpactSlashRed",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 50.0,
+        "Lifetime": 0.2,
+        "NumParticles": 20.0,
+        "TriggerCount": 1.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_ONE"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Arme_Critical.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.6
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                1500.0,
+                2000.0
+              ]
+            },
+            {
+              "random": [
+                300.0,
+                800.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                500.0,
+                300.0
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                120.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 91,
+        "name": "GameMajorParticle.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle.txt",
+        "sha256": "b816a3314febc612c484f6f7585f19b8764b2b3a855039598a88281414fd3bbb",
+        "bytes": 316223,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 284646,
+        "line": 8983
+      },
+      "declarationSha256": "51a63ef5f9ea150a5f7bdb7304db88af835e586a11ea1e435a730bcfb19802c5"
+    },
+    "Mesh_Harpoon_Spear_Shell_Explosion_Add_Flame": {
+      "name": "Mesh_Harpoon_Spear_Shell_Explosion_Add_Flame",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "SA_EL_MEGA_BURSTER_FIRE_CIRCLE.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.8
+      },
+      "events": [
+        {
+          "property": "AniSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 1.0
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.533,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.63,
+            0.63,
+            0.63
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2151772,
+        "line": 66914
+      },
+      "declarationSha256": "47518d72a63b4b40cab203fcddde7acbadde341061d19cd888f839cad5e64bb3",
+      "glb": "fx/meshes/SA_EL_MEGA_BURSTER_FIRE_CIRCLE.glb",
+      "poseData": "fx/meshes/SA_EL_MEGA_BURSTER_FIRE_CIRCLE.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.6333333253860474,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "RWT_SA_HARPOON_SPEAR_ASSAULT": {
+      "name": "RWT_SA_HARPOON_SPEAR_ASSAULT",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "NEPHILIM_MagicAttack_03.X",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "PlayCount": 1.0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.2,
+            0.0,
+            1.2
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            2.0,
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.033,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            2.3,
+            2.3,
+            2.3
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            20.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1021748,
+        "line": 32125
+      },
+      "declarationSha256": "c944e6a8906eac35d7de20051f51d434795bf696e93cafde737b57a7b1ba99e6",
+      "glb": "fx/meshes/NEPHILIM_MagicAttack_03.glb",
+      "poseData": "fx/meshes/NEPHILIM_MagicAttack_03.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.4,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800.0,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "RWT_SA_HARPOON_SPEAR_EXPLOSION_FINISH": {
+      "name": "RWT_SA_HARPOON_SPEAR_EXPLOSION_FINISH",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 0.2,
+        "DrawCount": 0.0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1025468,
+        "line": 32248
+      },
+      "declarationSha256": "8a6b629fe2891a3a7c8dbebe19a9d98e5fa2b8e21cd2e6a118af54e6ad77dcfb",
+      "glb": null,
+      "poseData": "fx/meshes/BREAKING_FIST_Attack_Box.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "RWT_SA_HARPOON_SPEAR_EXPLOSION_MEMO": {
+      "name": "RWT_SA_HARPOON_SPEAR_EXPLOSION_MEMO",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 1.3,
+        "DrawCount": 0.0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 800.0
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2150046,
+        "line": 66856
+      },
+      "declarationSha256": "334b66880f06467187c36e38094b67931fac28e8df524bd63aed3b850cb470b0",
+      "glb": null,
+      "poseData": "fx/meshes/BREAKING_FIST_Attack_Box.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "RWT_SA_HARPOON_SPEAR_EXPLOSION_Ultimate": {
+      "name": "RWT_SA_HARPOON_SPEAR_EXPLOSION_Ultimate",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "BREAKING_FIST_Attack_Box.x",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "LifeTime": 1.0,
+        "DrawCount": 0.0,
+        "ZEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.7,
+            1.7,
+            1.7
+          ]
+        },
+        {
+          "property": "DirSpeed",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 800.0
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2151199,
+        "line": 66895
+      },
+      "declarationSha256": "9f3b58b74d64bfae02072c3ccb6d5d5f5a7e30bf34d01564320b6d9d7b051a36",
+      "glb": null,
+      "poseData": "fx/meshes/BREAKING_FIST_Attack_Box.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "RWT_SA_HARPOON_SPEAR_FireSpark": {
+      "name": "RWT_SA_HARPOON_SPEAR_FireSpark",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 40.0,
+        "Lifetime": 0.2,
+        "NumParticles": 20.0,
+        "TriggerTime": 100000000.0,
+        "DrawCount": 2.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          },
+          {
+            "random": [
+              -20.0,
+              20.0
+            ]
+          }
+        ],
+        "Gravity": [
+          -50.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false,
+        "ZWriteEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Flame_REVOLVER.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.2,
+            0.01,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.066,
+          "fade": true,
+          "value": [
+            1.0,
+            0.2,
+            0.01,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.2,
+            0.01,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            100.0,
+            100.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.06,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              1.0,
+              2.0
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                0.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                100.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.01,
+          "end": 0.12,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -2.0,
+                0.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                10.0
+              ]
+            },
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 144472,
+        "line": 3814
+      },
+      "declarationSha256": "accc17953d6898cd7399ec911ec2dbc24aa9b592e14ad171135119c48cd58ddb"
+    },
+    "RWT_SA_HARPOON_SPEAR_ShockWave": {
+      "name": "RWT_SA_HARPOON_SPEAR_ShockWave",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.3,
+        "NumParticles": 1.0,
+        "TriggerTime": 0.1,
+        "DrawCount": 5.0,
+        "Layer": 14.0,
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZEnable": false
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Condense_Pulse02.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.8,
+            0.1,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.03,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.1,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.2,
+            0.1,
+            0.3
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            0.2,
+            0.1,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            50.0,
+            50.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.001,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1000.0,
+            1000.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            50.0,
+            75.0,
+            80.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 92,
+        "name": "GameMajorParticle10.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle10.txt",
+        "sha256": "3bf17ce5cd634bac59f55e0274571b82754646e4ba976a4ef700e62b60480948",
+        "bytes": 313708,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 147774,
+        "line": 3895
+      },
+      "declarationSha256": "5c17bbd527ad7651aaa80940d484807a9d984c7e40ba48a83b0d6bbab27989b8"
+    },
+    "RWT_SA_HARPOON_SPEAR_Stone": {
+      "name": "RWT_SA_HARPOON_SPEAR_Stone",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "UnoHound_AttackC_Mesh01.X",
+        "LifeType": "LT_PLAY_COUNT",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14.0,
+        "PlayCount": 1.0,
+        "ZEnable": true,
+        "ZWriteEnable": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.8,
+            0.6,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.033,
+          "fade": true,
+          "value": [
+            1.0,
+            0.8,
+            0.6,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.9,
+          "end": 1.3,
+          "fade": true,
+          "value": [
+            1.0,
+            0.8,
+            0.6,
+            0.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_ONE"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.3,
+            0.6,
+            0.45
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            90.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 1022394,
+        "line": 32144
+      },
+      "declarationSha256": "7dad36a7b00d469604fd3f4212f43a31c60be2b138e8ca546c8f8fb3b50dad4d",
+      "glb": "fx/meshes/UnoHound_AttackC_Mesh01.glb",
+      "poseData": "fx/meshes/UnoHound_AttackC_Mesh01.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.3333333730697632,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "Raven_Hand_Fire01": {
+      "name": "Raven_Hand_Fire01",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 100.0,
+        "Lifetime": 0.8,
+        "NumParticles": 40.0,
+        "TriggerCount": 40.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -40.0,
+              40.0
+            ]
+          },
+          {
+            "random": [
+              -40.0,
+              40.0
+            ]
+          },
+          {
+            "random": [
+              -40.0,
+              40.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          {
+            "random": [
+              100.0,
+              200.0
+            ]
+          },
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "RavenHandFireP01"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EMK_Fire001.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            0.0,
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.4,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                140.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                140.0,
+                150.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                10.0,
+                15.0
+              ]
+            },
+            {
+              "random": [
+                10.0,
+                15.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -150.0,
+                150.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.01,
+          "end": 0.7,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 316,
+        "line": 16
+      },
+      "declarationSha256": "b27393d1eed1214e7473e4839c63d21408873db4361badef44ccd327a70ae1d1"
+    },
+    "Raven_Hand_Fire04": {
+      "name": "Raven_Hand_Fire04",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 25.0,
+        "Lifetime": 0.8,
+        "NumParticles": 25.0,
+        "DrawCount": 2.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -50.0,
+              50.0
+            ]
+          },
+          {
+            "random": [
+              -70.0,
+              30.0
+            ]
+          },
+          {
+            "random": [
+              -50.0,
+              50.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_F01"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Blur_16.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.03,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.5,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            150.0,
+            150.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -20.0,
+                600.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 4081,
+        "line": 103
+      },
+      "declarationSha256": "03c7709228992451e51b6fedf1341287096942b6890b8d6e4ac1a5f621fcca9e"
+    },
+    "Raven_Hand_Fire07": {
+      "name": "Raven_Hand_Fire07",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 180.0,
+        "Lifetime": 0.9,
+        "NumParticles": 180.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -35.0,
+              35.0
+            ]
+          },
+          {
+            "random": [
+              -35.0,
+              35.0
+            ]
+          },
+          {
+            "random": [
+              -35.0,
+              35.0
+            ]
+          }
+        ],
+        "Gravity": [
+          0.0,
+          {
+            "random": [
+              200.0,
+              400.0
+            ]
+          },
+          0.0
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "RavenHandFireP01"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "EMK_Fire001.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            {
+              "random": [
+                0.6,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            },
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.4,
+                0.6
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.2,
+                0.3
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                150.0,
+                180.0
+              ]
+            },
+            {
+              "random": [
+                150.0,
+                180.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                15.0,
+                25.0
+              ]
+            },
+            {
+              "random": [
+                15.0,
+                25.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.6,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.05,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.5,
+          "end": 0.9,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -300.0,
+                300.0
+              ]
+            },
+            {
+              "random": [
+                -100.0,
+                600.0
+              ]
+            },
+            {
+              "random": [
+                -300.0,
+                300.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 8095,
+        "line": 191
+      },
+      "declarationSha256": "eecf7d64d6fd65ec9ac327575205fc841ab44f73056af6ab6b779f703e073f1a"
+    },
+    "Raven_Hand_Fire09": {
+      "name": "Raven_Hand_Fire09",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_3D_PLANE",
+        "Emitrate": 200.0,
+        "Lifetime": 0.8,
+        "NumParticles": 30.0,
+        "TriggerCount": 30.0,
+        "DrawCount": 2.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          {
+            "random": [
+              -200.0,
+              0.0
+            ]
+          },
+          {
+            "random": [
+              -100.0,
+              100.0
+            ]
+          },
+          {
+            "random": [
+              -150.0,
+              150.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_ALL",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "ZWriteEnable": false,
+        "TraceParticleList": "SwordFire_F04"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "Blur_16.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.1,
+                0.2
+              ]
+            },
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.03,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                0.1
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.0,
+                0.2
+              ]
+            },
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.5,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.2,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            150.0,
+            150.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            200.0,
+            200.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.8,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            {
+              "random": [
+                0.0,
+                360.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            {
+              "random": [
+                -500.0,
+                0.0
+              ]
+            },
+            {
+              "random": [
+                0.0,
+                1200.0
+              ]
+            },
+            {
+              "random": [
+                -200.0,
+                200.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.5,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            },
+            {
+              "random": [
+                50.0,
+                150.0
+              ]
+            },
+            {
+              "random": [
+                -50.0,
+                50.0
+              ]
+            }
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 10731,
+        "line": 248
+      },
+      "declarationSha256": "22eda77a0f8fde908b9124e41de0bbef8674e028cf3360f6793d32234038a583"
+    },
+    "Raven_HarpoonSpearFireP2": {
+      "name": "Raven_HarpoonSpearFireP2",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 25.0,
+        "Lifetime": 0.3,
+        "NumParticles": 25.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          70.0,
+          0.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "ZWriteEnable": false,
+        "Mesh": "Raven_HarpoonSpearFire_M1.Y"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ALS_SLICER_01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.0,
+                0.5
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            {
+              "random": [
+                0.5,
+                1.0
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                1.0,
+                1.5
+              ]
+            },
+            {
+              "random": [
+                2.2,
+                2.5
+              ]
+            },
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.3,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                1.5,
+                1.9
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              0.6,
+              1.1
+            ]
+          }
+        },
+        {
+          "property": "DIRSPEED",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 0.0
+        },
+        {
+          "property": "DIRSPEED",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": -1000.0
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -40.0,
+                40.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -20.0,
+                -2.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Stretch",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": {
+            "random": [
+              4.0,
+              6.0
+            ]
+          }
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 278373,
+        "line": 7667
+      },
+      "declarationSha256": "5ae997fec237b8926bc1cef43fa55f514b35f4e2dc50d2bb61edb8764119b0df",
+      "glb": "fx/meshes/Raven_HarpoonSpearFire_M1.glb",
+      "poseData": "fx/meshes/Raven_HarpoonSpearFire_M1.pose.json",
+      "animationClips": []
+    },
+    "Raven_HarpoonSpearFireP3": {
+      "name": "Raven_HarpoonSpearFireP3",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_MESH",
+        "Emitrate": 50.0,
+        "Lifetime": 0.2,
+        "NumParticles": 50.0,
+        "Layer": 13.0,
+        "Emitradius": [
+          30.0,
+          -5.0,
+          0.0
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Trace": true,
+        "ZWriteEnable": false,
+        "Mesh": "Raven_HarpoonSpearFire_M2.Y"
+      },
+      "events": [
+        {
+          "property": "Texture",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": "ALS_SLICER_01.dds"
+        },
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.05,
+          "fade": false,
+          "value": [
+            1.0,
+            0.5,
+            0.5,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                0.8,
+                1.0
+              ]
+            },
+            {
+              "random": [
+                0.5,
+                0.7
+              ]
+            },
+            0.5
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.1,
+          "end": 0.2,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                1.0,
+                1.2
+              ]
+            },
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "property": "Scale",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "random": [
+              0.6,
+              1.1
+            ]
+          }
+        },
+        {
+          "property": "DIRSPEED",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": 0.0
+        },
+        {
+          "property": "DIRSPEED",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": {
+            "random": [
+              -1000.0,
+              -500.0
+            ]
+          }
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.01,
+          "end": 0.05,
+          "fade": true,
+          "value": [
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -30.0,
+                30.0
+              ]
+            },
+            {
+              "random": [
+                -60.0,
+                -20.0
+              ]
+            }
+          ]
+        },
+        {
+          "property": "Stretch",
+          "start": 0.01,
+          "end": 0.1,
+          "fade": true,
+          "value": {
+            "random": [
+              4.0,
+              6.0
+            ]
+          }
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 279553,
+        "line": 7696
+      },
+      "declarationSha256": "d346bbfa93f8ca3a3e9ac602d899a5b2e7b81c01bc7a3e3b16806c966106605c",
+      "glb": "fx/meshes/Raven_HarpoonSpearFire_M2.glb",
+      "poseData": "fx/meshes/Raven_HarpoonSpearFire_M2.pose.json",
+      "animationClips": []
+    },
+    "Raven_HarpoonSpearSton1": {
+      "name": "Raven_HarpoonSpearSton1",
+      "kind": "particle",
+      "fields": {
+        "particleType": "PT_SKINMESH",
+        "Emitrate": 100.0,
+        "Lifetime": 1.2,
+        "NumParticles": 1.0,
+        "TriggerCount": 1.0,
+        "Layer": 14.0,
+        "Emitradius": [
+          0.0,
+          0.0,
+          {
+            "random": [
+              -5.0,
+              5.0
+            ]
+          }
+        ],
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Mesh": "PROMINENCE_stone01.X"
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.001,
+          "end": 0.066,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            1.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.8,
+          "end": 1.2,
+          "fade": true,
+          "value": [
+            1.0,
+            0.5,
+            0.3,
+            0.0
+          ]
+        },
+        {
+          "property": "Size",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1.0,
+            0.8,
+            1.0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            {
+              "random": [
+                -90.0,
+                90.0
+              ]
+            },
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 107,
+        "name": "GameMajorParticle24.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorParticle24.txt",
+        "sha256": "bf8b6abd7d83029662a798aad7abdb3faf3ce29c99b33d0d2ab7083c493101e6",
+        "bytes": 282323,
+        "signatureHex": "7061727469636c6573797374656d2022",
+        "byteOffset": 281682,
+        "line": 7747
+      },
+      "declarationSha256": "f828e7cb682ff5336399d342479e53df68297ab5273816f2cbae11a78d73a76f",
+      "glb": "fx/meshes/PROMINENCE_stone01.glb",
+      "poseData": "fx/meshes/PROMINENCE_stone01.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 1.6666666269302368,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    },
+    "Raven_Harpoon_Spear_Shell_MEMO": {
+      "name": "Raven_Harpoon_Spear_Shell_MEMO",
+      "kind": "mesh",
+      "fields": {
+        "MeshName": "High_Explosive_Shell03.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_DESTALPHA",
+        "Layer": 13.0,
+        "LifeTime": 1.0,
+        "NOT_CHECK_LAND_TIME": 0.033,
+        "ZEnable": true,
+        "ZWriteEnable": true,
+        "CrashLand": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "property": "Color",
+          "start": 0.05,
+          "end": 0.05,
+          "fade": false,
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Velocity",
+          "start": 0.0,
+          "end": 0.0,
+          "fade": false,
+          "value": [
+            1500.0,
+            -2600.0,
+            0.0
+          ]
+        }
+      ],
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2150619,
+        "line": 66875
+      },
+      "declarationSha256": "37f7c15546609068cfd10881fd08c0b069d02297b30e658dcdd45206fdc9195f",
+      "glb": "fx/meshes/High_Explosive_Shell03.glb",
+      "poseData": "fx/meshes/High_Explosive_Shell03.pose.json",
+      "animationClips": [
+        {
+          "name": "Normal",
+          "durationSeconds": 0.4333333373069763,
+          "nativePlaybackField": 0,
+          "ticksPerSecond": 4800,
+          "warnings": [],
+          "trackWarnings": []
+        }
+      ]
+    }
+  },
+  "missingTemplates": [
+    "RWT_SA_HARPOON_SPEAR_Lightning01"
+  ],
+  "compiledCallbackResourceRoots": [
+    "DAMAGE_EFFECT_DASH_JUMP_X_BULLET",
+    "DAMAGE_EFFECT_DASH_JUMP_X_BULLET_LOOP",
+    "DAMAGE_EFFECT_DASH_JUMP_Xloop_BULLET_HIT",
+    "DAMAGE_EFFECT_DEADLY_FINISH_READY",
+    "DAMAGE_EFFECT_DEADLY_FINISH_READY_LARGE",
+    "DAMAGE_EFFECT_DEADLY_RAID",
+    "DAMAGE_EFFECT_DEADLY_RAID_FINISH",
+    "DAMAGE_EFFECT_DEADLY_RAID_FINISH_LARGE",
+    "DAMAGE_EFFECT_DEADLY_RAID_LARGE",
+    "DAMAGE_EFFECT_IGNITION_CROW",
+    "DAMAGE_EFFECT_IGNITION_CROW_INCINERATION_OVERHEAT_PENALTY",
+    "DAMAGE_EFFECT_IGNITION_CROW_OVERHEAT",
+    "DAMAGE_EFFECT_IGNITION_CROW_OVERHEAT_PENALTY",
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_1",
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_2",
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_3",
+    "DAMAGE_EFFECT_OVERHEAT_EFFECT",
+    "DAMAGE_EFFECT_RVC_FRAME_THROW",
+    "DAMAGE_EFFECT_RVC_FRAME_THROW_OVERHEAT_PENALTY",
+    "EffectSet_RAVEN_GROUND_IMPACT",
+    "EffectSet_Raven_Dash_Jump_Fire",
+    "EffectSet_Raven_Deadly_Raid",
+    "EffectSet_Raven_Deadly_Raid_Big",
+    "EffectSet_Raven_Giga_Prominence_Flame",
+    "EffectSet_Raven_Giga_Prominence_Flame_MEMO",
+    "EffectSet_Raven_Hellfire_Gatling",
+    "Overlap_EDT_Emoticon_1_OverHeat",
+    "Overlap_EDT_Emoticon_2_OverHeat",
+    "Overlap_EDT_Emoticon_3_OverHeat",
+    "RAVEN_BARRAGE_ATTACK_AIR",
+    "RAVEN_BARRAGE_ATTACK_AIR_MEMO",
+    "RAVEN_BARRAGE_ATTACK_STAND",
+    "RAVEN_BARRAGE_ATTACK_STAND_MEMO",
+    "RAVEN_GIGA_PROMINENCE_FINISH",
+    "RAVEN_GIGA_PROMINENCE_FINISH_OVERHEAT",
+    "RAVEN_GIGA_PROMINENCE_FINISH_SMOKE",
+    "RAVEN_GIGA_PROMINENCE_FINISH_STONE",
+    "RAVEN_HARPOON_SPEAR_SHELL_OVERHEAT_PENALTY",
+    "RAVEN_HELLFIRE_GATLING_BULLET",
+    "RAVEN_HELLFIRE_GATLING_BULLET_MEMO",
+    "RAVEN_HELLFIRE_GATLING_BULLET_OVERHEAT",
+    "RAVEN_HELLFIRE_GATLING_BULLET_OVERHEAT_MEMO",
+    "RAVEN_HELLFIRE_GATLING_IMPACT_OVERHEAT",
+    "RAVEN_HELLFIRE_GATLING_IMPACT_OVERHEAT_MEMO",
+    "RAVEN_REVOLVER_CANNON_FINAL_SHELL",
+    "RAVEN_REVOLVER_CANNON_FINAL_SHELL_OVERHEAT",
+    "RAVEN_REVOLVER_CANNON_HE_FINAL_SHELL",
+    "RAVEN_REVOLVER_CANNON_HE_FINAL_SHELL_OVERHEAT",
+    "RAVEN_REVOLVER_CANNON_HE_SHELL",
+    "RAVEN_REVOLVER_CANNON_HE_SHELL_IMPACT",
+    "RAVEN_REVOLVER_CANNON_HE_SHELL_IMPACT_BIG",
+    "RAVEN_REVOLVER_CANNON_HE_SHELL_OVERHEAT",
+    "RAVEN_REVOLVER_CANNON_SHELL",
+    "RAVEN_REVOLVER_CANNON_SHELL_OVERHEAT",
+    "RVC_OverHeat_Object_End",
+    "RVC_OverHeat_Object_Start",
+    "RWT_COMBO_XXX_LOOP",
+    "RWT_COMBO_XXX_LOOP_OVERHEAT",
+    "RWT_COMBO_X_SHELL",
+    "RWT_COMBO_ZZZ_DOWN_XX_SHELL",
+    "WeaponTaker_Overheat"
+  ],
+  "compiledBurstLimits": {
+    "evidenceClass": "fixed-V5 callback bound; independently read source, not observed simulation peak",
+    "giga": {
+      "maxLoopCount": 8,
+      "flameTimesPerLoop": [
+        0.01,
+        0.24
+      ],
+      "flameEffectSet": "EffectSet_Raven_Giga_Prominence_Flame",
+      "finishStoneCount": 2,
+      "finishFlameCountPerBranch": 2,
+      "overheatSmokeCount": 1
+    },
+    "scope": "equipped source burst only; resource union prepares materials without reserving unequipped repeated bursts"
+  },
+  "collateralParticleBinding": {
+    "damage": "DamageEffect_SA_Raven_PowerAssault",
+    "entry": "PASSIVE_PARTICLE6",
+    "raw": {
+      "OFFSET_X": 150,
+      "BONE_NAME": "Dummy01",
+      "PARTICLE_NAME": "HyperSonicStab_P01",
+      "POSITION_TYPE": 0,
+      "APPLY_ROTATED_OFFSET": 1
+    },
+    "sourcePc": {
+      "prototype": 20,
+      "assignmentInstruction": 58878
+    },
+    "mainTemplate": "EffectDummy_0_4",
+    "mainTemplateFields": {
+      "MeshName": "DummyAttackBox_50x50x50.X",
+      "LifeType": "LT_TIME",
+      "MeshType": "X_SKIN_MESH",
+      "BillBoardType": "BT_NONE",
+      "SourceBlendMode": "D3DBLEND_SRCALPHA",
+      "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+      "Layer": 14.0,
+      "LifeTime": 0.4,
+      "DrawCount": 0.0
+    },
+    "mainTemplateEvents": [
+      {
+        "property": "Color",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "property": "AniName",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": {
+          "animation": "Normal",
+          "playback": "XAP_ONE_WAIT"
+        }
+      },
+      {
+        "property": "Size",
+        "start": 0.0,
+        "end": 0.0,
+        "fade": false,
+        "value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "mainTemplateDeclarationSha256": "f2dfba4892420c39c5305531ff497a31cdedef0b3cb7ee0263e26658859fd971"
+  },
+  "nativeMeshMeasurements": [
+    {
+      "source": "asset_work\\raw\\data\\data120.kom\\BREAKING_FIST_Attack_Box.X",
+      "sourceSha256": "8db97d0f2495538aae158938cbe0ccb1ddd72c0e518b017a8af82f632f3ae875",
+      "sourceBytes": 807,
+      "actualLoaderHresult": "0x00000000",
+      "nativeAnimations": [
+        {
+          "index": 0,
+          "name": "Normal",
+          "period": 1,
+          "ticksPerSecond": 4800,
+          "playbackType": 0
+        }
+      ]
+    },
+    {
+      "source": "asset_work\\raw\\data\\data120.kom\\High_Explosive_Shell03.X",
+      "sourceSha256": "318f247b3e83944143101b389fe768ffb20b520bd4817b62f7911c97e92d12a3",
+      "sourceBytes": 4066,
+      "actualLoaderHresult": "0x00000000",
+      "nativeAnimations": [
+        {
+          "index": 0,
+          "name": "Normal",
+          "period": 0.4333333373069763,
+          "ticksPerSecond": 4800,
+          "playbackType": 0
+        }
+      ]
+    },
+    {
+      "source": "asset_work\\raw\\data\\data124.kom\\UnoHound_AttackC_Mesh01.X",
+      "sourceSha256": "c1833e20d15f49864165afa77c5c5916f0290199f148ce3985e9d38393d7e79b",
+      "sourceBytes": 18023,
+      "actualLoaderHresult": "0x00000000",
+      "nativeAnimations": [
+        {
+          "index": 0,
+          "name": "Normal",
+          "period": 1.3333333730697632,
+          "ticksPerSecond": 4800,
+          "playbackType": 0
+        }
+      ]
+    },
+    {
+      "source": "asset_work\\raw\\data\\data142.kom\\SA_EL_MEGA_BURSTER_FIRE_CIRCLE.X",
+      "sourceSha256": "593f6f5997be8bb48ace201122cd2c97eea2e81eb2742db8cbdcfa5347f0738e",
+      "sourceBytes": 1269,
+      "actualLoaderHresult": "0x00000000",
+      "nativeAnimations": [
+        {
+          "index": 0,
+          "name": "Normal",
+          "period": 0.6333333253860474,
+          "ticksPerSecond": 4800,
+          "playbackType": 0
+        }
+      ]
+    }
+  ],
+  "requiredConsumers": {
+    "rootDeath": "All four DIE_DAMAGE_EFFECT children use DEPT_DIE_POS=4; saved live land XYZ, not dead mesh position nor just landY",
+    "landInitialValue": "Harpoon root does not set SetLandHeightOnStart: saved vector starts [0,0,0]; live CrashLand refresh stores full radius90 native query",
+    "followLine": "CanDown radius30; copy line yaw into mesh and movement axis; FOLLOW_LINE_NEW snaps only within150; MUST_ON_LINE stops at gap>200 or no line",
+    "timedChildren": "Original EventTimerGlobal, source loop interval/count/lifetime bound; AUTO_DIE is child stage-cleanup ownership",
+    "burstPool": "CREATE_DAMAGE multiplicity is bounded by source loop count, strict loop end and live main-mesh lifetime. Harpoon one-second carrier yields eight 0.13-second children per branch. Equipped Giga sums sixteen source flame sets with two finishing directions; normal/overheat are alternatives",
+    "presentation": "Normal0.4333333373 shell animation; original RGBA jump at0.05; original shell velocity [1500,-2600,0]; all source scale/rotation curves retained",
+    "passive": "PASSIVE updates SetParticleData every frame even with TRACE0; TIME trace is conditional; PT_MESH source rendering ignores Stretch",
+    "sequenceAxes": "SetParticleData refreshes sequence AxisAngle/AddRotate. New particles copy both; existing template Trace particles update only movement axis after current packet movement. Old visual AddRotate and DirSpeed orientation stay at birth",
+    "particleBindings": "DEPT_UNIT_BONE always sets owner rotation plus entry rotation as movement axis, even when APPLY_ROTATE=0; AddRotate remains gated. Offset is consumed only by DEPT_BONE, not unit-bone, impact or main-position. APPLY_ROTATED_OFFSET uses main mesh GetDirVec projected horizontally, not owner facing or particle entry rotation",
+    "attackMeshTransforms": "ASSAULT literal Size fade and Z20 rotation, and Stone Size [.3,.6,.45] and Y90 rotation, apply to both original helper positions/radii and rendered mesh. Expectations are independently calculated from raw events and original helper poses"
+  },
+  "limits": [
+    "No original 2016 GPU/trajectory capture",
+    "Fixed V5 has maintenance changes and is not the target executable",
+    "Missing Lightning01 original template remains separately proven by vc-missing-fx-search-v3.json"
+  ]
+}

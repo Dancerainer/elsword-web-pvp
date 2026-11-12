@@ -1,0 +1,1250 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "target2016-static and fixedV5-default-gate with explicit-user-corrections",
+  "targetClientMeasured": false,
+  "multipliers": [
+    0.5,
+    1,
+    1.4,
+    1.5
+  ],
+  "rows": [
+    {
+      "skillId": 21026,
+      "name": "#Cffcc00[Enhanced]#CX Mega Slash",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-11",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21000,
+            "3": 11,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-17",
+          "memoType": 8,
+          "rawPositions": {
+            "1": 8,
+            "2": 21000,
+            "3": 17,
+            "4": 1.2
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI_A_MEGASLASH_MEMO_READY",
+          "animationName": "SI_SA_ES_MEGASLASH_MEMO_READY",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9328
+          },
+          "raw": {
+            "ANIM_SPEED": 0.7,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 0.7,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.35,
+            0.7,
+            0.9799999999999999,
+            1.0499999999999998
+          ]
+        },
+        {
+          "state": "ESSI_SI_A_MEGASLASH_MEMO_CHARGE",
+          "animationName": "SI_SA_ES_MEGASLASH_MEMO_CHARGE",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9357
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SI_A_MEGASLASH_MEMO_FIRE",
+          "animationName": "SI_SA_ES_MEGASLASH_MEMO_FIRE",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9400
+          },
+          "raw": {
+            "ANIM_SPEED": 0.9,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 0.9,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.45,
+            0.9,
+            1.26,
+            1.35
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21217,
+      "name": "#Cffcc00[Enhanced]#CX Roll",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-12",
+          "memoType": 1,
+          "rawPositions": {
+            "1": 1,
+            "2": 21200,
+            "3": 12,
+            "4": 2
+          }
+        },
+        {
+          "id": "memo-18",
+          "memoType": 18,
+          "rawPositions": {
+            "1": 18,
+            "2": 21200,
+            "3": 18,
+            "4": -20
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI_A_ES_ROLLING",
+          "animationName": "ESSI_SI_A_ES_ROLLING_Jump",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9512
+          },
+          "raw": {
+            "ANIM_SPEED": 1.3,
+            "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.3,
+          "originalItemAbility": false,
+          "webItemAbility": false,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            1.3,
+            1.3,
+            1.3,
+            1.3
+          ]
+        },
+        {
+          "state": "ESSI_SI_A_ES_ROLLING_END",
+          "animationName": "ESSI_SI_A_ES_ROLLING_Landing",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9536
+          },
+          "raw": {
+            "ANIM_SPEED": 1,
+            "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": false,
+          "webItemAbility": false,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21027,
+      "name": "#Cffcc00[Enhanced]#CX Flame Geyser",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-13",
+          "memoType": 4,
+          "rawPositions": {
+            "1": 4,
+            "2": 21001,
+            "3": 13,
+            "4": 1.4,
+            "5": 1.5
+          }
+        },
+        {
+          "id": "memo-19",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21001,
+            "3": 19,
+            "4": 0.8
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI2_ES_FLAME_GEYSER",
+          "animationName": "SP2a_FlameGeyser",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9638
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21028,
+      "name": "#Cffcc00[Enhanced]#CX Unlimited Blade",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-14",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21002,
+            "3": 14,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-21",
+          "memoType": 17,
+          "rawPositions": {
+            "1": 17,
+            "2": 21002,
+            "3": 21,
+            "4": 1.4
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI3_ES_UNLIMITED_BLADE",
+          "animationName": "SP3b_UnlimitedBlade",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 9964
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SI3_ES_UNLIMITED_BLADE_HYPER",
+          "animationName": "SP3b_UnlimitedBlade",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10290
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21029,
+      "name": "#Cffcc00[Enhanced]#CX Assault Slash",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-16",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21003,
+            "3": 16,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-22",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21003,
+            "3": 22,
+            "4": 0.8
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI1_ES_ASSAULT_SLASH",
+          "animationName": "SP1b_AssaultSlash",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10419
+          },
+          "raw": {
+            "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": false,
+          "webItemAbility": false,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21219,
+      "name": "#Cffcc00[Enhanced]#CX Kick",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-28",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21202,
+            "3": 28,
+            "4": 0.5
+          }
+        },
+        {
+          "id": "memo-37",
+          "memoType": 9,
+          "rawPositions": {
+            "1": 9,
+            "2": 21202,
+            "3": 37,
+            "4": 0.7
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI_A_ES_KICK",
+          "animationName": "SI_A_ESK_KICK",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10617
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SI_A_ES_FULL_CHARGE_KICK",
+          "animationName": "SI_A_ESK_KICK",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10705
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21031,
+      "name": "#Cffcc00[Enhanced]#CX Spiral Blast",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-29",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21005,
+            "3": 29,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-38",
+          "memoType": 5,
+          "rawPositions": {
+            "1": 5,
+            "2": 21005,
+            "3": 38,
+            "4": 0.5,
+            "5": 0.7
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI2_ES_SPIRAL_BLAST",
+          "animationName": "SP2a_SpiralBlast",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10777
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": false,
+          "userCorrection": true,
+          "expectedSpeeds": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21030,
+      "name": "#Cffcc00[Enhanced]#CX Triple Geyser",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-23",
+          "memoType": 5,
+          "rawPositions": {
+            "1": 5,
+            "2": 21004,
+            "3": 23,
+            "4": 0.5,
+            "5": 0.7
+          }
+        },
+        {
+          "id": "memo-26",
+          "memoType": 4,
+          "rawPositions": {
+            "1": 4,
+            "2": 21004,
+            "3": 26,
+            "4": 1.4,
+            "5": 1.5
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI3_ES_TRIPLE_GEYSER",
+          "animationName": "SP2a_FlameGeyser",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10505
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21218,
+      "name": "#Cffcc00[Enhanced]#CX Iron Body",
+      "noStateChange": true,
+      "branches": [
+        {
+          "id": "memo-24",
+          "memoType": 15,
+          "rawPositions": {
+            "1": 15,
+            "2": 21201,
+            "3": 24,
+            "4": 1.5
+          }
+        },
+        {
+          "id": "memo-27",
+          "memoType": 9,
+          "rawPositions": {
+            "1": 9,
+            "2": 21201,
+            "3": 27,
+            "4": 0.7
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI_A_ES_ENDURANCE",
+          "animationName": "Wait",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 4005
+          },
+          "raw": {},
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SI_A_ES_ENDURANCE_HYPER",
+          "animationName": "Wait",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 4023
+          },
+          "raw": {},
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21034,
+      "name": "#Cffcc00[Enhanced]#CX\nMortal Blow",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-33",
+          "memoType": 1,
+          "rawPositions": {
+            "1": 1,
+            "2": 21006,
+            "3": 33,
+            "4": 1.3
+          }
+        },
+        {
+          "id": "memo-42",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21006,
+            "3": 42,
+            "4": 0.9
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SA_ESK_MORTAL_BLOW",
+          "animationName": "SI_SA_ESK_MORTAL_BLOW",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10875
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21203,
+      "name": "Impact Smash",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-34",
+          "memoType": 1,
+          "rawPositions": {
+            "1": 1,
+            "2": 21203,
+            "3": 34,
+            "4": 1.2
+          }
+        },
+        {
+          "id": "memo-43",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21203,
+            "3": 43,
+            "4": 0.7
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_A_ELK_IMPACT_SMASH",
+          "animationName": "SP2a_FlameGeyser",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 10996
+          },
+          "raw": {
+            "ANIM_SPEED": 1.1,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.55,
+            1.1,
+            1.54,
+            1.6500000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21204,
+      "name": "Armor Break",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-32",
+          "memoType": 15,
+          "rawPositions": {
+            "1": 15,
+            "2": 21204,
+            "3": 32,
+            "4": 1.5
+          }
+        },
+        {
+          "id": "memo-41",
+          "memoType": 16,
+          "rawPositions": {
+            "1": 16,
+            "2": 21204,
+            "3": 41,
+            "4": 1.3
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_A_ESK_ARMOR_BREAK",
+          "animationName": "SI_A_ESK_ARMOR_BRAKE",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 4118
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21007,
+      "name": "Double Slash",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-36",
+          "memoType": 7,
+          "rawPositions": {
+            "1": 7,
+            "2": 21007,
+            "3": 36,
+            "4": 0.8,
+            "5": 1.5
+          }
+        },
+        {
+          "id": "memo-44",
+          "memoType": 1,
+          "rawPositions": {
+            "1": 1,
+            "2": 21007,
+            "3": 44,
+            "4": 1.2
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SA_ESK_DOUBLE_SLASH",
+          "animationName": "SI_SA_ESK_DOUBLE_SLASH",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11189
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21008,
+      "name": "Armageddon Blade",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-47",
+          "memoType": 15,
+          "rawPositions": {
+            "1": 15,
+            "2": 21008,
+            "3": 47,
+            "4": 1.3
+          }
+        },
+        {
+          "id": "memo-58",
+          "memoType": 13,
+          "rawPositions": {
+            "1": 13,
+            "2": 21008,
+            "3": 58,
+            "4": 25
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SI3_ES_ARMAGEDDON_BLADE",
+          "animationName": "SP3a_ArmageddonBlade",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11446
+          },
+          "raw": {
+            "ANIM_SPEED": 1.3,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.3,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.65,
+            1.3,
+            1.8199999999999998,
+            1.9500000000000002
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21205,
+      "name": "Rolling Smash",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-46",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21205,
+            "3": 46,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-57",
+          "memoType": 17,
+          "rawPositions": {
+            "1": 17,
+            "2": 21205,
+            "3": 57,
+            "4": 1.4
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_A_ELK_ROLLING_SMASH_READY",
+          "animationName": "SI_A_ELK_ROLLING_SMASH_Ready",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11216
+          },
+          "raw": {
+            "ANIM_SPEED": 5,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 5,
+          "originalItemAbility": true,
+          "webItemAbility": false,
+          "userCorrection": true,
+          "expectedSpeeds": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "state": "ESSI_A_ELK_ROLLING_SMASH",
+          "animationName": "SI_A_ELK_ROLLING_SMASH",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11295
+          },
+          "raw": {
+            "ANIM_SPEED": 1.5,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.5,
+          "originalItemAbility": true,
+          "webItemAbility": false,
+          "userCorrection": true,
+          "expectedSpeeds": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_A_ELK_ROLLING_SMASH_LANDING",
+          "animationName": "SI_A_ELK_ROLLING_SMASH_Landing",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11327
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": false,
+          "userCorrection": true,
+          "expectedSpeeds": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21009,
+      "name": "Sandstorm",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-53",
+          "memoType": 6,
+          "rawPositions": {
+            "1": 6,
+            "2": 21009,
+            "3": 53,
+            "4": 1,
+            "5": 0.8
+          }
+        },
+        {
+          "id": "memo-64",
+          "memoType": 4,
+          "rawPositions": {
+            "1": 4,
+            "2": 21009,
+            "3": 64,
+            "4": 1.4,
+            "5": 1.5
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SA_ELK_SAND_STORM",
+          "animationName": "LK_SAND_STORM",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11499
+          },
+          "raw": {
+            "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": false,
+          "webItemAbility": false,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21010,
+      "name": "Windmill",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-49",
+          "memoType": 3,
+          "rawPositions": {
+            "1": 3,
+            "2": 21010,
+            "3": 49,
+            "4": 0.9
+          }
+        },
+        {
+          "id": "memo-61",
+          "memoType": 17,
+          "rawPositions": {
+            "1": 17,
+            "2": 21010,
+            "3": 61,
+            "4": 1.4
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SA_ESK_WINDMILL_START",
+          "animationName": "SI_SA_ES_WINDMILL_Ready",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11549
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SA_ESK_WINDMILL",
+          "animationName": "SI_SA_ES_WINDMILL",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11614
+          },
+          "raw": {
+            "ANIM_SPEED": 1,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_SA_ESK_WINDMILL_END",
+          "animationName": "SI_SA_ES_WINDMILL_End",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11633
+          },
+          "raw": {
+            "ANIM_SPEED": 1.15,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.15,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.575,
+            1.15,
+            1.6099999999999999,
+            1.7249999999999999
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21206,
+      "name": "Counter Attack",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-54",
+          "memoType": 10,
+          "rawPositions": {
+            "1": 10,
+            "2": 21206,
+            "3": 54,
+            "4": 0.1,
+            "5": 0.5
+          }
+        },
+        {
+          "id": "memo-66",
+          "memoType": 13,
+          "rawPositions": {
+            "1": 13,
+            "2": 21206,
+            "3": 66,
+            "4": 10
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_REVENGE_WAIT",
+          "animationName": "RevengeWait",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11648
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        },
+        {
+          "state": "ESSI_REVENGE_ATTACK",
+          "animationName": "RevengeAttack",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11773
+          },
+          "raw": {
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.5,
+            1,
+            1.4,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21011,
+      "name": "Sonic Blade",
+      "noStateChange": false,
+      "branches": [
+        {
+          "id": "memo-56",
+          "memoType": 10,
+          "rawPositions": {
+            "1": 10,
+            "2": 21011,
+            "3": 56,
+            "4": 0.25,
+            "5": 0.33
+          }
+        },
+        {
+          "id": "memo-67",
+          "memoType": 8,
+          "rawPositions": {
+            "1": 8,
+            "2": 21011,
+            "3": 67,
+            "4": 1.2
+          }
+        }
+      ],
+      "states": [
+        {
+          "state": "ESSI_SA_ELK_SONIC_BLADE",
+          "animationName": "SI_SA_ELK_SONIC_BLADE",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 11829
+          },
+          "raw": {
+            "ANIM_SPEED": 0.85,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 0.85,
+          "originalItemAbility": true,
+          "webItemAbility": true,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            0.425,
+            0.85,
+            1.19,
+            1.275
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": 21603,
+      "name": "#Cffcc00[Enhanced]#CX Gigantic Slash",
+      "noStateChange": false,
+      "branches": [],
+      "states": [
+        {
+          "state": "ESSI_HA_ELK_GIGANTIC_SLASH",
+          "animationName": "ELK_Gigantic_slash",
+          "sourcePc": {
+            "prototype": 0,
+            "assignmentInstruction": 12061
+          },
+          "raw": {
+            "ANIM_SPEED": 1.15,
+            "APPLY_ANIM_SPEED_BY_ITEM_ABILITY": 0,
+            "TRANSITION": 0
+          },
+          "authoredSpeed": 1.15,
+          "originalItemAbility": false,
+          "webItemAbility": false,
+          "userCorrection": false,
+          "expectedSpeeds": [
+            1.15,
+            1.15,
+            1.15,
+            1.15
+          ]
+        }
+      ]
+    }
+  ]
+}

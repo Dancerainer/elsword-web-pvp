@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "targetExecuted": false,
+  "evidenceClass": "user-authorized project rule based on original skill descriptions; not recovered original formed DP amount",
+  "skills": [
+    29006,
+    29034
+  ],
+  "descriptionSource": "packages/combat-core/lp-profile.json skillCatalog raw.m_wstrMainDesc",
+  "baseDescription": "Fire 4 consecutive homing particle shots. Hold the skill button to fire 4 additional shots for 25 MP per shot.",
+  "enhancedDescription": "Fire 4 consecutive homing particle shots. Press skill button to blast 4 additional shots with 25  MP consumption.",
+  "projectRule": {
+    "mandatoryRounds": 4,
+    "maximumRounds": 8,
+    "extraRoundsRequireHeldInput": true,
+    "formedExtraMp": 25,
+    "mpEqualityAccepted": true,
+    "formationDpDebitFromFallback": 0,
+    "fallbackAdmission": "LP 29006/29034 in formation, only when sim.addPulseMaintenanceInput is absent",
+    "explicitProvider": "Original conditional payer remains authoritative, including rejected or missing return values. No fallback after a provider rejects."
+  },
+  "originalBoundary": {
+    "contract": "contracts/add-analysis-v53/add-pulse-cannon-contract-2016.json",
+    "pinnedResearchGit": "c3be320c07b5f2158b513093010d22dcb15491ee",
+    "reviewedBodies": [
+      "reports/analysis/add-pulse-cannon-2016/source-bodies.json.gz",
+      "reports/analysis/add-pulse-cannon-2016/source-facts.json.gz"
+    ],
+    "postBody": "0x32765e00, 342 bytes, eb3eb9809225ae42c00d029e2ece19d75c7faf832f39b6afc41256d3cb1df7e6",
+    "observations": [
+      "MP25 argument is written at ESP+18; neighbouring 500 after the extra push is local14, not the second DP payer input read from ESP+10 at 32765f0d.",
+      "TLS helper31c2b5b0 writes the caller output pair at31c2b696..69e only on its slow path; fast return leaves no unique source value.",
+      "Memo609009 is false in the pinned target consumer. Its unreachable local10=400 write does not resolve the live formed input."
+    ],
+    "unresolved": "Actual formed local10 DP float has no statically unique value under the sealed evidence. Neither500 nor400 is assigned by this project policy."
+  }
+}

@@ -1,0 +1,33 @@
+/* Target2016 TET pixels. Score01 placement follows the user reference;
+   fonts and viewport scaling are web presentation adapters. */
+.pvp-hud{position:absolute;inset:0;pointer-events:none;z-index:20;font-family:RFClientTahoma,Tahoma,sans-serif}.pvp-hud[hidden],.pvp-hud [hidden]{display:none}
+.pvp-scoreboard{position:absolute;left:50%;top:0;width:388px;height:81px;transform:translateX(-50%) scale(var(--score-hud-scale,1.25));transform-origin:center top}
+.pvp-score{position:absolute;inset:0;transform:none;width:388px;min-width:0;height:81px;padding:0;display:block;background:none!important;border:0;box-shadow:none}
+.pvp-score>.pvp-score-background{position:absolute;inset:0;width:388px;height:81px;max-width:none}
+.pvp-score-left,.pvp-score-right{position:absolute;top:18px;display:flex;transform:translateX(-50%);white-space:nowrap;gap:0}
+.pvp-score-left{left:92px;color:white}.pvp-score-right{left:296px;color:#2c3946}
+.pvp-score-digit{display:block;flex:none;width:32px;height:35px;max-width:none;font:bold italic 35px/35px Tahoma,sans-serif}
+.pvp-clock-frame{position:absolute;left:146px;top:0;width:96px;height:66px}.pvp-clock-background{width:96px;height:66px}
+.pvp-time{position:absolute;left:194px;top:17px;transform:translateX(-50%);display:flex;gap:0;color:#ffea00;white-space:nowrap}
+.pvp-time-digit{display:block;flex:none;width:17px;height:18px;max-width:none;font:bold 18px/18px Tahoma,sans-serif}
+.pvp-goal{position:absolute;left:194px;top:39px;transform:translateX(-50%);display:flex;align-items:center;flex-direction:column;gap:2px;color:#ffea00;white-space:nowrap}
+.pvp-goal-label{display:block;width:28px;height:7px;max-width:none;font:8px/7px Tahoma,sans-serif;color:#ccc}
+.pvp-goal-number{display:flex;gap:0}.pvp-goal-digit{display:block;width:13px;height:12px;max-width:none;font:bold 12px/12px Tahoma,sans-serif}
+.pvp-sr-text{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.pvp-allies,.pvp-opponents{position:absolute;width:145px;pointer-events:none;transform:scale(var(--member-hud-scale,1.6))}.pvp-allies{left:14px;top:calc(12px + 100px * var(--local-hud-scale,1.625));transform-origin:top left}.pvp-opponents{right:18px;top:var(--enemy-hud-top,calc(12px + 58px * var(--buff-hud-scale,1.25) + 14px));transform-origin:top right}
+/* Preserve the source 108x28 frame, 8px gauges and each portrait's own crop.
+   Their shared visible bottom is y37; scale the complete row as one unit. */
+.pvp-member{position:absolute;width:145px;height:37px;left:0;font-size:10px;color:#fff;text-shadow:1px 1px 1px #000,-1px -1px 1px #000}.pvp-member img{position:absolute;max-width:none}.pvp-member-frame{left:37px;top:9px;width:108px;height:28px}.pvp-member-face{left:2px;top:0;width:auto;height:auto}
+.pvp-member-heading{position:absolute;left:54px;top:0;width:91px;display:flex;align-items:baseline;gap:4px;line-height:14px;white-space:nowrap}
+.pvp-member-level{color:#ffea00;flex:none;font-size:9px}.pvp-member-name{min-width:0;font-size:11px;overflow:hidden;text-overflow:ellipsis}
+.pvp-member-hp,.pvp-member-mp{position:absolute;overflow:hidden;height:8px}.pvp-member-hp{left:48px;top:17px}.pvp-member-mp{left:46px;top:27px}.pvp-member-hp img{left:0;top:0;width:95px;height:8px}.pvp-member-mp img{left:0;top:0;width:93px;height:8px}
+.pvp-member-hp-number,.pvp-member-mp-number{position:absolute;left:48px;top:17px;width:95px;height:8px;text-align:right;font-size:9.5px;line-height:8px;font-weight:normal;font-variant-numeric:tabular-nums;color:white}.pvp-member-mp-number{left:46px;top:27px;width:93px}.pvp-member.disconnected{opacity:.45}.pvp-member.disconnected .pvp-member-name{color:#bbb}
+/* Keep names readable within the original row height. */
+.pvp-board,.pvp-board.expanded{position:absolute;right:5px;bottom:28px;width:min(365px,calc(100% - 10px));min-width:0;max-width:365px;padding:0;background:transparent;border:0;box-sizing:border-box;font:14px RFClientTahoma,Tahoma,sans-serif;color:#fff}.pvp-board>img{position:absolute;max-width:none;pointer-events:none}.pvp-board-top{left:0;top:0;width:100%;height:30px}.pvp-board-middle{left:0;top:30px;width:100%}.pvp-board-bottom{left:0;bottom:0;width:100%;height:10px}.pvp-board-tab{right:4px;top:-13px;width:22px;height:11px}.pvp-board-divider{left:calc(66% + 4px);top:39px;width:4px}
+.pvp-board table{position:absolute;left:4px;top:9px;width:calc(100% - 8px);border-collapse:collapse;table-layout:fixed}.pvp-board.expanded table{top:0}.pvp-board th,.pvp-board td{height:21px;padding:0;text-align:center;line-height:21px;border:0;color:white;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:1px 1px #000}.pvp-board th:first-child,.pvp-board td:first-child{width:66%;text-align:left;padding-left:4px}.pvp-board th{height:30px;font-weight:normal;font-size:13px;color:#c7c4a7}.pvp-board tr{background-position:left top;background-size:100% 21px;background-repeat:no-repeat}.pvp-board tr.local-player td{color:#ff0}.pvp-board tr.disconnected td{opacity:.55}
+.pvp-banner{top:35%;font-family:RFClientTahoma,Tahoma,sans-serif}.pvp-banner img{width:min(520px,70vw);height:auto;max-width:none}.pvp-respawn{top:65.104%;font-family:RFClientTahoma,Tahoma,sans-serif}
+.pvp-banner:is([data-piece="FIGHT"],[data-piece="WIN"],[data-piece="LOSE"]) img{width:min(1040px,140vw);max-height:300px}
+.spectator-hud{position:absolute;left:50%;top:calc(65.104% + 36px);transform:translateX(-50%);max-width:90%;color:#f2e4bd;font:14px RFClientTahoma,Tahoma,sans-serif;text-align:center;text-shadow:1px 1px 3px #000;pointer-events:none;z-index:20}.spectator-hud[hidden]{display:none}
+.online-nameplate{transform:translate(-50%,2px);max-width:272px;font-family:RFClientTahoma,Tahoma,sans-serif;font-size:16px;font-weight:normal;line-height:20px;text-decoration:none}.online-nameplate.team-0{color:#ffaa77;text-shadow:-1px -1px #f00,1px -1px #f00,-1px 1px #f00,1px 1px #f00}.online-nameplate.team-1{color:#54ddff;text-shadow:-1px -1px #00f,1px -1px #00f,-1px 1px #00f,1px 1px #00f}.online-nameplate.local-player{text-decoration:none}
+@media(max-width:1100px){.pvp-board,.pvp-board.expanded{bottom:190px}}
+@media(max-width:700px){.pvp-allies{left:8px}.pvp-opponents{right:8px}.pvp-board,.pvp-board.expanded{transform:none}.online-nameplate{font-size:14px;line-height:18px;max-width:240px}}

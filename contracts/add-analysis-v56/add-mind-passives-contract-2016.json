@@ -1,0 +1,40 @@
+{
+  "schema": "original2016-add-mind-passives-v1",
+  "skillIds": [29412,29413,29414],
+  "status": "parsed-selected-passive-fields-and-consumers",
+  "sourceSha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba",
+  "originalSha256": "edbb9d63a7a18c92170ddcbe79f0783bbf4f329056eae11d4185c7ee7f96f729",
+  "production": "ActualAdd primary330625bc+510=32763400 firstbase31f594b0 then resets all selected fields. Class fromactor63ec+38; originalselector class126 enters327643f2, then29412 at327643f6,29413 at3276445b,29414 at327644b3. Require positive learnedlevel andnonnull actualtemplate each. Original31f06be0 getters use selectedlevel. Missing/unlearned preserves this refresh's reset defaults. This is conditional learned-input consumption, not metadata slotfalse exclusion or passive declaration implying learned.",
+  "29412": {
+    "name": "Mind Control",
+    "fields": {"7328": "key7c SA_REDUCE_EDT_TIME_REL=.3/.4/.5, reset0", "732c": "key5 SA_EFFECTIVE_RATE=.05, reset0", "7330": "key9a SA_RECOVERY_VALUE_REL=.05/.075/.1, reset0"},
+    "buffDuration": "ActualAdd+240=3272e9a0 returns1 unless7328 orderedpositive and inputBuffTempletID is52/53/61/161/172/184/223/291. Selected IDs return7328 directly. Newfull69B plus separate originaltable/switch bytes retained; input is BuffTempletID, NOT actor stateID. Actual32aea1a0@32aea388 readsBuffInstance34, passes to target+240, FMUL remaining10 and writes10. No1− transform after the getter; originalNORMAL duration therefore is multiplied by.3/.4/.5 at this stage. Existing+278 modifier,max-with-priorremaining andother time modes remain in full557B finalizer. Skill description 'decrease30%' does not override native remaining30%.",
+    "refundCaller": "Actualordinary localuse+65032762300 requires17c and valid slot/template, spends actual6af0 MP/6fb0 DP and6fb4 mutation, invokes3272eb40, then327623ad calls32742930(firstFloat6af0,secondFloat6fb0). This precedes cooldown51c lookup/apply, time-control and commonuse observers. Separate manual/other-skill paths are not automatically routed here.",
+    "probability": "32742930 requires732c orderedpositive, calls actualv1a4(0) once, permits ordered sample<=chance (equality passes), then queriesmode538. Fulloriginalx87 comparisons retained, including their distinct unordered conditions. RNG is original31fcb9e0->32e32ef0 from5ffc index; this getter does not itself advance index. Not independent CRT rand.",
+    "amountAbi": "Entry SUBESP8,pushESI/EDI givesstableSP=entrySP-10hex. Awake branch multipliessecondphysicalarg atstableSP18 (entry+8) by7330; normal branch usesfirst atstableSP14(entry+4). Only computed orderedpositive recovery invokes real resource update. Awake:+248(recoveryDP,1), normal:+e8(recoveryMP). Originalpopup helpers follow resource calls; DP popup uses/20. Ghidra unaff_retaddr/local double aliases are not actual unknown input slots.",
+    "boundaries": "This closes the declared debuff duration and ordinary-use refund consumers. Actual caller costs, chosenmode, currentresourcecap and RNGindex are inputs, not substituted literal costs. No unsupported whole-skill bypass of all uses is asserted."
+  },
+  "29413": {
+    "name": "Mind Circle",
+    "fields": {"733c": "key9b SA_ADD_MP_VALUE_ABS=9/12/15, reset0", "7340": "key9c SA_ADD_DP_VALUE_ABS=9/12/15, reset0"},
+    "actualCaller": "32744ac0 mutation-count change requires97c; clampsold count to0..6 and requestedresult to0..6. After its positive/negative resource side effects,32744c4a..51 forwards originalrequestdelta(stackarg) to32742ad0. Only after that does32744c7d storeclampednewcount tocomponent108. This is the requested signed delta, not new-old or actualamountremoved. E.g. old1/request-3 reachesrecovery with-3 even though finalcount0.",
+    "gates": "Newfull380B32742ad0 first requires BOTH733c and7340 orderedpositive, then signedarg<0. Zero/positiverequestdoesnotrecover. No missingcomponent path or successwrite is invented.",
+    "amount": "NativeXOR/SUB forms32-bit two's-complement magnitude thenFILDsigned32. For ordinary negative requests exceptINT_MIN this isabs(delta). Mode538==1 calls+e8(magnitude*733c), otherwise+248(float(magnitude*7340*double20),1). The original signedINT_MIN bitpattern becomesnegative forFILD; no mathematicalunboundedabs substitution. Popup followsresourcecall, DPdisplay usesunscaledmagnitude*7340. Resourcecap/rounding follow actualcallee.",
+    "order": "Restoration occursbefore final mutation-count write and may use requestmagnitudegreaterthan availablepoints. Do not silently normalize to actualconsumedcount, or require the pointwritealready succeeded. Original32744ac0 and wholecalls retained.",
+    "typedResources": "Add+e8=31fcb6d0 routesactualAddGage3302ffac virtualC=32210500 to31f08e10. ActualAdd+248=32744c90 full122B: nonzeroinput passes327432c0 full223B; forpositiveinput andglobal35ec/64/90 present itsreturn=input*(secondArg+327416f0()), otherwisepositivebranchreturns0. Complete60B sourceCFG327416f0 returnsfloat(7020-1)+decodedprotected5468. Fornegativeinput,327432c0 appliesoriginal7028/protected551c/secondArg formula, andwrapper additionallymultiplies(1-decoded5b08). Full148B3273d2d0 addsresulttocurrentDP, clampsorderedresult0..component110max, callsactualv5343273beb0->320cf840. Thus rawrequested9/12/15*20 is not an unconditional finalDP increase; originalpositivegainmodifiers/cap stillapply. Do not labelv248 as3273bed0 (actualv244 attack-context scalar getter), or popup as resourceproduction."
+  },
+  "29414": {
+    "name": "ESP",
+    "fields": {"7344": "key2 effectivecount2/3/4 convertedthrough32be5e40; reset1", "7348": "key5 probability.05/.06/.07; reset0", "734c": "key10 damagedrelative.5/.4/.3; reset0", "7350": "enabledbyte1 onlyafterpositivelearnedlevel+template; reset0"},
+    "mindBreak": "Existingcomplete32770ae0 received-event actual.271 crossing->31f60780 sortedcandidatevector; caller processesnonnull targets andincrementslocalcount, thencomparescount>=7344. ThusESPcap2/3/4 isactualcaller count; zero/negative inputwouldstillprocessfirstnonnullcandidate before exit. Fullscanner/angles/membership/order filters fromDE-local-skill contract reused, noV5limit.",
+    "phaseShift": "Actualprivateusecondition327551d0, calleddirectlyby3276b920 permission, readsselectedtemplateID+8. If29201(0x7211)or29216(0x7220) and7350==1, returncondition2 (originalEnumACTIVE_SKILL_USE_CONDITION.ASUT_AIR). Othercases preserveoriginaltemplate88/Stasis/specificFantasy branches. This is an actual permission input override, not a forcedstate transition or skipped MP/DP/cooldown checks. It is NOTv528 (actualAddv528=32cf3690). Originalcommonrequestpermission still applies.",
+    "damageChance": "ActualAdd+250=3272eae0 newfull83B returns1bydefault. Require7348orderedpositive, queryactualv1a4(0)once, compareoriginal sample, probability. TESTAH41/JP meansorderedlessOR equalreturns734c;greaterORunorderedreturns1. The Ghidra strict< rendering is not authoritative. Noextra RNGcall or seedadvance added.",
+    "finalConsumer": "Complete321f4610@321f5b84..af hasEBXtarget, loadsitsv250, callsat321f5b96, thenmultipliesreturnedfactorinto currentstagedamage and earlierpercentmodifierresult. It is not a constant armorstat, attackerbonus or independentHPsubtraction. TargetUser/Add binds actual3272eae0; no suchoverrideis inferred forunrelatedderivedclasses.",
+    "limits": "Currentlearnedlevel andoriginaltemplateID are suppliedinputs. This closes all three selectedESP fields: MindBreakcount, PhaseShiftpermissioninput andprobabilisticreceiveddamagefactor. Does not assert damagealwayshalves or everyforce-requestsucceeds."
+  },
+  "analysisBoundaries": [
+    "Allnewproviderdossiers/sourceCFGs/fullexports/sourcebytes/KOMidentities retain exactevidencekind. SourceCFG doesnotmasqueradeasprovider.",
+    "Privatepassive-core/edges sessionsalsoobtainedotherAddpassivehelpers. Thosefunctionsare reusable evidence, not a claim theother12passivesarealreadyclosed.",
+    "No V5, targetprogram/DLL/package-script execution, Web implementation changes or communication research. Originalsnapshot is historical/non-atomic, not a battleheap."
+  ]
+}

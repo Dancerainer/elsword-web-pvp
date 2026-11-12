@@ -1,0 +1,85 @@
+{
+  "schema": "rf-double-cancel-source-v18",
+  "evidenceClass": "fixed-reference-condition-repair + current-device-adapter-observations",
+  "targetClientMeasured": false,
+  "m3FidelityAccepted": false,
+  "referenceSourceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "independentSourceProbe": {
+    "report": "reports/rf-double-cancel-consumers-v18.json",
+    "sha256": "f8bd52a8582a479132b57d375b4ddc01b265341f858b8ebc0155ab305f2d819a",
+    "methodCount": 3,
+    "conditionCases": 10,
+    "methodBodiesUnchanged": true
+  },
+  "additionalRawSources": {
+    "X2Lib/X2Game.h": {
+      "sha256": "3ebc9cc8fc6f4e177bdd0632995aba47e54dabc62ed0f1c718410ede391b165d",
+      "bytes": 77999
+    },
+    "X2Lib/X2Game.cpp": {
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "bytes": 618989
+    },
+    "KTDXLIB/KTDIDeviceWinKey.cpp": {
+      "sha256": "0d00dd7699ba6803dec3df17615b2b7fc561c1db9e2eb4532d46616a0f07cceb",
+      "bytes": 17886
+    }
+  },
+  "repairs": [
+    {
+      "id": "dash-request-retains-facing",
+      "source": "GUUser StateChangeDashIfPossible:28760; DashStartFuture:25770 changes speed, not bIsRight",
+      "scope": "native DASH_REQUEST host bridge only"
+    },
+    {
+      "id": "dash-end-independent-one-pure",
+      "source": "Raven RSI_DASH_END_EventProcess:6515-6580; fresh same-facing oneRight/oneLeft precede any pureRight/pureLeft; neither condition uses their sum",
+      "scope": "DashEnd, preserving attack/skill priority; Walk takes facing in its next Future"
+    },
+    {
+      "id": "walk-right-before-left",
+      "source": "GUUser WalkFrameMoveFuture:25703-25722; pureRight then else pureLeft; Raven Walk Event:6214 releases only when both pure flags false",
+      "scope": "ground Walk Future and release predicates; input buffers and air consumers unchanged in this task"
+    }
+  ],
+  "preserved": {
+    "nativeModuleHashes": {
+      "geometry": "03ddf8629912168f3eb0b4df2dee9a8de7adf09edb0ad20c777064cfe868d847",
+      "camera": "4b1649055fcbc3e07773a88dd468aa1eb3780d9011c5fb8695ebce909c142a15",
+      "commands": "6a6517df5f6032ffc2c325c234f0fa20cb6d28459ad26d16edf2a42838eed64c",
+      "skills": "60f604ff17f81008cbf4cca1efdad7e171967d0d61005dd7cf92dafa6ea32d95",
+      "skill-values": "91fac29ff37930135de1b0d54857bf48d248690c201a5758a5c3b5717648d524",
+      "effect-random": "fd7a299bcf419cce00a212a510b651c7f6f03d2188f4e27f939e256ef1973eb5",
+      "commands-recovery": "44b3d8af7f96fb22b935fc74ada9f3c35e59e12bc4f459942db4929269952470",
+      "nasod": "addc78c0ae552ef1095cf20e3cf77ba84459be2189a5d8df8603fa720fba531b",
+      "critical": "abac2e52cf38135badad1c85e3c20449ac131cb93edaf416e2d3cb3d6107ad6b",
+      "mana-break": "3ea75dcc013b6dea97a436e547cb0c9ee189b128f5feecfdad427c101a9f029a"
+    },
+    "nativeModuleCount": 10,
+    "profileDamageWindows": true,
+    "frameRate": 60,
+    "damageFormula": true,
+    "rampAnimationSpeed": true,
+    "inputBufferAndHitStopAdapter": true
+  },
+  "remainingGaps": [
+    "Target2016 matching native cancel reader/Now-Future scheduler and original-client traces unavailable.",
+    "Target ZZX declares DASH_CANCEL_AFTER=.35, old selected V5 callback has unconditional pureDouble branch; target binding not verified.",
+    "Single-frame 6646 currently retains source DashEnd period/8 dash attack branch; normal-ZZ reachability does not prove intended veteran-technique timing.",
+    "Original WinKey reads final levels and four distinct getters; web per-key duplicate delay/one-frame tap and hit-stop pending edge adapters remain different.",
+    "JS state requests are applied immediately while original DoStateEndStartFuture consumes pending state on a following update.",
+    "Both original directional levels are independent; pureRight priority makes overlap facing asymmetric. Do not replace by last-edge guessing."
+  ],
+  "verification": {
+    "nodeTests": 250,
+    "nodeFail": 0,
+    "nodeSkipped": 0,
+    "pythonTests": 3,
+    "compiledCppSourceConditions": 10,
+    "completeDeviceTraces": 72,
+    "completeReplays": 72,
+    "jsonRestorePacketsPerTrace": 120,
+    "browserGpu": 0,
+    "originalClient": 0
+  }
+}

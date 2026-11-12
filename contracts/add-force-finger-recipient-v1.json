@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "targetSource": {
+    "contract": "add-systems-source-v1.json",
+    "path": "asset_work/raw/data/data036.kom/NewSkillTempletVer2.lua",
+    "sha256": "c8047731095475dda3f5bedb54e6e87509bc0438500acdf4005211ce0f5ed266",
+    "skillId": 29215,
+    "fields": {"SA_MP_INTAKE_ABS": 15, "SA_MP_RETAKE_ABS": 45},
+    "formedRecoveryRawDpScale": 20
+  },
+  "qualifiedReference": {
+    "contract": "add-systems-source-v1.json",
+    "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GUAdd.cpp",
+    "sha256": "b9ea0a23c074dfb366a9886823d046ad419acc474c53ae6ccd5c71ab3071de6a",
+    "function": "ANSI_A_ADE_FORCE_FINGER_FrameMove",
+    "line": 15379,
+    "classification": "fixed reference containing 2026 reconstruction; not target2016 dynamic measurement",
+    "retainedExistingAdapter": {"eventSeconds": 0.271, "frontalRange": 700, "maximumTargets": 2, "recoveryPerSelectedTarget": true, "formedRecoveryBypassesGainModifier": true}
+  },
+  "webOwnershipAdapter": {
+    "field": "sourceAddTargetNotice",
+    "shape": {"serial": "positive safe integer", "kind": "force-finger", "skillId": 29215, "targets": "one or two unique {id,epoch} references"},
+    "sender": "only caster owner may create notice or recover caster resources",
+    "recipient": "only target owner may drain MP; frozen local skill declaration supplies amount",
+    "lifeRule": "target epoch must match current room life epoch; failed/dead/stale deliveries are consumed",
+    "receipt": "simulation.state.localOwnerAddTargetReceipts; one latest sender epoch/serial per roster actor, survives trusted snapshots",
+    "baselineRule": "defer until all roster life epochs are installed; discard pending notices when reconciliation fails",
+    "replayRule": "current owner snapshots only, never temporary historical critical-action replay",
+    "deliveryLimit": "latest notice is carried by repeated owner snapshots, like the existing time-ring adapter; no original network transaction, acknowledgment protocol or recovery of an entirely unobserved superseded cast is claimed"
+  },
+  "validation": {
+    "command": "node --test tests/combat/add-target-notices.test.mjs tests/combat/add-profiles.test.mjs",
+    "passed": 191,
+    "cases": ["original event threshold and offline 15/45 amounts", "formed direct DP recovery", "caster/recipient ownership", "duplicate and sender epoch ordering", "snapshot restoration", "recipient death and life change", "deferred roster replacement and failure discard", "forged amount and foreign references", "missing recipient epoch"]
+  }
+}

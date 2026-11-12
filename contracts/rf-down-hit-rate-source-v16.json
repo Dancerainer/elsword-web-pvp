@@ -1,0 +1,263 @@
+{
+  "schema": "rf-down-hit-rate-source-v16",
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "evidenceClass": "pinned-V5-clock-producer-and-delta-dispatch + target2016-video-option-declarations",
+  "targetClientMeasured": false,
+  "originalClientMeasurementCount": 0,
+  "sourceFiles": [
+    {
+      "path": ".cache/native-source-runtime/X2/X2.cpp",
+      "bytes": 89949,
+      "sha256": "3465096350bd0c218f2867cc15c33c61c68b600ec541993763354250fbfd9d4e",
+      "gitBlob": "5d371b63e032d76170597e5264db0869726e268d",
+      "methods": [
+        {
+          "signature": "void CALLBACK OnFrameMove( IDirect3DDevice9*",
+          "firstLine": 1376,
+          "lastLine": 1385,
+          "bytes": 280,
+          "sha256": "2a65f9563d24ab67241c7d4a6d47b97b98544e6471273f35d3213c12e3305659"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2Game.cpp",
+      "bytes": 618989,
+      "sha256": "7f7660945348ea32516f61339af0262517ed940471b5104919010cdce21f6ff4",
+      "gitBlob": "a513f2429514e858b02b5d41643c498b1edb117f",
+      "methods": [
+        {
+          "signature": "HRESULT\tCX2Game::OnFrameMove(",
+          "firstLine": 2456,
+          "lastLine": 3598,
+          "bytes": 35706,
+          "sha256": "f3a27345679f74e112a9bcfdf528bf664109135945fb5b43e11801057ff54a90"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-reference/X2Lib/X2GameUnit.cpp",
+      "bytes": 521479,
+      "sha256": "764868222f4e728bb4e14297126844177106076183d4f099548ecb78da0ee923",
+      "gitBlob": "c5f44d423d2d57ae67ac5408d53fb533aac9025d",
+      "methods": [
+        {
+          "signature": "/*virtual*/ HRESULT CX2GameUnit::OnFrameMove(",
+          "firstLine": 1021,
+          "lastLine": 1177,
+          "bytes": 4589,
+          "sha256": "32cd93cb06fd67c9d6045d1f6eaba86ec9f3339b0e1184c2d013b50508a92ed8"
+        }
+      ]
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDXApp.h",
+      "bytes": 27372,
+      "sha256": "624df09751df0736c876800261853d97c3e8b9224eeefae5546752898401a045",
+      "gitBlob": "2b43ec6838211bf08b6cbe8178b2c54d5b9070ef",
+      "lineSpans": [
+        {
+          "firstLine": 105,
+          "lastLine": 108,
+          "bytes": 208,
+          "sha256": "9440f66f86ed7b47b75b5859e99cccce6a614b566b6c03621d821024e0c1bc9f"
+        }
+      ]
+    },
+    {
+      "path": ".cache/clock-source-v16/KTDXLIB/KTDXApp.cpp",
+      "bytes": 116519,
+      "sha256": "0ff933f1e6d036aeb5e467a45f4b23c487bc78d4ec6cc109f3f168c9a82d9641",
+      "gitBlob": "b0118343485aa657194ab97a2eef9b81639abd3c",
+      "repositoryPath": "JP_TW_EU_CN_US/Trunk/KTDXLIB/KTDXApp.cpp",
+      "acquiredVia": "bounded-read-only-Gitea-git-blob-API",
+      "sourceUrl": "git-blob:b0118343485aa657194ab97a2eef9b81639abd3c",
+      "methods": [
+        {
+          "signature": "HRESULT CKTDXApp::OnFrameMove(",
+          "firstLine": 587,
+          "lastLine": 862,
+          "bytes": 7361,
+          "sha256": "f74a3bbf30c970a672cb30edd082d9543d2348406020f3375528fd9a6e4b4a16"
+        },
+        {
+          "signature": "void CKTDXApp::FrameProcess( bool bStop )",
+          "firstLine": 865,
+          "lastLine": 978,
+          "bytes": 2794,
+          "sha256": "25691319b9ebc2d2e66d5ec032bedacfc5b974b80704168bfce8aef005bb9f45"
+        },
+        {
+          "signature": "void CKTDXApp::FrameProcess()",
+          "firstLine": 981,
+          "lastLine": 1086,
+          "bytes": 2680,
+          "sha256": "a6832f0a3446a91c894b9f80134e73df2d93712267ad74bf345bb71265101c68"
+        }
+      ],
+      "lineSpans": [
+        {
+          "firstLine": 300,
+          "lastLine": 304,
+          "bytes": 157,
+          "sha256": "54d91cc618d12e495a5cf3b453440e7d18bbd88f2cb410af444cb232f887fda3"
+        },
+        {
+          "firstLine": 609,
+          "lastLine": 612,
+          "bytes": 274,
+          "sha256": "5fe210bb4358d364801df74a537d0965701aff9ace1a0c6ec490e217ddf493eb"
+        },
+        {
+          "firstLine": 740,
+          "lastLine": 743,
+          "bytes": 143,
+          "sha256": "2d7413960f834e42f200d9d612f3af928e1a683b5902368b221c61c0016487e3"
+        },
+        {
+          "firstLine": 792,
+          "lastLine": 829,
+          "bytes": 1020,
+          "sha256": "3db3cb5b78376537f0f6185cca2b57c6121644a173c8b5028453ea85c2a25c0a"
+        },
+        {
+          "firstLine": 923,
+          "lastLine": 959,
+          "bytes": 1019,
+          "sha256": "f9a6706094ddda5bab6fc67d324e25dc91116679c6d1eee45202116d7e0deb80"
+        },
+        {
+          "firstLine": 1064,
+          "lastLine": 1067,
+          "bytes": 214,
+          "sha256": "085008b62b328e3f8c031f6c5d6ba2e1c4288acec6381d262a821bb034ae8d0b"
+        }
+      ]
+    },
+    {
+      "path": ".cache/clock-source-v16/X2Lib/X2Main.cpp",
+      "bytes": 623088,
+      "sha256": "2248af092b0ab4eafd7b05b5e6263cc33051d1380aa44a27c9d835a8392371ba",
+      "gitBlob": "47bc0f8ead8456572a3b7c573151606dae556d64",
+      "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2Main.cpp",
+      "acquiredVia": "bounded-read-only-Gitea-git-blob-API",
+      "sourceUrl": "git-blob:47bc0f8ead8456572a3b7c573151606dae556d64",
+      "methods": [
+        {
+          "signature": "bool CX2Main::StateChange( int stateID, int iDetailStateID )",
+          "firstLine": 5342,
+          "lastLine": 5739,
+          "bytes": 11582,
+          "sha256": "266d203b3a9d791e64e0ce74995f31b5659552b65dae03c7058ebe26ce61baeb"
+        }
+      ],
+      "lineSpans": [
+        {
+          "firstLine": 5368,
+          "lastLine": 5372,
+          "bytes": 156,
+          "sha256": "d7b1780b34a9c8946e97708aa32a1b3dace7efb794b6297250b3dd6603fd48d1"
+        },
+        {
+          "firstLine": 5470,
+          "lastLine": 5478,
+          "bytes": 250,
+          "sha256": "e20b9cb8e93f3238cf09616e1b8d135aad341be293692a5e1c335d2d222fb312"
+        }
+      ]
+    },
+    {
+      "path": ".cache/clock-source-v16/X2Lib/X2GameOption.cpp",
+      "bytes": 65459,
+      "sha256": "a3cea2185123ff28aa5c5e6b4ab4a5ed8e105df717bdc6f1aa1f45f6699d3199",
+      "gitBlob": "6326535c3fb819ec4af447d734ca94d9f4f8a15b",
+      "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2Lib/X2GameOption.cpp",
+      "acquiredVia": "bounded-read-only-Gitea-git-blob-API",
+      "sourceUrl": "git-blob:6326535c3fb819ec4af447d734ca94d9f4f8a15b",
+      "methods": [],
+      "lineSpans": [
+        {
+          "firstLine": 951,
+          "lastLine": 952,
+          "bytes": 168,
+          "sha256": "47f29ac691102148244049a1e0597a7e67436329c580da8caa239b12c4aa9370"
+        }
+      ]
+    },
+    {
+      "path": ".cache/clock-source-v16/X2/KOGGamePerformanceCheckDefine.h",
+      "bytes": 1878,
+      "sha256": "536e92bccf92b733daccd6a177f36a29fb71ead97bb8b7cd7e69901535b154d4",
+      "gitBlob": "7b14aae19c5f637272f63696e2a144f39019e69a",
+      "repositoryPath": "JP_TW_EU_CN_US/Trunk/X2/KOGGamePerformanceCheckDefine.h",
+      "acquiredVia": "bounded-read-only-Gitea-git-blob-API",
+      "sourceUrl": "git-blob:7b14aae19c5f637272f63696e2a144f39019e69a",
+      "methods": [],
+      "lineSpans": []
+    },
+    {
+      "path": ".cache/native-source-runtime/KTDXLIB/KTDX.h",
+      "bytes": 44424,
+      "sha256": "0097cffed97c4446e45fd586cc873290e6770a93e03b3bc7873383fb85d297cf",
+      "gitBlob": "88fda6a003046b3b8a7ee3d1838cbae0eba73125",
+      "lineSpans": [
+        {
+          "firstLine": 151,
+          "lastLine": 153,
+          "bytes": 101,
+          "sha256": "166c2eb00e4de51fb33f1ddc32ab804d12d200342ee14ea2d31fe12d36d7fa81"
+        },
+        {
+          "firstLine": 555,
+          "lastLine": 557,
+          "bytes": 77,
+          "sha256": "3f93c76edb4988b21ab3fd0230599978e177ac68edabb1e0ec9fb71b53cca091"
+        }
+      ]
+    }
+  ],
+  "targetVideoOptions": {
+    "path": "asset_work\\raw\\data\\data036.kom\\DefaultGameOptions.lua",
+    "bytes": 1038,
+    "sha256": "0e59844cb43ad14557b0431a78ad84e61f53d6219eb4152d1ec62e938e5c0297",
+    "gitBlob": "7a3bbe4bc5542c072b29cd56e4318ff7577ce913",
+    "fields": {
+      "VIDEO_FPS": 30,
+      "VIDEO_FPS_INDEX": 3,
+      "VERTICALSYNC": 0
+    },
+    "enumSource": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "bytes": 398092,
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "gitBlob": "cf2f7659da24048766df94e6f110c84669483378"
+    }
+  },
+  "missingDeltaProducers": [],
+  "referenceClock": {
+    "scheduler": "constant-step sleep-or-catch-up loop",
+    "normalInitialHz": 85,
+    "normalStateChangeDefaultHz": 75,
+    "normalPvpHzUnderOptimizedP2P": 85,
+    "conditionalMacros": [
+      "DOWN_FRAME_TEST overrides the constants with NUM_TEST_FRAME.",
+      "OPTIMIZED_P2P is defined in the KTDX.h _FOREIGN_ branch.",
+      "CHANGE_KEY_DEVICE is defined in the KTDX.h X2TOOL branch; both scheduler branches use constant steps."
+    ],
+    "target2016BuildSelectionConfirmed": false
+  },
+  "interpretation": [
+    "DXUT callback forwards fElapsedTime into App.OnFrameMove.",
+    "Game.OnFrameMove receives/stores its supplied fElapsedTime and forwards it to units.",
+    "GameUnit.OnFrameMove receives/stores that delta and passes it to physics.",
+    "App ignores the DXUT callback delta for stage simulation; both scheduler branches call FrameProcess with a configurable constant step.",
+    "FrameProcess passes that constant step (or slow-factor-scaled step) to active stages; bStop can zero the first argument in the CHANGE_KEY_DEVICE branch.",
+    "The pinned normal reference initializes at 85 Hz, sets 75 Hz on StateChange, then conditionally sets 85 Hz for OPTIMIZED_P2P PvP.",
+    "Target VIDEO_FPS=30/INDEX=3/VERTICALSYNC=0 are static video-option fields, not verified logical simulation frequencies."
+  ],
+  "limits": [
+    "The missing pinned-V5 producer gap is closed; target2016 build macros and logical clock remain unverified.",
+    "A pinned-source conditional 75/85 Hz setting is not a target2016 measured cadence or hit expectation.",
+    "Changing current simulation step is a sensitivity probe, not authorization to replace the published tick rate."
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "schemaVersion": 1,
+  "targetClientMeasured": false,
+  "classification": "target2016 declarations/audio + fixed-V5 consumer reference; no target-client trajectory",
+  "sources": [
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 74,
+      "name": "Enum.lua",
+      "rawPath": "raw/data/data036.kom/Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6",
+      "bytes": 398092,
+      "signatureHex": "1b4b4c820283a61802000300d708b701"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 49,
+      "name": "DamageEffect.lua",
+      "rawPath": "raw/data/data036.kom/DamageEffect.lua",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397",
+      "bytes": 5409874,
+      "signatureHex": "1b4b4c820266000109010300133a0100"
+    },
+    {
+      "archive": "data/data036.kom",
+      "ordinal": 50,
+      "name": "DamageSound.lua",
+      "rawPath": "raw/data/data036.kom/DamageSound.lua",
+      "sha256": "a59596bb1a6152c0be6be4207bb1acc2ca36dfc8c6eedd7da0c7334778948194",
+      "bytes": 14030,
+      "signatureHex": "1b4b4c8202c66d020001007600773b00"
+    }
+  ],
+  "sharedConsumerContract": "contracts/rf-hit-audio-source-v17.json",
+  "consumerLines": {
+    "X2GUUser.cpp": {
+      "hitSound": [
+        8326,
+        8354
+      ]
+    },
+    "X2DamageManager.cpp": {
+      "lookup": [
+        2756,
+        2797
+      ],
+      "missBeforeDamageReact": [
+        1499,
+        1542
+      ]
+    },
+    "X2DamageEffect.cpp": {
+      "soundFrame": [
+        2534,
+        2606
+      ],
+      "soundLoad": [
+        7050,
+        7069
+      ]
+    },
+    "KTDGXSkinAnim.cpp": {
+      "eventTimer": [
+        1350,
+        1357
+      ]
+    }
+  },
+  "cppSources": [
+    {
+      "path": "X2Lib/X2GUUser.cpp",
+      "localPath": ".cache/native-source-runtime/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "bytes": 1323547,
+      "classification": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "path": "X2Lib/X2GURaven.cpp",
+      "localPath": ".cache/native-source-runtime/X2Lib/X2GURaven.cpp",
+      "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+      "bytes": 836216,
+      "classification": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "path": "X2Lib/X2DamageManager.cpp",
+      "localPath": ".cache/native-source-runtime/X2Lib/X2DamageManager.cpp",
+      "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+      "bytes": 130812,
+      "classification": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "localPath": ".cache/native-source-runtime/X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "bytes": 263245,
+      "classification": "fixed-V5-reference-not-target2016"
+    },
+    {
+      "path": "KTDXLIB/KTDGXSkinAnim.cpp",
+      "localPath": ".cache/native-source-runtime/KTDXLIB/KTDGXSkinAnim.cpp",
+      "sha256": "4ff5e681c5b63eb828d00e0e6fc848066af93ed39b0750615765da248911c76d",
+      "bytes": 42639,
+      "classification": "fixed-V5-reference-not-target2016"
+    }
+  ],
+  "vcHittedType": 1,
+  "damageSoundTables": {
+    "0": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitSlash.wav"
+    },
+    "36": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "Hit_Spear_Stone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "Hit_Spear_Metal.wav",
+      "2": "Hit_Spear_Wood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Spear_Meat.wav"
+    },
+    "1": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitSlash.wav"
+    },
+    "2": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitSlash2.wav"
+    },
+    "3": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitSlash.wav"
+    },
+    "4": {
+      "0": "swordcrash.ogg"
+    },
+    "5": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitStick.wav"
+    },
+    "6": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitStick2.wav"
+    },
+    "7": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit.wav"
+    },
+    "8": {
+      "0": "swordcrash.ogg"
+    },
+    "9": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit.wav"
+    },
+    "10": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit2.wav"
+    },
+    "11": {
+      "0": "swordcrash.ogg"
+    },
+    "12": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "KickHit.ogg"
+    },
+    "13": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "KickHit2.ogg"
+    },
+    "14": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "KickHit.ogg"
+    },
+    "15": {
+      "0": "swordcrash.ogg"
+    },
+    "16": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitArrow.wav"
+    },
+    "17": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitArrow2.wav"
+    },
+    "18": {
+      "9": "Elsword_Guard.ogg",
+      "8": "HitGuard_Metal1.wav",
+      "0": "swordcrash.ogg"
+    },
+    "25": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitBeeHouse.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetalPunch.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetalPunch.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitMetalPunch.wav"
+    },
+    "19": {
+      "9": "Elsword_Guard.ogg",
+      "8": "HitGuard_Metal1.wav",
+      "0": "HitFire.wav",
+      "3": "HitStone.wav",
+      "4": "HitStone2.wav",
+      "7": "HitBeeHouse.wav",
+      "2": "HitWood.wav"
+    },
+    "20": {
+      "9": "Elsword_Guard.ogg",
+      "8": "HitGuard_Metal1.wav",
+      "0": "HitFire2.wav",
+      "3": "HitStone.wav",
+      "4": "HitStone2.wav",
+      "7": "HitBeeHouse.wav",
+      "2": "HitWood.wav"
+    },
+    "21": {
+      "0": "HitBomb.wav"
+    },
+    "22": {
+      "0": "HitWood.wav"
+    },
+    "23": {
+      "0": "HitLightning.wav"
+    },
+    "24": {
+      "9": "Elsword_Guard.ogg",
+      "7": "HitKingNasod.wav",
+      "3": "HitKingNasod.wav",
+      "8": "HitGuard_Metal1.wav",
+      "0": "HitKingNasod.wav",
+      "4": "HitStone2.wav",
+      "1": "HitKingNasod.wav",
+      "2": "HitKingNasod.wav"
+    },
+    "27": {
+      "0": "Eve_CheekSlap.ogg"
+    },
+    "28": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitEveWeapon1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitEveWeapon1.wav"
+    },
+    "29": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitEveWeapon2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitEveWeapon2.wav"
+    },
+    "30": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitChungWeapon1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitChungWeapon1.wav"
+    },
+    "31": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitChungWeapon2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitChungWeapon2.wav"
+    },
+    "32": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitChungWeapon3.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitChungWeapon3.wav"
+    },
+    "33": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Meat_Bullet1.wav",
+      "3": "Hit_Stone_Bullet1.wav",
+      "6": "Hit_Metal_Bullet1.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "Hit_Metal_Bullet1.wav",
+      "2": "Hit_Wood_Bullet1.wav",
+      "4": "Hit_Stone_Bullet1.wav",
+      "1": "Hit_Meat_Bullet1.wav"
+    },
+    "34": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Meat_Bullet2.wav",
+      "3": "Hit_Stone_Bullet2.wav",
+      "6": "Hit_Metal_Bullet2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "Hit_Metal_Bullet2.wav",
+      "2": "Hit_Wood_Bullet2.wav",
+      "4": "Hit_Stone_Bullet2.wav",
+      "1": "Hit_Meat_Bullet2.wav"
+    },
+    "37": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Ara_Pole1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Ara_Pole1.wav"
+    },
+    "38": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Ara_Pole2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Ara_Pole2.wav"
+    },
+    "39": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Ara_ShortSword1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Ara_ShortSword1.wav"
+    },
+    "40": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Ara_ShortSword2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Ara_ShortSword2.wav"
+    },
+    "41": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitElectric1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitElectric1.wav"
+    },
+    "42": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitElectric2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitElectric2.wav"
+    },
+    "43": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitPlasma1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitPlasma1.wav"
+    },
+    "44": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitPlasma2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitPlasma2.wav"
+    },
+    "45": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitPressure1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitPressure1.wav"
+    },
+    "46": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitPressure2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitPressure2.wav"
+    },
+    "47": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitWater1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitWater1.wav"
+    },
+    "48": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitWater2.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitWater2.wav"
+    },
+    "49": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitWater3.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitWater3.wav"
+    },
+    "50": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitIce1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitIce1.wav"
+    },
+    "51": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitMetalIron1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitMetalIron1.wav"
+    },
+    "52": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitWind1.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitWind1.wav"
+    },
+    "53": {
+      "9": "Elsword_Guard.ogg",
+      "0": "HitStone3.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "HitStone3.wav"
+    },
+    "54": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Glove_Slash01.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Glove_Slash01.wav"
+    },
+    "55": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Glove_Punch01.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Glove_Punch01.wav"
+    },
+    "56": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Magic_Circle01.wav",
+      "3": "HitStone.wav",
+      "6": "HitMetal2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "HitMetal.wav",
+      "2": "HitWood.wav",
+      "4": "HitStone2.wav",
+      "1": "Hit_Magic_Circle01.wav"
+    },
+    "57": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Pierce_Bullet01.wav",
+      "3": "Hit_Stone_Bullet2.wav",
+      "6": "Hit_Metal_Bullet2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "Hit_Metal_Bullet2.wav",
+      "2": "Hit_Wood_Bullet2.wav",
+      "4": "Hit_Stone_Bullet2.wav",
+      "1": "Hit_Pierce_Bullet01.wav"
+    },
+    "58": {
+      "9": "Elsword_Guard.ogg",
+      "0": "Hit_Pierce_Bullet02.wav",
+      "3": "Hit_Stone_Bullet2.wav",
+      "6": "Hit_Metal_Bullet2.wav",
+      "7": "HitBeeHouse.wav",
+      "8": "HitGuard_Metal1.wav",
+      "5": "Hit_Metal_Bullet2.wav",
+      "2": "Hit_Wood_Bullet2.wav",
+      "4": "Hit_Stone_Bullet2.wav",
+      "1": "Hit_Pierce_Bullet02.wav"
+    },
+    "59": {
+      "0": "Hit_Soul1.wav"
+    },
+    "60": {
+      "0": "Hit_Soul2.wav"
+    }
+  },
+  "effectSounds": {
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_3": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BURSTER_EXPLOSION": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "RWT_COMBO_X_IMPACT.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BURSTER_Flame_Damage": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DashJumpXXXFireBoom.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_2": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_SHADOW_BACK_SLIDE_BULLET_1": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "RWT_COMBO_ZZZ_DOWN_XX_SHELL_IMPACT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "RWT_COMBO_ZZZ_DOWN_XX_SHELL_IMPACT.ogg"
+      }
+    },
+    "RWT_COMBO_X_IMPACT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "RWT_COMBO_X_IMPACT.ogg"
+      }
+    },
+    "RAVEN_HELLFIRE_GATLING_BULLET_OVERHEAT_MEMO": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_HellfireGatling_Loop.ogg"
+      }
+    },
+    "RAVEN_HELLFIRE_GATLING_BULLET_OVERHEAT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_HellfireGatling_Loop.ogg"
+      }
+    },
+    "RAVEN_HELLFIRE_GATLING_BULLET_MEMO": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_HellfireGatling_Loop.ogg"
+      }
+    },
+    "RAVEN_HELLFIRE_GATLING_BULLET": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_HellfireGatling_Loop.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_3": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "DamageEffect_RVC_Napalm_Grenade_Explosion": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "RWT_COMBO_X_IMPACT.ogg"
+      }
+    },
+    "DamageEffect_RVC_Napalm_Grenade_Flame_Damage": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DashJumpXXXFireBoom.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_2": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_NAPALM_GRENADE_BULLET_1": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_ShadowBackSlide2.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_OVERHEAT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow_Overheat3.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_SOUND_OVERHEAT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow_Overheat4.ogg"
+      },
+      "SOUND1": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow_Overheat4.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_HIT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrowBang.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow3.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_SOUND": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow4.ogg"
+      },
+      "SOUND1": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow4.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_RAID_LARGE": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit4.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_RAID_FINISH_LARGE": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit6.ogg"
+      },
+      "SOUND1": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_NasodCore_Trans_Parry.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_RAID_FINISH": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit3.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_RAID": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit1.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_FINISH_READY_LARGE": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit5.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DEADLY_FINISH_READY": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DeadlyRaid_Hit2.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DASH_JUMP_Xloop_BULLET_HIT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DashJumpXXXLoopBoom.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DASH_JUMP_X_BULLET_HIT_GROUND": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_DashJumpXXXFireBoom.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_DASH_JUMP_X_BULLET_HIT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "RWT_COMBO_X_IMPACT.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_INCINERATION_OVERHEAT": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow3.ogg"
+      }
+    },
+    "DAMAGE_EFFECT_IGNITION_CROW_INCINERATION": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_IgnitionCrow3.ogg"
+      }
+    },
+    "DamageEffect_SA_Raven_SevenBurst_Projectile": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_SP_SevenBurst1.ogg"
+      }
+    },
+    "DamageEffect_SA_Raven_CannonBlade_Attack": {
+      "SOUND0": {
+        "EVENT_TIME": 0.01,
+        "FILE_NAME": "Raven_SP_CanonBlade.ogg"
+      }
+    }
+  },
+  "soundDefaults": {
+    "EVENT_TIME": 0,
+    "RATE": 100,
+    "USE_GLOBAL_TIME": false
+  },
+  "limits": [
+    "SOUNDn follows the effect mesh clock, independently of hit/miss, and removes each record once.",
+    "Two source records with the same filename are two requests, not a filename deduplication bug.",
+    "HT_GROUND_HIT/default has no target audio mapping: do not invent a generic impact.",
+    "Retained old Gatling bullet SOUND is a resource dependency, not authorization to emit it from modern Gatling.",
+    "Audio readiness/play promises and mock playback do not establish audible output or native mixer/spatial gain parity."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "static-target2016-config",
+  "sourceBuild": "NA2016 V6.0420.5",
+  "inputs": {
+    "CharacterStatTable.lua": {
+      "path": "asset_work\\raw\\data\\data036.kom\\CharacterStatTable.lua",
+      "sha256": "8d88daf5756c0ab63555231479e9a56d52cfc4dc8baa5fbc4b6ad87fc1661e02"
+    },
+    "item.kim": {
+      "path": "asset_work\\raw\\data\\data036.kom\\item.kim",
+      "sha256": "9b3d3d3428a48a038245b34b9162c188719f10c171e7f4d2509c9a668e7f4c56"
+    },
+    "Enum.lua": {
+      "path": "asset_work\\raw\\data\\data036.kom\\Enum.lua",
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "character": {
+    "UT_ADD": {
+      "hpMax": 9500,
+      "physicalAttack": 380,
+      "magicAttack": 480,
+      "physicalDefence": 88,
+      "magicDefence": 103
+    }
+  },
+  "career": {
+    "UC_ADD_LUNATIC_PSYKER": {
+      "hpMax": 11000,
+      "physicalAttack": 400,
+      "magicAttack": 530,
+      "physicalDefence": 92,
+      "magicDefence": 115
+    },
+    "UC_ADD_MASTERMIND": {
+      "hpMax": 10750,
+      "physicalAttack": 440,
+      "magicAttack": 510,
+      "physicalDefence": 95,
+      "magicDefence": 110
+    },
+    "UC_ADD_DIABOLIC_ESPER": {
+      "hpMax": 10500,
+      "physicalAttack": 390,
+      "magicAttack": 530,
+      "physicalDefence": 100,
+      "magicDefence": 115
+    }
+  },
+  "items": {
+    "30412": {
+      "itemId": 30412,
+      "name": "Perkisas: Dynamo of Greed",
+      "grade": 6,
+      "itemType": 1,
+      "itemLevel": 112,
+      "useLevel": 80,
+      "unitType": 9,
+      "slot": 2,
+      "relativeLevels": {
+        "hpMax": 28,
+        "physicalAttack": 28,
+        "magicAttack": 28,
+        "physicalDefence": 0,
+        "magicDefence": 0
+      },
+      "recordOffset": 767756,
+      "recordSha256": "6749a374fed01a9f5091f7e83507956ce0f31d9f37ec91a2315d4e8ef7828395"
+    },
+    "30531": {
+      "itemId": 30531,
+      "name": "Perkisas: Dynamo of Greed",
+      "grade": 6,
+      "itemType": 1,
+      "itemLevel": 117,
+      "useLevel": 85,
+      "unitType": 9,
+      "slot": 2,
+      "relativeLevels": {
+        "hpMax": 28,
+        "physicalAttack": 28,
+        "magicAttack": 28,
+        "physicalDefence": 0,
+        "magicDefence": 0
+      },
+      "recordOffset": 777948,
+      "recordSha256": "f18eeef76933d252de47be50fb559c65b5de8af06fdd375e3e3e0c2e46d50811"
+    }
+  },
+  "kimLayout": {
+    "recordSize": 208,
+    "indexedRecords": 94799,
+    "allRecordIdsMatch": true
+  },
+  "exclusions": [
+    "consumer formulas inherited as qualified fixedV5 candidate",
+    "no target2016 server or client run"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "version": "elesis-equipment-source-v1",
+  "evidenceClass": "static-target2016-config",
+  "sourceBuild": "NA2016 V6.0420.5",
+  "inputs": {
+    "item.kim": {
+      "sha256": "9b3d3d3428a48a038245b34b9162c188719f10c171e7f4d2509c9a668e7f4c56"
+    },
+    "CharacterStatTable.lua": {
+      "sha256": "8d88daf5756c0ab63555231479e9a56d52cfc4dc8baa5fbc4b6ad87fc1661e02"
+    },
+    "Enum.lua": {
+      "sha256": "e5c98600ea7dafe8a4bc9d45fbd473cd0f6b91b4e3073017ec2d88ed76eb1eb6"
+    }
+  },
+  "originalClientRuntimeMeasurements": 0,
+  "character": {
+    "UT_ELESIS": {
+      "hpMax": 11250,
+      "physicalAttack": 450,
+      "magicAttack": 370,
+      "physicalDefence": 100,
+      "magicDefence": 83
+    }
+  },
+  "career": {
+    "UC_ELESIS_GRAND_MASTER": {
+      "hpMax": 12250,
+      "physicalAttack": 500,
+      "magicAttack": 400,
+      "physicalDefence": 112,
+      "magicDefence": 90
+    },
+    "UC_ELESIS_BLAZING_HEART": {
+      "hpMax": 11750,
+      "physicalAttack": 490,
+      "magicAttack": 430,
+      "physicalDefence": 110,
+      "magicDefence": 92
+    },
+    "UC_ELESIS_CRIMSON_AVENGER": {
+      "hpMax": 12000,
+      "physicalAttack": 510,
+      "magicAttack": 410,
+      "physicalDefence": 102,
+      "magicDefence": 97
+    }
+  },
+  "classes": {
+    "GM": 120,
+    "BH": 121,
+    "CA": 125
+  },
+  "unitType": 8,
+  "weaponByLevel": {
+    "80": 30409,
+    "85": 30528
+  },
+  "items": {
+    "30409": {
+      "itemId": 30409,
+      "name": "Perkisas: Claymore of Greed",
+      "grade": 6,
+      "itemType": 1,
+      "itemLevel": 112,
+      "useLevel": 80,
+      "unitType": 8,
+      "slot": 2,
+      "relativeLevels": {
+        "hpMax": 28,
+        "physicalAttack": 28,
+        "magicAttack": 28,
+        "physicalDefence": 0,
+        "magicDefence": 0
+      },
+      "recordOffset": 767132,
+      "recordSha256": "20bdd55a69288f6d3d17f9f624e7e9f53c8c854737378cfc753ec17480f87ad3"
+    },
+    "30528": {
+      "itemId": 30528,
+      "name": "Perkisas: Claymore of Greed",
+      "grade": 6,
+      "itemType": 1,
+      "itemLevel": 117,
+      "useLevel": 85,
+      "unitType": 8,
+      "slot": 2,
+      "relativeLevels": {
+        "hpMax": 28,
+        "physicalAttack": 28,
+        "magicAttack": 28,
+        "physicalDefence": 0,
+        "magicDefence": 0
+      },
+      "recordOffset": 777324,
+      "recordSha256": "f35983cd31d94661c6c8690f1ea230076a2dc4d181527d2145a05adf7fcae2df"
+    }
+  },
+  "sharedSource": "contracts/equipment-2016-source-v1.json",
+  "qualifications": [
+    "Target class and item fields are independent of copied equipment options.",
+    "Level85 naked growth and ranked PvP normalization retain the accepted inference / fixed-V5 policy.",
+    "No target2016 runtime measurements; passive and guild additions are separate."
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "schema": "vc-contact-clock-source-v40",
+  "targetClientMeasured": false,
+  "target": {
+    "evidence": "target2016 static declarations",
+    "profile": "packages/combat-core/vc-profile.json",
+    "states": [
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID",
+        "rawSha256": "a6296e5cac39cc133e04de6464f34d2509eddd1a40bf15b0a7a1afa9b35c9d38",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 1.766,
+          "2": 1.8
+        },
+        "explosionAnimationTime": 1.866,
+        "animationSpeed": 1.11,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_FINISH",
+        "rawSha256": "d49528aff1e5d35904852a14b9aa1622cc752d141be678bc7712fcc64ca13ae1",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.915,
+          "2": 1
+        },
+        "explosionAnimationTime": 1.1,
+        "animationSpeed": 1.554,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_FINISH_OVERHEAT",
+        "rawSha256": "ce8e3bfc44e38cc5034ec8150336e622fa7832044ca95bea5a194629d70d382b",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.915,
+          "2": 1
+        },
+        "explosionAnimationTime": 1.1,
+        "animationSpeed": 1.554,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_LOOP",
+        "rawSha256": "ae048392549de90cf3ae49752dbe8001d27dd022ce3bca30960a9ac802c633b1",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.166,
+          "2": 0.2
+        },
+        "explosionAnimationTime": 0.25,
+        "animationSpeed": 1,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_LOOP_END",
+        "rawSha256": "ae048392549de90cf3ae49752dbe8001d27dd022ce3bca30960a9ac802c633b1",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.166,
+          "2": 0.2
+        },
+        "explosionAnimationTime": 0.25,
+        "animationSpeed": 1,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_LOOP_END_OVERHEAT",
+        "rawSha256": "068000d97ef41f582e937eec33bd1f4fa923a1c427e786dcbf8f54123407fea1",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.166,
+          "2": 0.2
+        },
+        "explosionAnimationTime": 0.25,
+        "animationSpeed": 1,
+        "itemSpeedEnabled": 0
+      },
+      {
+        "state": "RVC_SI_SA_DEADLY_RAID_LOOP_OVERHEAT",
+        "rawSha256": "068000d97ef41f582e937eec33bd1f4fa923a1c427e786dcbf8f54123407fea1",
+        "stopAttacker": 0.25,
+        "attackWindow": {
+          "1": 0.166,
+          "2": 0.2
+        },
+        "explosionAnimationTime": 0.25,
+        "animationSpeed": 1,
+        "itemSpeedEnabled": 0
+      }
+    ],
+    "effects": [
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_RAID_LARGE",
+        "rawSha256": "7e79be95dcea81d46281bd00a51e091ffc8baec41b28eefc3384b4e3348d4a6b",
+        "stopAttacker": 0,
+        "stopDefender": 0.033,
+        "reactType": 2
+      },
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_RAID_FINISH_LARGE",
+        "rawSha256": "5d879cd90b3941d06a1384bf48d3826583e37bdf20a55a36ea63b014cd6267a0",
+        "stopAttacker": 0,
+        "stopDefender": 0.33,
+        "reactType": 5
+      },
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_RAID_FINISH",
+        "rawSha256": "4ff7af9504a4383eb2099035b87250d770241a1145464aa7bc26a6687b3059b4",
+        "stopAttacker": 0,
+        "stopDefender": 0.33,
+        "reactType": 5
+      },
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_RAID",
+        "rawSha256": "7f917e4eaba0f59c0bb63d61c14e58c3e20e5f10cd32043849ba64986ef875bd",
+        "stopAttacker": 0,
+        "stopDefender": 0.033,
+        "reactType": 2
+      },
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_FINISH_READY_LARGE",
+        "rawSha256": "a6b1e99cbd1cdcf1620f6b84f20e57b502d1d7a0f9b2c7d6025cbc5a06f737d9",
+        "stopAttacker": 0,
+        "stopDefender": 0.5,
+        "reactType": 2
+      },
+      {
+        "name": "DAMAGE_EFFECT_DEADLY_FINISH_READY",
+        "rawSha256": "ead018f2c33bf3d8c562ef0473170e3778e2f592ece00d1ae71c0ecf76b589ce",
+        "stopAttacker": 0,
+        "stopDefender": 0.5,
+        "reactType": 2
+      }
+    ]
+  },
+  "reference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "evidence": "fixed-V5 version reference including later reconstructed fields; not target2016 runtime",
+    "files": [
+      {
+        "file": "X2Lib/X2DamageManager.cpp",
+        "sha256": "22bc134e51d9e5543c9b1b6d44de01197418f0d8ee61939e6f4d6408e3db5231",
+        "ranges": [
+          {
+            "firstLine": 279,
+            "lastLine": 292,
+            "purpose": "STOP_TIME_ATT loader; later ATK reconstruction is not target2016 precedence",
+            "sha256": "52a4201de721a03b39197aa544aac0eb8e54da5aa5818af91fa640835becdc02"
+          }
+        ]
+      },
+      {
+        "file": "X2Lib/X2GUUser.cpp",
+        "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+        "ranges": [
+          {
+            "firstLine": 6566,
+            "lastLine": 6580,
+            "purpose": "OnFrameMove receives elapsed time independently of animation track speed",
+            "sha256": "969b3a3a6f1bfff8b7766d6baec99f19d48bbd44380b9a2b6b760610091e5de5"
+          },
+          {
+            "firstLine": 6767,
+            "lastLine": 6785,
+            "purpose": "positive stop gates future callbacks and consumes elapsed wall-game time",
+            "sha256": "fccd63020f4554d9d6c0ceb8e57541b6aeb1969800895e6c73be81542b61a368"
+          },
+          {
+            "firstLine": 12621,
+            "lastLine": 12621,
+            "purpose": "ordinary AttackResult assigns declared attacker stop",
+            "sha256": "6fa7bfed6148813db11b0189e4517c0f0205fcfa8b00c3111897c3bcb141dd69"
+          },
+          {
+            "firstLine": 26983,
+            "lastLine": 27000,
+            "purpose": "SetStopTime assigns stop without skill/animation-speed multiplier",
+            "sha256": "b759588b804a7c887ca176a710b4f4a4f511f0ad17c3811a4598c556a333d5d7"
+          }
+        ]
+      },
+      {
+        "file": "X2Lib/X2GURaven.cpp",
+        "sha256": "e4cd77da491835f9d07a97b56b34c36a400b27c0f64c9987b0ecc7c674b55237",
+        "ranges": [
+          {
+            "firstLine": 20099,
+            "lastLine": 20133,
+            "purpose": "Deadly initial explosion owns its animation-event boundary",
+            "sha256": "a81b9e49c51b51db02a0d660e832ff7e7ce005c467bcc7fd54d54ab023408b8f"
+          },
+          {
+            "firstLine": 20173,
+            "lastLine": 20209,
+            "purpose": "Deadly loop explosion owns its animation-event boundary",
+            "sha256": "92b72b9a4299095991abf1bb09294a1fe43f4ee71040e8647d3bb1dabdcd7826"
+          },
+          {
+            "firstLine": 20470,
+            "lastLine": 20506,
+            "purpose": "Deadly finish explosion owns its animation-event boundary",
+            "sha256": "b587c7f092d65648707c93800ddcbf877919af2d78c5915d58bae9ce68d70abb"
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "The frozen target declares 0.25 seconds on each physical strike and zero on the following explosion. The bounded reference consumes stop as a real callback freeze, not animation-speed reduction. No target-client dynamic timing equivalence is claimed.",
+  "unchanged": "Target profile damage, timers, attack windows and resource values are not modified by this audit."
+}

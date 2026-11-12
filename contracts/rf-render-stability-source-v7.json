@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "referenceCommit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+  "targetClientMeasured": false,
+  "findings": {
+    "displayClock": {
+      "path": "apps/web/game.mjs",
+      "sha256AtBaseline": "2905188a8896d9490f74137d2da6d9081fea559d0f3063b99e601cd45ff17e76",
+      "fixedTickLines": [
+        349,
+        354
+      ],
+      "fixedSeconds": 0.016666666666666666,
+      "before": "60-Hz latest discrete actor pose versus per-RAF camera advance; no display interpolation",
+      "classification": "local-runtime-code-audit"
+    },
+    "rootMotion": {
+      "path": ".cache/native-reference/KTDXLIB/KTDGXSkinAnim.h",
+      "sha256": "03ab46e51d622495dd15d800f664440b0c63f3b9875f7d7692f8435cbda206a4",
+      "lineRanges": [
+        [
+          437,
+          463
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target-2016",
+      "clientMeasured": false
+    },
+    "visibleArmor": {
+      "path": ".cache/native-reference/X2Lib/X2GUUser.cpp",
+      "sha256": "ef727830832c902d23bde254faf97dfe6c2e04183502db427b4de25995d78f38",
+      "lineRanges": [
+        [
+          7094,
+          7101
+        ],
+        [
+          14065,
+          14067
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target-2016",
+      "clientMeasured": false
+    },
+    "cartoonRenderer": {
+      "path": ".cache/native-reference/KTDXLIB/KTDGXRenderer.cpp",
+      "sha256": "b3074301549d625ed1fbee6cafddb58d0f47002ba82107a506528861fdf97ae5",
+      "lineRanges": [
+        [
+          437,
+          497
+        ],
+        [
+          1226,
+          1267
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target-2016",
+      "clientMeasured": false
+    },
+    "cartoonEnum": {
+      "path": ".cache/native-reference/KTDXLIB/KTDGXRenderer.h",
+      "sha256": "f40301784238ca49feeafb68bf38dc701b37d2ced2f4eb563c2c57940e0defe4",
+      "lineRanges": [
+        [
+          39,
+          51
+        ]
+      ],
+      "evidenceClass": "fixed-V5-reference-not-target-2016",
+      "clientMeasured": false
+    }
+  },
+  "displayAdapter": {
+    "policy": "previous-two-completed-ticks interpolation, alpha=accumulator/fixedTick",
+    "bonePolicy": "sample original raw keys at fractional clock; no pose smoothing or quaternion replacement",
+    "delayBoundFixedSeconds": 0.016666666666666666,
+    "combatStateMutated": false,
+    "extrapolation": false,
+    "resetRequiredAfter": [
+      "snapshot restore",
+      "manual step",
+      "pause/resume",
+      "inspector toggle"
+    ],
+    "discreteFields": "current states/facing/armor/invincibility; animation clocks only within same track serial and forward time"
+  },
+  "armorAdapter": {
+    "gate": "superArmor && !superArmorNotRed",
+    "defaultSuperArmorNotRed": true,
+    "outLineColorArgb": "0xffff0000",
+    "geometry": "existing skinned outline pass",
+    "CartoonSuperArmorTexture": {
+      "catalogMatches": 0,
+      "sourceEnumMatches": 0,
+      "classification": "absence in audited target catalog/reference renderer only; target GPU stripe shader remains unknown"
+    }
+  },
+  "validation": {
+    "nodePassed": 10,
+    "nodeFailed": 0,
+    "nodeSkipped": 0,
+    "fractionalSpeedMultiplier": 1.3,
+    "fractionalClips": 167,
+    "fractionalNodeComparisons": 14195,
+    "fractionalMaximumErrorNative": 0.0006422208389977868,
+    "originalSourcePoseBoundNative": 0.002,
+    "steadyRunSpeedNative": 942.5,
+    "renderHz": [
+      90,
+      120,
+      144,
+      165
+    ],
+    "repeatedFramesBefore": [
+      58,
+      117,
+      165,
+      206
+    ],
+    "repeatedFramesAfter": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "durationSeconds": 2,
+    "commands": [
+      "node --test tests/integration/actor-render-clock.test.mjs tests/integration/actor-presentation.test.mjs"
+    ]
+  },
+  "limits": [
+    "Full target2016 process and combat trace remain unmeasured",
+    "The timing adapter has no GPU-FPS or keyboard-to-photon acceptance measurement",
+    "Original lighting, antialiasing, outline widths and stripe shader are not reproduced by these checks",
+    "Game integration must use identical display actors for camera, actor meshes and trails; HUD/hits/recording remain authoritative",
+    "Effect runtime remains fixed-tick; parent must avoid advancing FX or physics for display interpolation"
+  ]
+}

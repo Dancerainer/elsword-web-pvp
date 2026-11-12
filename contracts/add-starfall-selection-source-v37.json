@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "offline non-atomic historical capture exact source bytes and independently bound companion DLL export; no target execution",
+  "targetClientMeasured": false,
+  "analysisCapture": {
+    "path": "asset_sources/analysis\\analysis\\derived\\x2-late-snapshot3-analysis.exe",
+    "sha256": "b8be4f12ea3055c4f05abf0afcf1ea4084c0ebb208562bf39c5de27951e284ba"
+  },
+  "distanceHelper": {
+    "start": "0x31c6e880",
+    "endExclusive": "0x31c6e8cd",
+    "sourceFileOffset": 1891456,
+    "bytes": "83ec0c8b4424148b4c2410d900d821d91c24d94004d86104d95c2404d94008d86108d95c2408d90424d9442404d9442408d9c1decad9c2decbd9c9dec2dcc8dec1d95c2414d944241483c40cc3",
+    "sha256": "2aa07fbb4baf70c71f69fe6fa06ec9db1a86eaf43d47c0fd7fc2e795a2cb7353",
+    "instructions": [
+      {
+        "address": "0x31c6e880",
+        "bytes": "83ec0c",
+        "mnemonic": "sub",
+        "operands": "esp, 0xc"
+      },
+      {
+        "address": "0x31c6e883",
+        "bytes": "8b442414",
+        "mnemonic": "mov",
+        "operands": "eax, dword ptr [esp + 0x14]"
+      },
+      {
+        "address": "0x31c6e887",
+        "bytes": "8b4c2410",
+        "mnemonic": "mov",
+        "operands": "ecx, dword ptr [esp + 0x10]"
+      },
+      {
+        "address": "0x31c6e88b",
+        "bytes": "d900",
+        "mnemonic": "fld",
+        "operands": "dword ptr [eax]"
+      },
+      {
+        "address": "0x31c6e88d",
+        "bytes": "d821",
+        "mnemonic": "fsub",
+        "operands": "dword ptr [ecx]"
+      },
+      {
+        "address": "0x31c6e88f",
+        "bytes": "d91c24",
+        "mnemonic": "fstp",
+        "operands": "dword ptr [esp]"
+      },
+      {
+        "address": "0x31c6e892",
+        "bytes": "d94004",
+        "mnemonic": "fld",
+        "operands": "dword ptr [eax + 4]"
+      },
+      {
+        "address": "0x31c6e895",
+        "bytes": "d86104",
+        "mnemonic": "fsub",
+        "operands": "dword ptr [ecx + 4]"
+      },
+      {
+        "address": "0x31c6e898",
+        "bytes": "d95c2404",
+        "mnemonic": "fstp",
+        "operands": "dword ptr [esp + 4]"
+      },
+      {
+        "address": "0x31c6e89c",
+        "bytes": "d94008",
+        "mnemonic": "fld",
+        "operands": "dword ptr [eax + 8]"
+      },
+      {
+        "address": "0x31c6e89f",
+        "bytes": "d86108",
+        "mnemonic": "fsub",
+        "operands": "dword ptr [ecx + 8]"
+      },
+      {
+        "address": "0x31c6e8a2",
+        "bytes": "d95c2408",
+        "mnemonic": "fstp",
+        "operands": "dword ptr [esp + 8]"
+      },
+      {
+        "address": "0x31c6e8a6",
+        "bytes": "d90424",
+        "mnemonic": "fld",
+        "operands": "dword ptr [esp]"
+      },
+      {
+        "address": "0x31c6e8a9",
+        "bytes": "d9442404",
+        "mnemonic": "fld",
+        "operands": "dword ptr [esp + 4]"
+      },
+      {
+        "address": "0x31c6e8ad",
+        "bytes": "d9442408",
+        "mnemonic": "fld",
+        "operands": "dword ptr [esp + 8]"
+      },
+      {
+        "address": "0x31c6e8b1",
+        "bytes": "d9c1",
+        "mnemonic": "fld",
+        "operands": "st(1)"
+      },
+      {
+        "address": "0x31c6e8b3",
+        "bytes": "deca",
+        "mnemonic": "fmulp",
+        "operands": "st(2)"
+      },
+      {
+        "address": "0x31c6e8b5",
+        "bytes": "d9c2",
+        "mnemonic": "fld",
+        "operands": "st(2)"
+      },
+      {
+        "address": "0x31c6e8b7",
+        "bytes": "decb",
+        "mnemonic": "fmulp",
+        "operands": "st(3)"
+      },
+      {
+        "address": "0x31c6e8b9",
+        "bytes": "d9c9",
+        "mnemonic": "fxch",
+        "operands": "st(1)"
+      },
+      {
+        "address": "0x31c6e8bb",
+        "bytes": "dec2",
+        "mnemonic": "faddp",
+        "operands": "st(2)"
+      },
+      {
+        "address": "0x31c6e8bd",
+        "bytes": "dcc8",
+        "mnemonic": "fmul",
+        "operands": "st(0), st(0)"
+      },
+      {
+        "address": "0x31c6e8bf",
+        "bytes": "dec1",
+        "mnemonic": "faddp",
+        "operands": "st(1)"
+      },
+      {
+        "address": "0x31c6e8c1",
+        "bytes": "d95c2414",
+        "mnemonic": "fstp",
+        "operands": "dword ptr [esp + 0x14]"
+      },
+      {
+        "address": "0x31c6e8c5",
+        "bytes": "d9442414",
+        "mnemonic": "fld",
+        "operands": "dword ptr [esp + 0x14]"
+      },
+      {
+        "address": "0x31c6e8c9",
+        "bytes": "83c40c",
+        "mnemonic": "add",
+        "operands": "esp, 0xc"
+      },
+      {
+        "address": "0x31c6e8cc",
+        "bytes": "c3",
+        "mnemonic": "ret",
+        "operands": ""
+      }
+    ],
+    "observation": "Subtracts two vec3 X/Y/Z float components, stores single-precision deltas, sums three squared deltas, stores/reloads float return. No sqrt or further call."
+  },
+  "distanceThreshold": {
+    "address": "0x32fe8cc0",
+    "sourceFileOffset": 22315200,
+    "bytes": "0000000080842e41",
+    "sha256": "54f990820c814e288e9e21aeb269ba6bfaeeb00f177b62ad44e8e4e76eb2c42c",
+    "value": 1000000,
+    "type": "float64"
+  },
+  "interpretation": "The proved squared-distance helper and threshold imply 1000 native position units inclusive. This is not a measured PvP area or body size.",
+  "randomExportBinding": {
+    "report": "asset_sources/upstream\\reports\\analysis\\pvp-count-aggregation\\crt-rand-audit.json",
+    "reportSha256": "efafe908a74df785ea1d38974ad40f03558102434fef315f4f117527c2c2152e",
+    "originalDll": {
+      "bytes": 770384,
+      "path": "asset_sources/client\\data\\MSVCR100.dll",
+      "sha256": "1221a09484964a6f38af5e34ee292b9afefccb3dc6e55435fd3aaf7c235d9067"
+    },
+    "moduleObservations": [
+      {
+        "elapsedSeconds": 0.6410000000032596,
+        "index": 1,
+        "module": {
+          "base": "0x5f450000",
+          "name": "MSVCR100.dll",
+          "path": "asset_sources/analysis\\runtime2016\\client\\data\\MSVCR100.dll",
+          "pid": 31060,
+          "size": 778240
+        }
+      },
+      {
+        "elapsedSeconds": 1.0780000000086147,
+        "index": 2,
+        "module": {
+          "base": "0x5f450000",
+          "name": "MSVCR100.dll",
+          "path": "asset_sources/analysis\\runtime2016\\client\\data\\MSVCR100.dll",
+          "pid": 31060,
+          "size": 778240
+        }
+      },
+      {
+        "elapsedSeconds": 1.4839999999967404,
+        "index": 3,
+        "module": {
+          "base": "0x5f450000",
+          "name": "MSVCR100.dll",
+          "path": "asset_sources/analysis\\runtime2016\\client\\data\\MSVCR100.dll",
+          "pid": 31060,
+          "size": 778240
+        }
+      }
+    ],
+    "rand": {
+      "bytesHex": "e8081af8ff8bc88b411469c0fd43030005c39e2600894114c1e81025ff7f0000c3",
+      "export": {
+        "forwarder": false,
+        "name": "rand",
+        "ordinal": 1506,
+        "rva": 584890
+      },
+      "fileOffset": 581818,
+      "instructions": [
+        {
+          "address": "0x78b2ecba",
+          "bytesHex": "e8081af8ff",
+          "instruction": "call 0x78ab06c7"
+        },
+        {
+          "address": "0x78b2ecbf",
+          "bytesHex": "8bc8",
+          "instruction": "mov ecx, eax"
+        },
+        {
+          "address": "0x78b2ecc1",
+          "bytesHex": "8b4114",
+          "instruction": "mov eax, dword ptr [ecx + 0x14]"
+        },
+        {
+          "address": "0x78b2ecc4",
+          "bytesHex": "69c0fd430300",
+          "instruction": "imul eax, eax, 0x343fd"
+        },
+        {
+          "address": "0x78b2ecca",
+          "bytesHex": "05c39e2600",
+          "instruction": "add eax, 0x269ec3"
+        },
+        {
+          "address": "0x78b2eccf",
+          "bytesHex": "894114",
+          "instruction": "mov dword ptr [ecx + 0x14], eax"
+        },
+        {
+          "address": "0x78b2ecd2",
+          "bytesHex": "c1e810",
+          "instruction": "shr eax, 0x10"
+        },
+        {
+          "address": "0x78b2ecd5",
+          "bytesHex": "25ff7f0000",
+          "instruction": "and eax, 0x7fff"
+        },
+        {
+          "address": "0x78b2ecda",
+          "bytesHex": "c3",
+          "instruction": "ret "
+        }
+      ],
+      "observedModuleVA": "0x5f4decba",
+      "preferredVA": "0x78b2ecba",
+      "sha256": "b10326cfd4a83507c37408cf87c1bc68607bc79787649e1414afd13cc00f0c29"
+    },
+    "algorithm": {
+      "rand": "state=(state*214013+2531011) modulo2^32; return(state>>16)&32767",
+      "srand": "Same context accessor; writes first argument DWORD to returned context+14",
+      "stateMember": "0x14",
+      "statePointerCallPreferredVA": "0x78ab06c7"
+    },
+    "limits": [
+      "Export RVA plus observed module base maps target exactly; source call bytes separately corroborate.",
+      "Historical DLL memory code pages were not hashed; current disk copy identity is not historical-memory-byte attestation.",
+      "Context accessor/TLS initialization, actual per-thread state, srand callers and call chronology unobserved.",
+      "This binding does not establish the packed32000-entry sampling-table initializer."
+    ]
+  },
+  "stillUnknown": [
+    "Starfall player state0/100 and virtual164 filter business semantics",
+    "Shared rand TLS initialization/seed/call chronology in an actual match",
+    "Starfall Attack effect-set carrier/target dynamic bone and ground projection binding"
+  ]
+}

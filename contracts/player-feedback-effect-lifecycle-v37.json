@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "scope": "Player feedback v37: original effect clocks and explicit handle retirement",
+  "targetClientMeasured": false,
+  "evidenceClasses": [
+    "target2016 raw EffectSet/DamageEffect/mesh/particle declarations",
+    "qualified fixedV5 effect destruction consumer",
+    "current production presentation with real converted GLBs and isolated owner packets"
+  ],
+  "sourceBoundary": "The fixed consumer is not a matching 2016 executable trace. Tests of current presentation do not establish native skill cast phases, original GPU pixels or online hand-feel.",
+  "qualifiedReference": {
+    "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+    "effectSet": {
+      "path": "X2Lib/X2EffectSet.cpp",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "stopLines": [2033, 2090],
+      "destroyHandleLines": [2496, 2604],
+      "claim": "StopEffectSet releases owned main mesh/particle handles even when that object no longer performs combat work. A saved handle remains necessary for explicit destruction."
+    },
+    "damageEffect": {
+      "path": "X2Lib/X2DamageEffect.cpp",
+      "sha256": "8a76540f2d6e318ce474cf6d63e1822be3d90b880f647bae480f26ea3d6afed8",
+      "destructorLines": [1686, 1736],
+      "particleDestroyLine": 7260,
+      "claim": "DamageEffect destruction destroys the main mesh; PASSIVE/START/TIME sequences use their separate FORCE_DIE versus AutoDie rules."
+    },
+    "targetBoneMatrix": {
+      "effectSetLines": [3188, 3226],
+      "particleSystemPath": "KTDXLIB/KTDGParticleSystem.cpp",
+      "particleSystemSha256": "43b5025740ed9c89a5f6f3617789abd68bcb18aaf8aaddef1b5ca9d3b9334050",
+      "btNonePlaneLines": [3890, 3937],
+      "meshParticleMatrixLines": [4768, 4775],
+      "macroBoundary": "NEW_HENIR_TEST matrix attachment and mesh-particle path; EVE_ELECTRA plane matrix path. Qualified fixedV5 reference, not target executable macro measurement.",
+      "claim": "Declared target-mesh TRACE_MATRIX uses that exact target frame combineMatrix. Mesh particles use Scale*DXMatrix; BT_NONE planes use Scale*Rotate*DXMatrix. Bone shear and animated spin remain in the complete matrix."
+    }
+  },
+  "originalSources": {
+    "effectSet": {"path": "data/data036.kom/EffectSet.lua", "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7"},
+    "meshTemplates": {"path": "data/data036.kom/GameMajorXMeshPlayer.txt", "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5"},
+    "deParticles": {"path": "data/data036.kom/GameMajorParticle32.txt", "sha256": "2bed427022e715160dac8d420cff7eaf4435089e7cc23d1ea23b0802eeaaee6f"},
+    "bloodCutterNpc": {"path": "data/data037.kom/Elesis_BloodCutter.lua", "sha256": "cfe229e11f92a42b66ae84529fa1090e1688fc1992917b51c971dd7ddf41c8d2"}
+  },
+  "verifiedDeclarations": [
+    {"template": "BLOOD_CUTTER_Weapon", "declarationSha256": "d55218336abff6831133f609cdd8ee2cc1d29d1a474d56cd25797745bf5a7831", "lifeType": "LT_TIME", "lifeSeconds": 2, "role": "independent NPC1641 attack weapon; display age follows its actual carrier"},
+    {"template": "BLOOD_CUTTER_Weapon_FX", "declarationSha256": "35b07d46187f8914ae9266398466bc48a1a3d9ab19b44ec0c36338d3aa230069", "lifeType": "LT_TIME", "lifeSeconds": 0.35, "role": "separate caster-hand preparation mesh; never substituted for the flying weapon"},
+    {"template": "ADE_PE03M_L", "declarationSha256": "a054dc19b6d616d7f55c0736917767b9162c9a7a893588a8da8725468978b287", "particleLifeSeconds": 0.35, "emitRate": 4, "triggerCount": null, "triggerTime": null, "role": "Reverse Stigma mark is an unbounded emitter of finite particles, requiring explicit mark-handle release"},
+    {"template": "ADE_RE_ST_RETURN_P00M", "declarationSha256": "8603fc1ce8a50d48db9d71fa4b983cba2da14e253da83c0209744ce706201489", "particleLifeSeconds": 1, "triggerCount": 1, "traceChildren": 6, "role": "RETURN burst is independently bounded; its original life is not shortened to conceal a mark lifetime defect"},
+    {"template": "Mesh_ADE_REVERSE_STIGMA_Return", "lifeType": "LT_TIME", "lifeSeconds": 1, "drawCount": 0, "role": "RETURN collision helper is intentionally invisible and already finite"},
+    {"damageEffect": "DamageEffect_SBH_Blaze_Wing_Main", "visiblePassiveSequences": 4, "mainDrawCount": 0, "role": "visible fire comes from original passive particle meshes attached to the moving hidden helper"}
+  ],
+  "implementedPresentation": {
+    "file": "apps/web/effects-view.mjs",
+    "change": "A Blood Cutter main carrying sourceElesisBloodCutter samples the original carrier position, animationTime and meshLifetimeElapsed. Missing/dead carriers revoke this source-owned main. Late owner births cannot restart another full local mesh lifetime. Exact target-frame matrices reach declared TRACE_MATRIX mesh particles and BT_NONE circle planes, preserving raw local rotation, animated bone spin and scale without resampling caster bones.",
+    "unchanged": ["raw mesh lifetime", "raw particle lifetime", "caster spawn phase", "skill cooldown and damage", "original model, texture and animation bytes"]
+  },
+  "ownershipIntegration": {
+    "carrierBirthOrder": "BH Blaze Wing's original EFFECT0 Main binds EFFECT1 Sub, which is itself a damage mesh. The previous non-damaging-carrier-only initialization rule let Main emit a null birth and lose all four passive sequences. Exact designated target meshes must be initialized before their declared dependents irrespective of whether that carrier also deals damage. Brandish Breaker START EFFECT0 is explicitly forced-owner, so that member is not evidence of the same initial target-order defect.",
+    "explicitStops": "Behavior emits effectEnded for saved handles even if a visual member has retired from the combat list; production presentation still owns that ID.",
+    "boundChildren": "Elesis declaration-backed target-mesh visual siblings must keep exact carrier identity until that carrier ends; never bind flying NPC particles to the caster's same-named bone.",
+    "castPhaseLimit": "This presentation-lifecycle patch does not infer the caster phase from NPC1641. The separately closed captured registrar/callback/request consumer in contracts/elesis-blood-cutter-delay-v37.json establishes caster DUMMY .01, request delay float32 .3, then NPC-local .01 display and .1 motion. Server acknowledgement timing and original-client runtime trajectories remain unmeasured; this field does not supersede that source contract.",
+    "matrixApi": "createNativeSamplers.effectBoneMatrixSampler(effect, actor, boneName, options) returns16 original native floats or null. sampleSetMeshBoneAnchor's fifth optional argument samples a matrix only for declared TRACE_MATRIX target-mesh siblings. Unknown bone frames do not fall back to actor matrices.",
+    "missingOwnerFrame": "Original CA composed character has no Dummy03. Only EffectSet_C_SDK_Combo_SDK_ZZZX/ZZZXX with raw TRACE_USER_TARGET_FORCE1 and Dummy03 use the already-qualified EffectSet2843 failed-owner-bone GetHeadBonePos fallback. Raw bone declarations stay unchanged; unknown sets still return null."
+  },
+  "regression": {
+    "file": "tests/integration/player-feedback-effect-lifecycle-v37.test.mjs",
+    "scope": "Five real-asset NullEngine cases; one-pixel completed texture IO, unmodified actual converted geometry and pose data. Test execution and GPU acceptance must be recorded separately by the integration task.",
+    "cases": ["aged Blood Cutter main and exact carrier retirement", "seven original projectile trail handles stop across repeated casts", "Blaze Wing four visible passive sequences follow moving helper and expire", "Reverse Stigma saved mark-handle explicit stop", "Reverse Stigma RETURN six-child burst naturally expires"]
+  },
+  "additionalRegressions": {
+    "nativeCombat": "tests/combat/elesis-effect-binding-v37.test.mjs",
+    "nativePresentation": "tests/integration/elesis-native-effect-presentation-v37.test.mjs",
+    "matrixArithmetic": "tests/unit/effect-target-bone-matrix-v37.test.mjs",
+    "scope": "Real Native cast and map geometry, seven sibling identity/anchor/retirement checks, original-pose matrix comparison, exact CA missing-frame fallback, real BH visible passive output and accepted damage, real Blood mesh/BT_NONE plane attachment. Results are recorded by integration separately; there is no original-client or GPU equivalence assertion."
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "version": 1,
+  "targetClientMeasured": false,
+  "scope": "V61 terminal M02 movement to original DIE M03 contact; source declarations unchanged",
+  "originalDeclarations": {
+    "ATT_Stardust_Shower_M02": {
+      "fields": {
+        "MeshName": "ATT_Maximum_Strike_Ball_AttackBox.X",
+        "SLASH_TRACE_TEXTURE": "Elsword_SlashTrace_Texture_Ice.dds",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 12,
+        "LifeTime": 1.5,
+        "ZEnable": true,
+        "AlphaTest": true
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "Velocity",
+          "start": 0.2,
+          "end": 0.6,
+          "fade": true,
+          "value": [
+            0,
+            -500,
+            0
+          ]
+        },
+        {
+          "property": "Rotate",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            90
+          ]
+        }
+      ],
+      "declarationSha256": "a6737de2f14fdc361a5848a423edd5ff4065a95107e18795d987327b4d4967cd",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2619117,
+        "line": 81817
+      }
+    },
+    "ATT_Stardust_Shower_M03": {
+      "fields": {
+        "MeshName": "elsword_SA_rageCutter_attackSphere.X",
+        "LifeType": "LT_TIME",
+        "MeshType": "X_SKIN_MESH",
+        "BillBoardType": "BT_NONE",
+        "SourceBlendMode": "D3DBLEND_SRCALPHA",
+        "DestBlendMode": "D3DBLEND_INVSRCALPHA",
+        "Layer": 14,
+        "LifeTime": 5,
+        "DrawCount": 0
+      },
+      "events": [
+        {
+          "property": "Color",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "property": "AniName",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": {
+            "animation": "Normal",
+            "playback": "XAP_LOOP"
+          }
+        },
+        {
+          "property": "Size",
+          "start": 0,
+          "end": 0,
+          "fade": false,
+          "value": [
+            0.33,
+            0.33,
+            0.33
+          ]
+        }
+      ],
+      "declarationSha256": "1273bc76f1e76d1728802fc8483c1b6b4eb1cbdcaafc0e489f3d1acdb711945d",
+      "source": {
+        "archive": "data/data036.kom",
+        "ordinal": 144,
+        "name": "GameMajorXMeshPlayer.txt",
+        "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+        "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+        "bytes": 3452494,
+        "signatureHex": "584d455348504c41594552202247616d",
+        "byteOffset": 2619813,
+        "line": 81838
+      }
+    }
+  },
+  "damageEffects": {
+    "DamageEffect_ATT_Stardust_Shower_Ball_Big": {
+      "raw": {
+        "DAMAGE_TIME": 99999,
+        "MAIN_EFFECT_NAME": "ATT_Stardust_Shower_M02",
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "ADD_STARDUST_SHOWER_START03.ogg"
+        },
+        "DAMAGE_DATA": {
+          "PVP_RATE": 0.6000000000000001,
+          "HIT_ADD_MP": 0,
+          "CAMERA_CRASH_GAP": 15,
+          "TECH_POINT": 0,
+          "CAMERA_CRASH_TIME": 0.3,
+          "HIT_GAP": 0.3,
+          "USED_SKILL_ID": 29021,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 43,
+          "REACT_TYPE": 2,
+          "ATTACK_TYPE": 1,
+          "DAMAGE": {
+            "MAGIC": 0
+          },
+          "RE_ATTACK": 1,
+          "APPLIED_SKILL_ID": 29021
+        },
+        "PASSIVE_PARTICLE0": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P01",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P02",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 1
+        },
+        "PASSIVE_PARTICLE2": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P03",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 1
+        },
+        "PASSIVE_PARTICLE3": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P04",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 0
+        },
+        "PASSIVE_PARTICLE4": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P05",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 0
+        },
+        "PASSIVE_PARTICLE5": {
+          "BONE_NAME": "Dummy01",
+          "SCALE_Z": 1.5,
+          "SCALE_X": 1.5,
+          "SCALE_Y": 1.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P06",
+          "POSITION_TYPE": 0,
+          "TRACE": 1,
+          "APPLY_ROTATE": 0
+        },
+        "TIME_PARTICLE0": {
+          "EVENT_TIME": 0.5,
+          "BONE_NAME": "Dummy01",
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Ball_P07A",
+          "POSITION_TYPE": 0,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1,
+          "USE_GLOBAL_TIME": 1
+        },
+        "DIE_DAMAGE_EFFECT0": {
+          "DAMAGE_EFFECT_NAME": "DamageEffect_ATT_Stardust_Shower_Ball_Explosion",
+          "OFFSET_Y": -200,
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 0
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 352377
+      }
+    },
+    "DamageEffect_ATT_Stardust_Shower_Ball_Explosion": {
+      "raw": {
+        "ATTACK_TIME_END": 0.1,
+        "MAIN_EFFECT_NAME": "ATT_Stardust_Shower_M03",
+        "DAMAGE_TIME": 99999,
+        "EFFECT_TYPE": 1,
+        "ATTACKED_BY_UNIT": 0,
+        "ATTACKED_BY_EFFECT": 0,
+        "REFLECT": 0,
+        "USE_GLOBAL_TIME": 1,
+        "DAMAGE_DATA": {
+          "CAMERA_CRASH_GAP": 100,
+          "BACK_SPEED_Y": 1600,
+          "CAMERA_CRASH_TIME": 1.5,
+          "TECH_POINT": 750,
+          "PVP_RATE": 0.6,
+          "HIT_ADD_MP": 10,
+          "USED_SKILL_ID": 29021,
+          "BACK_SPEED_X": 2000,
+          "DYNAMO_PARTICLE_RATE_TYPE": 0,
+          "ATTACK_TYPE": 1,
+          "DAMAGE_TYPE": 1,
+          "HIT_TYPE": 44,
+          "REACT_TYPE": 5,
+          "RE_ATTACK": 0,
+          "APPLIED_SKILL_ID": 29021,
+          "DAMAGE": {
+            "MAGIC": 22
+          }
+        },
+        "PASSIVE_PARTICLE0": {
+          "SCALE_Z": 0.5,
+          "SCALE_X": 0.5,
+          "SCALE_Y": 0.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Explosion_P01",
+          "POSITION_TYPE": 3,
+          "TRACE": 1,
+          "APPLY_ROTATE": 1
+        },
+        "PASSIVE_PARTICLE1": {
+          "SCALE_Z": 0.5,
+          "SCALE_X": 0.5,
+          "SCALE_Y": 0.5,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Explosion_P02",
+          "POSITION_TYPE": 3,
+          "TRACE": 1,
+          "APPLY_ROTATE": 1
+        },
+        "TIME_PARTICLE0": {
+          "SCALE_Z": 0.33,
+          "SCALE_Y": 0.33,
+          "EVENT_TIME": 0.001,
+          "SCALE_X": 0.33,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Explosion_P03",
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1,
+          "USE_GLOBAL_TIME": 1
+        },
+        "TIME_PARTICLE1": {
+          "SCALE_Z": 0.33,
+          "SCALE_Y": 0.33,
+          "EVENT_TIME": 0.001,
+          "SCALE_X": 0.33,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Explosion_P04",
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1,
+          "USE_GLOBAL_TIME": 1
+        },
+        "TIME_PARTICLE2": {
+          "SCALE_Z": 0.33,
+          "SCALE_Y": 0.33,
+          "EVENT_TIME": 0.001,
+          "SCALE_X": 0.33,
+          "PARTICLE_NAME": "ATT_Stardust_Shower_Explosion_P05",
+          "POSITION_TYPE": 3,
+          "APPLY_ROTATE": 1,
+          "TRACE": 1,
+          "USE_GLOBAL_TIME": 1
+        },
+        "SOUND0": {
+          "EVENT_TIME": 0.01,
+          "FILE_NAME": "ADD_STARDUST_SHOWER_START02.ogg"
+        }
+      },
+      "sourcePc": {
+        "prototype": 20,
+        "assignmentInstruction": 352474
+      }
+    }
+  },
+  "endSet": {
+    "raw": {
+      "NAME": "EffectSet_ATT_Stardust_Shower_End",
+      "EFFECT0": {
+        "NAME": "ATT_Effect_Rupture15_Top",
+        "POSITION_OFFSET_Y": 100,
+        "START_TIME": 0.01,
+        "BONE_NAME": "Bip01",
+        "EFFECT_TYPE": 8
+      },
+      "EFFECT1": {
+        "SCALE_Y": 3,
+        "NAME": "DamageEffect_ATT_Stardust_Shower_Ball_Big",
+        "POSITION_OFFSET_Y": 600,
+        "SCALE_X": 3,
+        "SCALE_Z": 3,
+        "START_TIME": 0.01,
+        "EFFECT_TYPE": 1
+      },
+      "CAMERA_SHAKE0": {
+        "TWO_DIR_TIME_GAP": 0.08,
+        "START_TIME": 0,
+        "TWO_DIR_TIME": 3,
+        "TWO_DIR_GAP": 20,
+        "SHAKE_TYPE": 3
+      }
+    },
+    "sourcePc": {
+      "prototype": 3,
+      "instruction": 41601
+    }
+  },
+  "motionReference": "contracts/de-stardust-mesh-v56.json original2016 numeric MeshPlayer consumers; same loader/Velocity/old-age lifetime engine for M02 deterministic declaration",
+  "boundary": {
+    "displayRotate": "Original local Rotate [0,0,90] remains visual; movement uses external birth basis, as other original Stardust meshes",
+    "diePosition": "Original POSITION_TYPE3 main position then OFFSET_Y=-200; no forced landing or enemy-following explosion",
+    "unknown": [
+      "Original2016 runtime hit total and GPU pixels",
+      "Original TLS random seed; M02 itself contains no random declarations"
+    ]
+  }
+}

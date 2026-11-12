@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "issue": "CA Brandish Breaker visual and attack position mismatch reported by players",
+  "verdict": "not-reproduced-in-bounded-current-Web-native-and-NullEngine-regression",
+  "targetClientMeasured": false,
+  "gpuRenderMeasured": false,
+  "evidenceClass": "original2016-declarations + qualified-fixedV5-source-reference + current-Web-native-geometry-and-production-NullEngine",
+  "productionChange": "No Brandish numerical adjustment. Preserve original position offset, local scale, local rotation, target bones and attack helpers.",
+  "sources": {
+    "referenceQualification": "Fixed-V5 source is a version-qualified consumer reference, not evidence that the 2016 target binary executes identical code. Full third-party sources remain outside Git.",
+    "X2EffectSet.cpp": {
+      "commit": "a8438f3ed18dd6f0944793de6c0d8bb9334e9633",
+      "path": "JP_TW_EU_CN_US/Trunk/X2Lib/X2EffectSet.cpp",
+      "gitBlob": "b561ce3408224a5d15a3cab8be54cfb91bcf76c9",
+      "sha256": "395a9f57eda3aec4011b65bbd186b612987c9e4f85e96766dd3c13b0d8288440",
+      "bytes": 146678
+    },
+    "KTDGXMeshPlayer.h": {
+      "path": "KTDXLIB/KTDGXMeshPlayer.h",
+      "acquisition": "Read-only pinned native-source-runtime cache; copied to task-local ignored runtime and verified by SHA256.",
+      "sha256": "3da8130eccaa2aaf196ab815ad5eacf78c541e6be023e8587fb9ec57367c9ab0",
+      "bytes": 74061
+    },
+    "KTDGXMeshPlayer.cpp": {
+      "path": "KTDXLIB/KTDGXMeshPlayer.cpp",
+      "acquisition": "Read-only pinned native-source-runtime cache; copied to task-local ignored runtime and verified by SHA256.",
+      "sha256": "0a98af22b4f4b260dc9fe61d7866f8251ebf2c4a94d90032c8462e6b5831417d",
+      "bytes": 167669
+    },
+    "EffectSet.lua": {
+      "archive": "data/data036.kom",
+      "sha256": "6c6a0fd7759921c070a8d04fa26ddd1a6432c307e185d9a4d5188919099b16c7",
+      "bindingContract": "contracts/elesis-effect-targets-v30.json"
+    },
+    "DamageEffect.lua": {
+      "archive": "data/data036.kom",
+      "sha256": "21747879161f19722278568dc2392c8778f88be491123a15f5f550cd63ac7397"
+    },
+    "GameMajorXMeshPlayer.txt": {
+      "archive": "data/data036.kom",
+      "archiveOrdinal": 144,
+      "rawPath": "raw/data/data036.kom/GameMajorXMeshPlayer.txt",
+      "sha256": "b3927c83e113e3b931f29ca5058063a63440a85d2c211bf335cb1fd4054757d5",
+      "bytes": 3452494,
+      "declarations": {
+        "SDK_BRANDISH_BREAKER_START_AttackBox": {
+          "sha256": "f795deef26145265fac8a125df21808b0182dc1738290589669c386a93fbf93d",
+          "byteOffset": 2586704,
+          "line": 80766
+        },
+        "SDK_BRANDISH_BREAKER_LOOP_AttackBox": {
+          "sha256": "fd2f45aa19b47222e35d3ad08b4d012db3cf70d82c57ebe23a3b3f48072aed2e",
+          "byteOffset": 2587290,
+          "line": 80786
+        }
+      }
+    }
+  },
+  "originalFields": {
+    "startCarrier": "EffectSet_SA_SDK_BRANDISH_BREAKER_START.EFFECT1",
+    "loopCarrier": "EffectSet_SA_SDK_BRANDISH_BREAKER_LOOP.EFFECT0",
+    "carrierBone": "Bip01",
+    "POSITION_OFFSET_X": -100,
+    "TRACE_MORE": 1,
+    "BONE_TRACE_TARGET_MESH": 1,
+    "TRACE_USER_TARGET_FORCE": 1,
+    "startLocalSize": [0.8, 0.8, 0.8],
+    "startLocalRotateDegrees": [0, 0, -7],
+    "startChildBones": ["Dummy01", "Dummy02", "Dummy03", "Dummy04", "Dummy05", "ATTACK_SPHERE02"],
+    "loopChildBones": ["Dummy02", "Dummy03", "Dummy01"],
+    "traceMatrix": "None of the 11 START or 4 LOOP members declares TRACE_MATRIX. The v37 full-matrix transport repair cannot be credited as a Brandish repair."
+  },
+  "referenceConsumerSemantics": [
+    {
+      "source": "X2EffectSet.cpp:3825 GetEffectPositionByTargetMesh",
+      "meaning": "A non-forced child uses the target mesh named bone world position. Preserve local mesh scale and local rotation when computing that world position."
+    },
+    {
+      "source": "X2EffectSet.cpp:3013 GetEffectRotation; KTDGXMeshPlayer.h:1194,1200; KTDGXMeshPlayer.cpp:1842,3584,3598,3612",
+      "meaning": "The effect rotation consumer uses target GetRotateDegree (m_vRotate). LOCAL_ROTATE_EFFECT writes template Rotate to m_vRotateLocal; the full mesh/bone matrix uses m_vRotate plus m_vRotateLocal. Thus -7 degrees affects Brandish dummy and attack world positions, but adding it again to child global rotation would double-apply local rotation."
+    },
+    {
+      "source": "X2EffectSet.cpp:2974 GetEffectScale",
+      "meaning": "Child scale uses member and optional instance scale. The target mesh local Size already changes its dummy world positions; it does not justify multiplying all child particle sizes by 0.8."
+    },
+    {
+      "source": "X2EffectSet.cpp:3543 SetEffectSetOffset",
+      "meaning": "Offset application uses owner and target direction. Preserve raw -100; its facing-relative interpretation is exercised on the tested straight Garpai lane."
+    }
+  ],
+  "regression": {
+    "test": "tests/integration/brandish-position-presentation-v37.test.mjs",
+    "runnerLog": "runtime/player-v37-brandish-position.log",
+    "observedResult": {"tests": 2, "pass": 2, "fail": 0},
+    "facings": [-1, 1],
+    "input": "Actual skill-key input, HP below 20 percent and held extension to exercise both original START and LOOP; 300 simulation frames per facing.",
+    "coverage": [
+      "Original native WASM geometry, Garpai stage, character and effect pose assets.",
+      "Independent compose/samplePose math with original local 0.8 scale and -7 degree rotation versus real START attack-helper sphere centers over time.",
+      "Actual visual birth world positions at Dummy01 through Dummy05 and ATTACK_SPHERE02 versus independent original pose samples.",
+      "Production effects-view under Babylon NullEngine: original visible slash mesh world roots correspond to recorded bone birth positions; LOOP emitter origins correspond to active source dummy anchors.",
+      "Lifecycle cleanup leaves no active visual parents or emitters. Assertions cover geometry and presentation origins rather than only counting hits."
+    ],
+    "limits": [
+      "This is a current Web simulation and NullEngine regression, not a target-client trace, an actual GPU blending/render result or a 1:1 claim.",
+      "Independent bone math begins at the real current carrier anchor. Raw -100 is preserved and asserted, but the test does not independently establish the original target client's full carrier root trajectory.",
+      "The player's exact reproduction, other maps, memo variants and all camera/view configurations were not supplied or measured. The report remains open to a concrete reproduction."
+    ]
+  }
+}

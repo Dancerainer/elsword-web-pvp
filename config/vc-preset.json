@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "presetVersion": "vc-six-equipment-action-speed-v26-feedback-v45",
+  "overheatHpCostMultipliers": {
+    "command": 2,
+    "skill": 25
+  },
+  "overheatSkillLayerHpCap": 0.15,
+  "overheatHardProtection": true,
+  "overheatHpCostEvidence": "Project-specific tuning: command self cost2x, skill25x; each skill heat tier costs at most15% max HP; passive low-HP protection is a hard floor including equality. Not original-client measured constants.",
+  "formulaVersion": "pvp-equipment-source-candidate-v1",
+  "attributeSemantics": "source-equipment-pvp-baseline-and-final-options",
+  "combatLevel": 85,
+  "combatLevelEvidence": "User selected level85; VC uses its own UC_RAVEN_VETERAN_COMMANDER coefficients.",
+  "showAllSuperArmorOutlines": true,
+  "customStateProtection": {
+    "RSI_A_RF_MEGADRILL_BREAK": {
+      "superArmor": true,
+      "evidenceClass": "user-requested-rule-customization",
+      "reason": "Project rule adds MegaDrill super armor and red outline if the acquired source has no grant"
+    }
+  },
+  "speedAttributeSemantics": "final-option-percent-v5-half-movement-jump",
+  "manaBreakImmediateDown": true,
+  "knockdownPolicy": "fixed-V5-2011-batch-max-deferred-flush-candidate",
+  "knockdownEvidence": "contracts/rf-reaction-source.json; max100/2s/10-per-second and compile macros reference-V5; target2016 runtime pending",
+  "doubleTapWindowSeconds": 0.4,
+  "inputEvidence": "reference-V5 KTDIDevice.cpp:4 DOUBLE_INPUT_GAP=.4, GetDoubleKeyPureState requires press-release-press; 2016 native binary constant unmeasured",
+  "career": "UC_RAVEN_VETERAN_COMMANDER",
+  "displayName": "Veteran Commander",
+  "skillBarMode": "eight",
+  "skillKeys": [
+    "A",
+    "S",
+    "D",
+    "C",
+    "Q",
+    "W",
+    "E",
+    "R"
+  ],
+  "skillBarSwitching": false,
+  "bannedSkillIds": [
+    900
+  ],
+  "bannedSkillReasons": {
+    "900": "Heavenly Love is unavailable in PvP."
+  },
+  "cameraDynamic": false,
+  "skillCutIn": false,
+  "showHpMpNumbers": true,
+  "awakeningEnabled": true,
+  "ravenCoreEnabled": true,
+  "attributes": {
+    "hpMax": 135417,
+    "physicalAttack": 1659,
+    "magicAttack": 1557,
+    "physicalDefence": 356,
+    "magicDefence": 303,
+    "mpMax": 30,
+    "hpBonus": 1.2,
+    "damageReduction": 0.4,
+    "criticalRate": 40,
+    "awakeningChargeBonus": 0.1,
+    "awakeningDurationBonus": 0,
+    "mpGainBonus": 0.3,
+    "animationSpeedMultiplier": 1.33,
+    "moveSpeedMultiplier": 1.25,
+    "jumpSpeedMultiplier": 1.25,
+    "skillDamageBonus": 0.1,
+    "additionalAttackRatio": 0,
+    "criticalDamageBonus": 0
+  },
+  "attributesEvidence": "Project six-profession equipment preset, final equipment option inputs. additionalAttackRatio is resolved AFTER target socket curve; criticalDamageBonus adds percentage points to base1.5. Career bases, passives and original declarations remain independent. Additional damage uses explicitly accepted target2016 curve + fixed V5 consumer candidate. See docs/PVP_ATTRIBUTES.md.",
+  "buffResistances": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0
+  },
+  "debuffDurationMultiplier": 1,
+  "buffAttributesEvidence": "explicit zero normalized resistance and neutral duration internal fixture; original gear and native UpNowHp composition pending",
+  "passives": [
+    24411,
+    24400,
+    24412,
+    24413,
+    24414,
+    24415
+  ],
+  "guildPassives": [
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511
+  ],
+  "passivesEvidence": "Target2016 highest VC nodes; fixedV5 consumers qualified independently.",
+  "cameraAdapter": {
+    "mode": "normalTrackingReferenceV5",
+    "distance": 1500,
+    "manualZoomLevel": -1,
+    "requestedZoomLabel": "1x",
+    "height": 200,
+    "lookOffsetY": 100,
+    "trackingSeconds": 0.3,
+    "horizontalFollow": "nativeTracking",
+    "horizontalFollowEvidence": "contracts/rf-camera-source-v14.json; disabled-dynamic-camera V5 consumer uses normal .3s/0 tracking on all axes; target2016 recording unavailable",
+    "targetTrackingSeconds": 0,
+    "verticalFovRadians": 0.7853981633974483,
+    "landCompensation": 400,
+    "lineCamerasEnabled": false,
+    "autoZoom": false,
+    "shake": false,
+    "evidence": "contracts/rf-camera-trails-source.json; fixed V5 MODIFY_FRUSTUM farthest manual zoom -1=1500 candidate; 2016 1x label mapping/runtime unmeasured"
+  },
+  "purpose": "user-authorized-local-VC-simulation",
+  "publicMatchmaking": false,
+  "sourceEquipment": {
+    "version": "na2016-perkisas-mk4-base-v1",
+    "weaponLevel": 80,
+    "characterPolicy": "target-table-growth-inference-v1",
+    "referencePolicy": "fixed-v5-enhance-ranked-pvp-v1",
+    "weaponEnhancement": 9
+  },
+  "initialAwakeningGauge": 50,
+  "equipmentOptionPolicy": "user-150hp-skill-damage-v2"
+}

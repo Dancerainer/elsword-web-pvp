@@ -1,0 +1,16 @@
+.rf-buff-bar{position:absolute;top:12px;right:18px;width:min(320px,calc((50% - 194px * var(--score-hud-scale,1.25) - 28px) / var(--buff-hud-scale,1.25)));display:flex;flex-direction:column;gap:0;height:58px;pointer-events:none;z-index:21;transform:scale(var(--buff-hud-scale,1.25));transform-origin:top right}
+.rf-buff-line{display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:1px;height:29px;min-height:29px;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}.rf-buff-line::-webkit-scrollbar{display:none}
+.rf-buff-item{width:24px;height:24px;position:relative;flex:none;animation:rf-buff-enter 1.2s ease-out;cursor:help;pointer-events:auto;outline-offset:1px}
+.rf-buff-item img,.rf-buff-fallback{width:24px;height:24px;display:block}.rf-buff-item img[hidden],.rf-buff-fallback[hidden]{display:none}
+.rf-buff-fallback{box-sizing:border-box;display:flex;align-items:center;justify-content:center;border:1px solid #d5b96b;color:#fff;background:#435a71;font:12px Tahoma,system-ui,sans-serif}.rf-buff-negative .rf-buff-fallback{border-color:#a84957;background:#642d3c}
+.rf-buff-time{position:absolute;right:0;bottom:-4px;white-space:nowrap;font:10px/12px Tahoma,system-ui,sans-serif;color:#fff;text-shadow:-1px -1px #000,1px -1px #000,-1px 1px #000,1px 1px #000;pointer-events:none}
+.rf-buff-stack{position:absolute;right:1px;top:0;font:bold 10px/12px Tahoma,sans-serif;color:#ffe43d;text-shadow:-1px -1px #000,1px 1px #000;pointer-events:none}
+.rf-buff-expiring img,.rf-buff-expiring .rf-buff-fallback{animation:rf-buff-flicker .4s infinite alternate}@keyframes rf-buff-enter{from{opacity:0}to{opacity:1}}@keyframes rf-buff-flicker{from{opacity:1}to{opacity:0}}
+.rf-buff-bar[hidden]{display:none}
+.rf-buff-bar .rf-buff-item img{position:static;max-width:none}
+@media(max-width:700px){.rf-buff-bar{right:8px}}
+.rf-buff-bar{height:84px}.rf-buff-line{height:42px;min-height:42px;gap:2px}.rf-buff-item,.rf-buff-item img,.rf-buff-fallback{width:36px;height:36px}
+.rf-buff-fallback{font-size:13px}.rf-buff-time{font-size:12px;line-height:14px;bottom:-3px}.rf-buff-stack{font-size:12px;line-height:14px}
+.rf-buff-tooltip{position:absolute;z-index:95;box-sizing:border-box;max-width:min(360px,calc(100% - 8px));padding:10px 12px;background:rgba(0,0,0,.94);color:#fff;border:1px solid #777;font:14px/1.5 system-ui,sans-serif;pointer-events:none}
+.rf-buff-tooltip>span{display:block}.rf-buff-tooltip[hidden]{display:none}
+.viewport{--enemy-hud-top:calc(12px + 84px * var(--buff-hud-scale,1.25) + 14px)}
